@@ -176,6 +176,20 @@ export class Construction extends ArtisanSkill {
         }
         );
     }
+    computeTotalMasteryActions() {
+        this.actions.namespaceMaps.forEach((actionMap, namespace) => {
+            let total = 0;
+            actionMap.forEach((action) => {
+                const id = action.id || "(no id)";
+                const cat = action.category?.type || "(no category)";
+                if (action.hasMastery) {
+                    if (!action.realm?.ignoreCompletion) total++;
+                    if (action.realm) this.totalMasteryActionsInRealm.inc(action.realm);
+                }
+            });
+            this.totalMasteryActions.set(namespace, total);
+        });
+    }
     postDataRegistration() {
         super.postDataRegistration();
         this.sortedMasteryActions = sortRecipesByCategoryAndLevel(this.actions.allObjects.filter(act => act.category.type === 'Artisan'), this.categories.allObjects);

@@ -6,6 +6,7 @@ const { templateRielkLangString } = await loadModule('src/language/translationMa
 export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
     constructor(namespace, data, game, skill) {
         super(namespace, data, game, skill);
+        this.hasMastery = false;
         try {
             this._baseActionCost = data.baseActionCost;
             this.modifiers = new ConstructionModifiers(data, game, `${this.id}`);

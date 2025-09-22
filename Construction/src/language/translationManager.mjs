@@ -52,11 +52,22 @@ export function templateRielkLangStringWithNodes(id, nodeData, textData, clone=t
 }
 
 export function patchTranslations(ctx) {
-    const superSetLanguage = setLanguage;
-    setLanguage = (...args) => {
-        superSetLanguage(...args);
-        tm.syncLang();
+    if (typeof setLanguage === "function") {
+        const superSetLanguage = setLanguage;
+        setLanguage = (...args) => {
+            superSetLanguage(...args);
+            if (tm && typeof tm.syncLang === "function") tm.syncLang();
+        };
     }
+    else if (typeof saveAndLoadLanguage === "function") { 
+        const superSaveAndLoadLanguage = saveAndLoadLanguage;
+        saveAndLoadLanguage = (...args) => {
+            const result = superSaveAndLoadLanguage(...args);
+            if (tm && typeof tm.syncLang === "function") tm.syncLang();
+            return result;
+        };
+    }
+
 
     const superUpdateUIForLanguageChange = updateUIForLanguageChange;
     updateUIForLanguageChange = (...args) => {
@@ -67,6 +78,7 @@ export function patchTranslations(ctx) {
                 langStrings[i].updateTranslation();
             }
         }
+
     }
 
     ctx.patch(Item, 'name').get(function (patch) {

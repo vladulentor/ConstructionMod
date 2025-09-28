@@ -1,5 +1,0 @@
-{
-  "namespace": "removeAmmoConsumption",
-  "icon": "assets/icon.png",
-  "setup": "src/setup.mjs"
-}

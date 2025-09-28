@@ -1,5 +1,0 @@
-{
-  "namespace": "priorityAutoSurvey",
-  "icon": "assets/icon.png",
-  "setup": "src/setup.mjs"
-}

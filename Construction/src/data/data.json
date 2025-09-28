@@ -603,7 +603,7 @@
           ]
         },
         "activeInRaid": false,
-        "scaleChanceWithMasteryPool": true,
+        "scaleChanceWithMasteryPool": false,
         "skillID": "rielkConstruction:Construction"
       }
     ],
@@ -755,87 +755,6 @@
               "level": 99,
               "descriptionID": 1,
               "description": "+5% chance to preserve resources."
-            }
-          ],
-          "masteryLevelBonuses": [
-            {
-              "modifiers": {
-                "skillPreservationChance": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "actionID": "rielkConstruction:Iron_Nails",
-                    "value": 0.2
-                  }
-                ]
-              },
-              "level": 2,
-              "levelScalingSlope": 1,
-              "levelScalingMax": 99
-            },
-            {
-              "modifiers": {
-                "skillPreservationChance": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "actionID": "rielkConstruction:Iron_Nails",
-                    "value": 5
-                  }
-                ]
-              },
-              "level": 99
-            }
-          ],
-          "masteryPoolBonuses": [
-            {
-              "realm": "melvorD:Melvor",
-              "modifiers": {
-                "masteryXP": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "realmID": "melvorD:Melvor",
-                    "value": 5
-                  }
-                ]
-              },
-              "percent": 10
-            },
-            {
-              "realm": "melvorD:Melvor",
-              "modifiers": {
-                "skillPreservationChance": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "realmID": "melvorD:Melvor",
-                    "value": 5
-                  }
-                ]
-              },
-              "percent": 25
-            },
-            {
-              "realm": "melvorD:Melvor",
-              "modifiers": {
-                "flatBasePrimaryProductQuantity": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "value": 1
-                  }
-                ]
-              },
-              "percent": 50
-            },
-            {
-              "realm": "melvorD:Melvor",
-              "modifiers": {
-                "flatSkillInterval": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "realmID": "melvorD:Melvor",
-                    "value": -100
-                  }
-                ]
-              },
-              "percent": 95
             }
           ],
           "categories": [

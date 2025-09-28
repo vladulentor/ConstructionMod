@@ -20,8 +20,8 @@ class RielkConstructionMasteryElement extends HTMLElement {
     this.appendChild(this._content);
 
     const hasDLC = cloudManager?.hasTotHEntitlementAndIsEnabled ?? false;
-    const maxTiers = hasDLC ? 8 : 5;
-
+    const maxTiers = 5; // hasDLC ? 8 : 5;
+      // This'll be changed when the TotH tier will actually be added
     this._bars = [];
 
     // tier bars

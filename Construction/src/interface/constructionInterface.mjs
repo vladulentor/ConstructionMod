@@ -12,6 +12,7 @@ export class ConstructionInterface {
 
         const frag = new DocumentFragment();
         frag.append(getTemplateNode('rielk-construction-template'));
+        this.constructionMasteryBar = getElementFromFragment(frag, 'rielk-mastery', 'rielk-construction-mastery', true);
         this.constructionCategoryMenu = getElementFromFragment(frag, 'rielk-construction-category-menu', 'realmed-category-menu', true);
         this.constructionArtisanMenu = getElementFromFragment(frag, 'rielk-construction-artisan-menu', 'artisan-menu', true);
         const constructionCategoryContainer = getElementFromFragment(frag, 'rielk-construction-category-container', 'div', true);
@@ -100,7 +101,7 @@ export class ConstructionInterface {
 
 
     }
-        renderMasteryBar() {
+    renderMasteryBar() {
         if (!this.renderQueue.masteryBar) return;
         this.constructionMasteryBar.initMasteryBar(this.construction);
         this.renderQueue.masteryBar = false;

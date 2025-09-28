@@ -1,6 +1,7 @@
 const { loadModule } = mod.getContext(import.meta);
 
 const { ConstructionHouseMenu } = await loadModule('src/interface/constructionHouseMenu.mjs');
+
 const { getRielkLangString } = await loadModule('src/language/translationManager.mjs');
 
 export class ConstructionInterface {
@@ -12,8 +13,11 @@ export class ConstructionInterface {
 
         const frag = new DocumentFragment();
         frag.append(getTemplateNode('rielk-construction-template'));
+        const constructionTemplate = getTemplateNode('rielk-construction-template');
+        this.constructionMasteryBar = getElementFromFragment(frag, 'rielk-mastery', 'rielk-construction-mastery', true);
         this.constructionCategoryMenu = getElementFromFragment(frag, 'rielk-construction-category-menu', 'realmed-category-menu', true);
         this.constructionArtisanMenu = getElementFromFragment(frag, 'rielk-construction-artisan-menu', 'artisan-menu', true);
+
         const constructionCategoryContainer = getElementFromFragment(frag, 'rielk-construction-category-container', 'div', true);
         this.constructionHouseElement = getElementFromFragment(frag, 'rielk-construction-house-element', 'div');
         this.constructionArtisanElement = getElementFromFragment(frag, 'rielk-construction-artisan-element', 'div');
@@ -21,12 +25,16 @@ export class ConstructionInterface {
 
         this.constructionCategoryMenu.addOptions(construction.categories.allObjects, getRielkLangString('MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY'), this._createSwitchConstructionCategory());
         this.constructionArtisanMenu.init(construction);
-        
+        ['mastery-xp-icon', 'mastery-pool-icon'].forEach(tag => {
+            let el = this.constructionArtisanMenu.querySelector(tag);
+            if (el) el.style.display = 'none'; // we hide it with post-processing since otherwise we'd need our own productionmenu like the one altmagic uses
+        });
+
         construction.categories.forEach((category) => {
             if (category.type !== 'Artisan')
                 return;
             const recipes = construction.actions.filter((r) => r.category === category);
-            recipes.sort(BasicSkillRecipe.sortByLevels);
+            recipes.sort(BasicSkillRecipe.sortByLevels); //TODO change the sortings
             const tab = createElement('recipe-selection-tab', {
                 className: 'col-12 col-md-8 d-none',
                 attributes: [['data-option-tag-name', 'rielk-construction-recipe-option']],
@@ -36,11 +44,14 @@ export class ConstructionInterface {
             this.constructionSelectionTabs.set(category, tab);
         });
         this.constructionHouseMenu = new ConstructionHouseMenu(this.constructionHouseElement, construction);
+        const modalFrag = new DocumentFragment();
+        modalFrag.append(getTemplateNode('tier-mastery-menu'));
+        document.getElementById('main-container').appendChild(modalFrag);
     }
 
     switchConstructionCategory(category) {
         return this._createSwitchConstructionCategory(this)(category);
-    } 
+    }
     _createSwitchConstructionCategory() {
         const ui = this;
         return (category) => {
@@ -69,6 +80,23 @@ export class ConstructionInterface {
         this.renderProgressBar();
         this.renderFixtureUnlock();
         this.renderRoomRealmVisibility();
+        this.renderMasteryBar();
+        this.renderMasteryBonusElements();
+    }
+
+    renderMasteryBonusElements() {
+        if (!this.renderQueue.masteryBonusElements) return;
+        this.renderQueue.masteryBonusElements = false;
+        const frag = new DocumentFragment();
+        frag.append(getTemplateNode('tier-mastery-menu'));
+        document.getElementById('main-container').append(...frag.children);
+        const container = document.getElementById('pips-container');
+        for (const [key, tierData] of this.construction.tierMasteries.registeredObjects) {
+            const pip = container.querySelector(`#tier-${tierData.tier}`);
+            pip.setBonus(tierData);  // this was so hard to get right
+        }
+
+
     }
 
     renderFixtureUnlock() {
@@ -129,6 +157,12 @@ export class ConstructionInterface {
         }
         this.renderQueue.progressBar = false;
     }
+    renderMasteryBar() {
+        if (!this.renderQueue.masteryBar) return;
+        this.constructionMasteryBar.initMasteryBar(this.construction);
+        this.renderQueue.masteryBar = false;
+
+    }
     renderVisibleRooms() {
         this.construction.rooms.forEach((room) => {
             if (this.construction.hiddenRooms.has(room)) {
@@ -147,14 +181,14 @@ export class ConstructionInterface {
             construction.hiddenRooms.add(room);
             this.hideRoomPanel(room);
         }
-    }    
+    }
     selectFixture(fixture, room, construction) {
         this.constructionHouseMenu.selectFixture(fixture, room, construction)
     }
-    showFixtureUnlocks(room, fixture, construction){
+    showFixtureUnlocks(room, fixture, construction) {
         this.constructionHouseMenu.showFixtureUnlocks(room, fixture, construction);
     }
-    hideFixtureUnlocks(room, fixture, construction){
+    hideFixtureUnlocks(room, fixture, construction) {
         this.constructionHouseMenu.hideFixtureUnlocks(room, fixture, construction);
     }
     onFixturePanelSelection(fixture, room, construction) {

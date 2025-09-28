@@ -10,8 +10,7 @@ export const language = {
     'MENU_TEXT_SHOW_GO_BACK': '回去',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': '查看所有活动修改器',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': '所有主动构造修饰符',
-    'MENU_TEXT_REMAINING': '剩余费用',
-    
+
     'SHOP_NAME_Construction_Skillcape': '建筑技能角',
 
     'PET_NAME_ChuckTheBeaver': '查克海狸',

@@ -10,7 +10,6 @@ export const language = {
     'MENU_TEXT_SHOW_GO_BACK': 'Geh zurück',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'Alle aktiven Modifikatoren anzeigen',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'Alle aktiven Konstruktionsmodifikatoren',
-    'MENU_TEXT_REMAINING': 'Verbleibende Kosten',  
 
     'SHOP_NAME_Construction_Skillcape': 'Umhang der Konstruktion',
 

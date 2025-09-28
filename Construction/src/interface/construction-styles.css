@@ -2,12 +2,12 @@ body.darkMode .bg-rielk-construction,.bg-rielk-construction {
     background-color: #e7874f!important
 }
 
-.bg-construction-50 {
+.bg-rielk-construction-50 {
     background-color: #e7874f3d!important
 }
 
 .border-rielk-construction {
-    border-color: #e7874f!important;
+    border-color: #e7874f!important
 }
 
 
@@ -15,3 +15,24 @@ body.darkMode.superDark .bg-rielk-construction
 {
     background-color: #000!important
 }
+
+
+.bg-construction-50 {
+    background-color: #5C3700;
+}
+
+.mastery.filled {
+  background-color: #ca7300;
+    height: 4px;               
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.mastery.empty {
+  background-color: #3e4856; 
+  height: 4px;              
+  border-radius: 2px;
+      flex: none;      
+    width: 100%; 
+}
+

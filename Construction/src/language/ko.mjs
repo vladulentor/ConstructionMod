@@ -10,8 +10,7 @@ export const language = {
     'MENU_TEXT_SHOW_GO_BACK': '반품',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': '모든 활성 수정자 보기',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': '모든 활성 건설 수정자',
-    'MENU_TEXT_REMAINING': '남은 비용',
-    
+
     'SHOP_NAME_Construction_Skillcape': '건설 스킬케이프',
 
     'PET_NAME_ChuckTheBeaver': '척 더 비버',

@@ -1,42 +1,1007 @@
 {
   "$schema": "https://melvoridle.com/assets/schema/gameData.json",
   "namespace": "rielkConstruction",
-  "modifications": {
-    "gamemodes": [
+  "data": {
+    "skillData": [
       {
-        "id": "melvorAoD:AncientRelics",
-        "levelCapIncreases": {
-          "add": ["melvorAoD:Pre99Dungeons", "melvorAoD:ImpendingDarknessSet100"]
-        },
-        "startingSkills": {
-          "add": ["rielkConstruction:Construction"]
-        }
-      }
-    ],
-    "skillLevelCapIncreases": [
-      {
-        "id": "melvorAoD:Pre99Dungeons",
-        "fixedIncreases": {
-          "add": [
+        "skillID": "melvorAoD:Cartography",
+        "data": {
+          "refinementSlotCosts": [
             {
-              "skillID": "rielkConstruction:Construction",
-              "increase": 5,
-              "maximum": 99
+              "currencies": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 10000000
+                },
+                       {
+                  "id": "melvorD:GP",
+                  "quantity": 15000000
+                }
+              ]
             }
+          ],
+          "refinementModifiers": [
+            [
+              {
+                "key": "increasedDigSiteMapCharges",
+                "value": 1500
+              },
+              {
+                "key": "decreasedSkillIntervalPercent",
+                "skillID": "melvorAoD:Archaeology",
+                "value": 5
+              }
+            ],
+            [
+              {
+                "key": "increasedDigSiteMapCharges",
+                "value": 3000
+              },
+              {
+                "key": "decreasedSkillIntervalPercent",
+                "skillID": "melvorAoD:Archaeology",
+                "value": 10
+              }
+            ]
           ]
         }
       },
       {
-        "id": "melvorAoD:ImpendingDarknessSet100",
-        "setIncreases": {
-          "add": [
+        "skillID": "rielkConstruction:Construction",
+        "data": {
+          "rooms": [
             {
-              "skillID": "rielkConstruction:Construction",
-              "value": 100
+              "id": "Archive",
+              "name": "Archive",
+              "fixtures": [
+                "rielkConstruction:Globe",
+                "rielkConstruction:Vault",
+                "rielkConstruction:Barrier_Orb"
+              ]
+            }
+          ],
+          "fixtures": [
+            {
+              "id": "Globe",
+              "name": "Globe",
+              "media": "assets/fixtures/globe.png",
+              "recipes": [
+                "rielkConstruction:Globe1",
+                "rielkConstruction:Globe2",
+                "rielkConstruction:Globe3",
+                "rielkConstruction:Globe4",
+                "rielkConstruction:Globe5",
+                "rielkConstruction:Globe6",
+                "rielkConstruction:Globe7",
+                "rielkConstruction:Globe8"
+              ]
+            },
+            {
+              "id": "Vault",
+              "name": "Vault",
+              "media": "assets/fixtures/vault.png",
+              "recipes": [
+                "rielkConstruction:Vault1",
+                "rielkConstruction:Vault2",
+                "rielkConstruction:Vault3",
+                "rielkConstruction:Vault4",
+                "rielkConstruction:Vault5",
+                "rielkConstruction:Vault6",
+                "rielkConstruction:Vault7",
+                "rielkConstruction:Vault8"
+              ]
+            },
+            {
+              "id": "Barrier_Orb",
+              "name": "Barrier_Orb",
+              "media": "assets/fixtures/barrier_orb.png",
+              "recipes": [
+                "rielkConstruction:Barrier_Orb1",
+                "rielkConstruction:Barrier_Orb2",
+                "rielkConstruction:Barrier_Orb3",
+                "rielkConstruction:Barrier_Orb4",
+                "rielkConstruction:Barrier_Orb5",
+                "rielkConstruction:Barrier_Orb6",
+                "rielkConstruction:Barrier_Orb7",
+                "rielkConstruction:Barrier_Orb8"
+              ]
+            }
+          ],
+          "fixtureRecipes": [
+            {
+              "id": "Globe1",
+              "level": 5,
+              "baseExperience": 5,
+              "baseActionCost": 1,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Paper",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "cartographySightRange": [
+                  {
+                    "value": 1
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorAoD:Cartography"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Globe2",
+              "level": 14,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Garum_Herb",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Sourweed_Herb",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "mapUpgradeActions": [
+                  {
+                    "value": 1
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Globe3",
+              "level": 32,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Garum_Herb",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Sourweed_Herb",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "initialMapArtefactValues": [
+                  {
+                    "value": 1
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Globe4",
+              "level": 64,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Garum_Herb",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Sourweed_Herb",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Globe5",
+              "level": 78,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Garum_Herb",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Sourweed_Herb",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "rielkConstruction:flatMapChargeBonus": 1000,
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Globe6",
+              "level": 78,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Garum_Herb",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Sourweed_Herb",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Globe7",
+              "level": 78,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Garum_Herb",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Sourweed_Herb",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Globe8",
+              "level": 78,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Garum_Herb",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Sourweed_Herb",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Vault1",
+              "level": 7,
+              "baseExperience": 10,
+              "baseActionCost": 150,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorAoD:Broken_Jug",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Museum_Token",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillXP": [
+                  {
+                    "value": 3,
+                    "skillID": "melvorAoD:Archaeology"
+                  }
+                ],
+                "sieveToolLevel": [
+                  {
+                    "value": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Vault2",
+              "level": 17,
+              "baseExperience": 20,
+              "baseActionCost": 75,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorAoD:Totem_Pole",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Museum_Token",
+                  "quantity": 4
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "melvorAoD:mapChargePreservationChance": [
+                  {
+                    "value": 7
+                  }
+                ],
+                "brushToolLevel": [
+                  {
+                    "value": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Vault3",
+              "level": 37,
+              "baseExperience": 30,
+              "baseActionCost": 75,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorAoD:Colourful_Vase",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Old_Wooden_Bowl",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Museum_Token",
+                  "quantity": 8
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "additionalPrimaryProductChance": [
+                  {
+                    "skillID": "melvorAoD:Archaeology",
+                    "value": 15
+                  }
+                ],
+                "shovelToolLevel": [
+                  {
+                    "value": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Vault4",
+              "level": 48,
+              "baseExperience": 200,
+              "baseActionCost": 15,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorAoD:Rock_Carving",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Museum_Token",
+                  "quantity": 50
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "rielkConstruction:tierIntervalBonus": 350,
+                "trowelToolLevel": [
+                  {
+                    "value": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Vault5",
+              "level": 64,
+              "baseExperience": 250,
+              "baseActionCost": 15,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorAoD:Broken_Odd_Weapon",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Large_Fossil",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Museum_Token",
+                  "quantity": 75
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "melvorAoD:digSiteMapSlots": [
+                  {
+                    "value": 1
+                  }
+                ],
+                "brushToolLevel": [
+                  {
+                    "value": 3
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Vault6",
+              "level": 75,
+              "baseExperience": 500,
+              "baseActionCost": 10,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorAoD:Broken_Golden_Harp",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Museum_Token",
+                  "quantity": 150
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "masteryXP": [
+                  {
+                    "value": 7,
+                    "skillID": "melvorAoD:Archaeology"
+                  }
+                ],
+                "sieveToolLevel": [
+                  {
+                    "value": 3
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Vault7",
+              "level": 1,
+              "baseExperience": 700,
+              "baseActionCost": 10,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorAoD:Golbin_Portrait",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Old_Music_Manuscript",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Museum_Token",
+                  "quantity": 200
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "shovelToolLevel": [
+                  {
+                    "value": 3
+                  }
+                ],
+                "trowelToolLevel": [
+                  {
+                    "value": 3
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Vault8",
+              "level": 1,
+              "baseExperience": 10000,
+              "baseActionCost": 1,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorAoD:Lockbox_Key",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Old_Tower_Bell",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Diamond_Speck",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Ancient_Stone_Tablet",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Cursed_Golden_Disc",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Amphora",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Ancient_Fossil",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Statue_of_Prosperity",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorAoD:Museum_Token",
+                  "quantity": 5000
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "archaeologyVeryRareMapPreservation": [
+                  {
+                    "value": 1
+                  }
+                ],
+                "rielkConstruction:museumTokenDoubled": 1,
+                "rielkConstruction:digSiteMapNewTier": 1
+              }
+            },
+            {
+              "id": "Barrier_Orb1",
+              "level": 17,
+              "baseExperience": 5,
+              "baseActionCost": 1,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Garum_Herb",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Sourweed_Herb",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "barrierSummonDamage": [
+                  {
+                    "value": 1
+                  }
+                ],
+                "rielkConstruction:digSiteMapNewTier": 1,
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Barrier_Orb2",
+              "level": 20,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Garum_Herb",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Sourweed_Herb",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Barrier_Orb3",
+              "level": 20,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Garum_Herb",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Sourweed_Herb",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Barrier_Orb4",
+              "level": 20,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Garum_Herb",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Sourweed_Herb",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Barrier_Orb5",
+              "level": 20,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Garum_Herb",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Sourweed_Herb",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Barrier_Orb6",
+              "level": 17,
+              "baseExperience": 50,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Garum_Herb",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Sourweed_Herb",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Barrier_Orb7",
+              "level": 17,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Garum_Herb",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Sourweed_Herb",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Barrier_Orb8",
+              "level": 17,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Garum_Herb",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Sourweed_Herb",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
             }
           ]
         }
       }
-    ]
+    ],
+    "modifiers": [
+      {
+        "id": "flatMapChargeBonus",
+        "allowNegative": false,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "+${value} excavation actions gained per map tier in Cartography",
+                "lang": "MODIFIER_DATA_flatMapChargeBonus",
+                "above": 0,
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "museumTokenDoubled",
+        "allowNegative": false,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Doubles museum tokens gained from donating artefacts in Archaeology.",
+                "lang": "MODIFIER_DATA_museumTokenDoubled",
+                "above": 0,
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tierIntervalBonus",
+        "modifyValue": "value/1000",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Archaeology Excavation Interval is ${value}s shorter per map Tier above Poor",
+                "lang": "MODIFIER_DATA_tierIntervalBonus",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "digSiteMapNewTier",
+        "allowNegative": false,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Unlocks a new Dig Site Map Tier in Cartography",
+                "lang": "MODIFIER_DATA_digSiteMapNewTier",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "modifications": {
+      "gamemodes": [
+        {
+          "id": "melvorAoD:AncientRelics",
+          "levelCapIncreases": {
+            "add": [
+              "melvorAoD:Pre99Dungeons",
+              "melvorAoD:ImpendingDarknessSet100"
+            ]
+          },
+          "startingSkills": {
+            "add": [
+              "rielkConstruction:Construction"
+            ]
+          }
+        }
+      ],
+      "skillLevelCapIncreases": [
+        {
+          "id": "melvorAoD:Pre99Dungeons",
+          "fixedIncreases": {
+            "add": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "increase": 5,
+                "maximum": 99
+              }
+            ]
+          }
+        },
+        {
+          "id": "melvorAoD:ImpendingDarknessSet100",
+          "setIncreases": {
+            "add": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": 100
+              }
+            ]
+          }
+        }
+      ]
+    }
   }
 }

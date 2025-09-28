@@ -1,0 +1,2481 @@
+{
+  "$schema": "https://melvoridle.com/assets/schema/gameData.json",
+  "namespace": "rielkConstruction",
+  "dependentData": [
+    {
+      "namespace": "melvorTotH",
+      "data": {
+        "skillLevelCapIncreases": [
+          {
+            "id": "Post99Dungeons",
+            "levelType": "Standard",
+            "requirementSets": [
+              {
+                "id": 0,
+                "requirements": [
+                  {
+                    "type": "DungeonCompletion",
+                    "dungeonID": "melvorTotH:Ancient_Sanctuary",
+                    "count": 1
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "requirements": [
+                  {
+                    "type": "DungeonCompletion",
+                    "dungeonID": "melvorTotH:Underground_Lava_Lake",
+                    "count": 1
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "requirements": [
+                  {
+                    "type": "DungeonCompletion",
+                    "dungeonID": "melvorTotH:Lightning_Region",
+                    "count": 1
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "requirements": [
+                  {
+                    "type": "DungeonCompletion",
+                    "dungeonID": "melvorTotH:Lair_of_the_Spider_Queen",
+                    "count": 1
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "requirements": [
+                  {
+                    "type": "DungeonCompletion",
+                    "dungeonID": "melvorTotH:Cursed_Forest",
+                    "count": 1
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "requirements": [
+                  {
+                    "type": "DungeonCompletion",
+                    "dungeonID": "melvorTotH:Necromancers_Palace",
+                    "count": 1
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "requirements": [
+                  {
+                    "type": "DungeonCompletion",
+                    "dungeonID": "melvorTotH:Throne_of_the_Herald",
+                    "count": 1
+                  }
+                ]
+              }
+            ],
+            "fixedIncreases": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "increase": 3,
+                "maximum": 120
+              }
+            ]
+          },
+          {
+            "id": "ThroneOfTheHeraldSet120",
+            "levelType": "Standard",
+            "requirementSets": [
+              {
+                "id": 0,
+                "requirements": [
+                  {
+                    "type": "DungeonCompletion",
+                    "dungeonID": "melvorTotH:Throne_of_the_Herald",
+                    "count": 1
+                  }
+                ]
+              }
+            ],
+            "setIncreases": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": 120
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "data": {
+    "skillData": [
+      {
+        "skillID": "rielkConstruction:Construction",
+        "data": {
+          "tierMasteries":[
+					{	
+						"id":"6",
+						"name":"6",
+						"tier":6,
+						"currentProgress":0,
+						"completed":false,
+						"itemAwards":[
+							{"id":"melvorD:Normal_Logs", "quantity":1}
+						],
+						"modifiers": {
+							"flatSkillInterval": [
+								{
+									"skillID": "rielkConstruction:Construction",
+									"realmID": "melvorD:Melvor",
+									"value": -150
+								}
+							]
+						}
+					},
+					{	
+						"id":"7",
+						"name":"7",
+						"tier":7,
+						"currentProgress":0,
+						"completed":false,
+						"itemAwards":[
+							{"id":"melvorD:Normal_Logs", "quantity":1}
+						],
+						"modifiers": {
+							"flatSkillInterval": [
+								{
+									"skillID": "rielkConstruction:Construction",
+									"realmID": "melvorD:Melvor",
+									"value": -150
+								}
+							]
+						}
+					},
+						{	
+						"id":"8",
+						"name":"8",
+						"tier":8,
+						"currentProgress":0,
+						"completed":false,
+						"itemAwards":[
+							{"id":"melvorD:Normal_Logs", "quantity":1}
+						],
+						"modifiers": {
+							"flatSkillInterval": [
+								{
+									"skillID": "rielkConstruction:Construction",
+									"realmID": "melvorD:Melvor",
+									"value": -150
+								}
+							]
+						}
+					}
+        ],
+          "fixtures": [
+            {
+              "id": "Apparatus",
+              "recipes": [
+                "rielkConstruction:Apparatus6",
+                "rielkConstruction:Apparatus7",
+                "rielkConstruction:Apparatus8"
+              ]
+            },
+            {
+              "id": "Archery_Range",
+              "recipes": [
+                "rielkConstruction:Archery_Range6",
+                "rielkConstruction:Archery_Range7",
+                "rielkConstruction:Archery_Range8"
+              ]
+            },
+            {
+              "id": "Black_Market",
+              "recipes": [
+                "rielkConstruction:Black_Market6",
+                "rielkConstruction:Black_Market7",
+                "rielkConstruction:Black_Market8"
+              ]
+            },
+            {
+              "id": "Desk",
+              "recipes": [
+                "rielkConstruction:Desk6",
+                "rielkConstruction:Desk7",
+                "rielkConstruction:Desk8"
+              ]
+            },
+            {
+              "id": "Dragon_Statue",
+              "recipes": [
+                "rielkConstruction:Dragon_Statue6",
+                "rielkConstruction:Dragon_Statue7",
+                "rielkConstruction:Dragon_Statue8"
+              ]
+            },
+            {
+              "id": "Fire_Pit",
+              "recipes": [
+                "rielkConstruction:Fire_Pit6",
+                "rielkConstruction:Fire_Pit7",
+                "rielkConstruction:Fire_Pit8"
+              ]
+            },
+            {
+              "id": "Flower_Pots",
+              "recipes": [
+              ]
+            },
+            {
+              "id": "Forge",
+              "recipes": [
+                "rielkConstruction:Forge6",
+                "rielkConstruction:Forge7",
+                "rielkConstruction:Forge8"
+              ]
+            },
+            {
+              "id": "Fridge",
+              "recipes": [
+                "rielkConstruction:Fridge6",
+                "rielkConstruction:Fridge7",
+                "rielkConstruction:Fridge8"
+              ]
+            },
+            {
+              "id": "Jungle_Gym",
+              "recipes": [
+                "rielkConstruction:Jungle_Gym6",
+                "rielkConstruction:Jungle_Gym7",
+                "rielkConstruction:Jungle_Gym8"
+              ]
+            },
+            {
+              "id": "Lake",
+              "recipes": [
+                "rielkConstruction:Lake6",
+                "rielkConstruction:Lake7",
+                "rielkConstruction:Lake8"
+              ]
+            },
+            {
+              "id": "Mines",
+              "recipes": [
+                "rielkConstruction:Mines6",
+                "rielkConstruction:Mines7",
+                "rielkConstruction:Mines8"
+              ]
+            },
+            {
+              "id": "Orchard",
+              "recipes": [
+                "rielkConstruction:Orchard6",
+                "rielkConstruction:Orchard7",
+                "rielkConstruction:Orchard8"
+              ]
+            },
+            {
+              "id": "Oven",
+              "recipes": [
+                "rielkConstruction:Oven6",
+                "rielkConstruction:Oven7",
+                "rielkConstruction:Oven8"
+              ]
+            },
+            {
+              "id": "Prayer_Altar",
+              "recipes": [
+                "rielkConstruction:Prayer_Altar6",
+                "rielkConstruction:Prayer_Altar7",
+                "rielkConstruction:Prayer_Altar8"
+              ]
+            },
+            {
+              "id": "Rune_Altar",
+              "recipes": [
+                "rielkConstruction:Rune_Altar6",
+                "rielkConstruction:Rune_Altar7",
+                "rielkConstruction:Rune_Altar8"
+              ]
+            },
+            {
+              "id": "Spell_Library",
+              "recipes": [
+                "rielkConstruction:Spell_Library6",
+                "rielkConstruction:Spell_Library7",
+                "rielkConstruction:Spell_Library8"
+              ]
+            },
+            {
+              "id": "Storage_Chest",
+              "recipes": [
+                "rielkConstruction:Storage_Chest6",
+                "rielkConstruction:Storage_Chest7",
+                "rielkConstruction:Storage_Chest8"
+              ]
+            },
+            {
+              "id": "Telescope",
+              "recipes": [
+                "rielkConstruction:Telescope6",
+                "rielkConstruction:Telescope7",
+                "rielkConstruction:Telescope8"
+              ]
+            },
+            {
+              "id": "Tool_Rack",
+              "recipes": [
+                "rielkConstruction:Tool_Rack6",
+                "rielkConstruction:Tool_Rack7",
+                "rielkConstruction:Tool_Rack8"
+              ]
+            },
+            {
+              "id": "Training_Dummy",
+              "recipes": [
+                "rielkConstruction:Training_Dummy6",
+                "rielkConstruction:Training_Dummy7",
+                "rielkConstruction:Training_Dummy8"
+              ]
+            },
+            {
+              "id": "Trapping_Hut",
+              "recipes": [
+                "rielkConstruction:Trapping_Hut6",
+                "rielkConstruction:Trapping_Hut7",
+                "rielkConstruction:Trapping_Hut8"
+              ]
+            },
+            {
+              "id": "Wardrobe",
+              "recipes": [
+                "rielkConstruction:Wardrobe6",
+                "rielkConstruction:Wardrobe7",
+                "rielkConstruction:Wardrobe8"
+              ]
+            },
+            {
+              "id": "Worktable",
+              "recipes": [
+                "rielkConstruction:Worktable6",
+                "rielkConstruction:Worktable7",
+                "rielkConstruction:Worktable8"
+              ]
+            }
+          ],
+          "fixtureRecipes": [
+            {
+              "id": "Apparatus6",
+              "level": 20,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Garum_Herb",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Sourweed_Herb",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Apparatus7",
+              "level": 37,
+              "baseExperience": 10,
+              "baseActionCost": 400,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Mantalyme_Herb",
+                  "quantity": 2
+                },
+                {
+                  "id": "melvorD:Lemontyle_Herb",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ],
+                "masteryXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Apparatus8",
+              "level": 57,
+              "baseExperience": 20,
+              "baseActionCost": 1200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Oxilyme_Herb",
+                  "quantity": 2
+                },
+                {
+                  "id": "melvorF:Poraxx_Herb",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ],
+                "potionChargePreservationChance": [
+                  {
+                    "value": 5
+                  }
+                ]
+              }
+            },
+           
+            {
+              "id": "Archery_Range6",
+              "level": 3,
+              "baseExperience": 5,
+              "baseActionCost": 50,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorF:Leather_Body",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "flatHiddenSkillLevel": [
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Ranged"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Ranged"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Archery_Range7",
+              "level": 23,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Green_Dhide_Body",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "flatHiddenSkillLevel": [
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Ranged"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Ranged"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Archery_Range8",
+              "level": 41,
+              "baseExperience": 10,
+              "baseActionCost": 800,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 2
+                },
+                {
+                  "id": "melvorD:Blue_Dhide_Body",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "flatHiddenSkillLevel": [
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Ranged"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 3,
+                    "skillID": "melvorD:Ranged"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Black_Market6",
+              "level": 15,
+              "baseExperience": 5,
+              "baseActionCost": 100,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 10
+                }
+              ],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -1,
+                    "skillID": "melvorD:Thieving"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Thieving"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Black_Market7",
+              "level": 29,
+              "baseExperience": 10,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 25
+                }
+              ],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -1,
+                    "skillID": "melvorD:Thieving"
+                  }
+                ],
+                "skillItemDoublingChance": [
+                  {
+                    "value": 4,
+                    "skillID": "melvorD:Thieving"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Black_Market8",
+              "level": 46,
+              "baseExperience": 10,
+              "baseActionCost": 800,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 2
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 50
+                }
+              ],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Thieving"
+                  }
+                ],
+                "masteryXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Thieving"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Desk6",
+              "level": 9,
+              "baseExperience": 5,
+              "baseActionCost": 50,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "nonCombatSkillXP": 1,
+                "globalItemDoublingChance": 1
+              }
+            },
+            {
+              "id": "Desk7",
+              "level": 25,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "nonCombatSkillXP": 1,
+                "globalItemDoublingChance": 1
+              }
+            },
+            {
+              "id": "Desk8",
+              "level": 56,
+              "baseExperience": 20,
+              "baseActionCost": 1200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 2
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "nonCombatSkillXP": 2,
+                "globalItemDoublingChance": 2
+              }
+            },
+            {
+              "id": "Dragon_Statue6",
+              "level": 25,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Dragonite_Bar",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 50
+                }
+              ],
+              "modifiers": {
+                "flatMaxHitpoints": 2,
+                "currencyGain": [
+                  {
+                    "currencyID": "melvorD:GP",
+                    "value": 5
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Dragon_Statue7",
+              "level": 45,
+              "baseExperience": 10,
+              "baseActionCost": 800,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Dragonite_Bar",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 100
+                }
+              ],
+              "modifiers": {
+                "lifesteal": 5,
+                "currencyGain": [
+                  {
+                    "currencyID": "melvorD:GP",
+                    "value": 10
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Dragon_Statue8",
+              "level": 60,
+              "baseExperience": 25,
+              "baseActionCost": 1600,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Dragonite_Bar",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 100
+                }
+              ],
+              "modifiers": {
+                "combatLootDoublingChance": 8,
+                "currencyGain": [
+                  {
+                    "currencyID": "melvorD:GP",
+                    "value": 15
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Fire_Pit6",
+              "level": 2,
+              "baseExperience": 5,
+              "baseActionCost": 50,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Normal_Logs",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Oak_Logs",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Cooking"
+                  },
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Firemaking"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Fire_Pit7",
+              "level": 35,
+              "baseExperience": 15,
+              "baseActionCost": 1200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Willow_Logs",
+                  "quantity": 2
+                },
+                {
+                  "id": "melvorD:Teak_Logs",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "masteryXP": [
+                  {
+                    "value": 3,
+                    "skillID": "melvorD:Cooking"
+                  },
+                  {
+                    "value": 3,
+                    "skillID": "melvorD:Firemaking"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Fire_Pit8",
+              "level": 56,
+              "baseExperience": 20,
+              "baseActionCost": 1200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Maple_Logs",
+                  "quantity": 2
+                },
+                {
+                  "id": "melvorD:Mahogany_Logs",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Cooking"
+                  },
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Firemaking"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Forge6",
+              "level": 13,
+              "baseExperience": 5,
+              "baseActionCost": 100,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Bronze_Bar",
+                  "quantity": 2
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillXP": [
+                  {
+                    "value": 8,
+                    "skillID": "rielkConstruction:Construction"
+                  },
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Smithing"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Forge7",
+              "level": 32,
+              "baseExperience": 10,
+              "baseActionCost": 400,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Iron_Bar",
+                  "quantity": 3
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillPreservationChance": [
+                  {
+                    "value": 8,
+                    "skillID": "rielkConstruction:Construction"
+                  },
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Smithing"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Forge8",
+              "level": 53,
+              "baseExperience": 15,
+              "baseActionCost": 1200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Steel_Bar",
+                  "quantity": 3
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillItemDoublingChance": [
+                  {
+                    "value": 8,
+                    "skillID": "rielkConstruction:Construction"
+                  },
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Smithing"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Fridge6",
+              "level": 10,
+              "baseExperience": 5,
+              "baseActionCost": 100,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Air_Rune",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Bronze_Bar",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "foodHealingValue": 1,
+                "autoEatThreshold": 1
+              }
+            },
+            {
+              "id": "Fridge7",
+              "level": 34,
+              "baseExperience": 10,
+              "baseActionCost": 400,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Air_Rune",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Iron_Bar",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "foodHealingValue": 2
+              }
+            },
+            {
+              "id": "Fridge8",
+              "level": 55,
+              "baseExperience": 15,
+              "baseActionCost": 1200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Mist_Rune",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Steel_Bar",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "foodHealingValue": 3,
+                "autoEatThreshold": 1
+              }
+            },
+            {
+              "id": "Jungle_Gym6",
+              "level": 18,
+              "baseExperience": 5,
+              "baseActionCost": 100,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Bronze_Bar",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillXP": [
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Agility"
+                  }
+                ],
+                "masteryXP": [
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Agility"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Jungle_Gym7",
+              "level": 21,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Iron_Bar",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "agilityObstacleCost": [
+                  {
+                    "realmID": "melvorD:Melvor",
+                    "value": -4
+                  }
+                ],
+                "masteryXP": [
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Agility"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Jungle_Gym8",
+              "level": 51,
+              "baseExperience": 15,
+              "baseActionCost": 1200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 2
+                },
+                {
+                  "id": "melvorD:Steel_Bar",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -5,
+                    "skillID": "melvorD:Agility"
+                  }
+                ],
+                "masteryXP": [
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Agility"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Lake6",
+              "level": 15,
+              "baseExperience": 5,
+              "baseActionCost": 100,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Water_Rune",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Raw_Shrimp",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillItemDoublingChance": [
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Fishing"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 3,
+                    "skillID": "melvorD:Fishing"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Lake7",
+              "level": 38,
+              "baseExperience": 10,
+              "baseActionCost": 400,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Water_Rune",
+                  "quantity": 2
+                },
+                {
+                  "id": "melvorD:Raw_Salmon",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillItemDoublingChance": [
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Fishing"
+                  }
+                ],
+                "masteryXP": [
+                  {
+                    "value": 3,
+                    "skillID": "melvorD:Fishing"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Lake8",
+              "level": 47,
+              "baseExperience": 10,
+              "baseActionCost": 800,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Water_Rune",
+                  "quantity": 2
+                },
+                {
+                  "id": "melvorD:Raw_Lobster",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillItemDoublingChance": [
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Fishing"
+                  }
+                ],
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Fishing"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Mines6",
+              "level": 5,
+              "baseExperience": 5,
+              "baseActionCost": 50,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Bronze_Bar",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillItemDoublingChance": [
+                  {
+                    "value": 3,
+                    "skillID": "melvorD:Mining"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 3,
+                    "skillID": "melvorD:Mining"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Mines7",
+              "level": 36,
+              "baseExperience": 10,
+              "baseActionCost": 400,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 2
+                },
+                {
+                  "id": "melvorD:Iron_Bar",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillItemDoublingChance": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Mining"
+                  }
+                ],
+                "skillInterval": [
+                  {
+                    "value": -5,
+                    "skillID": "melvorD:Mining"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Mines8",
+              "level": 52,
+              "baseExperience": 15,
+              "baseActionCost": 1200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 2
+                },
+                {
+                  "id": "melvorD:Steel_Bar",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "noMiningNodeDamageChance": [
+                  {
+                    "categoryID": "melvorD:Essence",
+                    "value": 5
+                  },
+                  {
+                    "categoryID": "melvorD:Ore",
+                    "value": 5
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Orchard6",
+              "level": 7,
+              "baseExperience": 5,
+              "baseActionCost": 50,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Oak_Tree_Seed",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Compost",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -3,
+                    "skillID": "melvorD:Woodcutting"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Woodcutting"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Orchard7",
+              "level": 30,
+              "baseExperience": 10,
+              "baseActionCost": 400,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Willow_Tree_Seed",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Compost",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "basePrimaryProductQuantity": [
+                  {
+                    "value": 3,
+                    "skillID": "melvorD:Farming",
+                    "categoryID": "melvorD:Tree"
+                  }
+                ],
+                "skillItemDoublingChance": [
+                  {
+                    "value": 8,
+                    "skillID": "melvorD:Woodcutting"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Orchard8",
+              "level": 40,
+              "baseExperience": 10,
+              "baseActionCost": 800,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Maple_Tree_Seed",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Weird_Gloop",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -5,
+                    "skillID": "melvorD:Woodcutting"
+                  }
+                ],
+                "randomProductChance": [
+                  {
+                    "skillID": "melvorD:Woodcutting",
+                    "itemID": "melvorD:Bird_Nest",
+                    "value": 5
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Oven6",
+              "level": 19,
+              "baseExperience": 5,
+              "baseActionCost": 100,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Bronze_Bar",
+                  "quantity": 2
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "perfectCookChance": 1,
+                "successfulCookChance": 1
+              }
+            },
+            {
+              "id": "Oven7",
+              "level": 27,
+              "baseExperience": 10,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Iron_Bar",
+                  "quantity": 3
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "perfectCookChance": 2,
+                "successfulCookChance": 1
+              }
+            },
+            {
+              "id": "Oven8",
+              "level": 35,
+              "baseExperience": 10,
+              "baseActionCost": 400,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Steel_Bar",
+                  "quantity": 3
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "perfectCookChance": 2,
+                "successfulCookChance": 1
+              }
+            },
+            {
+              "id": "Prayer_Altar6",
+              "level": 8,
+              "baseExperience": 5,
+              "baseActionCost": 50,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Bones",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Silver_Bar",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Prayer"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Prayer_Altar7",
+              "level": 32,
+              "baseExperience": 10,
+              "baseActionCost": 400,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Big_Bones",
+                  "quantity": 2
+                },
+                {
+                  "id": "melvorD:Silver_Bar",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "flatHPRegen": 5
+              }
+            },
+            {
+              "id": "Prayer_Altar8",
+              "level": 54,
+              "baseExperience": 15,
+              "baseActionCost": 1200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorF:Holy_Dust",
+                  "quantity": 2
+                },
+                {
+                  "id": "melvorD:Gold_Bar",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "prayerPointPreservationChancePerPoint": 5
+              }
+            },
+            {
+              "id": "Rune_Altar6",
+              "level": 17,
+              "baseExperience": 5,
+              "baseActionCost": 100,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Rune_Essence",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Mind_Rune",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Runecrafting"
+                  }
+                ],
+                "masteryXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Runecrafting"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Rune_Altar7",
+              "level": 33,
+              "baseExperience": 10,
+              "baseActionCost": 400,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Rune_Essence",
+                  "quantity": 2
+                },
+                {
+                  "id": "melvorD:Body_Rune",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "elementalRuneChance": 2,
+                "elementalRuneQuantity": 2
+              }
+            },
+            {
+              "id": "Rune_Altar8",
+              "level": 49,
+              "baseExperience": 15,
+              "baseActionCost": 800,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Rune_Essence",
+                  "quantity": 2
+                },
+                {
+                  "id": "melvorF:Nature_Rune",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "elementalRuneChance": 3,
+                "elementalRuneQuantity": 2
+              }
+            },
+            {
+              "id": "Spell_Library6",
+              "level": 6,
+              "baseExperience": 5,
+              "baseActionCost": 50,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Mind_Rune",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 10
+                }
+              ],
+              "modifiers": {
+                "flatHiddenSkillLevel": [
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Magic"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Magic"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Spell_Library7",
+              "level": 26,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Body_Rune",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 25
+                }
+              ],
+              "modifiers": {
+                "flatHiddenSkillLevel": [
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Magic"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Magic"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Spell_Library8",
+              "level": 44,
+              "baseExperience": 10,
+              "baseActionCost": 800,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorF:Nature_Rune",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 50
+                }
+              ],
+              "modifiers": {
+                "flatHiddenSkillLevel": [
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Magic"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 3,
+                    "skillID": "melvorD:Magic"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Storage_Chest6",
+              "level": 1,
+              "baseExperience": 5,
+              "baseActionCost": 50,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "bankSpace": 5,
+                "skillPreservationChance": 1
+              }
+            },
+            {
+              "id": "Storage_Chest7",
+              "level": 17,
+              "baseExperience": 5,
+              "baseActionCost": 100,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "bankSpace": 10,
+                "skillPreservationChance": 1
+              }
+            },
+            {
+              "id": "Storage_Chest8",
+              "level": 42,
+              "baseExperience": 10,
+              "baseActionCost": 800,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 2
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "bankSpace": 20,
+                "skillPreservationChance": 2
+              }
+            },
+            {
+              "id": "Telescope6",
+              "level": 14,
+              "baseExperience": 5,
+              "baseActionCost": 100,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Bronze_Bar",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorF:Stardust",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillXP": [
+                  {
+                    "value": 4,
+                    "skillID": "melvorD:Astrology"
+                  }
+                ],
+                "masteryXP": [
+                  {
+                    "value": 4,
+                    "skillID": "melvorD:Astrology"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Telescope7",
+              "level": 24,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Iron_Bar",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorF:Stardust",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Astrology"
+                  }
+                ],
+                "masteryXP": [
+                  {
+                    "value": 4,
+                    "skillID": "melvorD:Astrology"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Telescope8",
+              "level": 47,
+              "baseExperience": 10,
+              "baseActionCost": 800,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Steel_Bar",
+                  "quantity": 2
+                },
+                {
+                  "id": "melvorF:Stardust",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "increasedChanceStardust": 2,
+                "increasedChanceGoldenStardust": 2.5
+              }
+            },
+            {
+              "id": "Tool_Rack6",
+              "level": 12,
+              "baseExperience": 5,
+              "baseActionCost": 100,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Bronze_Bar",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "flatSkillInterval": [
+                  {
+                    "value": -100,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ],
+                "skillInterval": [
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Fletching"
+                  },
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Smithing"
+                  },
+                  {
+                    "value": -2,
+                    "skillID": "melvorD:Crafting"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Tool_Rack7",
+              "level": 26,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Iron_Bar",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "flatSkillInterval": [
+                  {
+                    "value": -150,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ],
+                "skillInterval": [
+                  {
+                    "value": -3,
+                    "skillID": "melvorD:Fletching"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Tool_Rack8",
+              "level": 65,
+              "baseExperience": 30,
+              "baseActionCost": 1600,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 3
+                },
+                {
+                  "id": "melvorD:Steel_Bar",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "flatSkillInterval": [
+                  {
+                    "value": -250,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ],
+                "skillInterval": [
+                  {
+                    "value": -3,
+                    "skillID": "melvorD:Smithing"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Training_Dummy6",
+              "level": 3,
+              "baseExperience": 5,
+              "baseActionCost": 50,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Bronze_Helmet",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "flatHiddenSkillLevel": [
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Attack"
+                  },
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Strength"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Attack"
+                  },
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Strength"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Training_Dummy7",
+              "level": 23,
+              "baseExperience": 5,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Steel_Helmet",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "flatHiddenSkillLevel": [
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Attack"
+                  },
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Strength"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Attack"
+                  },
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Strength"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Training_Dummy8",
+              "level": 41,
+              "baseExperience": 10,
+              "baseActionCost": 800,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 2
+                },
+                {
+                  "id": "melvorD:Mithril_Helmet",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "flatHiddenSkillLevel": [
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Attack"
+                  },
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Strength"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 3,
+                    "skillID": "melvorD:Attack"
+                  },
+                  {
+                    "value": 3,
+                    "skillID": "melvorD:Strength"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Trapping_Hut6",
+              "level": 12,
+              "baseExperience": 5,
+              "baseActionCost": 100,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [
+                {
+                  "id": "melvorD:SlayerCoins",
+                  "quantity": 5
+                }
+              ],
+              "modifiers": {
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Slayer"
+                  }
+                ],
+                "increasedSlayerCoins": 5
+              }
+            },
+            {
+              "id": "Trapping_Hut7",
+              "level": 28,
+              "baseExperience": 10,
+              "baseActionCost": 200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "melvorF:Summoning_Shard_Red",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorF:Summoning_Shard_Green",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -4,
+                    "skillID": "melvorD:Summoning"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 4,
+                    "skillID": "melvorD:Summoning"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Trapping_Hut8",
+              "level": 59,
+              "baseExperience": 25,
+              "baseActionCost": 1200,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 2
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [
+                {
+                  "id": "melvorD:SlayerCoins",
+                  "quantity": 50
+                }
+              ],
+              "modifiers": {
+                "damageDealtToSlayerAreaMonsters": 5,
+                "flatSlayerAreaEffectNegation": 5
+              }
+            },
+            {
+              "id": "Wardrobe6",
+              "level": 5,
+              "baseExperience": 5,
+              "baseActionCost": 50,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "flatHiddenSkillLevel": [
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Defence"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 3,
+                    "skillID": "melvorD:Defence"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Wardrobe7",
+              "level": 39,
+              "baseExperience": 10,
+              "baseActionCost": 400,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 2
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "flatHiddenSkillLevel": [
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Defence"
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 3,
+                    "skillID": "melvorD:Defence"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Wardrobe8",
+              "level": 43,
+              "baseExperience": 10,
+              "baseActionCost": 800,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 2
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "flatHiddenSkillLevel": [
+                  {
+                    "value": 3,
+                    "skillID": "melvorD:Defence"
+                  }
+                ],
+                "reflectDamage": 2
+              }
+            },
+            {
+              "id": "Worktable6",
+              "level": 4,
+              "baseExperience": 5,
+              "baseActionCost": 50,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "rielkConstruction:Construction"
+                  },
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Fletching"
+                  },
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Crafting"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Worktable7",
+              "level": 31,
+              "baseExperience": 10,
+              "baseActionCost": 400,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 2
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillPreservationChance": [
+                  {
+                    "value": 5,
+                    "skillID": "rielkConstruction:Construction"
+                  },
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Fletching"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "Worktable8",
+              "level": 50,
+              "baseExperience": 15,
+              "baseActionCost": 800,
+              "categoryID": "rielkConstruction:House",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 2
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 2
+                }
+              ],
+              "currencyCosts": [],
+              "modifiers": {
+                "skillItemDoublingChance": [
+                  {
+                    "value": 5,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ],
+                "skillPreservationChance": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Crafting"
+                  }
+                ]
+              }
+            }
+            
+          ]
+        }
+      }
+    ]
+  }
+}

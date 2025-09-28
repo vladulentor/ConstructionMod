@@ -10,8 +10,7 @@ export const language = {
     'MENU_TEXT_SHOW_GO_BACK': 'Возвращаться',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'Просмотреть все активные модификаторы',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'Все активные модификаторы строительства',
-    'MENU_TEXT_REMAINING': 'Оставшиеся расходы',
-    
+
     'SHOP_NAME_Construction_Skillcape': 'Плащ Мастера: Строительство',
 
     'PET_NAME_ChuckTheBeaver': 'Чак Бобер',

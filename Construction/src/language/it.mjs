@@ -10,8 +10,7 @@ export const language = {
     'MENU_TEXT_SHOW_GO_BACK': 'Tornare',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'Visualizzare tutti i modificatori attivi',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'Tutti i modificatori di costruzione attivi',
-    'MENU_TEXT_REMAINING': 'Costi Rimanenti',
-    
+
     'SHOP_NAME_Construction_Skillcape': 'Abilmantello della costruzione',
 
     'PET_NAME_ChuckTheBeaver': 'Butta via il castoro',

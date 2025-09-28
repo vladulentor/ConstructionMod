@@ -7,6 +7,7 @@ class ConstructionFixtureNavElement extends HTMLElement {
     constructor() {
         super();
         this._content = new DocumentFragment();
+
         this._content.append(getTemplateNode('rielk-construction-fixture-nav-template'));
         this.button = getElementFromFragment(this._content, 'button', 'a');
         this.buttonContent = getElementFromFragment(this._content, 'button-content', 'div');
@@ -19,6 +20,7 @@ class ConstructionFixtureNavElement extends HTMLElement {
     }
     connectedCallback() {
         this.appendChild(this._content);
+
     }
     setFixture(fixture, construction) {
         this.fixtureImage.src = fixture.media;

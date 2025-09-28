@@ -1,17 +1,19 @@
 export const language = {
     'SKILL_NAME_Construction': 'Construction',
 
+    'MENU_TEXT_REMAINING_COST':'Remaining Cost:',
+    'MENU_TEXT_REWARDS': 'Rewards',
     'MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY': 'Select Construction Category',
     'MENU_TEXT_CONSTRUCT': 'Construct',
     'MENU_TEXT_BUILD': 'Build',
     'MENU_TEXT_BUILT_PROGRESS': 'Upgrade: ${currentValue}/${maxValue}',
     'MENU_TEXT_PARTIAL_BUILT_PROGRESS': '${currentValue}/${maxValue} ${percent}',
     'MENU_TEXT_SHOW_UPGRADES': 'Upgrades',
-    'MENU_TEXT_REMAINING': 'Costs Remaining',
     'MENU_TEXT_SHOW_GO_BACK': 'Go Back',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'View All Active Modifiers',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'All Active Construction Modifiers',
-
+    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'What is house tiers',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION': 'As you build fixtures, the Tier of your house will improve. Initially, your House Tier will be 0. Once every fixture in your house is at least a certain tier, your house will upgrade to that tier.',
     'SHOP_NAME_Construction_Skillcape': 'Construction Skillcape',
 
     'PET_NAME_ChuckTheBeaver': 'Chuck the Beaver',
@@ -22,17 +24,38 @@ export const language = {
     'ITEM_NAME_Builders_Leggings': 'Builders Leggings',
     'ITEM_NAME_Builders_Boots': 'Builders Boots',
 
+    'ITEM_NAME_Bronze_Nails': 'Bronze Nails',
     'ITEM_NAME_Iron_Nails': 'Iron Nails',
     'ITEM_NAME_Steel_Nails': 'Steel Nails',
     'ITEM_NAME_Mithril_Nails': 'Mithril Nails',
     'ITEM_NAME_Adamantite_Nails': 'Adamantite Nails',
     'ITEM_NAME_Dragonite_Nails': 'Dragonite Nails',
 
+    'ITEM_NAME_Normal_Beams': 'Normal Beams',
+
+
     'ITEM_NAME_Normal_Planks': 'Normal Planks',
     'ITEM_NAME_Oak_Planks': 'Oak Planks',
     'ITEM_NAME_Teak_Planks': 'Teak Planks',
     'ITEM_NAME_Mahogany_Planks': 'Mahogany Planks',
     'ITEM_NAME_Magic_Planks': 'Magic Planks',
+    'ITEM_NAME_Redwood_Planks': 'Redwood Planks',
+
+
+    'ITEM_NAME_Leather_Straps': 'Leather Straps',
+    'ITEM_NAME_Hard_Leather_Straps': 'Hard Leather Straps',
+    'ITEM_NAME_Green_Dhide_Leather_Straps': 'Green D-hide Leather Straps',
+    'ITEM_NAME_Blue_Dhide_Leather_Straps': 'Blue D-hide Leather Straps',
+    'ITEM_NAME_Red_Dhide_Leather_Straps': 'Red D-hide Leather Straps',
+
+
+    'ITEM_NAME_Leather_Bands': 'Leather Bands',
+    'ITEM_NAME_Hard_Leather_Bands': 'Hard Leather Bands',
+    'ITEM_NAME_Green_Dhide_Leather_Bands': 'Green D-hide Leather Bands',
+    'ITEM_NAME_Blue_Dhide_Leather_Bands': 'Blue D-hide Leather Bands',
+    'ITEM_NAME_Red_Dhide_Leather_Bands': 'Red D-hide Leather Bands',
+
+
 
     'ITEM_NAME_Flower_Pots_Token_1': 'Flower Pot: Tier 1',
     'ITEM_NAME_Flower_Pots_Token_2': 'Flower Pot: Tier 2',
@@ -47,17 +70,24 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
 
+    'MODIFIER_DATA_museumTokenDoubled': 'Double museum tokens gained from donating artefacts in Archaeology.',
+    'MODIFIER_DATA_flatMapChargeBonus': '+${value} Dig Site Map excavation actions when making or upgrading maps in Cartography',
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% chance to regain a Tree Seed in Farming when harvested',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% actions required to upgrade in Construction',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% actions required to upgrade in Construction',
+    'MODIFIER_DATA_tierIntervalBonus': 'Archaeology Excavation Interval is ${value}s shorter per map Tier above Poor',
+    'MODIFIER_DATA_digSiteMapNewTier': 'Unlock a new Dig Site Map Tier in Cartography',
 
     'DESCRIPTION_ADDS_ITEM': 'Gives ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': 'Unlocks 1 ${plotCategory} Plot in Farming',
-
+    'DIGSITE_MAP-TIER_FIVE': 'Pristine',
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
 
-    'MASTERY_BONUS_ Construction_ 0': 'Each level provides +0.2% chance to preserve resources.',
-    'MASTERY_BONUS_ Construction_ 1': '+5% chance to preserve resources.',
+    'MASTERY_BONUS_ Construction_ 0': 'Unlock the Tier 1 effect of built fixture.',
+    'MASTERY_BONUS_ Construction_ 1': 'Unlock the Tier 2 effect of built fixture.',
+    'MASTERY_BONUS_ Construction_ 2': 'Unlock the Tier 3 effect of built fixture.',
+    'MASTERY_BONUS_ Construction_ 3': 'Unlock the Tier 4 effect of built fixture.',
+    'MASTERY_BONUS_ Construction_ 4': 'Unlock the Tier 5 effect of built fixture.',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Materials',
     'SKILL_CATEGORY_ Construction_ House': 'House',
@@ -70,6 +100,7 @@ export const language = {
     'CONSTRUCTION_ROOM_NAME_ Refectory': 'Refectory',
     'CONSTRUCTION_ROOM_NAME_ Training_Room': 'Training Room',
     'CONSTRUCTION_ROOM_NAME_ Workshop': 'Workshop',
+    'CONSTRUCTION_ROOM_NAME_ Archive': 'Archive',
 
     'CONSTRUCTION_FIXTURE_OF_TIER': '${fixtureName}: Tier ${tier}',
 
@@ -92,6 +123,9 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Spell_Library': 'Spell Library',
     'CONSTRUCTION_FIXTURE_NAME_ Storage_Chest': 'Storage Chest',
     'CONSTRUCTION_FIXTURE_NAME_ Telescope': 'Telescope',
+    'CONSTRUCTION_FIXTURE_NAME_ Globe': 'Globe',
+    'CONSTRUCTION_FIXTURE_NAME_ Vault': 'Vault',
+    'CONSTRUCTION_FIXTURE_NAME_ Barrier_Orb': 'Barrier Orb',
     'CONSTRUCTION_FIXTURE_NAME_ Tool_Rack': 'Toolbox',
     'CONSTRUCTION_FIXTURE_NAME_ Training_Dummy': 'Training Dummy',
     'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': 'Trapper\'s Hut',

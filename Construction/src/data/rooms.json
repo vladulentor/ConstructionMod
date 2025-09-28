@@ -1,0 +1,13 @@
+{
+    "$schema": "https://melvoridle.com/assets/schema/gameData.json",
+    "namespace": "rielkConstruction",
+    "data": {
+        "skillData": [
+            {
+                "skillID": "rielkConstruction:Construction",
+                "data": {
+                }
+            }
+        ]
+    }
+}

@@ -153,7 +153,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.builtProgressBar.setFixedPosition(progress == undefined ? 0 : progress);
         this.requires.setItemsFromRecipe(fixtureRecipe);
         const label = this.requires.querySelector('h5 > lang-string[lang-id="MENU_TEXT_REQUIRES"]');
-        if (label) label.textContent = getRielkLangString('MENU_TEXT_REMAINING');
+        if (label) label.textContent = getRielkLangString('MENU_TEXT_REMAINING_COST');
         this.requires.querySelectorAll('item-quantity-icon').forEach(icon => {
             const qtyEl = icon.querySelector("small.badge-pill"); // change the requires to be remaining total cost, by just iterating over the dom to change it
             if (qtyEl) {

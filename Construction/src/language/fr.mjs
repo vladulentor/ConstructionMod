@@ -10,7 +10,6 @@ export const language = {
     'MENU_TEXT_SHOW_GO_BACK': 'Retourner',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'Voir tous les Modificateurs Actifs',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'Tous les Modificateurs de Construction Actifs',
-    'MENU_TEXT_REMAINING': 'Coûts Restants',
 
     'SHOP_NAME_Construction_Skillcape': 'Cape de Chantier',
 

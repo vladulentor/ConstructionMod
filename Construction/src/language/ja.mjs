@@ -10,8 +10,7 @@ export const language = {
     'MENU_TEXT_SHOW_GO_BACK': '戻る',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'すべてのアクティブな修飾子を表示',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'すべてのアクティブな建設修飾子',
-    'MENU_TEXT_REMAINING': '残りのコスト',
-    
+
     'SHOP_NAME_Construction_Skillcape': '建設スキルケープ',
 
     'PET_NAME_ChuckTheBeaver': 'チャック・ザ・ビーバー',

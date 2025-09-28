@@ -11,12 +11,12 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this._content.append(getTemplateNode('rielk-construction-room-panel-template'));
         this.header = getElementFromFragment(this._content, 'header', 'div');
         this.eyeIcon = getElementFromFragment(this._content, 'eye-icon', 'i');
-        this.imageContainer= getElementFromFragment(this._content, 'image-container', 'div');
-        this.builtProgressContainer= getElementFromFragment(this._content, 'built-progress-container', 'div');
-        this.ingredientsContainer= getElementFromFragment(this._content, 'ingredients-container', 'div');
-        this.grantsContainer= getElementFromFragment(this._content, 'grants-container', 'div');
-        this.detailsContainer= getElementFromFragment(this._content, 'details-container', 'div');
-        this.extraDetailsContainer= getElementFromFragment(this._content, 'extra-details-container', 'div');
+        this.imageContainer = getElementFromFragment(this._content, 'image-container', 'div');
+        this.builtProgressContainer = getElementFromFragment(this._content, 'built-progress-container', 'div');
+        this.ingredientsContainer = getElementFromFragment(this._content, 'ingredients-container', 'div');
+        this.grantsContainer = getElementFromFragment(this._content, 'grants-container', 'div');
+        this.detailsContainer = getElementFromFragment(this._content, 'details-container', 'div');
+        this.extraDetailsContainer = getElementFromFragment(this._content, 'extra-details-container', 'div');
         this.roomName = getElementFromFragment(this._content, 'room-name', 'span');
         this.targetContainer = getElementFromFragment(this._content, 'target-container', 'div');
         this.productPreservation = getElementFromFragment(this._content, 'product-preservation', 'preservation-icon');
@@ -42,8 +42,8 @@ class ConstructionRoomPanelElement extends HTMLElement {
 
     setRoom(room, construction) {
         this.roomName.textContent = room.name;
-        this.header.onclick = ()=>construction.ui.onRoomHeaderClick(room, construction);
-        room.fixtures.forEach((fixture)=>{
+        this.header.onclick = () => construction.ui.onRoomHeaderClick(room, construction);
+        room.fixtures.forEach((fixture) => {
             const fixtureNav = createElement('rielk-construction-fixture-nav', {
                 parent: this.targetContainer
             });
@@ -65,9 +65,9 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.eyeIcon.classList.add('fa-eye');
     }
     updateFixturesForLevel(construction, room) {
-        this.fixtureNavs.forEach((fixtureNav,fixture)=>{
+        this.fixtureNavs.forEach((fixtureNav, fixture) => {
             if (construction.level >= fixture.level && construction.abyssalLevel >= fixture.abyssalLevel) {
-                fixtureNav.setUnlocked(()=>this.selectFixture(room, fixture, construction));
+                fixtureNav.setUnlocked(() => this.selectFixture(room, fixture, construction));
             } else {
                 fixtureNav.setLocked(fixture, construction);
             }
@@ -75,7 +75,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
         );
     }
     updateFixtureButtons(game) {
-        this.fixtureNavs.forEach((nav,fixture)=>{
+        this.fixtureNavs.forEach((nav, fixture) => {
             nav.updateFixture(fixture, game);
         }
         );
@@ -85,22 +85,22 @@ class ConstructionRoomPanelElement extends HTMLElement {
             return;
         this.selectedFixture = fixture;
         this.updateRoomInfo(construction);
-        this.startButton.onclick = ()=>construction.toggleBuilding(room, fixture);
+        this.startButton.onclick = () => construction.toggleBuilding(room, fixture);
         if (construction.ui.constructionHouseMenu.roomUnlocksPanel.classList.contains('d-none'))
-            this.upgradesButton.onclick = ()=>construction.ui.showFixtureUnlocks(room, fixture, construction);
+            this.upgradesButton.onclick = () => construction.ui.showFixtureUnlocks(room, fixture, construction);
         else
-            this.upgradesButton.onclick = ()=>construction.ui.hideFixtureUnlocks(room, fixture, construction);
-        
+            this.upgradesButton.onclick = () => construction.ui.hideFixtureUnlocks(room, fixture, construction);
+
         const interval = construction.getFixtureInterval(fixture);
         this.interval.setInterval(interval, construction.getIntervalSources(fixture));
     }
-    showFixtureUnlocks(room, fixture, construction){
+    showFixtureUnlocks(room, fixture, construction) {
         this.upgradesButton.textContent = getRielkLangString('MENU_TEXT_SHOW_GO_BACK');
-        this.upgradesButton.onclick = ()=>construction.ui.hideFixtureUnlocks(room, fixture, construction);
+        this.upgradesButton.onclick = () => construction.ui.hideFixtureUnlocks(room, fixture, construction);
     }
-    hideFixtureUnlocks(room, fixture, construction){
+    hideFixtureUnlocks(room, fixture, construction) {
         this.upgradesButton.textContent = getRielkLangString('MENU_TEXT_SHOW_UPGRADES');
-        this.upgradesButton.onclick = ()=>construction.ui.showFixtureUnlocks(room, fixture, construction);
+        this.upgradesButton.onclick = () => construction.ui.showFixtureUnlocks(room, fixture, construction);
     }
     updateRoomInfo(construction) {
         if (this.selectedFixture !== undefined) {
@@ -132,9 +132,9 @@ class ConstructionRoomPanelElement extends HTMLElement {
 
         this.infoBoxName.textContent = fixture.name;
         this.infoBoxImage.src = fixture.media;
-    
+
         const fixtureRecipe = fixture.currentRecipe;
-        if (fixtureRecipe == undefined || fixtureRecipe.level > construction.level){
+        if (fixtureRecipe == undefined || fixtureRecipe.level > construction.level) {
             hideElement(this.builtProgressContainer);
             hideElement(this.ingredientsContainer);
             hideElement(this.grantsContainer);
@@ -142,7 +142,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
             hideElement(this.productPreservation);
             return;
         }
-        
+
         showElement(this.productPreservation);
         const progress = fixture.percentProgress;
         this.builtProgressText.textContent = templateRielkLangString('MENU_TEXT_PARTIAL_BUILT_PROGRESS', {
@@ -152,7 +152,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
         });
         this.builtProgressBar.setFixedPosition(progress == undefined ? 0 : progress);
         this.requires.setItemsFromRecipe(fixtureRecipe);
-                const label = this.requires.querySelector('h5 > lang-string[lang-id="MENU_TEXT_REQUIRES"]');
+        const label = this.requires.querySelector('h5 > lang-string[lang-id="MENU_TEXT_REQUIRES"]');
         if (label) label.textContent = getRielkLangString('MENU_TEXT_REMAINING');
         this.requires.querySelectorAll('item-quantity-icon').forEach(icon => {
             const qtyEl = icon.querySelector("small.badge-pill"); // change the requires to be remaining total cost, by just iterating over the dom to change it

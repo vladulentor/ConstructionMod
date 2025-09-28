@@ -176,19 +176,19 @@ export class Construction extends ArtisanSkill {
         }
         );
     }
+    get hasMastery(){
+        return false; 
+    }
+    isMasteryActionUnlocked(action) {
+        return false;
+    }
+    updateTotalUnlockedMasteryActions() {
+
+    }
+
+
     computeTotalMasteryActions() {
-        this.actions.namespaceMaps.forEach((actionMap, namespace) => {
-            let total = 0;
-            actionMap.forEach((action) => {
-                const id = action.id || "(no id)";
-                const cat = action.category?.type || "(no category)";
-                if (action.hasMastery) {
-                    if (!action.realm?.ignoreCompletion) total++;
-                    if (action.realm) this.totalMasteryActionsInRealm.inc(action.realm);
-                }
-            });
-            this.totalMasteryActions.set(namespace, total);
-        });
+       //leave empty for no mastery
     }
     postDataRegistration() {
         super.postDataRegistration();

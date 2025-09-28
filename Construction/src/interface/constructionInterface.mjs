@@ -21,7 +21,16 @@ export class ConstructionInterface {
 
         this.constructionCategoryMenu.addOptions(construction.categories.allObjects, getRielkLangString('MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY'), this._createSwitchConstructionCategory());
         this.constructionArtisanMenu.init(construction);
-        
+        let target = this.constructionArtisanMenu.querySelector('.col-12.block.block-rounded-double.bg-combat-inner-dark');
+        if (target) {
+            target.style.display = 'none';
+        }
+        ['mastery-xp-icon', 'mastery-pool-icon'].forEach(tag => {
+            let el = this.constructionArtisanMenu.querySelector(tag);
+            if (el) el.style.display = 'none'; // we hide it with post-processing since otherwise we'd need our own productionmenu like the one altmagic uses
+        });
+
+
         construction.categories.forEach((category) => {
             if (category.type !== 'Artisan')
                 return;
@@ -40,7 +49,7 @@ export class ConstructionInterface {
 
     switchConstructionCategory(category) {
         return this._createSwitchConstructionCategory(this)(category);
-    } 
+    }
     _createSwitchConstructionCategory() {
         const ui = this;
         return (category) => {
@@ -147,14 +156,14 @@ export class ConstructionInterface {
             construction.hiddenRooms.add(room);
             this.hideRoomPanel(room);
         }
-    }    
+    }
     selectFixture(fixture, room, construction) {
         this.constructionHouseMenu.selectFixture(fixture, room, construction)
     }
-    showFixtureUnlocks(room, fixture, construction){
+    showFixtureUnlocks(room, fixture, construction) {
         this.constructionHouseMenu.showFixtureUnlocks(room, fixture, construction);
     }
-    hideFixtureUnlocks(room, fixture, construction){
+    hideFixtureUnlocks(room, fixture, construction) {
         this.constructionHouseMenu.hideFixtureUnlocks(room, fixture, construction);
     }
     onFixturePanelSelection(fixture, room, construction) {

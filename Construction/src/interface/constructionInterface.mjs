@@ -45,6 +45,10 @@ export class ConstructionInterface {
             this.constructionSelectionTabs.set(category, tab);
         });
         this.constructionHouseMenu = new ConstructionHouseMenu(this.constructionHouseElement, construction);
+        const modalFrag = new DocumentFragment();
+        modalFrag.append(getTemplateNode('tier-mastery-menu'));
+        document.getElementById('main-container').appendChild(modalFrag);
+
     }
 
     switchConstructionCategory(category) {
@@ -78,6 +82,29 @@ export class ConstructionInterface {
         this.renderProgressBar();
         this.renderFixtureUnlock();
         this.renderRoomRealmVisibility();
+        this.renderMasteryBar();
+        this.renderMasteryBonusElements();
+    }
+
+    renderMasteryBonusElements() {
+        if (!this.renderQueue.masteryBonusElements) return;
+        this.renderQueue.masteryBonusElements = false;
+        const frag = new DocumentFragment();
+        frag.append(getTemplateNode('tier-mastery-menu'));
+        document.getElementById('main-container').append(...frag.children);
+        const container = document.getElementById('pips-container');
+        for (const [key, tierData] of this.construction.tierMasteries.registeredObjects) {
+            const pip = container.querySelector(`#tier-${tierData.tier}`);
+            pip.setBonus(tierData);  // this was so hard to get right
+        }
+
+
+    }
+        renderMasteryBar() {
+        if (!this.renderQueue.masteryBar) return;
+        this.constructionMasteryBar.initMasteryBar(this.construction);
+        this.renderQueue.masteryBar = false;
+
     }
 
     renderFixtureUnlock() {

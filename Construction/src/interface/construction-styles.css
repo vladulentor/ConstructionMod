@@ -15,3 +15,19 @@ body.darkMode.superDark .bg-rielk-construction
 {
     background-color: #000!important
 }
+
+.mastery.filled {
+  background-color: #ca7300;
+    height: 4px;               
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.mastery.empty {
+  background-color: #3e4856; 
+  height: 4px;              
+  border-radius: 2px;
+      flex: none;      
+    width: 100%; 
+}
+

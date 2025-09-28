@@ -7,7 +7,8 @@ export const language = {
     'MENU_TEXT_BUILT_PROGRESS': 'Upgrade: ${currentValue}/${maxValue}',
     'MENU_TEXT_PARTIAL_BUILT_PROGRESS': '${currentValue}/${maxValue} ${percent}',
     'MENU_TEXT_SHOW_UPGRADES': 'Upgrades',
-    'MENU_TEXT_SHOW_GO_BACK': 'Geh zurück',
+    'MENU_TEXT_SHOW_GO_BACK': 'Geh zurück', 
+    'MENU_TEXT_REMAINING': 'Verbleibende Kosten',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'Alle aktiven Modifikatoren anzeigen',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'Alle aktiven Konstruktionsmodifikatoren',
 

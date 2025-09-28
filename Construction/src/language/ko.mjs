@@ -8,6 +8,7 @@ export const language = {
     'MENU_TEXT_PARTIAL_BUILT_PROGRESS': '${currentValue}/${maxValue} ${percent}',
     'MENU_TEXT_SHOW_UPGRADES': '업그레이드',
     'MENU_TEXT_SHOW_GO_BACK': '반품',
+    'MENU_TEXT_REMAINING': '남은 비용',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': '모든 활성 수정자 보기',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': '모든 활성 건설 수정자',
 

@@ -488,7 +488,7 @@ export class Construction extends ArtisanSkill {
         this.fixtures.forEach(fixture => fixture.onLoad());
         this.updateRecipeCounts();
         this.popTierMasteries();
-
+        
         this.render();
     }
     resetActionState() {

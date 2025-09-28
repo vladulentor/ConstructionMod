@@ -63,13 +63,13 @@ class RielkConstructionMasteryElement extends HTMLElement {
         bar,
         tierText,
         currentBuilt: 0,
-        fixturesInTier: 27 // default max, but maybe probably correct.
       });
+      this.fixturesInTier = 24; // default for no mods or DLC
     }
   }
   setFixtureCount(fixtureCount) {
     if (fixtureCount <= 0) return;
-    this._bars.fixturesInTier = fixtureCount;
+    this.fixturesInTier = fixtureCount;
 
   }
 
@@ -78,10 +78,10 @@ class RielkConstructionMasteryElement extends HTMLElement {
     if (index < 0 || index >= this._bars.length) return;
 
     const tier = this._bars[index];
-    tier.currentBuilt = Math.min(newBuilt, tier.fixturesInTier);
-    const percent = (tier.currentBuilt / tier.fixturesInTier) * 100;
+    tier.currentBuilt = Math.min(newBuilt, this.fixturesInTier);
+    const percent = (tier.currentBuilt / this.fixturesInTier) * 100;
     tier.bar.style.width = `${percent}%`;
-    tier.tierText.textContent = `${tier.currentBuilt} / ${tier.fixturesInTier} (${percent.toFixed(2)}%)`;
+    tier.tierText.textContent = `${tier.currentBuilt} / ${this.fixturesInTier} (${percent.toFixed(2)}%)`;
     this.setAggregate();
   }
   updateAllTiers(fixArray) {
@@ -94,7 +94,7 @@ class RielkConstructionMasteryElement extends HTMLElement {
 
   setAggregate() {
     this.aggregateBuilt = this._bars.reduce((sum, bar) => sum + bar.currentBuilt, 0);
-    this.aggregateTotal = this._bars[0].fixturesInTier * this._bars.length;
+    this.aggregateTotal = this.fixturesInTier * this._bars.length;
     this._aggregateTiers.textContent = `${this.aggregateBuilt} / ${this.aggregateTotal} (${((this.aggregateBuilt / this.aggregateTotal) * 100).toFixed(2)}%) Built`;
 
   }

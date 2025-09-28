@@ -40,7 +40,6 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': 'Pots de fleurs: Étage 4',
     'ITEM_NAME_Flower_Pots_Token_5': 'Pots de fleurs: Étage 5',
 
-    'ITEM_NAME_Mastery_Token_Construction': 'Jeton de maîtrise (construction)',
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2% d\'XP de compétence de construction.<br><span class=\"text-warning\">Avec les quatre éléments de la tenue de constructeur équipés : + 8 % d\'XP de maîtrise de la construction.</span>',
     'ITEM_DESCRIPTION_Builders_Body': '+2% d\'XP de compétence de construction.<br><span class=\"text-warning\">Avec les quatre éléments de la tenue de constructeur équipés : + 8 % d\'XP de maîtrise de la construction.</span>',

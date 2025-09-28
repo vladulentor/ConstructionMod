@@ -40,7 +40,6 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': 'Blumentöpfe: Stufe 4',
     'ITEM_NAME_Flower_Pots_Token_5': 'Blumentöpfe: Stufe 5',
 
-    'ITEM_NAME_Mastery_Token_Construction': 'Meisterungsmarke (Konstruktion)',
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2 % Fertigkeits-EP in Konstruktion.<br><span class=\"text-warning\">Wenn alle vier Teile des Kostüms der brennenden Menschheit ausgerüstet sind: +8 % Konstruktion-Meisterungs-EP.</span>',
     'ITEM_DESCRIPTION_Builders_Body': '+2 % Fertigkeits-EP in Konstruktion.<br><span class=\"text-warning\">Wenn alle vier Teile des Kostüms der brennenden Menschheit ausgerüstet sind: +8 % Konstruktion-Meisterungs-EP.</span>',

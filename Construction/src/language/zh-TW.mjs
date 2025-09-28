@@ -40,7 +40,6 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': '花盆: 層 4',
     'ITEM_NAME_Flower_Pots_Token_5': '花盆: 層 5',
 
-    'ITEM_NAME_Mastery_Token_Construction': '精通代幣（結構）',
 
     'ITEM_DESCRIPTION_Builders_Hat': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
     'ITEM_DESCRIPTION_Builders_Body': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',

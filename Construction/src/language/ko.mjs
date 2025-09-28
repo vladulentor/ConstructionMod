@@ -40,7 +40,6 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': '화분: 층 4',
     'ITEM_NAME_Flower_Pots_Token_5': '화분: 층 5',
 
-    'ITEM_NAME_Mastery_Token_Construction': '마스터리 토큰(구조)',
 
     'ITEM_DESCRIPTION_Builders_Hat': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
     'ITEM_DESCRIPTION_Builders_Body': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',

@@ -40,7 +40,6 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': '植木鉢: 階層 4',
     'ITEM_NAME_Flower_Pots_Token_5': '植木鉢: 階層 5',
 
-    'ITEM_NAME_Mastery_Token_Construction': 'マスタリートークン（建設）',
 
     'ITEM_DESCRIPTION_Builders_Hat': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
     'ITEM_DESCRIPTION_Builders_Body': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',

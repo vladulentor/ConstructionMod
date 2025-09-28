@@ -40,7 +40,6 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': '花盆: 层 4',
     'ITEM_NAME_Flower_Pots_Token_5': '花盆: 层 5',
 
-    'ITEM_NAME_Mastery_Token_Construction': '掌握令牌 (建造)',
 
     'ITEM_DESCRIPTION_Builders_Hat': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
     'ITEM_DESCRIPTION_Builders_Body': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',

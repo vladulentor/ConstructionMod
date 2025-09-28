@@ -40,7 +40,6 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': 'Цветочные горшки: Уровень 4',
     'ITEM_NAME_Flower_Pots_Token_5': 'Цветочные горшки: Уровень 5',
 
-    'ITEM_NAME_Mastery_Token_Construction': 'Жетон мастерства (Строительство)',
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2 % к опыту навыка «Строительство».<br><span class=\"text-warning\">При экипировке всех четырех предметов одежды строителя: +8% к опыту строительного мастерства.</span>',
     'ITEM_DESCRIPTION_Builders_Body': '+2 % к опыту навыка «Строительство».<br><span class=\"text-warning\">При экипировке всех четырех предметов одежды строителя: +8% к опыту строительного мастерства.</span>',

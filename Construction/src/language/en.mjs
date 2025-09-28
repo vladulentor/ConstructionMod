@@ -40,7 +40,6 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': 'Flower Pot: Tier 4',
     'ITEM_NAME_Flower_Pots_Token_5': 'Flower Pot: Tier 5',
 
-    'ITEM_NAME_Mastery_Token_Construction': 'Mastery Token (Construction)',
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
     'ITEM_DESCRIPTION_Builders_Body': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',

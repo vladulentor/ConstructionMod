@@ -354,21 +354,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Mastery_Token_Construction",
-        "name": "Mastery Token (Construction)",
-        "category": "Mastery",
-        "type": "Token",
-        "media": "assets\\items\\mastery_token_construction.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 1500,
-        "itemType": "MasteryToken",
-        "skill": "rielkConstruction:Construction",
-        "realm": "melvorD:Melvor",
-        "percent": 0.1
       }
     ],
     "shopPurchases": [
@@ -600,13 +585,6 @@
           "rielkConstruction:Builders_Body",
           "rielkConstruction:Builders_Leggings",
           "rielkConstruction:Builders_Boots"
-        ]
-      },
-      {
-        "insertAt": "After",
-        "afterID": "melvorF:Mastery_Token_Astrology",
-        "ids": [
-          "rielkConstruction:Mastery_Token_Construction"
         ]
       }
     ],

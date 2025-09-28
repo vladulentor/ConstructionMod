@@ -203,7 +203,7 @@
         "name": "Construction Skillcape",
         "category": "Combat",
         "type": "Armour",
-        "media": "assets\\items\\skillcape_construction.png",
+        "media": "assets/items/skillcape_construction.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,

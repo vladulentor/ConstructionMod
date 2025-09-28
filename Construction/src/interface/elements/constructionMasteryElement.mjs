@@ -1,0 +1,112 @@
+const { loadModule } = mod.getContext(import.meta);
+
+const { templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
+
+
+class RielkConstructionMasteryElement extends HTMLElement {
+  constructor() {
+    super();
+
+    this._content = new DocumentFragment();
+    this._content.append(getTemplateNode('rielk-construction-mastery'));
+    this.barsContainer = getElementFromFragment(this._content, 'mastery-bars-container', 'div');
+    this._aggregateTiers = getElementFromFragment(this._content, 'tiers-completed-aggregate', 'small');
+    this._bars = []; // will hold objects: {bar, tierText, currentTier, fixturesInTier}
+    this.aggregateTotal = 0;
+    this.aggregateBuilt = 0;
+  }
+
+  connectedCallback() {
+    this.appendChild(this._content);
+
+    const hasDLC = cloudManager?.hasTotHEntitlementAndIsEnabled ?? false;
+    const maxTiers = hasDLC ? 8 : 5;
+
+    this._bars = [];
+
+    // tier bars
+    for (let i = 0; i < maxTiers; i++) {
+      const barWrapper = document.createElement("div");
+      barWrapper.className = "d-flex flex-column mx-1";
+      barWrapper.style.width = "100%";
+
+      // empty bars
+      const progressContainer = document.createElement("div");
+      progressContainer.className = "mastery empty mb-1";
+      progressContainer.style.height = "4px";
+      progressContainer.style.width = "100%";
+      progressContainer.style.position = "relative";
+      progressContainer.style.borderRadius = "2px";
+      progressContainer.style.overflow = "hidden";
+
+      // color fill
+      const bar = document.createElement("div");
+      bar.className = "mastery filled";
+      bar.setAttribute("role", "progressbar");
+      bar.style.height = "100%";          // match container
+      bar.style.width = "0%";             // start empty
+      bar.style.transition = "width 0.3s ease";
+      bar.style.borderRadius = "2px";
+      progressContainer.appendChild(bar);
+
+      const tierText = document.createElement("small");
+      tierText.className = "text-muted";
+      tierText.style.fontSize = "0.65rem";
+      tierText.style.alignSelf = "flex-start";
+      tierText.textContent = ``;
+
+      barWrapper.appendChild(progressContainer);
+      barWrapper.appendChild(tierText);
+      this.barsContainer.appendChild(barWrapper);
+      this._aggregateTiers.textContent = "0 / 0 (0%)"
+      this._bars.push({
+        bar,
+        tierText,
+        currentBuilt: 0,
+        fixturesInTier: 27 // default max, but maybe probably correct.
+      });
+    }
+  }
+  setFixtureCount(fixtureCount) {
+    if (fixtureCount <= 0) return;
+    this._bars.fixturesInTier = fixtureCount;
+
+  }
+
+  // Update a single tier by index
+  updateTier(index, newBuilt) {
+    if (index < 0 || index >= this._bars.length) return;
+
+    const tier = this._bars[index];
+    tier.currentBuilt = Math.min(newBuilt, tier.fixturesInTier);
+    const percent = (tier.currentBuilt / tier.fixturesInTier) * 100;
+    tier.bar.style.width = `${percent}%`;
+    tier.tierText.textContent = `${tier.currentBuilt} / ${tier.fixturesInTier} (${percent.toFixed(2)}%)`;
+    this.setAggregate();
+  }
+  updateAllTiers(fixArray) {
+    if (!Array.isArray(fixArray)) {
+      console.error('fixArray is not an array', fixArray);
+      return;
+    }
+    fixArray.forEach((fixture, i) => this.updateTier(i, fixture));
+  }
+
+  setAggregate() {
+    this.aggregateBuilt = this._bars.reduce((sum, bar) => sum + bar.currentBuilt, 0);
+    this.aggregateTotal = this._bars[0].fixturesInTier * this._bars.length;
+    this._aggregateTiers.textContent = `${this.aggregateBuilt} / ${this.aggregateTotal} (${((this.aggregateBuilt / this.aggregateTotal) * 100).toFixed(2)}%) Built`;
+
+  }
+
+  initMasteryBar(construction) {
+    this.setFixtureCount(construction.recipeNumber);
+    this.updateAllTiers(construction.recipeCountByTier);
+    this.setAggregate();
+
+
+  }
+
+}
+
+customElements.define("rielk-construction-mastery", RielkConstructionMasteryElement);

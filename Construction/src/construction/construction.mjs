@@ -22,7 +22,7 @@ export class Construction extends ArtisanSkill {
         this.rooms = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionRoom');
         this.fixtures = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionFixture');
         this.hiddenRooms = new Set();
-
+        this.modList = []; // to not make it a global varialbe and pollute the scope, construction keeps it, though this isn't the cleanest solution
         this._actionMode = undefined;
 
         this.stats = new StatTracker();
@@ -33,7 +33,7 @@ export class Construction extends ArtisanSkill {
         this.ui = new ConstructionInterface(this);
         super.initMenus(...arguments);
     }
-
+    
     get name() {
         return getRielkLangString('SKILL_NAME_Construction');
     }
@@ -392,6 +392,7 @@ export class Construction extends ArtisanSkill {
         this.start();
 
     }
+    
     getRegistry(type) {
         switch (type) {
             case ScopeSourceType.Category:

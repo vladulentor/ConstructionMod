@@ -14,7 +14,7 @@ export const language = {
 
     'SHOP_NAME_Construction_Skillcape': '건설 스킬케이프',
 
-    'PET_NAME_ChuckTheBeaver': '척 더 비버',
+    'PET_NAME_ChuckTheForeman': '포어맨 척',
 
     'ITEM_NAME_Construction_Skillcape': '건설 스킬케이프',
     'ITEM_NAME_Builders_Hat': '빌더 모자',

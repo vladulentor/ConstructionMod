@@ -14,7 +14,7 @@ export const language = {
 
     'SHOP_NAME_Construction_Skillcape': 'Umhang der Konstruktion',
 
-    'PET_NAME_ChuckTheBeaver': 'Chuck der Biber',
+    'PET_NAME_ChuckTheForeman': 'Chuck der Vorarbeiter',
 
     'ITEM_NAME_Construction_Skillcape': 'Umhang der Konstruktion',
     'ITEM_NAME_Builders_Hat': 'Bauarbeiterhut',

@@ -8,16 +8,20 @@ const { patchFarming } = await loadModule('src/skillPatches/farming.mjs');
 export async function setup(ctx) {
     setup = new Setup(ctx);
     await setup.loadInterfaceElements();
-    
+
     game.construction = game.registerSkill(game.registeredNamespaces.getNamespace('rielkConstruction'), Construction);
 
     await setup.applyPatches();
     await setup.loadData();
+    await setup.modCompatibility(game.construction);
+
 }
+
 
 class Setup {
     constructor(ctx) {
         this.ctx = ctx;
+        this.modList = [];
     }
 
     async loadInterfaceElements() {
@@ -36,7 +40,7 @@ class Setup {
         await loadModule('src/interface/elements/rielkLangStringElement.mjs');
     }
 
-    async applyPatches() {       
+    async applyPatches() {
         patchGameEventSystem(this.ctx);
         patchTranslations(this.ctx);
         patchFarming(this.ctx);
@@ -44,7 +48,7 @@ class Setup {
         this.ctx.patch(EventManager, 'loadEvents').before(() => {
             if (game.construction.isUnlocked)
                 return;
-            if(game.currentGamemode.startingSkills != undefined && game.currentGamemode.startingSkills.has(game.construction)) {
+            if (game.currentGamemode.startingSkills != undefined && game.currentGamemode.startingSkills.has(game.construction)) {
                 game.construction.setUnlock(true);
             }
             game.construction.updateForExistingCapIncreases(game);
@@ -55,5 +59,18 @@ class Setup {
         await this.ctx.gameData.addPackage('src/data/data.json');
         if (cloudManager.hasAoDEntitlementAndIsEnabled)
             await this.ctx.gameData.addPackage('src/data/data_AoD.json');
+    }
+
+    async modCompatibility(construction) {
+        console.log('onModsLoaded!');
+        this.ctx.onModsLoaded(async () => {
+            this.modList = mod.manager.getLoadedModList();
+            if(this.modList.includes('Skill Boosts'))
+                {console.log('Skill Boosts found!');
+                         const { skillBoostsCompatibility } = await loadModule("src/modPatches/skillboosts.mjs");
+                        skillBoostsCompatibility();
+                }
+        });
+
     }
 }

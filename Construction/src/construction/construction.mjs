@@ -455,6 +455,7 @@ export class Construction extends ArtisanSkill {
         this.start();
 
     }
+    
     getRegistry(type) {
         switch (type) {
             case ScopeSourceType.Category:

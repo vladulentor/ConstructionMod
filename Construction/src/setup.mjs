@@ -63,14 +63,5 @@ class Setup {
 
     async modCompatibility(construction) {
         console.log('onModsLoaded!');
-        this.ctx.onModsLoaded(async () => {
-            this.modList = mod.manager.getLoadedModList();
-            if(this.modList.includes('Skill Boosts'))
-                {console.log('Skill Boosts found!');
-                         const { skillBoostsCompatibility } = await loadModule("src/modPatches/skillboosts.mjs");
-                        skillBoostsCompatibility();
-                }
-        });
-
     }
 }

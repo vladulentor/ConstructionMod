@@ -266,13 +266,11 @@ export class Construction extends ArtisanSkill {
     }
 
     getMaxTotalMasteryLevels() {
-        console.log("total called");
         let tiernum = cloudManager.hasTotHEntitlementAndIsEnabled ? 8 : 5;
         return this.recipeNumber * tiernum;
     }
 
     getTotalCurrentMasteryLevels() {
-        console.log("current called");
                 return this.recipeCountByTier.reduce((a, b) => a + b, 0);
 
     }

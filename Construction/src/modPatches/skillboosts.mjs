@@ -13,6 +13,6 @@ export function skillBoostsCompatibility() {
         noInterval: false,
         noConsumable: true,
         noPrimaryResource: false,
-        sArtisan: true,
+        isArtisan: true,
     });
 }

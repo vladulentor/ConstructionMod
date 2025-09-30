@@ -72,7 +72,7 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 4': '解鎖家具的等級5效果。',
 
     'SKILL_CATEGORY_ Construction_ Materials': '材料',
-    'SKILL_CATEGORY_ Construction_ House': '房子',
+    'SKILL_CATEGORY_ Construction_ House': '家具',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': '臥室',
     'CONSTRUCTION_ROOM_NAME_ Garden': '花園',

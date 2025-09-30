@@ -72,7 +72,7 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 4': 'Разблокируйте эффекты уровня % мебели.',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Материалы',
-    'SKILL_CATEGORY_ Construction_ House': 'Дом',
+    'SKILL_CATEGORY_ Construction_ House': 'Мебель',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': 'Спальня',
     'CONSTRUCTION_ROOM_NAME_ Garden': 'Сад',

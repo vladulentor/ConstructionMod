@@ -72,7 +72,7 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 4': '家具のティア5効果をアンロックします。',
 
     'SKILL_CATEGORY_ Construction_ Materials': '材料',
-    'SKILL_CATEGORY_ Construction_ House': '家',
+    'SKILL_CATEGORY_ Construction_ House': '家具',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': '寝室',
     'CONSTRUCTION_ROOM_NAME_ Garden': '庭',

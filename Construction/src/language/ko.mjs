@@ -72,7 +72,7 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 4': '가구의 단계 5 효과를 잠금 해제합니다.',
 
     'SKILL_CATEGORY_ Construction_ Materials': '재료',
-    'SKILL_CATEGORY_ Construction_ House': 'House',
+    'SKILL_CATEGORY_ Construction_ House': '가구',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': '집',
     'CONSTRUCTION_ROOM_NAME_ Garden': '정원',

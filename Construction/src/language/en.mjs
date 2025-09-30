@@ -76,7 +76,7 @@ export const language = {
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Materials',
-    'SKILL_CATEGORY_ Construction_ House': 'House',
+    'SKILL_CATEGORY_ Construction_ House': 'Furniture',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': 'Bedroom',
     'CONSTRUCTION_ROOM_NAME_ Garden': 'Garden',

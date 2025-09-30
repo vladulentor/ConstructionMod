@@ -74,7 +74,7 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 4': 'Schalte die Effekte der Stufe 5 des Einrichtungsgegenstands frei.',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Baumaterialien',
-    'SKILL_CATEGORY_ Construction_ House': 'Haus',
+    'SKILL_CATEGORY_ Construction_ House': 'Möbel',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': 'Schlafzimmer',
     'CONSTRUCTION_ROOM_NAME_ Garden': 'Garten',

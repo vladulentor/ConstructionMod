@@ -72,7 +72,7 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 4': 'Sblocca gli effetti del livello 5 dell\'arredamento.',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Materiali',
-    'SKILL_CATEGORY_ Construction_ House': 'Casa',
+    'SKILL_CATEGORY_ Construction_ House': 'Arredamento',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': 'Camera da Letto',
     'CONSTRUCTION_ROOM_NAME_ Garden': 'Giardino',

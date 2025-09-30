@@ -17,10 +17,15 @@ body.darkMode.superDark .bg-rielk-construction
 }
 
 .mastery.filled {
-  background-color: #ca7300;
+  background-color: #fca32f;
     height: 4px;               
   transition: width 0.3s ease;
   border-radius: 2px;
+}
+
+.construction-success {
+      color: #fca32f;       /* text color */
+    font-weight: bold;   /* optional */
 }
 
 .mastery.empty {

@@ -30,56 +30,60 @@ class TierMasteryBonusElement extends HTMLElement {
         this.tierCount.textContent = `${bonus.currentProgress} \\ ${bonus.maxProgress}`;
 
         // Style
-        toggleDangerSuccess(this.tierCount, bonus.completed);
+            if (bonus.completed) {
+                this.tierCount.classList.remove('text-danger');
+                this.tierCount.classList.add('construction-success');
+            }
 
-        // Modifiers
-        this.modifierList.textContent = '';
-        if (bonus.modifiers) {
-            const spans = bonus.modifiers._stats.describeAsSpans();
-            this.modifierList.append(...spans);
-            showElement(this.modifierContainer);
-        } else {
-            hideElement(this.modifierContainer);
+
+            // Modifiers
+            this.modifierList.textContent = '';
+            if (bonus.modifiers) {
+                const spans = bonus.modifiers._stats.describeAsSpans();
+                this.modifierList.append(...spans);
+                showElement(this.modifierContainer);
+            } else {
+                hideElement(this.modifierContainer);
+            }
+
+            // Rewards
+            this.rewardList.textContent = '';
+            let hasRewards = false;
+
+            if (bonus.currencies) {
+                hasRewards = true;
+                bonus.currencies.forEach(({ currency, quantity }, i) => {
+                    this.createReward(currency.media, numberWithCommas(quantity), currency.name);
+                });
+            }
+
+            if (bonus.itemAwards) {
+                hasRewards = true;
+                bonus.itemAwards.forEach(({ item, quantity }, i) => {
+                    this.createReward(item?.media, numberWithCommas(quantity), item?.name);
+                });
+            }
+
+            if (bonus.pets) {
+                hasRewards = true;
+                bonus.pets.forEach((pet, i) => {
+                    this.createReward(pet.media, '', pet.name);
+                });
+            }
+
+            if (hasRewards) {
+                showElement(this.rewardContainer);
+            } else {
+                hideElement(this.rewardContainer);
+            }
+
         }
 
-        // Rewards
-        this.rewardList.textContent = '';
-        let hasRewards = false;
 
-        if (bonus.currencies) {
-            hasRewards = true;
-            bonus.currencies.forEach(({ currency, quantity }, i) => {
-                this.createReward(currency.media, numberWithCommas(quantity), currency.name);
-            });
+        createReward(media, quantity, name) {
+            const rewardElem = createElement('inline-requirement', { className: 'mx-2 text-success', parent: this.rewardList });
+            rewardElem.setContent(media, quantity, name);
         }
-
-        if (bonus.itemAwards) {
-            hasRewards = true;
-            bonus.itemAwards.forEach(({ item, quantity }, i) => {
-                this.createReward(item?.media, numberWithCommas(quantity), item?.name);
-            });
-        }
-
-        if (bonus.pets) {
-            hasRewards = true;
-            bonus.pets.forEach((pet, i) => {
-                this.createReward(pet.media, '', pet.name);
-            });
-        }
-
-        if (hasRewards) {
-            showElement(this.rewardContainer);
-        } else {
-            hideElement(this.rewardContainer);
-        }
-
     }
-
-
-    createReward(media, quantity, name) {
-        const rewardElem = createElement('inline-requirement', { className: 'mx-2 text-success', parent: this.rewardList });
-        rewardElem.setContent(media, quantity, name);
-    }
-}
 
 customElements.define('tier-mastery-bonus', TierMasteryBonusElement);

@@ -29,7 +29,6 @@ class Setup {
 
         await loadTemplates('src/interface/templates/construction.html');
         
-        await loadModule('src/interface/elements/constructionTierBonusElement.mjs');
         await loadModule('src/interface/elements/constructionFixtureNavElement.mjs');
         await loadModule('src/interface/elements/constructionMasteryElement.mjs');
         await loadModule('src/interface/elements/constructionTierMasteryBonusElement.mjs');

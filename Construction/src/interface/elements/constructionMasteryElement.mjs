@@ -21,7 +21,7 @@ class RielkConstructionMasteryElement extends HTMLElement {
 
     const hasDLC = cloudManager?.hasTotHEntitlementAndIsEnabled ?? false;
     const maxTiers = 5; // hasDLC ? 8 : 5;
-      // This'll be changed when the TotH tier will actually be added
+      // This'll be changed when the TotH tiers will actually be added
     this._bars = [];
      if(window.innerWidth <= 768) 
     this.barsContainer.classList.add("flex-column");

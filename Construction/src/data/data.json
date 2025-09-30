@@ -770,22 +770,22 @@
             },
             {
               "level": 2,
-              "descriptionID": 0,
+              "descriptionID": 1,
               "description": "Unlock fixture's Tier 2 effects."
             },
             {
               "level": 3,
-              "descriptionID": 0,
+              "descriptionID": 2,
               "description": "Unlock fixture's Tier 3 effects."
             },
             {
               "level": 4,
-              "descriptionID": 0,
+              "descriptionID": 3,
               "description": "Unlock fixture's Tier 4 effects."
             },
             {
               "level": 5,
-              "descriptionID": 0,
+              "descriptionID": 4,
               "description": "Unlock fixture's Tier 5 effects."
             }
           ],

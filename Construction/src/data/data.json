@@ -765,12 +765,27 @@
             {
               "level": 1,
               "descriptionID": 0,
-              "description": "Each level provides +0.2% chance to preserve resources."
+              "description": "Unlock fixture's Tier 1 effects."
             },
-            {
-              "level": 99,
-              "descriptionID": 1,
-              "description": "+5% chance to preserve resources."
+             {
+              "level": 2,
+              "descriptionID": 0,
+              "description": "Unlock fixture's Tier 2 effects."
+            },
+             {
+              "level": 3,
+              "descriptionID": 0,
+              "description": "Unlock fixture's Tier 3 effects."
+            },
+             {
+              "level": 4,
+              "descriptionID": 0,
+              "description": "Unlock fixture's Tier 4 effects."
+            },
+             {
+              "level": 5,
+              "descriptionID": 0,
+              "description": "Unlock fixture's Tier 5 effects."
             }
           ],
           "categories": [

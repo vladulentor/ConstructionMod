@@ -799,7 +799,7 @@
             {
               "id": "House",
               "name": "Furniture",
-              "media": "assets/house.png",
+              "media": "assets/drawers.png",
               "type": "House"
             }
           ],
@@ -933,9 +933,9 @@
                 ],
                 "skillPreservationChance": [
                   {
-                    "value": 8,
-                    "skillID": "rielkConstruction:Construction",
-                    "categoryID":"rielkConstruction:House"
+                    "value": 10,
+                    "categoryID": "rielkConstruction:House",
+                    "skillID": "rielkConstruction:Construction"
                   }
                 ]
               }

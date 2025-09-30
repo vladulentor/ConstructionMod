@@ -2,7 +2,6 @@ const { loadModule } = mod.getContext(import.meta);
 
 const { ConstructionHouseMenu } = await loadModule('src/interface/constructionHouseMenu.mjs');
 const { getRielkLangString } = await loadModule('src/language/translationManager.mjs');
-const { skillBoostsCompatibility } = await loadModule("src/modPatches/skillboosts.mjs");
 
 
 export class ConstructionInterface {
@@ -22,11 +21,6 @@ export class ConstructionInterface {
         this.constructionHouseElement = getElementFromFragment(frag, 'rielk-construction-house-element', 'div');
         this.constructionArtisanElement = getElementFromFragment(frag, 'rielk-construction-artisan-element', 'div');
         document.getElementById('main-container').append(...frag.children);
-            this.modList = mod.manager.getLoadedModList();
-            if(this.modList.includes('Skill Boosts'))
-                {console.log('Skill Boosts found!');
-                        skillBoostsCompatibility();
-                }
 
         this.constructionCategoryMenu.addOptions(construction.categories.allObjects, getRielkLangString('MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY'), this._createSwitchConstructionCategory());
         this.constructionArtisanMenu.init(construction);

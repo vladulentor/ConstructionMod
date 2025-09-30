@@ -5,6 +5,8 @@ const { patchTranslations } = await loadModule('src/language/translationManager.
 const { patchGameEventSystem } = await loadModule('src/construction/gameEvents.mjs');
 const { patchFarming } = await loadModule('src/skillPatches/farming.mjs');
 const { patchMasteryElement } = await loadModule('src/skillPatches/patchmasteryelement.mjs');
+const { skillBoostsCompatibility } = await loadModule("src/modPatches/skillboosts.mjs");
+
 
 export async function setup(ctx) {
     setup = new Setup(ctx);
@@ -28,7 +30,7 @@ class Setup {
         await loadStylesheet('src/interface/construction-styles.css');
 
         await loadTemplates('src/interface/templates/construction.html');
-        
+
         await loadModule('src/interface/elements/constructionFixtureNavElement.mjs');
         await loadModule('src/interface/elements/constructionMasteryElement.mjs');
         await loadModule('src/interface/elements/constructionTierMasteryBonusElement.mjs');
@@ -44,7 +46,7 @@ class Setup {
         patchTranslations(this.ctx);
         patchFarming(this.ctx);
         patchMasteryElement(this.ctx);
-        
+
         this.ctx.patch(EventManager, 'loadEvents').before(() => {
             if (game.construction.isUnlocked)
                 return;
@@ -62,6 +64,13 @@ class Setup {
     }
 
     async modCompatibility(construction) {
-        console.log('onModsLoaded!');
+        this.ctx.onModsLoaded(() => {
+            this.modList = mod.manager.getLoadedModList();
+            if (this.modList.includes('Skill Boosts')) {
+                console.log('Skill Boosts found!');
+                skillBoostsCompatibility();
+            }
+
+        })
     }
 }

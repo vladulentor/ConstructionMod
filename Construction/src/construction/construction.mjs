@@ -351,6 +351,8 @@ export class Construction extends ArtisanSkill {
             scope.category = action.category;
             scope.subcategory = action.subcategory;
         }
+     else if (action && action.category !== undefined) 
+                            scope.category = action.category;
         return scope;
     }
     onMasteryLevelUp(action, oldLevel, newLevel) {

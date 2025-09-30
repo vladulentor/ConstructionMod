@@ -106,6 +106,10 @@ export class Construction extends ArtisanSkill {
         return 1700;
     }
 
+    shouldShowSkillInSidebar() {
+        return true;
+    }
+
     getFixtureInterval(fixture) {
         return this.modifyInterval(this.baseInterval, fixture);
     }

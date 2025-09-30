@@ -130,6 +130,10 @@ export class Construction extends ArtisanSkill {
     get masteryModifiedInterval() {
         return 1700;
     }
+
+    shouldShowSkillInSidebar() {
+    return true;
+    }
     updateRecipeCounts() {
         const tierNum = cloudManager?.hasTotHEntitlementAndIsEnabled ? 8 : 5;
         this.recipeCountByTier = Array(tierNum).fill(0);
@@ -264,7 +268,7 @@ export class Construction extends ArtisanSkill {
     updateRealmSelection() {
         this.ui.updateRealmSelection(this.currentRealm);
     }
-
+    
     getMaxTotalMasteryLevels() {
         let tiernum = cloudManager.hasTotHEntitlementAndIsEnabled ? 8 : 5;
         return this.recipeNumber * tiernum;

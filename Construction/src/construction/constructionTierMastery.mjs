@@ -12,7 +12,7 @@ export class ConstructionTierMastery extends RealmedObject {
         this.maxProgress = 100;
         this.completed = false;
 
-        this.itemAwards = data.itemAwards.map(({ id, quantity }) => ({item: game.items.getObjectSafe(id),quantity})) || [];
+        this.itemAwards = data.itemAwards.map(({ id, quantity }) => ({ item: game.items.getObjectSafe(id), quantity })) || [];
 
         this.modifiers = new ConstructionModifierTiers(data, game, `${this.id}`);
     }
@@ -23,13 +23,13 @@ export class ConstructionTierMastery extends RealmedObject {
         if (data.name !== undefined) this.name = data.name;
         if (data.currentProgress !== undefined) this.currentProgress = data.currentProgress;
         if (data.completed !== undefined) this.completed = data.completed;
-        if (data.itemAwards !== undefined) this.itemAwards = data.itemAwards.map(({ id, quantity }) => ({item: game.items.getObjectSafe(id),quantity}));
+        if (data.itemAwards !== undefined) this.itemAwards = data.itemAwards.map(({ id, quantity }) => ({ item: game.items.getObjectSafe(id), quantity }));
         if (data.modifiers !== undefined) this.modifiers = data.modifiers;
     }
 
     // Progression methods
     addProgress(construction) {
-                this.currentProgress++;
+        this.currentProgress++;
 
         if (this.currentProgress >= this.maxProgress) {
             this.currentProgress = this.maxProgress; // just to be sure
@@ -46,13 +46,13 @@ export class ConstructionTierMastery extends RealmedObject {
         this.itemAwards.forEach(({ item, quantity }) => {
             game.bank.addItem(item, quantity, false, true, false, true, "TierMastery");
         });
-        construction.computeProvidedStats(true);
 
+        construction.computeProvidedStats(true);
         // Trigger UI refresh for the specific case of finishing a fixture with the menu open
     }
 
 
     addProvidedStatsTo(statProvider) {
-        if(this.completed) {statProvider.addStatObject(this, this.modifiers._stats); }
+        if (this.completed) { statProvider.addStatObject(this, this.modifiers._stats); }
     }
 }

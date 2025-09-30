@@ -11,11 +11,20 @@ export const language = {
     'MENU_TEXT_REMAINING': '剩余费用',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': '查看所有活动修改器',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': '所有主动构造修饰符',
+    'MENU_VIEW_HOUSE_TIERS': '查看房屋等级奖励',
+    'MENU_UNLOCKED_MASTERY_FOR_TIER': '您的房屋等级已提升到 <span class="construction-success">等级 ${tiername}</span>',
+    'MENU_HOUSE_TIER_BONUS_UNLOCKED': '房屋等级奖励已解锁！',
+    'MENU_HOUSE_COMPLETION': '房屋完成度',
+    'MENU_BUILT': '已建造',
+    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': '什么是房屋等级？',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': '您的房屋等级从0开始。随着您建造家具并填满每个房间，房屋等级会提升。</span>',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '当所有房间都包含所需等级或更高的家具时，房屋等级将提升。',
+    'MENU_TEXT_REWARDS': '奖励',
 
     'SHOP_NAME_Construction_Skillcape': '建筑技能角',
 
     'PET_NAME_ChuckTheForeman': '主管查克',
-    'PET_NAME_Scoobs':'斯库布斯',
+    'PET_NAME_Scoobs': '斯库布斯',
 
     'ITEM_NAME_Construction_Skillcape': '建筑技能角',
     'ITEM_NAME_Builders_Hat': '建筑工人的帽子',

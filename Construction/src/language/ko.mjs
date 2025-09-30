@@ -11,11 +11,20 @@ export const language = {
     'MENU_TEXT_REMAINING': '남은 비용',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': '모든 활성 수정자 보기',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': '모든 활성 건설 수정자',
+    'MENU_VIEW_HOUSE_TIERS': '하우스 단계 보너스 보기',
+    'MENU_UNLOCKED_MASTERY_FOR_TIER': '당신의 하우스 단계가 <span class="construction-success">단계 ${tiername}</span>로 올랐습니다',
+    'MENU_HOUSE_TIER_BONUS_UNLOCKED': '하우스 단계 보너스가 해제되었습니다!',
+    'MENU_HOUSE_COMPLETION': '하우스 완성도',
+    'MENU_BUILT': '완성됨',
+    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': '하우스 단계란 무엇인가요?',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': '당신의 하우스 단계는 0에서 시작합니다. 가구를 만들고 각 방을 채우면 하우스 단계가 향상됩니다.</span>',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '모든 방에 요구되는 단계 이상의 가구가 채워지면 하우스 단계가 상승합니다.',
+    'MENU_TEXT_REWARDS': '보상',
 
     'SHOP_NAME_Construction_Skillcape': '건설 스킬케이프',
 
     'PET_NAME_ChuckTheForeman': '포어맨 척',
-    'PET_NAME_Scoobs':'스쿱스',
+    'PET_NAME_Scoobs': '스쿱스',
 
     'ITEM_NAME_Construction_Skillcape': '건설 스킬케이프',
     'ITEM_NAME_Builders_Hat': '빌더 모자',

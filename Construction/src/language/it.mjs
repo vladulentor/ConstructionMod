@@ -11,11 +11,20 @@ export const language = {
     'MENU_TEXT_REMAINING': 'Costi Rimanenti',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'Visualizzare tutti i modificatori attivi',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'Tutti i modificatori di costruzione attivi',
+    'MENU_VIEW_HOUSE_TIERS': 'Visualizza i bonus dei livelli della casa',
+    'MENU_UNLOCKED_MASTERY_FOR_TIER': 'Il livello della tua casa è aumentato a <span class="construction-success">Livello ${tiername}</span>',
+    'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'Bonus del livello della casa sbloccato!',
+    'MENU_HOUSE_COMPLETION': 'Completamento della casa',
+    'MENU_BUILT': 'Costruito',
+    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Cosa sono i livelli della casa?',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Il livello della tua casa inizia da 0. Man mano che costruisci mobili e riempi ogni stanza, il livello della tua casa migliorerà.</span>',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'Quando tutte le stanze contengono mobili di un livello richiesto o superiore, il livello della casa aumenterà.',
+    'MENU_TEXT_REWARDS': 'Ricompense',
 
     'SHOP_NAME_Construction_Skillcape': 'Abilmantello della costruzione',
 
     'PET_NAME_ChuckTheForeman': 'Chuck il caposquadra',
-    'PET_NAME_Scoobs':'Scoobs',
+    'PET_NAME_Scoobs': 'Scoobs',
 
     'ITEM_NAME_Construction_Skillcape': 'Della Costruzione',
     'ITEM_NAME_Builders_Hat': 'Cappello dei costruttori',

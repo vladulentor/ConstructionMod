@@ -11,11 +11,20 @@ export const language = {
     'MENU_TEXT_REMAINING': 'Coûts Restants',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'Voir tous les Modificateurs Actifs',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'Tous les Modificateurs de Construction Actifs',
+    'MENU_VIEW_HOUSE_TIERS': 'Afficher les bonus des niveaux de maison',
+    'MENU_UNLOCKED_MASTERY_FOR_TIER': 'Le niveau de votre maison est passé à <span class="construction-success">Niveau ${tiername}</span>',
+    'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'Bonus de niveau de maison débloqué !',
+    'MENU_HOUSE_COMPLETION': 'Complétion de la maison',
+    'MENU_BUILT': 'Construit',
+    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Qu\'est-ce que les niveaux de maison ?',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Le niveau de votre maison commence à 0. En construisant des meubles et en remplissant chaque pièce, le niveau de votre maison s\'améliorera.</span>',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'Lorsque toutes les pièces contiennent des meubles d\'un niveau requis ou supérieur, le niveau de votre maison augmentera.',
+    'MENU_TEXT_REWARDS': 'Récompenses',
 
     'SHOP_NAME_Construction_Skillcape': 'Cape de Chantier',
 
     'PET_NAME_ChuckTheForeman': 'Chuck le contremaître',
-    'PET_NAME_Scoobs':'Scoobs',
+    'PET_NAME_Scoobs': 'Scoobs',
 
 
     'ITEM_NAME_Construction_Skillcape': 'Cape de Chantier',

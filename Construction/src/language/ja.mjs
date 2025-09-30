@@ -11,11 +11,20 @@ export const language = {
     'MENU_TEXT_REMAINING': '残りのコスト',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'すべてのアクティブな修飾子を表示',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'すべてのアクティブな建設修飾子',
+    'MENU_VIEW_HOUSE_TIERS': 'ハウスティアボーナスを見る',
+    'MENU_UNLOCKED_MASTERY_FOR_TIER': 'あなたのハウスティアが<span class="construction-success">ティア ${tiername}</span>に上がりました',
+    'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'ハウスティアボーナスをアンロックしました！',
+    'MENU_HOUSE_COMPLETION': 'ハウス完成度',
+    'MENU_BUILT': '建造済み',
+    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'ハウスティアとは何ですか？',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'あなたのハウスのティアは0から始まります。家具を作り、各部屋を埋めることで、ハウスのティアが向上します。</span>',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'すべての部屋に必要なティア以上の家具が揃うと、ハウスティアが上がります。',
+    'MENU_TEXT_REWARDS': '報酬',
 
     'SHOP_NAME_Construction_Skillcape': '建設スキルケープ',
 
     'PET_NAME_ChuckTheForeman': 'チャック・ザ・フォアマン',
-    'PET_NAME_Scoobs':'スクーブス',
+    'PET_NAME_Scoobs': 'スクーブス',
 
     'ITEM_NAME_Construction_Skillcape': '建設スキルケープ',
     'ITEM_NAME_Builders_Hat': 'ビルダーハット',

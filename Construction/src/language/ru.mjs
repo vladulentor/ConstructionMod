@@ -11,11 +11,20 @@ export const language = {
     'MENU_TEXT_REMAINING': 'Оставшиеся расходы',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'Просмотреть все активные модификаторы',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'Все активные модификаторы строительства',
+    'MENU_VIEW_HOUSE_TIERS': 'Посмотреть бонусы уровня дома',
+    'MENU_UNLOCKED_MASTERY_FOR_TIER': 'Уровень вашего дома повысился до <span class="construction-success">Уровня ${tiername}</span>',
+    'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'Бонус уровня дома разблокирован!',
+    'MENU_HOUSE_COMPLETION': 'Завершение дома',
+    'MENU_BUILT': 'Построено',
+    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Что такое уровни дома?',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Уровень вашего дома начинается с 0. По мере того как вы строите мебель и заполняете каждую комнату, уровень вашего дома будет повышаться.</span>',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'Когда все комнаты содержат мебель требуемого уровня или выше, уровень дома повысится.',
+    'MENU_TEXT_REWARDS': 'Награды',
 
     'SHOP_NAME_Construction_Skillcape': 'Плащ Мастера: Строительство',
 
     'PET_NAME_ChuckTheForeman': 'Чак бригадир',
-    'PET_NAME_Scoobs':'Скубс',
+    'PET_NAME_Scoobs': 'Скубс',
 
     'ITEM_NAME_Construction_Skillcape': 'Плащ Мастера: Строительство',
     'ITEM_NAME_Builders_Hat': 'Шляпа строителя',

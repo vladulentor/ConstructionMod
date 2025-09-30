@@ -152,7 +152,7 @@ export class Construction extends ArtisanSkill {
         });
 
     }
-
+    
     getFixtureInterval(fixture) {
         return this.modifyInterval(this.baseInterval, fixture);
     }
@@ -299,7 +299,7 @@ export class Construction extends ArtisanSkill {
         if (stack.includes('buildMasteryLog') || stack.includes('buildSkillsLog')) return true;
         else return false;
     }
-
+    
     isMasteryActionUnlocked(action) {
         return false;
     }

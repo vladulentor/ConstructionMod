@@ -11,8 +11,9 @@ export class ConstructionTierMastery extends RealmedObject {
         this.currentProgress = 0;
         this.maxProgress = 100;
         this.completed = false;
-
-        this.itemAwards = data.itemAwards.map(({ id, quantity }) => ({item: game.items.getObjectSafe(id),quantity})) || [];
+        if (data.pets !== undefined)
+            this.pets = game.pets.getArrayFromIds(data.pets);
+        if (data.itemAwards !== undefined) this.itemAwards = data.itemAwards.map(({ id, quantity }) => ({ item: game.items.getObjectSafe(id), quantity })) || [];
         //this.pets=data.pets;
         this.modifiers = new ConstructionModifierTiers(data, game, `${this.id}`);
     }
@@ -23,13 +24,13 @@ export class ConstructionTierMastery extends RealmedObject {
         if (data.name !== undefined) this.name = data.name;
         if (data.currentProgress !== undefined) this.currentProgress = data.currentProgress;
         if (data.completed !== undefined) this.completed = data.completed;
-        if (data.itemAwards !== undefined) this.itemAwards = data.itemAwards.map(({ id, quantity }) => ({item: game.items.getObjectSafe(id),quantity}));
+        if (data.itemAwards !== undefined) this.itemAwards = data.itemAwards.map(({ id, quantity }) => ({ item: game.items.getObjectSafe(id), quantity }));
         if (data.modifiers !== undefined) this.modifiers = data.modifiers;
     }
 
     // Progression methods
     addProgress(construction) {
-                this.currentProgress++;
+        this.currentProgress++;
 
         if (this.currentProgress >= this.maxProgress) {
             this.currentProgress = this.maxProgress; // just to be sure
@@ -41,7 +42,7 @@ export class ConstructionTierMastery extends RealmedObject {
         if (this.completed) return;
         this.completed = true;
 
-        
+
         // Grant item awards
         this.itemAwards.forEach(({ item, quantity }) => {
             game.bank.addItem(item, quantity, false, true, false, true, "TierMastery");
@@ -53,6 +54,6 @@ export class ConstructionTierMastery extends RealmedObject {
 
 
     addProvidedStatsTo(statProvider) {
-        if(this.completed) {statProvider.addStatObject(this, this.modifiers._stats); }
+        if (this.completed) { statProvider.addStatObject(this, this.modifiers._stats); }
     }
 }

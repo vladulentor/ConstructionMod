@@ -15,6 +15,7 @@ export const language = {
     'SHOP_NAME_Construction_Skillcape': 'Плащ Мастера: Строительство',
 
     'PET_NAME_ChuckTheForeman': 'Чак бригадир',
+    'PET_NAME_Scoobs':'Скубс',
 
     'ITEM_NAME_Construction_Skillcape': 'Плащ Мастера: Строительство',
     'ITEM_NAME_Builders_Hat': 'Шляпа строителя',

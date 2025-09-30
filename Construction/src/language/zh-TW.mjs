@@ -15,6 +15,7 @@ export const language = {
     'SHOP_NAME_Construction_Skillcape': '建築技能角',
 
     'PET_NAME_ChuckTheForeman': '主管查克',
+    'PET_NAME_Scoobs':'斯庫布斯',
 
     'ITEM_NAME_Construction_Skillcape': '建築技能角',
     'ITEM_NAME_Builders_Hat': '建築工人的帽子',

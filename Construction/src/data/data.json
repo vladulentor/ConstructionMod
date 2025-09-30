@@ -606,15 +606,16 @@
         "scaleChanceWithMasteryPool": false,
         "skillID": "rielkConstruction:Construction"
       },
-       {
-        "id": "Boingo",
-        "name": "Boingo",
-        "media": "assets/chuck_the_foreman.png",
+      {
+        "id": "Scoobs",
+        "name": "Scoobs",
+        "media": "assets/items/scoobs.png",
         "ignoreCompletion": false,
         "modifiers": {
           "skillInterval": [
             {
-              "value": 3
+              "realmID": "melvorD:Melvor",
+              "value": -5
             }
           ]
         },
@@ -708,8 +709,7 @@
         "skillID": "rielkConstruction:Construction",
         "data": {
           "pets": [
-            "rielkConstruction:ChuckTheForeman"
-          ],
+            "rielkConstruction:ChuckTheForeman"          ],
           "rareDrops": [
             {
               "itemID": "melvorD:Gold_Topaz_Ring",
@@ -759,7 +759,7 @@
             "upgrades": [],
             "pets": [
               "rielkConstruction:ChuckTheForeman",
-              "rielkConstruction:Boingo"
+              "rielkConstruction:Scoobs"
             ]
           },
           "masteryLevelUnlocks": [
@@ -831,7 +831,7 @@
               "currentProgress": 0,
               "completed": false,
               "itemAwards": [
-               {
+                {
                   "id": "rielkConstruction:Teak_Planks",
                   "quantity": 900
                 },
@@ -866,7 +866,7 @@
               "currentProgress": 0,
               "completed": false,
               "itemAwards": [
-                       {
+                {
                   "id": "rielkConstruction:Mahogany_Planks",
                   "quantity": 1800
                 },
@@ -896,7 +896,7 @@
               "currentProgress": 0,
               "completed": false,
               "itemAwards": [
-                              {
+                {
                   "id": "rielkConstruction:Magic_Planks",
                   "quantity": 4200
                 },
@@ -926,15 +926,7 @@
               "currentProgress": 0,
               "completed": false,
               "itemAwards": [],
-              "modifiers": {
-                "flatSkillInterval": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "realmID": "melvorD:Melvor",
-                    "value": -150
-                  }
-                ]
-              }
+              "pets":["rielkConstruction:Scoobs"]
             }
           ],
           "recipes": [

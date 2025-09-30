@@ -11,11 +11,13 @@ export const language = {
     'MENU_TEXT_REMAINING': 'Costs Remaining',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'View All Active Modifiers',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'All Active Construction Modifiers',
-    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'House Tiers',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION': 'As you build up the furniture in your house, the Tier of your house will improve. Initially, your House will start at Tier 0. Once every room of your house has furniture of at least a certain tier, your house will Tier up.',
+
+    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'What are House Tiers',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Initially your House Tier will be 0. As you build furniture and fill your house\'s rooms, the Tier of your house will improve.',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'Once every room of your house has furniture of at least a certain tier, you will unlock bonuses as listed.',
     'MENU_TEXT_REWARDS': 'Rewards',
 
-    
+
     'SHOP_NAME_Construction_Skillcape': 'Construction Skillcape',
 
     'PET_NAME_ChuckTheForeman': 'Chuck the Foreman',

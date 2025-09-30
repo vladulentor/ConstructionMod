@@ -2,7 +2,7 @@ const { loadModule, onInterfaceReady } = mod.getContext(import.meta);
 
 const { ConstructionActionEvent } = await loadModule('src/construction/gameEvents.mjs');
 const { ConstructionStats } = await loadModule('src/construction/statistics.mjs');
-const { getRielkLangString } = await loadModule('src/language/translationManager.mjs');
+const { getRielkLangString, templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
 const { ConstructionInterface } = await loadModule('src/interface/constructionInterface.mjs');
 const { Encoder } = await loadModule('src/construction/encoder.mjs');
 
@@ -132,7 +132,7 @@ export class Construction extends ArtisanSkill {
     }
 
     shouldShowSkillInSidebar() {
-    return true;
+        return true;
     }
     updateRecipeCounts() {
         const tierNum = cloudManager?.hasTotHEntitlementAndIsEnabled ? 8 : 5;
@@ -231,14 +231,72 @@ export class Construction extends ArtisanSkill {
             tierMastery.applyDataModification(modData, this.game);
         });
     }
+        createItemCurrencyNodes(costs) {
+        var _a;
+        const nodes = [];
+        const createSpan = (children) => {
+            nodes.push(createElement('span', { className: 'text-success', children }));
+        };
+        const smallImage = (media) => createElement('img', { className: 'skill-icon-xs', attributes: [['src', media]] });
+        (_a = costs.itemAwards) === null || _a === void 0 ? void 0 : _a.forEach(({ item, quantity }) => {
+            createSpan(templateLangStringWithNodes('MENU_TEXT_YOU_GAINED_ITEM', { itemImage: smallImage(item.media) }, { count: numberWithCommas(quantity), itemName: item.name }));
+        });
+        return nodes;
+    }
+
+    queueMasteryBonusModal(bonus) {
+        const modalBody = createElement('div', { className: 'justify-vertical-center' });
+        createElement('h5', {
+            text: "You got the thing",//templateRielkLangString('UNLOCKED_MASTERY_FOR_TIER', {tiername: bonus.name,}),
+            className: 'font-w400 mb-0',
+            parent: modalBody,
+        });
+        if (bonus.modifiers._stats.hasStats) {
+            createElement('h5', {
+                text:  "You got the thing",//getRielkLangString('PERMANENT_BONUS_UNLOCKED'),
+                className: 'font-w600 font-size-lg text-warning mb-0 mt-2',
+                parent: modalBody,
+            });
+            modalBody.append(...bonus.modifiers._stats.describeAsSpans());
+        }
+        const rewardNodes = this.createItemCurrencyNodes(bonus);
+        if (rewardNodes.length > 0) {
+            createElement('h5', {
+                text:  "You got the thing",//getRielkLangString('REWARDS_UNLOCKED'),
+                className: 'font-w600 font-size-lg text-warning mb-0 mt-2',
+                parent: modalBody,
+            });
+            modalBody.append(...rewardNodes);
+        }
+        if (bonus.pets !== undefined) {
+            createElement('h5', {
+                text: bonus.pets.length > 1 ? getLangString('PETS_UNLOCKED') : getLangString('COMPLETION_LOG_PETS_UNLOCKED'),
+                className: 'font-w600 font-size-lg text-warning mb-0 mt-2',
+                parent: modalBody,
+            });
+            bonus.pets.forEach((pet) => {
+                const petSpan = createElement('span', { className: 'text-success', parent: modalBody });
+                petSpan.append(createElement('img', { className: 'skill-icon-md mr-1', attributes: [['src', pet.media]] }), pet.name);
+            });
+        }
+        addModalToQueue({
+            titleText: getLangString('MASTERY_BONUS_UNLOCKED'),
+            imageUrl: this.media,
+            html: modalBody,
+            allowOutsideClick: false,
+            showConfirmButton: true,
+            imageWidth: 128,
+            imageHeight: 128,
+        });
+    }
 
     computeTotalMasteryActions() {
 
     }
     get hasMastery() { // We inspect the call stack to determine if we have mastery, this is so we can be in the mastery log without having a mastery bar.
-    const stack = new Error().stack;
-    if (stack.includes('buildMasteryLog') || stack.includes('buildSkillsLog')) return true;
-    else return false;
+        const stack = new Error().stack;
+        if (stack.includes('buildMasteryLog') || stack.includes('buildSkillsLog')) return true;
+        else return false;
     }
 
     isMasteryActionUnlocked(action) {
@@ -268,17 +326,17 @@ export class Construction extends ArtisanSkill {
     updateRealmSelection() {
         this.ui.updateRealmSelection(this.currentRealm);
     }
-    
+
     getMaxTotalMasteryLevels() {
         let tiernum = cloudManager.hasTotHEntitlementAndIsEnabled ? 8 : 5;
         return this.recipeNumber * tiernum;
     }
 
     getTotalCurrentMasteryLevels() {
-                return this.recipeCountByTier.reduce((a, b) => a + b, 0);
+        return this.recipeCountByTier.reduce((a, b) => a + b, 0);
 
     }
-    
+
     render() {
         super.render();
         this.ui.render();
@@ -457,7 +515,7 @@ export class Construction extends ArtisanSkill {
         this.start();
 
     }
-    
+
     getRegistry(type) {
         switch (type) {
             case ScopeSourceType.Category:
@@ -491,7 +549,7 @@ export class Construction extends ArtisanSkill {
         this.fixtures.forEach(fixture => fixture.onLoad());
         this.updateRecipeCounts();
         this.popTierMasteries();
-        
+
         this.render();
     }
     resetActionState() {

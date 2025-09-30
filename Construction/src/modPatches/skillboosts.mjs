@@ -1,6 +1,5 @@
 export function skillBoostsCompatibility() {
     let myheader= document.getElementById('rielk-mastery');
-    console.log(myheader);
     skillBoosts.addNewSkill({
         // Required //
         skill: game.construction,

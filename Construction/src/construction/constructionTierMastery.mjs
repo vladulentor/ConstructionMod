@@ -13,7 +13,7 @@ export class ConstructionTierMastery extends RealmedObject {
         this.completed = false;
 
         this.itemAwards = data.itemAwards.map(({ id, quantity }) => ({item: game.items.getObjectSafe(id),quantity})) || [];
-
+        //this.pets=data.pets;
         this.modifiers = new ConstructionModifierTiers(data, game, `${this.id}`);
     }
 
@@ -41,13 +41,13 @@ export class ConstructionTierMastery extends RealmedObject {
         if (this.completed) return;
         this.completed = true;
 
-
+        
         // Grant item awards
         this.itemAwards.forEach(({ item, quantity }) => {
             game.bank.addItem(item, quantity, false, true, false, true, "TierMastery");
         });
         construction.computeProvidedStats(true);
-
+        construction.queueMasteryBonusModal(this);
         // Trigger UI refresh for the specific case of finishing a fixture with the menu open
     }
 

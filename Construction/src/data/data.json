@@ -605,6 +605,22 @@
         "activeInRaid": false,
         "scaleChanceWithMasteryPool": false,
         "skillID": "rielkConstruction:Construction"
+      },
+       {
+        "id": "Boingo",
+        "name": "Boingo",
+        "media": "assets/chuck_the_foreman.png",
+        "ignoreCompletion": false,
+        "modifiers": {
+          "skillInterval": [
+            {
+              "value": 3
+            }
+          ]
+        },
+        "activeInRaid": false,
+        "scaleChanceWithMasteryPool": false,
+        "skillID": "rielkConstruction:Construction"
       }
     ],
     "itemSynergies": [
@@ -742,7 +758,8 @@
             ],
             "upgrades": [],
             "pets": [
-              "rielkConstruction:ChuckTheForeman"
+              "rielkConstruction:ChuckTheForeman",
+              "rielkConstruction:Boingo"
             ]
           },
           "masteryLevelUnlocks": [
@@ -761,13 +778,13 @@
             {
               "id": "Materials",
               "name": "Materials",
-              "media": "assets\\items\\planks_normal.png",
+              "media": "assets/items/planks_normal.png",
               "type": "Artisan"
             },
             {
               "id": "House",
               "name": "House",
-              "media": "assets\\house.png",
+              "media": "assets/house.png",
               "type": "House"
             }
           ],
@@ -780,16 +797,29 @@
               "completed": false,
               "itemAwards": [
                 {
-                  "id": "melvorD:Normal_Logs",
-                  "quantity": 1
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 300
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 300
+                },
+                {
+                  "id": "melvorF:Food_Box_I",
+                  "quantity": 600
                 }
               ],
               "modifiers": {
                 "flatSkillInterval": [
                   {
                     "skillID": "rielkConstruction:Construction",
-                    "realmID": "melvorD:Melvor",
                     "value": -150
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 10,
+                    "skillID": "rielkConstruction:Construction"
                   }
                 ]
               }
@@ -801,17 +831,30 @@
               "currentProgress": 0,
               "completed": false,
               "itemAwards": [
+               {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 900
+                },
                 {
-                  "id": "melvorD:Normal_Logs",
-                  "quantity": 1
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 900
+                },
+                {
+                  "id": "melvorF:Food_Box_I",
+                  "quantity": 2400
                 }
               ],
               "modifiers": {
-                "flatSkillInterval": [
+                "flatBasePrimaryProductQuantity": [
                   {
-                    "skillID": "rielkConstruction:Construction",
-                    "realmID": "melvorD:Melvor",
-                    "value": -150
+                    "value": 1,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ],
+                "skillPreservationChance": [
+                  {
+                    "value": 10,
+                    "skillID": "rielkConstruction:Construction"
                   }
                 ]
               }
@@ -823,9 +866,17 @@
               "currentProgress": 0,
               "completed": false,
               "itemAwards": [
+                       {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 1800
+                },
                 {
-                  "id": "melvorD:Normal_Logs",
-                  "quantity": 1
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 1800
+                },
+                {
+                  "id": "melvorF:Food_Box_II",
+                  "quantity": 3000
                 }
               ],
               "modifiers": {
@@ -845,9 +896,17 @@
               "currentProgress": 0,
               "completed": false,
               "itemAwards": [
+                              {
+                  "id": "rielkConstruction:Magic_Planks",
+                  "quantity": 4200
+                },
                 {
-                  "id": "melvorD:Normal_Logs",
-                  "quantity": 1
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 4200
+                },
+                {
+                  "id": "melvorF:Food_Box_II",
+                  "quantity": 5000
                 }
               ],
               "modifiers": {
@@ -866,12 +925,7 @@
               "tier": 5,
               "currentProgress": 0,
               "completed": false,
-              "itemAwards": [
-                {
-                  "id": "melvorD:Normal_Logs",
-                  "quantity": 1
-                }
-              ],
+              "itemAwards": [],
               "modifiers": {
                 "flatSkillInterval": [
                   {

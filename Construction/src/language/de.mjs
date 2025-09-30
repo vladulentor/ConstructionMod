@@ -67,8 +67,11 @@ export const language = {
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'Sie haben nicht die erforderlichen Materialien, um das zu bauen',
 
-    'MASTERY_BONUS_ Construction_ 0': 'Jede Stufe verleiht eine Chance von +0,2 %, Ressourcen zu bewahren.',
-    'MASTERY_BONUS_ Construction_ 1': '+5 % Chance, Ressourcen zu bewahren..',
+    'MASTERY_BONUS_ Construction_ 0': 'Schalte die Effekte der Stufe 1 des Einrichtungsgegenstands frei.',
+    'MASTERY_BONUS_ Construction_ 1': 'Schalte die Effekte der Stufe 2 des Einrichtungsgegenstands frei.',
+    'MASTERY_BONUS_ Construction_ 2': 'Schalte die Effekte der Stufe 3 des Einrichtungsgegenstands frei.',
+    'MASTERY_BONUS_ Construction_ 3': 'Schalte die Effekte der Stufe 4 des Einrichtungsgegenstands frei.',
+    'MASTERY_BONUS_ Construction_ 4': 'Schalte die Effekte der Stufe 5 des Einrichtungsgegenstands frei.',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Baumaterialien',
     'SKILL_CATEGORY_ Construction_ House': 'Haus',

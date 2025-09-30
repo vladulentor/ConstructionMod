@@ -57,6 +57,7 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
 
+
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% chance to regain a Tree Seed in Farming when harvested',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% actions required to upgrade in Construction',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% actions required to upgrade in Construction',
@@ -64,10 +65,15 @@ export const language = {
     'DESCRIPTION_ADDS_ITEM': 'Gives ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': 'Unlocks 1 ${plotCategory} Plot in Farming',
 
-    'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
 
-    'MASTERY_BONUS_ Construction_ 0': 'Each level provides +0.2% chance to preserve resources.',
-    'MASTERY_BONUS_ Construction_ 1': '+5% chance to preserve resources.',
+    'MASTERY_BONUS_ Construction_ 0': 'Unlock fixture\'s Tier 1 effects.',
+    'MASTERY_BONUS_ Construction_ 1': 'Unlock fixture\'s Tier 2 effects.',
+    'MASTERY_BONUS_ Construction_ 2': 'Unlock fixture\'s Tier 3 effects.',
+    'MASTERY_BONUS_ Construction_ 3': 'Unlock fixture\'s Tier 4 effects.',
+    'MASTERY_BONUS_ Construction_ 4': 'Unlock fixture\'s Tier 5 effects.',
+
+
+    'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Materials',
     'SKILL_CATEGORY_ Construction_ House': 'House',

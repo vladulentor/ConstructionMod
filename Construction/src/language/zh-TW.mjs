@@ -65,8 +65,11 @@ export const language = {
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '你沒有建造它所需的材料。',
 
-    'MASTERY_BONUS_ Construction_ 0': '每個等級提供 +0.2% 的機會來保存資源。',
-    'MASTERY_BONUS_ Construction_ 1': '+5% 機會保護資源。',
+    'MASTERY_BONUS_ Construction_ 0': '解鎖家具的等級1效果。',
+    'MASTERY_BONUS_ Construction_ 1': '解鎖家具的等級2效果。',
+    'MASTERY_BONUS_ Construction_ 2': '解鎖家具的等級3效果。',
+    'MASTERY_BONUS_ Construction_ 3': '解鎖家具的等級4效果。',
+    'MASTERY_BONUS_ Construction_ 4': '解鎖家具的等級5效果。',
 
     'SKILL_CATEGORY_ Construction_ Materials': '材料',
     'SKILL_CATEGORY_ Construction_ House': '房子',

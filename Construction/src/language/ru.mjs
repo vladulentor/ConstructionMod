@@ -65,8 +65,11 @@ export const language = {
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'У вас нет необходимых материалов для его постройки.',
 
-    'MASTERY_BONUS_ Construction_ 0': 'Каждый уровень дает +0,2% к шансу сэкономить ресурсы.',
-    'MASTERY_BONUS_ Construction_ 1': '+5% к шансу сэкономить ресурсы.',
+    'MASTERY_BONUS_ Construction_ 0': 'Разблокируйте эффекты уровня 1 мебели.',
+    'MASTERY_BONUS_ Construction_ 1': 'Разблокируйте эффекты уровня 2 мебели.',
+    'MASTERY_BONUS_ Construction_ 2': 'Разблокируйте эффекты уровня 3 мебели.',
+    'MASTERY_BONUS_ Construction_ 3': 'Разблокируйте эффекты уровня 4 мебели.',
+    'MASTERY_BONUS_ Construction_ 4': 'Разблокируйте эффекты уровня % мебели.',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Материалы',
     'SKILL_CATEGORY_ Construction_ House': 'Дом',

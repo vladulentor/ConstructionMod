@@ -65,8 +65,11 @@ export const language = {
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'Non hai i materiali necessari per Costruirlo.',
 
-    'MASTERY_BONUS_ Construction_ 0': 'Ogni livello fornisce una probabilità del +0,2% di preservare le risorse.',
-    'MASTERY_BONUS_ Construction_ 1': '+5% di possibilità di preservare le risorse.',
+    'MASTERY_BONUS_ Construction_ 0': 'Sblocca gli effetti del livello 1 dell\'arredamento.',
+    'MASTERY_BONUS_ Construction_ 1': 'Sblocca gli effetti del livello 2 dell\'arredamento.',
+    'MASTERY_BONUS_ Construction_ 2': 'Sblocca gli effetti del livello 3 dell\'arredamento.',
+    'MASTERY_BONUS_ Construction_ 3': 'Sblocca gli effetti del livello 4 dell\'arredamento.',
+    'MASTERY_BONUS_ Construction_ 4': 'Sblocca gli effetti del livello 5 dell\'arredamento.',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Materiali',
     'SKILL_CATEGORY_ Construction_ House': 'Casa',

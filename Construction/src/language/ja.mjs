@@ -65,8 +65,11 @@ export const language = {
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'それを作るのに必要な資材がない',
 
-    'MASTERY_BONUS_ Construction_ 0': '各レベルは、リソースを保存する可能性を +0.2% 提供します。',
-    'MASTERY_BONUS_ Construction_ 1': 'リソースを保存する確率が 5% 増加します。',
+    'MASTERY_BONUS_ Construction_ 0': '家具のティア1効果をアンロックします。',
+    'MASTERY_BONUS_ Construction_ 1': '家具のティア2効果をアンロックします。',
+    'MASTERY_BONUS_ Construction_ 2': '家具のティア3効果をアンロックします。',
+    'MASTERY_BONUS_ Construction_ 3': '家具のティア4効果をアンロックします。',
+    'MASTERY_BONUS_ Construction_ 4': '家具のティア5効果をアンロックします。',
 
     'SKILL_CATEGORY_ Construction_ Materials': '材料',
     'SKILL_CATEGORY_ Construction_ House': '家',

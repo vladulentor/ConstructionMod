@@ -65,8 +65,11 @@ export const language = {
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '그것을 만드는 데 필요한 재료가 없습니다.',
 
-    'MASTERY_BONUS_ Construction_ 0': '각 레벨마다 자원을 보존할 확률이 0.2% 증가합니다.',
-    'MASTERY_BONUS_ Construction_ 1': '자원 보존 확률이 5% 증가합니다.',
+    'MASTERY_BONUS_ Construction_ 0': '가구의 단계 1 효과를 잠금 해제합니다.',
+    'MASTERY_BONUS_ Construction_ 1': '가구의 단계 2 효과를 잠금 해제합니다.',
+    'MASTERY_BONUS_ Construction_ 2': '가구의 단계 3 효과를 잠금 해제합니다.',
+    'MASTERY_BONUS_ Construction_ 3': '가구의 단계 4 효과를 잠금 해제합니다.',
+    'MASTERY_BONUS_ Construction_ 4': '가구의 단계 5 효과를 잠금 해제합니다.',
 
     'SKILL_CATEGORY_ Construction_ Materials': '재료',
     'SKILL_CATEGORY_ Construction_ House': 'House',

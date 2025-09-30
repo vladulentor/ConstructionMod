@@ -23,13 +23,13 @@ class RielkConstructionMasteryElement extends HTMLElement {
     const maxTiers = 5; // hasDLC ? 8 : 5;
       // This'll be changed when the TotH tier will actually be added
     this._bars = [];
-
+     if(window.innerWidth <= 768) 
+    this.barsContainer.classList.add("flex-column");
     // tier bars
     for (let i = 0; i < maxTiers; i++) {
       const barWrapper = document.createElement("div");
       barWrapper.className = "d-flex flex-column mx-1";
       barWrapper.style.width = "100%";
-
       // empty bars
       const progressContainer = document.createElement("div");
       progressContainer.className = "mastery empty mb-1";

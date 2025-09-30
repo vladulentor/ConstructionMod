@@ -40,7 +40,7 @@ export class Construction extends ArtisanSkill {
         const viewConstructionButton = createElement('button', {
             className: 'btn btn-small btn-info font-size-xs p-1',
             attributes: [['role', 'button']],
-            text: 'View Construction',
+            text: getRielkLangString('MENU_VIEW_HOUSE_TIERS'),
         });
 
         // Append the button
@@ -247,14 +247,14 @@ export class Construction extends ArtisanSkill {
 
     queueMasteryBonusModal(bonus) {
         const modalBody = createElement('div', { className: 'justify-vertical-center' });
-        createElement('h5', {
-            text: "You got the thing",//templateRielkLangString('UNLOCKED_MASTERY_FOR_TIER', {tiername: bonus.name,}),
+        const title = createElement('h5', {
             className: 'font-w400 mb-0',
             parent: modalBody,
         });
+        title.innerHTML = templateRielkLangString('MENU_UNLOCKED_MASTERY_FOR_TIER', {tiername: bonus.tier});
         if (bonus.modifiers._stats.hasStats) {
             createElement('h5', {
-                text:  "You got the thing",//getRielkLangString('PERMANENT_BONUS_UNLOCKED'),
+                text:  getLangString('PERMANENT_BONUS_UNLOCKED'),
                 className: 'font-w600 font-size-lg text-warning mb-0 mt-2',
                 parent: modalBody,
             });
@@ -263,7 +263,7 @@ export class Construction extends ArtisanSkill {
         const rewardNodes = this.createItemCurrencyNodes(bonus);
         if (rewardNodes.length > 0) {
             createElement('h5', {
-                text:  "You got the thing",//getRielkLangString('REWARDS_UNLOCKED'),
+                text:  getLangString('REWARDS_UNLOCKED'),
                 className: 'font-w600 font-size-lg text-warning mb-0 mt-2',
                 parent: modalBody,
             });
@@ -281,7 +281,7 @@ export class Construction extends ArtisanSkill {
             });
         }
         addModalToQueue({
-            titleText: getLangString('MASTERY_BONUS_UNLOCKED'),
+            titleText: getRielkLangString('MENU_HOUSE_TIER_BONUS_UNLOCKED'),
             imageUrl: ctx.getResourceUrl('assets/cabin.png'), //that cabin could probably be an object of construction
             html: modalBody,
             allowOutsideClick: false,

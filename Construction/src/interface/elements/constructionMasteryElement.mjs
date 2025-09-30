@@ -1,14 +1,14 @@
+const ctx = mod.getContext(import.meta);
 const { loadModule } = mod.getContext(import.meta);
-
-const { templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
+const { getRielkLangString } = await loadModule('src/language/translationManager.mjs');
 
 
 class RielkConstructionMasteryElement extends HTMLElement {
   constructor() {
     super();
-
     this._content = new DocumentFragment();
     this._content.append(getTemplateNode('rielk-construction-mastery'));
+    this._image =getElementFromFragment(this._content, 'house-image', 'img');
     this.barsContainer = getElementFromFragment(this._content, 'mastery-bars-container', 'div');
     this._aggregateTiers = getElementFromFragment(this._content, 'tiers-completed-aggregate', 'small');
     this._bars = []; // will hold objects: {bar, tierText, currentTier, fixturesInTier}
@@ -66,6 +66,8 @@ class RielkConstructionMasteryElement extends HTMLElement {
       });
       this.fixturesInTier = 24; // default for no mods or DLC
     }
+    this._image.src= ctx.getResourceUrl('assets/cabin.png');
+
   }
   setFixtureCount(fixtureCount) {
     if (fixtureCount <= 0) return;
@@ -95,7 +97,7 @@ class RielkConstructionMasteryElement extends HTMLElement {
   setAggregate() {
     this.aggregateBuilt = this._bars.reduce((sum, bar) => sum + bar.currentBuilt, 0);
     this.aggregateTotal = this.fixturesInTier * this._bars.length;
-    this._aggregateTiers.textContent = `${this.aggregateBuilt} / ${this.aggregateTotal} (${((this.aggregateBuilt / this.aggregateTotal) * 100).toFixed(2)}%) Built`;
+    this._aggregateTiers.textContent = `${this.aggregateBuilt} / ${this.aggregateTotal} (${((this.aggregateBuilt / this.aggregateTotal) * 100).toFixed(2)}%) ${getRielkLangString('MENU_BUILT')}`;
 
   }
 

@@ -11,10 +11,11 @@ export const language = {
     'MENU_TEXT_REMAINING': 'Costs Remaining',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'View All Active Modifiers',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'All Active Construction Modifiers',
-
-    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'What are House Tiers',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Initially your House Tier will be 0. As you build furniture and fill your house\'s rooms, the Tier of your house will improve.',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'Once every room of your house has furniture of at least a certain tier, you will unlock bonuses as listed.',
+    'MENU_HOUSE_COMPLETION':'House Completion',
+    'MENU_BUILT':'Built',
+    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'What are House Tiers?',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Your House\'s Tier starts at 0. As you build furniture and fill each room, your House\'s tier will improve.</span>',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'When all rooms contain furniture of a required tier or higher, your House Tier will increase.',
     'MENU_TEXT_REWARDS': 'Rewards',
 
 

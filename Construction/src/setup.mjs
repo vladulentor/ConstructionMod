@@ -10,7 +10,6 @@ export async function setup(ctx) {
     await setup.loadInterfaceElements();
 
     game.construction = game.registerSkill(game.registeredNamespaces.getNamespace('rielkConstruction'), Construction);
-
     await setup.applyPatches();
     await setup.loadData();
     await setup.modCompatibility(game.construction);

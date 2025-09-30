@@ -13,6 +13,7 @@ const { ConstructionRecipe } = await loadModule('src/construction/constructionRe
 const { ConstructionRoom } = await loadModule('src/construction/constructionRoom.mjs');
 const { ConstructionTierMastery } = await loadModule('src/construction/constructionTierMastery.mjs');
 
+const ctx = mod.getContext(import.meta);
 
 export class Construction extends ArtisanSkill {
     constructor(namespace, game) {
@@ -281,7 +282,7 @@ export class Construction extends ArtisanSkill {
         }
         addModalToQueue({
             titleText: getLangString('MASTERY_BONUS_UNLOCKED'),
-            imageUrl: this.media,
+            imageUrl: ctx.getResourceUrl('assets/cabin.png'), //that cabin could probably be an object of construction
             html: modalBody,
             allowOutsideClick: false,
             showConfirmButton: true,

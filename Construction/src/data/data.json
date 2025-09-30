@@ -612,10 +612,9 @@
         "media": "assets/items/scoobs.png",
         "ignoreCompletion": false,
         "modifiers": {
-          "skillInterval": [
+          "flatSummoningAttackInterval": [
             {
-              "realmID": "melvorD:Melvor",
-              "value": -5
+              "value": -750
             }
           ]
         },

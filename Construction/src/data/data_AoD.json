@@ -480,7 +480,7 @@
             },
             {
               "id": "Vault5",
-              "level": 64,
+              "level": 2,
               "baseExperience": 250,
               "baseActionCost": 15,
               "categoryID": "rielkConstruction:House",

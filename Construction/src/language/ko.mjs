@@ -11,10 +11,22 @@ export const language = {
     'MENU_TEXT_REMAINING': '남은 비용',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': '모든 활성 수정자 보기',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': '모든 활성 건설 수정자',
+    'MENU_VIEW_HOUSE_TIERS': '하우스 단계 보너스 보기',
+    'MENU_UNLOCKED_MASTERY_FOR_TIER': '당신의 하우스 단계가 <span class="construction-success">단계 ${tiername}</span>로 올랐습니다',
+    'MENU_HOUSE_TIER_BONUS_UNLOCKED': '하우스 단계 보너스가 해제되었습니다!',
+    'MENU_HOUSE_COMPLETION': '하우스 완성도',
+    'MENU_BUILT': '완성됨',
+    'MENU_HOUSE': "집",
+
+    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': '하우스 단계란 무엇인가요?',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': '당신의 하우스 단계는 0에서 시작합니다. 가구를 만들고 각 방을 채우면 하우스 단계가 향상됩니다.</span>',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '모든 방에 요구되는 단계 이상의 가구가 채워지면 하우스 단계가 상승합니다.',
+    'MENU_TEXT_REWARDS': '보상',
 
     'SHOP_NAME_Construction_Skillcape': '건설 스킬케이프',
 
     'PET_NAME_ChuckTheForeman': '포어맨 척',
+    'PET_NAME_Scoobs': '스쿱스',
 
     'ITEM_NAME_Construction_Skillcape': '건설 스킬케이프',
     'ITEM_NAME_Builders_Hat': '빌더 모자',
@@ -40,7 +52,6 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': '화분: 층 4',
     'ITEM_NAME_Flower_Pots_Token_5': '화분: 층 5',
 
-    'ITEM_NAME_Mastery_Token_Construction': '마스터리 토큰(구조)',
 
     'ITEM_DESCRIPTION_Builders_Hat': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
     'ITEM_DESCRIPTION_Builders_Body': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
@@ -56,11 +67,14 @@ export const language = {
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '그것을 만드는 데 필요한 재료가 없습니다.',
 
-    'MASTERY_BONUS_ Construction_ 0': '각 레벨마다 자원을 보존할 확률이 0.2% 증가합니다.',
-    'MASTERY_BONUS_ Construction_ 1': '자원 보존 확률이 5% 증가합니다.',
+    'MASTERY_BONUS_ Construction_ 0': '가구의 단계 1 효과를 잠금 해제합니다.',
+    'MASTERY_BONUS_ Construction_ 1': '가구의 단계 2 효과를 잠금 해제합니다.',
+    'MASTERY_BONUS_ Construction_ 2': '가구의 단계 3 효과를 잠금 해제합니다.',
+    'MASTERY_BONUS_ Construction_ 3': '가구의 단계 4 효과를 잠금 해제합니다.',
+    'MASTERY_BONUS_ Construction_ 4': '가구의 단계 5 효과를 잠금 해제합니다.',
 
     'SKILL_CATEGORY_ Construction_ Materials': '재료',
-    'SKILL_CATEGORY_ Construction_ House': 'House',
+    'SKILL_CATEGORY_ Construction_ House': '가구',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': '집',
     'CONSTRUCTION_ROOM_NAME_ Garden': '정원',

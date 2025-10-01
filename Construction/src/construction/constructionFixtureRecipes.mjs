@@ -74,6 +74,10 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
         this.skill.renderQueue.menu = true;
         if (this.fixture.progress >= this.actionCost) {
             this.fixture.upgrade(this.skill);
+
+            this.skill.addMasteryProgress(this.fixture.currentTier);
+
+
             if (this.grantItems != undefined)
                 this.grantItems.forEach(iq => game.bank.addItem(iq.item, iq.quantity, true, true, true));
             if (this.doUnlockPlot())

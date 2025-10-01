@@ -11,10 +11,22 @@ export const language = {
     'MENU_TEXT_REMAINING': 'Costs Remaining',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'View All Active Modifiers',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'All Active Construction Modifiers',
+    'MENU_HOUSE':"House",
+    'MENU_VIEW_HOUSE_TIERS':'View House Tier Bonuses',
+    'MENU_UNLOCKED_MASTERY_FOR_TIER':'Your House Tier has increased to <span class="construction-success">Tier ${tiername}</span>',
+    'MENU_HOUSE_TIER_BONUS_UNLOCKED':'House Tier Bonus Unlocked!',
+    'MENU_HOUSE_COMPLETION':'House Completion',
+    'MENU_BUILT':'Built',
+    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'What are House Tiers?',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Your House\'s Tier starts at 0. As you build furniture and fill each room, your House\'s tier will improve.</span>',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'When all rooms contain furniture of a required tier or higher, your House Tier will increase.',
+    'MENU_TEXT_REWARDS': 'Rewards',
+
 
     'SHOP_NAME_Construction_Skillcape': 'Construction Skillcape',
 
     'PET_NAME_ChuckTheForeman': 'Chuck the Foreman',
+    'PET_NAME_Scoobs':'Scoobs',
 
     'ITEM_NAME_Construction_Skillcape': 'Construction Skillcape',
     'ITEM_NAME_Builders_Hat': 'Builders Hat',
@@ -40,12 +52,12 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': 'Flower Pot: Tier 4',
     'ITEM_NAME_Flower_Pots_Token_5': 'Flower Pot: Tier 5',
 
-    'ITEM_NAME_Mastery_Token_Construction': 'Mastery Token (Construction)',
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
     'ITEM_DESCRIPTION_Builders_Body': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
     'ITEM_DESCRIPTION_Builders_Leggings': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
+
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% chance to regain a Tree Seed in Farming when harvested',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% actions required to upgrade in Construction',
@@ -54,13 +66,18 @@ export const language = {
     'DESCRIPTION_ADDS_ITEM': 'Gives ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': 'Unlocks 1 ${plotCategory} Plot in Farming',
 
+
+    'MASTERY_BONUS_ Construction_ 0': 'Unlock fixture\'s Tier 1 effects.',
+    'MASTERY_BONUS_ Construction_ 1': 'Unlock fixture\'s Tier 2 effects.',
+    'MASTERY_BONUS_ Construction_ 2': 'Unlock fixture\'s Tier 3 effects.',
+    'MASTERY_BONUS_ Construction_ 3': 'Unlock fixture\'s Tier 4 effects.',
+    'MASTERY_BONUS_ Construction_ 4': 'Unlock fixture\'s Tier 5 effects.',
+
+
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
 
-    'MASTERY_BONUS_ Construction_ 0': 'Each level provides +0.2% chance to preserve resources.',
-    'MASTERY_BONUS_ Construction_ 1': '+5% chance to preserve resources.',
-
     'SKILL_CATEGORY_ Construction_ Materials': 'Materials',
-    'SKILL_CATEGORY_ Construction_ House': 'House',
+    'SKILL_CATEGORY_ Construction_ House': 'Furniture',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': 'Bedroom',
     'CONSTRUCTION_ROOM_NAME_ Garden': 'Garden',

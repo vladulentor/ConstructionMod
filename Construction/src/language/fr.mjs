@@ -11,10 +11,22 @@ export const language = {
     'MENU_TEXT_REMAINING': 'Coûts Restants',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'Voir tous les Modificateurs Actifs',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'Tous les Modificateurs de Construction Actifs',
+    'MENU_VIEW_HOUSE_TIERS': 'Afficher les bonus des niveaux de maison',
+    'MENU_UNLOCKED_MASTERY_FOR_TIER': 'Le niveau de votre maison est passé à <span class="construction-success">Niveau ${tiername}</span>',
+    'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'Bonus de niveau de maison débloqué !',
+    'MENU_HOUSE_COMPLETION': 'Complétion de la maison',
+    'MENU_HOUSE': "Maison",
+    'MENU_BUILT': 'Construit',
+    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Qu\'est-ce que les niveaux de maison ?',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Le niveau de votre maison commence à 0. En construisant des meubles et en remplissant chaque pièce, le niveau de votre maison s\'améliorera.</span>',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'Lorsque toutes les pièces contiennent des meubles d\'un niveau requis ou supérieur, le niveau de votre maison augmentera.',
+    'MENU_TEXT_REWARDS': 'Récompenses',
 
     'SHOP_NAME_Construction_Skillcape': 'Cape de Chantier',
 
     'PET_NAME_ChuckTheForeman': 'Chuck le contremaître',
+    'PET_NAME_Scoobs': 'Scoobs',
+
 
     'ITEM_NAME_Construction_Skillcape': 'Cape de Chantier',
     'ITEM_NAME_Builders_Hat': 'Chapeau de constructeur',
@@ -40,7 +52,6 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': 'Pots de fleurs: Étage 4',
     'ITEM_NAME_Flower_Pots_Token_5': 'Pots de fleurs: Étage 5',
 
-    'ITEM_NAME_Mastery_Token_Construction': 'Jeton de maîtrise (construction)',
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2% d\'XP de compétence de construction.<br><span class=\"text-warning\">Avec les quatre éléments de la tenue de constructeur équipés : + 8 % d\'XP de maîtrise de la construction.</span>',
     'ITEM_DESCRIPTION_Builders_Body': '+2% d\'XP de compétence de construction.<br><span class=\"text-warning\">Avec les quatre éléments de la tenue de constructeur équipés : + 8 % d\'XP de maîtrise de la construction.</span>',
@@ -56,11 +67,14 @@ export const language = {
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'Vous n\'avez pas les matériaux nécessaires pour construire cela.',
 
-    'MASTERY_BONUS_ Construction_ 0': 'Chaque niveau offre +0,2% de chances de préserver les ressources.',
-    'MASTERY_BONUS_ Construction_ 1': '+5% de chance de préserver les ressources.',
+    'MASTERY_BONUS_ Construction_ 0': 'Débloquez les effets du niveau 1 du mobilier.',
+    'MASTERY_BONUS_ Construction_ 1': 'Débloquez les effets du niveau 2 du mobilier.',
+    'MASTERY_BONUS_ Construction_ 2': 'Débloquez les effets du niveau 3 du mobilier.',
+    'MASTERY_BONUS_ Construction_ 3': 'Débloquez les effets du niveau 4 du mobilier.',
+    'MASTERY_BONUS_ Construction_ 4': 'Débloquez les effets du niveau 5 du mobilier.',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Matériels',
-    'SKILL_CATEGORY_ Construction_ House': 'Maison',
+    'SKILL_CATEGORY_ Construction_ House': 'Mobilier',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': 'Chambre à coucher',
     'CONSTRUCTION_ROOM_NAME_ Garden': 'Jardin',

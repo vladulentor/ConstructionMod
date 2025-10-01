@@ -2,8 +2,11 @@
   <!-- CONSTRUCTION Content -->
   <div class="content d-none" id="rielk-construction-container">
     <div class="skill-info">
-      <skill-header data-skill-id="rielkConstruction:Construction"></skill-header>
+      <skill-header id="skill-id" data-skill-id="rielkConstruction:Construction"
+        style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;"></skill-header>
+      <rielk-construction-mastery id="rielk-mastery"></rielk-construction-mastery>
     </div>
+    <div class="row row-deck" id="rielk-construction-injected-container"></div>
     <div class="row row-deck">
       <realmed-category-menu class="col-12" id="rielk-construction-category-menu"></realmed-category-menu>
       <div class="col-12">
@@ -83,13 +86,15 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 block block-rounded-double bg-combat-inner-dark pt-2 pb-1 text-center" id="ingredients-container">
+              <div class="col-12 block block-rounded-double bg-combat-inner-dark pt-2 pb-1 text-center"
+                id="ingredients-container">
                 <div class="row no-gutters">
                   <requires-box class="col-12 col-sm-6 pb-2 icon-size-48" id="requires"></requires-box>
                   <haves-box class="col-12 col-sm-6 pb-2 icon-size-48" id="haves"></haves-box>
                 </div>
               </div>
-              <div class="col-12 block block-rounded-double bg-combat-inner-dark pt-2 pb-1 text-center" id="grants-container">
+              <div class="col-12 block block-rounded-double bg-combat-inner-dark pt-2 pb-1 text-center"
+                id="grants-container">
                 <div class="row justify-content-center icon-size-48">
                   <grants-box id="grants"></grants-box>
                 </div>
@@ -167,6 +172,120 @@
       <div class="justify-vertical-center" id="unlock-container">
         <span class="text-danger" id="level"></span>
         <span class="text-danger" id="abyssal-level"></span>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template id="tier-mastery-menu">
+  <div class="modal fade" id="rielk-tier-mastery-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document" style="max-width: 700px;">
+      <div class="modal-content">
+
+        <div class="block block-themed block-transparent mb-3" style="max-width: 700px;">
+          <div class="block-header bg-primary-dark">
+            <h3 class="block-title"></h3>
+            <div class="block-options">
+              <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
+                <i class="fa fa-fw fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <div class="block-content block-content-full pb-0">
+            <!-- Left text first -->
+            <div class="mb-4">
+              <h3 class="font-w900 text-warning">
+                <rielk-lang-string lang-id="MENU_TEXT_WHAT_ARE_HOUSE_TIERS"></lang-string>
+              </h3>
+              <p class="font-w500">
+                <rielk-lang-string lang-id="MENU_TEXT_HOUSE_TIER_EXPLANATION_1" lang-html="true"></lang-string>
+              </p>
+              <p class="font-w500">
+                <rielk-lang-string lang-id="MENU_TEXT_HOUSE_TIER_EXPLANATION_2" lang-html="true"></lang-string>
+              </p>
+            </div>
+
+            <div id="pips-container" class="d-flex flex-column gap-2">
+              <!--There could be a way to do this dynamically. Could.-->
+              <tier-mastery-bonus id="tier-1"></tier-mastery-bonus>
+
+              <tier-mastery-bonus id="tier-2"></tier-mastery-bonus>
+
+              <tier-mastery-bonus id="tier-3"></tier-mastery-bonus>
+
+              <tier-mastery-bonus id="tier-4"></tier-mastery-bonus>
+
+              <tier-mastery-bonus id="tier-5"></tier-mastery-bonus>
+
+              <tier-mastery-bonus id="tier-6"></tier-mastery-bonus>
+
+              <tier-mastery-bonus id="tier-7"></tier-mastery-bonus>
+
+              <tier-mastery-bonus id="tier-8"></tier-mastery-bonus>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</template>
+
+
+
+
+<template id="tier-mastery-bonus">
+  <div class="col-12 d-none" id="activation">
+    <h5 id="tier-title" class="mb-1"> </h5>
+    <div class="block block-rounded-double bg-combat-inner-dark p-2 mb-2">
+      <div class="media d-flex align-items-center push mb-0">
+        <!-- Fixture count -->
+        <div class="mr-3">
+          <h3 id="fixture-count" class="font-w700 text-danger mb-0"></h3>
+        </div>
+
+        <div class="media-body">
+          <div class="font-w600 font-size-sm justify-vertical-center text-center">
+
+            <!-- Passive Bonuses -->
+            <div id="modifier-container" class="d-none">
+              <h5 class="mb-0"></h5>
+              <div id="modifier-list" class="justify-vertical-center"></div>
+            </div>
+
+            <!-- Rewards -->
+            <div id="reward-container">
+              <h5 class="mb-0"><rielk-lang-string lang-id="MENU_TEXT_REWARDS">Rewards</lang-string></h5>
+              <div id="reward-list" class="justify-horizontal-center"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+
+<template id="rielk-construction-mastery">
+  <div class="block block-link-pop p-2 mb-2 w-100 d-flex align-items-center"
+    style="border-radius: 0 0 0.25rem 0.25rem; overflow: hidden;">
+    <div class="m-1 d-flex align-items-center">
+      <img class="skill-icon-md mr-2" id="house-image" alt="Skill Icon">
+    </div>
+    <div class="media-body w-100">
+      <div class="d-flex flex-column w-100">
+        <h5 class="font-w700 text-combat-smoke mb-2">
+         <rielk-lang-string lang-id="MENU_HOUSE_COMPLETION"></lang-string> 
+        </h5>
+        <div class="d-flex w-100 mb-1" id="mastery-bars-container">
+        </div>
+        <div class="d-flex w-100 mb-1 justify-content-between">
+          <small id="tiers-completed-aggregate" class="font-w400 font-size-sm text-combat-smoke"></small>
+        </div>
+
       </div>
     </div>
   </div>

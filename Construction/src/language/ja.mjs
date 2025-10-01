@@ -11,10 +11,21 @@ export const language = {
     'MENU_TEXT_REMAINING': '残りのコスト',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'すべてのアクティブな修飾子を表示',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'すべてのアクティブな建設修飾子',
+    'MENU_VIEW_HOUSE_TIERS': 'ハウスティアボーナスを見る',
+    'MENU_UNLOCKED_MASTERY_FOR_TIER': 'あなたのハウスティアが<span class="construction-success">ティア ${tiername}</span>に上がりました',
+    'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'ハウスティアボーナスをアンロックしました！',
+    'MENU_HOUSE_COMPLETION': 'ハウス完成度',
+    'MENU_BUILT': '建造済み',
+    'MENU_HOUSE': "家",
+    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'ハウスティアとは何ですか？',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'あなたのハウスのティアは0から始まります。家具を作り、各部屋を埋めることで、ハウスのティアが向上します。</span>',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'すべての部屋に必要なティア以上の家具が揃うと、ハウスティアが上がります。',
+    'MENU_TEXT_REWARDS': '報酬',
 
     'SHOP_NAME_Construction_Skillcape': '建設スキルケープ',
 
     'PET_NAME_ChuckTheForeman': 'チャック・ザ・フォアマン',
+    'PET_NAME_Scoobs': 'スクーブス',
 
     'ITEM_NAME_Construction_Skillcape': '建設スキルケープ',
     'ITEM_NAME_Builders_Hat': 'ビルダーハット',
@@ -40,7 +51,6 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': '植木鉢: 階層 4',
     'ITEM_NAME_Flower_Pots_Token_5': '植木鉢: 階層 5',
 
-    'ITEM_NAME_Mastery_Token_Construction': 'マスタリートークン（建設）',
 
     'ITEM_DESCRIPTION_Builders_Hat': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
     'ITEM_DESCRIPTION_Builders_Body': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
@@ -56,11 +66,14 @@ export const language = {
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'それを作るのに必要な資材がない',
 
-    'MASTERY_BONUS_ Construction_ 0': '各レベルは、リソースを保存する可能性を +0.2% 提供します。',
-    'MASTERY_BONUS_ Construction_ 1': 'リソースを保存する確率が 5% 増加します。',
+    'MASTERY_BONUS_ Construction_ 0': '家具のティア1効果をアンロックします。',
+    'MASTERY_BONUS_ Construction_ 1': '家具のティア2効果をアンロックします。',
+    'MASTERY_BONUS_ Construction_ 2': '家具のティア3効果をアンロックします。',
+    'MASTERY_BONUS_ Construction_ 3': '家具のティア4効果をアンロックします。',
+    'MASTERY_BONUS_ Construction_ 4': '家具のティア5効果をアンロックします。',
 
     'SKILL_CATEGORY_ Construction_ Materials': '材料',
-    'SKILL_CATEGORY_ Construction_ House': '家',
+    'SKILL_CATEGORY_ Construction_ House': '家具',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': '寝室',
     'CONSTRUCTION_ROOM_NAME_ Garden': '庭',

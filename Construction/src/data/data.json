@@ -354,21 +354,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "Mastery_Token_Construction",
-        "name": "Mastery Token (Construction)",
-        "category": "Mastery",
-        "type": "Token",
-        "media": "assets/items/mastery_token_construction.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 1500,
-        "itemType": "MasteryToken",
-        "skill": "rielkConstruction:Construction",
-        "realm": "melvorD:Melvor",
-        "percent": 0.1
       }
     ],
     "shopPurchases": [
@@ -601,13 +586,6 @@
           "rielkConstruction:Builders_Leggings",
           "rielkConstruction:Builders_Boots"
         ]
-      },
-      {
-        "insertAt": "After",
-        "afterID": "melvorF:Mastery_Token_Astrology",
-        "ids": [
-          "rielkConstruction:Mastery_Token_Construction"
-        ]
       }
     ],
     "pets": [
@@ -625,7 +603,23 @@
           ]
         },
         "activeInRaid": false,
-        "scaleChanceWithMasteryPool": true,
+        "scaleChanceWithMasteryPool": false,
+        "skillID": "rielkConstruction:Construction"
+      },
+      {
+        "id": "Scoobs",
+        "name": "Scoobs",
+        "media": "assets/items/scoobs.png",
+        "ignoreCompletion": false,
+        "modifiers": {
+          "flatSummoningAttackInterval": [
+            {
+              "value": -750
+            }
+          ]
+        },
+        "activeInRaid": false,
+        "scaleChanceWithMasteryPool": false,
         "skillID": "rielkConstruction:Construction"
       }
     ],
@@ -764,100 +758,35 @@
             ],
             "upgrades": [],
             "pets": [
-              "rielkConstruction:ChuckTheForeman"
+              "rielkConstruction:ChuckTheForeman",
+              "rielkConstruction:Scoobs"
             ]
           },
           "masteryLevelUnlocks": [
             {
               "level": 1,
               "descriptionID": 0,
-              "description": "Each level provides +0.2% chance to preserve resources."
+              "description": "Unlock fixture's Tier 1 effects."
             },
             {
-              "level": 99,
-              "descriptionID": 1,
-              "description": "+5% chance to preserve resources."
-            }
-          ],
-          "masteryLevelBonuses": [
-            {
-              "modifiers": {
-                "skillPreservationChance": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "actionID": "rielkConstruction:Iron_Nails",
-                    "value": 0.2
-                  }
-                ]
-              },
               "level": 2,
-              "levelScalingSlope": 1,
-              "levelScalingMax": 99
+              "descriptionID": 1,
+              "description": "Unlock fixture's Tier 2 effects."
             },
             {
-              "modifiers": {
-                "skillPreservationChance": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "actionID": "rielkConstruction:Iron_Nails",
-                    "value": 5
-                  }
-                ]
-              },
-              "level": 99
-            }
-          ],
-          "masteryPoolBonuses": [
-            {
-              "realm": "melvorD:Melvor",
-              "modifiers": {
-                "masteryXP": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "realmID": "melvorD:Melvor",
-                    "value": 5
-                  }
-                ]
-              },
-              "percent": 10
+              "level": 3,
+              "descriptionID": 2,
+              "description": "Unlock fixture's Tier 3 effects."
             },
             {
-              "realm": "melvorD:Melvor",
-              "modifiers": {
-                "skillPreservationChance": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "realmID": "melvorD:Melvor",
-                    "value": 5
-                  }
-                ]
-              },
-              "percent": 25
+              "level": 4,
+              "descriptionID": 3,
+              "description": "Unlock fixture's Tier 4 effects."
             },
             {
-              "realm": "melvorD:Melvor",
-              "modifiers": {
-                "flatBasePrimaryProductQuantity": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "value": 1
-                  }
-                ]
-              },
-              "percent": 50
-            },
-            {
-              "realm": "melvorD:Melvor",
-              "modifiers": {
-                "flatSkillInterval": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "realmID": "melvorD:Melvor",
-                    "value": -100
-                  }
-                ]
-              },
-              "percent": 95
+              "level": 5,
+              "descriptionID": 4,
+              "description": "Unlock fixture's Tier 5 effects."
             }
           ],
           "categories": [
@@ -869,9 +798,176 @@
             },
             {
               "id": "House",
-              "name": "House",
+              "name": "Furniture",
               "media": "assets/house.png",
               "type": "House"
+            }
+          ],
+          "tierMasteries": [
+            {
+              "id": "1",
+              "name": "House Tier 1",
+              "tier": 1,
+              "currentProgress": 0,
+              "completed": false,
+              "itemAwards": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 300
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 300
+                },
+                {
+                  "id": "melvorF:Potion_Box_I",
+                  "quantity": 600
+                }
+              ],
+              "modifiers": {
+                "flatSkillInterval": [
+                  {
+                    "skillID": "rielkConstruction:Construction",
+                    "value": -150
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 10,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "2",
+              "name": "House Tier 2",
+              "tier": 2,
+              "currentProgress": 0,
+              "completed": false,
+              "itemAwards": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 900
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 900
+                },
+                {
+                  "id": "melvorF:Potion_Box_I",
+                  "quantity": 2400
+                }
+              ],
+              "modifiers": {
+                "flatBasePrimaryProductQuantity": [
+                  {
+                    "value": 1,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ],
+                "skillPreservationChance": [
+                  {
+                    "value": 10,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "3",
+              "name": "House Tier 3",
+              "tier": 3,
+              "currentProgress": 0,
+              "completed": false,
+              "itemAwards": [
+                {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 1800
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 1800
+                },
+                {
+                  "id": "melvorF:Potion_Box_II",
+                  "quantity": 3000
+                }
+              ],
+              "modifiers": {
+                "flatSkillInterval": [
+                  {
+                    "skillID": "rielkConstruction:Construction",
+                    "realmID": "melvorD:Melvor",
+                    "value": -350
+                  }
+                ],
+                "skillItemDoublingChance": [
+                  {
+                    "value": 8,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "4",
+              "name": "House Tier 4",
+              "tier": 4,
+              "currentProgress": 0,
+              "completed": false,
+              "itemAwards": [
+                {
+                  "id": "rielkConstruction:Magic_Planks",
+                  "quantity": 4200
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 4200
+                },
+                {
+                  "id": "melvorF:Potion_Box_II",
+                  "quantity": 5000
+                }
+              ],
+              "modifiers": {
+                "flatBasePrimaryProductQuantity": [
+                  {
+                    "value": 1,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ],
+                "skillPreservationChance": [
+                  {
+                    "value": 10,
+                    "categoryID": "rielkConstruction:House",
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "5",
+              "name": "House Tier 5",
+              "tier": 5,
+              "currentProgress": 0,
+              "completed": false,
+              "itemAwards": [],
+              "pets": [
+                "rielkConstruction:Scoobs"
+              ],
+              "modifiers": {
+                "skillPreservationChance": [
+                  {
+                    "value": 10
+                  }
+                ],
+                "foodHealingValue": [
+                  {
+                    "value": 10
+                  }
+                ]
+              }
             }
           ],
           "recipes": [

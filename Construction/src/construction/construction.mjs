@@ -133,7 +133,7 @@ export class Construction extends ArtisanSkill {
     }
 
     shouldShowSkillInSidebar() {
-        return true;
+        return super.shouldShowSkillInSidebar() || this.game.currentRealm === this.game.defaultRealm; // only show in default realm
     }
     updateRecipeCounts() {
         const tierNum = cloudManager?.hasTotHEntitlementAndIsEnabled ? 8 : 5;
@@ -152,7 +152,7 @@ export class Construction extends ArtisanSkill {
         });
 
     }
-    
+
     getFixtureInterval(fixture) {
         return this.modifyInterval(this.baseInterval, fixture);
     }
@@ -232,7 +232,7 @@ export class Construction extends ArtisanSkill {
             tierMastery.applyDataModification(modData, this.game);
         });
     }
-        createItemCurrencyNodes(costs) {
+    createItemCurrencyNodes(costs) {
         var _a;
         const nodes = [];
         const createSpan = (children) => {
@@ -251,10 +251,10 @@ export class Construction extends ArtisanSkill {
             className: 'font-w400 mb-0',
             parent: modalBody,
         });
-        title.innerHTML = templateRielkLangString('MENU_UNLOCKED_MASTERY_FOR_TIER', {tiername: bonus.tier});
+        title.innerHTML = templateRielkLangString('MENU_UNLOCKED_MASTERY_FOR_TIER', { tiername: bonus.tier });
         if (bonus.modifiers._stats.hasStats) {
             createElement('h5', {
-                text:  getLangString('PERMANENT_BONUS_UNLOCKED'),
+                text: getLangString('PERMANENT_BONUS_UNLOCKED'),
                 className: 'font-w600 font-size-lg text-warning mb-0 mt-2',
                 parent: modalBody,
             });
@@ -263,7 +263,7 @@ export class Construction extends ArtisanSkill {
         const rewardNodes = this.createItemCurrencyNodes(bonus);
         if (rewardNodes.length > 0) {
             createElement('h5', {
-                text:  getLangString('REWARDS_UNLOCKED'),
+                text: getLangString('REWARDS_UNLOCKED'),
                 className: 'font-w600 font-size-lg text-warning mb-0 mt-2',
                 parent: modalBody,
             });
@@ -299,7 +299,7 @@ export class Construction extends ArtisanSkill {
         if (stack.includes('buildMasteryLog') || stack.includes('buildSkillsLog')) return true;
         else return false;
     }
-    
+
     isMasteryActionUnlocked(action) {
         return false;
     }
@@ -351,8 +351,8 @@ export class Construction extends ArtisanSkill {
             scope.category = action.category;
             scope.subcategory = action.subcategory;
         }
-     else if (action && action.category !== undefined) 
-                            scope.category = action.category;
+        else if (action && action.category !== undefined)
+            scope.category = action.category;
         return scope;
     }
     onMasteryLevelUp(action, oldLevel, newLevel) {

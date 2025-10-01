@@ -899,7 +899,13 @@
                   {
                     "skillID": "rielkConstruction:Construction",
                     "realmID": "melvorD:Melvor",
-                    "value": -150
+                    "value": -350
+                  }
+                ],
+                "skillItemDoublingChance": [
+                  {
+                    "value": 8,
+                    "skillID": "rielkConstruction:Construction"
                   }
                 ]
               }

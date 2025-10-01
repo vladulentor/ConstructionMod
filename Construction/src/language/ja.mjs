@@ -19,7 +19,7 @@ export const language = {
     'MENU_HOUSE': "家",
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'ハウスティアとは何ですか？',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'あなたのハウスのティアは0から始まります。家具を作り、各部屋を埋めることで、ハウスのティアが向上します。</span>',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'すべての部屋に必要なティア以上の家具が揃うと、ハウスティアが上がります。',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'すべての部屋に必要な階級以上の家具が揃うと、家の階級が上がります。恒久的な建築ボーナスが解除され、資材を獲得します。',
     'MENU_TEXT_REWARDS': '報酬',
 
     'SHOP_NAME_Construction_Skillcape': '建設スキルケープ',

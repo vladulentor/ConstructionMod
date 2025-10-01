@@ -20,7 +20,7 @@ export const language = {
 
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': '什么是房屋等级？',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': '您的房屋等级从0开始。随着您建造家具并填满每个房间，房屋等级会提升。</span>',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '当所有房间都包含所需等级或更高的家具时，房屋等级将提升。',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '当所有房间都拥有所需等级或更高等级的家具时，您的房屋等级将提升。您将解锁永久建筑加成并获得材料。',
     'MENU_TEXT_REWARDS': '奖励',
 
     'SHOP_NAME_Construction_Skillcape': '建筑技能角',

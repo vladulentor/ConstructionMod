@@ -20,7 +20,7 @@ export const language = {
 
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': '하우스 단계란 무엇인가요?',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': '당신의 하우스 단계는 0에서 시작합니다. 가구를 만들고 각 방을 채우면 하우스 단계가 향상됩니다.</span>',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '모든 방에 요구되는 단계 이상의 가구가 채워지면 하우스 단계가 상승합니다.',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '모든 방에 필요한 등급 이상의 가구가 배치되면, 집 등급이 상승합니다. 영구적인 건축 보너스를 잠금 해제하고 자원을 획득합니다.',
     'MENU_TEXT_REWARDS': '보상',
 
     'SHOP_NAME_Construction_Skillcape': '건설 스킬케이프',

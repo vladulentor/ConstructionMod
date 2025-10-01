@@ -60,8 +60,8 @@ export const language = {
 
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% chance to regain a Tree Seed in Farming when harvested',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% actions required to upgrade in Construction',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% actions required to upgrade in Construction',
+    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% actions required to build Furniture in Construction',
+    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% actions required to build Furniture in Construction',
 
     'DESCRIPTION_ADDS_ITEM': 'Gives ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': 'Unlocks 1 ${plotCategory} Plot in Farming',
@@ -98,7 +98,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': 'Fire Pit',
     'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': 'Flower Pots',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': 'Forge',
-    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Cold Box',
+    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Larder',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': 'Jungle Gym',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': 'Lake',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': 'Mine',

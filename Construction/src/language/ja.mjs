@@ -58,8 +58,8 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Boots': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '農業で木の種を収穫すると、その種を再び入手できる確率が +${value}% 増加します',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '建設のアップグレードに必要なアクション数 -${value}%',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '建設のアップグレードに必要なアクション数 +${value}%',
+    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% のアクションが必要：建設で家具を作る',
+    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% のアクションが必要：建設で家具を作る',
 
     'DESCRIPTION_ADDS_ITEM': '与える ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': '農業で 1 つの ${plotCategory} 区画のロックを解除します',
@@ -94,7 +94,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': '火の穴',
     'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': '植木鉢',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': 'フォージ',
-    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'コールドボックス',
+    'CONSTRUCTION_FIXTURE_NAME_ Fridge': '食料庫',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': 'ジャングルジム',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': '湖',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': '鉱山',

@@ -238,9 +238,16 @@
           "flatSkillInterval": [
             {
               "skillID": "rielkConstruction:Construction",
-              "value": -200
+              "value": -250
             }
-          ]
+          ],
+          "skillItemDoublingChance": [
+            {
+              "value": 15,
+              "skillID": "rielkConstruction:Construction"
+            }
+          ],
+          "rielkConstruction:constructionActionsToUpgrade": -10
         }
       },
       {
@@ -1108,7 +1115,7 @@
             },
             {
               "id": "Magic_Planks",
-              "level": 80,
+              "level": 71,
               "productID": "rielkConstruction:Magic_Planks",
               "baseQuantity": 2,
               "baseExperience": 100,
@@ -1296,7 +1303,7 @@
             {
               "id": "Fridge",
               "name": "Fridge",
-              "media": "assets/fixtures/fridge.png",
+              "media": "assets/fixtures/larder.png",
               "recipes": [
                 "rielkConstruction:Fridge1",
                 "rielkConstruction:Fridge2",
@@ -2090,8 +2097,8 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Dragonite_Bar",
-                  "quantity": 1
+                  "id": "melvorD:Steel_Bar",
+                  "quantity": 3
                 }
               ],
               "currencyCosts": [
@@ -2118,8 +2125,8 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Dragonite_Bar",
-                  "quantity": 2
+                  "id": "melvorD:Mithril_Bar",
+                  "quantity": 4
                 }
               ],
               "currencyCosts": [
@@ -2146,8 +2153,8 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Dragonite_Bar",
-                  "quantity": 2
+                  "id": "melvorD:Adamantite_Bar",
+                  "quantity": 5
                 }
               ],
               "currencyCosts": [
@@ -2174,8 +2181,8 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Dragonite_Bar",
-                  "quantity": 3
+                  "id": "melvorD:Runite_Bar",
+                  "quantity": 4
                 }
               ],
               "currencyCosts": [
@@ -2223,7 +2230,7 @@
                 "flatResistance": [
                   {
                     "damageTypeID": "melvorD:Normal",
-                    "value": 1
+                    "value": 5
                   }
                 ],
                 "currencyGain": [
@@ -2646,11 +2653,11 @@
                   "quantity": 1
                 },
                 {
-                  "id": "melvorD:Bronze_Bar",
+                  "id": "melvorD:Oak_Logs",
                   "quantity": 1
                 },
                 {
-                  "id": "rielkConstruction:Iron_Nails",
+                  "id": "rielkConstruction:Normal_Planks",
                   "quantity": 1
                 }
               ],
@@ -2672,11 +2679,11 @@
                   "quantity": 1
                 },
                 {
-                  "id": "melvorD:Iron_Bar",
+                  "id": "melvorD:Teak_Logs",
                   "quantity": 1
                 },
                 {
-                  "id": "rielkConstruction:Steel_Nails",
+                  "id": "rielkConstruction:Oak_Planks",
                   "quantity": 2
                 }
               ],
@@ -2697,11 +2704,11 @@
                   "quantity": 1
                 },
                 {
-                  "id": "melvorD:Steel_Bar",
+                  "id": "melvorD:Mahogany_Logs",
                   "quantity": 1
                 },
                 {
-                  "id": "rielkConstruction:Mithril_Nails",
+                  "id": "rielkConstruction:Teak_Planks",
                   "quantity": 2
                 }
               ],
@@ -2723,11 +2730,11 @@
                   "quantity": 2
                 },
                 {
-                  "id": "melvorD:Mithril_Bar",
+                  "id": "melvorD:Magic_Logs",
                   "quantity": 2
                 },
                 {
-                  "id": "rielkConstruction:Adamantite_Nails",
+                  "id": "rielkConstruction:Mahogany_Planks",
                   "quantity": 3
                 }
               ],
@@ -2748,11 +2755,11 @@
                   "quantity": 3
                 },
                 {
-                  "id": "melvorD:Runite_Bar",
+                  "id": "melvorD:Redwood_Logs",
                   "quantity": 3
                 },
                 {
-                  "id": "rielkConstruction:Dragonite_Nails",
+                  "id": "rielkConstruction:Magic_Planks",
                   "quantity": 4
                 }
               ],
@@ -3933,8 +3940,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "bankSpace": 5,
-                "skillPreservationChance": 1
+                "skillPreservationChance": 0.5,
+                "bankSpace": 4
               }
             },
             {
@@ -3955,8 +3962,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "bankSpace": 10,
-                "skillPreservationChance": 1
+                "skillPreservationChance": 1,
+                "bankSpace": 8
               }
             },
             {
@@ -3977,8 +3984,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "bankSpace": 20,
-                "skillPreservationChance": 2
+                "skillPreservationChance": 1.5,
+                "bankSpace": 12
               }
             },
             {
@@ -3999,13 +4006,13 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "bankSpace": 50,
-                "skillPreservationChance": 2
+                "skillPreservationChance": 2,
+                "bankSpace": 16
               }
             },
             {
               "id": "Storage_Chest5",
-              "level": 61,
+              "level": 71,
               "baseExperience": 105,
               "baseActionCost": 2400,
               "categoryID": "rielkConstruction:House",
@@ -4021,8 +4028,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "bankSpace": 100,
-                "skillPreservationChance": 4
+                "skillPreservationChance": 2.5,
+                "bankSpace": 20
               }
             },
             {
@@ -5019,7 +5026,7 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "rielkConstruction:constructionActionsToUpgrade": -10,
+                "rielkConstruction:constructionActionsToUpgrade": -5,
                 "skillItemDoublingChance": [
                   {
                     "value": 5,
@@ -5057,13 +5064,13 @@
             "scopes": {},
             "descriptions": [
               {
-                "text": "-${value}% actions required to upgrade in Construction",
+                "text": "-${value}% actions required to build Furniture in Construction",
                 "lang": "MODIFIER_DATA_decreaseConstructionActionsToUpgrade",
                 "below": 0,
                 "includeSign": false
               },
               {
-                "text": "+${value}% actions required to upgrade in Construction",
+                "text": "+${value}% actions required to build Furniture in Construction",
                 "lang": "MODIFIER_DATA_increaseConstructionActionsToUpgrade",
                 "above": 0,
                 "includeSign": false
@@ -5092,9 +5099,16 @@
             "flatSkillInterval": [
               {
                 "skillID": "rielkConstruction:Construction",
-                "value": -200
+                "value": -250
               }
-            ]
+            ],
+            "skillItemDoublingChance": [
+              {
+                "value": 15,
+                "skillID": "rielkConstruction:Construction"
+              }
+            ],
+            "rielkConstruction:constructionActionsToUpgrade": -10
           }
         }
       },
@@ -5114,9 +5128,16 @@
             "flatSkillInterval": [
               {
                 "skillID": "rielkConstruction:Construction",
-                "value": -200
+                "value": -250
               }
-            ]
+            ],
+            "skillItemDoublingChance": [
+              {
+                "value": 15,
+                "skillID": "rielkConstruction:Construction"
+              }
+            ],
+            "rielkConstruction:constructionActionsToUpgrade": -10
           }
         }
       }

@@ -58,8 +58,8 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Boots': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收穫時，+${value}% 幾率在農業中重新獲得樹種子',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 升級建築所需的行動',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 升級建築所需的行動',
+    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 動作用於在建造中製造家具',
+    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 動作用於在建造中製造家具',
 
     'DESCRIPTION_ADDS_ITEM': '給出 ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': '在農業解鎖 1 個 ${plotCategory} 地塊',
@@ -94,7 +94,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': '火坑',
     'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': '花盆',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': '鍛',
-    'CONSTRUCTION_FIXTURE_NAME_ Fridge': '涼箱',
+    'CONSTRUCTION_FIXTURE_NAME_ Fridge': '食品储藏室',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': '攀登架',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': '潢',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': '礦',

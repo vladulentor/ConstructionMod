@@ -59,8 +59,8 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Boots': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '농사에서 수확 시 나무 씨앗을 회복할 확률 +${value}%',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '건설 업그레이드에 필요한 작업량 -${value}%',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '건설 업그레이드에 필요한 작업량 +${value}%',
+    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 행동 필요: 건축에서 가구 제작',
+    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 행동 필요: 건축에서 가구 제작',
 
     'DESCRIPTION_ADDS_ITEM': '준다 ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': '농장에서 ${plotCategory} 플롯 1개 잠금 해제',
@@ -95,7 +95,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': '화덕',
     'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': '화분',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': '노',
-    'CONSTRUCTION_FIXTURE_NAME_ Fridge': '콜드박스',
+    'CONSTRUCTION_FIXTURE_NAME_ Fridge': '식료품 저장실',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': '정글짐',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': '호수',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': '광산',

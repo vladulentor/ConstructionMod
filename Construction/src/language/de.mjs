@@ -60,8 +60,8 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Boots': '+2 % Fertigkeits-EP in Konstruktion.<br><span class=\"text-warning\">Wenn alle vier Teile des Kostüms der brennenden Menschheit ausgerüstet sind: +8 % Konstruktion-Meisterungs-EP.</span>',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% chance, beim Ernten einen Baumsamen in der Landwirtschaft zurückzugewinnen',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% erforderliche Aktionen zur Aufwertung im Konstruktion',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% erforderliche Aktionen zur Aufwertung im Konstruktion',
+    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% Aktionen erforderlich, um Möbel im Bauwesen zu erstellen',
+    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% Aktionen erforderlich, um Möbel im Bauwesen zu erstellen',
 
     'DESCRIPTION_ADDS_ITEM': 'Gibt ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': 'Schaltet 1 ${plotCategory} Feld in der Landwirtschaft frei',
@@ -96,7 +96,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': 'Feuerstelle',
     'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': 'Blumentöpfe',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': 'Schmiede',
-    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Kühlbox',
+    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Vorratskammer',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': 'Klettergerüst',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': 'See',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': 'Mine',

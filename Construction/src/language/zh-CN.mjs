@@ -59,8 +59,8 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Boots': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收获时有机会在农业中重新获得树种',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 建设升级所需采取的行动',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 建设升级所需采取的行动',
+    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 动作用于在建造中制造家具',
+    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 动作用于在建造中制造家具',
 
     'DESCRIPTION_ADDS_ITEM': '给出 ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': '解锁 1 个 ${plotCategory} 农耕地块',
@@ -95,7 +95,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': '火坑',
     'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': '花盆',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': '锻造',
-    'CONSTRUCTION_FIXTURE_NAME_ Fridge': '冷箱',
+    'CONSTRUCTION_FIXTURE_NAME_ Fridge': '食品储藏室',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': '攀登架',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': '湖',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': '矿',

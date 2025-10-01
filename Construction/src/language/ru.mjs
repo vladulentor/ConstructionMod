@@ -58,8 +58,8 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Boots': '+2 % к опыту навыка «Строительство».<br><span class=\"text-warning\">При экипировке всех четырех предметов одежды строителя: +8% к опыту строительного мастерства.</span>',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% кусок, чтобы восстановить семя дерева в сельском хозяйстве, когда собрано',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% действий, необходимых для улучшения в строительстве',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% действий, необходимых для улучшения в строительстве',
+    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% действий требуется для создания мебели в Строительстве',
+    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% действий требуется для создания мебели в Строительстве',
 
     'DESCRIPTION_ADDS_ITEM': 'Дает ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': 'Разблокирует 1 участок ${plotCategory} в разделе «Фермерство»',
@@ -94,7 +94,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': 'Яма для костра',
     'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': 'Цветочные горшки',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': 'Кузница',
-    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Холодный ящик',
+    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Кладовая',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': 'Рама для лазания',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': 'Озеро',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': 'Рудник',

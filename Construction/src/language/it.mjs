@@ -58,8 +58,8 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Boots': '+2% Abilità di costruzione PE<br><span class=\"text-warning\">Equipaggiato con tutti e quattro gli abiti da costruttore: +8% PE maestria nella costruzione</span>',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% di possibilità di recuperare un seme di albero in agricoltura quando raccolto',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% azioni necessarie per l\'aggiornamento in Costruzione',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% azioni necessarie per l\'aggiornamento in Costruzione',
+    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% azioni necessarie per costruire mobili in Costruzione',
+    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% azioni necessarie per costruire mobili in Costruzione',
 
     'DESCRIPTION_ADDS_ITEM': 'Dare ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': 'Sblocca 1 Appezzamento di ${plotCategory} in Coltivazione',
@@ -94,7 +94,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': 'Pozzo del fuoco',
     'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': 'Vasi di Fiori',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': 'Fucina',
-    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Scatola Fredda',
+    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Dispensa',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': 'Palestra nella Giungla',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': 'Lago',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': 'Miniera',

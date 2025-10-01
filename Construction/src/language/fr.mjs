@@ -59,8 +59,8 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Boots': '+2% d\'XP de compétence de construction.<br><span class=\"text-warning\">Avec les quatre éléments de la tenue de constructeur équipés : + 8 % d\'XP de maîtrise de la construction.</span>',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% de chances de récupérer une graine d\'arbre en agriculture lors de la récolte',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% d\'actions requises pour la mise à niveau en construction',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% d\'actions requises pour la mise à niveau en construction',
+    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% d\'actions requises pour construire des meubles en Construction',
+    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% d\'actions requises pour construire des meubles en Construction',
 
     'DESCRIPTION_ADDS_ITEM': 'Donner ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': 'Débloque 1 Parcelle ${plotCategory} en Agriculture',
@@ -95,7 +95,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': 'Foyer',
     'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': 'Pots de fleurs',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': 'Forge',
-    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Boîte froide',
+    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Garde-manger',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': 'Gymnase dans la jungle',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': 'Lac',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': 'Mine',

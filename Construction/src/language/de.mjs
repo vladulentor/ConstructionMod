@@ -15,6 +15,7 @@ export const language = {
     'MENU_UNLOCKED_MASTERY_FOR_TIER': 'Deine Hausstufe ist auf <span class="construction-success">Stufe ${tiername}</span> gestiegen',
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'Hausstufen-Bonus freigeschaltet!',
     'MENU_HOUSE_COMPLETION': 'Hausvollendung',
+    'MENU_HOUSE': "Haus",
     'MENU_BUILT': 'Gebaut',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Was sind Hausstufen?',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Die Stufe deines Hauses beginnt bei 0. Wenn du Möbel baust und jeden Raum füllst, wird die Stufe deines Hauses steigen.</span>',

@@ -16,6 +16,8 @@ export const language = {
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': '房屋等级奖励已解锁！',
     'MENU_HOUSE_COMPLETION': '房屋完成度',
     'MENU_BUILT': '已建造',
+    'MENU_HOUSE': "房子",
+
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': '什么是房屋等级？',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': '您的房屋等级从0开始。随着您建造家具并填满每个房间，房屋等级会提升。</span>',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '当所有房间都包含所需等级或更高的家具时，房屋等级将提升。',

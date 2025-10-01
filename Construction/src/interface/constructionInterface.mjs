@@ -46,7 +46,7 @@ export class ConstructionInterface {
             });
             tab.setRecipes(recipes, construction);
             this.constructionSelectionTabs.set(category, tab);
-        });
+        });z
         this.constructionHouseMenu = new ConstructionHouseMenu(this.constructionHouseElement, construction);
         const modalFrag = new DocumentFragment();
         modalFrag.append(getTemplateNode('tier-mastery-menu'));

@@ -799,7 +799,7 @@
             {
               "id": "House",
               "name": "Furniture",
-              "media": "assets/drawers.png",
+              "media": "assets/house.png",
               "type": "House"
             }
           ],

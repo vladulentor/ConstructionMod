@@ -15,7 +15,7 @@ export async function setup(ctx) {
     game.construction = game.registerSkill(game.registeredNamespaces.getNamespace('rielkConstruction'), Construction);
     await setup.applyPatches();
     await setup.loadData();
-    await setup.modCompatibility(game.construction);
+    await setup.modCompatibility(ctx);
 
 }
 
@@ -63,12 +63,12 @@ class Setup {
             await this.ctx.gameData.addPackage('src/data/data_AoD.json');
     }
 
-    async modCompatibility(construction) {
+    async modCompatibility(ctx) {
         this.ctx.onModsLoaded(() => {
             this.modList = mod.manager.getLoadedModList();
             if (this.modList.includes('Skill Boosts')) {
                 console.log('Skill Boosts found!');
-                skillBoostsCompatibility();
+                skillBoostsCompatibility(ctx);
             }
 
         })

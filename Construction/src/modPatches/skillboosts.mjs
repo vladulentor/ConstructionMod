@@ -1,4 +1,4 @@
-export function skillBoostsCompatibility() {
+export function skillBoostsCompatibility(ctx) {
     let myheader= document.getElementById('rielk-mastery');
     skillBoosts.addNewSkill({
         // Required //
@@ -16,4 +16,5 @@ export function skillBoostsCompatibility() {
         noPrimaryResource: false,
         isArtisan: true,
     });
-}
+
+}   

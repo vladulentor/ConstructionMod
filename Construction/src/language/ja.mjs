@@ -16,6 +16,7 @@ export const language = {
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'ハウスティアボーナスをアンロックしました！',
     'MENU_HOUSE_COMPLETION': 'ハウス完成度',
     'MENU_BUILT': '建造済み',
+    'MENU_HOUSE': "家",
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'ハウスティアとは何ですか？',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'あなたのハウスのティアは0から始まります。家具を作り、各部屋を埋めることで、ハウスのティアが向上します。</span>',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'すべての部屋に必要なティア以上の家具が揃うと、ハウスティアが上がります。',

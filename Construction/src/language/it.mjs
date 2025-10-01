@@ -16,6 +16,7 @@ export const language = {
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'Bonus del livello della casa sbloccato!',
     'MENU_HOUSE_COMPLETION': 'Completamento della casa',
     'MENU_BUILT': 'Costruito',
+    'MENU_HOUSE': "Casa",
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Cosa sono i livelli della casa?',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Il livello della tua casa inizia da 0. Man mano che costruisci mobili e riempi ogni stanza, il livello della tua casa migliorerà.</span>',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'Quando tutte le stanze contengono mobili di un livello richiesto o superiore, il livello della casa aumenterà.',

@@ -16,6 +16,8 @@ export const language = {
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': '하우스 단계 보너스가 해제되었습니다!',
     'MENU_HOUSE_COMPLETION': '하우스 완성도',
     'MENU_BUILT': '완성됨',
+    'MENU_HOUSE': "집",
+
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': '하우스 단계란 무엇인가요?',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': '당신의 하우스 단계는 0에서 시작합니다. 가구를 만들고 각 방을 채우면 하우스 단계가 향상됩니다.</span>',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '모든 방에 요구되는 단계 이상의 가구가 채워지면 하우스 단계가 상승합니다.',

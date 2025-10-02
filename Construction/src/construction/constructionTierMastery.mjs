@@ -2,6 +2,8 @@ const { loadModule } = mod.getContext(import.meta);
 
 const { ConstructionModifierTiers } = await loadModule('src/construction/constructionModifierTier.mjs');
 
+const ctx = mod.getContext(import.meta);
+
 export class ConstructionTierMastery extends RealmedObject {
     constructor(namespace, data, game, construction) {
         super(namespace, data, game);
@@ -48,7 +50,10 @@ export class ConstructionTierMastery extends RealmedObject {
             game.bank.addItem(item, quantity, false, true, false, true, "TierMastery");
         });
         construction.computeProvidedStats(true);
-        construction.queueMasteryBonusModal(this);
+        if (game.modifiers) construction.queueMasteryBonusModal(this);
+        else ctx.onInterfaceReady( (ctx) => {
+            construction.queueMasteryBonusModal(this);
+        });
         // Trigger UI refresh for the specific case of finishing a fixture with the menu open
     }
 

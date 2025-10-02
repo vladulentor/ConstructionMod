@@ -62,8 +62,8 @@ export class Construction extends ArtisanSkill {
             tm.maxProgress = this.recipeNumber;
             let tier = tm.tier;
             tm.currentProgress = this.recipeCountByTier[tier - 1];
-            //if (tm.currentProgress >= tm.maxProgress && !tm.completed)
-             //   tm.onComplete(this); //special case if someone is loading from the normal construction mod, otherwise this shouldn't fire.
+            if (tm.currentProgress >= tm.maxProgress && !tm.completed)
+               tm.onComplete(this); //special case if someone is loading from the normal construction mod, otherwise this shouldn't fire.
         });
 
     }

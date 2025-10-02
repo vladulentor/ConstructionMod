@@ -874,6 +874,170 @@
               "type": "House"
             }
           ],
+           "tierMasteries": [
+            {
+              "id": "1",
+              "name": "House Tier 1",
+              "tier": 1,
+              "currentProgress": 0,
+              "completed": false,
+              "itemAwards": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 300
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 300
+                },
+                {
+                  "id": "melvorF:Potion_Box_I",
+                  "quantity": 600
+                }
+              ],
+              "modifiers": {
+                "flatSkillInterval": [
+                  {
+                    "skillID": "rielkConstruction:Construction",
+                    "value": -150
+                  }
+                ],
+                "skillXP": [
+                  {
+                    "value": 10,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "2",
+              "name": "House Tier 2",
+              "tier": 2,
+              "currentProgress": 0,
+              "completed": false,
+              "itemAwards": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 900
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 900
+                },
+                {
+                  "id": "melvorF:Potion_Box_I",
+                  "quantity": 2400
+                }
+              ],
+              "modifiers": {
+                "flatBasePrimaryProductQuantity": [
+                  {
+                    "value": 1,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ],
+                "skillPreservationChance": [
+                  {
+                    "value": 10,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "3",
+              "name": "House Tier 3",
+              "tier": 3,
+              "currentProgress": 0,
+              "completed": false,
+              "itemAwards": [
+                {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 1800
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 1800
+                },
+                {
+                  "id": "melvorF:Potion_Box_II",
+                  "quantity": 3000
+                }
+              ],
+              "modifiers": {
+                "flatSkillInterval": [
+                  {
+                    "skillID": "rielkConstruction:Construction",
+                    "realmID": "melvorD:Melvor",
+                    "value": -350
+                  }
+                ],
+                "skillItemDoublingChance": [
+                  {
+                    "value": 8,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "4",
+              "name": "House Tier 4",
+              "tier": 4,
+              "currentProgress": 0,
+              "completed": false,
+              "itemAwards": [
+                {
+                  "id": "rielkConstruction:Magic_Planks",
+                  "quantity": 4200
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 4200
+                },
+                {
+                  "id": "melvorF:Potion_Box_II",
+                  "quantity": 5000
+                }
+              ],
+              "modifiers": {
+                "flatBasePrimaryProductQuantity": [
+                  {
+                    "value": 1,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ],
+                "skillPreservationChance": [
+                  {
+                    "value": 10,
+                    "categoryID": "rielkConstruction:House",
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "5",
+              "name": "House Tier 5",
+              "tier": 5,
+              "currentProgress": 0,
+              "completed": false,
+              "itemAwards": [],
+              "modifiers": {
+                "skillPreservationChance": [
+                  {
+                    "value": 10
+                  }
+                ],
+                "foodHealingValue": [
+                  {
+                    "value": 10
+                  }
+                ]
+              }
+            }
+          ],
           "recipes": [
             {
               "id": "Iron_Nails",

@@ -13,7 +13,6 @@ const { ConstructionRecipe } = await loadModule('src/construction/constructionRe
 const { ConstructionRoom } = await loadModule('src/construction/constructionRoom.mjs');
 const { ConstructionTierMastery } = await loadModule('src/construction/constructionTierMastery.mjs');
 
-const ctx = mod.getContext(import.meta);
 
 export class Construction extends ArtisanSkill {
     constructor(namespace, game) {
@@ -56,7 +55,9 @@ export class Construction extends ArtisanSkill {
     get renderQueue() {
         return this.ui.renderQueue;
     }
-
+        isMasteryActionUnlocked(action) {
+        return this.isBasicSkillRecipeUnlocked(action);
+    }
 
     get selectionTabs() {
         return this.ui.constructionSelectionTabs;
@@ -228,19 +229,25 @@ export class Construction extends ArtisanSkill {
     }
 
     computeTotalMasteryActions() {
-
+        this.actions.namespaceMaps.forEach((actionMap, namespace) => {
+            let total = 0;
+            actionMap.forEach((action) => {
+                const id = action.id || "(no id)";
+                const cat = action.category?.type || "(no category)";
+                if (action.hasMastery) {
+                    if (!action.realm?.ignoreCompletion) total++;
+                    if (action.realm) this.totalMasteryActionsInRealm.inc(action.realm);
+                }
+            });
+            this.totalMasteryActions.set(namespace, total);
+        });
     }
-    get hasMastery() { // We inspect the call stack to determine if we have mastery, this is so we can be in the mastery log without having a mastery bar.
-        const stack = new Error().stack;
-        if (stack.includes('buildMasteryLog') || stack.includes('buildSkillsLog')) return true;
-        else return false;
+    get hasMastery() { 
+       return true;
     }
 
     isMasteryActionUnlocked(action) {
         return false;
-    }
-    updateTotalUnlockedMasteryActions() {
-
     }
 
     postDataRegistration() {
@@ -251,6 +258,14 @@ export class Construction extends ArtisanSkill {
             this.categories.allObjects
         );
         this.rooms.forEach(room => room.sortFixtures());
+                this.actions.forEach((action) => {
+            if (action.abyssalLevel > 0)
+                this.abyssalMilestones.push(action);
+            else
+                this.milestones.push(action);
+        }
+        );
+        this.sortMilestones();
     }
 
     onRealmChange() {
@@ -264,15 +279,6 @@ export class Construction extends ArtisanSkill {
         this.ui.updateRealmSelection(this.currentRealm);
     }
 
-    getMaxTotalMasteryLevels() {
-        let tiernum = cloudManager.hasTotHEntitlementAndIsEnabled ? 8 : 5;
-        return this.recipeNumber * tiernum;
-    }
-
-    getTotalCurrentMasteryLevels() {
-        return this.recipeCountByTier.reduce((a, b) => a + b, 0);
-
-    }
 
     render() {
         super.render();
@@ -292,7 +298,9 @@ export class Construction extends ArtisanSkill {
         return scope;
     }
     onMasteryLevelUp(action, oldLevel, newLevel) {
-        // nope
+               super.onMasteryLevelUp(action, oldLevel, newLevel);
+        if (this.selectedRecipe === action)
+            this.renderQueue.selectedRecipe = true;
     }
     recordCostPreservationStats(costs) {
         super.recordCostPreservationStats(costs);
@@ -311,17 +319,11 @@ export class Construction extends ArtisanSkill {
         this.fixtures.forEach((fixture) => {
             fixture.addProvidedStatsTo(this.providedStats)
         });
-        this.tierMasteries.forEach((tier) => {
-            tier.addProvidedStatsTo(this.providedStats)
-        });
     }
     viewAllModifiersOnClick() {
         const summary = new StatObjectSummary();
         this.fixtures.forEach((fixture) => {
             fixture.addProvidedStatsTo(summary)
-        });
-        this.tierMasteries.forEach(tier => {
-            if (tier.completed) tier.addProvidedStatsTo(summary);
         });
         const html = summary.getAllDescriptions().map(getElementHTMLDescriptionFormatter('h5', 'font-w400 font-size-sm mb-1', false)).join('');
         SwalLocale.fire({
@@ -364,8 +366,23 @@ export class Construction extends ArtisanSkill {
         return rewards;
     }
     addMasteryXPReward() {
-        // no more mastery XP reward
-    }
+        switch (this._actionMode) {
+            case 0: {
+                this.addMasteryForAction(this.masteryAction, this.masteryModifiedInterval);
+                break;
+            }
+            case 1: {
+                const masteryActions = this.activeBuildRecipe.itemCosts.map(cost => {
+                    if (cost.item.namespace == 'rielkConstruction')
+                        return this.sortedMasteryActions.find(action => action.product == cost.item);
+                });
+                masteryActions.forEach(action => {
+                    if (action != undefined)
+                        this.addMasteryForAction(action, this.masteryModifiedInterval);
+                });
+                break;
+            }
+        }    }
     postAction() {
         this.stats.inc(ConstructionStats.Actions);
         this.stats.add(ConstructionStats.TimeSpent, this.currentActionInterval);

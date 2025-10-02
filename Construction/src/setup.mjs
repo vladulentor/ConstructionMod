@@ -4,6 +4,7 @@ const { Construction } = await loadModule('src/construction/construction.mjs');
 const { patchTranslations } = await loadModule('src/language/translationManager.mjs');
 const { patchGameEventSystem } = await loadModule('src/construction/gameEvents.mjs');
 const { patchFarming } = await loadModule('src/skillPatches/farming.mjs');
+const {skillBoostsCompatibility} = await loadModule('src/modPatches/skillboosts.mjs');
 
 export async function setup(ctx) {
     setup = new Setup(ctx);
@@ -13,6 +14,7 @@ export async function setup(ctx) {
 
     await setup.applyPatches();
     await setup.loadData();
+    await setup.modCompatibility(ctx);
 }
 
 class Setup {
@@ -52,5 +54,15 @@ class Setup {
         await this.ctx.gameData.addPackage('src/data/data.json');
         if (cloudManager.hasAoDEntitlementAndIsEnabled)
             await this.ctx.gameData.addPackage('src/data/data_AoD.json');
+    }
+    async modCompatibility(ctx) {
+        this.ctx.onModsLoaded(() => {
+            this.modList = mod.manager.getLoadedModList();
+            if (this.modList.includes('Skill Boosts')) {
+                console.log('Skill Boosts found!');
+                skillBoostsCompatibility(ctx);
+            }
+
+        })
     }
 }

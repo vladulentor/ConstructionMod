@@ -261,6 +261,10 @@ export class Construction extends ArtisanSkill {
             html,
         });
     }
+
+    shouldShowSkillInSidebar() {
+        return super.shouldShowSkillInSidebar() || this.game.currentRealm === this.game.defaultRealm; // only show in default realm
+    }
     preAction() { }
     get actionRewards() {
         const rewards = new Rewards(this.game);

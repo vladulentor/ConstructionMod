@@ -270,22 +270,24 @@
 
 
 <template id="rielk-construction-mastery">
-  <div class="block block-link-pop p-2 mb-2 w-100 d-flex align-items-center"
-    style="border-radius: 0 0 0.25rem 0.25rem; overflow: hidden;">
-    <div class="m-1 d-flex align-items-center">
-      <img class="skill-icon-md mr-2" id="house-image" alt="Skill Icon">
-    </div>
-    <div class="media-body w-100">
-      <div class="d-flex flex-column w-100">
-        <h5 class="font-w700 text-combat-smoke mb-2">
-         <rielk-lang-string lang-id="MENU_HOUSE_COMPLETION"></lang-string> 
-        </h5>
-        <div class="d-flex w-100 mb-1" id="mastery-bars-container">
+  <div id="skill-boosts-append" class="d-flex flex-column">
+    <div class="block block-link-pop p-2 mb-2 w-100" style="border-radius: 0 0 0.25rem 0.25rem; overflow: hidden;">
+      <div class="d-flex align-items-center">
+        <div class="m-1 d-flex align-items-start">
+          <img class="skill-icon-md mr-2" id="house-image">
         </div>
-        <div class="d-flex w-100 mb-1 justify-content-between">
-          <small id="tiers-completed-aggregate" class="font-w400 font-size-sm text-combat-smoke"></small>
+        <div class="media-body flex-column w-100">
+          <div class="d-flex flex-column w-100">
+            <h5 class="font-w700 text-combat-smoke mb-2">
+              <rielk-lang-string lang-id="MENU_HOUSE_COMPLETION"></lang-string>
+            </h5>
+            <div class="d-flex w-100 mb-1" id="mastery-bars-container">
+            </div>
+            <div class="d-flex w-100 mb-1 justify-content-between">
+              <small id="tiers-completed-aggregate" class="font-w400 font-size-sm text-combat-smoke"></small>
+            </div>
+          </div>
         </div>
-
       </div>
     </div>
   </div>

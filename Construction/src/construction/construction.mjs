@@ -37,22 +37,6 @@ export class Construction extends ArtisanSkill {
     initMenus() {
         this.ui = new ConstructionInterface(this);
         super.initMenus(...arguments);
-        const viewConstructionButton = createElement('button', {
-            className: 'btn btn-small btn-info font-size-xs p-1',
-            attributes: [['role', 'button']],
-            text: getRielkLangString('MENU_VIEW_HOUSE_TIERS'),
-        });
-
-        // Append the button
-        this.header?.appendUpper(viewConstructionButton);
-
-        viewConstructionButton.onclick = () => {
-            this.popTierMasteries();
-            this.renderQueue.masteryBonusElements = true;
-
-            // Using jQuery + Bootstrap
-            $('#rielk-tier-mastery-modal').modal('show');
-        }
     }
     get name() {
         return getRielkLangString('SKILL_NAME_Construction');
@@ -62,8 +46,6 @@ export class Construction extends ArtisanSkill {
             tm.maxProgress = this.recipeNumber;
             let tier = tm.tier;
             tm.currentProgress = this.recipeCountByTier[tier - 1];
-            if (tm.currentProgress >= tm.maxProgress && !tm.completed)
-                tm.onComplete(this); //special case if someone is loading from the normal construction mod, otherwise this shouldn't fire.
         });
 
     }
@@ -245,52 +227,6 @@ export class Construction extends ArtisanSkill {
         return nodes;
     }
 
-    queueMasteryBonusModal(bonus) {
-        const modalBody = createElement('div', { className: 'justify-vertical-center' });
-        const title = createElement('h5', {
-            className: 'font-w400 mb-0',
-            parent: modalBody,
-        });
-        title.innerHTML = templateRielkLangString('MENU_UNLOCKED_MASTERY_FOR_TIER', { tiername: bonus.tier });
-        if (bonus.modifiers._stats.hasStats) {
-            createElement('h5', {
-                text: getLangString('PERMANENT_BONUS_UNLOCKED'),
-                className: 'font-w600 font-size-lg text-warning mb-0 mt-2',
-                parent: modalBody,
-            });
-            modalBody.append(...bonus.modifiers._stats.describeAsSpans());
-        }
-        const rewardNodes = this.createItemCurrencyNodes(bonus);
-        if (rewardNodes.length > 0) {
-            createElement('h5', {
-                text: getLangString('REWARDS_UNLOCKED'),
-                className: 'font-w600 font-size-lg text-warning mb-0 mt-2',
-                parent: modalBody,
-            });
-            modalBody.append(...rewardNodes);
-        }
-        if (bonus.pets !== undefined) {
-            createElement('h5', {
-                text: bonus.pets.length > 1 ? getLangString('PETS_UNLOCKED') : getLangString('COMPLETION_LOG_PETS_UNLOCKED'),
-                className: 'font-w600 font-size-lg text-warning mb-0 mt-2',
-                parent: modalBody,
-            });
-            bonus.pets.forEach((pet) => {
-                const petSpan = createElement('span', { className: 'text-success', parent: modalBody });
-                petSpan.append(createElement('img', { className: 'skill-icon-md mr-1', attributes: [['src', pet.media]] }), pet.name);
-            });
-        }
-        addModalToQueue({
-            titleText: getRielkLangString('MENU_HOUSE_TIER_BONUS_UNLOCKED'),
-            imageUrl: ctx.getResourceUrl('assets/cabin.png'), //that cabin could probably be an object of construction
-            html: modalBody,
-            allowOutsideClick: false,
-            showConfirmButton: true,
-            imageWidth: 128,
-            imageHeight: 128,
-        });
-    }
-
     computeTotalMasteryActions() {
 
     }
@@ -454,8 +390,6 @@ export class Construction extends ArtisanSkill {
         tierData.addProgress(this);
         this.updateRecipeCounts();
 
-        this.renderQueue.masteryBar = true;
-        this.renderQueue.masteryBonusElements = true;
 
     }
 
@@ -536,8 +470,6 @@ export class Construction extends ArtisanSkill {
         super.onLoad();
         this.renderQueue.menu = true;
         this.renderQueue.fictureUnlock = true;
-        this.renderQueue.masteryBar = true;
-        this.renderQueue.masteryBonusElements = true;
 
         this.selectRealm(this.currentRealm);
         onInterfaceReady(async () => {

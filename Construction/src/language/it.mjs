@@ -8,24 +8,12 @@ export const language = {
     'MENU_TEXT_PARTIAL_BUILT_PROGRESS': '${currentValue}/${maxValue} ${percent}',
     'MENU_TEXT_SHOW_UPGRADES': 'Promuovere',
     'MENU_TEXT_SHOW_GO_BACK': 'Tornare',
-    'MENU_TEXT_REMAINING': 'Costi Rimanenti',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'Visualizzare tutti i modificatori attivi',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'Tutti i modificatori di costruzione attivi',
-    'MENU_VIEW_HOUSE_TIERS': 'Visualizza i bonus dei livelli della casa',
-    'MENU_UNLOCKED_MASTERY_FOR_TIER': 'Il livello della tua casa è aumentato a <span class="construction-success">Livello ${tiername}</span>',
-    'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'Bonus del livello della casa sbloccato!',
-    'MENU_HOUSE_COMPLETION': 'Completamento della casa',
-    'MENU_BUILT': 'Costruito',
-    'MENU_HOUSE': "Casa",
-    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Cosa sono i livelli della casa?',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Il livello della tua casa inizia da 0. Man mano che costruisci mobili e riempi ogni stanza, il livello della tua casa migliorerà.</span>',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'Quando tutte le stanze contengono mobili del livello richiesto o superiore, il livello della tua casa aumenterà. Sbloccherai bonus permanenti di Costruzione e riceverai risorse.',
-    'MENU_TEXT_REWARDS': 'Ricompense',
 
     'SHOP_NAME_Construction_Skillcape': 'Abilmantello della costruzione',
 
-    'PET_NAME_ChuckTheForeman': 'Chuck il caposquadra',
-    'PET_NAME_Scoobs': 'Scoobs',
+    'PET_NAME_ChuckTheBeaver': 'Butta via il castoro',
 
     'ITEM_NAME_Construction_Skillcape': 'Della Costruzione',
     'ITEM_NAME_Builders_Hat': 'Cappello dei costruttori',
@@ -51,6 +39,7 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': 'Vasi di fiori: Livello 4',
     'ITEM_NAME_Flower_Pots_Token_5': 'Vasi di fiori: Livello 5',
 
+    'ITEM_NAME_Mastery_Token_Construction': 'Gettone di maestria (costruzione)',
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2% Abilità di costruzione PE<br><span class=\"text-warning\">Equipaggiato con tutti e quattro gli abiti da costruttore: +8% PE maestria nella costruzione</span>',
     'ITEM_DESCRIPTION_Builders_Body': '+2% Abilità di costruzione PE<br><span class=\"text-warning\">Equipaggiato con tutti e quattro gli abiti da costruttore: +8% PE maestria nella costruzione</span>',
@@ -58,22 +47,19 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Boots': '+2% Abilità di costruzione PE<br><span class=\"text-warning\">Equipaggiato con tutti e quattro gli abiti da costruttore: +8% PE maestria nella costruzione</span>',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% di possibilità di recuperare un seme di albero in agricoltura quando raccolto',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% azioni necessarie per costruire mobili in Costruzione',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% azioni necessarie per costruire mobili in Costruzione',
+    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% azioni necessarie per l\'aggiornamento in Costruzione',
+    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% azioni necessarie per l\'aggiornamento in Costruzione',
 
     'DESCRIPTION_ADDS_ITEM': 'Dare ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': 'Sblocca 1 Appezzamento di ${plotCategory} in Coltivazione',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'Non hai i materiali necessari per Costruirlo.',
 
-    'MASTERY_BONUS_ Construction_ 0': 'Sblocca gli effetti del livello 1 dell\'arredamento.',
-    'MASTERY_BONUS_ Construction_ 1': 'Sblocca gli effetti del livello 2 dell\'arredamento.',
-    'MASTERY_BONUS_ Construction_ 2': 'Sblocca gli effetti del livello 3 dell\'arredamento.',
-    'MASTERY_BONUS_ Construction_ 3': 'Sblocca gli effetti del livello 4 dell\'arredamento.',
-    'MASTERY_BONUS_ Construction_ 4': 'Sblocca gli effetti del livello 5 dell\'arredamento.',
+    'MASTERY_BONUS_ Construction_ 0': 'Ogni livello fornisce una probabilità del +0,2% di preservare le risorse.',
+    'MASTERY_BONUS_ Construction_ 1': '+5% di possibilità di preservare le risorse.',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Materiali',
-    'SKILL_CATEGORY_ Construction_ House': 'Arredamento',
+    'SKILL_CATEGORY_ Construction_ House': 'Casa',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': 'Camera da Letto',
     'CONSTRUCTION_ROOM_NAME_ Garden': 'Giardino',
@@ -94,7 +80,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': 'Pozzo del fuoco',
     'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': 'Vasi di Fiori',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': 'Fucina',
-    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Dispensa',
+    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Scatola Fredda',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': 'Palestra nella Giungla',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': 'Lago',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': 'Miniera',

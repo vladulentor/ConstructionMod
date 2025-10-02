@@ -20,9 +20,6 @@ export class ConstructionCategory extends SkillCategory {
         }
     }
     get name() {
-        const stack = new Error().stack;
-        const isMenu = stack.includes('category-menu-option') || stack.includes('addOptions');
-        if (this.type === 'House' && isMenu) return getRielkLangString('MENU_HOUSE'); // so it says "House" in the menu but the items themselves are called "Furniture"
         return getRielkLangString(`SKILL_CATEGORY_ ${this.skill.localID}_ ${this.localID}`);
     }
 }

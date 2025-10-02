@@ -8,26 +8,12 @@ export const language = {
     'MENU_TEXT_PARTIAL_BUILT_PROGRESS': '${currentValue}/${maxValue} ${percent}',
     'MENU_TEXT_SHOW_UPGRADES': 'Upgrades',
     'MENU_TEXT_SHOW_GO_BACK': 'Geh zurück',
-    'MENU_TEXT_REMAINING': 'Verbleibende Kosten',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'Alle aktiven Modifikatoren anzeigen',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'Alle aktiven Konstruktionsmodifikatoren',
-    'MENU_VIEW_HOUSE_TIERS': 'Hausstufen-Boni anzeigen',
-    'MENU_UNLOCKED_MASTERY_FOR_TIER': 'Deine Hausstufe ist auf <span class="construction-success">Stufe ${tiername}</span> gestiegen',
-    'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'Hausstufen-Bonus freigeschaltet!',
-    'MENU_HOUSE_COMPLETION': 'Hausvollendung',
-    'MENU_HOUSE': "Haus",
-    'MENU_BUILT': 'Gebaut',
-    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Was sind Hausstufen?',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Die Stufe deines Hauses beginnt bei 0. Wenn du Möbel baust und jeden Raum füllst, wird die Stufe deines Hauses steigen.</span>',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'Wenn alle Räume Möbel der erforderlichen Stufe oder höher enthalten, steigt dein Haus-Level. Du schaltest permanente Bau-Boni frei und erhältst Materialien.',
-    'MENU_TEXT_REWARDS': 'Belohnungen',
-
 
     'SHOP_NAME_Construction_Skillcape': 'Umhang der Konstruktion',
 
-    'PET_NAME_ChuckTheForeman': 'Chuck der Vorarbeiter',
-    'PET_NAME_Scoobs': 'Scoobs',
-
+    'PET_NAME_ChuckTheBeaver': 'Chuck der Biber',
 
     'ITEM_NAME_Construction_Skillcape': 'Umhang der Konstruktion',
     'ITEM_NAME_Builders_Hat': 'Bauarbeiterhut',
@@ -53,6 +39,7 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': 'Blumentöpfe: Stufe 4',
     'ITEM_NAME_Flower_Pots_Token_5': 'Blumentöpfe: Stufe 5',
 
+    'ITEM_NAME_Mastery_Token_Construction': 'Meisterungsmarke (Konstruktion)',
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2 % Fertigkeits-EP in Konstruktion.<br><span class=\"text-warning\">Wenn alle vier Teile des Kostüms der brennenden Menschheit ausgerüstet sind: +8 % Konstruktion-Meisterungs-EP.</span>',
     'ITEM_DESCRIPTION_Builders_Body': '+2 % Fertigkeits-EP in Konstruktion.<br><span class=\"text-warning\">Wenn alle vier Teile des Kostüms der brennenden Menschheit ausgerüstet sind: +8 % Konstruktion-Meisterungs-EP.</span>',
@@ -60,22 +47,19 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Boots': '+2 % Fertigkeits-EP in Konstruktion.<br><span class=\"text-warning\">Wenn alle vier Teile des Kostüms der brennenden Menschheit ausgerüstet sind: +8 % Konstruktion-Meisterungs-EP.</span>',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% chance, beim Ernten einen Baumsamen in der Landwirtschaft zurückzugewinnen',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% Aktionen erforderlich, um Möbel im Bauwesen zu erstellen',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% Aktionen erforderlich, um Möbel im Bauwesen zu erstellen',
+    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% erforderliche Aktionen zur Aufwertung im Konstruktion',
+    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% erforderliche Aktionen zur Aufwertung im Konstruktion',
 
     'DESCRIPTION_ADDS_ITEM': 'Gibt ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': 'Schaltet 1 ${plotCategory} Feld in der Landwirtschaft frei',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'Sie haben nicht die erforderlichen Materialien, um das zu bauen',
 
-    'MASTERY_BONUS_ Construction_ 0': 'Schalte die Effekte der Stufe 1 des Einrichtungsgegenstands frei.',
-    'MASTERY_BONUS_ Construction_ 1': 'Schalte die Effekte der Stufe 2 des Einrichtungsgegenstands frei.',
-    'MASTERY_BONUS_ Construction_ 2': 'Schalte die Effekte der Stufe 3 des Einrichtungsgegenstands frei.',
-    'MASTERY_BONUS_ Construction_ 3': 'Schalte die Effekte der Stufe 4 des Einrichtungsgegenstands frei.',
-    'MASTERY_BONUS_ Construction_ 4': 'Schalte die Effekte der Stufe 5 des Einrichtungsgegenstands frei.',
+    'MASTERY_BONUS_ Construction_ 0': 'Jede Stufe verleiht eine Chance von +0,2 %, Ressourcen zu bewahren.',
+    'MASTERY_BONUS_ Construction_ 1': '+5 % Chance, Ressourcen zu bewahren..',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Baumaterialien',
-    'SKILL_CATEGORY_ Construction_ House': 'Möbel',
+    'SKILL_CATEGORY_ Construction_ House': 'Haus',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': 'Schlafzimmer',
     'CONSTRUCTION_ROOM_NAME_ Garden': 'Garten',
@@ -96,7 +80,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': 'Feuerstelle',
     'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': 'Blumentöpfe',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': 'Schmiede',
-    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Vorratskammer',
+    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Kühlbox',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': 'Klettergerüst',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': 'See',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': 'Mine',

@@ -8,24 +8,12 @@ export const language = {
     'MENU_TEXT_PARTIAL_BUILT_PROGRESS': '${currentValue}/${maxValue} ${percent}',
     'MENU_TEXT_SHOW_UPGRADES': '升級',
     'MENU_TEXT_SHOW_GO_BACK': '回去',
-    'MENU_TEXT_REMAINING': '剩餘費用',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': '查看所有活動修改器',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': '所有主動構造修飾符',
-    'MENU_VIEW_HOUSE_TIERS': '查看房屋等級獎勵',
-    'MENU_UNLOCKED_MASTERY_FOR_TIER': '您的房屋等級已提升到 <span class="construction-success">等級 ${tiername}</span>',
-    'MENU_HOUSE_TIER_BONUS_UNLOCKED': '房屋等級獎勵已解鎖！',
-    'MENU_HOUSE_COMPLETION': '房屋完成度',
-    'MENU_BUILT': '已建造',
-    'MENU_HOUSE': "房子",
-    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': '什麼是房屋等級？',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': '您的房屋等級從0開始。隨著您建造家具並填滿每個房間，房屋等級會提升。</span>',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '當所有房間都擁有所需等級或更高等級的家具時，您的房屋等級將提升。您將解鎖永久建築加成並獲得材料。',
-    'MENU_TEXT_REWARDS': '獎勵',
 
     'SHOP_NAME_Construction_Skillcape': '建築技能角',
 
-    'PET_NAME_ChuckTheForeman': '主管查克',
-    'PET_NAME_Scoobs': '斯庫布斯',
+    'PET_NAME_ChuckTheBeaver': '查克海狸',
 
     'ITEM_NAME_Construction_Skillcape': '建築技能角',
     'ITEM_NAME_Builders_Hat': '建築工人的帽子',
@@ -51,6 +39,7 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': '花盆: 層 4',
     'ITEM_NAME_Flower_Pots_Token_5': '花盆: 層 5',
 
+    'ITEM_NAME_Mastery_Token_Construction': '精通代幣（結構）',
 
     'ITEM_DESCRIPTION_Builders_Hat': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
     'ITEM_DESCRIPTION_Builders_Body': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
@@ -58,22 +47,19 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Boots': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收穫時，+${value}% 幾率在農業中重新獲得樹種子',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 動作用於在建造中製造家具',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 動作用於在建造中製造家具',
+    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 升級建築所需的行動',
+    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 升級建築所需的行動',
 
     'DESCRIPTION_ADDS_ITEM': '給出 ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': '在農業解鎖 1 個 ${plotCategory} 地塊',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '你沒有建造它所需的材料。',
 
-    'MASTERY_BONUS_ Construction_ 0': '解鎖家具的等級1效果。',
-    'MASTERY_BONUS_ Construction_ 1': '解鎖家具的等級2效果。',
-    'MASTERY_BONUS_ Construction_ 2': '解鎖家具的等級3效果。',
-    'MASTERY_BONUS_ Construction_ 3': '解鎖家具的等級4效果。',
-    'MASTERY_BONUS_ Construction_ 4': '解鎖家具的等級5效果。',
+    'MASTERY_BONUS_ Construction_ 0': '每個等級提供 +0.2% 的機會來保存資源。',
+    'MASTERY_BONUS_ Construction_ 1': '+5% 機會保護資源。',
 
     'SKILL_CATEGORY_ Construction_ Materials': '材料',
-    'SKILL_CATEGORY_ Construction_ House': '家具',
+    'SKILL_CATEGORY_ Construction_ House': '房子',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': '臥室',
     'CONSTRUCTION_ROOM_NAME_ Garden': '花園',
@@ -94,7 +80,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': '火坑',
     'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': '花盆',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': '鍛',
-    'CONSTRUCTION_FIXTURE_NAME_ Fridge': '食品储藏室',
+    'CONSTRUCTION_FIXTURE_NAME_ Fridge': '涼箱',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': '攀登架',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': '潢',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': '礦',

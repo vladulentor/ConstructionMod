@@ -5,7 +5,7 @@
     "pages": [
       {
         "id": "Construction",
-        "media": "assets/icon.png",
+        "media": "assets\\icon.png",
         "containerID": "rielk-construction-container",
         "headerBgClass": "bg-rielk-construction",
         "hasGameGuide": false,
@@ -23,7 +23,7 @@
         "name": "Iron Nails",
         "category": "Construction",
         "type": "Nails",
-        "media": "assets/items/nails_iron.png",
+        "media": "assets\\items\\nails_iron.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -35,7 +35,7 @@
         "name": "Steel Nails",
         "category": "Construction",
         "type": "Nails",
-        "media": "assets/items/nails_steel.png",
+        "media": "assets\\items\\nails_steel.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -47,7 +47,7 @@
         "name": "Mithril Nails",
         "category": "Construction",
         "type": "Nails",
-        "media": "assets/items/nails_mithril.png",
+        "media": "assets\\items\\nails_mithril.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -59,7 +59,7 @@
         "name": "Adamantite Nails",
         "category": "Construction",
         "type": "Nails",
-        "media": "assets/items/nails_adamantite.png",
+        "media": "assets\\items\\nails_adamantite.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -71,7 +71,7 @@
         "name": "Dragonite Nails",
         "category": "Construction",
         "type": "Nails",
-        "media": "assets/items/nails_dragonite.png",
+        "media": "assets\\items\\nails_dragonite.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -83,7 +83,7 @@
         "name": "Normal Planks",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/planks_normal.png",
+        "media": "assets\\items\\planks_normal.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -95,7 +95,7 @@
         "name": "Oak Planks",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/planks_oaks.png",
+        "media": "assets\\items\\planks_oaks.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -107,7 +107,7 @@
         "name": "Teak Planks",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/planks_teak.png",
+        "media": "assets\\items\\planks_teak.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -119,7 +119,7 @@
         "name": "Mahogany Planks",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/planks_mahogany.png",
+        "media": "assets\\items\\planks_mahogany.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -131,7 +131,7 @@
         "name": "Magic Planks",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/planks_magic.png",
+        "media": "assets\\items\\planks_magic.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -143,7 +143,7 @@
         "name": "Flower Pots Token 1",
         "category": "Construction",
         "type": "Token",
-        "media": "assets/fixtures/flower_pots.png",
+        "media": "assets\\fixtures\\flower_pots.png",
         "ignoreCompletion": true,
         "obtainFromItemLog": true,
         "golbinRaidExclusive": false,
@@ -155,7 +155,7 @@
         "name": "Flower Pots Token 2",
         "category": "Construction",
         "type": "Token",
-        "media": "assets/fixtures/flower_pots.png",
+        "media": "assets\\fixtures\\flower_pots.png",
         "ignoreCompletion": true,
         "obtainFromItemLog": true,
         "golbinRaidExclusive": false,
@@ -167,7 +167,7 @@
         "name": "Flower Pots Token 3",
         "category": "Construction",
         "type": "Token",
-        "media": "assets/fixtures/flower_pots.png",
+        "media": "assets\\fixtures\\flower_pots.png",
         "ignoreCompletion": true,
         "obtainFromItemLog": true,
         "golbinRaidExclusive": false,
@@ -179,7 +179,7 @@
         "name": "Flower Pots Token 4",
         "category": "Construction",
         "type": "Token",
-        "media": "assets/fixtures/flower_pots.png",
+        "media": "assets\\fixtures\\flower_pots.png",
         "ignoreCompletion": true,
         "obtainFromItemLog": true,
         "golbinRaidExclusive": false,
@@ -191,7 +191,7 @@
         "name": "Flower Pots Token 5",
         "category": "Construction",
         "type": "Token",
-        "media": "assets/fixtures/flower_pots.png",
+        "media": "assets\\fixtures\\flower_pots.png",
         "ignoreCompletion": true,
         "obtainFromItemLog": true,
         "golbinRaidExclusive": false,
@@ -203,7 +203,7 @@
         "name": "Construction Skillcape",
         "category": "Combat",
         "type": "Armour",
-        "media": "assets/items/skillcape_construction.png",
+        "media": "assets\\items\\skillcape_construction.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -238,16 +238,9 @@
           "flatSkillInterval": [
             {
               "skillID": "rielkConstruction:Construction",
-              "value": -250
+              "value": -200
             }
-          ],
-          "skillItemDoublingChance": [
-            {
-              "value": 15,
-              "skillID": "rielkConstruction:Construction"
-            }
-          ],
-          "rielkConstruction:constructionActionsToUpgrade": -10
+          ]
         }
       },
       {
@@ -256,7 +249,7 @@
         "name": "Builders Hat",
         "category": "Construction",
         "type": "Equipment",
-        "media": "assets/items/skilling_outfit_hat_construction.png",
+        "media": "assets\\items\\skilling_outfit_hat_construction.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -284,7 +277,7 @@
         "name": "Builders Body",
         "category": "Construction",
         "type": "Equipment",
-        "media": "assets/items/skilling_outfit_body_construction.png",
+        "media": "assets\\items\\skilling_outfit_body_construction.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -312,7 +305,7 @@
         "name": "Builders Leggings",
         "category": "Construction",
         "type": "Equipment",
-        "media": "assets/items/skilling_outfit_leggings_construction.png",
+        "media": "assets\\items\\skilling_outfit_leggings_construction.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -340,7 +333,7 @@
         "name": "Builders Boots",
         "category": "Construction",
         "type": "Equipment",
-        "media": "assets/items/skilling_outfit_boots_construction.png",
+        "media": "assets\\items\\skilling_outfit_boots_construction.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -361,13 +354,28 @@
             }
           ]
         }
+      },
+      {
+        "id": "Mastery_Token_Construction",
+        "name": "Mastery Token (Construction)",
+        "category": "Mastery",
+        "type": "Token",
+        "media": "assets\\items\\mastery_token_construction.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 1500,
+        "itemType": "MasteryToken",
+        "skill": "rielkConstruction:Construction",
+        "realm": "melvorD:Melvor",
+        "percent": 0.1
       }
     ],
     "shopPurchases": [
       {
         "id": "Construction_Skillcape",
         "customName": "Construction Skillcape",
-        "media": "assets/items/skillcape_construction.png",
+        "media": "assets\\items\\skillcape_construction.png",
         "category": "melvorD:Skillcapes",
         "contains": {
           "items": [
@@ -402,7 +410,7 @@
       },
       {
         "id": "Builders_Hat",
-        "media": "assets/items/skilling_outfit_hat_construction.png",
+        "media": "assets\\items\\skilling_outfit_hat_construction.png",
         "category": "melvorF:Township",
         "contains": {
           "items": [
@@ -441,7 +449,7 @@
       },
       {
         "id": "Builders_Body",
-        "media": "assets/items/skilling_outfit_body_construction.png",
+        "media": "assets\\items\\skilling_outfit_body_construction.png",
         "category": "melvorF:Township",
         "contains": {
           "items": [
@@ -480,7 +488,7 @@
       },
       {
         "id": "Builders_Leggings",
-        "media": "assets/items/skilling_outfit_leggings_construction.png",
+        "media": "assets\\items\\skilling_outfit_leggings_construction.png",
         "category": "melvorF:Township",
         "contains": {
           "items": [
@@ -519,7 +527,7 @@
       },
       {
         "id": "Builders_Boots",
-        "media": "assets/items/skilling_outfit_boots_construction.png",
+        "media": "assets\\items\\skilling_outfit_boots_construction.png",
         "category": "melvorF:Township",
         "contains": {
           "items": [
@@ -593,13 +601,20 @@
           "rielkConstruction:Builders_Leggings",
           "rielkConstruction:Builders_Boots"
         ]
+      },
+      {
+        "insertAt": "After",
+        "afterID": "melvorF:Mastery_Token_Astrology",
+        "ids": [
+          "rielkConstruction:Mastery_Token_Construction"
+        ]
       }
     ],
     "pets": [
       {
-        "id": "ChuckTheForeman",
-        "name": "Chuck The Foreman",
-        "media": "assets/chuck_the_foreman.png",
+        "id": "ChuckTheBeaver",
+        "name": "Chuck The Beaver",
+        "media": "assets\\chuck_the_beaver.png",
         "ignoreCompletion": false,
         "modifiers": {
           "skillPreservationChance": [
@@ -610,23 +625,7 @@
           ]
         },
         "activeInRaid": false,
-        "scaleChanceWithMasteryPool": false,
-        "skillID": "rielkConstruction:Construction"
-      },
-      {
-        "id": "Scoobs",
-        "name": "Scoobs",
-        "media": "assets/items/scoobs.png",
-        "ignoreCompletion": false,
-        "modifiers": {
-          "flatSummoningAttackInterval": [
-            {
-              "value": -750
-            }
-          ]
-        },
-        "activeInRaid": false,
-        "scaleChanceWithMasteryPool": false,
+        "scaleChanceWithMasteryPool": true,
         "skillID": "rielkConstruction:Construction"
       }
     ],
@@ -715,7 +714,7 @@
         "skillID": "rielkConstruction:Construction",
         "data": {
           "pets": [
-            "rielkConstruction:ChuckTheForeman"
+            "rielkConstruction:ChuckTheBeaver"
           ],
           "rareDrops": [
             {
@@ -765,216 +764,114 @@
             ],
             "upgrades": [],
             "pets": [
-              "rielkConstruction:ChuckTheForeman",
-              "rielkConstruction:Scoobs"
+              "rielkConstruction:ChuckTheBeaver"
             ]
           },
           "masteryLevelUnlocks": [
             {
               "level": 1,
               "descriptionID": 0,
-              "description": "Unlock fixture's Tier 1 effects."
+              "description": "Each level provides +0.2% chance to preserve resources."
             },
             {
-              "level": 2,
+              "level": 99,
               "descriptionID": 1,
-              "description": "Unlock fixture's Tier 2 effects."
+              "description": "+5% chance to preserve resources."
+            }
+          ],
+          "masteryLevelBonuses": [
+            {
+              "modifiers": {
+                "skillPreservationChance": [
+                  {
+                    "skillID": "rielkConstruction:Construction",
+                    "actionID": "rielkConstruction:Iron_Nails",
+                    "value": 0.2
+                  }
+                ]
+              },
+              "level": 2,
+              "levelScalingSlope": 1,
+              "levelScalingMax": 99
             },
             {
-              "level": 3,
-              "descriptionID": 2,
-              "description": "Unlock fixture's Tier 3 effects."
+              "modifiers": {
+                "skillPreservationChance": [
+                  {
+                    "skillID": "rielkConstruction:Construction",
+                    "actionID": "rielkConstruction:Iron_Nails",
+                    "value": 5
+                  }
+                ]
+              },
+              "level": 99
+            }
+          ],
+          "masteryPoolBonuses": [
+            {
+              "realm": "melvorD:Melvor",
+              "modifiers": {
+                "masteryXP": [
+                  {
+                    "skillID": "rielkConstruction:Construction",
+                    "realmID": "melvorD:Melvor",
+                    "value": 5
+                  }
+                ]
+              },
+              "percent": 10
             },
             {
-              "level": 4,
-              "descriptionID": 3,
-              "description": "Unlock fixture's Tier 4 effects."
+              "realm": "melvorD:Melvor",
+              "modifiers": {
+                "skillPreservationChance": [
+                  {
+                    "skillID": "rielkConstruction:Construction",
+                    "realmID": "melvorD:Melvor",
+                    "value": 5
+                  }
+                ]
+              },
+              "percent": 25
             },
             {
-              "level": 5,
-              "descriptionID": 4,
-              "description": "Unlock fixture's Tier 5 effects."
+              "realm": "melvorD:Melvor",
+              "modifiers": {
+                "flatBasePrimaryProductQuantity": [
+                  {
+                    "skillID": "rielkConstruction:Construction",
+                    "value": 1
+                  }
+                ]
+              },
+              "percent": 50
+            },
+            {
+              "realm": "melvorD:Melvor",
+              "modifiers": {
+                "flatSkillInterval": [
+                  {
+                    "skillID": "rielkConstruction:Construction",
+                    "realmID": "melvorD:Melvor",
+                    "value": -100
+                  }
+                ]
+              },
+              "percent": 95
             }
           ],
           "categories": [
             {
               "id": "Materials",
               "name": "Materials",
-              "media": "assets/items/planks_normal.png",
+              "media": "assets\\items\\planks_normal.png",
               "type": "Artisan"
             },
             {
               "id": "House",
-              "name": "Furniture",
-              "media": "assets/house.png",
+              "name": "House",
+              "media": "assets\\house.png",
               "type": "House"
-            }
-          ],
-          "tierMasteries": [
-            {
-              "id": "1",
-              "name": "House Tier 1",
-              "tier": 1,
-              "currentProgress": 0,
-              "completed": false,
-              "itemAwards": [
-                {
-                  "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 300
-                },
-                {
-                  "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 300
-                },
-                {
-                  "id": "melvorF:Potion_Box_I",
-                  "quantity": 600
-                }
-              ],
-              "modifiers": {
-                "flatSkillInterval": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "value": -150
-                  }
-                ],
-                "skillXP": [
-                  {
-                    "value": 10,
-                    "skillID": "rielkConstruction:Construction"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "2",
-              "name": "House Tier 2",
-              "tier": 2,
-              "currentProgress": 0,
-              "completed": false,
-              "itemAwards": [
-                {
-                  "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 900
-                },
-                {
-                  "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 900
-                },
-                {
-                  "id": "melvorF:Potion_Box_I",
-                  "quantity": 2400
-                }
-              ],
-              "modifiers": {
-                "flatBasePrimaryProductQuantity": [
-                  {
-                    "value": 1,
-                    "skillID": "rielkConstruction:Construction"
-                  }
-                ],
-                "skillPreservationChance": [
-                  {
-                    "value": 10,
-                    "skillID": "rielkConstruction:Construction"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "3",
-              "name": "House Tier 3",
-              "tier": 3,
-              "currentProgress": 0,
-              "completed": false,
-              "itemAwards": [
-                {
-                  "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 1800
-                },
-                {
-                  "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 1800
-                },
-                {
-                  "id": "melvorF:Potion_Box_II",
-                  "quantity": 3000
-                }
-              ],
-              "modifiers": {
-                "flatSkillInterval": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "realmID": "melvorD:Melvor",
-                    "value": -350
-                  }
-                ],
-                "skillItemDoublingChance": [
-                  {
-                    "value": 8,
-                    "skillID": "rielkConstruction:Construction"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "4",
-              "name": "House Tier 4",
-              "tier": 4,
-              "currentProgress": 0,
-              "completed": false,
-              "itemAwards": [
-                {
-                  "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 4200
-                },
-                {
-                  "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 4200
-                },
-                {
-                  "id": "melvorF:Potion_Box_II",
-                  "quantity": 5000
-                }
-              ],
-              "modifiers": {
-                "flatBasePrimaryProductQuantity": [
-                  {
-                    "value": 1,
-                    "skillID": "rielkConstruction:Construction"
-                  }
-                ],
-                "skillPreservationChance": [
-                  {
-                    "value": 10,
-                    "categoryID": "rielkConstruction:House",
-                    "skillID": "rielkConstruction:Construction"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "5",
-              "name": "House Tier 5",
-              "tier": 5,
-              "currentProgress": 0,
-              "completed": false,
-              "itemAwards": [],
-              "pets": [
-                "rielkConstruction:Scoobs"
-              ],
-              "modifiers": {
-                "skillPreservationChance": [
-                  {
-                    "value": 10
-                  }
-                ],
-                "foodHealingValue": [
-                  {
-                    "value": 10
-                  }
-                ]
-              }
             }
           ],
           "recipes": [
@@ -1115,7 +1012,7 @@
             },
             {
               "id": "Magic_Planks",
-              "level": 71,
+              "level": 80,
               "productID": "rielkConstruction:Magic_Planks",
               "baseQuantity": 2,
               "baseExperience": 100,
@@ -1207,7 +1104,7 @@
             {
               "id": "Apparatus",
               "name": "Apparatus",
-              "media": "assets/fixtures/apparatus.png",
+              "media": "assets\\fixtures\\apparatus.png",
               "recipes": [
                 "rielkConstruction:Apparatus1",
                 "rielkConstruction:Apparatus2",
@@ -1219,7 +1116,7 @@
             {
               "id": "Archery_Range",
               "name": "Archery Range",
-              "media": "assets/fixtures/archery_range.png",
+              "media": "assets\\fixtures\\archery_range.png",
               "recipes": [
                 "rielkConstruction:Archery_Range1",
                 "rielkConstruction:Archery_Range2",
@@ -1231,7 +1128,7 @@
             {
               "id": "Black_Market",
               "name": "Black Market",
-              "media": "assets/fixtures/black_market.png",
+              "media": "assets\\fixtures\\black_market.png",
               "recipes": [
                 "rielkConstruction:Black_Market1",
                 "rielkConstruction:Black_Market2",
@@ -1243,7 +1140,7 @@
             {
               "id": "Desk",
               "name": "Desk",
-              "media": "assets/fixtures/desk.png",
+              "media": "assets\\fixtures\\desk.png",
               "recipes": [
                 "rielkConstruction:Desk1",
                 "rielkConstruction:Desk2",
@@ -1255,7 +1152,7 @@
             {
               "id": "Dragon_Statue",
               "name": "Dragon Statue",
-              "media": "assets/fixtures/dragon_statue.png",
+              "media": "assets\\fixtures\\dragon_statue.png",
               "recipes": [
                 "rielkConstruction:Dragon_Statue1",
                 "rielkConstruction:Dragon_Statue2",
@@ -1267,7 +1164,7 @@
             {
               "id": "Fire_Pit",
               "name": "Fire Pit",
-              "media": "assets/fixtures/fire_pit.png",
+              "media": "assets\\fixtures\\fire_pit.png",
               "recipes": [
                 "rielkConstruction:Fire_Pit1",
                 "rielkConstruction:Fire_Pit2",
@@ -1279,7 +1176,7 @@
             {
               "id": "Flower_Pots",
               "name": "Flower Pots",
-              "media": "assets/fixtures/flower_pots.png",
+              "media": "assets\\fixtures\\flower_pots.png",
               "recipes": [
                 "rielkConstruction:Flower_Pots1",
                 "rielkConstruction:Flower_Pots2",
@@ -1291,7 +1188,7 @@
             {
               "id": "Forge",
               "name": "Forge",
-              "media": "assets/fixtures/forge.png",
+              "media": "assets\\fixtures\\forge.png",
               "recipes": [
                 "rielkConstruction:Forge1",
                 "rielkConstruction:Forge2",
@@ -1303,7 +1200,7 @@
             {
               "id": "Fridge",
               "name": "Fridge",
-              "media": "assets/fixtures/larder.png",
+              "media": "assets\\fixtures\\fridge.png",
               "recipes": [
                 "rielkConstruction:Fridge1",
                 "rielkConstruction:Fridge2",
@@ -1315,7 +1212,7 @@
             {
               "id": "Jungle_Gym",
               "name": "Jungle Gym",
-              "media": "assets/fixtures/jungle_gym.png",
+              "media": "assets\\fixtures\\jungle_gym.png",
               "recipes": [
                 "rielkConstruction:Jungle_Gym1",
                 "rielkConstruction:Jungle_Gym2",
@@ -1327,7 +1224,7 @@
             {
               "id": "Lake",
               "name": "Lake",
-              "media": "assets/fixtures/lake.png",
+              "media": "assets\\fixtures\\lake.png",
               "recipes": [
                 "rielkConstruction:Lake1",
                 "rielkConstruction:Lake2",
@@ -1339,7 +1236,7 @@
             {
               "id": "Mines",
               "name": "Mines",
-              "media": "assets/fixtures/mines.png",
+              "media": "assets\\fixtures\\mines.png",
               "recipes": [
                 "rielkConstruction:Mines1",
                 "rielkConstruction:Mines2",
@@ -1351,7 +1248,7 @@
             {
               "id": "Orchard",
               "name": "Orchard",
-              "media": "assets/fixtures/orchard.png",
+              "media": "assets\\fixtures\\orchard.png",
               "recipes": [
                 "rielkConstruction:Orchard1",
                 "rielkConstruction:Orchard2",
@@ -1363,7 +1260,7 @@
             {
               "id": "Oven",
               "name": "Oven",
-              "media": "assets/fixtures/oven.png",
+              "media": "assets\\fixtures\\oven.png",
               "recipes": [
                 "rielkConstruction:Oven1",
                 "rielkConstruction:Oven2",
@@ -1375,7 +1272,7 @@
             {
               "id": "Prayer_Altar",
               "name": "Prayer Altar",
-              "media": "assets/fixtures/prayer_altar.png",
+              "media": "assets\\fixtures\\prayer_altar.png",
               "recipes": [
                 "rielkConstruction:Prayer_Altar1",
                 "rielkConstruction:Prayer_Altar2",
@@ -1387,7 +1284,7 @@
             {
               "id": "Rune_Altar",
               "name": "Rune Altar",
-              "media": "assets/fixtures/rune_altar.png",
+              "media": "assets\\fixtures\\rune_altar.png",
               "recipes": [
                 "rielkConstruction:Rune_Altar1",
                 "rielkConstruction:Rune_Altar2",
@@ -1399,7 +1296,7 @@
             {
               "id": "Spell_Library",
               "name": "Spell Library",
-              "media": "assets/fixtures/spell_library.png",
+              "media": "assets\\fixtures\\spell_library.png",
               "recipes": [
                 "rielkConstruction:Spell_Library1",
                 "rielkConstruction:Spell_Library2",
@@ -1411,7 +1308,7 @@
             {
               "id": "Storage_Chest",
               "name": "Storage Chest",
-              "media": "assets/fixtures/storage_chest.png",
+              "media": "assets\\fixtures\\storage_chest.png",
               "recipes": [
                 "rielkConstruction:Storage_Chest1",
                 "rielkConstruction:Storage_Chest2",
@@ -1423,7 +1320,7 @@
             {
               "id": "Telescope",
               "name": "Telescope",
-              "media": "assets/fixtures/telescope.png",
+              "media": "assets\\fixtures\\telescope.png",
               "recipes": [
                 "rielkConstruction:Telescope1",
                 "rielkConstruction:Telescope2",
@@ -1435,7 +1332,7 @@
             {
               "id": "Tool_Rack",
               "name": "Tool Rack",
-              "media": "assets/fixtures/tool_rack.png",
+              "media": "assets\\fixtures\\tool_rack.png",
               "recipes": [
                 "rielkConstruction:Tool_Rack1",
                 "rielkConstruction:Tool_Rack2",
@@ -1447,7 +1344,7 @@
             {
               "id": "Training_Dummy",
               "name": "Training Dummy",
-              "media": "assets/fixtures/training_dummy.png",
+              "media": "assets\\fixtures\\training_dummy.png",
               "recipes": [
                 "rielkConstruction:Training_Dummy1",
                 "rielkConstruction:Training_Dummy2",
@@ -1459,7 +1356,7 @@
             {
               "id": "Trapping_Hut",
               "name": "Trapping Hut",
-              "media": "assets/fixtures/trapping_hut.png",
+              "media": "assets\\fixtures\\trapping_hut.png",
               "recipes": [
                 "rielkConstruction:Trapping_Hut1",
                 "rielkConstruction:Trapping_Hut2",
@@ -1471,7 +1368,7 @@
             {
               "id": "Wardrobe",
               "name": "Wardrobe",
-              "media": "assets/fixtures/wardrobe.png",
+              "media": "assets\\fixtures\\wardrobe.png",
               "recipes": [
                 "rielkConstruction:Wardrobe1",
                 "rielkConstruction:Wardrobe2",
@@ -1483,7 +1380,7 @@
             {
               "id": "Worktable",
               "name": "Worktable",
-              "media": "assets/fixtures/worktable.png",
+              "media": "assets\\fixtures\\worktable.png",
               "recipes": [
                 "rielkConstruction:Worktable1",
                 "rielkConstruction:Worktable2",
@@ -2097,8 +1994,8 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Steel_Bar",
-                  "quantity": 3
+                  "id": "melvorD:Dragonite_Bar",
+                  "quantity": 1
                 }
               ],
               "currencyCosts": [
@@ -2125,8 +2022,8 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Mithril_Bar",
-                  "quantity": 4
+                  "id": "melvorD:Dragonite_Bar",
+                  "quantity": 2
                 }
               ],
               "currencyCosts": [
@@ -2153,8 +2050,8 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Adamantite_Bar",
-                  "quantity": 5
+                  "id": "melvorD:Dragonite_Bar",
+                  "quantity": 2
                 }
               ],
               "currencyCosts": [
@@ -2181,8 +2078,8 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Runite_Bar",
-                  "quantity": 4
+                  "id": "melvorD:Dragonite_Bar",
+                  "quantity": 3
                 }
               ],
               "currencyCosts": [
@@ -2230,7 +2127,7 @@
                 "flatResistance": [
                   {
                     "damageTypeID": "melvorD:Normal",
-                    "value": 5
+                    "value": 1
                   }
                 ],
                 "currencyGain": [
@@ -2653,11 +2550,11 @@
                   "quantity": 1
                 },
                 {
-                  "id": "melvorD:Oak_Logs",
+                  "id": "melvorD:Bronze_Bar",
                   "quantity": 1
                 },
                 {
-                  "id": "rielkConstruction:Normal_Planks",
+                  "id": "rielkConstruction:Iron_Nails",
                   "quantity": 1
                 }
               ],
@@ -2679,11 +2576,11 @@
                   "quantity": 1
                 },
                 {
-                  "id": "melvorD:Teak_Logs",
+                  "id": "melvorD:Iron_Bar",
                   "quantity": 1
                 },
                 {
-                  "id": "rielkConstruction:Oak_Planks",
+                  "id": "rielkConstruction:Steel_Nails",
                   "quantity": 2
                 }
               ],
@@ -2704,11 +2601,11 @@
                   "quantity": 1
                 },
                 {
-                  "id": "melvorD:Mahogany_Logs",
+                  "id": "melvorD:Steel_Bar",
                   "quantity": 1
                 },
                 {
-                  "id": "rielkConstruction:Teak_Planks",
+                  "id": "rielkConstruction:Mithril_Nails",
                   "quantity": 2
                 }
               ],
@@ -2730,11 +2627,11 @@
                   "quantity": 2
                 },
                 {
-                  "id": "melvorD:Magic_Logs",
+                  "id": "melvorD:Mithril_Bar",
                   "quantity": 2
                 },
                 {
-                  "id": "rielkConstruction:Mahogany_Planks",
+                  "id": "rielkConstruction:Adamantite_Nails",
                   "quantity": 3
                 }
               ],
@@ -2755,11 +2652,11 @@
                   "quantity": 3
                 },
                 {
-                  "id": "melvorD:Redwood_Logs",
+                  "id": "melvorD:Runite_Bar",
                   "quantity": 3
                 },
                 {
-                  "id": "rielkConstruction:Magic_Planks",
+                  "id": "rielkConstruction:Dragonite_Nails",
                   "quantity": 4
                 }
               ],
@@ -3940,8 +3837,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillPreservationChance": 0.5,
-                "bankSpace": 4
+                "bankSpace": 5,
+                "skillPreservationChance": 1
               }
             },
             {
@@ -3962,8 +3859,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillPreservationChance": 1,
-                "bankSpace": 8
+                "bankSpace": 10,
+                "skillPreservationChance": 1
               }
             },
             {
@@ -3984,8 +3881,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillPreservationChance": 1.5,
-                "bankSpace": 12
+                "bankSpace": 20,
+                "skillPreservationChance": 2
               }
             },
             {
@@ -4006,13 +3903,13 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillPreservationChance": 2,
-                "bankSpace": 16
+                "bankSpace": 50,
+                "skillPreservationChance": 2
               }
             },
             {
               "id": "Storage_Chest5",
-              "level": 71,
+              "level": 61,
               "baseExperience": 105,
               "baseActionCost": 2400,
               "categoryID": "rielkConstruction:House",
@@ -4028,8 +3925,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillPreservationChance": 2.5,
-                "bankSpace": 20
+                "bankSpace": 100,
+                "skillPreservationChance": 4
               }
             },
             {
@@ -5026,7 +4923,7 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "rielkConstruction:constructionActionsToUpgrade": -5,
+                "rielkConstruction:constructionActionsToUpgrade": -10,
                 "skillItemDoublingChance": [
                   {
                     "value": 5,
@@ -5064,13 +4961,13 @@
             "scopes": {},
             "descriptions": [
               {
-                "text": "-${value}% actions required to build Furniture in Construction",
+                "text": "-${value}% actions required to upgrade in Construction",
                 "lang": "MODIFIER_DATA_decreaseConstructionActionsToUpgrade",
                 "below": 0,
                 "includeSign": false
               },
               {
-                "text": "+${value}% actions required to build Furniture in Construction",
+                "text": "+${value}% actions required to upgrade in Construction",
                 "lang": "MODIFIER_DATA_increaseConstructionActionsToUpgrade",
                 "above": 0,
                 "includeSign": false
@@ -5099,16 +4996,9 @@
             "flatSkillInterval": [
               {
                 "skillID": "rielkConstruction:Construction",
-                "value": -250
+                "value": -200
               }
-            ],
-            "skillItemDoublingChance": [
-              {
-                "value": 15,
-                "skillID": "rielkConstruction:Construction"
-              }
-            ],
-            "rielkConstruction:constructionActionsToUpgrade": -10
+            ]
           }
         }
       },
@@ -5128,16 +5018,9 @@
             "flatSkillInterval": [
               {
                 "skillID": "rielkConstruction:Construction",
-                "value": -250
+                "value": -200
               }
-            ],
-            "skillItemDoublingChance": [
-              {
-                "value": 15,
-                "skillID": "rielkConstruction:Construction"
-              }
-            ],
-            "rielkConstruction:constructionActionsToUpgrade": -10
+            ]
           }
         }
       }

@@ -2,7 +2,7 @@ const { loadModule, onInterfaceReady } = mod.getContext(import.meta);
 
 const { ConstructionActionEvent } = await loadModule('src/construction/gameEvents.mjs');
 const { ConstructionStats } = await loadModule('src/construction/statistics.mjs');
-const { getRielkLangString, templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
+const { getRielkLangString } = await loadModule('src/language/translationManager.mjs');
 const { ConstructionInterface } = await loadModule('src/interface/constructionInterface.mjs');
 const { Encoder } = await loadModule('src/construction/encoder.mjs');
 
@@ -11,9 +11,6 @@ const { ConstructionFixture } = await loadModule('src/construction/constructionF
 const { ConstructionFixtureRecipes } = await loadModule('src/construction/constructionFixtureRecipes.mjs');
 const { ConstructionRecipe } = await loadModule('src/construction/constructionRecipe.mjs');
 const { ConstructionRoom } = await loadModule('src/construction/constructionRoom.mjs');
-const { ConstructionTierMastery } = await loadModule('src/construction/constructionTierMastery.mjs');
-
-const ctx = mod.getContext(import.meta);
 
 export class Construction extends ArtisanSkill {
     constructor(namespace, game) {
@@ -24,10 +21,8 @@ export class Construction extends ArtisanSkill {
         this.categories = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionCategory');
         this.rooms = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionRoom');
         this.fixtures = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionFixture');
-        this.tierMasteries = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionTierMastery');
         this.hiddenRooms = new Set();
-        this.recipeNumber = 0;
-        this.recipeCountByTier = [];
+
         this._actionMode = undefined;
 
         this.stats = new StatTracker();
@@ -37,36 +32,12 @@ export class Construction extends ArtisanSkill {
     initMenus() {
         this.ui = new ConstructionInterface(this);
         super.initMenus(...arguments);
-        const viewConstructionButton = createElement('button', {
-            className: 'btn btn-small btn-info font-size-xs p-1',
-            attributes: [['role', 'button']],
-            text: getRielkLangString('MENU_VIEW_HOUSE_TIERS'),
-        });
-
-        // Append the button
-        this.header?.appendUpper(viewConstructionButton);
-
-        viewConstructionButton.onclick = () => {
-            this.popTierMasteries();
-            this.renderQueue.masteryBonusElements = true;
-
-            // Using jQuery + Bootstrap
-            $('#rielk-tier-mastery-modal').modal('show');
-        }
     }
+
     get name() {
         return getRielkLangString('SKILL_NAME_Construction');
     }
-    popTierMasteries() {
-        this.tierMasteries.forEach(tm => {
-            tm.maxProgress = this.recipeNumber;
-            let tier = tm.tier;
-            tm.currentProgress = this.recipeCountByTier[tier - 1];
-            if (tm.currentProgress >= tm.maxProgress && !tm.completed)
-                tm.onComplete(this); //special case if someone is loading from the normal construction mod, otherwise this shouldn't fire.
-        });
 
-    }
     get maxLevelCap() {
         return 99;
     }
@@ -75,6 +46,9 @@ export class Construction extends ArtisanSkill {
         return this.ui.renderQueue;
     }
 
+    isMasteryActionUnlocked(action) {
+        return this.isBasicSkillRecipeUnlocked(action);
+    }
 
     get selectionTabs() {
         return this.ui.constructionSelectionTabs;
@@ -132,27 +106,6 @@ export class Construction extends ArtisanSkill {
         return 1700;
     }
 
-    shouldShowSkillInSidebar() {
-        return super.shouldShowSkillInSidebar() || this.game.currentRealm === this.game.defaultRealm; // only show in default realm
-    }
-    updateRecipeCounts() {
-        const tierNum = cloudManager?.hasTotHEntitlementAndIsEnabled ? 8 : 5;
-        this.recipeCountByTier = Array(tierNum).fill(0);
-        const allFixtures = this.fixtures.allObjects;
-        //This is assuming all recipes have equal number tiers, which is technically not true with the AoD DLC, 
-        // but the game lets you go to 120 with AoD and not TotH, this is in the spirit of that
-
-        this.recipeNumber = allFixtures.length;
-        allFixtures.forEach((fixture) => {
-            const maxTier = fixture.currentTier; // currentTier = number from 1..max
-
-            for (let t = 0; t < maxTier; t++) {
-                this.recipeCountByTier[t]++;
-            }
-        });
-
-    }
-
     getFixtureInterval(fixture) {
         return this.modifyInterval(this.baseInterval, fixture);
     }
@@ -168,7 +121,7 @@ export class Construction extends ArtisanSkill {
     }
 
     registerData(namespace, data) {
-        var _a, _b, _c, _d, _e, _f;
+        var _a, _b, _c, _d, _e;
         (_a = data.categories) === null || _a === void 0 ? void 0 : _a.forEach((categoryData) => {
             this.categories.registerObject(new ConstructionCategory(namespace, categoryData, this, this.game));
         }
@@ -189,13 +142,10 @@ export class Construction extends ArtisanSkill {
             this.rooms.registerObject(new ConstructionRoom(namespace, roomData, this.game, this));
         }
         );
-        (_f = data.tierMasteries)?.forEach(tmData => {
-            this.tierMasteries.registerObject(new ConstructionTierMastery(namespace, tmData, this.game, this));
-        });
         super.registerData(namespace, data);
     }
     modifyData(data) {
-        var _a, _b, _c, _d, _e;
+        var _a, _b, _c, _d;
         super.modifyData(data);
         (_a = data.recipes) === null || _a === void 0 ? void 0 : _a.forEach((modData) => {
             const recipe = this.actions.getObjectByID(modData.id);
@@ -204,7 +154,6 @@ export class Construction extends ArtisanSkill {
             recipe.applyDataModification(modData, this.game);
         }
         );
-
         (_b = data.fixtureRecipes) === null || _b === void 0 ? void 0 : _b.forEach((modData) => {
             const fixtureRecipe = this.actions.getObjectByID(modData.id);
             if (fixtureRecipe === undefined)
@@ -226,118 +175,43 @@ export class Construction extends ArtisanSkill {
             room.applyDataModification(modData, this.game);
         }
         );
-        (_e = data.tierMasteries)?.forEach(modData => {
-            const tierMastery = this.tierMasteries.getObjectByID(modData.id);
-            if (!tierMastery) throw new UnregisteredDataModError(ConstructionTierMastery.name, modData.id);
-            tierMastery.applyDataModification(modData, this.game);
-        });
     }
-    createItemCurrencyNodes(costs) {
-        var _a;
-        const nodes = [];
-        const createSpan = (children) => {
-            nodes.push(createElement('span', { className: 'text-success', children }));
-        };
-        const smallImage = (media) => createElement('img', { className: 'skill-icon-xs', attributes: [['src', media]] });
-        (_a = costs.itemAwards) === null || _a === void 0 ? void 0 : _a.forEach(({ item, quantity }) => {
-            createSpan(templateLangStringWithNodes('MENU_TEXT_YOU_GAINED_ITEM', { itemImage: smallImage(item.media) }, { count: numberWithCommas(quantity), itemName: item.name }));
-        });
-        return nodes;
-    }
-
-    queueMasteryBonusModal(bonus) {
-        const modalBody = createElement('div', { className: 'justify-vertical-center' });
-        const title = createElement('h5', {
-            className: 'font-w400 mb-0',
-            parent: modalBody,
-        });
-        title.innerHTML = templateRielkLangString('MENU_UNLOCKED_MASTERY_FOR_TIER', { tiername: bonus.tier });
-        if (bonus.modifiers._stats.hasStats) {
-            createElement('h5', {
-                text: getLangString('PERMANENT_BONUS_UNLOCKED'),
-                className: 'font-w600 font-size-lg text-warning mb-0 mt-2',
-                parent: modalBody,
-            });
-            modalBody.append(...bonus.modifiers._stats.describeAsSpans());
-        }
-        const rewardNodes = this.createItemCurrencyNodes(bonus);
-        if (rewardNodes.length > 0) {
-            createElement('h5', {
-                text: getLangString('REWARDS_UNLOCKED'),
-                className: 'font-w600 font-size-lg text-warning mb-0 mt-2',
-                parent: modalBody,
-            });
-            modalBody.append(...rewardNodes);
-        }
-        if (bonus.pets !== undefined) {
-            createElement('h5', {
-                text: bonus.pets.length > 1 ? getLangString('PETS_UNLOCKED') : getLangString('COMPLETION_LOG_PETS_UNLOCKED'),
-                className: 'font-w600 font-size-lg text-warning mb-0 mt-2',
-                parent: modalBody,
-            });
-            bonus.pets.forEach((pet) => {
-                const petSpan = createElement('span', { className: 'text-success', parent: modalBody });
-                petSpan.append(createElement('img', { className: 'skill-icon-md mr-1', attributes: [['src', pet.media]] }), pet.name);
-            });
-        }
-        addModalToQueue({
-            titleText: getRielkLangString('MENU_HOUSE_TIER_BONUS_UNLOCKED'),
-            imageUrl: ctx.getResourceUrl('assets/cabin.png'), //that cabin could probably be an object of construction
-            html: modalBody,
-            allowOutsideClick: false,
-            showConfirmButton: true,
-            imageWidth: 128,
-            imageHeight: 128,
-        });
-    }
-
     computeTotalMasteryActions() {
-
+        this.actions.namespaceMaps.forEach((actionMap, namespace) => {
+            let total = 0;
+            actionMap.forEach((action) => {
+                const id = action.id || "(no id)";
+                const cat = action.category?.type || "(no category)";
+                if (action.hasMastery) {
+                    if (!action.realm?.ignoreCompletion) total++;
+                    if (action.realm) this.totalMasteryActionsInRealm.inc(action.realm);
+                }
+            });
+            this.totalMasteryActions.set(namespace, total);
+        });
     }
-    get hasMastery() { // We inspect the call stack to determine if we have mastery, this is so we can be in the mastery log without having a mastery bar.
-        const stack = new Error().stack;
-        if (stack.includes('buildMasteryLog') || stack.includes('buildSkillsLog')) return true;
-        else return false;
-    }
-
-    isMasteryActionUnlocked(action) {
-        return false;
-    }
-    updateTotalUnlockedMasteryActions() {
-
-    }
-
     postDataRegistration() {
         super.postDataRegistration();
-        this.computeTotalMasteryActions();
-        this.sortedMasteryActions = sortRecipesByCategoryAndLevel(
-            this.actions.allObjects.filter(act => act.category.type === 'Artisan'),
-            this.categories.allObjects
-        );
+        this.sortedMasteryActions = sortRecipesByCategoryAndLevel(this.actions.allObjects.filter(act => act.category.type === 'Artisan'), this.categories.allObjects);
         this.rooms.forEach(room => room.sortFixtures());
+        this.actions.forEach((action) => {
+            if (action.abyssalLevel > 0)
+                this.abyssalMilestones.push(action);
+            else
+                this.milestones.push(action);
+        }
+        );
+        this.sortMilestones();
     }
-
     onRealmChange() {
         super.onRealmChange();
         this.renderQueue.roomRealmVisibility = true;
         if (this.isActive)
             this.renderQueue.progressBar = true;
     }
-
     updateRealmSelection() {
         this.ui.updateRealmSelection(this.currentRealm);
     }
-
-    getMaxTotalMasteryLevels() {
-        let tiernum = cloudManager.hasTotHEntitlementAndIsEnabled ? 8 : 5;
-        return this.recipeNumber * tiernum;
-    }
-
-    getTotalCurrentMasteryLevels() {
-        return this.recipeCountByTier.reduce((a, b) => a + b, 0);
-
-    }
-
     render() {
         super.render();
         this.ui.render();
@@ -351,12 +225,12 @@ export class Construction extends ArtisanSkill {
             scope.category = action.category;
             scope.subcategory = action.subcategory;
         }
-        else if (action && action.category !== undefined)
-            scope.category = action.category;
         return scope;
     }
     onMasteryLevelUp(action, oldLevel, newLevel) {
-        // nope
+        super.onMasteryLevelUp(action, oldLevel, newLevel);
+        if (this.selectedRecipe === action)
+            this.renderQueue.selectedRecipe = true;
     }
     recordCostPreservationStats(costs) {
         super.recordCostPreservationStats(costs);
@@ -375,17 +249,11 @@ export class Construction extends ArtisanSkill {
         this.fixtures.forEach((fixture) => {
             fixture.addProvidedStatsTo(this.providedStats)
         });
-        this.tierMasteries.forEach((tier) => {
-            tier.addProvidedStatsTo(this.providedStats)
-        });
     }
     viewAllModifiersOnClick() {
         const summary = new StatObjectSummary();
         this.fixtures.forEach((fixture) => {
             fixture.addProvidedStatsTo(summary)
-        });
-        this.tierMasteries.forEach(tier => {
-            if (tier.completed) tier.addProvidedStatsTo(summary);
         });
         const html = summary.getAllDescriptions().map(getElementHTMLDescriptionFormatter('h5', 'font-w400 font-size-sm mb-1', false)).join('');
         SwalLocale.fire({
@@ -428,7 +296,23 @@ export class Construction extends ArtisanSkill {
         return rewards;
     }
     addMasteryXPReward() {
-        // no more mastery XP reward
+        switch (this._actionMode) {
+            case 0: {
+                this.addMasteryForAction(this.masteryAction, this.masteryModifiedInterval);
+                break;
+            }
+            case 1: {
+                const masteryActions = this.activeBuildRecipe.itemCosts.map(cost => {
+                    if (cost.item.namespace == 'rielkConstruction')
+                        return this.sortedMasteryActions.find(action => action.product == cost.item);
+                });
+                masteryActions.forEach(action => {
+                    if (action != undefined)
+                        this.addMasteryForAction(action, this.masteryModifiedInterval);
+                });
+                break;
+            }
+        }
     }
     postAction() {
         this.stats.inc(ConstructionStats.Actions);
@@ -447,16 +331,6 @@ export class Construction extends ArtisanSkill {
             case undefined():
                 break;
         }
-    }
-    addMasteryProgress(tier) {
-        let tierData = this.tierMasteries.getObjectSafe(`rielkConstruction:${tier}`);
-
-        tierData.addProgress(this);
-        this.updateRecipeCounts();
-
-        this.renderQueue.masteryBar = true;
-        this.renderQueue.masteryBonusElements = true;
-
     }
 
     buildAction() {
@@ -518,7 +392,6 @@ export class Construction extends ArtisanSkill {
         this.start();
 
     }
-
     getRegistry(type) {
         switch (type) {
             case ScopeSourceType.Category:
@@ -536,9 +409,6 @@ export class Construction extends ArtisanSkill {
         super.onLoad();
         this.renderQueue.menu = true;
         this.renderQueue.fictureUnlock = true;
-        this.renderQueue.masteryBar = true;
-        this.renderQueue.masteryBonusElements = true;
-
         this.selectRealm(this.currentRealm);
         onInterfaceReady(async () => {
             this.ui.renderVisibleRooms();
@@ -550,9 +420,6 @@ export class Construction extends ArtisanSkill {
             this.ui.selectFixture(recipe.fixture, recipe.fixture.room, this);
         }
         this.fixtures.forEach(fixture => fixture.onLoad());
-        this.updateRecipeCounts();
-        this.popTierMasteries();
-
         this.render();
     }
     resetActionState() {
@@ -565,7 +432,7 @@ export class Construction extends ArtisanSkill {
     updateForExistingCapIncreases() {
         var _a;
         var initalLevel;
-        (_a = this.game.currentGamemode.initialLevelCaps) === null || _a === void 0 ? void 0 : _a.forEach(({ skill, value }) => {
+        (_a = this.game.currentGamemode.initialLevelCaps) === null || _a === void 0 ? void 0 : _a.forEach(({skill, value})=>{
             if (skill == this)
                 initalLevel = value;
         });

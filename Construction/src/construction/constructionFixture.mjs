@@ -64,7 +64,6 @@ export class ConstructionFixture extends RealmedObject {
     upgrade(construction) {
         this.currentTier++;
         this.progress = 0;
-        
         construction.computeProvidedStats(true);
     }
     get providedStats() {

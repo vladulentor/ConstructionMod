@@ -8,25 +8,12 @@ export const language = {
     'MENU_TEXT_PARTIAL_BUILT_PROGRESS': '${currentValue}/${maxValue} ${percent}',
     'MENU_TEXT_SHOW_UPGRADES': '업그레이드',
     'MENU_TEXT_SHOW_GO_BACK': '반품',
-    'MENU_TEXT_REMAINING': '남은 비용',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': '모든 활성 수정자 보기',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': '모든 활성 건설 수정자',
-    'MENU_VIEW_HOUSE_TIERS': '하우스 단계 보너스 보기',
-    'MENU_UNLOCKED_MASTERY_FOR_TIER': '당신의 하우스 단계가 <span class="construction-success">단계 ${tiername}</span>로 올랐습니다',
-    'MENU_HOUSE_TIER_BONUS_UNLOCKED': '하우스 단계 보너스가 해제되었습니다!',
-    'MENU_HOUSE_COMPLETION': '하우스 완성도',
-    'MENU_BUILT': '완성됨',
-    'MENU_HOUSE': "집",
-
-    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': '하우스 단계란 무엇인가요?',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': '당신의 하우스 단계는 0에서 시작합니다. 가구를 만들고 각 방을 채우면 하우스 단계가 향상됩니다.</span>',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '모든 방에 필요한 등급 이상의 가구가 배치되면, 집 등급이 상승합니다. 영구적인 건축 보너스를 잠금 해제하고 자원을 획득합니다.',
-    'MENU_TEXT_REWARDS': '보상',
 
     'SHOP_NAME_Construction_Skillcape': '건설 스킬케이프',
 
-    'PET_NAME_ChuckTheForeman': '포어맨 척',
-    'PET_NAME_Scoobs': '스쿱스',
+    'PET_NAME_ChuckTheBeaver': '척 더 비버',
 
     'ITEM_NAME_Construction_Skillcape': '건설 스킬케이프',
     'ITEM_NAME_Builders_Hat': '빌더 모자',
@@ -52,6 +39,7 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': '화분: 층 4',
     'ITEM_NAME_Flower_Pots_Token_5': '화분: 층 5',
 
+    'ITEM_NAME_Mastery_Token_Construction': '마스터리 토큰(구조)',
 
     'ITEM_DESCRIPTION_Builders_Hat': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
     'ITEM_DESCRIPTION_Builders_Body': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
@@ -59,22 +47,19 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Boots': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '농사에서 수확 시 나무 씨앗을 회복할 확률 +${value}%',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 행동 필요: 건축에서 가구 제작',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 행동 필요: 건축에서 가구 제작',
+    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '건설 업그레이드에 필요한 작업량 -${value}%',
+    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '건설 업그레이드에 필요한 작업량 +${value}%',
 
     'DESCRIPTION_ADDS_ITEM': '준다 ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': '농장에서 ${plotCategory} 플롯 1개 잠금 해제',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '그것을 만드는 데 필요한 재료가 없습니다.',
 
-    'MASTERY_BONUS_ Construction_ 0': '가구의 단계 1 효과를 잠금 해제합니다.',
-    'MASTERY_BONUS_ Construction_ 1': '가구의 단계 2 효과를 잠금 해제합니다.',
-    'MASTERY_BONUS_ Construction_ 2': '가구의 단계 3 효과를 잠금 해제합니다.',
-    'MASTERY_BONUS_ Construction_ 3': '가구의 단계 4 효과를 잠금 해제합니다.',
-    'MASTERY_BONUS_ Construction_ 4': '가구의 단계 5 효과를 잠금 해제합니다.',
+    'MASTERY_BONUS_ Construction_ 0': '각 레벨마다 자원을 보존할 확률이 0.2% 증가합니다.',
+    'MASTERY_BONUS_ Construction_ 1': '자원 보존 확률이 5% 증가합니다.',
 
     'SKILL_CATEGORY_ Construction_ Materials': '재료',
-    'SKILL_CATEGORY_ Construction_ House': '가구',
+    'SKILL_CATEGORY_ Construction_ House': 'House',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': '집',
     'CONSTRUCTION_ROOM_NAME_ Garden': '정원',
@@ -95,7 +80,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': '화덕',
     'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': '화분',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': '노',
-    'CONSTRUCTION_FIXTURE_NAME_ Fridge': '식료품 저장실',
+    'CONSTRUCTION_FIXTURE_NAME_ Fridge': '콜드박스',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': '정글짐',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': '호수',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': '광산',

@@ -2,7 +2,7 @@ const { onCharacterLoaded } = mod.getContext(import.meta);
 
 export class Encoder {
     static encode(construction, writer) {
-        const _constructionVersion = 5;
+        const _constructionVersion = 4;
         writer.writeUint32(_constructionVersion);
         writer.writeSet(construction.hiddenRooms, writeNamespaced);
         construction.stats.encode(writer);
@@ -17,10 +17,6 @@ export class Encoder {
             writer.writeNamespacedObject(construction.selectedFixture);
             writer.writeNamespacedObject(construction.selectedFixtureRecipe);
         }
-        writer.writeArray(construction.tierMasteries.allObjects, (tier, writer) => {
-            writer.writeNamespacedObject(tier);
-            writer.writeBoolean(tier.completed);
-        })
     }
 
     static decode(construction, reader) {
@@ -52,20 +48,11 @@ export class Encoder {
             else
                 construction.selectedFixtureRecipe = fixtureRecipe;
         }
-        if (_constructionVersion >= 5) {
-            const readTierMastered = readNamespacedReject(construction.tierMasteries);
-            reader.getArray((reader) => {
-                const tier = readTierMastered(reader);
-                tier.completed = reader.getBoolean();
-            })
-        }
-
 
         if (_constructionVersion < 4)
             onCharacterLoaded(() => construction.updateForExistingCapIncreases());
 
         if (construction.shouldResetAction)
             construction.resetActionState();
-
     }
 }

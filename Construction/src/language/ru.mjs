@@ -8,24 +8,12 @@ export const language = {
     'MENU_TEXT_PARTIAL_BUILT_PROGRESS': '${currentValue}/${maxValue} ${percent}',
     'MENU_TEXT_SHOW_UPGRADES': 'Обновления',
     'MENU_TEXT_SHOW_GO_BACK': 'Возвращаться',
-    'MENU_TEXT_REMAINING': 'Оставшиеся расходы',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'Просмотреть все активные модификаторы',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'Все активные модификаторы строительства',
-    'MENU_VIEW_HOUSE_TIERS': 'Посмотреть бонусы уровня дома',
-    'MENU_UNLOCKED_MASTERY_FOR_TIER': 'Уровень вашего дома повысился до <span class="construction-success">Уровня ${tiername}</span>',
-    'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'Бонус уровня дома разблокирован!',
-    'MENU_HOUSE_COMPLETION': 'Завершение дома',
-    'MENU_BUILT': 'Построено',
-    'MENU_HOUSE': "Дом",
-    'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Что такое уровни дома?',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Уровень вашего дома начинается с 0. По мере того как вы строите мебель и заполняете каждую комнату, уровень вашего дома будет повышаться.</span>',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'Когда во всех комнатах будут мебель требуемого уровня или выше, уровень вашего дома повысится. Вы разблокируете постоянные бонусы к строительству и получите ресурсы.',
-    'MENU_TEXT_REWARDS': 'Награды',
 
     'SHOP_NAME_Construction_Skillcape': 'Плащ Мастера: Строительство',
 
-    'PET_NAME_ChuckTheForeman': 'Чак бригадир',
-    'PET_NAME_Scoobs': 'Скубс',
+    'PET_NAME_ChuckTheBeaver': 'Чак Бобер',
 
     'ITEM_NAME_Construction_Skillcape': 'Плащ Мастера: Строительство',
     'ITEM_NAME_Builders_Hat': 'Шляпа строителя',
@@ -51,6 +39,7 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': 'Цветочные горшки: Уровень 4',
     'ITEM_NAME_Flower_Pots_Token_5': 'Цветочные горшки: Уровень 5',
 
+    'ITEM_NAME_Mastery_Token_Construction': 'Жетон мастерства (Строительство)',
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2 % к опыту навыка «Строительство».<br><span class=\"text-warning\">При экипировке всех четырех предметов одежды строителя: +8% к опыту строительного мастерства.</span>',
     'ITEM_DESCRIPTION_Builders_Body': '+2 % к опыту навыка «Строительство».<br><span class=\"text-warning\">При экипировке всех четырех предметов одежды строителя: +8% к опыту строительного мастерства.</span>',
@@ -58,22 +47,19 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Boots': '+2 % к опыту навыка «Строительство».<br><span class=\"text-warning\">При экипировке всех четырех предметов одежды строителя: +8% к опыту строительного мастерства.</span>',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% кусок, чтобы восстановить семя дерева в сельском хозяйстве, когда собрано',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% действий требуется для создания мебели в Строительстве',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% действий требуется для создания мебели в Строительстве',
+    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% действий, необходимых для улучшения в строительстве',
+    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% действий, необходимых для улучшения в строительстве',
 
     'DESCRIPTION_ADDS_ITEM': 'Дает ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': 'Разблокирует 1 участок ${plotCategory} в разделе «Фермерство»',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'У вас нет необходимых материалов для его постройки.',
 
-    'MASTERY_BONUS_ Construction_ 0': 'Разблокируйте эффекты уровня 1 мебели.',
-    'MASTERY_BONUS_ Construction_ 1': 'Разблокируйте эффекты уровня 2 мебели.',
-    'MASTERY_BONUS_ Construction_ 2': 'Разблокируйте эффекты уровня 3 мебели.',
-    'MASTERY_BONUS_ Construction_ 3': 'Разблокируйте эффекты уровня 4 мебели.',
-    'MASTERY_BONUS_ Construction_ 4': 'Разблокируйте эффекты уровня % мебели.',
+    'MASTERY_BONUS_ Construction_ 0': 'Каждый уровень дает +0,2% к шансу сэкономить ресурсы.',
+    'MASTERY_BONUS_ Construction_ 1': '+5% к шансу сэкономить ресурсы.',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Материалы',
-    'SKILL_CATEGORY_ Construction_ House': 'Мебель',
+    'SKILL_CATEGORY_ Construction_ House': 'Дом',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': 'Спальня',
     'CONSTRUCTION_ROOM_NAME_ Garden': 'Сад',
@@ -94,7 +80,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': 'Яма для костра',
     'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': 'Цветочные горшки',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': 'Кузница',
-    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Кладовая',
+    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Холодный ящик',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': 'Рама для лазания',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': 'Озеро',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': 'Рудник',

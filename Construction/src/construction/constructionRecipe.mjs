@@ -1,7 +1,7 @@
 export class ConstructionRecipe extends SingleProductArtisanSkillRecipe {
     constructor(namespace, data, game, skill) {
         super(namespace, data, game, skill);
-        this.hasMastery = false;
+        this.hasMastery = true;
         try {
         } catch (e) {
             throw new DataConstructionError(ConstructionRecipe.name, e, this.id);

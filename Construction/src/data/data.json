@@ -820,11 +820,11 @@
               "itemAwards": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 300
+                  "quantity": 500
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 300
+                  "quantity": 500
                 },
                 {
                   "id": "melvorF:Potion_Box_I",
@@ -855,11 +855,11 @@
               "itemAwards": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 900
+                  "quantity": 1500
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 900
+                  "quantity": 1500
                 },
                 {
                   "id": "melvorF:Potion_Box_I",
@@ -890,11 +890,11 @@
               "itemAwards": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 1800
+                  "quantity": 4000
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 1800
+                  "quantity": 4000
                 },
                 {
                   "id": "melvorF:Potion_Box_II",
@@ -926,11 +926,11 @@
               "itemAwards": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 4200
+                  "quantity": 8000
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 4200
+                  "quantity": 8000
                 },
                 {
                   "id": "melvorF:Potion_Box_II",
@@ -983,7 +983,7 @@
               "level": 1,
               "productID": "rielkConstruction:Iron_Nails",
               "baseQuantity": 5,
-              "baseExperience": 10,
+              "baseExperience": 4,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -998,7 +998,7 @@
               "level": 10,
               "productID": "rielkConstruction:Steel_Nails",
               "baseQuantity": 5,
-              "baseExperience": 20,
+              "baseExperience": 8,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -1013,7 +1013,7 @@
               "level": 30,
               "productID": "rielkConstruction:Mithril_Nails",
               "baseQuantity": 5,
-              "baseExperience": 50,
+              "baseExperience": 20,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -1028,7 +1028,7 @@
               "level": 50,
               "productID": "rielkConstruction:Adamantite_Nails",
               "baseQuantity": 5,
-              "baseExperience": 60,
+              "baseExperience": 25,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -1043,7 +1043,7 @@
               "level": 70,
               "productID": "rielkConstruction:Dragonite_Nails",
               "baseQuantity": 5,
-              "baseExperience": 100,
+              "baseExperience": 50,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -1058,7 +1058,7 @@
               "level": 1,
               "productID": "rielkConstruction:Normal_Planks",
               "baseQuantity": 2,
-              "baseExperience": 10,
+              "baseExperience": 4,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -1073,7 +1073,7 @@
               "level": 15,
               "productID": "rielkConstruction:Oak_Planks",
               "baseQuantity": 2,
-              "baseExperience": 20,
+              "baseExperience": 8,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -1088,7 +1088,7 @@
               "level": 40,
               "productID": "rielkConstruction:Teak_Planks",
               "baseQuantity": 2,
-              "baseExperience": 50,
+              "baseExperience": 20,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -1103,7 +1103,7 @@
               "level": 55,
               "productID": "rielkConstruction:Mahogany_Planks",
               "baseQuantity": 2,
-              "baseExperience": 60,
+              "baseExperience": 25,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -1118,7 +1118,7 @@
               "level": 71,
               "productID": "rielkConstruction:Magic_Planks",
               "baseQuantity": 2,
-              "baseExperience": 100,
+              "baseExperience": 50,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -1497,7 +1497,7 @@
             {
               "id": "Apparatus1",
               "level": 20,
-              "baseExperience": 30,
+              "baseExperience": 15,
               "baseActionCost": 50,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -1529,7 +1529,7 @@
             {
               "id": "Apparatus2",
               "level": 37,
-              "baseExperience": 65,
+              "baseExperience": 38,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -1561,7 +1561,7 @@
             {
               "id": "Apparatus3",
               "level": 57,
-              "baseExperience": 130,
+              "baseExperience": 80,
               "baseActionCost": 300,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -1592,7 +1592,7 @@
             {
               "id": "Apparatus4",
               "level": 73,
-              "baseExperience": 400,
+              "baseExperience": 250,
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -1619,7 +1619,7 @@
             {
               "id": "Apparatus5",
               "level": 94,
-              "baseExperience": 2000,
+              "baseExperience": 1450,
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -1648,7 +1648,7 @@
             {
               "id": "Archery_Range1",
               "level": 3,
-              "baseExperience": 35,
+              "baseExperience": 11,
               "baseActionCost": 15,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -1680,7 +1680,7 @@
             {
               "id": "Archery_Range2",
               "level": 23,
-              "baseExperience": 90,
+              "baseExperience": 25,
               "baseActionCost": 50,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -1712,7 +1712,7 @@
             {
               "id": "Archery_Range3",
               "level": 41,
-              "baseExperience": 75,
+              "baseExperience": 35,
               "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -1744,7 +1744,7 @@
             {
               "id": "Archery_Range4",
               "level": 66,
-              "baseExperience": 220,
+              "baseExperience": 200,
               "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -1808,7 +1808,7 @@
             {
               "id": "Black_Market1",
               "level": 15,
-              "baseExperience": 40,
+              "baseExperience": 22,
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -1824,7 +1824,7 @@
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 50
+                  "quantity": 5000
                 }
               ],
               "modifiers": {
@@ -1845,7 +1845,7 @@
             {
               "id": "Black_Market2",
               "level": 29,
-              "baseExperience": 75,
+              "baseExperience": 45,
               "baseActionCost": 50,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -1861,7 +1861,7 @@
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 125
+                  "quantity": 12500
                 }
               ],
               "modifiers": {
@@ -1882,7 +1882,7 @@
             {
               "id": "Black_Market3",
               "level": 46,
-              "baseExperience": 100,
+              "baseExperience": 69,
               "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -1898,7 +1898,7 @@
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 250
+                  "quantity": 25000
                 }
               ],
               "modifiers": {
@@ -1935,7 +1935,7 @@
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 100
+                  "quantity": 50000
                 }
               ],
               "modifiers": {
@@ -1956,7 +1956,7 @@
             {
               "id": "Black_Market5",
               "level": 89,
-              "baseExperience": 935,
+              "baseExperience": 1135,
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -1972,7 +1972,7 @@
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 1000
+                  "quantity": 125000
                 }
               ],
               "modifiers": {
@@ -1982,7 +1982,7 @@
             {
               "id": "Desk1",
               "level": 9,
-              "baseExperience": 50,
+              "baseExperience": 22,
               "baseActionCost": 15,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2004,7 +2004,7 @@
             {
               "id": "Desk2",
               "level": 25,
-              "baseExperience": 70,
+              "baseExperience": 32,
               "baseActionCost": 50,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2026,7 +2026,7 @@
             {
               "id": "Desk3",
               "level": 56,
-              "baseExperience": 100,
+              "baseExperience": 95,
               "baseActionCost": 350,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2048,7 +2048,7 @@
             {
               "id": "Desk4",
               "level": 61,
-              "baseExperience": 160,
+              "baseExperience": 155,
               "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2092,13 +2092,13 @@
             {
               "id": "Dragon_Statue1",
               "level": 25,
-              "baseExperience": 50,
+              "baseExperience": 15,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Steel_Bar",
-                  "quantity": 12
+                  "quantity": 6
                 }
               ],
               "currencyCosts": [
@@ -2112,7 +2112,7 @@
                 "currencyGain": [
                   {
                     "currencyID": "melvorD:GP",
-                    "value": 5
+                    "value": 2.5
                   }
                 ]
               }
@@ -2120,7 +2120,7 @@
             {
               "id": "Dragon_Statue2",
               "level": 45,
-              "baseExperience": 70,
+              "baseExperience": 50,
               "baseActionCost": 250,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2140,7 +2140,7 @@
                 "currencyGain": [
                   {
                     "currencyID": "melvorD:GP",
-                    "value": 10
+                    "value": 5
                   }
                 ]
               }
@@ -2148,7 +2148,7 @@
             {
               "id": "Dragon_Statue3",
               "level": 60,
-              "baseExperience": 170,
+              "baseExperience": 120,
               "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2160,7 +2160,7 @@
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 1500
+                  "quantity": 75000
                 }
               ],
               "modifiers": {
@@ -2176,7 +2176,7 @@
             {
               "id": "Dragon_Statue4",
               "level": 79,
-              "baseExperience": 550,
+              "baseExperience": 650,
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2211,7 +2211,7 @@
             {
               "id": "Dragon_Statue5",
               "level": 99,
-              "baseExperience": 3150,
+              "baseExperience": 2000,
               "baseActionCost": 750,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2244,7 +2244,7 @@
             {
               "id": "Fire_Pit1",
               "level": 2,
-              "baseExperience": 25,
+              "baseExperience": 4,
               "baseActionCost": 35,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2274,7 +2274,7 @@
             {
               "id": "Fire_Pit2",
               "level": 35,
-              "baseExperience": 95,
+              "baseExperience": 13,
               "baseActionCost": 300,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2304,7 +2304,7 @@
             {
               "id": "Fire_Pit3",
               "level": 56,
-              "baseExperience": 130,
+              "baseExperience": 100,
               "baseActionCost": 350,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2334,7 +2334,7 @@
             {
               "id": "Fire_Pit4",
               "level": 78,
-              "baseExperience": 520,
+              "baseExperience": 735,
               "baseActionCost": 450,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2364,7 +2364,7 @@
             {
               "id": "Fire_Pit5",
               "level": 83,
-              "baseExperience": 785,
+              "baseExperience": 885,
               "baseActionCost": 550,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2404,7 +2404,7 @@
             {
               "id": "Flower_Pots1",
               "level": 16,
-              "baseExperience": 55,
+              "baseExperience": 25,
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2423,7 +2423,7 @@
             {
               "id": "Flower_Pots2",
               "level": 22,
-              "baseExperience": 75,
+              "baseExperience": 27,
               "baseActionCost": 50,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2442,7 +2442,7 @@
             {
               "id": "Flower_Pots3",
               "level": 48,
-              "baseExperience": 105,
+              "baseExperience": 60,
               "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2461,7 +2461,7 @@
             {
               "id": "Flower_Pots4",
               "level": 64,
-              "baseExperience": 200,
+              "baseExperience": 100,
               "baseActionCost": 425,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2480,7 +2480,7 @@
             {
               "id": "Flower_Pots5",
               "level": 93,
-              "baseExperience": 1800,
+              "baseExperience": 1100,
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2499,7 +2499,7 @@
             {
               "id": "Forge1",
               "level": 13,
-              "baseExperience": 37,
+              "baseExperience": 10,
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2529,7 +2529,7 @@
             {
               "id": "Forge2",
               "level": 32,
-              "baseExperience": 65,
+              "baseExperience": 38,
               "baseActionCost": 50,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2559,7 +2559,7 @@
             {
               "id": "Forge3",
               "level": 53,
-              "baseExperience": 135,
+              "baseExperience": 37,
               "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2589,8 +2589,8 @@
             {
               "id": "Forge4",
               "level": 68,
-              "baseExperience": 260,
-              "baseActionCost": 400,
+              "baseExperience": 140,
+              "baseActionCost": 450,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
@@ -2619,7 +2619,7 @@
             {
               "id": "Forge5",
               "level": 87,
-              "baseExperience": 1225,
+              "baseExperience": 900,
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2644,7 +2644,7 @@
             {
               "id": "Fridge1",
               "level": 10,
-              "baseExperience": 35,
+              "baseExperience": 12,
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2670,7 +2670,7 @@
             {
               "id": "Fridge2",
               "level": 34,
-              "baseExperience": 68,
+              "baseExperience": 23,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2695,7 +2695,7 @@
             {
               "id": "Fridge3",
               "level": 55,
-              "baseExperience": 115,
+              "baseExperience": 65,
               "baseActionCost": 300,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2721,7 +2721,7 @@
             {
               "id": "Fridge4",
               "level": 69,
-              "baseExperience": 285,
+              "baseExperience": 200,
               "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2746,7 +2746,7 @@
             {
               "id": "Fridge5",
               "level": 91,
-              "baseExperience": 1065,
+              "baseExperience": 900,
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2772,7 +2772,7 @@
             {
               "id": "Jungle_Gym1",
               "level": 18,
-              "baseExperience": 32,
+              "baseExperience": 6,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2807,8 +2807,8 @@
             },
             {
               "id": "Jungle_Gym2",
-              "level": 21,
-              "baseExperience": 52,
+              "level": 29,
+              "baseExperience": 13,
               "baseActionCost": 150,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2844,7 +2844,7 @@
             {
               "id": "Jungle_Gym3",
               "level": 51,
-              "baseExperience": 132,
+              "baseExperience": 40,
               "baseActionCost": 300,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2880,7 +2880,7 @@
             {
               "id": "Jungle_Gym4",
               "level": 67,
-              "baseExperience": 203,
+              "baseExperience": 145,
               "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2916,7 +2916,7 @@
             {
               "id": "Jungle_Gym5",
               "level": 90,
-              "baseExperience": 950,
+              "baseExperience": 700,
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2952,7 +2952,7 @@
             {
               "id": "Lake1",
               "level": 15,
-              "baseExperience": 27,
+              "baseExperience": 15,
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -2984,7 +2984,7 @@
             {
               "id": "Lake2",
               "level": 38,
-              "baseExperience": 55,
+              "baseExperience": 30,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3016,7 +3016,7 @@
             {
               "id": "Lake3",
               "level": 47,
-              "baseExperience": 85,
+              "baseExperience": 36,
               "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3048,7 +3048,7 @@
             {
               "id": "Lake4",
               "level": 71,
-              "baseExperience": 260,
+              "baseExperience": 170,
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3074,7 +3074,7 @@
             {
               "id": "Lake5",
               "level": 96,
-              "baseExperience": 365,
+              "baseExperience": 1400,
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3100,7 +3100,7 @@
             {
               "id": "Mines1",
               "level": 5,
-              "baseExperience": 33,
+              "baseExperience": 8,
               "baseActionCost": 20,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3136,7 +3136,7 @@
             {
               "id": "Mines2",
               "level": 36,
-              "baseExperience": 67,
+              "baseExperience": 25,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3172,7 +3172,7 @@
             {
               "id": "Mines3",
               "level": 52,
-              "baseExperience": 113,
+              "baseExperience": 40,
               "baseActionCost": 300,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3206,7 +3206,7 @@
             {
               "id": "Mines4",
               "level": 85,
-              "baseExperience": 879,
+              "baseExperience": 800,
               "baseActionCost": 450,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3237,7 +3237,7 @@
             {
               "id": "Mines5",
               "level": 97,
-              "baseExperience": 2600,
+              "baseExperience": 1500,
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3251,7 +3251,7 @@
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 15
+                  "quantity": 25
                 }
               ],
               "currencyCosts": [],
@@ -3259,7 +3259,7 @@
                 "flatMiningNodeHP": 20,
                 "flatSkillInterval": [
                   {
-                    "value": -200,
+                    "value": -250,
                     "skillID": "melvorD:Mining"
                   }
                 ]
@@ -3268,7 +3268,7 @@
             {
               "id": "Orchard1",
               "level": 7,
-              "baseExperience": 29,
+              "baseExperience": 6,
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3300,7 +3300,7 @@
             {
               "id": "Orchard2",
               "level": 30,
-              "baseExperience": 82,
+              "baseExperience": 16,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3333,7 +3333,7 @@
             {
               "id": "Orchard3",
               "level": 40,
-              "baseExperience": 120,
+              "baseExperience": 19,
               "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3366,7 +3366,7 @@
             {
               "id": "Orchard4",
               "level": 71,
-              "baseExperience": 304,
+              "baseExperience": 195,
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3399,7 +3399,7 @@
             {
               "id": "Orchard5",
               "level": 94,
-              "baseExperience": 300,
+              "baseExperience": 800,
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3420,7 +3420,7 @@
             {
               "id": "Oven1",
               "level": 19,
-              "baseExperience": 30,
+              "baseExperience": 16,
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3442,7 +3442,7 @@
             {
               "id": "Oven2",
               "level": 27,
-              "baseExperience": 65,
+              "baseExperience": 22,
               "baseActionCost": 50,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3464,7 +3464,7 @@
             {
               "id": "Oven3",
               "level": 35,
-              "baseExperience": 82,
+              "baseExperience": 25,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3486,7 +3486,7 @@
             {
               "id": "Oven4",
               "level": 66,
-              "baseExperience": 300,
+              "baseExperience": 100,
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3508,7 +3508,7 @@
             {
               "id": "Oven5",
               "level": 87,
-              "baseExperience": 500,
+              "baseExperience": 600,
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3530,7 +3530,7 @@
             {
               "id": "Prayer_Altar1",
               "level": 8,
-              "baseExperience": 43,
+              "baseExperience": 10,
               "baseActionCost": 20,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3556,7 +3556,7 @@
             {
               "id": "Prayer_Altar2",
               "level": 32,
-              "baseExperience": 71,
+              "baseExperience": 16,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3577,7 +3577,7 @@
             {
               "id": "Prayer_Altar3",
               "level": 54,
-              "baseExperience": 97,
+              "baseExperience": 36,
               "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3598,7 +3598,7 @@
             {
               "id": "Prayer_Altar4",
               "level": 80,
-              "baseExperience": 500,
+              "baseExperience": 415,
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3619,7 +3619,7 @@
             {
               "id": "Prayer_Altar5",
               "level": 98,
-              "baseExperience": 2740,
+              "baseExperience": 1000,
               "baseActionCost": 750,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3640,7 +3640,7 @@
             {
               "id": "Rune_Altar1",
               "level": 17,
-              "baseExperience": 50,
+              "baseExperience": 17,
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3672,7 +3672,7 @@
             {
               "id": "Rune_Altar2",
               "level": 33,
-              "baseExperience": 76,
+              "baseExperience": 20,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3694,7 +3694,7 @@
             {
               "id": "Rune_Altar3",
               "level": 49,
-              "baseExperience": 115,
+              "baseExperience": 22,
               "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3716,7 +3716,7 @@
             {
               "id": "Rune_Altar4",
               "level": 72,
-              "baseExperience": 370,
+              "baseExperience": 190,
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3738,7 +3738,7 @@
             {
               "id": "Rune_Altar5",
               "level": 96,
-              "baseExperience": 2065,
+              "baseExperience": 1000,
               "baseActionCost": 750,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3760,7 +3760,7 @@
             {
               "id": "Spell_Library1",
               "level": 6,
-              "baseExperience": 31,
+              "baseExperience": 6,
               "baseActionCost": 30,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3793,7 +3793,7 @@
             {
               "id": "Spell_Library2",
               "level": 26,
-              "baseExperience": 45,
+              "baseExperience": 11,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3826,7 +3826,7 @@
             {
               "id": "Spell_Library3",
               "level": 44,
-              "baseExperience": 10,
+              "baseExperience": 28,
               "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3859,7 +3859,7 @@
             {
               "id": "Spell_Library4",
               "level": 63,
-              "baseExperience": 180,
+              "baseExperience": 100,
               "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3892,7 +3892,7 @@
             {
               "id": "Spell_Library5",
               "level": 92,
-              "baseExperience": 1345,
+              "baseExperience": 1100,
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3925,7 +3925,7 @@
             {
               "id": "Storage_Chest1",
               "level": 1,
-              "baseExperience": 13,
+              "baseExperience": 7,
               "baseActionCost": 15,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3947,7 +3947,7 @@
             {
               "id": "Storage_Chest2",
               "level": 17,
-              "baseExperience": 35,
+              "baseExperience": 18,
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3969,7 +3969,7 @@
             {
               "id": "Storage_Chest3",
               "level": 42,
-              "baseExperience": 70,
+              "baseExperience": 48,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -3990,8 +3990,8 @@
             },
             {
               "id": "Storage_Chest4",
-              "level": 51,
-              "baseExperience": 150,
+              "level": 56,
+              "baseExperience": 60,
               "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4013,7 +4013,7 @@
             {
               "id": "Storage_Chest5",
               "level": 71,
-              "baseExperience": 700,
+              "baseExperience": 145,
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4035,7 +4035,7 @@
             {
               "id": "Telescope1",
               "level": 14,
-              "baseExperience": 15,
+              "baseExperience": 14,
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4067,7 +4067,7 @@
             {
               "id": "Telescope2",
               "level": 24,
-              "baseExperience": 55,
+              "baseExperience": 10,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4099,7 +4099,7 @@
             {
               "id": "Telescope3",
               "level": 47,
-              "baseExperience": 105,
+              "baseExperience": 45,
               "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4121,7 +4121,7 @@
             {
               "id": "Telescope4",
               "level": 70,
-              "baseExperience": 265,
+              "baseExperience": 135,
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4147,7 +4147,7 @@
             {
               "id": "Telescope5",
               "level": 88,
-              "baseExperience": 1275,
+              "baseExperience": 900,
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4178,8 +4178,8 @@
             },
             {
               "id": "Tool_Rack1",
-              "level": 12,
-              "baseExperience": 5,
+              "level": 11,
+              "baseExperience": 6,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4223,7 +4223,7 @@
             {
               "id": "Tool_Rack2",
               "level": 26,
-              "baseExperience": 5,
+              "baseExperience": 8,
               "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4259,7 +4259,7 @@
             {
               "id": "Tool_Rack3",
               "level": 65,
-              "baseExperience": 30,
+              "baseExperience": 160,
               "baseActionCost": 300,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4294,8 +4294,8 @@
             },
             {
               "id": "Tool_Rack4",
-              "level": 73,
-              "baseExperience": 215,
+              "level": 76,
+              "baseExperience": 380,
               "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4331,7 +4331,7 @@
             {
               "id": "Tool_Rack5",
               "level": 95,
-              "baseExperience": 330,
+              "baseExperience": 1600,
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4374,8 +4374,8 @@
             },
             {
               "id": "Training_Dummy1",
-              "level": 3,
-              "baseExperience": 5,
+              "level": 2,
+              "baseExperience": 4,
               "baseActionCost": 30,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4414,8 +4414,8 @@
             },
             {
               "id": "Training_Dummy2",
-              "level": 23,
-              "baseExperience": 5,
+              "level": 21,
+              "baseExperience": 7,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4454,8 +4454,8 @@
             },
             {
               "id": "Training_Dummy3",
-              "level": 41,
-              "baseExperience": 10,
+              "level": 39,
+              "baseExperience": 18,
               "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4494,8 +4494,8 @@
             },
             {
               "id": "Training_Dummy4",
-              "level": 66,
-              "baseExperience": 35,
+              "level": 63,
+              "baseExperience": 100,
               "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4534,8 +4534,8 @@
             },
             {
               "id": "Training_Dummy5",
-              "level": 84,
-              "baseExperience": 130,
+              "level": 77,
+              "baseExperience": 270,
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4575,7 +4575,7 @@
             {
               "id": "Trapping_Hut1",
               "level": 12,
-              "baseExperience": 5,
+              "baseExperience": 10,
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4607,7 +4607,7 @@
             {
               "id": "Trapping_Hut2",
               "level": 28,
-              "baseExperience": 10,
+              "baseExperience": 27,
               "baseActionCost": 50,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4647,7 +4647,7 @@
             {
               "id": "Trapping_Hut3",
               "level": 59,
-              "baseExperience": 25,
+              "baseExperience": 90,
               "baseActionCost": 300,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4674,7 +4674,7 @@
             {
               "id": "Trapping_Hut4",
               "level": 74,
-              "baseExperience": 60,
+              "baseExperience": 240,
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4709,7 +4709,7 @@
             {
               "id": "Trapping_Hut5",
               "level": 88,
-              "baseExperience": 195,
+              "baseExperience": 760,
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4744,7 +4744,7 @@
             {
               "id": "Wardrobe1",
               "level": 5,
-              "baseExperience": 5,
+              "baseExperience": 7,
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4775,8 +4775,8 @@
             },
             {
               "id": "Wardrobe2",
-              "level": 39,
-              "baseExperience": 10,
+              "level": 26,
+              "baseExperience": 12,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4808,7 +4808,7 @@
             {
               "id": "Wardrobe3",
               "level": 43,
-              "baseExperience": 10,
+              "baseExperience": 28,
               "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4835,7 +4835,7 @@
             {
               "id": "Wardrobe4",
               "level": 75,
-              "baseExperience": 65,
+              "baseExperience": 240,
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4862,7 +4862,7 @@
             {
               "id": "Wardrobe5",
               "level": 81,
-              "baseExperience": 105,
+              "baseExperience": 480,
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4883,7 +4883,7 @@
             {
               "id": "Worktable1",
               "level": 4,
-              "baseExperience": 5,
+              "baseExperience": 6,
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4917,7 +4917,7 @@
             {
               "id": "Worktable2",
               "level": 31,
-              "baseExperience": 10,
+              "baseExperience": 18,
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4947,7 +4947,7 @@
             {
               "id": "Worktable3",
               "level": 50,
-              "baseExperience": 15,
+              "baseExperience": 53,
               "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4979,7 +4979,7 @@
             {
               "id": "Worktable4",
               "level": 62,
-              "baseExperience": 25,
+              "baseExperience": 90,
               "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -5011,7 +5011,7 @@
             {
               "id": "Worktable5",
               "level": 86,
-              "baseExperience": 160,
+              "baseExperience": 650,
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [

@@ -17,7 +17,7 @@ export const language = {
     'MENU_HOUSE_TIER_BONUS_UNLOCKED':'House Tier Bonus Unlocked!',
     'MENU_HOUSE_COMPLETION':'House Completion',
     'MENU_BUILT':'Built',
-    'MENU_TIER': 'Tier',
+    'MENU_TIER': 'Tier ${tiername}',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'What are House Tiers?',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Your House\'s Tier starts at 0. As you build furniture and fill each room, your House\'s tier will improve.</span>',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'When all rooms contain furniture of a required tier or higher, your House Tier will increase. You will unlock permanent Construction bonuses and recieve supplies.',

@@ -15,6 +15,8 @@ export const language = {
     'MENU_UNLOCKED_MASTERY_FOR_TIER': '您的房屋等级已提升到 <span class="construction-success">等级 ${tiername}</span>',
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': '房屋等级奖励已解锁！',
     'MENU_HOUSE_COMPLETION': '房屋完成度',
+    'MENU_TIER': '等级 ${tiername}',
+
     'MENU_BUILT': '已建造',
     'MENU_HOUSE': "房子",
 

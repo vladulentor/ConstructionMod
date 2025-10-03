@@ -1,3 +1,7 @@
+const { loadModule } = mod.getContext(import.meta);
+
+const { templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
+
 class TierMasteryBonusElement extends HTMLElement {
     constructor() {
         super();
@@ -25,8 +29,7 @@ class TierMasteryBonusElement extends HTMLElement {
 
     setBonus(bonus) {
         this.activation.classList.remove('d-none'); // so we don't have to dynamically attach the tier pips, those without a bonus set stay hidden
-        this.tierTitle.textContent = `Tier ${bonus.tier}`;
-
+        this.tierTitle.textContent = templateRielkLangString('MENU_TIER', { tiername: bonus.tier });
         this.tierCount.textContent = `${bonus.currentProgress} \\ ${bonus.maxProgress}`;
 
         // Style

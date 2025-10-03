@@ -16,6 +16,7 @@ export const language = {
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'Hausstufen-Bonus freigeschaltet!',
     'MENU_HOUSE_COMPLETION': 'Hausvollendung',
     'MENU_HOUSE': "Haus",
+    'MENU_TIER': 'Stufe ${tiername}',
     'MENU_BUILT': 'Gebaut',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Was sind Hausstufen?',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Die Stufe deines Hauses beginnt bei 0. Wenn du Möbel baust und jeden Raum füllst, wird die Stufe deines Hauses steigen.</span>',
@@ -87,7 +88,6 @@ export const language = {
     'CONSTRUCTION_ROOM_NAME_ Workshop': 'Werkstatt',
 
     'CONSTRUCTION_FIXTURE_OF_TIER': '${fixtureName}: Stufe ${tier}',
-
     'CONSTRUCTION_FIXTURE_NAME_ Apparatus': 'Gerät',
     'CONSTRUCTION_FIXTURE_NAME_ Archery_Range': 'Bogenschießanlage',
     'CONSTRUCTION_FIXTURE_NAME_ Black_Market': 'Schwarzmarkt',

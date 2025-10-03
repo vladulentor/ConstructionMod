@@ -17,6 +17,7 @@ export const language = {
     'MENU_HOUSE_COMPLETION': 'Completamento della casa',
     'MENU_BUILT': 'Costruito',
     'MENU_HOUSE': "Casa",
+    'MENU_TIER': 'Livello ${tiername}',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Cosa sono i livelli della casa?',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Il livello della tua casa inizia da 0. Man mano che costruisci mobili e riempi ogni stanza, il livello della tua casa migliorerà.</span>',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'Quando tutte le stanze contengono mobili del livello richiesto o superiore, il livello della tua casa aumenterà. Sbloccherai bonus permanenti di Costruzione e riceverai risorse.',

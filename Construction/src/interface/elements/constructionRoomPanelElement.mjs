@@ -159,7 +159,8 @@ class ConstructionRoomPanelElement extends HTMLElement {
             if (qtyEl) {
                 const base = parseInt(qtyEl.textContent.replace(/,/g, ""), 10);
                 if (!isNaN(base)) {
-                    qtyEl.textContent = formatNumber(base * (fixtureRecipe.actionCost - fixture.progress));
+                    qtyEl.textContent = formatNumber(Math.max(  base, base * (fixtureRecipe.actionCost - fixture.progress))
+                    );
                 }
             }
         });

@@ -18,6 +18,8 @@ export const language = {
     'MENU_HOUSE': "Haus",
     'MENU_TIER': 'Stufe ${tiername}',
     'MENU_BUILT': 'Gebaut',
+        'MENU_FIXTURES':'Einbauten',
+
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Was sind Hausstufen?',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Die Stufe deines Hauses beginnt bei 0. Wenn du Möbel baust und jeden Raum füllst, wird die Stufe deines Hauses steigen.</span>',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'Wenn alle Räume Möbel der erforderlichen Stufe oder höher enthalten, steigt dein Haus-Level. Du schaltest permanente Bau-Boni frei und erhältst Materialien.',

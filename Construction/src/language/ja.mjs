@@ -16,8 +16,10 @@ export const language = {
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'ハウスティアボーナスをアンロックしました！',
     'MENU_HOUSE_COMPLETION': 'ハウス完成度',
     'MENU_BUILT': '建造済み',
+    'MENU_FIXTURES': '設備',
+
     'MENU_HOUSE': "家",
-        'MENU_TIER': 'ランク ${tiername}',
+    'MENU_TIER': 'ランク ${tiername}',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'ハウスティアとは何ですか？',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'あなたの家のランクは0から始まります。家具を作り、各部屋を埋めることで、家のランクが向上します。</span>',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'すべての部屋に必要な階級以上の家具が揃うと、家のランクが上がります。恒久的な建築ボーナスが解除され、資材を獲得します。',

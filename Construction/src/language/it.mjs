@@ -16,6 +16,8 @@ export const language = {
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'Bonus del livello della casa sbloccato!',
     'MENU_HOUSE_COMPLETION': 'Completamento della casa',
     'MENU_BUILT': 'Costruito',
+        'MENU_FIXTURES':'Arredi',
+
     'MENU_HOUSE': "Casa",
     'MENU_TIER': 'Livello ${tiername}',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Cosa sono i livelli della casa?',

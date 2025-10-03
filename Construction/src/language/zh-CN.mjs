@@ -16,6 +16,7 @@ export const language = {
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': '房屋等级奖励已解锁！',
     'MENU_HOUSE_COMPLETION': '房屋完成度',
     'MENU_TIER': '等级 ${tiername}',
+        'MENU_FIXTURES':'家具配件',
 
     'MENU_BUILT': '已建造',
     'MENU_HOUSE': "房子",

@@ -17,6 +17,8 @@ export const language = {
     'MENU_HOUSE_COMPLETION': 'Завершение дома',
     'MENU_BUILT': 'Построено',
     'MENU_HOUSE': "Дом",
+        'MENU_FIXTURES':'Фурнитура',
+
     'MENU_TIER': 'Уровень ${tiername}',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Что такое уровни дома?',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Уровень вашего дома начинается с 0. По мере того как вы строите мебель и заполняете каждую комнату, уровень вашего дома будет повышаться.</span>',

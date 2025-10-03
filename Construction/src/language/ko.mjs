@@ -16,6 +16,8 @@ export const language = {
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': '하우스 단계 보너스가 해제되었습니다!',
     'MENU_HOUSE_COMPLETION': '하우스 완성도',
     'MENU_BUILT': '완성됨',
+        'MENU_FIXTURES':'설치물',
+
     'MENU_TIER': '등급 ${tiername}',
     'MENU_HOUSE': "집",
 

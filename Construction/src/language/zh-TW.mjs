@@ -18,7 +18,7 @@ export const language = {
     'MENU_BUILT': '已建造',
     'MENU_HOUSE': "房子",
     'MENU_TIER': '等级 ${tiername}',
-
+    'MENU_FIXTURES': '家具配件',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': '什麼是房屋等級？',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': '您的房屋等級從0開始。隨著您建造家具並填滿每個房間，房屋等級會提升。</span>',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '當所有房間都擁有所需等級或更高等級的家具時，您的房屋等級將提升。您將解鎖永久建築加成並獲得材料。',

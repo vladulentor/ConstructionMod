@@ -4035,7 +4035,7 @@
             {
               "id": "Telescope1",
               "level": 14,
-              "baseExperience": 35,
+              "baseExperience": 15,
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4229,15 +4229,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 1
+                  "quantity": 3
                 },
                 {
                   "id": "melvorD:Iron_Bar",
-                  "quantity": 1
+                  "quantity": 2
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 1
+                  "quantity": 3
                 }
               ],
               "currencyCosts": [],
@@ -4260,20 +4260,20 @@
               "id": "Tool_Rack3",
               "level": 65,
               "baseExperience": 30,
-              "baseActionCost": 1600,
+              "baseActionCost": 300,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 3
+                  "quantity": 10
                 },
                 {
                   "id": "melvorD:Steel_Bar",
-                  "quantity": 1
+                  "quantity": 5
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 1
+                  "quantity": 10
                 }
               ],
               "currencyCosts": [],
@@ -4294,22 +4294,22 @@
             },
             {
               "id": "Tool_Rack4",
-              "level": 90,
+              "level": 73,
               "baseExperience": 215,
-              "baseActionCost": 2800,
+              "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 3
+                  "quantity": 15
                 },
                 {
                   "id": "melvorD:Mithril_Bar",
-                  "quantity": 1
+                  "quantity": 10
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 2
+                  "quantity": 15
                 }
               ],
               "currencyCosts": [],
@@ -4332,20 +4332,20 @@
               "id": "Tool_Rack5",
               "level": 95,
               "baseExperience": 330,
-              "baseActionCost": 2800,
+              "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 4
+                  "quantity": 20
                 },
                 {
                   "id": "melvorD:Dragonite_Bar",
-                  "quantity": 2
+                  "quantity": 15
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 2
+                  "quantity": 20
                 }
               ],
               "currencyCosts": [],
@@ -4376,12 +4376,12 @@
               "id": "Training_Dummy1",
               "level": 3,
               "baseExperience": 5,
-              "baseActionCost": 50,
+              "baseActionCost": 30,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 1
+                  "quantity": 5
                 },
                 {
                   "id": "melvorD:Bronze_Helmet",
@@ -4416,12 +4416,12 @@
               "id": "Training_Dummy2",
               "level": 23,
               "baseExperience": 5,
-              "baseActionCost": 200,
+              "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 1
+                  "quantity": 3
                 },
                 {
                   "id": "melvorD:Steel_Helmet",
@@ -4456,16 +4456,16 @@
               "id": "Training_Dummy3",
               "level": 41,
               "baseExperience": 10,
-              "baseActionCost": 800,
+              "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 2
+                  "quantity": 5
                 },
                 {
                   "id": "melvorD:Mithril_Helmet",
-                  "quantity": 1
+                  "quantity": 2
                 }
               ],
               "currencyCosts": [],
@@ -4496,16 +4496,16 @@
               "id": "Training_Dummy4",
               "level": 66,
               "baseExperience": 35,
-              "baseActionCost": 1600,
+              "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 3
+                  "quantity": 15
                 },
                 {
                   "id": "melvorD:Adamant_Helmet",
-                  "quantity": 1
+                  "quantity": 5
                 }
               ],
               "currencyCosts": [],
@@ -4536,16 +4536,16 @@
               "id": "Training_Dummy5",
               "level": 84,
               "baseExperience": 130,
-              "baseActionCost": 2400,
+              "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 3
+                  "quantity": 18
                 },
                 {
                   "id": "melvorD:Dragon_Helmet",
-                  "quantity": 1
+                  "quantity": 6
                 }
               ],
               "currencyCosts": [],
@@ -4576,16 +4576,16 @@
               "id": "Trapping_Hut1",
               "level": 12,
               "baseExperience": 5,
-              "baseActionCost": 100,
+              "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 1
+                  "quantity": 4
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 1
+                  "quantity": 4
                 }
               ],
               "currencyCosts": [
@@ -4608,24 +4608,24 @@
               "id": "Trapping_Hut2",
               "level": 28,
               "baseExperience": 10,
-              "baseActionCost": 200,
+              "baseActionCost": 50,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorF:Summoning_Shard_Red",
-                  "quantity": 1
+                  "quantity": 6
                 },
                 {
                   "id": "melvorF:Summoning_Shard_Green",
-                  "quantity": 1
+                  "quantity": 4
                 },
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 1
+                  "quantity": 4
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 1
+                  "quantity": 4
                 }
               ],
               "currencyCosts": [],
@@ -4648,16 +4648,16 @@
               "id": "Trapping_Hut3",
               "level": 59,
               "baseExperience": 25,
-              "baseActionCost": 1200,
+              "baseActionCost": 300,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 2
+                  "quantity": 12
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 2
+                  "quantity": 12
                 }
               ],
               "currencyCosts": [
@@ -4675,24 +4675,24 @@
               "id": "Trapping_Hut4",
               "level": 74,
               "baseExperience": 60,
-              "baseActionCost": 2000,
+              "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorF:Summoning_Shard_Blue",
-                  "quantity": 2
+                  "quantity": 12
                 },
                 {
                   "id": "melvorF:Summoning_Shard_Silver",
-                  "quantity": 2
+                  "quantity": 10
                 },
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 2
+                  "quantity": 12
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 2
+                  "quantity": 12
                 }
               ],
               "currencyCosts": [],
@@ -4710,24 +4710,24 @@
               "id": "Trapping_Hut5",
               "level": 88,
               "baseExperience": 195,
-              "baseActionCost": 2400,
+              "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorF:Summoning_Shard_Gold",
-                  "quantity": 3
+                  "quantity": 18
                 },
                 {
                   "id": "melvorF:Summoning_Shard_Black",
-                  "quantity": 3
+                  "quantity": 15
                 },
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 3
+                  "quantity": 20
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 3
+                  "quantity": 20
                 }
               ],
               "currencyCosts": [],
@@ -4745,16 +4745,16 @@
               "id": "Wardrobe1",
               "level": 5,
               "baseExperience": 5,
-              "baseActionCost": 50,
+              "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 1
+                  "quantity": 2
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 1
+                  "quantity": 2
                 }
               ],
               "currencyCosts": [],
@@ -4777,16 +4777,16 @@
               "id": "Wardrobe2",
               "level": 39,
               "baseExperience": 10,
-              "baseActionCost": 400,
+              "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 2
+                  "quantity": 8
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 2
+                  "quantity": 8
                 }
               ],
               "currencyCosts": [],
@@ -4809,16 +4809,16 @@
               "id": "Wardrobe3",
               "level": 43,
               "baseExperience": 10,
-              "baseActionCost": 800,
+              "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 2
+                  "quantity": 10
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 2
+                  "quantity": 10
                 }
               ],
               "currencyCosts": [],
@@ -4836,16 +4836,16 @@
               "id": "Wardrobe4",
               "level": 75,
               "baseExperience": 65,
-              "baseActionCost": 2000,
+              "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 3
+                  "quantity": 15
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 3
+                  "quantity": 15
                 }
               ],
               "currencyCosts": [],
@@ -4863,16 +4863,16 @@
               "id": "Wardrobe5",
               "level": 81,
               "baseExperience": 105,
-              "baseActionCost": 2000,
+              "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 3
+                  "quantity": 20
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 3
+                  "quantity": 20
                 }
               ],
               "currencyCosts": [],
@@ -4884,16 +4884,16 @@
               "id": "Worktable1",
               "level": 4,
               "baseExperience": 5,
-              "baseActionCost": 50,
+              "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 1
+                  "quantity": 4
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 1
+                  "quantity": 4
                 }
               ],
               "currencyCosts": [],
@@ -4918,16 +4918,16 @@
               "id": "Worktable2",
               "level": 31,
               "baseExperience": 10,
-              "baseActionCost": 400,
+              "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 2
+                  "quantity": 5
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 2
+                  "quantity": 5
                 }
               ],
               "currencyCosts": [],
@@ -4948,16 +4948,16 @@
               "id": "Worktable3",
               "level": 50,
               "baseExperience": 15,
-              "baseActionCost": 800,
+              "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 2
+                  "quantity": 7
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 2
+                  "quantity": 7
                 }
               ],
               "currencyCosts": [],
@@ -4980,16 +4980,16 @@
               "id": "Worktable4",
               "level": 62,
               "baseExperience": 25,
-              "baseActionCost": 1600,
+              "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 3
+                  "quantity": 15
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 3
+                  "quantity": 15
                 }
               ],
               "currencyCosts": [],
@@ -5012,16 +5012,16 @@
               "id": "Worktable5",
               "level": 86,
               "baseExperience": 160,
-              "baseActionCost": 2400,
+              "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 3
+                  "quantity": 18
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 3
+                  "quantity": 18
                 }
               ],
               "currencyCosts": [],

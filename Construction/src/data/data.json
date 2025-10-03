@@ -2917,20 +2917,20 @@
               "id": "Jungle_Gym5",
               "level": 90,
               "baseExperience": 950,
-              "baseActionCost": 650,
+              "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 18
+                  "quantity": 20
                 },
                 {
                   "id": "melvorD:Runite_Bar",
-                  "quantity": 6
+                  "quantity": 15
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 12
+                  "quantity": 14
                 }
               ],
               "currencyCosts": [],
@@ -3400,7 +3400,7 @@
               "id": "Orchard5",
               "level": 94,
               "baseExperience": 300,
-              "baseActionCost": 650,
+              "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
@@ -3409,7 +3409,7 @@
                 },
                 {
                   "id": "melvorD:Weird_Gloop",
-                  "quantity": 25
+                  "quantity": 30
                 }
               ],
               "currencyCosts": [],
@@ -3420,17 +3420,17 @@
             {
               "id": "Oven1",
               "level": 19,
-              "baseExperience": 5,
-              "baseActionCost": 100,
+              "baseExperience": 30,
+              "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Bronze_Bar",
-                  "quantity": 2
+                  "quantity": 8
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 1
+                  "quantity": 4
                 }
               ],
               "currencyCosts": [],
@@ -3442,17 +3442,17 @@
             {
               "id": "Oven2",
               "level": 27,
-              "baseExperience": 10,
-              "baseActionCost": 200,
+              "baseExperience": 65,
+              "baseActionCost": 50,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Iron_Bar",
-                  "quantity": 3
+                  "quantity": 13
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 2
+                  "quantity": 8
                 }
               ],
               "currencyCosts": [],
@@ -3464,17 +3464,17 @@
             {
               "id": "Oven3",
               "level": 35,
-              "baseExperience": 10,
-              "baseActionCost": 400,
+              "baseExperience": 82,
+              "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Steel_Bar",
-                  "quantity": 3
+                  "quantity": 14
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 2
+                  "quantity": 10
                 }
               ],
               "currencyCosts": [],
@@ -3485,18 +3485,18 @@
             },
             {
               "id": "Oven4",
-              "level": 76,
-              "baseExperience": 70,
-              "baseActionCost": 2000,
+              "level": 66,
+              "baseExperience": 300,
+              "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Mithril_Bar",
-                  "quantity": 5
+                  "quantity": 24
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 3
+                  "quantity": 15
                 }
               ],
               "currencyCosts": [],
@@ -3507,18 +3507,18 @@
             },
             {
               "id": "Oven5",
-              "level": 77,
-              "baseExperience": 80,
-              "baseActionCost": 2000,
+              "level": 87,
+              "baseExperience": 500,
+              "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Runite_Bar",
-                  "quantity": 5
+                  "quantity": 28
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 3
+                  "quantity": 18
                 }
               ],
               "currencyCosts": [],
@@ -3530,17 +3530,17 @@
             {
               "id": "Prayer_Altar1",
               "level": 8,
-              "baseExperience": 5,
-              "baseActionCost": 50,
+              "baseExperience": 43,
+              "baseActionCost": 20,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Bones",
-                  "quantity": 1
+                  "quantity": 3
                 },
                 {
                   "id": "melvorD:Silver_Bar",
-                  "quantity": 1
+                  "quantity": 3
                 }
               ],
               "currencyCosts": [],
@@ -3556,17 +3556,17 @@
             {
               "id": "Prayer_Altar2",
               "level": 32,
-              "baseExperience": 10,
-              "baseActionCost": 400,
+              "baseExperience": 71,
+              "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Big_Bones",
-                  "quantity": 2
+                  "quantity": 8
                 },
                 {
                   "id": "melvorD:Silver_Bar",
-                  "quantity": 2
+                  "quantity": 8
                 }
               ],
               "currencyCosts": [],
@@ -3577,17 +3577,17 @@
             {
               "id": "Prayer_Altar3",
               "level": 54,
-              "baseExperience": 15,
-              "baseActionCost": 1200,
+              "baseExperience": 97,
+              "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorF:Holy_Dust",
-                  "quantity": 2
+                  "quantity": 10
                 },
                 {
                   "id": "melvorD:Gold_Bar",
-                  "quantity": 2
+                  "quantity": 10
                 }
               ],
               "currencyCosts": [],
@@ -3598,17 +3598,17 @@
             {
               "id": "Prayer_Altar4",
               "level": 80,
-              "baseExperience": 90,
-              "baseActionCost": 2400,
+              "baseExperience": 500,
+              "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Dragon_Bones",
-                  "quantity": 3
+                  "quantity": 16
                 },
                 {
                   "id": "melvorD:Gold_Bar",
-                  "quantity": 3
+                  "quantity": 16
                 }
               ],
               "currencyCosts": [],
@@ -3619,17 +3619,17 @@
             {
               "id": "Prayer_Altar5",
               "level": 98,
-              "baseExperience": 440,
-              "baseActionCost": 2800,
+              "baseExperience": 2740,
+              "baseActionCost": 750,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Magic_Bones",
-                  "quantity": 4
+                  "quantity": 25
                 },
                 {
                   "id": "melvorD:Gold_Bar",
-                  "quantity": 4
+                  "quantity": 25
                 }
               ],
               "currencyCosts": [],
@@ -3640,17 +3640,17 @@
             {
               "id": "Rune_Altar1",
               "level": 17,
-              "baseExperience": 5,
-              "baseActionCost": 100,
+              "baseExperience": 50,
+              "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Rune_Essence",
-                  "quantity": 1
+                  "quantity": 16
                 },
                 {
                   "id": "melvorD:Mind_Rune",
-                  "quantity": 1
+                  "quantity": 16
                 }
               ],
               "currencyCosts": [],
@@ -3672,17 +3672,17 @@
             {
               "id": "Rune_Altar2",
               "level": 33,
-              "baseExperience": 10,
-              "baseActionCost": 400,
+              "baseExperience": 76,
+              "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Rune_Essence",
-                  "quantity": 2
+                  "quantity": 8
                 },
                 {
                   "id": "melvorD:Body_Rune",
-                  "quantity": 2
+                  "quantity": 8
                 }
               ],
               "currencyCosts": [],
@@ -3694,17 +3694,17 @@
             {
               "id": "Rune_Altar3",
               "level": 49,
-              "baseExperience": 15,
-              "baseActionCost": 800,
+              "baseExperience": 115,
+              "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Rune_Essence",
-                  "quantity": 2
+                  "quantity": 10
                 },
                 {
                   "id": "melvorF:Nature_Rune",
-                  "quantity": 2
+                  "quantity": 10
                 }
               ],
               "currencyCosts": [],
@@ -3716,17 +3716,17 @@
             {
               "id": "Rune_Altar4",
               "level": 72,
-              "baseExperience": 50,
-              "baseActionCost": 2000,
+              "baseExperience": 370,
+              "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Rune_Essence",
-                  "quantity": 3
+                  "quantity": 15
                 },
                 {
                   "id": "melvorD:Death_Rune",
-                  "quantity": 3
+                  "quantity": 15
                 }
               ],
               "currencyCosts": [],
@@ -3738,17 +3738,17 @@
             {
               "id": "Rune_Altar5",
               "level": 96,
-              "baseExperience": 365,
-              "baseActionCost": 2800,
+              "baseExperience": 2065,
+              "baseActionCost": 750,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Rune_Essence",
-                  "quantity": 4
+                  "quantity": 24
                 },
                 {
                   "id": "melvorD:Ancient_Rune",
-                  "quantity": 4
+                  "quantity": 24
                 }
               ],
               "currencyCosts": [],
@@ -3760,19 +3760,19 @@
             {
               "id": "Spell_Library1",
               "level": 6,
-              "baseExperience": 5,
-              "baseActionCost": 50,
+              "baseExperience": 31,
+              "baseActionCost": 30,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Mind_Rune",
-                  "quantity": 1
+                  "quantity": 5
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 10
+                  "quantity": 50
                 }
               ],
               "modifiers": {
@@ -3793,19 +3793,19 @@
             {
               "id": "Spell_Library2",
               "level": 26,
-              "baseExperience": 5,
-              "baseActionCost": 200,
+              "baseExperience": 45,
+              "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Body_Rune",
-                  "quantity": 1
+                  "quantity": 3
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 25
+                  "quantity": 50
                 }
               ],
               "modifiers": {
@@ -3827,18 +3827,18 @@
               "id": "Spell_Library3",
               "level": 44,
               "baseExperience": 10,
-              "baseActionCost": 800,
+              "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorF:Nature_Rune",
-                  "quantity": 2
+                  "quantity": 10
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 50
+                  "quantity": 2000
                 }
               ],
               "modifiers": {
@@ -3859,19 +3859,19 @@
             {
               "id": "Spell_Library4",
               "level": 63,
-              "baseExperience": 25,
-              "baseActionCost": 1600,
+              "baseExperience": 180,
+              "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Death_Rune",
-                  "quantity": 3
+                  "quantity": 15
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 100
+                  "quantity": 20000
                 }
               ],
               "modifiers": {
@@ -3892,19 +3892,19 @@
             {
               "id": "Spell_Library5",
               "level": 92,
-              "baseExperience": 245,
-              "baseActionCost": 2800,
+              "baseExperience": 1345,
+              "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Ancient_Rune",
-                  "quantity": 4
+                  "quantity": 22
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 100
+                  "quantity": 50000
                 }
               ],
               "modifiers": {
@@ -3925,17 +3925,17 @@
             {
               "id": "Storage_Chest1",
               "level": 1,
-              "baseExperience": 5,
-              "baseActionCost": 50,
+              "baseExperience": 13,
+              "baseActionCost": 15,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 1
+                  "quantity": 3
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 1
+                  "quantity": 3
                 }
               ],
               "currencyCosts": [],
@@ -3947,17 +3947,17 @@
             {
               "id": "Storage_Chest2",
               "level": 17,
-              "baseExperience": 5,
-              "baseActionCost": 100,
+              "baseExperience": 35,
+              "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 1
+                  "quantity": 6
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 1
+                  "quantity": 6
                 }
               ],
               "currencyCosts": [],
@@ -3969,17 +3969,17 @@
             {
               "id": "Storage_Chest3",
               "level": 42,
-              "baseExperience": 10,
-              "baseActionCost": 800,
+              "baseExperience": 70,
+              "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 2
+                  "quantity": 10
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 2
+                  "quantity": 10
                 }
               ],
               "currencyCosts": [],
@@ -3991,17 +3991,17 @@
             {
               "id": "Storage_Chest4",
               "level": 51,
-              "baseExperience": 25,
-              "baseActionCost": 1600,
+              "baseExperience": 150,
+              "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 2
+                  "quantity": 12
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 2
+                  "quantity": 12
                 }
               ],
               "currencyCosts": [],
@@ -4013,17 +4013,17 @@
             {
               "id": "Storage_Chest5",
               "level": 71,
-              "baseExperience": 105,
-              "baseActionCost": 2400,
+              "baseExperience": 700,
+              "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 3
+                  "quantity": 15
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 3
+                  "quantity": 15
                 }
               ],
               "currencyCosts": [],
@@ -4035,17 +4035,17 @@
             {
               "id": "Telescope1",
               "level": 14,
-              "baseExperience": 5,
-              "baseActionCost": 100,
+              "baseExperience": 35,
+              "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Bronze_Bar",
-                  "quantity": 1
+                  "quantity": 4
                 },
                 {
                   "id": "melvorF:Stardust",
-                  "quantity": 1
+                  "quantity": 4
                 }
               ],
               "currencyCosts": [],
@@ -4067,17 +4067,17 @@
             {
               "id": "Telescope2",
               "level": 24,
-              "baseExperience": 5,
-              "baseActionCost": 200,
+              "baseExperience": 55,
+              "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Iron_Bar",
-                  "quantity": 1
+                  "quantity": 4
                 },
                 {
                   "id": "melvorF:Stardust",
-                  "quantity": 1
+                  "quantity": 4
                 }
               ],
               "currencyCosts": [],
@@ -4099,17 +4099,17 @@
             {
               "id": "Telescope3",
               "level": 47,
-              "baseExperience": 10,
-              "baseActionCost": 800,
+              "baseExperience": 105,
+              "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Steel_Bar",
-                  "quantity": 2
+                  "quantity": 10
                 },
                 {
                   "id": "melvorF:Stardust",
-                  "quantity": 2
+                  "quantity": 10
                 }
               ],
               "currencyCosts": [],
@@ -4121,17 +4121,17 @@
             {
               "id": "Telescope4",
               "level": 70,
-              "baseExperience": 45,
-              "baseActionCost": 2000,
+              "baseExperience": 265,
+              "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Silver_Bar",
-                  "quantity": 3
+                  "quantity": 15
                 },
                 {
                   "id": "melvorF:Golden_Stardust",
-                  "quantity": 3
+                  "quantity": 15
                 }
               ],
               "currencyCosts": [],
@@ -4147,17 +4147,17 @@
             {
               "id": "Telescope5",
               "level": 88,
-              "baseExperience": 195,
-              "baseActionCost": 2400,
+              "baseExperience": 1275,
+              "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
                   "id": "melvorD:Gold_Bar",
-                  "quantity": 3
+                  "quantity": 18
                 },
                 {
                   "id": "melvorF:Golden_Stardust",
-                  "quantity": 3
+                  "quantity": 18
                 }
               ],
               "currencyCosts": [],

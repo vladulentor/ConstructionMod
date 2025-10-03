@@ -329,7 +329,7 @@ export class Construction extends ArtisanSkill {
     }
 
     getMaxTotalMasteryLevels() {
-        let tiernum = cloudManager.hasTotHEntitlementAndIsEnabled ? 8 : 5;
+        let tiernum = 5; //cloudManager.hasTotHEntitlementAndIsEnabled ? 8 : 5;
         return this.recipeNumber * tiernum;
     }
 

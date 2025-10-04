@@ -102,6 +102,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
     hideFixtureUnlocks(room, fixture, construction) {
         this.upgradesButton.textContent = getRielkLangString('MENU_TEXT_SHOW_UPGRADES');
         this.upgradesButton.onclick = () => construction.ui.showFixtureUnlocks(room, fixture, construction);
+        requestAnimationFrame(() => window.scrollTo(0, this.scrollBeforePanel));
     }
     updateRoomInfo(construction) {
         if (this.selectedFixture !== undefined) {
@@ -156,7 +157,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
         if (label) label.textContent = getRielkLangString('MENU_TEXT_REMAINING');
         this.haves.setItemsFromRecipe(fixtureRecipe, construction.game);
         const requireIcons = this.requires.querySelectorAll('item-quantity-icon');
-         const haveIcons = this.haves.querySelectorAll('item-current-icon');
+        const haveIcons = this.haves.querySelectorAll('item-current-icon');
         requireIcons.forEach((icon, i) => {
             const qtyEl = icon.querySelector("small.badge-pill"); // change the requires to be remaining total cost, by just iterating over the dom to change it, this might not be efficient but it only happens once per click and action
             const haveQtyEl = haveIcons[i]?.querySelector("small.badge-pill");
@@ -175,7 +176,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
             }
         });
 
-        if (this.requires.querySelectorAll('item-quantity-icon').length > 2) {
+        if (this.requires.querySelectorAll('item-quantity-icon').length > 3) {
             [this.requires, this.haves].forEach(el => {
                 el.classList.remove('col-sm-6'); // Make the bigger projects feel like projects, not just items
             });

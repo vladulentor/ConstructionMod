@@ -141,10 +141,12 @@ export class ConstructionInterface {
         this.renderQueue.menu = false;
     }
     renderfixtureItemUpdates() {
-
+        if(this.renderQueue.renderfixtureItemUpdates == undefined)
+            return
+        this.renderQueue.renderfixtureItemUpdates = false;
         if (!document.getElementById('rielk-construction-container').classList.contains('d-none') && !this.constructionHouseMenu?.root.parentElement?.parentElement.classList.contains('d-none')) {
             this.constructionHouseMenu.updateFixtureItems(this.construction);
-            // this could update up to 8 menus every frame, so we optimize it to only do so when the player is looking at them
+            // this optimization is probably not needed.
         }
     }
     renderProgressBar() {

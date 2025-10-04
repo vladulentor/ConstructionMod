@@ -115,7 +115,7 @@ export class ConstructionHouseMenu {
         }
     updateFixtureItems(construction) {
             this.roomPanels.forEach((panel) => {
-                if (panel.selectedFixture) {
+                if (panel.selectedFixture && panel.selectedFixture) {
                     panel.updateFixtureInfo(construction, panel.selectedFixture);
                 }
             })

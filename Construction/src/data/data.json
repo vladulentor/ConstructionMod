@@ -3477,7 +3477,7 @@
                   "quantity": 10
                 }
               ],
-              "changeFunc": "test",
+              "changeFunc": "tierArray",
               "currencyCosts": [],
               "modifiers": {
                 "perfectCookChance": 2,

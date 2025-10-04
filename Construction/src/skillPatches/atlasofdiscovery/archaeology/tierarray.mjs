@@ -1,7 +1,7 @@
 const { loadModule } = mod.getContext(import.meta);
 const { getRielkLangString } = await loadModule('src/language/translationManager.mjs');
 
-export function patchTiers() {
+export function tierArray() {
 
     if (!DigSiteMap.tiers.some(t => t.index === 4)) {
         DigSiteMap.tiers.push({

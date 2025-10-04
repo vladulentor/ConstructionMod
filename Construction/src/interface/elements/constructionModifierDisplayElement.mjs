@@ -1,6 +1,6 @@
 const { loadModule, onInterfaceReady } = mod.getContext(import.meta);
 
-const { templateRielkLangStringWithNodes, templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
+const { templateRielkLangStringWithNodes, templateRielkLangString, getRielkLangString } = await loadModule('src/language/translationManager.mjs');
 
 class ConstructionModifierDisplayElement extends HTMLElement {
     constructor() {
@@ -84,6 +84,20 @@ class ConstructionModifierDisplayElement extends HTMLElement {
             });
             this.modifierText.append(formatter({ text: text }));
         }
+                    console.log ('logging for', this.recipe);
+
+        if (this.recipe.changeFunc != undefined) {
+            console.log ('logging for', this.recipe);
+            // Build a translation key dynamically based on the effect
+            const translationKey = `MODIFIER_DATA_${this.recipe.changeFunc}`;
+
+            // Look it up in your language object
+            const text = getRielkLangString(translationKey);
+
+            this.modifierText.append(formatter({ text: text }));
+        }
+        else console.log("nothing");
+
     }
     setLocked(recipe, construction) {
         hideElement(this.fixtureImage);

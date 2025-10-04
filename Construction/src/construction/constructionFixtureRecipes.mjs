@@ -2,6 +2,7 @@ const { loadModule } = mod.getContext(import.meta);
 
 const { ConstructionModifiers } = await loadModule('src/construction/constructionModifier.mjs');
 const { templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
+const { EffectRegistry } = await loadModule('src/skillPatches/patchRegistry.mjs');
 
 export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
     constructor(namespace, data, game, skill) {
@@ -13,7 +14,10 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
             if (data.grantItem != undefined)
                 this.grantItems = game.items.getQuantities(data.grantItem);
             if (data.unlockPlot != undefined)
-                this.unlockPlot = game.farming.plots.getObjectSafe(data.unlockPlot)
+                this.unlockPlot = game.farming.plots.getObjectSafe(data.unlockPlot);
+            if (data.changeFunc != undefined)
+                this.changeFunc = data.changeFunc;
+
         } catch (e) {
             throw new DataConstructionError(ConstructionFixtureRecipes.name, e, this.id);
         }
@@ -27,6 +31,7 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
                 this.grantItems = game.items.getQuantities(data.grantItem);
             if (data.unlockPlot != undefined)
                 this.unlockPlot = game.farming.plots.getObjectSafe(data.unlockPlot)
+
         }
         catch (e) {
             throw new DataModificationError(ConstructionFixtureRecipes.name, e, this.id);
@@ -57,8 +62,12 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
     }
 
     onLoad() {
-        if (this.isUnlocked)
+        if (this.isUnlocked) {
             this.doUnlockPlot();
+            if (this.changeFunc) {
+                this.callChangeFunc();
+            }
+        }
     }
 
     doUnlockPlot() {
@@ -68,6 +77,15 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
         }
         return false;
     }
+    callChangeFunc() {
+        const effectFunc = EffectRegistry[this.changeFunc]; // look up function by name
+        if (typeof effectFunc === "function") {
+            effectFunc.call(this);
+        } else {
+            console.warn(`Effect not found in registry, going insane: ${this.changeFunc}`);
+        }
+    }
+
 
     makeProgress() {
         this.fixture.progress++;
@@ -82,6 +100,10 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
                 this.grantItems.forEach(iq => game.bank.addItem(iq.item, iq.quantity, true, true, true));
             if (this.doUnlockPlot())
                 game.farming.showPlotsInCategory(this.unlockPlot.category);
+            if (this.ChangeFunc) {
+                this.callChangeFunc();
+
+            }
             return false;
         }
         return true;

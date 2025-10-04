@@ -65,9 +65,10 @@ export const language = {
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% chance to regain a Tree Seed in Farming when harvested',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% actions required to build Furniture in Construction',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% actions required to build Furniture in Construction',
+    'MODIFIER_DATA_tierArray':'Unlocks a new map tier',
 
     'DESCRIPTION_ADDS_ITEM': 'Gives ${itemQuantity} ${itemName} ${itemImage}',
-    'DESCRIPTION_UNLOCKS_PLOT': 'Unlocks 1 ${plotCategory} Plot in Farming',
+    'DESCRIPTION_UNLOCKS_PLOT': 'Unlock 1 ${plotCategory} Plot in Farming',
 
 
     'MASTERY_BONUS_ Construction_ 0': 'Unlock fixture\'s Tier 1 effects.',

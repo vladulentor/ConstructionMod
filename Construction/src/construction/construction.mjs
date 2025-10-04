@@ -63,7 +63,7 @@ export class Construction extends ArtisanSkill {
             let tier = tm.tier;
             tm.currentProgress = this.recipeCountByTier[tier - 1];
             if (tm.currentProgress >= tm.maxProgress && !tm.completed)
-               tm.onComplete(this); //special case if someone is loading from the normal construction mod, otherwise this shouldn't fire.
+                tm.onComplete(this); //special case if someone is loading from the normal construction mod, otherwise this shouldn't fire.
         });
 
     }
@@ -131,7 +131,10 @@ export class Construction extends ArtisanSkill {
     get masteryModifiedInterval() {
         return 1700;
     }
-
+    onPageChange() {
+        super.onPageChange();
+        this.renderQueue.renderfixtureItemUpdates = true;
+    }
     shouldShowSkillInSidebar() {
         return super.shouldShowSkillInSidebar() || this.game.currentRealm === this.game.defaultRealm; // only show in default realm
     }
@@ -533,7 +536,7 @@ export class Construction extends ArtisanSkill {
         this.renderQueue.menu = true;
     }
     queueBankQuantityRender(item) {
-            super.queueBankQuantityRender(item);
+        super.queueBankQuantityRender(item);
         this.renderQueue.renderfixtureItemUpdates = true;
     }
 

@@ -59,6 +59,9 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
 
+        'TOAST_FIXTURE_COMPLETE':'你已完成建造 ${fixtureName}!',
+
+
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收穫時，+${value}% 幾率在農業中重新獲得樹種子',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 動作用於在建造中製造家具',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 動作用於在建造中製造家具',

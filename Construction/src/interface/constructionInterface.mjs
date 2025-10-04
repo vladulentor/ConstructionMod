@@ -144,10 +144,10 @@ export class ConstructionInterface {
         if(this.renderQueue.renderfixtureItemUpdates == false)
             return
         this.renderQueue.renderfixtureItemUpdates = false;
-        if (!document.getElementById('rielk-construction-container').classList.contains('d-none') && !this.constructionHouseMenu?.root.parentElement?.parentElement.classList.contains('d-none')) {
+        //if (!document.getElementById('rielk-construction-container').classList.contains('d-none') && !this.constructionHouseMenu?.root.parentElement?.parentElement.classList.contains('d-none')) {
             this.constructionHouseMenu.updateFixtureItems(this.construction);
-            // this optimization is probably not needed.
-        }
+            // this optimization is probably not needed but I will keep it in in case I want to change it later.
+        //}
     }
     renderProgressBar() {
         if (!this.renderQueue.progressBar)

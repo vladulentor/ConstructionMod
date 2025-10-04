@@ -60,6 +60,7 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
 
+    'TOAST_FIXTURE_COMPLETE':'You\'ve finished building your ${fixtureName}!',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% chance to regain a Tree Seed in Farming when harvested',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% actions required to build Furniture in Construction',

@@ -61,6 +61,9 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
 
+        'TOAST_FIXTURE_COMPLETE':'你已完成建造 ${fixtureName}!',
+
+
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收获时有机会在农业中重新获得树种',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 动作用于在建造中制造家具',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 动作用于在建造中制造家具',

@@ -64,6 +64,8 @@ export const language = {
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% azioni necessarie per costruire mobili in Costruzione',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% azioni necessarie per costruire mobili in Costruzione',
 
+        'TOAST_FIXTURE_COMPLETE':'Hai completato la costruzione del tuo ${fixtureName}!',
+
     'DESCRIPTION_ADDS_ITEM': 'Dare ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': 'Sblocca 1 Appezzamento di ${plotCategory} in Coltivazione',
 

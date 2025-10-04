@@ -61,6 +61,9 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
 
+        'TOAST_FIXTURE_COMPLETE':'${fixtureName} 건설이 완료되었습니다!',
+
+    
     'MODIFIER_DATA_farmingTreeSeedReturn': '농사에서 수확 시 나무 씨앗을 회복할 확률 +${value}%',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 행동 필요: 건축에서 가구 제작',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 행동 필요: 건축에서 가구 제작',

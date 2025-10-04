@@ -61,6 +61,8 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '+2% d\'XP de compétence de construction.<br><span class=\"text-warning\">Avec les quatre éléments de la tenue de constructeur équipés : + 8 % d\'XP de maîtrise de la construction.</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '+2% d\'XP de compétence de construction.<br><span class=\"text-warning\">Avec les quatre éléments de la tenue de constructeur équipés : + 8 % d\'XP de maîtrise de la construction.</span>',
 
+        'TOAST_FIXTURE_COMPLETE':'Vous avez terminé la construction de votre ${fixtureName}!',
+
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% de chances de récupérer une graine d\'arbre en agriculture lors de la récolte',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% d\'actions requises pour construire des meubles en Construction',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% d\'actions requises pour construire des meubles en Construction',

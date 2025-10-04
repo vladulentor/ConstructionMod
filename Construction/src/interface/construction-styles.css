@@ -27,6 +27,14 @@ body.darkMode.superDark .bg-rielk-construction
       color: #fca32f;       /* text color */
     font-weight: bold;   /* optional */
 }
+.construction-toast {
+    background-color: #4CAF50; /* green */
+    color: white;
+    border-left: 5px solid #2E7D32; /* darker green accent */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    font-weight: bold;
+}
 
 .border-item-danger {
   border: 1px solid #c09a49;

@@ -4375,8 +4375,8 @@
             {
               "id": "Training_Dummy1",
               "level": 2,
-              "baseExperience": 4,
-              "baseActionCost": 30,
+              "baseExperience": 6,
+              "baseActionCost": 15,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {

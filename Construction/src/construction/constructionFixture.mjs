@@ -1,6 +1,6 @@
 const { loadModule } = mod.getContext(import.meta);
 
-const { getRielkLangString } = await loadModule('src/language/translationManager.mjs');
+const { getRielkLangString, templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
 
 export class ConstructionFixture extends RealmedObject {
     constructor(namespace, data, game, construction) {
@@ -64,8 +64,22 @@ export class ConstructionFixture extends RealmedObject {
     upgrade(construction) {
         this.currentTier++;
         this.progress = 0;
-        
+
         construction.computeProvidedStats(true);
+        console.log('notify player');
+        const finishNotification = {
+            ...game.notifications.genericNotificationData,
+            media: this.media,
+            text: templateRielkLangString("TOAST_FIXTURE_COMPLETE", { fixtureName: this.name }),
+            quantity: 0,
+            isImportant: true,  // <-- makes it persistent
+            isError: false
+        };
+
+        const fixtureNotification = game.notifications.newAddSuccessNotification(`FixtureComplete-${this.id}`);
+        game.notifications.addNotification(fixtureNotification, finishNotification);        //notifyPlayer(construction, templateRielkLangString("TOAST_FIXTURE_COMPLETE", { fixtureName: this.name }), 'success');
+        const el = fixtureNotification.notificationElement; // usually the outer div
+        if (el) el.classList.add('construction-toast');
     }
     get providedStats() {
         return this.recipes.filter(r => r.tier <= this.currentTier).map(r => r.stats);

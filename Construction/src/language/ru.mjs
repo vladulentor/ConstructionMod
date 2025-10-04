@@ -60,6 +60,9 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '+2 % к опыту навыка «Строительство».<br><span class=\"text-warning\">При экипировке всех четырех предметов одежды строителя: +8% к опыту строительного мастерства.</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '+2 % к опыту навыка «Строительство».<br><span class=\"text-warning\">При экипировке всех четырех предметов одежды строителя: +8% к опыту строительного мастерства.</span>',
 
+        'TOAST_FIXTURE_COMPLETE':'Вы завершили строительство {fixtureName}!',
+
+
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% кусок, чтобы восстановить семя дерева в сельском хозяйстве, когда собрано',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% действий требуется для создания мебели в Строительстве',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% действий требуется для создания мебели в Строительстве',

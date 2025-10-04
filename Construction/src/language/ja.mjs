@@ -60,6 +60,9 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
 
+        'TOAST_FIXTURE_COMPLETE':'${fixtureName}の建造が完了しました！',
+
+    
     'MODIFIER_DATA_farmingTreeSeedReturn': '農業で木の種を収穫すると、その種を再び入手できる確率が +${value}% 増加します',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% のアクションが必要：建設で家具を作る',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% のアクションが必要：建設で家具を作る',

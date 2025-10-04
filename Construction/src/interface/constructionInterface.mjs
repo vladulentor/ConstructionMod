@@ -134,7 +134,7 @@ export class ConstructionInterface {
         if (this.constructionHouseMenu == undefined)
             return;
         if (this.renderQueue.menu) {
-            this.constructionHouseMenu.updateFixtureItems();
+            this.constructionHouseMenu.updateFixtureItems(this.construction);
             this.constructionHouseMenu.updateAllRoomPanels(this.construction);
             this.constructionHouseMenu.updateFixtureButtons(this.game);
         }

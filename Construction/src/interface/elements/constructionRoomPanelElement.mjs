@@ -129,7 +129,6 @@ class ConstructionRoomPanelElement extends HTMLElement {
     }
     updateFixtureInfo(construction, fixture) {
         this.noneSelected = false;
-
         this.infoBoxName.textContent = fixture.name;
         this.infoBoxImage.src = fixture.media;
 
@@ -154,17 +153,38 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.requires.setItemsFromRecipe(fixtureRecipe);
         const label = this.requires.querySelector('h5 > lang-string[lang-id="MENU_TEXT_REQUIRES"]');
         if (label) label.textContent = getRielkLangString('MENU_TEXT_REMAINING');
-        this.requires.querySelectorAll('item-quantity-icon').forEach(icon => {
-            const qtyEl = icon.querySelector("small.badge-pill"); // change the requires to be remaining total cost, by just iterating over the dom to change it
-            if (qtyEl) {
-                const base = parseInt(qtyEl.textContent.replace(/,/g, ""), 10);
-                if (!isNaN(base)) {
-                    qtyEl.textContent = formatNumber(Math.max(  base, base * (fixtureRecipe.actionCost - fixture.progress))
-                    );
+        this.haves.setItemsFromRecipe(fixtureRecipe, construction.game);
+        const requireIcons = this.requires.querySelectorAll('item-quantity-icon');
+         const haveIcons = this.haves.querySelectorAll('item-current-icon');
+        requireIcons.forEach((icon, i) => {
+            const qtyEl = icon.querySelector("small.badge-pill"); // change the requires to be remaining total cost, by just iterating over the dom to change it, this might not be efficient but it only happens once per click and action
+            const haveQtyEl = haveIcons[i]?.querySelector("small.badge-pill");
+            const have = parseInt(haveQtyEl.textContent.replace(/,/g, ""), 10);
+            const base = parseInt(qtyEl.textContent.replace(/,/g, ""), 10);
+            if (!isNaN(base) && !isNaN(have)) {
+                let totalCost = base * (fixtureRecipe.actionCost - fixture.progress);
+                qtyEl.textContent = formatNumber(Math.max(base, totalCost));
+                if (have >= base && have < totalCost) {
+                    qtyEl.parentElement?.parentElement.classList.add('border-item-danger'); // special case
+                    haveQtyEl.parentElement?.parentElement.classList.add('border-item-danger');
+                } else {
+                    qtyEl.parentElement?.parentElement.classList.remove('border-item-danger');
+                    haveQtyEl.parentElement?.parentElement.classList.remove('border-item-danger');
                 }
             }
         });
-        this.haves.setItemsFromRecipe(fixtureRecipe, construction.game);
+
+        if (this.requires.querySelectorAll('item-quantity-icon').length > 2) {
+            [this.requires, this.haves].forEach(el => {
+                el.classList.remove('col-sm-6'); // Make the bigger projects feel like projects, not just items
+            });
+        }
+        else {
+            [this.requires, this.haves].forEach(el => {
+                el.classList.add('col-sm-6'); // Make the bigger projects feel like projects, not just items
+            });
+        }
+
         this.grants.setSelected();
         this.grants.xpIcon.setXP(Math.floor(construction.modifyXP(fixtureRecipe.baseExperience)), fixtureRecipe.baseExperience);
         this.grants.updateAbyssalGrants(Math.floor(construction.modifyAbyssalXP(fixtureRecipe.baseAbyssalExperience)), fixtureRecipe.baseAbyssalExperience);

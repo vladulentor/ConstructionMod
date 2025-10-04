@@ -28,6 +28,11 @@ body.darkMode.superDark .bg-rielk-construction
     font-weight: bold;   /* optional */
 }
 
+.border-item-danger {
+  border: 1px solid #c09a49;
+}
+
+
 .mastery.empty {
   background-color: #3e4856; 
   height: 4px;              

@@ -87,6 +87,7 @@ export class ConstructionInterface {
         this.renderRoomRealmVisibility();
         this.renderMasteryBar();
         this.renderMasteryBonusElements();
+        this.renderfixtureItemUpdates();
     }
 
     renderMasteryBonusElements() {
@@ -132,7 +133,6 @@ export class ConstructionInterface {
     renderMenu() {
         if (this.constructionHouseMenu == undefined)
             return;
-        this.renderfixtureItemUpdates(); //this needs to always be called
         if (this.renderQueue.menu) {
             this.constructionHouseMenu.updateFixtureItems();
             this.constructionHouseMenu.updateAllRoomPanels(this.construction);
@@ -141,7 +141,7 @@ export class ConstructionInterface {
         this.renderQueue.menu = false;
     }
     renderfixtureItemUpdates() {
-        if(this.renderQueue.renderfixtureItemUpdates == undefined)
+        if(this.renderQueue.renderfixtureItemUpdates == false)
             return
         this.renderQueue.renderfixtureItemUpdates = false;
         if (!document.getElementById('rielk-construction-container').classList.contains('d-none') && !this.constructionHouseMenu?.root.parentElement?.parentElement.classList.contains('d-none')) {

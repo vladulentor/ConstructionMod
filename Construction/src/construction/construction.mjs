@@ -532,7 +532,7 @@ export class Construction extends ArtisanSkill {
         this.renderQueue.fictureUnlock = true;
         this.renderQueue.menu = true;
     }
-        queueBankQuantityRender(item) {
+    queueBankQuantityRender(item) {
             super.queueBankQuantityRender(item);
         this.renderQueue.renderfixtureItemUpdates = true;
     }

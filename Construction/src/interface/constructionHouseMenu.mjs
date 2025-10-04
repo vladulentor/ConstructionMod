@@ -2,7 +2,7 @@ export class ConstructionHouseMenu {
     constructor(container, construction) {
         this.roomPanels = new Map();
         this.scrollBeforePanel = 0;
-
+        this.scrollAtPanel = 0;
         this.activeRoom = undefined;
         container = createElement('div', {
             className: 'block-content',
@@ -104,28 +104,28 @@ export class ConstructionHouseMenu {
         });
         hideElement(this.roomUnlocksPanel);
         requestAnimationFrame(() => {
-            const top = this.scrollBeforePanel || 0;
-            document.documentElement.scrollTo({ top }); });
-        }
+            document.documentElement.scrollTo({ top: this.scrollBeforePanel, behavior: 'auto' });
+        });
+    }
     updateAllRoomPanels(construction, game) {
-            this.roomPanels.forEach((panel, room) => {
-                panel.updateRoomInfo(construction, game);
-            }
-            );
+        this.roomPanels.forEach((panel, room) => {
+            panel.updateRoomInfo(construction, game);
         }
+        );
+    }
     updateFixtureItems(construction) {
-            this.roomPanels.forEach((panel) => {
-                if (panel.selectedFixture && panel.selectedFixture) {
-                    panel.updateFixtureInfo(construction, panel.selectedFixture);
-                }
-            })
+        this.roomPanels.forEach((panel) => {
+            if (panel.selectedFixture && panel.selectedFixture) {
+                panel.updateFixtureInfo(construction, panel.selectedFixture);
+            }
+        })
 
-        }
+    }
     updateUnlocksPanel() {
-            this.roomUnlocksPanel.updateModifierInfo();
-        }
+        this.roomUnlocksPanel.updateModifierInfo();
+    }
     getProgressBar(room) {
-            var _a;
-            return(_a = this.roomPanels.get(room)) === null || _a === void 0 ? void 0 : _a.progressBar;
+        var _a;
+        return (_a = this.roomPanels.get(room)) === null || _a === void 0 ? void 0 : _a.progressBar;
     }
 }

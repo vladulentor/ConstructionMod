@@ -6,7 +6,7 @@ export class ConstructionHouseMenu {
             className: 'block-content',
             parent: container
         });
-        container = createElement('div', {
+        this.root = container = createElement('div', {
             className: 'row',
             parent: container
         });
@@ -23,7 +23,7 @@ export class ConstructionHouseMenu {
         var langString = createElement('rielk-lang-string', {
             parent: viewAllModifiersButton
         })
-        langString.setAttribute('lang-id','MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS');
+        langString.setAttribute('lang-id', 'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS');
 
         construction.sortedRooms.forEach((room) => {
             const roomPanel = createElement('rielk-construction-room-panel', {
@@ -63,14 +63,14 @@ export class ConstructionHouseMenu {
         showElement(panel);
     }
     updateFixturesForLevel(construction) {
-        this.roomPanels.forEach((panel,room)=>{
+        this.roomPanels.forEach((panel, room) => {
             panel.updateFixturesForLevel(construction, room);
         }
         );
         this.roomUnlocksPanel.updateFixturesForLevel(construction);
     }
     updateFixtureButtons(game) {
-        this.roomPanels.forEach((panel)=>{
+        this.roomPanels.forEach((panel) => {
             panel.updateFixtureButtons(game);
         }
         );
@@ -81,9 +81,9 @@ export class ConstructionHouseMenu {
             return;
         panel.selectFixture(room, fixture, construction);
     }
-    showFixtureUnlocks(room, fixture, construction){
-        this.roomPanels.forEach((panel,roomOfPanel)=>{
-            if (roomOfPanel == room){
+    showFixtureUnlocks(room, fixture, construction) {
+        this.roomPanels.forEach((panel, roomOfPanel) => {
+            if (roomOfPanel == room) {
                 panel.showFixtureUnlocks(room, fixture, construction);
             } else {
                 hideElement(panel);
@@ -92,7 +92,7 @@ export class ConstructionHouseMenu {
         this.roomUnlocksPanel.setFixture(fixture, construction);
         showElement(this.roomUnlocksPanel);
     }
-    hideFixtureUnlocks(room, fixture, construction){
+    hideFixtureUnlocks(room, fixture, construction) {
         this.roomPanels.forEach((panel, roomOfPanel) => {
             if (roomOfPanel == room)
                 panel.hideFixtureUnlocks(roomOfPanel, fixture, construction);
@@ -101,10 +101,18 @@ export class ConstructionHouseMenu {
         hideElement(this.roomUnlocksPanel);
     }
     updateAllRoomPanels(construction, game) {
-        this.roomPanels.forEach((panel,room)=>{
+        this.roomPanels.forEach((panel, room) => {
             panel.updateRoomInfo(construction, game);
         }
         );
+    }
+    updateFixtureItems(construction) {
+        this.roomPanels.forEach((panel) => {
+            if (panel.selectedFixture) {
+                panel.updateFixtureInfo(construction, panel.selectedFixture);
+            }
+        })
+
     }
     updateUnlocksPanel() {
         this.roomUnlocksPanel.updateModifierInfo();

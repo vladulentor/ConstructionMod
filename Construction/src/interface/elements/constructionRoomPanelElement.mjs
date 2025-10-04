@@ -6,6 +6,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
     constructor() {
         super();
         this.noneSelected = true;
+        this.selectedFixture = undefined;
         this.fixtureNavs = new Map();
         this._content = new DocumentFragment();
         this._content.append(getTemplateNode('rielk-construction-room-panel-template'));

@@ -14,7 +14,7 @@ export class ConstructionInterface {
         const frag = new DocumentFragment();
         frag.append(getTemplateNode('rielk-construction-template'));
         this.constructionMasteryBar = getElementFromFragment(frag, 'rielk-mastery', 'rielk-construction-mastery', true);
-        
+
         this.constructionCategoryMenu = getElementFromFragment(frag, 'rielk-construction-category-menu', 'realmed-category-menu', true);
         this.constructionArtisanMenu = getElementFromFragment(frag, 'rielk-construction-artisan-menu', 'artisan-menu', true);
         const constructionCategoryContainer = getElementFromFragment(frag, 'rielk-construction-category-container', 'div', true);
@@ -46,7 +46,7 @@ export class ConstructionInterface {
             });
             tab.setRecipes(recipes, construction);
             this.constructionSelectionTabs.set(category, tab);
-        });z
+        });
         this.constructionHouseMenu = new ConstructionHouseMenu(this.constructionHouseElement, construction);
         const modalFrag = new DocumentFragment();
         modalFrag.append(getTemplateNode('tier-mastery-menu'));
@@ -132,12 +132,20 @@ export class ConstructionInterface {
     renderMenu() {
         if (this.constructionHouseMenu == undefined)
             return;
+        this.renderfixtureItemUpdates(); //this needs to always be called
         if (this.renderQueue.menu) {
+            this.constructionHouseMenu.updateFixtureItems();
             this.constructionHouseMenu.updateAllRoomPanels(this.construction);
             this.constructionHouseMenu.updateFixtureButtons(this.game);
-            this.constructionHouseMenu.updateUnlocksPanel();
         }
         this.renderQueue.menu = false;
+    }
+    renderfixtureItemUpdates() {
+
+        if (!document.getElementById('rielk-construction-container').classList.contains('d-none') && !this.constructionHouseMenu?.root.parentElement?.parentElement.classList.contains('d-none')) {
+            this.constructionHouseMenu.updateFixtureItems(this.construction);
+            // this could update up to 8 menus every frame, so we optimize it to only do so when the player is looking at them
+        }
     }
     renderProgressBar() {
         if (!this.renderQueue.progressBar)

@@ -3477,6 +3477,7 @@
                   "quantity": 10
                 }
               ],
+              "changeFunc": []
               "currencyCosts": [],
               "modifiers": {
                 "perfectCookChance": 2,

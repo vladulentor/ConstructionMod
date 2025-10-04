@@ -72,14 +72,11 @@ export class ConstructionFixture extends RealmedObject {
             media: this.media,
             text: templateRielkLangString("TOAST_FIXTURE_COMPLETE", { fixtureName: this.name }),
             quantity: 0,
-            isImportant: true,  // <-- makes it persistent
+            isImportant: true,  // makes it persistent
             isError: false
         };
-
         const fixtureNotification = game.notifications.newAddSuccessNotification(`FixtureComplete-${this.id}`);
-        game.notifications.addNotification(fixtureNotification, finishNotification);        //notifyPlayer(construction, templateRielkLangString("TOAST_FIXTURE_COMPLETE", { fixtureName: this.name }), 'success');
-        const el = fixtureNotification.notificationElement; // usually the outer div
-        if (el) el.classList.add('construction-toast');
+        game.notifications.addNotification(fixtureNotification, finishNotification); 
     }
     get providedStats() {
         return this.recipes.filter(r => r.tier <= this.currentTier).map(r => r.stats);

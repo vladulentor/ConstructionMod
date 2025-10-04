@@ -131,7 +131,10 @@ export class Construction extends ArtisanSkill {
     get masteryModifiedInterval() {
         return 1700;
     }
-
+    onPageChange(){
+        super.onPageChange();
+        this.renderQueue.renderfixtureItemUpdates=true;
+    }
     shouldShowSkillInSidebar() {
         return super.shouldShowSkillInSidebar() || this.game.currentRealm === this.game.defaultRealm; // only show in default realm
     }

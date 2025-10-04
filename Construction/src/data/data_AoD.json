@@ -2,47 +2,51 @@
   "$schema": "https://melvoridle.com/assets/schema/gameData.json",
   "namespace": "rielkConstruction",
   "data": {
-    "skillID": "melvorAoD:Cartography",
-    "data": {
-      "refinementSlotCosts": [
-        {
-          "currencies": [
+    "skillData": [
+      {
+        "skillID": "melvorAoD:Cartography",
+        "data": {
+          "refinementSlotCosts": [
             {
-              "id": "melvorD:GP",
-              "quantity": 10000000
-            },
-            {
-              "id": "melvorD:GP",
-              "quantity": 15000000
+              "currencies": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 10000000
+                },
+                       {
+                  "id": "melvorD:GP",
+                  "quantity": 15000000
+                }
+              ]
             }
+          ],
+          "refinementModifiers": [
+            [
+              {
+                "key": "increasedDigSiteMapCharges",
+                "value": 1500
+              },
+              {
+                "key": "decreasedSkillIntervalPercent",
+                "skillID": "melvorAoD:Archaeology",
+                "value": 5
+              }
+            ],
+            [
+              {
+                "key": "increasedDigSiteMapCharges",
+                "value": 3000
+              },
+              {
+                "key": "decreasedSkillIntervalPercent",
+                "skillID": "melvorAoD:Archaeology",
+                "value": 10
+              }
+            ]
           ]
         }
-      ],
-      "refinementModifiers": [
-        [
-          {
-            "key": "increasedDigSiteMapCharges",
-            "value": 1500
-          },
-          {
-            "key": "decreasedSkillIntervalPercent",
-            "skillID": "melvorAoD:Archaeology",
-            "value": 5
-          }
-        ],
-        [
-          {
-            "key": "increasedDigSiteMapCharges",
-            "value": 3000
-          },
-          {
-            "key": "decreasedSkillIntervalPercent",
-            "skillID": "melvorAoD:Archaeology",
-            "value": 10
-          }
-        ]
-      ]
-    }
+      }
+    ]
   },
   "modifications": {
     "gamemodes": [

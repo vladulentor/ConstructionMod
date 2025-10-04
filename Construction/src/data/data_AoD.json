@@ -1,15 +1,63 @@
 {
   "$schema": "https://melvoridle.com/assets/schema/gameData.json",
   "namespace": "rielkConstruction",
+  "data": {
+    "skillID": "melvorAoD:Cartography",
+    "data": {
+      "refinementSlotCosts": [
+        {
+          "currencies": [
+            {
+              "id": "melvorD:GP",
+              "quantity": 10000000
+            },
+            {
+              "id": "melvorD:GP",
+              "quantity": 15000000
+            }
+          ]
+        }
+      ],
+      "refinementModifiers": [
+        [
+          {
+            "key": "increasedDigSiteMapCharges",
+            "value": 1500
+          },
+          {
+            "key": "decreasedSkillIntervalPercent",
+            "skillID": "melvorAoD:Archaeology",
+            "value": 5
+          }
+        ],
+        [
+          {
+            "key": "increasedDigSiteMapCharges",
+            "value": 3000
+          },
+          {
+            "key": "decreasedSkillIntervalPercent",
+            "skillID": "melvorAoD:Archaeology",
+            "value": 10
+          }
+        ]
+      ]
+    }
+  },
   "modifications": {
     "gamemodes": [
       {
         "id": "melvorAoD:AncientRelics",
         "levelCapIncreases": {
-          "add": ["melvorAoD:Pre99Dungeons", "melvorAoD:ImpendingDarknessSet100"]
+          "add": [
+            "melvorAoD:Pre99Dungeons",
+            "melvorAoD:ImpendingDarknessSet100"
+          ]
         },
         "startingSkills": {
-          "add": ["rielkConstruction:Construction"]
+          "add": [
+            "rielkConstruction:Construction"
+          ]
         }
       }
     ],

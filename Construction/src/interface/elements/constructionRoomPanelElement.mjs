@@ -2,7 +2,9 @@ const { loadModule } = mod.getContext(import.meta);
 
 const { getRielkLangString, templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
 
+await loadModule('src/interface/elements/constructionEfficiencyIconTooltipElement.mjs');
 await loadModule('src/interface/elements/constructionEfficiencyIconElement.mjs');
+
 class ConstructionRoomPanelElement extends HTMLElement {
     constructor() {
         super();

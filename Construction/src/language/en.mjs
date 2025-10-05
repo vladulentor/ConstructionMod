@@ -24,6 +24,7 @@ export const language = {
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'When all rooms contain furniture of a required tier or higher, your House Tier will increase. You will unlock permanent Construction bonuses and recieve supplies.',
     'MENU_TEXT_REWARDS': 'Rewards',
 
+        "MENU_TEXT_TOOLTIP_EFFICIENCY":"Chance to spend double resources and make more progress",
 
     'SHOP_NAME_Construction_Skillcape': 'Construction Skillcape',
 
@@ -53,7 +54,6 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_3': 'Flower Pot: Tier 3',
     'ITEM_NAME_Flower_Pots_Token_4': 'Flower Pot: Tier 4',
     'ITEM_NAME_Flower_Pots_Token_5': 'Flower Pot: Tier 5',
-
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
     'ITEM_DESCRIPTION_Builders_Body': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',

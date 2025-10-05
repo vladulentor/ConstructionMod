@@ -30,7 +30,7 @@ class Setup {
         await loadStylesheet('src/interface/construction-styles.css');
 
         await loadTemplates('src/interface/templates/construction.html');
-
+        await loadModule('src/interface/elements/constructionEfficiencyIconTooltipElement.mjs');
         await loadModule('src/interface/elements/constructionEfficiencyIconElement.mjs');
         await loadModule('src/interface/elements/constructionFixtureNavElement.mjs');
         await loadModule('src/interface/elements/constructionMasteryElement.mjs');

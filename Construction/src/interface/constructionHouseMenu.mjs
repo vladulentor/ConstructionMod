@@ -17,7 +17,7 @@ export class ConstructionHouseMenu {
             parent: container
         });
         var viewAllModifiersButton = createElement('button', {
-            className: 'btn btn-sm btn-alt-primary',
+            className: 'btn btn-sm btn-alt-warning',
             parent: buttonContainer
         })
         viewAllModifiersButton.role = 'button';

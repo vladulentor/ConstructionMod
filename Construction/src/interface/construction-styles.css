@@ -49,3 +49,12 @@ body.darkMode.superDark .bg-rielk-construction
     width: 100%; 
 }
 
+.glassy-house {
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    backdrop-filter: blur(4px);           /* frosted effect */
+    -webkit-backdrop-filter: blur(4px);   /* Safari support */
+    border: 2px solid #444;
+    border-radius: 4px;
+    padding: 2px;
+}
+

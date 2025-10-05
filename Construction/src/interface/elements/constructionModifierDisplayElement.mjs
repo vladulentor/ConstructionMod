@@ -59,7 +59,7 @@ class ConstructionModifierDisplayElement extends HTMLElement {
         this.modifierText.textContent = '';
         const formatter = getElementDescriptionFormatter('div', this.recipe.isUnlocked ? 'mb-1' : 'mb-1 text-warning');
         this.modifierText.append(...StatObject.formatDescriptions(this.recipe.stats, formatter));
-        if (this.recipe.doesGrantItems) {
+        if (this.recipe.doesGrantItems) {  // This is currently never used, but might be useful to know about.
             this.recipe.grantItems.forEach(iq => {
                 var nodes = templateRielkLangStringWithNodes('DESCRIPTION_ADDS_ITEM', {
                     itemImage: createElement('img', {

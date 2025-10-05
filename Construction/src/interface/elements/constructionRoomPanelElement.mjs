@@ -2,6 +2,7 @@ const { loadModule } = mod.getContext(import.meta);
 
 const { getRielkLangString, templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
 
+await loadModule('src/interface/elements/constructionEfficiencyIconElement.mjs');
 class ConstructionRoomPanelElement extends HTMLElement {
     constructor() {
         super();
@@ -21,6 +22,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.roomName = getElementFromFragment(this._content, 'room-name', 'span');
         this.targetContainer = getElementFromFragment(this._content, 'target-container', 'div');
         this.productPreservation = getElementFromFragment(this._content, 'product-preservation', 'preservation-icon');
+        this.productEfficiency = getElementFromFragment(this._content, 'product-efficiency', 'efficiency-icon');
         this.infoContainer = getElementFromFragment(this._content, 'info-container', 'div');
         this.infoBoxName = getElementFromFragment(this._content, 'product-name', 'span');
         this.infoBoxImage = getElementFromFragment(this._content, 'product-image', 'img');
@@ -141,9 +143,11 @@ class ConstructionRoomPanelElement extends HTMLElement {
             hideElement(this.grantsContainer);
             hideElement(this.buildContainer);
             hideElement(this.productPreservation);
+            hideElement(this.productEfficiency);
+
             return;
         }
-
+        showElement(this.productEfficiency);
         showElement(this.productPreservation);
         const progress = fixture.percentProgress;
         this.builtProgressText.textContent = templateRielkLangString('MENU_TEXT_PARTIAL_BUILT_PROGRESS', {
@@ -193,6 +197,8 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.grants.setSources(construction, fixtureRecipe);
         this.grants.hideMastery();
         this.productPreservation.setChance(construction.getPreservationChance(fixtureRecipe), construction.getPreservationCap(fixtureRecipe), construction.getPreservationSources(fixtureRecipe));
+        console.log(this.productEfficiency);
+        this.productEfficiency.setChance(construction.getPreservationChance(fixtureRecipe), construction.getPreservationCap(fixtureRecipe), construction.getPreservationSources(fixtureRecipe));
     }
 }
 window.customElements.define('rielk-construction-room-panel', ConstructionRoomPanelElement);

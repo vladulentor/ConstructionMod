@@ -8,7 +8,6 @@ export function unlockPlot(tier) {
         "5": "rielkConstruction:TreePlotRielk1"
     }
     const plotID = game.farming.plots.getObjectSafe(plotMap[tierlvl]);
-    console.log(plotID);
     if (plotID.state == 0) {
         plotID.state = 1;
     }

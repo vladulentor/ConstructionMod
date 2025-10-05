@@ -68,7 +68,12 @@ export const language = {
     'MODIFIER_DATA_tierArray':'Unlocks a new map tier',
 
     'DESCRIPTION_ADDS_ITEM': 'Gives ${itemQuantity} ${itemName} ${itemImage}',
-    'DESCRIPTION_UNLOCKS_PLOT': 'Unlock 1 ${plotCategory} Plot in Farming',
+    'MODIFIER_DATA_unlockPlot_1': 'Unlock an Allotment Plot in Farming',
+    'MODIFIER_DATA_unlockPlot_2': 'Unlock a Herb Plot in Farming',
+    'MODIFIER_DATA_unlockPlot_3': 'Unlock an Allotment Plot in Farming',
+    'MODIFIER_DATA_unlockPlot_4': 'Unlock a Herb Plot in Farming',
+    'MODIFIER_DATA_unlockPlot_5': 'Unlock a Tree Plot in Farming',
+
 
 
     'MASTERY_BONUS_ Construction_ 0': 'Unlock fixture\'s Tier 1 effects.',

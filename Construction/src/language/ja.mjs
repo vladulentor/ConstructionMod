@@ -60,15 +60,20 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
 
-        'TOAST_FIXTURE_COMPLETE':'${fixtureName}の建造が完了しました！',
+    'TOAST_FIXTURE_COMPLETE': '${fixtureName}の建造が完了しました！',
 
-    
+
     'MODIFIER_DATA_farmingTreeSeedReturn': '農業で木の種を収穫すると、その種を再び入手できる確率が +${value}% 増加します',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% のアクションが必要：建設で家具を作る',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% のアクションが必要：建設で家具を作る',
+    'MODIFIER_DATA_unlockPlot_1': '農業で畑の区画を解放する',
+    'MODIFIER_DATA_unlockPlot_2': '農業でハーブの区画を解放する',
+    'MODIFIER_DATA_unlockPlot_3': '農業で畑の区画を解放する',
+    'MODIFIER_DATA_unlockPlot_4': '農業でハーブの区画を解放する',
+    'MODIFIER_DATA_unlockPlot_5': '農業で木の区画を解放する',
+
 
     'DESCRIPTION_ADDS_ITEM': '与える ${itemQuantity} ${itemName} ${itemImage}',
-    'DESCRIPTION_UNLOCKS_PLOT': '農業で 1 つの ${plotCategory} 区画のロックを解除します',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'それを作るのに必要な資材がない',
 

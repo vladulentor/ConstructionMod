@@ -66,7 +66,6 @@ export class ConstructionFixture extends RealmedObject {
         this.progress = 0;
 
         construction.computeProvidedStats(true);
-        console.log('notify player');
         const finishNotification = {
             ...game.notifications.genericNotificationData,
             media: this.media,

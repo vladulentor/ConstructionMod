@@ -58,8 +58,13 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Body': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
     'ITEM_DESCRIPTION_Builders_Leggings': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
-
-        'TOAST_FIXTURE_COMPLETE':'你已完成建造 ${fixtureName}!',
+    'MODIFIER_DATA_unlockPlot_1': '解鎖農業中的菜園',
+    'MODIFIER_DATA_unlockPlot_2': '解鎖農業中的草藥園',
+    'MODIFIER_DATA_unlockPlot_3': '解鎖農業中的菜園',
+    'MODIFIER_DATA_unlockPlot_4': '解鎖農業中的草藥園',
+    'MODIFIER_DATA_unlockPlot_5': '解鎖農業中的果樹園',
+    
+    'TOAST_FIXTURE_COMPLETE': '你已完成建造 ${fixtureName}!',
 
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收穫時，+${value}% 幾率在農業中重新獲得樹種子',
@@ -67,7 +72,6 @@ export const language = {
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 動作用於在建造中製造家具',
 
     'DESCRIPTION_ADDS_ITEM': '給出 ${itemQuantity} ${itemName} ${itemImage}',
-    'DESCRIPTION_UNLOCKS_PLOT': '在農業解鎖 1 個 ${plotCategory} 地塊',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '你沒有建造它所需的材料。',
 

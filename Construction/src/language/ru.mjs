@@ -17,7 +17,7 @@ export const language = {
     'MENU_HOUSE_COMPLETION': 'Завершение дома',
     'MENU_BUILT': 'Построено',
     'MENU_HOUSE': "Дом",
-        'MENU_FIXTURES':'Фурнитура',
+    'MENU_FIXTURES': 'Фурнитура',
 
     'MENU_TIER': 'Уровень ${tiername}',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Что такое уровни дома?',
@@ -60,15 +60,19 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '+2 % к опыту навыка «Строительство».<br><span class=\"text-warning\">При экипировке всех четырех предметов одежды строителя: +8% к опыту строительного мастерства.</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '+2 % к опыту навыка «Строительство».<br><span class=\"text-warning\">При экипировке всех четырех предметов одежды строителя: +8% к опыту строительного мастерства.</span>',
 
-        'TOAST_FIXTURE_COMPLETE':'Вы завершили строительство {fixtureName}!',
+    'TOAST_FIXTURE_COMPLETE': 'Вы завершили строительство {fixtureName}!',
 
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% кусок, чтобы восстановить семя дерева в сельском хозяйстве, когда собрано',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% действий требуется для создания мебели в Строительстве',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% действий требуется для создания мебели в Строительстве',
-
+    'MODIFIER_DATA_unlockPlot_1': 'Разблокировать участок для огорода в сельском хозяйстве',
+    'MODIFIER_DATA_unlockPlot_2': 'Разблокировать участок для трав в сельском хозяйстве',
+    'MODIFIER_DATA_unlockPlot_3': 'Разблокировать участок для огорода в сельском хозяйстве',
+    'MODIFIER_DATA_unlockPlot_4': 'Разблокировать участок для трав в сельском хозяйстве',
+    'MODIFIER_DATA_unlockPlot_5': 'Разблокировать участок для деревьев в сельском хозяйстве',
+    
     'DESCRIPTION_ADDS_ITEM': 'Дает ${itemQuantity} ${itemName} ${itemImage}',
-    'DESCRIPTION_UNLOCKS_PLOT': 'Разблокирует 1 участок ${plotCategory} в разделе «Фермерство»',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'У вас нет необходимых материалов для его постройки.',
 

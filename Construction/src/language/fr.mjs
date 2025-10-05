@@ -17,7 +17,7 @@ export const language = {
     'MENU_HOUSE_COMPLETION': 'Complétion de la maison',
     'MENU_HOUSE': "Maison",
     'MENU_BUILT': 'Construit',
-        'MENU_FIXTURES':'Aménagements',
+    'MENU_FIXTURES': 'Aménagements',
 
     'MENU_TIER': 'Niveau ${tiername}',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Qu\'est-ce que les niveaux de maison ?',
@@ -61,14 +61,18 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '+2% d\'XP de compétence de construction.<br><span class=\"text-warning\">Avec les quatre éléments de la tenue de constructeur équipés : + 8 % d\'XP de maîtrise de la construction.</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '+2% d\'XP de compétence de construction.<br><span class=\"text-warning\">Avec les quatre éléments de la tenue de constructeur équipés : + 8 % d\'XP de maîtrise de la construction.</span>',
 
-        'TOAST_FIXTURE_COMPLETE':'Vous avez terminé la construction de votre ${fixtureName}!',
+    'TOAST_FIXTURE_COMPLETE': 'Vous avez terminé la construction de votre ${fixtureName}!',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% de chances de récupérer une graine d\'arbre en agriculture lors de la récolte',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% d\'actions requises pour construire des meubles en Construction',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% d\'actions requises pour construire des meubles en Construction',
+    'MODIFIER_DATA_unlockPlot_1': 'Débloque une parcelle de potager en agriculture',
+    'MODIFIER_DATA_unlockPlot_2': 'Débloque une parcelle d’herbes en agriculture',
+    'MODIFIER_DATA_unlockPlot_3': 'Débloque une parcelle de potager en agriculture',
+    'MODIFIER_DATA_unlockPlot_4': 'Débloque une parcelle d’herbes en agriculture',
+    'MODIFIER_DATA_unlockPlot_5': 'Débloque une parcelle d’arbres en agriculture',
 
     'DESCRIPTION_ADDS_ITEM': 'Donner ${itemQuantity} ${itemName} ${itemImage}',
-    'DESCRIPTION_UNLOCKS_PLOT': 'Débloque 1 Parcelle ${plotCategory} en Agriculture',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'Vous n\'avez pas les matériaux nécessaires pour construire cela.',
 

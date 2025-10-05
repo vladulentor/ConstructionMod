@@ -18,7 +18,7 @@ export const language = {
     'MENU_HOUSE': "Haus",
     'MENU_TIER': 'Stufe ${tiername}',
     'MENU_BUILT': 'Gebaut',
-        'MENU_FIXTURES':'Einbauten',
+    'MENU_FIXTURES': 'Einbauten',
 
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Was sind Hausstufen?',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Die Stufe deines Hauses beginnt bei 0. Wenn du Möbel baust und jeden Raum füllst, wird die Stufe deines Hauses steigen.</span>',
@@ -62,11 +62,16 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '+2 % Fertigkeits-EP in Konstruktion.<br><span class=\"text-warning\">Wenn alle vier Teile des Kostüms der brennenden Menschheit ausgerüstet sind: +8 % Konstruktion-Meisterungs-EP.</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '+2 % Fertigkeits-EP in Konstruktion.<br><span class=\"text-warning\">Wenn alle vier Teile des Kostüms der brennenden Menschheit ausgerüstet sind: +8 % Konstruktion-Meisterungs-EP.</span>',
 
-        'TOAST_FIXTURE_COMPLETE':'Du hast deine ${fixtureName} fertiggestellt!',
+    'TOAST_FIXTURE_COMPLETE': 'Du hast deine ${fixtureName} fertiggestellt!',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% chance, beim Ernten einen Baumsamen in der Landwirtschaft zurückzugewinnen',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% Aktionen erforderlich, um Möbel im Bauwesen zu erstellen',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% Aktionen erforderlich, um Möbel im Bauwesen zu erstellen',
+    'MODIFIER_DATA_unlockPlot_1': 'Schalte ein Gemüsebeet in der Landwirtschaft frei',
+    'MODIFIER_DATA_unlockPlot_2': 'Schalte ein Kräuterbeet in der Landwirtschaft frei',
+    'MODIFIER_DATA_unlockPlot_3': 'Schalte ein Gemüsebeet in der Landwirtschaft frei',
+    'MODIFIER_DATA_unlockPlot_4': 'Schalte ein Kräuterbeet in der Landwirtschaft frei',
+    'MODIFIER_DATA_unlockPlot_5': 'Schalte ein Baumbeet in der Landwirtschaft frei',
 
     'DESCRIPTION_ADDS_ITEM': 'Gibt ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': 'Schaltet 1 ${plotCategory} Feld in der Landwirtschaft frei',

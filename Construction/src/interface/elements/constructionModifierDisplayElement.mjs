@@ -78,27 +78,18 @@ class ConstructionModifierDisplayElement extends HTMLElement {
                 this.modifierText.append(...nodes)
             });
         }
-        if (this.recipe.unlockPlot != undefined) {
-            const text = templateRielkLangString('DESCRIPTION_UNLOCKS_PLOT', {
-                plotCategory: this.recipe.unlockPlot.category.name
-            });
-            this.modifierText.append(formatter({ text: text }));
-        }
-                    console.log ('logging for', this.recipe);
 
         if (this.recipe.changeFunc != undefined) {
-            console.log ('logging for', this.recipe);
-            // Build a translation key dynamically based on the effect
-            const translationKey = `MODIFIER_DATA_${this.recipe.changeFunc}`;
 
             // Look it up in your language object
-            const text = getRielkLangString(translationKey);
+            let text = templateRielkLangString(`MODIFIER_DATA_${this.recipe.changeFunc}`, {tierNum: this.recipe.id.slice(-1) });
+            if(text.startsWith("UNDEFINED TRANSLATION")) //if we ever add a modifier that starts with UNDEFINED TRANSLATION, we'll need to make this more robust
+            text = templateRielkLangString(`MODIFIER_DATA_${this.recipe.changeFunc}_${this.recipe.id.slice(-1)}`, {tierNum: this.recipe.id.slice(-1) });
 
             this.modifierText.append(formatter({ text: text }));
         }
-        else console.log("nothing");
-
     }
+
     setLocked(recipe, construction) {
         hideElement(this.fixtureImage);
         hideElement(this.modifierContainer);

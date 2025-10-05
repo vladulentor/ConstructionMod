@@ -16,7 +16,7 @@ export const language = {
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': '하우스 단계 보너스가 해제되었습니다!',
     'MENU_HOUSE_COMPLETION': '하우스 완성도',
     'MENU_BUILT': '완성됨',
-        'MENU_FIXTURES':'설치물',
+    'MENU_FIXTURES': '설치물',
 
     'MENU_TIER': '등급 ${tiername}',
     'MENU_HOUSE': "집",
@@ -61,15 +61,19 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
 
-        'TOAST_FIXTURE_COMPLETE':'${fixtureName} 건설이 완료되었습니다!',
+    'TOAST_FIXTURE_COMPLETE': '${fixtureName} 건설이 완료되었습니다!',
 
-    
+
     'MODIFIER_DATA_farmingTreeSeedReturn': '농사에서 수확 시 나무 씨앗을 회복할 확률 +${value}%',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 행동 필요: 건축에서 가구 제작',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 행동 필요: 건축에서 가구 제작',
-
+    'MODIFIER_DATA_unlockPlot_1': '농업에서 채소 밭을 잠금 해제합니다',
+    'MODIFIER_DATA_unlockPlot_2': '농업에서 허브 밭을 잠금 해제합니다',
+    'MODIFIER_DATA_unlockPlot_3': '농업에서 채소 밭을 잠금 해제합니다',
+    'MODIFIER_DATA_unlockPlot_4': '농업에서 허브 밭을 잠금 해제합니다',
+    'MODIFIER_DATA_unlockPlot_5': '농업에서 나무 밭을 잠금 해제합니다',
+    
     'DESCRIPTION_ADDS_ITEM': '준다 ${itemQuantity} ${itemName} ${itemImage}',
-    'DESCRIPTION_UNLOCKS_PLOT': '농장에서 ${plotCategory} 플롯 1개 잠금 해제',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '그것을 만드는 데 필요한 재료가 없습니다.',
 

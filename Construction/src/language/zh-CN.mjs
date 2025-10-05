@@ -16,7 +16,7 @@ export const language = {
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': '房屋等级奖励已解锁！',
     'MENU_HOUSE_COMPLETION': '房屋完成度',
     'MENU_TIER': '等级 ${tiername}',
-        'MENU_FIXTURES':'家具配件',
+    'MENU_FIXTURES': '家具配件',
 
     'MENU_BUILT': '已建造',
     'MENU_HOUSE': "房子",
@@ -61,15 +61,19 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
 
-        'TOAST_FIXTURE_COMPLETE':'你已完成建造 ${fixtureName}!',
+    'TOAST_FIXTURE_COMPLETE': '你已完成建造 ${fixtureName}!',
 
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收获时有机会在农业中重新获得树种',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 动作用于在建造中制造家具',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 动作用于在建造中制造家具',
-
+    'MODIFIER_DATA_unlockPlot_1': '解锁农业中的菜地',
+    'MODIFIER_DATA_unlockPlot_2': '解锁农业中的草药地',
+    'MODIFIER_DATA_unlockPlot_3': '解锁农业中的菜地',
+    'MODIFIER_DATA_unlockPlot_4': '解锁农业中的草药地',
+    'MODIFIER_DATA_unlockPlot_5': '解锁农业中的果树地',
+    
     'DESCRIPTION_ADDS_ITEM': '给出 ${itemQuantity} ${itemName} ${itemImage}',
-    'DESCRIPTION_UNLOCKS_PLOT': '解锁 1 个 ${plotCategory} 农耕地块',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '你没有建造它所需的材料。',
 

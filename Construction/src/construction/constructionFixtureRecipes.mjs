@@ -13,8 +13,6 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
             this.modifiers = new ConstructionModifiers(data, game, `${this.id}`);
             if (data.grantItem != undefined)
                 this.grantItems = game.items.getQuantities(data.grantItem);
-            if (data.unlockPlot != undefined)
-                this.unlockPlot = game.farming.plots.getObjectSafe(data.unlockPlot);
             if (data.changeFunc != undefined)
                 this.changeFunc = data.changeFunc;
 
@@ -29,8 +27,8 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
             this.modifiers.applyDataModification(data, game);
             if (data.grantItem != undefined)
                 this.grantItems = game.items.getQuantities(data.grantItem);
-            if (data.unlockPlot != undefined)
-                this.unlockPlot = game.farming.plots.getObjectSafe(data.unlockPlot)
+            if (data.changeFunc != undefined)
+                this.changeFunc = data.changeFunc;
 
         }
         catch (e) {
@@ -63,24 +61,17 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
 
     onLoad() {
         if (this.isUnlocked) {
-            this.doUnlockPlot();
             if (this.changeFunc) {
                 this.callChangeFunc();
             }
         }
     }
 
-    doUnlockPlot() {
-        if (this.unlockPlot != undefined && this.unlockPlot.state == 0) {
-            this.unlockPlot.state = 1;
-            return true;
-        }
-        return false;
-    }
+
     callChangeFunc() {
         const effectFunc = EffectRegistry[this.changeFunc]; // look up function by name
         if (typeof effectFunc === "function") {
-            effectFunc.call(this);
+            effectFunc.call(this, this);
         } else {
             console.warn(`Effect not found in registry, going insane: ${this.changeFunc}`);
         }
@@ -98,9 +89,7 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
 
             if (this.grantItems != undefined)
                 this.grantItems.forEach(iq => game.bank.addItem(iq.item, iq.quantity, true, true, true));
-            if (this.doUnlockPlot())
-                game.farming.showPlotsInCategory(this.unlockPlot.category);
-            if (this.ChangeFunc) {
+            if (this.changeFunc) {
                 this.callChangeFunc();
 
             }

@@ -16,7 +16,7 @@ export const language = {
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'Bonus del livello della casa sbloccato!',
     'MENU_HOUSE_COMPLETION': 'Completamento della casa',
     'MENU_BUILT': 'Costruito',
-        'MENU_FIXTURES':'Arredi',
+    'MENU_FIXTURES': 'Arredi',
 
     'MENU_HOUSE': "Casa",
     'MENU_TIER': 'Livello ${tiername}',
@@ -63,12 +63,16 @@ export const language = {
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% di possibilità di recuperare un seme di albero in agricoltura quando raccolto',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% azioni necessarie per costruire mobili in Costruzione',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% azioni necessarie per costruire mobili in Costruzione',
+    'MODIFIER_DATA_unlockPlot_1': 'Sblocca un appezzamento di orto in Agricoltura',
+    'MODIFIER_DATA_unlockPlot_2': 'Sblocca un appezzamento di erbe in Agricoltura',
+    'MODIFIER_DATA_unlockPlot_3': 'Sblocca un appezzamento di orto in Agricoltura',
+    'MODIFIER_DATA_unlockPlot_4': 'Sblocca un appezzamento di erbe in Agricoltura',
+    'MODIFIER_DATA_unlockPlot_5': 'Sblocca un appezzamento di alberi in Agricoltura',
 
-        'TOAST_FIXTURE_COMPLETE':'Hai completato la costruzione del tuo ${fixtureName}!',
 
     'DESCRIPTION_ADDS_ITEM': 'Dare ${itemQuantity} ${itemName} ${itemImage}',
-    'DESCRIPTION_UNLOCKS_PLOT': 'Sblocca 1 Appezzamento di ${plotCategory} in Coltivazione',
 
+    'TOAST_FIXTURE_COMPLETE': 'Hai completato la costruzione del tuo ${fixtureName}!',
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'Non hai i materiali necessari per Costruirlo.',
 
     'MASTERY_BONUS_ Construction_ 0': 'Sblocca gli effetti del livello 1 dell\'arredamento.',

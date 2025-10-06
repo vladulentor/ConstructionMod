@@ -199,8 +199,11 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.grants.setSources(construction, fixtureRecipe);
         this.grants.hideMastery();
         this.productPreservation.setChance(construction.getPreservationChance(fixtureRecipe), construction.getPreservationCap(fixtureRecipe), construction.getPreservationSources(fixtureRecipe));
-        console.log(this.productEfficiency);
-        this.productEfficiency.setChance(construction.getPreservationChance(fixtureRecipe), construction.getPreservationCap(fixtureRecipe), construction.getPreservationSources(fixtureRecipe));
+        this.productEfficiency.setChance(
+            construction.getEfficiencyChance(fixtureRecipe), 
+            construction.getEfficiencyPotencyMultiplier(fixtureRecipe), 
+            construction.getEfficiencyCostMultiplier(fixtureRecipe),
+            construction.getEfficiencyChancePotencySources(fixtureRecipe));
     }
 }
 window.customElements.define('rielk-construction-room-panel', ConstructionRoomPanelElement);

@@ -2,21 +2,28 @@
 class EfficiencyIconTooltipElement extends HTMLElement {
     constructor() {
         super();
-        console.log("I was here");
         this._content = new DocumentFragment();
         this._content.append(getTemplateNode('efficiency-icon-tooltip-template'));
         this.effect = getElementFromFragment(this._content, 'cap', 'h5');
-        this.sourceContainer = getElementFromFragment(this._content, 'source-container', 'div');
+        this.chanceContainer = getElementFromFragment(this._content, 'chance-source-container', 'div');
+        this.potencyContainer = getElementFromFragment(this._content, 'potency-source-container', 'div');
     }
     connectedCallback() {
         this.appendChild(this._content);
     }
-    setCap(cap) {
-        this.effect.textContent = "Efficiency always takes twice the resources.";
+    setCostNPotency(cost, potency) {
+        this.effect.textContent = `Activating the effect will consume ${cost} times the resources and make ${potency} times the progress.`
     }
-    updateSources(sourceSpans) {
-        this.sourceContainer.textContent = '';
-        this.sourceContainer.append(...sourceSpans);
+    updateSources(chancePotencySourceSpans) {
+        const chanceSourceSpans = chancePotencySourceSpans.chanceSpans;
+        const potencySourceSpans = chancePotencySourceSpans.potencySpans;
+
+        this.chanceContainer.textContent = '';
+        this.potencyContainer.textContent = '';
+
+        this.chanceContainer.append(...chanceSourceSpans);
+        this.potencyContainer.append(...potencySourceSpans);
+
     }
 }
 window.customElements.define('efficiency-icon-tooltip', EfficiencyIconTooltipElement);

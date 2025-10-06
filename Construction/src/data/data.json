@@ -843,7 +843,8 @@
                     "value": 10,
                     "skillID": "rielkConstruction:Construction"
                   }
-                ]
+                ],
+                "rielkConstruction:skillEfficiencyPotency": 2
               }
             },
             {
@@ -878,7 +879,8 @@
                     "value": 10,
                     "skillID": "rielkConstruction:Construction"
                   }
-                ]
+                ],
+                "rielkConstruction:skillEfficiencyChance": 25
               }
             },
             {
@@ -4218,7 +4220,8 @@
                     "value": -2,
                     "skillID": "melvorD:Crafting"
                   }
-                ]
+                ],
+                "rielkConstruction:skillEfficiencyChance": 25
               }
             },
             {
@@ -4254,7 +4257,8 @@
                     "value": -3,
                     "skillID": "melvorD:Fletching"
                   }
-                ]
+                ],
+                "rielkConstruction:skillEfficiencyPotency": 2
               }
             },
             {
@@ -4290,7 +4294,8 @@
                     "value": -3,
                     "skillID": "melvorD:Smithing"
                   }
-                ]
+                ],
+                "rielkConstruction:skillEfficiencyChance": 25
               }
             },
             {
@@ -5060,6 +5065,7 @@
       },
       {
         "id": "constructionActionsToUpgrade",
+        "inverted": true,
         "allowedScopes": [
           {
             "scopes": {},
@@ -5073,6 +5079,73 @@
               {
                 "text": "+${value}% actions required to build Furniture in Construction",
                 "lang": "MODIFIER_DATA_increaseConstructionActionsToUpgrade",
+                "above": 0,
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "skillEfficiencyChance",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "-${value}% Efficiency chance",
+                "lang": "MODIFIER_DATA_decrease_skillEfficiencyChance",
+                "below": 0,
+                "includeSign": false
+              },
+              {
+                "text": "+${value}% Efficiency chance",
+                "lang": "MODIFIER_DATA_increase_skillEfficiencyChance",
+                "above": 0,
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "skillEfficiencyPotency",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "+${value} Progress/Materials made when activating Efficiency",
+                "lang": "MODIFIER_DATA_decrease_skillEfficiencyPotency",
+                "below": 0,
+                "includeSign": false
+              },
+              {
+                "text": "-${value} Progress/Materials made when activating Efficiency",
+                "lang": "MODIFIER_DATA_increase_skillEfficiencyPotency",
+                "above": 0,
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "skillEfficiencyCost",
+        "inverted": true,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "+${value} Resource cost when activating Efficiency",
+                "lang": "MODIFIER_DATA_decrease_skillEfficiencyCost",
+                "below": 0,
+                "includeSign": false
+              },
+              {
+                "text": "-${value} Resource cost when activating Efficiency",
+                "lang": "MODIFIER_DATA_increase_skillEfficiencyCost",
                 "above": 0,
                 "includeSign": false
               }

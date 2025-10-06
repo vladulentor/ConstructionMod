@@ -13,7 +13,7 @@
         <div class="block block-rounded block-link-pop border-top border-rielk-construction border-4x">
           <div class="row no-gutters" id="rielk-construction-category-container">
             <div class="col-12 col-md-4" id="rielk-construction-artisan-element">
-              <artisan-menu id="rielk-construction-artisan-menu"></artisan-menu>
+              <cons-artisan-menu id="rielk-construction-artisan-menu"></cons-artisan-menu>
             </div>
             <div class="col-12 d-none" id="rielk-construction-house-element"></div>
           </div>
@@ -310,9 +310,17 @@
   <h5 class="font-w400 font-size-sm mb-1 text-warning text-center" id="cap"></h5>
   <h5 class="font-w400 font-size-sm mb-1 text-center">
     <small>
-      <rielk-lang-string lang-id="MENU_TEXT_TOOLTIP_CHANCE_BELOW"></lang-string>
+      <lang-string lang-id="MENU_TEXT_TOOLTIP_CHANCE_BELOW"></lang-string>
     </small>
   </h5>
   <div class="dropdown-divider"></div>
-  <div class="row gutters-tiny w-100 px-3 font-size-sm" id="source-container"></div>
+  <div class="d-flex gap-2 w-100 px-3">
+    <div class="w-50">
+      <div id="potency-source-container" class="row mx-1"></div>
+    </div>
+    <div class="w-50">
+      <div id="chance-source-container" class="row  mx-1"></div>
+    </div>
+  </div>
+
 </template>

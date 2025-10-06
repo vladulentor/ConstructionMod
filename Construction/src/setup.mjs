@@ -32,13 +32,13 @@ class Setup {
         await loadTemplates('src/interface/templates/construction.html');
         await loadModule('src/interface/elements/constructionEfficiencyIconTooltipElement.mjs');
         await loadModule('src/interface/elements/constructionEfficiencyIconElement.mjs');
+        await loadModule('src/interface/elements/constructionArtisanMenu.mjs');
         await loadModule('src/interface/elements/constructionFixtureNavElement.mjs');
         await loadModule('src/interface/elements/constructionMasteryElement.mjs');
         await loadModule('src/interface/elements/constructionTierMasteryBonusElement.mjs');
         await loadModule('src/interface/elements/constructionModifierDisplayElement.mjs');
         await loadModule('src/interface/elements/constructionRecipeOptionElement.mjs');
         await loadModule('src/interface/elements/constructionRoomPanelElement.mjs');
-
         await loadModule('src/interface/elements/constructionUpgradesPanelElement.mjs');
         await loadModule('src/interface/elements/rielkLangStringElement.mjs');
     }

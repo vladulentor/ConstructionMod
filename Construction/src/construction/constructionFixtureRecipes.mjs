@@ -78,7 +78,7 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
     }
 
     makeProgress(prog) {
-        for (let a = 0; a < prog; a++) // real high school coding hours
+        for (let a = 0; a < Math.floor(prog); a++) // real high school coding hours
         {
             this.fixture.progress++;
             if (this.fixture.progress >= this.actionCost) {
@@ -89,8 +89,8 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
 
                 if (this.grantItems != undefined)
                     this.grantItems.forEach(iq => game.bank.addItem(iq.item, iq.quantity, true, true, true));
-                if (this.doUnlockPlot())
-                    game.farming.showPlotsInCategory(this.unlockPlot.category);
+                if (this.changeFunc)
+                    this.callChangeFunc();
                 this.skill.renderQueue.menu = true;
                 return false;
 

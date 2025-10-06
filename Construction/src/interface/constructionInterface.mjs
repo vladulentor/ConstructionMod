@@ -16,7 +16,7 @@ export class ConstructionInterface {
         this.constructionMasteryBar = getElementFromFragment(frag, 'rielk-mastery', 'rielk-construction-mastery', true);
 
         this.constructionCategoryMenu = getElementFromFragment(frag, 'rielk-construction-category-menu', 'realmed-category-menu', true);
-        this.constructionArtisanMenu = getElementFromFragment(frag, 'rielk-construction-artisan-menu', 'artisan-menu', true);
+        this.constructionArtisanMenu = getElementFromFragment(frag, 'rielk-construction-artisan-menu', 'cons-artisan-menu', true);
         const constructionCategoryContainer = getElementFromFragment(frag, 'rielk-construction-category-container', 'div', true);
         this.constructionHouseElement = getElementFromFragment(frag, 'rielk-construction-house-element', 'div');
         this.constructionArtisanElement = getElementFromFragment(frag, 'rielk-construction-artisan-element', 'div');
@@ -24,16 +24,6 @@ export class ConstructionInterface {
 
         this.constructionCategoryMenu.addOptions(construction.categories.allObjects, getRielkLangString('MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY'), this._createSwitchConstructionCategory());
         this.constructionArtisanMenu.init(construction);
-        let target = this.constructionArtisanMenu.querySelector('.col-12.block.block-rounded-double.bg-combat-inner-dark');
-        if (target) {
-            target.style.display = 'none';
-        }
-        ['mastery-xp-icon', 'mastery-pool-icon'].forEach(tag => {
-            let el = this.constructionArtisanMenu.querySelector(tag);
-            if (el) el.style.display = 'none'; // we hide it with post-processing since otherwise we'd need our own productionmenu like the one altmagic uses
-        });
-
-
         construction.categories.forEach((category) => {
             if (category.type !== 'Artisan')
                 return;

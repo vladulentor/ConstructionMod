@@ -3,10 +3,9 @@ const { loadModule } = mod.getContext(import.meta);
 const { getRielkLangString } = await loadModule('src/language/translationManager.mjs');
 await loadModule('src/interface/elements/constructionEfficiencyIconTooltipElement.mjs');
 
-class EfficiencyIconElement extends InfoIconElement {
+export class EfficiencyIconElement extends InfoIconElement {
     constructor() {
         super();
-        console.log("I am here");
         this._content = new DocumentFragment();
         this._content.append(getTemplateNode('efficiency-icon-template'));
         this.container = getElementFromFragment(this._content, 'container', 'div');
@@ -18,10 +17,43 @@ class EfficiencyIconElement extends InfoIconElement {
         this.tooltipElem = document.createElement('efficiency-icon-tooltip');
         //        this.tooltipElem = new EfficiencyIconTooltipElement();
     }
-    setChance(chance, cap, sourceSpans) {
-        this.chance.textContent = formatPercent(Math.round(15));
-        this.tooltipElem.setCap(80);
-        this.tooltipElem.updateSources([]);
+    connectedCallback() {
+        this.appendChild(this._content);
+        if (this.tooltip !== undefined)
+            return;
+        this.tooltip = tippy(this.container, {
+            content: this.tooltipElem,
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+            animation: false,
+            appendTo: document.body,
+            maxWidth: 370, //this is the only reason we make our own tippy, it wouldn't fit oetherwise
+            popperOptions: {
+                strategy: 'fixed',
+                modifiers: [
+                    {
+                        name: 'flip',
+                        options: {
+                            fallbackPlacements: ['top'],
+                        },
+                    },
+                    {
+                        name: 'preventOverflow',
+                        options: {
+                            altAxis: true,
+                            tether: false,
+                        },
+                    },
+                ],
+            },
+        });
+
+    }
+    setChance(chance, potency, cost, chancePotencySourceSpans) {
+        this.chance.textContent = formatPercent(Math.round(chance));
+        this.tooltipElem.setCostNPotency(cost, potency);
+        this.tooltipElem.updateSources(chancePotencySourceSpans);
     }
 }
 window.customElements.define('efficiency-icon', EfficiencyIconElement);

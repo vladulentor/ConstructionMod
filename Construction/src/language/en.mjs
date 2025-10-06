@@ -62,6 +62,13 @@ export const language = {
 
     'TOAST_FIXTURE_COMPLETE':'You\'ve finished building your ${fixtureName}!',
 
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '-${value}% chance to gain extra Progress/Materials for increased cost in Construction',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '+${value}% chance to gain extra Progress/Materials for increased cost in Construction',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency':'-${value} Progress/Materials made when activating Efficiency',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency':'+${value} Progress/Materials made when activating Efficiency',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '+${value} Resource cost when activating Efficiency',
+    'MODIFIER_DATA_increase_skillEfficiencyCost':'-${value} Resource cost when activating Efficiency',
+
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% chance to regain a Tree Seed in Farming when harvested',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% actions required to build Furniture in Construction',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% actions required to build Furniture in Construction',

@@ -477,6 +477,7 @@ export class Construction extends ArtisanSkill {
                 cost._currencies = originalCurrencies;
                 cost._items = originalItems; // This reset is for the specific case of the player not having enough for the efficiency ability but having enough for an ormal craft, so we give it to them for no extra cost.
                     //TODO: Add a message if this happens
+                    //PS, this could technically be abused by someone alays holding a super small amount of items when building to not suffer the costs, but who would do that
             }
         }
         buildAction() {

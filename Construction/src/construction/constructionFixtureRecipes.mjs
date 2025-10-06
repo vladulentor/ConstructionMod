@@ -77,24 +77,27 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
         }
     }
 
+    makeProgress(prog) {
+        for (let a = 0; a < prog; a++) // real high school coding hours
+        {
+            this.fixture.progress++;
+            if (this.fixture.progress >= this.actionCost) {
+                this.fixture.upgrade(this.skill);
 
-    makeProgress() {
-        this.fixture.progress++;
-        this.skill.renderQueue.menu = true;
-        if (this.fixture.progress >= this.actionCost) {
-            this.fixture.upgrade(this.skill);
-
-            this.skill.addMasteryProgress(this.fixture.currentTier);
+                this.skill.addMasteryProgress(this.fixture.currentTier);
 
 
-            if (this.grantItems != undefined)
-                this.grantItems.forEach(iq => game.bank.addItem(iq.item, iq.quantity, true, true, true));
-            if (this.changeFunc) {
-                this.callChangeFunc();
+                if (this.grantItems != undefined)
+                    this.grantItems.forEach(iq => game.bank.addItem(iq.item, iq.quantity, true, true, true));
+                if (this.doUnlockPlot())
+                    game.farming.showPlotsInCategory(this.unlockPlot.category);
+                this.skill.renderQueue.menu = true;
+                return false;
 
             }
-            return false;
+
         }
+        this.skill.renderQueue.menu = true;
         return true;
     }
 }

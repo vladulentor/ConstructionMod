@@ -451,6 +451,7 @@ export class Construction extends ArtisanSkill {
                 break;
         }
     }
+
     addMasteryProgress(tier) {
         let tierData = this.tierMasteries.getObjectSafe(`rielkConstruction:${tier}`);
 
@@ -461,168 +462,193 @@ export class Construction extends ArtisanSkill {
         this.renderQueue.masteryBonusElements = true;
 
     }
+        scalecost(cost, multiplier = 1) {
+            const originalCurrencies = new Map(cost._currencies);
+            const originalItems = new Map(cost._items);
 
-    buildAction() {
-        const recipeCosts = this.getCurrentBuildRecipeCosts();
-        if (!recipeCosts.checkIfOwned()) {
-            this.game.combat.notifications.add({
-                type: 'Player',
-                args: [this, this.noCostsMessage, 'danger']
+            cost._currencies.forEach((quantity, currency, map) => {
+                map.set(currency, quantity * multiplier);
             });
-            this.stop();
-            return;
-        }
-        this.preAction();
-        const preserve = rollPercentage(this.getPreservationChance(this.activeBuildRecipe));
-        if (preserve) {
-            this.game.combat.notifications.add({
-                type: 'Preserve',
-                args: [this]
+            cost._items.forEach((quantity, item, map) => {
+                map.set(item, quantity * multiplier);
             });
-            this.recordCostPreservationStats(recipeCosts);
-        } else {
-            recipeCosts.consumeCosts();
-            this.recordCostConsumptionStats(recipeCosts);
+
+            if (!cost.checkIfOwned()) {
+                cost._currencies = originalCurrencies;
+                cost._items = originalItems; // This reset is for the specific case of the player not having enough for the efficiency ability but having enough for an ormal craft, so we give it to them for no extra cost.
+                    //TODO: Add a message if this happens
+            }
         }
-        const continueSkill1 = this.addActionRewards();
-        const continueSkill2 = this.selectedFixtureRecipe.makeProgress();
-        this.postAction();
-        const nextCosts = this.getCurrentBuildRecipeCosts();
-        if (continueSkill1 && continueSkill2 && nextCosts.checkIfOwned()) {
-            this.startActionTimer();
-        } else {
-            if (!nextCosts.checkIfOwned())
+        buildAction() {
+            const recipeCosts = this.getCurrentBuildRecipeCosts();
+            if (!recipeCosts.checkIfOwned()) {
                 this.game.combat.notifications.add({
                     type: 'Player',
                     args: [this, this.noCostsMessage, 'danger']
                 });
-            this.stop();
-        }
-    }
-
-    toggleBuilding(room, fixture) {
-        if (this.isActive) {
-            if (this._actionMode == 1) {
                 this.stop();
                 return;
-            } else if (!this.stop())
-                return;
+            }
+            this.preAction();
+            const efficiency = rollPercentage(50);
+            let progressMult = 1;
+            if (efficiency) {
+                let costMult = 2;
+                this.scalecost(recipeCosts, costMult);
+                console.log("Eff called");
+                console.log("costs:", recipeCosts);
+                progressMult = 3;
+            }
+            const preserve = rollPercentage(this.getPreservationChance(this.activeBuildRecipe));
+            if (preserve) {
+                this.game.combat.notifications.add({
+                    type: 'Preserve',
+                    args: [this]
+                });
+                this.recordCostPreservationStats(recipeCosts);
+            } else {
+                recipeCosts.consumeCosts();
+                this.recordCostConsumptionStats(recipeCosts);
+            }
+            const continueSkill1 = this.addActionRewards();
+            const continueSkill2 = this.selectedFixtureRecipe.makeProgress(progressMult);
+            this.postAction();
+            const nextCosts = this.getCurrentBuildRecipeCosts();
+            if (continueSkill1 && continueSkill2 && nextCosts.checkIfOwned()) {
+                this.startActionTimer();
+            } else {
+                if (!nextCosts.checkIfOwned())
+                    this.game.combat.notifications.add({
+                        type: 'Player',
+                        args: [this, this.noCostsMessage, 'danger']
+                    });
+                this.stop();
+            }
         }
-        if (room == undefined || fixture == undefined)
-            return;
-        if (!this.getRecipeCosts(fixture.currentRecipe).checkIfOwned()) {
-            notifyPlayer(this, this.noBuildCostsMessage, 'danger');
-            return;
-        }
-        this._actionMode = 1;
-        this.selectedRoom = room;
-        this.selectedFixture = fixture;
-        this.selectedFixtureRecipe = fixture.currentRecipe;
-        this.start();
 
-    }
-
-    getRegistry(type) {
-        switch (type) {
-            case ScopeSourceType.Category:
-                return this.categories;
-            case ScopeSourceType.Action:
-                return this.actions;
-        }
-    }
-    onAnyLevelUp() {
-        super.onAnyLevelUp();
-        this.renderQueue.fictureUnlock = true;
-        this.renderQueue.menu = true;
-    }
-    queueBankQuantityRender(item) {
-            super.queueBankQuantityRender(item);
-        this.renderQueue.renderfixtureItemUpdates = true;
-    }
-
-    onLoad() {
-        super.onLoad();
-        this.renderQueue.menu = true;
-        this.renderQueue.fictureUnlock = true;
-        this.renderQueue.masteryBar = true;
-        this.renderQueue.masteryBonusElements = true;
-
-        this.selectRealm(this.currentRealm);
-        onInterfaceReady(async () => {
-            this.ui.renderVisibleRooms();
-            this.render();
-        });
-        if (this._actionMode == 1) {
-            var recipe = this.activeBuildRecipe;
-            this.ui.switchConstructionCategory(recipe.category)
-            this.ui.selectFixture(recipe.fixture, recipe.fixture.room, this);
-        }
-        this.fixtures.forEach(fixture => fixture.onLoad());
-        this.updateRecipeCounts();
-        this.popTierMasteries();
-
-        this.render();
-    }
-    resetActionState() {
-        super.resetActionState();
-        this._actionMode = undefined;
-        this.selectedRoom = undefined;
-        this.selectedFixture = undefined;
-        this.selectedFixtureRecipe = undefined;
-    }
-    updateForExistingCapIncreases() {
-        var _a;
-        var initalLevel;
-        (_a = this.game.currentGamemode.initialLevelCaps) === null || _a === void 0 ? void 0 : _a.forEach(({ skill, value }) => {
-            if (skill == this)
-                initalLevel = value;
-        });
-        if (initalLevel == undefined)
-            initalLevel = this.game.currentGamemode.defaultInitialLevelCap;
-        if (initalLevel == undefined)
-            initalLevel = -1;
-        this.setLevelCap(initalLevel);
-        this.game.activeLevelCapIncreases.forEach((capIncrease) => {
-            capIncrease.requirementSets.forEach((reqSet) => {
-                if (!reqSet.given)
+        toggleBuilding(room, fixture) {
+            if (this.isActive) {
+                if (this._actionMode == 1) {
+                    this.stop();
                     return;
-                switch (capIncrease.levelType) {
-                    case 'Standard':
-                        capIncrease.fixedIncreases.forEach((skillIncrease) => {
-                            if (skillIncrease.skill == this)
-                                this.applyLevelCapIncrease(skillIncrease);
-                        });
-                        capIncrease.setIncreases.forEach(({ value }) => {
-                            if (skillIncrease.skill == this)
-                                this.applySetLevelCap(value);
-                        }
-                        );
-                        break;
-                    case 'Abyssal':
-                        capIncrease.fixedIncreases.forEach((skillIncrease) => {
-                            if (skillIncrease.skill == this)
-                                this.skill.applyAbyssalLevelCapIncrease(skillIncrease);
-                        }
-                        );
-                        capIncrease.setIncreases.forEach(({ value }) => {
-                            if (skillIncrease.skill == this)
-                                this.setAbyssalLevelCap(value);
-                        }
-                        );
-                        break;
-                }
-                this.game.validateRandomLevelCapIncreases();
-            })
-        });
-    }
-    encode(writer) {
-        super.encode(writer);
-        Encoder.encode(this, writer);
-        return writer;
-    }
+                } else if (!this.stop())
+                    return;
+            }
+            if (room == undefined || fixture == undefined)
+                return;
+            if (!this.getRecipeCosts(fixture.currentRecipe).checkIfOwned()) {
+                notifyPlayer(this, this.noBuildCostsMessage, 'danger');
+                return;
+            }
+            this._actionMode = 1;
+            this.selectedRoom = room;
+            this.selectedFixture = fixture;
+            this.selectedFixtureRecipe = fixture.currentRecipe;
+            this.start();
 
-    decode(reader, saveVersion) {
-        super.decode(reader, saveVersion);
-        Encoder.decode(this, reader);
+        }
+
+        getRegistry(type) {
+            switch (type) {
+                case ScopeSourceType.Category:
+                    return this.categories;
+                case ScopeSourceType.Action:
+                    return this.actions;
+            }
+        }
+        onAnyLevelUp() {
+            super.onAnyLevelUp();
+            this.renderQueue.fictureUnlock = true;
+            this.renderQueue.menu = true;
+        }
+        queueBankQuantityRender(item) {
+            super.queueBankQuantityRender(item);
+            this.renderQueue.renderfixtureItemUpdates = true;
+        }
+
+        onLoad() {
+            super.onLoad();
+            this.renderQueue.menu = true;
+            this.renderQueue.fictureUnlock = true;
+            this.renderQueue.masteryBar = true;
+            this.renderQueue.masteryBonusElements = true;
+
+            this.selectRealm(this.currentRealm);
+            onInterfaceReady(async () => {
+                this.ui.renderVisibleRooms();
+                this.render();
+            });
+            if (this._actionMode == 1) {
+                var recipe = this.activeBuildRecipe;
+                this.ui.switchConstructionCategory(recipe.category)
+                this.ui.selectFixture(recipe.fixture, recipe.fixture.room, this);
+            }
+            this.fixtures.forEach(fixture => fixture.onLoad());
+            this.updateRecipeCounts();
+            this.popTierMasteries();
+
+            this.render();
+        }
+        resetActionState() {
+            super.resetActionState();
+            this._actionMode = undefined;
+            this.selectedRoom = undefined;
+            this.selectedFixture = undefined;
+            this.selectedFixtureRecipe = undefined;
+        }
+        updateForExistingCapIncreases() {
+            var _a;
+            var initalLevel;
+            (_a = this.game.currentGamemode.initialLevelCaps) === null || _a === void 0 ? void 0 : _a.forEach(({ skill, value }) => {
+                if (skill == this)
+                    initalLevel = value;
+            });
+            if (initalLevel == undefined)
+                initalLevel = this.game.currentGamemode.defaultInitialLevelCap;
+            if (initalLevel == undefined)
+                initalLevel = -1;
+            this.setLevelCap(initalLevel);
+            this.game.activeLevelCapIncreases.forEach((capIncrease) => {
+                capIncrease.requirementSets.forEach((reqSet) => {
+                    if (!reqSet.given)
+                        return;
+                    switch (capIncrease.levelType) {
+                        case 'Standard':
+                            capIncrease.fixedIncreases.forEach((skillIncrease) => {
+                                if (skillIncrease.skill == this)
+                                    this.applyLevelCapIncrease(skillIncrease);
+                            });
+                            capIncrease.setIncreases.forEach(({ value }) => {
+                                if (skillIncrease.skill == this)
+                                    this.applySetLevelCap(value);
+                            }
+                            );
+                            break;
+                        case 'Abyssal':
+                            capIncrease.fixedIncreases.forEach((skillIncrease) => {
+                                if (skillIncrease.skill == this)
+                                    this.skill.applyAbyssalLevelCapIncrease(skillIncrease);
+                            }
+                            );
+                            capIncrease.setIncreases.forEach(({ value }) => {
+                                if (skillIncrease.skill == this)
+                                    this.setAbyssalLevelCap(value);
+                            }
+                            );
+                            break;
+                    }
+                    this.game.validateRandomLevelCapIncreases();
+                })
+            });
+        }
+        encode(writer) {
+            super.encode(writer);
+            Encoder.encode(this, writer);
+            return writer;
+        }
+
+        decode(reader, saveVersion) {
+            super.decode(reader, saveVersion);
+            Encoder.decode(this, reader);
+        }
     }
-}

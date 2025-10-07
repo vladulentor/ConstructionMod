@@ -2765,7 +2765,7 @@
                 ],
                 "rielkConstruction:skillEfficiencyChance": [
                   {
-                    "value": 5
+                    "value": 8
                   }
                 ]
               }
@@ -3520,7 +3520,7 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Maple_Tree_Seed",
-                  "quantity": 6
+                  "quantity": 4
                 },
                 {
                   "id": "melvorD:Weird_Gloop",
@@ -3553,7 +3553,7 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Yew_Tree_Seed",
-                  "quantity": 6
+                  "quantity": 3
                 },
                 {
                   "id": "melvorD:Weird_Gloop",
@@ -3586,7 +3586,7 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Magic_Tree_Seed",
-                  "quantity": 5
+                  "quantity": 3
                 },
                 {
                   "id": "melvorD:Weird_Gloop",

@@ -25,6 +25,19 @@ export const language = {
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'Lorsque toutes les pièces contiennent des meubles du niveau requis ou supérieur, le niveau de votre maison augmente. Vous débloquez des bonus de construction permanents et recevez des fournitures.',
     'MENU_TEXT_REWARDS': 'Récompenses',
 
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN': '${potency} actions peuvent être accomplies en une fois.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_1': 'Un progrès peut être fait en une fois.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_2': 'Double progrès peut être fait en une fois.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_3': 'Triple progrès peut être fait en une fois.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_4': 'Quadruple progrès peut être fait en une fois.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_5': 'Quintuple progrès peut être fait en une fois.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_6': 'Sextuple progrès peut être fait en une fois.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_7': 'Septuple progrès peut être fait en une fois.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': 'Octuple progrès peut être fait en une fois.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': 'Nonuple progrès peut être fait en une fois.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': '${potency} progrès peuvent être faits en une fois.',
+    'MENU_EFFICIENCY_COST': 'Consommera ${cost} fois plus de ressources.',
+    'MENU_EFFICIENCY_BASE': 'Base',
     'SHOP_NAME_Construction_Skillcape': 'Cape de Chantier',
 
     'PET_NAME_ChuckTheForeman': 'Chuck le contremaître',
@@ -71,7 +84,13 @@ export const language = {
     'MODIFIER_DATA_unlockPlot_3': 'Débloque une parcelle de potager en agriculture',
     'MODIFIER_DATA_unlockPlot_4': 'Débloque une parcelle d’herbes en agriculture',
     'MODIFIER_DATA_unlockPlot_5': 'Débloque une parcelle d’arbres en agriculture',
-
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '-${value}% de chance de réaliser des actions supplémentaires en une fois dans la Construction',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '+${value}% de chance de réaliser des actions supplémentaires en une fois dans la Construction',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} matériaux ou progrès supplémentaires lors de l’activation de l’Efficacité',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} matériaux ou progrès supplémentaires lors de l’activation de l’Efficacité',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '+${value} de coût en ressources lors de l’activation de l’Efficacité',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '-${value} de coût en ressources lors de l’activation de l’Efficacité',
+    
     'DESCRIPTION_ADDS_ITEM': 'Donner ${itemQuantity} ${itemName} ${itemImage}',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'Vous n\'avez pas les matériaux nécessaires pour construire cela.',

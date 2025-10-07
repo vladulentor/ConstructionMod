@@ -203,7 +203,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
             construction.getEfficiencyChance(fixtureRecipe), 
             construction.getEfficiencyPotencyMultiplier(fixtureRecipe), 
             construction.getEfficiencyCostMultiplier(fixtureRecipe),
-            construction.getEfficiencyChancePotencySources(fixtureRecipe));
+            construction.getEfficiencyChancePotencySources(fixtureRecipe), "build");
     }
 }
 window.customElements.define('rielk-construction-room-panel', ConstructionRoomPanelElement);

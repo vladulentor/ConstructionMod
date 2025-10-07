@@ -31,7 +31,7 @@ class ConstructionArtisanMenuElement extends ArtisanMenuElement {
             efficiencyChance,
             efficiencyPotency,
             efficiencyCost,
-            efficiencChancePotencySources); //By accessing it right here we don't have to override any existing render functions.
+            efficiencChancePotencySources, "artisan"); //By accessing it right here we don't have to override any existing render functions.
     }
 }
 

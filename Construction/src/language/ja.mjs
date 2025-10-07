@@ -17,7 +17,8 @@ export const language = {
     'MENU_HOUSE_COMPLETION': 'ハウス完成度',
     'MENU_BUILT': '建造済み',
     'MENU_FIXTURES': '設備',
-
+    'MENU_EFFICIENCY_BASE': '基本',
+    
     'MENU_HOUSE': "家",
     'MENU_TIER': 'ランク ${tiername}',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'ハウスティアとは何ですか？',
@@ -25,6 +26,18 @@ export const language = {
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'すべての部屋に必要な階級以上の家具が揃うと、家のランクが上がります。恒久的な建築ボーナスが解除され、資材を獲得します。',
     'MENU_TEXT_REWARDS': '報酬',
 
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN': '一度に${potency}回の作業を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_1': '一度に1回の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_2': '一度に2倍の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_3': '一度に3倍の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_4': '一度に4倍の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_5': '一度に5倍の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_6': '一度に6倍の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_7': '一度に7倍の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': '一度に8倍の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': '一度に9倍の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': '一度に${potency}倍の進行を完了する可能性があります。',
+    'MENU_EFFICIENCY_COST': '資源を${cost}倍消費します。',
     'SHOP_NAME_Construction_Skillcape': '建設スキルケープ',
 
     'PET_NAME_ChuckTheForeman': 'チャック・ザ・フォアマン',
@@ -71,6 +84,12 @@ export const language = {
     'MODIFIER_DATA_unlockPlot_3': '農業で畑の区画を解放する',
     'MODIFIER_DATA_unlockPlot_4': '農業でハーブの区画を解放する',
     'MODIFIER_DATA_unlockPlot_5': '農業で木の区画を解放する',
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '建設で追加作業を一度に完了する確率 -${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '建設で追加作業を一度に完了する確率 +${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '効率発動時の追加材料や進行 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '効率発動時の追加材料や進行 +${value}',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '効率発動時の資源コスト +${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '効率発動時の資源コスト -${value}',
 
 
     'DESCRIPTION_ADDS_ITEM': '与える ${itemQuantity} ${itemName} ${itemImage}',

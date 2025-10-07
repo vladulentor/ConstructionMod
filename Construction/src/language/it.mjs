@@ -25,6 +25,19 @@ export const language = {
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'Quando tutte le stanze contengono mobili del livello richiesto o superiore, il livello della tua casa aumenterà. Sbloccherai bonus permanenti di Costruzione e riceverai risorse.',
     'MENU_TEXT_REWARDS': 'Ricompense',
 
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN': 'È possibile completare ${potency} azioni in una volta.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_1': 'È possibile completare un progresso in una volta.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_2': 'È possibile completare un doppio progresso in una volta.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_3': 'È possibile completare un triplo progresso in una volta.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_4': 'È possibile completare un quadruplo progresso in una volta.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_5': 'È possibile completare un quintuplo progresso in una volta.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_6': 'È possibile completare un sesto progresso in una volta.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_7': 'È possibile completare un settupplo progresso in una volta.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': 'È possibile completare un ottuplo progresso in una volta.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': 'È possibile completare un nonuplo progresso in una volta.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': 'È possibile completare ${potency} progressi in una volta.',
+    'MENU_EFFICIENCY_COST': 'Consuma ${cost} volte le risorse.',
+    'MENU_EFFICIENCY_BASE': 'Base',
     'SHOP_NAME_Construction_Skillcape': 'Abilmantello della costruzione',
 
     'PET_NAME_ChuckTheForeman': 'Chuck il caposquadra',
@@ -68,6 +81,13 @@ export const language = {
     'MODIFIER_DATA_unlockPlot_3': 'Sblocca un appezzamento di orto in Agricoltura',
     'MODIFIER_DATA_unlockPlot_4': 'Sblocca un appezzamento di erbe in Agricoltura',
     'MODIFIER_DATA_unlockPlot_5': 'Sblocca un appezzamento di alberi in Agricoltura',
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '-${value}% di probabilità di completare azioni extra contemporaneamente nella Costruzione',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '+${value}% di probabilità di completare azioni extra contemporaneamente nella Costruzione',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} materiali o progressi extra quando si attiva Efficienza',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} materiali o progressi extra quando si attiva Efficienza',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '+${value} al costo delle risorse quando si attiva Efficienza',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '-${value} al costo delle risorse quando si attiva Efficienza',
+
 
 
     'DESCRIPTION_ADDS_ITEM': 'Dare ${itemQuantity} ${itemName} ${itemImage}',

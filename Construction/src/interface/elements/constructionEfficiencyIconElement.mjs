@@ -50,9 +50,9 @@ export class EfficiencyIconElement extends InfoIconElement {
         });
 
     }
-    setChance(chance, potency, cost, chancePotencySourceSpans) {
+    setChance(chance, potency, cost, chancePotencySourceSpans, mode) {
         this.chance.textContent = formatPercent(Math.round(chance));
-        this.tooltipElem.setCostNPotency(cost, potency);
+        this.tooltipElem.setCostNPotency(cost, potency, mode);
         this.tooltipElem.updateSources(chancePotencySourceSpans);
     }
 }

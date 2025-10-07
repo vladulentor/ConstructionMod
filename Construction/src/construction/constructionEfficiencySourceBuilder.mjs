@@ -1,3 +1,5 @@
+const { loadModule } = mod.getContext(import.meta);
+const { getRielkLangString } = await loadModule('src/language/translationManager.mjs');
 
 export class EfficiencySourceBuilder { // This whole class exists so the tooltip can look nice
     constructor(modifiers, options = {}) {
@@ -46,7 +48,7 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
         this._potencyTotal += baseValue; //Potency of Efficiency is always base of 2. I mean I guess you could get it lower but it starts at 2
 
         this._potencySpans.push(
-            createElement('span', { className: 'text-info text-left col-10 pl-2', text: 'Base:' }),
+            createElement('span', { className: 'text-info text-left col-10 pl-2', text: getRielkLangString('MENU_EFFICIENCY_BASE') }),
             createElement('span', { className: 'text-success col-2 text-left pl-2', text: `+${baseValue}` })
         );
 
@@ -59,7 +61,6 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
 
             // Update potency total
             this._potencyTotal += value;
-
             // Classes for left-aligned potency column
             const labelClass = 'text-info text-left col-10 pl-2';
             const valueClass = `${entry.modifier.inverted === value < 0 ? 'text-success' : 'text-danger'} col-2 text-left pl-2`;
@@ -78,6 +79,7 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
 
     getSpans() {
         this._chanceTotalSpan.textContent = Modifier.formatTotalValue(true, this._chanceTotal, 2, true);
+        if (this._potencyTotal > 2) {this._potencyTotalSpan.classList.remove('text-warning'); this._potencyTotalSpan.classList.add('construction-success');}
         this._potencyTotalSpan.textContent = `x${Number.isInteger(this._potencyTotal) ? this._potencyTotal : this._potencyTotal.toFixed(1)}`;
 
         return {

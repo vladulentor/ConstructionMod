@@ -23,7 +23,19 @@ export const language = {
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': '您的房屋等級從0開始。隨著您建造家具並填滿每個房間，房屋等級會提升。</span>',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '當所有房間都擁有所需等級或更高等級的家具時，您的房屋等級將提升。您將解鎖永久建築加成並獲得材料。',
     'MENU_TEXT_REWARDS': '獎勵',
-
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN': '有機會一次完成${potency}個動作。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_1': '有機會一次完成一次進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_2': '有機會一次完成雙倍進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_3': '有機會一次完成三倍進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_4': '有機會一次完成四倍進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_5': '有機會一次完成五倍進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_6': '有機會一次完成六倍進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_7': '有機會一次完成七倍進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': '有機會一次完成八倍進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': '有機會一次完成九倍進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': '有機會一次完成${potency}倍進度。',
+    'MENU_EFFICIENCY_COST': '消耗${cost}倍資源。',
+    'MENU_EFFICIENCY_BASE': '基礎',
     'SHOP_NAME_Construction_Skillcape': '建築技能角',
 
     'PET_NAME_ChuckTheForeman': '主管查克',
@@ -63,7 +75,13 @@ export const language = {
     'MODIFIER_DATA_unlockPlot_3': '解鎖農業中的菜園',
     'MODIFIER_DATA_unlockPlot_4': '解鎖農業中的草藥園',
     'MODIFIER_DATA_unlockPlot_5': '解鎖農業中的果樹園',
-    
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '在建造中一次完成額外動作的機率 -${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '在建造中一次完成額外動作的機率 +${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '啟動效率時額外材料或進度 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '啟動效率時額外材料或進度 +${value}',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '啟動效率時資源消耗 +${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '啟動效率時資源消耗 -${value}',
+
     'TOAST_FIXTURE_COMPLETE': '你已完成建造 ${fixtureName}!',
 
 

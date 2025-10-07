@@ -25,7 +25,19 @@ export const language = {
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': '당신의 하우스 단계는 0에서 시작합니다. 가구를 만들고 각 방을 채우면 하우스 단계가 향상됩니다.</span>',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '모든 방에 필요한 등급 이상의 가구가 배치되면, 집 등급이 상승합니다. 영구적인 건축 보너스를 잠금 해제하고 자원을 획득합니다.',
     'MENU_TEXT_REWARDS': '보상',
-
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN': '한 번에 ${potency}개의 작업을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_1': '한 번에 1단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_2': '한 번에 2단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_3': '한 번에 3단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_4': '한 번에 4단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_5': '한 번에 5단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_6': '한 번에 6단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_7': '한 번에 7단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': '한 번에 8단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': '한 번에 9단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': '한 번에 ${potency}단계 진행을 완료할 수 있습니다.',
+    'MENU_EFFICIENCY_COST': '자원을 ${cost}배 소비합니다.',
+    'MENU_EFFICIENCY_BASE': '기본',
     'SHOP_NAME_Construction_Skillcape': '건설 스킬케이프',
 
     'PET_NAME_ChuckTheForeman': '포어맨 척',
@@ -72,7 +84,13 @@ export const language = {
     'MODIFIER_DATA_unlockPlot_3': '농업에서 채소 밭을 잠금 해제합니다',
     'MODIFIER_DATA_unlockPlot_4': '농업에서 허브 밭을 잠금 해제합니다',
     'MODIFIER_DATA_unlockPlot_5': '농업에서 나무 밭을 잠금 해제합니다',
-    
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '건축에서 추가 작업을 한 번에 완료할 확률 -${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '건축에서 추가 작업을 한 번에 완료할 확률 +${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '효율 발동 시 추가 재료 또는 진행 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '효율 발동 시 추가 재료 또는 진행 +${value}',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '효율 발동 시 자원 비용 +${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '효율 발동 시 자원 비용 -${value}',
+
     'DESCRIPTION_ADDS_ITEM': '준다 ${itemQuantity} ${itemName} ${itemImage}',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '그것을 만드는 데 필요한 재료가 없습니다.',

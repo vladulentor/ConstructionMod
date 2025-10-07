@@ -25,7 +25,19 @@ export const language = {
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'Wenn alle Räume Möbel der erforderlichen Stufe oder höher enthalten, steigt dein Haus-Level. Du schaltest permanente Bau-Boni frei und erhältst Materialien.',
     'MENU_TEXT_REWARDS': 'Belohnungen',
 
-
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN': '${potency} Aktionen können gleichzeitig abgeschlossen werden.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_1': 'Ein Fortschritt kann auf einmal gemacht werden.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_2': 'Doppelter Fortschritt kann auf einmal gemacht werden.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_3': 'Dreifacher Fortschritt kann auf einmal gemacht werden.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_4': 'Vierfacher Fortschritt kann auf einmal gemacht werden.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_5': 'Fünffacher Fortschritt kann auf einmal gemacht werden.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_6': 'Sechsfacher Fortschritt kann auf einmal gemacht werden.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_7': 'Siebenfacher Fortschritt kann auf einmal gemacht werden.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': 'Achtfacher Fortschritt kann auf einmal gemacht werden.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': 'Neunfacher Fortschritt kann auf einmal gemacht werden.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': '${potency}-facher Fortschritt kann auf einmal gemacht werden.',
+    'MENU_EFFICIENCY_COST': 'Verbraucht ${cost}-mal so viele Ressourcen.',
+    'MENU_EFFICIENCY_BASE': 'Basis',
     'SHOP_NAME_Construction_Skillcape': 'Umhang der Konstruktion',
 
     'PET_NAME_ChuckTheForeman': 'Chuck der Vorarbeiter',
@@ -72,6 +84,14 @@ export const language = {
     'MODIFIER_DATA_unlockPlot_3': 'Schalte ein Gemüsebeet in der Landwirtschaft frei',
     'MODIFIER_DATA_unlockPlot_4': 'Schalte ein Kräuterbeet in der Landwirtschaft frei',
     'MODIFIER_DATA_unlockPlot_5': 'Schalte ein Baumbeet in der Landwirtschaft frei',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '-${value}% Wahrscheinlichkeit, zusätzliche Aktionen auf einmal abzuschließen (Bau)',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '+${value}% Wahrscheinlichkeit, zusätzliche Aktionen auf einmal abzuschließen (Bau)',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} zusätzliche Materialien oder Fortschritt bei Aktivierung von Effizienz',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} zusätzliche Materialien oder Fortschritt bei Aktivierung von Effizienz',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '+${value} Ressourcenverbrauch bei Aktivierung von Effizienz',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '-${value} Ressourcenverbrauch bei Aktivierung von Effizienz',
+
 
     'DESCRIPTION_ADDS_ITEM': 'Gibt ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': 'Schaltet 1 ${plotCategory} Feld in der Landwirtschaft frei',

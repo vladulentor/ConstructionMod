@@ -360,9 +360,9 @@ export class Construction extends ArtisanSkill {
         const baseMasteryXP = this.getBaseMasteryXPToAddForAction(recipe, this.masteryModifiedInterval);
         this.menu.updateGrants(this.modifyXP(this.actionXP), this.actionXP, masteryXPToAdd, baseMasteryXP, this.getMasteryXPToAddToPool(masteryXPToAdd), this.activeRecipe.realm);
         this.menu.updateGrantsSources(this, recipe);
-        this.menu.updateChances(this.getPreservationChance(recipe), this.getPreservationCap(recipe), this.getPreservationSources(recipe), this.getDoublingChance(recipe), this.getDoublingSources(recipe), 
-        this.getEfficiencyChance(recipe),
-    this.getEfficiencyPotencyMultiplier(recipe), this.getEfficiencyCostMultiplier(recipe), this.getEfficiencyChancePotencySources(recipe));
+        this.menu.updateChances(this.getPreservationChance(recipe), this.getPreservationCap(recipe), this.getPreservationSources(recipe), this.getDoublingChance(recipe), this.getDoublingSources(recipe),
+            this.getEfficiencyChance(recipe),
+            this.getEfficiencyPotencyMultiplier(recipe), this.getEfficiencyCostMultiplier(recipe), this.getEfficiencyChancePotencySources(recipe));
         const query = this.getActionModifierQuery(recipe);
         this.menu.updateAdditionalPrimaryQuantity(this.getFlatAdditionalPrimaryProductQuantity(this.actionItem, query), this.getAdditionalPrimaryResourceQuantitySources(query));
         this.menu.updateCostReduction(this.getCostReduction(recipe), this.getCostReductionSources(recipe));
@@ -564,19 +564,23 @@ export class Construction extends ArtisanSkill {
 
     }
     scalecost(cost, multiplier = 0) {
-        const origCost = cost;
-        multiplier += 2;
-        cost._currencies.forEach((quantity, currency, map) => {
-            map.set(currency, Math.round(quantity * multiplier));
-        });
-        cost._items.forEach((quantity, item, map) => {
-            map.set(item, Math.round(quantity * multiplier));
-        });
-
-        if (!cost.checkIfOwned() && origCost.checkIfOwned()) {
-            cost = origCost// This reset is for the specific case of the player not having enough for the efficiency ability but having enough for a normal craft, so we give it to them for no extra cost.
+        if (cost.checkIfOwned()) {
+            cost._currencies.forEach((quantity, currency, map) => {
+                map.set(currency, Math.round(quantity * multiplier));
+            });
+            cost._items.forEach((quantity, item, map) => {
+                map.set(item, Math.round(quantity * multiplier));
+            });
+            if (!cost.checkIfOwned()) {            // This reset is for the specific case of the player not having enough for the efficiency ability but having enough for a normal craft, so we give it to them for no extra cost.
             //TODO: Add a message if this happens
             //PS, this could technically be abused by someone alays holding a super small amount of items when building to not suffer the costs, but who would do that
+                cost._currencies.forEach((quantity, currency, map) => {
+                    map.set(currency, Math.floor(quantity / multiplier));
+                });
+                cost._items.forEach((quantity, item, map) => {
+                    map.set(item, Math.floor(quantity / multiplier));
+                });
+            }
         }
     }
     artisanAction() {

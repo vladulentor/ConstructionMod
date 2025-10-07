@@ -16,7 +16,7 @@ export const language = {
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': '房屋等级奖励已解锁！',
     'MENU_HOUSE_COMPLETION': '房屋完成度',
     'MENU_TIER': '等级 ${tiername}',
-        'MENU_FIXTURES':'家具配件',
+    'MENU_FIXTURES': '家具配件',
 
     'MENU_BUILT': '已建造',
     'MENU_HOUSE': "房子",
@@ -25,7 +25,19 @@ export const language = {
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': '您的房屋等级从0开始。随着您建造家具并填满每个房间，房屋等级会提升。</span>',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '当所有房间都拥有所需等级或更高等级的家具时，您的房屋等级将提升。您将解锁永久建筑加成并获得材料。',
     'MENU_TEXT_REWARDS': '奖励',
-
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN': '有机会一次完成${potency}个动作。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_1': '有机会一次完成一次进度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_2': '有机会一次完成双倍进度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_3': '有机会一次完成三倍进度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_4': '有机会一次完成四倍进度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_5': '有机会一次完成五倍进度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_6': '有机会一次完成六倍进度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_7': '有机会一次完成七倍进度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': '有机会一次完成八倍进度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': '有机会一次完成九倍进度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': '有机会一次完成${potency}倍进度。',
+    'MENU_TOOLTIP_EFFICIENCY_COST': '消耗${cost}倍资源。',
+    'MENU_EFFICIENCY_BASE': '基础',
     'SHOP_NAME_Construction_Skillcape': '建筑技能角',
 
     'PET_NAME_ChuckTheForeman': '主管查克',
@@ -61,15 +73,40 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
 
-        'TOAST_FIXTURE_COMPLETE':'你已完成建造 ${fixtureName}!',
+    'TOAST_FIXTURE_COMPLETE': '你已完成建造 ${fixtureName}!',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '建造 ${categoryName} 时完成额外动作的概率 -${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '建造 ${categoryName} 时完成额外动作的概率 +${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '使用效率制作 ${categoryName} 时完成额外动作 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '使用效率制作 ${categoryName} 时完成额外动作 +${value}',
+
+    'ITEM_NAME_Twice_Measured_Potion_I': '双重测量药水 I',
+    'ITEM_NAME_Twice_Measured_Potion_II': '双重测量药水 II',
+    'ITEM_NAME_Twice_Measured_Potion_III': '双重测量药水 III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': '双重测量药水 IV',
+    'POTION_NAME_Twice_Measured_Potion': '双重测量药水',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '激活效率时额外获得的材料或进度 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '激活效率时额外获得的材料或进度 +${value}',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '激活效率时资源消耗 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '激活效率时资源消耗 +${value}',
 
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收获时有机会在农业中重新获得树种',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 动作用于在建造中制造家具',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 动作用于在建造中制造家具',
-
+    'MODIFIER_DATA_unlockPlot_1': '解锁农业中的菜地',
+    'MODIFIER_DATA_unlockPlot_2': '解锁农业中的草药地',
+    'MODIFIER_DATA_unlockPlot_3': '解锁农业中的菜地',
+    'MODIFIER_DATA_unlockPlot_4': '解锁农业中的草药地',
+    'MODIFIER_DATA_unlockPlot_5': '解锁农业中的果树地',
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '在建造中一次完成额外动作的概率 -${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '在建造中一次完成额外动作的概率 +${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '激活效率时额外材料或进度 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '激活效率时额外材料或进度 +${value}',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '激活效率时资源消耗 +${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '激活效率时资源消耗 -${value}',
     'DESCRIPTION_ADDS_ITEM': '给出 ${itemQuantity} ${itemName} ${itemImage}',
-    'DESCRIPTION_UNLOCKS_PLOT': '解锁 1 个 ${plotCategory} 农耕地块',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '你没有建造它所需的材料。',
 

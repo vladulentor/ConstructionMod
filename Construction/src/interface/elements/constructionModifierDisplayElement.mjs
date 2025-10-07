@@ -1,6 +1,6 @@
 const { loadModule, onInterfaceReady } = mod.getContext(import.meta);
 
-const { templateRielkLangStringWithNodes, templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
+const { templateRielkLangStringWithNodes, templateRielkLangString, getRielkLangString } = await loadModule('src/language/translationManager.mjs');
 
 class ConstructionModifierDisplayElement extends HTMLElement {
     constructor() {
@@ -59,7 +59,7 @@ class ConstructionModifierDisplayElement extends HTMLElement {
         this.modifierText.textContent = '';
         const formatter = getElementDescriptionFormatter('div', this.recipe.isUnlocked ? 'mb-1' : 'mb-1 text-warning');
         this.modifierText.append(...StatObject.formatDescriptions(this.recipe.stats, formatter));
-        if (this.recipe.doesGrantItems) {
+        if (this.recipe.doesGrantItems) {  // This is currently never used, but might be useful to know about.
             this.recipe.grantItems.forEach(iq => {
                 var nodes = templateRielkLangStringWithNodes('DESCRIPTION_ADDS_ITEM', {
                     itemImage: createElement('img', {
@@ -78,13 +78,18 @@ class ConstructionModifierDisplayElement extends HTMLElement {
                 this.modifierText.append(...nodes)
             });
         }
-        if (this.recipe.unlockPlot != undefined) {
-            const text = templateRielkLangString('DESCRIPTION_UNLOCKS_PLOT', {
-                plotCategory: this.recipe.unlockPlot.category.name
-            });
+
+        if (this.recipe.changeFunc != undefined) {
+
+            // Look it up in your language object
+            let text = templateRielkLangString(`MODIFIER_DATA_${this.recipe.changeFunc}`, {tierNum: this.recipe.id.slice(-1) });
+            if(text.startsWith("UNDEFINED TRANSLATION")) //if we ever add a modifier that starts with UNDEFINED TRANSLATION, we'll need to make this more robust
+            text = templateRielkLangString(`MODIFIER_DATA_${this.recipe.changeFunc}_${this.recipe.id.slice(-1)}`, {tierNum: this.recipe.id.slice(-1) });
+
             this.modifierText.append(formatter({ text: text }));
         }
     }
+
     setLocked(recipe, construction) {
         hideElement(this.fixtureImage);
         hideElement(this.modifierContainer);

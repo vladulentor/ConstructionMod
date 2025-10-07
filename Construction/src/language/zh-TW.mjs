@@ -23,7 +23,19 @@ export const language = {
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': '您的房屋等級從0開始。隨著您建造家具並填滿每個房間，房屋等級會提升。</span>',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '當所有房間都擁有所需等級或更高等級的家具時，您的房屋等級將提升。您將解鎖永久建築加成並獲得材料。',
     'MENU_TEXT_REWARDS': '獎勵',
-
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN': '有機會一次完成${potency}個動作。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_1': '有機會一次完成一次進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_2': '有機會一次完成雙倍進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_3': '有機會一次完成三倍進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_4': '有機會一次完成四倍進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_5': '有機會一次完成五倍進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_6': '有機會一次完成六倍進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_7': '有機會一次完成七倍進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': '有機會一次完成八倍進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': '有機會一次完成九倍進度。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': '有機會一次完成${potency}倍進度。',
+    'MENU_TOOLTIP_EFFICIENCY_COST': '消耗${cost}倍資源。',
+    'MENU_EFFICIENCY_BASE': '基礎',
     'SHOP_NAME_Construction_Skillcape': '建築技能角',
 
     'PET_NAME_ChuckTheForeman': '主管查克',
@@ -58,8 +70,34 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Body': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
     'ITEM_DESCRIPTION_Builders_Leggings': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
+    'MODIFIER_DATA_unlockPlot_1': '解鎖農業中的菜園',
+    'MODIFIER_DATA_unlockPlot_2': '解鎖農業中的草藥園',
+    'MODIFIER_DATA_unlockPlot_3': '解鎖農業中的菜園',
+    'MODIFIER_DATA_unlockPlot_4': '解鎖農業中的草藥園',
+    'MODIFIER_DATA_unlockPlot_5': '解鎖農業中的果樹園',
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '在建造中一次完成額外動作的機率 -${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '在建造中一次完成額外動作的機率 +${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '啟動效率時額外材料或進度 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '啟動效率時額外材料或進度 +${value}',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '啟動效率時資源消耗 +${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '啟動效率時資源消耗 -${value}',
 
-        'TOAST_FIXTURE_COMPLETE':'你已完成建造 ${fixtureName}!',
+    'TOAST_FIXTURE_COMPLETE': '你已完成建造 ${fixtureName}!',
+        'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '建造 ${categoryName} 時完成額外動作的機率 -${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '建造 ${categoryName} 時完成額外動作的機率 +${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '使用效率製作 ${categoryName} 時完成額外動作 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '使用效率製作 ${categoryName} 時完成額外動作 +${value}',
+
+    'ITEM_NAME_Twice_Measured_Potion_I':'雙重測量藥水 I',
+    'ITEM_NAME_Twice_Measured_Potion_II':'雙重測量藥水 II',
+    'ITEM_NAME_Twice_Measured_Potion_III':'雙重測量藥水 III',
+    'ITEM_NAME_Twice_Measured_Potion_IV':'雙重測量藥水 IV',
+    'POTION_NAME_Twice_Measured_Potion':'雙重測量藥水',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '啟動效率時額外獲得的材料或進度 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '啟動效率時額外獲得的材料或進度 +${value}',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '啟動效率時資源消耗 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '啟動效率時資源消耗 +${value}',
 
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收穫時，+${value}% 幾率在農業中重新獲得樹種子',
@@ -67,7 +105,6 @@ export const language = {
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 動作用於在建造中製造家具',
 
     'DESCRIPTION_ADDS_ITEM': '給出 ${itemQuantity} ${itemName} ${itemImage}',
-    'DESCRIPTION_UNLOCKS_PLOT': '在農業解鎖 1 個 ${plotCategory} 地塊',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '你沒有建造它所需的材料。',
 

@@ -2,6 +2,7 @@ const { loadModule } = mod.getContext(import.meta);
 
 const { ConstructionModifiers } = await loadModule('src/construction/constructionModifier.mjs');
 const { templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
+const { EffectRegistry } = await loadModule('src/skillPatches/patchRegistry.mjs');
 
 export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
     constructor(namespace, data, game, skill) {
@@ -12,8 +13,9 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
             this.modifiers = new ConstructionModifiers(data, game, `${this.id}`);
             if (data.grantItem != undefined)
                 this.grantItems = game.items.getQuantities(data.grantItem);
-            if (data.unlockPlot != undefined)
-                this.unlockPlot = game.farming.plots.getObjectSafe(data.unlockPlot)
+            if (data.changeFunc != undefined)
+                this.changeFunc = data.changeFunc;
+
         } catch (e) {
             throw new DataConstructionError(ConstructionFixtureRecipes.name, e, this.id);
         }
@@ -25,8 +27,9 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
             this.modifiers.applyDataModification(data, game);
             if (data.grantItem != undefined)
                 this.grantItems = game.items.getQuantities(data.grantItem);
-            if (data.unlockPlot != undefined)
-                this.unlockPlot = game.farming.plots.getObjectSafe(data.unlockPlot)
+            if (data.changeFunc != undefined)
+                this.changeFunc = data.changeFunc;
+
         }
         catch (e) {
             throw new DataModificationError(ConstructionFixtureRecipes.name, e, this.id);
@@ -57,33 +60,44 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
     }
 
     onLoad() {
-        if (this.isUnlocked)
-            this.doUnlockPlot();
-    }
-
-    doUnlockPlot() {
-        if (this.unlockPlot != undefined && this.unlockPlot.state == 0) {
-            this.unlockPlot.state = 1;
-            return true;
+        if (this.isUnlocked) {
+            if (this.changeFunc) {
+                this.callChangeFunc();
+            }
         }
-        return false;
     }
 
-    makeProgress() {
-        this.fixture.progress++;
+
+    callChangeFunc() {
+        const effectFunc = EffectRegistry[this.changeFunc]; // look up function by name
+        if (typeof effectFunc === "function") {
+            effectFunc.call(this, this);
+        } else {
+            console.warn(`Effect not found in registry, going insane: ${this.changeFunc}`);
+        }
+    }
+
+    makeProgress(prog) {
+        for (let a = 0; a < Math.floor(prog); a++) // real high school coding hours
+        {
+            this.fixture.progress++;
+            if (this.fixture.progress >= this.actionCost) {
+                this.fixture.upgrade(this.skill);
+
+                this.skill.addMasteryProgress(this.fixture.currentTier);
+
+
+                if (this.grantItems != undefined)
+                    this.grantItems.forEach(iq => game.bank.addItem(iq.item, iq.quantity, true, true, true));
+                if (this.changeFunc)
+                    this.callChangeFunc();
+                this.skill.renderQueue.menu = true;
+                return false;
+
+            }
+
+        }
         this.skill.renderQueue.menu = true;
-        if (this.fixture.progress >= this.actionCost) {
-            this.fixture.upgrade(this.skill);
-
-            this.skill.addMasteryProgress(this.fixture.currentTier);
-
-
-            if (this.grantItems != undefined)
-                this.grantItems.forEach(iq => game.bank.addItem(iq.item, iq.quantity, true, true, true));
-            if (this.doUnlockPlot())
-                game.farming.showPlotsInCategory(this.unlockPlot.category);
-            return false;
-        }
         return true;
     }
 }

@@ -2,6 +2,9 @@ const { loadModule } = mod.getContext(import.meta);
 
 const { getRielkLangString, templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
 
+await loadModule('src/interface/elements/constructionEfficiencyIconTooltipElement.mjs');
+await loadModule('src/interface/elements/constructionEfficiencyIconElement.mjs');
+
 class ConstructionRoomPanelElement extends HTMLElement {
     constructor() {
         super();
@@ -21,6 +24,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.roomName = getElementFromFragment(this._content, 'room-name', 'span');
         this.targetContainer = getElementFromFragment(this._content, 'target-container', 'div');
         this.productPreservation = getElementFromFragment(this._content, 'product-preservation', 'preservation-icon');
+        this.productEfficiency = getElementFromFragment(this._content, 'product-efficiency', 'efficiency-icon');
         this.infoContainer = getElementFromFragment(this._content, 'info-container', 'div');
         this.infoBoxName = getElementFromFragment(this._content, 'product-name', 'span');
         this.infoBoxImage = getElementFromFragment(this._content, 'product-image', 'img');
@@ -39,6 +43,17 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.appendChild(this._content);
         this.noneSelected ? this.grants.setUnselected() : this.grants.setSelected();
         this.grants.hideMastery();
+        if((window.innerWidth <= 1920&& window.innerWidth>= 1350) || (window.innerWidth<= 860 && window.innerWidth>= 767 )) 
+        for (const icon of [this.productPreservation, this.productEfficiency]) {
+            const btn = icon.querySelector('.info-icon');
+            if (btn) {
+                btn.classList.remove('m-2');
+                btn.classList.add('mb-2');
+                btn.classList.add('mt-2');
+                if (i === 1 ) btn.classList.add('ms-1');
+            }
+        }
+
     }
 
     setRoom(room, construction) {
@@ -75,6 +90,8 @@ class ConstructionRoomPanelElement extends HTMLElement {
         }
         );
     }
+
+
     updateFixtureButtons(game) {
         this.fixtureNavs.forEach((nav, fixture) => {
             nav.updateFixture(fixture, game);
@@ -141,9 +158,11 @@ class ConstructionRoomPanelElement extends HTMLElement {
             hideElement(this.grantsContainer);
             hideElement(this.buildContainer);
             hideElement(this.productPreservation);
+            hideElement(this.productEfficiency);
+
             return;
         }
-
+        showElement(this.productEfficiency);
         showElement(this.productPreservation);
         const progress = fixture.percentProgress;
         this.builtProgressText.textContent = templateRielkLangString('MENU_TEXT_PARTIAL_BUILT_PROGRESS', {
@@ -193,6 +212,11 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.grants.setSources(construction, fixtureRecipe);
         this.grants.hideMastery();
         this.productPreservation.setChance(construction.getPreservationChance(fixtureRecipe), construction.getPreservationCap(fixtureRecipe), construction.getPreservationSources(fixtureRecipe));
+        this.productEfficiency.setChance(
+            construction.getEfficiencyChance(fixtureRecipe),
+            construction.getEfficiencyPotencyMultiplier(fixtureRecipe),
+            construction.getEfficiencyCostMultiplier(fixtureRecipe),
+            construction.getEfficiencyChancePotencySources(fixtureRecipe), "build");
     }
 }
 window.customElements.define('rielk-construction-room-panel', ConstructionRoomPanelElement);

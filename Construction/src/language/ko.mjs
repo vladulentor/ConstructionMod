@@ -16,7 +16,7 @@ export const language = {
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': '하우스 단계 보너스가 해제되었습니다!',
     'MENU_HOUSE_COMPLETION': '하우스 완성도',
     'MENU_BUILT': '완성됨',
-        'MENU_FIXTURES':'설치물',
+    'MENU_FIXTURES': '설치물',
 
     'MENU_TIER': '등급 ${tiername}',
     'MENU_HOUSE': "집",
@@ -25,7 +25,19 @@ export const language = {
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': '당신의 하우스 단계는 0에서 시작합니다. 가구를 만들고 각 방을 채우면 하우스 단계가 향상됩니다.</span>',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': '모든 방에 필요한 등급 이상의 가구가 배치되면, 집 등급이 상승합니다. 영구적인 건축 보너스를 잠금 해제하고 자원을 획득합니다.',
     'MENU_TEXT_REWARDS': '보상',
-
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN': '한 번에 ${potency}개의 작업을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_1': '한 번에 1단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_2': '한 번에 2단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_3': '한 번에 3단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_4': '한 번에 4단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_5': '한 번에 5단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_6': '한 번에 6단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_7': '한 번에 7단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': '한 번에 8단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': '한 번에 9단계 진행을 완료할 수 있습니다.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': '한 번에 ${potency}단계 진행을 완료할 수 있습니다.',
+    'MENU_TOOLTIP_EFFICIENCY_COST': '자원을 ${cost}배 소비합니다.',
+    'MENU_EFFICIENCY_BASE': '기본',
     'SHOP_NAME_Construction_Skillcape': '건설 스킬케이프',
 
     'PET_NAME_ChuckTheForeman': '포어맨 척',
@@ -61,15 +73,40 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
 
-        'TOAST_FIXTURE_COMPLETE':'${fixtureName} 건설이 완료되었습니다!',
+    'TOAST_FIXTURE_COMPLETE': '${fixtureName} 건설이 완료되었습니다!',
 
-    
+
     'MODIFIER_DATA_farmingTreeSeedReturn': '농사에서 수확 시 나무 씨앗을 회복할 확률 +${value}%',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 행동 필요: 건축에서 가구 제작',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 행동 필요: 건축에서 가구 제작',
+    'MODIFIER_DATA_unlockPlot_1': '농업에서 채소 밭을 잠금 해제합니다',
+    'MODIFIER_DATA_unlockPlot_2': '농업에서 허브 밭을 잠금 해제합니다',
+    'MODIFIER_DATA_unlockPlot_3': '농업에서 채소 밭을 잠금 해제합니다',
+    'MODIFIER_DATA_unlockPlot_4': '농업에서 허브 밭을 잠금 해제합니다',
+    'MODIFIER_DATA_unlockPlot_5': '농업에서 나무 밭을 잠금 해제합니다',
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '건축에서 추가 작업을 한 번에 완료할 확률 -${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '건축에서 추가 작업을 한 번에 완료할 확률 +${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '효율 발동 시 추가 재료 또는 진행 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '효율 발동 시 추가 재료 또는 진행 +${value}',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '효율 발동 시 자원 비용 +${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '효율 발동 시 자원 비용 -${value}',
 
+    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '건설에서 ${categoryName}을(를) 제작할 때 추가 행동을 수행할 확률 -${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '건설에서 ${categoryName}을(를) 제작할 때 추가 행동을 수행할 확률 +${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '효율 발동 시 ${categoryName} 제작 중 완료되는 추가 행동 수 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '효율 발동 시 ${categoryName} 제작 중 완료되는 추가 행동 수 +${value}',
+
+    'ITEM_NAME_Twice_Measured_Potion_I': '두 번 잰 물약 I',
+    'ITEM_NAME_Twice_Measured_Potion_II': '두 번 잰 물약 II',
+    'ITEM_NAME_Twice_Measured_Potion_III': '두 번 잰 물약 III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': '두 번 잰 물약 IV',
+    'POTION_NAME_Twice_Measured_Potion': '두 번 잰 물약',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '효율 발동 시 추가 재료 또는 진행도 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '효율 발동 시 추가 재료 또는 진행도 +${value}',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '효율 발동 시 자원 소모량 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '효율 발동 시 자원 소모량 +${value}',
     'DESCRIPTION_ADDS_ITEM': '준다 ${itemQuantity} ${itemName} ${itemImage}',
-    'DESCRIPTION_UNLOCKS_PLOT': '농장에서 ${plotCategory} 플롯 1개 잠금 해제',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '그것을 만드는 데 필요한 재료가 없습니다.',
 

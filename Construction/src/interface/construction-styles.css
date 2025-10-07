@@ -25,15 +25,7 @@ body.darkMode.superDark .bg-rielk-construction
 
 .construction-success {
       color: #fca32f;       /* text color */
-    font-weight: bold;   /* optional */
-}
-.construction-toast {
-    background-color: #4CAF50; /* green */
-    color: white;
-    border-left: 5px solid #2E7D32; /* darker green accent */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    border-radius: 8px;
-    font-weight: bold;
+    font-weight: bold;   
 }
 
 .border-item-danger {
@@ -47,14 +39,4 @@ body.darkMode.superDark .bg-rielk-construction
   border-radius: 2px;
       flex: none;      
     width: 100%; 
-}
-
-.glassy-house {
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
-    backdrop-filter: blur(4px);           /* frosted effect */
-    -webkit-backdrop-filter: blur(4px);   /* Safari support */
-    border: 2px solid #444;
-    border-radius: 4px;
-    padding: 2px;
-}
-
+} /* */

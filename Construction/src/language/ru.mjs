@@ -17,14 +17,26 @@ export const language = {
     'MENU_HOUSE_COMPLETION': 'Завершение дома',
     'MENU_BUILT': 'Построено',
     'MENU_HOUSE': "Дом",
-        'MENU_FIXTURES':'Фурнитура',
+    'MENU_FIXTURES': 'Фурнитура',
 
     'MENU_TIER': 'Уровень ${tiername}',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Что такое уровни дома?',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Уровень вашего дома начинается с 0. По мере того как вы строите мебель и заполняете каждую комнату, уровень вашего дома будет повышаться.</span>',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'Когда во всех комнатах будут мебель требуемого уровня или выше, уровень вашего дома повысится. Вы разблокируете постоянные бонусы к строительству и получите ресурсы.',
     'MENU_TEXT_REWARDS': 'Награды',
-
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN': 'Есть шанс выполнить ${potency} действий за раз.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_1': 'Есть шанс выполнить один прогресс за раз.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_2': 'Есть шанс выполнить двойной прогресс за раз.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_3': 'Есть шанс выполнить тройной прогресс за раз.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_4': 'Есть шанс выполнить четверной прогресс за раз.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_5': 'Есть шанс выполнить пятикратный прогресс за раз.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_6': 'Есть шанс выполнить шестикратный прогресс за раз.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_7': 'Есть шанс выполнить семикратный прогресс за раз.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': 'Есть шанс выполнить восьмикратный прогресс за раз.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': 'Есть шанс выполнить девятикратный прогресс за раз.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': 'Есть шанс выполнить ${potency}-кратный прогресс за раз.',
+    'MENU_TOOLTIP_EFFICIENCY_COST': 'Потребляет ресурсы в ${cost} раз больше.',
+    'MENU_EFFICIENCY_BASE': 'База',
     'SHOP_NAME_Construction_Skillcape': 'Плащ Мастера: Строительство',
 
     'PET_NAME_ChuckTheForeman': 'Чак бригадир',
@@ -60,15 +72,42 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '+2 % к опыту навыка «Строительство».<br><span class=\"text-warning\">При экипировке всех четырех предметов одежды строителя: +8% к опыту строительного мастерства.</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '+2 % к опыту навыка «Строительство».<br><span class=\"text-warning\">При экипировке всех четырех предметов одежды строителя: +8% к опыту строительного мастерства.</span>',
 
-        'TOAST_FIXTURE_COMPLETE':'Вы завершили строительство {fixtureName}!',
+    'TOAST_FIXTURE_COMPLETE': 'Вы завершили строительство {fixtureName}!',
 
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% кусок, чтобы восстановить семя дерева в сельском хозяйстве, когда собрано',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% действий требуется для создания мебели в Строительстве',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% действий требуется для создания мебели в Строительстве',
+    'MODIFIER_DATA_unlockPlot_1': 'Разблокировать участок для огорода в сельском хозяйстве',
+    'MODIFIER_DATA_unlockPlot_2': 'Разблокировать участок для трав в сельском хозяйстве',
+    'MODIFIER_DATA_unlockPlot_3': 'Разблокировать участок для огорода в сельском хозяйстве',
+    'MODIFIER_DATA_unlockPlot_4': 'Разблокировать участок для трав в сельском хозяйстве',
+    'MODIFIER_DATA_unlockPlot_5': 'Разблокировать участок для деревьев в сельском хозяйстве',
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '-${value}% шанс выполнить дополнительные действия за раз в Строительстве',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '+${value}% шанс выполнить дополнительные действия за раз в Строительстве',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} дополнительных материалов или прогресса при активации Эффективности',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} дополнительных материалов или прогресса при активации Эффективности',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '+${value} к расходу ресурсов при активации Эффективности',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '-${value} к расходу ресурсов при активации Эффективности',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '-${value}% шанс выполнить дополнительные действия при создании ${categoryName} в Строительстве',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '+${value}% шанс выполнить дополнительные действия при создании ${categoryName} в Строительстве',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} дополнительных действий при создании ${categoryName} с Эффективностью',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} дополнительных действий при создании ${categoryName} с Эффективностью',
+
+    'ITEM_NAME_Twice_Measured_Potion_I': 'Зелье Дважды Измеренное I',
+    'ITEM_NAME_Twice_Measured_Potion_II': 'Зелье Дважды Измеренное II',
+    'ITEM_NAME_Twice_Measured_Potion_III': 'Зелье Дважды Измеренное III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': 'Зелье Дважды Измеренное IV',
+    'POTION_NAME_Twice_Measured_Potion': 'Зелье Дважды Измеренное',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} дополнительных Материалов или Прогресса при активации Эффективности',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} дополнительных Материалов или Прогресса при активации Эффективности',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '-${value} стоимости Ресурсов при активации Эффективности',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '+${value} стоимости Ресурсов при активации Эффективности',
+
 
     'DESCRIPTION_ADDS_ITEM': 'Дает ${itemQuantity} ${itemName} ${itemImage}',
-    'DESCRIPTION_UNLOCKS_PLOT': 'Разблокирует 1 участок ${plotCategory} в разделе «Фермерство»',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'У вас нет необходимых материалов для его постройки.',
 

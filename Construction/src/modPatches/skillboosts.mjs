@@ -8,14 +8,17 @@ export function skillBoostsCompatibility(ctx) {
         noPreservation: false,
         noMastery: true,
         noSummon: true,
-        noPotion: true,
-        noDoubling: false,
+        noPotion: false,
+        noDoubling: true,
         noInterval: false,
         noConsumable: true,
         noPrimaryResource: false,
         isArtisan: true,
     });
-
+    skillBoosts.addNewModifiers({
+        skills: [game.construction],
+        modifiers: new Map([['melvorD:Melvor',['rielkConstruction:skillEfficiencyChance', 'rielkConstruction:skillEfficiencyPotency', 'rielkConstruction:skillEfficiencyCost']]])
+    });
     ctx.patch(skillBoosts.__proto__.constructor, 'createPetTooltip').after(function (_, container, item) {
         if (item.id === "rielkConstruction:Scoobs") {
             

@@ -23,7 +23,7 @@ class RielkConstructionMasteryElement extends HTMLElement {
     const maxTiers = 5; // hasDLC ? 8 : 5;
       // This'll be changed when the TotH tiers will actually be added
     this._bars = [];
-     if(window.innerWidth <= 768) 
+     if(window.innerWidth <= 968) 
     this.barsContainer.classList.add("flex-column");
     // tier bars
     for (let i = 0; i < maxTiers; i++) {

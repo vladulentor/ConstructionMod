@@ -17,6 +17,7 @@ export const language = {
     'MENU_HOUSE_COMPLETION': 'ハウス完成度',
     'MENU_BUILT': '建造済み',
     'MENU_FIXTURES': '設備',
+    'MENU_EFFICIENCY_BASE': '基本',
 
     'MENU_HOUSE': "家",
     'MENU_TIER': 'ランク ${tiername}',
@@ -25,6 +26,18 @@ export const language = {
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'すべての部屋に必要な階級以上の家具が揃うと、家のランクが上がります。恒久的な建築ボーナスが解除され、資材を獲得します。',
     'MENU_TEXT_REWARDS': '報酬',
 
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN': '一度に${potency}回の作業を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_1': '一度に1回の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_2': '一度に2倍の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_3': '一度に3倍の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_4': '一度に4倍の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_5': '一度に5倍の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_6': '一度に6倍の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_7': '一度に7倍の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': '一度に8倍の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': '一度に9倍の進行を完了する可能性があります。',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': '一度に${potency}倍の進行を完了する可能性があります。',
+    'MENU_TOOLTIP_EFFICIENCY_COST': '資源を${cost}倍消費します。',
     'SHOP_NAME_Construction_Skillcape': '建設スキルケープ',
 
     'PET_NAME_ChuckTheForeman': 'チャック・ザ・フォアマン',
@@ -60,15 +73,40 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
 
-        'TOAST_FIXTURE_COMPLETE':'${fixtureName}の建造が完了しました！',
+    'TOAST_FIXTURE_COMPLETE': '${fixtureName}の建造が完了しました！',
+    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '${categoryName}を建設中に追加行動を行う確率が-${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '${categoryName}を建設中に追加行動を行う確率が+${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '効率化で${categoryName}を作成する際の追加行動数-${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '効率化で${categoryName}を作成する際の追加行動数+${value}',
 
-    
+    'ITEM_NAME_Twice_Measured_Potion_I': '二度計るポーション I',
+    'ITEM_NAME_Twice_Measured_Potion_II': '二度計るポーション II',
+    'ITEM_NAME_Twice_Measured_Potion_III': '二度計るポーション III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': '二度計るポーション IV',
+    'POTION_NAME_Twice_Measured_Potion': '二度計るポーション',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '効率化を発動したときに得られる追加素材または進捗-${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '効率化を発動したときに得られる追加素材または進捗+${value}',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '効率化を発動したときの資源コスト-${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '効率化を発動したときの資源コスト+${value}',
+
     'MODIFIER_DATA_farmingTreeSeedReturn': '農業で木の種を収穫すると、その種を再び入手できる確率が +${value}% 増加します',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% のアクションが必要：建設で家具を作る',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% のアクションが必要：建設で家具を作る',
+    'MODIFIER_DATA_unlockPlot_1': '農業で畑の区画を解放する',
+    'MODIFIER_DATA_unlockPlot_2': '農業でハーブの区画を解放する',
+    'MODIFIER_DATA_unlockPlot_3': '農業で畑の区画を解放する',
+    'MODIFIER_DATA_unlockPlot_4': '農業でハーブの区画を解放する',
+    'MODIFIER_DATA_unlockPlot_5': '農業で木の区画を解放する',
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '建設で追加作業を一度に完了する確率 -${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '建設で追加作業を一度に完了する確率 +${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '効率発動時の追加材料や進行 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '効率発動時の追加材料や進行 +${value}',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '効率発動時の資源コスト +${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '効率発動時の資源コスト -${value}',
+
 
     'DESCRIPTION_ADDS_ITEM': '与える ${itemQuantity} ${itemName} ${itemImage}',
-    'DESCRIPTION_UNLOCKS_PLOT': '農業で 1 つの ${plotCategory} 区画のロックを解除します',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'それを作るのに必要な資材がない',
 

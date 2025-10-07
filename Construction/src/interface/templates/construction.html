@@ -13,7 +13,7 @@
         <div class="block block-rounded block-link-pop border-top border-rielk-construction border-4x">
           <div class="row no-gutters" id="rielk-construction-category-container">
             <div class="col-12 col-md-4" id="rielk-construction-artisan-element">
-              <artisan-menu id="rielk-construction-artisan-menu"></artisan-menu>
+              <cons-artisan-menu id="rielk-construction-artisan-menu"></cons-artisan-menu>
             </div>
             <div class="col-12 d-none" id="rielk-construction-house-element"></div>
           </div>
@@ -61,7 +61,8 @@
                         <button class="btn btn-sm btn-info m-1 mt-3" role="button" id="upgrades-button">
                           <rielk-lang-string lang-id="MENU_TEXT_SHOW_UPGRADES"></rielk-lang-string>
                         </button>
-                        <preservation-icon id="product-preservation"></preservation-icon>
+                          <preservation-icon id="product-preservation"></preservation-icon>
+                          <efficiency-icon id="product-efficiency"></efficiency-icon>
                       </div>
                     </div>
                   </div>
@@ -291,6 +292,45 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</template>
+
+<template id="efficiency-icon-template">
+  <div id="container" class="btn-light pointer-enabled m-2 info-icon" aria-expanded="false">
+    <img id="image" class="p-2" alt="Efficiency bonus effect.">
+    <div class="font-size-sm text-white text-center">
+      <small id="chance" class="badge-pill bg-primary"></small>
+    </div>
+  </div>
+</template>
+
+<template id="efficiency-icon-tooltip-template" data-image-init="true">
+  <h5 id="top-tooltip" class="font-w400 font-size-sm mb-1 text-warning text-center"></h5>
+  <h5 class="font-w400 font-size-sm mb-1 text-danger text-center" id="cap"></h5>
+  <h5 class="font-w400 font-size-sm mb-1 text-center">
+    <small>
+      <lang-string lang-id="MENU_TEXT_TOOLTIP_CHANCE_BELOW"></lang-string>
+    </small>
+  </h5>
+  <h5 class="font-w400 font-size-sm mb-1 text-center text-info">
+    <small>
+      <s>
+        <lang-string lang-id="MENU_TEXT_TOOLTIP_FUTURE_UPDATE">In a future update, you will be able to see where your
+          bonuses come from.</lang-string>
+      </s>
+    </small>
+  </h5>
+  <h5 class="font-w400 font-size-sm mb-1 text-center text-warning">
+    <lang-string lang-id="FUTURE_IS_NOW_OLD_MAN">The future is now, old man</lang-string>
+  </h5>
+  <div class="dropdown-divider"></div>
+  <div class="d-flex gap-2 w-100 px-3">
+    <div class="w-50">
+      <div id="potency-source-container" class="row mx-1"></div>
+    </div>
+    <div class="w-50">
+      <div id="chance-source-container" class="row  mx-1"></div>
     </div>
   </div>
 </template>

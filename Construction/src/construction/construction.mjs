@@ -13,13 +13,17 @@ const { ConstructionRecipe } = await loadModule('src/construction/constructionRe
 const { ConstructionRoom } = await loadModule('src/construction/constructionRoom.mjs');
 const { ConstructionTierMastery } = await loadModule('src/construction/constructionTierMastery.mjs');
 
+const { EfficiencySourceBuilder } = await loadModule('src/construction/constructionEfficiencySourceBuilder.mjs');
+
 const ctx = mod.getContext(import.meta);
+
 
 export class Construction extends ArtisanSkill {
     constructor(namespace, game) {
         super(namespace, 'Construction', game, ConstructionRecipe.name);
         this._media = 'assets/icon.png';
         this.baseInterval = 3000;
+        this.efficient = false;
         this.ui = undefined;
         this.categories = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionCategory');
         this.rooms = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionRoom');
@@ -348,6 +352,25 @@ export class Construction extends ArtisanSkill {
     renderProgressBar() {
         //handled by ui.render();
     }
+    renderRecipeInfo() {
+        if (!this.renderQueue.recipeInfo)
+            return;
+        const recipe = this.masteryAction;
+        const masteryXPToAdd = this.getMasteryXPToAddForAction(recipe, this.masteryModifiedInterval);
+        const baseMasteryXP = this.getBaseMasteryXPToAddForAction(recipe, this.masteryModifiedInterval);
+        this.menu.updateGrants(this.modifyXP(this.actionXP), this.actionXP, masteryXPToAdd, baseMasteryXP, this.getMasteryXPToAddToPool(masteryXPToAdd), this.activeRecipe.realm);
+        this.menu.updateGrantsSources(this, recipe);
+        this.menu.updateChances(this.getPreservationChance(recipe), this.getPreservationCap(recipe), this.getPreservationSources(recipe), this.getDoublingChance(recipe), this.getDoublingSources(recipe), 
+        this.getEfficiencyChance(recipe),
+    this.getEfficiencyPotencyMultiplier(recipe), this.getEfficiencyCostMultiplier(recipe), this.getEfficiencyChancePotencySources(recipe));
+        const query = this.getActionModifierQuery(recipe);
+        this.menu.updateAdditionalPrimaryQuantity(this.getFlatAdditionalPrimaryProductQuantity(this.actionItem, query), this.getAdditionalPrimaryResourceQuantitySources(query));
+        this.menu.updateCostReduction(this.getCostReduction(recipe), this.getCostReductionSources(recipe));
+        this.menu.updateInterval(this.actionInterval, this.getIntervalSources(recipe));
+        this.menu.updateAbyssalGrants(this.modifyAbyssalXP(this.actionAbyssalXP), this.actionAbyssalXP);
+        this.renderQueue.recipeInfo = false;
+    }
+
     getActionModifierQueryParams(action) {
         const scope = super.getActionModifierQueryParams(action);
         if (action instanceof ConstructionRecipe) {
@@ -396,31 +419,108 @@ export class Construction extends ArtisanSkill {
             html,
         });
     }
+    // Efficiency-related functions
+    /** Gets the efficiency chance for a given action */
+    getEfficiencyChance(action) {
+        return this.game.modifiers.getValue(
+            "rielkConstruction:skillEfficiencyChance",
+            this.getActionModifierQuery(action)
+        );
+    }
+
+    /** Gets the cost multiplier for efficiency (default 2) */
+    getEfficiencyCostMultiplier(action) {
+        const defaultCostMult = 2;
+        const modifier = this.game.modifiers.getValue(
+            "rielkConstruction:skillEfficiencyCost",
+            this.getActionModifierQuery(action)
+        ) || 0;
+        return defaultCostMult + modifier;
+    }
+
+    /** Gets the Potency/progress multiplier for efficiency (default 2) */
+    getEfficiencyPotencyMultiplier(action) {
+        const defaultPotencyMult = 2;
+        const modifier = this.game.modifiers.getValue(
+            "rielkConstruction:skillEfficiencyPotency",
+            this.getActionModifierQuery(action)
+        ) || 0;
+        return defaultPotencyMult + modifier;
+    }
+
+    _buildEfficiencyChancePotencySources(action) {
+        const builder = new EfficiencySourceBuilder(this.game.modifiers, true);
+        const query = this.getActionModifierQuery(action);
+        builder.addPotencySources("rielkConstruction:skillEfficiencyPotency", query);
+        builder.addChanceSources('rielkConstruction:skillEfficiencyChance', query);
+        return builder;
+    }
+
+    getEfficiencyChancePotencySources(action) {
+        const builder = this._buildEfficiencyChancePotencySources(action);
+        const spans = builder.getSpans();
+
+        return spans;
+    }
+
+    applyPrimaryProductMultipliers(item, quantity, action, query) {
+        //if (rollPercentage(this.getDoublingChance(action))) 
+        //  quantity *= 2;
+        //Construction skill has no "regular" doubling
+        quantity *= Math.pow(2, this.game.modifiers.getValue("melvorD:doubleItemsSkill" /* ModifierIDs.doubleItemsSkill */, query));
+        quantity *= Math.pow(2, this.game.modifiers.getValue("melvorD:bypassDoubleItemsSkill" /* ModifierIDs.bypassDoubleItemsSkill */, query));
+        return quantity;
+    }
+
+    modifyPrimaryProductQuantity(item, quantity, action, effect) {
+        const query = this.getActionModifierQuery(action);
+        quantity += this.getFlatBasePrimaryProductQuantityModifier(item, query);
+        quantity += this.getRandomFlatBasePrimaryProductQuantity(item, query);
+        if (effect) quantity = this.applyEfficiencyProductMultipliers(item, quantity, action, query); //it's not an amazing workaround
+        quantity *= 1 + this.getBasePrimaryProductQuantityModifier(item, query) / 100;
+        quantity = Math.floor(quantity);
+        quantity = this.applyPrimaryProductMultipliers(item, quantity, action, query);
+        quantity += this.getFlatAdditionalPrimaryProductQuantity(item, query);
+        quantity += this.getRandomFlatAdditionalPrimaryProductQuantity(item, action, query);
+        return Math.max(quantity, 1);
+    }
+    applyEfficiencyProductMultipliers(item, quantity, action, query) {
+        quantity *= this.getEfficiencyPotencyMultiplier(action);
+        return quantity;
+    }
+
+    //        builder.addSources("melvorD:skillEfficiencyCostMult", this.getActionModifierQuery(action)); For later
+
+
+
     preAction() { }
     get actionRewards() {
         const rewards = new Rewards(this.game);
         var recipe;
         rewards.setActionInterval(this.actionInterval);
         var actionEvent;
+        var xpMult;
         switch (this._actionMode) {
             case 0: {
                 recipe = this.activeRecipe;
                 actionEvent = new ConstructionActionEvent(this, recipe);
+                xpMult = this.efficient ? this.getEfficiencyPotencyMultiplier(recipe) : 1;
                 const item = recipe.product;
-                const qtyToAdd = this.modifyPrimaryProductQuantity(item, this.unmodifiedActionQuantity, recipe);
+                const qtyToAdd = this.modifyPrimaryProductQuantity(item, this.unmodifiedActionQuantity, recipe, this.efficient);
                 rewards.addItem(item, qtyToAdd);
                 this.addCurrencyFromPrimaryProductGain(rewards, item, qtyToAdd, recipe);
                 actionEvent.productQuantity = qtyToAdd;
                 this.stats.add(ConstructionStats.ItemsProduced, qtyToAdd);
-                rewards.addXP(this, this.actionXP, recipe);
+                rewards.addXP(this, Math.floor(this.actionXP) * xpMult, recipe);
                 rewards.addAbyssalXP(this, this.actionAbyssalXP, recipe);
                 break;
             }
             case 1: {
                 recipe = this.activeBuildRecipe;
+                xpMult = this.efficient ? this.getEfficiencyPotencyMultiplier(recipe) : 1;
                 actionEvent = new ConstructionActionEvent(this, recipe);
                 this.stats.add(ConstructionStats.FixtureProgressBuilt, 1);
-                rewards.addXP(this, this.buildActionXP, recipe);
+                rewards.addXP(this, Math.floor(this.buildActionXP) * Math.floor(xpMult), recipe);
                 rewards.addAbyssalXP(this, this.buildActionAbyssalXP, recipe);
                 break;
             }
@@ -438,11 +538,12 @@ export class Construction extends ArtisanSkill {
         this.stats.add(ConstructionStats.TimeSpent, this.currentActionInterval);
         this.renderQueue.recipeInfo = true;
         this.renderQueue.quantities = true;
+        this.efficient = false;
     }
     action() {
         switch (this._actionMode) {
             case 0:
-                super.action();
+                this.artisanAction();
                 break;
             case 1:
                 this.buildAction();
@@ -451,6 +552,7 @@ export class Construction extends ArtisanSkill {
                 break;
         }
     }
+
     addMasteryProgress(tier) {
         let tierData = this.tierMasteries.getObjectSafe(`rielkConstruction:${tier}`);
 
@@ -461,9 +563,60 @@ export class Construction extends ArtisanSkill {
         this.renderQueue.masteryBonusElements = true;
 
     }
+    scalecost(cost, multiplier = 0) {
+        const origCost = cost;
+        multiplier += 2;
+        cost._currencies.forEach((quantity, currency, map) => {
+            map.set(currency, Math.round(quantity * multiplier));
+        });
+        cost._items.forEach((quantity, item, map) => {
+            map.set(item, Math.round(quantity * multiplier));
+        });
+
+        if (!cost.checkIfOwned() && origCost.checkIfOwned()) {
+            cost = origCost// This reset is for the specific case of the player not having enough for the efficiency ability but having enough for a normal craft, so we give it to them for no extra cost.
+            //TODO: Add a message if this happens
+            //PS, this could technically be abused by someone alays holding a super small amount of items when building to not suffer the costs, but who would do that
+        }
+    }
+    artisanAction() {
+        if (rollPercentage(this.getEfficiencyChance(this.activeRecipe))) this.efficient = true;
+        if (this.efficient) this.game.combat.notifications.add({ type: 'Preserve', args: [this] });
+        let recipeCosts = this.getCurrentRecipeCosts();
+        if (this.efficient) this.scalecost(recipeCosts, this.getEfficiencyCostMultiplier(this.activeRecipe))
+        if (!recipeCosts.checkIfOwned()) {
+            this.game.combat.notifications.add({ type: 'Player', args: [this, this.noCostsMessage, 'danger'] });
+            this.stop();
+            return;
+        }
+        this.preAction();
+        const preserve = rollPercentage(this.getPreservationChance(this.masteryAction));
+        if (preserve) {
+            this.game.combat.notifications.add({ type: 'Preserve', args: [this] });
+            this.recordCostPreservationStats(recipeCosts);
+        }
+        else {
+            recipeCosts.consumeCosts();
+            this.recordCostConsumptionStats(recipeCosts);
+        }
+        const continueSkill = this.addActionRewards();
+        this.postAction();
+        const nextCosts = this.getCurrentRecipeCosts();
+        if (nextCosts.checkIfOwned() && continueSkill) {
+            this.startActionTimer();
+        }
+        else {
+            if (!nextCosts.checkIfOwned())
+                this.game.combat.notifications.add({ type: 'Player', args: [this, this.noCostsMessage, 'danger'] });
+            this.stop();
+        }
+
+    }
 
     buildAction() {
-        const recipeCosts = this.getCurrentBuildRecipeCosts();
+        let recipeCosts = this.getCurrentBuildRecipeCosts();
+        if (rollPercentage(this.getEfficiencyChance(this.activeBuildRecipe))) this.efficient = true;
+        if (this.efficient) this.scalecost(recipeCosts, this.getEfficiencyCostMultiplier(this.activeBuildRecipe))
         if (!recipeCosts.checkIfOwned()) {
             this.game.combat.notifications.add({
                 type: 'Player',
@@ -473,6 +626,7 @@ export class Construction extends ArtisanSkill {
             return;
         }
         this.preAction();
+        const progressMult = this.efficient ? this.getEfficiencyPotencyMultiplier(this.activeBuildRecipe) : 1;
         const preserve = rollPercentage(this.getPreservationChance(this.activeBuildRecipe));
         if (preserve) {
             this.game.combat.notifications.add({
@@ -484,8 +638,8 @@ export class Construction extends ArtisanSkill {
             recipeCosts.consumeCosts();
             this.recordCostConsumptionStats(recipeCosts);
         }
-        const continueSkill1 = this.addActionRewards();
-        const continueSkill2 = this.selectedFixtureRecipe.makeProgress();
+        const continueSkill1 = this.addActionRewards(); //TODO, determine if this is needed
+        const continueSkill2 = this.selectedFixtureRecipe.makeProgress(progressMult);
         this.postAction();
         const nextCosts = this.getCurrentBuildRecipeCosts();
         if (continueSkill1 && continueSkill2 && nextCosts.checkIfOwned()) {

@@ -36,7 +36,7 @@ export const language = {
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': 'È possibile completare un ottuplo progresso in una volta.',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': 'È possibile completare un nonuplo progresso in una volta.',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': 'È possibile completare ${potency} progressi in una volta.',
-    'MENU_EFFICIENCY_COST': 'Consuma ${cost} volte le risorse.',
+    'MENU_TOOLTIP_EFFICIENCY_COST': 'Consuma ${cost} volte le risorse.',
     'MENU_EFFICIENCY_BASE': 'Base',
     'SHOP_NAME_Construction_Skillcape': 'Abilmantello della costruzione',
 
@@ -88,7 +88,21 @@ export const language = {
     'MODIFIER_DATA_decrease_skillEfficiencyCost': '+${value} al costo delle risorse quando si attiva Efficienza',
     'MODIFIER_DATA_increase_skillEfficiencyCost': '-${value} al costo delle risorse quando si attiva Efficienza',
 
+    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '-${value}% di probabilità di completare azioni extra durante la creazione di ${categoryName} in Costruzione',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '+${value}% di probabilità di completare azioni extra durante la creazione di ${categoryName} in Costruzione',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} azioni extra completate durante la creazione di ${categoryName} con Efficienza',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} azioni extra completate durante la creazione di ${categoryName} con Efficienza',
 
+    'ITEM_NAME_Twice_Measured_Potion_I': 'Pozione Misurata Due Volte I',
+    'ITEM_NAME_Twice_Measured_Potion_II': 'Pozione Misurata Due Volte II',
+    'ITEM_NAME_Twice_Measured_Potion_III': 'Pozione Misurata Due Volte III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': 'Pozione Misurata Due Volte IV',
+    'POTION_NAME_Twice_Measured_Potion': 'Pozione Misurata Due Volte',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} Materiali o Progresso extra ottenuti durante l’attivazione di Efficienza',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} Materiali o Progresso extra ottenuti durante l’attivazione di Efficienza',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '-${value} costo in Risorse durante l’attivazione di Efficienza',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '+${value} costo in Risorse durante l’attivazione di Efficienza',
 
     'DESCRIPTION_ADDS_ITEM': 'Dare ${itemQuantity} ${itemName} ${itemImage}',
 

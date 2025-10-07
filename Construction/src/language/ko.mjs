@@ -36,7 +36,7 @@ export const language = {
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': '한 번에 8단계 진행을 완료할 수 있습니다.',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': '한 번에 9단계 진행을 완료할 수 있습니다.',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': '한 번에 ${potency}단계 진행을 완료할 수 있습니다.',
-    'MENU_EFFICIENCY_COST': '자원을 ${cost}배 소비합니다.',
+    'MENU_TOOLTIP_EFFICIENCY_COST': '자원을 ${cost}배 소비합니다.',
     'MENU_EFFICIENCY_BASE': '기본',
     'SHOP_NAME_Construction_Skillcape': '건설 스킬케이프',
 
@@ -91,6 +91,21 @@ export const language = {
     'MODIFIER_DATA_decrease_skillEfficiencyCost': '효율 발동 시 자원 비용 +${value}',
     'MODIFIER_DATA_increase_skillEfficiencyCost': '효율 발동 시 자원 비용 -${value}',
 
+    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '건설에서 ${categoryName}을(를) 제작할 때 추가 행동을 수행할 확률 -${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '건설에서 ${categoryName}을(를) 제작할 때 추가 행동을 수행할 확률 +${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '효율 발동 시 ${categoryName} 제작 중 완료되는 추가 행동 수 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '효율 발동 시 ${categoryName} 제작 중 완료되는 추가 행동 수 +${value}',
+
+    'ITEM_NAME_Twice_Measured_Potion_I': '두 번 잰 물약 I',
+    'ITEM_NAME_Twice_Measured_Potion_II': '두 번 잰 물약 II',
+    'ITEM_NAME_Twice_Measured_Potion_III': '두 번 잰 물약 III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': '두 번 잰 물약 IV',
+    'POTION_NAME_Twice_Measured_Potion': '두 번 잰 물약',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '효율 발동 시 추가 재료 또는 진행도 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '효율 발동 시 추가 재료 또는 진행도 +${value}',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '효율 발동 시 자원 소모량 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '효율 발동 시 자원 소모량 +${value}',
     'DESCRIPTION_ADDS_ITEM': '준다 ${itemQuantity} ${itemName} ${itemImage}',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '그것을 만드는 데 필요한 재료가 없습니다.',

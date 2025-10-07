@@ -34,7 +34,7 @@ export const language = {
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': '有機會一次完成八倍進度。',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': '有機會一次完成九倍進度。',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': '有機會一次完成${potency}倍進度。',
-    'MENU_EFFICIENCY_COST': '消耗${cost}倍資源。',
+    'MENU_TOOLTIP_EFFICIENCY_COST': '消耗${cost}倍資源。',
     'MENU_EFFICIENCY_BASE': '基礎',
     'SHOP_NAME_Construction_Skillcape': '建築技能角',
 
@@ -83,6 +83,21 @@ export const language = {
     'MODIFIER_DATA_increase_skillEfficiencyCost': '啟動效率時資源消耗 -${value}',
 
     'TOAST_FIXTURE_COMPLETE': '你已完成建造 ${fixtureName}!',
+        'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '建造 ${categoryName} 時完成額外動作的機率 -${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '建造 ${categoryName} 時完成額外動作的機率 +${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '使用效率製作 ${categoryName} 時完成額外動作 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '使用效率製作 ${categoryName} 時完成額外動作 +${value}',
+
+    'ITEM_NAME_Twice_Measured_Potion_I':'雙重測量藥水 I',
+    'ITEM_NAME_Twice_Measured_Potion_II':'雙重測量藥水 II',
+    'ITEM_NAME_Twice_Measured_Potion_III':'雙重測量藥水 III',
+    'ITEM_NAME_Twice_Measured_Potion_IV':'雙重測量藥水 IV',
+    'POTION_NAME_Twice_Measured_Potion':'雙重測量藥水',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '啟動效率時額外獲得的材料或進度 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '啟動效率時額外獲得的材料或進度 +${value}',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '啟動效率時資源消耗 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '啟動效率時資源消耗 +${value}',
 
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收穫時，+${value}% 幾率在農業中重新獲得樹種子',

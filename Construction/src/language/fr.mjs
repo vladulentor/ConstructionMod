@@ -36,7 +36,7 @@ export const language = {
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': 'Octuple progrès peut être fait en une fois.',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': 'Nonuple progrès peut être fait en une fois.',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': '${potency} progrès peuvent être faits en une fois.',
-    'MENU_EFFICIENCY_COST': 'Consommera ${cost} fois plus de ressources.',
+    'MENU_TOOLTIP_EFFICIENCY_COST': 'Consommera ${cost} fois plus de ressources.',
     'MENU_EFFICIENCY_BASE': 'Base',
     'SHOP_NAME_Construction_Skillcape': 'Cape de Chantier',
 
@@ -90,7 +90,22 @@ export const language = {
     'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} matériaux ou progrès supplémentaires lors de l’activation de l’Efficacité',
     'MODIFIER_DATA_decrease_skillEfficiencyCost': '+${value} de coût en ressources lors de l’activation de l’Efficacité',
     'MODIFIER_DATA_increase_skillEfficiencyCost': '-${value} de coût en ressources lors de l’activation de l’Efficacité',
-    
+    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '-${value}% de chance d’effectuer des actions supplémentaires lors de la fabrication de ${categoryName} en Construction',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '+${value}% de chance d’effectuer des actions supplémentaires lors de la fabrication de ${categoryName} en Construction',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} actions supplémentaires effectuées lors de la fabrication de ${categoryName} avec Efficacité',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} actions supplémentaires effectuées lors de la fabrication de ${categoryName} avec Efficacité',
+
+    'ITEM_NAME_Twice_Measured_Potion_I': 'Potion Mesurée Deux Fois I',
+    'ITEM_NAME_Twice_Measured_Potion_II': 'Potion Mesurée Deux Fois II',
+    'ITEM_NAME_Twice_Measured_Potion_III': 'Potion Mesurée Deux Fois III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': 'Potion Mesurée Deux Fois IV',
+    'POTION_NAME_Twice_Measured_Potion': 'Potion Mesurée Deux Fois',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} Matériaux ou Progression supplémentaires produits lors de l’activation de l’Efficacité',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} Matériaux ou Progression supplémentaires produits lors de l’activation de l’Efficacité',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '-${value} de coût en Ressources lors de l’activation de l’Efficacité',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '+${value} de coût en Ressources lors de l’activation de l’Efficacité',
+
     'DESCRIPTION_ADDS_ITEM': 'Donner ${itemQuantity} ${itemName} ${itemImage}',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'Vous n\'avez pas les matériaux nécessaires pour construire cela.',

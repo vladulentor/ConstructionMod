@@ -43,6 +43,17 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.appendChild(this._content);
         this.noneSelected ? this.grants.setUnselected() : this.grants.setSelected();
         this.grants.hideMastery();
+        if((window.innerWidth <= 1920&& window.innerWidth>= 1350) || (window.innerWidth<= 860 && window.innerWidth>= 767 )) 
+        for (const icon of [this.productPreservation, this.productEfficiency]) {
+            const btn = icon.querySelector('.info-icon');
+            if (btn) {
+                btn.classList.remove('m-2');
+                btn.classList.add('mb-2');
+                btn.classList.add('mt-2');
+                if (i === 1 ) btn.classList.add('ms-1');
+            }
+        }
+
     }
 
     setRoom(room, construction) {
@@ -79,6 +90,8 @@ class ConstructionRoomPanelElement extends HTMLElement {
         }
         );
     }
+
+
     updateFixtureButtons(game) {
         this.fixtureNavs.forEach((nav, fixture) => {
             nav.updateFixture(fixture, game);
@@ -200,8 +213,8 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.grants.hideMastery();
         this.productPreservation.setChance(construction.getPreservationChance(fixtureRecipe), construction.getPreservationCap(fixtureRecipe), construction.getPreservationSources(fixtureRecipe));
         this.productEfficiency.setChance(
-            construction.getEfficiencyChance(fixtureRecipe), 
-            construction.getEfficiencyPotencyMultiplier(fixtureRecipe), 
+            construction.getEfficiencyChance(fixtureRecipe),
+            construction.getEfficiencyPotencyMultiplier(fixtureRecipe),
             construction.getEfficiencyCostMultiplier(fixtureRecipe),
             construction.getEfficiencyChancePotencySources(fixtureRecipe), "build");
     }

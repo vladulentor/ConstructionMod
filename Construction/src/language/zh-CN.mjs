@@ -36,7 +36,7 @@ export const language = {
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': '有机会一次完成八倍进度。',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': '有机会一次完成九倍进度。',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': '有机会一次完成${potency}倍进度。',
-    'MENU_EFFICIENCY_COST': '消耗${cost}倍资源。',
+    'MENU_TOOLTIP_EFFICIENCY_COST': '消耗${cost}倍资源。',
     'MENU_EFFICIENCY_BASE': '基础',
     'SHOP_NAME_Construction_Skillcape': '建筑技能角',
 
@@ -74,6 +74,22 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Boots': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
 
     'TOAST_FIXTURE_COMPLETE': '你已完成建造 ${fixtureName}!',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '建造 ${categoryName} 时完成额外动作的概率 -${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '建造 ${categoryName} 时完成额外动作的概率 +${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '使用效率制作 ${categoryName} 时完成额外动作 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '使用效率制作 ${categoryName} 时完成额外动作 +${value}',
+
+    'ITEM_NAME_Twice_Measured_Potion_I': '双重测量药水 I',
+    'ITEM_NAME_Twice_Measured_Potion_II': '双重测量药水 II',
+    'ITEM_NAME_Twice_Measured_Potion_III': '双重测量药水 III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': '双重测量药水 IV',
+    'POTION_NAME_Twice_Measured_Potion': '双重测量药水',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '激活效率时额外获得的材料或进度 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '激活效率时额外获得的材料或进度 +${value}',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '激活效率时资源消耗 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '激活效率时资源消耗 +${value}',
 
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收获时有机会在农业中重新获得树种',

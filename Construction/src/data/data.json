@@ -198,6 +198,150 @@
         "sellsFor": 0
       },
       {
+        "itemType": "Potion",
+        "id": "Twice_Measured_Potion_I",
+        "name": "Twice Measured Potion I",
+        "category": "Herblore",
+        "type": "Potion",
+        "media": "assets/items/twice_measured_1.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "charges": 15,
+        "tier": 1,
+        "sellsFor": 53,
+        "action": "rielkConstruction:Construction",
+        "modifiers": {
+          "rielkConstruction:skillEfficiencyChance": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "categoryID": "rielkConstruction:Materials",
+              "value": 10
+            }
+          ],
+          "rielkConstruction:skillEfficiencyPotency": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "categoryID": "rielkConstruction:House",
+              "value": 1
+            }
+          ]
+        },
+        "consumesOn": [
+          {
+            "type": "ConstructionAction"
+          }
+        ]
+      },
+      {
+        "itemType": "Potion",
+        "id": "Twice_Measured_Potion_II",
+        "name": "Twice Measured Potion II",
+        "category": "Herblore",
+        "type": "Potion",
+        "media": "assets/items/twice_measured_2.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "charges": 15,
+        "tier": 2,
+        "sellsFor": 53,
+        "action": "rielkConstruction:Construction",
+        "modifiers": {
+          "rielkConstruction:skillEfficiencyChance": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "categoryID": "rielkConstruction:Materials",
+              "value": 15
+            }
+          ],
+          "rielkConstruction:skillEfficiencyPotency": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "categoryID": "rielkConstruction:House",
+              "value": 2
+            }
+          ]
+        },
+        "consumesOn": [
+          {
+            "type": "ConstructionAction"
+          }
+        ]
+      },
+      {
+        "itemType": "Potion",
+        "id": "Twice_Measured_Potion_III",
+        "name": "Twice Measured Potion III",
+        "category": "Herblore",
+        "type": "Potion",
+        "media": "assets/items/twice_measured_3.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "charges": 15,
+        "tier": 3,
+        "sellsFor": 53,
+        "action": "rielkConstruction:Construction",
+        "modifiers": {
+          "rielkConstruction:skillEfficiencyChance": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "categoryID": "rielkConstruction:Materials",
+              "value": 20
+            }
+          ],
+          "rielkConstruction:skillEfficiencyPotency": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "categoryID": "rielkConstruction:House",
+              "value": 2
+            }
+          ]
+        },
+        "consumesOn": [
+          {
+            "type": "ConstructionAction"
+          }
+        ]
+      },
+      {
+        "itemType": "Potion",
+        "id": "Twice_Measured_Potion_IV",
+        "name": "Twice Measured Potion IV",
+        "category": "Herblore",
+        "type": "Potion",
+        "media": "assets/items/twice_measured_4.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "charges": 15,
+        "tier": 4,
+        "sellsFor": 53,
+        "action": "rielkConstruction:Construction",
+        "modifiers": {
+          "rielkConstruction:skillEfficiencyChance": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "categoryID": "rielkConstruction:Materials",
+              "value": 30
+            }
+          ],
+          "rielkConstruction:skillEfficiencyPotency": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "categoryID": "rielkConstruction:House",
+              "value": 3
+            }
+          ]
+        },
+        "consumesOn": [
+          {
+            "type": "ConstructionAction"
+          }
+        ]
+      },
+      {
         "itemType": "Equipment",
         "id": "Construction_Skillcape",
         "name": "Construction Skillcape",
@@ -241,10 +385,9 @@
               "value": -250
             }
           ],
-          "skillItemDoublingChance": [
+          "rielkConstruction:skillEfficiencyChance": [
             {
-              "value": 15,
-              "skillID": "rielkConstruction:Construction"
+              "value": 10
             }
           ],
           "rielkConstruction:constructionActionsToUpgrade": -10
@@ -602,10 +745,9 @@
         "media": "assets/chuck_the_foreman.png",
         "ignoreCompletion": false,
         "modifiers": {
-          "skillPreservationChance": [
+          "rielkConstruction:skillEfficiencyPotency": [
             {
-              "skillID": "rielkConstruction:Construction",
-              "value": 10
+              "value": 1
             }
           ]
         },
@@ -649,6 +791,38 @@
       }
     ],
     "skillData": [
+      {
+        "skillID": "melvorD:Herblore",
+        "data": {
+          "recipes": [
+            {
+              "id": "Twice_Measured_Potion",
+              "name": "Twice Measured Potion",
+              "level": 35,
+              "potionIDs": [
+                "rielkConstruction:Twice_Measured_Potion_I",
+                "rielkConstruction:Twice_Measured_Potion_II",
+                "rielkConstruction:Twice_Measured_Potion_III",
+                "rielkConstruction:Twice_Measured_Potion_IV"
+              ],
+              "baseExperience": 34,
+              "categoryID": "melvorF:SkillPotions",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 3
+                },
+                {
+                  "id": "melvorD:Mantalyme_Herb",
+                  "quantity": 2
+                }
+              ],
+              "gpCost": 0,
+              "scCost": 0
+            }
+          ]
+        }
+      },
       {
         "skillID": "melvorD:Farming",
         "data": {
@@ -844,7 +1018,11 @@
                     "skillID": "rielkConstruction:Construction"
                   }
                 ],
-                "rielkConstruction:skillEfficiencyPotency": 2
+                "rielkConstruction:skillEfficiencyPotency": [
+                  {
+                    "value": 2
+                  }
+                ]
               }
             },
             {
@@ -879,8 +1057,7 @@
                     "value": 10,
                     "skillID": "rielkConstruction:Construction"
                   }
-                ],
-                "rielkConstruction:skillEfficiencyChance": 25
+                ]
               }
             },
             {
@@ -911,10 +1088,14 @@
                     "value": -350
                   }
                 ],
-                "skillItemDoublingChance": [
+                "rielkConstruction:skillEfficiencyChance": [
                   {
-                    "value": 8,
-                    "skillID": "rielkConstruction:Construction"
+                    "value": 10
+                  }
+                ],
+                "rielkConstruction:skillEfficiencyPotency": [
+                  {
+                    "value": 1
                   }
                 ]
               }
@@ -2579,11 +2760,12 @@
                 "skillItemDoublingChance": [
                   {
                     "value": 8,
-                    "skillID": "rielkConstruction:Construction"
-                  },
-                  {
-                    "value": 5,
                     "skillID": "melvorD:Smithing"
+                  }
+                ],
+                "rielkConstruction:skillEfficiencyChance": [
+                  {
+                    "value": 5
                   }
                 ]
               }
@@ -2607,10 +2789,6 @@
               "currencyCosts": [],
               "modifiers": {
                 "masteryXP": [
-                  {
-                    "value": 8,
-                    "skillID": "rielkConstruction:Construction"
-                  },
                   {
                     "value": 5,
                     "skillID": "melvorD:Smithing"
@@ -2640,7 +2818,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "smithingCoalCost": -25
+                "smithingCoalCost": -25,
+                "rielkConstruction:skillEfficiencyCost": -0.25
               }
             },
             {
@@ -4207,21 +4386,16 @@
                     "skillID": "rielkConstruction:Construction"
                   }
                 ],
-                "skillInterval": [
+                "rielkConstruction:skillEfficiencyChance": [
                   {
-                    "value": -2,
-                    "skillID": "melvorD:Fletching"
-                  },
-                  {
-                    "value": -2,
-                    "skillID": "melvorD:Smithing"
-                  },
-                  {
-                    "value": -2,
-                    "skillID": "melvorD:Crafting"
+                    "value": 1
                   }
                 ],
-                "rielkConstruction:skillEfficiencyChance": 25
+                "rielkConstruction:skillEfficiencyPotency": [
+                  {
+                    "value": 0.25
+                  }
+                ]
               }
             },
             {
@@ -4258,7 +4432,11 @@
                     "skillID": "melvorD:Fletching"
                   }
                 ],
-                "rielkConstruction:skillEfficiencyPotency": 2
+                "rielkConstruction:skillEfficiencyChance": [
+                  {
+                    "value": 3
+                  }
+                ]
               }
             },
             {
@@ -4289,13 +4467,11 @@
                     "skillID": "rielkConstruction:Construction"
                   }
                 ],
-                "skillInterval": [
+                "rielkConstruction:skillEfficiencyChance": [
                   {
-                    "value": -3,
-                    "skillID": "melvorD:Smithing"
+                    "value": 5
                   }
-                ],
-                "rielkConstruction:skillEfficiencyChance": 25
+                ]
               }
             },
             {
@@ -4331,6 +4507,16 @@
                     "value": -3,
                     "skillID": "melvorD:Crafting"
                   }
+                ],
+                "rielkConstruction:skillEfficiencyChance": [
+                  {
+                    "value": 7
+                  }
+                ],
+                "rielkConstruction:skillEfficiencyPotency": [
+                  {
+                    "value": 0.75
+                  }
                 ]
               }
             },
@@ -4365,15 +4551,12 @@
                 "skillInterval": [
                   {
                     "value": -5,
-                    "skillID": "melvorD:Fletching"
-                  },
-                  {
-                    "value": -5,
-                    "skillID": "melvorD:Smithing"
-                  },
-                  {
-                    "value": -5,
                     "skillID": "melvorD:Crafting"
+                  }
+                ],
+                "rielkConstruction:skillEfficiencyChance": [
+                  {
+                    "value": 9
                   }
                 ]
               }
@@ -4968,10 +5151,9 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillItemDoublingChance": [
+                "rielkConstruction:skillEfficiencyPotency": [
                   {
-                    "value": 5,
-                    "skillID": "rielkConstruction:Construction"
+                    "value": 0.35
                   }
                 ],
                 "skillPreservationChance": [
@@ -5090,18 +5272,38 @@
         "id": "skillEfficiencyChance",
         "allowedScopes": [
           {
-            "scopes": {},
+            "scopes": {
+              "skill": true,
+              "category": true
+            },
             "descriptions": [
               {
                 "text": "-${value}% Efficiency chance",
-                "lang": "MODIFIER_DATA_decrease_skillEfficiencyChance",
+                "lang": "MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory",
                 "below": 0,
                 "includeSign": false
               },
               {
                 "text": "+${value}% Efficiency chance",
+                "lang": "MODIFIER_DATA_increase_skillEfficiencyChanceForCategory",
+                "above": 0,
+                "includeSign": false
+              }
+            ]
+          },
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "+${value}% Efficiency chance",
                 "lang": "MODIFIER_DATA_increase_skillEfficiencyChance",
                 "above": 0,
+                "includeSign": false
+              },
+              {
+                "text": "-${value}% Efficiency chance",
+                "lang": "MODIFIER_DATA_decrease_skillEfficiencyChance",
+                "below": 0,
                 "includeSign": false
               }
             ]
@@ -5111,6 +5313,27 @@
       {
         "id": "skillEfficiencyPotency",
         "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true,
+              "category": true
+            },
+            "scopeSource": "rielkConstruction:Construction",
+            "descriptions": [
+              {
+                "text": "-${value} Efficiency potency for ${category}",
+                "lang": "MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory",
+                "below": 0,
+                "includeSign": false
+              },
+              {
+                "text": "+${value} Efficiency potency for ${category}",
+                "lang": "MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory",
+                "above": 0,
+                "includeSign": false
+              }
+            ]
+          },
           {
             "scopes": {},
             "descriptions": [
@@ -5138,13 +5361,13 @@
             "scopes": {},
             "descriptions": [
               {
-                "text": "+${value} Resource cost when activating Efficiency",
+                "text": "-${value} Resource cost when activating Efficiency",
                 "lang": "MODIFIER_DATA_decrease_skillEfficiencyCost",
                 "below": 0,
                 "includeSign": false
               },
               {
-                "text": "-${value} Resource cost when activating Efficiency",
+                "text": "+${value} Resource cost when activating Efficiency",
                 "lang": "MODIFIER_DATA_increase_skillEfficiencyCost",
                 "above": 0,
                 "includeSign": false
@@ -5176,10 +5399,9 @@
                 "value": -250
               }
             ],
-            "skillItemDoublingChance": [
+            "rielkConstruction:skillEfficiencyChance": [
               {
-                "value": 15,
-                "skillID": "rielkConstruction:Construction"
+                "value": 10
               }
             ],
             "rielkConstruction:constructionActionsToUpgrade": -10
@@ -5205,10 +5427,9 @@
                 "value": -250
               }
             ],
-            "skillItemDoublingChance": [
+            "rielkConstruction:skillEfficiencyChance": [
               {
-                "value": 15,
-                "skillID": "rielkConstruction:Construction"
+                "value": 10
               }
             ],
             "rielkConstruction:constructionActionsToUpgrade": -10

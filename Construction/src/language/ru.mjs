@@ -35,7 +35,7 @@ export const language = {
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': 'Есть шанс выполнить восьмикратный прогресс за раз.',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': 'Есть шанс выполнить девятикратный прогресс за раз.',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': 'Есть шанс выполнить ${potency}-кратный прогресс за раз.',
-    'MENU_EFFICIENCY_COST': 'Потребляет ресурсы в ${cost} раз больше.',
+    'MENU_TOOLTIP_EFFICIENCY_COST': 'Потребляет ресурсы в ${cost} раз больше.',
     'MENU_EFFICIENCY_BASE': 'База',
     'SHOP_NAME_Construction_Skillcape': 'Плащ Мастера: Строительство',
 
@@ -89,6 +89,23 @@ export const language = {
     'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} дополнительных материалов или прогресса при активации Эффективности',
     'MODIFIER_DATA_decrease_skillEfficiencyCost': '+${value} к расходу ресурсов при активации Эффективности',
     'MODIFIER_DATA_increase_skillEfficiencyCost': '-${value} к расходу ресурсов при активации Эффективности',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '-${value}% шанс выполнить дополнительные действия при создании ${categoryName} в Строительстве',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '+${value}% шанс выполнить дополнительные действия при создании ${categoryName} в Строительстве',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} дополнительных действий при создании ${categoryName} с Эффективностью',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} дополнительных действий при создании ${categoryName} с Эффективностью',
+
+    'ITEM_NAME_Twice_Measured_Potion_I': 'Зелье Дважды Измеренное I',
+    'ITEM_NAME_Twice_Measured_Potion_II': 'Зелье Дважды Измеренное II',
+    'ITEM_NAME_Twice_Measured_Potion_III': 'Зелье Дважды Измеренное III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': 'Зелье Дважды Измеренное IV',
+    'POTION_NAME_Twice_Measured_Potion': 'Зелье Дважды Измеренное',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} дополнительных Материалов или Прогресса при активации Эффективности',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} дополнительных Материалов или Прогресса при активации Эффективности',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '-${value} стоимости Ресурсов при активации Эффективности',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '+${value} стоимости Ресурсов при активации Эффективности',
+
 
     'DESCRIPTION_ADDS_ITEM': 'Дает ${itemQuantity} ${itemName} ${itemImage}',
 

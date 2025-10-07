@@ -36,7 +36,7 @@ export const language = {
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': 'Achtfacher Fortschritt kann auf einmal gemacht werden.',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': 'Neunfacher Fortschritt kann auf einmal gemacht werden.',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': '${potency}-facher Fortschritt kann auf einmal gemacht werden.',
-    'MENU_EFFICIENCY_COST': 'Verbraucht ${cost}-mal so viele Ressourcen.',
+    'MENU_TOOLTIP_EFFICIENCY_COST': 'Verbraucht ${cost}-mal so viele Ressourcen.',
     'MENU_EFFICIENCY_BASE': 'Basis',
     'SHOP_NAME_Construction_Skillcape': 'Umhang der Konstruktion',
 
@@ -92,6 +92,21 @@ export const language = {
     'MODIFIER_DATA_decrease_skillEfficiencyCost': '+${value} Ressourcenverbrauch bei Aktivierung von Effizienz',
     'MODIFIER_DATA_increase_skillEfficiencyCost': '-${value} Ressourcenverbrauch bei Aktivierung von Effizienz',
 
+    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '-${value}% Chance, zusätzliche Aktionen beim Herstellen von ${categoryName} im Bau auszuführen',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '+${value}% Chance, zusätzliche Aktionen beim Herstellen von ${categoryName} im Bau auszuführen',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} zusätzliche Aktionen beim Herstellen von ${categoryName} mit Effizienz abgeschlossen',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} zusätzliche Aktionen beim Herstellen von ${categoryName} mit Effizienz abgeschlossen',
+
+    'ITEM_NAME_Twice_Measured_Potion_I': 'Zweimal Gemessener Trank I',
+    'ITEM_NAME_Twice_Measured_Potion_II': 'Zweimal Gemessener Trank II',
+    'ITEM_NAME_Twice_Measured_Potion_III': 'Zweimal Gemessener Trank III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': 'Zweimal Gemessener Trank IV',
+    'POTION_NAME_Twice_Measured_Potion': 'Zweimal Gemessener Trank',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} zusätzliche Materialien oder Fortschritt bei der Aktivierung von Effizienz',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} zusätzliche Materialien oder Fortschritt bei der Aktivierung von Effizienz',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '-${value} Ressourcenkosten bei der Aktivierung von Effizienz',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '+${value} Ressourcenkosten bei der Aktivierung von Effizienz',
 
     'DESCRIPTION_ADDS_ITEM': 'Gibt ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': 'Schaltet 1 ${plotCategory} Feld in der Landwirtschaft frei',

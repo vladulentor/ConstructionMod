@@ -16,7 +16,7 @@ class EfficiencyIconTooltipElement extends HTMLElement {
         this.appendChild(this._content);
     }
     setCostNPotency(cost, potency, mode) {
-        this.cost.textContent = templateRielkLangString('MENU_EFFICIENCY_COST', { cost: cost});
+        this.cost.textContent = templateRielkLangString('MENU_TOOLTIP_EFFICIENCY_COST', { cost: cost});
         if (mode === "artisan") this.toptip.textContent = templateRielkLangString('MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN', { potency: potency }); 
         else {
             this.toptip.textContent = getRielkLangString(`MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_${Math.floor(potency)}`);

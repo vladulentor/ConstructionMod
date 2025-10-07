@@ -34,8 +34,8 @@ export const language = {
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_7': 'Chance to make septuple progress at once.',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_8': 'Chance to make octuple progress at once.',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_9': 'Chance to make nonuple progress at once.',
-    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+':'Chance to make ${potency} progress at once.',
-    'MENU_EFFICIENCY_COST': 'Will spend ${cost} times the resources.',
+    'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': 'Chance to make ${potency} progress at once.',
+    'MENU_TOOLTIP_EFFICIENCY_COST': 'Will spend ${cost} times the resources.',
     'MENU_EFFICIENCY_BASE': 'Base',
     'SHOP_NAME_Construction_Skillcape': 'Construction Skillcape',
 
@@ -73,12 +73,23 @@ export const language = {
 
     'TOAST_FIXTURE_COMPLETE': 'You\'ve finished building your ${fixtureName}!',
 
-    'MODIFIER_DATA_decrease_skillEfficiencyChance': '-${value}% chance to complete extra actions at once in Construction',
-    'MODIFIER_DATA_increase_skillEfficiencyChance': '+${value}% chance to complete extra actions at once in Construction',
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '-${value}% chance to complete extra actions in Construction',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '+${value}% chance to complete extra actions in Construction',
+    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '-${value}% chance to complete extra actions when making ${categoryName} in Construction',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '+${value}% chance to complete extra actions when making ${categoryName} in Construction',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra actions completed when making ${categoryName} with Efficiency',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra actions completed when making ${categoryName} with Efficiency',
+
+    'ITEM_NAME_Twice_Measured_Potion_I':'Twice Measured Potion I',
+    'ITEM_NAME_Twice_Measured_Potion_II':'Twice Measured Potion II',
+    'ITEM_NAME_Twice_Measured_Potion_III':'Twice Measured Potion III',
+    'ITEM_NAME_Twice_Measured_Potion_IV':'Twice Measured Potion IV',
+    'POTION_NAME_Twice_Measured_Potion':'Twice Measured Potion',
+
     'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} extra Materials or Progress made when activating Efficiency',
     'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} extra Materials or Progress made when activating Efficiency',
-    'MODIFIER_DATA_decrease_skillEfficiencyCost': '+${value} Resource cost when activating Efficiency',
-    'MODIFIER_DATA_increase_skillEfficiencyCost': '-${value} Resource cost when activating Efficiency',
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '-${value} Resource cost when activating Efficiency',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '+${value} Resource cost when activating Efficiency',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% chance to regain a Tree Seed in Farming when harvested',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% actions required to build Furniture in Construction',

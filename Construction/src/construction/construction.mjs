@@ -432,7 +432,7 @@ export class Construction extends ArtisanSkill {
     getEfficiencyCostMultiplier(action) {
         const defaultCostMult = 2;
         const modifier = this.game.modifiers.getValue(
-            "rielkConstruction:skillFlatEfficiencyCostModifier",
+            "rielkConstruction:skillEfficiencyCost",
             this.getActionModifierQuery(action)
         ) || 0;
         return defaultCostMult + modifier;
@@ -520,7 +520,7 @@ export class Construction extends ArtisanSkill {
                 xpMult = this.efficient ? this.getEfficiencyPotencyMultiplier(recipe) : 1;
                 actionEvent = new ConstructionActionEvent(this, recipe);
                 this.stats.add(ConstructionStats.FixtureProgressBuilt, 1);
-                rewards.addXP(this, Math.floor(this.buildActionXP) * xpMult, recipe);
+                rewards.addXP(this, Math.floor(this.buildActionXP) * Math.floor(xpMult), recipe);
                 rewards.addAbyssalXP(this, this.buildActionAbyssalXP, recipe);
                 break;
             }

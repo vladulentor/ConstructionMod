@@ -790,6 +790,202 @@
         }
       }
     ],
+    "monsters": [
+      {
+        "id": "BarnRaiser",
+        "name": "Barn Raiser",
+        "media": "assets/creatures/barnraiser.png",
+        "levels": {
+          "Hitpoints": 27,
+          "Attack": 26,
+          "Strength": 27,
+          "Defence": 25,
+          "Ranged": 20,
+          "Magic": 2
+        },
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 2400
+          }
+        ],
+        "ignoreCompletion": false,
+        "attackType": "melee",
+        "specialAttacks": [],
+        "passives": [],
+        "lootChance": 100,
+        "lootTable": [
+          {
+            "itemID": "rielkConstruction:Normal_Planks",
+            "minQuantity": 2,
+            "maxQuantity": 5,
+            "weight": 30
+          },
+          {
+            "itemID": "rielkConstruction:Iron_Nails",
+            "minQuantity": 3,
+            "maxQuantity": 8,
+            "weight": 25
+          },
+          {
+            "itemID": "rielkConstruction:Oak_Planks",
+            "minQuantity": 2,
+            "maxQuantity": 4,
+            "weight": 15
+          },
+          {
+            "itemID": "rielkConstruction:Steel_Nails",
+            "minQuantity": 3,
+            "maxQuantity": 6,
+            "weight": 12
+          },
+          {
+            "itemID": "melvorD:Teak_Logs",
+            "minQuantity": 1,
+            "maxQuantity": 1,
+            "weight": 8
+          },
+          {
+            "itemID": "rielkConstruction:Mahogany_Planks",
+            "minQuantity": 1,
+            "maxQuantity": 2,
+            "weight": 3
+          },
+          {
+            "itemID": "melvorF:Apple",
+            "minQuantity": 1,
+            "maxQuantity": 1,
+            "weight": 1
+          }
+        ],
+        "canSlayer": true,
+        "isBoss": false,
+        "selectedSpell": "melvorD:WindStrike",
+        "bones": {
+          "itemID": "melvorD:Bones",
+          "quantity": 1
+        },
+        "currencyDrops": [
+          {
+            "currencyID": "melvorD:GP",
+            "min": 2,
+            "max": 7
+          }
+        ]
+      },
+      {
+        "id": "ConstructGiant",
+        "name": "Construct Giant",
+        "media": "assets/creatures/construct_giant.png",
+        "levels": {
+          "Hitpoints": 90,
+          "Attack": 60,
+          "Strength": 60,
+          "Defence": 85,
+          "Ranged": 1,
+          "Magic": 1
+        },
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 3300
+          },
+          {
+            "key": "stabAttackBonus",
+            "value": 33
+          },
+          {
+            "key": "meleeStrengthBonus",
+            "value": 50
+          },
+          {
+            "key": "meleeDefenceBonus",
+            "value": 40
+          }
+        ],
+        "ignoreCompletion": false,
+        "attackType": "melee",
+        "specialAttacks": [],
+        "passives": [],
+        "lootChance": 75,
+        "lootTable": [
+          {
+            "itemID": "rielkConstruction:Iron_Nails",
+            "minQuantity": 1,
+            "maxQuantity": 20,
+            "weight": 25
+          },
+          {
+            "itemID": "rielkConstruction:Steel_Nails",
+            "minQuantity": 1,
+            "maxQuantity": 15,
+            "weight": 15
+          },
+          {
+            "itemID": "melvorD:Iron_Bar",
+            "minQuantity": 1,
+            "maxQuantity": 4,
+            "weight": 10
+          },
+          {
+            "itemID": "melvorD:Coal_Ore",
+            "minQuantity": 1,
+            "maxQuantity": 8,
+            "weight": 25
+          },
+          {
+            "itemID": "melvorD:Fire_Rune",
+            "minQuantity": 1,
+            "maxQuantity": 10,
+            "weight": 25
+          },
+          {
+            "itemID": "rielkConstruction:Mithril_Nails",
+            "minQuantity": 1,
+            "maxQuantity": 7,
+            "weight": 10
+          },
+          {
+            "itemID": "melvorD:Mind_Rune",
+            "minQuantity": 1,
+            "maxQuantity": 7,
+            "weight": 15
+          },
+          {
+            "itemID": "melvorD:Diamond",
+            "minQuantity": 1,
+            "maxQuantity": 2,
+            "weight": 1
+          },
+          {
+            "itemID": "rielkConstruction:Adamantite_Nails",
+            "minQuantity": 1,
+            "maxQuantity": 6,
+            "weight": 4
+          },
+          {
+            "itemID": "melvorD:Mithril_Bar",
+            "minQuantity": 1,
+            "maxQuantity": 1,
+            "weight": 3
+          }
+        ],
+        "canSlayer": true,
+        "isBoss": false,
+        "selectedSpell": "melvorD:WindStrike",
+        "bones": {
+          "itemID": "rielkConstruction:Steel_Nails",
+          "quantity": 4
+        },
+        "currencyDrops": [
+          {
+            "currencyID": "melvorD:GP",
+            "min": 36,
+            "max": 80
+          }
+        ]
+      }
+    ],
     "skillData": [
       {
         "skillID": "melvorD:Herblore",
@@ -5499,6 +5695,30 @@
         "rootItemIDs": {
           "add": [
             "rielkConstruction:Builders_Boots"
+          ]
+        }
+      }
+    ],
+    "combatAreas": [
+      {
+        "id": "melvorD:Farmlands",
+        "monsters": {
+          "add": [
+            {
+              "insertAt": 5,
+              "monsterID": "rielkConstruction:BarnRaiser"
+            }
+          ]
+        }
+      },
+      {
+        "id": "melvorD:Giant_Dungeon",
+        "monsters":{
+          "add":[
+            {
+                      "insertAt": 2,
+              "monsterID":"rielkConstruction:ConstructGiant"
+            }
           ]
         }
       }

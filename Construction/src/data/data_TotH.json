@@ -1,0 +1,98 @@
+{
+    "$schema": "https://melvoridle.com/assets/schema/gameData.json",
+    "namespace": "mythMusic",
+    "modifications": {
+        "skillData": [
+            {
+                "skillID": "melvorD:Astrology",
+                "data": {
+                    "recipes": [
+                        {
+                            "id": "melvorTotH:Haemir",
+                            "skillIDs": {
+                                "add": [
+                                    "rielkConstruction:Construction"
+                                ]
+                            },
+                            "standardModifiers": [
+                                {
+                                    "index": 0,
+                                    "modifiers": {
+                                        "add": {
+                                            "increasedSkillXP": [
+                                                {
+                                                    "skillID": "rielkConstruction:Construction",
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "index": 1,
+                                    "modifiers": {
+                                        "add": {
+                                            "increasedSkillPreservationChance": [
+                                                {
+                                                    "skillID": "rielkConstruction:Construction",
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "index": 2,
+                                    "modifiers": {
+                                        "add": {
+                                            "rielkConstruction:skillEfficiencyChance": [
+                                                {
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            "uniqueModifiers": [
+                                {
+                                    "index": 0,
+                                    "modifiers": {
+                                        "add": {
+                                            "flatSkillInterval": [
+                                                {
+                                                    "skillID": "rielkConstruction:Construction",
+                                                    "value": -50
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "index": 1,
+                                    "modifiers": {
+                                        "add": {
+                                            "rielkConstruction:constructionActionsToUpgrade": -0.5
+                                        }
+                                    }
+                                },
+                                {
+                                    "index": 2,
+                                    "modifiers": {
+                                        "add": {
+                                            "rielkConstruction:skillEfficiencyPotency": [
+                                                {
+                                                    "value": 0.05
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

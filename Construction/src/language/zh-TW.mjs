@@ -83,16 +83,16 @@ export const language = {
     'MODIFIER_DATA_increase_skillEfficiencyCost': '啟動效率時資源消耗 -${value}',
 
     'TOAST_FIXTURE_COMPLETE': '你已完成建造 ${fixtureName}!',
-        'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '建造 ${categoryName} 時完成額外動作的機率 -${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '建造 ${categoryName} 時完成額外動作的機率 -${value}%',
     'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '建造 ${categoryName} 時完成額外動作的機率 +${value}%',
     'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '使用效率製作 ${categoryName} 時完成額外動作 -${value}',
     'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '使用效率製作 ${categoryName} 時完成額外動作 +${value}',
 
-    'ITEM_NAME_Twice_Measured_Potion_I':'雙重測量藥水 I',
-    'ITEM_NAME_Twice_Measured_Potion_II':'雙重測量藥水 II',
-    'ITEM_NAME_Twice_Measured_Potion_III':'雙重測量藥水 III',
-    'ITEM_NAME_Twice_Measured_Potion_IV':'雙重測量藥水 IV',
-    'POTION_NAME_Twice_Measured_Potion':'雙重測量藥水',
+    'ITEM_NAME_Twice_Measured_Potion_I': '雙重測量藥水 I',
+    'ITEM_NAME_Twice_Measured_Potion_II': '雙重測量藥水 II',
+    'ITEM_NAME_Twice_Measured_Potion_III': '雙重測量藥水 III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': '雙重測量藥水 IV',
+    'POTION_NAME_Twice_Measured_Potion': '雙重測量藥水',
 
     'MODIFIER_DATA_decrease_skillEfficiencyPotency': '啟動效率時額外獲得的材料或進度 -${value}',
     'MODIFIER_DATA_increase_skillEfficiencyPotency': '啟動效率時額外獲得的材料或進度 +${value}',
@@ -105,7 +105,8 @@ export const language = {
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 動作用於在建造中製造家具',
 
     'DESCRIPTION_ADDS_ITEM': '給出 ${itemQuantity} ${itemName} ${itemImage}',
-
+    'ENEMY_NAME_ConstructGiant': '建造巨人',
+    'ENEMY_NAME_BarnRaiser': '穀倉建造者',
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '你沒有建造它所需的材料。',
 
     'MASTERY_BONUS_ Construction_ 0': '解鎖家具的等級1效果。',

@@ -117,6 +117,9 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 3': 'Разблокируйте эффекты уровня 4 мебели.',
     'MASTERY_BONUS_ Construction_ 4': 'Разблокируйте эффекты уровня % мебели.',
 
+    'ENEMY_NAME_ConstructGiant':'Гигант Конструкций',
+'ENEMY_NAME_BarnRaiser':'Строитель Амбаров',
+
     'SKILL_CATEGORY_ Construction_ Materials': 'Материалы',
     'SKILL_CATEGORY_ Construction_ House': 'Мебель',
 

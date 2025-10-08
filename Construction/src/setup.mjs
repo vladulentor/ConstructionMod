@@ -63,6 +63,8 @@ class Setup {
         await this.ctx.gameData.addPackage('src/data/data.json');
         if (cloudManager.hasAoDEntitlementAndIsEnabled)
             await this.ctx.gameData.addPackage('src/data/data_AoD.json');
+        if(cloudManager.hasTotHEntitlementAndIsEnabled)
+            await this.ctx.gameData.addPackage('src/data/data_TotH.json');
     }
 
     async modCompatibility(ctx) {

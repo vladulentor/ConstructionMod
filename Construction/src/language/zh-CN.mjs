@@ -109,6 +109,8 @@ export const language = {
     'DESCRIPTION_ADDS_ITEM': '给出 ${itemQuantity} ${itemName} ${itemImage}',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '你没有建造它所需的材料。',
+    'ENEMY_NAME_ConstructGiant': '建造巨人',
+    'ENEMY_NAME_BarnRaiser': '谷仓建造者',
 
     'MASTERY_BONUS_ Construction_ 0': '解锁家具的等级1效果。',
     'MASTERY_BONUS_ Construction_ 1': '解锁家具的等级2效果。',

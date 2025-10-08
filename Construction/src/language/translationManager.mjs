@@ -131,4 +131,9 @@ export function patchTranslations(ctx) {
         }
         return ret;
     });
+    ctx.patch(Monster, 'name').get(function (patch) {
+        if (this.namespace === 'rielkConstruction')
+            return getRielkLangString(`ENEMY_NAME_${this.localID}`);
+        return patch();
+    });
 }

@@ -18,6 +18,20 @@
     ],
     "items": [
       {
+        
+        "itemType": "Item",
+        "id": "Bronze_Nails",
+        "name": "Bronze Nails",
+        "category": "Construction",
+        "type": "Nails",
+        "media": "assets/items/nails_bronze.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 2
+      },
+      {
+
         "itemType": "Item",
         "id": "Iron_Nails",
         "name": "Iron Nails",
@@ -27,7 +41,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 2
+        "sellsFor": 5
       },
       {
         "itemType": "Item",
@@ -39,7 +53,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 5
+        "sellsFor": 20
       },
       {
         "itemType": "Item",
@@ -51,7 +65,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 20
+        "sellsFor": 30
       },
       {
         "itemType": "Item",
@@ -63,7 +77,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 30
+        "sellsFor": 100
       },
       {
         "itemType": "Item",
@@ -75,7 +89,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 100
+        "sellsFor": 130
       },
       {
         "itemType": "Item",
@@ -87,7 +101,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 1
+        "sellsFor": 250
       },
       {
         "itemType": "Item",
@@ -137,6 +151,90 @@
         "golbinRaidExclusive": false,
         "sellsFor": 188
       },
+      	{
+				"itemType": "Item",
+				"id": "Redwood_Planks",
+				"name": "Redwood Planks",
+				"category": "Construction",
+				"type": "Planks",
+				"media": "assets/items/planks_redwood.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 460
+			},
+			{
+				"itemType": "Item",
+				"id": "Leather_Straps",
+				"name": "Leather Straps",
+				"category": "Construction",
+				"type": "Straps",
+				"media": "assets/items/straps_leather.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3
+			},
+			{
+				"itemType": "Item",
+				"id": "Hard_Leather_Straps",
+				"name": "Hard Leather Straps",
+				"category": "Construction",
+				"type": "Straps",
+				"media": "assets/items/straps_hard_leather.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3
+			},
+			{
+				"itemType": "Item",
+				"id": "Green_Dhide_Leather_Straps",
+				"name": "Green D-hide Leather Straps",
+				"category": "Construction",
+				"type": "Straps",
+				"media": "assets/items/straps_green_d-hide_leather.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3
+			},
+			{
+				"itemType": "Item",
+				"id": "Blue_Dhide_Leather_Straps",
+				"name": "Blue D-hide Leather Straps",
+				"category": "Construction",
+				"type": "Straps",
+				"media": "assets/items/straps_blue_d-hide_leather.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3
+			},
+			{
+				"itemType": "Item",
+				"id": "Red_Dhide_Leather_Straps",
+				"name": "Red D-hide Leather Straps",
+				"category": "Construction",
+				"type": "Straps",
+				"media": "assets/items/straps_red_d-hide_leather.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3
+			},
+			{
+				"itemType": "Item",
+				"id": "Black_Dhide_Leather_Straps",
+				"name": "Black D-hide Leather Straps",
+				"category": "Construction",
+				"type": "Straps",
+				"media": "assets/items/straps_black_d-hide_leather.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3
+			},
       {
         "itemType": "Token",
         "id": "Flower_Pots_Token_1",

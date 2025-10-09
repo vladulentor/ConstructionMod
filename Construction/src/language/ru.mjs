@@ -48,12 +48,14 @@ export const language = {
     'ITEM_NAME_Builders_Leggings': 'Штаны строителя',
     'ITEM_NAME_Builders_Boots': 'Cапоги строителя',
 
+    'ITEM_NAME_Bronze_Nails': 'Бронзовые гвозди',
     'ITEM_NAME_Iron_Nails': 'железные гвозди',
     'ITEM_NAME_Steel_Nails': 'стальные гвозди',
     'ITEM_NAME_Mithril_Nails': 'мифриловые гвозди',
     'ITEM_NAME_Adamantite_Nails': 'Адамантитовые гвозди',
     'ITEM_NAME_Dragonite_Nails': 'гвозди из драконита',
-
+    'ITEM_NAME_Redwood_Planks': 'Доски из секвойи',
+    
     'ITEM_NAME_Normal_Planks': 'Нормальные доски',
     'ITEM_NAME_Oak_Planks': 'Дубовые доски',
     'ITEM_NAME_Teak_Planks': 'Тиковые доски',

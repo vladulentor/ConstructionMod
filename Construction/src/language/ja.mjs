@@ -49,6 +49,7 @@ export const language = {
     'ITEM_NAME_Builders_Leggings': 'ビルダーレギンス',
     'ITEM_NAME_Builders_Boots': 'ビルダーブーツ',
 
+    'ITEM_NAME_Bronze_Nails': '青銅の釘',
     'ITEM_NAME_Iron_Nails': '鉄釘',
     'ITEM_NAME_Steel_Nails': '鋼釘',
     'ITEM_NAME_Mithril_Nails': 'ミスリルの釘',
@@ -60,7 +61,8 @@ export const language = {
     'ITEM_NAME_Teak_Planks': 'チーク材の板',
     'ITEM_NAME_Mahogany_Planks': 'マホガニーの板',
     'ITEM_NAME_Magic_Planks': '魔法の板',
-
+    'ITEM_NAME_Redwood_Planks': 'レッドウッドの板',
+    
     'ITEM_NAME_Flower_Pots_Token_1': '植木鉢: 階層 1',
     'ITEM_NAME_Flower_Pots_Token_2': '植木鉢: 階層 2',
     'ITEM_NAME_Flower_Pots_Token_3': '植木鉢: 階層 3',

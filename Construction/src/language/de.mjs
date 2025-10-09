@@ -50,6 +50,7 @@ export const language = {
     'ITEM_NAME_Builders_Leggings': 'Bauarbeiterbeinlinge',
     'ITEM_NAME_Builders_Boots': 'Bauarbeiterstiefel',
 
+    'ITEM_NAME_Bronze_Nails': 'Bronzenägel',
     'ITEM_NAME_Iron_Nails': 'Eisennägel',
     'ITEM_NAME_Steel_Nails': 'Stahlnägel',
     'ITEM_NAME_Mithril_Nails': 'Mithrilnägel',
@@ -61,6 +62,7 @@ export const language = {
     'ITEM_NAME_Teak_Planks': 'Teakholzbretter',
     'ITEM_NAME_Mahogany_Planks': 'Mahagonibretter',
     'ITEM_NAME_Magic_Planks': 'Magische Bretter',
+    'ITEM_NAME_Redwood_Planks': 'Redwood-Bretter',
 
     'ITEM_NAME_Flower_Pots_Token_1': 'Blumentöpfe: Stufe 1',
     'ITEM_NAME_Flower_Pots_Token_2': 'Blumentöpfe: Stufe 2',

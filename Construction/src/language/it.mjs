@@ -49,6 +49,7 @@ export const language = {
     'ITEM_NAME_Builders_Leggings': 'Ghette dei costruttori',
     'ITEM_NAME_Builders_Boots': 'Stivali da costruttori',
 
+    'ITEM_NAME_Bronze_Nails': 'Chiodi di bronzo',
     'ITEM_NAME_Iron_Nails': 'Chiodi di ferro',
     'ITEM_NAME_Steel_Nails': 'Chiodi in acciaio',
     'ITEM_NAME_Mithril_Nails': 'Chiodi di mithril',
@@ -60,7 +61,8 @@ export const language = {
     'ITEM_NAME_Teak_Planks': 'Assi di teak',
     'ITEM_NAME_Mahogany_Planks': 'Assi di mogano',
     'ITEM_NAME_Magic_Planks': 'Assi magiche',
-
+    'ITEM_NAME_Redwood_Planks': 'Assi di sequoia',
+    
     'ITEM_NAME_Flower_Pots_Token_1': 'Vasi di fiori: Livello 1',
     'ITEM_NAME_Flower_Pots_Token_2': 'Vasi di fiori: Livello 2',
     'ITEM_NAME_Flower_Pots_Token_3': 'Vasi di fiori: Livello 3',

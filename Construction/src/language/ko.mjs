@@ -49,6 +49,7 @@ export const language = {
     'ITEM_NAME_Builders_Leggings': '빌더 레깅스',
     'ITEM_NAME_Builders_Boots': '빌더 부츠',
 
+    'ITEM_NAME_Bronze_Nails': '청동 못',
     'ITEM_NAME_Iron_Nails': '철못',
     'ITEM_NAME_Steel_Nails': '강철 못',
     'ITEM_NAME_Mithril_Nails': '미스릴 손톱',
@@ -60,7 +61,8 @@ export const language = {
     'ITEM_NAME_Teak_Planks': '티크 판자',
     'ITEM_NAME_Mahogany_Planks': '마호가니 판자',
     'ITEM_NAME_Magic_Planks': '마법의 판자',
-
+    'ITEM_NAME_Redwood_Planks': '레드우드 판자',
+    
     'ITEM_NAME_Flower_Pots_Token_1': '화분: 층 1',
     'ITEM_NAME_Flower_Pots_Token_2': '화분: 층 2',
     'ITEM_NAME_Flower_Pots_Token_3': '화분: 층 3',

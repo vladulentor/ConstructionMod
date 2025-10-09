@@ -50,6 +50,7 @@ export const language = {
     'ITEM_NAME_Builders_Leggings': 'Guêtres de constructeur',
     'ITEM_NAME_Builders_Boots': 'Bottes de constructeur',
 
+    'ITEM_NAME_Bronze_Nails': 'Clous en bronze',
     'ITEM_NAME_Iron_Nails': 'Clous en fer',
     'ITEM_NAME_Steel_Nails': 'Clous en acier',
     'ITEM_NAME_Mithril_Nails': 'Clous en mithril',
@@ -61,6 +62,7 @@ export const language = {
     'ITEM_NAME_Teak_Planks': 'Planches de teck',
     'ITEM_NAME_Mahogany_Planks': 'Planches d\'acajou',
     'ITEM_NAME_Magic_Planks': 'Planches magiques',
+    'ITEM_NAME_Redwood_Planks': 'Planches de séquoia',
 
     'ITEM_NAME_Flower_Pots_Token_1': 'Pots de fleurs: Étage 1',
     'ITEM_NAME_Flower_Pots_Token_2': 'Pots de fleurs: Étage 2',

@@ -49,6 +49,7 @@ export const language = {
     'ITEM_NAME_Builders_Leggings': '建筑工人打底裤',
     'ITEM_NAME_Builders_Boots': '建设者靴子',
 
+    'ITEM_NAME_Bronze_Nails': '青铜钉',
     'ITEM_NAME_Iron_Nails': '铁钉',
     'ITEM_NAME_Steel_Nails': '钢钉',
     'ITEM_NAME_Mithril_Nails': '秘銀',
@@ -60,7 +61,8 @@ export const language = {
     'ITEM_NAME_Teak_Planks': '柚木板',
     'ITEM_NAME_Mahogany_Planks': '桃花心木板',
     'ITEM_NAME_Magic_Planks': '魔法木板',
-
+    'ITEM_NAME_Redwood_Planks': '红木板',
+    
     'ITEM_NAME_Flower_Pots_Token_1': '花盆: 层 1',
     'ITEM_NAME_Flower_Pots_Token_2': '花盆: 层 2',
     'ITEM_NAME_Flower_Pots_Token_3': '花盆: 层 3',

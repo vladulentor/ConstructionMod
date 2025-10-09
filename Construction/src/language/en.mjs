@@ -48,6 +48,7 @@ export const language = {
     'ITEM_NAME_Builders_Leggings': 'Builders Leggings',
     'ITEM_NAME_Builders_Boots': 'Builders Boots',
 
+    'ITEM_NAME_Bronze_Nails':'Bronze Nails',
     'ITEM_NAME_Iron_Nails': 'Iron Nails',
     'ITEM_NAME_Steel_Nails': 'Steel Nails',
     'ITEM_NAME_Mithril_Nails': 'Mithril Nails',
@@ -59,6 +60,7 @@ export const language = {
     'ITEM_NAME_Teak_Planks': 'Teak Planks',
     'ITEM_NAME_Mahogany_Planks': 'Mahogany Planks',
     'ITEM_NAME_Magic_Planks': 'Magic Planks',
+    'ITEM_NAME_Redwood_Planks':'Redwood Planks',
 
     'ITEM_NAME_Flower_Pots_Token_1': 'Flower Pot: Tier 1',
     'ITEM_NAME_Flower_Pots_Token_2': 'Flower Pot: Tier 2',
@@ -114,7 +116,7 @@ export const language = {
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
 
-    'ENEMY_NAME_ConstructGiant':'Construct Giant',
+    'ENEMY_NAME_ConstructGiant':'Iron Giant',
     'ENEMY_NAME_BarnRaiser':'Barn Raiser',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Materials',

@@ -255,7 +255,7 @@
 				"ignoreCompletion": false,
 				"obtainFromItemLog": false,
 				"golbinRaidExclusive": false,
-				"sellsFor": 5
+				"sellsFor": 1
 			},
 			{
 				"itemType": "Item",
@@ -267,7 +267,7 @@
 				"ignoreCompletion": false,
 				"obtainFromItemLog": false,
 				"golbinRaidExclusive": false,
-				"sellsFor": 20
+				"sellsFor": 3
 			},
 			{
 				"itemType": "Item",
@@ -303,7 +303,19 @@
 				"ignoreCompletion": false,
 				"obtainFromItemLog": false,
 				"golbinRaidExclusive": false,
-				"sellsFor": 400
+				"sellsFor": 320
+			},
+      {
+				"itemType": "Item",
+				"id": "Black_Dhide_Leather_Bands",
+				"name": "Black D-Hide Leather Bands",
+				"category": "Construction",
+				"type": "Bands",
+				"media": "assets/items/bands_black_d-hide_leather.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 200
 			},
 			{
 				"itemType": "Token",

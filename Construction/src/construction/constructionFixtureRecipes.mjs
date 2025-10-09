@@ -47,7 +47,7 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
     get actionCost() {
         const query = this.skill.getActionModifierQuery(this);
         const modifier = this.skill.game.modifiers.getValue("rielkConstruction:constructionActionsToUpgrade", query) / 100;
-        return this._baseActionCost * (1 + modifier);
+        return Math.floor(this._baseActionCost * (1 + modifier));
     }
     get isUnlocked() {
         return this.fixture.currentTier >= this.tier;

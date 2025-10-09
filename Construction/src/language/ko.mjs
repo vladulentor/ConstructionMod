@@ -108,7 +108,7 @@ export const language = {
     'MODIFIER_DATA_increase_skillEfficiencyCost': '효율 발동 시 자원 소모량 +${value}',
     'DESCRIPTION_ADDS_ITEM': '준다 ${itemQuantity} ${itemName} ${itemImage}',
 
-    'ENEMY_NAME_ConstructGiant':'건축 거인',
+    'ENEMY_NAME_ConstructGiant':'아이언 자이언트',
 'ENEMY_NAME_BarnRaiser':'헛간 건설자',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '그것을 만드는 데 필요한 재료가 없습니다.',

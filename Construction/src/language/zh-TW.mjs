@@ -105,7 +105,7 @@ export const language = {
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 動作用於在建造中製造家具',
 
     'DESCRIPTION_ADDS_ITEM': '給出 ${itemQuantity} ${itemName} ${itemImage}',
-    'ENEMY_NAME_ConstructGiant': '建造巨人',
+    'ENEMY_NAME_ConstructGiant': '鐵巨人',
     'ENEMY_NAME_BarnRaiser': '穀倉建造者',
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '你沒有建造它所需的材料。',
 

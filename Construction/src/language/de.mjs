@@ -112,15 +112,15 @@ export const language = {
     'DESCRIPTION_UNLOCKS_PLOT': 'Schaltet 1 ${plotCategory} Feld in der Landwirtschaft frei',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'Sie haben nicht die erforderlichen Materialien, um das zu bauen',
-    
+
     'MASTERY_BONUS_ Construction_ 0': 'Schalte die Effekte der Stufe 1 des Einrichtungsgegenstands frei.',
     'MASTERY_BONUS_ Construction_ 1': 'Schalte die Effekte der Stufe 2 des Einrichtungsgegenstands frei.',
     'MASTERY_BONUS_ Construction_ 2': 'Schalte die Effekte der Stufe 3 des Einrichtungsgegenstands frei.',
     'MASTERY_BONUS_ Construction_ 3': 'Schalte die Effekte der Stufe 4 des Einrichtungsgegenstands frei.',
     'MASTERY_BONUS_ Construction_ 4': 'Schalte die Effekte der Stufe 5 des Einrichtungsgegenstands frei.',
 
-    'ENEMY_NAME_ConstructGiant':'Konstruktgigant',
-'ENEMY_NAME_BarnRaiser':'Scheunenbauer',
+    'ENEMY_NAME_ConstructGiant': 'Eisenriese',
+    'ENEMY_NAME_BarnRaiser': 'Scheunenbauer',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Baumaterialien',
     'SKILL_CATEGORY_ Construction_ House': 'Möbel',

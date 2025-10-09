@@ -796,11 +796,11 @@
         "name": "Barn Raiser",
         "media": "assets/creatures/barnraiser.png",
         "levels": {
-          "Hitpoints": 27,
-          "Attack": 26,
-          "Strength": 27,
+          "Hitpoints": 25,
+          "Attack": 25,
+          "Strength": 25,
           "Defence": 25,
-          "Ranged": 20,
+          "Ranged": 22,
           "Magic": 2
         },
         "equipmentStats": [
@@ -850,6 +850,18 @@
             "minQuantity": 1,
             "maxQuantity": 2,
             "weight": 3
+          },
+          {
+            "itemID": "melvorD:Mahogany_Logs",
+            "minQuantity": 1,
+            "maxQuantity": 2,
+            "weight": 2
+          },
+          {
+            "itemID": "rielkConstruction:Mithril_Nails",
+            "minQuantity": 1,
+            "maxQuantity": 3,
+            "weight": 2
           },
           {
             "itemID": "melvorF:Apple",
@@ -912,13 +924,13 @@
           {
             "itemID": "rielkConstruction:Iron_Nails",
             "minQuantity": 1,
-            "maxQuantity": 20,
+            "maxQuantity": 40,
             "weight": 25
           },
           {
             "itemID": "rielkConstruction:Steel_Nails",
             "minQuantity": 1,
-            "maxQuantity": 15,
+            "maxQuantity": 25,
             "weight": 15
           },
           {
@@ -934,6 +946,12 @@
             "weight": 25
           },
           {
+            "itemID": "melvorD:Steel_Bar",
+            "minQuantity": 1,
+            "maxQuantity": 4,
+            "weight": 7
+          },
+          {
             "itemID": "melvorD:Fire_Rune",
             "minQuantity": 1,
             "maxQuantity": 10,
@@ -942,7 +960,7 @@
           {
             "itemID": "rielkConstruction:Mithril_Nails",
             "minQuantity": 1,
-            "maxQuantity": 7,
+            "maxQuantity": 12,
             "weight": 10
           },
           {
@@ -954,7 +972,7 @@
           {
             "itemID": "melvorD:Diamond",
             "minQuantity": 1,
-            "maxQuantity": 2,
+            "maxQuantity": 1,
             "weight": 1
           },
           {
@@ -5713,13 +5731,92 @@
       },
       {
         "id": "melvorD:Giant_Dungeon",
-        "monsters":{
-          "add":[
+        "monsters": {
+          "add": [
             {
-                      "insertAt": 2,
-              "monsterID":"rielkConstruction:ConstructGiant"
+              "insertAt": 2,
+              "monsterID": "rielkConstruction:ConstructGiant"
             }
           ]
+        }
+      }
+    ],
+    "monsters": [
+      {
+        "id": "melvorD:RangedGolbin",
+        "lootTable": {
+          "add": [
+            {
+              "itemID": "rielkConstruction:Iron_Nails",
+              "minQuantity": 2,
+              "maxQuantity": 5,
+              "weight": 6
+            },
+             {
+              "itemID": "melvorD:Garum_Seed",
+              "minQuantity": 1,
+              "maxQuantity": 1,
+              "weight": 4
+            }
+          ],
+          "remove": [
+            "melvorD:Garum_Seed"
+          ]
+        }
+      },
+       {
+        "id": "melvorD:Golbin",
+        "lootTable": {
+          "add": [
+            {
+              "itemID": "rielkConstruction:Normal_Planks",
+              "minQuantity": 1,
+              "maxQuantity": 3,
+              "weight": 6
+            }]
+        }
+      },
+      {
+        "id": "melvorD:ConfusedPirate",
+        "lootTable": {
+          "add": [
+            {
+              "itemID": "rielkConstruction:Normal_Planks",
+              "minQuantity": 4,
+              "maxQuantity": 15,
+              "weight": 51
+            },
+             {
+              "itemID": "rielkConstruction:Oak_Planks",
+              "minQuantity": 3,
+              "maxQuantity": 10,
+              "weight": 31
+            },
+             {
+              "itemID": "rielkConstruction:Teak_Planks",
+              "minQuantity": 2,
+              "maxQuantity": 7,
+              "weight": 18
+            },
+             {
+              "itemID": "rielkConstruction:Mahogany_Planks",
+              "minQuantity": 1,
+              "maxQuantity": 5,
+              "weight": 3
+            },
+             {
+              "itemID": "melvorD:Mithril_Scimitar",
+              "minQuantity": 1,
+              "maxQuantity": 1,
+              "weight": 17
+            }, {
+              "itemID": "melvorD:Adamant_Scimitar",
+              "minQuantity": 1,
+              "maxQuantity": 1,
+              "weight": 2
+            }
+          ],
+          "remove":["melvorD:Mithril_Scimitar","melvorD:Adamant_Scimitar"]
         }
       }
     ]

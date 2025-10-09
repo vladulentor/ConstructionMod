@@ -91,6 +91,8 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
                     this.grantItems.forEach(iq => game.bank.addItem(iq.item, iq.quantity, true, true, true));
                 if (this.changeFunc)
                     this.callChangeFunc();
+                this.skill.ui.showFixtureUnlocks(this.fixture.room, this.fixture, this.skill);
+
                 this.skill.renderQueue.menu = true;
                 return false;
 

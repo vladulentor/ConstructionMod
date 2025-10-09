@@ -114,7 +114,7 @@ export const language = {
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
 
-    'ENEMY_NAME_ConstructGiant':'Construct Giant',
+    'ENEMY_NAME_ConstructGiant':'Iron Giant',
     'ENEMY_NAME_BarnRaiser':'Barn Raiser',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Materials',

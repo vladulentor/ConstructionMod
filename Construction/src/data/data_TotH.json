@@ -72,7 +72,7 @@
                                     "index": 1,
                                     "modifiers": {
                                         "add": {
-                                            "rielkConstruction:constructionActionsToUpgrade": -0.5
+                                            "rielkConstruction:constructionActionsToUpgrade": -1
                                         }
                                     }
                                 },

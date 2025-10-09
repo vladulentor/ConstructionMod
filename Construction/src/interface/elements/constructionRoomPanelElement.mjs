@@ -42,20 +42,80 @@ class ConstructionRoomPanelElement extends HTMLElement {
     connectedCallback() {
         this.appendChild(this._content);
         this.noneSelected ? this.grants.setUnselected() : this.grants.setSelected();
+
+        window.addEventListener('resize', () => {
+            const width = parseFloat(getComputedStyle(this.extraDetailsContainer).width);
+            this.setdetailscontainer(width);
+
+        });
         this.grants.hideMastery();
-        if((window.innerWidth <= 1920&& window.innerWidth>= 1350) || (window.innerWidth<= 860 && window.innerWidth>= 767 )) 
-        for (const icon of [this.productPreservation, this.productEfficiency]) {
-            const btn = icon.querySelector('.info-icon');
-            if (btn) {
-                btn.classList.remove('m-2');
-                btn.classList.add('mb-2');
-                btn.classList.add('mt-2');
-                if (i === 1 ) btn.classList.add('ms-1');
-            }
+        /* if ((window.innerWidth <= 1920 && window.innerWidth >= 1350) || (window.innerWidth <= 860 && window.innerWidth >= 767))
+             for (const icon of [this.productPreservation, this.productEfficiency]) {
+                 const btn = icon.querySelector('.info-icon');
+                 if (btn) {
+                     btn.classList.remove('m-2');
+                     btn.classList.add('mb-2');
+                     btn.classList.add('mt-2');
+                     if (i === 1) btn.classList.add('ms-1');
+                 }
+             }*/
+
+    }
+    setdetailscontainer(detailwidth) {
+        if (this.noneSelected /*|| this.productEfficiency.classList.contains('d-none')*/) return;
+        if (detailwidth < 220) {
+            this.extraDetailsContainer.parentElement.style.marginLeft = '-14px';
+            this.extraDetailsContainer.parentElement.style.marginRight = '-14px';
+            this.extraDetailsContainer.innerHTML = '';
+            this.extraDetailsContainer.className = 'icon-size-48';
+            this.extraDetailsContainer.style.display = 'flex';
+            this.extraDetailsContainer.style.flexDirection = 'column';
+            this.extraDetailsContainer.style.alignItems = 'flex-start'; 
+            this.extraDetailsContainer.style.padding = '0'; 
+            this.extraDetailsContainer.style.margin = '0';
+
+            const iconRow = document.createElement('div');
+            iconRow.style.display = 'flex';
+            iconRow.style.flexWrap = 'nowrap';
+            iconRow.style.justifyContent = 'flex-start'; 
+            iconRow.style.alignItems = 'center';         
+            iconRow.style.gap = '4px';
+            iconRow.style.margin = '0';                   
+            [this.productPreservation, this.productEfficiency].forEach(icon => {
+                const inner = icon.querySelector('.btn-light');
+                if (inner) {inner.classList.remove('m-2');inner.classList.add('mr-2'); inner.classList.add('mb-2');  }
+            });
+
+            iconRow.append(this.productPreservation, this.productEfficiency);
+
+            iconRow.append(this.productPreservation, this.productEfficiency);
+            this.extraDetailsContainer.append(iconRow, this.upgradesButton);
+        }
+        else {
+            this.extraDetailsContainer.parentElement.style.marginLeft = '';
+            this.extraDetailsContainer.parentElement.style.marginRight = '';
+            this.extraDetailsContainer.style.display = '';
+            this.extraDetailsContainer.style.flexDirection = '';
+            this.extraDetailsContainer.style.alignItems = '';
+            this.extraDetailsContainer.style.gap = '';
+            this.extraDetailsContainer.innerHTML = '';
+            this.extraDetailsContainer.className = 'row icon-size-48';
+            const preservationInner = this.productPreservation.querySelector('.btn-light');
+            if (preservationInner) preservationInner.style.marginLeft = '';
+            this.extraDetailsContainer.append(
+                this.upgradesButton,
+                this.productPreservation,
+                this.productEfficiency
+            );
+            [this.productPreservation, this.productEfficiency, this.upgradesButton].forEach(el => {
+                el.style.flex = '';
+                el.style.alignSelf = '';
+                el.style.width = '';
+                el.style.height = '';
+            });
         }
 
     }
-
     setRoom(room, construction) {
         this.roomName.textContent = room.name;
         this.header.onclick = () => construction.ui.onRoomHeaderClick(room, construction);
@@ -90,8 +150,6 @@ class ConstructionRoomPanelElement extends HTMLElement {
         }
         );
     }
-
-
     updateFixtureButtons(game) {
         this.fixtureNavs.forEach((nav, fixture) => {
             nav.updateFixture(fixture, game);
@@ -103,6 +161,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
             return;
         this.selectedFixture = fixture;
         this.updateRoomInfo(construction);
+
         this.startButton.onclick = () => construction.toggleBuilding(room, fixture);
         if (construction.ui.constructionHouseMenu.roomUnlocksPanel.classList.contains('d-none'))
             this.upgradesButton.onclick = () => construction.ui.showFixtureUnlocks(room, fixture, construction);
@@ -111,6 +170,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
 
         const interval = construction.getFixtureInterval(fixture);
         this.interval.setInterval(interval, construction.getIntervalSources(fixture));
+
     }
     showFixtureUnlocks(room, fixture, construction) {
         this.upgradesButton.textContent = getRielkLangString('MENU_TEXT_SHOW_GO_BACK');
@@ -129,6 +189,13 @@ class ConstructionRoomPanelElement extends HTMLElement {
             showElement(this.grantsContainer);
             showElement(this.buildContainer);
             showElement(this.extraDetailsContainer);
+            showElement(this.productPreservation);
+            showElement(this.productEfficiency);
+            requestAnimationFrame(() => {
+                const detailWidth = parseFloat(getComputedStyle(this.extraDetailsContainer).width);
+                this.setdetailscontainer(detailWidth);
+            });
+
             this.detailsContainer.classList.remove('col-12');
             this.detailsContainer.classList.remove('text-center');
             this.detailsContainer.classList.add('col-8');
@@ -162,8 +229,13 @@ class ConstructionRoomPanelElement extends HTMLElement {
 
             return;
         }
-        showElement(this.productEfficiency);
-        showElement(this.productPreservation);
+
+        requestAnimationFrame(() => {
+            const detailWidth = parseFloat(getComputedStyle(this.extraDetailsContainer).width);
+            this.setdetailscontainer(detailWidth);
+        });
+
+
         const progress = fixture.percentProgress;
         this.builtProgressText.textContent = templateRielkLangString('MENU_TEXT_PARTIAL_BUILT_PROGRESS', {
             currentValue: `${formatNumber(fixture.progress)}`,
@@ -197,7 +269,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
 
         if (this.requires.querySelectorAll('item-quantity-icon').length > 3) {
             [this.requires, this.haves].forEach(el => {
-                el.classList.remove('col-sm-6'); // Make the bigger projects feel like projects, not just items
+                el.classList.remove('col-sm-6'); 
             });
         }
         else {

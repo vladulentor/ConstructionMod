@@ -110,7 +110,7 @@ export const language = {
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'それを作るのに必要な資材がない',
 
-    'ENEMY_NAME_ConstructGiant': '建造の巨人',
+    'ENEMY_NAME_ConstructGiant': 'アイアンの巨人',
     'ENEMY_NAME_BarnRaiser': '納屋の建設者',
 
     'MASTERY_BONUS_ Construction_ 0': '家具のティア1効果をアンロックします。',

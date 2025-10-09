@@ -163,6 +163,78 @@
 				"golbinRaidExclusive": false,
 				"sellsFor": 460
 			},
+      {
+				"itemType": "Item",
+				"id": "Leather_Bands",
+				"name": "Leather Bands",
+				"category": "Construction",
+				"type": "Bands",
+				"media": "assets/items/bands_leather.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 1
+			},
+			{
+				"itemType": "Item",
+				"id": "Hard_Leather_Bands",
+				"name": "Hard Leather Bands",
+				"category": "Construction",
+				"type": "Bands",
+				"media": "assets/items/bands_hard_leather.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3
+			},
+			{
+				"itemType": "Item",
+				"id": "Green_Dhide_Leather_Bands",
+				"name": "Green D-Hide Leather Bands",
+				"category": "Construction",
+				"type": "Bands",
+				"media": "assets/items/bands_green_d-hide_leather.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 65
+			},
+			{
+				"itemType": "Item",
+				"id": "Blue_Dhide_Leather_Bands",
+				"name": "Blue D-Hide Leather Bands",
+				"category": "Construction",
+				"type": "Bands",
+				"media": "assets/items/bands_blue_d-hide_leather.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 140
+			},
+			{
+				"itemType": "Item",
+				"id": "Red_Dhide_Leather_Bands",
+				"name": "Red D-Hide Leather Bands",
+				"category": "Construction",
+				"type": "Bands",
+				"media": "assets/items/bands_red_d-hide_leather.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 320
+			},
+      {
+				"itemType": "Item",
+				"id": "Black_Dhide_Leather_Bands",
+				"name": "Black D-Hide Leather Bands",
+				"category": "Construction",
+				"type": "Bands",
+				"media": "assets/items/bands_black_d-hide_leather.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 200
+			},
 			{
 				"itemType": "Item",
 				"id": "Leather_Straps",

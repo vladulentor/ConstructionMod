@@ -70,20 +70,20 @@ class ConstructionRoomPanelElement extends HTMLElement {
             this.extraDetailsContainer.className = 'icon-size-48';
             this.extraDetailsContainer.style.display = 'flex';
             this.extraDetailsContainer.style.flexDirection = 'column';
-            this.extraDetailsContainer.style.alignItems = 'flex-start'; 
-            this.extraDetailsContainer.style.padding = '0'; 
+            this.extraDetailsContainer.style.alignItems = 'flex-start';
+            this.extraDetailsContainer.style.padding = '0';
             this.extraDetailsContainer.style.margin = '0';
 
             const iconRow = document.createElement('div');
             iconRow.style.display = 'flex';
             iconRow.style.flexWrap = 'nowrap';
-            iconRow.style.justifyContent = 'flex-start'; 
-            iconRow.style.alignItems = 'center';         
+            iconRow.style.justifyContent = 'flex-start';
+            iconRow.style.alignItems = 'center';
             iconRow.style.gap = '4px';
-            iconRow.style.margin = '0';                   
+            iconRow.style.margin = '0';
             [this.productPreservation, this.productEfficiency].forEach(icon => {
                 const inner = icon.querySelector('.btn-light');
-                if (inner) {inner.classList.remove('m-2');inner.classList.add('mr-2'); inner.classList.add('mb-2');  }
+                if (inner) { inner.classList.remove('m-2'); inner.classList.add('mr-2'); inner.classList.add('mb-2'); }
             });
 
             iconRow.append(this.productPreservation, this.productEfficiency);
@@ -249,16 +249,19 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.haves.setItemsFromRecipe(fixtureRecipe, construction.game);
         const requireIcons = this.requires.querySelectorAll('item-quantity-icon');
         const haveIcons = this.haves.querySelectorAll('item-current-icon');
+
         requireIcons.forEach((icon, i) => {
-            const qtyEl = icon.querySelector("small.badge-pill"); // change the requires to be remaining total cost, by just iterating over the dom to change it, this might not be efficient but it only happens once per click and action
+            const qtyEl = icon.querySelector("small.badge-pill");
             const haveQtyEl = haveIcons[i]?.querySelector("small.badge-pill");
             const have = parseInt(haveQtyEl.textContent.replace(/,/g, ""), 10);
             const base = parseInt(qtyEl.textContent.replace(/,/g, ""), 10);
+
             if (!isNaN(base) && !isNaN(have)) {
                 let totalCost = base * (fixtureRecipe.actionCost - fixture.progress);
                 qtyEl.textContent = formatNumber(Math.max(base, totalCost));
+
                 if (have >= base && have < totalCost) {
-                    qtyEl.parentElement?.parentElement.classList.add('border-item-danger'); // special case
+                    qtyEl.parentElement?.parentElement.classList.add('border-item-danger');
                     haveQtyEl.parentElement?.parentElement.classList.add('border-item-danger');
                 } else {
                     qtyEl.parentElement?.parentElement.classList.remove('border-item-danger');
@@ -267,17 +270,29 @@ class ConstructionRoomPanelElement extends HTMLElement {
             }
         });
 
-        if (this.requires.querySelectorAll('item-quantity-icon').length > 3) {
-            [this.requires, this.haves].forEach(el => {
-                el.classList.remove('col-sm-6'); 
-            });
-        }
-        else {
-            [this.requires, this.haves].forEach(el => {
-                el.classList.add('col-sm-6'); // Make the bigger projects feel like projects, not just items
-            });
-        }
+        // --- CURRENCY ICONS ---
+        const requireCurrencyIcons = this.requires.querySelectorAll('currency-quantity-icon');
+        const haveCurrencyIcons = this.haves.querySelectorAll('currency-current-icon');
 
+        requireCurrencyIcons.forEach((icon, i) => {
+            const qtyEl = icon.querySelector("small.badge-pill");
+            const haveQtyEl = haveCurrencyIcons[i]?.querySelector("small.badge-pill");
+            const have = parseInt(haveQtyEl.textContent.replace(/,/g, ""), 10);
+            const base = parseInt(qtyEl.textContent.replace(/,/g, ""), 10);
+
+            if (!isNaN(base) && !isNaN(have)) {
+                let totalCost = base * (fixtureRecipe.actionCost - fixture.progress);
+                qtyEl.textContent = formatNumber(Math.max(base, totalCost));
+
+                if (have >= base && have < totalCost) {
+                    qtyEl.parentElement?.parentElement.classList.add('border-item-danger');
+                    haveQtyEl.parentElement?.parentElement.classList.add('border-item-danger');
+                } else {
+                    qtyEl.parentElement?.parentElement.classList.remove('border-item-danger');
+                    haveQtyEl.parentElement?.parentElement.classList.remove('border-item-danger');
+                }
+            }
+        });
         this.grants.setSelected();
         this.grants.xpIcon.setXP(Math.floor(construction.modifyXP(fixtureRecipe.baseExperience)), fixtureRecipe.baseExperience);
         this.grants.updateAbyssalGrants(Math.floor(construction.modifyAbyssalXP(fixtureRecipe.baseAbyssalExperience)), fixtureRecipe.baseAbyssalExperience);

@@ -12,10 +12,7 @@ class TierBonusElement extends HTMLElement {
     }
 
     setTier(tierData) {
-        // tierData: { name, effect, completed }
         if (!tierData) return;
-        
-        // Find elements in the DOM
         const percentElement = this.querySelector('.font-size-sm');
         const descriptionElement = this.querySelector('p');
         const xpRequiredElement = this.querySelector('small');

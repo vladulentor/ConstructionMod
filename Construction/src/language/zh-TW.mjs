@@ -60,7 +60,21 @@ export const language = {
     'ITEM_NAME_Mahogany_Planks': '桃花心木板',
     'ITEM_NAME_Magic_Planks': '魔法木板',
     'ITEM_NAME_Redwood_Planks': '紅木板',
-    
+
+    'ITEM_NAME_Leather_Straps': '皮帶',
+    'ITEM_NAME_Hard_Leather_Straps': '硬皮帶',
+    'ITEM_NAME_Green_Dhide_Leather_Straps': '綠色龍皮皮帶',
+    'ITEM_NAME_Blue_Dhide_Leather_Straps': '藍色龍皮皮帶',
+    'ITEM_NAME_Red_Dhide_Leather_Straps': '紅色龍皮皮帶',
+    'ITEM_NAME_Black_Dhide_Leather_Straps': '黑色龍皮皮帶',
+
+    'ITEM_NAME_Leather_Bands': '皮革帶',
+    'ITEM_NAME_Hard_Leather_Bands': '硬皮革帶',
+    'ITEM_NAME_Green_Dhide_Leather_Bands': '綠色龍皮皮革帶',
+    'ITEM_NAME_Blue_Dhide_Leather_Bands': '藍色龍皮皮革帶',
+    'ITEM_NAME_Red_Dhide_Leather_Bands': '紅色龍皮皮革帶',
+    'ITEM_NAME_Black_Dhide_Leather_Bands': '黑色龍皮皮革帶',
+
     'ITEM_NAME_Flower_Pots_Token_1': '花盆: 層 1',
     'ITEM_NAME_Flower_Pots_Token_2': '花盆: 層 2',
     'ITEM_NAME_Flower_Pots_Token_3': '花盆: 層 3',

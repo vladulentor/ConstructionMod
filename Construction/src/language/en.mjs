@@ -62,6 +62,21 @@ export const language = {
     'ITEM_NAME_Magic_Planks': 'Magic Planks',
     'ITEM_NAME_Redwood_Planks':'Redwood Planks',
 
+    'ITEM_NAME_Leather_Straps':'Leather Straps',
+    'ITEM_NAME_Hard_Leather_Straps':'Hard Leather Straps',
+    'ITEM_NAME_Green_Dhide_Leather_Straps':'Green D-hide Leather Straps',
+    'ITEM_NAME_Blue_Dhide_Leather_Straps':'Blue D-hide Leather Straps',
+    'ITEM_NAME_Red_Dhide_Leather_Straps':'Red D-hide Leather Straps',
+    'ITEM_NAME_Black_Dhide_Leather_Straps':'Black D-hide Leather Straps',
+    
+    'ITEM_NAME_Leather_Bands':'Leather Bands',
+    'ITEM_NAME_Hard_Leather_Bands':'Hard Leather Bands',
+    'ITEM_NAME_Green_Dhide_Leather_Bands':'Green D-hide Leather Bands',
+    'ITEM_NAME_Blue_Dhide_Leather_Bands':'Blue D-hide Leather Bands',
+    'ITEM_NAME_Red_Dhide_Leather_Bands':'Red D-hide Leather Bands',
+    'ITEM_NAME_Black_Dhide_Leather_Bands':'Black D-hide Leather Bands',
+
+
     'ITEM_NAME_Flower_Pots_Token_1': 'Flower Pot: Tier 1',
     'ITEM_NAME_Flower_Pots_Token_2': 'Flower Pot: Tier 2',
     'ITEM_NAME_Flower_Pots_Token_3': 'Flower Pot: Tier 3',

@@ -55,12 +55,25 @@ export const language = {
     'ITEM_NAME_Adamantite_Nails': 'Адамантитовые гвозди',
     'ITEM_NAME_Dragonite_Nails': 'гвозди из драконита',
     'ITEM_NAME_Redwood_Planks': 'Доски из секвойи',
-    
+
     'ITEM_NAME_Normal_Planks': 'Нормальные доски',
     'ITEM_NAME_Oak_Planks': 'Дубовые доски',
     'ITEM_NAME_Teak_Planks': 'Тиковые доски',
     'ITEM_NAME_Mahogany_Planks': 'доски из красного дерева',
     'ITEM_NAME_Magic_Planks': 'Волшебные доски',
+    'ITEM_NAME_Leather_Straps': 'Кожаные ремни',
+    'ITEM_NAME_Hard_Leather_Straps': 'Жёсткие кожаные ремни',
+    'ITEM_NAME_Green_Dhide_Leather_Straps': 'Зелёные ремни из драконьей кожи',
+    'ITEM_NAME_Blue_Dhide_Leather_Straps': 'Синие ремни из драконьей кожи',
+    'ITEM_NAME_Red_Dhide_Leather_Straps': 'Красные ремни из драконьей кожи',
+    'ITEM_NAME_Black_Dhide_Leather_Straps': 'Чёрные ремни из драконьей кожи',
+
+    'ITEM_NAME_Leather_Bands': 'Кожаные ленты',
+    'ITEM_NAME_Hard_Leather_Bands': 'Жёсткие кожаные ленты',
+    'ITEM_NAME_Green_Dhide_Leather_Bands': 'Зелёные ленты из драконьей кожи',
+    'ITEM_NAME_Blue_Dhide_Leather_Bands': 'Синие ленты из драконьей кожи',
+    'ITEM_NAME_Red_Dhide_Leather_Bands': 'Красные ленты из драконьей кожи',
+    'ITEM_NAME_Black_Dhide_Leather_Bands': 'Чёрные ленты из драконьей кожи',
 
     'ITEM_NAME_Flower_Pots_Token_1': 'Цветочные горшки: Уровень 1',
     'ITEM_NAME_Flower_Pots_Token_2': 'Цветочные горшки: Уровень 2',
@@ -119,8 +132,8 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 3': 'Разблокируйте эффекты уровня 4 мебели.',
     'MASTERY_BONUS_ Construction_ 4': 'Разблокируйте эффекты уровня % мебели.',
 
-    'ENEMY_NAME_ConstructGiant':'Гигант Конструкций',
-'ENEMY_NAME_BarnRaiser':'Строитель Амбаров',
+    'ENEMY_NAME_ConstructGiant': 'Гигант Конструкций',
+    'ENEMY_NAME_BarnRaiser': 'Строитель Амбаров',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Материалы',
     'SKILL_CATEGORY_ Construction_ House': 'Мебель',

@@ -63,6 +63,19 @@ export const language = {
     'ITEM_NAME_Mahogany_Planks': 'Planches d\'acajou',
     'ITEM_NAME_Magic_Planks': 'Planches magiques',
     'ITEM_NAME_Redwood_Planks': 'Planches de séquoia',
+'ITEM_NAME_Leather_Straps': 'Lanières en cuir',
+'ITEM_NAME_Hard_Leather_Straps': 'Lanières en cuir dur',
+'ITEM_NAME_Green_Dhide_Leather_Straps': 'Lanières en cuir de dragon vert',
+'ITEM_NAME_Blue_Dhide_Leather_Straps': 'Lanières en cuir de dragon bleu',
+'ITEM_NAME_Red_Dhide_Leather_Straps': 'Lanières en cuir de dragon rouge',
+'ITEM_NAME_Black_Dhide_Leather_Straps': 'Lanières en cuir de dragon noir',
+
+'ITEM_NAME_Leather_Bands': 'Bandes en cuir',
+'ITEM_NAME_Hard_Leather_Bands': 'Bandes en cuir dur',
+'ITEM_NAME_Green_Dhide_Leather_Bands': 'Bandes en cuir de dragon vert',
+'ITEM_NAME_Blue_Dhide_Leather_Bands': 'Bandes en cuir de dragon bleu',
+'ITEM_NAME_Red_Dhide_Leather_Bands': 'Bandes en cuir de dragon rouge',
+'ITEM_NAME_Black_Dhide_Leather_Bands': 'Bandes en cuir de dragon noir',
 
     'ITEM_NAME_Flower_Pots_Token_1': 'Pots de fleurs: Étage 1',
     'ITEM_NAME_Flower_Pots_Token_2': 'Pots de fleurs: Étage 2',
@@ -118,8 +131,8 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 3': 'Débloquez les effets du niveau 4 du mobilier.',
     'MASTERY_BONUS_ Construction_ 4': 'Débloquez les effets du niveau 5 du mobilier.',
 
-    'ENEMY_NAME_ConstructGiant':'Géant de Construction',
-'ENEMY_NAME_BarnRaiser':'Bâtisseur de Grange',
+    'ENEMY_NAME_ConstructGiant': 'Géant de Construction',
+    'ENEMY_NAME_BarnRaiser': 'Bâtisseur de Grange',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Matériels',
     'SKILL_CATEGORY_ Construction_ House': 'Mobilier',

@@ -62,7 +62,20 @@ export const language = {
     'ITEM_NAME_Mahogany_Planks': 'Assi di mogano',
     'ITEM_NAME_Magic_Planks': 'Assi magiche',
     'ITEM_NAME_Redwood_Planks': 'Assi di sequoia',
-    
+'ITEM_NAME_Leather_Straps': 'Cinghie di cuoio',
+'ITEM_NAME_Hard_Leather_Straps': 'Cinghie di cuoio duro',
+'ITEM_NAME_Green_Dhide_Leather_Straps': 'Cinghie di cuoio di drago verde',
+'ITEM_NAME_Blue_Dhide_Leather_Straps': 'Cinghie di cuoio di drago blu',
+'ITEM_NAME_Red_Dhide_Leather_Straps': 'Cinghie di cuoio di drago rosso',
+'ITEM_NAME_Black_Dhide_Leather_Straps': 'Cinghie di cuoio di drago nero',
+
+'ITEM_NAME_Leather_Bands': 'Fasce di cuoio',
+'ITEM_NAME_Hard_Leather_Bands': 'Fasce di cuoio duro',
+'ITEM_NAME_Green_Dhide_Leather_Bands': 'Fasce di cuoio di drago verde',
+'ITEM_NAME_Blue_Dhide_Leather_Bands': 'Fasce di cuoio di drago blu',
+'ITEM_NAME_Red_Dhide_Leather_Bands': 'Fasce di cuoio di drago rosso',
+'ITEM_NAME_Black_Dhide_Leather_Bands': 'Fasce di cuoio di drago nero',
+
     'ITEM_NAME_Flower_Pots_Token_1': 'Vasi di fiori: Livello 1',
     'ITEM_NAME_Flower_Pots_Token_2': 'Vasi di fiori: Livello 2',
     'ITEM_NAME_Flower_Pots_Token_3': 'Vasi di fiori: Livello 3',
@@ -117,8 +130,8 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 3': 'Sblocca gli effetti del livello 4 dell\'arredamento.',
     'MASTERY_BONUS_ Construction_ 4': 'Sblocca gli effetti del livello 5 dell\'arredamento.',
 
-    'ENEMY_NAME_ConstructGiant':'Gigante da Costruzione',
-'ENEMY_NAME_BarnRaiser':'Costruttore di Fienili',
+    'ENEMY_NAME_ConstructGiant': 'Gigante da Costruzione',
+    'ENEMY_NAME_BarnRaiser': 'Costruttore di Fienili',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Materiali',
     'SKILL_CATEGORY_ Construction_ House': 'Arredamento',

@@ -62,7 +62,21 @@ export const language = {
     'ITEM_NAME_Mahogany_Planks': '마호가니 판자',
     'ITEM_NAME_Magic_Planks': '마법의 판자',
     'ITEM_NAME_Redwood_Planks': '레드우드 판자',
-    
+
+    'ITEM_NAME_Leather_Straps': '가죽 끈',
+    'ITEM_NAME_Hard_Leather_Straps': '단단한 가죽 끈',
+    'ITEM_NAME_Green_Dhide_Leather_Straps': '녹색 드래곤 가죽 끈',
+    'ITEM_NAME_Blue_Dhide_Leather_Straps': '파란 드래곤 가죽 끈',
+    'ITEM_NAME_Red_Dhide_Leather_Straps': '빨간 드래곤 가죽 끈',
+    'ITEM_NAME_Black_Dhide_Leather_Straps': '검은 드래곤 가죽 끈',
+
+    'ITEM_NAME_Leather_Bands': '가죽 밴드',
+    'ITEM_NAME_Hard_Leather_Bands': '단단한 가죽 밴드',
+    'ITEM_NAME_Green_Dhide_Leather_Bands': '녹색 드래곤 가죽 밴드',
+    'ITEM_NAME_Blue_Dhide_Leather_Bands': '파란 드래곤 가죽 밴드',
+    'ITEM_NAME_Red_Dhide_Leather_Bands': '빨간 드래곤 가죽 밴드',
+    'ITEM_NAME_Black_Dhide_Leather_Bands': '검은 드래곤 가죽 밴드',
+
     'ITEM_NAME_Flower_Pots_Token_1': '화분: 층 1',
     'ITEM_NAME_Flower_Pots_Token_2': '화분: 층 2',
     'ITEM_NAME_Flower_Pots_Token_3': '화분: 층 3',
@@ -110,8 +124,8 @@ export const language = {
     'MODIFIER_DATA_increase_skillEfficiencyCost': '효율 발동 시 자원 소모량 +${value}',
     'DESCRIPTION_ADDS_ITEM': '준다 ${itemQuantity} ${itemName} ${itemImage}',
 
-    'ENEMY_NAME_ConstructGiant':'건축 거인',
-'ENEMY_NAME_BarnRaiser':'헛간 건설자',
+    'ENEMY_NAME_ConstructGiant': '건축 거인',
+    'ENEMY_NAME_BarnRaiser': '헛간 건설자',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '그것을 만드는 데 필요한 재료가 없습니다.',
 

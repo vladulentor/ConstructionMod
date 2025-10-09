@@ -28,7 +28,9 @@ export class ConstructionInterface {
             if (category.type !== 'Artisan')
                 return;
             const recipes = construction.actions.filter((r) => r.category === category);
-            recipes.sort(BasicSkillRecipe.sortByLevels);
+            if (window.innerWidth <= 780)
+                recipes.sortByLevels();
+                else recipes.sort((a, b) => a.spoofOrder - b.spoofOrder);
             const tab = createElement('recipe-selection-tab', {
                 className: 'col-12 col-md-8 d-none',
                 attributes: [['data-option-tag-name', 'rielk-construction-recipe-option']],
@@ -131,12 +133,12 @@ export class ConstructionInterface {
         this.renderQueue.menu = false;
     }
     renderfixtureItemUpdates() {
-        if(this.renderQueue.renderfixtureItemUpdates == false)
+        if (this.renderQueue.renderfixtureItemUpdates == false)
             return
         this.renderQueue.renderfixtureItemUpdates = false;
         //if (!document.getElementById('rielk-construction-container').classList.contains('d-none') && !this.constructionHouseMenu?.root.parentElement?.parentElement.classList.contains('d-none')) {
-            this.constructionHouseMenu.updateFixtureItems(this.construction);
-            // this optimization is probably not needed but I will keep it in in case I want to change it later.
+        this.constructionHouseMenu.updateFixtureItems(this.construction);
+        // this optimization is probably not needed but I will keep it in in case I want to change it later.
         //}
     }
     renderProgressBar() {

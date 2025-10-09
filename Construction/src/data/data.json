@@ -1456,11 +1456,26 @@
           ],
           "recipes": [
             {
-              "id": "Iron_Nails",
+              "id": "Bronze_Nails",
               "level": 1,
-              "productID": "rielkConstruction:Iron_Nails",
+              "productID": "rielkConstruction:Bronze_Nails",
               "baseQuantity": 5,
               "baseExperience": 4,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Bronze_Bar",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Iron_Nails",
+              "level": 5,
+              "productID": "rielkConstruction:Iron_Nails",
+              "baseQuantity": 5,
+              "baseExperience": 6,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -1472,7 +1487,7 @@
             },
             {
               "id": "Steel_Nails",
-              "level": 10,
+              "level": 20,
               "productID": "rielkConstruction:Steel_Nails",
               "baseQuantity": 5,
               "baseExperience": 8,
@@ -1502,7 +1517,7 @@
             },
             {
               "id": "Adamantite_Nails",
-              "level": 50,
+              "level": 60,
               "productID": "rielkConstruction:Adamantite_Nails",
               "baseQuantity": 5,
               "baseExperience": 25,
@@ -1517,7 +1532,7 @@
             },
             {
               "id": "Dragonite_Nails",
-              "level": 70,
+              "level": 75,
               "productID": "rielkConstruction:Dragonite_Nails",
               "baseQuantity": 5,
               "baseExperience": 50,
@@ -1604,7 +1619,112 @@
                 }
               ],
               "currencyCosts": []
-            }
+            },
+            {
+							"id": "Redwood_Planks",
+							"level": 70,
+							"productID": "rielkConstruction:Redwood_Planks",
+							"baseQuantity": 2,
+							"baseExperience": 100,
+							"categoryID": "rielkConstruction:Materials",
+							"itemCosts": [
+								{
+									"id": "melvorD:Redwood_Logs",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						},
+						{
+							"id": "Leather_Straps",
+							"level": 1,
+							"productID": "rielkConstruction:Leather_Straps",
+							"baseQuantity": 1,
+							"baseExperience": 12,
+							"categoryID": "rielkConstruction:Materials",
+							"itemCosts": [
+								{
+									"id": "melvorD:Leather",
+									"quantity": 3
+								}
+							],
+							"currencyCosts": []
+						},
+						{
+							"id": "Hard_Leather_Straps",
+							"level": 1,
+							"productID": "rielkConstruction:Hard_Leather_Straps",
+							"baseQuantity": 1,
+							"baseExperience": 12,
+							"categoryID": "rielkConstruction:Materials",
+							"itemCosts": [
+								{
+									"id": "melvorD:Leather",
+									"quantity": 9
+								}
+							],
+							"currencyCosts": []
+						},
+						{
+							"id": "Green_Dhide_Leather_Straps",
+							"level": 1,
+							"productID": "rielkConstruction:Green_Dhide_Leather_Straps",
+							"baseQuantity": 1,
+							"baseExperience": 12,
+							"categoryID": "rielkConstruction:Materials",
+							"itemCosts": [
+								{
+									"id": "melvorD:Green_Dragonhide",
+									"quantity": 3
+								}
+							],
+							"currencyCosts": []
+						},
+						{
+							"id": "Blue_Dhide_Leather_Straps",
+							"level": 1,
+							"productID": "rielkConstruction:Blue_Dhide_Leather_Straps",
+							"baseQuantity": 1,
+							"baseExperience": 12,
+							"categoryID": "rielkConstruction:Materials",
+							"itemCosts": [
+								{
+									"id": "melvorD:Blue_Dragonhide",
+									"quantity": 3
+								}
+							],
+							"currencyCosts": []
+						},
+						{
+							"id": "Red_Dhide_Leather_Straps",
+							"level": 1,
+							"productID": "rielkConstruction:Red_Dhide_Leather_Straps",
+							"baseQuantity": 1,
+							"baseExperience": 12,
+							"categoryID": "rielkConstruction:Materials",
+							"itemCosts": [
+								{
+									"id": "melvorD:Red_Dragonhide",
+									"quantity": 3
+								}
+							],
+							"currencyCosts": []
+						},
+						{
+							"id": "Black_Dhide_Leather_Straps",
+							"level": 1,
+							"productID": "rielkConstruction:Black_Dhide_Leather_Straps",
+							"baseQuantity": 1,
+							"baseExperience": 12,
+							"categoryID": "rielkConstruction:Materials",
+							"itemCosts": [
+								{
+									"id": "melvorD:Black_Dragonhide",
+									"quantity": 3
+								}
+							],
+							"currencyCosts": []
+						}
           ],
           "rooms": [
             {

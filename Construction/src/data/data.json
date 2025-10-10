@@ -1324,17 +1324,99 @@
       },
       { "skillID":"melvorD:Fletching",
     "data":{
+      					"categories": [
+						{
+							"id": "Wood_Beams",
+							"media": "assets/items/beams_normal.png",
+							"name": "Wood Beams"
+						}
+					],
       "recipes":[
         {
               "id": "Normal_Beams",
               "level": 1,
               "productID": "rielkConstruction:Normal_Beams",
               "baseQuantity": 2,
-              "baseExperience": 4,
-              "categoryID": "melvorF:Arrows",
+              "baseExperience": 3,
+              "categoryID": "rielkConstruction:Wood_Beams",
               "itemCosts": [
                 {
                   "id": "melvorD:Normal_Logs",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+                    {
+              "id": "Oak_Beams",
+              "level": 20,
+              "productID": "rielkConstruction:Oak_Beams",
+              "baseQuantity": 2,
+              "baseExperience": 15,
+              "categoryID": "rielkConstruction:Wood_Beams",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Oak_Logs",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+                    {
+              "id": "Teak_Beams",
+              "level": 35,
+              "productID": "rielkConstruction:Teak_Beams",
+              "baseQuantity": 2,
+              "baseExperience": 30,
+              "categoryID": "rielkConstruction:Wood_Beams",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Teak_Logs",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+                    {
+              "id": "Mahogany_Beams",
+              "level": 1,
+              "productID": "rielkConstruction:Mahogany_Beams",
+              "baseQuantity": 2,
+              "baseExperience": 4,
+              "categoryID": "rielkConstruction:Wood_Beams",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Mahogany_Logs",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+                    {
+              "id": "Magic_Beams",
+              "level": 1,
+              "productID": "rielkConstruction:Magic_Beams",
+              "baseQuantity": 2,
+              "baseExperience": 4,
+              "categoryID": "rielkConstruction:Wood_Beams",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Magic_Logs",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+                    {
+              "id": "Redwood_Beams",
+              "level": 1,
+              "productID": "rielkConstruction:Redwood_Beams",
+              "baseQuantity": 2,
+              "baseExperience": 4,
+              "categoryID": "rielkConstruction:Wood_Beams",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Redwood_Logs",
                   "quantity": 1
                 }
               ],

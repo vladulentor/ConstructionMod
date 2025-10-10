@@ -6,7 +6,7 @@ const { patchGameEventSystem } = await loadModule('src/construction/gameEvents.m
 const { patchFarming } = await loadModule('src/skillPatches/farming/farming.mjs');
 const { patchMasteryElement } = await loadModule('src/skillPatches/patchmasteryelement.mjs');
 const { skillBoostsCompatibility } = await loadModule("src/modPatches/skillboosts.mjs");
-
+const { patchFletchingOrder} = await loadModule("src/skillPatches/patchFletchingOrder.mjs")
 
 export async function setup(ctx) {
     setup = new Setup(ctx);
@@ -15,17 +15,9 @@ export async function setup(ctx) {
     game.construction = game.registerSkill(game.registeredNamespaces.getNamespace('rielkConstruction'), Construction);
     await setup.applyPatches();
     await setup.loadData();
-    const cats = game.fletching.categories;
-    const myCat = cats.find(c => c.id === 'rielkConstruction:Woodwhittling');
-    if (myCat) {
-        // Remove from its position
-        const idx = cats.indexOf(myCat);
-        if (idx > -1) cats.splice(idx, 1);
-        // Put it at the front
-        cats.unshift(myCat);
-    }
-    await setup.modCompatibility(ctx);
+    await setup.applyOtherPatches()
 
+    await setup.modCompatibility(ctx);
 }
 
 
@@ -67,7 +59,10 @@ class Setup {
             game.construction.updateForExistingCapIncreases(game);
         });
     }
+    async applyOtherPatches(){
+        patchFletchingOrder();
 
+    }
     async loadData() {
         await this.ctx.gameData.addPackage('src/data/data.json');
         if (cloudManager.hasAoDEntitlementAndIsEnabled)

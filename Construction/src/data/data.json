@@ -8,7 +8,7 @@
         "media": "assets/icon.png",
         "containerID": "rielk-construction-container",
         "headerBgClass": "bg-rielk-construction",
-        "hasGameGuide": false,
+        "hasGameGuide": true,
         "canBeDefault": true,
         "skills": [
           "rielkConstruction:Construction"

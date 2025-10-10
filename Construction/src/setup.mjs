@@ -15,6 +15,15 @@ export async function setup(ctx) {
     game.construction = game.registerSkill(game.registeredNamespaces.getNamespace('rielkConstruction'), Construction);
     await setup.applyPatches();
     await setup.loadData();
+    const cats = game.fletching.categories;
+    const myCat = cats.find(c => c.id === 'rielkConstruction:Woodwhittling');
+    if (myCat) {
+        // Remove from its position
+        const idx = cats.indexOf(myCat);
+        if (idx > -1) cats.splice(idx, 1);
+        // Put it at the front
+        cats.unshift(myCat);
+    }
     await setup.modCompatibility(ctx);
 
 }
@@ -63,7 +72,7 @@ class Setup {
         await this.ctx.gameData.addPackage('src/data/data.json');
         if (cloudManager.hasAoDEntitlementAndIsEnabled)
             await this.ctx.gameData.addPackage('src/data/data_AoD.json');
-        if(cloudManager.hasTotHEntitlementAndIsEnabled)
+        if (cloudManager.hasTotHEntitlementAndIsEnabled)
             await this.ctx.gameData.addPackage('src/data/data_TotH.json');
     }
 
@@ -76,9 +85,9 @@ class Setup {
                 skillBoostsCompatibility(ctx);
 
             }
-           /* if (this.modList.includes('[Myth] Combat Simulator')) {
-                mod.api.mythCombatSimulator.registerNamespace('rielkConstruction');
-            }*/
+            /* if (this.modList.includes('[Myth] Combat Simulator')) {
+                 mod.api.mythCombatSimulator.registerNamespace('rielkConstruction');
+             }*/
 
         });
         // this.ctx.onInterfaceAvailable(() => {

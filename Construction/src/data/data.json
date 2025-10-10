@@ -102,6 +102,67 @@
 				"sellsFor": 1
 			},
       {
+				"itemType": "Item",
+				"id": "Oak_Beams",
+				"name": "Oak Beams",
+				"category": "Construction",
+				"type": "Beams",
+				"media": "assets/items/beams_oak.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3
+			},
+      {
+				"itemType": "Item",
+				"id": "Teak_Beams",
+				"name": "Normal Beams",
+				"category": "Construction",
+				"type": "Beams",
+				"media": "assets/items/beams_teak.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 13
+			},
+      {
+				"itemType": "Item",
+				"id": "Mahogany_Beams",
+				"name": "Mahogany Beams",
+				"category": "Construction",
+				"type": "Beams",
+				"media": "assets/items/beams_mahogany.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 30
+			},
+      {
+				"itemType": "Item",
+				"id": "Magic_Beams",
+				"name": "Magic Beams",
+				"category": "Construction",
+				"type": "Beams",
+				"media": "assets/items/beams_magic.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 235
+			},
+
+      {
+				"itemType": "Item",
+				"id": "Redwood_Beams",
+				"name": "Redwood Beams",
+				"category": "Construction",
+				"type": "Beams",
+				"media": "assets/items/beams_redwood.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 20
+			},
+      {
         "itemType": "Item",
         "id": "Normal_Planks",
         "name": "Normal Planks",
@@ -1261,6 +1322,46 @@
           ]
         }
       },
+      { "skillID":"melvorD:Fletching",
+    "data":{
+      "recipes":[
+        {
+              "id": "Normal_Beams",
+              "level": 1,
+              "productID": "rielkConstruction:Normal_Beams",
+              "baseQuantity": 2,
+              "baseExperience": 4,
+              "categoryID": "melvorF:Arrows",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Normal_Logs",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            }
+          ]
+    }},
+     { "skillID":"melvorD:Crafting",
+    "data":{
+      "recipes":[
+        {
+              "id": "Leather_Bands",
+              "level": 1,
+              "productID": "rielkConstruction:Leather_Bands",
+              "baseQuantity": 5,
+              "baseExperience": 4,
+              "categoryID": "melvorF:LeatherArmour",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Leather",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            }
+          ]
+    }},
       {
         "skillID": "rielkConstruction:Construction",
         "data": {
@@ -1563,7 +1664,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "melvorD:Oak_Logs",
+                  "id": "rielkConstruction:Oak_Beams",
                   "quantity": 1
                 }
               ],
@@ -1579,7 +1680,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "melvorD:Teak_Logs",
+                  "id": "rielkConstruction:Teak_Beams",
                   "quantity": 1
                 }
               ],
@@ -1595,7 +1696,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "melvorD:Mahogany_Logs",
+                  "id": "rielkConstruction:Mahogany_Beams",
                   "quantity": 1
                 }
               ],
@@ -1611,7 +1712,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "melvorD:Magic_Logs",
+                  "id": "rielkConstruction:Magic_Beams",
                   "quantity": 1
                 }
               ],
@@ -1627,7 +1728,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "melvorD:Redwood_Logs",
+                  "id": "rielkConstruction:Redwood_Beams",
                   "quantity": 1
                 }
               ],

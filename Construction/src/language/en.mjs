@@ -48,33 +48,40 @@ export const language = {
     'ITEM_NAME_Builders_Leggings': 'Builders Leggings',
     'ITEM_NAME_Builders_Boots': 'Builders Boots',
 
-    'ITEM_NAME_Bronze_Nails':'Bronze Nails',
+    'ITEM_NAME_Bronze_Nails': 'Bronze Nails',
     'ITEM_NAME_Iron_Nails': 'Iron Nails',
     'ITEM_NAME_Steel_Nails': 'Steel Nails',
     'ITEM_NAME_Mithril_Nails': 'Mithril Nails',
     'ITEM_NAME_Adamantite_Nails': 'Adamantite Nails',
     'ITEM_NAME_Dragonite_Nails': 'Dragonite Nails',
 
+    'ITEM_NAME_Normal_Planks': 'Normal Beams',
+    'ITEM_NAME_Oak_Planks': 'Oak Beams',
+    'ITEM_NAME_Teak_Planks': 'Teak Beams',
+    'ITEM_NAME_Mahogany_Planks': 'Mahogany Beams',
+    'ITEM_NAME_Magic_Planks': 'Magic Beams',
+    'ITEM_NAME_Redwood_Planks': 'Redwood Beams',
+
     'ITEM_NAME_Normal_Planks': 'Normal Planks',
     'ITEM_NAME_Oak_Planks': 'Oak Planks',
     'ITEM_NAME_Teak_Planks': 'Teak Planks',
     'ITEM_NAME_Mahogany_Planks': 'Mahogany Planks',
     'ITEM_NAME_Magic_Planks': 'Magic Planks',
-    'ITEM_NAME_Redwood_Planks':'Redwood Planks',
+    'ITEM_NAME_Redwood_Planks': 'Redwood Planks',
 
-    'ITEM_NAME_Leather_Straps':'Leather Straps',
-    'ITEM_NAME_Hard_Leather_Straps':'Hard Leather Straps',
-    'ITEM_NAME_Green_Dhide_Leather_Straps':'Green D-hide Leather Straps',
-    'ITEM_NAME_Blue_Dhide_Leather_Straps':'Blue D-hide Leather Straps',
-    'ITEM_NAME_Red_Dhide_Leather_Straps':'Red D-hide Leather Straps',
-    'ITEM_NAME_Black_Dhide_Leather_Straps':'Black D-hide Leather Straps',
-    
-    'ITEM_NAME_Leather_Bands':'Leather Bands',
-    'ITEM_NAME_Hard_Leather_Bands':'Hard Leather Bands',
-    'ITEM_NAME_Green_Dhide_Leather_Bands':'Green D-hide Leather Bands',
-    'ITEM_NAME_Blue_Dhide_Leather_Bands':'Blue D-hide Leather Bands',
-    'ITEM_NAME_Red_Dhide_Leather_Bands':'Red D-hide Leather Bands',
-    'ITEM_NAME_Black_Dhide_Leather_Bands':'Black D-hide Leather Bands',
+    'ITEM_NAME_Leather_Straps': 'Leather Straps',
+    'ITEM_NAME_Hard_Leather_Straps': 'Hard Leather Straps',
+    'ITEM_NAME_Green_Dhide_Leather_Straps': 'Green D-hide Leather Straps',
+    'ITEM_NAME_Blue_Dhide_Leather_Straps': 'Blue D-hide Leather Straps',
+    'ITEM_NAME_Red_Dhide_Leather_Straps': 'Red D-hide Leather Straps',
+    'ITEM_NAME_Black_Dhide_Leather_Straps': 'Black D-hide Leather Straps',
+
+    'ITEM_NAME_Leather_Bands': 'Leather Bands',
+    'ITEM_NAME_Hard_Leather_Bands': 'Hard Leather Bands',
+    'ITEM_NAME_Green_Dhide_Leather_Bands': 'Green D-hide Leather Bands',
+    'ITEM_NAME_Blue_Dhide_Leather_Bands': 'Blue D-hide Leather Bands',
+    'ITEM_NAME_Red_Dhide_Leather_Bands': 'Red D-hide Leather Bands',
+    'ITEM_NAME_Black_Dhide_Leather_Bands': 'Black D-hide Leather Bands',
 
 
     'ITEM_NAME_Flower_Pots_Token_1': 'Flower Pot: Tier 1',
@@ -97,11 +104,11 @@ export const language = {
     'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra materials or Progress made when completing extra actions while crafting ${categoryName}',
     'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra materials or Progress made when completing extra actions while crafting ${categoryName}',
 
-    'ITEM_NAME_Twice_Measured_Potion_I':'Twice-Measured Potion I',
-    'ITEM_NAME_Twice_Measured_Potion_II':'Twice-Measured Potion II',
-    'ITEM_NAME_Twice_Measured_Potion_III':'Twice-Measured Potion III',
-    'ITEM_NAME_Twice_Measured_Potion_IV':'Twice-Measured Potion IV',
-    'POTION_NAME_Twice_Measured_Potion':'Twice-Measured Potion',
+    'ITEM_NAME_Twice_Measured_Potion_I': 'Twice-Measured Potion I',
+    'ITEM_NAME_Twice_Measured_Potion_II': 'Twice-Measured Potion II',
+    'ITEM_NAME_Twice_Measured_Potion_III': 'Twice-Measured Potion III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': 'Twice-Measured Potion IV',
+    'POTION_NAME_Twice_Measured_Potion': 'Twice-Measured Potion',
 
     'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} extra Materials or Progress made when completing extra actions',
     'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} extra Materials or Progress made when completing extra actions',
@@ -131,8 +138,8 @@ export const language = {
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
 
-    'ENEMY_NAME_ConstructGiant':'Iron Giant',
-    'ENEMY_NAME_BarnRaiser':'Barn Raiser',
+    'ENEMY_NAME_ConstructGiant': 'Iron Giant',
+    'ENEMY_NAME_BarnRaiser': 'Barn Raiser',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Materials',
     'SKILL_CATEGORY_ Construction_ House': 'Furniture',

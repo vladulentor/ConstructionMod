@@ -57,12 +57,20 @@ export const language = {
     'ITEM_NAME_Adamantite_Nails': 'Adamantnägel',
     'ITEM_NAME_Dragonite_Nails': 'Drachennägel',
 
+    'ITEM_NAME_Normal_Planks': 'Normale Balken',
+    'ITEM_NAME_Oak_Planks': 'Eichenbalken',
+    'ITEM_NAME_Teak_Planks': 'Teakholzbalken',
+    'ITEM_NAME_Mahogany_Planks': 'Mahagonibalken',
+    'ITEM_NAME_Magic_Planks': 'Magische Balken',
+    'ITEM_NAME_Redwood_Planks': 'Redwood-Balken',
+
     'ITEM_NAME_Normal_Planks': 'Normale Bretter',
     'ITEM_NAME_Oak_Planks': 'Eichenbretter',
     'ITEM_NAME_Teak_Planks': 'Teakholzbretter',
     'ITEM_NAME_Mahogany_Planks': 'Mahagonibretter',
     'ITEM_NAME_Magic_Planks': 'Magische Bretter',
     'ITEM_NAME_Redwood_Planks': 'Redwood-Bretter',
+
     'ITEM_NAME_Leather_Straps': 'Lederriemen',
     'ITEM_NAME_Hard_Leather_Straps': 'Harte Lederriemen',
     'ITEM_NAME_Green_Dhide_Leather_Straps': 'Grünes Drachleder-Riemen',

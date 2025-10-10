@@ -56,11 +56,19 @@ export const language = {
     'ITEM_NAME_Dragonite_Nails': 'гвозди из драконита',
     'ITEM_NAME_Redwood_Planks': 'Доски из секвойи',
 
+    'ITEM_NAME_Normal_Planks': 'Обычные балки',
+    'ITEM_NAME_Oak_Planks': 'Дубовые балки',
+    'ITEM_NAME_Teak_Planks': 'Тиковые балки',
+    'ITEM_NAME_Mahogany_Planks': 'Балки из красного дерева',
+    'ITEM_NAME_Magic_Planks': 'Волшебные балки',
+    'ITEM_NAME_Redwood_Planks': 'Балки из секвойи',
+
     'ITEM_NAME_Normal_Planks': 'Нормальные доски',
     'ITEM_NAME_Oak_Planks': 'Дубовые доски',
     'ITEM_NAME_Teak_Planks': 'Тиковые доски',
     'ITEM_NAME_Mahogany_Planks': 'доски из красного дерева',
     'ITEM_NAME_Magic_Planks': 'Волшебные доски',
+
     'ITEM_NAME_Leather_Straps': 'Кожаные ремни',
     'ITEM_NAME_Hard_Leather_Straps': 'Жёсткие кожаные ремни',
     'ITEM_NAME_Green_Dhide_Leather_Straps': 'Зелёные ремни из драконьей кожи',

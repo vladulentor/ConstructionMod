@@ -3,7 +3,7 @@ const { loadModule } = mod.getContext(import.meta);
 const { ConstructionHouseMenu } = await loadModule('src/interface/constructionHouseMenu.mjs');
 const { getRielkLangString } = await loadModule('src/language/translationManager.mjs');
 
-
+const ctx = mod.getContext(import.meta);
 export class ConstructionInterface {
     constructor(construction) {
         this.renderQueue = new ConstructionRenderQueue();
@@ -24,6 +24,7 @@ export class ConstructionInterface {
 
         this.constructionCategoryMenu.addOptions(construction.categories.allObjects, getRielkLangString('MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY'), this._createSwitchConstructionCategory());
         this.constructionArtisanMenu.init(construction);
+
         construction.categories.forEach((category) => {
             if (category.type !== 'Artisan')
                 return;
@@ -44,6 +45,20 @@ export class ConstructionInterface {
         modalFrag.append(getTemplateNode('tier-mastery-menu'));
         document.getElementById('main-container').appendChild(modalFrag);
 
+        const guideFrag = new DocumentFragment();
+
+        guideFrag.append(getTemplateNode('tutorial-template-Construction'));
+        this.constrGuide = getElementFromFragment(
+            guideFrag,
+            'tutorial-page-Construction','div', true);
+        const guideContainer = document.querySelector('#modal-game-guide .block-content.block-content-full');
+
+        const imgs = this.constrGuide.querySelectorAll('img'); 
+        //Too lazy to make this more lines, so here's the order: 0 cover image (constr icon), 1. house icon row 2, 2. Little icon on row 3 (contsruction icon)
+        imgs[0].src = game.construction.media;
+        imgs[1].src = this.constructionMasteryBar._image.src;
+        imgs[2].src = game.construction.media;
+        guideContainer.append(this.constrGuide);
     }
 
     switchConstructionCategory(category) {

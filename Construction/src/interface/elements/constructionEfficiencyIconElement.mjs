@@ -11,13 +11,16 @@ export class EfficiencyIconElement extends InfoIconElement {
         this.container = getElementFromFragment(this._content, 'container', 'div');
         this.image = getElementFromFragment(this._content, 'image', 'img');
         this.image.src = ctx.getResourceUrl('assets/efficiency.png');
-        this.image.alt = "Efficiencty bro!" //getRielkLangString('MENU_TEXT_TOOLTIP_EFFICIENCY');
+        this.image.alt = "Efficiencty Icon" //getRielkLangString('MENU_TEXT_TOOLTIP_EFFICIENCY');
 
         this.chance = getElementFromFragment(this._content, 'chance', 'small');
         this.tooltipElem = document.createElement('efficiency-icon-tooltip');
         //        this.tooltipElem = new EfficiencyIconTooltipElement();
     }
     connectedCallback() {
+                if(mod.manager.getLoadedModList().includes('"The future is now..." Text remover')){
+                    getElementFromFragment(this._content, 'future-1', 'small').classList.add('d-none');
+                    getElementFromFragment(this._content, 'future-2', 'h5').classList.add('d-none');}
         this.appendChild(this._content);
         if (this.tooltip !== undefined)
             return;
@@ -48,7 +51,7 @@ export class EfficiencyIconElement extends InfoIconElement {
                 ],
             },
         });
-
+            
     }
     setChance(chance, potency, cost, chancePotencySourceSpans, mode) {
         this.chance.textContent = formatPercent(Math.round(chance));

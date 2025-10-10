@@ -142,7 +142,7 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 3': 'Schalte die Effekte der Stufe 4 des Einrichtungsgegenstands frei.',
     'MASTERY_BONUS_ Construction_ 4': 'Schalte die Effekte der Stufe 5 des Einrichtungsgegenstands frei.',
 
-    'ENEMY_NAME_ConstructGiant': 'Konstruktgigant',
+    'ENEMY_NAME_ConstructGiant': 'Eisenriese',
     'ENEMY_NAME_BarnRaiser': 'Scheunenbauer',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Baumaterialien',

@@ -138,8 +138,8 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 3': 'Sblocca gli effetti del livello 4 dell\'arredamento.',
     'MASTERY_BONUS_ Construction_ 4': 'Sblocca gli effetti del livello 5 dell\'arredamento.',
 
-    'ENEMY_NAME_ConstructGiant': 'Gigante da Costruzione',
-    'ENEMY_NAME_BarnRaiser': 'Costruttore di Fienili',
+    'ENEMY_NAME_ConstructGiant':'Gigante di Ferro',
+'ENEMY_NAME_BarnRaiser':'Costruttore di Fienili',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Materiali',
     'SKILL_CATEGORY_ Construction_ House': 'Arredamento',

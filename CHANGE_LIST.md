@@ -7,10 +7,17 @@ Entries marked with [TotH] indicate Throne of the Herald changes.
 ---
 
 ## Combat
-
+### New Enemies
 - Added "Barn Raiser" enemy to Farmlands. Drops early-game planks and nails, offering a combat-way of building up construction.
 
-- Added "Construct Giant" enemy to Giant's Dungeon. You can get many nails from fighting him, among other things.
+- Added "Iron Giant" enemy to Giant's Dungeon. You can get many nails from fighting him, among other things.
+### Changed Enemies
+(Note: When changing existing enemies' loot tables, new items were added such that rare items' chances would not be decreased)
+
+- Golbin now can now drop planks, and Ranged golbin nails.
+
+- Confused Pirate from the Sandy Shores will now drop the remains of the ship he'd floated in on, being a good source of planks.
+
 
 ---
 

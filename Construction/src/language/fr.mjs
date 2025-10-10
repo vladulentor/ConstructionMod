@@ -139,8 +139,8 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 3': 'Débloquez les effets du niveau 4 du mobilier.',
     'MASTERY_BONUS_ Construction_ 4': 'Débloquez les effets du niveau 5 du mobilier.',
 
-    'ENEMY_NAME_ConstructGiant': 'Géant de Construction',
-    'ENEMY_NAME_BarnRaiser': 'Bâtisseur de Grange',
+    'ENEMY_NAME_ConstructGiant':'Géant de Fer',
+'ENEMY_NAME_BarnRaiser':'Bâtisseur de Grange',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Matériels',
     'SKILL_CATEGORY_ Construction_ House': 'Mobilier',

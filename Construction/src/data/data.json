@@ -2940,6 +2940,7 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc":"patchWorldMap",
               "modifiers": {
                 "skillPreservationChance": [
                   {
@@ -3872,7 +3873,6 @@
                   "quantity": 10
                 }
               ],
-              "changeFunc": "tierArray",
               "currencyCosts": [],
               "modifiers": {
                 "perfectCookChance": 2,

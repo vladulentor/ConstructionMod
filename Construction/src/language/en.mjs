@@ -55,12 +55,12 @@ export const language = {
     'ITEM_NAME_Adamantite_Nails': 'Adamantite Nails',
     'ITEM_NAME_Dragonite_Nails': 'Dragonite Nails',
 
-    'ITEM_NAME_Normal_Planks': 'Normal Beams',
-    'ITEM_NAME_Oak_Planks': 'Oak Beams',
-    'ITEM_NAME_Teak_Planks': 'Teak Beams',
-    'ITEM_NAME_Mahogany_Planks': 'Mahogany Beams',
-    'ITEM_NAME_Magic_Planks': 'Magic Beams',
-    'ITEM_NAME_Redwood_Planks': 'Redwood Beams',
+    'ITEM_NAME_Normal_Beams': 'Normal Beams',
+    'ITEM_NAME_Oak_Beams': 'Oak Beams',
+    'ITEM_NAME_Teak_Beams': 'Teak Beams',
+    'ITEM_NAME_Mahogany_Beams': 'Mahogany Beams',
+    'ITEM_NAME_Magic_Beams': 'Magic Beams',
+    'ITEM_NAME_Redwood_Beams': 'Redwood Beams',
 
     'ITEM_NAME_Normal_Planks': 'Normal Planks',
     'ITEM_NAME_Oak_Planks': 'Oak Planks',

@@ -56,12 +56,12 @@ export const language = {
     'ITEM_NAME_Adamantite_Nails': '아다만타이트 손톱',
     'ITEM_NAME_Dragonite_Nails': '드래고나이트 네일',
 
-    'ITEM_NAME_Normal_Planks': '일반 들보',
-    'ITEM_NAME_Oak_Planks': '참나무 들보',
-    'ITEM_NAME_Teak_Planks': '티크 들보',
-    'ITEM_NAME_Mahogany_Planks': '마호가니 들보',
-    'ITEM_NAME_Magic_Planks': '마법의 들보',
-    'ITEM_NAME_Redwood_Planks': '레드우드 들보',
+    'ITEM_NAME_Normal_Beams': '일반 들보',
+    'ITEM_NAME_Oak_Beams': '참나무 들보',
+    'ITEM_NAME_Teak_Beams': '티크 들보',
+    'ITEM_NAME_Mahogany_Beams': '마호가니 들보',
+    'ITEM_NAME_Magic_Beams': '마법의 들보',
+    'ITEM_NAME_Redwood_Beams': '레드우드 들보',
 
     'ITEM_NAME_Normal_Planks': '일반 판자',
     'ITEM_NAME_Oak_Planks': '참나무 판자',

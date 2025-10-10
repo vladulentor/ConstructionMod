@@ -56,12 +56,12 @@ export const language = {
     'ITEM_NAME_Adamantite_Nails': 'アダマンタイトの釘',
     'ITEM_NAME_Dragonite_Nails': 'ドラゴナイトネイル',
 
-    'ITEM_NAME_Normal_Planks': '通常の梁',
-    'ITEM_NAME_Oak_Planks': 'オークの梁',
-    'ITEM_NAME_Teak_Planks': 'チーク材の梁',
-    'ITEM_NAME_Mahogany_Planks': 'マホガニーの梁',
-    'ITEM_NAME_Magic_Planks': '魔法の梁',
-    'ITEM_NAME_Redwood_Planks': 'レッドウッドの梁',
+    'ITEM_NAME_Normal_Beams': '通常の梁',
+    'ITEM_NAME_Oak_Beams': 'オークの梁',
+    'ITEM_NAME_Teak_Beams': 'チーク材の梁',
+    'ITEM_NAME_Mahogany_Beams': 'マホガニーの梁',
+    'ITEM_NAME_Magic_Beams': '魔法の梁',
+    'ITEM_NAME_Redwood_Beams': 'レッドウッドの梁',
 
     'ITEM_NAME_Normal_Planks': '通常の板',
     'ITEM_NAME_Oak_Planks': 'オークの板',

@@ -56,12 +56,12 @@ export const language = {
     'ITEM_NAME_Adamantite_Nails': 'Chiodi di adamantite',
     'ITEM_NAME_Dragonite_Nails': 'Chiodi di dragonite',
 
-    'ITEM_NAME_Normal_Planks': 'Travi normali',
-    'ITEM_NAME_Oak_Planks': 'Travi di quercia',
-    'ITEM_NAME_Teak_Planks': 'Travi di teak',
-    'ITEM_NAME_Mahogany_Planks': 'Travi di mogano',
-    'ITEM_NAME_Magic_Planks': 'Travi magiche',
-    'ITEM_NAME_Redwood_Planks': 'Travi di sequoia',
+    'ITEM_NAME_Normal_Beams': 'Travi normali',
+    'ITEM_NAME_Oak_Beams': 'Travi di quercia',
+    'ITEM_NAME_Teak_Beams': 'Travi di teak',
+    'ITEM_NAME_Mahogany_Beams': 'Travi di mogano',
+    'ITEM_NAME_Magic_Beams': 'Travi magiche',
+    'ITEM_NAME_Redwood_Beams': 'Travi di sequoia',
 
     'ITEM_NAME_Normal_Planks': 'Assi normali',
     'ITEM_NAME_Oak_Planks': 'Assi di quercia',

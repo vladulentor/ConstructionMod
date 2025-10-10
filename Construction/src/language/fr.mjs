@@ -57,12 +57,12 @@ export const language = {
     'ITEM_NAME_Adamantite_Nails': 'Clous en adamante',
     'ITEM_NAME_Dragonite_Nails': 'Clous en draconite',
 
-    'ITEM_NAME_Normal_Planks': 'Poutres normales',
-    'ITEM_NAME_Oak_Planks': 'Poutres en chêne',
-    'ITEM_NAME_Teak_Planks': 'Poutres en teck',
-    'ITEM_NAME_Mahogany_Planks': 'Poutres en acajou',
-    'ITEM_NAME_Magic_Planks': 'Poutres magiques',
-    'ITEM_NAME_Redwood_Planks': 'Poutres en séquoia',
+    'ITEM_NAME_Normal_Beams': 'Poutres normales',
+    'ITEM_NAME_Oak_Beams': 'Poutres en chêne',
+    'ITEM_NAME_Teak_Beams': 'Poutres en teck',
+    'ITEM_NAME_Mahogany_Beams': 'Poutres en acajou',
+    'ITEM_NAME_Magic_Beams': 'Poutres magiques',
+    'ITEM_NAME_Redwood_Beams': 'Poutres en séquoia',
 
     'ITEM_NAME_Normal_Planks': 'Planches normales',
     'ITEM_NAME_Oak_Planks': 'Planches de chêne',

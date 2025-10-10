@@ -54,12 +54,12 @@ export const language = {
     'ITEM_NAME_Adamantite_Nails': '精金釘',
     'ITEM_NAME_Dragonite_Nails': '龍石釘',
 
-    'ITEM_NAME_Normal_Planks': '普通木樑',
-    'ITEM_NAME_Oak_Planks': '橡木樑',
-    'ITEM_NAME_Teak_Planks': '柚木樑',
-    'ITEM_NAME_Mahogany_Planks': '桃花心木樑',
-    'ITEM_NAME_Magic_Planks': '魔法木樑',
-    'ITEM_NAME_Redwood_Planks': '紅木樑',
+    'ITEM_NAME_Normal_Beams': '普通木樑',
+    'ITEM_NAME_Oak_Beams': '橡木樑',
+    'ITEM_NAME_Teak_Beams': '柚木樑',
+    'ITEM_NAME_Mahogany_Beams': '桃花心木樑',
+    'ITEM_NAME_Magic_Beams': '魔法木樑',
+    'ITEM_NAME_Redwood_Beams': '紅木樑',
 
     'ITEM_NAME_Normal_Planks': '普通木板',
     'ITEM_NAME_Oak_Planks': '橡木板',

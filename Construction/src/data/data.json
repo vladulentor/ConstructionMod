@@ -89,6 +89,18 @@
         "golbinRaidExclusive": false,
         "sellsFor": 130
       },
+      	{
+				"itemType": "Item",
+				"id": "Normal_Beams",
+				"name": "Normal Beams",
+				"category": "Construction",
+				"type": "Beams",
+				"media": "assets/items/beams_normal.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 1
+			},
       {
         "itemType": "Item",
         "id": "Normal_Planks",
@@ -1530,12 +1542,12 @@
               "spoofOrder": 1,
               "level": 1,
               "productID": "rielkConstruction:Normal_Planks",
-              "baseQuantity": 2,
+              "baseQuantity": 3,
               "baseExperience": 4,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "melvorD:Normal_Logs",
+                  "id": "rielkConstruction:Normal_Beams",
                   "quantity": 1
                 }
               ],
@@ -1546,7 +1558,7 @@
               "level": 5,
               "spoofOrder": 2,
               "productID": "rielkConstruction:Oak_Planks",
-              "baseQuantity": 2,
+              "baseQuantity": 3,
               "baseExperience": 8,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -1562,7 +1574,7 @@
               "spoofOrder": 7,
               "level": 20,
               "productID": "rielkConstruction:Teak_Planks",
-              "baseQuantity": 2,
+              "baseQuantity": 3,
               "baseExperience": 20,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -1578,7 +1590,7 @@
               "spoofOrder": 8,
               "level": 35,
               "productID": "rielkConstruction:Mahogany_Planks",
-              "baseQuantity": 2,
+              "baseQuantity": 3,
               "baseExperience": 25,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -1594,7 +1606,7 @@
               "spoofOrder": 13,
               "level": 50,
               "productID": "rielkConstruction:Magic_Planks",
-              "baseQuantity": 2,
+              "baseQuantity": 3,
               "baseExperience": 50,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -1610,7 +1622,7 @@
               "spoofOrder": 14,
               "level": 70,
               "productID": "rielkConstruction:Redwood_Planks",
-              "baseQuantity": 2,
+              "baseQuantity": 3,
               "baseExperience": 100,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [

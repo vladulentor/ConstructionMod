@@ -19,18 +19,6 @@
     "items": [
       {
         "itemType": "Item",
-        "id": "Bronze_Nails",
-        "name": "Bronze Nails",
-        "category": "Construction",
-        "type": "Nails",
-        "media": "assets/items/nails_bronze.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 2
-      },
-      {
-        "itemType": "Item",
         "id": "Iron_Nails",
         "name": "Iron Nails",
         "category": "Construction",
@@ -89,79 +77,6 @@
         "golbinRaidExclusive": false,
         "sellsFor": 130
       },
-      	{
-				"itemType": "Item",
-				"id": "Normal_Beams",
-				"name": "Normal Beams",
-				"category": "Construction",
-				"type": "Beams",
-				"media": "assets/items/beams_normal.png",
-				"ignoreCompletion": false,
-				"obtainFromItemLog": false,
-				"golbinRaidExclusive": false,
-				"sellsFor": 1
-			},
-      {
-				"itemType": "Item",
-				"id": "Oak_Beams",
-				"name": "Oak Beams",
-				"category": "Construction",
-				"type": "Beams",
-				"media": "assets/items/beams_oak.png",
-				"ignoreCompletion": false,
-				"obtainFromItemLog": false,
-				"golbinRaidExclusive": false,
-				"sellsFor": 3
-			},
-      {
-				"itemType": "Item",
-				"id": "Teak_Beams",
-				"name": "Normal Beams",
-				"category": "Construction",
-				"type": "Beams",
-				"media": "assets/items/beams_teak.png",
-				"ignoreCompletion": false,
-				"obtainFromItemLog": false,
-				"golbinRaidExclusive": false,
-				"sellsFor": 13
-			},
-      {
-				"itemType": "Item",
-				"id": "Mahogany_Beams",
-				"name": "Mahogany Beams",
-				"category": "Construction",
-				"type": "Beams",
-				"media": "assets/items/beams_mahogany.png",
-				"ignoreCompletion": false,
-				"obtainFromItemLog": false,
-				"golbinRaidExclusive": false,
-				"sellsFor": 30
-			},
-      {
-				"itemType": "Item",
-				"id": "Magic_Beams",
-				"name": "Magic Beams",
-				"category": "Construction",
-				"type": "Beams",
-				"media": "assets/items/beams_magic.png",
-				"ignoreCompletion": false,
-				"obtainFromItemLog": false,
-				"golbinRaidExclusive": false,
-				"sellsFor": 235
-			},
-
-      {
-				"itemType": "Item",
-				"id": "Redwood_Beams",
-				"name": "Redwood Beams",
-				"category": "Construction",
-				"type": "Beams",
-				"media": "assets/items/beams_redwood.png",
-				"ignoreCompletion": false,
-				"obtainFromItemLog": false,
-				"golbinRaidExclusive": false,
-				"sellsFor": 20
-			},
       {
         "itemType": "Item",
         "id": "Normal_Planks",
@@ -221,162 +136,6 @@
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 188
-      },
-      {
-        "itemType": "Item",
-        "id": "Redwood_Planks",
-        "name": "Redwood Planks",
-        "category": "Construction",
-        "type": "Planks",
-        "media": "assets/items/planks_redwood.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 460
-      },
-      {
-        "itemType": "Item",
-        "id": "Leather_Bands",
-        "name": "Leather Bands",
-        "category": "Construction",
-        "type": "Bands",
-        "media": "assets/items/bands_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 1
-      },
-      {
-        "itemType": "Item",
-        "id": "Hard_Leather_Bands",
-        "name": "Hard Leather Bands",
-        "category": "Construction",
-        "type": "Bands",
-        "media": "assets/items/bands_hard_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 3
-      },
-      {
-        "itemType": "Item",
-        "id": "Green_Dhide_Leather_Bands",
-        "name": "Green D-Hide Leather Bands",
-        "category": "Construction",
-        "type": "Bands",
-        "media": "assets/items/bands_green_d-hide_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 65
-      },
-      {
-        "itemType": "Item",
-        "id": "Blue_Dhide_Leather_Bands",
-        "name": "Blue D-Hide Leather Bands",
-        "category": "Construction",
-        "type": "Bands",
-        "media": "assets/items/bands_blue_d-hide_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 140
-      },
-      {
-        "itemType": "Item",
-        "id": "Red_Dhide_Leather_Bands",
-        "name": "Red D-Hide Leather Bands",
-        "category": "Construction",
-        "type": "Bands",
-        "media": "assets/items/bands_red_d-hide_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 320
-      },
-      {
-        "itemType": "Item",
-        "id": "Black_Dhide_Leather_Bands",
-        "name": "Black D-Hide Leather Bands",
-        "category": "Construction",
-        "type": "Bands",
-        "media": "assets/items/bands_black_d-hide_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 200
-      },
-      {
-        "itemType": "Item",
-        "id": "Leather_Straps",
-        "name": "Leather Straps",
-        "category": "Construction",
-        "type": "Straps",
-        "media": "assets/items/straps_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 3
-      },
-      {
-        "itemType": "Item",
-        "id": "Hard_Leather_Straps",
-        "name": "Hard Leather Straps",
-        "category": "Construction",
-        "type": "Straps",
-        "media": "assets/items/straps_hard_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 3
-      },
-      {
-        "itemType": "Item",
-        "id": "Green_Dhide_Leather_Straps",
-        "name": "Green D-hide Leather Straps",
-        "category": "Construction",
-        "type": "Straps",
-        "media": "assets/items/straps_green_d-hide_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 3
-      },
-      {
-        "itemType": "Item",
-        "id": "Blue_Dhide_Leather_Straps",
-        "name": "Blue D-hide Leather Straps",
-        "category": "Construction",
-        "type": "Straps",
-        "media": "assets/items/straps_blue_d-hide_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 3
-      },
-      {
-        "itemType": "Item",
-        "id": "Red_Dhide_Leather_Straps",
-        "name": "Red D-hide Leather Straps",
-        "category": "Construction",
-        "type": "Straps",
-        "media": "assets/items/straps_red_d-hide_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 3
-      },
-      {
-        "itemType": "Item",
-        "id": "Black_Dhide_Leather_Straps",
-        "name": "Black D-hide Leather Straps",
-        "category": "Construction",
-        "type": "Straps",
-        "media": "assets/items/straps_black_d-hide_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 3
       },
       {
         "itemType": "Token",
@@ -1340,128 +1099,6 @@
           ]
         }
       },
-      { "skillID":"melvorD:Fletching",
-    "data":{
-      					"categories": [
-						{
-							"id": "Wood_Beams",
-							"media": "assets/items/beams_normal.png",
-							"name": "Wood Beams"
-						}
-					],
-      "recipes":[
-        {
-              "id": "Normal_Beams",
-              "level": 1,
-              "productID": "rielkConstruction:Normal_Beams",
-              "baseQuantity": 2,
-              "baseExperience": 3,
-              "categoryID": "rielkConstruction:Wood_Beams",
-              "itemCosts": [
-                {
-                  "id": "melvorD:Normal_Logs",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-                    {
-              "id": "Oak_Beams",
-              "level": 20,
-              "productID": "rielkConstruction:Oak_Beams",
-              "baseQuantity": 2,
-              "baseExperience": 15,
-              "categoryID": "rielkConstruction:Wood_Beams",
-              "itemCosts": [
-                {
-                  "id": "melvorD:Oak_Logs",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-                    {
-              "id": "Teak_Beams",
-              "level": 35,
-              "productID": "rielkConstruction:Teak_Beams",
-              "baseQuantity": 2,
-              "baseExperience": 30,
-              "categoryID": "rielkConstruction:Wood_Beams",
-              "itemCosts": [
-                {
-                  "id": "melvorD:Teak_Logs",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-                    {
-              "id": "Mahogany_Beams",
-              "level": 1,
-              "productID": "rielkConstruction:Mahogany_Beams",
-              "baseQuantity": 2,
-              "baseExperience": 4,
-              "categoryID": "rielkConstruction:Wood_Beams",
-              "itemCosts": [
-                {
-                  "id": "melvorD:Mahogany_Logs",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-                    {
-              "id": "Magic_Beams",
-              "level": 1,
-              "productID": "rielkConstruction:Magic_Beams",
-              "baseQuantity": 2,
-              "baseExperience": 4,
-              "categoryID": "rielkConstruction:Wood_Beams",
-              "itemCosts": [
-                {
-                  "id": "melvorD:Magic_Logs",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-                    {
-              "id": "Redwood_Beams",
-              "level": 1,
-              "productID": "rielkConstruction:Redwood_Beams",
-              "baseQuantity": 2,
-              "baseExperience": 4,
-              "categoryID": "rielkConstruction:Wood_Beams",
-              "itemCosts": [
-                {
-                  "id": "melvorD:Redwood_Logs",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            }
-          ]
-    }},
-     { "skillID":"melvorD:Crafting",
-    "data":{
-      "recipes":[
-        {
-              "id": "Leather_Bands",
-              "level": 1,
-              "productID": "rielkConstruction:Leather_Bands",
-              "baseQuantity": 5,
-              "baseExperience": 4,
-              "categoryID": "melvorF:LeatherArmour",
-              "itemCosts": [
-                {
-                  "id": "melvorD:Leather",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            }
-          ]
-    }},
       {
         "skillID": "rielkConstruction:Construction",
         "data": {
@@ -1748,7 +1385,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Normal_Beams",
+                  "id": "melvorD:Normal_Logs",
                   "quantity": 1
                 }
               ],
@@ -1764,7 +1401,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Oak_Beams",
+                  "id": "melvorD:Oak_Logs",
                   "quantity": 1
                 }
               ],
@@ -1780,7 +1417,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Teak_Beams",
+                  "id": "melvorD:Teak_Logs",
                   "quantity": 1
                 }
               ],
@@ -1796,7 +1433,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Mahogany_Beams",
+                  "id": "melvorD:Mahogany_Logs",
                   "quantity": 1
                 }
               ],
@@ -1812,135 +1449,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Magic_Beams",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-            {
-              "id": "Redwood_Planks",
-              "spoofOrder": 14,
-              "level": 70,
-              "productID": "rielkConstruction:Redwood_Planks",
-              "baseQuantity": 3,
-              "baseExperience": 100,
-              "categoryID": "rielkConstruction:Materials",
-              "itemCosts": [
-                {
-                  "id": "rielkConstruction:Redwood_Beams",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-            {
-              "id": "Leather_Straps",
-              "spoofOrder": 3,
-              "level": 1,
-              "productID": "rielkConstruction:Leather_Straps",
-              "baseQuantity": 1,
-              "baseExperience": 12,
-              "categoryID": "rielkConstruction:Materials",
-              "itemCosts": [
-                {
-                  "id": "rielkConstruction:Leather_Bands",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-            {
-              "id": "Hard_Leather_Straps",
-              "spoofOrder": 4,
-              "level": 5,
-              "productID": "rielkConstruction:Hard_Leather_Straps",
-              "baseQuantity": 1,
-              "baseExperience": 12,
-              "categoryID": "rielkConstruction:Materials",
-              "itemCosts": [
-                {
-                  "id": "rielkConstruction:Hard_Leather_Bands",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-            {
-              "id": "Green_Dhide_Leather_Straps",
-              "spoofOrder": 9,
-              "level": 20,
-              "productID": "rielkConstruction:Green_Dhide_Leather_Straps",
-              "baseQuantity": 1,
-              "baseExperience": 12,
-              "categoryID": "rielkConstruction:Materials",
-              "itemCosts": [
-                {
-                  "id": "rielkConstruction:Green_Dhide_Leather_Bands",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-            {
-              "id": "Blue_Dhide_Leather_Straps",
-              "spoofOrder": 10,
-              "level": 35,
-              "productID": "rielkConstruction:Blue_Dhide_Leather_Straps",
-              "baseQuantity": 1,
-              "baseExperience": 12,
-              "categoryID": "rielkConstruction:Materials",
-              "itemCosts": [
-                {
-                  "id": "rielkConstruction:Blue_Dhide_Leather_Bands",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-            {
-              "id": "Red_Dhide_Leather_Straps",
-              "spoofOrder": 15,
-              "level": 50,
-              "productID": "rielkConstruction:Red_Dhide_Leather_Straps",
-              "baseQuantity": 1,
-              "baseExperience": 12,
-              "categoryID": "rielkConstruction:Materials",
-              "itemCosts": [
-                {
-                  "id": "rielkConstruction:Red_Dhide_Leather_Bands",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-            {
-              "id": "Black_Dhide_Leather_Straps",
-              "spoofOrder": 16,
-              "level": 70,
-              "productID": "rielkConstruction:Black_Dhide_Leather_Straps",
-              "baseQuantity": 1,
-              "baseExperience": 12,
-              "categoryID": "rielkConstruction:Materials",
-              "itemCosts": [
-                {
-                  "id": "rielkConstruction:Black_Dhide_Leather_Bands",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-            {
-              "id": "Bronze_Nails",
-              "spoofOrder": 5,
-              "level": 1,
-              "productID": "rielkConstruction:Bronze_Nails",
-              "baseQuantity": 5,
-              "baseExperience": 4,
-              "categoryID": "rielkConstruction:Materials",
-              "itemCosts": [
-                {
-                  "id": "melvorD:Bronze_Bar",
+                  "id": "melvorD:Magic_Logs",
                   "quantity": 1
                 }
               ],

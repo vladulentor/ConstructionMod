@@ -38,6 +38,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.progressBar = getElementFromFragment(this._content, 'progress-bar', 'progress-bar');
         this.buildContainer = getElementFromFragment(this._content, 'build-container', 'div');
         this.interval = getElementFromFragment(this._content, 'interval', 'interval-icon');
+        this.progress = 0;
     }
     connectedCallback() {
         this.appendChild(this._content);
@@ -49,17 +50,6 @@ class ConstructionRoomPanelElement extends HTMLElement {
 
         });
         this.grants.hideMastery();
-        /* if ((window.innerWidth <= 1920 && window.innerWidth >= 1350) || (window.innerWidth <= 860 && window.innerWidth >= 767))
-             for (const icon of [this.productPreservation, this.productEfficiency]) {
-                 const btn = icon.querySelector('.info-icon');
-                 if (btn) {
-                     btn.classList.remove('m-2');
-                     btn.classList.add('mb-2');
-                     btn.classList.add('mt-2');
-                     if (i === 1) btn.classList.add('ms-1');
-                 }
-             }*/
-
     }
     setdetailscontainer(detailwidth) {
         if (this.noneSelected /*|| this.productEfficiency.classList.contains('d-none')*/) return;
@@ -199,6 +189,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
             this.detailsContainer.classList.remove('col-12');
             this.detailsContainer.classList.remove('text-center');
             this.detailsContainer.classList.add('col-8');
+            this.selectFixtureUI(construction, this.selectedFixture);
             this.updateFixtureInfo(construction, this.selectedFixture);
         } else {
             this.infoBoxName.textContent = '-';
@@ -213,12 +204,12 @@ class ConstructionRoomPanelElement extends HTMLElement {
             this.detailsContainer.classList.add('text-center');
         }
     }
-    updateFixtureInfo(construction, fixture) {
+    selectFixtureUI(construction, fixture) {
         this.noneSelected = false;
         this.infoBoxName.textContent = fixture.name;
         this.infoBoxImage.src = fixture.media;
-
         const fixtureRecipe = fixture.currentRecipe;
+
         if (fixtureRecipe == undefined || fixtureRecipe.level > construction.level) {
             hideElement(this.builtProgressContainer);
             hideElement(this.ingredientsContainer);
@@ -234,15 +225,18 @@ class ConstructionRoomPanelElement extends HTMLElement {
             const detailWidth = parseFloat(getComputedStyle(this.extraDetailsContainer).width);
             this.setdetailscontainer(detailWidth);
         });
-
-
-        const progress = fixture.percentProgress;
+        this.progress = fixture.percentProgress;
         this.builtProgressText.textContent = templateRielkLangString('MENU_TEXT_PARTIAL_BUILT_PROGRESS', {
             currentValue: `${formatNumber(fixture.progress)}`,
             maxValue: `${formatNumber(fixtureRecipe.actionCost)}`,
-            percent: progress == undefined ? '' : `(${formatPercent(progress, 2)})`,
+            percent: this.progress == 0 ? '' : `(${formatPercent(this.progress, 2)})`,
         });
-        this.builtProgressBar.setFixedPosition(progress == undefined ? 0 : progress);
+
+    }
+    updateFixtureInfo(construction, fixture) {
+        const fixtureRecipe = fixture.currentRecipe;
+
+        this.builtProgressBar.setFixedPosition(this.progress);
         this.requires.setItemsFromRecipe(fixtureRecipe);
         const label = this.requires.querySelector('h5 > lang-string[lang-id="MENU_TEXT_REQUIRES"]');
         if (label) label.textContent = getRielkLangString('MENU_TEXT_REMAINING');
@@ -257,8 +251,8 @@ class ConstructionRoomPanelElement extends HTMLElement {
             const base = parseInt(qtyEl.textContent.replace(/,/g, ""), 10);
 
             if (!isNaN(base) && !isNaN(have)) {
-                let totalCost = base * (fixtureRecipe.actionCost - fixture.progress);
-                qtyEl.textContent = formatNumber(Math.max(base, totalCost));
+                let totalCost = base * (1 - (fixture.progress / fixtureRecipe.actionCost)); // this math is fucked up bro
+                qtyEl.textContent = Math.ceil(totalCost);
 
                 if (have >= base && have < totalCost) {
                     qtyEl.parentElement?.parentElement.classList.add('border-item-danger');
@@ -281,8 +275,8 @@ class ConstructionRoomPanelElement extends HTMLElement {
             const base = parseInt(qtyEl.textContent.replace(/,/g, ""), 10);
 
             if (!isNaN(base) && !isNaN(have)) {
-                let totalCost = base * (fixtureRecipe.actionCost - fixture.progress);
-                qtyEl.textContent = formatNumber(Math.max(base, totalCost));
+                let totalCost = base * (1 - (fixture.progress / fixtureRecipe.actionCost)); // this math is fucked up bro
+                qtyEl.textContent = Math.ceil(totalCost);
 
                 if (have >= base && have < totalCost) {
                     qtyEl.parentElement?.parentElement.classList.add('border-item-danger');

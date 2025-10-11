@@ -122,8 +122,57 @@ export class Construction extends ArtisanSkill {
             throw new Error('Tried to get active building recipe, but none is selected.');
         return this.selectedFixtureRecipe;
     }
-    getCurrentBuildRecipeCosts() {
-        return this.getRecipeCosts(this.activeBuildRecipe);
+
+    getCurrentBuildRecipeCosts(efficiency = 0) {
+        const fixture = this.activeBuildRecipe.fixture;
+        const prevRatio = fixture.progress / this.activeBuildRecipe.actionCost;        // fraction done before this action
+        const costMult = efficiency ? this.getEfficiencyCostMultiplier(this.activeBuildRecipe) : 1;
+        const nextRatio = (fixture.progress + costMult) / this.activeBuildRecipe.actionCost;  // fraction done after this action
+        console.groupCollapsed(`[getCurrentBuildRecipeCosts] ${fixture.name || 'Fixture'}`);
+        console.log("Progress:", fixture.progress, "/", this.activeBuildRecipe.actionCost);
+        console.log("Ratios:", { prevRatio, nextRatio });
+
+        // Get the canonical full-cost object
+        const costObj = this.getRecipeCosts(this.activeBuildRecipe);
+        console.log("Full cost (pre-split):", {
+            items: Array.from(costObj._items.entries()),
+            currencies: Array.from(costObj._currencies.entries())
+        });
+
+        const actionItems = new Map();
+        const actionCurrencies = new Map();
+
+        // Items
+        costObj._items.forEach((total, item) => {
+            const prev = Math.floor(total * prevRatio);
+            const next = Math.floor(total * nextRatio);
+            const delta = next - prev;
+            console.log(`Item [${item.name || item}]: total=${total}, prev=${prev}, next=${next}, delta=${delta}`);
+            if (delta > 0) actionItems.set(item, delta);
+        });
+
+        // Currencies
+        costObj._currencies.forEach((total, currency) => {
+            const prev = Math.floor(total * prevRatio);
+            const next = Math.floor(total * nextRatio);
+            const delta = next - prev;
+            console.log(`Currency [${currency.name || currency}]: total=${total}, prev=${prev}, next=${next}, delta=${delta}`);
+            if (delta > 0) actionCurrencies.set(currency, delta);
+        });
+
+        costObj._items = actionItems;
+        costObj._currencies = actionCurrencies;
+
+        console.log("Per-action cost result:", {
+            items: Array.from(actionItems.entries()),
+            currencies: Array.from(actionCurrencies.entries())
+        });
+        console.groupEnd();
+        if (this.efficient && !costObj.checkIfOwned()) {
+            return this.getCurrentBuildRecipeCosts(false);
+        }
+
+        return costObj;
     }
     get buildActionXP() {
         return this.activeBuildRecipe.baseExperience;
@@ -137,7 +186,7 @@ export class Construction extends ArtisanSkill {
     }
     onPageChange() {
         super.onPageChange();
-        this.renderQueue.renderfixtureItemUpdates = true;
+        this.renderQueue.renderfixtureItemUpdates = true; 
     }
     shouldShowSkillInSidebar() {
         return super.shouldShowSkillInSidebar() || this.game.currentRealm === this.game.defaultRealm; // only show in default realm
@@ -572,8 +621,8 @@ export class Construction extends ArtisanSkill {
                 map.set(item, Math.round(quantity * multiplier));
             });
             if (!cost.checkIfOwned()) {            // This reset is for the specific case of the player not having enough for the efficiency ability but having enough for a normal craft, so we give it to them for no extra cost.
-            //TODO: Add a message if this happens
-            //PS, this could technically be abused by someone alays holding a super small amount of items when building to not suffer the costs, but who would do that
+                //TODO: Add a message if this happens
+                //PS, this could technically be abused by someone alays holding a super small amount of items when building to not suffer the costs, but who would do that
                 cost._currencies.forEach((quantity, currency, map) => {
                     map.set(currency, Math.floor(quantity / multiplier));
                 });
@@ -618,9 +667,8 @@ export class Construction extends ArtisanSkill {
     }
 
     buildAction() {
-        let recipeCosts = this.getCurrentBuildRecipeCosts();
         if (rollPercentage(this.getEfficiencyChance(this.activeBuildRecipe))) this.efficient = true;
-        if (this.efficient) this.scalecost(recipeCosts, this.getEfficiencyCostMultiplier(this.activeBuildRecipe))
+        let recipeCosts = this.getCurrentBuildRecipeCosts(this.efficient);
         if (!recipeCosts.checkIfOwned()) {
             this.game.combat.notifications.add({
                 type: 'Player',
@@ -668,14 +716,15 @@ export class Construction extends ArtisanSkill {
         }
         if (room == undefined || fixture == undefined)
             return;
-        if (!this.getRecipeCosts(fixture.currentRecipe).checkIfOwned()) {
+        this.selectedRoom = room;
+        this.selectedFixture = fixture;
+        this.selectedFixtureRecipe = fixture.currentRecipe;
+
+        if (!this.getCurrentBuildRecipeCosts().checkIfOwned()) {
             notifyPlayer(this, this.noBuildCostsMessage, 'danger');
             return;
         }
         this._actionMode = 1;
-        this.selectedRoom = room;
-        this.selectedFixture = fixture;
-        this.selectedFixtureRecipe = fixture.currentRecipe;
         this.start();
 
     }
@@ -695,6 +744,7 @@ export class Construction extends ArtisanSkill {
     }
     queueBankQuantityRender(item) {
         super.queueBankQuantityRender(item);
+        this.renderQueue.renderSpecificfixtureItemUpdate = true;
         this.renderQueue.renderfixtureItemUpdates = true;
     }
 
@@ -703,7 +753,9 @@ export class Construction extends ArtisanSkill {
         this.renderQueue.menu = true;
         this.renderQueue.fictureUnlock = true;
         this.renderQueue.masteryBar = true;
+         this.renderQueue.renderAllFixtureItemUpdates = true;
         this.renderQueue.masteryBonusElements = true;
+        
 
         this.selectRealm(this.currentRealm);
         onInterfaceReady(async () => {

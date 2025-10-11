@@ -148,13 +148,17 @@ export class ConstructionInterface {
         this.renderQueue.menu = false;
     }
     renderfixtureItemUpdates() {
-        if (this.renderQueue.renderfixtureItemUpdates == false)
-            return
-        this.renderQueue.renderfixtureItemUpdates = false;
+        if (this.renderQueue.renderfixtureItemUpdates == false) return;
+        if (this.renderQueue.renderSpecificfixtureItemUpdate)
+               { this.constructionHouseMenu.updateCurrentFixtureProg(this.construction); this.renderQueue.renderSpecificfixtureItemUpdate = false;}
+            else
+                this.constructionHouseMenu.updateFixtureItems(this.construction);
+        
         //if (!document.getElementById('rielk-construction-container').classList.contains('d-none') && !this.constructionHouseMenu?.root.parentElement?.parentElement.classList.contains('d-none')) {
-        this.constructionHouseMenu.updateFixtureItems(this.construction);
         // this optimization is probably not needed but I will keep it in in case I want to change it later.
         //}
+        this.renderQueue.renderfixtureItemUpdates = false;
+        
     }
     renderProgressBar() {
         if (!this.renderQueue.progressBar)

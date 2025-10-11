@@ -5744,11 +5744,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 15
+                  "quantity": 615
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 15
+                  "quantity": 315
                 }
               ],
               "currencyCosts": [],

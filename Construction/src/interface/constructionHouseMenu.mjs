@@ -113,8 +113,16 @@ export class ConstructionHouseMenu {
         }
         );
     }
-    updateFixtureItems(construction) {
-        this.roomPanels.forEach((panel) => {
+    updateCurrentFixtureProg(construction) {
+        const panel = this.roomPanels.get(construction.activeBuildRecipe.room);
+        if(panel && panel.selectedFixture)
+        panel.updateFixtureInfo(construction, construction.panel.selectedFixture);
+
+
+    }
+    updateFixtureItems(construction)
+    {
+                this.roomPanels.forEach((panel) => {
             if (panel.selectedFixture && panel.selectedFixture) {
                 panel.updateFixtureInfo(construction, panel.selectedFixture);
             }

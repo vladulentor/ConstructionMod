@@ -551,6 +551,7 @@ export class Construction extends ArtisanSkill {
         }
     }
 
+
     addMasteryProgress(tier) {
         let tierData = this.tierMasteries.getObjectSafe(`rielkConstruction:${tier}`);
 
@@ -676,7 +677,7 @@ export class Construction extends ArtisanSkill {
         this._actionMode = 1;
         this.start();
 
-    }
+        }
 
     getRegistry(type) {
         switch (type) {
@@ -709,82 +710,82 @@ export class Construction extends ArtisanSkill {
         this.renderQueue.masteryBonusElements = true;
 
 
-        this.selectRealm(this.currentRealm);
-        onInterfaceReady(async () => {
-            this.ui.renderVisibleRooms();
+            this.selectRealm(this.currentRealm);
+            onInterfaceReady(async () => {
+                this.ui.renderVisibleRooms();
+                this.render();
+            });
+            if (this._actionMode == 1) {
+                var recipe = this.activeBuildRecipe;
+                this.ui.switchConstructionCategory(recipe.category)
+                this.ui.selectFixture(recipe.fixture, recipe.fixture.room, this);
+            }
+            this.fixtures.forEach(fixture => fixture.onLoad());
+            this.updateRecipeCounts();
+            this.popTierMasteries();
+
             this.render();
-        });
-        if (this._actionMode == 1) {
-            var recipe = this.activeBuildRecipe;
-            this.ui.switchConstructionCategory(recipe.category)
-            this.ui.selectFixture(recipe.fixture, recipe.fixture.room, this);
         }
-        this.fixtures.forEach(fixture => fixture.onLoad());
-        this.updateRecipeCounts();
-        this.popTierMasteries();
+        resetActionState() {
+            super.resetActionState();
+            this._actionMode = undefined;
+            this.selectedRoom = undefined;
+            this.selectedFixture = undefined;
+            this.selectedFixtureRecipe = undefined;
+        }
+        updateForExistingCapIncreases() {
+            var _a;
+            var initalLevel;
+            (_a = this.game.currentGamemode.initialLevelCaps) === null || _a === void 0 ? void 0 : _a.forEach(({ skill, value }) => {
+                if (skill == this)
+                    initalLevel = value;
+            });
+            if (initalLevel == undefined)
+                initalLevel = this.game.currentGamemode.defaultInitialLevelCap;
+            if (initalLevel == undefined)
+                initalLevel = -1;
+            this.setLevelCap(initalLevel);
+            this.game.activeLevelCapIncreases.forEach((capIncrease) => {
+                capIncrease.requirementSets.forEach((reqSet) => {
+                    if (!reqSet.given)
+                        return;
+                    switch (capIncrease.levelType) {
+                        case 'Standard':
+                            capIncrease.fixedIncreases.forEach((skillIncrease) => {
+                                if (skillIncrease.skill == this)
+                                    this.applyLevelCapIncrease(skillIncrease);
+                            });
+                            capIncrease.setIncreases.forEach(({ value }) => {
+                                if (skillIncrease.skill == this)
+                                    this.applySetLevelCap(value);
+                            }
+                            );
+                            break;
+                        case 'Abyssal':
+                            capIncrease.fixedIncreases.forEach((skillIncrease) => {
+                                if (skillIncrease.skill == this)
+                                    this.skill.applyAbyssalLevelCapIncrease(skillIncrease);
+                            }
+                            );
+                            capIncrease.setIncreases.forEach(({ value }) => {
+                                if (skillIncrease.skill == this)
+                                    this.setAbyssalLevelCap(value);
+                            }
+                            );
+                            break;
+                    }
+                    this.game.validateRandomLevelCapIncreases();
+                })
+            });
+        }
+        encode(writer) {
+            super.encode(writer);
+            Encoder.encode(this, writer);
+            return writer;
+        }
 
-        this.render();
+        decode(reader, saveVersion) {
+            super.decode(reader, saveVersion);
+            Encoder.decode(this, reader);
+        }
     }
-    resetActionState() {
-        super.resetActionState();
-        this._actionMode = undefined;
-        this.selectedRoom = undefined;
-        this.selectedFixture = undefined;
-        this.selectedFixtureRecipe = undefined;
-    }
-    updateForExistingCapIncreases() {
-        var _a;
-        var initalLevel;
-        (_a = this.game.currentGamemode.initialLevelCaps) === null || _a === void 0 ? void 0 : _a.forEach(({ skill, value }) => {
-            if (skill == this)
-                initalLevel = value;
-        });
-        if (initalLevel == undefined)
-            initalLevel = this.game.currentGamemode.defaultInitialLevelCap;
-        if (initalLevel == undefined)
-            initalLevel = -1;
-        this.setLevelCap(initalLevel);
-        this.game.activeLevelCapIncreases.forEach((capIncrease) => {
-            capIncrease.requirementSets.forEach((reqSet) => {
-                if (!reqSet.given)
-                    return;
-                switch (capIncrease.levelType) {
-                    case 'Standard':
-                        capIncrease.fixedIncreases.forEach((skillIncrease) => {
-                            if (skillIncrease.skill == this)
-                                this.applyLevelCapIncrease(skillIncrease);
-                        });
-                        capIncrease.setIncreases.forEach(({ value }) => {
-                            if (skillIncrease.skill == this)
-                                this.applySetLevelCap(value);
-                        }
-                        );
-                        break;
-                    case 'Abyssal':
-                        capIncrease.fixedIncreases.forEach((skillIncrease) => {
-                            if (skillIncrease.skill == this)
-                                this.skill.applyAbyssalLevelCapIncrease(skillIncrease);
-                        }
-                        );
-                        capIncrease.setIncreases.forEach(({ value }) => {
-                            if (skillIncrease.skill == this)
-                                this.setAbyssalLevelCap(value);
-                        }
-                        );
-                        break;
-                }
-                this.game.validateRandomLevelCapIncreases();
-            })
-        });
-    }
-    encode(writer) {
-        super.encode(writer);
-        Encoder.encode(this, writer);
-        return writer;
-    }
-
-    decode(reader, saveVersion) {
-        super.decode(reader, saveVersion);
-        Encoder.decode(this, reader);
-    }
-}

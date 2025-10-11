@@ -85,6 +85,7 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
                 this.fixture.upgrade(this.skill);
 
                 this.skill.addMasteryProgress(this.fixture.currentTier);
+                this.skill.addMasteryProgress(this.fixture.currentTier);
 
 
                 if (this.grantItems != undefined)

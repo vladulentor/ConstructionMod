@@ -122,93 +122,6 @@ export class Construction extends ArtisanSkill {
             throw new Error('Tried to get active building recipe, but none is selected.');
         return this.selectedFixtureRecipe;
     }
-
-    getCurrentBuildRecipeCosts(efficiency = 0) {
-        const fixture = this.activeBuildRecipe.fixture;
-        const prevRatio = fixture.progress / this.activeBuildRecipe.actionCost;        // fraction done before this action
-        const costMult = efficiency ? this.getEfficiencyCostMultiplier(this.activeBuildRecipe) : 1;
-        const nextRatio = (fixture.progress + costMult) / this.activeBuildRecipe.actionCost;  // fraction done after this action
-        console.groupCollapsed(`[getCurrentBuildRecipeCosts] ${fixture.name || 'Fixture'}`);
-        console.log("Progress:", fixture.progress, "/", this.activeBuildRecipe.actionCost);
-        console.log("Ratios:", { prevRatio, nextRatio });
-
-        // Get the canonical full-cost object
-        const costObj = this.getRecipeCosts(this.activeBuildRecipe);
-        console.log("Full cost (pre-split):", {
-            items: Array.from(costObj._items.entries()),
-            currencies: Array.from(costObj._currencies.entries())
-        });
-
-        const actionItems = new Map();
-        const actionCurrencies = new Map();
-
-        // Items
-        costObj._items.forEach((total, item) => {
-            const prev = Math.floor(total * prevRatio);
-            const next = Math.floor(total * nextRatio);
-            const delta = next - prev;
-            console.log(`Item [${item.name || item}]: total=${total}, prev=${prev}, next=${next}, delta=${delta}`);
-            if (delta > 0) actionItems.set(item, delta);
-        });
-
-        // Currencies
-        costObj._currencies.forEach((total, currency) => {
-            const prev = Math.floor(total * prevRatio);
-            const next = Math.floor(total * nextRatio);
-            const delta = next - prev;
-            console.log(`Currency [${currency.name || currency}]: total=${total}, prev=${prev}, next=${next}, delta=${delta}`);
-            if (delta > 0) actionCurrencies.set(currency, delta);
-        });
-
-        costObj._items = actionItems;
-        costObj._currencies = actionCurrencies;
-
-        console.log("Per-action cost result:", {
-            items: Array.from(actionItems.entries()),
-            currencies: Array.from(actionCurrencies.entries())
-        });
-        console.groupEnd();
-        if (this.efficient && !costObj.checkIfOwned()) {
-            return this.getCurrentBuildRecipeCosts(false);
-        }
-
-        return costObj;
-    }
-    get buildActionXP() {
-        return this.activeBuildRecipe.baseExperience;
-    }
-    get buildActionAbyssalXP() {
-        return this.activeBuildRecipe.baseAbyssalExperience;
-    }
-
-    get masteryModifiedInterval() {
-        return 1700;
-    }
-    onPageChange() {
-        super.onPageChange();
-        this.renderQueue.renderfixtureItemUpdates = true; 
-    }
-    shouldShowSkillInSidebar() {
-        return super.shouldShowSkillInSidebar() || this.game.currentRealm === this.game.defaultRealm; // only show in default realm
-    }
-    updateRecipeCounts() {
-        const tierNum = cloudManager?.hasTotHEntitlementAndIsEnabled ? 8 : 5;
-        this.recipeCountByTier = Array(tierNum).fill(0);
-        const allFixtures = this.fixtures.allObjects;
-        //This is assuming all recipes have equal number tiers, which is technically not true with the AoD DLC, 
-        // but the game lets you go to 120 with AoD and not TotH, this is in the spirit of that
-
-        this.recipeNumber = allFixtures.length;
-        allFixtures.forEach((fixture) => {
-            const maxTier = fixture.currentTier; // currentTier = number from 1..max
-
-            for (let t = 0; t < maxTier; t++) {
-                this.recipeCountByTier[t]++;
-            }
-        });
-
-    }
-
     getFixtureInterval(fixture) {
         return this.modifyInterval(this.baseInterval, fixture);
     }
@@ -350,6 +263,42 @@ export class Construction extends ArtisanSkill {
     computeTotalMasteryActions() {
 
     }
+
+    get buildActionXP() {
+        return this.activeBuildRecipe.baseExperience;
+    }
+    get buildActionAbyssalXP() {
+        return this.activeBuildRecipe.baseAbyssalExperience;
+    }
+
+    get masteryModifiedInterval() {
+        return 1700;
+    }
+    onPageChange() {
+        super.onPageChange();
+        this.renderQueue.renderfixtureItemUpdates = true;
+    }
+    shouldShowSkillInSidebar() {
+        return super.shouldShowSkillInSidebar() || this.game.currentRealm === this.game.defaultRealm; // only show in default realm
+    }
+    updateRecipeCounts() {
+        const tierNum = cloudManager?.hasTotHEntitlementAndIsEnabled ? 8 : 5;
+        this.recipeCountByTier = Array(tierNum).fill(0);
+        const allFixtures = this.fixtures.allObjects;
+        //This is assuming all recipes have equal number tiers, which is technically not true with the AoD DLC, 
+        // but the game lets you go to 120 with AoD and not TotH, this is in the spirit of that
+
+        this.recipeNumber = allFixtures.length;
+        allFixtures.forEach((fixture) => {
+            const maxTier = fixture.currentTier; // currentTier = number from 1..max
+
+            for (let t = 0; t < maxTier; t++) {
+                this.recipeCountByTier[t]++;
+            }
+        });
+
+    }
+
     get hasMastery() { // We inspect the call stack to determine if we have mastery, this is so we can be in the mastery log without having a mastery bar.
         const stack = new Error().stack;
         if (stack.includes('buildMasteryLog') || stack.includes('buildSkillsLog')) return true;
@@ -668,7 +617,7 @@ export class Construction extends ArtisanSkill {
 
     buildAction() {
         if (rollPercentage(this.getEfficiencyChance(this.activeBuildRecipe))) this.efficient = true;
-        let recipeCosts = this.getCurrentBuildRecipeCosts(this.efficient);
+        let recipeCosts = this.selectedFixture.getCurrentBuildRecipeCosts(this, this.efficient);
         if (!recipeCosts.checkIfOwned()) {
             this.game.combat.notifications.add({
                 type: 'Player',
@@ -693,7 +642,7 @@ export class Construction extends ArtisanSkill {
         const continueSkill1 = this.addActionRewards(); //TODO, determine if this is needed
         const continueSkill2 = this.selectedFixtureRecipe.makeProgress(progressMult);
         this.postAction();
-        const nextCosts = this.getCurrentBuildRecipeCosts();
+        const nextCosts = this.selectedFixture.getCurrentBuildRecipeCosts(this);
         if (continueSkill1 && continueSkill2 && nextCosts.checkIfOwned()) {
             this.startActionTimer();
         } else {
@@ -720,7 +669,7 @@ export class Construction extends ArtisanSkill {
         this.selectedFixture = fixture;
         this.selectedFixtureRecipe = fixture.currentRecipe;
 
-        if (!this.getCurrentBuildRecipeCosts().checkIfOwned()) {
+        if (!this.selectedFixture.getCurrentBuildRecipeCosts(this).checkIfOwned()) {
             notifyPlayer(this, this.noBuildCostsMessage, 'danger');
             return;
         }
@@ -744,9 +693,11 @@ export class Construction extends ArtisanSkill {
     }
     queueBankQuantityRender(item) {
         super.queueBankQuantityRender(item);
-        if(this.selectedFixtureRecipe) //we don't update the thing unless you're looking at the screen or currently
-        {this.renderQueue.renderSpecificfixtureItemUpdate = true;
-        this.renderQueue.renderfixtureItemUpdates = true;}
+        if (this.selectedFixtureRecipe) //we don't update the thing unless you're looking at the screen or currently
+        {
+            this.renderQueue.renderSpecificfixtureItemUpdate = true;
+            this.renderQueue.renderfixtureItemUpdates = true;
+        }
     }
 
     onLoad() {
@@ -754,9 +705,9 @@ export class Construction extends ArtisanSkill {
         this.renderQueue.menu = true;
         this.renderQueue.fictureUnlock = true;
         this.renderQueue.masteryBar = true;
-         this.renderQueue.renderAllFixtureItemUpdates = true;
+        this.renderQueue.renderAllFixtureItemUpdates = true;
         this.renderQueue.masteryBonusElements = true;
-        
+
 
         this.selectRealm(this.currentRealm);
         onInterfaceReady(async () => {

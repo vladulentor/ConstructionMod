@@ -61,6 +61,58 @@ export class ConstructionFixture extends RealmedObject {
     get abyssalLevel() {
         return this.recipes[0].abyssalLevel;
     }
+    
+    getCurrentBuildRecipeCosts(construction, efficiency = 0) {
+        const prevRatio = this.progress / this.currentRecipe.actionCost;        // fraction done before this action
+        const costMult = efficiency ? construction.getEfficiencyCostMultiplier(this.currentRecipe) : 1;
+        const nextRatio = (this.progress + costMult) / this.currentRecipe.actionCost;  // fraction done after this action
+        console.groupCollapsed(`[getCurrentBuildRecipeCosts] ${this.name || 'Fixture'}`);
+        console.log("Progress:", this.progress, "/", this.currentRecipe.actionCost);
+        console.log("Ratios:", { prevRatio, nextRatio });
+
+        // Get the canonical full-cost object
+        const costObj = construction.getRecipeCosts(this.currentRecipe);
+        console.log("Full cost (pre-split):", {
+            items: Array.from(costObj._items.entries()),
+            currencies: Array.from(costObj._currencies.entries())
+        });
+
+        const actionItems = new Map();
+        const actionCurrencies = new Map();
+
+        // Items
+        costObj._items.forEach((total, item) => {
+            const prev = Math.floor(total * prevRatio);
+            const next = Math.floor(total * nextRatio);
+            const delta = next - prev;
+            console.log(`Item [${item.name || item}]: total=${total}, prev=${prev}, next=${next}, delta=${delta}`);
+            if (delta > 0) actionItems.set(item, delta);
+        });
+
+        // Currencies
+        costObj._currencies.forEach((total, currency) => {
+            const prev = Math.floor(total * prevRatio);
+            const next = Math.floor(total * nextRatio);
+            const delta = next - prev;
+            console.log(`Currency [${currency.name || currency}]: total=${total}, prev=${prev}, next=${next}, delta=${delta}`);
+            if (delta > 0) actionCurrencies.set(currency, delta);
+        });
+
+        costObj._items = actionItems;
+        costObj._currencies = actionCurrencies;
+
+        console.log("Per-action cost result:", {
+            items: Array.from(actionItems.entries()),
+            currencies: Array.from(actionCurrencies.entries())
+        });
+        console.groupEnd();
+        if (efficiency && !costObj.checkIfOwned()) {
+            return this.getCurrentBuildRecipeCosts(construction, false);
+        }
+
+        return costObj;
+    }
+
     upgrade(construction) {
         this.currentTier++;
         this.progress = 0;

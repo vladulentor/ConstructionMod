@@ -99,7 +99,7 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
             }
 
         }
-        //this.skill.renderQueue.menu = true; Why am I re-rendering the menu every time?
+        this.skill.renderQueue.menu = true; //Why am I re-rendering the menu every time?
         return true;
     }
 }

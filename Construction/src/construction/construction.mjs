@@ -744,8 +744,9 @@ export class Construction extends ArtisanSkill {
     }
     queueBankQuantityRender(item) {
         super.queueBankQuantityRender(item);
-        this.renderQueue.renderSpecificfixtureItemUpdate = true;
-        this.renderQueue.renderfixtureItemUpdates = true;
+        if(this.selectedFixtureRecipe) //we don't update the thing unless you're looking at the screen or currently
+        {this.renderQueue.renderSpecificfixtureItemUpdate = true;
+        this.renderQueue.renderfixtureItemUpdates = true;}
     }
 
     onLoad() {

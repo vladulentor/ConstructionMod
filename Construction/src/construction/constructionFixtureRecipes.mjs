@@ -93,13 +93,13 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
                     this.callChangeFunc();
                 this.skill.ui.showFixtureUnlocks(this.fixture.room, this.fixture, this.skill);
 
-                this.skill.renderQueue.menu = true;
+                this.skill.renderQueue.menu = true; 
                 return false;
 
             }
 
         }
-        this.skill.renderQueue.menu = true;
+        //this.skill.renderQueue.menu = true; Why am I re-rendering the menu every time?
         return true;
     }
 }

@@ -154,10 +154,11 @@ export class ConstructionInterface {
             else
                 this.constructionHouseMenu.updateFixtureItems(this.construction);
         
+        this.renderQueue.renderfixtureItemUpdates = false;
+       
         //if (!document.getElementById('rielk-construction-container').classList.contains('d-none') && !this.constructionHouseMenu?.root.parentElement?.parentElement.classList.contains('d-none')) {
         // this optimization is probably not needed but I will keep it in in case I want to change it later.
         //}
-        this.renderQueue.renderfixtureItemUpdates = false;
         
     }
     renderProgressBar() {

@@ -90,8 +90,8 @@
               <div class="col-12 block block-rounded-double bg-combat-inner-dark pt-2 pb-1 text-center"
                 id="ingredients-container">
                 <div class="row no-gutters">
-                  <requires-box class="col-12 col-sm-6 pb-2 icon-size-48" id="requires"></requires-box>
-                  <haves-box class="col-12 col-sm-6 pb-2 icon-size-48" id="haves"></haves-box>
+                  <remaining-box class="col-12 col-sm-6 pb-2 icon-size-48" id="remaining"></remaining-box>
+                  <remaining-haves-box class="col-12 col-sm-6 pb-2 icon-size-48" id="remaining-haves"></remaining-haves-box>
                 </div>
               </div>
               <div class="col-12 block block-rounded-double bg-combat-inner-dark pt-2 pb-1 text-center"
@@ -351,4 +351,18 @@
         <h3>建設指南</h3>
         <p>步驟1: 建造你的第一個房間...</p>
     </div>
+</template>
+
+<template id="remaining-box-template" data-image-init="true">
+  <h5 class="font-w600 mb-1 text-center">
+    <rielk-lang-string lang-id="MENU_TEXT_REMAINING"></rielk-lang-string>
+  </h5>
+  <my-quantity-icons id="icons"></quantity-icons>
+</template>
+
+<template id="remaining-haves-box-template" data-image-init="true">
+  <h5 class="font-w600 mb-1 text-center">
+    <lang-string lang-id="MENU_TEXT_YOU_HAVE"></lang-string>
+  </h5>
+  <my-current-quantity-icons id="icons"></my-current-quantity-icons>
 </template>

@@ -4,7 +4,7 @@ const { getRielkLangString, templateRielkLangString } = await loadModule('src/la
 
 await loadModule('src/interface/elements/constructionEfficiencyIconTooltipElement.mjs');
 await loadModule('src/interface/elements/constructionEfficiencyIconElement.mjs');
-
+await loadModule('src/interface/elements/constructionRemainingIcons.mjs');
 class ConstructionRoomPanelElement extends HTMLElement {
     constructor() {
         super();
@@ -32,8 +32,8 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.upgradesButton = getElementFromFragment(this._content, 'upgrades-button', 'button');
         this.builtProgressText = getElementFromFragment(this._content, 'built-progress-text', 'small');
         this.builtProgressBar = getElementFromFragment(this._content, 'built-progress-bar', 'progress-bar');
-        this.requires = getElementFromFragment(this._content, 'requires', 'requires-box');
-        this.haves = getElementFromFragment(this._content, 'haves', 'haves-box');
+        this.requires = getElementFromFragment(this._content, 'remaining', 'remaining-box');
+        this.haves = getElementFromFragment(this._content, 'remaining-haves', 'remaining-haves-box');
         this.grants = getElementFromFragment(this._content, 'grants', 'grants-box');
         this.progressBar = getElementFromFragment(this._content, 'progress-bar', 'progress-bar');
         this.buildContainer = getElementFromFragment(this._content, 'build-container', 'div');
@@ -208,8 +208,8 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.noneSelected = false;
         this.infoBoxName.textContent = fixture.name;
         this.infoBoxImage.src = fixture.media;
+        fixture.getCurrentBuildRecipeCosts(construction);
         const fixtureRecipe = fixture.currentRecipe;
-
         if (fixtureRecipe == undefined || fixtureRecipe.level > construction.level) {
             hideElement(this.builtProgressContainer);
             hideElement(this.ingredientsContainer);
@@ -233,60 +233,12 @@ class ConstructionRoomPanelElement extends HTMLElement {
         });
 
     }
-    updateFixtureInfo(construction, fixture) {
-        const fixtureRecipe = fixture.currentRecipe;
 
+    updateFixtureInfo(construction, fixture) {
+        const fixtureRecipe = fixture.UIcost;
         this.builtProgressBar.setFixedPosition(this.progress);
         this.requires.setItemsFromRecipe(fixtureRecipe);
-        const label = this.requires.querySelector('h5 > lang-string[lang-id="MENU_TEXT_REQUIRES"]');
-        if (label) label.textContent = getRielkLangString('MENU_TEXT_REMAINING');
         this.haves.setItemsFromRecipe(fixtureRecipe, construction.game);
-        const requireIcons = this.requires.querySelectorAll('item-quantity-icon');
-        const haveIcons = this.haves.querySelectorAll('item-current-icon');
-
-        requireIcons.forEach((icon, i) => {
-            const qtyEl = icon.querySelector("small.badge-pill");
-            const haveQtyEl = haveIcons[i]?.querySelector("small.badge-pill");
-            const have = parseInt(haveQtyEl.textContent.replace(/,/g, ""), 10);
-            const base = parseInt(qtyEl.textContent.replace(/,/g, ""), 10);
-
-            if (!isNaN(base) && !isNaN(have)) {
-                let totalCost = base * (1 - (fixture.progress / fixtureRecipe.actionCost)); // this math is fucked up bro
-                qtyEl.textContent = Math.ceil(totalCost);
-
-                if (have >= base && have < totalCost) {
-                    qtyEl.parentElement?.parentElement.classList.add('border-item-danger');
-                    haveQtyEl.parentElement?.parentElement.classList.add('border-item-danger');
-                } else {
-                    qtyEl.parentElement?.parentElement.classList.remove('border-item-danger');
-                    haveQtyEl.parentElement?.parentElement.classList.remove('border-item-danger');
-                }
-            }
-        });
-
-        // --- CURRENCY ICONS ---
-        const requireCurrencyIcons = this.requires.querySelectorAll('currency-quantity-icon');
-        const haveCurrencyIcons = this.haves.querySelectorAll('currency-current-icon');
-
-        requireCurrencyIcons.forEach((icon, i) => {
-            const qtyEl = icon.querySelector("small.badge-pill");
-            const haveQtyEl = haveCurrencyIcons[i]?.querySelector("small.badge-pill");
-            const have = parseInt(haveQtyEl.textContent.replace(/,/g, ""), 10);
-            const base = parseInt(qtyEl.textContent.replace(/,/g, ""), 10);
-
-            if (!isNaN(base) && !isNaN(have)) {
-                let totalCost = base * (1 - (fixture.progress / fixtureRecipe.actionCost)); // this math is fucked up bro
-                qtyEl.textContent = Math.ceil(totalCost);
-
-                if (have >= base && have < totalCost) {
-                    qtyEl.parentElement?.parentElement.classList.add('border-item-danger');
-                    haveQtyEl.parentElement?.parentElement.classList.add('border-item-danger');
-                } else {
-                    qtyEl.parentElement?.parentElement.classList.remove('border-item-danger');
-                    haveQtyEl.parentElement?.parentElement.classList.remove('border-item-danger');
-                }
-            }
-        });
         this.grants.setSelected();
         this.grants.xpIcon.setXP(Math.floor(construction.modifyXP(fixtureRecipe.baseExperience)), fixtureRecipe.baseExperience);
         this.grants.updateAbyssalGrants(Math.floor(construction.modifyAbyssalXP(fixtureRecipe.baseAbyssalExperience)), fixtureRecipe.baseAbyssalExperience);

@@ -618,7 +618,8 @@ export class Construction extends ArtisanSkill {
 
     buildAction() {
         if (rollPercentage(this.getEfficiencyChance(this.activeBuildRecipe))) this.efficient = true;
-        let recipeCosts = this.selectedFixture.getCurrentBuildRecipeCosts(this, this.efficient);
+                this.selectedFixture.getCurrentBuildRecipeCosts(this, this.efficient);
+        let recipeCosts = this.selectedFixture.stepCost;
         if (!recipeCosts.checkIfOwned()) {
             this.game.combat.notifications.add({
                 type: 'Player',
@@ -643,7 +644,7 @@ export class Construction extends ArtisanSkill {
         const continueSkill1 = this.addActionRewards(); //TODO, determine if this is needed
         const continueSkill2 = this.selectedFixtureRecipe.makeProgress(progressMult);
         this.postAction();
-        const nextCosts = this.selectedFixture.getCurrentBuildRecipeCosts(this);
+        const nextCosts = this.selectedFixture.stepCost;
         if (continueSkill1 && continueSkill2 && nextCosts.checkIfOwned()) {
             this.startActionTimer();
         } else {
@@ -669,8 +670,8 @@ export class Construction extends ArtisanSkill {
         this.selectedRoom = room;
         this.selectedFixture = fixture;
         this.selectedFixtureRecipe = fixture.currentRecipe;
-
-        if (!this.selectedFixture.getCurrentBuildRecipeCosts(this).checkIfOwned()) {
+        this.selectedFixture.getCurrentBuildRecipeCosts(this);
+        if (!this.selectedFixture.stepCost.checkIfOwned()) {
             notifyPlayer(this, this.noBuildCostsMessage, 'danger');
             return;
         }

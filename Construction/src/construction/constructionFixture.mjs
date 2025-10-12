@@ -7,6 +7,8 @@ export class ConstructionFixture extends RealmedObject {
         super(namespace, data, game);
         this.currentTier = 0;
         this.progress = 0;
+        this.UIcost = null;
+        this.stepCost = null;
         try {
             this._media = data.media;
             if (data.recipes == undefined)
@@ -61,56 +63,79 @@ export class ConstructionFixture extends RealmedObject {
     get abyssalLevel() {
         return this.recipes[0].abyssalLevel;
     }
-    
+
     getCurrentBuildRecipeCosts(construction, efficiency = 0) {
-        const prevRatio = this.progress / this.currentRecipe.actionCost;        // fraction done before this action
+        const prevRatio = this.progress / this.currentRecipe.actionCost;
         const costMult = efficiency ? construction.getEfficiencyCostMultiplier(this.currentRecipe) : 1;
-        const nextRatio = (this.progress + costMult) / this.currentRecipe.actionCost;  // fraction done after this action
+        const nextRatio = (this.progress + costMult) / this.currentRecipe.actionCost;
+
         console.groupCollapsed(`[getCurrentBuildRecipeCosts] ${this.name || 'Fixture'}`);
         console.log("Progress:", this.progress, "/", this.currentRecipe.actionCost);
         console.log("Ratios:", { prevRatio, nextRatio });
 
         // Get the canonical full-cost object
-        const costObj = construction.getRecipeCosts(this.currentRecipe);
+        this.stepCost = construction.getRecipeCosts(this.currentRecipe);
         console.log("Full cost (pre-split):", {
-            items: Array.from(costObj._items.entries()),
-            currencies: Array.from(costObj._currencies.entries())
+            items: Array.from(this.stepCost._items.entries()),
+            currencies: Array.from(this.stepCost._currencies.entries())
         });
 
         const actionItems = new Map();
         const actionCurrencies = new Map();
 
-        // Items
-        costObj._items.forEach((total, item) => {
+        const remainingitems = [];
+        this.stepCost._items.forEach((total, item) => {
             const prev = Math.floor(total * prevRatio);
             const next = Math.floor(total * nextRatio);
             const delta = next - prev;
-            console.log(`Item [${item.name || item}]: total=${total}, prev=${prev}, next=${next}, delta=${delta}`);
+            const remaining = total - prev;
+            remainingitems.push(remaining);
+            console.log(`Item [${item.name || item}]: total=${total}, prev=${prev}, next=${next}, delta=${delta}, remaining=${remaining}`);
             if (delta > 0) actionItems.set(item, delta);
         });
 
         // Currencies
-        costObj._currencies.forEach((total, currency) => {
+        const remainingcurrencies = [];
+        this.stepCost._currencies.forEach((total, currency) => {
             const prev = Math.floor(total * prevRatio);
             const next = Math.floor(total * nextRatio);
             const delta = next - prev;
-            console.log(`Currency [${currency.name || currency}]: total=${total}, prev=${prev}, next=${next}, delta=${delta}`);
+            const remaining = total - next;
+            remainingcurrencies.push(remaining);
+            console.log(`Currency [${currency.name || currency}]: total=${total}, prev=${prev}, next=${next}, delta=${delta}, remaining=${remaining}`);
             if (delta > 0) actionCurrencies.set(currency, delta);
         });
 
-        costObj._items = actionItems;
-        costObj._currencies = actionCurrencies;
+        this.stepCost._items = actionItems;
+        this.stepCost._currencies = actionCurrencies;
 
         console.log("Per-action cost result:", {
             items: Array.from(actionItems.entries()),
             currencies: Array.from(actionCurrencies.entries())
         });
         console.groupEnd();
-        if (efficiency && !costObj.checkIfOwned()) {
+
+        if (efficiency && !this.stepCost.checkIfOwned()) {
             return this.getCurrentBuildRecipeCosts(construction, false);
         }
 
-        return costObj;
+        this.UIcost = {
+            itemCosts: this.currentRecipe.itemCosts.map((fullItem, i) => {
+                const delta = Array.from(actionItems.entries())
+                    .find(([i, _]) => i === fullItem.item) ?? [null, 0];
+
+                return {
+                    ...fullItem,
+                    quantity: remainingitems[i],
+                    smallquant: delta[1]
+                };
+            }),
+            currencyCosts: Array.from(actionCurrencies.entries()).map(([currency, delta], i) => ({
+                currency,
+                smallquant: delta,
+                remaining: remainingcurrencies[i] // log remaining for currencies too
+            }))
+        };
     }
 
     upgrade(construction) {
@@ -127,7 +152,7 @@ export class ConstructionFixture extends RealmedObject {
             isError: false
         };
         const fixtureNotification = game.notifications.newAddSuccessNotification(`FixtureComplete-${this.id}`);
-        game.notifications.addNotification(fixtureNotification, finishNotification); 
+        game.notifications.addNotification(fixtureNotification, finishNotification);
     }
     get providedStats() {
         return this.recipes.filter(r => r.tier <= this.currentTier).map(r => r.stats);

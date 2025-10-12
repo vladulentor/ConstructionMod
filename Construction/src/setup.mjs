@@ -6,7 +6,7 @@ const { patchGameEventSystem } = await loadModule('src/construction/gameEvents.m
 const { patchFarming } = await loadModule('src/skillPatches/farming/farming.mjs');
 const { patchMasteryElement } = await loadModule('src/skillPatches/patchmasteryelement.mjs');
 const { skillBoostsCompatibility } = await loadModule("src/modPatches/skillboosts.mjs");
-const { patchFletchingOrder} = await loadModule("src/skillPatches/patchFletchingOrder.mjs")
+const { patchFletchingOrder } = await loadModule("src/skillPatches/patchFletchingOrder.mjs")
 
 export async function setup(ctx) {
     setup = new Setup(ctx);
@@ -31,6 +31,7 @@ class Setup {
         await loadStylesheet('src/interface/construction-styles.css');
 
         await loadTemplates('src/interface/templates/construction.html');
+        await loadModule('src/interface/elements/constructionRemainingIcons.mjs');
         await loadModule('src/interface/elements/constructionEfficiencyIconTooltipElement.mjs');
         await loadModule('src/interface/elements/constructionEfficiencyIconElement.mjs');
         await loadModule('src/interface/elements/constructionArtisanMenu.mjs');
@@ -59,8 +60,8 @@ class Setup {
             game.construction.updateForExistingCapIncreases(game);
         });
     }
-    async applyOtherPatches(){
-      //  patchFletchingOrder();
+    async applyOtherPatches() {
+        //  patchFletchingOrder();
 
     }
     async loadData() {

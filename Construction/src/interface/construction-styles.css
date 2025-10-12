@@ -40,3 +40,21 @@ body.darkMode.superDark .bg-rielk-construction
       flex: none;      
     width: 100%; 
 } /* */
+
+my-quantity-icons,
+my-current-quantity-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+remaining-box>h5,
+remaining-haves-box>h5 {
+    font-size: 0.875rem;
+}
+
+requires-box.icon-box-small>h5,
+haves-box.icon-box-small>h5 {
+    font-size: 0.7rem;
+}

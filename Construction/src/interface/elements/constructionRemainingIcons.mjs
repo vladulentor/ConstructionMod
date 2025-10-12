@@ -13,11 +13,11 @@ class MyItemQuantityIconElement extends ItemQuantityIconElement {
         this.container.classList.remove('border-item-danger');
     }
     toggleInvalidBorder(current, requiredAll, requiredSmall) { //we extend this, then propagate it upwards. Because we need to save processing power. Very sane stuff.
-        if (current <= requiredSmall) {
+        if (current < requiredSmall) {
             this.removeDangerBorder();
             this.setInvalidBorder();
         }
-        else if (current <= requiredAll) {
+        else if (current < requiredAll) {
             this.removeInvalidBorder();
             this.setDangerBorder();
         }
@@ -27,29 +27,13 @@ class MyItemQuantityIconElement extends ItemQuantityIconElement {
         }
     }
     updateBorder(current, requiredAll, requiredSmall) {
-        console.log('[updateBorder] called with:', {
-            current,
-            requiredAll,
-            requiredSmall,
-            itemQuantity: this.itemQuantity
-        });
-
         if (this.itemQuantity === undefined) {
-            console.log('[updateBorder] itemQuantity is undefined — exiting early');
             return;
         }
 
         const qty = game.bank.getQty(this.itemQuantity.item);
-        console.log('[updateBorder] got quantity from bank:', qty, 'for item:', this.itemQuantity.item);
 
-        this.toggleInvalidBorder(qty, requiredAll, requiredSmall);
-
-        console.log('[updateBorder] toggleInvalidBorder called with:', {
-            qty,
-            requiredAll,
-            requiredSmall
-        });
-    }
+        this.toggleInvalidBorder(qty, requiredAll, requiredSmall);    }
 }
 window.customElements.define('my-quantity-icon', MyItemQuantityIconElement);
 
@@ -97,11 +81,11 @@ class MyItemCurrentIconElement extends ItemCurrentIconElement {
         this.updateQuantity(game.bank);
     }
     toggleInvalidBorder(current, requiredAll, requiredSmall) { 
-        if (current <= requiredSmall) {
+        if (current < requiredSmall) {
             this.removeDangerBorder();
             this.setInvalidBorder();
         }
-        else if (current <= requiredAll) {
+        else if (current < requiredAll) {
             this.removeInvalidBorder();
             this.setDangerBorder();
         }
@@ -111,28 +95,13 @@ class MyItemCurrentIconElement extends ItemCurrentIconElement {
         }
     }
     updateBorder(current, requiredAll, requiredSmall) {
-        console.log('[updateBorder] called with:', {
-            current,
-            requiredAll,
-            requiredSmall,
-            itemQuantity: this.itemQuantity
-        });
-
         if (this.itemQuantity === undefined) {
-            console.log('[updateBorder] itemQuantity is undefined — exiting early');
             return;
         }
 
         const qty = game.bank.getQty(this.itemQuantity.item);
-        console.log('[updateBorder] got quantity from bank:', qty, 'for item:', this.itemQuantity.item);
 
         this.toggleInvalidBorder(qty, requiredAll, requiredSmall);
-
-        console.log('[updateBorder] toggleInvalidBorder called with:', {
-            qty,
-            requiredAll,
-            requiredSmall
-        });
     }
 }
 window.customElements.define('my-item-current-icon', MyItemCurrentIconElement);
@@ -190,26 +159,20 @@ class MyQuantityIconsElement extends HTMLElement {
      * @param altMedia If the alternative media of items should be used
      */
     addItemIcons(items, allowQuickBuy, altMedia = false) {
-        console.log('[addItemIcons] called with:', { items, allowQuickBuy, altMedia });
 
         items.forEach(({ item, quantity, smallquant }, i) => {
-            console.log(`[addItemIcons] (${i}) Creating icon for`, { item, quantity, smallquant });
 
             const itemIcon = createElement('my-quantity-icon', {
                 parent: this
             });
 
-            console.log(`[addItemIcons] (${i}) Setting item`);
             itemIcon.setItem(item, quantity, allowQuickBuy, altMedia);
 
-            console.log(`[addItemIcons] (${i}) Updating border`);
             itemIcon.updateBorder(item, quantity, smallquant);
 
             this.items.push(itemIcon);
-            console.log(`[addItemIcons] (${i}) Added icon to list. Total items: ${this.items.length}`);
         });
 
-        console.log('[addItemIcons] Finished creating item icons.');
     }    /**
      * Creates and appends Currency quantity icons for an array of currency quantities
      * @param currencies The array of currency quantities
@@ -250,16 +213,9 @@ class MyQuantityIconsElement extends HTMLElement {
      * @param altMedia
      */
     setIconsForRecipe(recipe, altMedia = false) {
-        console.log('[setIconsForRecipe] called with recipe:', recipe);
-
         this.removeIcons();
-        console.log('[setIconsForRecipe] removed existing icons');
-
         this.addItemIcons(recipe.itemCosts, true, altMedia);
-        console.log('[setIconsForRecipe] added item icons for recipe');
-
         this.addCurrencyIcons(recipe.currencyCosts);
-        console.log('[setIconsForRecipe] added currency icons for recipe');
     }
     setIcons(items, currencies, altMedia = false) {
         this.removeIcons();
@@ -271,21 +227,14 @@ class MyQuantityIconsElement extends HTMLElement {
      * @param game The game object to use for the bank
      */
     updateQuantities(current, requiredAll, requiredSmall) {
-        console.log('[updateQuantities] called with:', { current, requiredAll, requiredSmall });
-
-        console.log('[updateQuantities] updating item icons...');
         this.items.forEach((item, i) => {
-            console.log(`[updateQuantities] -> item[${i}] updateBorder`);
             item.updateBorder(current, requiredAll, requiredSmall);
         });
 
-        console.log('[updateQuantities] updating currency icons...');
         this.currencies.forEach((currency, i) => {
-            console.log(`[updateQuantities] -> currency[${i}] updateBorder`);
             currency.updateBorder();
         });
 
-        console.log('[updateQuantities] finished updating all quantities.');
     }
 }
 window.customElements.define('my-quantity-icons', MyQuantityIconsElement);
@@ -422,17 +371,12 @@ export class RemainingBoxElement extends HTMLElement {
         this.icons.setIcons(items, currencies, altMedia);
     }
     setItemsFromRecipe(recipe, altMedia = false) {
-        console.log('[setItemsFromRecipe] called with:', { recipe, altMedia });
-        console.log('[setItemsFromRecipe] current icons:', this.icons);
 
         if (!this.icons) {
             console.warn('[setItemsFromRecipe] WARNING: this.icons is undefined or null — cannot set icons for recipe');
             return;
         }
-
-        console.log('[setItemsFromRecipe] calling setIconsForRecipe...');
         this.icons.setIconsForRecipe(recipe, altMedia);
-        console.log('[setItemsFromRecipe] finished setIconsForRecipe.');
     }
     setItemsFromCosts(costs, altMedia = false) {
         this.setItems(costs.getItemQuantityArray(), costs.getCurrencyQuantityArray(), altMedia);

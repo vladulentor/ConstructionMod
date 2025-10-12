@@ -48,10 +48,10 @@ export class ConstructionInterface {
         guideFrag.append(getTemplateNode('tutorial-template-Construction'));
         this.constrGuide = getElementFromFragment(
             guideFrag,
-            'tutorial-page-Construction','div', true);
+            'tutorial-page-Construction', 'div', true);
         const guideContainer = document.querySelector('#modal-game-guide .block-content.block-content-full');
 
-        const imgs = this.constrGuide.querySelectorAll('img'); 
+        const imgs = this.constrGuide.querySelectorAll('img');
         //Too lazy to make this more lines, so here's the order: 0 cover image (constr icon), 1. house icon row 2, 2. Little icon on row 3 (contsruction icon)
         imgs[0].src = game.construction.media;
         imgs[1].src = this.constructionMasteryBar._image.src;
@@ -139,7 +139,6 @@ export class ConstructionInterface {
         if (this.constructionHouseMenu == undefined)
             return;
         if (this.renderQueue.menu) {
-            this.constructionHouseMenu.updateFixtureItems(this.construction);
             this.constructionHouseMenu.updateAllRoomPanels(this.construction);
             this.constructionHouseMenu.updateFixtureButtons(this.game);
         }
@@ -147,17 +146,14 @@ export class ConstructionInterface {
     }
     renderfixtureItemUpdates() {
         if (this.renderQueue.renderfixtureItemUpdates == false) return;
-        if (this.renderQueue.renderSpecificfixtureItemUpdate)
-               { this.constructionHouseMenu.updateCurrentFixtureProg(this.construction); this.renderQueue.renderSpecificfixtureItemUpdate = false;}
-            else
-                this.constructionHouseMenu.updateFixtureItems(this.construction);
-        
+        if (game?.openPage?._localID !== 'Construction' || 
+             this.constructionHouseMenu?.root?.parentElement.parentElement.classList?.contains?.('d-none')) 
+             {this.renderQueue.renderfixtureItemUpdates = false; this.renderQueue.renderSpecificfixtureItemUpdate = false; return;}
+             //Technically we could check through the category but that's also DOM traversal, not MUCH better.
+        if (this.renderQueue.renderSpecificfixtureItemUpdate) 
+        { this.constructionHouseMenu.updateCurrentFixtureProg(this.construction); this.renderQueue.renderSpecificfixtureItemUpdate = false; }
+        this.constructionHouseMenu.updateFixtureItems(this.construction);
         this.renderQueue.renderfixtureItemUpdates = false;
-       
-        //if (!document.getElementById('rielk-construction-container').classList.contains('d-none') && !this.constructionHouseMenu?.root.parentElement?.parentElement.classList.contains('d-none')) {
-        // this optimization is probably not needed but I will keep it in in case I want to change it later.
-        //}
-        
     }
     renderProgressBar() {
         if (!this.renderQueue.progressBar)

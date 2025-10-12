@@ -64,79 +64,89 @@ export class ConstructionFixture extends RealmedObject {
         return this.recipes[0].abyssalLevel;
     }
 
-    getCurrentBuildRecipeCosts(construction, efficiency = 0) {
-        const prevRatio = this.progress / this.currentRecipe.actionCost;
-        const costMult = efficiency ? construction.getEfficiencyCostMultiplier(this.currentRecipe) : 1;
-        const nextRatio = (this.progress + costMult) / this.currentRecipe.actionCost;
+getCurrentBuildRecipeCosts(construction, efficiency = 0) {
+    const prevRatio = this.progress / this.currentRecipe.actionCost;
+    const costMult = efficiency ? construction.getEfficiencyCostMultiplier(this.currentRecipe) : 1;
+    const nextRatio = Math.min(1, (this.progress + costMult) / this.currentRecipe.actionCost);
 
-        console.groupCollapsed(`[getCurrentBuildRecipeCosts] ${this.name || 'Fixture'}`);
-        console.log("Progress:", this.progress, "/", this.currentRecipe.actionCost);
-        console.log("Ratios:", { prevRatio, nextRatio });
+    console.group(`Build Recipe Costs - ${this.currentRecipe.id}`);
+    console.log('Progress:', this.progress, '/', this.currentRecipe.actionCost);
+    console.log('Efficiency:', efficiency, 'Cost Multiplier:', costMult);
+    console.log('Prev Ratio:', prevRatio, 'Next Ratio:', nextRatio);
 
-        // Get the canonical full-cost object
-        this.stepCost = construction.getRecipeCosts(this.currentRecipe);
-        console.log("Full cost (pre-split):", {
-            items: Array.from(this.stepCost._items.entries()),
-            currencies: Array.from(this.stepCost._currencies.entries())
+    // Get the canonical full-cost object
+    this.stepCost = construction.getRecipeCosts(this.currentRecipe);
+    const actionItems = new Map();
+    const actionCurrencies = new Map();
+
+    const remainingitems = [];
+    console.group('Items');
+    this.stepCost._items.forEach((total, item) => {
+        const prev = Math.floor(total * prevRatio);
+        const next = Math.floor(total * nextRatio);
+        const delta = next - prev;
+        const remaining = total - prev;
+        remainingitems.push(remaining);
+        if (delta > 0) actionItems.set(item, delta);
+
+        console.log(item, {
+            total,
+            prev,
+            next,
+            delta,
+            remaining
         });
+            console.log("Item in bank", game.bank.getQty(item));
 
-        const actionItems = new Map();
-        const actionCurrencies = new Map();
+    });
+    console.groupEnd();
+    const remainingcurrencies = [];
+    console.group('Currencies');
+    this.stepCost._currencies.forEach((total, currency) => {
+        const prev = Math.floor(total * prevRatio);
+        const next = Math.floor(total * nextRatio);
+        const delta = next - prev;
+        const remaining = total - next;
+        remainingcurrencies.push(remaining);
+        if (delta > 0) actionCurrencies.set(currency, delta);
 
-        const remainingitems = [];
-        this.stepCost._items.forEach((total, item) => {
-            const prev = Math.floor(total * prevRatio);
-            const next = Math.floor(total * nextRatio);
-            const delta = next - prev;
-            const remaining = total - prev;
-            remainingitems.push(remaining);
-            console.log(`Item [${item.name || item}]: total=${total}, prev=${prev}, next=${next}, delta=${delta}, remaining=${remaining}`);
-            if (delta > 0) actionItems.set(item, delta);
+        console.log(currency, {
+            total,
+            prev,
+            next,
+            delta,
+            remaining
         });
+    });
+    console.groupEnd();
 
-        // Currencies
-        const remainingcurrencies = [];
-        this.stepCost._currencies.forEach((total, currency) => {
-            const prev = Math.floor(total * prevRatio);
-            const next = Math.floor(total * nextRatio);
-            const delta = next - prev;
-            const remaining = total - next;
-            remainingcurrencies.push(remaining);
-            console.log(`Currency [${currency.name || currency}]: total=${total}, prev=${prev}, next=${next}, delta=${delta}, remaining=${remaining}`);
-            if (delta > 0) actionCurrencies.set(currency, delta);
-        });
-
-        this.stepCost._items = actionItems;
-        this.stepCost._currencies = actionCurrencies;
-
-        console.log("Per-action cost result:", {
-            items: Array.from(actionItems.entries()),
-            currencies: Array.from(actionCurrencies.entries())
-        });
+    this.stepCost._items = actionItems;
+    this.stepCost._currencies = actionCurrencies;
+    if (efficiency && !this.stepCost.checkIfOwned()) {
         console.groupEnd();
-
-        if (efficiency && !this.stepCost.checkIfOwned()) {
-            return this.getCurrentBuildRecipeCosts(construction, false);
-        }
-
-        this.UIcost = {
-            itemCosts: this.currentRecipe.itemCosts.map((fullItem, i) => {
-                const delta = Array.from(actionItems.entries())
-                    .find(([i, _]) => i === fullItem.item) ?? [null, 0];
-
-                return {
-                    ...fullItem,
-                    quantity: remainingitems[i],
-                    smallquant: delta[1]
-                };
-            }),
-            currencyCosts: Array.from(actionCurrencies.entries()).map(([currency, delta], i) => ({
-                currency,
-                smallquant: delta,
-                remaining: remainingcurrencies[i] // log remaining for currencies too
-            }))
-        };
+        return this.getCurrentBuildRecipeCosts(construction, false);
     }
+
+    this.UIcost = {
+        itemCosts: this.currentRecipe.itemCosts.map((fullItem, i) => {
+            const delta = Array.from(actionItems.entries())
+                .find(([i, _]) => i === fullItem.item) ?? [null, 0];
+
+            return {
+                ...fullItem,
+                quantity: remainingitems[i],
+                smallquant: delta[1]
+            };
+        }),
+        currencyCosts: Array.from(actionCurrencies.entries()).map(([currency, delta], i) => ({
+            currency,
+            smallquant: delta,
+            remaining: remainingcurrencies[i]
+        }))
+    };
+
+    console.groupEnd(); // End main recipe group
+}
 
     upgrade(construction) {
         this.currentTier++;

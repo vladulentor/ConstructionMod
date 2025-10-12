@@ -39,6 +39,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.buildContainer = getElementFromFragment(this._content, 'build-container', 'div');
         this.interval = getElementFromFragment(this._content, 'interval', 'interval-icon');
         this.progress = 0;
+        this.disabled = false;
     }
     connectedCallback() {
         this.appendChild(this._content);
@@ -49,7 +50,6 @@ class ConstructionRoomPanelElement extends HTMLElement {
             this.setdetailscontainer(width);
 
         });
-        this.grants.hideMastery();
     }
     setdetailscontainer(detailwidth) {
         if (this.noneSelected /*|| this.productEfficiency.classList.contains('d-none')*/) return;
@@ -123,12 +123,15 @@ class ConstructionRoomPanelElement extends HTMLElement {
         hideElement(this.infoContainer);
         this.eyeIcon.classList.remove('fa-eye');
         this.eyeIcon.classList.add('fa-eye-slash');
+        this.disabled = true;
     }
     show() {
         showElement(this.targetContainer);
         showElement(this.infoContainer);
         this.eyeIcon.classList.remove('fa-eye-slash');
         this.eyeIcon.classList.add('fa-eye');
+        this.disabled = false;
+        if (this.selectedFixture) this.updateFixtureInfo(game.construction, this.selectedFixture);
     }
     updateFixturesForLevel(construction, room) {
         this.fixtureNavs.forEach((fixtureNav, fixture) => {
@@ -190,7 +193,6 @@ class ConstructionRoomPanelElement extends HTMLElement {
             this.detailsContainer.classList.remove('text-center');
             this.detailsContainer.classList.add('col-8');
             this.selectFixtureUI(construction, this.selectedFixture);
-            this.updateFixtureInfo(construction, this.selectedFixture);
         } else {
             this.infoBoxName.textContent = '-';
             hideElement(this.imageContainer);
@@ -225,25 +227,25 @@ class ConstructionRoomPanelElement extends HTMLElement {
             const detailWidth = parseFloat(getComputedStyle(this.extraDetailsContainer).width);
             this.setdetailscontainer(detailWidth);
         });
+        this.grants.setSelected();
+        this.grants.updateAbyssalGrants(Math.floor(construction.modifyAbyssalXP(fixtureRecipe.baseAbyssalExperience)), fixtureRecipe.baseAbyssalExperience);
+        this.grants.setSources(construction, fixtureRecipe);
+        this.grants.hideMastery();
+        this.updateFixtureInfo(construction, fixture);
+    }
+
+    updateFixtureInfo(construction, fixture) {
+
+        const fixtureRecipe = fixture.currentRecipe;
         this.progress = fixture.percentProgress;
         this.builtProgressText.textContent = templateRielkLangString('MENU_TEXT_PARTIAL_BUILT_PROGRESS', {
             currentValue: `${formatNumber(fixture.progress)}`,
             maxValue: `${formatNumber(fixtureRecipe.actionCost)}`,
             percent: this.progress == 0 ? '' : `(${formatPercent(this.progress, 2)})`,
         });
-
-    }
-
-    updateFixtureInfo(construction, fixture) {
-        const fixtureRecipe = fixture.UIcost;
         this.builtProgressBar.setFixedPosition(this.progress);
-        this.requires.setItemsFromRecipe(fixtureRecipe);
-        this.haves.setItemsFromRecipe(fixtureRecipe, construction.game);
-        this.grants.setSelected();
+        this.updateCurrentFixtureItemIcons(construction, fixture);
         this.grants.xpIcon.setXP(Math.floor(construction.modifyXP(fixtureRecipe.baseExperience)), fixtureRecipe.baseExperience);
-        this.grants.updateAbyssalGrants(Math.floor(construction.modifyAbyssalXP(fixtureRecipe.baseAbyssalExperience)), fixtureRecipe.baseAbyssalExperience);
-        this.grants.setSources(construction, fixtureRecipe);
-        this.grants.hideMastery();
         this.productPreservation.setChance(construction.getPreservationChance(fixtureRecipe), construction.getPreservationCap(fixtureRecipe), construction.getPreservationSources(fixtureRecipe));
         this.productEfficiency.setChance(
             construction.getEfficiencyChance(fixtureRecipe),
@@ -251,5 +253,46 @@ class ConstructionRoomPanelElement extends HTMLElement {
             construction.getEfficiencyCostMultiplier(fixtureRecipe),
             construction.getEfficiencyChancePotencySources(fixtureRecipe), "build");
     }
+
+    updateFixtureItemIcons(construction, fixture) {
+        /*console.log(construction.activeBuildRecipe.fixture.stepCost);
+        console.log(fixture.UIcost);
+        const itemsMap = construction.activeBuildRecipe.fixture.stepCost._items;
+        const currMap = construction.activeBuildRecipe.fixture.stepCost._currencies;
+
+        console.group(`Checking fixture ${fixture.id || fixture.name}`);
+
+        //item in UIcost exists in stepCost
+        for (const { item } of fixture.UIcost.itemCosts) {
+            if (itemsMap.has(item.id)) {
+                console.log(`Matching item found: ${item.name || item.id}`);
+                this.haves.setItemsFromRecipe(fixture.UIcost, construction.game);
+                console.groupEnd();
+                return;
+            }
+        }
+
+        // Check currencies
+        for (const { currency, remaining } of fixture.UIcost.currencyCosts) {
+            const newAmount = currMap.get(currency);
+            if (newAmount !== remaining) {
+                console.log(`Currency mismatch for "${currency}": UIcost=${remaining}, stepCost=${newAmount}`);
+                this.haves.setItemsFromRecipe(fixture.UIcost, construction.game);
+                console.groupEnd();
+                return;
+            } else {
+                console.log(`Currency matched for "${currency}": ${remaining}`);
+            }
+        }
+
+        console.log("No changes detected; update skipped.");
+        console.groupEnd();*/
+         this.haves.setItemsFromRecipe(fixture.UIcost, construction.game); // When I find a way to hook into any recipe updates taking away from the bank (or remember to) then that function WILL be worth it.
+    }
+    updateCurrentFixtureItemIcons(construction, fixture) { //Working fixture's call.
+        this.requires.setItemsFromRecipe(fixture.UIcost);
+        this.haves.setItemsFromRecipe(fixture.UIcost, construction.game);
+    }
+
 }
 window.customElements.define('rielk-construction-room-panel', ConstructionRoomPanelElement);

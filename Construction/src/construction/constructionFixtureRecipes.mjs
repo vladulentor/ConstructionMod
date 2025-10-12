@@ -93,14 +93,17 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
                 if (this.changeFunc)
                     this.callChangeFunc();
                 this.skill.ui.showFixtureUnlocks(this.fixture.room, this.fixture, this.skill);
-
-                this.skill.renderQueue.menu = true; 
+                this.fixture.getCurrentBuildRecipeCosts(game.construction);
+                this.skill.renderQueue.renderfixtureItemUpdates = true;
+                this.skill.renderQueue.menu = true;
                 return false;
 
             }
 
         }
-        this.skill.renderQueue.menu = true; //Why am I re-rendering the menu every time?
+        this.fixture.getCurrentBuildRecipeCosts(game.construction);
+        this.skill.renderQueue.renderSpecificfixtureItemUpdate = true;
+        this.skill.renderQueue.renderfixtureItemUpdates = true;
         return true;
     }
 }

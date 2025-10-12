@@ -278,6 +278,9 @@ export class Construction extends ArtisanSkill {
         super.onPageChange();
         this.renderQueue.renderfixtureItemUpdates = true;
     }
+    updateMasteryDisplays(){
+        //leave empty so it doesn't do anything
+    }
     shouldShowSkillInSidebar() {
         return super.shouldShowSkillInSidebar() || this.game.currentRealm === this.game.defaultRealm; // only show in default realm
     }
@@ -670,7 +673,7 @@ export class Construction extends ArtisanSkill {
         this.selectedRoom = room;
         this.selectedFixture = fixture;
         this.selectedFixtureRecipe = fixture.currentRecipe;
-        this.selectedFixture.getCurrentBuildRecipeCosts(this);
+        if(this.selectedFixture.stepCost == undefined ) this.selectedFixture.getCurrentBuildRecipeCosts(this);
         if (!this.selectedFixture.stepCost.checkIfOwned()) {
             notifyPlayer(this, this.noBuildCostsMessage, 'danger');
             return;
@@ -695,11 +698,7 @@ export class Construction extends ArtisanSkill {
     }
     queueBankQuantityRender(item) {
         super.queueBankQuantityRender(item);
-        if (this.selectedFixtureRecipe) //we don't update the thing unless you're looking at the screen or currently
-        {
-            this.renderQueue.renderSpecificfixtureItemUpdate = true;
-            this.renderQueue.renderfixtureItemUpdates = true;
-        }
+
     }
 
     onLoad() {

@@ -26,7 +26,17 @@ export class ConstructionHouseMenu {
             parent: viewAllModifiersButton
         })
         langString.setAttribute('lang-id', 'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS');
-
+        this.panelObserver = new MutationObserver((mutations) => {
+            for (const mutation of mutations) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                    const el = mutation.target;
+                    if (!el.classList.contains('d-none')) {
+                         this.updateFixtureItems(construction);
+                    }
+                }
+            }
+        });
+        this.panelObserver.observe(container.parentElement.parentElement, { attributes: true });
         construction.sortedRooms.forEach((room) => {
             const roomPanel = createElement('rielk-construction-room-panel', {
                 className: 'col-12 col-xl-6',
@@ -114,17 +124,16 @@ export class ConstructionHouseMenu {
         );
     }
     updateCurrentFixtureProg(construction) {
-        const panel = this.roomPanels.get(construction.activeBuildRecipe.room);
-        if(panel && panel.selectedFixture)
-        panel.updateFixtureInfo(construction, construction.panel.selectedFixture);
+        const panel = this.roomPanels.get(construction.activeBuildRecipe.fixture.room);
+        if (panel && panel.selectedFixture)
+            panel.updateFixtureInfo(construction, panel.selectedFixture);
 
 
     }
-    updateFixtureItems(construction)
-    {
-                this.roomPanels.forEach((panel) => {
-            if (panel.selectedFixture && panel.selectedFixture) {
-                panel.updateFixtureInfo(construction, panel.selectedFixture);
+    updateFixtureItems(construction) {
+        this.roomPanels.forEach((panel) => {
+            if (panel.selectedFixture && !panel.disabled && panel != this.roomPanels.get(construction?.selectedFixtureRecipe?.fixture.room)) {
+                panel.updateFixtureItemIcons(construction, panel.selectedFixture);
             }
         })
 

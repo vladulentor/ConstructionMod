@@ -27,7 +27,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 5
+        "sellsFor": 3
       },
       {
         "itemType": "Item",
@@ -87,7 +87,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 250
+        "sellsFor": 2
       },
       {
         "itemType": "Item",
@@ -99,7 +99,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 2
+        "sellsFor": 8
       },
       {
         "itemType": "Item",
@@ -111,7 +111,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 8
+        "sellsFor": 22
       },
       {
         "itemType": "Item",
@@ -123,7 +123,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 22
+        "sellsFor": 188
       },
       {
         "itemType": "Item",
@@ -135,7 +135,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 188
+        "sellsFor": 350
       },
       {
         "itemType": "Token",

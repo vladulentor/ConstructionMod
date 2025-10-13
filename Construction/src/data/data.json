@@ -1231,11 +1231,6 @@
                     "value": 10,
                     "skillID": "rielkConstruction:Construction"
                   }
-                ],
-                "rielkConstruction:skillEfficiencyPotency": [
-                  {
-                    "value": 2
-                  }
                 ]
               }
             },
@@ -1910,11 +1905,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Garum_Herb",
-                  "quantity": 5
+                  "quantity": 250
                 },
                 {
                   "id": "melvorD:Sourweed_Herb",
-                  "quantity": 5
+                  "quantity": 250
                 }
               ],
               "currencyCosts": [],
@@ -1942,11 +1937,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Mantalyme_Herb",
-                  "quantity": 9
+                  "quantity": 1000
                 },
                 {
                   "id": "melvorD:Lemontyle_Herb",
-                  "quantity": 9
+                  "quantity": 1000
                 }
               ],
               "currencyCosts": [],
@@ -1974,11 +1969,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Oxilyme_Herb",
-                  "quantity": 10
+                  "quantity": 3000
                 },
                 {
                   "id": "melvorF:Poraxx_Herb",
-                  "quantity": 10
+                  "quantity": 3000
                 }
               ],
               "currencyCosts": [],
@@ -2005,11 +2000,11 @@
               "itemCosts": [
                 {
                   "id": "melvorF:Pigtayle_Herb",
-                  "quantity": 13
+                  "quantity": 6500
                 },
                 {
                   "id": "melvorF:Barrentoe_Herb",
-                  "quantity": 13
+                  "quantity": 6500
                 }
               ],
               "currencyCosts": [],
@@ -2032,19 +2027,19 @@
               "itemCosts": [
                 {
                   "id": "melvorF:Herblore_Potion_I",
-                  "quantity": 6
+                  "quantity": 3500
                 },
                 {
                   "id": "melvorF:Herblore_Potion_II",
-                  "quantity": 6
+                  "quantity": 3500
                 },
                 {
                   "id": "melvorF:Herblore_Potion_III",
-                  "quantity": 6
+                  "quantity": 3500
                 },
                 {
                   "id": "melvorF:Herblore_Potion_IV",
-                  "quantity": 6
+                  "quantity": 3500
                 }
               ],
               "currencyCosts": [],
@@ -2061,11 +2056,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 6
+                  "quantity": 100
                 },
                 {
                   "id": "melvorF:Leather_Body",
-                  "quantity": 6
+                  "quantity": 100
                 }
               ],
               "currencyCosts": [],
@@ -2093,11 +2088,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 6
+                  "quantity": 250
                 },
                 {
                   "id": "melvorD:Green_Dhide_Body",
-                  "quantity": 6
+                  "quantity": 250
                 }
               ],
               "currencyCosts": [],
@@ -2125,11 +2120,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 10
+                  "quantity": 2000
                 },
                 {
                   "id": "melvorD:Blue_Dhide_Body",
-                  "quantity": 10
+                  "quantity": 2000
                 }
               ],
               "currencyCosts": [],
@@ -2157,11 +2152,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 14
+                  "quantity": 5500
                 },
                 {
                   "id": "melvorD:Red_Dhide_Body",
-                  "quantity": 14
+                  "quantity": 5500
                 }
               ],
               "currencyCosts": [],
@@ -2189,11 +2184,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 20
+                  "quantity": 12000
                 },
                 {
                   "id": "melvorD:Black_Dhide_Body",
-                  "quantity": 20
+                  "quantity": 12000
                 }
               ],
               "currencyCosts": [],
@@ -2221,17 +2216,17 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 4
+                  "quantity": 100
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 4
+                  "quantity": 100
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 5000
+                  "quantity": 125000
                 }
               ],
               "modifiers": {
@@ -2258,17 +2253,17 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 5
+                  "quantity": 250
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 5
+                  "quantity": 250
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 12500
+                  "quantity": 625000
                 }
               ],
               "modifiers": {
@@ -2295,17 +2290,17 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 6
+                  "quantity": 1250
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 6
+                  "quantity": 1250
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 25000
+                  "quantity": 5000000
                 }
               ],
               "modifiers": {
@@ -2332,17 +2327,17 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 8
+                  "quantity": 2500
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 8
+                  "quantity": 2500
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 50000
+                  "quantity": 15000000
                 }
               ],
               "modifiers": {
@@ -2369,17 +2364,17 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 12
+                  "quantity": 7500
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 12
+                  "quantity": 7500
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 125000
+                  "quantity": 75000000
                 }
               ],
               "modifiers": {
@@ -2395,11 +2390,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 5
+                  "quantity": 75
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 5
+                  "quantity": 75
                 }
               ],
               "currencyCosts": [],
@@ -2417,11 +2412,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 4
+                  "quantity": 200
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 4
+                  "quantity": 200
                 }
               ],
               "currencyCosts": [],
@@ -2439,11 +2434,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 10
+                  "quantity": 3500
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 10
+                  "quantity": 3500
                 }
               ],
               "currencyCosts": [],
@@ -2461,11 +2456,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 14
+                  "quantity": 5500
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 14
+                  "quantity": 5500
                 }
               ],
               "currencyCosts": [],
@@ -2483,11 +2478,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 18
+                  "quantity": 11250
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 18
+                  "quantity": 11250
                 }
               ],
               "currencyCosts": [],
@@ -2505,13 +2500,13 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Steel_Bar",
-                  "quantity": 6
+                  "quantity": 600
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 300
+                  "quantity": 30000
                 }
               ],
               "modifiers": {
@@ -2533,13 +2528,13 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Mithril_Bar",
-                  "quantity": 8
+                  "quantity": 2000
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 500
+                  "quantity": 125000
                 }
               ],
               "modifiers": {
@@ -2561,13 +2556,13 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Adamantite_Bar",
-                  "quantity": 10
+                  "quantity": 4000
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 75000
+                  "quantity": 3000000
                 }
               ],
               "modifiers": {
@@ -2589,13 +2584,13 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Runite_Bar",
-                  "quantity": 16
+                  "quantity": 8000
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 20000
+                  "quantity": 10000000
                 }
               ],
               "modifiers": {
@@ -2624,13 +2619,13 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Dragonite_Bar",
-                  "quantity": 14
+                  "quantity": 10000
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 200000
+                  "quantity": 150000000
                 }
               ],
               "modifiers": {
@@ -2657,11 +2652,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Normal_Logs",
-                  "quantity": 5
+                  "quantity": 200
                 },
                 {
                   "id": "melvorD:Oak_Logs",
-                  "quantity": 5
+                  "quantity": 200
                 }
               ],
               "currencyCosts": [],
@@ -2687,11 +2682,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Willow_Logs",
-                  "quantity": 10
+                  "quantity": 3000
                 },
                 {
                   "id": "melvorD:Teak_Logs",
-                  "quantity": 10
+                  "quantity": 3000
                 }
               ],
               "currencyCosts": [],
@@ -2717,11 +2712,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Maple_Logs",
-                  "quantity": 10
+                  "quantity": 3500
                 },
                 {
                   "id": "melvorD:Mahogany_Logs",
-                  "quantity": 10
+                  "quantity": 3500
                 }
               ],
               "currencyCosts": [],
@@ -2747,11 +2742,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Yew_Logs",
-                  "quantity": 12
+                  "quantity": 5500
                 },
                 {
                   "id": "melvorD:Magic_Logs",
-                  "quantity": 12
+                  "quantity": 5500
                 }
               ],
               "currencyCosts": [],
@@ -2777,11 +2772,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Magic_Logs",
-                  "quantity": 16
+                  "quantity": 9000
                 },
                 {
                   "id": "melvorD:Redwood_Logs",
-                  "quantity": 16
+                  "quantity": 9000
                 }
               ],
               "currencyCosts": [],
@@ -2817,11 +2812,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Compost",
-                  "quantity": 4
+                  "quantity": 100
                 },
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 4
+                  "quantity": 100
                 }
               ],
               "currencyCosts": [],
@@ -2836,11 +2831,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Compost",
-                  "quantity": 5
+                  "quantity": 300
                 },
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 5
+                  "quantity": 300
                 }
               ],
               "currencyCosts": [],
@@ -2855,11 +2850,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Weird_Gloop",
-                  "quantity": 10
+                  "quantity": 2000
                 },
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 10
+                  "quantity": 2000
                 }
               ],
               "currencyCosts": [],
@@ -2874,11 +2869,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Weird_Gloop",
-                  "quantity": 15
+                  "quantity": 6500
                 },
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 15
+                  "quantity": 6500
                 }
               ],
               "currencyCosts": [],
@@ -2893,11 +2888,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Weird_Gloop",
-                  "quantity": 20
+                  "quantity": 12500
                 },
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 20
+                  "quantity": 12500
                 }
               ],
               "currencyCosts": [],
@@ -2912,11 +2907,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Bronze_Bar",
-                  "quantity": 8
+                  "quantity": 125
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 5
+                  "quantity": 200
                 }
               ],
               "currencyCosts": [],
@@ -2942,11 +2937,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Iron_Bar",
-                  "quantity": 13
+                  "quantity": 500
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 10
+                  "quantity": 750
                 }
               ],
               "currencyCosts": [],
@@ -2972,11 +2967,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Steel_Bar",
-                  "quantity": 15
+                  "quantity": 2500
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 12
+                  "quantity": 5000
                 }
               ],
               "currencyCosts": [],
@@ -3003,11 +2998,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Mithril_Bar",
-                  "quantity": 20
+                  "quantity": 7500
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 16
+                  "quantity": 10000
                 }
               ],
               "currencyCosts": [],
@@ -3029,15 +3024,15 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Coal_Ore",
-                  "quantity": 30
+                  "quantity": 20000
                 },
                 {
                   "id": "melvorD:Runite_Bar",
-                  "quantity": 20
+                  "quantity": 10000
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 30
+                  "quantity": 17500
                 }
               ],
               "currencyCosts": [],
@@ -3055,15 +3050,15 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Air_Rune",
-                  "quantity": 4
+                  "quantity": 100
                 },
                 {
                   "id": "melvorD:Oak_Logs",
-                  "quantity": 4
+                  "quantity": 100
                 },
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 4
+                  "quantity": 100
                 }
               ],
               "currencyCosts": [],
@@ -3081,15 +3076,15 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Air_Rune",
-                  "quantity": 5
+                  "quantity": 500
                 },
                 {
                   "id": "melvorD:Teak_Logs",
-                  "quantity": 5
+                  "quantity": 500
                 },
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 5
+                  "quantity": 500
                 }
               ],
               "currencyCosts": [],
@@ -3106,15 +3101,15 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Mist_Rune",
-                  "quantity": 6
+                  "quantity": 2000
                 },
                 {
                   "id": "melvorD:Mahogany_Logs",
-                  "quantity": 6
+                  "quantity": 1800
                 },
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 10
+                  "quantity": 3000
                 }
               ],
               "currencyCosts": [],
@@ -3132,15 +3127,15 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Mist_Rune",
-                  "quantity": 12
+                  "quantity": 5000
                 },
                 {
                   "id": "melvorD:Magic_Logs",
-                  "quantity": 12
+                  "quantity": 4000
                 },
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 16
+                  "quantity": 5000
                 }
               ],
               "currencyCosts": [],
@@ -3157,15 +3152,15 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Mist_Rune",
-                  "quantity": 18
+                  "quantity": 10000
                 },
                 {
                   "id": "melvorD:Redwood_Logs",
-                  "quantity": 18
+                  "quantity": 10000
                 },
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 25
+                  "quantity": 15000
                 }
               ],
               "currencyCosts": [],
@@ -3183,15 +3178,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 1
+                  "quantity": 100
                 },
                 {
                   "id": "melvorD:Bronze_Bar",
-                  "quantity": 1
+                  "quantity": 100
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 1
+                  "quantity": 100
                 }
               ],
               "currencyCosts": [],
@@ -3219,15 +3214,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 2
+                  "quantity": 300
                 },
                 {
                   "id": "melvorD:Iron_Bar",
-                  "quantity": 2
+                  "quantity": 300
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 2
+                  "quantity": 500
                 }
               ],
               "currencyCosts": [],
@@ -3255,15 +3250,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 10
+                  "quantity": 3000
                 },
                 {
                   "id": "melvorD:Steel_Bar",
-                  "quantity": 5
+                  "quantity": 1000
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 5
+                  "quantity": 1500
                 }
               ],
               "currencyCosts": [],
@@ -3291,15 +3286,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 15
+                  "quantity": 5000
                 },
                 {
                   "id": "melvorD:Mithril_Bar",
-                  "quantity": 6
+                  "quantity": 2500
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 12
+                  "quantity": 5000
                 }
               ],
               "currencyCosts": [],
@@ -3327,15 +3322,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 20
+                  "quantity": 12500
                 },
                 {
                   "id": "melvorD:Runite_Bar",
-                  "quantity": 15
+                  "quantity": 7500
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 14
+                  "quantity": 12500
                 }
               ],
               "currencyCosts": [],
@@ -3363,11 +3358,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Water_Rune",
-                  "quantity": 4
+                  "quantity": 100
                 },
                 {
                   "id": "melvorD:Raw_Shrimp",
-                  "quantity": 4
+                  "quantity": 75
                 }
               ],
               "currencyCosts": [],
@@ -3395,11 +3390,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Water_Rune",
-                  "quantity": 9
+                  "quantity": 1000
                 },
                 {
                   "id": "melvorD:Raw_Salmon",
-                  "quantity": 9
+                  "quantity": 750
                 }
               ],
               "currencyCosts": [],
@@ -3427,11 +3422,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Water_Rune",
-                  "quantity": 10
+                  "quantity": 2000
                 },
                 {
                   "id": "melvorD:Raw_Lobster",
-                  "quantity": 10
+                  "quantity": 1500
                 }
               ],
               "currencyCosts": [],
@@ -3459,11 +3454,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Water_Rune",
-                  "quantity": 15
+                  "quantity": 10000
                 },
                 {
                   "id": "melvorD:Raw_Carp",
-                  "quantity": 15
+                  "quantity": 7500
                 }
               ],
               "currencyCosts": [],
@@ -3485,11 +3480,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Water_Rune",
-                  "quantity": 20
+                  "quantity": 15000
                 },
                 {
                   "id": "melvorD:Raw_Magic_Fish",
-                  "quantity": 20
+                  "quantity": 10000
                 }
               ],
               "currencyCosts": [],
@@ -3511,15 +3506,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 5
+                  "quantity": 100
                 },
                 {
                   "id": "melvorD:Bronze_Bar",
-                  "quantity": 5
+                  "quantity": 100
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 5
+                  "quantity": 100
                 }
               ],
               "currencyCosts": [],
@@ -3547,15 +3542,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 10
+                  "quantity": 100
                 },
                 {
                   "id": "melvorD:Iron_Bar",
-                  "quantity": 5
+                  "quantity": 50
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 5
+                  "quantity": 75
                 }
               ],
               "currencyCosts": [],
@@ -3583,15 +3578,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 11
+                  "quantity": 3000
                 },
                 {
                   "id": "melvorD:Steel_Bar",
-                  "quantity": 6
+                  "quantity": 2000
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 6
+                  "quantity": 2500
                 }
               ],
               "currencyCosts": [],
@@ -3617,15 +3612,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 18
+                  "quantity": 8000
                 },
                 {
                   "id": "melvorD:Mithril_Bar",
-                  "quantity": 10
+                  "quantity": 5000
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 20
+                  "quantity": 10000
                 }
               ],
               "currencyCosts": [],
@@ -3648,15 +3643,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 21
+                  "quantity": 12500
                 },
                 {
                   "id": "melvorD:Runite_Bar",
-                  "quantity": 12
+                  "quantity": 7500
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 25
+                  "quantity": 15000
                 }
               ],
               "currencyCosts": [],
@@ -3679,11 +3674,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Oak_Tree_Seed",
-                  "quantity": 3
+                  "quantity": 75
                 },
                 {
                   "id": "melvorD:Compost",
-                  "quantity": 3
+                  "quantity": 75
                 }
               ],
               "currencyCosts": [],
@@ -3711,11 +3706,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Willow_Tree_Seed",
-                  "quantity": 5
+                  "quantity": 500
                 },
                 {
                   "id": "melvorD:Compost",
-                  "quantity": 5
+                  "quantity": 500
                 }
               ],
               "currencyCosts": [],
@@ -3744,11 +3739,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Maple_Tree_Seed",
-                  "quantity": 4
+                  "quantity": 750
                 },
                 {
                   "id": "melvorD:Weird_Gloop",
-                  "quantity": 14
+                  "quantity": 3000
                 }
               ],
               "currencyCosts": [],
@@ -3777,11 +3772,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Yew_Tree_Seed",
-                  "quantity": 3
+                  "quantity": 1000
                 },
                 {
                   "id": "melvorD:Weird_Gloop",
-                  "quantity": 14
+                  "quantity": 7500
                 }
               ],
               "currencyCosts": [],
@@ -3810,11 +3805,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Magic_Tree_Seed",
-                  "quantity": 3
+                  "quantity": 1500
                 },
                 {
                   "id": "melvorD:Weird_Gloop",
-                  "quantity": 30
+                  "quantity": 15000
                 }
               ],
               "currencyCosts": [],
@@ -3831,11 +3826,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Bronze_Bar",
-                  "quantity": 8
+                  "quantity": 200
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 4
+                  "quantity": 100
                 }
               ],
               "currencyCosts": [],
@@ -3853,11 +3848,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Iron_Bar",
-                  "quantity": 13
+                  "quantity": 400
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 8
+                  "quantity": 600
                 }
               ],
               "currencyCosts": [],
@@ -3875,11 +3870,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Steel_Bar",
-                  "quantity": 14
+                  "quantity": 1400
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 10
+                  "quantity": 1000
                 }
               ],
               "currencyCosts": [],
@@ -3897,11 +3892,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Mithril_Bar",
-                  "quantity": 24
+                  "quantity": 7500
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 15
+                  "quantity": 12000
                 }
               ],
               "currencyCosts": [],
@@ -3919,11 +3914,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Runite_Bar",
-                  "quantity": 28
+                  "quantity": 10000
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 18
+                  "quantity": 14000
                 }
               ],
               "currencyCosts": [],
@@ -3941,11 +3936,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Bones",
-                  "quantity": 3
+                  "quantity": 60
                 },
                 {
                   "id": "melvorD:Silver_Bar",
-                  "quantity": 3
+                  "quantity": 60
                 }
               ],
               "currencyCosts": [],
@@ -3967,11 +3962,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Big_Bones",
-                  "quantity": 8
+                  "quantity": 750
                 },
                 {
                   "id": "melvorD:Silver_Bar",
-                  "quantity": 8
+                  "quantity": 750
                 }
               ],
               "currencyCosts": [],
@@ -3988,11 +3983,11 @@
               "itemCosts": [
                 {
                   "id": "melvorF:Holy_Dust",
-                  "quantity": 10
+                  "quantity": 4000
                 },
                 {
                   "id": "melvorD:Gold_Bar",
-                  "quantity": 10
+                  "quantity": 4000
                 }
               ],
               "currencyCosts": [],
@@ -4009,11 +4004,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Dragon_Bones",
-                  "quantity": 16
+                  "quantity": 8000
                 },
                 {
                   "id": "melvorD:Gold_Bar",
-                  "quantity": 16
+                  "quantity": 8000
                 }
               ],
               "currencyCosts": [],
@@ -4030,11 +4025,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Magic_Bones",
-                  "quantity": 25
+                  "quantity": 17500
                 },
                 {
                   "id": "melvorD:Gold_Bar",
-                  "quantity": 25
+                  "quantity": 17500
                 }
               ],
               "currencyCosts": [],
@@ -4051,11 +4046,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Rune_Essence",
-                  "quantity": 16
+                  "quantity": 400
                 },
                 {
                   "id": "melvorD:Mind_Rune",
-                  "quantity": 16
+                  "quantity": 400
                 }
               ],
               "currencyCosts": [],
@@ -4083,11 +4078,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Rune_Essence",
-                  "quantity": 8
+                  "quantity": 800
                 },
                 {
                   "id": "melvorD:Body_Rune",
-                  "quantity": 8
+                  "quantity": 800
                 }
               ],
               "currencyCosts": [],
@@ -4105,11 +4100,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Rune_Essence",
-                  "quantity": 10
+                  "quantity": 4000
                 },
                 {
                   "id": "melvorF:Nature_Rune",
-                  "quantity": 10
+                  "quantity": 4000
                 }
               ],
               "currencyCosts": [],
@@ -4127,11 +4122,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Rune_Essence",
-                  "quantity": 15
+                  "quantity": 7500
                 },
                 {
                   "id": "melvorD:Death_Rune",
-                  "quantity": 15
+                  "quantity": 7500
                 }
               ],
               "currencyCosts": [],
@@ -4149,11 +4144,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Rune_Essence",
-                  "quantity": 24
+                  "quantity": 17500
                 },
                 {
                   "id": "melvorD:Ancient_Rune",
-                  "quantity": 24
+                  "quantity": 17500
                 }
               ],
               "currencyCosts": [],
@@ -4171,13 +4166,13 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Mind_Rune",
-                  "quantity": 5
+                  "quantity": 150
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 50
+                  "quantity": 15000
                 }
               ],
               "modifiers": {
@@ -4204,13 +4199,13 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Body_Rune",
-                  "quantity": 3
+                  "quantity": 350
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 50
+                  "quantity": 50000
                 }
               ],
               "modifiers": {
@@ -4237,13 +4232,13 @@
               "itemCosts": [
                 {
                   "id": "melvorF:Nature_Rune",
-                  "quantity": 10
+                  "quantity": 2000
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 2000
+                  "quantity": 200000
                 }
               ],
               "modifiers": {
@@ -4270,13 +4265,13 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Death_Rune",
-                  "quantity": 15
+                  "quantity": 6000
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 20000
+                  "quantity": 8000000
                 }
               ],
               "modifiers": {
@@ -4303,13 +4298,13 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Ancient_Rune",
-                  "quantity": 22
+                  "quantity": 13500
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
-                  "quantity": 50000
+                  "quantity": 30000000
                 }
               ],
               "modifiers": {
@@ -4336,11 +4331,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 3
+                  "quantity": 50
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 3
+                  "quantity": 50
                 }
               ],
               "currencyCosts": [],
@@ -4358,11 +4353,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 6
+                  "quantity": 150
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 6
+                  "quantity": 150
                 }
               ],
               "currencyCosts": [],
@@ -4380,11 +4375,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 10
+                  "quantity": 1000
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 10
+                  "quantity": 1000
                 }
               ],
               "currencyCosts": [],
@@ -4402,11 +4397,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 12
+                  "quantity": 5000
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 12
+                  "quantity": 5000
                 }
               ],
               "currencyCosts": [],
@@ -4424,11 +4419,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 15
+                  "quantity": 10000
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 15
+                  "quantity": 10000
                 }
               ],
               "currencyCosts": [],
@@ -4446,11 +4441,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Bronze_Bar",
-                  "quantity": 4
+                  "quantity": 100
                 },
                 {
                   "id": "melvorF:Stardust",
-                  "quantity": 4
+                  "quantity": 100
                 }
               ],
               "currencyCosts": [],
@@ -4478,11 +4473,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Iron_Bar",
-                  "quantity": 4
+                  "quantity": 400
                 },
                 {
                   "id": "melvorF:Stardust",
-                  "quantity": 4
+                  "quantity": 400
                 }
               ],
               "currencyCosts": [],
@@ -4510,11 +4505,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Steel_Bar",
-                  "quantity": 10
+                  "quantity": 2000
                 },
                 {
                   "id": "melvorF:Stardust",
-                  "quantity": 10
+                  "quantity": 2000
                 }
               ],
               "currencyCosts": [],
@@ -4532,11 +4527,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Silver_Bar",
-                  "quantity": 15
+                  "quantity": 7500
                 },
                 {
                   "id": "melvorF:Golden_Stardust",
-                  "quantity": 15
+                  "quantity": 7500
                 }
               ],
               "currencyCosts": [],
@@ -4558,11 +4553,11 @@
               "itemCosts": [
                 {
                   "id": "melvorD:Gold_Bar",
-                  "quantity": 18
+                  "quantity": 10000
                 },
                 {
                   "id": "melvorF:Golden_Stardust",
-                  "quantity": 18
+                  "quantity": 10000
                 }
               ],
               "currencyCosts": [],
@@ -4590,15 +4585,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 1
+                  "quantity": 100
                 },
                 {
                   "id": "melvorD:Bronze_Bar",
-                  "quantity": 1
+                  "quantity": 100
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 1
+                  "quantity": 100
                 }
               ],
               "currencyCosts": [],
@@ -4630,15 +4625,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 3
+                  "quantity": 500
                 },
                 {
                   "id": "melvorD:Iron_Bar",
-                  "quantity": 2
+                  "quantity": 500
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 3
+                  "quantity": 750
                 }
               ],
               "currencyCosts": [],
@@ -4671,15 +4666,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 10
+                  "quantity": 2500
                 },
                 {
                   "id": "melvorD:Steel_Bar",
-                  "quantity": 5
+                  "quantity": 750
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 10
+                  "quantity": 3000
                 }
               ],
               "currencyCosts": [],
@@ -4706,15 +4701,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 15
+                  "quantity": 6000
                 },
                 {
                   "id": "melvorD:Mithril_Bar",
-                  "quantity": 10
+                  "quantity": 4000
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 15
+                  "quantity": 6000
                 }
               ],
               "currencyCosts": [],
@@ -4752,15 +4747,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 20
+                  "quantity": 10000
                 },
                 {
                   "id": "melvorD:Dragonite_Bar",
-                  "quantity": 15
+                  "quantity": 7500
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 20
+                  "quantity": 10000
                 }
               ],
               "currencyCosts": [],
@@ -4793,11 +4788,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 5
+                  "quantity": 100
                 },
                 {
                   "id": "melvorD:Bronze_Helmet",
-                  "quantity": 1
+                  "quantity": 25
                 }
               ],
               "currencyCosts": [],
@@ -4833,11 +4828,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 3
+                  "quantity": 300
                 },
                 {
                   "id": "melvorD:Steel_Helmet",
-                  "quantity": 1
+                  "quantity": 100
                 }
               ],
               "currencyCosts": [],
@@ -4873,11 +4868,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 5
+                  "quantity": 1000
                 },
                 {
                   "id": "melvorD:Mithril_Helmet",
-                  "quantity": 2
+                  "quantity": 400
                 }
               ],
               "currencyCosts": [],
@@ -4913,11 +4908,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 15
+                  "quantity": 6000
                 },
                 {
                   "id": "melvorD:Adamant_Helmet",
-                  "quantity": 5
+                  "quantity": 2000
                 }
               ],
               "currencyCosts": [],
@@ -4953,11 +4948,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 18
+                  "quantity": 10000
                 },
                 {
                   "id": "melvorD:Dragon_Helmet",
-                  "quantity": 6
+                  "quantity": 3500
                 }
               ],
               "currencyCosts": [],
@@ -4993,17 +4988,17 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 4
+                  "quantity": 100
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 4
+                  "quantity": 100
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:SlayerCoins",
-                  "quantity": 5
+                  "quantity": 250000
                 }
               ],
               "modifiers": {
@@ -5025,19 +5020,19 @@
               "itemCosts": [
                 {
                   "id": "melvorF:Summoning_Shard_Red",
-                  "quantity": 6
+                  "quantity": 600
                 },
                 {
                   "id": "melvorF:Summoning_Shard_Green",
-                  "quantity": 4
+                  "quantity": 400
                 },
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 4
+                  "quantity": 400
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 4
+                  "quantity": 600
                 }
               ],
               "currencyCosts": [],
@@ -5065,17 +5060,17 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 12
+                  "quantity": 3600
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 12
+                  "quantity": 1500
                 }
               ],
               "currencyCosts": [
                 {
                   "id": "melvorD:SlayerCoins",
-                  "quantity": 50
+                  "quantity": 15000
                 }
               ],
               "modifiers": {
@@ -5092,19 +5087,19 @@
               "itemCosts": [
                 {
                   "id": "melvorF:Summoning_Shard_Blue",
-                  "quantity": 12
+                  "quantity": 7500
                 },
                 {
                   "id": "melvorF:Summoning_Shard_Silver",
-                  "quantity": 10
+                  "quantity": 5000
                 },
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 12
+                  "quantity": 6000
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 12
+                  "quantity": 6000
                 }
               ],
               "currencyCosts": [],
@@ -5127,19 +5122,19 @@
               "itemCosts": [
                 {
                   "id": "melvorF:Summoning_Shard_Gold",
-                  "quantity": 18
+                  "quantity": 10000
                 },
                 {
                   "id": "melvorF:Summoning_Shard_Black",
-                  "quantity": 15
+                  "quantity": 8000
                 },
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 20
+                  "quantity": 12000
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 20
+                  "quantity": 12000
                 }
               ],
               "currencyCosts": [],
@@ -5162,11 +5157,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 2
+                  "quantity": 50
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 2
+                  "quantity": 50
                 }
               ],
               "currencyCosts": [],
@@ -5194,11 +5189,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 8
+                  "quantity": 750
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 8
+                  "quantity": 750
                 }
               ],
               "currencyCosts": [],
@@ -5226,11 +5221,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 10
+                  "quantity": 2000
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 10
+                  "quantity": 2000
                 }
               ],
               "currencyCosts": [],
@@ -5253,11 +5248,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 615
+                  "quantity": 3500
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 315
+                  "quantity": 3500
                 }
               ],
               "currencyCosts": [],
@@ -5280,11 +5275,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 20
+                  "quantity": 10000
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 20
+                  "quantity": 10000
                 }
               ],
               "currencyCosts": [],
@@ -5301,11 +5296,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 4
+                  "quantity": 100
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 4
+                  "quantity": 100
                 }
               ],
               "currencyCosts": [],
@@ -5335,11 +5330,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 5
+                  "quantity": 500
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 5
+                  "quantity": 500
                 }
               ],
               "currencyCosts": [],
@@ -5365,11 +5360,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 7
+                  "quantity": 1500
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 7
+                  "quantity": 1500
                 }
               ],
               "currencyCosts": [],
@@ -5396,11 +5391,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 15
+                  "quantity": 6000
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 15
+                  "quantity": 6000
                 }
               ],
               "currencyCosts": [],
@@ -5428,11 +5423,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 18
+                  "quantity": 10000
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 18
+                  "quantity": 10000
                 }
               ],
               "currencyCosts": [],
@@ -5476,13 +5471,13 @@
             "scopes": {},
             "descriptions": [
               {
-                "text": "-${value}% actions required to build Furniture in Construction",
+                "text": "-${value}% actions and materials required to build Furniture in Construction",
                 "lang": "MODIFIER_DATA_decreaseConstructionActionsToUpgrade",
                 "below": 0,
                 "includeSign": false
               },
               {
-                "text": "+${value}% actions required to build Furniture in Construction",
+                "text": "+${value}% actions and materials required to build Furniture in Construction",
                 "lang": "MODIFIER_DATA_increaseConstructionActionsToUpgrade",
                 "above": 0,
                 "includeSign": false
@@ -5761,7 +5756,7 @@
               "maxQuantity": 5,
               "weight": 6
             },
-             {
+            {
               "itemID": "melvorD:Garum_Seed",
               "minQuantity": 1,
               "maxQuantity": 1,
@@ -5773,7 +5768,7 @@
           ]
         }
       },
-       {
+      {
         "id": "melvorD:Golbin",
         "lootTable": {
           "add": [
@@ -5782,7 +5777,8 @@
               "minQuantity": 1,
               "maxQuantity": 3,
               "weight": 6
-            }]
+            }
+          ]
         }
       },
       {
@@ -5795,37 +5791,41 @@
               "maxQuantity": 15,
               "weight": 51
             },
-             {
+            {
               "itemID": "rielkConstruction:Oak_Planks",
               "minQuantity": 3,
               "maxQuantity": 10,
               "weight": 31
             },
-             {
+            {
               "itemID": "rielkConstruction:Teak_Planks",
               "minQuantity": 2,
               "maxQuantity": 7,
               "weight": 18
             },
-             {
+            {
               "itemID": "rielkConstruction:Mahogany_Planks",
               "minQuantity": 1,
               "maxQuantity": 5,
               "weight": 3
             },
-             {
+            {
               "itemID": "melvorD:Mithril_Scimitar",
               "minQuantity": 1,
               "maxQuantity": 1,
               "weight": 17
-            }, {
+            },
+            {
               "itemID": "melvorD:Adamant_Scimitar",
               "minQuantity": 1,
               "maxQuantity": 1,
               "weight": 2
             }
           ],
-          "remove":["melvorD:Mithril_Scimitar","melvorD:Adamant_Scimitar"]
+          "remove": [
+            "melvorD:Mithril_Scimitar",
+            "melvorD:Adamant_Scimitar"
+          ]
         }
       }
     ]

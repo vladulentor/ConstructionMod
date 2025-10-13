@@ -97,8 +97,8 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Boots': '+2% Abilità di costruzione PE<br><span class=\"text-warning\">Equipaggiato con tutti e quattro gli abiti da costruttore: +8% PE maestria nella costruzione</span>',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% di possibilità di recuperare un seme di albero in agricoltura quando raccolto',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% azioni necessarie per costruire mobili in Costruzione',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% azioni necessarie per costruire mobili in Costruzione',
+'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% azioni e materiali necessari per costruire mobili in Costruzione',
+'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% azioni e materiali necessari per costruire mobili in Costruzione',
     'MODIFIER_DATA_unlockPlot_1': 'Sblocca un appezzamento di orto in Agricoltura',
     'MODIFIER_DATA_unlockPlot_2': 'Sblocca un appezzamento di erbe in Agricoltura',
     'MODIFIER_DATA_unlockPlot_3': 'Sblocca un appezzamento di orto in Agricoltura',

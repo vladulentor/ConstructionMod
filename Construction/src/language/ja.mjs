@@ -115,8 +115,8 @@ export const language = {
     'MODIFIER_DATA_increase_skillEfficiencyCost': '効率化を発動したときの資源コスト+${value}',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '農業で木の種を収穫すると、その種を再び入手できる確率が +${value}% 増加します',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% のアクションが必要：建設で家具を作る',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% のアクションが必要：建設で家具を作る',
+'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% のアクションと材料が必要：建設で家具を作る',
+'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% のアクションと材料が必要：建設で家具を作る',
     'MODIFIER_DATA_unlockPlot_1': '農業で畑の区画を解放する',
     'MODIFIER_DATA_unlockPlot_2': '農業でハーブの区画を解放する',
     'MODIFIER_DATA_unlockPlot_3': '農業で畑の区画を解放する',

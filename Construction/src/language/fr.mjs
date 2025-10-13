@@ -100,8 +100,8 @@ export const language = {
     'TOAST_FIXTURE_COMPLETE': 'Vous avez terminé la construction de votre ${fixtureName}!',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% de chances de récupérer une graine d\'arbre en agriculture lors de la récolte',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% d\'actions requises pour construire des meubles en Construction',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% d\'actions requises pour construire des meubles en Construction',
+'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% d\'actions et de matériaux requis pour construire des meubles en Construction',
+'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% d\'actions et de matériaux requis pour construire des meubles en Construction',
     'MODIFIER_DATA_unlockPlot_1': 'Débloque une parcelle de potager en agriculture',
     'MODIFIER_DATA_unlockPlot_2': 'Débloque une parcelle d’herbes en agriculture',
     'MODIFIER_DATA_unlockPlot_3': 'Débloque une parcelle de potager en agriculture',

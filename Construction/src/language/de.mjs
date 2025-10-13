@@ -100,8 +100,8 @@ export const language = {
     'TOAST_FIXTURE_COMPLETE': 'Du hast deine ${fixtureName} fertiggestellt!',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% chance, beim Ernten einen Baumsamen in der Landwirtschaft zurückzugewinnen',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% Aktionen erforderlich, um Möbel im Bauwesen zu erstellen',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% Aktionen erforderlich, um Möbel im Bauwesen zu erstellen',
+'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% Aktionen und Materialien erforderlich, um Möbel im Bauwesen zu erstellen',
+'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% Aktionen und Materialien erforderlich, um Möbel im Bauwesen zu erstellen',
     'MODIFIER_DATA_unlockPlot_1': 'Schalte ein Gemüsebeet in der Landwirtschaft frei',
     'MODIFIER_DATA_unlockPlot_2': 'Schalte ein Kräuterbeet in der Landwirtschaft frei',
     'MODIFIER_DATA_unlockPlot_3': 'Schalte ein Gemüsebeet in der Landwirtschaft frei',

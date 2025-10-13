@@ -116,8 +116,8 @@ export const language = {
     'MODIFIER_DATA_increase_skillEfficiencyCost': '+${value} Resource cost when completing extra actions',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% chance to regain a Tree Seed in Farming when harvested',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% actions required to build Furniture in Construction',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% actions required to build Furniture in Construction',
+    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% actions and materials required to build Furniture in Construction',
+    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% actions and materials required to build Furniture in Construction',
     'MODIFIER_DATA_tierArray': 'Unlocks a new map tier',
 
     'DESCRIPTION_ADDS_ITEM': 'Gives ${itemQuantity} ${itemName} ${itemImage}',

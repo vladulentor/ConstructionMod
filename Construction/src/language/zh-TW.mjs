@@ -124,8 +124,8 @@ export const language = {
 
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收穫時，+${value}% 幾率在農業中重新獲得樹種子',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 動作用於在建造中製造家具',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 動作用於在建造中製造家具',
+'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 動作和材料用於在建造中製造家具',
+'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 動作和材料用於在建造中製造家具',
 
     'DESCRIPTION_ADDS_ITEM': '給出 ${itemQuantity} ${itemName} ${itemImage}',
     'ENEMY_NAME_ConstructGiant': '鐵巨人',

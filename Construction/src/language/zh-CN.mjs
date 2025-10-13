@@ -116,8 +116,8 @@ export const language = {
 
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收获时有机会在农业中重新获得树种',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 动作用于在建造中制造家具',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 动作用于在建造中制造家具',
+'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 动作和材料用于在建造中制造家具',
+'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 动作和材料用于在建造中制造家具',
     'MODIFIER_DATA_unlockPlot_1': '解锁农业中的菜地',
     'MODIFIER_DATA_unlockPlot_2': '解锁农业中的草药地',
     'MODIFIER_DATA_unlockPlot_3': '解锁农业中的菜地',

@@ -64,89 +64,64 @@ export class ConstructionFixture extends RealmedObject {
         return this.recipes[0].abyssalLevel;
     }
 
-getCurrentBuildRecipeCosts(construction, efficiency = 0) {
-    const prevRatio = this.progress / this.currentRecipe.actionCost;
-    const costMult = efficiency ? construction.getEfficiencyCostMultiplier(this.currentRecipe) : 1;
-    const nextRatio = Math.min(1, (this.progress + costMult) / this.currentRecipe.actionCost);
-
-    console.group(`Build Recipe Costs - ${this.currentRecipe.id}`);
-    console.log('Progress:', this.progress, '/', this.currentRecipe.actionCost);
-    console.log('Efficiency:', efficiency, 'Cost Multiplier:', costMult);
-    console.log('Prev Ratio:', prevRatio, 'Next Ratio:', nextRatio);
-
-    // Get the canonical full-cost object
-    this.stepCost = construction.getRecipeCosts(this.currentRecipe);
-    const actionItems = new Map();
-    const actionCurrencies = new Map();
-
-    const remainingitems = [];
-    console.group('Items');
-    this.stepCost._items.forEach((total, item) => {
-        const prev = Math.floor(total * prevRatio);
-        const next = Math.floor(total * nextRatio);
-        const delta = next - prev;
-        const remaining = total - prev;
-        remainingitems.push(remaining);
-        if (delta > 0) actionItems.set(item, delta);
-
-        console.log(item, {
-            total,
-            prev,
-            next,
-            delta,
-            remaining
+    getCurrentBuildRecipeCosts(construction, efficiency = 0) {
+        const prevRatio = this.progress / this.currentRecipe.actionCost;
+        const costMult = efficiency ? construction.getEfficiencyCostMultiplier(this.currentRecipe) : 1;
+        const nextRatio = Math.min(1, (this.progress + costMult) / this.currentRecipe.actionCost);
+        this.stepCost = construction.getRecipeCosts(this.currentRecipe);
+        const actionItems = new Map();
+        const actionCurrencies = new Map();
+        const reduction = construction.game.modifiers.getValue("rielkConstruction:constructionActionsToUpgrade", this.currentRecipe) / 100;
+        const remainingitems = [];
+        this.stepCost._items.forEach((total, item) => {
+            const reducedtotal = Math.ceil(total * (1 + reduction));
+            const prev = Math.floor(reducedtotal * prevRatio);
+            const next = Math.floor(reducedtotal * nextRatio);
+            const delta = next - prev;
+            const remaining = reducedtotal - prev;
+            remainingitems.push(remaining);
+            if (delta > 0) actionItems.set(item, delta);
         });
-            console.log("Item in bank", game.bank.getQty(item));
-
-    });
-    console.groupEnd();
-    const remainingcurrencies = [];
-    console.group('Currencies');
-    this.stepCost._currencies.forEach((total, currency) => {
-        const prev = Math.floor(total * prevRatio);
-        const next = Math.floor(total * nextRatio);
-        const delta = next - prev;
-        const remaining = total - next;
-        remainingcurrencies.push(remaining);
-        if (delta > 0) actionCurrencies.set(currency, delta);
-
-        console.log(currency, {
-            total,
-            prev,
-            next,
-            delta,
-            remaining
+        const remainingcurrencies = [];
+        this.stepCost._currencies.forEach((total, currency) => {
+            const reducedtotal = Math.ceil(total * (1 + reduction));
+            const prev = Math.floor(reducedtotal * prevRatio);
+            const next = Math.floor(reducedtotal * nextRatio);
+            const delta = next - prev;
+            const remaining = reducedtotal - prev;
+            remainingcurrencies.push(remaining);
+            if (delta > 0) actionCurrencies.set(currency, delta);
         });
-    });
-    console.groupEnd();
 
-    this.stepCost._items = actionItems;
-    this.stepCost._currencies = actionCurrencies;
-    if (efficiency && !this.stepCost.checkIfOwned()) {
-        console.groupEnd();
-        return this.getCurrentBuildRecipeCosts(construction, false);
+        this.stepCost._items = actionItems;
+        this.stepCost._currencies = actionCurrencies;
+        if (efficiency && !this.stepCost.checkIfOwned()) {
+            return this.getCurrentBuildRecipeCosts(construction, false);
+        }
+
+        this.UIcost = {
+            itemCosts: this.currentRecipe.itemCosts.map((fullItem, i) => {
+                const delta = Array.from(actionItems.entries())
+                    .find(([i, _]) => i === fullItem.item) ?? [null, 0];
+
+                return {
+                    ...fullItem,
+                    quantity: remainingitems[i],
+                    smallquant: delta[1]
+                };
+            }),
+            currencyCosts: Array.from(this.currentRecipe.currencyCosts.map((fullCurrency, i) => {
+                const delta = Array.from(actionCurrencies.entries())
+                    .find(([currency, _]) => currency === fullCurrency.currency) ?? [null, 0];
+
+                return {
+                    ...fullCurrency,
+                    quantity: remainingcurrencies[i],
+                    smallquant: delta[1]
+                };
+            })),
+        };
     }
-
-    this.UIcost = {
-        itemCosts: this.currentRecipe.itemCosts.map((fullItem, i) => {
-            const delta = Array.from(actionItems.entries())
-                .find(([i, _]) => i === fullItem.item) ?? [null, 0];
-
-            return {
-                ...fullItem,
-                quantity: remainingitems[i],
-                smallquant: delta[1]
-            };
-        }),
-        currencyCosts: Array.from(actionCurrencies.entries()).map(([currency, delta], i) => ({
-            currency,
-            smallquant: delta,
-            remaining: remainingcurrencies[i]
-        }))
-    };
-
-    console.groupEnd(); // End main recipe group
-}
 
     upgrade(construction) {
         this.currentTier++;

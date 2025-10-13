@@ -100,8 +100,8 @@ export const language = {
 
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '농사에서 수확 시 나무 씨앗을 회복할 확률 +${value}%',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 행동 필요: 건축에서 가구 제작',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 행동 필요: 건축에서 가구 제작',
+'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 행동 및 재료 필요: 건축에서 가구 제작',
+'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 행동 및 재료 필요: 건축에서 가구 제작',
     'MODIFIER_DATA_unlockPlot_1': '농업에서 채소 밭을 잠금 해제합니다',
     'MODIFIER_DATA_unlockPlot_2': '농업에서 허브 밭을 잠금 해제합니다',
     'MODIFIER_DATA_unlockPlot_3': '농업에서 채소 밭을 잠금 해제합니다',

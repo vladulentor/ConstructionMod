@@ -99,8 +99,8 @@ export const language = {
 
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% кусок, чтобы восстановить семя дерева в сельском хозяйстве, когда собрано',
-    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% действий требуется для создания мебели в Строительстве',
-    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% действий требуется для создания мебели в Строительстве',
+'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% действий и материалов требуется для создания мебели в Строительстве',
+'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% действий и материалов требуется для создания мебели в Строительстве',
     'MODIFIER_DATA_unlockPlot_1': 'Разблокировать участок для огорода в сельском хозяйстве',
     'MODIFIER_DATA_unlockPlot_2': 'Разблокировать участок для трав в сельском хозяйстве',
     'MODIFIER_DATA_unlockPlot_3': 'Разблокировать участок для огорода в сельском хозяйстве',

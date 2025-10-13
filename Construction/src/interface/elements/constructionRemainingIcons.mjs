@@ -33,13 +33,14 @@ class MyItemQuantityIconElement extends ItemQuantityIconElement {
 
         const qty = game.bank.getQty(this.itemQuantity.item);
 
-        this.toggleInvalidBorder(qty, requiredAll, requiredSmall);    }
+        this.toggleInvalidBorder(qty, requiredAll, requiredSmall);
+    }
 }
 window.customElements.define('my-quantity-icon', MyItemQuantityIconElement);
 
 
 class MyItemCurrentIconElement extends ItemCurrentIconElement {
-    constructor(){
+    constructor() {
         super();
         this.requiredsmall = 0;
     }
@@ -80,7 +81,7 @@ class MyItemCurrentIconElement extends ItemCurrentIconElement {
         }
         this.updateQuantity(game.bank);
     }
-    toggleInvalidBorder(current, requiredAll, requiredSmall) { 
+    toggleInvalidBorder(current, requiredAll, requiredSmall) {
         if (current < requiredSmall) {
             this.removeDangerBorder();
             this.setInvalidBorder();
@@ -105,6 +106,137 @@ class MyItemCurrentIconElement extends ItemCurrentIconElement {
     }
 }
 window.customElements.define('my-item-current-icon', MyItemCurrentIconElement);
+
+class MyCurrencyQuantityIconElement extends InfoIconElement {
+    constructor() {
+        super();
+        this._content = new DocumentFragment();
+        this._content.append(getTemplateNode('currency-quantity-icon-template'));
+        this.container = getElementFromFragment(this._content, 'container', 'div');
+        this.currencyImage = getElementFromFragment(this._content, 'currency-image', 'img');
+        this.quantity = getElementFromFragment(this._content, 'quantity', 'small');
+        this.tooltipElem = createElement('div', {
+            className: 'text-center'
+        });
+    }
+    setCurrency(currency, quantity, smallquant) {
+        this.currencyImage.src = currency.media;
+        this.currencyImage.alt = currency.name;
+        this.tooltipElem.textContent = currency.name;
+        this.quantity.textContent = numberWithCommas(quantity);
+        this.currencyQuantity = {
+            currency,
+            quantity, smallquant
+        };
+    }
+    setInvalidBorder() {
+        this.container.classList.add('border-item-invalid');
+    }
+    removeInvalidBorder() {
+        this.container.classList.remove('border-item-invalid');
+    }
+    setDangerBorder() {
+        this.container.classList.add('border-item-danger');
+
+    }
+    removeDangerBorder() {
+        this.container.classList.remove('border-item-danger');
+    }
+    toggleInvalidBorder(current, requiredAll, requiredSmall) {
+        if (current < requiredSmall) {
+            this.removeDangerBorder();
+            this.setInvalidBorder();
+        }
+        else if (current < requiredAll) {
+            this.removeInvalidBorder();
+            this.setDangerBorder();
+        }
+        else {
+            this.removeDangerBorder();
+            this.removeInvalidBorder();
+        }
+    }
+
+    updateBorder(currency, requiredAll, requiredSmall) {
+        if (this.currencyQuantity === undefined)
+            return;
+
+        this.toggleInvalidBorder(currency._amount, requiredAll, requiredSmall);
+    }
+}
+window.customElements.define('my-currency-quantity-icon', MyCurrencyQuantityIconElement);
+
+class MyCurrencyCurrentIconElement extends InfoIconElement {
+    constructor() {
+        super();
+        this.requiredQuantity = 0;
+        this.reqruiedSmallQuant = 0;
+        this.currentQuantity = 0;
+        this._content = new DocumentFragment();
+        this._content.append(getTemplateNode('currency-current-icon-template'));
+        this.container = getElementFromFragment(this._content, 'container', 'div');
+        this.currencyImage = getElementFromFragment(this._content, 'currency-image', 'img');
+        this.quantity = getElementFromFragment(this._content, 'quantity', 'small');
+        this.tooltipElem = createElement('div', {
+            className: 'text-center'
+        });
+    }
+    connectedCallback() {
+        super.connectedCallback();
+        this.container.onmouseover = () => this.onMouseOver();
+        this.container.onmouseleave = () => this.onMouseLeave();
+    }
+    setCurrency(currency, requiredQuantity, requiredSmallQuant) {
+        this.currency = currency;
+        this.reqruiedSmallQuant = requiredSmallQuant;
+        this.requiredQuantity = requiredQuantity;
+        this.currencyImage.src = currency.media;
+        this.currencyImage.alt = currency.name;
+        this.tooltipElem.textContent = currency.name;
+        this.updateQuantity(currency, requiredQuantity, requiredSmallQuant);
+    }
+    updateQuantity(currency, requiredQuantity, requiredSmallQuant) {
+        if (this.currency === undefined)
+            return;
+        this.currentQuantity = this.currency.amount;
+        this.toggleInvalidBorder(this.currentQuantity, requiredQuantity, requiredSmallQuant);
+        this.quantity.textContent = formatNumber(this.currentQuantity);
+    }
+        setInvalidBorder() {
+        this.container.classList.add('border-item-invalid');
+    }
+    removeInvalidBorder() {
+        this.container.classList.remove('border-item-invalid');
+    }
+    setDangerBorder() {
+        this.container.classList.add('border-item-danger');
+
+    }
+    removeDangerBorder() {
+        this.container.classList.remove('border-item-danger');
+    }
+    toggleInvalidBorder(current, requiredAll, requiredSmall) {
+        if (current < requiredSmall) {
+            this.removeDangerBorder();
+            this.setInvalidBorder();
+        }
+        else if (current < requiredAll) {
+            this.removeInvalidBorder();
+            this.setDangerBorder();
+        }
+        else {
+            this.removeDangerBorder();
+            this.removeInvalidBorder();
+        }
+    }
+    onMouseOver() {
+        this.quantity.textContent = numberWithCommas(this.currentQuantity);
+    }
+    onMouseLeave() {
+        this.quantity.textContent = formatNumber(this.currentQuantity);
+    }
+}
+window.customElements.define('my-currency-current-icon', MyCurrencyCurrentIconElement);
 
 class MyQuantityIconsElement extends HTMLElement {
     constructor() {
@@ -180,13 +312,14 @@ class MyQuantityIconsElement extends HTMLElement {
     addCurrencyIcons(currencies) {
         currencies.forEach(({
             currency,
-            quantity
+            quantity,
+            smallquant
         }) => {
-            const currencyIcon = createElement('currency-quantity-icon', {
+            const currencyIcon = createElement('my-currency-quantity-icon', {
                 parent: this
             });
-            currencyIcon.setCurrency(currency, quantity);
-            currencyIcon.updateBorder();
+            currencyIcon.setCurrency(currency, quantity, smallquant);
+            currencyIcon.updateBorder(currency,quantity,smallquant);
             this.currencies.push(currencyIcon);
         });
     }
@@ -250,6 +383,7 @@ function tripleCostArray(itemsMap) {
     });
     return costArray;
 }
+
 class MyCurrentQuantityIconsElement extends HTMLElement {
     constructor() {
         super();
@@ -283,7 +417,7 @@ class MyCurrentQuantityIconsElement extends HTMLElement {
     addItemIcons(items, game, allowQuickBuy, altMedia = false) {
         items.forEach(({
             item,
-            quantity, 
+            quantity,
             smallquant
         }) => {
             const itemIcon = createElement('my-item-current-icon', {
@@ -296,12 +430,13 @@ class MyCurrentQuantityIconsElement extends HTMLElement {
     addCurrencyIcons(currencies) {
         currencies.forEach(({
             currency,
-            quantity
+            quantity,
+            smallquant
         }) => {
-            const currencyIcon = createElement('currency-current-icon', {
+            const currencyIcon = createElement('my-currency-current-icon', {
                 parent: this
             });
-            currencyIcon.setCurrency(currency, quantity);
+            currencyIcon.setCurrency(currency, quantity, smallquant);
             this.currencies.push(currencyIcon);
         });
     }
@@ -314,13 +449,6 @@ class MyCurrentQuantityIconsElement extends HTMLElement {
         this.removeIcons();
         this.addItemIcons(tripleCostArray(costs), game, allowQuickBuy);
         this.addCurrencyIcons(costs.getCurrencyQuantityArray());
-    }
-    setIconsForFixedCosts(costs, game, allowQuickBuy = false) {
-        this.removeIcons();
-        if (costs.items !== undefined)
-            this.addItemIcons(costs.items, game, allowQuickBuy);
-        if (costs.currencies !== undefined)
-            this.addCurrencyIcons(costs.currencies);
     }
     /**
      * Creates and appends Item and Currency icons for an artisan skill recipe
@@ -348,6 +476,7 @@ class MyCurrentQuantityIconsElement extends HTMLElement {
     }
 }
 window.customElements.define('my-current-quantity-icons', MyCurrentQuantityIconsElement);
+
 export class RemainingBoxElement extends HTMLElement {
     constructor() {
         super();

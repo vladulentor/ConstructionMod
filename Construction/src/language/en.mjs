@@ -38,6 +38,8 @@ export const language = {
     'MENU_TOOLTIP_EFFICIENCY_COST': 'Will spend ${cost} times the resources.',
     'MENU_EFFICIENCY_BASE': 'Base',
     'SHOP_NAME_Construction_Skillcape': 'Construction Skillcape',
+        'SHOP_NAME_Hammer_Saw': 'Hammer Saw',
+
 
     'PET_NAME_ChuckTheForeman': 'Chuck the Foreman',
     'PET_NAME_Scoobs': 'Scoobs',

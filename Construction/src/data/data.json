@@ -507,6 +507,7 @@
       }
     ],
     "shopPurchases": [
+    
       {
         "id": "Construction_Skillcape",
         "customName": "Construction Skillcape",
@@ -1456,7 +1457,7 @@
               "level": 1,
               "productID": "rielkConstruction:Iron_Nails",
               "baseQuantity": 5,
-              "baseExperience": 6,
+              "baseExperience": 4,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {

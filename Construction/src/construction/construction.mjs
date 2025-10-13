@@ -356,7 +356,7 @@ export class Construction extends ArtisanSkill {
     renderRecipeInfo() {
         if (!this.renderQueue.recipeInfo)
             return;
-        if (this.ui.constructionHouseMenu?.root?.parentElement.parentElement.classList?.contains?.('d-none')) {
+        if (this.ui.constructionHouseMenu?.root?.parentElement.parentElement.classList?.contains?.('d-none') && this.selectedRecipe) {
             const recipe = this.masteryAction;
             const masteryXPToAdd = this.getMasteryXPToAddForAction(recipe, this.masteryModifiedInterval);
             const baseMasteryXP = this.getBaseMasteryXPToAddForAction(recipe, this.masteryModifiedInterval);

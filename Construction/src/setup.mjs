@@ -7,6 +7,8 @@ const { patchFarming } = await loadModule('src/skillPatches/farming/farming.mjs'
 const { patchMasteryElement } = await loadModule('src/skillPatches/patchmasteryelement.mjs');
 const { skillBoostsCompatibility } = await loadModule("src/modPatches/skillboosts.mjs");
 const { patchFletchingOrder } = await loadModule("src/skillPatches/patchFletchingOrder.mjs")
+const { patchRenderEquipment } = await loadModule("src/skillPatches/patchrenderequipment.mjs")
+
 
 export async function setup(ctx) {
     setup = new Setup(ctx);
@@ -50,7 +52,7 @@ class Setup {
         patchTranslations(this.ctx);
         patchFarming(this.ctx);
         patchMasteryElement(this.ctx);
-
+        patchRenderEquipment(this.ctx);
         this.ctx.patch(EventManager, 'loadEvents').before(() => {
             if (game.construction.isUnlocked)
                 return;

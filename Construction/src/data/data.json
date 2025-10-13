@@ -8,7 +8,7 @@
         "media": "assets/icon.png",
         "containerID": "rielk-construction-container",
         "headerBgClass": "bg-rielk-construction",
-        "hasGameGuide": true,
+        "hasGameGuide": false,
         "canBeDefault": true,
         "skills": [
           "rielkConstruction:Construction"
@@ -1375,7 +1375,7 @@
               "spoofOrder": 1,
               "level": 1,
               "productID": "rielkConstruction:Normal_Planks",
-              "baseQuantity": 3,
+              "baseQuantity": 2,
               "baseExperience": 4,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -1391,7 +1391,7 @@
               "level": 5,
               "spoofOrder": 2,
               "productID": "rielkConstruction:Oak_Planks",
-              "baseQuantity": 3,
+              "baseQuantity": 2,
               "baseExperience": 8,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -1407,7 +1407,7 @@
               "spoofOrder": 7,
               "level": 20,
               "productID": "rielkConstruction:Teak_Planks",
-              "baseQuantity": 3,
+              "baseQuantity": 2,
               "baseExperience": 20,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -1423,7 +1423,7 @@
               "spoofOrder": 8,
               "level": 35,
               "productID": "rielkConstruction:Mahogany_Planks",
-              "baseQuantity": 3,
+              "baseQuantity": 2,
               "baseExperience": 25,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -1437,9 +1437,9 @@
             {
               "id": "Magic_Planks",
               "spoofOrder": 13,
-              "level": 50,
+              "level": 70,
               "productID": "rielkConstruction:Magic_Planks",
-              "baseQuantity": 3,
+              "baseQuantity": 2,
               "baseExperience": 50,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -1453,7 +1453,7 @@
             {
               "id": "Iron_Nails",
               "spoofOrder": 6,
-              "level": 5,
+              "level": 1,
               "productID": "rielkConstruction:Iron_Nails",
               "baseQuantity": 5,
               "baseExperience": 6,
@@ -1469,7 +1469,7 @@
             {
               "id": "Steel_Nails",
               "spoofOrder": 11,
-              "level": 20,
+              "level": 5,
               "productID": "rielkConstruction:Steel_Nails",
               "baseQuantity": 5,
               "baseExperience": 8,
@@ -1485,7 +1485,7 @@
             {
               "id": "Mithril_Nails",
               "spoofOrder": 12,
-              "level": 35,
+              "level": 20,
               "productID": "rielkConstruction:Mithril_Nails",
               "baseQuantity": 5,
               "baseExperience": 20,
@@ -1501,7 +1501,7 @@
             {
               "id": "Adamantite_Nails",
               "spoofOrder": 17,
-              "level": 50,
+              "level": 35,
               "productID": "rielkConstruction:Adamantite_Nails",
               "baseQuantity": 5,
               "baseExperience": 25,

@@ -278,7 +278,7 @@ export class Construction extends ArtisanSkill {
         super.onPageChange();
         this.renderQueue.renderfixtureItemUpdates = true;
     }
-    updateMasteryDisplays(){
+    updateMasteryDisplays() {
         //leave empty so it doesn't do anything
     }
     shouldShowSkillInSidebar() {
@@ -356,19 +356,22 @@ export class Construction extends ArtisanSkill {
     renderRecipeInfo() {
         if (!this.renderQueue.recipeInfo)
             return;
-        const recipe = this.masteryAction;
-        const masteryXPToAdd = this.getMasteryXPToAddForAction(recipe, this.masteryModifiedInterval);
-        const baseMasteryXP = this.getBaseMasteryXPToAddForAction(recipe, this.masteryModifiedInterval);
-        this.menu.updateGrants(this.modifyXP(this.actionXP), this.actionXP, masteryXPToAdd, baseMasteryXP, this.getMasteryXPToAddToPool(masteryXPToAdd), this.activeRecipe.realm);
-        this.menu.updateGrantsSources(this, recipe);
-        this.menu.updateChances(this.getPreservationChance(recipe), this.getPreservationCap(recipe), this.getPreservationSources(recipe), this.getDoublingChance(recipe), this.getDoublingSources(recipe),
-            this.getEfficiencyChance(recipe),
-            this.getEfficiencyPotencyMultiplier(recipe), this.getEfficiencyCostMultiplier(recipe), this.getEfficiencyChancePotencySources(recipe));
-        const query = this.getActionModifierQuery(recipe);
-        this.menu.updateAdditionalPrimaryQuantity(this.getFlatAdditionalPrimaryProductQuantity(this.actionItem, query), this.getAdditionalPrimaryResourceQuantitySources(query));
-        this.menu.updateCostReduction(this.getCostReduction(recipe), this.getCostReductionSources(recipe));
-        this.menu.updateInterval(this.actionInterval, this.getIntervalSources(recipe));
-        this.menu.updateAbyssalGrants(this.modifyAbyssalXP(this.actionAbyssalXP), this.actionAbyssalXP);
+        if (this.ui.constructionHouseMenu?.root?.parentElement.parentElement.classList?.contains?.('d-none')) {
+            console.log("Called to render! other thing");
+            const recipe = this.masteryAction;
+            const masteryXPToAdd = this.getMasteryXPToAddForAction(recipe, this.masteryModifiedInterval);
+            const baseMasteryXP = this.getBaseMasteryXPToAddForAction(recipe, this.masteryModifiedInterval);
+            this.menu.updateGrants(this.modifyXP(this.actionXP), this.actionXP, masteryXPToAdd, baseMasteryXP, this.getMasteryXPToAddToPool(masteryXPToAdd), this.activeRecipe.realm);
+            this.menu.updateGrantsSources(this, recipe);
+            this.menu.updateChances(this.getPreservationChance(recipe), this.getPreservationCap(recipe), this.getPreservationSources(recipe), this.getDoublingChance(recipe), this.getDoublingSources(recipe),
+                this.getEfficiencyChance(recipe),
+                this.getEfficiencyPotencyMultiplier(recipe), this.getEfficiencyCostMultiplier(recipe), this.getEfficiencyChancePotencySources(recipe));
+            const query = this.getActionModifierQuery(recipe);
+            this.menu.updateAdditionalPrimaryQuantity(this.getFlatAdditionalPrimaryProductQuantity(this.actionItem, query), this.getAdditionalPrimaryResourceQuantitySources(query));
+            this.menu.updateCostReduction(this.getCostReduction(recipe), this.getCostReductionSources(recipe));
+            this.menu.updateInterval(this.actionInterval, this.getIntervalSources(recipe));
+            this.menu.updateAbyssalGrants(this.modifyAbyssalXP(this.actionAbyssalXP), this.actionAbyssalXP);
+        }
         this.renderQueue.recipeInfo = false;
     }
 
@@ -492,7 +495,9 @@ export class Construction extends ArtisanSkill {
 
     //        builder.addSources("melvorD:skillEfficiencyCostMult", this.getActionModifierQuery(action)); For later
 
-
+    onEquipmentChange() {
+        this.renderQueue.menu = true; // Note, we could optimize this to not re-render the entire menu.
+    }
 
     preAction() { }
     get actionRewards() {
@@ -621,7 +626,7 @@ export class Construction extends ArtisanSkill {
 
     buildAction() {
         if (rollPercentage(this.getEfficiencyChance(this.activeBuildRecipe))) this.efficient = true;
-                this.selectedFixture.getCurrentBuildRecipeCosts(this, this.efficient);
+        this.selectedFixture.getCurrentBuildRecipeCosts(this, this.efficient);
         let recipeCosts = this.selectedFixture.stepCost;
         if (!recipeCosts.checkIfOwned()) {
             this.game.combat.notifications.add({
@@ -673,7 +678,7 @@ export class Construction extends ArtisanSkill {
         this.selectedRoom = room;
         this.selectedFixture = fixture;
         this.selectedFixtureRecipe = fixture.currentRecipe;
-        if(this.selectedFixture.stepCost == undefined ) this.selectedFixture.getCurrentBuildRecipeCosts(this);
+        if (this.selectedFixture.stepCost == undefined) this.selectedFixture.getCurrentBuildRecipeCosts(this);
         if (!this.selectedFixture.stepCost.checkIfOwned()) {
             notifyPlayer(this, this.noBuildCostsMessage, 'danger');
             return;
@@ -681,7 +686,7 @@ export class Construction extends ArtisanSkill {
         this._actionMode = 1;
         this.start();
 
-        }
+    }
 
     getRegistry(type) {
         switch (type) {
@@ -710,82 +715,82 @@ export class Construction extends ArtisanSkill {
         this.renderQueue.masteryBonusElements = true;
 
 
-            this.selectRealm(this.currentRealm);
-            onInterfaceReady(async () => {
-                this.ui.renderVisibleRooms();
-                this.render();
-            });
-            if (this._actionMode == 1) {
-                var recipe = this.activeBuildRecipe;
-                this.ui.switchConstructionCategory(recipe.category)
-                this.ui.selectFixture(recipe.fixture, recipe.fixture.room, this);
-            }
-            this.fixtures.forEach(fixture => fixture.onLoad());
-            this.updateRecipeCounts();
-            this.popTierMasteries();
-
+        this.selectRealm(this.currentRealm);
+        onInterfaceReady(async () => {
+            this.ui.renderVisibleRooms();
             this.render();
+        });
+        if (this._actionMode == 1) {
+            var recipe = this.activeBuildRecipe;
+            this.ui.switchConstructionCategory(recipe.category)
+            this.ui.selectFixture(recipe.fixture, recipe.fixture.room, this);
         }
-        resetActionState() {
-            super.resetActionState();
-            this._actionMode = undefined;
-            this.selectedRoom = undefined;
-            this.selectedFixture = undefined;
-            this.selectedFixtureRecipe = undefined;
-        }
-        updateForExistingCapIncreases() {
-            var _a;
-            var initalLevel;
-            (_a = this.game.currentGamemode.initialLevelCaps) === null || _a === void 0 ? void 0 : _a.forEach(({ skill, value }) => {
-                if (skill == this)
-                    initalLevel = value;
-            });
-            if (initalLevel == undefined)
-                initalLevel = this.game.currentGamemode.defaultInitialLevelCap;
-            if (initalLevel == undefined)
-                initalLevel = -1;
-            this.setLevelCap(initalLevel);
-            this.game.activeLevelCapIncreases.forEach((capIncrease) => {
-                capIncrease.requirementSets.forEach((reqSet) => {
-                    if (!reqSet.given)
-                        return;
-                    switch (capIncrease.levelType) {
-                        case 'Standard':
-                            capIncrease.fixedIncreases.forEach((skillIncrease) => {
-                                if (skillIncrease.skill == this)
-                                    this.applyLevelCapIncrease(skillIncrease);
-                            });
-                            capIncrease.setIncreases.forEach(({ value }) => {
-                                if (skillIncrease.skill == this)
-                                    this.applySetLevelCap(value);
-                            }
-                            );
-                            break;
-                        case 'Abyssal':
-                            capIncrease.fixedIncreases.forEach((skillIncrease) => {
-                                if (skillIncrease.skill == this)
-                                    this.skill.applyAbyssalLevelCapIncrease(skillIncrease);
-                            }
-                            );
-                            capIncrease.setIncreases.forEach(({ value }) => {
-                                if (skillIncrease.skill == this)
-                                    this.setAbyssalLevelCap(value);
-                            }
-                            );
-                            break;
-                    }
-                    this.game.validateRandomLevelCapIncreases();
-                })
-            });
-        }
-        encode(writer) {
-            super.encode(writer);
-            Encoder.encode(this, writer);
-            return writer;
-        }
+        this.fixtures.forEach(fixture => fixture.onLoad());
+        this.updateRecipeCounts();
+        this.popTierMasteries();
 
-        decode(reader, saveVersion) {
-            super.decode(reader, saveVersion);
-            Encoder.decode(this, reader);
-        }
+        this.render();
     }
+    resetActionState() {
+        super.resetActionState();
+        this._actionMode = undefined;
+        this.selectedRoom = undefined;
+        this.selectedFixture = undefined;
+        this.selectedFixtureRecipe = undefined;
+    }
+    updateForExistingCapIncreases() {
+        var _a;
+        var initalLevel;
+        (_a = this.game.currentGamemode.initialLevelCaps) === null || _a === void 0 ? void 0 : _a.forEach(({ skill, value }) => {
+            if (skill == this)
+                initalLevel = value;
+        });
+        if (initalLevel == undefined)
+            initalLevel = this.game.currentGamemode.defaultInitialLevelCap;
+        if (initalLevel == undefined)
+            initalLevel = -1;
+        this.setLevelCap(initalLevel);
+        this.game.activeLevelCapIncreases.forEach((capIncrease) => {
+            capIncrease.requirementSets.forEach((reqSet) => {
+                if (!reqSet.given)
+                    return;
+                switch (capIncrease.levelType) {
+                    case 'Standard':
+                        capIncrease.fixedIncreases.forEach((skillIncrease) => {
+                            if (skillIncrease.skill == this)
+                                this.applyLevelCapIncrease(skillIncrease);
+                        });
+                        capIncrease.setIncreases.forEach(({ value }) => {
+                            if (skillIncrease.skill == this)
+                                this.applySetLevelCap(value);
+                        }
+                        );
+                        break;
+                    case 'Abyssal':
+                        capIncrease.fixedIncreases.forEach((skillIncrease) => {
+                            if (skillIncrease.skill == this)
+                                this.skill.applyAbyssalLevelCapIncrease(skillIncrease);
+                        }
+                        );
+                        capIncrease.setIncreases.forEach(({ value }) => {
+                            if (skillIncrease.skill == this)
+                                this.setAbyssalLevelCap(value);
+                        }
+                        );
+                        break;
+                }
+                this.game.validateRandomLevelCapIncreases();
+            })
+        });
+    }
+    encode(writer) {
+        super.encode(writer);
+        Encoder.encode(this, writer);
+        return writer;
+    }
+
+    decode(reader, saveVersion) {
+        super.decode(reader, saveVersion);
+        Encoder.decode(this, reader);
+    }
+}

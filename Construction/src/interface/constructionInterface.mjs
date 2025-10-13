@@ -69,11 +69,13 @@ export class ConstructionInterface {
                 case 'House':
                     showElement(ui.constructionHouseElement);
                     hideElement(ui.constructionArtisanElement);
+                    this.renderQueue.menu = true;
                     switchToCategory(ui.constructionSelectionTabs)(category)
                     break;
                 case 'Artisan':
                     showElement(ui.constructionArtisanElement);
                     hideElement(ui.constructionHouseElement);
+                    this.renderQueue.recipeInfo = true;
                     switchToCategory(ui.constructionSelectionTabs)(category)
                     break;
             }
@@ -141,17 +143,16 @@ export class ConstructionInterface {
         if (this.renderQueue.menu) {
             this.constructionHouseMenu.updateAllRoomPanels(this.construction);
             this.constructionHouseMenu.updateFixtureButtons(this.game);
+            this.constructionHouseMenu.updateFixtureItems(this.construction);
         }
         this.renderQueue.menu = false;
     }
     renderfixtureItemUpdates() {
         if (this.renderQueue.renderfixtureItemUpdates == false) return;
-        if (game?.openPage?._localID !== 'Construction' || 
-             this.constructionHouseMenu?.root?.parentElement.parentElement.classList?.contains?.('d-none')) 
-             {this.renderQueue.renderfixtureItemUpdates = false; this.renderQueue.renderSpecificfixtureItemUpdate = false; return;}
-             //Technically we could check through the category but that's also DOM traversal, not MUCH better.
-        if (this.renderQueue.renderSpecificfixtureItemUpdate) 
-        { this.constructionHouseMenu.updateCurrentFixtureProg(this.construction); this.renderQueue.renderSpecificfixtureItemUpdate = false; }
+        if (game?.openPage?._localID !== 'Construction' ||
+            this.constructionHouseMenu?.root?.parentElement.parentElement.classList?.contains?.('d-none')) { this.renderQueue.renderfixtureItemUpdates = false; this.renderQueue.renderSpecificfixtureItemUpdate = false; return; }
+        //Technically we could check through the category but that's also DOM traversal, not MUCH better.
+        if (this.renderQueue.renderSpecificfixtureItemUpdate) { this.constructionHouseMenu.updateCurrentFixtureProg(this.construction); this.renderQueue.renderSpecificfixtureItemUpdate = false; }
         this.constructionHouseMenu.updateFixtureItems(this.construction);
         this.renderQueue.renderfixtureItemUpdates = false;
     }

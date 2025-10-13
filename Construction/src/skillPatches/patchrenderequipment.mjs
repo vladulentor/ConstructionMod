@@ -1,5 +1,5 @@
 export function patchRenderEquipment (ctx){
-ctx.patch( Player,'updateForEquipmentChange').after(function (_) {
+ctx.patch( BaseManager,'computeAllStats').after(function (_) {
 game?.construction?.onEquipmentChange();
 });
   

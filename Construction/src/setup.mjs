@@ -53,6 +53,7 @@ class Setup {
         patchFarming(this.ctx);
         patchMasteryElement(this.ctx);
         patchRenderEquipment(this.ctx);
+        
         this.ctx.patch(EventManager, 'loadEvents').before(() => {
             if (game.construction.isUnlocked)
                 return;

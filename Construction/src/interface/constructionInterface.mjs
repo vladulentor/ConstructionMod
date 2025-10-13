@@ -58,7 +58,7 @@ export class ConstructionInterface {
         imgs[2].src = game.construction.media;
         guideContainer.append(this.constrGuide);
     }
-
+    
     switchConstructionCategory(category) {
         return this._createSwitchConstructionCategory(this)(category);
     }

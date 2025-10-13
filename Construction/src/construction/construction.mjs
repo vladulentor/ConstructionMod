@@ -33,7 +33,7 @@ export class Construction extends ArtisanSkill {
         this.recipeNumber = 0;
         this.recipeCountByTier = [];
         this._actionMode = undefined;
-
+        this.cachedpreservationchance = 0;
         this.stats = new StatTracker();
         game.stats.Construction = this.stats;
     }
@@ -251,7 +251,7 @@ export class Construction extends ArtisanSkill {
         }
         addModalToQueue({
             titleText: getRielkLangString('MENU_HOUSE_TIER_BONUS_UNLOCKED'),
-            imageUrl: ctx.getResourceUrl('assets/cabin.png'), //that cabin could probably be an object of construction
+            imageUrl: ctx.getResourceUrl('assets/cabin.png'),
             html: modalBody,
             allowOutsideClick: false,
             showConfirmButton: true,
@@ -357,7 +357,6 @@ export class Construction extends ArtisanSkill {
         if (!this.renderQueue.recipeInfo)
             return;
         if (this.ui.constructionHouseMenu?.root?.parentElement.parentElement.classList?.contains?.('d-none')) {
-            console.log("Called to render! other thing");
             const recipe = this.masteryAction;
             const masteryXPToAdd = this.getMasteryXPToAddForAction(recipe, this.masteryModifiedInterval);
             const baseMasteryXP = this.getBaseMasteryXPToAddForAction(recipe, this.masteryModifiedInterval);
@@ -372,6 +371,8 @@ export class Construction extends ArtisanSkill {
             this.menu.updateInterval(this.actionInterval, this.getIntervalSources(recipe));
             this.menu.updateAbyssalGrants(this.modifyAbyssalXP(this.actionAbyssalXP), this.actionAbyssalXP);
         }
+        else if (this.getPreservationChance(this) != this.cachedpreservationchance)
+            this.renderQueue.menu = true;
         this.renderQueue.recipeInfo = false;
     }
 
@@ -544,8 +545,25 @@ export class Construction extends ArtisanSkill {
         this.stats.add(ConstructionStats.TimeSpent, this.currentActionInterval);
         this.renderQueue.recipeInfo = true;
         this.renderQueue.quantities = true;
+        this.cachedpreservationchance = this.getPreservationChance(this);
         this.efficient = false;
     }
+    renderSelectedRecipe() {
+        if (!this.renderQueue.selectedRecipe)
+            return;
+        if (this.selectedRecipe !== undefined && this.ui.constructionHouseMenu?.root?.parentElement.parentElement.classList?.contains?.('d-none')) {
+            const item = this.actionItem;
+            const quantity = this.getMinimumPrimaryProductBaseQuantity(item, this.unmodifiedActionQuantity, this.getActionModifierQuery(this.selectedRecipe));
+            this.menu.setProduct(item, quantity);
+            this.menu.setSelected(this, this.selectedRecipe);
+            const costs = this.getCurrentRecipeCosts();
+            this.menu.setIngredients(costs.getItemQuantityArray(), costs.getCurrencyQuantityArray(), this.game);
+            this.renderQueue.recipeInfo = true;
+            this.renderQueue.actionMastery.add(this.masteryAction);
+        }
+        this.renderQueue.selectedRecipe = false;
+    }
+
     action() {
         switch (this._actionMode) {
             case 0:
@@ -590,6 +608,7 @@ export class Construction extends ArtisanSkill {
             }
         }
     }
+
     artisanAction() {
         if (rollPercentage(this.getEfficiencyChance(this.activeRecipe))) this.efficient = true;
         if (this.efficient) this.game.combat.notifications.add({ type: 'Preserve', args: [this] });

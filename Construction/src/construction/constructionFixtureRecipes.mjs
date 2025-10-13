@@ -85,14 +85,13 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
                 this.fixture.upgrade(this.skill);
 
                 this.skill.addMasteryProgress(this.fixture.currentTier);
-                this.skill.addMasteryProgress(this.fixture.currentTier);
-
 
                 if (this.grantItems != undefined)
                     this.grantItems.forEach(iq => game.bank.addItem(iq.item, iq.quantity, true, true, true));
                 if (this.changeFunc)
                     this.callChangeFunc();
-                this.skill.ui.showFixtureUnlocks(this.fixture.room, this.fixture, this.skill);
+                if (!document.querySelector('rielk-construction-upgrades-panel')?.classList.contains('d-none'))
+                    this.skill.ui.showFixtureUnlocks(this.fixture.room, this.fixture, this.skill);
                 this.fixture.getCurrentBuildRecipeCosts(game.construction);
                 this.skill.renderQueue.renderfixtureItemUpdates = true;
                 this.skill.renderQueue.menu = true;

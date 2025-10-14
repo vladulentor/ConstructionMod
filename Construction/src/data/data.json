@@ -208,8 +208,8 @@
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "charges": 15,
-        "tier": 1,
-        "sellsFor": 53,
+        "tier": 0,
+        "sellsFor": 63,
         "action": "rielkConstruction:Construction",
         "modifiers": {
           "rielkConstruction:skillEfficiencyChance": [
@@ -244,8 +244,8 @@
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "charges": 20,
-        "tier": 2,
-        "sellsFor": 53,
+        "tier": 1,
+        "sellsFor": 83,
         "action": "rielkConstruction:Construction",
         "modifiers": {
           "rielkConstruction:skillEfficiencyChance": [
@@ -280,8 +280,8 @@
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "charges": 25,
-        "tier": 3,
-        "sellsFor": 53,
+        "tier": 2,
+        "sellsFor": 107,
         "action": "rielkConstruction:Construction",
         "modifiers": {
           "rielkConstruction:skillEfficiencyChance": [
@@ -316,8 +316,8 @@
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "charges": 40,
-        "tier": 4,
-        "sellsFor": 53,
+        "tier": 3,
+        "sellsFor": 123,
         "action": "rielkConstruction:Construction",
         "modifiers": {
           "rielkConstruction:skillEfficiencyChance": [

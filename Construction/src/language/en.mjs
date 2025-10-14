@@ -103,8 +103,8 @@ export const language = {
     'MODIFIER_DATA_increase_skillEfficiencyChance': '+${value}% chance to complete extra actions in Construction',
     'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '-${value}% chance to complete extra actions when making ${categoryName} in Construction',
     'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '+${value}% chance to complete extra actions when making ${categoryName} in Construction',
-    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra materials or Progress made when completing extra actions while crafting ${categoryName}',
-    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra materials or Progress made when completing extra actions while crafting ${categoryName}',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra materials or Progress made when completing extra actions when making ${categoryName}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra materials or Progress made when completing extra actions when making ${categoryName}',
 
     'ITEM_NAME_Twice_Measured_Potion_I': 'Twice-Measured Potion I',
     'ITEM_NAME_Twice_Measured_Potion_II': 'Twice-Measured Potion II',

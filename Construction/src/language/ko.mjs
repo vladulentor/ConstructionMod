@@ -84,11 +84,11 @@ export const language = {
     'ITEM_NAME_Red_Dhide_Leather_Bands': '빨간 드래곤 가죽 밴드',
     'ITEM_NAME_Black_Dhide_Leather_Bands': '검은 드래곤 가죽 밴드',
 
-    'ITEM_NAME_Flower_Pots_Token_1': '화분: 층 1',
-    'ITEM_NAME_Flower_Pots_Token_2': '화분: 층 2',
-    'ITEM_NAME_Flower_Pots_Token_3': '화분: 층 3',
-    'ITEM_NAME_Flower_Pots_Token_4': '화분: 층 4',
-    'ITEM_NAME_Flower_Pots_Token_5': '화분: 층 5',
+    'ITEM_NAME_Flower_Pots_Token_1': '건설에서 꽃 화분 1단계를 지어 해제하세요.',
+    'ITEM_NAME_Flower_Pots_Token_2': '건설에서 꽃 화분 2단계를 지어 해제하세요.',
+    'ITEM_NAME_Flower_Pots_Token_3': '건설에서 꽃 화분 3단계를 지어 해제하세요.',
+    'ITEM_NAME_Flower_Pots_Token_4': '건설에서 꽃 화분 4단계를 지어 해제하세요.',
+    'ITEM_NAME_Flower_Pots_Token_5': '건설에서 꽃 화분 5단계를 지어 해제하세요.',
 
 
     'ITEM_DESCRIPTION_Builders_Hat': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',

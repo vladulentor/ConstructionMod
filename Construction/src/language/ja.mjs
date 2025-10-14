@@ -85,11 +85,11 @@ export const language = {
     'ITEM_NAME_Black_Dhide_Leather_Bands': '黒のドラゴンレザーのバンド',
 
 
-    'ITEM_NAME_Flower_Pots_Token_1': '植木鉢: 階層 1',
-    'ITEM_NAME_Flower_Pots_Token_2': '植木鉢: 階層 2',
-    'ITEM_NAME_Flower_Pots_Token_3': '植木鉢: 階層 3',
-    'ITEM_NAME_Flower_Pots_Token_4': '植木鉢: 階層 4',
-    'ITEM_NAME_Flower_Pots_Token_5': '植木鉢: 階層 5',
+    'ITEM_NAME_Flower_Pots_Token_1': '「建設」でフラワーポット第1段階を建ててアンロックします。',
+    'ITEM_NAME_Flower_Pots_Token_2': '「建設」でフラワーポット第2段階を建ててアンロックします。',
+    'ITEM_NAME_Flower_Pots_Token_3': '「建設」でフラワーポット第3段階を建ててアンロックします。',
+    'ITEM_NAME_Flower_Pots_Token_4': '「建設」でフラワーポット第4段階を建ててアンロックします。',
+    'ITEM_NAME_Flower_Pots_Token_5': '「建設」でフラワーポット第5段階を建ててアンロックします。',
 
 
     'ITEM_DESCRIPTION_Builders_Hat': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',

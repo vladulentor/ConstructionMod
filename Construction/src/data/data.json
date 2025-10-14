@@ -507,7 +507,45 @@
       }
     ],
     "shopPurchases": [
-    
+      {
+        "id": "Iron_Saw",
+        "media": "assets/shopupgrades/iron_saw.png",
+        "category": "melvorD:SkillUpgrades",
+        "contains": {
+          "items": [],
+          "modifiers": {
+            "additionalPrimaryProductChance": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": 10
+              }
+            ]
+          }
+        },
+        "cost": {
+          "items": [],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 250000
+            }
+          ]
+        },
+        "allowQuantityPurchase": false,
+        "unlockRequirements": [],
+        "purchaseRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "rielkConstruction:Construction",
+            "level": 10
+          }
+        ],
+        "defaultBuyLimit": 1,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false,
+        "customName": "Super cool shit"
+      },
       {
         "id": "Construction_Skillcape",
         "customName": "Construction Skillcape",
@@ -702,6 +740,13 @@
       }
     ],
     "shopDisplayOrder": [
+      {
+        "insertAt": "After",
+        "afterID": "melvorD:Dragon_Pickaxe",
+        "ids": [
+          "rielkConstruction:Iron_Saw"
+        ]
+      },
       {
         "insertAt": "After",
         "afterID": "melvorF:Astrology_Skillcape",

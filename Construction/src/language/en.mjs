@@ -86,11 +86,11 @@ export const language = {
     'ITEM_NAME_Black_Dhide_Leather_Bands': 'Black D-hide Leather Bands',
 
 
-    'ITEM_NAME_Flower_Pots_Token_1': 'Flower Pot: Tier 1',
-    'ITEM_NAME_Flower_Pots_Token_2': 'Flower Pot: Tier 2',
-    'ITEM_NAME_Flower_Pots_Token_3': 'Flower Pot: Tier 3',
-    'ITEM_NAME_Flower_Pots_Token_4': 'Flower Pot: Tier 4',
-    'ITEM_NAME_Flower_Pots_Token_5': 'Flower Pot: Tier 5',
+    'ITEM_NAME_Flower_Pots_Token_1': 'Build Flower Pots Tier 1 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_2': 'Build Flower Pots Tier 2 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_3': 'Build Flower Pots Tier 3 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_4': 'Build Flower Pots Tier 4 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_5': 'Build Flower Pots Tier 5 in Construction to unlock.',
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
     'ITEM_DESCRIPTION_Builders_Body': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',

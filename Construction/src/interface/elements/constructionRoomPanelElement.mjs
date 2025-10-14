@@ -212,7 +212,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.infoBoxImage.src = fixture.media;
         fixture.getCurrentBuildRecipeCosts(construction);
         const fixtureRecipe = fixture.currentRecipe;
-        if (fixtureRecipe == undefined || fixtureRecipe.level > construction.level) {
+        if (fixtureRecipe == undefined || fixtureRecipe.level > construction.level || fixture.currentTier>=fixture.maxTier) {
             hideElement(this.builtProgressContainer);
             hideElement(this.ingredientsContainer);
             hideElement(this.grantsContainer);
@@ -290,7 +290,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
          this.haves.setItemsFromRecipe(fixture.UIcost, construction.game); // When I find a way to hook into any recipe updates taking away from the bank (or remember to) then that function WILL be worth it.
     }
     updateCurrentFixtureItemIcons(construction, fixture) { //Working fixture's call.
-        this.requires.setItemsFromRecipe(fixture.UIcost);
+        this.requires.setItemsFromRecipe(fixture.UIcost, construction.game);
         this.haves.setItemsFromRecipe(fixture.UIcost, construction.game);
     }
 

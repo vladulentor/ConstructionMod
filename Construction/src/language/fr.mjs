@@ -85,11 +85,11 @@ export const language = {
     'ITEM_NAME_Red_Dhide_Leather_Bands': 'Bandes en cuir de dragon rouge',
     'ITEM_NAME_Black_Dhide_Leather_Bands': 'Bandes en cuir de dragon noir',
 
-    'ITEM_NAME_Flower_Pots_Token_1': 'Pots de fleurs: Étage 1',
-    'ITEM_NAME_Flower_Pots_Token_2': 'Pots de fleurs: Étage 2',
-    'ITEM_NAME_Flower_Pots_Token_3': 'Pots de fleurs: Étage 3',
-    'ITEM_NAME_Flower_Pots_Token_4': 'Pots de fleurs: Étage 4',
-    'ITEM_NAME_Flower_Pots_Token_5': 'Pots de fleurs: Étage 5',
+    'ITEM_NAME_Flower_Pots_Token_1': 'Construisez des Pots de Fleurs de Niveau 1 en Construction pour les débloquer.',
+    'ITEM_NAME_Flower_Pots_Token_2': 'Construisez des Pots de Fleurs de Niveau 2 en Construction pour les débloquer.',
+    'ITEM_NAME_Flower_Pots_Token_3': 'Construisez des Pots de Fleurs de Niveau 3 en Construction pour les débloquer.',
+    'ITEM_NAME_Flower_Pots_Token_4': 'Construisez des Pots de Fleurs de Niveau 4 en Construction pour les débloquer.',
+    'ITEM_NAME_Flower_Pots_Token_5': 'Construisez des Pots de Fleurs de Niveau 5 en Construction pour les débloquer.',
 
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2% d\'XP de compétence de construction.<br><span class=\"text-warning\">Avec les quatre éléments de la tenue de constructeur équipés : + 8 % d\'XP de maîtrise de la construction.</span>',

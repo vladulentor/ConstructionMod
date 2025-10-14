@@ -202,7 +202,7 @@ class MyCurrencyCurrentIconElement extends InfoIconElement {
         this.toggleInvalidBorder(this.currentQuantity, requiredQuantity, requiredSmallQuant);
         this.quantity.textContent = formatNumber(this.currentQuantity);
     }
-        setInvalidBorder() {
+    setInvalidBorder() {
         this.container.classList.add('border-item-invalid');
     }
     removeInvalidBorder() {
@@ -319,7 +319,7 @@ class MyQuantityIconsElement extends HTMLElement {
                 parent: this
             });
             currencyIcon.setCurrency(currency, quantity, smallquant);
-            currencyIcon.updateBorder(currency,quantity,smallquant);
+            currencyIcon.updateBorder(currency, quantity, smallquant);
             this.currencies.push(currencyIcon);
         });
     }
@@ -345,15 +345,57 @@ class MyQuantityIconsElement extends HTMLElement {
      * @param recipe The recipe to create icons for
      * @param altMedia
      */
-    setIconsForRecipe(recipe, altMedia = false) {
+    setIconsForRecipe(recipe, game, altMedia = false) {
+        let redraw = false;
+        // 1️⃣ Build current player-owned snapshot
+        const currentPlayerItems = {};
+        for (const cost of recipe.itemCosts) {
+            currentPlayerItems[cost.item] = game.bank.getQty(cost.item);
+        }
+
+        const currentPlayerCurrencies = {};
+        for (const cost of recipe.currencyCosts) {
+            currentPlayerCurrencies[cost.currency] = game.playerCurrencies[cost.currency] ?? 0;
+        }
+
+        // 2️⃣ Check if recipe costs changed
+        if (!sameCosts(this.lastItemCosts, recipe.itemCosts) || !sameCosts(this.lastCurrencyCosts, recipe.currencyCosts)) {
+            redraw = true;
+        }
+
+        // 3️⃣ Check if player-owned items changed
+        if (!redraw) {
+            for (const key in currentPlayerItems) {
+                if ((this.lastPlayerItems?.[key] ?? -1) !== currentPlayerItems[key]) {
+                    redraw = true;
+                    break;
+                }
+            }
+        }
+
+        if (!redraw) {
+            for (const key in currentPlayerCurrencies) {
+                if ((this.lastPlayerCurrencies?.[key] ?? -1) !== currentPlayerCurrencies[key]) {
+                    redraw = true;
+                    break;
+                }
+            }
+        }
+
+        // 4️⃣ If nothing changed, skip redraw
+        if (!redraw) return;
+
+        // 5️⃣ Cache everything at once (overwrite old values)
+        this.lastItemCosts = recipe.itemCosts;
+        this.lastCurrencyCosts = recipe.currencyCosts;
+        this.lastPlayerItems = currentPlayerItems;
+        this.lastPlayerCurrencies = currentPlayerCurrencies;
+        this.lastAltMedia = altMedia;
+
+        // 6️⃣ Redraw icons
         this.removeIcons();
-        this.addItemIcons(recipe.itemCosts, true, altMedia);
+        this.addItemIcons(recipe.itemCosts, game, true, altMedia);
         this.addCurrencyIcons(recipe.currencyCosts);
-    }
-    setIcons(items, currencies, altMedia = false) {
-        this.removeIcons();
-        this.addItemIcons(items, true, altMedia);
-        this.addCurrencyIcons(currencies);
     }
     /**
      * Updates the borders of the Item and Currency icons based on if they can be afforded
@@ -383,7 +425,18 @@ function tripleCostArray(itemsMap) {
     });
     return costArray;
 }
-
+function sameCosts(a, b) {
+    if (!a || !b || a.length !== b.length) return false;
+    for (let i = 0; i < a.length; i++) {
+        const A = a[i], B = b[i];
+        if (
+            A.item !== B.item ||
+            A.quantity !== B.quantity ||
+            A.smallquant !== B.smallquant
+        ) return false;
+    }
+    return true;
+}
 class MyCurrentQuantityIconsElement extends HTMLElement {
     constructor() {
         super();
@@ -457,6 +510,53 @@ class MyCurrentQuantityIconsElement extends HTMLElement {
      * @param altMedia
      */
     setIconsForRecipe(recipe, game, altMedia = false) {
+        let redraw = false;
+        // 1️⃣ Build current player-owned snapshot
+        const currentPlayerItems = {};
+        for (const cost of recipe.itemCosts) {
+            currentPlayerItems[cost.item] = game.bank.getQty(cost.item);
+        }
+
+        const currentPlayerCurrencies = {};
+        for (const cost of recipe.currencyCosts) {
+            currentPlayerCurrencies[cost.currency] = game.playerCurrencies[cost.currency] ?? 0;
+        }
+
+        // 2️⃣ Check if recipe costs changed
+        if (!sameCosts(this.lastItemCosts, recipe.itemCosts) || !sameCosts(this.lastCurrencyCosts, recipe.currencyCosts)) {
+            redraw = true;
+        }
+
+        // 3️⃣ Check if player-owned items changed
+        if (!redraw) {
+            for (const key in currentPlayerItems) {
+                if ((this.lastPlayerItems?.[key] ?? -1) !== currentPlayerItems[key]) {
+                    redraw = true;
+                    break;
+                }
+            }
+        }
+
+        if (!redraw) {
+            for (const key in currentPlayerCurrencies) {
+                if ((this.lastPlayerCurrencies?.[key] ?? -1) !== currentPlayerCurrencies[key]) {
+                    redraw = true;
+                    break;
+                }
+            }
+        }
+
+        // 4️⃣ If nothing changed, skip redraw
+        if (!redraw) return;
+
+        // 5️⃣ Cache everything at once (overwrite old values)
+        this.lastItemCosts = recipe.itemCosts;
+        this.lastCurrencyCosts = recipe.currencyCosts;
+        this.lastPlayerItems = currentPlayerItems;
+        this.lastPlayerCurrencies = currentPlayerCurrencies;
+        this.lastAltMedia = altMedia;
+
+        // 6️⃣ Redraw icons
         this.removeIcons();
         this.addItemIcons(recipe.itemCosts, game, true, altMedia);
         this.addCurrencyIcons(recipe.currencyCosts);
@@ -499,13 +599,13 @@ export class RemainingBoxElement extends HTMLElement {
     setItems(items, currencies, altMedia = false) {
         this.icons.setIcons(items, currencies, altMedia);
     }
-    setItemsFromRecipe(recipe, altMedia = false) {
+    setItemsFromRecipe(recipe, game, altMedia = false) {
 
         if (!this.icons) {
             console.warn('[setItemsFromRecipe] WARNING: this.icons is undefined or null — cannot set icons for recipe');
             return;
         }
-        this.icons.setIconsForRecipe(recipe, altMedia);
+        this.icons.setIconsForRecipe(recipe, game, altMedia);
     }
     setItemsFromCosts(costs, altMedia = false) {
         this.setItems(costs.getItemQuantityArray(), costs.getCurrencyQuantityArray(), altMedia);

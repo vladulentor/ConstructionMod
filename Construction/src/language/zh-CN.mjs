@@ -84,11 +84,11 @@ export const language = {
     'ITEM_NAME_Red_Dhide_Leather_Bands': '红色龙皮皮革带',
     'ITEM_NAME_Black_Dhide_Leather_Bands': '黑色龙皮皮革带',
 
-    'ITEM_NAME_Flower_Pots_Token_1': '花盆: 层 1',
-    'ITEM_NAME_Flower_Pots_Token_2': '花盆: 层 2',
-    'ITEM_NAME_Flower_Pots_Token_3': '花盆: 层 3',
-    'ITEM_NAME_Flower_Pots_Token_4': '花盆: 层 4',
-    'ITEM_NAME_Flower_Pots_Token_5': '花盆: 层 5',
+    'ITEM_NAME_Flower_Pots_Token_1': '在建造中建造花盆等级1以解锁。',
+    'ITEM_NAME_Flower_Pots_Token_2': '在建造中建造花盆等级2以解锁。',
+    'ITEM_NAME_Flower_Pots_Token_3': '在建造中建造花盆等级3以解锁。',
+    'ITEM_NAME_Flower_Pots_Token_4': '在建造中建造花盆等级4以解锁。',
+    'ITEM_NAME_Flower_Pots_Token_5': '在建造中建造花盆等级5以解锁。',
 
 
     'ITEM_DESCRIPTION_Builders_Hat': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',

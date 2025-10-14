@@ -14,10 +14,10 @@
           "rielkConstruction:Construction"
         ],
         "action": "rielkConstruction:Construction",
-        "sidebarItem":{
-          "categoryID":"Non-Combat",
-          "after":"melvorD:Runecrafting",
-          "before":"melvorD:Herblore"
+        "sidebarItem": {
+          "categoryID": "Non-Combat",
+          "after": "melvorD:Runecrafting",
+          "before": "melvorD:Herblore"
         }
       }
     ],
@@ -514,15 +514,20 @@
     "shopPurchases": [
       {
         "id": "Iron_Saw",
-        "media": "assets/shopupgrades/iron_saw.png",
+        "media": "assets/shoppurchases/iron_saw.png",
         "category": "melvorD:SkillUpgrades",
         "contains": {
           "items": [],
           "modifiers": {
-            "additionalPrimaryProductChance": [
+            "skillInterval": [
               {
                 "skillID": "rielkConstruction:Construction",
-                "value": 10
+                "value": -5
+              }
+            ],
+            "rielkConstruction:skillEfficiencyPotency": [
+              {
+                "value": 0.2
               }
             ]
           }
@@ -533,12 +538,57 @@
             {
               "currency": "melvorD:GP",
               "type": "Fixed",
-              "cost": 250000
+              "cost": 50
             }
           ]
         },
         "allowQuantityPurchase": false,
         "unlockRequirements": [],
+        "purchaseRequirements": [],
+        "defaultBuyLimit": 1,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false,
+        "customName": "Iron Saw",
+        "customDescription": "-5% Construction Interval for a total of -5% applied from your Saw."
+      },
+      {
+        "id": "Steel_Saw",
+        "media": "assets/shoppurchases/steel_saw.png",
+        "category": "melvorD:SkillUpgrades",
+        "contains": {
+          "items": [],
+          "modifiers": {
+            "skillInterval": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": -5
+              }
+            ],
+            "rielkConstruction:skillEfficiencyPotency": [
+              {
+                "value": 0.2
+              }
+            ]
+          }
+        },
+        "cost": {
+          "items": [],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 750
+            }
+          ]
+        },
+        "allowQuantityPurchase": false,
+        "unlockRequirements": [
+          {
+            "type": "ShopPurchase",
+            "purchaseID": "rielkConstruction:Iron_Saw",
+            "count": 1
+          }
+        ],
         "purchaseRequirements": [
           {
             "type": "SkillLevel",
@@ -549,7 +599,263 @@
         "defaultBuyLimit": 1,
         "buyLimitOverrides": [],
         "showBuyLimit": false,
-        "customName": "Super cool shit"
+        "customName": "Steel Saw",
+        "customDescription": "-5% Construction Interval for a total of -10% applied from your Saw."
+      },
+      {
+        "id": "Black_Saw",
+        "media": "assets/shoppurchases/black_saw.png",
+        "category": "melvorD:SkillUpgrades",
+        "contains": {
+          "items": [],
+          "modifiers": {
+            "skillInterval": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": -5
+              }
+            ],
+          "rielkConstruction:skillEfficiencyPotency": [
+              {
+                "value": 0.2
+              }
+            ]
+          }
+        },
+        "cost": {
+          "items": [],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 2500
+            }
+          ]
+        },
+        "allowQuantityPurchase": false,
+        "unlockRequirements": [
+          {
+            "type": "ShopPurchase",
+            "purchaseID": "rielkConstruction:Steel_Saw",
+            "count": 1
+          }
+        ],
+        "purchaseRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "rielkConstruction:Construction",
+            "level": 20
+          }
+        ],
+        "defaultBuyLimit": 1,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false,
+        "customName": "Black Saw",
+        "customDescription": "-5% Construction Interval for a total of -15% applied from your Saw."
+      },
+      {
+        "id": "Mithril_Saw",
+        "media": "assets/shoppurchases/mithril_saw.png",
+        "category": "melvorD:SkillUpgrades",
+        "contains": {
+          "items": [],
+          "modifiers": {
+            "skillInterval": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": -5
+              }
+            ],
+          "rielkConstruction:skillEfficiencyPotency": [
+              {
+                "value": 0.2
+              }
+            ]
+          }
+        },
+        "cost": {
+          "items": [],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 10000
+            }
+          ]
+        },
+        "allowQuantityPurchase": false,
+        "unlockRequirements": [
+          {
+            "type": "ShopPurchase",
+            "purchaseID": "rielkConstruction:Black_Saw",
+            "count": 1
+          }
+        ],
+        "purchaseRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "rielkConstruction:Construction",
+            "level": 35
+          }
+        ],
+        "defaultBuyLimit": 1,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false,
+        "customName": "Mithril Saw",
+        "customDescription": "-5% Construction Interval for a total of -20% applied from your Saw."
+      },
+      {
+        "id": "Adamant_Saw",
+        "media": "assets/shoppurchases/adamant_saw.png",
+        "category": "melvorD:SkillUpgrades",
+        "contains": {
+          "items": [],
+          "modifiers": {
+            "skillInterval": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": -5
+              }
+            ],
+       "rielkConstruction:skillEfficiencyPotency": [
+              {
+                "value": 0.2
+              }
+            ]
+          }
+        },
+        "cost": {
+          "items": [],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 50000
+            }
+          ]
+        },
+        "allowQuantityPurchase": false,
+        "unlockRequirements": [
+          {
+            "type": "ShopPurchase",
+            "purchaseID": "rielkConstruction:Mithril_Saw",
+            "count": 1
+          }
+        ],
+        "purchaseRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "rielkConstruction:Construction",
+            "level": 50
+          }
+        ],
+        "defaultBuyLimit": 1,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false,
+        "customName": "Adamant Saw",
+        "customDescription": "-5% Construction Interval for a total of -25% applied from your Saw."
+      },
+      {
+        "id": "Rune_Saw",
+        "media": "assets/shoppurchases/rune_saw.png",
+        "category": "melvorD:SkillUpgrades",
+        "contains": {
+          "items": [],
+          "modifiers": {
+            "skillInterval": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": -5
+              }
+            ],
+           "rielkConstruction:skillEfficiencyPotency": [
+              {
+                "value": 0.2
+              }
+            ]
+          }
+        },
+        "cost": {
+          "items": [],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 200000
+            }
+          ]
+        },
+        "allowQuantityPurchase": false,
+        "unlockRequirements": [
+          {
+            "type": "ShopPurchase",
+            "purchaseID": "rielkConstruction:Adamant_Saw",
+            "count": 1
+          }
+        ],
+        "purchaseRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "rielkConstruction:Construction",
+            "level": 60
+          }
+        ],
+        "defaultBuyLimit": 1,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false,
+        "customName": "Rune Saw",
+        "customDescription": "-5% Construction Interval for a total of -30% applied from your Saw."
+      },
+      {
+        "id": "Dragon_Saw",
+        "media": "assets/shoppurchases/dragon_saw.png",
+        "category": "melvorD:SkillUpgrades",
+        "contains": {
+          "items": [],
+          "modifiers": {
+            "skillInterval": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": -10
+              }
+            ],
+           "rielkConstruction:skillEfficiencyPotency": [
+              {
+                "value": 0.3
+              }
+            ]
+          }
+        },
+        "cost": {
+          "items": [],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 2000000
+            }
+          ]
+        },
+        "allowQuantityPurchase": false,
+        "unlockRequirements": [
+          {
+            "type": "ShopPurchase",
+            "purchaseID": "rielkConstruction:Rune_Saw",
+            "count": 1
+          }
+        ],
+        "purchaseRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "rielkConstruction:Construction",
+            "level": 80
+          }
+        ],
+        "defaultBuyLimit": 1,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false,
+        "customName": "Dragon Saw",
+        "customDescription": "-5% Construction Interval for a total of -35% applied from your Saw."
       },
       {
         "id": "Construction_Skillcape",
@@ -744,12 +1050,30 @@
         "showBuyLimit": false
       }
     ],
+    "shopUpgradeChains": [
+      {
+        "id": "Saw",
+        "chainName": "Current Saw",
+        "rootUpgradeID": "rielkConstruction:Dragon_Saw",
+        "defaultName": "Bronze Saw",
+        "defaultDescription": "No bonuses.",
+        "chainNameLang": "MENU_TEXT_CURRENT_SAW",
+        "defaultNameLang": "MISC_STRING_BRONZE_SAW",
+        "descriptionLang": "MENU_TEXT_NO_BONUSES"
+      }
+    ],
     "shopDisplayOrder": [
       {
-        "insertAt": "After",
-        "afterID": "melvorD:Dragon_Pickaxe",
+        "insertAt": "Before",
+        "beforeID": "melvorD:Normal_Cooking_Fire",
         "ids": [
-          "rielkConstruction:Iron_Saw"
+          "rielkConstruction:Iron_Saw",
+          "rielkConstruction:Steel_Saw",
+          "rielkConstruction:Black_Saw",
+          "rielkConstruction:Mithril_Saw",
+          "rielkConstruction:Adamant_Saw",
+          "rielkConstruction:Rune_Saw",
+          "rielkConstruction:Dragon_Saw"
         ]
       },
       {
@@ -5492,6 +5816,9 @@
                 ]
               }
             }
+          ],
+          "headerUpgradeChains": [
+            "rielkConstruction:Saw"
           ]
         }
       }

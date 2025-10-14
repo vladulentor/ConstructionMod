@@ -106,11 +106,11 @@ export const language = {
     'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra materials or Progress made when completing extra actions when making ${categoryName}',
     'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra materials or Progress made when completing extra actions when making ${categoryName}',
 
-    'ITEM_NAME_Twice_Measured_Potion_I': 'Twice-Measured Potion I',
-    'ITEM_NAME_Twice_Measured_Potion_II': 'Twice-Measured Potion II',
-    'ITEM_NAME_Twice_Measured_Potion_III': 'Twice-Measured Potion III',
-    'ITEM_NAME_Twice_Measured_Potion_IV': 'Twice-Measured Potion IV',
-    'POTION_NAME_Twice_Measured_Potion': 'Twice-Measured Potion',
+    'ITEM_NAME_Twice_Measured_Potion_I': 'Twice-Measured Potion I 🛠',
+    'ITEM_NAME_Twice_Measured_Potion_II': 'Twice-Measured Potion II 🛠',
+    'ITEM_NAME_Twice_Measured_Potion_III': 'Twice-Measured Potion III 🛠',
+    'ITEM_NAME_Twice_Measured_Potion_IV': 'Twice-Measured Potion IV 🛠',
+    'POTION_NAME_Twice_Measured_Potion': 'Twice-Measured Potion 🛠',
 
     'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} extra Materials or Progress made when completing extra actions',
     'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} extra Materials or Progress made when completing extra actions',
@@ -140,8 +140,8 @@ export const language = {
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
 
-    'ENEMY_NAME_ConstructGiant':'Iron Giant',
-    'ENEMY_NAME_BarnRaiser':'Barn Raiser',
+    'ENEMY_NAME_ConstructGiant':'Iron Giant 🛠',
+    'ENEMY_NAME_BarnRaiser':'Barn Raiser 🛠',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Materials',
     'SKILL_CATEGORY_ Construction_ House': 'Furniture',

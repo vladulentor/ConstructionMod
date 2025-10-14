@@ -1294,7 +1294,6 @@
                 "flatSkillInterval": [
                   {
                     "skillID": "rielkConstruction:Construction",
-                    "realmID": "melvorD:Melvor",
                     "value": -350
                   }
                 ],

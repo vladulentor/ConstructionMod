@@ -65,6 +65,7 @@ export class ConstructionFixture extends RealmedObject {
     }
 
     getCurrentBuildRecipeCosts(construction, efficiency = 0) {
+        if (this.currentTier >= this.maxTier) {return;}
         const prevRatio = this.progress / this.currentRecipe.actionCost;
         const costMult = efficiency ? construction.getEfficiencyCostMultiplier(this.currentRecipe) : 1;
         const nextRatio = Math.min(1, (this.progress + costMult) / this.currentRecipe.actionCost);

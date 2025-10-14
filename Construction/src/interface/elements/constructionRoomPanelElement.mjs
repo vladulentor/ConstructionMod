@@ -131,7 +131,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.eyeIcon.classList.remove('fa-eye-slash');
         this.eyeIcon.classList.add('fa-eye');
         this.disabled = false;
-        if (this.selectedFixture) this.updateFixtureInfo(game.construction, this.selectedFixture);
+        if (this.selectedFixture) this.selectFixture(this.selectedFixture, this, game.construction);
     }
     updateFixturesForLevel(construction, room) {
         this.fixtureNavs.forEach((fixtureNav, fixture) => {
@@ -150,8 +150,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
         );
     }
     selectFixture(room, fixture, construction) {
-        if (!construction.ui.onFixturePanelSelection(fixture, room, construction))
-            return;
+        if (!fixture.recipes || !construction.ui.onFixturePanelSelection(fixture, room, construction)) return;
         this.selectedFixture = fixture;
         this.updateRoomInfo(construction);
 
@@ -210,9 +209,8 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.noneSelected = false;
         this.infoBoxName.textContent = fixture.name;
         this.infoBoxImage.src = fixture.media;
-        fixture.getCurrentBuildRecipeCosts(construction);
         const fixtureRecipe = fixture.currentRecipe;
-        if (fixtureRecipe == undefined || fixtureRecipe.level > construction.level) {
+        if (fixtureRecipe == undefined || fixture.tier >= fixture.maxTier || fixtureRecipe.level > construction.level) {
             hideElement(this.builtProgressContainer);
             hideElement(this.ingredientsContainer);
             hideElement(this.grantsContainer);
@@ -222,7 +220,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
 
             return;
         }
-
+        fixture.getCurrentBuildRecipeCosts(construction);
         requestAnimationFrame(() => {
             const detailWidth = parseFloat(getComputedStyle(this.extraDetailsContainer).width);
             this.setdetailscontainer(detailWidth);
@@ -287,7 +285,9 @@ class ConstructionRoomPanelElement extends HTMLElement {
 
         console.log("No changes detected; update skipped.");
         console.groupEnd();*/
-         this.haves.setItemsFromRecipe(fixture.UIcost, construction.game); // When I find a way to hook into any recipe updates taking away from the bank (or remember to) then that function WILL be worth it.
+        if (fixture.UIcost)
+        this.haves.setItemsFromRecipe(fixture.UIcost, construction.game); 
+    // When I find a way to hook into any recipe updates taking away from the bank (or remember to) then that function WILL be worth it.
     }
     updateCurrentFixtureItemIcons(construction, fixture) { //Working fixture's call.
         this.requires.setItemsFromRecipe(fixture.UIcost);

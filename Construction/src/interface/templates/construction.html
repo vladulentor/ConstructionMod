@@ -58,11 +58,12 @@
                     </h5>
                     <div class="col-12">
                       <div class="row icon-size-48" id="extra-details-container">
-                        <button class="btn btn-sm btn-info m-1 mt-3" style="min-height:44px; max-width:88px;" role="button" id="upgrades-button">
+                        <button class="btn btn-sm btn-info m-1 mt-3" style="min-height:44px; max-width:88px;"
+                          role="button" id="upgrades-button">
                           <rielk-lang-string lang-id="MENU_TEXT_SHOW_UPGRADES"></rielk-lang-string>
                         </button>
-                          <preservation-icon id="product-preservation"></preservation-icon>
-                          <efficiency-icon id="product-efficiency"></efficiency-icon>
+                        <preservation-icon id="product-preservation"></preservation-icon>
+                        <efficiency-icon id="product-efficiency"></efficiency-icon>
                       </div>
                     </div>
                   </div>
@@ -91,7 +92,8 @@
                 id="ingredients-container">
                 <div class="row no-gutters">
                   <remaining-box class="col-12 col-sm-6 pb-2 icon-size-48" id="remaining"></remaining-box>
-                  <remaining-haves-box class="col-12 col-sm-6 pb-2 icon-size-48" id="remaining-haves"></remaining-haves-box>
+                  <remaining-haves-box class="col-12 col-sm-6 pb-2 icon-size-48"
+                    id="remaining-haves"></remaining-haves-box>
                 </div>
               </div>
               <div class="col-12 block block-rounded-double bg-combat-inner-dark pt-2 pb-1 text-center"
@@ -164,7 +166,7 @@
 <template id="rielk-construction-modifier-display-template">
   <div class="media d-flex align-items-center push m-0 row gutters-tiny">
     <div class="m-1 font-w600">
-      <img class="skill-icon-sm mr-2" style="width: 45px; height: 45px;"" id="fixture-image">
+      <img class="skill-icon-sm mr-2" style="width: 45px; height: 45px;"" id=" fixture-image">
     </div>
     <div class="media-body">
       <div
@@ -316,13 +318,12 @@
   <h5 class="font-w400 font-size-sm mb-1 text-center text-info">
     <small id="future-1">
       <s>
-        <lang-string lang-id="MENU_TEXT_TOOLTIP_FUTURE_UPDATE">In a future update, you will be able to see where your
-          bonuses come from.</lang-string>
+        <lang-string lang-id="MENU_TEXT_TOOLTIP_FUTURE_UPDATE"></lang-string>
       </s>
     </small>
   </h5>
   <h5 id="future-2" class="font-w400 font-size-sm mb-1 text-center text-warning">
-    <lang-string lang-id="FUTURE_IS_NOW_OLD_MAN">The future is now, old man</lang-string>
+    <lang-string lang-id="FUTURE_IS_NOW_OLD_MAN"></lang-string>
   </h5>
   <div class="dropdown-divider"></div>
   <div class="d-flex gap-2 w-100 px-3">
@@ -336,21 +337,85 @@
 </template>
 
 <template id="tutorial-template-Construction">
-    <div id="tutorial-page-Construction" class="py-2 text-center">
-      <h2 class="h1 mb-2">
-        <img class="'m-2" height="64px">
-         Construction
-      </h2>
-        <h5 class="font-w400">Build up your <img  class="'m-2" height="24px"> <strong class="construction-success">House</strong> using resources gathered throughout different Skills</h5>
-        <h5 class="font-w400 mb-5">        <img  class="'m-2" height="24px"><strong>Construction</strong> is a great way to boost your long-term productivity</h5>
-      <div class="col-12">
-
+  <div id="tutorial-page-Construction" class="py-2 text-center">
+    <h2 class="h1 mb-2">
+      <img class="'m-2" height="64px">
+      Construction
+    </h2>
+    <h5 class="font-w400">Build up your <img class="'m-2" height="24px"> <strong
+        class="construction-success">House</strong> using resources gathered throughout different Skills</h5>
+    <h5 class="font-w400 mb-5"> <img class="'m-2" height="24px"><strong>Construction</strong> is a great way to boost
+      your long-term productivity</h5>
+    <div class="col-12">
+      <div class="row gutters-tiny">
+        <div class="col-md-6">
+          <div class="block-content">
+            <div class="py-2 text-left">
+              <h4 class="mb-2">Materials Needed</h4>
+            </div>
+            <div class="media d-flex align-items-center push">
+              <div class="mr-3">
+                <img class="m-2" height="48px">
+              </div>
+              <div class="media-body text-left">
+                <div class="font-w600">Planks</div>
+                <div class="font-w400 font-size-sm">
+                  Also used in some <img data-src="assets/media/skills/crafting/crafting.png" height="16px"> <strong>Crafting</strong> recipes.
+                </div>
+              </div>
+            </div>
+           <div class="media d-flex align-items-center push">
+              <div class="mr-3">
+                <img class="m-2" height="48px">
+              </div>
+              <div class="media-body text-left">
+                <div class="font-w600">Planks</div>
+                <div class="font-w400 font-size-sm">
+                  Also used in some  <img data-src="assets/media/skills/fletching/fletching.png" height="16px"> <strong>Fletching</strong> recipes.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="block-content block-content-full">
+            <div class="py-2 text-left">
+              <h4 class="mb-2">Resource Usage</h4>
+            </div>
+          <!--  <div class="media d-flex align-items-center push">
+              <div class="mr-3">
+                <img class="m-2" data-src="assets/items/nails_iron.png" height="48px">
+              </div>
+              <div class="media-body text-left">
+                <div class="font-w600">Materials</div>
+                <div class="font-w400 font-size-sm">
+                  Construction consumes resources such as <strong>Planks</strong> and <strong>Nails</strong> to build
+                  and upgrade fixtures.
+                </div>
+              </div>
+            </div>
+            We'll add this stuff in the big next update.
+            -->
+            <div class="media d-flex align-items-center push">
+              <div class="mr-3">
+                <img class="m-2" data-src="assets/media/main/logo.png" height="48px"
+                  src="https://cdn2-main.melvor.net/assets/media/main/logo.png">
+              </div>
+              <div class="media-body text-left">
+                <div class="font-w600">All Skills</div>
+                <div class="font-w400 font-size-sm">Construction buffs interact with every Skill within the game.</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-    <div id="tutorial-page-Construction-1" >
-        <h3>建設指南</h3>
-        <p>步驟1: 建造你的第一個房間...</p>
     </div>
+  </div>
+  </div>
+  <div id="tutorial-page-Construction-1">
+    <h3>建設指南</h3>
+    <p>步驟1: 建造你的第一個房間...</p>
+  </div>
 </template>
 
 <template id="remaining-box-template" data-image-init="true">

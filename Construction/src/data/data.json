@@ -8,12 +8,17 @@
         "media": "assets/icon.png",
         "containerID": "rielk-construction-container",
         "headerBgClass": "bg-rielk-construction",
-        "hasGameGuide": false,
+        "hasGameGuide": true,
         "canBeDefault": true,
         "skills": [
           "rielkConstruction:Construction"
         ],
-        "action": "rielkConstruction:Construction"
+        "action": "rielkConstruction:Construction",
+        "sidebarItem":{
+          "categoryID":"Non-Combat",
+          "after":"melvorD:Runecrafting",
+          "before":"melvorD:Herblore"
+        }
       }
     ],
     "items": [

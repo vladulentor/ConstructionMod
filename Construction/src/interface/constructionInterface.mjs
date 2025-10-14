@@ -52,10 +52,16 @@ export class ConstructionInterface {
         const guideContainer = document.querySelector('#modal-game-guide .block-content.block-content-full');
 
         const imgs = this.constrGuide.querySelectorAll('img');
-        //Too lazy to make this more lines, so here's the order: 0 cover image (constr icon), 1. house icon row 2, 2. Little icon on row 3 (contsruction icon)
-        imgs[0].src = game.construction.media;
-        imgs[1].src = this.constructionMasteryBar._image.src;
-        imgs[2].src = game.construction.media;
+        //I'll be damned if I take them by id way too much code to write down
+        imgs[0].src = game.construction.media; // cover image (constr icon) 
+        imgs[1].src = this.constructionMasteryBar._image.src; //house icon row 2, 
+        imgs[2].src = game.construction.media; // Little icon on row 3 (contsruction icon)
+        imgs[3].src = game.items.getObjectByID('rielkConstruction:Teak_Planks').media; //plank icon, this is the row of materials
+        // imgs [4] is a little crafting icon
+         imgs[5].src = game.items.getObjectByID('rielkConstruction:Mithril_Nails').media; //nails icon
+         //imgs [6] is a little fletching icon
+         //imgs [7] is the weird M icon for Melvor
+         //imgs [8]
         guideContainer.append(this.constrGuide);
     }
     

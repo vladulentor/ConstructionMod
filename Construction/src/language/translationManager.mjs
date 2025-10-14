@@ -136,4 +136,14 @@ export function patchTranslations(ctx) {
             return getRielkLangString(`ENEMY_NAME_${this.localID}`);
         return patch();
     });
+    ctx.patch(ShopUpgradeChain, 'chainName').get(function (patch) {
+        if(this.namespace === 'rielkConstruction')
+            return getRielkLangString(`MENU_TEXT_${this.localID}`);
+        return patch();
+    });
+        ctx.patch(ShopUpgradeChain, 'defaultName').get(function (patch) {
+        if(this.namespace === 'rielkConstruction')
+            return getRielkLangString(`MISC_TEXT_${this.localID}`);
+        return patch();
+    });
 }

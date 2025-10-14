@@ -22,7 +22,7 @@ export class Construction extends ArtisanSkill {
     constructor(namespace, game) {
         super(namespace, 'Construction', game, ConstructionRecipe.name);
         this._media = 'assets/icon.png';
-        this.baseInterval = 3000;
+        this.baseInterval = 4000;
         this.efficient = false;
         this.ui = undefined;
         this.categories = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionCategory');

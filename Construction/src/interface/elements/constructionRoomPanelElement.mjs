@@ -233,6 +233,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
     }
 
     updateFixtureInfo(construction, fixture) {
+        if (fixture.currentTier == fixture.maxTier) return;
 
         const fixtureRecipe = fixture.currentRecipe;
         this.progress = fixture.percentProgress;
@@ -286,8 +287,8 @@ class ConstructionRoomPanelElement extends HTMLElement {
         console.log("No changes detected; update skipped.");
         console.groupEnd();*/
         if (fixture.UIcost)
-        this.haves.setItemsFromRecipe(fixture.UIcost, construction.game); 
-    // When I find a way to hook into any recipe updates taking away from the bank (or remember to) then that function WILL be worth it.
+            this.haves.setItemsFromRecipe(fixture.UIcost, construction.game);
+        // When I find a way to hook into any recipe updates taking away from the bank (or remember to) then that function WILL be worth it.
     }
     updateCurrentFixtureItemIcons(construction, fixture) { //Working fixture's call.
         this.requires.setItemsFromRecipe(fixture.UIcost);

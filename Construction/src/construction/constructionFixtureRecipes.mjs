@@ -93,6 +93,7 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
                 if (!document.querySelector('rielk-construction-upgrades-panel')?.classList.contains('d-none'))
                     this.skill.ui.showFixtureUnlocks(this.fixture.room, this.fixture, this.skill);
                 this.fixture.getCurrentBuildRecipeCosts(game.construction);
+                if(this.fixture.currentTier != this.fixture.maxTier)
                 this.skill.renderQueue.renderfixtureItemUpdates = true;
                 this.skill.renderQueue.menu = true;
                 return false;

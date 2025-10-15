@@ -1825,7 +1825,7 @@
             },
             {
               "id": "Oak_Planks",
-              "level": 5,
+              "level": 15,
               "spoofOrder": 2,
               "productID": "rielkConstruction:Oak_Planks",
               "baseQuantity": 2,
@@ -1842,7 +1842,7 @@
             {
               "id": "Teak_Planks",
               "spoofOrder": 7,
-              "level": 20,
+              "level": 35,
               "productID": "rielkConstruction:Teak_Planks",
               "baseQuantity": 2,
               "baseExperience": 20,
@@ -1858,7 +1858,7 @@
             {
               "id": "Mahogany_Planks",
               "spoofOrder": 8,
-              "level": 35,
+              "level": 55,
               "productID": "rielkConstruction:Mahogany_Planks",
               "baseQuantity": 2,
               "baseExperience": 25,
@@ -1906,7 +1906,7 @@
             {
               "id": "Steel_Nails",
               "spoofOrder": 11,
-              "level": 5,
+              "level": 20,
               "productID": "rielkConstruction:Steel_Nails",
               "baseQuantity": 5,
               "baseExperience": 8,
@@ -1922,7 +1922,7 @@
             {
               "id": "Mithril_Nails",
               "spoofOrder": 12,
-              "level": 20,
+              "level": 35,
               "productID": "rielkConstruction:Mithril_Nails",
               "baseQuantity": 5,
               "baseExperience": 20,
@@ -1938,7 +1938,7 @@
             {
               "id": "Adamantite_Nails",
               "spoofOrder": 17,
-              "level": 35,
+              "level": 55,
               "productID": "rielkConstruction:Adamantite_Nails",
               "baseQuantity": 5,
               "baseExperience": 25,

@@ -123,6 +123,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
         hideElement(this.infoContainer);
         this.eyeIcon.classList.remove('fa-eye');
         this.eyeIcon.classList.add('fa-eye-slash');
+        this.wasdisabled = this.disabled;
         this.disabled = true;
     }
     show() {
@@ -130,8 +131,8 @@ class ConstructionRoomPanelElement extends HTMLElement {
         showElement(this.infoContainer);
         this.eyeIcon.classList.remove('fa-eye-slash');
         this.eyeIcon.classList.add('fa-eye');
-        this.disabled = false;
-        if (this.selectedFixture) this.selectFixture(this.selectedFixture, this, game.construction);
+        this.disabled = this.wasdisabled;
+        if (this.selectedFixture) this.updateFixtureInfo(game.construction, this.selectedFixture);
     }
     updateFixturesForLevel(construction, room) {
         this.fixtureNavs.forEach((fixtureNav, fixture) => {
@@ -210,14 +211,14 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.infoBoxName.textContent = fixture.name;
         this.infoBoxImage.src = fixture.media;
         const fixtureRecipe = fixture.currentRecipe;
-        if (fixtureRecipe == undefined || fixture.tier >= fixture.maxTier || fixtureRecipe.level > construction.level) {
+        if (fixtureRecipe == undefined || fixtureRecipe.level > construction.level || fixture.currentTier>=fixture.maxTier) {
             hideElement(this.builtProgressContainer);
             hideElement(this.ingredientsContainer);
             hideElement(this.grantsContainer);
             hideElement(this.buildContainer);
             hideElement(this.productPreservation);
             hideElement(this.productEfficiency);
-
+            this.disabled = true;
             return;
         }
         fixture.getCurrentBuildRecipeCosts(construction);
@@ -225,6 +226,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
             const detailWidth = parseFloat(getComputedStyle(this.extraDetailsContainer).width);
             this.setdetailscontainer(detailWidth);
         });
+        this.disabled = false;
         this.grants.setSelected();
         this.grants.updateAbyssalGrants(Math.floor(construction.modifyAbyssalXP(fixtureRecipe.baseAbyssalExperience)), fixtureRecipe.baseAbyssalExperience);
         this.grants.setSources(construction, fixtureRecipe);
@@ -253,45 +255,12 @@ class ConstructionRoomPanelElement extends HTMLElement {
             construction.getEfficiencyChancePotencySources(fixtureRecipe), "build");
     }
 
-    updateFixtureItemIcons(construction, fixture) {
-        /*console.log(construction.activeBuildRecipe.fixture.stepCost);
-        console.log(fixture.UIcost);
-        const itemsMap = construction.activeBuildRecipe.fixture.stepCost._items;
-        const currMap = construction.activeBuildRecipe.fixture.stepCost._currencies;
-
-        console.group(`Checking fixture ${fixture.id || fixture.name}`);
-
-        //item in UIcost exists in stepCost
-        for (const { item } of fixture.UIcost.itemCosts) {
-            if (itemsMap.has(item.id)) {
-                console.log(`Matching item found: ${item.name || item.id}`);
-                this.haves.setItemsFromRecipe(fixture.UIcost, construction.game);
-                console.groupEnd();
-                return;
-            }
-        }
-
-        // Check currencies
-        for (const { currency, remaining } of fixture.UIcost.currencyCosts) {
-            const newAmount = currMap.get(currency);
-            if (newAmount !== remaining) {
-                console.log(`Currency mismatch for "${currency}": UIcost=${remaining}, stepCost=${newAmount}`);
-                this.haves.setItemsFromRecipe(fixture.UIcost, construction.game);
-                console.groupEnd();
-                return;
-            } else {
-                console.log(`Currency matched for "${currency}": ${remaining}`);
-            }
-        }
-
-        console.log("No changes detected; update skipped.");
-        console.groupEnd();*/
-        if (fixture.UIcost)
-            this.haves.setItemsFromRecipe(fixture.UIcost, construction.game);
-        // When I find a way to hook into any recipe updates taking away from the bank (or remember to) then that function WILL be worth it.
+    updateFixtureItemIcons(construction) {
+         this.haves.setItemsFromRecipe(this.selectedFixture.UIcost, construction.game);
+         this.requires.setItemsFromRecipe(this.selectedFixture.UIcost, construction.game); 
     }
     updateCurrentFixtureItemIcons(construction, fixture) { //Working fixture's call.
-        this.requires.setItemsFromRecipe(fixture.UIcost);
+        this.requires.setItemsFromRecipe(fixture.UIcost, construction.game);
         this.haves.setItemsFromRecipe(fixture.UIcost, construction.game);
     }
 

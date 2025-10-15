@@ -5,6 +5,12 @@ This document lists all the changes and additions the Construction Mod makes to 
 Entries marked with [TotH] indicate Throne of the Herald changes.
 
 ---
+## Shop
+### New Purchases
+- Added the "Saw" items in the Skill Upgrades section. They work like the Axe, Fishing Rod, or Pickaxe tool chains, but for construction. They also increase Efficiency effects along with decreasing interval.
+### Changed Purchases
+- Axe, Fishing Rod, and Pickaxe all now also cost Planks and Nails along with their normal costs, to encourage the player to interact with the skill, or to get them from enemies' loot tables.
+---
 
 ## Combat
 ### New Enemies

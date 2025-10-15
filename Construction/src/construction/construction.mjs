@@ -22,7 +22,7 @@ export class Construction extends ArtisanSkill {
     constructor(namespace, game) {
         super(namespace, 'Construction', game, ConstructionRecipe.name);
         this._media = 'assets/icon.png';
-        this.baseInterval = 3000;
+        this.baseInterval = 4000;
         this.efficient = false;
         this.ui = undefined;
         this.categories = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionCategory');
@@ -401,6 +401,12 @@ export class Construction extends ArtisanSkill {
         super.onStop();
         this._actionMode = undefined;
     }
+
+    renderModifierChange() {
+        super.renderModifierChange();
+        this.renderQueue.menu = true;
+    }
+
     addProvidedStats() {
         super.addProvidedStats();
         this.fixtures.forEach((fixture) => {
@@ -722,6 +728,7 @@ export class Construction extends ArtisanSkill {
     }
     queueBankQuantityRender(item) {
         super.queueBankQuantityRender(item);
+        this.renderQueue.renderfixtureItemUpdates = true;
 
     }
 

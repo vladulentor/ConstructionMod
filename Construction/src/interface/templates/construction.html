@@ -58,11 +58,12 @@
                     </h5>
                     <div class="col-12">
                       <div class="row icon-size-48" id="extra-details-container">
-                        <button class="btn btn-sm btn-info m-1 mt-3" style="min-height:44px; max-width:88px;" role="button" id="upgrades-button">
+                        <button class="btn btn-sm btn-info m-1 mt-3" style="min-height:44px; max-width:88px;"
+                          role="button" id="upgrades-button">
                           <rielk-lang-string lang-id="MENU_TEXT_SHOW_UPGRADES"></rielk-lang-string>
                         </button>
-                          <preservation-icon id="product-preservation"></preservation-icon>
-                          <efficiency-icon id="product-efficiency"></efficiency-icon>
+                        <preservation-icon id="product-preservation"></preservation-icon>
+                        <efficiency-icon id="product-efficiency"></efficiency-icon>
                       </div>
                     </div>
                   </div>
@@ -91,7 +92,8 @@
                 id="ingredients-container">
                 <div class="row no-gutters">
                   <remaining-box class="col-12 col-sm-6 pb-2 icon-size-48" id="remaining"></remaining-box>
-                  <remaining-haves-box class="col-12 col-sm-6 pb-2 icon-size-48" id="remaining-haves"></remaining-haves-box>
+                  <remaining-haves-box class="col-12 col-sm-6 pb-2 icon-size-48"
+                    id="remaining-haves"></remaining-haves-box>
                 </div>
               </div>
               <div class="col-12 block block-rounded-double bg-combat-inner-dark pt-2 pb-1 text-center"
@@ -164,7 +166,7 @@
 <template id="rielk-construction-modifier-display-template">
   <div class="media d-flex align-items-center push m-0 row gutters-tiny">
     <div class="m-1 font-w600">
-      <img class="skill-icon-sm mr-2" style="width: 45px; height: 45px;"" id="fixture-image">
+      <img class="skill-icon-sm mr-2" style="width: 45px; height: 45px;" id="fixture-image">
     </div>
     <div class="media-body">
       <div
@@ -316,13 +318,12 @@
   <h5 class="font-w400 font-size-sm mb-1 text-center text-info">
     <small id="future-1">
       <s>
-        <lang-string lang-id="MENU_TEXT_TOOLTIP_FUTURE_UPDATE">In a future update, you will be able to see where your
-          bonuses come from.</lang-string>
+        <lang-string lang-id="MENU_TEXT_TOOLTIP_FUTURE_UPDATE"></lang-string>
       </s>
     </small>
   </h5>
   <h5 id="future-2" class="font-w400 font-size-sm mb-1 text-center text-warning">
-    <lang-string lang-id="FUTURE_IS_NOW_OLD_MAN">The future is now, old man</lang-string>
+    <lang-string lang-id="FUTURE_IS_NOW_OLD_MAN"></lang-string>
   </h5>
   <div class="dropdown-divider"></div>
   <div class="d-flex gap-2 w-100 px-3">
@@ -336,21 +337,259 @@
 </template>
 
 <template id="tutorial-template-Construction">
-    <div id="tutorial-page-Construction" class="py-2 text-center">
-      <h2 class="h1 mb-2">
-        <img class="'m-2" height="64px">
-         Construction
-      </h2>
-        <h5 class="font-w400">Build up your <img  class="'m-2" height="24px"> <strong class="construction-success">House</strong> using resources gathered throughout different Skills</h5>
-        <h5 class="font-w400 mb-5">        <img  class="'m-2" height="24px"><strong>Construction</strong> is a great way to boost your long-term productivity</h5>
-      <div class="col-12">
+  <div id="tutorial-page-Construction" class="py-2 text-center">
+    <h2 class="h1 mb-2">
+      <img class="'m-2" height="64px">
+      Construction
+    </h2>
+    <h5 class="font-w400">Build up your<img class="m-2" height="24px"><strong
+        class="construction-success">House</strong> using resources gathered throughout different Skills</h5>
+    <h5 class="font-w400 mb-5"><img class="m-2" height="24px"><strong>Construction</strong> will give you increasing
+      bonuses as you progress through the game.</h5>
+    <div class="col-12">
+      <div class="row gutters-tiny">
+        <div class="col-md-6">
+          <div class="block-content">
+            <div class="py-2 text-left">
+              <h4 class="mb-2">Materials Needed</h4>
+            </div>
+            <div class="media d-flex align-items-center push">
+              <div class="mr-3">
+                <img class="m-2" height="48px">
+              </div>
+              <div class="media-body text-left">
+                <div class="font-w600">Planks</div>
+                <div class="font-w400 font-size-sm">
+                  Also (will be) used in some<img data-src="assets/media/skills/crafting/crafting.png" class="m-1" height="16px"><strong>Crafting</strong> recipes.
+                </div>
+              </div>
+            </div>
+            <div class="media d-flex align-items-center push">
+              <div class="mr-3">
+                <img class="m-2" height="48px">
+              </div>
+              <div class="media-body text-left">
+                <div class="font-w600">Planks</div>
+                <div class="font-w400 font-size-sm">
+                  Also (will be) used in some<img data-src="assets/media/skills/ranged/ranged.png" class="m-1" height="16px"><strong>Arrow</strong> recipes.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="block-content block-content-full">
+            <div class="py-2 text-left">
+              <h4 class="mb-2">Skill Interactions</h4>
+            </div>
+            <!--  <div class="media d-flex align-items-center push">
+              <div class="mr-3">
+                <img class="m-2" data-src="assets/items/nails_iron.png" height="48px">
+              </div>
+              <div class="media-body text-left">
+                <div class="font-w600">Materials</div>
+                <div class="font-w400 font-size-sm">
+                  Construction consumes resources such as <strong>Planks</strong> and <strong>Nails</strong> to build
+                  and upgrade fixtures.
+                </div>
+              </div>
+            </div>
+            We'll add this stuff in the big next update.
+            -->
+            <div class="media d-flex align-items-center push">
+              <div class="mr-3">
+                <img class="m-2" data-src="assets/media/main/logo.png" height="48px"
+                  src="https://cdn2-main.melvor.net/assets/media/main/logo.png">
+              </div>
+              <div class="media-body text-left">
+                <div class="font-w600">All Skills</div>
+                <div class="font-w400 font-size-sm">The buffs provided by<img
+                    height="16px"class="m-1" ><strong>Construction</strong> interact with every Skill within the game.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
 
+          <div class="col-md-6">
+            <div class="block-content block-content-full p-0 text-left">
+              <div class="py-2 text-left">
+                <h4 class="mb-2">Extra Mechanics</h4>
+              </div>
+              <div class="block-content block-content-full text-left"> <img height="56px"
+                  style="float:left; margin:0 12px 0px 0;">
+                <div class="font-w600">Efficiency</div>
+                <div class="font-w400 font-size-sm mb-2">
+                  Only avaialble to Construction,<img height="16px" class="m-1">Efficiency multiplies the cost and output of an
+                  action.<br />
+                  <strong>Both</strong> the chance and amount of materials gotten when activating it can be
+                  increased.
+                </div>
+                <div class="font-w400 font-size-sm mb-2">
+                  When making<img height="16px"class="m-1">Materials, Efficiency is multiplicative of the result.<br />
+                  When making<img height="16px"class="m-1">Furniture, fractional bonuses are ignored.
+                </div>
+                <div class="font-w400 font-size-sm mb-2">
+                  <span class="text-warning">Increasing the bonus Materials / Progress of Efficiency will
+                    <strong>not</strong> increase action cost.</span>
+                </div>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="block-content block-content-full p-0 text-left">
+              <div class="py-2 text-left">
+                <h4 class="mb-2">&nbsp;</h4>
+              </div>
+              <div class="block-content block-content-full text-left">
+                <img height="56px" style="float:left; margin:0 12px 12px 0;">
+                <div class="font-w600">Your House</div>
+
+                <div class="font-w400 font-size-sm mb-2">
+                  Building and upgrading<img height="16px"class="m-1">Furniture will improve your<img height="16px"class="m-1">House's Tier, granting significant bonuses to Construction.
+                </div>
+
+                <div class="font-w400 font-size-sm mb-2">
+                  Once all the<img height="16px"class="m-1">Furniture in your House reaches a certain tier, your House's tier will
+                  increase.
+                </div>
+
+                <div class="font-w400 font-size-sm mb-2">
+                  Completing your House provides major rewards for the rest of the game and represents the ultimate goal
+                  of<img height="16px"class="m-1"><strong>Construction</strong>.
+                </div>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-content block-content-full text-left">
+          <h4 class="mb-2">Change Log</h4>
+          <div class="font-w400 font-size-sm mb-3">
+            Lists all updates and patch notes for the construction mod, barring bug fixes. This Change Log is only
+            available in the English version of the game.
+          </div>
+          <div style="max-height:300px; overflow-y:auto;">
+                <div class="font-w600 mb-1">v3.9</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Changed construction time to 4 seconds. Added purchasable Saw to decrease it. It, along with all other purchasable tools now cost nails and planks. Changed Construction's order in the skill menu. Added Game Guide and Change Log.
+            </div>
+                <div class="font-w600 mb-1">v3.8</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Rewrite of Item Icon logic and furniture cost logic, big performance improvements. If this update caused you a crash, sorry. Changed normal planks and iron nails' icons.
+            </div>
+                <div class="font-w600 mb-1">v3.7</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Added nails and planks to few base-game enemies' loot tables, changed to UI reordering on 1080p screens.
+            </div>
+             <div class="font-w600 mb-1">v3.6</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Added Barn Raiser and Iron Giant enemies. Added Construction bonuses to the Haemir star.
+            </div>
+             <div class="font-w600 mb-1 construction-victory">v3.5</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Removed doubling, added Efficiency. Changed House Tier, cape, workshop, toolbox, forge upgrades to instead increase Efficiency chance and effect. Added Herblor potion.
+            </div>
+             <div class="font-w600 mb-1">v3.4</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Upgrades look more like astrology's
+            </div>
+             <div class="font-w600 mb-1">v3.3</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Scroll positions remembered on clicking "back", yellow border to incomplete resources added. New Recipe UI. Better rendering logic.
+            </div>
+             <div class="font-w600 mb-1">v3.2</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - XP from materials decreased, from furniture increased. Furniture action cost greatly reduced.
+            </div>
+             <div class="font-w600 mb-1">v3.1</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Nerf to chest, changed "Cold Box" to Larder, nerf to Dragon statue cost. Icon reworks.
+            </div>
+             <div class="font-w600 mb-1 construction-victory">v3.0</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Removed Mastery entirely. Added the House Tier system instead. Along with all of its bonuses and new Pet.
+            </div>
+             <div class="font-w600 mb-1">v2.12</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Added Skill Boosts compatibility
+            </div>
+            <div class="font-w600 mb-1">v2.11</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Instead of per-action, building UI now shows resources needed in total. Changed Main developer.
+            </div>
+            <div class="font-w600 mb-1">v2.10</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Mastery log colour fixes, skill outfit icons revamped
+            </div>
+            <div class="font-w600 mb-1">v2.9</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Fixed language patcher to work in offline client, and fixed mastery count
+            </div>
+            <div class="font-w600 mb-1">v2.8</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Fixed UI bug with seeing wrong fixture's upgrades.
+            </div>
+            <div class="font-w600 mb-1">v2.7</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - 1.31 fixes.
+            </div>
+            <div class="font-w600 mb-1">v2.6</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Nerfed seed costs for Forest.
+            </div>
+            <div class="font-w600 mb-1">v2.5</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Made Skill caps work in standard mode and AR, both.
+            </div>
+            <div class="font-w600 mb-1">v2.4</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - The skill caps for Construction are now removed in standard mode.
+            </div>
+            <div class="font-w600 mb-1">v2.3</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Construction can now be unlocked from rolling in AR mode.
+            </div>
+              <div class="font-w600 mb-1">v2.2</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Changed media paths so Skillcape Tailer won't crash with the mod.
+            </div>
+              <div class="font-w600 mb-1">v2.1</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Tokens removed, now upgrading Flower Pots unlocks the farm plots directly.
+            </div>
+            <div class="font-w600 mb-1 construction-victory">v2.0</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Flower Pots changed to grant tokens, fixed harvgesting trees and added mastery to building furniture. More AR fixes and UI improvements.
+            </div>
+            <div class="font-w600 mb-1">v1.3</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - More Translations were added
+            </div>
+            <div class="font-w600 mb-1">v1.2</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Fix for crash when multiple realms were unlocked
+            </div>
+
+
+            <div class="font-w600 mb-1">v1.1</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Added some Translations, made mod start in Ancient Relics
+            </div>
+            <div class="font-w600 mb-1">v1.0</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Release!
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-    <div id="tutorial-page-Construction-1" >
-        <h3>建設指南</h3>
-        <p>步驟1: 建造你的第一個房間...</p>
     </div>
+  </div>
+  <div id="tutorial-page-Construction-1">
+    <h3>建設指南</h3>
+    <p>步驟1: 建造你的第一個房間...</p>
+  </div>
 </template>
 
 <template id="remaining-box-template" data-image-init="true">

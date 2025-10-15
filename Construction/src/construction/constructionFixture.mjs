@@ -79,7 +79,7 @@ export class ConstructionFixture extends RealmedObject {
             const prev = Math.floor(reducedtotal * prevRatio);
             const next = Math.floor(reducedtotal * nextRatio);
             const delta = next - prev;
-            const remaining = reducedtotal - prev;
+            const remaining = Math.max(0 , (reducedtotal - prev));
             remainingitems.push(remaining);
             if (delta > 0) actionItems.set(item, delta);
         });
@@ -89,7 +89,7 @@ export class ConstructionFixture extends RealmedObject {
             const prev = Math.floor(reducedtotal * prevRatio);
             const next = Math.floor(reducedtotal * nextRatio);
             const delta = next - prev;
-            const remaining = reducedtotal - prev;
+            const remaining = Math.max(0 , (reducedtotal - prev));
             remainingcurrencies.push(remaining);
             if (delta > 0) actionCurrencies.set(currency, delta);
         });

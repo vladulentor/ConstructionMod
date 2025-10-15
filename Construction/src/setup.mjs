@@ -84,13 +84,8 @@ class Setup {
                 skillBoostsCompatibility(ctx);
 
             }
-            /* if (this.modList.includes('[Myth] Combat Simulator')) {
-                 mod.api.mythCombatSimulator.registerNamespace('rielkConstruction');
-             }*/
 
         });
-        // this.ctx.onInterfaceAvailable(() => {
-        // });
-
+        
     }
 }

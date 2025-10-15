@@ -39,6 +39,23 @@ export const language = {
     'MENU_TOOLTIP_EFFICIENCY_COST': '消耗${cost}倍资源。',
     'MENU_EFFICIENCY_BASE': '基础',
     'SHOP_NAME_Construction_Skillcape': '建筑技能角',
+    'MISC_TEXT_Saw': '青铜锯',
+    'MENU_TEXT_Saw': '当前锯子',
+    'SHOP_NAME_Iron_Saw': '铁锯',
+    'SHOP_NAME_Steel_Saw': '钢锯',
+    'SHOP_NAME_Black_Saw': '黑锯',
+    'SHOP_NAME_Mithril_Saw': '秘银锯',
+    'SHOP_NAME_Adamant_Saw': '精金锯',
+    'SHOP_NAME_Rune_Saw': '符文锯',
+    'SHOP_NAME_Dragon_Saw': '龙锯',
+
+    'SHOP_DESCRIPTION_Iron_Saw': '建造间隔减少 5%（总计 -5%，由锯子提供）。完成额外动作时，获得额外材料或进度 +0.20（总计 +0.20，由锯子提供）。',
+    'SHOP_DESCRIPTION_Steel_Saw': '建造间隔减少 5%（总计 -10%，由锯子提供）。完成额外动作时，获得额外材料或进度 +0.20（总计 +0.40，由锯子提供）。',
+    'SHOP_DESCRIPTION_Black_Saw': '建造间隔减少 5%（总计 -15%，由锯子提供）。完成额外动作时，获得额外材料或进度 +0.20（总计 +0.60，由锯子提供）。',
+    'SHOP_DESCRIPTION_Mithril_Saw': '建造间隔减少 5%（总计 -20%，由锯子提供）。完成额外动作时，获得额外材料或进度 +0.20（总计 +0.80，由锯子提供）。',
+    'SHOP_DESCRIPTION_Adamant_Saw': '建造间隔减少 5%（总计 -25%，由锯子提供）。完成额外动作时，获得额外材料或进度 +0.20（总计 +1.00，由锯子提供）。',
+    'SHOP_DESCRIPTION_Rune_Saw': '建造间隔减少 5%（总计 -30%，由锯子提供）。完成额外动作时，获得额外材料或进度 +0.20（总计 +1.20，由锯子提供）。',
+    'SHOP_DESCRIPTION_Dragon_Saw': '建造间隔减少 10%（总计 -40%，由锯子提供）。完成额外动作时，获得额外材料或进度 +0.30（总计 +1.50，由锯子提供）。',
 
     'PET_NAME_ChuckTheForeman': '主管查克',
     'PET_NAME_Scoobs': '斯库布斯',
@@ -84,11 +101,11 @@ export const language = {
     'ITEM_NAME_Red_Dhide_Leather_Bands': '红色龙皮皮革带',
     'ITEM_NAME_Black_Dhide_Leather_Bands': '黑色龙皮皮革带',
 
-    'ITEM_NAME_Flower_Pots_Token_1': '花盆: 层 1',
-    'ITEM_NAME_Flower_Pots_Token_2': '花盆: 层 2',
-    'ITEM_NAME_Flower_Pots_Token_3': '花盆: 层 3',
-    'ITEM_NAME_Flower_Pots_Token_4': '花盆: 层 4',
-    'ITEM_NAME_Flower_Pots_Token_5': '花盆: 层 5',
+    'ITEM_NAME_Flower_Pots_Token_1': '在建造中建造花盆等级1以解锁。',
+    'ITEM_NAME_Flower_Pots_Token_2': '在建造中建造花盆等级2以解锁。',
+    'ITEM_NAME_Flower_Pots_Token_3': '在建造中建造花盆等级3以解锁。',
+    'ITEM_NAME_Flower_Pots_Token_4': '在建造中建造花盆等级4以解锁。',
+    'ITEM_NAME_Flower_Pots_Token_5': '在建造中建造花盆等级5以解锁。',
 
 
     'ITEM_DESCRIPTION_Builders_Hat': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
@@ -116,8 +133,8 @@ export const language = {
 
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收获时有机会在农业中重新获得树种',
-'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 动作和材料用于在建造中制造家具',
-'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 动作和材料用于在建造中制造家具',
+    'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 动作和材料用于在建造中制造家具',
+    'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 动作和材料用于在建造中制造家具',
     'MODIFIER_DATA_unlockPlot_1': '解锁农业中的菜地',
     'MODIFIER_DATA_unlockPlot_2': '解锁农业中的草药地',
     'MODIFIER_DATA_unlockPlot_3': '解锁农业中的菜地',

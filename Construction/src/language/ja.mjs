@@ -39,6 +39,23 @@ export const language = {
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_10+': '一度に${potency}倍の進行を完了する可能性があります。',
     'MENU_TOOLTIP_EFFICIENCY_COST': '資源を${cost}倍消費します。',
     'SHOP_NAME_Construction_Skillcape': '建設スキルケープ',
+'MISC_TEXT_Saw': 'ブロンズのノコギリ',
+'MENU_TEXT_Saw': '現在のノコギリ',
+'SHOP_NAME_Iron_Saw': '鉄のノコギリ',
+'SHOP_NAME_Steel_Saw': '鋼のノコギリ',
+'SHOP_NAME_Black_Saw': '黒のノコギリ',
+'SHOP_NAME_Mithril_Saw': 'ミスリルのノコギリ',
+'SHOP_NAME_Adamant_Saw': 'アダマンのノコギリ',
+'SHOP_NAME_Rune_Saw': 'ルーンのノコギリ',
+'SHOP_NAME_Dragon_Saw': 'ドラゴンのノコギリ',
+
+'SHOP_DESCRIPTION_Iron_Saw': '建設時間間隔を5%短縮（合計 -5%）。追加行動を完了した際に、追加素材または進行度を+0.20獲得（合計 +0.20、ノコギリによる効果）。',
+'SHOP_DESCRIPTION_Steel_Saw': '建設時間間隔を5%短縮（合計 -10%）。追加行動を完了した際に、追加素材または進行度を+0.20獲得（合計 +0.40、ノコギリによる効果）。',
+'SHOP_DESCRIPTION_Black_Saw': '建設時間間隔を5%短縮（合計 -15%）。追加行動を完了した際に、追加素材または進行度を+0.20獲得（合計 +0.60、ノコギリによる効果）。',
+'SHOP_DESCRIPTION_Mithril_Saw': '建設時間間隔を5%短縮（合計 -20%）。追加行動を完了した際に、追加素材または進行度を+0.20獲得（合計 +0.80、ノコギリによる効果）。',
+'SHOP_DESCRIPTION_Adamant_Saw': '建設時間間隔を5%短縮（合計 -25%）。追加行動を完了した際に、追加素材または進行度を+0.20獲得（合計 +1.00、ノコギリによる効果）。',
+'SHOP_DESCRIPTION_Rune_Saw': '建設時間間隔を5%短縮（合計 -30%）。追加行動を完了した際に、追加素材または進行度を+0.20獲得（合計 +1.20、ノコギリによる効果）。',
+'SHOP_DESCRIPTION_Dragon_Saw': '建設時間間隔を10%短縮（合計 -40%）。追加行動を完了した際に、追加素材または進行度を+0.30獲得（合計 +1.50、ノコギリによる効果）。',
 
     'PET_NAME_ChuckTheForeman': 'チャック・ザ・フォアマン',
     'PET_NAME_Scoobs': 'スクーブス',
@@ -85,11 +102,11 @@ export const language = {
     'ITEM_NAME_Black_Dhide_Leather_Bands': '黒のドラゴンレザーのバンド',
 
 
-    'ITEM_NAME_Flower_Pots_Token_1': '植木鉢: 階層 1',
-    'ITEM_NAME_Flower_Pots_Token_2': '植木鉢: 階層 2',
-    'ITEM_NAME_Flower_Pots_Token_3': '植木鉢: 階層 3',
-    'ITEM_NAME_Flower_Pots_Token_4': '植木鉢: 階層 4',
-    'ITEM_NAME_Flower_Pots_Token_5': '植木鉢: 階層 5',
+    'ITEM_NAME_Flower_Pots_Token_1': '「建設」でフラワーポット第1段階を建ててアンロックします。',
+    'ITEM_NAME_Flower_Pots_Token_2': '「建設」でフラワーポット第2段階を建ててアンロックします。',
+    'ITEM_NAME_Flower_Pots_Token_3': '「建設」でフラワーポット第3段階を建ててアンロックします。',
+    'ITEM_NAME_Flower_Pots_Token_4': '「建設」でフラワーポット第4段階を建ててアンロックします。',
+    'ITEM_NAME_Flower_Pots_Token_5': '「建設」でフラワーポット第5段階を建ててアンロックします。',
 
 
     'ITEM_DESCRIPTION_Builders_Hat': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',

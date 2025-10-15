@@ -8,12 +8,17 @@
         "media": "assets/icon.png",
         "containerID": "rielk-construction-container",
         "headerBgClass": "bg-rielk-construction",
-        "hasGameGuide": false,
+        "hasGameGuide": true,
         "canBeDefault": true,
         "skills": [
           "rielkConstruction:Construction"
         ],
-        "action": "rielkConstruction:Construction"
+        "action": "rielkConstruction:Construction",
+        "sidebarItem": {
+          "categoryID": "Non-Combat",
+          "after": "melvorD:Crafting",
+          "before": "melvorD:Runecrafting"
+        }
       }
     ],
     "items": [
@@ -507,7 +512,414 @@
       }
     ],
     "shopPurchases": [
-    
+      {
+        "id": "Iron_Saw",
+        "media": "assets/shoppurchases/iron_saw.png",
+        "category": "melvorD:SkillUpgrades",
+        "contains": {
+          "items": [],
+          "modifiers": {
+            "skillInterval": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": -5
+              }
+            ],
+            "rielkConstruction:skillEfficiencyPotency": [
+              {
+                "value": 0.2
+              }
+            ]
+          }
+        },
+        "cost": {
+          "items": [
+            {
+              "id": "rielkConstruction:Normal_Planks",
+              "quantity": 10
+            },
+            {
+              "id": "rielkConstruction:Iron_Nails",
+              "quantity": 25
+            }
+          ],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 500
+            }
+          ]
+        },
+        "allowQuantityPurchase": false,
+        "unlockRequirements": [],
+        "purchaseRequirements": [],
+        "defaultBuyLimit": 1,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false,
+        "customName": "Iron Saw",
+        "customDescription": "-5% Construction Interval for a total of -5% applied from your Saw."
+      },
+      {
+        "id": "Steel_Saw",
+        "media": "assets/shoppurchases/steel_saw.png",
+        "category": "melvorD:SkillUpgrades",
+        "contains": {
+          "items": [],
+          "modifiers": {
+            "skillInterval": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": -5
+              }
+            ],
+            "rielkConstruction:skillEfficiencyPotency": [
+              {
+                "value": 0.2
+              }
+            ]
+          }
+        },
+        "cost": {
+          "items": [
+            {
+              "id": "rielkConstruction:Normal_Planks",
+              "quantity": 25
+            },
+            {
+              "id": "rielkConstruction:Steel_Nails",
+              "quantity": 50
+            }
+          ],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 5000
+            }
+          ]
+        },
+        "allowQuantityPurchase": false,
+        "unlockRequirements": [
+          {
+            "type": "ShopPurchase",
+            "purchaseID": "rielkConstruction:Iron_Saw",
+            "count": 1
+          }
+        ],
+        "purchaseRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "rielkConstruction:Construction",
+            "level": 10
+          }
+        ],
+        "defaultBuyLimit": 1,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false,
+        "customName": "Steel Saw",
+        "customDescription": "-5% Construction Interval for a total of -10% applied from your Saw."
+      },
+      {
+        "id": "Black_Saw",
+        "media": "assets/shoppurchases/black_saw.png",
+        "category": "melvorD:SkillUpgrades",
+        "contains": {
+          "items": [],
+          "modifiers": {
+            "skillInterval": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": -5
+              }
+            ],
+            "rielkConstruction:skillEfficiencyPotency": [
+              {
+                "value": 0.2
+              }
+            ]
+          }
+        },
+        "cost": {
+          "items": [
+            {
+              "id": "rielkConstruction:Oak_Planks",
+              "quantity": 75
+            },
+            {
+              "id": "rielkConstruction:Steel_Nails",
+              "quantity": 150
+            }
+          ],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 15000
+            }
+          ]
+        },
+        "allowQuantityPurchase": false,
+        "unlockRequirements": [
+          {
+            "type": "ShopPurchase",
+            "purchaseID": "rielkConstruction:Steel_Saw",
+            "count": 1
+          }
+        ],
+        "purchaseRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "rielkConstruction:Construction",
+            "level": 20
+          }
+        ],
+        "defaultBuyLimit": 1,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false,
+        "customName": "Black Saw",
+        "customDescription": "-5% Construction Interval for a total of -15% applied from your Saw."
+      },
+      {
+        "id": "Mithril_Saw",
+        "media": "assets/shoppurchases/mithril_saw.png",
+        "category": "melvorD:SkillUpgrades",
+        "contains": {
+          "items": [],
+          "modifiers": {
+            "skillInterval": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": -5
+              }
+            ],
+            "rielkConstruction:skillEfficiencyPotency": [
+              {
+                "value": 0.2
+              }
+            ]
+          }
+        },
+        "cost": {
+          "items": [
+            {
+              "id": "rielkConstruction:Teak_Planks",
+              "quantity": 150
+            },
+            {
+              "id": "rielkConstruction:Mithril_Nails",
+              "quantity": 250
+            }
+          ],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 75000
+            }
+          ]
+        },
+        "allowQuantityPurchase": false,
+        "unlockRequirements": [
+          {
+            "type": "ShopPurchase",
+            "purchaseID": "rielkConstruction:Black_Saw",
+            "count": 1
+          }
+        ],
+        "purchaseRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "rielkConstruction:Construction",
+            "level": 35
+          }
+        ],
+        "defaultBuyLimit": 1,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false,
+        "customName": "Mithril Saw",
+        "customDescription": "-5% Construction Interval for a total of -20% applied from your Saw."
+      },
+      {
+        "id": "Adamant_Saw",
+        "media": "assets/shoppurchases/adamant_saw.png",
+        "category": "melvorD:SkillUpgrades",
+        "contains": {
+          "items": [],
+          "modifiers": {
+            "skillInterval": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": -5
+              }
+            ],
+            "rielkConstruction:skillEfficiencyPotency": [
+              {
+                "value": 0.2
+              }
+            ]
+          }
+        },
+        "cost": {
+          "items": [
+            {
+              "id": "rielkConstruction:Teak_Planks",
+              "quantity": 350
+            },
+            {
+              "id": "rielkConstruction:Adamantite_Nails",
+              "quantity": 500
+            }
+          ],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 500000
+            }
+          ]
+        },
+        "allowQuantityPurchase": false,
+        "unlockRequirements": [
+          {
+            "type": "ShopPurchase",
+            "purchaseID": "rielkConstruction:Mithril_Saw",
+            "count": 1
+          }
+        ],
+        "purchaseRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "rielkConstruction:Construction",
+            "level": 50
+          }
+        ],
+        "defaultBuyLimit": 1,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false,
+        "customName": "Adamant Saw",
+        "customDescription": "-5% Construction Interval for a total of -25% applied from your Saw."
+      },
+      {
+        "id": "Rune_Saw",
+        "media": "assets/shoppurchases/rune_saw.png",
+        "category": "melvorD:SkillUpgrades",
+        "contains": {
+          "items": [],
+          "modifiers": {
+            "skillInterval": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": -5
+              }
+            ],
+            "rielkConstruction:skillEfficiencyPotency": [
+              {
+                "value": 0.2
+              }
+            ]
+          }
+        },
+        "cost": {
+          "items": [
+            {
+              "id": "rielkConstruction:Mahogany_Planks",
+              "quantity": 500
+            },
+            {
+              "id": "rielkConstruction:Adamantite_Nails",
+              "quantity": 1000
+            }
+          ],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 1500000
+            }
+          ]
+        },
+        "allowQuantityPurchase": false,
+        "unlockRequirements": [
+          {
+            "type": "ShopPurchase",
+            "purchaseID": "rielkConstruction:Adamant_Saw",
+            "count": 1
+          }
+        ],
+        "purchaseRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "rielkConstruction:Construction",
+            "level": 60
+          }
+        ],
+        "defaultBuyLimit": 1,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false,
+        "customName": "Rune Saw",
+        "customDescription": "-5% Construction Interval for a total of -30% applied from your Saw."
+      },
+      {
+        "id": "Dragon_Saw",
+        "media": "assets/shoppurchases/dragon_saw.png",
+        "category": "melvorD:SkillUpgrades",
+        "contains": {
+          "items": [],
+          "modifiers": {
+            "skillInterval": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": -10
+              }
+            ],
+            "rielkConstruction:skillEfficiencyPotency": [
+              {
+                "value": 0.3
+              }
+            ]
+          }
+        },
+        "cost": {
+          "items": [
+            {
+              "id": "rielkConstruction:Magic_Planks",
+              "quantity": 1000
+            },
+            {
+              "id": "rielkConstruction:Dragonite_Nails",
+              "quantity": 2000
+            }
+          ],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 10000000
+            }
+          ]
+        },
+        "allowQuantityPurchase": false,
+        "unlockRequirements": [
+          {
+            "type": "ShopPurchase",
+            "purchaseID": "rielkConstruction:Rune_Saw",
+            "count": 1
+          }
+        ],
+        "purchaseRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "rielkConstruction:Construction",
+            "level": 80
+          }
+        ],
+        "defaultBuyLimit": 1,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false,
+        "customName": "Dragon Saw",
+        "customDescription": "-5% Construction Interval for a total of -35% applied from your Saw."
+      },
       {
         "id": "Construction_Skillcape",
         "customName": "Construction Skillcape",
@@ -701,7 +1113,32 @@
         "showBuyLimit": false
       }
     ],
+    "shopUpgradeChains": [
+      {
+        "id": "Saw",
+        "chainName": "Current Saw",
+        "rootUpgradeID": "rielkConstruction:Dragon_Saw",
+        "defaultName": "Bronze Saw",
+        "defaultDescription": "No bonuses.",
+        "chainNameLang": "MENU_TEXT_CURRENT_SAW",
+        "defaultNameLang": "MISC_STRING_BRONZE_SAW",
+        "descriptionLang": "MENU_TEXT_NO_BONUSES"
+      }
+    ],
     "shopDisplayOrder": [
+      {
+        "insertAt": "Before",
+        "beforeID": "melvorD:Normal_Cooking_Fire",
+        "ids": [
+          "rielkConstruction:Iron_Saw",
+          "rielkConstruction:Steel_Saw",
+          "rielkConstruction:Black_Saw",
+          "rielkConstruction:Mithril_Saw",
+          "rielkConstruction:Adamant_Saw",
+          "rielkConstruction:Rune_Saw",
+          "rielkConstruction:Dragon_Saw"
+        ]
+      },
       {
         "insertAt": "After",
         "afterID": "melvorF:Astrology_Skillcape",
@@ -4681,7 +5118,7 @@
               "modifiers": {
                 "flatSkillInterval": [
                   {
-                    "value": -250,
+                    "value": -150,
                     "skillID": "rielkConstruction:Construction"
                   }
                 ],
@@ -4716,7 +5153,7 @@
               "modifiers": {
                 "flatSkillInterval": [
                   {
-                    "value": -500,
+                    "value": -250,
                     "skillID": "rielkConstruction:Construction"
                   }
                 ],
@@ -4762,7 +5199,7 @@
               "modifiers": {
                 "flatSkillInterval": [
                   {
-                    "value": -500,
+                    "value": -350,
                     "skillID": "rielkConstruction:Construction"
                   }
                 ],
@@ -4770,6 +5207,11 @@
                   {
                     "value": -5,
                     "skillID": "melvorD:Crafting"
+                  }
+                ],
+                                "rielkConstruction:skillEfficiencyCost": [
+                  {
+                    "value": -0.15
                   }
                 ],
                 "rielkConstruction:skillEfficiencyChance": [
@@ -5441,6 +5883,9 @@
                 ]
               }
             }
+          ],
+          "headerUpgradeChains": [
+            "rielkConstruction:Saw"
           ]
         }
       }
@@ -5597,6 +6042,1495 @@
     ]
   },
   "modifications": {
+    "shopPurchases": [
+      {
+        "id": "melvorD:Iron_Axe",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 5
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 10
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 50
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 5
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 10
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 50
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 5
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 10
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 50
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Steel_Axe",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 10
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 25
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 750
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 10
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 25
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 750
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 10
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 25
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 750
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Black_Axe",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 30
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 75
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2500
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 30
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 75
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2500
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 30
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 75
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2500
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Mithril_Axe",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 50
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 100
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 10000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 50
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 100
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 10000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 50
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 100
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 10000
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Adamant_Axe",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 150
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 300
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 50000
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 150
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 300
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 50000
+                }
+              ]
+            }
+          }, {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 150
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 300
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 50000
+                }
+              ]
+            }
+          }
+
+        ]
+      },
+      {
+        "id": "melvorD:Rune_Axe",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 250
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 750
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 200000
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 250
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 750
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 200000
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 250
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 750
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 200000
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Dragon_Axe",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Magic_Planks",
+                  "quantity": 500
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 1000
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2000000
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Magic_Planks",
+                  "quantity": 500
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 1000
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2000000
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Magic_Planks",
+                  "quantity": 500
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 1000
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2000000
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Iron_Fishing_Rod",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 12
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 10
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 100
+                }
+              ]
+            }
+          },
+            {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 12
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 10
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 100
+                }
+              ]
+            }
+          },
+            {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 12
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 10
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 100
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Steel_Fishing_Rod",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+              {
+              "id": "rielkConstruction:Normal_Planks",
+              "quantity": 20
+            },
+            {
+              "id": "rielkConstruction:Steel_Nails",
+              "quantity": 15
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 1000                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+              {
+              "id": "rielkConstruction:Normal_Planks",
+              "quantity": 20
+            },
+            {
+              "id": "rielkConstruction:Steel_Nails",
+              "quantity": 15
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 1000                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+              {
+              "id": "rielkConstruction:Normal_Planks",
+              "quantity": 20
+            },
+            {
+              "id": "rielkConstruction:Steel_Nails",
+              "quantity": 15
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 1000                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Black_Fishing_Rod",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+              "id": "rielkConstruction:Oak_Planks",
+              "quantity": 75
+            },
+            {
+              "id": "rielkConstruction:Steel_Nails",
+              "quantity": 50
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 5000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+              "id": "rielkConstruction:Oak_Planks",
+              "quantity": 75
+            },
+            {
+              "id": "rielkConstruction:Steel_Nails",
+              "quantity": 50
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 5000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+              "id": "rielkConstruction:Oak_Planks",
+              "quantity": 75
+            },
+            {
+              "id": "rielkConstruction:Steel_Nails",
+              "quantity": 50
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 5000
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Mithril_Fishing_Rod",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+               {
+              "id": "rielkConstruction:Teak_Planks",
+              "quantity": 150
+            },
+            {
+              "id": "rielkConstruction:Mithril_Nails",
+              "quantity": 100
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 20000
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+               {
+              "id": "rielkConstruction:Teak_Planks",
+              "quantity": 150
+            },
+            {
+              "id": "rielkConstruction:Mithril_Nails",
+              "quantity": 100
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 20000
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+               {
+              "id": "rielkConstruction:Teak_Planks",
+              "quantity": 150
+            },
+            {
+              "id": "rielkConstruction:Mithril_Nails",
+              "quantity": 100
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 20000
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Adamant_Fishing_Rod",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+              "id": "rielkConstruction:Teak_Planks",
+              "quantity": 350
+            },
+            {
+              "id": "rielkConstruction:Adamantite_Nails",
+              "quantity": 300
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 75000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+              "id": "rielkConstruction:Teak_Planks",
+              "quantity": 350
+            },
+            {
+              "id": "rielkConstruction:Adamantite_Nails",
+              "quantity": 300
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 75000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+              "id": "rielkConstruction:Teak_Planks",
+              "quantity": 350
+            },
+            {
+              "id": "rielkConstruction:Adamantite_Nails",
+              "quantity": 300
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 75000
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Rune_Fishing_Rod",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+               {
+              "id": "rielkConstruction:Mahogany_Planks",
+              "quantity": 750
+            },
+            {
+              "id": "rielkConstruction:Adamantite_Nails",
+              "quantity": 500
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 300000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+               {
+              "id": "rielkConstruction:Mahogany_Planks",
+              "quantity": 750
+            },
+            {
+              "id": "rielkConstruction:Adamantite_Nails",
+              "quantity": 500
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 300000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+               {
+              "id": "rielkConstruction:Mahogany_Planks",
+              "quantity": 750
+            },
+            {
+              "id": "rielkConstruction:Adamantite_Nails",
+              "quantity": 500
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 300000
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Dragon_Fishing_Rod",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+               {
+              "id": "rielkConstruction:Magic_Planks",
+              "quantity": 1500
+            },
+            {
+              "id": "rielkConstruction:Dragonite_Nails",
+              "quantity": 750
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2000000
+                }
+              ]
+            }
+          },
+            {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+               {
+              "id": "rielkConstruction:Magic_Planks",
+              "quantity": 1500
+            },
+            {
+              "id": "rielkConstruction:Dragonite_Nails",
+              "quantity": 750
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2000000
+                }
+              ]
+            }
+          },
+            {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+               {
+              "id": "rielkConstruction:Magic_Planks",
+              "quantity": 1500
+            },
+            {
+              "id": "rielkConstruction:Dragonite_Nails",
+              "quantity": 750
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2000000
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Iron_Pickaxe",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 7
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 20
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 250
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 7
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 20
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 250
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 7
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 20
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 250
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Steel_Pickaxe",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 20
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 35
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2000
+                }
+              ]
+            }
+          },
+            {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 20
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 35
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2000
+                }
+              ]
+            }
+          },
+            {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 20
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 35
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2000
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Black_Pickaxe",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 60
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 100
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 10000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 60
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 100
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 10000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 60
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 100
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 10000
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Mithril_Pickaxe",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 130
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 200
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 50000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 130
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 200
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 50000
+                }
+              ]
+            }
+          },{
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 130
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 200
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 50000
+                }
+              ]
+            }
+          }
+
+        ]
+      },
+      {
+        "id": "melvorD:Adamant_Pickaxe",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 250
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 400
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 200000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 250
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 400
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 200000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 250
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 400
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 200000
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Rune_Pickaxe",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 400
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 800
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 1000000
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 400
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 800
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 1000000
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 400
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 800
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 1000000
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "melvorD:Dragon_Pickaxe",
+        "cost": [
+          {
+            "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Magic_Planks",
+                  "quantity": 750
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 1500
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 5000000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Magic_Planks",
+                  "quantity": 750
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 1500
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 5000000
+                }
+              ]
+            }
+          },{
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Magic_Planks",
+                  "quantity": 750
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 1500
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 5000000
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
     "items": [
       {
         "id": "melvorF:Max_Skillcape",

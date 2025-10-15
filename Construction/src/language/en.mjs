@@ -38,7 +38,24 @@ export const language = {
     'MENU_TOOLTIP_EFFICIENCY_COST': 'Will spend ${cost} times the resources.',
     'MENU_EFFICIENCY_BASE': 'Base',
     'SHOP_NAME_Construction_Skillcape': 'Construction Skillcape',
-        'SHOP_NAME_Hammer_Saw': 'Hammer Saw',
+
+    'MISC_TEXT_Saw': 'Bronze Saw',
+    'MENU_TEXT_Saw': 'Current Saw',
+    'SHOP_NAME_Iron_Saw': 'Iron Saw',
+    'SHOP_NAME_Steel_Saw': 'Steel Saw',
+    'SHOP_NAME_Black_Saw': 'Black Saw',
+    'SHOP_NAME_Mithril_Saw': 'Mithril Saw',
+    'SHOP_NAME_Adamant_Saw': 'Adamant Saw',
+    'SHOP_NAME_Rune_Saw': 'Rune Saw',
+    'SHOP_NAME_Dragon_Saw': 'Dragon Saw',
+
+    'SHOP_DESCRIPTION_Iron_Saw': '-5% Construction Interval for a total of -5% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +0.20 from your Saw.',
+    'SHOP_DESCRIPTION_Steel_Saw': '-5% Construction Interval for a total of -10% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +0.40 from your Saw.',
+    'SHOP_DESCRIPTION_Black_Saw': '-5% Construction Interval for a total of -15% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +0.60 from your Saw.',
+    'SHOP_DESCRIPTION_Mithril_Saw': '-5% Construction Interval for a total of -20% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +0.80 from your Saw.',
+    'SHOP_DESCRIPTION_Adamant_Saw': '-5% Construction Interval for a total of -25% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +1 from your Saw.',
+    'SHOP_DESCRIPTION_Rune_Saw': '-5% Construction Interval for a total of -30% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +1.20 from your Saw.',
+    'SHOP_DESCRIPTION_Dragon_Saw': '-10% Construction Interval for a total of -40% applied from your Saw. +0.30 extra materials or progress when completing extra actions for a total of +1.50 from your Saw.',
 
 
     'PET_NAME_ChuckTheForeman': 'Chuck the Foreman',
@@ -86,11 +103,11 @@ export const language = {
     'ITEM_NAME_Black_Dhide_Leather_Bands': 'Black D-hide Leather Bands',
 
 
-    'ITEM_NAME_Flower_Pots_Token_1': 'Flower Pot: Tier 1',
-    'ITEM_NAME_Flower_Pots_Token_2': 'Flower Pot: Tier 2',
-    'ITEM_NAME_Flower_Pots_Token_3': 'Flower Pot: Tier 3',
-    'ITEM_NAME_Flower_Pots_Token_4': 'Flower Pot: Tier 4',
-    'ITEM_NAME_Flower_Pots_Token_5': 'Flower Pot: Tier 5',
+    'ITEM_NAME_Flower_Pots_Token_1': 'Build Flower Pots Tier 1 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_2': 'Build Flower Pots Tier 2 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_3': 'Build Flower Pots Tier 3 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_4': 'Build Flower Pots Tier 4 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_5': 'Build Flower Pots Tier 5 in Construction to unlock.',
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
     'ITEM_DESCRIPTION_Builders_Body': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
@@ -103,8 +120,8 @@ export const language = {
     'MODIFIER_DATA_increase_skillEfficiencyChance': '+${value}% chance to complete extra actions in Construction',
     'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '-${value}% chance to complete extra actions when making ${categoryName} in Construction',
     'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '+${value}% chance to complete extra actions when making ${categoryName} in Construction',
-    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra materials or Progress made when completing extra actions when making ${categoryName}',
-    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra materials or Progress made when completing extra actions when making ${categoryName}',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra Materials or Progress made when completing extra actions when making ${categoryName} in Construction',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra Materials or Progress made when completing extra actions while crafting ${categoryName} in Construction',
 
     'ITEM_NAME_Twice_Measured_Potion_I': 'Twice-Measured Potion I 🛠',
     'ITEM_NAME_Twice_Measured_Potion_II': 'Twice-Measured Potion II 🛠',

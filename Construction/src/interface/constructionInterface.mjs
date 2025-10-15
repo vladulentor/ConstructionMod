@@ -61,8 +61,17 @@ export class ConstructionInterface {
          imgs[5].src = game.items.getObjectByID('rielkConstruction:Mithril_Nails').media; //nails icon
          //imgs [6] is a little fletching icon
          //imgs [7] is the weird M icon for Melvor
-         //imgs [8]
-        guideContainer.append(this.constrGuide);
+         imgs[8].src = imgs[0].src; //construction icon in skill usage explanation
+        imgs[9].src = ctx.getResourceUrl('assets/efficiency.png'); //efficiency icon next to efficiency explanation.
+         imgs[10].src = imgs[8].src;//small efficiency icon next to efficiency explanation.
+          imgs[11].src = construction.categories.getObjectByID('rielkConstruction:Materials').media //materials icon in efficiecny explanation.
+           imgs[12].src = construction.categories.getObjectByID('rielkConstruction:House').media//furniture icon in efficiecny explanation.
+           imgs[13].src =imgs[1].src; // house explanation icon
+           imgs[14].src = imgs[11].src; // house furniture explanation
+           imgs[15].src = imgs[1].src; //little house icon in the house explanation
+            imgs[16].src = imgs[11].src; //other furniture logo in the house explanation
+            imgs[17].src = imgs[0].src; //construction icon at the very end
+         guideContainer.append(this.constrGuide);
     }
     
     switchConstructionCategory(category) {

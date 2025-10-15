@@ -254,40 +254,9 @@ class ConstructionRoomPanelElement extends HTMLElement {
             construction.getEfficiencyChancePotencySources(fixtureRecipe), "build");
     }
 
-    updateFixtureItemIcons(construction, fixture) {
-        /*console.log(construction.activeBuildRecipe.fixture.stepCost);
-        console.log(fixture.UIcost);
-        const itemsMap = construction.activeBuildRecipe.fixture.stepCost._items;
-        const currMap = construction.activeBuildRecipe.fixture.stepCost._currencies;
-
-        console.group(`Checking fixture ${fixture.id || fixture.name}`);
-
-        //item in UIcost exists in stepCost
-        for (const { item } of fixture.UIcost.itemCosts) {
-            if (itemsMap.has(item.id)) {
-                console.log(`Matching item found: ${item.name || item.id}`);
-                this.haves.setItemsFromRecipe(fixture.UIcost, construction.game);
-                console.groupEnd();
-                return;
-            }
-        }
-
-        // Check currencies
-        for (const { currency, remaining } of fixture.UIcost.currencyCosts) {
-            const newAmount = currMap.get(currency);
-            if (newAmount !== remaining) {
-                console.log(`Currency mismatch for "${currency}": UIcost=${remaining}, stepCost=${newAmount}`);
-                this.haves.setItemsFromRecipe(fixture.UIcost, construction.game);
-                console.groupEnd();
-                return;
-            } else {
-                console.log(`Currency matched for "${currency}": ${remaining}`);
-            }
-        }
-
-        console.log("No changes detected; update skipped.");
-        console.groupEnd();*/
-         this.haves.setItemsFromRecipe(fixture.UIcost, construction.game); // When I find a way to hook into any recipe updates taking away from the bank (or remember to) then that function WILL be worth it.
+    updateFixtureItemIcons(construction) {
+         this.haves.setItemsFromRecipe(this.selectedFixture.UIcost, construction.game);
+         this.requires.setItemsFromRecipe(this.selectedFixture.UIcost, construction.game); 
     }
     updateCurrentFixtureItemIcons(construction, fixture) { //Working fixture's call.
         this.requires.setItemsFromRecipe(fixture.UIcost, construction.game);

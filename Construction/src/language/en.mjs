@@ -39,27 +39,24 @@ export const language = {
     'MENU_EFFICIENCY_BASE': 'Base',
     'SHOP_NAME_Construction_Skillcape': 'Construction Skillcape',
 
-    'MISC_TEXT_Saw':'Bronze Saw',
-    'MENU_TEXT_Saw':'Current Saw',
+    'MISC_TEXT_Saw': 'Bronze Saw',
+    'MENU_TEXT_Saw': 'Current Saw',
     'SHOP_NAME_Iron_Saw': 'Iron Saw',
-    'SHOP_DESCRIPTION_Iron_Saw': '-5% Construction Interval for a total of -5% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +0.20 from your Saw.',
     'SHOP_NAME_Steel_Saw': 'Steel Saw',
-    'SHOP_DESCRIPTION_Steel_Saw': '-5% Construction Interval for a total of -10% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +0.40 from your Saw.',
-
     'SHOP_NAME_Black_Saw': 'Black Saw',
-    'SHOP_DESCRIPTION_Black_Saw': '-5% Construction Interval for a total of -15% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +0.60 from your Saw.',
-
     'SHOP_NAME_Mithril_Saw': 'Mithril Saw',
-    'SHOP_DESCRIPTION_Mithril_Saw': '-5% Construction Interval for a total of -20% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +0.80 from your Saw.',
-
     'SHOP_NAME_Adamant_Saw': 'Adamant Saw',
-    'SHOP_DESCRIPTION_Adamant_Saw': '-5% Construction Interval for a total of -25% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +1 from your Saw.',
-
     'SHOP_NAME_Rune_Saw': 'Rune Saw',
-    'SHOP_DESCRIPTION_Rune_Saw': '-5% Construction Interval for a total of -30% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +1.20 from your Saw.',
-
     'SHOP_NAME_Dragon_Saw': 'Dragon Saw',
+
+    'SHOP_DESCRIPTION_Iron_Saw': '-5% Construction Interval for a total of -5% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +0.20 from your Saw.',
+    'SHOP_DESCRIPTION_Steel_Saw': '-5% Construction Interval for a total of -10% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +0.40 from your Saw.',
+    'SHOP_DESCRIPTION_Black_Saw': '-5% Construction Interval for a total of -15% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +0.60 from your Saw.',
+    'SHOP_DESCRIPTION_Mithril_Saw': '-5% Construction Interval for a total of -20% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +0.80 from your Saw.',
+    'SHOP_DESCRIPTION_Adamant_Saw': '-5% Construction Interval for a total of -25% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +1 from your Saw.',
+    'SHOP_DESCRIPTION_Rune_Saw': '-5% Construction Interval for a total of -30% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +1.20 from your Saw.',
     'SHOP_DESCRIPTION_Dragon_Saw': '-10% Construction Interval for a total of -40% applied from your Saw. +0.30 extra materials or progress when completing extra actions for a total of +1.50 from your Saw.',
+
 
     'PET_NAME_ChuckTheForeman': 'Chuck the Foreman',
     'PET_NAME_Scoobs': 'Scoobs',

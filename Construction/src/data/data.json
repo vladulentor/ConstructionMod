@@ -16,8 +16,8 @@
         "action": "rielkConstruction:Construction",
         "sidebarItem": {
           "categoryID": "Non-Combat",
-          "after": "melvorD:Runecrafting",
-          "before": "melvorD:Herblore"
+          "after": "melvorD:Crafting",
+          "before": "melvorD:Runecrafting"
         }
       }
     ],

@@ -132,7 +132,7 @@ export class ConstructionHouseMenu {
     }
     updateFixtureItems(construction) {
         this.roomPanels.forEach((panel) => {
-            if (panel.selectedFixture && !panel.disabled && panel != this.roomPanels.get(construction?.selectedFixtureRecipe?.fixture.room)) {
+            if (panel.selectedFixture && panel.selectedFixture && !panel.disabled && panel != this.roomPanels.get(construction?.selectedFixtureRecipe?.fixture.room)) {
                 panel.updateFixtureItemIcons(construction);
             }
         })

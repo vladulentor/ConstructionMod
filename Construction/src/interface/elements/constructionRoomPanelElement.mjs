@@ -219,7 +219,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
             hideElement(this.buildContainer);
             hideElement(this.productPreservation);
             hideElement(this.productEfficiency);
-
+            this.disabled = true;
             return;
         }
 
@@ -227,6 +227,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
             const detailWidth = parseFloat(getComputedStyle(this.extraDetailsContainer).width);
             this.setdetailscontainer(detailWidth);
         });
+        this.disabled = false;
         this.grants.setSelected();
         this.grants.updateAbyssalGrants(Math.floor(construction.modifyAbyssalXP(fixtureRecipe.baseAbyssalExperience)), fixtureRecipe.baseAbyssalExperience);
         this.grants.setSources(construction, fixtureRecipe);

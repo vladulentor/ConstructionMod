@@ -6068,6 +6068,50 @@
                 }
               ]
             }
+          },
+           {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 5
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 10
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 50
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 5
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 10
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 50
+                }
+              ]
+            }
           }
         ]
       },
@@ -6076,6 +6120,50 @@
         "cost": [
           {
             "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 10
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 25
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 750
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 10
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 25
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 750
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
                 {
@@ -6122,6 +6210,50 @@
                 }
               ]
             }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 30
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 75
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2500
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 30
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 75
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2500
+                }
+              ]
+            }
           }
         ]
       },
@@ -6130,6 +6262,50 @@
         "cost": [
           {
             "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 50
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 100
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 10000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 50
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 100
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 10000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
                 {
@@ -6176,7 +6352,51 @@
                 }
               ]
             }
+          },
+           {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 150
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 300
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 50000
+                }
+              ]
+            }
+          }, {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 150
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 300
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 50000
+                }
+              ]
+            }
           }
+
         ]
       },
       {
@@ -6184,6 +6404,50 @@
         "cost": [
           {
             "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 250
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 750
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 200000
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 250
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 750
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 200000
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
                 {
@@ -6230,6 +6494,50 @@
                 }
               ]
             }
+          },
+           {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Magic_Planks",
+                  "quantity": 500
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 1000
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2000000
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Magic_Planks",
+                  "quantity": 500
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 1000
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2000000
+                }
+              ]
+            }
           }
         ]
       },
@@ -6238,6 +6546,50 @@
         "cost": [
           {
             "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 12
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 10
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 100
+                }
+              ]
+            }
+          },
+            {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 12
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 10
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 100
+                }
+              ]
+            }
+          },
+            {
+            "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
                 {
@@ -6283,6 +6635,48 @@
                   "cost": 1000                }
               ]
             }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+              {
+              "id": "rielkConstruction:Normal_Planks",
+              "quantity": 20
+            },
+            {
+              "id": "rielkConstruction:Steel_Nails",
+              "quantity": 15
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 1000                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+              {
+              "id": "rielkConstruction:Normal_Planks",
+              "quantity": 20
+            },
+            {
+              "id": "rielkConstruction:Steel_Nails",
+              "quantity": 15
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 1000                }
+              ]
+            }
           }
         ]
       },
@@ -6291,6 +6685,50 @@
         "cost": [
           {
             "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+              "id": "rielkConstruction:Oak_Planks",
+              "quantity": 75
+            },
+            {
+              "id": "rielkConstruction:Steel_Nails",
+              "quantity": 50
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 5000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+              "id": "rielkConstruction:Oak_Planks",
+              "quantity": 75
+            },
+            {
+              "id": "rielkConstruction:Steel_Nails",
+              "quantity": 50
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 5000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
                 {
@@ -6337,6 +6775,50 @@
                 }
               ]
             }
+          },
+           {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+               {
+              "id": "rielkConstruction:Teak_Planks",
+              "quantity": 150
+            },
+            {
+              "id": "rielkConstruction:Mithril_Nails",
+              "quantity": 100
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 20000
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+               {
+              "id": "rielkConstruction:Teak_Planks",
+              "quantity": 150
+            },
+            {
+              "id": "rielkConstruction:Mithril_Nails",
+              "quantity": 100
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 20000
+                }
+              ]
+            }
           }
         ]
       },
@@ -6345,6 +6827,50 @@
         "cost": [
           {
             "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+              "id": "rielkConstruction:Teak_Planks",
+              "quantity": 350
+            },
+            {
+              "id": "rielkConstruction:Adamantite_Nails",
+              "quantity": 300
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 75000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+              "id": "rielkConstruction:Teak_Planks",
+              "quantity": 350
+            },
+            {
+              "id": "rielkConstruction:Adamantite_Nails",
+              "quantity": 300
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 75000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
                 {
@@ -6391,6 +6917,50 @@
                 }
               ]
             }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+               {
+              "id": "rielkConstruction:Mahogany_Planks",
+              "quantity": 750
+            },
+            {
+              "id": "rielkConstruction:Adamantite_Nails",
+              "quantity": 500
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 300000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+               {
+              "id": "rielkConstruction:Mahogany_Planks",
+              "quantity": 750
+            },
+            {
+              "id": "rielkConstruction:Adamantite_Nails",
+              "quantity": 500
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 300000
+                }
+              ]
+            }
           }
         ]
       },
@@ -6399,6 +6969,50 @@
         "cost": [
           {
             "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+               {
+              "id": "rielkConstruction:Magic_Planks",
+              "quantity": 1500
+            },
+            {
+              "id": "rielkConstruction:Dragonite_Nails",
+              "quantity": 750
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2000000
+                }
+              ]
+            }
+          },
+            {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+               {
+              "id": "rielkConstruction:Magic_Planks",
+              "quantity": 1500
+            },
+            {
+              "id": "rielkConstruction:Dragonite_Nails",
+              "quantity": 750
+            }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2000000
+                }
+              ]
+            }
+          },
+            {
+            "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
                {
@@ -6445,6 +7059,50 @@
                 }
               ]
             }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 7
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 20
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 250
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 7
+                },
+                {
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 20
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 250
+                }
+              ]
+            }
           }
         ]
       },
@@ -6453,6 +7111,50 @@
         "cost": [
           {
             "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 20
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 35
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2000
+                }
+              ]
+            }
+          },
+            {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 20
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 35
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 2000
+                }
+              ]
+            }
+          },
+            {
+            "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
                 {
@@ -6499,6 +7201,50 @@
                 }
               ]
             }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 60
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 100
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 10000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 60
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 100
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 10000
+                }
+              ]
+            }
           }
         ]
       },
@@ -6526,7 +7272,51 @@
                 }
               ]
             }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 130
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 200
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 50000
+                }
+              ]
+            }
+          },{
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 130
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 200
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 50000
+                }
+              ]
+            }
           }
+
         ]
       },
       {
@@ -6534,6 +7324,50 @@
         "cost": [
           {
             "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 250
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 400
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 200000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 250
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 400
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 200000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
                 {
@@ -6580,6 +7414,50 @@
                 }
               ]
             }
+          },
+           {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 400
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 800
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 1000000
+                }
+              ]
+            }
+          },
+           {
+            "gamemodeID": "melvorF:Adventure",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 400
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 800
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 1000000
+                }
+              ]
+            }
           }
         ]
       },
@@ -6588,6 +7466,49 @@
         "cost": [
           {
             "gamemodeID": "melvorD:Standard",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Magic_Planks",
+                  "quantity": 750
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 1500
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 5000000
+                }
+              ]
+            }
+          },
+          {
+            "gamemodeID": "melvorF:Hardcore",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Magic_Planks",
+                  "quantity": 750
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 1500
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 5000000
+                }
+              ]
+            }
+          },{
+            "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
                 {

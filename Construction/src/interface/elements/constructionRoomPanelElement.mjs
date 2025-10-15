@@ -123,6 +123,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
         hideElement(this.infoContainer);
         this.eyeIcon.classList.remove('fa-eye');
         this.eyeIcon.classList.add('fa-eye-slash');
+        this.wasdisabled = this.disabled;
         this.disabled = true;
     }
     show() {
@@ -130,7 +131,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
         showElement(this.infoContainer);
         this.eyeIcon.classList.remove('fa-eye-slash');
         this.eyeIcon.classList.add('fa-eye');
-        this.disabled = false;
+        this.disabled = this.wasdisabled;
         if (this.selectedFixture) this.updateFixtureInfo(game.construction, this.selectedFixture);
     }
     updateFixturesForLevel(construction, room) {

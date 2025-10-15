@@ -5119,7 +5119,7 @@
               "modifiers": {
                 "flatSkillInterval": [
                   {
-                    "value": -250,
+                    "value": -150,
                     "skillID": "rielkConstruction:Construction"
                   }
                 ],
@@ -5154,7 +5154,7 @@
               "modifiers": {
                 "flatSkillInterval": [
                   {
-                    "value": -500,
+                    "value": -250,
                     "skillID": "rielkConstruction:Construction"
                   }
                 ],
@@ -5200,7 +5200,7 @@
               "modifiers": {
                 "flatSkillInterval": [
                   {
-                    "value": -500,
+                    "value": -350,
                     "skillID": "rielkConstruction:Construction"
                   }
                 ],
@@ -5208,6 +5208,11 @@
                   {
                     "value": -5,
                     "skillID": "melvorD:Crafting"
+                  }
+                ],
+                                "rielkConstruction:skillEfficiencyCost": [
+                  {
+                    "value": -0.15
                   }
                 ],
                 "rielkConstruction:skillEfficiencyChance": [

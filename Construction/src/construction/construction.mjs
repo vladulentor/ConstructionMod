@@ -401,6 +401,12 @@ export class Construction extends ArtisanSkill {
         super.onStop();
         this._actionMode = undefined;
     }
+
+    renderModifierChange() {
+        super.renderModifierChange();
+        this.renderQueue.menu = true;
+    }
+
     addProvidedStats() {
         super.addProvidedStats();
         this.fixtures.forEach((fixture) => {
@@ -722,6 +728,7 @@ export class Construction extends ArtisanSkill {
     }
     queueBankQuantityRender(item) {
         super.queueBankQuantityRender(item);
+        this.renderQueue.renderfixtureItemUpdates = true;
 
     }
 

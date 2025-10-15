@@ -27,6 +27,11 @@ body.darkMode.superDark .bg-rielk-construction
       color: #fca32f;       /* text color */
     font-weight: bold;   
 }
+.construction-victory {
+      color: #fca32f;       /* I like both names for it */
+    font-weight: bold;   
+}
+
 
 .border-item-danger {
   border: 1px solid #c09a49;

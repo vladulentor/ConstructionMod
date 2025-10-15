@@ -40,13 +40,6 @@ class MyItemQuantityIconElement extends ItemQuantityIconElement {
             qty = 0; // fallback so toggleInvalidBorder can still run
         }
 
-        console.log("updateBorder values:", {
-            item: this.itemQuantity.item,
-            qty,
-            requiredAll,
-            requiredSmall
-        });
-
         this.toggleInvalidBorder(qty, requiredAll, requiredSmall);
     }
 }
@@ -305,18 +298,12 @@ class MyQuantityIconsElement extends HTMLElement {
      * @param altMedia If the alternative media of items should be used
      */
     addItemIcons(items, game, allowQuickBuy, altMedia = false) {
-        console.log("addItemIcons called");
-        console.log("items:", items);
-        console.log("allowQuickBuy:", allowQuickBuy, "type:", typeof allowQuickBuy);
-        console.log("altMedia:", altMedia);
 
         items.forEach(({ item, quantity, smallquant }, i) => {
-            console.log(`Creating icon for item #${i}`, item, quantity, smallquant);
 
             const itemIcon = createElement('my-quantity-icon', { parent: this });
 
             // Defensive logging before setItem
-            console.log("Calling itemIcon.setItem with:", { item, quantity, smallquant, allowQuickBuy, altMedia });
             try {
                 itemIcon.setItem(item, quantity, smallquant, game, allowQuickBuy, altMedia);
             } catch (err) {
@@ -378,18 +365,16 @@ class MyQuantityIconsElement extends HTMLElement {
             const key = cost.item.id;
             currentPlayerItems[key] = game.bank.getQty(cost.item);
         }
-        console.log('Current player items:', currentPlayerItems);
 
         const currentPlayerCurrencies = {};
         for (const cost of recipe.currencyCosts) {
             const key = cost.currency._localID;            // string key for tracking/comparison
             currentPlayerCurrencies[key] = cost.currency.amount; // actual quantity
-        } console.log('Current player currencies:', currentPlayerCurrencies);
+        } 
 
         if (!sameCosts(this.lastItemCosts, recipe.itemCosts) || !sameCosts(this.lastCurrencyCosts, recipe.currencyCosts)) {
             redraw = true;
         }
-        console.log('Current player items:', currentPlayerItems);
         if (!redraw) {
             for (const key in currentPlayerItems) {
                 if ((this.lastPlayerItems?.[key] ?? -1) !== currentPlayerItems[key]) {

@@ -60,6 +60,7 @@ export const language = {
 
     'PET_NAME_ChuckTheForeman': 'Chuck the Foreman',
     'PET_NAME_Scoobs': 'Scoobs',
+    'PET_DESCRIPTION_Scoobs':"Reach House Tier 5",
 
     'ITEM_NAME_Construction_Skillcape': 'Construction Skillcape',
     'ITEM_NAME_Builders_Hat': 'Builders Hat',
@@ -112,7 +113,7 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Hat': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
     'ITEM_DESCRIPTION_Builders_Body': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
     'ITEM_DESCRIPTION_Builders_Leggings': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
-    'ITEM_DESCRIPTION_Builders_Boots': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
+    'ITEM_DESCRIPTION_fBuilders_Boots': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
 
     'TOAST_FIXTURE_COMPLETE': 'You\'ve finished building your ${fixtureName}!',
 
@@ -123,11 +124,11 @@ export const language = {
     'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra Materials or Progress made when completing extra actions when making ${categoryName} in Construction',
     'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra Materials or Progress made when completing extra actions while crafting ${categoryName} in Construction',
 
-    'ITEM_NAME_Twice_Measured_Potion_I': 'Twice-Measured Potion I 🛠',
-    'ITEM_NAME_Twice_Measured_Potion_II': 'Twice-Measured Potion II 🛠',
-    'ITEM_NAME_Twice_Measured_Potion_III': 'Twice-Measured Potion III 🛠',
-    'ITEM_NAME_Twice_Measured_Potion_IV': 'Twice-Measured Potion IV 🛠',
-    'POTION_NAME_Twice_Measured_Potion': 'Twice-Measured Potion 🛠',
+    'ITEM_NAME_Twice_Measured_Potion_I': 'Twice-Measured Potion I',
+    'ITEM_NAME_Twice_Measured_Potion_II': 'Twice-Measured Potion II',
+    'ITEM_NAME_Twice_Measured_Potion_III': 'Twice-Measured Potion III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': 'Twice-Measured Potion IV',
+    'POTION_NAME_Twice_Measured_Potion': 'Twice-Measured Potion',
 
     'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} extra Materials or Progress made when completing extra actions',
     'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} extra Materials or Progress made when completing extra actions',
@@ -157,8 +158,8 @@ export const language = {
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
 
-    'ENEMY_NAME_ConstructGiant':'Iron Giant 🛠',
-    'ENEMY_NAME_BarnRaiser':'Barn Raiser 🛠',
+    'ENEMY_NAME_ConstructGiant':'Iron Giant',
+    'ENEMY_NAME_BarnRaiser':'Barn Raiser',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Materials',
     'SKILL_CATEGORY_ Construction_ House': 'Furniture',

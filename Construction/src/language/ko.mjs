@@ -59,7 +59,9 @@ export const language = {
 
     'PET_NAME_ChuckTheForeman': '포어맨 척',
     'PET_NAME_Scoobs': '스쿱스',
-
+    'PET_DESCRIPTION_Scoobs': "집 5단계 도달",                    
+    
+    
     'ITEM_NAME_Construction_Skillcape': '건설 스킬케이프',
     'ITEM_NAME_Builders_Hat': '빌더 모자',
     'ITEM_NAME_Builders_Body': '빌더스 바디',

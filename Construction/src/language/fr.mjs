@@ -59,7 +59,7 @@ export const language = {
 
     'PET_NAME_ChuckTheForeman': 'Chuck le contremaître',
     'PET_NAME_Scoobs': 'Scoobs',
-
+    'PET_DESCRIPTION_Scoobs': "Atteindre Maison Niveau 5",  
 
     'ITEM_NAME_Construction_Skillcape': 'Cape de Chantier',
     'ITEM_NAME_Builders_Hat': 'Chapeau de constructeur',

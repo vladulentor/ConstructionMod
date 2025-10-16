@@ -58,7 +58,7 @@ export const language = {
 'SHOP_DESCRIPTION_Dragon_Saw': '-10 % Bauzeitintervall für insgesamt -40 % durch deine Säge. +0,30 zusätzliche Materialien oder Fortschritt beim Abschließen zusätzlicher Aktionen für insgesamt +1,50 durch deine Säge.',
     'PET_NAME_ChuckTheForeman': 'Chuck der Vorarbeiter',
     'PET_NAME_Scoobs': 'Scoobs',
-
+    'PET_DESCRIPTION_Scoobs': "Erreiche Haus Stufe 5",      
 
     'ITEM_NAME_Construction_Skillcape': 'Umhang der Konstruktion',
     'ITEM_NAME_Builders_Hat': 'Bauarbeiterhut',

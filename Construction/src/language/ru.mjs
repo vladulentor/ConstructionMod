@@ -58,7 +58,7 @@ export const language = {
 
     'PET_NAME_ChuckTheForeman': 'Чак бригадир',
     'PET_NAME_Scoobs': 'Скубс',
-
+    'PET_DESCRIPTION_Scoobs': "Достигнуть дома 5 уровня",   
     'ITEM_NAME_Construction_Skillcape': 'Плащ Мастера: Строительство',
     'ITEM_NAME_Builders_Hat': 'Шляпа строителя',
     'ITEM_NAME_Builders_Body': 'Жилет строителя',

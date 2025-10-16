@@ -213,6 +213,16 @@ export class Construction extends ArtisanSkill {
         });
         return nodes;
     }
+    getRareDropChance(level, chance) {
+        switch (chance.type) {
+            case 'Fixed':
+                return chance.chance;
+            case 'LevelScaling':
+                return cappedLinearFunction(chance.scalingFactor, chance.baseChance, chance.maxChance, level);
+            case 'TotalMasteryScaling':
+                return cappedLinearFunction(chance.scalingFactor, chance.baseChance, chance.maxChance, this.game.completion.masteryProgress.currentCount.getSum());
+        }
+    }
 
     queueMasteryBonusModal(bonus) {
         const modalBody = createElement('div', { className: 'justify-vertical-center' });
@@ -304,7 +314,7 @@ export class Construction extends ArtisanSkill {
 
     get hasMastery() { // We inspect the call stack to determine if we have mastery, this is so we can be in the mastery log without having a mastery bar.
         const stack = new Error().stack;
-        if (stack.includes('buildMasteryLog') || stack.includes('buildSkillsLog')) return true;
+        if (stack.includes('buildMasteryLog') || stack.includes('buildSkillsLog') || stack.includes('updateMasteryProgress')) return true;
         else return false;
     }
 
@@ -324,7 +334,15 @@ export class Construction extends ArtisanSkill {
         );
         this.rooms.forEach(room => room.sortFixtures());
     }
+   /* addTotalCurrentMasteryToCompletion(completion) {
 
+        this.fixtures.forEach(fixture => {
+            let totalTierLevel = fixture.currentTier * 5;
+            // Each fixture counts as one pseudo-action
+            const namespace = 'rielkConstruction';
+            completion.add(namespace, totalTierLevel);
+        });
+    }*/
     onRealmChange() {
         super.onRealmChange();
         this.renderQueue.roomRealmVisibility = true;
@@ -352,6 +370,9 @@ export class Construction extends ArtisanSkill {
     }
     renderProgressBar() {
         //handled by ui.render();
+    }
+    get masteryLevelCap() {
+        return 50;  //cloudManager.hasTotH later
     }
     renderRecipeInfo() {
         if (!this.renderQueue.recipeInfo)
@@ -756,6 +777,9 @@ export class Construction extends ArtisanSkill {
         this.popTierMasteries();
 
         this.render();
+        const pet = [...game.petManager.unlocked].find(p => p._localID === 'Scoobs');
+        if (this.tierMasteries.getObjectSafe('rielkConstruction:5').completed && !pet)  // note, this will eventually be removed in like, a month.
+            game.petManager.unlockPetByID('rielkConstruction:Scoobs');
     }
     resetActionState() {
         super.resetActionState();

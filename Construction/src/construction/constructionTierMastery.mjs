@@ -44,14 +44,19 @@ export class ConstructionTierMastery extends RealmedObject {
         if (this.completed) return;
         this.completed = true;
 
-
         // Grant item awards
         this.itemAwards.forEach(({ item, quantity }) => {
             game.bank.addItem(item, quantity, false, true, false, true, "TierMastery");
         });
         construction.computeProvidedStats(true);
-        if (game.modifiers) construction.queueMasteryBonusModal(this);
-        else ctx.onInterfaceReady( (ctx) => {
+        if (game.modifiers) {
+            construction.queueMasteryBonusModal(this);
+            if (this.tier == 5)
+                showFireworks();
+        }
+        if (this.pets)
+            this.pets.forEach((pet) => { game.petManager.unlockPet(pet); });
+        else ctx.onInterfaceReady((ctx) => {
             construction.queueMasteryBonusModal(this);
         });
         // Trigger UI refresh for the specific case of finishing a fixture with the menu open

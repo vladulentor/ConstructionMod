@@ -59,7 +59,7 @@ export const language = {
 
     'PET_NAME_ChuckTheForeman': 'チャック・ザ・フォアマン',
     'PET_NAME_Scoobs': 'スクーブス',
-
+    'PET_DESCRIPTION_Scoobs': "家のレベル5に到達",              
     'ITEM_NAME_Construction_Skillcape': '建設スキルケープ',
     'ITEM_NAME_Builders_Hat': 'ビルダーハット',
     'ITEM_NAME_Builders_Body': 'ビルダーボディ',

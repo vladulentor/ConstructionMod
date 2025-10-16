@@ -57,7 +57,7 @@ export const language = {
 
     'PET_NAME_ChuckTheForeman': '主管查克',
     'PET_NAME_Scoobs': '斯庫布斯',
-
+    'PET_DESCRIPTION_Scoobs': "達到房屋等級5",                 
     'ITEM_NAME_Construction_Skillcape': '建築技能角',
     'ITEM_NAME_Builders_Hat': '建築工人的帽子',
     'ITEM_NAME_Builders_Body': '建設者身體',

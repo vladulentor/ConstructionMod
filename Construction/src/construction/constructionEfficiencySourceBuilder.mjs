@@ -35,8 +35,14 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
 
             // Format as percentage
             const valueString = entry.modifier.formatValue(true, value, 2, true);
+            let displayName = entry.source.name;
+            if (displayName.startsWith('Twice-Measured Potion')) {
+                const match = displayName.match(/(I{1,3}|IV)$/);
+                const tier = match ? match[0] : '';
+                displayName = `Twc.Msd.${tier}`;
+            }
             this._chanceSpans.push(
-                createElement('span', { className: labelClass, text: `${entry.source.name}:` }),
+                createElement('span', { className: labelClass, text: `${displayName}:` }),
                 createElement('span', { className: valueClass, text: valueString })
             );
         });
@@ -51,7 +57,6 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
             let value = mult * entry.value;
             if (value === 0) return;
 
-            // Apply modifyValue if exists
             value = entry.modifier.modifyValue ? entry.modifier.modifyValue(value) : value;
 
             // Update potency total
@@ -60,12 +65,18 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
             const labelClass = 'text-info text-left col-8 pl-2';
             const valueClass = `${entry.modifier.inverted === value < 0 ? 'text-success' : 'text-danger'} col-4 text-center `;
 
-            // Format as flat +N
             const valueString = `+${Number.isInteger(value) ? value : value.toFixed(2)}`;
+            
+            let displayName = entry.source.name;
+            if (displayName.startsWith('Twice-Measured Potion')) {
+                const match = displayName.match(/(I{1,3}|IV)$/);
+                const tier = match ? match[0] : '';
+                displayName = `Twc.Msd.${tier}`;
+            }
 
             // Push spans
             this._potencySpans.push(
-                createElement('span', { className: labelClass, text: `${entry.source.name}:` }),
+                createElement('span', { className: labelClass, text: `${displayName}:` }),
                 createElement('span', { className: valueClass, text: valueString })
             );
         });

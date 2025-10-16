@@ -146,4 +146,9 @@ export function patchTranslations(ctx) {
             return getRielkLangString(`MISC_TEXT_${this.localID}`);
         return patch();
     });
+    ctx.patch(Pet, 'acquiredBy').get(function (patch) {
+        if(this._langHint !== undefined && this.namespace === 'rielkConstruction')
+            return getRielkLangString(`PET_DESCRIPTION_${this.localID}`);
+        return patch();
+    });
 }

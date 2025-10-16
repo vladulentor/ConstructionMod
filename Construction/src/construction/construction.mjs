@@ -334,15 +334,15 @@ export class Construction extends ArtisanSkill {
         );
         this.rooms.forEach(room => room.sortFixtures());
     }
-   /* addTotalCurrentMasteryToCompletion(completion) {
-
-        this.fixtures.forEach(fixture => {
-            let totalTierLevel = fixture.currentTier * 5;
-            // Each fixture counts as one pseudo-action
-            const namespace = 'rielkConstruction';
-            completion.add(namespace, totalTierLevel);
-        });
-    }*/
+    /* addTotalCurrentMasteryToCompletion(completion) {
+ 
+         this.fixtures.forEach(fixture => {
+             let totalTierLevel = fixture.currentTier * 5;
+             // Each fixture counts as one pseudo-action
+             const namespace = 'rielkConstruction';
+             completion.add(namespace, totalTierLevel);
+         });
+     }*/
     onRealmChange() {
         super.onRealmChange();
         this.renderQueue.roomRealmVisibility = true;
@@ -733,7 +733,12 @@ export class Construction extends ArtisanSkill {
         this.start();
 
     }
+    checkForScoobs() {
+        const pet = [...game.petManager.unlocked].find(p => p._localID === 'Scoobs');
+        if (this.tierMasteries.getObjectSafe('rielkConstruction:5').completed && !pet)  // note, this will eventually be removed in like, a month.
+            game.petManager.unlockPetByID('rielkConstruction:Scoobs');
 
+    }
     getRegistry(type) {
         switch (type) {
             case ScopeSourceType.Category:
@@ -777,9 +782,6 @@ export class Construction extends ArtisanSkill {
         this.popTierMasteries();
 
         this.render();
-        const pet = [...game.petManager.unlocked].find(p => p._localID === 'Scoobs');
-        if (this.tierMasteries.getObjectSafe('rielkConstruction:5').completed && !pet)  // note, this will eventually be removed in like, a month.
-            game.petManager.unlockPetByID('rielkConstruction:Scoobs');
     }
     resetActionState() {
         super.resetActionState();

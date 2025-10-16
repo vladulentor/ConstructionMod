@@ -1,6 +1,7 @@
 const { loadModule } = mod.getContext(import.meta);
 
 const { templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
+const ctx = mod.getContext(import.meta);
 
 
 class ConstructionFixtureNavElement extends HTMLElement {
@@ -11,6 +12,8 @@ class ConstructionFixtureNavElement extends HTMLElement {
         this.button = getElementFromFragment(this._content, 'button', 'a');
         this.buttonContent = getElementFromFragment(this._content, 'button-content', 'div');
         this.fixtureImage = getElementFromFragment(this._content, 'fixture-image', 'img');
+        this.sparkleImage = getElementFromFragment(this._content, 'sparkle-overlay', 'img');
+        this.sparkleImage.src = ctx.getResourceUrl('assets/efficiency.png')
         this.fixtureName = getElementFromFragment(this._content, 'fixture-name', 'span');
         this.constructionProgress = getElementFromFragment(this._content, 'construction-progress', 'small');
         this.unlock = getElementFromFragment(this._content, 'unlock', 'div');
@@ -22,6 +25,9 @@ class ConstructionFixtureNavElement extends HTMLElement {
     }
     setFixture(fixture, construction) {
         this.fixtureImage.src = fixture.media;
+        
+        if(fixture.currentTier==fixture.maxTier) this.sparkleImage.classList.remove('d-none');
+        else this.sparkleImage.classList.add('d-none');
         this.fixtureName.textContent = fixture.name;
         this.level.textContent = '';
         this.level.append(...templateLangStringWithNodes('MENU_TEXT_UNLOCKED_AT', {

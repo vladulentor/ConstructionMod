@@ -1,0 +1,9 @@
+A chainsaw that has -90% interval on planks but -2 made or -1 made from archaology
+A high vis jacket that helps construction but -10 or -25 evasion
+A carpenter thieving target that gives the jacket
+the straps which are 1 per dragonskin
+haunted coffin which gives planks (after barn raiser starts giving beams) and jewelry
+stars on furniture level 5, and more on level 8
+efficiency notification
+make chuck's name shorter in the efficeincysourcebuilder
+ 

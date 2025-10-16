@@ -20,6 +20,7 @@ export async function setup(ctx) {
     await setup.applyOtherPatches()
 
     await setup.modCompatibility(ctx);
+    await setup.lastChanges(ctx);
 }
 
 
@@ -87,5 +88,10 @@ class Setup {
 
         });
         
+    }
+    async lastChanges(ctx) {
+        ctx.onInterfaceReady(async (ctx) => {
+            game.construction.checkForScoobs();
+        });
     }
 }

@@ -13,7 +13,7 @@ export const language = {
 
     'SHOP_NAME_Construction_Skillcape': 'Construction Skillcape',
 
-    'PET_NAME_ChuckTheBeaver': 'Chuck the Beaver',
+    'PET_NAME_ChuckTheForeman': 'Chuck the Beaver',
 
     'ITEM_NAME_Construction_Skillcape': 'Construction Skillcape',
     'ITEM_NAME_Builders_Hat': 'Builders Hat',

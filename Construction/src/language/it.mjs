@@ -13,7 +13,7 @@ export const language = {
 
     'SHOP_NAME_Construction_Skillcape': 'Abilmantello della costruzione',
 
-    'PET_NAME_ChuckTheBeaver': 'Butta via il castoro',
+    'PET_NAME_ChuckTheForeman': 'Butta via il castoro',
 
     'ITEM_NAME_Construction_Skillcape': 'Della Costruzione',
     'ITEM_NAME_Builders_Hat': 'Cappello dei costruttori',

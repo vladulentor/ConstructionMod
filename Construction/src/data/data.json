@@ -612,7 +612,7 @@
     ],
     "pets": [
       {
-        "id": "ChuckTheBeaver",
+        "id": "ChuckTheForeman",
         "name": "Chuck The Beaver",
         "media": "assets/chuck_the_beaver.png",
         "ignoreCompletion": false,
@@ -714,7 +714,7 @@
         "skillID": "rielkConstruction:Construction",
         "data": {
           "pets": [
-            "rielkConstruction:ChuckTheBeaver"
+            "rielkConstruction:ChuckTheForeman"
           ],
           "rareDrops": [
             {
@@ -764,7 +764,7 @@
             ],
             "upgrades": [],
             "pets": [
-              "rielkConstruction:ChuckTheBeaver"
+              "rielkConstruction:ChuckTheForeman"
             ]
           },
           "masteryLevelUnlocks": [

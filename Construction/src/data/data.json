@@ -1196,7 +1196,7 @@
       {
         "id": "Scoobs",
         "name": "Scoobs",
-        "media": "assets/items/scoobs.png",
+        "media": "assets/scoobs.png",
         "hint": "Reach House Tier 5",
         "langHint": "Reach House Tier 5",
         "ignoreCompletion": false,

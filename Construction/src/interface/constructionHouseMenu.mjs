@@ -5,18 +5,20 @@ export class ConstructionHouseMenu {
         this.scrollAtPanel = 0;
         this.activeRoom = undefined;
         container = createElement('div', {
-            className: 'block-content',
+            className: 'block-content ',
             parent: container
         });
+
         this.root = container = createElement('div', {
             className: 'row',
             parent: container
         });
+        container.style.visibility = 'visible';
         var buttonContainer = createElement('div', {
             className: 'col-12 text-center mb-3',
             parent: container
         });
-        var viewAllModifiersButton = createElement('button', {
+        /*var viewAllModifiersButton = createElement('button', {
             className: 'btn btn-sm btn-alt-warning',
             parent: buttonContainer
         })
@@ -24,14 +26,16 @@ export class ConstructionHouseMenu {
         viewAllModifiersButton.onclick = () => construction.viewAllModifiersOnClick();
         var langString = createElement('rielk-lang-string', {
             parent: viewAllModifiersButton
-        })
-        langString.setAttribute('lang-id', 'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS');
+        }); 
+        langString.setAttribute('lang-id', 'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS');     */
+                // I personally never say the point of that button, now that our menu is a menu there's no place for it. I doubt anyone will miss it.
+
         this.panelObserver = new MutationObserver((mutations) => {
             for (const mutation of mutations) {
                 if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
                     const el = mutation.target;
                     if (!el.classList.contains('d-none')) {
-                         this.updateFixtureItems(construction);
+                        this.updateFixtureItems(construction);
                     }
                 }
             }

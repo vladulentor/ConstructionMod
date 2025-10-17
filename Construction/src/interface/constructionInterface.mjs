@@ -58,22 +58,22 @@ export class ConstructionInterface {
         imgs[2].src = game.construction.media; // Little icon on row 3 (contsruction icon)
         imgs[3].src = game.items.getObjectByID('rielkConstruction:Teak_Planks').media; //plank icon, this is the row of materials
         // imgs [4] is a little crafting icon
-         imgs[5].src = game.items.getObjectByID('rielkConstruction:Mithril_Nails').media; //nails icon
-         //imgs [6] is a little fletching icon
-         //imgs [7] is the weird M icon for Melvor
-         imgs[8].src = game.construction.media; //construction icon in skill interactions explanation
+        imgs[5].src = game.items.getObjectByID('rielkConstruction:Mithril_Nails').media; //nails icon
+        //imgs [6] is a little fletching icon
+        //imgs [7] is the weird M icon for Melvor
+        imgs[8].src = game.construction.media; //construction icon in skill interactions explanation
         imgs[9].src = ctx.getResourceUrl('assets/efficiency.png'); //efficiency icon next to efficiency explanation.
-         imgs[10].src = ctx.getResourceUrl('assets/efficiency.png');//small efficiency icon next to efficiency explanation.
-          imgs[11].src = construction.categories.getObjectByID('rielkConstruction:Materials').media //materials icon in efficiecny explanation.
-           imgs[12].src = construction.categories.getObjectByID('rielkConstruction:House').media//furniture icon in efficiecny explanation.
-           imgs[13].src =this.constructionMasteryBar._image.src; // house explanation icon
-           imgs[14].src = construction.categories.getObjectByID('rielkConstruction:House').media; // house furniture explanation
-           imgs[15].src = this.constructionMasteryBar._image.src; //little house icon in the house explanation
-            imgs[16].src = construction.categories.getObjectByID('rielkConstruction:House').media; //other furniture logo in the house explanation
-            imgs[17].src = game.construction.media; //construction icon at the very end
-         guideContainer.append(this.constrGuide);
+        imgs[10].src = ctx.getResourceUrl('assets/efficiency.png');//small efficiency icon next to efficiency explanation.
+        imgs[11].src = construction.categories.getObjectByID('rielkConstruction:Materials').media //materials icon in efficiecny explanation.
+        imgs[12].src = construction.categories.getObjectByID('rielkConstruction:House').media//furniture icon in efficiecny explanation.
+        imgs[13].src = this.constructionMasteryBar._image.src; // house explanation icon
+        imgs[14].src = construction.categories.getObjectByID('rielkConstruction:House').media; // house furniture explanation
+        imgs[15].src = this.constructionMasteryBar._image.src; //little house icon in the house explanation
+        imgs[16].src = construction.categories.getObjectByID('rielkConstruction:House').media; //other furniture logo in the house explanation
+        imgs[17].src = game.construction.media; //construction icon at the very end
+        guideContainer.append(this.constrGuide);
     }
-    
+
     switchConstructionCategory(category) {
         return this._createSwitchConstructionCategory(this)(category);
     }
@@ -82,12 +82,14 @@ export class ConstructionInterface {
         return (category) => {
             switch (category.type) {
                 case 'House':
+                    this.constructionHouseElement.parentElement.parentElement.style.visibility = 'hidden';
                     showElement(ui.constructionHouseElement);
                     hideElement(ui.constructionArtisanElement);
                     this.renderQueue.menu = true;
                     switchToCategory(ui.constructionSelectionTabs)(category)
                     break;
                 case 'Artisan':
+                    this.constructionHouseElement.parentElement.parentElement.style.visibility = 'visible';
                     showElement(ui.constructionArtisanElement);
                     hideElement(ui.constructionHouseElement);
                     this.renderQueue.recipeInfo = true;

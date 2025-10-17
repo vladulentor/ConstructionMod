@@ -1,6 +1,7 @@
 const { loadModule } = mod.getContext(import.meta);
 
 const { getRielkLangString, templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
+const ctx = mod.getContext(import.meta);
 
 await loadModule('src/interface/elements/constructionEfficiencyIconTooltipElement.mjs');
 await loadModule('src/interface/elements/constructionEfficiencyIconElement.mjs');
@@ -22,12 +23,18 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.detailsContainer = getElementFromFragment(this._content, 'details-container', 'div');
         this.extraDetailsContainer = getElementFromFragment(this._content, 'extra-details-container', 'div');
         this.roomName = getElementFromFragment(this._content, 'room-name', 'span');
+        this.constructText = getElementFromFragment(this._content, 'construct-text', 'small');
         this.targetContainer = getElementFromFragment(this._content, 'target-container', 'div');
         this.productPreservation = getElementFromFragment(this._content, 'product-preservation', 'preservation-icon');
         this.productEfficiency = getElementFromFragment(this._content, 'product-efficiency', 'efficiency-icon');
         this.infoContainer = getElementFromFragment(this._content, 'info-container', 'div');
         this.infoBoxName = getElementFromFragment(this._content, 'product-name', 'span');
+        this.infoImageContainer = getElementFromFragment(this._content, 'product-wrapper', 'div');
         this.infoBoxImage = getElementFromFragment(this._content, 'product-image', 'img');
+        this.sparkleUnder = getElementFromFragment(this._content, 'sparkle-underlay', 'img');
+        this.sparkleUnder.src = ctx.getResourceUrl('assets/eclipse.png');
+        this.sparkleOver = getElementFromFragment(this._content, 'sparkle-overlay', 'img');
+        this.sparkleOver.src = ctx.getResourceUrl('assets/stars.png');
         this.startButton = getElementFromFragment(this._content, 'start-button', 'button');
         this.upgradesButton = getElementFromFragment(this._content, 'upgrades-button', 'button');
         this.builtProgressText = getElementFromFragment(this._content, 'built-progress-text', 'small');
@@ -210,8 +217,9 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.noneSelected = false;
         this.infoBoxName.textContent = fixture.name;
         this.infoBoxImage.src = fixture.media;
+        this.toggleSparkles(fixture);
         const fixtureRecipe = fixture.currentRecipe;
-        if (fixtureRecipe == undefined || fixtureRecipe.level > construction.level || fixture.currentTier>=fixture.maxTier) {
+        if (fixtureRecipe == undefined || fixtureRecipe.level > construction.level || fixture.currentTier >= fixture.maxTier) {
             hideElement(this.builtProgressContainer);
             hideElement(this.ingredientsContainer);
             hideElement(this.grantsContainer);
@@ -232,6 +240,42 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.grants.setSources(construction, fixtureRecipe);
         this.grants.hideMastery();
         this.updateFixtureInfo(construction, fixture);
+    }
+    addSparkles(fixture) {
+        this.constructText.textContent = "Max Level" //getRielkLangString('MENU_TEXT_CONSTRUCT');
+        this.constructText.classList.add('text-warning');
+        
+        // this.sparkleUnder.classList.remove('d-none');
+        this.sparkleOver.classList.remove('d-none');
+
+
+        this.infoBoxImage.style.transform = "scale(0.85)";
+        this.infoImageContainer.style.filter = `
+  drop-shadow(1px 0 0 #f8ab46ff)
+drop-shadow(0 -1px 0 #f8ab46ff)
+  drop-shadow(0 1px 0 #f8ab46ff)
+  drop-shadow(-1px -1px 0 #f8ab46ff)
+  drop-shadow(1px 1px 0 #f8ab46ff)
+  drop-shadow(-1px 1px 0 #f8ab46ff)
+  drop-shadow(1px -1px 0 #f8ab46ff)`;
+
+    }
+
+    removeSparkles() {
+
+        this.constructText.textContent = getRielkLangString('MENU_TEXT_CONSTRUCT');
+        this.constructText.classList.remove('text-warning');
+
+        this.sparkleUnder.classList.add('d-none');
+        this.sparkleOver.classList.add('d-none');
+
+
+        this.infoBoxImage.style.transform = "scale(1)";
+        this.infoImageContainer.style.filter = "none";
+    }
+
+    toggleSparkles(fixture) {
+        fixture.currentTier == fixture.maxTier ? this.addSparkles(fixture) : this.removeSparkles();
     }
 
     updateFixtureInfo(construction, fixture) {
@@ -256,13 +300,17 @@ class ConstructionRoomPanelElement extends HTMLElement {
     }
 
     updateFixtureItemIcons(construction) {
-         this.haves.setItemsFromRecipe(this.selectedFixture.UIcost, construction.game);
-         this.requires.setItemsFromRecipe(this.selectedFixture.UIcost, construction.game); 
+        this.haves.setItemsFromRecipe(this.selectedFixture.UIcost, construction.game);
+        this.requires.setItemsFromRecipe(this.selectedFixture.UIcost, construction.game);
     }
     updateCurrentFixtureItemIcons(construction, fixture) { //Working fixture's call.
         this.requires.setItemsFromRecipe(fixture.UIcost, construction.game);
         this.haves.setItemsFromRecipe(fixture.UIcost, construction.game);
     }
-
+    addTotalCostsToRemaining(construction, fixture) {
+        this.haves.classList.add('d-none');
+        console.log(fixture.currentTier.recipe.itemCosts);
+        this.requires.setGreen(fixture.UIcost, construction.game);
+    }
 }
 window.customElements.define('rielk-construction-room-panel', ConstructionRoomPanelElement);

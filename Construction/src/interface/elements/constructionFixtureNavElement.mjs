@@ -12,8 +12,10 @@ class ConstructionFixtureNavElement extends HTMLElement {
         this.button = getElementFromFragment(this._content, 'button', 'a');
         this.buttonContent = getElementFromFragment(this._content, 'button-content', 'div');
         this.fixtureImage = getElementFromFragment(this._content, 'fixture-image', 'img');
-        this.sparkleImage = getElementFromFragment(this._content, 'sparkle-overlay', 'img');
-        this.sparkleImage.src = ctx.getResourceUrl('assets/efficiency.png')
+        this.sparkleUnder = getElementFromFragment(this._content, 'sparkle-underlay', 'img');
+        this.sparkleUnder.src = ctx.getResourceUrl('assets/eclipse.png');
+        this.sparkleOver = getElementFromFragment(this._content, 'sparkle-overlay', 'img');
+        this.sparkleOver.src = ctx.getResourceUrl('assets/stars.png');
         this.fixtureName = getElementFromFragment(this._content, 'fixture-name', 'span');
         this.constructionProgress = getElementFromFragment(this._content, 'construction-progress', 'small');
         this.unlock = getElementFromFragment(this._content, 'unlock', 'div');
@@ -25,9 +27,6 @@ class ConstructionFixtureNavElement extends HTMLElement {
     }
     setFixture(fixture, construction) {
         this.fixtureImage.src = fixture.media;
-        
-        if(fixture.currentTier==fixture.maxTier) this.sparkleImage.classList.remove('d-none');
-        else this.sparkleImage.classList.add('d-none');
         this.fixtureName.textContent = fixture.name;
         this.level.textContent = '';
         this.level.append(...templateLangStringWithNodes('MENU_TEXT_UNLOCKED_AT', {
@@ -58,6 +57,8 @@ class ConstructionFixtureNavElement extends HTMLElement {
             currentValue: `${formatNumber(fixture.currentTier)}`,
             maxValue: `${formatNumber(fixture.maxTier)}`
         });
+        if (fixture.currentTier == fixture.maxTier)
+            this.constructionProgress.classList.add('text-warning');
     }
     setLocked(fixture, construction) {
         hideElement(this.buttonContent);

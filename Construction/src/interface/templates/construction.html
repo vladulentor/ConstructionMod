@@ -43,14 +43,24 @@
               <div class="row row-deck gutters-tiny">
                 <div class="col-4" id="image-container" style="position:relative;">
                   <div class="block block-rounded-double bg-combat-inner-dark text-center p-3">
-                    <img class="bank-img-detail" id="product-image">
+                    <div class="image-wrapper"
+                      style="position: relative; display: inline-block; overflow: visible; margin: 5px;">
+                      <img id="sparkle-underlay" class="bank-img-detail d-none"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;">
+
+                      <div id="product-wrapper" style="position: relative; display: inline-block; overflow: visible;">
+                        <img id="product-image" class="bank-img-detail" style="position: relative; z-index: 1;">
+                      </div>
+                      <img id="sparkle-overlay" class="bank-img-detail"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2;">
+
+                    </div>
                   </div>
                 </div>
                 <div class="col-8" id="details-container">
                   <div class="block block-rounded-double bg-combat-inner-dark pt-2 pl-2 pr-2 pb-1">
                     <h5 class="font-size-sm font-w600 text-muted m-1">
-                      <small>
-                        <rielk-lang-string lang-id="MENU_TEXT_CONSTRUCT"></rielk-lang-string>
+                      <small id="construct-text">
                       </small>
                     </h5>
                     <h5 class="font-w700 text-combat-smoke m-1">
@@ -126,9 +136,18 @@
     <li class="nav-item mr-1">
       <a class="block block-link-pop nav-link border pointer-enabled font-w600 p-1" id="button">
         <div class="media d-flex align-items-center" id="button-content">
-          <div class="m-1">
-            <img class="skill-icon-md mr-1" id="fixture-image">
-            <img class="skill-icon-md mr-1" id="sparkle-overlay">
+          <div class="media d-flex align-items-center" id="button-content">
+            <div class="m-1">
+              <div class="image-wrapper" style="position: relative; display: inline-block; overflow: visible;">
+                <img id="sparkle-underlay" class="bank-img-detail d-none"
+                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;">
+
+                <img id="fixture-image" class="skill-icon-md mr-1" style="position: relative; z-index: 1;">
+
+                <img id="sparkle-overlay" class="bank-img-detail d-none"
+                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2;">
+              </div>
+            </div>
           </div>
           <div class="media-body">
             <div class="text-center">
@@ -149,7 +168,7 @@
 </template>
 
 <template id="rielk-construction-upgrades-panel-template">
-  <div class="block block-rounded border-top border-rielk-construction border-4x">
+  <div class="block block-rounded-double border-top border-rielk-construction border-4x">
     <div class="block-content text-center">
       <h5 class="font-w700 text-combat-smoke mb-1 d-flex flex-wrap">
         <span id="fixture-name"></span>
@@ -607,7 +626,7 @@
 
 <template id="remaining-box-template" data-image-init="true">
   <h5 class="font-w600 mb-1 text-center">
-    <rielk-lang-string lang-id="MENU_TEXT_REMAINING"></rielk-lang-string>
+    <rielk-lang-string id="remaining-text" lang-id="MENU_TEXT_REMAINING"></rielk-lang-string>
   </h5>
   <my-quantity-icons id="icons"></quantity-icons>
 </template>

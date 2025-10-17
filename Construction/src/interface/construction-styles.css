@@ -31,12 +31,17 @@ body.darkMode.superDark .bg-rielk-construction
       color: #fca32f;       /* I like both names for it */
     font-weight: bold;   
 }
-
-
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: visible; 
+}
 .border-item-danger {
   border: 1px solid #c09a49;
 }
-
+.border-item-green{
+    border: 1px solid #49c063;
+}
 
 .mastery.empty {
   background-color: #3e4856; 

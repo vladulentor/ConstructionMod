@@ -12,6 +12,9 @@ class MyItemQuantityIconElement extends ItemQuantityIconElement {
     removeDangerBorder() {
         this.container.classList.remove('border-item-danger');
     }
+    addGreenBorder() {
+        this.container.classList.add('border-item-green');
+    }
     toggleInvalidBorder(current, requiredAll, requiredSmall) { //we extend this, then propagate it upwards. Because we need to save processing power. Very sane stuff.
         if (current < requiredSmall) {
             this.removeDangerBorder();
@@ -135,6 +138,9 @@ class MyCurrencyQuantityIconElement extends InfoIconElement {
             currency,
             quantity, smallquant
         };
+    }
+    addGreenBorder() {
+        this.container.classList.add('border-item-green');
     }
     setInvalidBorder() {
         this.container.classList.add('border-item-invalid');
@@ -318,7 +324,37 @@ class MyQuantityIconsElement extends HTMLElement {
 
             this.items.push(itemIcon);
         });
-    }   /**
+    } 
+    addItemIconsForGreen(items, game, allowQuickBuy, altMedia = false){
+        items.forEach(({ item, quantity, smallquant }, i) => {
+
+            const itemIcon = createElement('my-quantity-icon', { parent: this });
+
+            // Defensive logging before setItem
+            try {
+                itemIcon.setItem(item, quantity, smallquant, game, allowQuickBuy, altMedia);
+            } catch (err) {
+                console.error("Error in itemIcon.setItem:", err, { item, quantity, allowQuickBuy, altMedia });
+            }
+
+            try {
+                itemIcon.addGreenBorder();
+            } catch (err) {
+                console.error("no green");
+            }
+
+            this.items.push(itemIcon);
+        });    
+    }
+    setIconsForGreen(recipe, game, altMedia = false){
+
+        this.removeIcons();
+        this.addItemIconsForGreen(recipe.itemCosts, game, true, altMedia);
+        this.addCurrencyIconsForGreen(recipe.currencyCosts);
+
+
+    }
+    /**
      * Creates and appends Currency quantity icons for an array of currency quantities
      * @param currencies The array of currency quantities
      */
@@ -336,6 +372,21 @@ class MyQuantityIconsElement extends HTMLElement {
             this.currencies.push(currencyIcon);
         });
     }
+        addCurrencyIconsForGreen(currencies) {
+        currencies.forEach(({
+            currency,
+            quantity,
+            smallquant
+        }) => {
+            const currencyIcon = createElement('my-currency-quantity-icon', {
+                parent: this
+            });
+            currencyIcon.setCurrency(currency, quantity, smallquant);
+            currencyIcon.addGreenBorder();
+            this.currencies.push(currencyIcon);
+        });
+    }
+
     /**
      * Creates and appends Item or Currency quantity icons for a Costs object
      * @param costs The costs to display
@@ -587,7 +638,12 @@ export class RemainingBoxElement extends HTMLElement {
         super();
         this._content = new DocumentFragment();
         this._content.append(getTemplateNode('remaining-box-template'));
+        this.text = getElementFromFragment(this._content, 'remaining-text', 'rielk-lang-string');
         this.icons = getElementFromFragment(this._content, 'icons', 'my-quantity-icons');
+    }
+    setGreen(recipe, game, altMedia = false){
+        this.icons.setIconsForGreen(recipe, game, altMedia)
+        this.text.textContent = "Costs spent";
     }
     connectedCallback() {
         this.appendChild(this._content);
@@ -612,9 +668,7 @@ export class RemainingBoxElement extends HTMLElement {
         }
         this.icons.setIconsForRecipe(recipe, game, altMedia);
     }
-    setItemsFromCosts(costs, altMedia = false) {
-        this.setItems(costs.getItemQuantityArray(), costs.getCurrencyQuantityArray(), altMedia);
-    }
+    
 }
 window.customElements.define('remaining-box', RemainingBoxElement);
 export class RemainingHavesBoxElement extends HTMLElement {

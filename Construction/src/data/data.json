@@ -5442,7 +5442,7 @@
               "currencyCosts": [
                 {
                   "id": "melvorD:SlayerCoins",
-                  "quantity": 250000
+                  "quantity": 5000
                 }
               ],
               "modifiers": {
@@ -5581,7 +5581,13 @@
                   "quantity": 12000
                 }
               ],
-              "currencyCosts": [],
+              "currencyCosts": [
+                                {
+                  "id": "melvorD:SlayerCoins",
+                  "quantity": 50000
+                }
+
+              ],
               "modifiers": {
                 "skillInterval": [
                   {

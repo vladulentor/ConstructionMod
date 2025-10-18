@@ -11,7 +11,7 @@ class ConstructionUpgradesPanelElement extends HTMLElement {
         this.appendChild(this._content);
     }
     setFixture(fixture, construction) {
-        this.fixtureName.textContent = fixture.name;
+       // this.fixtureName.textContent = fixture.name;
         
         while (this.upgradePanels.length > fixture.recipes.length) {
             const panel = this.upgradePanels.pop();

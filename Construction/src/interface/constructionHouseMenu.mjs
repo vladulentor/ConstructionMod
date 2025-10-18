@@ -14,6 +14,7 @@ export class ConstructionHouseMenu {
             parent: container
         });
         container.style.visibility = 'visible';
+        container.style.marginTop = "-40px";
         var buttonContainer = createElement('div', {
             className: 'col-12 text-center mb-3',
             parent: container
@@ -28,7 +29,7 @@ export class ConstructionHouseMenu {
             parent: viewAllModifiersButton
         }); 
         langString.setAttribute('lang-id', 'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS');     */
-                // I personally never say the point of that button, now that our menu is a menu there's no place for it. I doubt anyone will miss it.
+        // I personally never say the point of that button, now that our menu is a menu there's no place for it. I doubt anyone will miss it.
 
         this.panelObserver = new MutationObserver((mutations) => {
             for (const mutation of mutations) {

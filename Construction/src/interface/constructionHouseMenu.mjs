@@ -15,6 +15,8 @@ export class ConstructionHouseMenu {
         });
         container.style.visibility = 'visible';
         container.style.marginTop = "-40px";
+        container.style.marginLeft = "-34px";
+        container.style.marginRight = "-34px";
         var buttonContainer = createElement('div', {
             className: 'col-12 text-center mb-3',
             parent: container

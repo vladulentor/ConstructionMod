@@ -68,3 +68,11 @@ requires-box.icon-box-small>h5,
 haves-box.icon-box-small>h5 {
     font-size: 0.7rem;
 }
+
+.progress-bar.efficiency-flash {
+  background-color: #fca32f !important;
+}
+
+.progress-height-7 {
+  height: 7px !important;
+}

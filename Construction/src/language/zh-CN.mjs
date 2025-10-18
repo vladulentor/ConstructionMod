@@ -17,7 +17,7 @@ export const language = {
     'MENU_HOUSE_COMPLETION': '房屋完成度',
     'MENU_TIER': '等级 ${tiername}',
     'MENU_FIXTURES': '家具配件',
-
+        'MENU_MAX_TIER' : '最高等级',
     'MENU_BUILT': '已建造',
     'MENU_HOUSE': "房子",
 
@@ -149,6 +149,7 @@ export const language = {
     'DESCRIPTION_ADDS_ITEM': '给出 ${itemQuantity} ${itemName} ${itemImage}',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '你没有建造它所需的材料。',
+        'TOASTS_EFFICIENCY' : '你同时完成了多个动作',
     'ENEMY_NAME_ConstructGiant': '铁巨人',
     'ENEMY_NAME_BarnRaiser': '谷仓建造者',
 

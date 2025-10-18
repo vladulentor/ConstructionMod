@@ -20,10 +20,11 @@ export const language = {
     'MENU_FIXTURES': 'Fixtures',
     'MENU_TIER': 'Tier ${tiername}',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'What are House Tiers?',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Your House\'s Tier starts at 0. As you build furniture and fill each room, your House\'s tier will improve.</span>',
-    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'When all rooms contain furniture of a required tier or higher, your House Tier will increase. You will unlock permanent Construction bonuses and recieve supplies.',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Your House\'s Tier starts at 0. As you build Furniture and fill each room, your House\'s tier will improve.',
+    'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'When all rooms contain Furniture of a required tier or higher, your House Tier will increase. You will unlock permanent Construction bonuses and recieve supplies.',
     'MENU_TEXT_REWARDS': 'Rewards',
 
+    'MENU_MAX_TIER' : 'Max Tier',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN': 'Chance to complete ${potency} actions at once.',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_1': 'Chance to make a single progress at once. :(',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_2': 'Chance to make double progress at once.',
@@ -157,6 +158,7 @@ export const language = {
 
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
+    'TOASTS_EFFICIENCY':'You managed to complete multiple actions at once',
 
     'ENEMY_NAME_ConstructGiant':'Iron Giant',
     'ENEMY_NAME_BarnRaiser':'Barn Raiser',

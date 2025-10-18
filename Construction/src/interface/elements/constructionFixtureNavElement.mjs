@@ -12,6 +12,8 @@ class ConstructionFixtureNavElement extends HTMLElement {
         this.button = getElementFromFragment(this._content, 'button', 'a');
         this.buttonContent = getElementFromFragment(this._content, 'button-content', 'div');
         this.fixtureImage = getElementFromFragment(this._content, 'fixture-image', 'img');
+        this.fixtureWrapper = getElementFromFragment(this._content, 'fixture-wrapper', 'div');
+
         this.sparkleUnder = getElementFromFragment(this._content, 'sparkle-underlay', 'img');
         this.sparkleUnder.src = ctx.getResourceUrl('assets/eclipse.png');
         this.sparkleOver = getElementFromFragment(this._content, 'sparkle-overlay', 'img');
@@ -57,8 +59,34 @@ class ConstructionFixtureNavElement extends HTMLElement {
             currentValue: `${formatNumber(fixture.currentTier)}`,
             maxValue: `${formatNumber(fixture.maxTier)}`
         });
-        if (fixture.currentTier == fixture.maxTier)
-            this.constructionProgress.classList.add('text-warning');
+        this.toggleSparkles(fixture);
+    }
+    toggleSparkles(fixture) {
+        (fixture.currentTier == fixture.maxTier) ? this.addSparkles() : this.removeSparkles();
+    }
+    addSparkles() {
+        this.constructionProgress.classList.add('text-warning');
+        this.sparkleOver.classList.remove('d-none');
+
+        this.fixtureImage.style.transform = "scale(0.85)";
+        this.fixtureWrapper.style.filter = `
+  drop-shadow(1px 0 0 #f8ab46ff)
+drop-shadow(0 -1px 0 #f8ab46ff)
+  drop-shadow(0 1px 0 #f8ab46ff)
+  drop-shadow(-1px -1px 0 #f8ab46ff)
+  drop-shadow(1px 1px 0 #f8ab46ff)
+  drop-shadow(-1px 1px 0 #f8ab46ff)
+  drop-shadow(1px -1px 0 #f8ab46ff)`;
+
+    }
+    removeSparkles() {
+        this.constructionProgress.classList.remove('text-warning');
+        this.sparkleOver.classList.add('d-none');
+
+        this.fixtureImage.style.transform = "scale(1)";
+        this.fixtureWrapper.style.filter = "none";
+
+
     }
     setLocked(fixture, construction) {
         hideElement(this.buttonContent);

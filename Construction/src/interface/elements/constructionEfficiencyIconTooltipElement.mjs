@@ -16,8 +16,11 @@ class EfficiencyIconTooltipElement extends HTMLElement {
         this.appendChild(this._content);
     }
     setCostNPotency(cost, potency, mode) {
-        this.cost.textContent = templateRielkLangString('MENU_TOOLTIP_EFFICIENCY_COST', { cost: cost});
-        if (mode === "artisan") this.toptip.textContent = templateRielkLangString('MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN', { potency: potency }); 
+        const potencyRounded = Math.round(potency * 100) / 100;
+        let cleanPotency =   Math.abs(potencyRounded % 1) < Number.EPSILON ? potencyRounded.toFixed(0) : potencyRounded.toFixed(2);
+        // we have to do this because of floating point noise
+        this.cost.textContent = templateRielkLangString('MENU_TOOLTIP_EFFICIENCY_COST', {cost: cost});
+        if (mode === "artisan") this.toptip.textContent = templateRielkLangString('MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN', { potency: cleanPotency}); 
         else {
             this.toptip.textContent = getRielkLangString(`MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_${Math.floor(potency)}`);
         }

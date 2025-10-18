@@ -17,7 +17,7 @@ export const language = {
     'MENU_HOUSE_COMPLETION': 'Completamento della casa',
     'MENU_BUILT': 'Costruito',
     'MENU_FIXTURES': 'Arredi',
-
+        'MENU_MAX_TIER' : 'Livello massimo',
     'MENU_HOUSE': "Casa",
     'MENU_TIER': 'Livello ${tiername}',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Cosa sono i livelli della casa?',
@@ -149,7 +149,7 @@ export const language = {
 
     'TOAST_FIXTURE_COMPLETE': 'Hai completato la costruzione del tuo ${fixtureName}!',
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'Non hai i materiali necessari per Costruirlo.',
-
+        'TOASTS_EFFICIENCY' : 'Sei riuscito a completare più azioni contemporaneamente',
     'MASTERY_BONUS_ Construction_ 0': 'Sblocca gli effetti del livello 1 dell\'arredamento.',
     'MASTERY_BONUS_ Construction_ 1': 'Sblocca gli effetti del livello 2 dell\'arredamento.',
     'MASTERY_BONUS_ Construction_ 2': 'Sblocca gli effetti del livello 3 dell\'arredamento.',

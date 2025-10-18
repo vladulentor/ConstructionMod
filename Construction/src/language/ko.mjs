@@ -17,6 +17,7 @@ export const language = {
     'MENU_HOUSE_COMPLETION': '하우스 완성도',
     'MENU_BUILT': '완성됨',
     'MENU_FIXTURES': '설치물',
+        'MENU_MAX_TIER' : '최대 티어',
 
     'MENU_TIER': '등급 ${tiername}',
     'MENU_HOUSE': "집",
@@ -154,7 +155,7 @@ export const language = {
 'ENEMY_NAME_BarnRaiser':'헛간 건설자',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '그것을 만드는 데 필요한 재료가 없습니다.',
-
+        'TOASTS_EFFICIENCY' : '여러 작업을 한 번에 완료했습니다',
     'MASTERY_BONUS_ Construction_ 0': '가구의 단계 1 효과를 잠금 해제합니다.',
     'MASTERY_BONUS_ Construction_ 1': '가구의 단계 2 효과를 잠금 해제합니다.',
     'MASTERY_BONUS_ Construction_ 2': '가구의 단계 3 효과를 잠금 해제합니다.',

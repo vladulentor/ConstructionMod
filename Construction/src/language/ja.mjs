@@ -18,7 +18,7 @@ export const language = {
     'MENU_BUILT': '建造済み',
     'MENU_FIXTURES': '設備',
     'MENU_EFFICIENCY_BASE': '基本',
-
+        'MENU_MAX_TIER' : '最大ティア',
     'MENU_HOUSE': "家",
     'MENU_TIER': 'ランク ${tiername}',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'ハウスティアとは何ですか？',
@@ -150,7 +150,7 @@ export const language = {
     'DESCRIPTION_ADDS_ITEM': '与える ${itemQuantity} ${itemName} ${itemImage}',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'それを作るのに必要な資材がない',
-
+        'TOASTS_EFFICIENCY' : '一度に複数の行動を完了しました',
     'ENEMY_NAME_ConstructGiant': 'アイアンの巨人',
     'ENEMY_NAME_BarnRaiser': '納屋の建設者',
 

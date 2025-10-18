@@ -12,6 +12,7 @@ const { ConstructionFixtureRecipes } = await loadModule('src/construction/constr
 const { ConstructionRecipe } = await loadModule('src/construction/constructionRecipe.mjs');
 const { ConstructionRoom } = await loadModule('src/construction/constructionRoom.mjs');
 const { ConstructionTierMastery } = await loadModule('src/construction/constructionTierMastery.mjs');
+const { createOrangeNotification } = await loadModule('src/interface/elements/constructionEfficiencyNotification.mjs');
 
 const { EfficiencySourceBuilder } = await loadModule('src/construction/constructionEfficiencySourceBuilder.mjs');
 
@@ -24,6 +25,7 @@ export class Construction extends ArtisanSkill {
         this._media = 'assets/icon.png';
         this.baseInterval = 4000;
         this.efficient = false;
+        this.wasEfficient = false
         this.ui = undefined;
         this.categories = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionCategory');
         this.rooms = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionRoom');
@@ -573,6 +575,7 @@ export class Construction extends ArtisanSkill {
         this.renderQueue.recipeInfo = true;
         this.renderQueue.quantities = true;
         this.cachedpreservationchance = this.getPreservationChance(this);
+        this.wasEfficient = this.efficient;
         this.efficient = false;
     }
     renderSelectedRecipe() {
@@ -638,6 +641,12 @@ export class Construction extends ArtisanSkill {
 
     artisanAction() {
         if (rollPercentage(this.getEfficiencyChance(this.activeRecipe))) this.efficient = true;
+        if (this.efficient && !game.settings.useLegacyNotifications) {
+            createOrangeNotification({
+                text: getRielkLangString('TOASTS_EFFICIENCY'),
+                quantity: this.getEfficiencyPotencyMultiplier(this.activeRecipe)
+            });
+        }
         if (this.efficient) this.game.combat.notifications.add({ type: 'Preserve', args: [this] });
         let recipeCosts = this.getCurrentRecipeCosts();
         if (this.efficient) this.scalecost(recipeCosts, this.getEfficiencyCostMultiplier(this.activeRecipe))
@@ -672,6 +681,11 @@ export class Construction extends ArtisanSkill {
 
     buildAction() {
         if (rollPercentage(this.getEfficiencyChance(this.activeBuildRecipe))) this.efficient = true;
+        if (this.efficient && !game.settings.useLegacyNotifications) 
+            createOrangeNotification({
+                text: getRielkLangString('TOASTS_EFFICIENCY'),
+                quantity: Math.floor(this.getEfficiencyPotencyMultiplier(this.activeBuildRecipe))
+            });
         this.selectedFixture.getCurrentBuildRecipeCosts(this, this.efficient);
         let recipeCosts = this.selectedFixture.stepCost;
         if (!recipeCosts.checkIfOwned()) {

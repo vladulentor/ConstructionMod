@@ -57,6 +57,8 @@ class ConstructionRoomPanelElement extends HTMLElement {
             this.setdetailscontainer(width);
 
         });
+        this.progressBarBar = this.builtProgressBar.firstElementChild?.firstElementChild;
+
     }
     setdetailscontainer(detailwidth) {
         if (this.noneSelected /*|| this.productEfficiency.classList.contains('d-none')*/) return;
@@ -242,12 +244,11 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.updateFixtureInfo(construction, fixture);
     }
     addSparkles(fixture) {
-        this.constructText.textContent = "Max Level" //getRielkLangString('MENU_TEXT_CONSTRUCT');
+        this.constructText.textContent = getRielkLangString('MENU_MAX_TIER');
         this.constructText.classList.add('text-warning');
-        
-        // this.sparkleUnder.classList.remove('d-none');
-        this.sparkleOver.classList.remove('d-none');
 
+        // this.sparkleUnder.classList.remove('d-none');
+        showElement(this.sparkleOver);
 
         this.infoBoxImage.style.transform = "scale(0.85)";
         this.infoImageContainer.style.filter = `
@@ -266,8 +267,8 @@ drop-shadow(0 -1px 0 #f8ab46ff)
         this.constructText.textContent = getRielkLangString('MENU_TEXT_CONSTRUCT');
         this.constructText.classList.remove('text-warning');
 
-        this.sparkleUnder.classList.add('d-none');
-        this.sparkleOver.classList.add('d-none');
+        hideElement(this.sparkleUnder);
+        hideElement(this.sparkleOver);
 
 
         this.infoBoxImage.style.transform = "scale(1)";
@@ -297,6 +298,17 @@ drop-shadow(0 -1px 0 #f8ab46ff)
             construction.getEfficiencyPotencyMultiplier(fixtureRecipe),
             construction.getEfficiencyCostMultiplier(fixtureRecipe),
             construction.getEfficiencyChancePotencySources(fixtureRecipe), "build");
+        if (construction.wasEfficient && this.progressBarBar) {
+                this.progressBarBar.style.setProperty("transition", "background-color 0.05s ease", "important");
+            this.progressBarBar.classList.add("efficiency-flash");
+            requestAnimationFrame(() => {
+                this.progressBarBar.style.setProperty("transition", "background-color 0.4s ease", "important");
+                setTimeout(() => {
+                    this.progressBarBar.classList.remove("efficiency-flash");
+                }, 400);
+            });
+            construction.wasEfficient = false;
+        }
     }
 
     updateFixtureItemIcons(construction) {

@@ -18,7 +18,7 @@ export const language = {
     'MENU_HOUSE': "Maison",
     'MENU_BUILT': 'Construit',
     'MENU_FIXTURES': 'Aménagements',
-
+    'MENU_MAX_TIER' : 'Niveau maximal',        
     'MENU_TIER': 'Niveau ${tiername}',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Qu\'est-ce que les niveaux de maison ?',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Le niveau de votre maison commence à 0. En construisant des meubles et en remplissant chaque pièce, le niveau de votre maison s\'améliorera.</span>',
@@ -149,7 +149,7 @@ export const language = {
     'DESCRIPTION_ADDS_ITEM': 'Donner ${itemQuantity} ${itemName} ${itemImage}',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'Vous n\'avez pas les matériaux nécessaires pour construire cela.',
-
+        'TOASTS_EFFICIENCY' : 'Vous avez réussi à accomplir plusieurs actions à la fois',
     'MASTERY_BONUS_ Construction_ 0': 'Débloquez les effets du niveau 1 du mobilier.',
     'MASTERY_BONUS_ Construction_ 1': 'Débloquez les effets du niveau 2 du mobilier.',
     'MASTERY_BONUS_ Construction_ 2': 'Débloquez les effets du niveau 3 du mobilier.',

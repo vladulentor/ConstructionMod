@@ -4,9 +4,9 @@ export const language = {
     'MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY': 'Baukategorie Auswählen',
     'MENU_TEXT_CONSTRUCT': 'Konstruieren',
     'MENU_TEXT_BUILD': 'Bauen',
-    'MENU_TEXT_BUILT_PROGRESS': 'Upgrade: ${currentValue}/${maxValue}',
+    'MENU_TEXT_BUILT_PROGRESS': 'Verbesserung: ${currentValue}/${maxValue}',
     'MENU_TEXT_PARTIAL_BUILT_PROGRESS': '${currentValue}/${maxValue} ${percent}',
-    'MENU_TEXT_SHOW_UPGRADES': 'Upgrades',
+    'MENU_TEXT_SHOW_UPGRADES': 'Verbesserungen',
     'MENU_TEXT_SHOW_GO_BACK': 'Geh zurück',
     'MENU_TEXT_REMAINING': 'Verbleibende Kosten',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'Alle aktiven Modifikatoren anzeigen',
@@ -19,6 +19,7 @@ export const language = {
     'MENU_TIER': 'Stufe ${tiername}',
     'MENU_BUILT': 'Gebaut',
     'MENU_FIXTURES': 'Einbauten',
+        'MENU_MAX_TIER' : 'Maximale Stufe',
 
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Was sind Hausstufen?',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Die Stufe deines Hauses beginnt bei 0. Wenn du Möbel baust und jeden Raum füllst, wird die Stufe deines Hauses steigen.</span>',
@@ -151,7 +152,7 @@ export const language = {
     'DESCRIPTION_UNLOCKS_PLOT': 'Schaltet 1 ${plotCategory} Feld in der Landwirtschaft frei',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'Sie haben nicht die erforderlichen Materialien, um das zu bauen',
-
+        'TOASTS_EFFICIENCY' : 'Du hast es geschafft, mehrere Aktionen gleichzeitig abzuschließen',
     'MASTERY_BONUS_ Construction_ 0': 'Schalte die Effekte der Stufe 1 des Einrichtungsgegenstands frei.',
     'MASTERY_BONUS_ Construction_ 1': 'Schalte die Effekte der Stufe 2 des Einrichtungsgegenstands frei.',
     'MASTERY_BONUS_ Construction_ 2': 'Schalte die Effekte der Stufe 3 des Einrichtungsgegenstands frei.',

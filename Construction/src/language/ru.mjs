@@ -18,7 +18,7 @@ export const language = {
     'MENU_BUILT': 'Построено',
     'MENU_HOUSE': "Дом",
     'MENU_FIXTURES': 'Фурнитура',
-
+        'MENU_MAX_TIER' : 'Максимальный уровень',
     'MENU_TIER': 'Уровень ${tiername}',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Что такое уровни дома?',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Уровень вашего дома начинается с 0. По мере того как вы строите мебель и заполняете каждую комнату, уровень вашего дома будет повышаться.</span>',
@@ -150,7 +150,7 @@ export const language = {
     'DESCRIPTION_ADDS_ITEM': 'Дает ${itemQuantity} ${itemName} ${itemImage}',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'У вас нет необходимых материалов для его постройки.',
-
+        'TOASTS_EFFICIENCY' : 'Вы смогли выполнить несколько действий одновременно',
     'MASTERY_BONUS_ Construction_ 0': 'Разблокируйте эффекты уровня 1 мебели.',
     'MASTERY_BONUS_ Construction_ 1': 'Разблокируйте эффекты уровня 2 мебели.',
     'MASTERY_BONUS_ Construction_ 2': 'Разблокируйте эффекты уровня 3 мебели.',

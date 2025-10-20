@@ -124,7 +124,7 @@
         "name": "Mahogany Planks",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/brick.png",
+        "media": "assets/items/planks_mahogany.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -141,6 +141,210 @@
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 350
+      },
+       {
+        "itemType": "Item",
+        "id": "Clay_Bricks",
+        "name": "Clay Bricks",
+        "category": "Construction",
+        "type": "Bricks",
+        "media": "assets/items/bricks_clay.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 6
+      },
+   {
+        "itemType": "Item",
+        "id": "Limestone_Bricks",
+        "name": "Limestone Bricks",
+        "category": "Construction",
+        "type": "Bricks",
+        "media": "assets/items/bricks_limestone.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 12
+      },      
+      {
+        "itemType": "Item",
+        "id": "Granite_Bricks",
+        "name": "Granite Bricks",
+        "category": "Construction",
+        "type": "Bricks",
+        "media": "assets/items/bricks_granite.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 24
+      },   
+{
+        "itemType": "Item",
+        "id": "Marble_Bricks",
+        "name": "Marble Bricks",
+        "category": "Construction",
+        "type": "Bricks",
+        "media": "assets/items/bricks_marble.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 48
+      },   
+        {
+        "itemType": "Item",
+        "id": "Magic_Bricks",
+        "name": "Magic Bricks",
+        "category": "Construction",
+        "type": "Bricks",
+        "media": "assets/items/bricks_magic.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 96
+      },
+      {
+        "itemType": "Item",
+        "id": "Leather_Straps",
+        "name": "Leather Straps",
+        "category": "Construction",
+        "type": "Straps",
+        "media": "assets/items/straps_leather.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 3
+      },
+      {
+        "itemType": "Item",
+        "id": "Hard_Leather_Straps",
+        "name": "Hard Leather Straps",
+        "category": "Construction",
+        "type": "Straps",
+        "media": "assets/items/straps_hard_leather.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 3
+      },
+      {
+        "itemType": "Item",
+        "id": "Blue_Dhide_Leather_Straps",
+        "name": "Blue D-hide Leather Straps",
+        "category": "Construction",
+        "type": "Straps",
+        "media": "assets/items/straps_blue_d-hide_leather.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 3
+      },
+      {
+        "itemType": "Item",
+        "id": "Red_Dhide_Leather_Straps",
+        "name": "Red D-hide Leather Straps",
+        "category": "Construction",
+        "type": "Straps",
+        "media": "assets/items/straps_red_d-hide_leather.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 3
+      },
+      {
+        "itemType": "Item",
+        "id": "Black_Dhide_Leather_Straps",
+        "name": "Black D-hide Leather Straps",
+        "category": "Construction",
+        "type": "Straps",
+        "media": "assets/items/straps_black_d-hide_leather.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 3
+      },
+      {
+        "itemType": "Item",
+        "id": "Green_Dhide_Leather_Straps",
+        "name": "Green D-hide Leather Straps",
+        "category": "Construction",
+        "type": "Straps",
+        "media": "assets/items/straps_green_d-hide_leather.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 3
+      },
+      {
+        "itemType": "Item",
+        "id": "Leather_Bands",
+        "name": "Leather Bands",
+        "category": "Construction",
+        "type": "Bands",
+        "media": "assets/items/bands_leather.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 1
+      },
+      {
+        "itemType": "Item",
+        "id": "Hard_Leather_Bands",
+        "name": "Hard Leather Bands",
+        "category": "Construction",
+        "type": "Bands",
+        "media": "assets/items/bands_hard_leather.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 3
+      },
+      {
+        "itemType": "Item",
+        "id": "Green_Dhide_Leather_Bands",
+        "name": "Green D-Hide Leather Bands",
+        "category": "Construction",
+        "type": "Bands",
+        "media": "assets/items/bands_green_d-hide_leather.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 65
+      },
+      {
+        "itemType": "Item",
+        "id": "Blue_Dhide_Leather_Bands",
+        "name": "Blue D-Hide Leather Bands",
+        "category": "Construction",
+        "type": "Bands",
+        "media": "assets/items/bands_blue_d-hide_leather.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 140
+      },
+      {
+        "itemType": "Item",
+        "id": "Red_Dhide_Leather_Bands",
+        "name": "Red D-Hide Leather Bands",
+        "category": "Construction",
+        "type": "Bands",
+        "media": "assets/items/bands_red_d-hide_leather.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 320
+      },
+      {
+        "itemType": "Item",
+        "id": "Black_Dhide_Leather_Bands",
+        "name": "Black D-Hide Leather Bands",
+        "category": "Construction",
+        "type": "Bands",
+        "media": "assets/items/bands_black_d-hide_leather.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 200
       },
       {
         "itemType": "Token",
@@ -1958,6 +2162,86 @@
               "spoofOrder": 18,
               "level": 70,
               "productID": "rielkConstruction:Dragonite_Nails",
+              "baseQuantity": 5,
+              "baseExperience": 50,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Dragonite_Bar",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Clay_Bricks",
+              "spoofOrder": 6,
+              "level": 1,
+              "productID": "rielkConstruction:Clay_Bricks",
+              "baseQuantity": 2,
+              "baseExperience": 4,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Iron_Bar",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Limestone_Bricks",
+              "spoofOrder": 11,
+              "level": 20,
+              "productID": "rielkConstruction:Limestone_Bricks",
+              "baseQuantity": 5,
+              "baseExperience": 8,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Steel_Bar",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Granite_Bricks",
+              "spoofOrder": 12,
+              "level": 35,
+              "productID": "rielkConstruction:Granite_Bricks",
+              "baseQuantity": 5,
+              "baseExperience": 20,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Mithril_Bar",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Marble_Bricks",
+              "spoofOrder": 17,
+              "level": 55,
+              "productID": "rielkConstruction:Marble_Bricks",
+              "baseQuantity": 5,
+              "baseExperience": 25,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Adamantite_Bar",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Magic_Bricks",
+              "spoofOrder": 18,
+              "level": 70,
+              "productID": "rielkConstruction:Magic_Bricks",
               "baseQuantity": 5,
               "baseExperience": 50,
               "categoryID": "rielkConstruction:Materials",
@@ -5211,7 +5495,7 @@
                     "skillID": "melvorD:Crafting"
                   }
                 ],
-                                "rielkConstruction:skillEfficiencyCost": [
+                "rielkConstruction:skillEfficiencyCost": [
                   {
                     "value": -0.15
                   }
@@ -5582,11 +5866,10 @@
                 }
               ],
               "currencyCosts": [
-                                {
+                {
                   "id": "melvorD:SlayerCoins",
                   "quantity": 50000
                 }
-
               ],
               "modifiers": {
                 "skillInterval": [
@@ -6076,7 +6359,7 @@
               ]
             }
           },
-           {
+          {
             "gamemodeID": "melvorF:Hardcore",
             "newCosts": {
               "items": [
@@ -6098,7 +6381,7 @@
               ]
             }
           },
-           {
+          {
             "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
@@ -6360,7 +6643,7 @@
               ]
             }
           },
-           {
+          {
             "gamemodeID": "melvorF:Hardcore",
             "newCosts": {
               "items": [
@@ -6381,7 +6664,8 @@
                 }
               ]
             }
-          }, {
+          },
+          {
             "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
@@ -6403,7 +6687,6 @@
               ]
             }
           }
-
         ]
       },
       {
@@ -6431,7 +6714,7 @@
               ]
             }
           },
-           {
+          {
             "gamemodeID": "melvorF:Hardcore",
             "newCosts": {
               "items": [
@@ -6453,7 +6736,7 @@
               ]
             }
           },
-           {
+          {
             "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
@@ -6502,7 +6785,7 @@
               ]
             }
           },
-           {
+          {
             "gamemodeID": "melvorF:Hardcore",
             "newCosts": {
               "items": [
@@ -6524,7 +6807,7 @@
               ]
             }
           },
-           {
+          {
             "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
@@ -6573,7 +6856,7 @@
               ]
             }
           },
-            {
+          {
             "gamemodeID": "melvorF:Hardcore",
             "newCosts": {
               "items": [
@@ -6595,7 +6878,7 @@
               ]
             }
           },
-            {
+          {
             "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
@@ -6626,20 +6909,21 @@
             "gamemodeID": "melvorD:Standard",
             "newCosts": {
               "items": [
-              {
-              "id": "rielkConstruction:Normal_Planks",
-              "quantity": 20
-            },
-            {
-              "id": "rielkConstruction:Steel_Nails",
-              "quantity": 15
-            }
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 20
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 15
+                }
               ],
               "currencies": [
                 {
                   "currency": "melvorD:GP",
                   "type": "Fixed",
-                  "cost": 1000                }
+                  "cost": 1000
+                }
               ]
             }
           },
@@ -6647,20 +6931,21 @@
             "gamemodeID": "melvorF:Hardcore",
             "newCosts": {
               "items": [
-              {
-              "id": "rielkConstruction:Normal_Planks",
-              "quantity": 20
-            },
-            {
-              "id": "rielkConstruction:Steel_Nails",
-              "quantity": 15
-            }
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 20
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 15
+                }
               ],
               "currencies": [
                 {
                   "currency": "melvorD:GP",
                   "type": "Fixed",
-                  "cost": 1000                }
+                  "cost": 1000
+                }
               ]
             }
           },
@@ -6668,20 +6953,21 @@
             "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
-              {
-              "id": "rielkConstruction:Normal_Planks",
-              "quantity": 20
-            },
-            {
-              "id": "rielkConstruction:Steel_Nails",
-              "quantity": 15
-            }
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 20
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 15
+                }
               ],
               "currencies": [
                 {
                   "currency": "melvorD:GP",
                   "type": "Fixed",
-                  "cost": 1000                }
+                  "cost": 1000
+                }
               ]
             }
           }
@@ -6695,13 +6981,13 @@
             "newCosts": {
               "items": [
                 {
-              "id": "rielkConstruction:Oak_Planks",
-              "quantity": 75
-            },
-            {
-              "id": "rielkConstruction:Steel_Nails",
-              "quantity": 50
-            }
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 75
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 50
+                }
               ],
               "currencies": [
                 {
@@ -6717,13 +7003,13 @@
             "newCosts": {
               "items": [
                 {
-              "id": "rielkConstruction:Oak_Planks",
-              "quantity": 75
-            },
-            {
-              "id": "rielkConstruction:Steel_Nails",
-              "quantity": 50
-            }
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 75
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 50
+                }
               ],
               "currencies": [
                 {
@@ -6739,13 +7025,13 @@
             "newCosts": {
               "items": [
                 {
-              "id": "rielkConstruction:Oak_Planks",
-              "quantity": 75
-            },
-            {
-              "id": "rielkConstruction:Steel_Nails",
-              "quantity": 50
-            }
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 75
+                },
+                {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 50
+                }
               ],
               "currencies": [
                 {
@@ -6765,14 +7051,14 @@
             "gamemodeID": "melvorD:Standard",
             "newCosts": {
               "items": [
-               {
-              "id": "rielkConstruction:Teak_Planks",
-              "quantity": 150
-            },
-            {
-              "id": "rielkConstruction:Mithril_Nails",
-              "quantity": 100
-            }
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 150
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 100
+                }
               ],
               "currencies": [
                 {
@@ -6783,18 +7069,18 @@
               ]
             }
           },
-           {
+          {
             "gamemodeID": "melvorF:Hardcore",
             "newCosts": {
               "items": [
-               {
-              "id": "rielkConstruction:Teak_Planks",
-              "quantity": 150
-            },
-            {
-              "id": "rielkConstruction:Mithril_Nails",
-              "quantity": 100
-            }
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 150
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 100
+                }
               ],
               "currencies": [
                 {
@@ -6805,18 +7091,18 @@
               ]
             }
           },
-           {
+          {
             "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
-               {
-              "id": "rielkConstruction:Teak_Planks",
-              "quantity": 150
-            },
-            {
-              "id": "rielkConstruction:Mithril_Nails",
-              "quantity": 100
-            }
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 150
+                },
+                {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 100
+                }
               ],
               "currencies": [
                 {
@@ -6837,13 +7123,13 @@
             "newCosts": {
               "items": [
                 {
-              "id": "rielkConstruction:Teak_Planks",
-              "quantity": 350
-            },
-            {
-              "id": "rielkConstruction:Adamantite_Nails",
-              "quantity": 300
-            }
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 350
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 300
+                }
               ],
               "currencies": [
                 {
@@ -6859,13 +7145,13 @@
             "newCosts": {
               "items": [
                 {
-              "id": "rielkConstruction:Teak_Planks",
-              "quantity": 350
-            },
-            {
-              "id": "rielkConstruction:Adamantite_Nails",
-              "quantity": 300
-            }
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 350
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 300
+                }
               ],
               "currencies": [
                 {
@@ -6881,13 +7167,13 @@
             "newCosts": {
               "items": [
                 {
-              "id": "rielkConstruction:Teak_Planks",
-              "quantity": 350
-            },
-            {
-              "id": "rielkConstruction:Adamantite_Nails",
-              "quantity": 300
-            }
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 350
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 300
+                }
               ],
               "currencies": [
                 {
@@ -6907,14 +7193,14 @@
             "gamemodeID": "melvorD:Standard",
             "newCosts": {
               "items": [
-               {
-              "id": "rielkConstruction:Mahogany_Planks",
-              "quantity": 750
-            },
-            {
-              "id": "rielkConstruction:Adamantite_Nails",
-              "quantity": 500
-            }
+                {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 750
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 500
+                }
               ],
               "currencies": [
                 {
@@ -6929,14 +7215,14 @@
             "gamemodeID": "melvorF:Hardcore",
             "newCosts": {
               "items": [
-               {
-              "id": "rielkConstruction:Mahogany_Planks",
-              "quantity": 750
-            },
-            {
-              "id": "rielkConstruction:Adamantite_Nails",
-              "quantity": 500
-            }
+                {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 750
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 500
+                }
               ],
               "currencies": [
                 {
@@ -6951,14 +7237,14 @@
             "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
-               {
-              "id": "rielkConstruction:Mahogany_Planks",
-              "quantity": 750
-            },
-            {
-              "id": "rielkConstruction:Adamantite_Nails",
-              "quantity": 500
-            }
+                {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 750
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 500
+                }
               ],
               "currencies": [
                 {
@@ -6978,14 +7264,14 @@
             "gamemodeID": "melvorD:Standard",
             "newCosts": {
               "items": [
-               {
-              "id": "rielkConstruction:Magic_Planks",
-              "quantity": 1500
-            },
-            {
-              "id": "rielkConstruction:Dragonite_Nails",
-              "quantity": 750
-            }
+                {
+                  "id": "rielkConstruction:Magic_Planks",
+                  "quantity": 1500
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 750
+                }
               ],
               "currencies": [
                 {
@@ -6996,18 +7282,18 @@
               ]
             }
           },
-            {
+          {
             "gamemodeID": "melvorF:Hardcore",
             "newCosts": {
               "items": [
-               {
-              "id": "rielkConstruction:Magic_Planks",
-              "quantity": 1500
-            },
-            {
-              "id": "rielkConstruction:Dragonite_Nails",
-              "quantity": 750
-            }
+                {
+                  "id": "rielkConstruction:Magic_Planks",
+                  "quantity": 1500
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 750
+                }
               ],
               "currencies": [
                 {
@@ -7018,18 +7304,18 @@
               ]
             }
           },
-            {
+          {
             "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
-               {
-              "id": "rielkConstruction:Magic_Planks",
-              "quantity": 1500
-            },
-            {
-              "id": "rielkConstruction:Dragonite_Nails",
-              "quantity": 750
-            }
+                {
+                  "id": "rielkConstruction:Magic_Planks",
+                  "quantity": 1500
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 750
+                }
               ],
               "currencies": [
                 {
@@ -7138,7 +7424,7 @@
               ]
             }
           },
-            {
+          {
             "gamemodeID": "melvorF:Hardcore",
             "newCosts": {
               "items": [
@@ -7160,7 +7446,7 @@
               ]
             }
           },
-            {
+          {
             "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
@@ -7301,7 +7587,8 @@
                 }
               ]
             }
-          },{
+          },
+          {
             "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
@@ -7323,7 +7610,6 @@
               ]
             }
           }
-
         ]
       },
       {
@@ -7422,7 +7708,7 @@
               ]
             }
           },
-           {
+          {
             "gamemodeID": "melvorF:Hardcore",
             "newCosts": {
               "items": [
@@ -7444,7 +7730,7 @@
               ]
             }
           },
-           {
+          {
             "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [
@@ -7514,7 +7800,8 @@
                 }
               ]
             }
-          },{
+          },
+          {
             "gamemodeID": "melvorF:Adventure",
             "newCosts": {
               "items": [

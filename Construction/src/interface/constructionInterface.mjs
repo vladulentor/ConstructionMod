@@ -29,7 +29,10 @@ export class ConstructionInterface {
             if (category.type !== 'Artisan')
                 return;
             const recipes = construction.actions.filter((r) => r.category === category);
-            recipes.sort(BasicSkillRecipe.sortByLevels);
+            if (window.innerWidth <= 968)
+                recipes.sort(BasicSkillRecipe.sortByLevels); // our spoof ordering only works when there are 2 rows to work with, otherwise leave it on default (though that's not MUCH better.)
+            else
+                recipes.sort((a, b) => a.spoofOrder - b.spoofOrder);
             const tab = createElement('recipe-selection-tab', {
                 className: 'col-12 col-md-8 d-none',
                 attributes: [['data-option-tag-name', 'rielk-construction-recipe-option']],

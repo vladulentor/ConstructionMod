@@ -104,6 +104,11 @@ export const language = {
     'ITEM_NAME_Red_Dhide_Leather_Bands': 'Red D-hide Leather Bands',
     'ITEM_NAME_Black_Dhide_Leather_Bands': 'Black D-hide Leather Bands',
 
+    'ITEM_NAME_Clay_Bricks': 'Clay Bricks',
+    'ITEM_NAME_Limestone_Bricks': 'Limestone Bricks',
+    'ITEM_NAME_Granite_Bricks': 'Granite Bricks',
+    'ITEM_NAME_Marble_Bricks': 'Marble Bricks',
+    'ITEM_NAME_Magic_Bricks': 'Magic Bricks',
 
     'ITEM_NAME_Flower_Pots_Token_1': 'Build Flower Pots Tier 1 in Construction to unlock.',
     'ITEM_NAME_Flower_Pots_Token_2': 'Build Flower Pots Tier 2 in Construction to unlock.',

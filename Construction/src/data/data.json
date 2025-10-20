@@ -137,10 +137,22 @@
         "category": "Construction",
         "type": "Planks",
         "media": "assets/items/planks_magic.png",
-        "ignoreCompletion": false,
+        "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 350
+      },
+        {
+        "itemType": "Item",
+        "id": "Redwood_Planks",
+        "name": "Redwood Planks",
+        "category": "Construction",
+        "type": "Planks",
+        "media": "assets/items/planks_redwood.png",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 35
       },
        {
         "itemType": "Item",
@@ -2032,7 +2044,7 @@
             {
               "id": "Oak_Planks",
               "level": 15,
-              "spoofOrder": 2,
+              "spoofOrder": 3,
               "productID": "rielkConstruction:Oak_Planks",
               "baseQuantity": 2,
               "baseExperience": 8,
@@ -2047,7 +2059,7 @@
             },
             {
               "id": "Teak_Planks",
-              "spoofOrder": 7,
+              "spoofOrder": 5,
               "level": 35,
               "productID": "rielkConstruction:Teak_Planks",
               "baseQuantity": 2,
@@ -2063,7 +2075,7 @@
             },
             {
               "id": "Mahogany_Planks",
-              "spoofOrder": 8,
+              "spoofOrder": 7,
               "level": 55,
               "productID": "rielkConstruction:Mahogany_Planks",
               "baseQuantity": 2,
@@ -2078,16 +2090,96 @@
               "currencyCosts": []
             },
             {
-              "id": "Magic_Planks",
-              "spoofOrder": 13,
+              "id": "Redwood_Planks",
+              "spoofOrder": 9,
               "level": 70,
-              "productID": "rielkConstruction:Magic_Planks",
+              "productID": "rielkConstruction:Redwood_Planks",
               "baseQuantity": 2,
               "baseExperience": 50,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "melvorD:Magic_Logs",
+                  "id": "melvorD:Redwood_Logs",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+                        {
+              "id": "Clay_Bricks",
+              "spoofOrder": 2,
+              "level": 1,
+              "productID": "rielkConstruction:Clay_Bricks",
+              "baseQuantity": 2,
+              "baseExperience": 4,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Iron_Bar",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Limestone_Bricks",
+              "spoofOrder": 4,
+              "level": 20,
+              "productID": "rielkConstruction:Limestone_Bricks",
+              "baseQuantity": 5,
+              "baseExperience": 8,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Steel_Bar",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Granite_Bricks",
+              "spoofOrder": 6,
+              "level": 35,
+              "productID": "rielkConstruction:Granite_Bricks",
+              "baseQuantity": 5,
+              "baseExperience": 20,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Mithril_Bar",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Marble_Bricks",
+              "spoofOrder": 8,
+              "level": 55,
+              "productID": "rielkConstruction:Marble_Bricks",
+              "baseQuantity": 5,
+              "baseExperience": 25,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Adamantite_Bar",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Magic_Bricks",
+              "spoofOrder": 10,
+              "level": 70,
+              "productID": "rielkConstruction:Magic_Bricks",
+              "baseQuantity": 5,
+              "baseExperience": 50,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Dragonite_Bar",
                   "quantity": 1
                 }
               ],
@@ -2095,7 +2187,7 @@
             },
             {
               "id": "Iron_Nails",
-              "spoofOrder": 6,
+              "spoofOrder": 11,
               "level": 1,
               "productID": "rielkConstruction:Iron_Nails",
               "baseQuantity": 5,
@@ -2111,7 +2203,7 @@
             },
             {
               "id": "Steel_Nails",
-              "spoofOrder": 11,
+              "spoofOrder": 13,
               "level": 20,
               "productID": "rielkConstruction:Steel_Nails",
               "baseQuantity": 5,
@@ -2127,7 +2219,7 @@
             },
             {
               "id": "Mithril_Nails",
-              "spoofOrder": 12,
+              "spoofOrder": 15,
               "level": 35,
               "productID": "rielkConstruction:Mithril_Nails",
               "baseQuantity": 5,
@@ -2159,7 +2251,7 @@
             },
             {
               "id": "Dragonite_Nails",
-              "spoofOrder": 18,
+              "spoofOrder": 19,
               "level": 70,
               "productID": "rielkConstruction:Dragonite_Nails",
               "baseQuantity": 5,
@@ -2174,85 +2266,90 @@
               "currencyCosts": []
             },
             {
-              "id": "Clay_Bricks",
-              "spoofOrder": 6,
-              "level": 1,
-              "productID": "rielkConstruction:Clay_Bricks",
-              "baseQuantity": 2,
-              "baseExperience": 4,
-              "categoryID": "rielkConstruction:Materials",
-              "itemCosts": [
-                {
-                  "id": "melvorD:Iron_Bar",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-            {
-              "id": "Limestone_Bricks",
-              "spoofOrder": 11,
-              "level": 20,
-              "productID": "rielkConstruction:Limestone_Bricks",
-              "baseQuantity": 5,
-              "baseExperience": 8,
-              "categoryID": "rielkConstruction:Materials",
-              "itemCosts": [
-                {
-                  "id": "melvorD:Steel_Bar",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-            {
-              "id": "Granite_Bricks",
-              "spoofOrder": 12,
-              "level": 35,
-              "productID": "rielkConstruction:Granite_Bricks",
-              "baseQuantity": 5,
-              "baseExperience": 20,
-              "categoryID": "rielkConstruction:Materials",
-              "itemCosts": [
-                {
-                  "id": "melvorD:Mithril_Bar",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-            {
-              "id": "Marble_Bricks",
-              "spoofOrder": 17,
-              "level": 55,
-              "productID": "rielkConstruction:Marble_Bricks",
-              "baseQuantity": 5,
-              "baseExperience": 25,
-              "categoryID": "rielkConstruction:Materials",
-              "itemCosts": [
-                {
-                  "id": "melvorD:Adamantite_Bar",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-            {
-              "id": "Magic_Bricks",
-              "spoofOrder": 18,
-              "level": 70,
-              "productID": "rielkConstruction:Magic_Bricks",
-              "baseQuantity": 5,
-              "baseExperience": 50,
-              "categoryID": "rielkConstruction:Materials",
-              "itemCosts": [
-                {
-                  "id": "melvorD:Dragonite_Bar",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            }
+							"id": "Leather_Straps",
+                            "spoofOrder": 12,
+
+							"level": 1,
+							"productID": "rielkConstruction:Leather_Straps",
+							"baseQuantity": 1,
+							"baseExperience": 12,
+							"categoryID": "rielkConstruction:Materials",
+							"itemCosts": [
+								{
+									"id": "rielkConstruction:Leather_Bands",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						},
+						{
+							"id": "Green_Dhide_Leather_Straps",
+                            "spoofOrder": 14,
+
+							"level": 20,
+							"productID": "rielkConstruction:Green_Dhide_Leather_Straps",
+							"baseQuantity": 1,
+							"baseExperience": 12,
+							"categoryID": "rielkConstruction:Materials",
+							"itemCosts": [
+								{
+									"id": "rielkConstruction:Green_Dhide_Leather_Bands",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						},
+						{
+							"id": "Blue_Dhide_Leather_Straps",
+                            "spoofOrder": 16,
+
+							"level": 35,
+							"productID": "rielkConstruction:Blue_Dhide_Leather_Straps",
+							"baseQuantity": 1,
+							"baseExperience": 12,
+							"categoryID": "rielkConstruction:Materials",
+							"itemCosts": [
+								{
+									"id": "rielkConstruction:Blue_Dhide_Leather_Bands",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						},
+						{
+							"id": "Red_Dhide_Leather_Straps",
+                            "spoofOrder": 18,
+
+							"level": 55,
+							"productID": "rielkConstruction:Red_Dhide_Leather_Straps",
+							"baseQuantity": 1,
+							"baseExperience": 12,
+							"categoryID": "rielkConstruction:Materials",
+							"itemCosts": [
+								{
+									"id": "rielkConstruction:Red_Dhide_Leather_Bands",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						},
+						{
+							"id": "Black_Dhide_Leather_Straps",
+                 "spoofOrder": 20,
+
+							"level": 70,
+							"productID": "rielkConstruction:Black_Dhide_Leather_Straps",
+							"baseQuantity": 1,
+							"baseExperience": 12,
+							"categoryID": "rielkConstruction:Materials",
+							"itemCosts": [
+								{
+									"id": "rielkConstruction:Red_Dhide_Leather_Bands",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						}
           ],
           "rooms": [
             {

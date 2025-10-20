@@ -124,7 +124,7 @@
         "name": "Mahogany Planks",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/planks_mahogany.png",
+        "media": "assets/items/brick.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,

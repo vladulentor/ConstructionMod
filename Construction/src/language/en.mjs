@@ -90,12 +90,11 @@ export const language = {
     'ITEM_NAME_Magic_Planks': 'Magic Planks',
     'ITEM_NAME_Redwood_Planks': 'Redwood Planks',
 
-    'ITEM_NAME_Leather_Straps': 'Leather Straps',
-    'ITEM_NAME_Hard_Leather_Straps': 'Hard Leather Straps',
     'ITEM_NAME_Green_Dhide_Leather_Straps': 'Green D-hide Leather Straps',
     'ITEM_NAME_Blue_Dhide_Leather_Straps': 'Blue D-hide Leather Straps',
     'ITEM_NAME_Red_Dhide_Leather_Straps': 'Red D-hide Leather Straps',
     'ITEM_NAME_Black_Dhide_Leather_Straps': 'Black D-hide Leather Straps',
+    'ITEM_NAME_Ancient_Dhide_Leather_Straps': 'Ancient D-hide Leather Straps',
 
     'ITEM_NAME_Leather_Bands': 'Leather Bands',
     'ITEM_NAME_Hard_Leather_Bands': 'Hard Leather Bands',

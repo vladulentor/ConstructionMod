@@ -216,23 +216,23 @@
       },
       {
         "itemType": "Item",
-        "id": "Leather_Straps",
-        "name": "Leather Straps",
-        "category": "Construction",
-        "type": "Straps",
-        "media": "assets/items/straps_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 3
-      },
-      {
-        "itemType": "Item",
         "id": "Hard_Leather_Straps",
         "name": "Hard Leather Straps",
         "category": "Construction",
         "type": "Straps",
         "media": "assets/items/straps_hard_leather.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 3
+      },
+         {
+        "itemType": "Item",
+        "id": "Green_Dhide_Leather_Straps",
+        "name": "Green D-hide Leather Straps",
+        "category": "Construction",
+        "type": "Straps",
+        "media": "assets/items/straps_green_d-hide_leather.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -274,18 +274,20 @@
         "golbinRaidExclusive": false,
         "sellsFor": 3
       },
-      {
+   
+            {
         "itemType": "Item",
-        "id": "Green_Dhide_Leather_Straps",
-        "name": "Green D-hide Leather Straps",
+        "id": "Ancient_Dhide_Leather_Straps",
+        "name": "Ancient D-hide Leather Straps",
         "category": "Construction",
         "type": "Straps",
-        "media": "assets/items/straps_green_d-hide_leather.png",
+        "media": "assets/items/straps_ancient_d-hide_leather.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 3
       },
+
       {
         "itemType": "Item",
         "id": "Leather_Bands",
@@ -2030,7 +2032,7 @@
               "spoofOrder": 1,
               "level": 1,
               "productID": "rielkConstruction:Normal_Planks",
-              "baseQuantity": 2,
+              "baseQuantity": 3,
               "baseExperience": 4,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -2046,7 +2048,7 @@
               "level": 15,
               "spoofOrder": 3,
               "productID": "rielkConstruction:Oak_Planks",
-              "baseQuantity": 2,
+              "baseQuantity": 3,
               "baseExperience": 8,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -2062,7 +2064,7 @@
               "spoofOrder": 5,
               "level": 35,
               "productID": "rielkConstruction:Teak_Planks",
-              "baseQuantity": 2,
+              "baseQuantity": 3,
               "baseExperience": 20,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -2078,7 +2080,7 @@
               "spoofOrder": 7,
               "level": 55,
               "productID": "rielkConstruction:Mahogany_Planks",
-              "baseQuantity": 2,
+              "baseQuantity": 3,
               "baseExperience": 25,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -2094,7 +2096,7 @@
               "spoofOrder": 9,
               "level": 70,
               "productID": "rielkConstruction:Redwood_Planks",
-              "baseQuantity": 2,
+              "baseQuantity": 3,
               "baseExperience": 50,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -2126,7 +2128,7 @@
               "spoofOrder": 4,
               "level": 20,
               "productID": "rielkConstruction:Limestone_Bricks",
-              "baseQuantity": 5,
+              "baseQuantity": 2,
               "baseExperience": 8,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -2142,7 +2144,7 @@
               "spoofOrder": 6,
               "level": 35,
               "productID": "rielkConstruction:Granite_Bricks",
-              "baseQuantity": 5,
+              "baseQuantity": 2,
               "baseExperience": 20,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -2158,7 +2160,7 @@
               "spoofOrder": 8,
               "level": 55,
               "productID": "rielkConstruction:Marble_Bricks",
-              "baseQuantity": 5,
+              "baseQuantity": 2,
               "baseExperience": 25,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -2174,7 +2176,7 @@
               "spoofOrder": 10,
               "level": 70,
               "productID": "rielkConstruction:Magic_Bricks",
-              "baseQuantity": 5,
+              "baseQuantity": 2,
               "baseExperience": 50,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
@@ -2265,26 +2267,9 @@
               ],
               "currencyCosts": []
             },
-            {
-							"id": "Leather_Straps",
-                            "spoofOrder": 12,
-
-							"level": 1,
-							"productID": "rielkConstruction:Leather_Straps",
-							"baseQuantity": 1,
-							"baseExperience": 12,
-							"categoryID": "rielkConstruction:Materials",
-							"itemCosts": [
-								{
-									"id": "rielkConstruction:Leather_Bands",
-									"quantity": 1
-								}
-							],
-							"currencyCosts": []
-						},
 						{
 							"id": "Green_Dhide_Leather_Straps",
-                            "spoofOrder": 14,
+                            "spoofOrder": 12,
 
 							"level": 20,
 							"productID": "rielkConstruction:Green_Dhide_Leather_Straps",
@@ -2301,7 +2286,7 @@
 						},
 						{
 							"id": "Blue_Dhide_Leather_Straps",
-                            "spoofOrder": 16,
+                            "spoofOrder": 14,
 
 							"level": 35,
 							"productID": "rielkConstruction:Blue_Dhide_Leather_Straps",
@@ -2318,7 +2303,7 @@
 						},
 						{
 							"id": "Red_Dhide_Leather_Straps",
-                            "spoofOrder": 18,
+                            "spoofOrder": 16,
 
 							"level": 55,
 							"productID": "rielkConstruction:Red_Dhide_Leather_Straps",
@@ -2335,7 +2320,7 @@
 						},
 						{
 							"id": "Black_Dhide_Leather_Straps",
-                 "spoofOrder": 20,
+                 "spoofOrder": 18,
 
 							"level": 70,
 							"productID": "rielkConstruction:Black_Dhide_Leather_Straps",
@@ -2345,6 +2330,23 @@
 							"itemCosts": [
 								{
 									"id": "rielkConstruction:Red_Dhide_Leather_Bands",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						},
+                        {
+							"id": "Ancient_Leather_Straps",
+                            "spoofOrder": 20,
+
+							"level": 1,
+							"productID": "rielkConstruction:Ancient_Dhide_Leather_Straps",
+							"baseQuantity": 1,
+							"baseExperience": 12,
+							"categoryID": "rielkConstruction:Materials",
+							"itemCosts": [
+								{
+									"id": "rielkConstruction:Leather_Bands",
 									"quantity": 1
 								}
 							],

@@ -82,6 +82,67 @@
         "golbinRaidExclusive": false,
         "sellsFor": 130
       },
+
+      {
+        "itemType": "Item",
+        "id": "Normal_Beams",
+        "name": "Normal Beams",
+        "category": "Construction",
+        "type": "Beams",
+        "media": "assets/items/beams_normal.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 1
+      },
+      {
+        "itemType": "Item",
+        "id": "Oak_Beams",
+        "name": "Oak Beams",
+        "category": "Construction",
+        "type": "Planks",
+        "media": "assets/items/beams_oak.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 5
+      },
+      {
+        "itemType": "Item",
+        "id": "Teak_Beams",
+        "name": "Teak Beams",
+        "category": "Construction",
+        "type": "Planks",
+        "media": "assets/items/beams_teak.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 14
+      },
+      {
+        "itemType": "Item",
+        "id": "Mahogany_Beams",
+        "name": "Mahogany Beams",
+        "category": "Construction",
+        "type": "Planks",
+        "media": "assets/items/beams_mahogany.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 125
+      },
+      {
+        "itemType": "Item",
+        "id": "Redwood_Beams",
+        "name": "Redwood Beams",
+        "category": "Construction",
+        "type": "Planks",
+        "media": "assets/items/beams_redwood.png",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 280
+      },
       {
         "itemType": "Item",
         "id": "Normal_Planks",
@@ -128,7 +189,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 188
+        "sellsFor": 200
       },
       {
         "itemType": "Item",
@@ -140,7 +201,7 @@
         "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 350
+        "sellsFor": 500
       },
       {
         "itemType": "Item",
@@ -2011,7 +2072,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "melvorD:Normal_Logs",
+                  "id": "rielkConstruction:Normal_Beams",
                   "quantity": 1
                 }
               ],
@@ -2027,7 +2088,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "melvorD:Oak_Logs",
+                  "id": "rielkConstruction:Oak_Beams",
                   "quantity": 1
                 }
               ],
@@ -2043,7 +2104,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "melvorD:Teak_Logs",
+                  "id": "rielkConstruction:Teak_Beams",
                   "quantity": 1
                 }
               ],
@@ -2059,7 +2120,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "melvorD:Mahogany_Logs",
+                  "id": "rielkConstruction:Mahogany_Beams",
                   "quantity": 1
                 }
               ],
@@ -2075,7 +2136,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "melvorD:Redwood_Logs",
+                  "id": "rielkConstruction:Redwood_Beams",
                   "quantity": 1
                 }
               ],
@@ -2337,7 +2398,7 @@
                 },
 
                 {
-                  "id": "melvorD:Steam_Rune",
+                  "id": "melvorF:Steam_Rune",
                   "quantity": 1
                 },
                   {

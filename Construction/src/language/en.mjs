@@ -24,7 +24,7 @@ export const language = {
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'When all rooms contain Furniture of a required tier or higher, your House Tier will increase. You will unlock permanent Construction bonuses and recieve supplies.',
     'MENU_TEXT_REWARDS': 'Rewards',
 
-    'MENU_MAX_TIER' : 'Max Tier',
+    'MENU_MAX_TIER': 'Max Tier',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN': 'Chance to complete ${potency} actions at once.',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_1': 'Chance to make a single progress at once. :(',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_2': 'Chance to make double progress at once.',
@@ -61,7 +61,7 @@ export const language = {
 
     'PET_NAME_ChuckTheForeman': 'Chuck the Foreman',
     'PET_NAME_Scoobs': 'Scoobs',
-    'PET_DESCRIPTION_Scoobs':"Reach House Tier 5",
+    'PET_DESCRIPTION_Scoobs': "Reach House Tier 5",
 
     'ITEM_NAME_Construction_Skillcape': 'Construction Skillcape',
     'ITEM_NAME_Builders_Hat': 'Builders Hat',
@@ -96,12 +96,11 @@ export const language = {
     'ITEM_NAME_Black_Dhide_Leather_Straps': 'Black D-hide Leather Straps',
     'ITEM_NAME_Ancient_Dhide_Leather_Straps': 'Ancient D-hide Leather Straps',
 
-    'ITEM_NAME_Leather_Bands': 'Leather Bands',
-    'ITEM_NAME_Hard_Leather_Bands': 'Hard Leather Bands',
     'ITEM_NAME_Green_Dhide_Leather_Bands': 'Green D-hide Leather Bands',
     'ITEM_NAME_Blue_Dhide_Leather_Bands': 'Blue D-hide Leather Bands',
     'ITEM_NAME_Red_Dhide_Leather_Bands': 'Red D-hide Leather Bands',
     'ITEM_NAME_Black_Dhide_Leather_Bands': 'Black D-hide Leather Bands',
+    'ITEM_NAME_Ancient_Dhide_Leather_Bands': 'Ancient D-hide Leather Bands',
 
     'ITEM_NAME_Clay_Bricks': 'Clay Bricks',
     'ITEM_NAME_Limestone_Bricks': 'Limestone Bricks',
@@ -162,10 +161,10 @@ export const language = {
 
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
-    'TOASTS_EFFICIENCY':'You managed to complete multiple actions at once',
+    'TOASTS_EFFICIENCY': 'You managed to complete multiple actions at once',
 
-    'ENEMY_NAME_ConstructGiant':'Iron Giant',
-    'ENEMY_NAME_BarnRaiser':'Barn Raiser',
+    'ENEMY_NAME_ConstructGiant': 'Iron Giant',
+    'ENEMY_NAME_BarnRaiser': 'Barn Raiser',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Materials',
     'SKILL_CATEGORY_ Construction_ House': 'Furniture',

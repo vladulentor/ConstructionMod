@@ -142,7 +142,7 @@
         "golbinRaidExclusive": false,
         "sellsFor": 350
       },
-        {
+      {
         "itemType": "Item",
         "id": "Redwood_Planks",
         "name": "Redwood Planks",
@@ -154,7 +154,7 @@
         "golbinRaidExclusive": false,
         "sellsFor": 35
       },
-       {
+      {
         "itemType": "Item",
         "id": "Clay_Bricks",
         "name": "Clay Bricks",
@@ -166,7 +166,7 @@
         "golbinRaidExclusive": false,
         "sellsFor": 6
       },
-   {
+      {
         "itemType": "Item",
         "id": "Limestone_Bricks",
         "name": "Limestone Bricks",
@@ -177,7 +177,7 @@
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 12
-      },      
+      },
       {
         "itemType": "Item",
         "id": "Granite_Bricks",
@@ -189,8 +189,8 @@
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 24
-      },   
-{
+      },
+      {
         "itemType": "Item",
         "id": "Marble_Bricks",
         "name": "Marble Bricks",
@@ -201,8 +201,8 @@
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 48
-      },   
-        {
+      },
+      {
         "itemType": "Item",
         "id": "Magic_Bricks",
         "name": "Magic Bricks",
@@ -215,18 +215,6 @@
         "sellsFor": 96
       },
       {
-        "itemType": "Item",
-        "id": "Hard_Leather_Straps",
-        "name": "Hard Leather Straps",
-        "category": "Construction",
-        "type": "Straps",
-        "media": "assets/items/straps_hard_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 3
-      },
-         {
         "itemType": "Item",
         "id": "Green_Dhide_Leather_Straps",
         "name": "Green D-hide Leather Straps",
@@ -274,39 +262,13 @@
         "golbinRaidExclusive": false,
         "sellsFor": 3
       },
-   
-            {
+      {
         "itemType": "Item",
         "id": "Ancient_Dhide_Leather_Straps",
         "name": "Ancient D-hide Leather Straps",
         "category": "Construction",
         "type": "Straps",
         "media": "assets/items/straps_ancient_d-hide_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 3
-      },
-
-      {
-        "itemType": "Item",
-        "id": "Leather_Bands",
-        "name": "Leather Bands",
-        "category": "Construction",
-        "type": "Bands",
-        "media": "assets/items/bands_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 1
-      },
-      {
-        "itemType": "Item",
-        "id": "Hard_Leather_Bands",
-        "name": "Hard Leather Bands",
-        "category": "Construction",
-        "type": "Bands",
-        "media": "assets/items/bands_hard_leather.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -346,7 +308,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 320
+        "sellsFor": 200
       },
       {
         "itemType": "Item",
@@ -358,7 +320,19 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 200
+        "sellsFor": 320
+      },
+      {
+        "itemType": "Item",
+        "id": "Ancient_Dhide_Leather_Bands",
+        "name": "Ancient D-Hide Leather Bands",
+        "category": "Construction",
+        "type": "Bands",
+        "media": "assets/items/bands_ancient_d-hide_leather.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 330
       },
       {
         "itemType": "Token",
@@ -2107,81 +2081,81 @@
               ],
               "currencyCosts": []
             },
-                        {
-              "id": "Clay_Bricks",
+            {
+              "id": "Green_Dhide_Leather_Straps",
               "spoofOrder": 2,
               "level": 1,
-              "productID": "rielkConstruction:Clay_Bricks",
-              "baseQuantity": 2,
+              "productID": "rielkConstruction:Green_Dhide_Leather_Straps",
+              "baseQuantity": 1,
               "baseExperience": 4,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "melvorD:Iron_Bar",
+                  "id": "rielkConstruction:Green_Dhide_Leather_Bands",
                   "quantity": 1
                 }
               ],
               "currencyCosts": []
             },
             {
-              "id": "Limestone_Bricks",
+              "id": "Blue_Dhide_Leather_Straps",
               "spoofOrder": 4,
               "level": 20,
-              "productID": "rielkConstruction:Limestone_Bricks",
-              "baseQuantity": 2,
+              "productID": "rielkConstruction:Blue_Dhide_Leather_Straps",
+              "baseQuantity": 1,
               "baseExperience": 8,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "melvorD:Steel_Bar",
+                  "id": "rielkConstruction:Blue_Dhide_Leather_Bands",
                   "quantity": 1
                 }
               ],
               "currencyCosts": []
             },
             {
-              "id": "Granite_Bricks",
+              "id": "Red_Dhide_Leather_Straps",
               "spoofOrder": 6,
               "level": 35,
-              "productID": "rielkConstruction:Granite_Bricks",
-              "baseQuantity": 2,
+              "productID": "rielkConstruction:Red_Dhide_Leather_Straps",
+              "baseQuantity": 1,
+              "baseExperience": 12,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Red_Dhide_Leather_Bands",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Black_Dhide_Leather_Straps",
+              "spoofOrder": 8,
+              "level": 55,
+              "productID": "rielkConstruction:Black_Dhide_Leather_Straps",
+              "baseQuantity": 1,
               "baseExperience": 20,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "melvorD:Mithril_Bar",
+                  "id": "rielkConstruction:Black_Dhide_Leather_Bands",
                   "quantity": 1
                 }
               ],
               "currencyCosts": []
             },
             {
-              "id": "Marble_Bricks",
-              "spoofOrder": 8,
-              "level": 55,
-              "productID": "rielkConstruction:Marble_Bricks",
-              "baseQuantity": 2,
-              "baseExperience": 25,
-              "categoryID": "rielkConstruction:Materials",
-              "itemCosts": [
-                {
-                  "id": "melvorD:Adamantite_Bar",
-                  "quantity": 1
-                }
-              ],
-              "currencyCosts": []
-            },
-            {
-              "id": "Magic_Bricks",
+              "id": "Ancient_Leather_Straps",
               "spoofOrder": 10,
               "level": 70,
-              "productID": "rielkConstruction:Magic_Bricks",
-              "baseQuantity": 2,
+              "productID": "rielkConstruction:Ancient_Dhide_Leather_Straps",
+              "baseQuantity": 1,
               "baseExperience": 50,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "melvorD:Dragonite_Bar",
+                  "id": "rielkConstruction:Ancient_Dhide_Leather_Bands",
                   "quantity": 1
                 }
               ],
@@ -2267,91 +2241,148 @@
               ],
               "currencyCosts": []
             },
-						{
-							"id": "Green_Dhide_Leather_Straps",
-                            "spoofOrder": 12,
+            {
+              "id": "Clay_Bricks",
+              "spoofOrder": 12,
+              "level": 1,
+              "productID": "rielkConstruction:Clay_Bricks",
+              "baseQuantity": 2,
+              "baseExperience": 4,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Earth_Rune",
+                  "quantity": 1
+                },
 
-							"level": 20,
-							"productID": "rielkConstruction:Green_Dhide_Leather_Straps",
-							"baseQuantity": 1,
-							"baseExperience": 12,
-							"categoryID": "rielkConstruction:Materials",
-							"itemCosts": [
-								{
-									"id": "rielkConstruction:Green_Dhide_Leather_Bands",
-									"quantity": 1
-								}
-							],
-							"currencyCosts": []
-						},
-						{
-							"id": "Blue_Dhide_Leather_Straps",
-                            "spoofOrder": 14,
+                {
+                  "id": "melvorD:Water_Rune",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Limestone_Bricks",
+              "spoofOrder": 14,
+              "level": 20,
+              "productID": "rielkConstruction:Limestone_Bricks",
+              "baseQuantity": 2,
+              "baseExperience": 8,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
 
-							"level": 35,
-							"productID": "rielkConstruction:Blue_Dhide_Leather_Straps",
-							"baseQuantity": 1,
-							"baseExperience": 12,
-							"categoryID": "rielkConstruction:Materials",
-							"itemCosts": [
-								{
-									"id": "rielkConstruction:Blue_Dhide_Leather_Bands",
-									"quantity": 1
-								}
-							],
-							"currencyCosts": []
-						},
-						{
-							"id": "Red_Dhide_Leather_Straps",
-                            "spoofOrder": 16,
+                {
+                  "id": "melvorF:Mud_Rune",
+                  "quantity": 1
+                },
 
-							"level": 55,
-							"productID": "rielkConstruction:Red_Dhide_Leather_Straps",
-							"baseQuantity": 1,
-							"baseExperience": 12,
-							"categoryID": "rielkConstruction:Materials",
-							"itemCosts": [
-								{
-									"id": "rielkConstruction:Red_Dhide_Leather_Bands",
-									"quantity": 1
-								}
-							],
-							"currencyCosts": []
-						},
-						{
-							"id": "Black_Dhide_Leather_Straps",
-                 "spoofOrder": 18,
+                {
+                  "id": "melvorD:Earth_Rune",
+                  "quantity": 1
+                },
 
-							"level": 70,
-							"productID": "rielkConstruction:Black_Dhide_Leather_Straps",
-							"baseQuantity": 1,
-							"baseExperience": 12,
-							"categoryID": "rielkConstruction:Materials",
-							"itemCosts": [
-								{
-									"id": "rielkConstruction:Red_Dhide_Leather_Bands",
-									"quantity": 1
-								}
-							],
-							"currencyCosts": []
-						},
-                        {
-							"id": "Ancient_Leather_Straps",
-                            "spoofOrder": 20,
+                {
+                  "id": "melvorD:Fire_Rune",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Granite_Bricks",
+              "spoofOrder": 16,
+              "level": 35,
+              "productID": "rielkConstruction:Granite_Bricks",
+              "baseQuantity": 2,
+              "baseExperience": 20,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
 
-							"level": 1,
-							"productID": "rielkConstruction:Ancient_Dhide_Leather_Straps",
-							"baseQuantity": 1,
-							"baseExperience": 12,
-							"categoryID": "rielkConstruction:Materials",
-							"itemCosts": [
-								{
-									"id": "rielkConstruction:Leather_Bands",
-									"quantity": 1
-								}
-							],
-							"currencyCosts": []
-						}
+                {
+                  "id": "melvorD:Chaos_Rune",
+                  "quantity": 1
+                },
+
+                {
+                  "id": "melvorD:Smoke_Rune",
+                  "quantity": 1
+                },
+
+                {
+                  "id": "melvorD:Dust_Rune",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Marble_Bricks",
+              "spoofOrder": 18,
+              "level": 55,
+              "productID": "rielkConstruction:Marble_Bricks",
+              "baseQuantity": 2,
+              "baseExperience": 25,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
+
+                {
+                  "id": "melvorD:Light_Rune",
+                  "quantity": 1
+                },
+
+                {
+                  "id": "melvorF:Nature_Rune",
+                  "quantity": 1
+                },
+
+                {
+                  "id": "melvorD:Steam_Rune",
+                  "quantity": 1
+                },
+                  {
+                  "id": "melvorF:Mud_Rune",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Magic_Bricks",
+              "spoofOrder": 20,
+              "level": 70,
+              "productID": "rielkConstruction:Magic_Bricks",
+              "baseQuantity": 2,
+              "baseExperience": 50,
+              "categoryID": "rielkConstruction:Materials",
+              "itemCosts": [
+
+                {
+                  "id": "melvorD:Ancient_Rune",
+                  "quantity": 1
+                },
+
+                {
+                  "id": "melvorF:Spirit_Rune",
+                  "quantity": 1
+                },
+
+                {
+                  "id": "melvorF:Steam_Rune",
+                  "quantity": 1
+                },
+                  {
+                  "id": "melvorF:Lava_Rune",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorF:Havoc_Rune",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            }
+            
           ],
           "rooms": [
             {

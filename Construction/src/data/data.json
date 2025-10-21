@@ -325,8 +325,8 @@
       },
       {
         "itemType": "Item",
-        "id": "Ancient_Dhide_Leather_Straps",
-        "name": "Ancient D-hide Leather Straps",
+        "id": "Elder_Dhide_Leather_Straps",
+        "name": "Elder D-hide Leather Straps",
         "category": "Construction",
         "type": "Straps",
         "media": "assets/items/straps_ancient_d-hide_leather.png",
@@ -337,11 +337,11 @@
       },
       {
         "itemType": "Item",
-        "id": "Green_Dhide_Leather_Bands",
-        "name": "Green D-Hide Leather Bands",
+        "id": "Green_Dhide_Leather_Slivers",
+        "name": "Green D-Hide Leather Slivers",
         "category": "Construction",
-        "type": "Bands",
-        "media": "assets/items/bands_green_d-hide_leather.png",
+        "type": "Slivers",
+        "media": "assets/items/slivers_green_d-hide_leather.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -349,11 +349,11 @@
       },
       {
         "itemType": "Item",
-        "id": "Blue_Dhide_Leather_Bands",
-        "name": "Blue D-Hide Leather Bands",
+        "id": "Blue_Dhide_Leather_Slivers",
+        "name": "Blue D-Hide Leather Slivers",
         "category": "Construction",
-        "type": "Bands",
-        "media": "assets/items/bands_blue_d-hide_leather.png",
+        "type": "Slivers",
+        "media": "assets/items/slivers_blue_d-hide_leather.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -361,11 +361,11 @@
       },
       {
         "itemType": "Item",
-        "id": "Red_Dhide_Leather_Bands",
-        "name": "Red D-Hide Leather Bands",
+        "id": "Red_Dhide_Leather_Slivers",
+        "name": "Red D-Hide Leather Slivers",
         "category": "Construction",
-        "type": "Bands",
-        "media": "assets/items/bands_red_d-hide_leather.png",
+        "type": "Slivers",
+        "media": "assets/items/slivers_red_d-hide_leather.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -373,11 +373,11 @@
       },
       {
         "itemType": "Item",
-        "id": "Black_Dhide_Leather_Bands",
-        "name": "Black D-Hide Leather Bands",
+        "id": "Black_Dhide_Leather_Slivers",
+        "name": "Black D-Hide Leather Slivers",
         "category": "Construction",
-        "type": "Bands",
-        "media": "assets/items/bands_black_d-hide_leather.png",
+        "type": "Slivers",
+        "media": "assets/items/slivers_black_d-hide_leather.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -385,11 +385,11 @@
       },
       {
         "itemType": "Item",
-        "id": "Ancient_Dhide_Leather_Bands",
-        "name": "Ancient D-Hide Leather Bands",
+        "id": "Elder_Dhide_Leather_Slivers",
+        "name": "Elder D-Hide Leather Slivers",
         "category": "Construction",
-        "type": "Bands",
-        "media": "assets/items/bands_ancient_d-hide_leather.png",
+        "type": "Slivers",
+        "media": "assets/items/slivers_ancient_d-hide_leather.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -1793,6 +1793,184 @@
         }
       },
       {
+				"skillID": "melvorD:Crafting",
+				"data": {
+					"categories": [
+						{
+							"id": "Leather_Slivers",
+							"media": "assets/items/slivers_green_d-hide_leather.png",
+							"name": "Leather Slivers"
+						}
+					],
+					"recipes": [
+						{
+							"id": "Green_Dhide_Leather_Slivers",
+							"level": 15,
+							"productID": "rielkConstruction:Green_Dhide_Leather_Slivers",
+							"baseQuantity": 5,
+							"baseExperience": 23,
+							"categoryID": "rielkConstruction:Leather_Slivers",
+							"itemCosts": [
+								{
+									"id": "melvorD:Green_Dragonhide",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						},
+						{
+							"id": "Blue_Dhide_Leather_Slivers",
+							"level": 30,
+							"productID": "rielkConstruction:Blue_Dhide_Leather_Slivers",
+							"baseQuantity": 4,
+							"baseExperience": 23,
+							"categoryID": "rielkConstruction:Leather_Slivers",
+							"itemCosts": [
+								{
+									"id": "melvorD:Blue_Dragonhide",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						},
+						{
+							"id": "Red_Dhide_Leather_Slivers",
+							"level": 45,
+							"productID": "rielkConstruction:Red_Dhide_Leather_Slivers",
+							"baseQuantity": 3,
+							"baseExperience": 23,
+							"categoryID": "rielkConstruction:Leather_Slivers",
+							"itemCosts": [
+								{
+									"id": "melvorD:Red_Dragonhide",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						},
+            						{
+							"id": "Black_Dhide_Leather_Slivers",
+							"level": 70,
+							"productID": "rielkConstruction:Black_Dhide_Leather_Slivers",
+							"baseQuantity": 2,
+							"baseExperience": 23,
+							"categoryID": "rielkConstruction:Leather_Slivers",
+							"itemCosts": [
+								{
+									"id": "melvorD:Black_Dragonhide",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						},
+            			{
+							"id": "Elder_Dragonhide_Slivers",
+							"level": 90,
+							"productID": "rielkConstruction:Elder_Dhide_Leather_Slivers",
+							"baseQuantity": 1,
+							"baseExperience": 23,
+							"categoryID": "rielkConstruction:Leather_Slivers",
+							"itemCosts": [
+								{
+									"id": "melvorF:Elder_Dragonhide",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						}
+					]
+				}
+			},
+			{
+				"skillID": "melvorD:Fletching",
+				"data": {
+          "categories": [
+						{
+							"id": "Wood_Beams",
+							"media": "assets/items/beams_normal.png",
+							"name": "Wood Beams"
+						}
+					],
+					"recipes": [
+						{
+							"id": "Normal_Beams",
+							"level": 5,
+							"productID": "rielkConstruction:Normal_Beams",
+							"baseQuantity": 1,
+							"baseExperience": 10,
+							"categoryID": "rielkConstruction:Wood_Beams",
+							"itemCosts": [
+								{
+									"id": "melvorD:Normal_Logs",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						},
+            {
+							"id": "Oak_Beams",
+							"level": 5,
+							"productID": "rielkConstruction:Oak_Beams",
+							"baseQuantity": 1,
+							"baseExperience": 10,
+							"categoryID": "rielkConstruction:Wood_Beams",
+							"itemCosts": [
+								{
+									"id": "melvorD:Oak_Logs",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						},
+            {
+							"id": "Teak_Beams",
+							"level": 5,
+							"productID": "rielkConstruction:Teak_Beams",
+							"baseQuantity": 1,
+							"baseExperience": 10,
+							"categoryID": "rielkConstruction:Wood_Beams",
+							"itemCosts": [
+								{
+									"id": "melvorD:Teak_Logs",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						},
+            {
+							"id": "Mahogany_Beams",
+							"level": 5,
+							"productID": "rielkConstruction:Mahogany_Beams",
+							"baseQuantity": 1,
+							"baseExperience": 10,
+							"categoryID": "rielkConstruction:Wood_Beams",
+							"itemCosts": [
+								{
+									"id": "melvorD:Mahogany_Logs",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						},
+            {
+							"id": "Redwood_Beams",
+							"level": 5,
+							"productID": "rielkConstruction:Redwood_Beams",
+							"baseQuantity": 1,
+							"baseExperience": 10,
+							"categoryID": "rielkConstruction:Wood_Beams",
+							"itemCosts": [
+								{
+									"id": "melvorD:Redwood_Logs",
+									"quantity": 1
+								}
+							],
+							"currencyCosts": []
+						}
+					]
+				}
+			},
+      {
         "skillID": "rielkConstruction:Construction",
         "data": {
           "pets": [
@@ -2152,7 +2330,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Green_Dhide_Leather_Bands",
+                  "id": "rielkConstruction:Green_Dhide_Leather_Slivers",
                   "quantity": 1
                 }
               ],
@@ -2168,7 +2346,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Blue_Dhide_Leather_Bands",
+                  "id": "rielkConstruction:Blue_Dhide_Leather_Slivers",
                   "quantity": 1
                 }
               ],
@@ -2184,7 +2362,7 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Red_Dhide_Leather_Bands",
+                  "id": "rielkConstruction:Red_Dhide_Leather_Slivers",
                   "quantity": 1
                 }
               ],
@@ -2200,23 +2378,23 @@
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Black_Dhide_Leather_Bands",
+                  "id": "rielkConstruction:Black_Dhide_Leather_Slivers",
                   "quantity": 1
                 }
               ],
               "currencyCosts": []
             },
             {
-              "id": "Ancient_Leather_Straps",
+              "id": "Elder_Leather_Straps",
               "spoofOrder": 10,
               "level": 70,
-              "productID": "rielkConstruction:Ancient_Dhide_Leather_Straps",
+              "productID": "rielkConstruction:Elder_Dhide_Leather_Straps",
               "baseQuantity": 1,
               "baseExperience": 50,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Ancient_Dhide_Leather_Bands",
+                  "id": "rielkConstruction:Elder_Dhide_Leather_Slivers",
                   "quantity": 1
                 }
               ],

@@ -65,7 +65,7 @@ class Setup {
         });
     }
     async applyOtherPatches() {
-        //  patchFletchingOrder();
+     patchFletchingOrder();
 
     }
     async loadData() {

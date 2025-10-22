@@ -8317,6 +8317,18 @@
             "rielkConstruction:Builders_Boots"
           ]
         }
+      },
+      {
+        "id": "melvorD:Green_Dhide_Body_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Green_Dhide_Leather_Slivers",
+              "quantity": 50
+            }
+          ],
+          "remove":["melvorD:Green_Dragonhide"]
+        }
       }
     ],
     "combatAreas": [

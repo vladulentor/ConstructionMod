@@ -8,6 +8,7 @@ const { patchMasteryElement } = await loadModule('src/skillPatches/patchmasterye
 const { skillBoostsCompatibility } = await loadModule("src/modPatches/skillboosts.mjs");
 const { patchFletchingOrder } = await loadModule("src/skillPatches/patchFletchingOrder.mjs")
 const { patchRenderEquipment } = await loadModule("src/skillPatches/patchrenderequipment.mjs")
+const { patchArrowShaftRecipes } = await loadModule("src/skillPatches/patchArrowShaftRecipes.mjs")
 
 
 export async function setup(ctx) {
@@ -17,7 +18,7 @@ export async function setup(ctx) {
     game.construction = game.registerSkill(game.registeredNamespaces.getNamespace('rielkConstruction'), Construction);
     await setup.applyPatches();
     await setup.loadData();
-    await setup.applyOtherPatches()
+    await setup.applyOtherPatches();
 
     await setup.modCompatibility(ctx);
     await setup.lastChanges(ctx);
@@ -66,6 +67,8 @@ class Setup {
     }
     async applyOtherPatches() {
      patchFletchingOrder();
+     patchArrowShaftRecipes(this.ctx);
+
 
     }
     async loadData() {

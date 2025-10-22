@@ -82,7 +82,6 @@
         "golbinRaidExclusive": false,
         "sellsFor": 130
       },
-
       {
         "itemType": "Item",
         "id": "Normal_Beams",
@@ -1793,183 +1792,183 @@
         }
       },
       {
-				"skillID": "melvorD:Crafting",
-				"data": {
-					"categories": [
-						{
-							"id": "Leather_Slivers",
-							"media": "assets/items/slivers_category.png",
-							"name": "Leather Slivers"
-						}
-					],
-					"recipes": [
-						{
-							"id": "Green_Dhide_Leather_Slivers",
-							"level": 15,
-							"productID": "rielkConstruction:Green_Dhide_Leather_Slivers",
-							"baseQuantity": 5,
-							"baseExperience": 23,
-							"categoryID": "rielkConstruction:Leather_Slivers",
-							"itemCosts": [
-								{
-									"id": "melvorD:Green_Dragonhide",
-									"quantity": 1
-								}
-							],
-							"currencyCosts": []
-						},
-						{
-							"id": "Blue_Dhide_Leather_Slivers",
-							"level": 30,
-							"productID": "rielkConstruction:Blue_Dhide_Leather_Slivers",
-							"baseQuantity": 4,
-							"baseExperience": 23,
-							"categoryID": "rielkConstruction:Leather_Slivers",
-							"itemCosts": [
-								{
-									"id": "melvorD:Blue_Dragonhide",
-									"quantity": 1
-								}
-							],
-							"currencyCosts": []
-						},
-						{
-							"id": "Red_Dhide_Leather_Slivers",
-							"level": 45,
-							"productID": "rielkConstruction:Red_Dhide_Leather_Slivers",
-							"baseQuantity": 3,
-							"baseExperience": 23,
-							"categoryID": "rielkConstruction:Leather_Slivers",
-							"itemCosts": [
-								{
-									"id": "melvorD:Red_Dragonhide",
-									"quantity": 1
-								}
-							],
-							"currencyCosts": []
-						},
-            						{
-							"id": "Black_Dhide_Leather_Slivers",
-							"level": 70,
-							"productID": "rielkConstruction:Black_Dhide_Leather_Slivers",
-							"baseQuantity": 2,
-							"baseExperience": 23,
-							"categoryID": "rielkConstruction:Leather_Slivers",
-							"itemCosts": [
-								{
-									"id": "melvorD:Black_Dragonhide",
-									"quantity": 1
-								}
-							],
-							"currencyCosts": []
-						},
-            			{
-							"id": "Elder_Dragonhide_Slivers",
-							"level": 90,
-							"productID": "rielkConstruction:Elder_Dhide_Leather_Slivers",
-							"baseQuantity": 1,
-							"baseExperience": 23,
-							"categoryID": "rielkConstruction:Leather_Slivers",
-							"itemCosts": [
-								{
-									"id": "melvorF:Elder_Dragonhide",
-									"quantity": 1
-								}
-							],
-							"currencyCosts": []
-						}
-					]
-				}
-			},
-			{
-				"skillID": "melvorD:Fletching",
-				"data": {
+        "skillID": "melvorD:Crafting",
+        "data": {
           "categories": [
-						{
-							"id": "Wood_Beams",
-							"media": "assets/items/beams_normal.png",
-							"name": "Wood Beams"
-						}
-					],
-					"recipes": [
-						{
-							"id": "Normal_Beams",
-							"level": 5,
-							"productID": "rielkConstruction:Normal_Beams",
-							"baseQuantity": 1,
-							"baseExperience": 10,
-							"categoryID": "rielkConstruction:Wood_Beams",
-							"itemCosts": [
-								{
-									"id": "melvorD:Normal_Logs",
-									"quantity": 1
-								}
-							],
-							"currencyCosts": []
-						},
             {
-							"id": "Oak_Beams",
-							"level": 5,
-							"productID": "rielkConstruction:Oak_Beams",
-							"baseQuantity": 1,
-							"baseExperience": 10,
-							"categoryID": "rielkConstruction:Wood_Beams",
-							"itemCosts": [
-								{
-									"id": "melvorD:Oak_Logs",
-									"quantity": 1
-								}
-							],
-							"currencyCosts": []
-						},
+              "id": "Leather_Slivers",
+              "media": "assets/items/slivers_category.png",
+              "name": "Leather Slivers"
+            }
+          ],
+          "recipes": [
             {
-							"id": "Teak_Beams",
-							"level": 5,
-							"productID": "rielkConstruction:Teak_Beams",
-							"baseQuantity": 1,
-							"baseExperience": 10,
-							"categoryID": "rielkConstruction:Wood_Beams",
-							"itemCosts": [
-								{
-									"id": "melvorD:Teak_Logs",
-									"quantity": 1
-								}
-							],
-							"currencyCosts": []
-						},
+              "id": "Green_Dhide_Leather_Slivers",
+              "level": 15,
+              "productID": "rielkConstruction:Green_Dhide_Leather_Slivers",
+              "baseQuantity": 5,
+              "baseExperience": 23,
+              "categoryID": "rielkConstruction:Leather_Slivers",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Green_Dragonhide",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
             {
-							"id": "Mahogany_Beams",
-							"level": 5,
-							"productID": "rielkConstruction:Mahogany_Beams",
-							"baseQuantity": 1,
-							"baseExperience": 10,
-							"categoryID": "rielkConstruction:Wood_Beams",
-							"itemCosts": [
-								{
-									"id": "melvorD:Mahogany_Logs",
-									"quantity": 1
-								}
-							],
-							"currencyCosts": []
-						},
+              "id": "Blue_Dhide_Leather_Slivers",
+              "level": 30,
+              "productID": "rielkConstruction:Blue_Dhide_Leather_Slivers",
+              "baseQuantity": 4,
+              "baseExperience": 23,
+              "categoryID": "rielkConstruction:Leather_Slivers",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Blue_Dragonhide",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
             {
-							"id": "Redwood_Beams",
-							"level": 5,
-							"productID": "rielkConstruction:Redwood_Beams",
-							"baseQuantity": 1,
-							"baseExperience": 10,
-							"categoryID": "rielkConstruction:Wood_Beams",
-							"itemCosts": [
-								{
-									"id": "melvorD:Redwood_Logs",
-									"quantity": 1
-								}
-							],
-							"currencyCosts": []
-						}
-					]
-				}
-			},
+              "id": "Red_Dhide_Leather_Slivers",
+              "level": 45,
+              "productID": "rielkConstruction:Red_Dhide_Leather_Slivers",
+              "baseQuantity": 3,
+              "baseExperience": 23,
+              "categoryID": "rielkConstruction:Leather_Slivers",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Red_Dragonhide",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Black_Dhide_Leather_Slivers",
+              "level": 70,
+              "productID": "rielkConstruction:Black_Dhide_Leather_Slivers",
+              "baseQuantity": 2,
+              "baseExperience": 23,
+              "categoryID": "rielkConstruction:Leather_Slivers",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Black_Dragonhide",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Elder_Dragonhide_Slivers",
+              "level": 90,
+              "productID": "rielkConstruction:Elder_Dhide_Leather_Slivers",
+              "baseQuantity": 1,
+              "baseExperience": 23,
+              "categoryID": "rielkConstruction:Leather_Slivers",
+              "itemCosts": [
+                {
+                  "id": "melvorF:Elder_Dragonhide",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            }
+          ]
+        }
+      },
+      {
+        "skillID": "melvorD:Fletching",
+        "data": {
+          "categories": [
+            {
+              "id": "Wood_Beams",
+              "media": "assets/items/beams_normal.png",
+              "name": "Wood Beams"
+            }
+          ],
+          "recipes": [
+            {
+              "id": "Normal_Beams",
+              "level": 5,
+              "productID": "rielkConstruction:Normal_Beams",
+              "baseQuantity": 1,
+              "baseExperience": 10,
+              "categoryID": "rielkConstruction:Wood_Beams",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Normal_Logs",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Oak_Beams",
+              "level": 5,
+              "productID": "rielkConstruction:Oak_Beams",
+              "baseQuantity": 1,
+              "baseExperience": 10,
+              "categoryID": "rielkConstruction:Wood_Beams",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Oak_Logs",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Teak_Beams",
+              "level": 5,
+              "productID": "rielkConstruction:Teak_Beams",
+              "baseQuantity": 1,
+              "baseExperience": 10,
+              "categoryID": "rielkConstruction:Wood_Beams",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Teak_Logs",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Mahogany_Beams",
+              "level": 5,
+              "productID": "rielkConstruction:Mahogany_Beams",
+              "baseQuantity": 1,
+              "baseExperience": 10,
+              "categoryID": "rielkConstruction:Wood_Beams",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Mahogany_Logs",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Redwood_Beams",
+              "level": 5,
+              "productID": "rielkConstruction:Redwood_Beams",
+              "baseQuantity": 1,
+              "baseExperience": 10,
+              "categoryID": "rielkConstruction:Wood_Beams",
+              "itemCosts": [
+                {
+                  "id": "melvorD:Redwood_Logs",
+                  "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            }
+          ]
+        }
+      },
       {
         "skillID": "rielkConstruction:Construction",
         "data": {
@@ -2493,7 +2492,6 @@
                   "id": "melvorD:Earth_Rune",
                   "quantity": 1
                 },
-
                 {
                   "id": "melvorD:Water_Rune",
                   "quantity": 1
@@ -2510,17 +2508,14 @@
               "baseExperience": 8,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
-
                 {
                   "id": "melvorF:Mud_Rune",
                   "quantity": 1
                 },
-
                 {
                   "id": "melvorD:Earth_Rune",
                   "quantity": 1
                 },
-
                 {
                   "id": "melvorD:Fire_Rune",
                   "quantity": 1
@@ -2537,17 +2532,14 @@
               "baseExperience": 20,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
-
                 {
                   "id": "melvorD:Chaos_Rune",
                   "quantity": 1
                 },
-
                 {
                   "id": "melvorD:Smoke_Rune",
                   "quantity": 1
                 },
-
                 {
                   "id": "melvorD:Dust_Rune",
                   "quantity": 1
@@ -2564,22 +2556,19 @@
               "baseExperience": 25,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
-
                 {
                   "id": "melvorD:Light_Rune",
                   "quantity": 1
                 },
-
                 {
                   "id": "melvorF:Nature_Rune",
                   "quantity": 1
                 },
-
                 {
                   "id": "melvorF:Steam_Rune",
                   "quantity": 1
                 },
-                  {
+                {
                   "id": "melvorF:Mud_Rune",
                   "quantity": 1
                 }
@@ -2595,22 +2584,19 @@
               "baseExperience": 50,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
-
                 {
                   "id": "melvorD:Ancient_Rune",
                   "quantity": 1
                 },
-
                 {
                   "id": "melvorF:Spirit_Rune",
                   "quantity": 1
                 },
-
                 {
                   "id": "melvorF:Steam_Rune",
                   "quantity": 1
                 },
-                  {
+                {
                   "id": "melvorF:Lava_Rune",
                   "quantity": 1
                 },
@@ -2621,7 +2607,6 @@
               ],
               "currencyCosts": []
             }
-            
           ],
           "rooms": [
             {
@@ -8253,7 +8238,269 @@
         }
       }
     ],
+    "fletchingRecipes": [
+      {
+        "id": "melvorF:Arrow_Shafts",
+        "alternativeCosts": [
+          {
+            "itemCosts": [
+              {
+                "id": "rielkConstruction:Normal_Beams",
+                "quantity": 1
+              }
+            ],
+            "quantityMultiplier": 1
+          },
+          {
+            "itemCosts": [
+              {
+                "id": "rielkConstruction:Oak_Beams",
+                "quantity": 1
+              }
+            ],
+            "quantityMultiplier": 2
+          },
+          {
+            "itemCosts": [
+              {
+                "id": "rielkConstruction:Teak_Beams",
+                "quantity": 1
+              }
+            ],
+            "quantityMultiplier": 4
+          },
+          {
+            "itemCosts": [
+              {
+                "id": "rielkConstruction:Mahogany_Beams",
+                "quantity": 1
+              }
+            ],
+            "quantityMultiplier": 6
+          },
+          {
+            "itemCosts": [
+              {
+                "id": "rielkConstruction:Redwood_Beams",
+                "quantity": 1
+              }
+            ],
+            "quantityMultiplier": 9
+          }
+        ]
+      }
+    ],
     "itemUpgrades": [
+      {
+        "id": "melvorD:Green_Dhide_Body_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Green_Dhide_Leather_Slivers",
+              "quantity": 250
+            }
+          ],
+          "remove": [
+            "melvorD:Green_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorD:Green_Dhide_Chaps_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Green_Dhide_Leather_Slivers",
+              "quantity": 250
+            }
+          ],
+          "remove": [
+            "melvorD:Green_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorD:Green_Dhide_Vambraces_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Green_Dhide_Leather_Slivers",
+              "quantity": 250
+            }
+          ],
+          "remove": [
+            "melvorD:Green_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorD:Blue_Dhide_Body_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Blue_Dhide_Leather_Slivers",
+              "quantity": 300
+            }
+          ],
+          "remove": [
+            "melvorD:Blue_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorD:Blue_Dhide_Chaps_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Blue_Dhide_Leather_Slivers",
+              "quantity": 300
+            }
+          ],
+          "remove": [
+            "melvorD:Blue_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorD:Blue_Dhide_Vambraces_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Blue_Dhide_Leather_Slivers",
+              "quantity": 300
+            }
+          ],
+          "remove": [
+            "melvorD:Blue_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorD:Red_Dhide_Body_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Red_Dhide_Leather_Slivers",
+              "quantity": 350
+            }
+          ],
+          "remove": [
+            "melvorD:Red_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorD:Red_Dhide_Chaps_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Red_Dhide_Leather_Slivers",
+              "quantity": 350
+            }
+          ],
+          "remove": [
+            "melvorD:Red_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorD:Red_Dhide_Vambraces_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Red_Dhide_Leather_Slivers",
+              "quantity": 350
+            }
+          ],
+          "remove": [
+            "melvorD:Black_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorD:Black_Dhide_Body_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Black_Dhide_Leather_Slivers",
+              "quantity": 400
+            }
+          ],
+          "remove": [
+            "melvorD:Black_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorD:Black_Dhide_Chaps_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Black_Dhide_Leather_Slivers",
+              "quantity": 400
+            }
+          ],
+          "remove": [
+            "melvorD:Black_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorD:Black_Dhide_Vambraces_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Black_Dhide_Leather_Slivers",
+              "quantity": 400
+            }
+          ],
+          "remove": [
+            "melvorD:Black_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorF:Ancient_Dhide_Body_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Elder_Dhide_Leather_Slivers",
+              "quantity": 500
+            }
+          ],
+          "remove": [
+            "melvorF:Elder_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorF:Ancient_Dhide_Chaps_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Elder_Dhide_Leather_Slivers",
+              "quantity": 500
+            }
+          ],
+          "remove": [
+            "melvorF:Elder_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorF:Ancient_Dhide_Vambraces_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Elder_Dhide_Leather_Slivers",
+              "quantity": 500
+            }
+          ],
+          "remove": [
+            "melvorF:Elder_Dragonhide"
+          ]
+        }
+      },
       {
         "id": "melvorF:Skillers_Hat",
         "itemCosts": {
@@ -8316,18 +8563,6 @@
           "add": [
             "rielkConstruction:Builders_Boots"
           ]
-        }
-      },
-      {
-        "id": "melvorD:Green_Dhide_Body_U",
-        "itemCosts": {
-          "add": [
-            {
-              "id": "rielkConstruction:Green_Dhide_Leather_Slivers",
-              "quantity": 50
-            }
-          ],
-          "remove":["melvorD:Green_Dragonhide"]
         }
       }
     ],

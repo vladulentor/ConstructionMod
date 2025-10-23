@@ -101,10 +101,12 @@ export class ConstructionHouseMenu {
         panel.selectFixture(room, fixture, construction);
     }
     showFixtureUnlocks(room, fixture, construction) {
+        console.log(this.roomUnlocksPanel.fixture);
+        if (!this.roomUnlocksPanel.classList.contains('d-none') && this.roomUnlocksPanel.fixture !== fixture) 
+            return;
         this.scrollBeforePanel = document.documentElement.scrollTop || window.scrollY || 0;
         this.roomPanels.forEach((panel, roomOfPanel) => {
             if (roomOfPanel == room) {
-
                 panel.showFixtureUnlocks(room, fixture, construction);
             } else {
                 hideElement(panel);

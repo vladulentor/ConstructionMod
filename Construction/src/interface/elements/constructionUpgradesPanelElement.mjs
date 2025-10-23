@@ -6,11 +6,13 @@ class ConstructionUpgradesPanelElement extends HTMLElement {
         this._content.append(getTemplateNode('rielk-construction-upgrades-panel-template'));
         this.upgradesContainer = getElementFromFragment(this._content, 'upgrades-container', 'div');
         this.fixtureName = getElementFromFragment(this._content, 'fixture-name', 'span');
+        this.fixture = null;
     }
     connectedCallback() {
         this.appendChild(this._content);
     }
     setFixture(fixture, construction) {
+        this.fixture = fixture;
        // this.fixtureName.textContent = fixture.name;
         
         while (this.upgradePanels.length > fixture.recipes.length) {

@@ -716,7 +716,7 @@ export class Construction extends ArtisanSkill {
         if (continueSkill1 && continueSkill2 && nextCosts.checkIfOwned()) {
             this.startActionTimer();
         } else {
-            if (!nextCosts.checkIfOwned())
+            if (continueSkill2 && !nextCosts.checkIfOwned())
                 this.game.combat.notifications.add({
                     type: 'Player',
                     args: [this, this.noCostsMessage, 'danger']

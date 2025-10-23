@@ -22,7 +22,6 @@ export function patchArrowShaftRecipes(ctx) {
   for (const { remove, replace } of itemReplacements) {
     const removeIndex = newAltCosts.findIndex(alt => hasItem(alt, remove));
     if (removeIndex === -1) continue;
-
     if (saveRecipe.get(recipe) === removeIndex) saveRecipe.delete(recipe);
 
     if (replace) {

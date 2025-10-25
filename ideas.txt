@@ -3,7 +3,61 @@ A high vis jacket that helps construction but -10 or -25 evasion
 A carpenter thieving target that gives the jacket
 the straps which are 1 per dragonskin
 haunted coffin which gives planks (after barn raiser starts giving beams) and jewelry
-stars on furniture level 5, and more on level 8
-efficiency notification
-make chuck's name shorter in the efficeincysourcebuilder
+
+
+ 1.7 s per headless arrow
  
+ 2s per arrow
+1s per mithril Ore
+0.9 per Coal_Ore
+4.6
+8.6s
+
+1.5 s logs
+2.5 oak logs
+
+1s a beam
+1.13 a plank
+
+4.6 per oak plank
+
+
+4s per n. plank
+
+
+1.7
+
+hide:
+0.5 green
+0.75 
+
+
+4s+
+
+4.6 green
+4.7 blue
+5 red
+6s black
+
+4.6 oak plank
+5.6 s teak plank
+6.3 s mahogany plank
+
+160min 
+
+0.5 + 1.5 + 4s
+500
+
+2800
+2500
+
+263+400
+
+36s
+6s+48=54s+6= 60s
+
+96+2= 98s
+
+20s
+160min 
+2.3s per arrow

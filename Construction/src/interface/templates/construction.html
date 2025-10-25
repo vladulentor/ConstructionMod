@@ -25,7 +25,7 @@
 </template>
 
 <template id="rielk-construction-room-panel-template">
-  <div class="block block-rounded border-top border-rielk-construction border-4x">
+  <div class="block block-rounded border-top border-rielk-construction border-4x" style="min-width:620px;">
     <div class="row no-gutters">
       <div class="col-12 pointer-enabled" id="header">
         <div class="block-content text-center">
@@ -33,14 +33,14 @@
           <span class="h5 font-w600" id="room-name"></span>
         </div>
       </div>
-      <div class="col-12 col-md-6 row gutters-tiny">
+      <div class="col-12 col-md-6 row gutters-tiny" style="min-width:320px;">
         <div class="block-content block-content-full text-center" id="target-container"></div>
       </div>
-      <div class="col-12 col-md-6">
-        <div class="block-content block-content-full" id="info-container">
+      <div class="col-12 col-md-6" style="min-width:320px;">
+        <div class="block-content block-content-full" id="info-container" >
           <div class="row gutters-tiny">
             <div class="col-12">
-              <div class="row row-deck gutters-tiny">
+              <div class="row row-deck gutters-tiny" style="">
                 <div class="col-4" id="image-container" style="position:relative;">
                   <div class="block block-rounded-double bg-combat-inner-dark text-center p-3">
                     <div class="image-wrapper"
@@ -138,7 +138,7 @@
         <div class="media d-flex align-items-center" id="button-content">
           <div class="media d-flex align-items-center" id="button-content">
             <div class="m-1">
-              <div class="image-wrapper" style="position: relative; display: inline-block; overflow: visible;">
+              <div class="image-wrapper" style="position: relative; display: inline-block; overflow: visible; min-width: 64px;">
                 <img id="sparkle-underlay" class="bank-img-detail d-none"
                   style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;">
 
@@ -384,7 +384,7 @@
               <div class="media-body text-left">
                 <div class="font-w600">Planks</div>
                 <div class="font-w400 font-size-sm">
-                  Made from <img height="16px" class="m-1">Beams, crafted in <img data-src="assets/media/skills/fletching/fletching.png" class="m-1" height="16px"><strong>Fletching</strong> using Logs from Woodcutting. <strong>Crafting</strong> recipes.
+                  Made from <img height="16px" class="m-1">Beams, crafted in <img data-src="assets/media/skills/fletching/fletching.png" class="m-1" height="16px"><strong>Fletching</strong> using Logs from <img data-src="assets/media/skills/woodcutting/woodcutting.png" class="m-1" height="16px"><strong>Woodcutting</strong>.
                 </div>
               </div>
             </div>
@@ -393,10 +393,9 @@
                 <img class="m-2" height="48px">
               </div>
               <div class="media-body text-left">
-                <div class="font-w600">Planks</div>
+                <div class="font-w600">Nails</div>
                 <div class="font-w400 font-size-sm">
-                  Also (will be) used in some<img data-src="assets/media/skills/ranged/ranged.png" class="m-1"
-                    height="16px"><strong>Arrow</strong> recipes.
+                  Made from <img height="16px" class="m-1">Bars, smelted in <img data-src="assets/media/skills/smithing/smithing.png" class="m-1" height="16px"><strong>Smithing</strong> using Ores from <img data-src="assets/media/skills/mining/mining.png" class="m-1" height="16px"><strong>Mining</strong>.
                 </div>
               </div>
             </div>
@@ -407,29 +406,28 @@
             <div class="py-2 text-left">
               <h4 class="mb-2">&nbsp;</h4>
             </div>
-            <!--  <div class="media d-flex align-items-center push">
-              <div class="mr-3">
-                <img class="m-2" data-src="assets/items/nails_iron.png" height="48px">
-              </div>
-              <div class="media-body text-left">
-                <div class="font-w600">Materials</div>
-                <div class="font-w400 font-size-sm">
-                  Construction consumes resources such as <strong>Planks</strong> and <strong>Nails</strong> to build
-                  and upgrade fixtures.
-                </div>
-              </div>
-            </div>
-            We'll add this stuff in the big next update.
-            -->
             <div class="media d-flex align-items-center push">
               <div class="mr-3">
                 <img class="m-2" data-src="assets/media/main/logo.png" height="48px"
                   src="https://cdn2-main.melvor.net/assets/media/main/logo.png">
               </div>
               <div class="media-body text-left">
-                <div class="font-w600">All Skills</div>
-                <div class="font-w400 font-size-sm">The buffs provided by<img height="16px"
-                    class="m-1"><strong>Construction</strong> interact with every Skill within the game.</div>
+                <div class="font-w600">Bricks</div>
+                <div class="font-w400 font-size-sm">Made from <img height="16px"
+                    class="m-1">Runes, crafted in <img data-src="assets/media/skills/runecrafting/runecrafting.png" class="m-1" height="16px"><strong>Runecrafting</strong> using Rune Essence from <img data-src="assets/media/skills/mining/mining.png" class="m-1" height="16px"><strong>Mining</strong>.
+                </div>
+              </div>
+            </div>
+            <div class="media d-flex align-items-center push">
+              <div class="mr-3">
+                <img class="m-2" data-src="assets/media/main/logo.png" height="48px"
+                  src="https://cdn2-main.melvor.net/assets/media/main/logo.png">
+              </div>
+              <div class="media-body text-left">
+                <div class="font-w600">Straps</div>
+                <div class="font-w400 font-size-sm">Made from <img height="16px"
+                    class="m-1">Slivers, crafted in <img data-src="assets/media/skills/crafting/crafting.png" class="m-1" height="16px"><strong>Crafting</strong> using Leather from the <img data-src="assets/media/main/gp.png" class="m-1" height="16px"><strong>Shop</strong>.
+                </div>
               </div>
             </div>
           </div>

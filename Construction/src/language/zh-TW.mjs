@@ -100,11 +100,11 @@ export const language = {
     'ITEM_NAME_Red_Dhide_Leather_Bands': '紅色龍皮皮革帶',
     'ITEM_NAME_Black_Dhide_Leather_Bands': '黑色龍皮皮革帶',
 
-    'ITEM_NAME_Flower_Pots_Token_1': '在建造中建造花盆等級1以解鎖。',
-    'ITEM_NAME_Flower_Pots_Token_2': '在建造中建造花盆等級2以解鎖。',
-    'ITEM_NAME_Flower_Pots_Token_3': '在建造中建造花盆等級3以解鎖。',
-    'ITEM_NAME_Flower_Pots_Token_4': '在建造中建造花盆等級4以解鎖。',
-    'ITEM_NAME_Flower_Pots_Token_5': '在建造中建造花盆等級5以解鎖。',
+    'ITEM_NAME_Flower_Pots_Token_1': '在建造技能中建造1級堆肥箱以解鎖。',
+    'ITEM_NAME_Flower_Pots_Token_2': '在建造技能中建造2級堆肥箱以解鎖。',
+    'ITEM_NAME_Flower_Pots_Token_3': '在建造技能中建造3級堆肥箱以解鎖。',
+    'ITEM_NAME_Flower_Pots_Token_4': '在建造技能中建造4級堆肥箱以解鎖。',
+    'ITEM_NAME_Flower_Pots_Token_5': '在建造技能中建造5級堆肥箱以解鎖。',
 
 
     'ITEM_DESCRIPTION_Builders_Hat': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',

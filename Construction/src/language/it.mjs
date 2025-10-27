@@ -102,11 +102,11 @@ export const language = {
     'ITEM_NAME_Red_Dhide_Leather_Bands': 'Fasce di cuoio di drago rosso',
     'ITEM_NAME_Black_Dhide_Leather_Bands': 'Fasce di cuoio di drago nero',
 
-    'ITEM_NAME_Flower_Pots_Token_1': 'Costruisci i Vasi da Fiori di Livello 1 nella Costruzione per sbloccarli.',
-    'ITEM_NAME_Flower_Pots_Token_2': 'Costruisci i Vasi da Fiori di Livello 2 nella Costruzione per sbloccarli.',
-    'ITEM_NAME_Flower_Pots_Token_3': 'Costruisci i Vasi da Fiori di Livello 3 nella Costruzione per sbloccarli.',
-    'ITEM_NAME_Flower_Pots_Token_4': 'Costruisci i Vasi da Fiori di Livello 4 nella Costruzione per sbloccarli.',
-    'ITEM_NAME_Flower_Pots_Token_5': 'Costruisci i Vasi da Fiori di Livello 5 nella Costruzione per sbloccarli.',
+'ITEM_NAME_Flower_Pots_Token_1': 'Costruisci un Compostatore di livello 1 in Costruzione per sbloccarlo.',
+    'ITEM_NAME_Flower_Pots_Token_2': 'Costruisci un Compostatore di livello 2 in Costruzione per sbloccarlo.',
+    'ITEM_NAME_Flower_Pots_Token_3': 'Costruisci un Compostatore di livello 3 in Costruzione per sbloccarlo.',
+    'ITEM_NAME_Flower_Pots_Token_4': 'Costruisci un Compostatore di livello 4 in Costruzione per sbloccarlo.',
+    'ITEM_NAME_Flower_Pots_Token_5': 'Costruisci un Compostatore di livello 5 in Costruzione per sbloccarlo.',
 
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2% Abilità di costruzione PE<br><span class=\"text-warning\">Equipaggiato con tutti e quattro gli abiti da costruttore: +8% PE maestria nella costruzione</span>',

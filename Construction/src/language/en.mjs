@@ -108,11 +108,11 @@ export const language = {
     'ITEM_NAME_Marble_Bricks': 'Marble Bricks',
     'ITEM_NAME_Magic_Bricks': 'Magic Bricks',
 
-    'ITEM_NAME_Flower_Pots_Token_1': 'Build Flower Pots Tier 1 in Construction to unlock.',
-    'ITEM_NAME_Flower_Pots_Token_2': 'Build Flower Pots Tier 2 in Construction to unlock.',
-    'ITEM_NAME_Flower_Pots_Token_3': 'Build Flower Pots Tier 3 in Construction to unlock.',
-    'ITEM_NAME_Flower_Pots_Token_4': 'Build Flower Pots Tier 4 in Construction to unlock.',
-    'ITEM_NAME_Flower_Pots_Token_5': 'Build Flower Pots Tier 5 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_1': 'Build Composter Tier 1 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_2': 'Build Composter Tier 2 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_3': 'Build Composter Tier 3 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_4': 'Build Composter Tier 4 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_5': 'Build Composter Tier 5 in Construction to unlock.',
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
     'ITEM_DESCRIPTION_Builders_Body': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
@@ -192,7 +192,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': 'Jungle Gym',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': 'Lake',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': 'Mine',
-    'CONSTRUCTION_FIXTURE_NAME_ Orchard': 'Forest',
+    'CONSTRUCTION_FIXTURE_NAME_ Orchard': 'Orchard',
     'CONSTRUCTION_FIXTURE_NAME_ Oven': 'Oven',
     'CONSTRUCTION_FIXTURE_NAME_ Prayer_Altar': 'Prayer Altar',
     'CONSTRUCTION_FIXTURE_NAME_ Rune_Altar': 'Rune Altar',
@@ -201,7 +201,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Telescope': 'Telescope',
     'CONSTRUCTION_FIXTURE_NAME_ Tool_Rack': 'Toolbox',
     'CONSTRUCTION_FIXTURE_NAME_ Training_Dummy': 'Training Dummy',
-    'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': 'Trapper\'s Hut',
+    'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': 'Hunter\'s Lodge',
     'CONSTRUCTION_FIXTURE_NAME_ Wardrobe': 'Wardrobe',
     'CONSTRUCTION_FIXTURE_NAME_ Worktable': 'Workbench'
 }    

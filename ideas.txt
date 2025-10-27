@@ -61,3 +61,8 @@ hide:
 20s
 160min 
 2.3s per arrow
+
+To do:
+All the resources fix+translate
+Composter costs
+Make forest orchard in all languages

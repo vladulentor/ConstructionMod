@@ -102,11 +102,11 @@ export const language = {
     'ITEM_NAME_Red_Dhide_Leather_Bands': 'Rote Drachleder-Bänder',
     'ITEM_NAME_Black_Dhide_Leather_Bands': 'Schwarze Drachleder-Bänder',
 
-    'ITEM_NAME_Flower_Pots_Token_1': 'Baue Blumentöpfe Stufe 1 in der Baukunst, um sie freizuschalten.',
-    'ITEM_NAME_Flower_Pots_Token_2': 'Baue Blumentöpfe Stufe 2 in der Baukunst, um sie freizuschalten.',
-    'ITEM_NAME_Flower_Pots_Token_3': 'Baue Blumentöpfe Stufe 3 in der Baukunst, um sie freizuschalten.',
-    'ITEM_NAME_Flower_Pots_Token_4': 'Baue Blumentöpfe Stufe 4 in der Baukunst, um sie freizuschalten.',
-    'ITEM_NAME_Flower_Pots_Token_5': 'Baue Blumentöpfe Stufe 5 in der Baukunst, um sie freizuschalten.',
+'ITEM_NAME_Flower_Pots_Token_1': 'Baue Komposter Stufe 1 in der Baukunst, um es freizuschalten.',
+    'ITEM_NAME_Flower_Pots_Token_2': 'Baue Komposter Stufe 2 in der Baukunst, um es freizuschalten.',
+    'ITEM_NAME_Flower_Pots_Token_3': 'Baue Komposter Stufe 3 in der Baukunst, um es freizuschalten.',
+    'ITEM_NAME_Flower_Pots_Token_4': 'Baue Komposter Stufe 4 in der Baukunst, um es freizuschalten.',
+    'ITEM_NAME_Flower_Pots_Token_5': 'Baue Komposter Stufe 5 in der Baukunst, um es freizuschalten.',
 
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2 % Fertigkeits-EP in Konstruktion.<br><span class=\"text-warning\">Wenn alle vier Teile des Kostüms der brennenden Menschheit ausgerüstet sind: +8 % Konstruktion-Meisterungs-EP.</span>',

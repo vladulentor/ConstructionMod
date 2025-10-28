@@ -5138,11 +5138,11 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Normal_Beams",
+                  "id": "rielkConstruction:Iron_Nails",
                   "quantity": 300
                 },
                 {
-                  "id": "rielkConstruction:Iron_Nails",
+                  "id": "rielkConstruction:Normal_Beams",
                   "quantity": 300
                 },
                 {
@@ -5178,11 +5178,11 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Oak_Beams",
+                  "id": "rielkConstruction:Steel_Nails",
                   "quantity": 500
                 },
                 {
-                  "id": "rielkConstruction:Steel_Nails",
+                  "id": "rielkConstruction:Oak_Beams",
                   "quantity": 500
                 },
                 {
@@ -5218,12 +5218,12 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Teak_Beams",
-                  "quantity": 3000
-                },
-                {
                   "id": "rielkConstruction:Mithril_Nails",
                   "quantity": 2500
+                },
+                {
+                  "id": "rielkConstruction:Teak_Beams",
+                  "quantity": 3000
                 },
                 {
                   "id": "melvorD:Adamantite_Bar",
@@ -5256,12 +5256,12 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Mahogany_Beams",
-                  "quantity": 6000
-                },
-                {
                   "id": "rielkConstruction:Adamantite_Nails",
                   "quantity": 5000
+                },
+                {
+                  "id": "rielkConstruction:Mahogany_Beams",
+                  "quantity": 6000
                 },
                 {
                   "id": "melvorD:Runite_Bar",
@@ -5291,16 +5291,16 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 7500
+                },
+                {
                   "id": "rielkConstruction:Redwood_Beams",
                   "quantity": 9000
                 },
                 {
                   "id": "melvorD:Dragonite_Bar",
                   "quantity": 5000
-                },
-                {
-                  "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 7500
                 },
                 {
                   "id": "melvorD:Rune_Essence",
@@ -5345,7 +5345,7 @@
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
-                 {
+                {
                   "id": "rielkConstruction:Normal_Planks",
                   "quantity": 250
                 },
@@ -5381,7 +5381,7 @@
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
-                    {
+                {
                   "id": "rielkConstruction:Oak_Planks",
                   "quantity": 800
                 },
@@ -5393,11 +5393,10 @@
                   "id": "melvorD:Compost",
                   "quantity": 500
                 },
-                  {
+                {
                   "id": "melvorD:Bird_Nest",
                   "quantity": 25
                 }
-               
               ],
               "currencyCosts": [],
               "modifiers": {
@@ -5423,26 +5422,23 @@
               "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
-                
-                   {
+                {
                   "id": "rielkConstruction:Teak_Planks",
                   "quantity": 2500
                 },
-               {
+                {
                   "id": "melvorD:Maple_Tree_Seed",
                   "quantity": 750
-                },                
+                },
                 {
                   "id": "melvorD:Weird_Gloop",
                   "quantity": 3000
                 },
-
-                  {
+                {
                   "id": "melvorD:Bird_Nest",
                   "quantity": 100
                 },
-
-                  {
+                {
                   "id": "melvorF:Seed_Pouch",
                   "quantity": 1000
                 }
@@ -5471,26 +5467,23 @@
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
-                   {
+                {
                   "id": "rielkConstruction:Mahogany_Planks",
                   "quantity": 5000
                 },
-
                 {
                   "id": "melvorD:Yew_Tree_Seed",
                   "quantity": 1000
                 },
-                                {
+                {
                   "id": "melvorD:Weird_Gloop",
                   "quantity": 7500
                 },
-
-                  {
+                {
                   "id": "melvorD:Bird_Nest",
                   "quantity": 500
                 },
-
-                  {
+                {
                   "id": "melvorF:Seed_Pouch_II",
                   "quantity": 2500
                 }
@@ -5519,11 +5512,11 @@
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
-                 {
+                {
                   "id": "rielkConstruction:Redwood_Planks",
                   "quantity": 15000
                 },
- {
+                {
                   "id": "melvorD:Magic_Tree_Seed",
                   "quantity": 1500
                 },
@@ -5531,19 +5524,19 @@
                   "id": "melvorD:Yew_Tree_Seed",
                   "quantity": 1000
                 },
-                 {
+                {
                   "id": "melvorD:Maple_Tree_Seed",
                   "quantity": 750
-                },       
-                 {
+                },
+                {
                   "id": "melvorD:Willow_Tree_Seed",
                   "quantity": 400
                 },
-                 {
+                {
                   "id": "melvorD:Oak_Tree_Seed",
                   "quantity": 250
                 },
-                  {
+                {
                   "id": "melvorD:Bird_Nest",
                   "quantity": 2500
                 },
@@ -5551,7 +5544,6 @@
                   "id": "melvorD:Woodcutting_Skillcape",
                   "quantity": 1
                 }
-               
               ],
               "currencyCosts": [],
               "modifiers": {
@@ -5570,7 +5562,7 @@
                   "quantity": 450
                 },
                 {
-                  "id": "melvorD:Bronze_Bar",
+                  "id": "rielkConstruction:Green_Dhide_Leather_Straps",
                   "quantity": 200
                 },
                 {
@@ -5592,12 +5584,20 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Iron_Bar",
-                  "quantity": 400
+                  "id": "rielkConstruction:Limestone_Bricks",
+                  "quantity": 1300
+                },
+                {
+                  "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
+                  "quantity": 700
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 600
+                  "quantity": 1300
+                },
+                {
+                  "id": "melvorF:Cooking_Apron",
+                  "quantity": 1
                 }
               ],
               "currencyCosts": [],
@@ -5614,12 +5614,24 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Steel_Bar",
-                  "quantity": 1400
+                  "id": "rielkConstruction:Granite_Bricks",
+                  "quantity": 3500
+                },
+                {
+                  "id": "rielkConstruction:Red_Dhide_Leather_Straps",
+                  "quantity": 1500
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 3500
+                },
+                {
+                  "id": "melvorF:Additional_Cooker_Scroll",
                   "quantity": 1000
+                },
+                {
+                  "id": "melvorF:Chefs_Spoon",
+                  "quantity": 1
                 }
               ],
               "currencyCosts": [],
@@ -5636,12 +5648,28 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Mithril_Bar",
-                  "quantity": 7500
+                  "id": "rielkConstruction:Marble_Bricks",
+                  "quantity": 6500
+                },
+                {
+                  "id": "rielkConstruction:Black_Dhide_Leather_Straps",
+                  "quantity": 3000
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 12000
+                  "quantity": 6500
+                },
+                {
+                  "id": "melvorF:Bad_Cooker_Scroll",
+                  "quantity": 5000
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Pig",
+                  "quantity": 10000
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Mole",
+                  "quantity": 5000
                 }
               ],
               "currencyCosts": [],
@@ -5658,12 +5686,36 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Runite_Bar",
-                  "quantity": 10000
+                  "id": "rielkConstruction:Magic_Bricks",
+                  "quantity": 8000
+                },
+                {
+                  "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
+                  "quantity": 5000
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 14000
+                  "quantity": 8000
+                },
+                {
+                  "id": "melvorD:Carrot_Cake_Perfect",
+                  "quantity": 1000
+                },
+                {
+                  "id": "melvorD:Whale_Perfect",
+                  "quantity": 1000
+                },
+                {
+                  "id": "melvorD:Hearty_Soup_Perfect",
+                  "quantity": 1000
+                },
+                {
+                  "id": "melvorF:Chefs_Hat",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Cooking_Skillcape",
+                  "quantity": 1
                 }
               ],
               "currencyCosts": [],
@@ -5679,13 +5731,18 @@
               "baseActionCost": 20,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
-                {
-                  "id": "melvorD:Bones",
-                  "quantity": 60
+                                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 500
                 },
                 {
-                  "id": "melvorD:Silver_Bar",
-                  "quantity": 60
+                  "id": "rielkConstruction:Green_Dhide_Leather_Slivers",
+                  "quantity": 500
+                },
+
+                {
+                  "id": "melvorD:Bones",
+                  "quantity": 500
                 }
               ],
               "currencyCosts": [],
@@ -5705,13 +5762,21 @@
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
+                 {
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 1000
+                },
+                {
+                  "id": "rielkConstruction:Blue_Dhide_Leather_Slivers",
+                  "quantity": 1000
+                },
                 {
                   "id": "melvorD:Big_Bones",
-                  "quantity": 750
+                  "quantity": 1000
                 },
                 {
                   "id": "melvorD:Silver_Bar",
-                  "quantity": 750
+                  "quantity": 1000
                 }
               ],
               "currencyCosts": [],
@@ -5726,13 +5791,26 @@
               "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
+                 {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 2000
+                },
+                {
+                  "id": "rielkConstruction:Red_Dhide_Leather_Slivers",
+                  "quantity": 2000
+                },
                 {
                   "id": "melvorF:Holy_Dust",
-                  "quantity": 4000
+                  "quantity": 2000
                 },
                 {
                   "id": "melvorD:Gold_Bar",
-                  "quantity": 4000
+                  "quantity": 2000
+                },
+                {
+                                    "id": "melvorF:Divine_Potion_IV",
+                  "quantity": 500
+
                 }
               ],
               "currencyCosts": [],
@@ -5747,13 +5825,31 @@
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
+                  {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 5000
+                },
+                {
+                  "id": "rielkConstruction:Black_Dhide_Leather_Slivers",
+                  "quantity": 5000
+                },
                 {
                   "id": "melvorD:Dragon_Bones",
-                  "quantity": 8000
+                  "quantity": 5000
                 },
                 {
                   "id": "melvorD:Gold_Bar",
-                  "quantity": 8000
+                  "quantity": 5000
+                },
+                {
+                  "id": "melvorF:Divine_Potion_IV",
+                  "quantity": 1500
+
+                },
+                 {
+                  "id": "melvorF:Prayer_Scroll",
+                  "quantity": 5000
+
                 }
               ],
               "currencyCosts": [],
@@ -5769,12 +5865,41 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Magic_Bones",
-                  "quantity": 17500
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 7500
+                },
+                {
+                  "id": "rielkConstruction:Elder_Dhide_Leather_Slivers",
+                  "quantity": 7500
+                },
+                {
+                  "id": "melvorD:Dragon_Bones",
+                  "quantity": 7500
                 },
                 {
                   "id": "melvorD:Gold_Bar",
-                  "quantity": 17500
+                  "quantity": 7500
+                },
+                {
+                  "id": "melvorF:Divine_Potion_IV",
+                  "quantity": 5000
+
+                },
+                 {
+                  "id": "melvorF:Prayer_Scroll",
+                  "quantity": 7500
+
+                },
+
+                 {
+                  "id": "melvorF:Priest_Hat",
+                  "quantity": 1
+
+                },
+                {
+                  "id": "melvorF:Prayer_Skillcape",
+                  "quantity": 7500
+
                 }
               ],
               "currencyCosts": [],

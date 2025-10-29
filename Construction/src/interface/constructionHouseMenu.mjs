@@ -101,7 +101,6 @@ export class ConstructionHouseMenu {
         panel.selectFixture(room, fixture, construction);
     }
     showFixtureUnlocks(room, fixture, construction) {
-        console.log(this.roomUnlocksPanel.fixture);
         if (!this.roomUnlocksPanel.classList.contains('d-none') && this.roomUnlocksPanel.fixture !== fixture) 
             return;
         this.scrollBeforePanel = document.documentElement.scrollTop || window.scrollY || 0;

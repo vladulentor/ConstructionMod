@@ -321,7 +321,6 @@ drop-shadow(0 -1px 0 #f8ab46ff)
     }
     addTotalCostsToRemaining(construction, fixture) {
         this.haves.classList.add('d-none');
-        console.log(fixture.currentTier.recipe.itemCosts);
         this.requires.setGreen(fixture.UIcost, construction.game);
     }
 }

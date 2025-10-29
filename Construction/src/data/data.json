@@ -3339,6 +3339,11 @@
                   "id": "melvorD:Rune_Throwing_Knife",
                   "quantity": 1000
                 },
+
+                {
+                  "id": "melvorD:Elite_Amulet_of_Ranged",
+                  "quantity": 1
+                },
                 {
                   "id": "melvorF:Throwing_Power_Gloves",
                   "quantity": 2
@@ -4523,7 +4528,7 @@
               "currencyCosts": [],
               "modifiers": {
                 "smithingCoalCost": -25,
-                "rielkConstruction:skillEfficiencyCost": -0.25
+                "rielkConstruction:skillEfficiencyCost": -0.15
               }
             },
             {
@@ -5731,7 +5736,7 @@
               "baseActionCost": 20,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
-                                {
+                {
                   "id": "rielkConstruction:Normal_Planks",
                   "quantity": 500
                 },
@@ -5739,7 +5744,6 @@
                   "id": "rielkConstruction:Green_Dhide_Leather_Slivers",
                   "quantity": 500
                 },
-
                 {
                   "id": "melvorD:Bones",
                   "quantity": 500
@@ -5762,7 +5766,7 @@
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
-                 {
+                {
                   "id": "rielkConstruction:Oak_Planks",
                   "quantity": 1000
                 },
@@ -5791,7 +5795,7 @@
               "baseActionCost": 400,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
-                 {
+                {
                   "id": "rielkConstruction:Teak_Planks",
                   "quantity": 2000
                 },
@@ -5808,9 +5812,8 @@
                   "quantity": 2000
                 },
                 {
-                                    "id": "melvorF:Divine_Potion_IV",
+                  "id": "melvorF:Divine_Potion_IV",
                   "quantity": 500
-
                 }
               ],
               "currencyCosts": [],
@@ -5825,7 +5828,7 @@
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
-                  {
+                {
                   "id": "rielkConstruction:Mahogany_Planks",
                   "quantity": 5000
                 },
@@ -5844,12 +5847,10 @@
                 {
                   "id": "melvorF:Divine_Potion_IV",
                   "quantity": 1500
-
                 },
-                 {
+                {
                   "id": "melvorF:Prayer_Scroll",
                   "quantity": 5000
-
                 }
               ],
               "currencyCosts": [],
@@ -5883,23 +5884,18 @@
                 {
                   "id": "melvorF:Divine_Potion_IV",
                   "quantity": 5000
-
                 },
-                 {
+                {
                   "id": "melvorF:Prayer_Scroll",
                   "quantity": 7500
-
                 },
-
-                 {
+                {
                   "id": "melvorF:Priest_Hat",
                   "quantity": 1
-
                 },
                 {
                   "id": "melvorF:Prayer_Skillcape",
                   "quantity": 7500
-
                 }
               ],
               "currencyCosts": [],
@@ -5915,12 +5911,16 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
+                  "id": "rielkConstruction:Clay_Bricks",
+                  "quantity": 800
+                },
+                {
                   "id": "melvorD:Rune_Essence",
-                  "quantity": 400
+                  "quantity": 800
                 },
                 {
                   "id": "melvorD:Mind_Rune",
-                  "quantity": 400
+                  "quantity": 800
                 }
               ],
               "currencyCosts": [],
@@ -5947,12 +5947,20 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
+                  "id": "rielkConstruction:Limestone_Bricks",
+                  "quantity": 1500
+                },
+                {
                   "id": "melvorD:Rune_Essence",
-                  "quantity": 800
+                  "quantity": 1500
                 },
                 {
                   "id": "melvorD:Body_Rune",
-                  "quantity": 800
+                  "quantity": 1500
+                },
+                {
+                  "id": "melvorF:Runecrafting_Scroll_Of_XP",
+                  "quantity": 5000
                 }
               ],
               "currencyCosts": [],
@@ -5969,12 +5977,20 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
+                  "id": "rielkConstruction:Granite_Bricks",
+                  "quantity": 3000
+                },
+                {
                   "id": "melvorD:Rune_Essence",
+                  "quantity": 3000
+                },
+                {
+                  "id": "melvorF:Havoc_Rune",
                   "quantity": 4000
                 },
                 {
-                  "id": "melvorF:Nature_Rune",
-                  "quantity": 4000
+                  "id": "melvorF:Summoning_Familiar_Crow",
+                  "quantity": 15000
                 }
               ],
               "currencyCosts": [],
@@ -5991,12 +6007,24 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Rune_Essence",
-                  "quantity": 7500
+                  "id": "rielkConstruction:Marble_Bricks",
+                  "quantity": 6000
                 },
                 {
-                  "id": "melvorD:Death_Rune",
-                  "quantity": 7500
+                  "id": "melvorD:Rune_Essence",
+                  "quantity": 6000
+                },
+                {
+                  "id": "melvorF:Havoc_Rune",
+                  "quantity": 6000
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Crow",
+                  "quantity": 25000
+                },
+                {
+                  "id": "melvorD:Mysterious_Stone",
+                  "quantity": 30
                 }
               ],
               "currencyCosts": [],
@@ -6013,12 +6041,20 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Rune_Essence",
-                  "quantity": 17500
+                  "id": "rielkConstruction:Magic_Bricks",
+                  "quantity": 8000
                 },
                 {
-                  "id": "melvorD:Ancient_Rune",
-                  "quantity": 17500
+                  "id": "melvorF:Spirit_Rune",
+                  "quantity": 8000
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Crow",
+                  "quantity": 50000
+                },
+                {
+                  "id": "melvorD:Charge_Stone_of_Rhaelyx",
+                  "quantity": 75
                 }
               ],
               "currencyCosts": [],
@@ -6035,16 +6071,24 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Mind_Rune",
-                  "quantity": 150
-                }
-              ],
-              "currencyCosts": [
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 500
+                },
                 {
-                  "id": "melvorD:GP",
-                  "quantity": 15000
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 250
+                },
+                 {
+                  "id": "melvorD:Green_Wizard_Hat",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Magic_Wand_Basic",
+                  "quantity": 1
                 }
+               
               ],
+              "currencyCosts": [],
               "modifiers": {
                 "flatHiddenSkillLevel": [
                   {
@@ -6068,16 +6112,32 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Body_Rune",
-                  "quantity": 350
-                }
-              ],
-              "currencyCosts": [
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 1500
+                },
                 {
-                  "id": "melvorD:GP",
-                  "quantity": 50000
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 750
+                },
+
+                {
+                  "id": "melvorF:Magic_Hinder_Scroll",
+                  "quantity": 500
+                },
+                {
+                  "id": "melvorD:Blue_Wizard_Hat",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Magic_Wand_Powerful",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Enchanted_Shield",
+                  "quantity": 1
                 }
               ],
+              "currencyCosts": [],
               "modifiers": {
                 "flatHiddenSkillLevel": [
                   {
@@ -6101,16 +6161,36 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorF:Nature_Rune",
-                  "quantity": 2000
-                }
-              ],
-              "currencyCosts": [
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 2500
+                },
                 {
-                  "id": "melvorD:GP",
-                  "quantity": 200000
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 1250
+                },
+                {
+                  "id": "melvorF:Wizards_Scroll",
+                  "quantity": 5000
+                },
+
+                {
+                  "id": "melvorD:Red_Wizard_Hat",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Magic_Wand_Elite",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorF:Elementalist_Gloves",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorF:Book_of_Occults",
+                  "quantity": 1
                 }
               ],
+              "currencyCosts": [],
               "modifiers": {
                 "flatHiddenSkillLevel": [
                   {
@@ -6134,16 +6214,41 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "melvorD:Death_Rune",
-                  "quantity": 6000
-                }
-              ],
-              "currencyCosts": [
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 5000
+                },
                 {
-                  "id": "melvorD:GP",
-                  "quantity": 8000000
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 2500
+                },
+
+                {
+                  "id": "melvorF:Magic_Enhancement_1",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorF:Magic_Enhancement_2",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorF:Magic_Enhancement_3",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Black_Wizard_Hat",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Elite_Amulet_of_Magic",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Book_of_Eli",
+                  "quantity": 1
                 }
+                
               ],
+              "currencyCosts": [],
               "modifiers": {
                 "flatHiddenSkillLevel": [
                   {
@@ -6166,17 +6271,51 @@
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
+
+           
+                   {
+                  "id": "rielkConstruction:Redwood_Planks",
+                  "quantity": 10000
+                },
                 {
-                  "id": "melvorD:Ancient_Rune",
-                  "quantity": 13500
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 5000
+                },
+                     {
+                  "id": "melvorF:Wizards_Scroll_II",
+                  "quantity": 10000
+                },
+                {
+                  "id": "melvorF:Magic_Enhancement_1_Augmented",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorF:Magic_Enhancement_2_Augmented",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorF:Magic_Enhancement_3_Augmented",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Ancient_Wizard_Hat",
+                  "quantity": 1
+                },
+                  {
+                  "id": "melvorF:Amulet_Of_Incantation",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorF:Book_Of_Scholars",
+                  "quantity": 1
+                },
+
+                {
+                  "id": "melvorF:Ocean_Song",
+                  "quantity": 1
                 }
               ],
-              "currencyCosts": [
-                {
-                  "id": "melvorD:GP",
-                  "quantity": 30000000
-                }
-              ],
+              "currencyCosts": [],
               "modifiers": {
                 "flatHiddenSkillLevelBasedOnLevels": [
                   {
@@ -6201,11 +6340,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 50
+                  "quantity": 150
                 },
                 {
-                  "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 50
+                  "id": "rielkConstruction:Green_Dhide_Leather_Straps",
+                  "quantity": 150
                 }
               ],
               "currencyCosts": [],
@@ -6223,11 +6362,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 150
+                  "quantity": 450
                 },
                 {
+                  "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
+                  "quantity": 450
+                },
+                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 150
+                  "quantity": 450
                 }
               ],
               "currencyCosts": [],
@@ -6245,11 +6388,19 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 1000
+                  "quantity": 1500
                 },
                 {
+                  "id": "rielkConstruction:Red_Dhide_Leather_Straps",
+                  "quantity": 1500
+                },
+                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 1000
+                  "quantity": 1500
+                },
+                {
+                  "id": "melvorD:Standard_Chest",
+                  "quantity": 30
                 }
               ],
               "currencyCosts": [],
@@ -6267,11 +6418,24 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 5000
+                  "quantity": 4000
                 },
                 {
+                  "id": "rielkConstruction:Black_Dhide_Leather_Straps",
+                  "quantity": 4000
+                },
+                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 5000
+                  "quantity": 4000
+                },
+                {
+                  "id": "melvorF:Elder_Chest",
+                  "quantity": 50
+                },
+                
+                {
+                  "id": "melvorD:Treasure_Chest",
+                  "quantity": 50
                 }
               ],
               "currencyCosts": [],
@@ -6287,14 +6451,27 @@
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
-                {
-                  "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 10000
+                 {
+                  "id": "rielkConstruction:Redwood_Planks",
+                  "quantity": 6000
                 },
                 {
+                  "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
+                  "quantity": 6000
+                },
+                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 10000
+                  "quantity": 6000
+                },
+                {
+                  "id": "melvorD:Elite_Chest",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Bank_Slot_Token",
+                  "quantity": 1
                 }
+               
               ],
               "currencyCosts": [],
               "modifiers": {
@@ -6309,12 +6486,16 @@
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
-                {
-                  "id": "melvorD:Bronze_Bar",
+                 {
+                  "id": "rielkConstruction:Green_Dhide_Leather_Straps",
+                  "quantity": 100
+                },
+                 {
+                  "id": "rielkConstruction:Iron_Nails",
                   "quantity": 100
                 },
                 {
-                  "id": "melvorF:Stardust",
+                  "id": "melvorD:Iron_Bar",
                   "quantity": 100
                 }
               ],
@@ -6341,9 +6522,17 @@
               "baseActionCost": 100,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
+                 {
+                  "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
+                  "quantity": 300
+                },
+                 {
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 300
+                },
                 {
-                  "id": "melvorD:Iron_Bar",
-                  "quantity": 400
+                  "id": "melvorD:Steel_Bar",
+                  "quantity": 250
                 },
                 {
                   "id": "melvorF:Stardust",
@@ -6373,13 +6562,25 @@
               "baseActionCost": 200,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
+                   {
+                  "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
+                  "quantity": 1500
+                },
+                 {
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 1500
+                },
                 {
-                  "id": "melvorD:Steel_Bar",
-                  "quantity": 2000
+                  "id": "melvorD:Silver_Bar",
+                  "quantity": 1500
                 },
                 {
                   "id": "melvorF:Stardust",
-                  "quantity": 2000
+                  "quantity": 1500
+                },
+                 {
+                  "id": "melvorF:Golden_Star",
+                  "quantity": 1500
                 }
               ],
               "currencyCosts": [],
@@ -6395,12 +6596,24 @@
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
+                  {
+                  "id": "rielkConstruction:Black_Dhide_Leather_Straps",
+                  "quantity": 4500
+                },
+                 {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 4500
+                },
                 {
-                  "id": "melvorD:Silver_Bar",
+                  "id": "melvorD:Gold_Bar",
                   "quantity": 7500
                 },
                 {
                   "id": "melvorF:Golden_Stardust",
+                  "quantity": 7500
+                },
+                 {
+                  "id": "melvorF:Golden_Star",
                   "quantity": 7500
                 }
               ],
@@ -6421,13 +6634,33 @@
               "baseActionCost": 600,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
+                         {
+                  "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
+                  "quantity": 6500
+                },
+                 {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 6500
+                },
+                {
+                  "id": "melvorD:Silver_Bar",
+                  "quantity": 7500
+                },
                 {
                   "id": "melvorD:Gold_Bar",
+                  "quantity": 7500
+                },
+                 {
+                  "id": "melvorF:Stardust",
                   "quantity": 10000
                 },
                 {
                   "id": "melvorF:Golden_Stardust",
                   "quantity": 10000
+                },
+                 {
+                  "id": "melvorF:Golden_Star_II",
+                  "quantity": 7500
                 }
               ],
               "currencyCosts": [],
@@ -6455,35 +6688,36 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 100
+                  "quantity": 1000
                 },
                 {
-                  "id": "melvorD:Bronze_Bar",
-                  "quantity": 100
-                },
-                {
-                  "id": "rielkConstruction:Iron_Nails",
-                  "quantity": 100
+                  "id": "melvorD:Iron_Bar",
+                  "quantity": 1000
                 }
+              
               ],
               "currencyCosts": [],
               "modifiers": {
-                "flatSkillInterval": [
-                  {
-                    "value": -100,
-                    "skillID": "rielkConstruction:Construction"
-                  }
-                ],
-                "rielkConstruction:skillEfficiencyChance": [
+                   "rielkConstruction:skillEfficiencyChance": [
                   {
                     "value": 1
                   }
                 ],
-                "rielkConstruction:skillEfficiencyPotency": [
+                "skillXP": [
                   {
-                    "value": 0.25
+                    "value": 3,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ],
+                                "skillPreservationChance": [
+                  {
+                    "value": 3,
+                    "skillID": "rielkConstruction:Construction"
                   }
                 ]
+             
+
+                
               }
             },
             {
@@ -6495,34 +6729,31 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 500
+                  "quantity": 2500
                 },
                 {
-                  "id": "melvorD:Iron_Bar",
-                  "quantity": 500
+                  "id": "melvorD:Steel_Bar",
+                  "quantity": 2500
                 },
                 {
-                  "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 750
+                  "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 2500
+                },
+                {
+                  "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
+                  "quantity": 2500
                 }
               ],
               "currencyCosts": [],
               "modifiers": {
-                "flatSkillInterval": [
-                  {
-                    "value": -150,
-                    "skillID": "rielkConstruction:Construction"
-                  }
-                ],
-                "skillInterval": [
-                  {
-                    "value": -3,
-                    "skillID": "melvorD:Fletching"
-                  }
-                ],
-                "rielkConstruction:skillEfficiencyChance": [
+                 "rielkConstruction:skillEfficiencyChance": [
                   {
                     "value": 3
+                  }
+                ],
+                 "rielkConstruction:skillEfficiencyPotency": [
+                  {
+                    "value": 0.25
                   }
                 ]
               }
@@ -6536,28 +6767,42 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 2500
+                  "quantity": 5000
                 },
                 {
-                  "id": "melvorD:Steel_Bar",
-                  "quantity": 750
+                  "id": "melvorD:Mithril_Bar",
+                  "quantity": 5000
                 },
                 {
-                  "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 3000
+                  "id": "rielkConstruction:Steel_Nails",
+                  "quantity": 5000
+                },
+                {
+                  "id": "rielkConstruction:Red_Dhide_Leather_Straps",
+                  "quantity": 5000
+                },
+                 {
+                  "id": "rielkConstruction:Builders_Hat",
+                  "quantity": 1
                 }
               ],
               "currencyCosts": [],
               "modifiers": {
-                "flatSkillInterval": [
-                  {
-                    "value": -150,
-                    "skillID": "rielkConstruction:Construction"
-                  }
-                ],
                 "rielkConstruction:skillEfficiencyChance": [
                   {
                     "value": 5
+                  }
+                ],
+                "flatSkillInterval": [
+                  {
+                    "value": -250,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ],
+                  "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "rielkConstruction:Construction"
                   }
                 ]
               }
@@ -6571,41 +6816,44 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 6000
+                  "quantity": 7500
                 },
                 {
-                  "id": "melvorD:Mithril_Bar",
-                  "quantity": 4000
+                  "id": "melvorD:Runite_Bar",
+                  "quantity": 7500
                 },
                 {
-                  "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 6000
+                  "id": "rielkConstruction:Mithril_Nails",
+                  "quantity": 7500
+                },
+                {
+                  "id": "rielkConstruction:Black_Dhide_Leather_Straps",
+                  "quantity": 7500
+                },
+                 {
+                  "id": "rielkConstruction:Builders_Body",
+                  "quantity": 1
                 }
               ],
               "currencyCosts": [],
               "modifiers": {
-                "flatSkillInterval": [
-                  {
-                    "value": -250,
-                    "skillID": "rielkConstruction:Construction"
-                  }
-                ],
-                "skillInterval": [
-                  {
-                    "value": -3,
-                    "skillID": "melvorD:Crafting"
-                  }
-                ],
-                "rielkConstruction:skillEfficiencyChance": [
+                 "rielkConstruction:skillEfficiencyChance": [
                   {
                     "value": 7
                   }
                 ],
-                "rielkConstruction:skillEfficiencyPotency": [
+                "flatSkillInterval": [
                   {
-                    "value": 0.75
+                    "value": -500,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ],
+                    "rielkConstruction:skillEfficiencyPotency": [
+                  {
+                    "value": 0.5
                   }
                 ]
+             
               }
             },
             {
@@ -6615,41 +6863,44 @@
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
-                {
-                  "id": "rielkConstruction:Magic_Planks",
-                  "quantity": 10000
+                 {
+                  "id": "rielkConstruction:Redwood_Planks",
+                  "quantity": 15000
                 },
                 {
                   "id": "melvorD:Dragonite_Bar",
-                  "quantity": 7500
+                  "quantity": 15000
                 },
                 {
-                  "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 10000
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 15000
+                },
+                {
+                  "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
+                  "quantity": 15000
+                },
+                 {
+                  "id": "rielkConstruction:Builders_Leggings",
+                  "quantity": 1
                 }
               ],
               "currencyCosts": [],
               "modifiers": {
-                "flatSkillInterval": [
-                  {
-                    "value": -350,
-                    "skillID": "rielkConstruction:Construction"
-                  }
-                ],
-                "skillInterval": [
-                  {
-                    "value": -5,
-                    "skillID": "melvorD:Crafting"
-                  }
-                ],
-                "rielkConstruction:skillEfficiencyCost": [
-                  {
-                    "value": -0.15
-                  }
-                ],
-                "rielkConstruction:skillEfficiencyChance": [
+                 "rielkConstruction:skillEfficiencyChance": [
                   {
                     "value": 9
+                  }
+                ],
+
+                "rielkConstruction:skillEfficiencyPotency": [
+                  {
+                    "value": 0.6
+                  }
+                ],
+                                "rielkConstruction:constructionActionsToUpgrade": -5,
+                "rielkConstruction:skillEfficiencyCost": [
+                  {
+                    "value": -0.25
                   }
                 ]
               }
@@ -7188,15 +7439,11 @@
                 "skillXP": [
                   {
                     "value": 5,
-                    "skillID": "rielkConstruction:Construction"
+                    "skillID": "melvorD:Crafting"
                   },
                   {
                     "value": 5,
                     "skillID": "melvorD:Fletching"
-                  },
-                  {
-                    "value": 5,
-                    "skillID": "melvorD:Crafting"
                   }
                 ]
               }
@@ -7219,16 +7466,18 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillPreservationChance": [
+                                "skillInterval": [
                   {
-                    "value": 5,
-                    "skillID": "rielkConstruction:Construction"
+                    "value": -7,
+                    "skillID": "melvorD:Crafting"
                   },
-                  {
-                    "value": 5,
+                     {
+                    "value": -7,
                     "skillID": "melvorD:Fletching"
                   }
                 ]
+
+               
               }
             },
             {
@@ -7249,15 +7498,14 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "rielkConstruction:skillEfficiencyPotency": [
-                  {
-                    "value": 0.35
-                  }
-                ],
                 "skillPreservationChance": [
-                  {
+                   {
                     "value": 5,
                     "skillID": "melvorD:Crafting"
+                  },
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Fletching"
                   }
                 ]
               }
@@ -7280,18 +7528,18 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "masteryXP": [
-                  {
-                    "value": 10,
-                    "skillID": "rielkConstruction:Construction"
-                  }
-                ],
+               
                 "skillItemDoublingChance": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Crafting"
+                  },
                   {
                     "value": 5,
                     "skillID": "melvorD:Fletching"
                   }
                 ]
+                
               }
             },
             {
@@ -7312,11 +7560,15 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "rielkConstruction:constructionActionsToUpgrade": -5,
-                "skillItemDoublingChance": [
+                 "masteryXP": [
                   {
-                    "value": 5,
+                    "value": 15,
                     "skillID": "melvorD:Crafting"
+                  },
+
+                  {
+                    "value": 15,
+                    "skillID": "melvorD:Fletching"
                   }
                 ]
               }

@@ -114,6 +114,12 @@ export class Construction extends ArtisanSkill {
     get unmodifiedActionQuantity() {
         return this.activeRecipe.baseQuantity;
     }
+    get masteryAction() {
+        switch (this._actionMode) {
+            case 0: return this.activeRecipe;
+            case 1: return this.activeBuildRecipe;
+    }}
+
     get activeRecipe() {
         if (this.selectedRecipe === undefined)
             throw new Error('Tried to get active crafting recipe, but none is selected.');
@@ -800,6 +806,7 @@ export class Construction extends ArtisanSkill {
     resetActionState() {
         super.resetActionState();
         this._actionMode = undefined;
+        this.efficient = 0;
         this.selectedRoom = undefined;
         this.selectedFixture = undefined;
         this.selectedFixtureRecipe = undefined;

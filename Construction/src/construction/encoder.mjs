@@ -1,4 +1,5 @@
 const { onCharacterLoaded } = mod.getContext(import.meta);
+const BIG_UPDATE_VERSION = 5; // 4.0 and all the new resources
 
 export class Encoder {
     static encode(construction, writer) {
@@ -25,6 +26,10 @@ export class Encoder {
 
     static decode(construction, reader) {
         const _constructionVersion = reader.getUint32();
+        
+          if (_constructionVersion < BIG_UPDATE_VERSION) {
+         construction.showUpdateTooltip = true;
+    }
 
         construction.hiddenRooms = reader.getSet(readNamespacedReject(construction.rooms));
         construction.stats.decode(reader);

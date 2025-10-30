@@ -57,34 +57,35 @@ export class ConstructionInterface {
         const imgs = this.constrGuide.querySelectorAll('img');
         //I'll be damned if I take them by id way too much code to write down
         imgs[0].src = game.construction.media; // cover image (constr icon) 
-        imgs[1].src = this.constructionMasteryBar._image.src; //house icon row 2, 
-        imgs[2].src = game.construction.media; // Little icon on row 3 (contsruction icon)
-        imgs[3].src = game.items.getObjectByID('rielkConstruction:Teak_Planks').media; //plank icon, this is the row of materials
-        imgs[4].src = game.items.getObjectByID('rielkConstruction:Teak_Beams').media;
-        // imgs [5] is a little fletching icon
-                // imgs [6] is a little woodcutting icon
-        imgs[7].src = game.items.getObjectByID('rielkConstruction:Mithril_Nails').media; //nails icon
-                imgs[8].src = game.items.getObjectByID('melvorD:Mithril_Bar').media; //bars icon
-        //imgs [9] is a little smithing icon
-                //imgs [10] is a little mining icon
-                    imgs[11].src = game.items.getObjectByID('rielkConstruction:Limestone_Bricks').media; //bricks icon
-                    imgs[12].src = game.items.getObjectByID('melvorD:Fire_Rune').media; //rune icon
-                            //imgs [13] is a little runecraftin icon
-                //imgs [14] is a little mining icon
-                    imgs[15].src = game.items.getObjectByID('rielkConstruction:Red_Dhide_Leather_Straps').media; //bricks icon
-                    imgs[16].src = game.items.getObjectByID('rielkConstruction:Red_Dhide_Leather_Slivers').media; //rune icon
-                            //imgs [17] is a little crafting icon
-                //imgs [18] is a shop icon
+        imgs[2].src = this.constructionMasteryBar._image.src; //house icon row 2, 
+        imgs[3].src = game.construction.media; // Little icon on row 3 (contsruction icon)
+        imgs[4].src = game.items.getObjectByID('rielkConstruction:Teak_Planks').media; //plank icon, this is the row of materials
+        imgs[5].src = game.items.getObjectByID('rielkConstruction:Teak_Beams').media;
+        // imgs [6] is a little fletching icon
+        // imgs [7] is a little woodcutting icon
+        imgs[8].src = game.items.getObjectByID('rielkConstruction:Mithril_Nails').media; //nails icon
+        imgs[9].src = game.items.getObjectByID('melvorD:Mithril_Bar').media; //bars icon
+        //imgs [10] is a little smithing icon
+        //imgs [11] is a little mining icon
+        imgs[12].src = game.items.getObjectByID('rielkConstruction:Red_Dhide_Leather_Straps').media; //straps icon
+        imgs[13].src = game.items.getObjectByID('rielkConstruction:Red_Dhide_Leather_Slivers').media; //slivers icon
+        //imgs [14] is a little runecraftin icon
+        //imgs [15] is a little mining icon
+        imgs[16].src = game.items.getObjectByID('rielkConstruction:Limestone_Bricks').media; //bricks icon
+        imgs[17].src = game.items.getObjectByID('melvorD:Fire_Rune').media; //rune icon
+        //imgs [18] is a little crafting icon
+        //imgs [19] is a shop icon
+        imgs[20].src = ctx.getResourceUrl('assets/efficiency.png'); //efficiency icon next to efficiency explanation.
+        imgs[21].src = ctx.getResourceUrl('assets/efficiency.png');//small efficiency icon next to efficiency explanation.
+        imgs[22].src = construction.categories.getObjectByID('rielkConstruction:Materials').media; //materials icon in efficiecny explanation.
+        imgs[23].src = construction.categories.getObjectByID('rielkConstruction:House').media;//furniture icon in efficiecny explanation.
+        imgs[24].src = this.constructionMasteryBar._image.src; // house explanation icon
+        imgs[25].src = construction.categories.getObjectByID('rielkConstruction:House').media; // house furniture explanation
+        imgs[26].src = this.constructionMasteryBar._image.src; //little house icon in the house explanation
+        imgs[27].src = construction.categories.getObjectByID('rielkConstruction:House').media; //other furniture logo in the house explanation
+        imgs[28].src = game.construction.media; //construction icon at the very end
+        imgs[29].src = game.construction.media; //icon for expnded features page
 
-        imgs[19].src = ctx.getResourceUrl('assets/efficiency.png'); //efficiency icon next to efficiency explanation.
-        imgs[20].src = ctx.getResourceUrl('assets/efficiency.png');//small efficiency icon next to efficiency explanation.
-        imgs[21].src = construction.categories.getObjectByID('rielkConstruction:Materials').media; //materials icon in efficiecny explanation.
-        imgs[22].src = construction.categories.getObjectByID('rielkConstruction:House').media;//furniture icon in efficiecny explanation.
-        imgs[23].src = this.constructionMasteryBar._image.src; // house explanation icon
-        imgs[24].src = construction.categories.getObjectByID('rielkConstruction:House').media; // house furniture explanation
-        imgs[25].src = this.constructionMasteryBar._image.src; //little house icon in the house explanation
-        imgs[26].src = construction.categories.getObjectByID('rielkConstruction:House').media; //other furniture logo in the house explanation
-        imgs[27].src = game.construction.media; //construction icon at the very end
         guideContainer.append(this.constrGuide);
     }
 

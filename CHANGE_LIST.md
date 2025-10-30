@@ -20,30 +20,34 @@ Entries marked with [TotH] indicate Throne of the Herald changes.
 ### Changed Enemies
 (Note: When changing existing enemies' loot tables, new items were added such that rare items' chances would not be decreased)
 
-- Golbin now can now drop Planks, and Ranged golbin Nails.
+- Golbins now can now drop Planks, and Ranged golbins Nails.
 
 - Confused Pirate from the Sandy Shores will now drop the remains of the ship he'd floated in on, being a good source of Planks.
 
-- Green, Blue, Red, and Black dragons have a 35% chance to drop Leather Slivers instead of Leather. The amount of Leather Slivers dropped is about 3-4 times more their regular Leather amount. (For an explanation of Leather Slivers, see "Crafting".)
+- Green, Blue, Red, and Black dragons have a 35% chance to drop [Leather Slivers](#fletching) instead of Leather. The amount of Leather Slivers dropped is about 3-4 times more their regular Leather amount.
 
 ### Changed Chests
 (Note: When changing existing chests' loot tables, new items were added such that rare items' chances would not be decreased)
 
-- Elder Chest can now contain Elder Dragonhide Slivers instead of normal Elder Dragonhide. (For an explanation of Leather Slivers, see "Crafting".)
+- Elder Chest can now contain [Elder Dragonhide Slivers](#fletching) instead of normal Elder Dragonhide.
 
 ---
 ## Township
-- Added new Trades at The Trader, you are able to now Trade for Beam Boxes if your Fletching, Woodcutting, and Township level is sufficiently high. These will give you Wood Beams, of Tier 1, 2, and 3; and of tier 3, 4, and 5, respectively.(For an explanation of Wood Beams, see "Fletching") 
+- Added new Trades at The Trader, you are able to now Trade for Beam Boxes if your Fletching, Woodcutting, and Township level is sufficiently high. These will give you [Wood Beams](#crafting), Normal, Oak and Teak from the basic box; and Teak, Mahogany and Redwood from the regular box respectively.
 
 ---
 ## Fletching
 
-- Added a new "Wood Beams" category, including 5 types of Wood Beams, being Normal, Oak, Teak, Mahogany, and Redwood. These Beams are used to make Planks, and replace regular logs when crafting Arrow Shafts. And making arrow shafts out of Willow, Maple, Yew, and Magic Logs has been been removed. This is to bring more balance to Tree Types, as Teak and Mahogany previously had no exclusive purpose, and less general uses than other Tree Types.
+- Added a new "Wood Beams" category, including 5 types of Wood Beams, being Normal, Oak, Teak, Mahogany, and Redwood. 
+
+- These Beams are used to make Planks, and replace regular logs when crafting Arrow Shafts. And making arrow shafts out of Willow, Maple, Yew, and Magic Logs has been been removed. This is to bring more balance to Tree Types, as Teak and Mahogany previously had no exclusive purpose, and less general uses than other Tree Types.
 
 ---
 
 ## Crafting
-- Added a new "Leather Slivers" category, including 5 types of Leather Slivers, made of Green, Red, Blue, Black, and Ancient Dragonhide. These Slivers are used to make Straps, and replace normal Dragonhide when upgrading Dragonhide Armor. The higher tier the Dragonhide, the less Leather Slivers will be output from it. This is to encourage fighting dragons or crafting to upgrade Dragonhide Armour, rather than just paying for it.
+- Added a new "Leather Slivers" category, including 5 types of Leather Slivers, made of Green, Red, Blue, Black, and Ancient Dragonhide. 
+
+- These Slivers are used to make Straps, and replace normal Dragonhide when upgrading Dragonhide Armor. The higher tier the Dragonhide, the less Leather Slivers will be output from it. This is to encourage fighting dragons or crafting to upgrade Dragonhide Armour, rather than just paying for it.
 
 ---
 ## Herblore

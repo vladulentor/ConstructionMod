@@ -878,12 +878,8 @@
         "cost": {
           "items": [
             {
-              "id": "rielkConstruction:Normal_Planks",
-              "quantity": 10
-            },
-            {
-              "id": "rielkConstruction:Iron_Nails",
-              "quantity": 25
+              "id": "melvorD:Iron_Bar",
+              "quantity": 5
             }
           ],
           "currencies": [
@@ -926,12 +922,12 @@
         "cost": {
           "items": [
             {
-              "id": "rielkConstruction:Normal_Planks",
+              "id": "rielkConstruction:Green_Dhide_Leather_Straps",
               "quantity": 25
             },
             {
-              "id": "rielkConstruction:Steel_Nails",
-              "quantity": 50
+              "id": "melvorD:Steel_Bar",
+              "quantity": 10
             }
           ],
           "currencies": [
@@ -986,12 +982,12 @@
         "cost": {
           "items": [
             {
-              "id": "rielkConstruction:Oak_Planks",
+              "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
               "quantity": 75
             },
             {
-              "id": "rielkConstruction:Steel_Nails",
-              "quantity": 150
+              "id": "melvorD:Steel_Bar",
+              "quantity": 30
             }
           ],
           "currencies": [
@@ -1046,12 +1042,12 @@
         "cost": {
           "items": [
             {
-              "id": "rielkConstruction:Teak_Planks",
+              "id": "rielkConstruction:Red_Dhide_Leather_Straps",
               "quantity": 150
             },
             {
-              "id": "rielkConstruction:Mithril_Nails",
-              "quantity": 250
+              "id": "melvorD:Mithril_Bar",
+              "quantity": 75
             }
           ],
           "currencies": [
@@ -1106,12 +1102,12 @@
         "cost": {
           "items": [
             {
-              "id": "rielkConstruction:Teak_Planks",
+              "id": "rielkConstruction:Red_Dhide_Leather_Straps",
               "quantity": 350
             },
             {
-              "id": "rielkConstruction:Adamantite_Nails",
-              "quantity": 500
+              "id": "melvorD:Adamantite_Bar",
+              "quantity": 250
             }
           ],
           "currencies": [
@@ -1166,12 +1162,12 @@
         "cost": {
           "items": [
             {
-              "id": "rielkConstruction:Mahogany_Planks",
+              "id": "rielkConstruction:Black_Dhide_Leather_Straps",
               "quantity": 500
             },
             {
-              "id": "rielkConstruction:Adamantite_Nails",
-              "quantity": 1000
+              "id": "melvorD:Runite_Bar",
+              "quantity": 500
             }
           ],
           "currencies": [
@@ -1226,12 +1222,12 @@
         "cost": {
           "items": [
             {
-              "id": "rielkConstruction:Redwood_Planks",
+              "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
               "quantity": 1000
             },
             {
-              "id": "rielkConstruction:Dragonite_Nails",
-              "quantity": 2000
+              "id": "melvorD:Dragonite_Bar",
+              "quantity": 750
             }
           ],
           "currencies": [
@@ -8651,7 +8647,7 @@
                   "quantity": 12
                 },
                 {
-                  "id": "rielkConstruction:Iron_Nails",
+                  "id": "rielkConstruction:Green_Dhide_Leather_Straps",
                   "quantity": 10
                 }
               ],
@@ -8673,7 +8669,7 @@
                   "quantity": 12
                 },
                 {
-                  "id": "rielkConstruction:Iron_Nails",
+                  "id": "rielkConstruction:Green_Dhide_Leather_Straps",
                   "quantity": 10
                 }
               ],
@@ -8695,7 +8691,7 @@
                   "quantity": 12
                 },
                 {
-                  "id": "rielkConstruction:Iron_Nails",
+                  "id": "rielkConstruction:Green_Dhide_Leather_Straps",
                   "quantity": 10
                 }
               ],
@@ -8722,7 +8718,7 @@
                   "quantity": 20
                 },
                 {
-                  "id": "rielkConstruction:Steel_Nails",
+                  "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
                   "quantity": 15
                 }
               ],
@@ -8744,7 +8740,7 @@
                   "quantity": 20
                 },
                 {
-                  "id": "rielkConstruction:Steel_Nails",
+                  "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
                   "quantity": 15
                 }
               ],
@@ -8766,7 +8762,7 @@
                   "quantity": 20
                 },
                 {
-                  "id": "rielkConstruction:Steel_Nails",
+                  "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
                   "quantity": 15
                 }
               ],
@@ -8793,7 +8789,7 @@
                   "quantity": 75
                 },
                 {
-                  "id": "rielkConstruction:Steel_Nails",
+                  "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
                   "quantity": 50
                 }
               ],
@@ -8815,7 +8811,7 @@
                   "quantity": 75
                 },
                 {
-                  "id": "rielkConstruction:Steel_Nails",
+                  "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
                   "quantity": 50
                 }
               ],
@@ -8837,7 +8833,7 @@
                   "quantity": 75
                 },
                 {
-                  "id": "rielkConstruction:Steel_Nails",
+                  "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
                   "quantity": 50
                 }
               ],
@@ -8864,7 +8860,7 @@
                   "quantity": 150
                 },
                 {
-                  "id": "rielkConstruction:Mithril_Nails",
+                  "id": "rielkConstruction:Red_Dhide_Leather_Straps",
                   "quantity": 100
                 }
               ],
@@ -8886,7 +8882,7 @@
                   "quantity": 150
                 },
                 {
-                  "id": "rielkConstruction:Mithril_Nails",
+                  "id": "rielkConstruction:Red_Dhide_Leather_Straps",
                   "quantity": 100
                 }
               ],
@@ -8908,7 +8904,7 @@
                   "quantity": 150
                 },
                 {
-                  "id": "rielkConstruction:Mithril_Nails",
+                  "id": "rielkConstruction:Red_Dhide_Leather_Straps",
                   "quantity": 100
                 }
               ],
@@ -8935,7 +8931,7 @@
                   "quantity": 350
                 },
                 {
-                  "id": "rielkConstruction:Adamantite_Nails",
+                  "id": "rielkConstruction:Black_Dhide_Leather_Straps",
                   "quantity": 300
                 }
               ],
@@ -8957,7 +8953,7 @@
                   "quantity": 350
                 },
                 {
-                  "id": "rielkConstruction:Adamantite_Nails",
+                  "id": "rielkConstruction:Black_Dhide_Leather_Straps",
                   "quantity": 300
                 }
               ],
@@ -8979,7 +8975,7 @@
                   "quantity": 350
                 },
                 {
-                  "id": "rielkConstruction:Adamantite_Nails",
+                  "id": "rielkConstruction:Black_Dhide_Leather_Straps",
                   "quantity": 300
                 }
               ],
@@ -9006,7 +9002,7 @@
                   "quantity": 750
                 },
                 {
-                  "id": "rielkConstruction:Adamantite_Nails",
+                  "id": "rielkConstruction:Black_Dhide_Leather_Straps",
                   "quantity": 500
                 }
               ],
@@ -9028,7 +9024,7 @@
                   "quantity": 750
                 },
                 {
-                  "id": "rielkConstruction:Adamantite_Nails",
+                  "id": "rielkConstruction:Black_Dhide_Leather_Straps",
                   "quantity": 500
                 }
               ],
@@ -9050,7 +9046,7 @@
                   "quantity": 750
                 },
                 {
-                  "id": "rielkConstruction:Adamantite_Nails",
+                  "id": "rielkConstruction:Black_Dhide_Leather_Straps",
                   "quantity": 500
                 }
               ],
@@ -9077,7 +9073,7 @@
                   "quantity": 1500
                 },
                 {
-                  "id": "rielkConstruction:Dragonite_Nails",
+                  "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
                   "quantity": 750
                 }
               ],
@@ -9099,7 +9095,7 @@
                   "quantity": 1500
                 },
                 {
-                  "id": "rielkConstruction:Dragonite_Nails",
+                  "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
                   "quantity": 750
                 }
               ],
@@ -9121,7 +9117,7 @@
                   "quantity": 1500
                 },
                 {
-                  "id": "rielkConstruction:Dragonite_Nails",
+                  "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
                   "quantity": 750
                 }
               ],

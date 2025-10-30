@@ -261,7 +261,7 @@
             "newCosts": {
               "items": [
                 {
-                  "id": "rielkConstruction:Magic_Planks",
+                  "id": "rielkConstruction:Redwood_Planks",
                   "quantity": 500
                 },
                 {
@@ -449,7 +449,7 @@
             "newCosts": {
               "items": [
                {
-              "id": "rielkConstruction:Magic_Planks",
+              "id": "rielkConstruction:Redwood_Planks",
               "quantity": 1500
             },
             {
@@ -629,7 +629,34 @@
             }
           }
         ]
-      }
+      },
+       {
+        "id": "melvorD:Dragon_Pickaxe",
+        "cost": [
+          {
+            "gamemodeID": "melvorAoD:AncientRelics",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Redwood_Planks",
+                  "quantity": 750
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 1500
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 5000000
+                }
+              ]
+            }
+          }
+        ]
+       }
     ]
   }
 }

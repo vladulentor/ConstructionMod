@@ -77,7 +77,6 @@ export const language = {
     'ITEM_NAME_Oak_Beams': 'オークの梁',
     'ITEM_NAME_Teak_Beams': 'チーク材の梁',
     'ITEM_NAME_Mahogany_Beams': 'マホガニーの梁',
-    'ITEM_NAME_Magic_Beams': '魔法の梁',
     'ITEM_NAME_Redwood_Beams': 'レッドウッドの梁',
 
     'ITEM_NAME_Normal_Planks': '通常の板',
@@ -86,21 +85,29 @@ export const language = {
     'ITEM_NAME_Mahogany_Planks': 'マホガニーの板',
     'ITEM_NAME_Magic_Planks': '魔法の板',
     'ITEM_NAME_Redwood_Planks': 'レッドウッドの板',
+'ITEM_DESCRIPTION_Magic_Planks': 'もう使用されていません。レッドウッドの板と交換できます。',
 
-    'ITEM_NAME_Leather_Straps': '革のストラップ',
-    'ITEM_NAME_Hard_Leather_Straps': '硬い革のストラップ',
-    'ITEM_NAME_Green_Dhide_Leather_Straps': '緑のドラゴンレザーのストラップ',
-    'ITEM_NAME_Blue_Dhide_Leather_Straps': '青のドラゴンレザーのストラップ',
-    'ITEM_NAME_Red_Dhide_Leather_Straps': '赤のドラゴンレザーのストラップ',
-    'ITEM_NAME_Black_Dhide_Leather_Straps': '黒のドラゴンレザーのストラップ',
+'ITEM_NAME_Green_Dhide_Leather_Straps': 'グリーン・ドラゴンハイドの革ひも',
+'ITEM_NAME_Blue_Dhide_Leather_Straps': 'ブルー・ドラゴンハイドの革ひも',
+'ITEM_NAME_Red_Dhide_Leather_Straps': 'レッド・ドラゴンハイドの革ひも',
+'ITEM_NAME_Black_Dhide_Leather_Straps': 'ブラック・ドラゴンハイドの革ひも',
+'ITEM_NAME_Elder_Dhide_Leather_Straps': 'エルダー・ドラゴンハイドの革ひも',
 
-    'ITEM_NAME_Leather_Bands': '革のバンド',
-    'ITEM_NAME_Hard_Leather_Bands': '硬い革のバンド',
-    'ITEM_NAME_Green_Dhide_Leather_Bands': '緑のドラゴンレザーのバンド',
-    'ITEM_NAME_Blue_Dhide_Leather_Bands': '青のドラゴンレザーのバンド',
-    'ITEM_NAME_Red_Dhide_Leather_Bands': '赤のドラゴンレザーのバンド',
-    'ITEM_NAME_Black_Dhide_Leather_Bands': '黒のドラゴンレザーのバンド',
+'ITEM_NAME_Green_Dhide_Leather_Slivers': 'グリーン・ドラゴンハイドの切れ端',
+'ITEM_NAME_Blue_Dhide_Leather_Slivers': 'ブルー・ドラゴンハイドの切れ端',
+'ITEM_NAME_Red_Dhide_Leather_Slivers': 'レッド・ドラゴンハイドの切れ端',
+'ITEM_NAME_Black_Dhide_Leather_Slivers': 'ブラック・ドラゴンハイドの切れ端',
+'ITEM_NAME_Elder_Dhide_Leather_Slivers': 'エルダー・ドラゴンハイドの切れ端',
 
+
+    'ITEM_NAME_Clay_Bricks': '粘土レンガ',
+'ITEM_NAME_Limestone_Bricks': '石灰岩レンガ',
+'ITEM_NAME_Granite_Bricks': '花崗岩レンガ',
+'ITEM_NAME_Marble_Bricks': '大理石レンガ',
+'ITEM_NAME_Magic_Bricks': '魔法のレンガ',
+
+'ITEM_NAME_Beam_Box_I': '梁の箱 I',
+'ITEM_NAME_Beam_Box_II': '梁の箱 II',
 
     'ITEM_NAME_Flower_Pots_Token_1': '建設スキルでコンポスター第1段階を建設してアンロックします。',
     'ITEM_NAME_Flower_Pots_Token_2': '建設スキルでコンポスター第2段階を建設してアンロックします。',
@@ -109,10 +116,25 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_5': '建設スキルでコンポスター第5段階を建設してアンロックします。',
 
 
-    'ITEM_DESCRIPTION_Builders_Hat': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
-    'ITEM_DESCRIPTION_Builders_Body': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
-    'ITEM_DESCRIPTION_Builders_Leggings': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
-    'ITEM_DESCRIPTION_Builders_Boots': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
+    'ITEM_DESCRIPTION_Builders_Hat': '建築スキル経験値 +2%',
+    'ITEM_DESCRIPTION_Builders_Body': '建築スキル経験値 +2%',
+    'ITEM_DESCRIPTION_Builders_Leggings': '建築スキル経験値 +2%',
+    'ITEM_DESCRIPTION_Builders_Boots': '建築スキル経験値 +2%',
+
+    'ITEM_DESCRIPTION_Normal_Beams': '矢柄または板材に加工できます。',
+'ITEM_DESCRIPTION_Oak_Beams': '矢柄または板材に加工できます。',
+'ITEM_DESCRIPTION_Teak_Beams': '矢柄または板材に加工できます。',
+'ITEM_DESCRIPTION_Mahogany_Beams': '矢柄または板材に加工できます。',
+'ITEM_DESCRIPTION_Redwood_Beams': '矢柄または板材に加工できます。',
+
+'ITEM_DESCRIPTION_Green_Dhide_Leather_Slivers': 'ドラゴンハイド防具の強化やストラップの作成に使用できます。',
+'ITEM_DESCRIPTION_Blue_Dhide_Leather_Slivers': 'ドラゴンハイド防具の強化やストラップの作成に使用できます。',
+'ITEM_DESCRIPTION_Red_Dhide_Leather_Slivers': 'ドラゴンハイド防具の強化やストラップの作成に使用できます。',
+'ITEM_DESCRIPTION_Black_Dhide_Leather_Slivers': 'ドラゴンハイド防具の強化やストラップの作成に使用できます。',
+'ITEM_DESCRIPTION_Elder_Dhide_Leather_Slivers': 'ドラゴンハイド防具の強化やストラップの作成に使用できます。',
+
+'ITEM_DESCRIPTION_Beam_Box_I': '기본 보가 들어 있습니다',
+'ITEM_DESCRIPTION_Beam_Box_II': '일반 보가 들어 있습니다',
 
     'TOAST_FIXTURE_COMPLETE': '${fixtureName}の建造が完了しました！',
     'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '${categoryName}を建設中に追加行動を行う確率が-${value}%',
@@ -160,6 +182,9 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 3': '家具のティア4効果をアンロックします。',
     'MASTERY_BONUS_ Construction_ 4': '家具のティア5効果をアンロックします。',
 
+    'SKILL_CATEGORY_Leather_Slivers': '革の切れ端',
+'SKILL_CATEGORY_Wood_Beams': '木の梁',
+
     'SKILL_CATEGORY_ Construction_ Materials': '材料',
     'SKILL_CATEGORY_ Construction_ House': '家具',
 
@@ -195,7 +220,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Telescope': '望遠鏡',
     'CONSTRUCTION_FIXTURE_NAME_ Tool_Rack': 'ツールボックス',
     'CONSTRUCTION_FIXTURE_NAME_ Training_Dummy': '訓練用ダミー',
-    'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': '捕獲小屋',
+'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': '狩人の小屋',
     'CONSTRUCTION_FIXTURE_NAME_ Wardrobe': 'ワードローブ',
     'CONSTRUCTION_FIXTURE_NAME_ Worktable': '作業台'
 }

@@ -114,11 +114,11 @@ export class Construction extends ArtisanSkill {
     get unmodifiedActionQuantity() {
         return this.activeRecipe.baseQuantity;
     }
-    get masteryAction() {
-        switch (this._actionMode) {
-            case 0: return this.activeRecipe;
-            case 1: return this.activeBuildRecipe;
-    }}
+   // get masteryAction() {
+     //   switch (this._actionMode) {
+       //     case 0: return this.activeRecipe;
+         //   case 1: return this.activeBuildRecipe;
+    //}}
 
     get activeRecipe() {
         if (this.selectedRecipe === undefined)

@@ -87,8 +87,10 @@ export const language = {
     'ITEM_NAME_Oak_Planks': 'Oak Planks',
     'ITEM_NAME_Teak_Planks': 'Teak Planks',
     'ITEM_NAME_Mahogany_Planks': 'Mahogany Planks',
-    'ITEM_NAME_Magic_Planks': 'Magic Planks',
     'ITEM_NAME_Redwood_Planks': 'Redwood Planks',
+
+    'ITEM_NAME_Magic_Planks': 'Magic Planks',
+    'ITEM_DESCRIPTION_Magic_Planks': 'No longer used. Can be exchanged for Redwood Planks',
 
     'ITEM_NAME_Green_Dhide_Leather_Straps': 'Green D-hide Leather Straps',
     'ITEM_NAME_Blue_Dhide_Leather_Straps': 'Blue D-hide Leather Straps',
@@ -108,16 +110,36 @@ export const language = {
     'ITEM_NAME_Marble_Bricks': 'Marble Bricks',
     'ITEM_NAME_Magic_Bricks': 'Magic Bricks',
 
+    'ITEM_NAME_Beam_Box_I': 'Beam Box I',
+    'ITEM_NAME_Beam_Box_II': 'Beam Box II',
+
     'ITEM_NAME_Flower_Pots_Token_1': 'Build Composter Tier 1 in Construction to unlock.',
     'ITEM_NAME_Flower_Pots_Token_2': 'Build Composter Tier 2 in Construction to unlock.',
     'ITEM_NAME_Flower_Pots_Token_3': 'Build Composter Tier 3 in Construction to unlock.',
     'ITEM_NAME_Flower_Pots_Token_4': 'Build Composter Tier 4 in Construction to unlock.',
     'ITEM_NAME_Flower_Pots_Token_5': 'Build Composter Tier 5 in Construction to unlock.',
 
-    'ITEM_DESCRIPTION_Builders_Hat': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
-    'ITEM_DESCRIPTION_Builders_Body': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
-    'ITEM_DESCRIPTION_Builders_Leggings': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
-    'ITEM_DESCRIPTION_fBuilders_Boots': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
+    'ITEM_DESCRIPTION_Builders_Hat': '+2% Construction Skill XP',
+    'ITEM_DESCRIPTION_Builders_Body': '+2% Construction Skill XP',
+    'ITEM_DESCRIPTION_Builders_Leggings': '+2% Construction Skill XP',
+    'ITEM_DESCRIPTION_fBuilders_Boots': '+2% Construction Skill XP',
+
+    'ITEM_DESCRIPTION_Normal_Beams': 'Can be cut into Arrow Shafts or Planks.',
+    'ITEM_DESCRIPTION_Oak_Beams': 'Can be cut into Arrow Shafts or Planks.',
+    'ITEM_DESCRIPTION_Teak_Beams': 'Can be cut into Arrow Shafts or Planks.',
+    'ITEM_DESCRIPTION_Mahogany_Beams': 'Can be cut into Arrow Shafts or Planks.',
+    'ITEM_DESCRIPTION_Redwood_Beams': 'Can be cut into Arrow Shafts or Planks.',
+
+    'ITEM_DESCRIPTION_Green_Dhide_Leather_Slivers': 'Can be used to upgrade Dragonhide Armor or to make Straps.',
+    'ITEM_DESCRIPTION_Blue_Dhide_Leather_Slivers': 'Can be used to upgrade Dragonhide Armor or to make Straps.',
+    'ITEM_DESCRIPTION_Red_Dhide_Leather_Slivers': 'Can be used to upgrade Dragonhide Armor or to make Straps.',
+    'ITEM_DESCRIPTION_Black_Dhide_Leather_Slivers': 'Can be used to upgrade Dragonhide Armor or to make Straps.',
+    'ITEM_DESCRIPTION_Elder_Dhide_Leather_Slivers': 'Can be used to upgrade Dragonhide Armor or to make Straps.',
+
+
+    'ITEM_DESCRIPTION_Beam_Box_I': 'Contains basic Beams',
+    'ITEM_DESCRIPTION_Beam_Box_II': 'Contains regular Beams',
+
 
     'TOAST_FIXTURE_COMPLETE': 'You\'ve finished building your ${fixtureName}!',
 
@@ -166,6 +188,8 @@ export const language = {
     'ENEMY_NAME_ConstructGiant': 'Iron Giant',
     'ENEMY_NAME_BarnRaiser': 'Barn Raiser',
 
+    'SKILL_CATEGORY_Leather_Slivers': 'Leather Slivers',
+    'SKILL_CATEGORY_Wood_Beams': 'Wood Beams',
     'SKILL_CATEGORY_ Construction_ Materials': 'Materials',
     'SKILL_CATEGORY_ Construction_ House': 'Furniture',
 

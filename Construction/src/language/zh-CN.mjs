@@ -17,7 +17,7 @@ export const language = {
     'MENU_HOUSE_COMPLETION': '房屋完成度',
     'MENU_TIER': '等级 ${tiername}',
     'MENU_FIXTURES': '家具配件',
-        'MENU_MAX_TIER' : '最高等级',
+    'MENU_MAX_TIER': '最高等级',
     'MENU_BUILT': '已建造',
     'MENU_HOUSE': "房子",
 
@@ -59,7 +59,7 @@ export const language = {
 
     'PET_NAME_ChuckTheForeman': '主管查克',
     'PET_NAME_Scoobs': '斯库布斯',
-        'PET_DESCRIPTION_Scoobs': "达到房屋等级5",                
+    'PET_DESCRIPTION_Scoobs': "达到房屋等级5",
     'ITEM_NAME_Construction_Skillcape': '建筑技能角',
     'ITEM_NAME_Builders_Hat': '建筑工人的帽子',
     'ITEM_NAME_Builders_Body': '建设者身体',
@@ -77,7 +77,6 @@ export const language = {
     'ITEM_NAME_Oak_Beams': '橡木梁',
     'ITEM_NAME_Teak_Beams': '柚木梁',
     'ITEM_NAME_Mahogany_Beams': '桃花心木梁',
-    'ITEM_NAME_Magic_Beams': '魔法木梁',
     'ITEM_NAME_Redwood_Beams': '红木梁',
 
     'ITEM_NAME_Normal_Planks': '普通木板',
@@ -86,20 +85,28 @@ export const language = {
     'ITEM_NAME_Mahogany_Planks': '桃花心木板',
     'ITEM_NAME_Magic_Planks': '魔法木板',
     'ITEM_NAME_Redwood_Planks': '红木板',
+    'ITEM_DESCRIPTION_Magic_Planks': '不再使用。可兑换为红木板。',
 
-    'ITEM_NAME_Leather_Straps': '皮带',
-    'ITEM_NAME_Hard_Leather_Straps': '硬皮带',
-    'ITEM_NAME_Green_Dhide_Leather_Straps': '绿色龙皮皮带',
-    'ITEM_NAME_Blue_Dhide_Leather_Straps': '蓝色龙皮皮带',
-    'ITEM_NAME_Red_Dhide_Leather_Straps': '红色龙皮皮带',
-    'ITEM_NAME_Black_Dhide_Leather_Straps': '黑色龙皮皮带',
+    'ITEM_NAME_Green_Dhide_Leather_Straps': '绿色龙皮绑带',
+    'ITEM_NAME_Blue_Dhide_Leather_Straps': '蓝色龙皮绑带',
+    'ITEM_NAME_Red_Dhide_Leather_Straps': '红色龙皮绑带',
+    'ITEM_NAME_Black_Dhide_Leather_Straps': '黑色龙皮绑带',
+    'ITEM_NAME_Elder_Dhide_Leather_Straps': '上古龙皮绑带',
 
-    'ITEM_NAME_Leather_Bands': '皮革带',
-    'ITEM_NAME_Hard_Leather_Bands': '硬皮革带',
-    'ITEM_NAME_Green_Dhide_Leather_Bands': '绿色龙皮皮革带',
-    'ITEM_NAME_Blue_Dhide_Leather_Bands': '蓝色龙皮皮革带',
-    'ITEM_NAME_Red_Dhide_Leather_Bands': '红色龙皮皮革带',
-    'ITEM_NAME_Black_Dhide_Leather_Bands': '黑色龙皮皮革带',
+    'ITEM_NAME_Green_Dhide_Leather_Slivers': '绿色龙皮碎片',
+    'ITEM_NAME_Blue_Dhide_Leather_Slivers': '蓝色龙皮碎片',
+    'ITEM_NAME_Red_Dhide_Leather_Slivers': '红色龙皮碎片',
+    'ITEM_NAME_Black_Dhide_Leather_Slivers': '黑色龙皮碎片',
+    'ITEM_NAME_Elder_Dhide_Leather_Slivers': '上古龙皮碎片',
+
+    'ITEM_NAME_Clay_Bricks': '黏土砖',
+    'ITEM_NAME_Limestone_Bricks': '石灰岩砖',
+    'ITEM_NAME_Granite_Bricks': '花岗岩砖',
+    'ITEM_NAME_Marble_Bricks': '大理石砖',
+    'ITEM_NAME_Magic_Bricks': '魔法砖',
+
+    'ITEM_NAME_Beam_Box_I': '木梁箱 I',
+    'ITEM_NAME_Beam_Box_II': '木梁箱 II',
 
     'ITEM_NAME_Flower_Pots_Token_1': '在建造技能中建造1级堆肥箱以解锁。',
     'ITEM_NAME_Flower_Pots_Token_2': '在建造技能中建造2级堆肥箱以解锁。',
@@ -108,10 +115,25 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_5': '在建造技能中建造5级堆肥箱以解锁。',
 
 
-    'ITEM_DESCRIPTION_Builders_Hat': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
-    'ITEM_DESCRIPTION_Builders_Body': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
-    'ITEM_DESCRIPTION_Builders_Leggings': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
-    'ITEM_DESCRIPTION_Builders_Boots': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
+    'ITEM_DESCRIPTION_Builders_Hat': '建筑技能装备经验 +2% +2%',
+    'ITEM_DESCRIPTION_Builders_Body': '建筑技能装备经验 +2% +2%',
+    'ITEM_DESCRIPTION_Builders_Leggings': '建筑技能装备经验 +2% +2%',
+    'ITEM_DESCRIPTION_Builders_Boots': '建筑技能装备经验 +2% +2%',
+
+    'ITEM_DESCRIPTION_Normal_Beams': '可切割为箭杆或木板。',
+    'ITEM_DESCRIPTION_Oak_Beams': '可切割为箭杆或木板。',
+    'ITEM_DESCRIPTION_Teak_Beams': '可切割为箭杆或木板。',
+    'ITEM_DESCRIPTION_Mahogany_Beams': '可切割为箭杆或木板。',
+    'ITEM_DESCRIPTION_Redwood_Beams': '可切割为箭杆或木板。',
+
+    'ITEM_DESCRIPTION_Green_Dhide_Leather_Slivers': '可用于升级龙皮护甲或制作绑带。',
+    'ITEM_DESCRIPTION_Blue_Dhide_Leather_Slivers': '可用于升级龙皮护甲或制作绑带。',
+    'ITEM_DESCRIPTION_Red_Dhide_Leather_Slivers': '可用于升级龙皮护甲或制作绑带。',
+    'ITEM_DESCRIPTION_Black_Dhide_Leather_Slivers': '可用于升级龙皮护甲或制作绑带。',
+    'ITEM_DESCRIPTION_Elder_Dhide_Leather_Slivers': '可用于升级龙皮护甲或制作绑带。',
+
+    'ITEM_DESCRIPTION_Beam_Box_I': '包含基础木梁',
+'ITEM_DESCRIPTION_Beam_Box_II': '包含常规木梁',
 
     'TOAST_FIXTURE_COMPLETE': '你已完成建造 ${fixtureName}!',
 
@@ -149,7 +171,7 @@ export const language = {
     'DESCRIPTION_ADDS_ITEM': '给出 ${itemQuantity} ${itemName} ${itemImage}',
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '你没有建造它所需的材料。',
-        'TOASTS_EFFICIENCY' : '你同时完成了多个动作',
+    'TOASTS_EFFICIENCY': '你同时完成了多个动作',
     'ENEMY_NAME_ConstructGiant': '铁巨人',
     'ENEMY_NAME_BarnRaiser': '谷仓建造者',
 
@@ -158,6 +180,9 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 2': '解锁家具的等级3效果。',
     'MASTERY_BONUS_ Construction_ 3': '解锁家具的等级4效果。',
     'MASTERY_BONUS_ Construction_ 4': '解锁家具的等级5效果。',
+
+    'SKILL_CATEGORY_Leather_Slivers': '皮革碎片',
+    'SKILL_CATEGORY_Wood_Beams': '木梁',
 
     'SKILL_CATEGORY_ Construction_ Materials': '材料',
     'SKILL_CATEGORY_ Construction_ House': '家具',
@@ -194,7 +219,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Telescope': '望远镜',
     'CONSTRUCTION_FIXTURE_NAME_ Tool_Rack': '工具箱',
     'CONSTRUCTION_FIXTURE_NAME_ Training_Dummy': '训练假人',
-    'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': '诱捕小屋',
+    'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': '猎人小屋',
     'CONSTRUCTION_FIXTURE_NAME_ Wardrobe': '衣柜',
     'CONSTRUCTION_FIXTURE_NAME_ Worktable': '工作台'
 }    

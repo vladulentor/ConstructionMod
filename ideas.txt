@@ -63,6 +63,4 @@ hide:
 2.3s per arrow
 
 To do:
-All the resources fix+translate
-Composter costs
-Make forest orchard in all languages
+Potion in potion boxes stupid

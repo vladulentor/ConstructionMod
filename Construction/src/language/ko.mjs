@@ -80,7 +80,6 @@ export const language = {
     'ITEM_NAME_Oak_Beams': '참나무 들보',
     'ITEM_NAME_Teak_Beams': '티크 들보',
     'ITEM_NAME_Mahogany_Beams': '마호가니 들보',
-    'ITEM_NAME_Magic_Beams': '마법의 들보',
     'ITEM_NAME_Redwood_Beams': '레드우드 들보',
 
     'ITEM_NAME_Normal_Planks': '일반 판자',
@@ -89,20 +88,29 @@ export const language = {
     'ITEM_NAME_Mahogany_Planks': '마호가니 판자',
     'ITEM_NAME_Magic_Planks': '마법의 판자',
     'ITEM_NAME_Redwood_Planks': '레드우드 판자',
+'ITEM_DESCRIPTION_Magic_Planks': '더 이상 사용되지 않습니다. 레드우드 판자로 교환할 수 있습니다.',
 
-    'ITEM_NAME_Leather_Straps': '가죽 끈',
-    'ITEM_NAME_Hard_Leather_Straps': '단단한 가죽 끈',
-    'ITEM_NAME_Green_Dhide_Leather_Straps': '녹색 드래곤 가죽 끈',
-    'ITEM_NAME_Blue_Dhide_Leather_Straps': '파란 드래곤 가죽 끈',
-    'ITEM_NAME_Red_Dhide_Leather_Straps': '빨간 드래곤 가죽 끈',
-    'ITEM_NAME_Black_Dhide_Leather_Straps': '검은 드래곤 가죽 끈',
+'ITEM_NAME_Green_Dhide_Leather_Straps': '초록 용가죽 끈',
+'ITEM_NAME_Blue_Dhide_Leather_Straps': '파란 용가죽 끈',
+'ITEM_NAME_Red_Dhide_Leather_Straps': '빨간 용가죽 끈',
+'ITEM_NAME_Black_Dhide_Leather_Straps': '검은 용가죽 끈',
+'ITEM_NAME_Elder_Dhide_Leather_Straps': '엘더 용가죽 끈',
 
-    'ITEM_NAME_Leather_Bands': '가죽 밴드',
-    'ITEM_NAME_Hard_Leather_Bands': '단단한 가죽 밴드',
-    'ITEM_NAME_Green_Dhide_Leather_Bands': '녹색 드래곤 가죽 밴드',
-    'ITEM_NAME_Blue_Dhide_Leather_Bands': '파란 드래곤 가죽 밴드',
-    'ITEM_NAME_Red_Dhide_Leather_Bands': '빨간 드래곤 가죽 밴드',
-    'ITEM_NAME_Black_Dhide_Leather_Bands': '검은 드래곤 가죽 밴드',
+'ITEM_NAME_Green_Dhide_Leather_Slivers': '초록 용가죽 조각',
+'ITEM_NAME_Blue_Dhide_Leather_Slivers': '파란 용가죽 조각',
+'ITEM_NAME_Red_Dhide_Leather_Slivers': '빨간 용가죽 조각',
+'ITEM_NAME_Black_Dhide_Leather_Slivers': '검은 용가죽 조각',
+'ITEM_NAME_Elder_Dhide_Leather_Slivers': '엘더 용가죽 조각',
+
+
+    'ITEM_NAME_Clay_Bricks': '점토 벽돌',
+'ITEM_NAME_Limestone_Bricks': '석회암 벽돌',
+'ITEM_NAME_Granite_Bricks': '화강암 벽돌',
+'ITEM_NAME_Marble_Bricks': '대리석 벽돌',
+'ITEM_NAME_Magic_Bricks': '마법 벽돌',
+
+'ITEM_NAME_Beam_Box_I': '목재 보 상자 I',
+'ITEM_NAME_Beam_Box_II': '목재 보 상자 II',
 
     'ITEM_NAME_Flower_Pots_Token_1': '건설 기술에서 1단계 퇴비통을 지어 잠금 해제하세요.',
     'ITEM_NAME_Flower_Pots_Token_2': '건설 기술에서 2단계 퇴비통을 지어 잠금 해제하세요.',
@@ -111,10 +119,25 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_5': '건설 기술에서 5단계 퇴비통을 지어 잠금 해제하세요.',
 
 
-    'ITEM_DESCRIPTION_Builders_Hat': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
-    'ITEM_DESCRIPTION_Builders_Body': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
-    'ITEM_DESCRIPTION_Builders_Leggings': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
-    'ITEM_DESCRIPTION_Builders_Boots': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',
+    'ITEM_DESCRIPTION_Builders_Hat': '건설 기술 경험치 +2%',
+    'ITEM_DESCRIPTION_Builders_Body': '건설 기술 경험치 +2%',
+    'ITEM_DESCRIPTION_Builders_Leggings': '건설 기술 경험치 +2%',
+    'ITEM_DESCRIPTION_Builders_Boots': '건설 기술 경험치 +2%',
+
+    'ITEM_DESCRIPTION_Normal_Beams': '화살대나 판재로 가공할 수 있습니다.',
+'ITEM_DESCRIPTION_Oak_Beams': '화살대나 판재로 가공할 수 있습니다.',
+'ITEM_DESCRIPTION_Teak_Beams': '화살대나 판재로 가공할 수 있습니다.',
+'ITEM_DESCRIPTION_Mahogany_Beams': '화살대나 판재로 가공할 수 있습니다.',
+'ITEM_DESCRIPTION_Redwood_Beams': '화살대나 판재로 가공할 수 있습니다.',
+
+'ITEM_DESCRIPTION_Green_Dhide_Leather_Slivers': '드래곤가죽 방어구를 강화하거나 끈을 만드는 데 사용할 수 있습니다.',
+'ITEM_DESCRIPTION_Blue_Dhide_Leather_Slivers': '드래곤가죽 방어구를 강화하거나 끈을 만드는 데 사용할 수 있습니다.',
+'ITEM_DESCRIPTION_Red_Dhide_Leather_Slivers': '드래곤가죽 방어구를 강화하거나 끈을 만드는 데 사용할 수 있습니다.',
+'ITEM_DESCRIPTION_Black_Dhide_Leather_Slivers': '드래곤가죽 방어구를 강화하거나 끈을 만드는 데 사용할 수 있습니다.',
+'ITEM_DESCRIPTION_Elder_Dhide_Leather_Slivers': '드래곤가죽 방어구를 강화하거나 끈을 만드는 데 사용할 수 있습니다.',
+
+'ITEM_DESCRIPTION_Beam_Box_I': '기본 보가 들어 있습니다',
+'ITEM_DESCRIPTION_Beam_Box_II': '일반 보가 들어 있습니다',
 
     'TOAST_FIXTURE_COMPLETE': '${fixtureName} 건설이 완료되었습니다!',
 
@@ -162,6 +185,9 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 3': '가구의 단계 4 효과를 잠금 해제합니다.',
     'MASTERY_BONUS_ Construction_ 4': '가구의 단계 5 효과를 잠금 해제합니다.',
 
+    'SKILL_CATEGORY_Leather_Slivers': '가죽 조각',
+'SKILL_CATEGORY_Wood_Beams': '목재 보',
+
     'SKILL_CATEGORY_ Construction_ Materials': '재료',
     'SKILL_CATEGORY_ Construction_ House': '가구',
 
@@ -197,7 +223,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Telescope': '망원경',
     'CONSTRUCTION_FIXTURE_NAME_ Tool_Rack': '도구 상자',
     'CONSTRUCTION_FIXTURE_NAME_ Training_Dummy': '훈련용 더미',
-    'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': '함정 오두막',
+'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': '사냥꾼의 오두막',
     'CONSTRUCTION_FIXTURE_NAME_ Wardrobe': '옷장',
     'CONSTRUCTION_FIXTURE_NAME_ Worktable': '작업대'
 }    

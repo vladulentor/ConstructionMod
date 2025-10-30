@@ -6,9 +6,11 @@ const { patchGameEventSystem } = await loadModule('src/construction/gameEvents.m
 const { patchFarming } = await loadModule('src/skillPatches/farming/farming.mjs');
 const { patchMasteryElement } = await loadModule('src/skillPatches/patchmasteryelement.mjs');
 const { skillBoostsCompatibility } = await loadModule("src/modPatches/skillboosts.mjs");
-const { patchFletchingOrder } = await loadModule("src/skillPatches/patchFletchingOrder.mjs")
-const { patchRenderEquipment } = await loadModule("src/skillPatches/patchrenderequipment.mjs")
-const { patchArrowShaftRecipes } = await loadModule("src/skillPatches/patchArrowShaftRecipes.mjs")
+const { patchFletchingOrder } = await loadModule("src/skillPatches/patchFletchingOrder.mjs");
+const { patchCraftingOrder } = await loadModule("src/skillPatches/patchCraftingOrder.mjs")
+
+const { patchRenderEquipment } = await loadModule("src/skillPatches/patchrenderequipment.mjs");
+const { patchArrowShaftRecipes } = await loadModule("src/skillPatches/patchArrowShaftRecipes.mjs");
 
 
 export async function setup(ctx) {
@@ -67,6 +69,7 @@ class Setup {
     }
     async applyOtherPatches() {
      patchFletchingOrder();
+     patchCraftingOrder();
      patchArrowShaftRecipes(this.ctx);
 
 

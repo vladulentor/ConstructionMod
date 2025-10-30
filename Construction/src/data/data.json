@@ -89,6 +89,7 @@
         "category": "Construction",
         "type": "Beams",
         "media": "assets/items/beams_normal.png",
+        "customDescription": "yes",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -101,6 +102,7 @@
         "category": "Construction",
         "type": "Planks",
         "media": "assets/items/beams_oak.png",
+        "customDescription": "yes",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -111,6 +113,7 @@
         "id": "Teak_Beams",
         "name": "Teak Beams",
         "category": "Construction",
+        "customDescription": "yes",
         "type": "Planks",
         "media": "assets/items/beams_teak.png",
         "ignoreCompletion": false,
@@ -123,6 +126,7 @@
         "id": "Mahogany_Beams",
         "name": "Mahogany Beams",
         "category": "Construction",
+        "customDescription": "yes",
         "type": "Planks",
         "media": "assets/items/beams_mahogany.png",
         "ignoreCompletion": false,
@@ -134,6 +138,7 @@
         "itemType": "Item",
         "id": "Redwood_Beams",
         "name": "Redwood Beams",
+        "customDescription": "yes",
         "category": "Construction",
         "type": "Planks",
         "media": "assets/items/beams_redwood.png",
@@ -200,7 +205,8 @@
         "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 500
+        "sellsFor": 500,
+        "customDescription": "Yes"
       },
       {
         "itemType": "Item",
@@ -276,6 +282,71 @@
       },
       {
         "itemType": "Item",
+        "id": "Green_Dhide_Leather_Slivers",
+        "name": "Green D-Hide Leather Slivers",
+        "category": "Construction",
+        "type": "Slivers",
+        "media": "assets/items/slivers_green_d-hide_leather.png",
+        "customDescription": "yes",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 50
+      },
+      {
+        "itemType": "Item",
+        "id": "Blue_Dhide_Leather_Slivers",
+        "name": "Blue D-Hide Leather Slivers",
+        "category": "Construction",
+        "type": "Slivers",
+        "media": "assets/items/slivers_blue_d-hide_leather.png",
+        "customDescription": "yes",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 85
+      },
+      {
+        "itemType": "Item",
+        "id": "Red_Dhide_Leather_Slivers",
+        "name": "Red D-Hide Leather Slivers",
+        "category": "Construction",
+        "type": "Slivers",
+        "media": "assets/items/slivers_red_d-hide_leather.png",
+        "customDescription": "yes",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 175
+      },
+      {
+        "itemType": "Item",
+        "id": "Black_Dhide_Leather_Slivers",
+        "name": "Black D-Hide Leather Slivers",
+        "category": "Construction",
+        "type": "Slivers",
+        "media": "assets/items/slivers_black_d-hide_leather.png",
+        "customDescription": "yes",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 500
+      },
+      {
+        "itemType": "Item",
+        "id": "Elder_Dhide_Leather_Slivers",
+        "name": "Elder D-Hide Leather Slivers",
+        "category": "Construction",
+        "type": "Slivers",
+        "media": "assets/items/slivers_ancient_d-hide_leather.png",
+        "customDescription": "yes",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 2000
+      },
+      {
+        "itemType": "Item",
         "id": "Green_Dhide_Leather_Straps",
         "name": "Green D-hide Leather Straps",
         "category": "Construction",
@@ -284,7 +355,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 3
+        "sellsFor": 65
       },
       {
         "itemType": "Item",
@@ -296,7 +367,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 3
+        "sellsFor": 110
       },
       {
         "itemType": "Item",
@@ -308,7 +379,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 3
+        "sellsFor": 225
       },
       {
         "itemType": "Item",
@@ -320,7 +391,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 3
+        "sellsFor": 650
       },
       {
         "itemType": "Item",
@@ -332,67 +403,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 3
-      },
-      {
-        "itemType": "Item",
-        "id": "Green_Dhide_Leather_Slivers",
-        "name": "Green D-Hide Leather Slivers",
-        "category": "Construction",
-        "type": "Slivers",
-        "media": "assets/items/slivers_green_d-hide_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 65
-      },
-      {
-        "itemType": "Item",
-        "id": "Blue_Dhide_Leather_Slivers",
-        "name": "Blue D-Hide Leather Slivers",
-        "category": "Construction",
-        "type": "Slivers",
-        "media": "assets/items/slivers_blue_d-hide_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 140
-      },
-      {
-        "itemType": "Item",
-        "id": "Red_Dhide_Leather_Slivers",
-        "name": "Red D-Hide Leather Slivers",
-        "category": "Construction",
-        "type": "Slivers",
-        "media": "assets/items/slivers_red_d-hide_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 200
-      },
-      {
-        "itemType": "Item",
-        "id": "Black_Dhide_Leather_Slivers",
-        "name": "Black D-Hide Leather Slivers",
-        "category": "Construction",
-        "type": "Slivers",
-        "media": "assets/items/slivers_black_d-hide_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 320
-      },
-      {
-        "itemType": "Item",
-        "id": "Elder_Dhide_Leather_Slivers",
-        "name": "Elder D-Hide Leather Slivers",
-        "category": "Construction",
-        "type": "Slivers",
-        "media": "assets/items/slivers_ancient_d-hide_leather.png",
-        "ignoreCompletion": false,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 330
+        "sellsFor": 2200
       },
       {
         "itemType": "Token",
@@ -599,6 +610,72 @@
         ]
       },
       {
+        "id": "Beam_Box_I",
+        "name": "Beam Box I",
+        "category": "Openable",
+        "type": "Chest",
+        "media": "assets/items/beam_box_I.png",
+        "customDescription": "Contains Basic Beams",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 700,
+        "itemType": "Openable",
+        "dropTable": [
+          {
+            "itemID": "rielkConstruction:Normal_Beams",
+            "minQuantity": 1,
+            "maxQuantity": 100,
+            "weight": 93
+          },
+          {
+            "itemID": "rielkConstruction:Oak_Beams",
+            "minQuantity": 1,
+            "maxQuantity": 100,
+            "weight": 41
+          },
+          {
+            "itemID": "rielkConstruction:Teak_Beams",
+            "minQuantity": 1,
+            "maxQuantity": 100,
+            "weight": 27
+          }
+        ]
+      },
+      {
+        "id": "Beam_Box_II",
+        "name": "Beam Box II",
+        "category": "Openable",
+        "type": "Chest",
+        "media": "assets/items/beam_box_II.png",
+                "customDescription": "Contains Regular Beams",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 1500,
+        "itemType": "Openable",
+        "dropTable": [
+          {
+            "itemID": "rielkConstruction:Teak_Beams",
+            "minQuantity": 1,
+            "maxQuantity": 25,
+            "weight": 60
+          },
+          {
+            "itemID": "rielkConstruction:Mahogany_Beams",
+            "minQuantity": 1,
+            "maxQuantity": 25,
+            "weight": 30
+          },
+          {
+            "itemID": "rielkConstruction:Redwood_Beams",
+            "minQuantity": 1,
+            "maxQuantity": 25,
+            "weight": 10
+          }
+        ]
+      },
+      {
         "itemType": "Equipment",
         "id": "Construction_Skillcape",
         "name": "Construction Skillcape",
@@ -761,6 +838,20 @@
             }
           ]
         }
+      }
+    ],
+    "itemUpgrades": [
+      {
+        "upgradedItemID": "rielkConstruction:Redwood_Planks",
+        "itemCosts": [
+          {
+            "id": "rielkConstruction:Magic_Planks",
+            "quantity": 1
+          }
+        ],
+        "rootItemIDs": [
+          "rielkConstruction:Magic_Planks"
+        ]
       }
     ],
     "shopPurchases": [
@@ -1135,7 +1226,7 @@
         "cost": {
           "items": [
             {
-              "id": "rielkConstruction:Magic_Planks",
+              "id": "rielkConstruction:Redwood_Planks",
               "quantity": 1000
             },
             {
@@ -1697,6 +1788,71 @@
       }
     ],
     "skillData": [
+      {
+        "skillID": "melvorD:Township",
+        "data": {
+          "itemConversions": {
+            "fromTownship": [
+              {
+                "resourceID": "melvorF:Planks",
+                "items": [
+                  {
+                    "itemID": "rielkConstruction:Beam_Box_I",
+                    "unlockRequirements": [
+                      {
+                        "type": "SkillLevel",
+                        "skillID": "melvorD:Woodcutting",
+                        "level": 40
+                      },
+                      {
+                        "type": "SkillLevel",
+                        "skillID": "melvorD:Fletching",
+                        "level": 40
+                      },
+                      {
+                        "type": "SkillLevel",
+                        "skillID": "melvorD:Township",
+                        "level": 50
+                      },
+                      {
+                        "type": "TownshipTask",
+                        "count": 40
+                      }
+                    ],
+                    "baseCost": 500
+                  },
+                  {
+                    "itemID": "rielkConstruction:Beam_Box_II",
+                    "unlockRequirements": [
+                      {
+                        "type": "SkillLevel",
+                        "skillID": "melvorD:Woodcutting",
+                        "level": 99
+                      },
+                      {
+                        "type": "SkillLevel",
+                        "skillID": "melvorD:Fletching",
+                        "level": 99
+                      },
+                      {
+                        "type": "SkillLevel",
+                        "skillID": "melvorD:Township",
+                        "level": 99
+                      },
+                      {
+                        "type": "TownshipTask",
+                        "count": 85
+                      }
+                    ],
+                    "baseCost": 1000
+                  }
+                ]
+              }
+            ],
+            "toTownship": []
+          }
+        }
+      },
       {
         "skillID": "melvorD:Herblore",
         "data": {
@@ -3101,12 +3257,12 @@
                   "quantity": 300
                 },
                 {
-                  "id": "melvorD:Snape_Grass",
-                  "quantity": 3000
+                  "id": "melvorD:Raw_Beef",
+                  "quantity": 2000
                 },
                 {
-                  "id": "melvorD:Raw_Poison_Fish",
-                  "quantity": 2500
+                  "id": "melvorD:Snape_Grass",
+                  "quantity": 3000
                 }
               ],
               "currencyCosts": [],
@@ -3144,8 +3300,12 @@
                   "quantity": 500
                 },
                 {
-                  "id": "melvorD:Raw_Beef",
-                  "quantity": 2000
+                  "id": "melvorD:Raw_Poison_Fish",
+                  "quantity": 2500
+                },
+                {
+                  "id": "melvorD:Strawberry_Seed",
+                  "quantity": 750
                 },
                 {
                   "id": "melvorF:Alchemists_Bag",
@@ -3193,6 +3353,10 @@
                 {
                   "id": "melvorF:Alchemists_Bag_II",
                   "quantity": 1500
+                },
+                {
+                  "id": "melvorF:Consumable_Enhancer",
+                  "quantity": 5000
                 }
               ],
               "currencyCosts": [],
@@ -3260,7 +3424,15 @@
                   "quantity": 1500
                 },
                 {
+                  "id": "melvorD:Iron_Throwing_Knife",
+                  "quantity": 500
+                },
+                {
                   "id": "melvorF:Oak_Longbow",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Slingshot",
                   "quantity": 1
                 }
               ],
@@ -3300,7 +3472,19 @@
                   "quantity": 2000
                 },
                 {
+                  "id": "melvorD:Mithril_Throwing_Knife",
+                  "quantity": 1000
+                },
+                {
+                  "id": "melvorF:Mithril_Javelin",
+                  "quantity": 1000
+                },
+                {
                   "id": "melvorD:Ice_Shortbow",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorF:Desert_Shortbow",
                   "quantity": 1
                 }
               ],
@@ -3337,11 +3521,11 @@
                 },
                 {
                   "id": "melvorF:Rune_Javelin",
-                  "quantity": 1000
+                  "quantity": 3000
                 },
                 {
                   "id": "melvorD:Rune_Throwing_Knife",
-                  "quantity": 1000
+                  "quantity": 3000
                 },
                 {
                   "id": "melvorD:Elite_Amulet_of_Ranged",
@@ -3388,15 +3572,15 @@
                   "quantity": 3000
                 },
                 {
-                  "id": "melvorD:Slingshot",
-                  "quantity": 1
+                  "id": "melvorF:Ancient_Throwing_Knife",
+                  "quantity": 1500
                 },
                 {
-                  "id": "melvorD:Elerine_Longbow",
-                  "quantity": 1
+                  "id": "melvorF:Ancient_Javelin",
+                  "quantity": 1500
                 },
                 {
-                  "id": "melvorF:Desert_Shortbow",
+                  "id": "melvorD:Ancient_Longbow",
                   "quantity": 1
                 },
                 {
@@ -3404,7 +3588,7 @@
                   "quantity": 1
                 },
                 {
-                  "id": "melvorF:Shockwave",
+                  "id": "melvorF:Stormsnap",
                   "quantity": 1
                 }
               ],
@@ -4214,6 +4398,10 @@
                 {
                   "id": "melvorD:Potatoes",
                   "quantity": 300
+                },
+                {
+                  "id": "melvorD:Burnt_Cave_Fish",
+                  "quantity": 1
                 }
               ],
               "currencyCosts": [],
@@ -4340,8 +4528,8 @@
                   "quantity": 10000
                 },
                 {
-                  "id": "melvorD:Seaweed",
-                  "quantity": 1000
+                  "id": "melvorF:Wasteful_Ring",
+                  "quantity": 1
                 }
               ],
               "currencyCosts": [],
@@ -4360,6 +4548,10 @@
                 },
                 {
                   "id": "rielkConstruction:Iron_Nails",
+                  "quantity": 200
+                },
+                {
+                  "id": "melvorD:Steel_Bar",
                   "quantity": 200
                 }
               ],
@@ -4393,7 +4585,7 @@
                   "quantity": 750
                 },
                 {
-                  "id": "melvorD:Iron_Bar",
+                  "id": "melvorD:Mithril_Bar",
                   "quantity": 500
                 }
               ],
@@ -4427,7 +4619,7 @@
                   "quantity": 5000
                 },
                 {
-                  "id": "melvorD:Steel_Bar",
+                  "id": "melvorD:Adamantite_Bar",
                   "quantity": 2500
                 },
                 {
@@ -4470,7 +4662,7 @@
                   "quantity": 7000
                 },
                 {
-                  "id": "melvorD:Mithril_Bar",
+                  "id": "melvorD:Runite_Bar",
                   "quantity": 5000
                 },
                 {
@@ -4512,7 +4704,7 @@
                   "quantity": 7500
                 },
                 {
-                  "id": "melvorD:Runite_Bar",
+                  "id": "melvorD:Dragonite_Bar",
                   "quantity": 7500
                 },
                 {
@@ -4966,6 +5158,14 @@
                   "quantity": 600
                 },
                 {
+                  "id": "melvorD:Shell",
+                  "quantity": 10
+                },
+                {
+                  "id": "melvorD:Seaweed",
+                  "quantity": 10
+                },
+                {
                   "id": "melvorD:Raw_Salmon",
                   "quantity": 750
                 },
@@ -4975,14 +5175,6 @@
                 },
                 {
                   "id": "melvorD:Earth_Battlestaff",
-                  "quantity": 10
-                },
-                {
-                  "id": "melvorD:Shell",
-                  "quantity": 10
-                },
-                {
-                  "id": "melvorD:Seaweed",
                   "quantity": 10
                 }
               ],
@@ -5116,7 +5308,7 @@
                   "quantity": 1
                 },
                 {
-                  "id": "melvorF:Cloudburst_Staff",
+                  "id": "melvorF:Scroll_of_Glacia",
                   "quantity": 1
                 },
                 {
@@ -5522,23 +5714,23 @@
                 },
                 {
                   "id": "melvorD:Magic_Tree_Seed",
-                  "quantity": 1500
-                },
-                {
-                  "id": "melvorD:Yew_Tree_Seed",
                   "quantity": 1000
                 },
                 {
-                  "id": "melvorD:Maple_Tree_Seed",
+                  "id": "melvorD:Yew_Tree_Seed",
                   "quantity": 750
                 },
                 {
+                  "id": "melvorD:Maple_Tree_Seed",
+                  "quantity": 500
+                },
+                {
                   "id": "melvorD:Willow_Tree_Seed",
-                  "quantity": 400
+                  "quantity": 250
                 },
                 {
                   "id": "melvorD:Oak_Tree_Seed",
-                  "quantity": 250
+                  "quantity": 100
                 },
                 {
                   "id": "melvorD:Bird_Nest",
@@ -5703,22 +5895,18 @@
                 },
                 {
                   "id": "melvorD:Carrot_Cake_Perfect",
-                  "quantity": 1000
+                  "quantity": 2500
                 },
                 {
                   "id": "melvorD:Whale_Perfect",
-                  "quantity": 1000
+                  "quantity": 2500
                 },
                 {
                   "id": "melvorD:Hearty_Soup_Perfect",
-                  "quantity": 1000
+                  "quantity": 2500
                 },
                 {
                   "id": "melvorF:Chefs_Hat",
-                  "quantity": 1
-                },
-                {
-                  "id": "melvorD:Cooking_Skillcape",
                   "quantity": 1
                 }
               ],
@@ -5809,10 +5997,6 @@
                 {
                   "id": "melvorD:Gold_Bar",
                   "quantity": 2000
-                },
-                {
-                  "id": "melvorF:Divine_Potion_IV",
-                  "quantity": 500
                 }
               ],
               "currencyCosts": [],
@@ -5894,7 +6078,7 @@
                 },
                 {
                   "id": "melvorF:Prayer_Skillcape",
-                  "quantity": 7500
+                  "quantity": 1
                 }
               ],
               "currencyCosts": [],
@@ -5988,6 +6172,10 @@
                   "quantity": 4000
                 },
                 {
+                  "id": "melvorD:Mysterious_Stone",
+                  "quantity": 20
+                },
+                {
                   "id": "melvorF:Summoning_Familiar_Crow",
                   "quantity": 15000
                 }
@@ -6014,7 +6202,7 @@
                   "quantity": 6000
                 },
                 {
-                  "id": "melvorF:Havoc_Rune",
+                  "id": "melvorD:Death_Rune",
                   "quantity": 6000
                 },
                 {
@@ -6022,8 +6210,8 @@
                   "quantity": 25000
                 },
                 {
-                  "id": "melvorD:Mysterious_Stone",
-                  "quantity": 30
+                  "id": "melvorD:Charge_Stone_of_Rhaelyx",
+                  "quantity": 50
                 }
               ],
               "currencyCosts": [],
@@ -6054,6 +6242,14 @@
                 {
                   "id": "melvorD:Charge_Stone_of_Rhaelyx",
                   "quantity": 75
+                },
+                {
+                  "id": "melvorF:Amulet_Of_Incantation",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Jewel_of_Rhaelyx",
+                  "quantity": 1
                 }
               ],
               "currencyCosts": [],
@@ -6226,10 +6422,6 @@
                   "quantity": 1
                 },
                 {
-                  "id": "melvorF:Magic_Enhancement_3",
-                  "quantity": 1
-                },
-                {
                   "id": "melvorD:Black_Wizard_Hat",
                   "quantity": 1
                 },
@@ -6286,10 +6478,6 @@
                   "quantity": 1
                 },
                 {
-                  "id": "melvorF:Magic_Enhancement_3_Augmented",
-                  "quantity": 1
-                },
-                {
                   "id": "melvorD:Ancient_Wizard_Hat",
                   "quantity": 1
                 },
@@ -6306,7 +6494,7 @@
                   "quantity": 1
                 },
                 {
-                  "id": "melvorF:Ocean_Song",
+                  "id": "melvorF:Cloudburst_Staff",
                   "quantity": 1
                 }
               ],
@@ -6556,7 +6744,7 @@
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
+                  "id": "rielkConstruction:Red_Dhide_Leather_Straps",
                   "quantity": 1500
                 },
                 {
@@ -6901,7 +7089,7 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Beams",
-                  "quantity": 500
+                  "quantity": 100
                 },
                 {
                   "id": "melvorD:Leather",
@@ -6949,7 +7137,7 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 1500
+                  "quantity": 300
                 },
                 {
                   "id": "melvorD:Green_Dragonhide",
@@ -6997,7 +7185,7 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 5000
+                  "quantity": 800
                 },
                 {
                   "id": "melvorD:Blue_Dragonhide",
@@ -7053,7 +7241,7 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 7500
+                  "quantity": 1500
                 },
                 {
                   "id": "melvorD:Red_Dragonhide",
@@ -7121,7 +7309,7 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Redwood_Planks",
-                  "quantity": 10000
+                  "quantity": 2000
                 },
                 {
                   "id": "melvorD:Black_Dragonhide",
@@ -7152,7 +7340,7 @@
                   "quantity": 1
                 },
                 {
-                  "id": "melvorF:Tidal_Edge",
+                  "id": "melvorF:Ragnar_Godsword",
                   "quantity": 1
                 }
               ],
@@ -7272,16 +7460,11 @@
                   "quantity": 3600
                 },
                 {
-                  "id": "melvorF:Slayer_Deterer",
-                  "quantity": 3600
-                },
-                {
                   "id": "melvorF:Slayer_Helmet_Strong",
                   "quantity": 1
                 }
               ],
-              "currencyCosts": [
-              ],
+              "currencyCosts": [],
               "modifiers": {
                 "damageDealtToSlayerAreaMonsters": 5,
                 "flatSlayerAreaEffectNegation": 5
@@ -7302,7 +7485,7 @@
                   "id": "rielkConstruction:Adamantite_Nails",
                   "quantity": 6000
                 },
-                 {
+                {
                   "id": "melvorF:Slayer_Harvest_Scroll",
                   "quantity": 6000
                 },
@@ -7338,16 +7521,15 @@
                   "quantity": 9000
                 },
                 {
-                  "id": "melvorF:Summoning_Familiar_Cyclops",
-                  "quantity": 100000
-                },
-
-                 {
                   "id": "melvorF:Monster_Hunter_Scroll",
                   "quantity": 10000
                 },
                 {
                   "id": "melvorF:Hunters_Ring",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorF:Slayer_Crossbow",
                   "quantity": 1
                 },
                 {
@@ -7386,15 +7568,15 @@
                   "id": "rielkConstruction:Iron_Nails",
                   "quantity": 500
                 },
-                   {
+                {
                   "id": "melvorD:Bronze_Platebody",
                   "quantity": 1
                 },
-                   {
+                {
                   "id": "melvorF:Leather_Body",
                   "quantity": 1
                 },
-                   {
+                {
                   "id": "melvorF:Air_Acolyte_Wizard_Robes",
                   "quantity": 1
                 }
@@ -7430,23 +7612,23 @@
                   "id": "rielkConstruction:Steel_Nails",
                   "quantity": 1250
                 },
-                      {
+                {
                   "id": "melvorD:Steel_Platebody_T_S",
                   "quantity": 1
                 },
-                   {
+                {
                   "id": "melvorD:Green_Dhide_Body",
                   "quantity": 1
                 },
-                   {
+                {
                   "id": "melvorF:Water_Adept_Wizard_Robes",
                   "quantity": 1
                 },
-                  {
+                {
                   "id": "melvorD:Ice_Platebody",
                   "quantity": 1
                 },
-                 {
+                {
                   "id": "melvorD:Black_Platebody",
                   "quantity": 1
                 }
@@ -7482,23 +7664,23 @@
                   "id": "rielkConstruction:Mithril_Nails",
                   "quantity": 4000
                 },
-                     {
+                {
                   "id": "melvorD:Adamant_Platebody_T_G",
                   "quantity": 1
                 },
-                   {
+                {
                   "id": "melvorD:Red_Dhide_Body_U",
                   "quantity": 1
                 },
-                   {
+                {
                   "id": "melvorF:Earth_Expert_Wizard_Robes",
                   "quantity": 1
                 },
-                  {
+                {
                   "id": "melvorF:Miolite_Platebody",
                   "quantity": 1
                 },
-                 {
+                {
                   "id": "melvorD:Black_Wizard_Robes",
                   "quantity": 1
                 },
@@ -7533,23 +7715,23 @@
                   "id": "rielkConstruction:Adamantite_Nails",
                   "quantity": 6500
                 },
-                            {
+                {
                   "id": "melvorD:Dragon_Platebody_T_G",
                   "quantity": 1
                 },
-                   {
+                {
                   "id": "melvorF:Ancient_Dhide_Body_U",
                   "quantity": 1
                 },
-                   {
+                {
                   "id": "melvorF:Fire_Expert_Wizard_Robes",
                   "quantity": 1
                 },
-                  {
+                {
                   "id": "melvorD:Ancient_Platebody_T_G",
                   "quantity": 1
                 },
-                 {
+                {
                   "id": "melvorD:Ancient_Wizard_Robes",
                   "quantity": 1
                 },
@@ -7588,19 +7770,19 @@
                   "id": "rielkConstruction:Dragonite_Nails",
                   "quantity": 10000
                 },
-                    {
+                {
                   "id": "melvorF:Terran_God_Platebody",
                   "quantity": 1
                 },
-                   {
+                {
                   "id": "melvorF:Ragnar_God_Platebody",
                   "quantity": 1
                 },
-                   {
+                {
                   "id": "melvorF:Aeris_God_Platebody",
                   "quantity": 1
                 },
-                  {
+                {
                   "id": "melvorF:Glacia_God_Platebody",
                   "quantity": 1
                 }
@@ -7625,7 +7807,6 @@
                   "id": "rielkConstruction:Iron_Nails",
                   "quantity": 300
                 },
-
                 {
                   "id": "melvorF:Undead_Enhancement_3",
                   "quantity": 1
@@ -7664,7 +7845,7 @@
                   "id": "melvorF:Mastery_Token_Fletching",
                   "quantity": 15
                 },
-                  {
+                {
                   "id": "melvorF:Mastery_Token_Crafting",
                   "quantity": 15
                 }
@@ -7740,7 +7921,7 @@
                   "id": "melvorF:Crafting_Potion_IV",
                   "quantity": 5000
                 },
-                 {
+                {
                   "id": "melvorF:Ring_Of_Wealth",
                   "quantity": 50
                 }
@@ -7763,7 +7944,7 @@
               "id": "Worktable5",
               "level": 86,
               "baseExperience": 650,
-              "baseActionCost": 777 ,
+              "baseActionCost": 777,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
@@ -7774,12 +7955,11 @@
                   "id": "rielkConstruction:Dragonite_Nails",
                   "quantity": 7777
                 },
-
                 {
                   "id": "melvorD:Ancient_Ring_Of_Skills",
                   "quantity": 7
                 },
-                 {
+                {
                   "id": "melvorD:Ancient_Ring_Of_Mastery",
                   "quantity": 7
                 },
@@ -7787,7 +7967,6 @@
                   "id": "melvorF:Dragon_Enhancement_Superior",
                   "quantity": 1
                 }
-                
               ],
               "currencyCosts": [],
               "modifiers": {
@@ -8397,7 +8576,7 @@
             "newCosts": {
               "items": [
                 {
-                  "id": "rielkConstruction:Magic_Planks",
+                  "id": "rielkConstruction:Redwood_Planks",
                   "quantity": 500
                 },
                 {
@@ -8419,7 +8598,7 @@
             "newCosts": {
               "items": [
                 {
-                  "id": "rielkConstruction:Magic_Planks",
+                  "id": "rielkConstruction:Redwood_Planks",
                   "quantity": 500
                 },
                 {
@@ -8441,7 +8620,7 @@
             "newCosts": {
               "items": [
                 {
-                  "id": "rielkConstruction:Magic_Planks",
+                  "id": "rielkConstruction:Redwood_Planks",
                   "quantity": 500
                 },
                 {
@@ -8894,7 +9073,7 @@
             "newCosts": {
               "items": [
                 {
-                  "id": "rielkConstruction:Magic_Planks",
+                  "id": "rielkConstruction:Redwood_Planks",
                   "quantity": 1500
                 },
                 {
@@ -8916,7 +9095,7 @@
             "newCosts": {
               "items": [
                 {
-                  "id": "rielkConstruction:Magic_Planks",
+                  "id": "rielkConstruction:Redwood_Planks",
                   "quantity": 1500
                 },
                 {
@@ -8938,7 +9117,7 @@
             "newCosts": {
               "items": [
                 {
-                  "id": "rielkConstruction:Magic_Planks",
+                  "id": "rielkConstruction:Redwood_Planks",
                   "quantity": 1500
                 },
                 {
@@ -9391,7 +9570,7 @@
             "newCosts": {
               "items": [
                 {
-                  "id": "rielkConstruction:Magic_Planks",
+                  "id": "rielkConstruction:Redwood_Planks",
                   "quantity": 750
                 },
                 {
@@ -9413,7 +9592,7 @@
             "newCosts": {
               "items": [
                 {
-                  "id": "rielkConstruction:Magic_Planks",
+                  "id": "rielkConstruction:Redwood_Planks",
                   "quantity": 750
                 },
                 {
@@ -9435,7 +9614,7 @@
             "newCosts": {
               "items": [
                 {
-                  "id": "rielkConstruction:Magic_Planks",
+                  "id": "rielkConstruction:Redwood_Planks",
                   "quantity": 750
                 },
                 {
@@ -9510,6 +9689,28 @@
             ],
             "rielkConstruction:constructionActionsToUpgrade": -10
           }
+        }
+      },
+      {
+        "id": "melvorF:Elder_Chest",
+        "dropTable": {
+          "add": [
+            {
+              "itemID": "melvorF:Elder_Dragonhide",
+              "minQuantity": 1,
+              "maxQuantity": 15,
+              "weight": 334
+            },
+            {
+              "itemID": "rielkConstruction:Elder_Dhide_Leather_Slivers",
+              "minQuantity": 1,
+              "maxQuantity": 15,
+              "weight": 166
+            }
+          ],
+          "remove": [
+            "melvorF:Elder_Dragonhide"
+          ]
         }
       }
     ],
@@ -9945,6 +10146,94 @@
           "remove": [
             "melvorD:Mithril_Scimitar",
             "melvorD:Adamant_Scimitar"
+          ]
+        }
+      },
+      {
+        "id": "melvorD:GreenDragon",
+        "lootTable": {
+          "add": [
+            {
+              "itemID": "melvorD:Green_Dragonhide",
+              "minQuantity": 1,
+              "maxQuantity": 15,
+              "weight": 65
+            },
+            {
+              "itemID": "rielkConstruction:Green_Dhide_Leather_Slivers",
+              "minQuantity": 6,
+              "maxQuantity": 40,
+              "weight": 35
+            }
+          ],
+          "remove": [
+            "melvorD:Green_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorD:BlueDragon",
+        "lootTable": {
+          "add": [
+            {
+              "itemID": "melvorD:Blue_Dragonhide",
+              "minQuantity": 1,
+              "maxQuantity": 20,
+              "weight": 65
+            },
+            {
+              "itemID": "rielkConstruction:Blue_Dhide_Leather_Slivers",
+              "minQuantity": 3,
+              "maxQuantity": 50,
+              "weight": 35
+            }
+          ],
+          "remove": [
+            "melvorD:Blue_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorD:RedDragon",
+        "lootTable": {
+          "add": [
+            {
+              "itemID": "melvorD:Red_Dragonhide",
+              "minQuantity": 1,
+              "maxQuantity": 25,
+              "weight": 65
+            },
+            {
+              "itemID": "rielkConstruction:Red_Dhide_Leather_Slivers",
+              "minQuantity": 3,
+              "maxQuantity": 60,
+              "weight": 35
+            }
+          ],
+          "remove": [
+            "melvorD:Red_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorD:BlackDragon",
+        "lootTable": {
+          "add": [
+            {
+              "itemID": "melvorD:Black_Dragonhide",
+              "minQuantity": 1,
+              "maxQuantity": 30,
+              "weight": 65
+            },
+            {
+              "itemID": "rielkConstruction:Black_Dhide_Leather_Slivers",
+              "minQuantity": 2,
+              "maxQuantity": 100,
+              "weight": 35
+            }
+          ],
+          "remove": [
+            "melvorD:Black_Dragonhide"
           ]
         }
       }

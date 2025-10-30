@@ -298,15 +298,8 @@ drop-shadow(0 -1px 0 #f8ab46ff)
             construction.getEfficiencyPotencyMultiplier(fixtureRecipe),
             construction.getEfficiencyCostMultiplier(fixtureRecipe),
             construction.getEfficiencyChancePotencySources(fixtureRecipe), "build");
-        if (fixtureRecipe.itemCosts.length >= 4)
-            {if (this.haves.classList.contains('col-sm-6')) {
                 this.haves.classList.remove('col-sm-6');
                 this.requires.classList.remove('col-sm-6');
-            }}
-            else if (!this.haves.classList.contains('col-sm-6')) {
-                this.requires.classList.add('col-sm-6');
-                this.haves.classList.add('col-sm-6');
-            }
         if (construction.wasEfficient && this.progressBarBar) {
             this.progressBarBar.style.setProperty("transition", "background-color 0.05s ease", "important");
             this.progressBarBar.classList.add("efficiency-flash");

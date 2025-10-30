@@ -17,7 +17,7 @@ export const language = {
     'MENU_HOUSE_COMPLETION': 'Completamento della casa',
     'MENU_BUILT': 'Costruito',
     'MENU_FIXTURES': 'Arredi',
-        'MENU_MAX_TIER' : 'Livello massimo',
+    'MENU_MAX_TIER': 'Livello massimo',
     'MENU_HOUSE': "Casa",
     'MENU_TIER': 'Livello ${tiername}',
     'MENU_TEXT_WHAT_ARE_HOUSE_TIERS': 'Cosa sono i livelli della casa?',
@@ -59,8 +59,8 @@ export const language = {
 
     'PET_NAME_ChuckTheForeman': 'Chuck il caposquadra',
     'PET_NAME_Scoobs': 'Scoobs',
-    'PET_DESCRIPTION_Scoobs': "Raggiungi Casa Livello 5",   
-    
+    'PET_DESCRIPTION_Scoobs': "Raggiungi Casa Livello 5",
+
     'ITEM_NAME_Construction_Skillcape': 'Della Costruzione',
     'ITEM_NAME_Builders_Hat': 'Cappello dei costruttori',
     'ITEM_NAME_Builders_Body': 'Corpo dei costruttori',
@@ -78,7 +78,6 @@ export const language = {
     'ITEM_NAME_Oak_Beams': 'Travi di quercia',
     'ITEM_NAME_Teak_Beams': 'Travi di teak',
     'ITEM_NAME_Mahogany_Beams': 'Travi di mogano',
-    'ITEM_NAME_Magic_Beams': 'Travi magiche',
     'ITEM_NAME_Redwood_Beams': 'Travi di sequoia',
 
     'ITEM_NAME_Normal_Planks': 'Assi normali',
@@ -87,32 +86,55 @@ export const language = {
     'ITEM_NAME_Mahogany_Planks': 'Assi di mogano',
     'ITEM_NAME_Magic_Planks': 'Assi magiche',
     'ITEM_NAME_Redwood_Planks': 'Assi di sequoia',
+    'ITEM_DESCRIPTION_Magic_Planks': 'Non più utilizzato. Può essere scambiato con assi di sequoia.',
 
-    'ITEM_NAME_Leather_Straps': 'Cinghie di cuoio',
-    'ITEM_NAME_Hard_Leather_Straps': 'Cinghie di cuoio duro',
-    'ITEM_NAME_Green_Dhide_Leather_Straps': 'Cinghie di cuoio di drago verde',
-    'ITEM_NAME_Blue_Dhide_Leather_Straps': 'Cinghie di cuoio di drago blu',
-    'ITEM_NAME_Red_Dhide_Leather_Straps': 'Cinghie di cuoio di drago rosso',
-    'ITEM_NAME_Black_Dhide_Leather_Straps': 'Cinghie di cuoio di drago nero',
+    'ITEM_NAME_Green_Dhide_Leather_Straps': 'Cinghie di pelle di drago verde',
+    'ITEM_NAME_Blue_Dhide_Leather_Straps': 'Cinghie di pelle di drago blu',
+    'ITEM_NAME_Red_Dhide_Leather_Straps': 'Cinghie di pelle di drago rossa',
+    'ITEM_NAME_Black_Dhide_Leather_Straps': 'Cinghie di pelle di drago nera',
+    'ITEM_NAME_Elder_Dhide_Leather_Straps': 'Cinghie di pelle di drago antico',
 
-    'ITEM_NAME_Leather_Bands': 'Fasce di cuoio',
-    'ITEM_NAME_Hard_Leather_Bands': 'Fasce di cuoio duro',
-    'ITEM_NAME_Green_Dhide_Leather_Bands': 'Fasce di cuoio di drago verde',
-    'ITEM_NAME_Blue_Dhide_Leather_Bands': 'Fasce di cuoio di drago blu',
-    'ITEM_NAME_Red_Dhide_Leather_Bands': 'Fasce di cuoio di drago rosso',
-    'ITEM_NAME_Black_Dhide_Leather_Bands': 'Fasce di cuoio di drago nero',
+    'ITEM_NAME_Green_Dhide_Leather_Slivers': 'Ritagli di pelle di drago verde',
+    'ITEM_NAME_Blue_Dhide_Leather_Slivers': 'Ritagli di pelle di drago blu',
+    'ITEM_NAME_Red_Dhide_Leather_Slivers': 'Ritagli di pelle di drago rossa',
+    'ITEM_NAME_Black_Dhide_Leather_Slivers': 'Ritagli di pelle di drago nera',
+    'ITEM_NAME_Elder_Dhide_Leather_Slivers': 'Ritagli di pelle di drago antico',
 
-'ITEM_NAME_Flower_Pots_Token_1': 'Costruisci un Compostatore di livello 1 in Costruzione per sbloccarlo.',
+    'ITEM_NAME_Clay_Bricks': 'Mattoni di argilla',
+    'ITEM_NAME_Limestone_Bricks': 'Mattoni di calcare',
+    'ITEM_NAME_Granite_Bricks': 'Mattoni di granito',
+    'ITEM_NAME_Marble_Bricks': 'Mattoni di marmo',
+    'ITEM_NAME_Magic_Bricks': 'Mattoni magici',
+
+    'ITEM_NAME_Beam_Box_I': 'Cassa di travi I',
+    'ITEM_NAME_Beam_Box_II': 'Cassa di travi II',
+
+    'ITEM_NAME_Flower_Pots_Token_1': 'Costruisci un Compostatore di livello 1 in Costruzione per sbloccarlo.',
     'ITEM_NAME_Flower_Pots_Token_2': 'Costruisci un Compostatore di livello 2 in Costruzione per sbloccarlo.',
     'ITEM_NAME_Flower_Pots_Token_3': 'Costruisci un Compostatore di livello 3 in Costruzione per sbloccarlo.',
     'ITEM_NAME_Flower_Pots_Token_4': 'Costruisci un Compostatore di livello 4 in Costruzione per sbloccarlo.',
     'ITEM_NAME_Flower_Pots_Token_5': 'Costruisci un Compostatore di livello 5 in Costruzione per sbloccarlo.',
 
 
-    'ITEM_DESCRIPTION_Builders_Hat': '+2% Abilità di costruzione PE<br><span class=\"text-warning\">Equipaggiato con tutti e quattro gli abiti da costruttore: +8% PE maestria nella costruzione</span>',
-    'ITEM_DESCRIPTION_Builders_Body': '+2% Abilità di costruzione PE<br><span class=\"text-warning\">Equipaggiato con tutti e quattro gli abiti da costruttore: +8% PE maestria nella costruzione</span>',
-    'ITEM_DESCRIPTION_Builders_Leggings': '+2% Abilità di costruzione PE<br><span class=\"text-warning\">Equipaggiato con tutti e quattro gli abiti da costruttore: +8% PE maestria nella costruzione</span>',
-    'ITEM_DESCRIPTION_Builders_Boots': '+2% Abilità di costruzione PE<br><span class=\"text-warning\">Equipaggiato con tutti e quattro gli abiti da costruttore: +8% PE maestria nella costruzione</span>',
+    'ITEM_DESCRIPTION_Builders_Hat': '+2% Abilità di costruzione PE.',
+    'ITEM_DESCRIPTION_Builders_Body': '+2% Abilità di costruzione PE',
+    'ITEM_DESCRIPTION_Builders_Leggings': '+2% Abilità di costruzione PE',
+    'ITEM_DESCRIPTION_Builders_Boots': '+2% Abilità di costruzione PE',
+
+    'ITEM_DESCRIPTION_Normal_Beams': 'Può essere tagliato in aste di freccia o assi.',
+    'ITEM_DESCRIPTION_Oak_Beams': 'Può essere tagliato in aste di freccia o assi.',
+    'ITEM_DESCRIPTION_Teak_Beams': 'Può essere tagliato in aste di freccia o assi.',
+    'ITEM_DESCRIPTION_Mahogany_Beams': 'Può essere tagliato in aste di freccia o assi.',
+    'ITEM_DESCRIPTION_Redwood_Beams': 'Può essere tagliato in aste di freccia o assi.',
+
+    'ITEM_DESCRIPTION_Green_Dhide_Leather_Slivers': 'Può essere usato per potenziare l’armatura di pelle di drago o per creare cinghie.',
+    'ITEM_DESCRIPTION_Blue_Dhide_Leather_Slivers': 'Può essere usato per potenziare l’armatura di pelle di drago o per creare cinghie.',
+    'ITEM_DESCRIPTION_Red_Dhide_Leather_Slivers': 'Può essere usato per potenziare l’armatura di pelle di drago o per creare cinghie.',
+    'ITEM_DESCRIPTION_Black_Dhide_Leather_Slivers': 'Può essere usato per potenziare l’armatura di pelle di drago o per creare cinghie.',
+    'ITEM_DESCRIPTION_Elder_Dhide_Leather_Slivers': 'Può essere usato per potenziare l’armatura di pelle di drago o per creare cinghie.',
+
+    'ITEM_DESCRIPTION_Beam_Box_I': 'Contiene travi di base',
+'ITEM_DESCRIPTION_Beam_Box_II': 'Contiene travi normali',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% di possibilità di recuperare un seme di albero in agricoltura quando raccolto',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% azioni e materiali necessari per costruire mobili in Costruzione',
@@ -149,7 +171,7 @@ export const language = {
 
     'TOAST_FIXTURE_COMPLETE': 'Hai completato la costruzione del tuo ${fixtureName}!',
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'Non hai i materiali necessari per Costruirlo.',
-        'TOASTS_EFFICIENCY' : 'Sei riuscito a completare più azioni contemporaneamente',
+    'TOASTS_EFFICIENCY': 'Sei riuscito a completare più azioni contemporaneamente',
     'MASTERY_BONUS_ Construction_ 0': 'Sblocca gli effetti del livello 1 dell\'arredamento.',
     'MASTERY_BONUS_ Construction_ 1': 'Sblocca gli effetti del livello 2 dell\'arredamento.',
     'MASTERY_BONUS_ Construction_ 2': 'Sblocca gli effetti del livello 3 dell\'arredamento.',
@@ -158,6 +180,9 @@ export const language = {
 
     'ENEMY_NAME_ConstructGiant': 'Gigante di Ferro',
     'ENEMY_NAME_BarnRaiser': 'Costruttore di Fienili',
+
+    'SKILL_CATEGORY_Leather_Slivers': 'Ritagli di cuoio',
+    'SKILL_CATEGORY_Wood_Beams': 'Travi di legno',
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Materiali',
     'SKILL_CATEGORY_ Construction_ House': 'Arredamento',
@@ -194,7 +219,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Telescope': 'Telescopio',
     'CONSTRUCTION_FIXTURE_NAME_ Tool_Rack': 'Cassetta degli Attrezzi',
     'CONSTRUCTION_FIXTURE_NAME_ Training_Dummy': 'Manichino da Allenamento',
-    'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': 'Capanna di Cattura',
+    'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': 'Capanno di caccia',
     'CONSTRUCTION_FIXTURE_NAME_ Wardrobe': 'Armadio',
     'CONSTRUCTION_FIXTURE_NAME_ Worktable': 'Banco da Lavoro'
 }

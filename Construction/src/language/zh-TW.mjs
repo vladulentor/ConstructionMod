@@ -76,7 +76,6 @@ export const language = {
     'ITEM_NAME_Oak_Beams': '橡木樑',
     'ITEM_NAME_Teak_Beams': '柚木樑',
     'ITEM_NAME_Mahogany_Beams': '桃花心木樑',
-    'ITEM_NAME_Magic_Beams': '魔法木樑',
     'ITEM_NAME_Redwood_Beams': '紅木樑',
 
     'ITEM_NAME_Normal_Planks': '普通木板',
@@ -85,20 +84,28 @@ export const language = {
     'ITEM_NAME_Mahogany_Planks': '桃花心木板',
     'ITEM_NAME_Magic_Planks': '魔法木板',
     'ITEM_NAME_Redwood_Planks': '紅木板',
+'ITEM_DESCRIPTION_Magic_Planks': '不再使用。可兌換為紅木板。',
 
-    'ITEM_NAME_Leather_Straps': '皮帶',
-    'ITEM_NAME_Hard_Leather_Straps': '硬皮帶',
-    'ITEM_NAME_Green_Dhide_Leather_Straps': '綠色龍皮皮帶',
-    'ITEM_NAME_Blue_Dhide_Leather_Straps': '藍色龍皮皮帶',
-    'ITEM_NAME_Red_Dhide_Leather_Straps': '紅色龍皮皮帶',
-    'ITEM_NAME_Black_Dhide_Leather_Straps': '黑色龍皮皮帶',
+'ITEM_NAME_Green_Dhide_Leather_Straps': '綠色龍皮綁帶',
+'ITEM_NAME_Blue_Dhide_Leather_Straps': '藍色龍皮綁帶',
+'ITEM_NAME_Red_Dhide_Leather_Straps': '紅色龍皮綁帶',
+'ITEM_NAME_Black_Dhide_Leather_Straps': '黑色龍皮綁帶',
+'ITEM_NAME_Elder_Dhide_Leather_Straps': '上古龍皮綁帶',
 
-    'ITEM_NAME_Leather_Bands': '皮革帶',
-    'ITEM_NAME_Hard_Leather_Bands': '硬皮革帶',
-    'ITEM_NAME_Green_Dhide_Leather_Bands': '綠色龍皮皮革帶',
-    'ITEM_NAME_Blue_Dhide_Leather_Bands': '藍色龍皮皮革帶',
-    'ITEM_NAME_Red_Dhide_Leather_Bands': '紅色龍皮皮革帶',
-    'ITEM_NAME_Black_Dhide_Leather_Bands': '黑色龍皮皮革帶',
+'ITEM_NAME_Green_Dhide_Leather_Slivers': '綠色龍皮碎片',
+'ITEM_NAME_Blue_Dhide_Leather_Slivers': '藍色龍皮碎片',
+'ITEM_NAME_Red_Dhide_Leather_Slivers': '紅色龍皮碎片',
+'ITEM_NAME_Black_Dhide_Leather_Slivers': '黑色龍皮碎片',
+'ITEM_NAME_Elder_Dhide_Leather_Slivers': '上古龍皮碎片',
+
+    'ITEM_NAME_Clay_Bricks': '黏土磚',
+'ITEM_NAME_Limestone_Bricks': '石灰岩磚',
+'ITEM_NAME_Granite_Bricks': '花崗岩磚',
+'ITEM_NAME_Marble_Bricks': '大理石磚',
+'ITEM_NAME_Magic_Bricks': '魔法磚',
+
+'ITEM_NAME_Beam_Box_I': '木樑箱 I',
+'ITEM_NAME_Beam_Box_II': '木樑箱 II',
 
     'ITEM_NAME_Flower_Pots_Token_1': '在建造技能中建造1級堆肥箱以解鎖。',
     'ITEM_NAME_Flower_Pots_Token_2': '在建造技能中建造2級堆肥箱以解鎖。',
@@ -107,10 +114,26 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_5': '在建造技能中建造5級堆肥箱以解鎖。',
 
 
-    'ITEM_DESCRIPTION_Builders_Hat': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
-    'ITEM_DESCRIPTION_Builders_Body': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
-    'ITEM_DESCRIPTION_Builders_Leggings': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
-    'ITEM_DESCRIPTION_Builders_Boots': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
+    'ITEM_DESCRIPTION_Builders_Hat': '建造技能經驗 +2%',
+    'ITEM_DESCRIPTION_Builders_Body': '建造技能經驗 +2%',
+    'ITEM_DESCRIPTION_Builders_Leggings': '建造技能經驗 +2%',
+    'ITEM_DESCRIPTION_Builders_Boots': '建造技能經驗 +2%',
+
+    'ITEM_DESCRIPTION_Normal_Beams': '可切割為箭桿或木板。',
+'ITEM_DESCRIPTION_Oak_Beams': '可切割為箭桿或木板。',
+'ITEM_DESCRIPTION_Teak_Beams': '可切割為箭桿或木板。',
+'ITEM_DESCRIPTION_Mahogany_Beams': '可切割為箭桿或木板。',
+'ITEM_DESCRIPTION_Redwood_Beams': '可切割為箭桿或木板。',
+
+'ITEM_DESCRIPTION_Green_Dhide_Leather_Slivers': '可用於升級龍皮護甲或製作綁帶。',
+'ITEM_DESCRIPTION_Blue_Dhide_Leather_Slivers': '可用於升級龍皮護甲或製作綁帶。',
+'ITEM_DESCRIPTION_Red_Dhide_Leather_Slivers': '可用於升級龍皮護甲或製作綁帶。',
+'ITEM_DESCRIPTION_Black_Dhide_Leather_Slivers': '可用於升級龍皮護甲或製作綁帶。',
+'ITEM_DESCRIPTION_Elder_Dhide_Leather_Slivers': '可用於升級龍皮護甲或製作綁帶。',
+
+'ITEM_DESCRIPTION_Beam_Box_I': '包含基礎木樑',
+'ITEM_DESCRIPTION_Beam_Box_II': '包含常規木樑',
+
     'MODIFIER_DATA_unlockPlot_1': '解鎖農業中的菜園',
     'MODIFIER_DATA_unlockPlot_2': '解鎖農業中的草藥園',
     'MODIFIER_DATA_unlockPlot_3': '解鎖農業中的菜園',
@@ -156,6 +179,9 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 3': '解鎖家具的等級4效果。',
     'MASTERY_BONUS_ Construction_ 4': '解鎖家具的等級5效果。',
 
+    'SKILL_CATEGORY_Leather_Slivers': '皮革碎片',
+'SKILL_CATEGORY_Wood_Beams': '木樑',
+
     'SKILL_CATEGORY_ Construction_ Materials': '材料',
     'SKILL_CATEGORY_ Construction_ House': '家具',
 
@@ -191,7 +217,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Telescope': '望遠鏡',
     'CONSTRUCTION_FIXTURE_NAME_ Tool_Rack': '工具箱',
     'CONSTRUCTION_FIXTURE_NAME_ Training_Dummy': '訓練假人',
-    'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': '誘捕小屋',
+'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': '獵人小屋',
     'CONSTRUCTION_FIXTURE_NAME_ Wardrobe': '衣櫃',
     'CONSTRUCTION_FIXTURE_NAME_ Worktable': '工作台'
 }  

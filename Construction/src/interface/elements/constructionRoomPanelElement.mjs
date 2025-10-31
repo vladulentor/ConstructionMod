@@ -298,8 +298,10 @@ drop-shadow(0 -1px 0 #f8ab46ff)
             construction.getEfficiencyPotencyMultiplier(fixtureRecipe),
             construction.getEfficiencyCostMultiplier(fixtureRecipe),
             construction.getEfficiencyChancePotencySources(fixtureRecipe), "build");
+                this.haves.classList.remove('col-sm-6');
+                this.requires.classList.remove('col-sm-6');
         if (construction.wasEfficient && this.progressBarBar) {
-                this.progressBarBar.style.setProperty("transition", "background-color 0.05s ease", "important");
+            this.progressBarBar.style.setProperty("transition", "background-color 0.05s ease", "important");
             this.progressBarBar.classList.add("efficiency-flash");
             requestAnimationFrame(() => {
                 this.progressBarBar.style.setProperty("transition", "background-color 0.4s ease", "important");
@@ -309,6 +311,7 @@ drop-shadow(0 -1px 0 #f8ab46ff)
             });
             construction.wasEfficient = false;
         }
+
     }
 
     updateFixtureItemIcons(construction) {

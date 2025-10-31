@@ -25,7 +25,7 @@
 </template>
 
 <template id="rielk-construction-room-panel-template">
-  <div class="block block-rounded border-top border-rielk-construction border-4x">
+  <div class="block block-rounded border-top border-rielk-construction border-4x" >
     <div class="row no-gutters">
       <div class="col-12 pointer-enabled" id="header">
         <div class="block-content text-center">
@@ -33,10 +33,10 @@
           <span class="h5 font-w600" id="room-name"></span>
         </div>
       </div>
-      <div class="col-12 col-md-6 row gutters-tiny">
+      <div class="col-12 col-md-6 row gutters-tiny" >
         <div class="block-content block-content-full text-center" id="target-container"></div>
       </div>
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6" >
         <div class="block-content block-content-full" id="info-container">
           <div class="row gutters-tiny">
             <div class="col-12">
@@ -138,7 +138,8 @@
         <div class="media d-flex align-items-center" id="button-content">
           <div class="media d-flex align-items-center" id="button-content">
             <div class="m-1">
-              <div class="image-wrapper" style="position: relative; display: inline-block; overflow: visible;">
+              <div class="image-wrapper"
+                style="position: relative; display: inline-block; overflow: visible; min-width: 64px;">
                 <img id="sparkle-underlay" class="bank-img-detail d-none"
                   style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;">
 
@@ -197,7 +198,7 @@
         class="block block-rounded-double bg-combat-inner-dark p-1 border-top border-rielk-construction border-3x text-left mb-2"
         id="modifier-container">
         <h5 class="font-w700 font-size-sm m-1" id="modifier-text"></h5>
-      </div> 
+      </div>
       <div class="justify-vertical-center" id="unlock-container">
         <span class="text-danger" id="level"></span>
         <span class="text-danger" id="abyssal-level"></span>
@@ -362,163 +363,166 @@
 
 <template id="tutorial-template-Construction">
   <div id="tutorial-page-Construction" class="py-2 text-center">
-    <h2 class="h1 mb-2">
-      <img class="'m-2" height="64px">
-      Construction
-    </h2>
-    <h5 class="font-w400">Build up your<img class="m-2" height="24px"><strong
-        class="construction-success">House</strong> using resources gathered throughout different Skills</h5>
-    <h5 class="font-w400 mb-5"><img class="m-2" height="24px"><strong>Construction</strong> will give you increasing
-      bonuses as you progress through the game.</h5>
+    <!-- Hero -->
+    <h2 class="h1 mb-2" data-guide="hero"></h2>
+    <h5 class="font-w400" data-guide="sub1"></h5>
+    <h5 class="font-w400 mb-5" data-guide="sub2"></h5>
+
     <div class="col-12">
       <div class="row gutters-tiny">
+
+        <!-- Materials, left column -->
         <div class="col-md-6">
-          <div class="block-content">
+          <div class="block-content block-content-full p-0 text-left">
             <div class="py-2 text-left">
-              <h4 class="mb-2">Materials Needed</h4>
+              <h4 class="mb-2" data-guide="materials-title"></h4>
             </div>
-            <div class="media d-flex align-items-center push">
-              <div class="mr-3">
-                <img class="m-2" height="48px">
-              </div>
+
+            <!-- Planks -->
+            <div class="media d-flex align-items-center push" data-guide="mat-planks">
+              <div class="mr-3"><span data-node="Planks48"></span></div>
               <div class="media-body text-left">
-                <div class="font-w600">Planks</div>
-                <div class="font-w400 font-size-sm">
-                  Also (will be) used in some<img data-src="assets/media/skills/crafting/crafting.png" class="m-1"
-                    height="16px"><strong>Crafting</strong> recipes.
-                </div>
+                <div class="font-w600" data-guide="name"></div>
+                <div class="font-w400 font-size-sm" data-guide="text"></div>
               </div>
             </div>
-            <div class="media d-flex align-items-center push">
-              <div class="mr-3">
-                <img class="m-2" height="48px">
-              </div>
+
+            <!-- Nails -->
+            <div class="media d-flex align-items-center push" data-guide="mat-nails">
+              <div class="mr-3"><span data-node="Nails48"></span></div>
               <div class="media-body text-left">
-                <div class="font-w600">Planks</div>
-                <div class="font-w400 font-size-sm">
-                  Also (will be) used in some<img data-src="assets/media/skills/ranged/ranged.png" class="m-1"
-                    height="16px"><strong>Arrow</strong> recipes.
-                </div>
+                <div class="font-w600" data-guide="name"></div>
+                <div class="font-w400 font-size-sm" data-guide="text"></div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Materials, right column -->
         <div class="col-md-6">
-          <div class="block-content block-content-full">
+          <div class="block-content block-content-full p-0 text-left">
             <div class="py-2 text-left">
-              <h4 class="mb-2">Skill Interactions</h4>
+              <h4 class="mb-2 invisible" aria-hidden="true">&nbsp;</h4>
             </div>
-            <!--  <div class="media d-flex align-items-center push">
-              <div class="mr-3">
-                <img class="m-2" data-src="assets/items/nails_iron.png" height="48px">
-              </div>
+
+            <!-- Straps -->
+            <div class="media d-flex align-items-center push" data-guide="mat-straps">
+              <div class="mr-3"><span data-node="Straps48"></span></div>
               <div class="media-body text-left">
-                <div class="font-w600">Materials</div>
-                <div class="font-w400 font-size-sm">
-                  Construction consumes resources such as <strong>Planks</strong> and <strong>Nails</strong> to build
-                  and upgrade fixtures.
-                </div>
+                <div class="font-w600" data-guide="name"></div>
+                <div class="font-w400 font-size-sm" data-guide="text"></div>
               </div>
             </div>
-            We'll add this stuff in the big next update.
-            -->
-            <div class="media d-flex align-items-center push">
-              <div class="mr-3">
-                <img class="m-2" data-src="assets/media/main/logo.png" height="48px"
-                  src="https://cdn2-main.melvor.net/assets/media/main/logo.png">
-              </div>
+
+            <!-- Bricks -->
+            <div class="media d-flex align-items-center push" data-guide="mat-bricks">
+              <div class="mr-3"><span data-node="Bricks48"></span></div>
               <div class="media-body text-left">
-                <div class="font-w600">All Skills</div>
-                <div class="font-w400 font-size-sm">The buffs provided by<img height="16px"
-                    class="m-1"><strong>Construction</strong> interact with every Skill within the game.</div>
+                <div class="font-w600" data-guide="name"></div>
+                <div class="font-w400 font-size-sm" data-guide="text"></div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Mechanics + House -->
         <div class="row">
-
+          <!-- Efficiency -->
           <div class="col-md-6">
             <div class="block-content block-content-full p-0 text-left">
               <div class="py-2 text-left">
-                <h4 class="mb-2">Extra Mechanics</h4>
+                <h4 class="mb-2" data-guide="mechanics-title"></h4>
               </div>
-              <div class="block-content block-content-full text-left"> <img height="56px"
-                  style="float:left; margin:0 12px 0px 0;">
-                <div class="font-w600">Efficiency</div>
-                <div class="font-w400 font-size-sm mb-2">
-                  Only avaialble to Construction,<img height="16px" class="m-1">Efficiency multiplies the cost and
-                  output of an
-                  action.<br />
-                  <strong>Both</strong> the chance and amount of materials gotten when activating it can be
-                  increased.
-                </div>
-                <div class="font-w400 font-size-sm mb-2">
-                  When making<img height="16px" class="m-1">Materials, Efficiency is multiplicative of the result.<br />
-                  When making<img height="16px" class="m-1">Furniture, fractional bonuses are ignored.
-                </div>
-                <div class="font-w400 font-size-sm mb-2">
-                  <span class="text-warning">Increasing the bonus Materials / Progress of Efficiency will
-                    <strong>not</strong> increase action cost.</span>
-                </div>
+              <div class="block-content block-content-full text-left" data-guide="efficiency">
+                <span data-node="EffFloat56" style="float:left; margin:0 12px 0 0;"></span>
+                <div class="font-w600" data-guide="title"></div>
+                <div class="font-w400 font-size-sm mb-2" data-guide="p1"></div>
+                <div class="font-w400 font-size-sm mb-2" data-guide="p2"></div>
+                <div class="font-w400 font-size-sm mb-2" data-guide="warn"></div>
                 <div style="clear:both;"></div>
               </div>
             </div>
           </div>
+
+          <!-- Your House -->
           <div class="col-md-6">
             <div class="block-content block-content-full p-0 text-left">
               <div class="py-2 text-left">
-                <h4 class="mb-2">&nbsp;</h4>
+                <h4 class="mb-2 invisible" data-guide="house-title"></h4>
               </div>
-              <div class="block-content block-content-full text-left">
-                <img height="56px" style="float:left; margin:0 12px 12px 0;">
-                <div class="font-w600">Your House</div>
-
-                <div class="font-w400 font-size-sm mb-2">
-                  Building and upgrading<img height="16px" class="m-1">Furniture will improve your<img height="16px"
-                    class="m-1">House's Tier, granting significant bonuses to Construction.
-                </div>
-
-                <div class="font-w400 font-size-sm mb-2">
-                  Once all the<img height="16px" class="m-1">Furniture in your House reaches a certain tier, your
-                  House's tier will
-                  increase.
-                </div>
-
-                <div class="font-w400 font-size-sm mb-2">
-                  Completing your House provides major rewards for the rest of the game and represents the ultimate goal
-                  of<img height="16px" class="m-1"><strong>Construction</strong>.
-                </div>
+              <div class="block-content block-content-full text-left" data-guide="house">
+                <span data-node="HouseFloat56" style="float:left; margin:0 12px 0;"></span>
+                <div class="font-w600" data-guide="title"></div>
+                <div class="font-w400 font-size-sm mb-2" data-guide="p1"></div>
+                <div class="font-w400 font-size-sm mb-2" data-guide="p2"></div>
+                <div class="font-w400 font-size-sm mb-2" data-guide="p3"></div>
                 <div style="clear:both;"></div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Extended Features -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="block-content block-content-full p-0 text-left">
+              <div class="py-2 text-left">
+                <h4 class="mb-2" data-guide="extended-title"></h4>
+              </div>
+              <div class="block-content block-content-full text-left" data-guide="extended">
+                <span data-node="ExtFloat56" style="float:left; margin:0 12px 0 0;"></span>
+                <div class="font-w600" data-guide="title"></div>
+                <div class="font-w400 font-size-sm mb-2" data-guide="p1"></div>
+                <div class="font-w400 font-size-sm mb-2" data-guide="p2"></div>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="block-content block-content-full text-left">
           <h4 class="mb-2 text-warning">Change Log</h4>
           <div class="font-w400 font-size-sm mb-3">
             Lists all updates and patch notes for the construction mod, barring bug fixes. This Change Log is only
             available in the English version of the game. For a more detailed change log with bug fixes you can check the mod.io page's "view other versions" tab.
           </div>
-          <div style="max-height:300px; overflow-y:auto;">
-              <div class="font-w600 mb-1">v3.10</div>
+          <div style="max-height:350px; overflow-y:auto;">
+            <div class="font-w600 mb-1 construction-victory">v4.0</div>
             <div class="font-w400 font-size-sm mb-2">
-              - Build Menu changed majorly, now it's different islands instead of one big thing. Max furniture now looks very fancy. Efficiency has a notification and pulse on the progress bar.
+              - Two new Resources, Straps and Bricks have been added. Planks received an additional intermediate steps
+              through beams. <br />
+              - The cost of all Furniture has been changed to be more varied and interesting, making Construction more
+              akin to Township tasks and long-term goals. <br />
+              - The pictures or names of a third of all furniture has been changed to reflect its new costs or
+              soon-to-be new functions. <br />
+              - Workshop has been made to be give only Crafting and Fletching bonuses, and Tool Box has been made to
+              give exclusively Construction bonuses<br />
+              If any of the new costs seem too high for their tier mention it on the mod.io page or official Discord!
+            </div>
+
+            <div class="font-w600 mb-1 ">v3.10</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Build Menu changed majorly, now being different islands instead of one big menu. Max furniture now
+              looks very fancy. Efficiency has a notification and pulse on the progress bar.
             </div>
 
             <div class="font-w600 mb-1">v3.9</div>
             <div class="font-w400 font-size-sm mb-2">
               - Changed construction time to 4 seconds. Added purchasable Saw to decrease it. It, along with all other
-              purchasable tools now cost nails and planks. Changed Construction's order in the skill menu. Added Game
+              purchasable tools now costing nails and planks. Changed Construction's order in the skill menu. Added
+              Game
               Guide and Change Log.
             </div>
             <div class="font-w600 mb-1">v3.8</div>
             <div class="font-w400 font-size-sm mb-2">
-              - Rewrite of Item Icon logic and furniture cost logic, big performance improvements. If this update caused
+              - Rewrite of Item Icon logic and furniture cost logic, big performance improvements. If this update
+              caused
               you a crash, sorry. Changed normal planks and iron nails' icons.
             </div>
             <div class="font-w600 mb-1">v3.7</div>
             <div class="font-w400 font-size-sm mb-2">
-              - Added nails and planks to few base-game enemies' loot tables, changed to UI reordering on 1080p screens.
+              - Added nails and planks to few base-game enemies' loot tables, changed to UI reordering on 1080p
+              screens.
             </div>
             <div class="font-w600 mb-1">v3.6</div>
             <div class="font-w400 font-size-sm mb-2">
@@ -527,7 +531,7 @@
             <div class="font-w600 mb-1 construction-victory">v3.5</div>
             <div class="font-w400 font-size-sm mb-2">
               - Removed doubling, added Efficiency. Changed House Tier, cape, workshop, toolbox, forge upgrades to
-              instead increase Efficiency chance and effect. Added Herblor potion.
+              instead increase Efficiency chance and effect. Added Herblore potion.
             </div>
             <div class="font-w600 mb-1">v3.4</div>
             <div class="font-w400 font-size-sm mb-2">
@@ -535,7 +539,8 @@
             </div>
             <div class="font-w600 mb-1">v3.3</div>
             <div class="font-w400 font-size-sm mb-2">
-              - Scroll positions remembered on clicking "back", yellow border to incomplete resources added. New Recipe
+              - Scroll positions remembered on clicking "back", yellow border to incomplete resources added. New
+              Recipe
               UI. Better rendering logic.
             </div>
             <div class="font-w600 mb-1">v3.2</div>
@@ -627,9 +632,128 @@
       </div>
     </div>
   </div>
-  <div id="tutorial-page-Construction-1">
-    <h3>建設指南</h3>
-    <p>步驟1: 建造你的第一個房間...</p>
+</template>
+
+<template id="tutorial-template-Construction-translated">
+  <div id="tutorial-page-Construction-1" class="py-2 text-center">
+    <!-- Hero -->
+    <h2 class="h1 mb-2" data-guide="hero"></h2>
+    <h5 class="font-w400" data-guide="sub1"></h5>
+    <h5 class="font-w400 mb-5" data-guide="sub2"></h5>
+
+    <div class="col-12">
+      <div class="row gutters-tiny">
+
+        <!-- Materials, left column -->
+        <div class="col-md-6">
+          <div class="block-content block-content-full p-0 text-left">
+            <div class="py-2 text-left">
+              <h4 class="mb-2" data-guide="materials-title"></h4>
+            </div>
+
+            <!-- Planks -->
+            <div class="media d-flex align-items-center push" data-guide="mat-planks">
+              <div class="mr-3"><span data-node="Planks48"></span></div>
+              <div class="media-body text-left">
+                <div class="font-w600" data-guide="name"></div>
+                <div class="font-w400 font-size-sm" data-guide="text"></div>
+              </div>
+            </div>
+
+            <!-- Nails -->
+            <div class="media d-flex align-items-center push" data-guide="mat-nails">
+              <div class="mr-3"><span data-node="Nails48"></span></div>
+              <div class="media-body text-left">
+                <div class="font-w600" data-guide="name"></div>
+                <div class="font-w400 font-size-sm" data-guide="text"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materials, right column -->
+        <div class="col-md-6">
+          <div class="block-content block-content-full p-0 text-left">
+            <div class="py-2 text-left">
+              <h4 class="mb-2 invisible" aria-hidden="true">&nbsp;</h4>
+            </div>
+
+            <!-- Straps -->
+            <div class="media d-flex align-items-center push" data-guide="mat-straps">
+              <div class="mr-3"><span data-node="Straps48"></span></div>
+              <div class="media-body text-left">
+                <div class="font-w600" data-guide="name"></div>
+                <div class="font-w400 font-size-sm" data-guide="text"></div>
+              </div>
+            </div>
+
+            <!-- Bricks -->
+            <div class="media d-flex align-items-center push" data-guide="mat-bricks">
+              <div class="mr-3"><span data-node="Bricks48"></span></div>
+              <div class="media-body text-left">
+                <div class="font-w600" data-guide="name"></div>
+                <div class="font-w400 font-size-sm" data-guide="text"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mechanics + House -->
+        <div class="row">
+          <!-- Efficiency -->
+          <div class="col-md-6">
+            <div class="block-content block-content-full p-0 text-left">
+              <div class="py-2 text-left">
+                <h4 class="mb-2" data-guide="mechanics-title"></h4>
+              </div>
+              <div class="block-content block-content-full text-left" data-guide="efficiency">
+                <span data-node="EffFloat56" style="float:left; margin:0 12px 0 0;"></span>
+                <div class="font-w600" data-guide="title"></div>
+                <div class="font-w400 font-size-sm mb-2" data-guide="p1"></div>
+                <div class="font-w400 font-size-sm mb-2" data-guide="p2"></div>
+                <div class="font-w400 font-size-sm mb-2" data-guide="warn"></div>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Your House -->
+          <div class="col-md-6">
+            <div class="block-content block-content-full p-0 text-left">
+              <div class="py-2 text-left">
+                <h4 class="mb-2 invisible" data-guide="house-title"></h4>
+              </div>
+              <div class="block-content block-content-full text-left" data-guide="house">
+                <span data-node="HouseFloat56" style="float:left; margin:0 12px 0;"></span>
+                <div class="font-w600" data-guide="title"></div>
+                <div class="font-w400 font-size-sm mb-2" data-guide="p1"></div>
+                <div class="font-w400 font-size-sm mb-2" data-guide="p2"></div>
+                <div class="font-w400 font-size-sm mb-2" data-guide="p3"></div>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Extended Features -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="block-content block-content-full p-0 text-left">
+              <div class="py-2 text-left">
+                <h4 class="mb-2" data-guide="extended-title"></h4>
+              </div>
+              <div class="block-content block-content-full text-left" data-guide="extended">
+                <span data-node="ExtFloat56" style="float:left; margin:0 12px 0 0;"></span>
+                <div class="font-w600" data-guide="title"></div>
+                <div class="font-w400 font-size-sm mb-2" data-guide="p1"></div>
+                <div class="font-w400 font-size-sm mb-2" data-guide="p2"></div>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

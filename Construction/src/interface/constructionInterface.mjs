@@ -1,8 +1,9 @@
 const { loadModule } = mod.getContext(import.meta);
 
 const { ConstructionHouseMenu } = await loadModule('src/interface/constructionHouseMenu.mjs');
-const { getRielkLangString } = await loadModule('src/language/translationManager.mjs');
+const { mountConstructionGuide } = await loadModule('src/interface/elements/constructionGameGuide.mjs');
 
+const { getRielkLangString, templateRielkLangStringWithNodes } = await loadModule('src/language/translationManager.mjs');
 const ctx = mod.getContext(import.meta);
 export class ConstructionInterface {
     constructor(construction) {
@@ -29,7 +30,10 @@ export class ConstructionInterface {
             if (category.type !== 'Artisan')
                 return;
             const recipes = construction.actions.filter((r) => r.category === category);
-            recipes.sort(BasicSkillRecipe.sortByLevels);
+            if (window.innerWidth <= 968)
+                recipes.sort(BasicSkillRecipe.sortByLevels); // our spoof ordering only works when there are 2 rows to work with, otherwise leave it on default (though that's not MUCH better.)
+            else
+                recipes.sort((a, b) => a.spoofOrder - b.spoofOrder);
             const tab = createElement('recipe-selection-tab', {
                 className: 'col-12 col-md-8 d-none',
                 attributes: [['data-option-tag-name', 'rielk-construction-recipe-option']],
@@ -43,35 +47,22 @@ export class ConstructionInterface {
         modalFrag.append(getTemplateNode('tier-mastery-menu'));
         document.getElementById('main-container').appendChild(modalFrag);
 
-        const guideFrag = new DocumentFragment();
+        mountConstructionGuide({
+            construction,
+            masteryBarImageSrc: this.constructionMasteryBar._image.src,
+            formatter: (typeof window !== 'undefined' && typeof window.formatter === 'function')
+                ? window.formatter
+                : ({ text }) => text,
+        });
 
-        guideFrag.append(getTemplateNode('tutorial-template-Construction'));
-        this.constrGuide = getElementFromFragment(
-            guideFrag,
-            'tutorial-page-Construction', 'div', true);
-        const guideContainer = document.querySelector('#modal-game-guide .block-content.block-content-full');
-
-        const imgs = this.constrGuide.querySelectorAll('img');
-        //I'll be damned if I take them by id way too much code to write down
-        imgs[0].src = game.construction.media; // cover image (constr icon) 
-        imgs[1].src = this.constructionMasteryBar._image.src; //house icon row 2, 
-        imgs[2].src = game.construction.media; // Little icon on row 3 (contsruction icon)
-        imgs[3].src = game.items.getObjectByID('rielkConstruction:Teak_Planks').media; //plank icon, this is the row of materials
-        // imgs [4] is a little crafting icon
-        imgs[5].src = game.items.getObjectByID('rielkConstruction:Mithril_Nails').media; //nails icon
-        //imgs [6] is a little fletching icon
-        //imgs [7] is the weird M icon for Melvor
-        imgs[8].src = game.construction.media; //construction icon in skill interactions explanation
-        imgs[9].src = ctx.getResourceUrl('assets/efficiency.png'); //efficiency icon next to efficiency explanation.
-        imgs[10].src = ctx.getResourceUrl('assets/efficiency.png');//small efficiency icon next to efficiency explanation.
-        imgs[11].src = construction.categories.getObjectByID('rielkConstruction:Materials').media //materials icon in efficiecny explanation.
-        imgs[12].src = construction.categories.getObjectByID('rielkConstruction:House').media//furniture icon in efficiecny explanation.
-        imgs[13].src = this.constructionMasteryBar._image.src; // house explanation icon
-        imgs[14].src = construction.categories.getObjectByID('rielkConstruction:House').media; // house furniture explanation
-        imgs[15].src = this.constructionMasteryBar._image.src; //little house icon in the house explanation
-        imgs[16].src = construction.categories.getObjectByID('rielkConstruction:House').media; //other furniture logo in the house explanation
-        imgs[17].src = game.construction.media; //construction icon at the very end
-        guideContainer.append(this.constrGuide);
+        const guideLink = document.querySelector('#game-guide-header-link a.pointer-enabled');
+        if (guideLink) {
+            const oldClick = guideLink.onclick;
+            guideLink.onclick = function (event) {
+                if (typeof oldClick === 'function') oldClick.call(this, event);
+                construction.disableToolTip();
+            };
+        }
     }
 
     switchConstructionCategory(category) {

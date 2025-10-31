@@ -1,6 +1,59 @@
 export const language = {
     'SKILL_NAME_Construction': 'Construction',
 
+    'GUIDE_CONSTR_HERO': '${ConstructionIcon64}${constructionTitle}${ModioLink}',
+    'GUIDE_CONSTR_SUB1': 'Build up your ${HouseIcon24}${HouseWordStyled} using materials, artefacts, and keepsakes gathered throughout different Skills.',
+    'GUIDE_CONSTR_SUB2': '${ConstructionIcon24}${constructionTitle} will give you increasing bonuses as you progress through the game.',
+
+    'GUIDE_SECTION_MATERIALS_TITLE': 'Materials Needed',
+    'GUIDE_SECTION_MECH_TITLE': 'Extra Mechanics',
+    'GUIDE_SECTION_HOUSE_TITLE': 'Your House',
+    'GUIDE_SECTION_EXTENDED_TITLE': 'Extended Features',
+
+    'GUIDE_PLANKS_NAME': 'Planks',
+    'GUIDE_NAILS_NAME': 'Nails',
+    'GUIDE_STRAPS_NAME': 'Straps',
+    'GUIDE_BRICKS_NAME': 'Bricks',
+
+    'GUIDE_PLANKS_TEXT': 'Made from ${Beam16}${Beams}, crafted in ${Fletching16}${Fletching} using Logs cut from ${Woodcutting16}${Woodcutting}.',
+    'GUIDE_NAILS_TEXT': 'Made from ${Bar16}${Bars}, smelted in ${Smithing16}${Smithing} using Ores mined from ${Mining16}${Mining}.',
+    'GUIDE_STRAPS_TEXT': 'Made from ${Slivers16}${Slivers}, crafted in ${Crafting16}${Crafting} using Leather from the ${Shop16}${Shop}.',
+    'GUIDE_BRICKS_TEXT': 'Made from ${Rune16}${Runes}, crafted in ${Runecrafting16}${Runecrafting} using Rune Essence from ${Mining16}${Mining}.',
+
+    'GUIDE_EFFICIENCY_TITLE': 'Efficiency',
+    'GUIDE_EFFICIENCY_P1A': 'Only available to ${constructionTitle}, ${Efficiency16} Efficiency multiplies the cost and output of an action.',
+    'GUIDE_EFFICIENCY_P1B': '${BothStrong} the chance and amount of materials gotten when activating it can be increased.',
+    'GUIDE_EFFICIENCY_P2': 'When making ${MaterialsCat16}${materialsWord}, Efficiency is multiplicative of the result.${BR}When making ${FurnitureCat16}${furnitureWord}, fractional bonuses are ignored.',
+    'GUIDE_EFFICIENCY_WARNING': 'Increasing the bonus Materials / Progress of Efficiency will not increase action cost.',
+
+    'GUIDE_HOUSE_P1': 'Building and upgrading ${FurnitureCat16}${furnitureWord} will improve your ${HouseIcon16}${houseWord}\'s Tier, granting significant bonuses to ${constructionTitle}.',
+    'GUIDE_HOUSE_P2': 'Once all the ${FurnitureCat16}${furnitureWord} in your ${houseWord} reaches a certain tier, your ${houseWord}\'s tier will increase.',
+    'GUIDE_HOUSE_P3': 'Completing your ${houseWord} provides major rewards for the rest of the game and represents the ultimate goal of ${ConstructionIcon16}${constructionTitle}.',
+
+    'GUIDE_EXTENDED_TITLE': 'Additional Content',
+    'GUIDE_EXTENDED_P1': 'The Construction mod adds new enemies, items, recipes, and trades throughout the game, helping it integrate more deeply into the world.',
+    'GUIDE_EXTENDED_P2': 'A comprehensive list of all additions can be found ${ChangeListLink}. (${ExternalLinkNote})',
+
+    'GUIDE_TERM_CONSTRUCTION': 'Construction',
+    'GUIDE_TERM_FURNITURE': 'Furniture',
+    'GUIDE_TERM_MATERIALS': 'Materials',
+    'GUIDE_TERM_BEAMS': 'Beams',
+    'GUIDE_TERM_BARS': 'Bars',
+    'GUIDE_TERM_SLIVERS': 'Slivers',
+    'GUIDE_TERM_RUNES': 'Runes',
+    'GUIDE_TERM_FLETCHING': 'Fletching',
+    'GUIDE_TERM_WOODCUTTING': 'Woodcutting',
+    'GUIDE_TERM_SMITHING': 'Smithing',
+    'GUIDE_TERM_MINING': 'Mining',
+    'GUIDE_TERM_CRAFTING': 'Crafting',
+    'GUIDE_TERM_SHOP': 'Shop',
+    'GUIDE_TERM_BOTH': 'Both',
+
+    'GUIDE_LINK_HERE': 'Here',
+    'GUIDE_EXTERNAL_LINK_NOTE': 'Opens External Link',
+    'GUIDE_TOOLTIP_NEW': 'New to Construction?<br/> The <span class="construction-victory">Game Guide</span> is a great place to start!',
+    'GUIDE_TOOLTIP_UPDATE': 'Construction just received a <span class="text-warning">Major Update</span>! <br/> Click here to learn more!',
+
     'MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY': 'Select Construction Category',
     'MENU_TEXT_CONSTRUCT': 'Construct',
     'MENU_TEXT_BUILD': 'Build',
@@ -11,7 +64,7 @@ export const language = {
     'MENU_TEXT_REMAINING': 'Costs Remaining',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'View All Active Modifiers',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'All Active Construction Modifiers',
-    'MENU_HOUSE': "House",
+    'MENU_HOUSE': 'House',
     'MENU_VIEW_HOUSE_TIERS': 'View House Tier Bonuses',
     'MENU_UNLOCKED_MASTERY_FOR_TIER': 'Your House Tier has increased to <span class="construction-success">Tier ${tiername}</span>',
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'House Tier Bonus Unlocked!',
@@ -24,7 +77,7 @@ export const language = {
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'When all rooms contain Furniture of a required tier or higher, your House Tier will increase. You will unlock permanent Construction bonuses and recieve supplies.',
     'MENU_TEXT_REWARDS': 'Rewards',
 
-    'MENU_MAX_TIER' : 'Max Tier',
+    'MENU_MAX_TIER': 'Max Tier',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN': 'Chance to complete ${potency} actions at once.',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_1': 'Chance to make a single progress at once. :(',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_2': 'Chance to make double progress at once.',
@@ -61,7 +114,7 @@ export const language = {
 
     'PET_NAME_ChuckTheForeman': 'Chuck the Foreman',
     'PET_NAME_Scoobs': 'Scoobs',
-    'PET_DESCRIPTION_Scoobs':"Reach House Tier 5",
+    'PET_DESCRIPTION_Scoobs': 'Reach House Tier 5',
 
     'ITEM_NAME_Construction_Skillcape': 'Construction Skillcape',
     'ITEM_NAME_Builders_Hat': 'Builders Hat',
@@ -87,34 +140,59 @@ export const language = {
     'ITEM_NAME_Oak_Planks': 'Oak Planks',
     'ITEM_NAME_Teak_Planks': 'Teak Planks',
     'ITEM_NAME_Mahogany_Planks': 'Mahogany Planks',
-    'ITEM_NAME_Magic_Planks': 'Magic Planks',
     'ITEM_NAME_Redwood_Planks': 'Redwood Planks',
 
-    'ITEM_NAME_Leather_Straps': 'Leather Straps',
-    'ITEM_NAME_Hard_Leather_Straps': 'Hard Leather Straps',
+    'ITEM_NAME_Magic_Planks': 'Magic Planks',
+    'ITEM_DESCRIPTION_Magic_Planks': 'No longer used. Can be exchanged for Redwood Planks',
+
     'ITEM_NAME_Green_Dhide_Leather_Straps': 'Green D-hide Leather Straps',
     'ITEM_NAME_Blue_Dhide_Leather_Straps': 'Blue D-hide Leather Straps',
     'ITEM_NAME_Red_Dhide_Leather_Straps': 'Red D-hide Leather Straps',
     'ITEM_NAME_Black_Dhide_Leather_Straps': 'Black D-hide Leather Straps',
+    'ITEM_NAME_Elder_Dhide_Leather_Straps': 'Elder D-hide Leather Straps',
 
-    'ITEM_NAME_Leather_Bands': 'Leather Bands',
-    'ITEM_NAME_Hard_Leather_Bands': 'Hard Leather Bands',
-    'ITEM_NAME_Green_Dhide_Leather_Bands': 'Green D-hide Leather Bands',
-    'ITEM_NAME_Blue_Dhide_Leather_Bands': 'Blue D-hide Leather Bands',
-    'ITEM_NAME_Red_Dhide_Leather_Bands': 'Red D-hide Leather Bands',
-    'ITEM_NAME_Black_Dhide_Leather_Bands': 'Black D-hide Leather Bands',
+    'ITEM_NAME_Green_Dhide_Leather_Slivers': 'Green Dragonhide Slivers',
+    'ITEM_NAME_Blue_Dhide_Leather_Slivers': 'Blue Dragonhide Slivers',
+    'ITEM_NAME_Red_Dhide_Leather_Slivers': 'Red Dragonhide Slivers',
+    'ITEM_NAME_Black_Dhide_Leather_Slivers': 'Black Dragonhide Slivers',
+    'ITEM_NAME_Elder_Dhide_Leather_Slivers': 'Elder Dragonhide Slivers',
+
+    'ITEM_NAME_Clay_Bricks': 'Clay Bricks',
+    'ITEM_NAME_Limestone_Bricks': 'Limestone Bricks',
+    'ITEM_NAME_Granite_Bricks': 'Granite Bricks',
+    'ITEM_NAME_Marble_Bricks': 'Marble Bricks',
+    'ITEM_NAME_Magic_Bricks': 'Magic Bricks',
+
+    'ITEM_NAME_Beam_Box_I': 'Beam Box I',
+    'ITEM_NAME_Beam_Box_II': 'Beam Box II',
+
+    'ITEM_NAME_Flower_Pots_Token_1': 'Build Composter Tier 1 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_2': 'Build Composter Tier 2 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_3': 'Build Composter Tier 3 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_4': 'Build Composter Tier 4 in Construction to unlock.',
+    'ITEM_NAME_Flower_Pots_Token_5': 'Build Composter Tier 5 in Construction to unlock.',
+
+    'ITEM_DESCRIPTION_Builders_Hat': '+2% Construction Skill XP',
+    'ITEM_DESCRIPTION_Builders_Body': '+2% Construction Skill XP',
+    'ITEM_DESCRIPTION_Builders_Leggings': '+2% Construction Skill XP',
+    'ITEM_DESCRIPTION_fBuilders_Boots': '+2% Construction Skill XP',
+
+    'ITEM_DESCRIPTION_Normal_Beams': 'Can be cut into Arrow Shafts or Planks.',
+    'ITEM_DESCRIPTION_Oak_Beams': 'Can be cut into Arrow Shafts or Planks.',
+    'ITEM_DESCRIPTION_Teak_Beams': 'Can be cut into Arrow Shafts or Planks.',
+    'ITEM_DESCRIPTION_Mahogany_Beams': 'Can be cut into Arrow Shafts or Planks.',
+    'ITEM_DESCRIPTION_Redwood_Beams': 'Can be cut into Arrow Shafts or Planks.',
+
+    'ITEM_DESCRIPTION_Green_Dhide_Leather_Slivers': 'Can be used to upgrade Dragonhide Armor or to make Straps.',
+    'ITEM_DESCRIPTION_Blue_Dhide_Leather_Slivers': 'Can be used to upgrade Dragonhide Armor or to make Straps.',
+    'ITEM_DESCRIPTION_Red_Dhide_Leather_Slivers': 'Can be used to upgrade Dragonhide Armor or to make Straps.',
+    'ITEM_DESCRIPTION_Black_Dhide_Leather_Slivers': 'Can be used to upgrade Dragonhide Armor or to make Straps.',
+    'ITEM_DESCRIPTION_Elder_Dhide_Leather_Slivers': 'Can be used to upgrade Dragonhide Armor or to make Straps.',
 
 
-    'ITEM_NAME_Flower_Pots_Token_1': 'Build Flower Pots Tier 1 in Construction to unlock.',
-    'ITEM_NAME_Flower_Pots_Token_2': 'Build Flower Pots Tier 2 in Construction to unlock.',
-    'ITEM_NAME_Flower_Pots_Token_3': 'Build Flower Pots Tier 3 in Construction to unlock.',
-    'ITEM_NAME_Flower_Pots_Token_4': 'Build Flower Pots Tier 4 in Construction to unlock.',
-    'ITEM_NAME_Flower_Pots_Token_5': 'Build Flower Pots Tier 5 in Construction to unlock.',
+    'ITEM_DESCRIPTION_Beam_Box_I': 'Contains basic Beams',
+    'ITEM_DESCRIPTION_Beam_Box_II': 'Contains regular Beams',
 
-    'ITEM_DESCRIPTION_Builders_Hat': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
-    'ITEM_DESCRIPTION_Builders_Body': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
-    'ITEM_DESCRIPTION_Builders_Leggings': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
-    'ITEM_DESCRIPTION_fBuilders_Boots': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
 
     'TOAST_FIXTURE_COMPLETE': 'You\'ve finished building your ${fixtureName}!',
 
@@ -158,11 +236,13 @@ export const language = {
 
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
-    'TOASTS_EFFICIENCY':'You managed to complete multiple actions at once',
+    'TOASTS_EFFICIENCY': 'You managed to complete multiple actions at once',
 
-    'ENEMY_NAME_ConstructGiant':'Iron Giant',
-    'ENEMY_NAME_BarnRaiser':'Barn Raiser',
+    'ENEMY_NAME_ConstructGiant': 'Iron Giant',
+    'ENEMY_NAME_BarnRaiser': 'Barn Raiser',
 
+    'SKILL_CATEGORY_Leather_Slivers': 'Leather Slivers',
+    'SKILL_CATEGORY_Wood_Beams': 'Wood Beams',
     'SKILL_CATEGORY_ Construction_ Materials': 'Materials',
     'SKILL_CATEGORY_ Construction_ House': 'Furniture',
 
@@ -180,16 +260,16 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Apparatus': 'Apparatus',
     'CONSTRUCTION_FIXTURE_NAME_ Archery_Range': 'Archery Range',
     'CONSTRUCTION_FIXTURE_NAME_ Black_Market': 'Black Market',
-    'CONSTRUCTION_FIXTURE_NAME_ Desk': 'Desk',
+    'CONSTRUCTION_FIXTURE_NAME_ Desk': 'Fireplace',
     'CONSTRUCTION_FIXTURE_NAME_ Dragon_Statue': 'Dragon Statue',
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': 'Fire Pit',
-    'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': 'Flower Pots',
+    'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': 'Composter',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': 'Forge',
     'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Larder',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': 'Jungle Gym',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': 'Lake',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': 'Mine',
-    'CONSTRUCTION_FIXTURE_NAME_ Orchard': 'Forest',
+    'CONSTRUCTION_FIXTURE_NAME_ Orchard': 'Orchard',
     'CONSTRUCTION_FIXTURE_NAME_ Oven': 'Oven',
     'CONSTRUCTION_FIXTURE_NAME_ Prayer_Altar': 'Prayer Altar',
     'CONSTRUCTION_FIXTURE_NAME_ Rune_Altar': 'Rune Altar',
@@ -198,7 +278,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Telescope': 'Telescope',
     'CONSTRUCTION_FIXTURE_NAME_ Tool_Rack': 'Toolbox',
     'CONSTRUCTION_FIXTURE_NAME_ Training_Dummy': 'Training Dummy',
-    'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': 'Trapper\'s Hut',
+    'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': 'Hunter\'s Lodge',
     'CONSTRUCTION_FIXTURE_NAME_ Wardrobe': 'Wardrobe',
     'CONSTRUCTION_FIXTURE_NAME_ Worktable': 'Workbench'
 }    

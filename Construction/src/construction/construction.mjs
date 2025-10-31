@@ -35,6 +35,7 @@ export class Construction extends ArtisanSkill {
         this.recipeNumber = 0;
         this.recipeCountByTier = [];
         this._actionMode = undefined;
+        this.showUpdateTooltip = true;
         this.cachedpreservationchance = 0;
         this.stats = new StatTracker();
         game.stats.Construction = this.stats;
@@ -114,6 +115,12 @@ export class Construction extends ArtisanSkill {
     get unmodifiedActionQuantity() {
         return this.activeRecipe.baseQuantity;
     }
+    // get masteryAction() {
+    //   switch (this._actionMode) {
+    //     case 0: return this.activeRecipe;
+    //   case 1: return this.activeBuildRecipe;
+    //}}
+
     get activeRecipe() {
         if (this.selectedRecipe === undefined)
             throw new Error('Tried to get active crafting recipe, but none is selected.');
@@ -289,6 +296,47 @@ export class Construction extends ArtisanSkill {
     onPageChange() {
         super.onPageChange();
         this.renderQueue.renderfixtureItemUpdates = true;
+        if (this.showUpdateTooltip) {
+            if (this.annoyingText == null)
+                this.annoyingText = this.level == 1 ? getRielkLangString('GUIDE_TOOLTIP_NEW') : getRielkLangString('GUIDE_TOOLTIP_UPDATE');
+            const link = document.querySelector('#game-guide-header-link');
+            this.annoying = tippy(link, {
+                content: `<div class="text-center">${this.annoyingText}</div>`,
+                placement: 'bottom',
+                allowHTML: true,
+                trigger: 'manual',
+                hideOnClick: false,
+                interactive: true,
+                duration: [0, 0]
+            });
+
+            this.annoying.show();
+            setTimeout(() => {
+                if (!this.annoying.popper) return;
+                const box = this.annoying.popper?.querySelector('.tippy-box');
+                if (!box) return;
+                box.classList.add('shake');
+                setTimeout(() => box.classList.remove('shake'), 1000);
+            }, 0);
+
+            const check = setInterval(() => {
+                if (game.openPage?.id !== 'rielkConstruction:Construction') {
+                    this.annoying.destroy();
+                    clearInterval(check);
+                }
+            }, 25);
+            setTimeout(() => { this.annoying.destroy(); clearInterval(check); }, 5000);
+
+        }
+    }
+    disableToolTip() { //This function gets called on gameguide click
+        if (game.openPage.id == 'rielkConstruction:Construction') {
+            this.showUpdateTooltip = false;
+            if (this.annoying?.state?.isDestroyed === false) {
+                this.annoying.destroy();
+                //technically doesn't clearInterval, but that happens on page change so it's not too big a deal.
+            }
+        }
     }
     updateMasteryDisplays() {
         //leave empty so it doesn't do anything
@@ -376,6 +424,8 @@ export class Construction extends ArtisanSkill {
     get masteryLevelCap() {
         return 50;  //cloudManager.hasTotH later
     }
+
+
     renderRecipeInfo() {
         if (!this.renderQueue.recipeInfo)
             return;
@@ -641,7 +691,8 @@ export class Construction extends ArtisanSkill {
 
     artisanAction() {
         if (rollPercentage(this.getEfficiencyChance(this.activeRecipe))) this.efficient = true;
-        if (this.efficient && !game.settings.useLegacyNotifications) {
+        if (this.notifs && this.efficient && !game.settings.useLegacyNotifications) {
+
             createOrangeNotification({
                 text: getRielkLangString('TOASTS_EFFICIENCY'),
                 quantity: this.getEfficiencyPotencyMultiplier(this.activeRecipe)
@@ -681,7 +732,7 @@ export class Construction extends ArtisanSkill {
 
     buildAction() {
         if (rollPercentage(this.getEfficiencyChance(this.activeBuildRecipe))) this.efficient = true;
-        if (this.efficient && !game.settings.useLegacyNotifications) 
+        if (this.notifs && this.efficient && !game.settings.useLegacyNotifications)
             createOrangeNotification({
                 text: getRielkLangString('TOASTS_EFFICIENCY'),
                 quantity: Math.floor(this.getEfficiencyPotencyMultiplier(this.activeBuildRecipe))
@@ -800,6 +851,7 @@ export class Construction extends ArtisanSkill {
     resetActionState() {
         super.resetActionState();
         this._actionMode = undefined;
+        this.efficient = 0;
         this.selectedRoom = undefined;
         this.selectedFixture = undefined;
         this.selectedFixtureRecipe = undefined;

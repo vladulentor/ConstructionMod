@@ -6,9 +6,12 @@ const { patchGameEventSystem } = await loadModule('src/construction/gameEvents.m
 const { patchFarming } = await loadModule('src/skillPatches/farming/farming.mjs');
 const { patchMasteryElement } = await loadModule('src/skillPatches/patchmasteryelement.mjs');
 const { skillBoostsCompatibility } = await loadModule("src/modPatches/skillboosts.mjs");
-const { patchFletchingOrder } = await loadModule("src/skillPatches/patchFletchingOrder.mjs")
-const { patchRenderEquipment } = await loadModule("src/skillPatches/patchrenderequipment.mjs")
+const { patchFletchingOrder } = await loadModule("src/skillPatches/patchFletchingOrder.mjs");
+const { patchCraftingOrder } = await loadModule("src/skillPatches/patchCraftingOrder.mjs")
 
+const { patchRenderEquipment } = await loadModule("src/skillPatches/patchrenderequipment.mjs");
+const { patchArrowShaftRecipes } = await loadModule("src/skillPatches/patchArrowShaftRecipes.mjs");
+const {patchGameGuide} = await loadModule("src/skillPatches/patchGameGuide.mjs")
 
 export async function setup(ctx) {
     setup = new Setup(ctx);
@@ -17,7 +20,7 @@ export async function setup(ctx) {
     game.construction = game.registerSkill(game.registeredNamespaces.getNamespace('rielkConstruction'), Construction);
     await setup.applyPatches();
     await setup.loadData();
-    await setup.applyOtherPatches()
+    await setup.applyOtherPatches();
 
     await setup.modCompatibility(ctx);
     await setup.lastChanges(ctx);
@@ -54,7 +57,8 @@ class Setup {
         patchFarming(this.ctx);
         patchMasteryElement(this.ctx);
         patchRenderEquipment(this.ctx);
-        
+        game._events.on('offlineLoopEntered', () => game.construction.notifs = false);
+        game._events.on('offlineLoopExited', () => game.construction.notifs = true);
         this.ctx.patch(EventManager, 'loadEvents').before(() => {
             if (game.construction.isUnlocked)
                 return;
@@ -65,7 +69,10 @@ class Setup {
         });
     }
     async applyOtherPatches() {
-        //  patchFletchingOrder();
+     patchFletchingOrder();
+     patchCraftingOrder();
+     patchArrowShaftRecipes(this.ctx);
+
 
     }
     async loadData() {

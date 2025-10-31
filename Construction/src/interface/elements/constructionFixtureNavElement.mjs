@@ -68,7 +68,7 @@ class ConstructionFixtureNavElement extends HTMLElement {
         this.constructionProgress.classList.add('text-warning');
         this.sparkleOver.classList.remove('d-none');
 
-        this.fixtureImage.style.transform = "scale(0.85)";
+       this.fixtureImage.style.transform = "scale(0.9)";
         this.fixtureWrapper.style.filter = `
   drop-shadow(1px 0 0 #f8ab46ff)
 drop-shadow(0 -1px 0 #f8ab46ff)

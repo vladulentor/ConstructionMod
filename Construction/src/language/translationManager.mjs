@@ -151,4 +151,9 @@ export function patchTranslations(ctx) {
             return getRielkLangString(`PET_DESCRIPTION_${this.localID}`);
         return patch();
     });
+     ctx.patch(SkillCategory, 'name').get(function (patch) {
+         if (this.namespace === 'rielkConstruction')
+            return getRielkLangString(`SKILL_CATEGORY_${this.localID}`);
+        return patch();
+    });
 }

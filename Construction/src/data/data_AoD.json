@@ -261,7 +261,7 @@
             "newCosts": {
               "items": [
                 {
-                  "id": "rielkConstruction:Magic_Planks",
+                  "id": "rielkConstruction:Redwood_Planks",
                   "quantity": 500
                 },
                 {
@@ -292,7 +292,7 @@
                   "quantity": 12
                 },
                 {
-                  "id": "rielkConstruction:Iron_Nails",
+                  "id": "rielkConstruction:Green_Dhide_Leather_Straps",
                   "quantity": 10
                 }
               ],
@@ -319,7 +319,7 @@
               "quantity": 20
             },
             {
-              "id": "rielkConstruction:Steel_Nails",
+              "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
               "quantity": 15
             }
               ],
@@ -345,7 +345,7 @@
               "quantity": 75
             },
             {
-              "id": "rielkConstruction:Steel_Nails",
+              "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
               "quantity": 50
             }
               ],
@@ -372,7 +372,7 @@
               "quantity": 150
             },
             {
-              "id": "rielkConstruction:Mithril_Nails",
+              "id": "rielkConstruction:Red_Dhide_Leather_Straps",
               "quantity": 100
             }
               ],
@@ -399,7 +399,7 @@
               "quantity": 350
             },
             {
-              "id": "rielkConstruction:Adamantite_Nails",
+              "id": "rielkConstruction:Black_Dhide_Leather_Straps",
               "quantity": 300
             }
               ],
@@ -426,7 +426,7 @@
               "quantity": 750
             },
             {
-              "id": "rielkConstruction:Adamantite_Nails",
+              "id": "rielkConstruction:Black_Dhide_Leather_Straps",
               "quantity": 500
             }
               ],
@@ -449,11 +449,11 @@
             "newCosts": {
               "items": [
                {
-              "id": "rielkConstruction:Magic_Planks",
+              "id": "rielkConstruction:Redwood_Planks",
               "quantity": 1500
             },
             {
-              "id": "rielkConstruction:Dragonite_Nails",
+              "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
               "quantity": 750
             }
               ],
@@ -629,7 +629,34 @@
             }
           }
         ]
-      }
+      },
+       {
+        "id": "melvorD:Dragon_Pickaxe",
+        "cost": [
+          {
+            "gamemodeID": "melvorAoD:AncientRelics",
+            "newCosts": {
+              "items": [
+                {
+                  "id": "rielkConstruction:Redwood_Planks",
+                  "quantity": 750
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 1500
+                }
+              ],
+              "currencies": [
+                {
+                  "currency": "melvorD:GP",
+                  "type": "Fixed",
+                  "cost": 5000000
+                }
+              ]
+            }
+          }
+        ]
+       }
     ]
   }
 }

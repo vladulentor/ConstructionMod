@@ -1,6 +1,60 @@
 export const language = {
     'SKILL_NAME_Construction': '建設',
 
+    'GUIDE_CONSTR_HERO': '${ConstructionIcon64}${constructionTitle}${ModioLink}',
+'GUIDE_CONSTR_SUB1': 'さまざまなスキルで集めた素材・アーティファクト・記念品を使って、${HouseIcon24}${HouseWordStyled} を発展させましょう。',
+'GUIDE_CONSTR_SUB2': '${ConstructionIcon24}${constructionTitle} は、ゲームの進行に応じて増加するボーナスを与えます。',
+
+'GUIDE_SECTION_MATERIALS_TITLE': '必要な素材',
+'GUIDE_SECTION_MECH_TITLE': '追加の仕組み',
+'GUIDE_SECTION_HOUSE_TITLE': 'あなたの家',
+'GUIDE_SECTION_EXTENDED_TITLE': '拡張機能',
+
+'GUIDE_PLANKS_NAME': '板材',
+'GUIDE_NAILS_NAME': '釘',
+'GUIDE_STRAPS_NAME': 'ストラップ',
+'GUIDE_BRICKS_NAME': 'レンガ',
+
+'GUIDE_PLANKS_TEXT': '${Beam16}${Beams}から作られ、${Fletching16}${Fletching}で加工します。原木は${Woodcutting16}${Woodcutting}で入手します。',
+'GUIDE_NAILS_TEXT': '${Bar16}${Bars}から作られ、${Smithing16}${Smithing}で精錬します。鉱石は${Mining16}${Mining}で採掘します。',
+'GUIDE_STRAPS_TEXT': '${Slivers16}${Slivers}から作られ、${Crafting16}${Crafting}で加工します。革は${Shop16}${Shop}で入手します。',
+'GUIDE_BRICKS_TEXT': '${Rune16}${Runes}から作られ、${Runecrafting16}${Runecrafting}で加工します。ルーン原石は${Mining16}${Mining}で入手します。',
+
+'GUIDE_EFFICIENCY_TITLE': '効率',
+'GUIDE_EFFICIENCY_P1A': '${constructionTitle} 専用の ${Efficiency16}効率は、行動のコストと成果を乗算します。',
+'GUIDE_EFFICIENCY_P1B': '${BothStrong} 発動時に得られる素材の確率と量の両方を高められます。',
+'GUIDE_EFFICIENCY_P2': '${MaterialsCat16}${materialsWord}の作成時、効率は結果に乗算で適用されます。${BR}${FurnitureCat16}${furnitureWord}の作成時は、小数点以下のボーナスは無視されます。',
+'GUIDE_EFFICIENCY_WARNING': '効率の素材/進行ボーナスを上げても、行動コストは増えません。',
+
+'GUIDE_HOUSE_P1': '${FurnitureCat16}${furnitureWord} を建築・強化すると、${HouseIcon16}${houseWord} の段階が上がり、${constructionTitle} に大きなボーナスが得られます。',
+'GUIDE_HOUSE_P2': 'あなたの ${houseWord} 内のすべての ${FurnitureCat16}${furnitureWord} が所定の段階に達すると、${houseWord} の段階が上昇します。',
+'GUIDE_HOUSE_P3': '${houseWord} を完成させると、以後のゲームで大きな報酬を得られ、${ConstructionIcon16}${constructionTitle} の最終目標となります。',
+
+'GUIDE_EXTENDED_TITLE': '追加コンテンツ',
+'GUIDE_EXTENDED_P1': 'Construction のMODは、ゲーム全体に新たな敵・アイテム・レシピ・取引を追加し、世界への統合をさらに深めます。',
+'GUIDE_EXTENDED_P2': 'すべての追加要素の一覧は${ChangeListLink}で確認できます。（${ExternalLinkNote}）',
+
+'GUIDE_TERM_CONSTRUCTION': '建設',
+'GUIDE_TERM_FURNITURE': '家具',
+'GUIDE_TERM_MATERIALS': '素材',
+'GUIDE_TERM_BEAMS': '梁',
+'GUIDE_TERM_BARS': '延べ棒',
+'GUIDE_TERM_SLIVERS': '切れ端',
+'GUIDE_TERM_RUNES': 'ルーン',
+'GUIDE_TERM_FLETCHING': '弓製作',
+'GUIDE_TERM_WOODCUTTING': '伐採',
+'GUIDE_TERM_SMITHING': '鍛冶',
+'GUIDE_TERM_MINING': '採鉱',
+'GUIDE_TERM_CRAFTING': '製作',
+'GUIDE_TERM_SHOP': 'ショップ',
+'GUIDE_TERM_BOTH': '両方',
+
+'GUIDE_LINK_HERE': 'こちら',
+'GUIDE_EXTERNAL_LINK_NOTE': '外部リンク（英語）',
+'GUIDE_TOOLTIP_NEW': '建設は初めてですか？<br/> <span class="construction-victory">ゲームガイド</span>から始めましょう！',
+'GUIDE_TOOLTIP_UPDATE': '建設に<span class="text-warning">大型アップデート</span>が入りました！ <br/> クリックして詳しく！',
+
+    
     'MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY': '建設カテゴリを選択',
     'MENU_TEXT_CONSTRUCT': '構築する',
     'MENU_TEXT_BUILD': '建てる',
@@ -77,7 +131,6 @@ export const language = {
     'ITEM_NAME_Oak_Beams': 'オークの梁',
     'ITEM_NAME_Teak_Beams': 'チーク材の梁',
     'ITEM_NAME_Mahogany_Beams': 'マホガニーの梁',
-    'ITEM_NAME_Magic_Beams': '魔法の梁',
     'ITEM_NAME_Redwood_Beams': 'レッドウッドの梁',
 
     'ITEM_NAME_Normal_Planks': '通常の板',
@@ -86,33 +139,56 @@ export const language = {
     'ITEM_NAME_Mahogany_Planks': 'マホガニーの板',
     'ITEM_NAME_Magic_Planks': '魔法の板',
     'ITEM_NAME_Redwood_Planks': 'レッドウッドの板',
+'ITEM_DESCRIPTION_Magic_Planks': 'もう使用されていません。レッドウッドの板と交換できます。',
 
-    'ITEM_NAME_Leather_Straps': '革のストラップ',
-    'ITEM_NAME_Hard_Leather_Straps': '硬い革のストラップ',
-    'ITEM_NAME_Green_Dhide_Leather_Straps': '緑のドラゴンレザーのストラップ',
-    'ITEM_NAME_Blue_Dhide_Leather_Straps': '青のドラゴンレザーのストラップ',
-    'ITEM_NAME_Red_Dhide_Leather_Straps': '赤のドラゴンレザーのストラップ',
-    'ITEM_NAME_Black_Dhide_Leather_Straps': '黒のドラゴンレザーのストラップ',
+'ITEM_NAME_Green_Dhide_Leather_Straps': 'グリーン・ドラゴンハイドの革ひも',
+'ITEM_NAME_Blue_Dhide_Leather_Straps': 'ブルー・ドラゴンハイドの革ひも',
+'ITEM_NAME_Red_Dhide_Leather_Straps': 'レッド・ドラゴンハイドの革ひも',
+'ITEM_NAME_Black_Dhide_Leather_Straps': 'ブラック・ドラゴンハイドの革ひも',
+'ITEM_NAME_Elder_Dhide_Leather_Straps': 'エルダー・ドラゴンハイドの革ひも',
 
-    'ITEM_NAME_Leather_Bands': '革のバンド',
-    'ITEM_NAME_Hard_Leather_Bands': '硬い革のバンド',
-    'ITEM_NAME_Green_Dhide_Leather_Bands': '緑のドラゴンレザーのバンド',
-    'ITEM_NAME_Blue_Dhide_Leather_Bands': '青のドラゴンレザーのバンド',
-    'ITEM_NAME_Red_Dhide_Leather_Bands': '赤のドラゴンレザーのバンド',
-    'ITEM_NAME_Black_Dhide_Leather_Bands': '黒のドラゴンレザーのバンド',
-
-
-    'ITEM_NAME_Flower_Pots_Token_1': '「建設」でフラワーポット第1段階を建ててアンロックします。',
-    'ITEM_NAME_Flower_Pots_Token_2': '「建設」でフラワーポット第2段階を建ててアンロックします。',
-    'ITEM_NAME_Flower_Pots_Token_3': '「建設」でフラワーポット第3段階を建ててアンロックします。',
-    'ITEM_NAME_Flower_Pots_Token_4': '「建設」でフラワーポット第4段階を建ててアンロックします。',
-    'ITEM_NAME_Flower_Pots_Token_5': '「建設」でフラワーポット第5段階を建ててアンロックします。',
+'ITEM_NAME_Green_Dhide_Leather_Slivers': 'グリーン・ドラゴンハイドの切れ端',
+'ITEM_NAME_Blue_Dhide_Leather_Slivers': 'ブルー・ドラゴンハイドの切れ端',
+'ITEM_NAME_Red_Dhide_Leather_Slivers': 'レッド・ドラゴンハイドの切れ端',
+'ITEM_NAME_Black_Dhide_Leather_Slivers': 'ブラック・ドラゴンハイドの切れ端',
+'ITEM_NAME_Elder_Dhide_Leather_Slivers': 'エルダー・ドラゴンハイドの切れ端',
 
 
-    'ITEM_DESCRIPTION_Builders_Hat': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
-    'ITEM_DESCRIPTION_Builders_Body': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
-    'ITEM_DESCRIPTION_Builders_Leggings': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
-    'ITEM_DESCRIPTION_Builders_Boots': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
+    'ITEM_NAME_Clay_Bricks': '粘土レンガ',
+'ITEM_NAME_Limestone_Bricks': '石灰岩レンガ',
+'ITEM_NAME_Granite_Bricks': '花崗岩レンガ',
+'ITEM_NAME_Marble_Bricks': '大理石レンガ',
+'ITEM_NAME_Magic_Bricks': '魔法のレンガ',
+
+'ITEM_NAME_Beam_Box_I': '梁の箱 I',
+'ITEM_NAME_Beam_Box_II': '梁の箱 II',
+
+    'ITEM_NAME_Flower_Pots_Token_1': '建設スキルでコンポスター第1段階を建設してアンロックします。',
+    'ITEM_NAME_Flower_Pots_Token_2': '建設スキルでコンポスター第2段階を建設してアンロックします。',
+    'ITEM_NAME_Flower_Pots_Token_3': '建設スキルでコンポスター第3段階を建設してアンロックします。',
+    'ITEM_NAME_Flower_Pots_Token_4': '建設スキルでコンポスター第4段階を建設してアンロックします。',
+    'ITEM_NAME_Flower_Pots_Token_5': '建設スキルでコンポスター第5段階を建設してアンロックします。',
+
+
+    'ITEM_DESCRIPTION_Builders_Hat': '建築スキル経験値 +2%',
+    'ITEM_DESCRIPTION_Builders_Body': '建築スキル経験値 +2%',
+    'ITEM_DESCRIPTION_Builders_Leggings': '建築スキル経験値 +2%',
+    'ITEM_DESCRIPTION_Builders_Boots': '建築スキル経験値 +2%',
+
+    'ITEM_DESCRIPTION_Normal_Beams': '矢柄または板材に加工できます。',
+'ITEM_DESCRIPTION_Oak_Beams': '矢柄または板材に加工できます。',
+'ITEM_DESCRIPTION_Teak_Beams': '矢柄または板材に加工できます。',
+'ITEM_DESCRIPTION_Mahogany_Beams': '矢柄または板材に加工できます。',
+'ITEM_DESCRIPTION_Redwood_Beams': '矢柄または板材に加工できます。',
+
+'ITEM_DESCRIPTION_Green_Dhide_Leather_Slivers': 'ドラゴンハイド防具の強化やストラップの作成に使用できます。',
+'ITEM_DESCRIPTION_Blue_Dhide_Leather_Slivers': 'ドラゴンハイド防具の強化やストラップの作成に使用できます。',
+'ITEM_DESCRIPTION_Red_Dhide_Leather_Slivers': 'ドラゴンハイド防具の強化やストラップの作成に使用できます。',
+'ITEM_DESCRIPTION_Black_Dhide_Leather_Slivers': 'ドラゴンハイド防具の強化やストラップの作成に使用できます。',
+'ITEM_DESCRIPTION_Elder_Dhide_Leather_Slivers': 'ドラゴンハイド防具の強化やストラップの作成に使用できます。',
+
+'ITEM_DESCRIPTION_Beam_Box_I': '기본 보가 들어 있습니다',
+'ITEM_DESCRIPTION_Beam_Box_II': '일반 보가 들어 있습니다',
 
     'TOAST_FIXTURE_COMPLETE': '${fixtureName}の建造が完了しました！',
     'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '${categoryName}を建設中に追加行動を行う確率が-${value}%',
@@ -160,6 +236,9 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 3': '家具のティア4効果をアンロックします。',
     'MASTERY_BONUS_ Construction_ 4': '家具のティア5効果をアンロックします。',
 
+    'SKILL_CATEGORY_Leather_Slivers': '革の切れ端',
+'SKILL_CATEGORY_Wood_Beams': '木の梁',
+
     'SKILL_CATEGORY_ Construction_ Materials': '材料',
     'SKILL_CATEGORY_ Construction_ House': '家具',
 
@@ -177,10 +256,10 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Apparatus': '装置',
     'CONSTRUCTION_FIXTURE_NAME_ Archery_Range': 'アーチェリー場',
     'CONSTRUCTION_FIXTURE_NAME_ Black_Market': '闇市場',
-    'CONSTRUCTION_FIXTURE_NAME_ Desk': 'デスク',
+    'CONSTRUCTION_FIXTURE_NAME_ Desk': '暖炉',
     'CONSTRUCTION_FIXTURE_NAME_ Dragon_Statue': '龍の像',
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': '火の穴',
-    'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': '植木鉢',
+    'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': 'コンポスター',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': 'フォージ',
     'CONSTRUCTION_FIXTURE_NAME_ Fridge': '食料庫',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': 'ジャングルジム',
@@ -195,7 +274,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Telescope': '望遠鏡',
     'CONSTRUCTION_FIXTURE_NAME_ Tool_Rack': 'ツールボックス',
     'CONSTRUCTION_FIXTURE_NAME_ Training_Dummy': '訓練用ダミー',
-    'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': '捕獲小屋',
+'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': '狩人の小屋',
     'CONSTRUCTION_FIXTURE_NAME_ Wardrobe': 'ワードローブ',
     'CONSTRUCTION_FIXTURE_NAME_ Worktable': '作業台'
 }

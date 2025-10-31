@@ -10,10 +10,10 @@ export function createOrangeNotification({
     quantity = 0,
 } = {}) {
     game.notifications.createSuccessNotification(id, text, media, quantity);
-
     // apply custom style right after render
     setTimeout(() => {
         const notifEls = Array.from(document.querySelectorAll(".newNotification, .newNotification-container, .notification, .notification-container, .new-notification"));
+        
         if (notifEls.length === 0) return;
         const ourNotif = notifEls.find(el => el.innerText.trim().includes(getRielkLangString('TOASTS_EFFICIENCY'))); 
         if (!ourNotif) return;

@@ -9,7 +9,7 @@ Entries marked with [TotH] indicate Throne of the Herald changes.
 ### New Purchases
 - Added the "Saw" items in the Skill Upgrades section. They work like the Axe, Fishing Rod, or Pickaxe tool chains, but for Construction. They also increase Efficiency effects along with decreasing interval.
 ### Changed Purchases
-- Axe, and Pickaxe all now also cost Planks and Nails along with their normal costs, Fishing Rod now costs Planks and Straps, to encourage the player to interact with the skill, or to get them from enemies' loot tables.
+- Axe, and Pickaxe now also cost Planks and Nails along their gold costs, Fishing Rod now costs Planks and Straps, to encourage the player to interact with the Construction skill, or to get its loot from enemies' loot tables.
 ---
 
 ## Combat

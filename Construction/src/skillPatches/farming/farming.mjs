@@ -1,10 +1,7 @@
 export function patchFarming(ctx) {
     ctx.patch(Farming, 'rollForAdditionalItems').after(function (_, rewards, growthTime, recipe) {
         if (recipe.category.id === "melvorD:Tree") {
-            const chance = this.game.modifiers.getValue(
-                "rielkConstruction:farmingTreeSeedReturn",
-                ModifierQuery.EMPTY
-            );
+            const chance = this.game.modifiers.getValue("rielkConstruction:farmingTreeSeedReturn",ModifierQuery.EMPTY);
 
             if (rollPercentage(chance)) {
                 rewards.addItem(recipe.seedCost.item, 1);

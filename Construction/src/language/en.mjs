@@ -84,7 +84,7 @@ export const language = {
     'ITEM_NAME_Twice_Measured_Potion_IV': 'Twice-Measured Potion IV',
     'POTION_NAME_Twice_Measured_Potion': 'Twice-Measured Potion',
 
-
+    'ITEM_NAME_Magic_Planks': 'Magic Planks',
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% chance to regain a Tree Seed in Farming when harvested',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% actions required to upgrade in Construction',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% actions required to upgrade in Construction',

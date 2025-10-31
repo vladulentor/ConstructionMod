@@ -21,17 +21,47 @@ export const language = {
     'ITEM_NAME_Builders_Leggings': 'Builders Leggings',
     'ITEM_NAME_Builders_Boots': 'Builders Boots',
 
+    'ITEM_NAME_Bronze_Nails': 'Bronze Nails',
     'ITEM_NAME_Iron_Nails': 'Iron Nails',
     'ITEM_NAME_Steel_Nails': 'Steel Nails',
     'ITEM_NAME_Mithril_Nails': 'Mithril Nails',
     'ITEM_NAME_Adamantite_Nails': 'Adamantite Nails',
     'ITEM_NAME_Dragonite_Nails': 'Dragonite Nails',
 
+    'ITEM_NAME_Normal_Beams': 'Normal Beams',
+    'ITEM_NAME_Oak_Beams': 'Oak Beams',
+    'ITEM_NAME_Teak_Beams': 'Teak Beams',
+    'ITEM_NAME_Mahogany_Beams': 'Mahogany Beams',
+    'ITEM_NAME_Magic_Beams': 'Magic Beams',
+    'ITEM_NAME_Redwood_Beams': 'Redwood Beams',
+
     'ITEM_NAME_Normal_Planks': 'Normal Planks',
     'ITEM_NAME_Oak_Planks': 'Oak Planks',
     'ITEM_NAME_Teak_Planks': 'Teak Planks',
     'ITEM_NAME_Mahogany_Planks': 'Mahogany Planks',
-    'ITEM_NAME_Magic_Planks': 'Magic Planks',
+    'ITEM_NAME_Redwood_Planks': 'Redwood Planks',
+
+    'ITEM_NAME_Green_Dhide_Leather_Straps': 'Green D-hide Leather Straps',
+    'ITEM_NAME_Blue_Dhide_Leather_Straps': 'Blue D-hide Leather Straps',
+    'ITEM_NAME_Red_Dhide_Leather_Straps': 'Red D-hide Leather Straps',
+    'ITEM_NAME_Black_Dhide_Leather_Straps': 'Black D-hide Leather Straps',
+    'ITEM_NAME_Elder_Dhide_Leather_Straps': 'Elder D-hide Leather Straps',
+
+    'ITEM_NAME_Green_Dhide_Leather_Slivers': 'Green Dragonhide Slivers',
+    'ITEM_NAME_Blue_Dhide_Leather_Slivers': 'Blue Dragonhide Slivers',
+    'ITEM_NAME_Red_Dhide_Leather_Slivers': 'Red Dragonhide Slivers',
+    'ITEM_NAME_Black_Dhide_Leather_Slivers': 'Black Dragonhide Slivers',
+    'ITEM_NAME_Elder_Dhide_Leather_Slivers': 'Elder Dragonhide Slivers',
+
+    'ITEM_NAME_Clay_Bricks': 'Clay Bricks',
+    'ITEM_NAME_Limestone_Bricks': 'Limestone Bricks',
+    'ITEM_NAME_Granite_Bricks': 'Granite Bricks',
+    'ITEM_NAME_Marble_Bricks': 'Marble Bricks',
+    'ITEM_NAME_Magic_Bricks': 'Magic Bricks',
+
+    'ITEM_NAME_Beam_Box_I': 'Beam Box I',
+    'ITEM_NAME_Beam_Box_II': 'Beam Box II',
+
 
     'ITEM_NAME_Flower_Pots_Token_1': 'Flower Pot: Tier 1',
     'ITEM_NAME_Flower_Pots_Token_2': 'Flower Pot: Tier 2',
@@ -45,6 +75,15 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Body': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
     'ITEM_DESCRIPTION_Builders_Leggings': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>',
+
+    'ITEM_DESCRIPTION_COMPATIBILITY': 'Item from Construction Modern, kept for compatibility reasons. Can be safely sold.',
+
+        'ITEM_NAME_Twice_Measured_Potion_I': 'Twice-Measured Potion I',
+    'ITEM_NAME_Twice_Measured_Potion_II': 'Twice-Measured Potion II',
+    'ITEM_NAME_Twice_Measured_Potion_III': 'Twice-Measured Potion III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': 'Twice-Measured Potion IV',
+    'POTION_NAME_Twice_Measured_Potion': 'Twice-Measured Potion',
+
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% chance to regain a Tree Seed in Farming when harvested',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% actions required to upgrade in Construction',

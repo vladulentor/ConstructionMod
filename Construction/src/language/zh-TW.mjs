@@ -21,17 +21,46 @@ export const language = {
     'ITEM_NAME_Builders_Leggings': '建築工人打底褲',
     'ITEM_NAME_Builders_Boots': '建造者靴子',
 
+    'ITEM_NAME_Bronze_Nails': '青銅釘',
     'ITEM_NAME_Iron_Nails': '鐵釘',
     'ITEM_NAME_Steel_Nails': '鋼釘',
     'ITEM_NAME_Mithril_Nails': '秘銀釘',
     'ITEM_NAME_Adamantite_Nails': '精金釘',
     'ITEM_NAME_Dragonite_Nails': '龍石釘',
 
+    'ITEM_NAME_Normal_Beams': '普通木樑',
+    'ITEM_NAME_Oak_Beams': '橡木樑',
+    'ITEM_NAME_Teak_Beams': '柚木樑',
+    'ITEM_NAME_Mahogany_Beams': '桃花心木樑',
+    'ITEM_NAME_Redwood_Beams': '紅木樑',
+
     'ITEM_NAME_Normal_Planks': '普通木板',
     'ITEM_NAME_Oak_Planks': '橡木板',
     'ITEM_NAME_Teak_Planks': '柚木板',
     'ITEM_NAME_Mahogany_Planks': '桃花心木板',
     'ITEM_NAME_Magic_Planks': '魔法木板',
+    'ITEM_NAME_Redwood_Planks': '紅木板',
+
+    'ITEM_NAME_Green_Dhide_Leather_Straps': '綠色龍皮綁帶',
+    'ITEM_NAME_Blue_Dhide_Leather_Straps': '藍色龍皮綁帶',
+    'ITEM_NAME_Red_Dhide_Leather_Straps': '紅色龍皮綁帶',
+    'ITEM_NAME_Black_Dhide_Leather_Straps': '黑色龍皮綁帶',
+    'ITEM_NAME_Elder_Dhide_Leather_Straps': '上古龍皮綁帶',
+
+    'ITEM_NAME_Green_Dhide_Leather_Slivers': '綠色龍皮碎片',
+    'ITEM_NAME_Blue_Dhide_Leather_Slivers': '藍色龍皮碎片',
+    'ITEM_NAME_Red_Dhide_Leather_Slivers': '紅色龍皮碎片',
+    'ITEM_NAME_Black_Dhide_Leather_Slivers': '黑色龍皮碎片',
+    'ITEM_NAME_Elder_Dhide_Leather_Slivers': '上古龍皮碎片',
+
+    'ITEM_NAME_Clay_Bricks': '黏土磚',
+    'ITEM_NAME_Limestone_Bricks': '石灰岩磚',
+    'ITEM_NAME_Granite_Bricks': '花崗岩磚',
+    'ITEM_NAME_Marble_Bricks': '大理石磚',
+    'ITEM_NAME_Magic_Bricks': '魔法磚',
+
+    'ITEM_NAME_Beam_Box_I': '木樑箱 I',
+    'ITEM_NAME_Beam_Box_II': '木樑箱 II',
 
     'ITEM_NAME_Flower_Pots_Token_1': '花盆: 層 1',
     'ITEM_NAME_Flower_Pots_Token_2': '花盆: 層 2',
@@ -46,6 +75,8 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '建造技能經驗 +2%<br><span class=\"text-warning\">完成所有四種類型的建築工服裝：+8% 建築專業經驗</span>',
 
+    'ITEM_DESCRIPTION_COMPATIBILITY': '來自「Construction Modern」的物品，為相容性保留。可安心出售。',
+
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收穫時，+${value}% 幾率在農業中重新獲得樹種子',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 升級建築所需的行動',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 升級建築所需的行動',
@@ -53,6 +84,14 @@ export const language = {
     'DESCRIPTION_ADDS_ITEM': '給出 ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': '在農業解鎖 1 個 ${plotCategory} 地塊',
 
+
+    'ITEM_NAME_Twice_Measured_Potion_I': '雙重測量藥水 I',
+    'ITEM_NAME_Twice_Measured_Potion_II': '雙重測量藥水 II',
+    'ITEM_NAME_Twice_Measured_Potion_III': '雙重測量藥水 III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': '雙重測量藥水 IV',
+    'POTION_NAME_Twice_Measured_Potion': '雙重測量藥水',
+
+    
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': '你沒有建造它所需的材料。',
 
     'MASTERY_BONUS_ Construction_ 0': '每個等級提供 +0.2% 的機會來保存資源。',

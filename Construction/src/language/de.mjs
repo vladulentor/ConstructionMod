@@ -21,17 +21,47 @@ export const language = {
     'ITEM_NAME_Builders_Leggings': 'Bauarbeiterbeinlinge',
     'ITEM_NAME_Builders_Boots': 'Bauarbeiterstiefel',
 
+    'ITEM_NAME_Bronze_Nails': 'Bronzenägel',
     'ITEM_NAME_Iron_Nails': 'Eisennägel',
     'ITEM_NAME_Steel_Nails': 'Stahlnägel',
     'ITEM_NAME_Mithril_Nails': 'Mithrilnägel',
     'ITEM_NAME_Adamantite_Nails': 'Adamantnägel',
     'ITEM_NAME_Dragonite_Nails': 'Drachennägel',
 
+    'ITEM_NAME_Normal_Beams': 'Normale Balken',
+    'ITEM_NAME_Oak_Beams': 'Eichenbalken',
+    'ITEM_NAME_Teak_Beams': 'Teakholzbalken',
+    'ITEM_NAME_Mahogany_Beams': 'Mahagonibalken',
+    'ITEM_NAME_Redwood_Beams': 'Redwood-Balken',
+
     'ITEM_NAME_Normal_Planks': 'Normale Bretter',
     'ITEM_NAME_Oak_Planks': 'Eichenbretter',
     'ITEM_NAME_Teak_Planks': 'Teakholzbretter',
     'ITEM_NAME_Mahogany_Planks': 'Mahagonibretter',
     'ITEM_NAME_Magic_Planks': 'Magische Bretter',
+    'ITEM_NAME_Redwood_Planks': 'Redwood-Bretter',
+
+    'ITEM_NAME_Green_Dhide_Leather_Straps': 'Grüne Drachenlederriemen',
+    'ITEM_NAME_Blue_Dhide_Leather_Straps': 'Blaue Drachenlederriemen',
+    'ITEM_NAME_Red_Dhide_Leather_Straps': 'Rote Drachenlederriemen',
+    'ITEM_NAME_Black_Dhide_Leather_Straps': 'Schwarze Drachenlederriemen',
+    'ITEM_NAME_Elder_Dhide_Leather_Straps': 'Ältere Drachenlederriemen',
+
+    'ITEM_NAME_Green_Dhide_Leather_Slivers': 'Grüne Drachenleder-Schnipsel',
+    'ITEM_NAME_Blue_Dhide_Leather_Slivers': 'Blaue Drachenleder-Schnipsel',
+    'ITEM_NAME_Red_Dhide_Leather_Slivers': 'Rote Drachenleder-Schnipsel',
+    'ITEM_NAME_Black_Dhide_Leather_Slivers': 'Schwarze Drachenleder-Schnipsel',
+    'ITEM_NAME_Elder_Dhide_Leather_Slivers': 'Ältere Drachenleder-Schnipsel',
+
+
+    'ITEM_NAME_Clay_Bricks': 'Lehmziegel',
+    'ITEM_NAME_Limestone_Bricks': 'Kalksteinziegel',
+    'ITEM_NAME_Granite_Bricks': 'Granitziegel',
+    'ITEM_NAME_Marble_Bricks': 'Marmorziegel',
+    'ITEM_NAME_Magic_Bricks': 'Magische Ziegel',
+
+    'ITEM_NAME_Beam_Box_I': 'Balkenkiste I',
+    'ITEM_NAME_Beam_Box_II': 'Balkenkiste II',
 
     'ITEM_NAME_Flower_Pots_Token_1': 'Blumentöpfe: Stufe 1',
     'ITEM_NAME_Flower_Pots_Token_2': 'Blumentöpfe: Stufe 2',
@@ -46,6 +76,8 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '+2 % Fertigkeits-EP in Konstruktion.<br><span class=\"text-warning\">Wenn alle vier Teile des Kostüms der brennenden Menschheit ausgerüstet sind: +8 % Konstruktion-Meisterungs-EP.</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '+2 % Fertigkeits-EP in Konstruktion.<br><span class=\"text-warning\">Wenn alle vier Teile des Kostüms der brennenden Menschheit ausgerüstet sind: +8 % Konstruktion-Meisterungs-EP.</span>',
 
+    'ITEM_DESCRIPTION_COMPATIBILITY': 'Gegenstand aus „Construction Modern“, aus Kompatibilitätsgründen beibehalten. Kann gefahrlos verkauft werden.',
+    
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% chance, beim Ernten einen Baumsamen in der Landwirtschaft zurückzugewinnen',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% erforderliche Aktionen zur Aufwertung im Konstruktion',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% erforderliche Aktionen zur Aufwertung im Konstruktion',
@@ -60,6 +92,13 @@ export const language = {
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Baumaterialien',
     'SKILL_CATEGORY_ Construction_ House': 'Haus',
+
+
+    'ITEM_NAME_Twice_Measured_Potion_I': 'Zweimal Gemessener Trank I',
+    'ITEM_NAME_Twice_Measured_Potion_II': 'Zweimal Gemessener Trank II',
+    'ITEM_NAME_Twice_Measured_Potion_III': 'Zweimal Gemessener Trank III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': 'Zweimal Gemessener Trank IV',
+    'POTION_NAME_Twice_Measured_Potion': 'Zweimal Gemessener Trank',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': 'Schlafzimmer',
     'CONSTRUCTION_ROOM_NAME_ Garden': 'Garten',

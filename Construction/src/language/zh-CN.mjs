@@ -21,17 +21,47 @@ export const language = {
     'ITEM_NAME_Builders_Leggings': '建筑工人打底裤',
     'ITEM_NAME_Builders_Boots': '建设者靴子',
 
+    'ITEM_NAME_Bronze_Nails': '青铜钉',
     'ITEM_NAME_Iron_Nails': '铁钉',
     'ITEM_NAME_Steel_Nails': '钢钉',
     'ITEM_NAME_Mithril_Nails': '秘銀',
     'ITEM_NAME_Adamantite_Nails': '精金钉',
     'ITEM_NAME_Dragonite_Nails': '龙石钉',
 
+    'ITEM_NAME_Normal_Beams': '普通木梁',
+    'ITEM_NAME_Oak_Beams': '橡木梁',
+    'ITEM_NAME_Teak_Beams': '柚木梁',
+    'ITEM_NAME_Mahogany_Beams': '桃花心木梁',
+    'ITEM_NAME_Redwood_Beams': '红木梁',
+
     'ITEM_NAME_Normal_Planks': '普通木板',
     'ITEM_NAME_Oak_Planks': '橡木板',
     'ITEM_NAME_Teak_Planks': '柚木板',
     'ITEM_NAME_Mahogany_Planks': '桃花心木板',
     'ITEM_NAME_Magic_Planks': '魔法木板',
+    'ITEM_NAME_Redwood_Planks': '红木板',
+
+    'ITEM_NAME_Green_Dhide_Leather_Straps': '绿色龙皮绑带',
+    'ITEM_NAME_Blue_Dhide_Leather_Straps': '蓝色龙皮绑带',
+    'ITEM_NAME_Red_Dhide_Leather_Straps': '红色龙皮绑带',
+    'ITEM_NAME_Black_Dhide_Leather_Straps': '黑色龙皮绑带',
+    'ITEM_NAME_Elder_Dhide_Leather_Straps': '上古龙皮绑带',
+
+    'ITEM_NAME_Green_Dhide_Leather_Slivers': '绿色龙皮碎片',
+    'ITEM_NAME_Blue_Dhide_Leather_Slivers': '蓝色龙皮碎片',
+    'ITEM_NAME_Red_Dhide_Leather_Slivers': '红色龙皮碎片',
+    'ITEM_NAME_Black_Dhide_Leather_Slivers': '黑色龙皮碎片',
+    'ITEM_NAME_Elder_Dhide_Leather_Slivers': '上古龙皮碎片',
+
+    'ITEM_NAME_Clay_Bricks': '黏土砖',
+    'ITEM_NAME_Limestone_Bricks': '石灰岩砖',
+    'ITEM_NAME_Granite_Bricks': '花岗岩砖',
+    'ITEM_NAME_Marble_Bricks': '大理石砖',
+    'ITEM_NAME_Magic_Bricks': '魔法砖',
+
+    'ITEM_NAME_Beam_Box_I': '木梁箱 I',
+    'ITEM_NAME_Beam_Box_II': '木梁箱 II',
+
 
     'ITEM_NAME_Flower_Pots_Token_1': '花盆: 层 1',
     'ITEM_NAME_Flower_Pots_Token_2': '花盆: 层 2',
@@ -41,11 +71,20 @@ export const language = {
 
     'ITEM_NAME_Mastery_Token_Construction': '掌握令牌 (建造)',
 
+
+    'ITEM_NAME_Twice_Measured_Potion_I': '双重测量药水 I',
+    'ITEM_NAME_Twice_Measured_Potion_II': '双重测量药水 II',
+    'ITEM_NAME_Twice_Measured_Potion_III': '双重测量药水 III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': '双重测量药水 IV',
+    'POTION_NAME_Twice_Measured_Potion': '双重测量药水',
+    
     'ITEM_DESCRIPTION_Builders_Hat': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
     'ITEM_DESCRIPTION_Builders_Body': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
     'ITEM_DESCRIPTION_Builders_Leggings': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '建筑技能装备经验 +2% +2%<br><span class=\"text-warning\">当建造者套装的所有四件套都装备好时：建造精通经验值 +8%</span>',
 
+    'ITEM_DESCRIPTION_COMPATIBILITY': '来自“Construction Modern”的物品，为兼容性保留。可放心出售。',
+    
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收获时有机会在农业中重新获得树种',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 建设升级所需采取的行动',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 建设升级所需采取的行动',

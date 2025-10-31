@@ -88,7 +88,10 @@ export function patchTranslations(ctx) {
     });
     ctx.patch(Item, 'description').get(function (patch) {
         if (this.namespace === 'rielkConstruction' && this._customDescription !== undefined) 
-            return getRielkLangString(`ITEM_DESCRIPTION_${this.localID}`);
+            {if(this._customDescription == "compat")
+                return getRielkLangString(`ITEM_DESCRIPTION_COMPATIBILITY`);
+            else
+            return getRielkLangString(`ITEM_DESCRIPTION_${this.localID}`);}
         return patch();
     });
     ctx.patch(ShopPurchase, 'name').get(function (patch) {

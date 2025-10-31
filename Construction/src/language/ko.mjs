@@ -15,23 +15,54 @@ export const language = {
 
     'PET_NAME_ChuckTheForeman': '척 더 비버',
 
+    
     'ITEM_NAME_Construction_Skillcape': '건설 스킬케이프',
     'ITEM_NAME_Builders_Hat': '빌더 모자',
     'ITEM_NAME_Builders_Body': '빌더스 바디',
     'ITEM_NAME_Builders_Leggings': '빌더 레깅스',
     'ITEM_NAME_Builders_Boots': '빌더 부츠',
 
+    'ITEM_NAME_Bronze_Nails': '청동 못',
     'ITEM_NAME_Iron_Nails': '철못',
     'ITEM_NAME_Steel_Nails': '강철 못',
     'ITEM_NAME_Mithril_Nails': '미스릴 손톱',
     'ITEM_NAME_Adamantite_Nails': '아다만타이트 손톱',
     'ITEM_NAME_Dragonite_Nails': '드래고나이트 네일',
 
+    'ITEM_NAME_Normal_Beams': '일반 들보',
+    'ITEM_NAME_Oak_Beams': '참나무 들보',
+    'ITEM_NAME_Teak_Beams': '티크 들보',
+    'ITEM_NAME_Mahogany_Beams': '마호가니 들보',
+    'ITEM_NAME_Redwood_Beams': '레드우드 들보',
+
     'ITEM_NAME_Normal_Planks': '일반 판자',
     'ITEM_NAME_Oak_Planks': '참나무 판자',
     'ITEM_NAME_Teak_Planks': '티크 판자',
     'ITEM_NAME_Mahogany_Planks': '마호가니 판자',
     'ITEM_NAME_Magic_Planks': '마법의 판자',
+    'ITEM_NAME_Redwood_Planks': '레드우드 판자',
+
+'ITEM_NAME_Green_Dhide_Leather_Straps': '초록 용가죽 끈',
+'ITEM_NAME_Blue_Dhide_Leather_Straps': '파란 용가죽 끈',
+'ITEM_NAME_Red_Dhide_Leather_Straps': '빨간 용가죽 끈',
+'ITEM_NAME_Black_Dhide_Leather_Straps': '검은 용가죽 끈',
+'ITEM_NAME_Elder_Dhide_Leather_Straps': '엘더 용가죽 끈',
+
+'ITEM_NAME_Green_Dhide_Leather_Slivers': '초록 용가죽 조각',
+'ITEM_NAME_Blue_Dhide_Leather_Slivers': '파란 용가죽 조각',
+'ITEM_NAME_Red_Dhide_Leather_Slivers': '빨간 용가죽 조각',
+'ITEM_NAME_Black_Dhide_Leather_Slivers': '검은 용가죽 조각',
+'ITEM_NAME_Elder_Dhide_Leather_Slivers': '엘더 용가죽 조각',
+
+
+    'ITEM_NAME_Clay_Bricks': '점토 벽돌',
+'ITEM_NAME_Limestone_Bricks': '석회암 벽돌',
+'ITEM_NAME_Granite_Bricks': '화강암 벽돌',
+'ITEM_NAME_Marble_Bricks': '대리석 벽돌',
+'ITEM_NAME_Magic_Bricks': '마법 벽돌',
+
+'ITEM_NAME_Beam_Box_I': '목재 보 상자 I',
+'ITEM_NAME_Beam_Box_II': '목재 보 상자 II',
 
     'ITEM_NAME_Flower_Pots_Token_1': '화분: 층 1',
     'ITEM_NAME_Flower_Pots_Token_2': '화분: 층 2',
@@ -39,6 +70,14 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': '화분: 층 4',
     'ITEM_NAME_Flower_Pots_Token_5': '화분: 층 5',
 
+    'ITEM_NAME_Twice_Measured_Potion_I': '두 번 잰 물약 I',
+    'ITEM_NAME_Twice_Measured_Potion_II': '두 번 잰 물약 II',
+    'ITEM_NAME_Twice_Measured_Potion_III': '두 번 잰 물약 III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': '두 번 잰 물약 IV',
+    'POTION_NAME_Twice_Measured_Potion': '두 번 잰 물약',
+
+    'ITEM_DESCRIPTION_COMPATIBILITY': 'Construction Modern의 아이템으로, 호환성 유지를 위해 보관되었습니다. 안전하게 판매할 수 있습니다.',
+    
     'ITEM_NAME_Mastery_Token_Construction': '마스터리 토큰(구조)',
 
     'ITEM_DESCRIPTION_Builders_Hat': '건설 기술 경험치 +2%<br><span class=\"text-warning\">빌더 의상 4개를 모두 장착하면 빌더 핸들에서 경험치가 +8% 증가합니다.</span>',

@@ -138,6 +138,292 @@
         "sellsFor": 188
       },
       {
+        "itemType": "Item",
+        "id": "Normal_Beams",
+        "name": "Normal Beams",
+        "category": "Construction",
+        "type": "Beams",
+        "media": "assets/icon_classic.png",
+        "customDescription": "compat",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 1
+      },
+      {
+        "itemType": "Item",
+        "id": "Oak_Beams",
+        "name": "Oak Beams",
+        "category": "Construction",
+        
+        "type": "Planks",
+        "media": "assets/icon_classic.png",
+        "customDescription": "compat",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 5
+      },
+      {
+        "itemType": "Item",
+        "id": "Teak_Beams",
+        "name": "Teak Beams",
+        "category": "Construction",
+        "customDescription": "compat",
+        "type": "Planks",
+        "media": "assets/icon_classic.png",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 14
+      },
+      {
+        "itemType": "Item",
+        "id": "Mahogany_Beams",
+        "name": "Mahogany Beams",
+        "category": "Construction",
+        "customDescription": "compat",
+        "type": "Planks",
+        "media": "assets/icon_classic.png",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 125
+      },
+      {
+        "itemType": "Item",
+        "id": "Redwood_Beams",
+        "name": "Redwood Beams",
+        "customDescription": "compat",
+        "category": "Construction",
+        "type": "Planks",
+        "media": "assets/icon_classic.png",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 280
+      },
+       {
+        "itemType": "Item",
+        "id": "Redwood_Planks",
+        "name": "Redwood Planks",
+        "category": "Construction",
+        "type": "Planks",
+        "media": "assets/icon_classic.png",
+                "customDescription": "compat",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 35
+      },
+      {
+        "itemType": "Item",
+        "id": "Clay_Bricks",
+        "name": "Clay Bricks",
+        "category": "Construction",
+        "type": "Bricks",
+        "media": "assets/icon_classic.png",
+                "customDescription": "compat",
+
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 6
+      },
+      {
+        "itemType": "Item",
+        "id": "Limestone_Bricks",
+        "name": "Limestone Bricks",
+        "category": "Construction",
+        "type": "Bricks",
+        "media": "assets/icon_classic.png",
+                "customDescription": "compat",
+
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 12
+      },
+      {
+        "itemType": "Item",
+        "id": "Granite_Bricks",
+        "name": "Granite Bricks",
+        "category": "Construction",
+        "type": "Bricks",
+        "media": "assets/icon_classic.png",
+                "customDescription": "compat",
+
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 24
+      },
+      {
+        "itemType": "Item",
+        "id": "Marble_Bricks",
+        "name": "Marble Bricks",
+        "category": "Construction",
+        "type": "Bricks",
+        "media": "assets/icon_classic.png",
+                "customDescription": "compat",
+
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 48
+      },
+      {
+        "itemType": "Item",
+        "id": "Magic_Bricks",
+        "name": "Magic Bricks",
+        "category": "Construction",
+        "type": "Bricks",
+        "media": "assets/icon_classic.png",
+                "customDescription": "compat",
+
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 96
+      },
+      {
+        "itemType": "Item",
+        "id": "Green_Dhide_Leather_Slivers",
+        "name": "Green D-Hide Leather Slivers",
+        "category": "Construction",
+        "type": "Slivers",
+        "media": "assets/icon_classic.png",
+        "customDescription": "compat",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 50
+      },
+      {
+        "itemType": "Item",
+        "id": "Blue_Dhide_Leather_Slivers",
+        "name": "Blue D-Hide Leather Slivers",
+        "category": "Construction",
+        "type": "Slivers",
+        "media": "assets/icon_classic.png",
+        "customDescription": "compat",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 85
+      },
+      {
+        "itemType": "Item",
+        "id": "Red_Dhide_Leather_Slivers",
+        "name": "Red D-Hide Leather Slivers",
+        "category": "Construction",
+        "type": "Slivers",
+        "media": "assets/icon_classic.png",
+        "customDescription": "compat",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 175
+      },
+      {
+        "itemType": "Item",
+        "id": "Black_Dhide_Leather_Slivers",
+        "name": "Black D-Hide Leather Slivers",
+        "category": "Construction",
+        "type": "Slivers",
+        "media": "assets/icon_classic.png",
+        "customDescription": "compat",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 500
+      },
+      {
+        "itemType": "Item",
+        "id": "Elder_Dhide_Leather_Slivers",
+        "name": "Elder D-Hide Leather Slivers",
+        "category": "Construction",
+        "type": "Slivers",
+        "media": "assets/icon_classic.png",
+        
+        "customDescription": "compat",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 2000
+      },
+      {
+        "itemType": "Item",
+        "id": "Green_Dhide_Leather_Straps",
+        "name": "Green D-hide Leather Straps",
+        "category": "Construction",
+        "type": "Straps",
+        "media": "assets/icon_classic.png",
+                "customDescription": "compat",
+
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 65
+      },
+      {
+        "itemType": "Item",
+        "id": "Blue_Dhide_Leather_Straps",
+        "name": "Blue D-hide Leather Straps",
+        "category": "Construction",
+        "type": "Straps",
+        "media": "assets/icon_classic.png",
+                "customDescription": "compat",
+
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 110
+      },
+      {
+        "itemType": "Item",
+        "id": "Red_Dhide_Leather_Straps",
+        "name": "Red D-hide Leather Straps",
+        "category": "Construction",
+        "type": "Straps",
+        "media": "assets/icon_classic.png",
+                "customDescription": "compat",
+
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 225
+      },
+      {
+        "itemType": "Item",
+        "id": "Black_Dhide_Leather_Straps",
+        "name": "Black D-hide Leather Straps",
+        "category": "Construction",
+        "type": "Straps",
+        "media": "assets/icon_classic.png",
+                "customDescription": "compat",
+
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 650
+      },
+      {
+        "itemType": "Item",
+        "id": "Elder_Dhide_Leather_Straps",
+        "name": "Elder D-hide Leather Straps",
+        "category": "Construction",
+        
+        "type": "Straps",
+        "media": "assets/icon_classic.png",
+                "customDescription": "compat",
+
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 2200
+      },
+      {
         "itemType": "Token",
         "id": "Flower_Pots_Token_1",
         "name": "Flower Pots Token 1",
@@ -196,6 +482,130 @@
         "obtainFromItemLog": true,
         "golbinRaidExclusive": false,
         "sellsFor": 0
+      },
+      {
+        "itemType": "Item",
+        "id": "Twice_Measured_Potion_I",
+        "name": "Twice Measured Potion I",
+        "category": "Herblore",
+        "type": "Potion",
+        "customDescription": "compat",
+
+        "media": "assets/icon_classic.png",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 63
+
+      },
+      {
+        "itemType": "Item",
+        "id": "Twice_Measured_Potion_II",
+        "name": "Twice Measured Potion II",
+        "category": "Herblore",
+        "type": "Potion",
+                "customDescription": "compat",
+
+        "media": "assets/icon_classic.png",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 83
+    
+      },
+      {
+        "itemType": "Item",
+        "id": "Twice_Measured_Potion_III",
+        "name": "Twice Measured Potion III",
+        "category": "Herblore",
+        "type": "Potion",
+                "customDescription": "compat",
+
+        "media": "assets/icon_classic.png",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 107
+       
+      },
+      {
+        "itemType": "Item",
+        "id": "Twice_Measured_Potion_IV",
+        "name": "Twice Measured Potion IV",
+        "category": "Herblore",
+        "type": "Potion",
+        "customDescription": "compat",
+        "media": "assets/icon_classic.png",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 123
+      },
+      {
+        "id": "Beam_Box_I",
+        "name": "Beam Box I",
+        "category": "Openable",
+        "type": "Chest",
+        "media": "assets/icon_classic.png",
+        "customDescription": "compat",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 700,
+        "itemType": "Openable",
+        "dropTable": [
+          {
+            "itemID": "rielkConstruction:Normal_Beams",
+            "minQuantity": 1,
+            "maxQuantity": 100,
+            "weight": 93
+          },
+          {
+            "itemID": "rielkConstruction:Oak_Beams",
+            "minQuantity": 1,
+            "maxQuantity": 100,
+            "weight": 41
+          },
+          {
+            "itemID": "rielkConstruction:Teak_Beams",
+            "minQuantity": 1,
+            "maxQuantity": 100,
+            "weight": 27
+          }
+        ]
+      },
+      {
+        "id": "Beam_Box_II",
+        "name": "Beam Box II",
+        "category": "Openable",
+        "type": "Chest",
+        "media": "assets/icon_classic.png",
+        "customDescription": "compat",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 1500,
+        "itemType": "Openable",
+        "dropTable": [
+          {
+            "itemID": "rielkConstruction:Teak_Beams",
+            "minQuantity": 1,
+            "maxQuantity": 25,
+            "weight": 60
+          },
+          {
+            "itemID": "rielkConstruction:Mahogany_Beams",
+            "minQuantity": 1,
+            "maxQuantity": 25,
+            "weight": 30
+          },
+          {
+            "itemID": "rielkConstruction:Redwood_Beams",
+            "minQuantity": 1,
+            "maxQuantity": 25,
+            "weight": 10
+          }
+        ]
       },
       {
         "itemType": "Equipment",
@@ -369,6 +779,21 @@
         "skill": "rielkConstruction:Construction",
         "realm": "melvorD:Melvor",
         "percent": 0.1
+      }
+    ],
+     "itemUpgrades": [
+      {
+        "upgradedItemID": "rielkConstruction:Magic_Planks",
+        "itemCosts": [
+          {
+            "id": "rielkConstruction:Redwood_Planks",
+            "quantity": 1
+          }
+        ],
+        "rootItemIDs": [
+          "rielkConstruction:Redwood_Planks"
+        ],
+        "isDowngrade": true
       }
     ],
     "shopPurchases": [

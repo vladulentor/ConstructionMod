@@ -14,24 +14,53 @@ export const language = {
     'SHOP_NAME_Construction_Skillcape': 'Плащ Мастера: Строительство',
 
     'PET_NAME_ChuckTheForeman': 'Чак Бобер',
-
-    'ITEM_NAME_Construction_Skillcape': 'Плащ Мастера: Строительство',
+ 'ITEM_NAME_Construction_Skillcape': 'Плащ Мастера: Строительство',
     'ITEM_NAME_Builders_Hat': 'Шляпа строителя',
     'ITEM_NAME_Builders_Body': 'Жилет строителя',
     'ITEM_NAME_Builders_Leggings': 'Штаны строителя',
     'ITEM_NAME_Builders_Boots': 'Cапоги строителя',
 
+    'ITEM_NAME_Bronze_Nails': 'Бронзовые гвозди',
     'ITEM_NAME_Iron_Nails': 'железные гвозди',
     'ITEM_NAME_Steel_Nails': 'стальные гвозди',
     'ITEM_NAME_Mithril_Nails': 'мифриловые гвозди',
     'ITEM_NAME_Adamantite_Nails': 'Адамантитовые гвозди',
     'ITEM_NAME_Dragonite_Nails': 'гвозди из драконита',
+    'ITEM_NAME_Redwood_Planks': 'Доски из секвойи',
+
+    'ITEM_NAME_Normal_Beams': 'Обычные балки',
+    'ITEM_NAME_Oak_Beams': 'Дубовые балки',
+    'ITEM_NAME_Teak_Beams': 'Тиковые балки',
+    'ITEM_NAME_Mahogany_Beams': 'Балки из красного дерева',
+    'ITEM_NAME_Redwood_Beams': 'Балки из секвойи',
 
     'ITEM_NAME_Normal_Planks': 'Нормальные доски',
     'ITEM_NAME_Oak_Planks': 'Дубовые доски',
     'ITEM_NAME_Teak_Planks': 'Тиковые доски',
     'ITEM_NAME_Mahogany_Planks': 'доски из красного дерева',
     'ITEM_NAME_Magic_Planks': 'Волшебные доски',
+
+    'ITEM_NAME_Green_Dhide_Leather_Straps': 'Зелёные ремни из драконьей кожи',
+    'ITEM_NAME_Blue_Dhide_Leather_Straps': 'Синие ремни из драконьей кожи',
+    'ITEM_NAME_Red_Dhide_Leather_Straps': 'Красные ремни из драконьей кожи',
+    'ITEM_NAME_Black_Dhide_Leather_Straps': 'Чёрные ремни из драконьей кожи',
+    'ITEM_NAME_Elder_Dhide_Leather_Straps': 'Ремни из древней драконьей кожи',
+
+    'ITEM_NAME_Green_Dhide_Leather_Slivers': 'Обрезки зелёной драконьей кожи',
+    'ITEM_NAME_Blue_Dhide_Leather_Slivers': 'Обрезки синей драконьей кожи',
+    'ITEM_NAME_Red_Dhide_Leather_Slivers': 'Обрезки красной драконьей кожи',
+    'ITEM_NAME_Black_Dhide_Leather_Slivers': 'Обрезки чёрной драконьей кожи',
+    'ITEM_NAME_Elder_Dhide_Leather_Slivers': 'Обрезки древней драконьей кожи',
+
+    'ITEM_NAME_Clay_Bricks': 'Глиняные кирпичи',
+    'ITEM_NAME_Limestone_Bricks': 'Известняковые кирпичи',
+    'ITEM_NAME_Granite_Bricks': 'Гранитные кирпичи',
+    'ITEM_NAME_Marble_Bricks': 'Мраморные кирпичи',
+    'ITEM_NAME_Magic_Bricks': 'Магические кирпичи',
+
+    'ITEM_NAME_Beam_Box_I': 'Ящик с балками I',
+    'ITEM_NAME_Beam_Box_II': 'Ящик с балками II',
+
 
     'ITEM_NAME_Flower_Pots_Token_1': 'Цветочные горшки: Уровень 1',
     'ITEM_NAME_Flower_Pots_Token_2': 'Цветочные горшки: Уровень 2',
@@ -46,6 +75,8 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '+2 % к опыту навыка «Строительство».<br><span class=\"text-warning\">При экипировке всех четырех предметов одежды строителя: +8% к опыту строительного мастерства.</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '+2 % к опыту навыка «Строительство».<br><span class=\"text-warning\">При экипировке всех четырех предметов одежды строителя: +8% к опыту строительного мастерства.</span>',
 
+    'ITEM_DESCRIPTION_COMPATIBILITY': 'Предмет из «Construction Modern», сохранён по причинам совместимости. Можно безопасно продать.',
+    
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% кусок, чтобы восстановить семя дерева в сельском хозяйстве, когда собрано',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% действий, необходимых для улучшения в строительстве',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% действий, необходимых для улучшения в строительстве',
@@ -60,6 +91,13 @@ export const language = {
 
     'SKILL_CATEGORY_ Construction_ Materials': 'Материалы',
     'SKILL_CATEGORY_ Construction_ House': 'Дом',
+
+
+    'ITEM_NAME_Twice_Measured_Potion_I': 'Зелье Дважды Измеренное I',
+    'ITEM_NAME_Twice_Measured_Potion_II': 'Зелье Дважды Измеренное II',
+    'ITEM_NAME_Twice_Measured_Potion_III': 'Зелье Дважды Измеренное III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': 'Зелье Дважды Измеренное IV',
+    'POTION_NAME_Twice_Measured_Potion': 'Зелье Дважды Измеренное',
 
     'CONSTRUCTION_ROOM_NAME_ Bedroom': 'Спальня',
     'CONSTRUCTION_ROOM_NAME_ Garden': 'Сад',

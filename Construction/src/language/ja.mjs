@@ -14,24 +14,54 @@ export const language = {
     'SHOP_NAME_Construction_Skillcape': '建設スキルケープ',
 
     'PET_NAME_ChuckTheForeman': 'チャック・ザ・ビーバー',
-
+            
     'ITEM_NAME_Construction_Skillcape': '建設スキルケープ',
     'ITEM_NAME_Builders_Hat': 'ビルダーハット',
     'ITEM_NAME_Builders_Body': 'ビルダーボディ',
     'ITEM_NAME_Builders_Leggings': 'ビルダーレギンス',
     'ITEM_NAME_Builders_Boots': 'ビルダーブーツ',
 
+    'ITEM_NAME_Bronze_Nails': '青銅の釘',
     'ITEM_NAME_Iron_Nails': '鉄釘',
     'ITEM_NAME_Steel_Nails': '鋼釘',
     'ITEM_NAME_Mithril_Nails': 'ミスリルの釘',
     'ITEM_NAME_Adamantite_Nails': 'アダマンタイトの釘',
     'ITEM_NAME_Dragonite_Nails': 'ドラゴナイトネイル',
 
+    'ITEM_NAME_Normal_Beams': '通常の梁',
+    'ITEM_NAME_Oak_Beams': 'オークの梁',
+    'ITEM_NAME_Teak_Beams': 'チーク材の梁',
+    'ITEM_NAME_Mahogany_Beams': 'マホガニーの梁',
+    'ITEM_NAME_Redwood_Beams': 'レッドウッドの梁',
+
     'ITEM_NAME_Normal_Planks': '通常の板',
     'ITEM_NAME_Oak_Planks': 'オークの板',
     'ITEM_NAME_Teak_Planks': 'チーク材の板',
     'ITEM_NAME_Mahogany_Planks': 'マホガニーの板',
     'ITEM_NAME_Magic_Planks': '魔法の板',
+    'ITEM_NAME_Redwood_Planks': 'レッドウッドの板',
+
+'ITEM_NAME_Green_Dhide_Leather_Straps': 'グリーン・ドラゴンハイドの革ひも',
+'ITEM_NAME_Blue_Dhide_Leather_Straps': 'ブルー・ドラゴンハイドの革ひも',
+'ITEM_NAME_Red_Dhide_Leather_Straps': 'レッド・ドラゴンハイドの革ひも',
+'ITEM_NAME_Black_Dhide_Leather_Straps': 'ブラック・ドラゴンハイドの革ひも',
+'ITEM_NAME_Elder_Dhide_Leather_Straps': 'エルダー・ドラゴンハイドの革ひも',
+
+'ITEM_NAME_Green_Dhide_Leather_Slivers': 'グリーン・ドラゴンハイドの切れ端',
+'ITEM_NAME_Blue_Dhide_Leather_Slivers': 'ブルー・ドラゴンハイドの切れ端',
+'ITEM_NAME_Red_Dhide_Leather_Slivers': 'レッド・ドラゴンハイドの切れ端',
+'ITEM_NAME_Black_Dhide_Leather_Slivers': 'ブラック・ドラゴンハイドの切れ端',
+'ITEM_NAME_Elder_Dhide_Leather_Slivers': 'エルダー・ドラゴンハイドの切れ端',
+
+
+    'ITEM_NAME_Clay_Bricks': '粘土レンガ',
+'ITEM_NAME_Limestone_Bricks': '石灰岩レンガ',
+'ITEM_NAME_Granite_Bricks': '花崗岩レンガ',
+'ITEM_NAME_Marble_Bricks': '大理石レンガ',
+'ITEM_NAME_Magic_Bricks': '魔法のレンガ',
+
+'ITEM_NAME_Beam_Box_I': '梁の箱 I',
+'ITEM_NAME_Beam_Box_II': '梁の箱 II',
 
     'ITEM_NAME_Flower_Pots_Token_1': '植木鉢: 階層 1',
     'ITEM_NAME_Flower_Pots_Token_2': '植木鉢: 階層 2',
@@ -46,10 +76,19 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '建築スキル経験値 +2%<br><span class=\"text-warning\">ビルダーコスチューム4種すべてを着用している場合: 建設経験値 +8%</span>',
 
+    'ITEM_DESCRIPTION_COMPATIBILITY': 'Construction Modern のアイテム。互換性のために残されています。安全に売却できます。',
+    
     'MODIFIER_DATA_farmingTreeSeedReturn': '農業で木の種を収穫すると、その種を再び入手できる確率が +${value}% 増加します',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '建設のアップグレードに必要なアクション数 -${value}%',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '建設のアップグレードに必要なアクション数 +${value}%',
 
+
+    'ITEM_NAME_Twice_Measured_Potion_I': '二度計るポーション I',
+    'ITEM_NAME_Twice_Measured_Potion_II': '二度計るポーション II',
+    'ITEM_NAME_Twice_Measured_Potion_III': '二度計るポーション III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': '二度計るポーション IV',
+    'POTION_NAME_Twice_Measured_Potion': '二度計るポーション',
+    
     'DESCRIPTION_ADDS_ITEM': '与える ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': '農業で 1 つの ${plotCategory} 区画のロックを解除します',
 

@@ -13,25 +13,52 @@ export const language = {
 
     'SHOP_NAME_Construction_Skillcape': 'Cape de Chantier',
 
-    'PET_NAME_ChuckTheForeman': 'Chuck le castor',
-
     'ITEM_NAME_Construction_Skillcape': 'Cape de Chantier',
     'ITEM_NAME_Builders_Hat': 'Chapeau de constructeur',
     'ITEM_NAME_Builders_Body': 'Carrosserie de constructeur',
     'ITEM_NAME_Builders_Leggings': 'Guêtres de constructeur',
     'ITEM_NAME_Builders_Boots': 'Bottes de constructeur',
 
+    'ITEM_NAME_Bronze_Nails': 'Clous en bronze',
     'ITEM_NAME_Iron_Nails': 'Clous en fer',
     'ITEM_NAME_Steel_Nails': 'Clous en acier',
     'ITEM_NAME_Mithril_Nails': 'Clous en mithril',
     'ITEM_NAME_Adamantite_Nails': 'Clous en adamante',
     'ITEM_NAME_Dragonite_Nails': 'Clous en draconite',
 
+    'ITEM_NAME_Normal_Beams': 'Poutres normales',
+    'ITEM_NAME_Oak_Beams': 'Poutres en chêne',
+    'ITEM_NAME_Teak_Beams': 'Poutres en teck',
+    'ITEM_NAME_Mahogany_Beams': 'Poutres en acajou',
+    'ITEM_NAME_Redwood_Beams': 'Poutres en séquoia',
+
     'ITEM_NAME_Normal_Planks': 'Planches normales',
     'ITEM_NAME_Oak_Planks': 'Planches de chêne',
     'ITEM_NAME_Teak_Planks': 'Planches de teck',
     'ITEM_NAME_Mahogany_Planks': 'Planches d\'acajou',
     'ITEM_NAME_Magic_Planks': 'Planches magiques',
+    'ITEM_NAME_Redwood_Planks': 'Planches de séquoia',
+
+    'ITEM_NAME_Green_Dhide_Leather_Straps': 'Lanières en cuir de dragon vert',
+    'ITEM_NAME_Blue_Dhide_Leather_Straps': 'Lanières en cuir de dragon bleu',
+    'ITEM_NAME_Red_Dhide_Leather_Straps': 'Lanières en cuir de dragon rouge',
+    'ITEM_NAME_Black_Dhide_Leather_Straps': 'Lanières en cuir de dragon noir',
+    'ITEM_NAME_Elder_Dhide_Leather_Straps': 'Lanières en cuir de dragon ancien',
+
+    'ITEM_NAME_Green_Dhide_Leather_Slivers': 'Chutes de cuir de dragon vert',
+    'ITEM_NAME_Blue_Dhide_Leather_Slivers': 'Chutes de cuir de dragon bleu',
+    'ITEM_NAME_Red_Dhide_Leather_Slivers': 'Chutes de cuir de dragon rouge',
+    'ITEM_NAME_Black_Dhide_Leather_Slivers': 'Chutes de cuir de dragon noir',
+    'ITEM_NAME_Elder_Dhide_Leather_Slivers': 'Chutes de cuir de dragon ancien',
+
+    'ITEM_NAME_Clay_Bricks': 'Briques d’argile',
+    'ITEM_NAME_Limestone_Bricks': 'Briques de calcaire',
+    'ITEM_NAME_Granite_Bricks': 'Briques de granit',
+    'ITEM_NAME_Marble_Bricks': 'Briques de marbre',
+    'ITEM_NAME_Magic_Bricks': 'Briques magiques',
+
+    'ITEM_NAME_Beam_Box_I': 'Caisse de poutres I',
+    'ITEM_NAME_Beam_Box_II': 'Caisse de poutres II',
 
     'ITEM_NAME_Flower_Pots_Token_1': 'Pots de fleurs: Étage 1',
     'ITEM_NAME_Flower_Pots_Token_2': 'Pots de fleurs: Étage 2',
@@ -46,10 +73,17 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Leggings': '+2% d\'XP de compétence de construction.<br><span class=\"text-warning\">Avec les quatre éléments de la tenue de constructeur équipés : + 8 % d\'XP de maîtrise de la construction.</span>',
     'ITEM_DESCRIPTION_Builders_Boots': '+2% d\'XP de compétence de construction.<br><span class=\"text-warning\">Avec les quatre éléments de la tenue de constructeur équipés : + 8 % d\'XP de maîtrise de la construction.</span>',
 
+'ITEM_DESCRIPTION_COMPATIBILITY': 'Objet de « Construction Modern », conservé pour des raisons de compatibilité. Peut être vendu sans risque.',
+
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% de chances de récupérer une graine d\'arbre en agriculture lors de la récolte',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% d\'actions requises pour la mise à niveau en construction',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% d\'actions requises pour la mise à niveau en construction',
 
+    'ITEM_NAME_Twice_Measured_Potion_I': 'Potion Mesurée Deux Fois I',
+    'ITEM_NAME_Twice_Measured_Potion_II': 'Potion Mesurée Deux Fois II',
+    'ITEM_NAME_Twice_Measured_Potion_III': 'Potion Mesurée Deux Fois III',
+    'ITEM_NAME_Twice_Measured_Potion_IV': 'Potion Mesurée Deux Fois IV',
+    'POTION_NAME_Twice_Measured_Potion': 'Potion Mesurée Deux Fois',
     'DESCRIPTION_ADDS_ITEM': 'Donner ${itemQuantity} ${itemName} ${itemImage}',
     'DESCRIPTION_UNLOCKS_PLOT': 'Débloque 1 Parcelle ${plotCategory} en Agriculture',
 

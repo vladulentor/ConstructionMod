@@ -73,6 +73,5 @@ haves-box.icon-box-small>h5 {
   background-color: #fca32f !important;
 }
 
-.progress-height-7 {
-  height: 7px !important;
-}
+@keyframes shake { 0%,100%{transform:translateX(0);} 20%,60%{transform:translateX(-5px);} 40%,80%{transform:translateX(5px);} }
+.shake { animation: shake 0.6s; }

@@ -11,7 +11,7 @@ const { patchCraftingOrder } = await loadModule("src/skillPatches/patchCraftingO
 
 const { patchRenderEquipment } = await loadModule("src/skillPatches/patchrenderequipment.mjs");
 const { patchArrowShaftRecipes } = await loadModule("src/skillPatches/patchArrowShaftRecipes.mjs");
-
+const {patchGameGuide} = await loadModule("src/skillPatches/patchGameGuide.mjs")
 
 export async function setup(ctx) {
     setup = new Setup(ctx);
@@ -57,7 +57,8 @@ class Setup {
         patchFarming(this.ctx);
         patchMasteryElement(this.ctx);
         patchRenderEquipment(this.ctx);
-        
+        game._events.on('offlineLoopEntered', () => game.construction.notifs = false);
+        game._events.on('offlineLoopExited', () => game.construction.notifs = true);
         this.ctx.patch(EventManager, 'loadEvents').before(() => {
             if (game.construction.isUnlocked)
                 return;

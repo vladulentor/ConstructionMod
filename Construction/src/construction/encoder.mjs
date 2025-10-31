@@ -1,10 +1,10 @@
 const { onCharacterLoaded } = mod.getContext(import.meta);
-const BIG_UPDATE_VERSION = 5; // 4.0 and all the new resources
-
+const BIG_UPDATE_NUMBER = 6; //The resource Update
 export class Encoder {
     static encode(construction, writer) {
-        const _constructionVersion = 5;
+        const _constructionVersion = 6;
         writer.writeUint32(_constructionVersion);
+        writer.writeBoolean(construction.showUpdateTooltip)
         writer.writeSet(construction.hiddenRooms, writeNamespaced);
         construction.stats.encode(writer);
         writer.writeArray(construction.fixtures.allObjects, (fixture, writer) => {
@@ -26,10 +26,12 @@ export class Encoder {
 
     static decode(construction, reader) {
         const _constructionVersion = reader.getUint32();
-        
-          if (_constructionVersion < BIG_UPDATE_VERSION) {
-         construction.showUpdateTooltip = true;
-    }
+      
+          if (_constructionVersion >= BIG_UPDATE_NUMBER) { //If the player has loaded the big update before, remember their state to the tooltip, otherwise make it true.
+            construction.showUpdateTooltip = reader.getBoolean();
+        }
+        else 
+            construction.showUpdateTooltip = true;
 
         construction.hiddenRooms = reader.getSet(readNamespacedReject(construction.rooms));
         construction.stats.decode(reader);
@@ -71,6 +73,6 @@ export class Encoder {
 
         if (construction.shouldResetAction)
             construction.resetActionState();
-
+      
     }
 }

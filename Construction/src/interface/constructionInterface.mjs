@@ -87,6 +87,15 @@ export class ConstructionInterface {
         imgs[29].src = game.construction.media; //icon for expnded features page
 
         guideContainer.append(this.constrGuide);
+
+        const link = document.querySelector('#game-guide-header-link a.pointer-enabled');
+        if (link) {
+            const oldClick = link.onclick;
+            link.onclick = function (event) {
+                if (typeof oldClick === 'function') oldClick.call(this, event);
+                construction.disableToolTip();
+            };
+        }
     }
 
     switchConstructionCategory(category) {

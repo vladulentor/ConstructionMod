@@ -1,6 +1,59 @@
 export const language = {
     'SKILL_NAME_Construction': '結構',
 
+    'GUIDE_CONSTR_HERO': '${ConstructionIcon64}${constructionTitle}${ModioLink}',
+'GUIDE_CONSTR_SUB1': '使用在各種技能中收集的材料、神器與紀念品，打造你的 ${HouseIcon24}${HouseWordStyled}。',
+'GUIDE_CONSTR_SUB2': '${ConstructionIcon24}${constructionTitle} 會隨著你的遊戲進度提供愈來愈高的加成。',
+
+'GUIDE_SECTION_MATERIALS_TITLE': '所需材料',
+'GUIDE_SECTION_MECH_TITLE': '額外機制',
+'GUIDE_SECTION_HOUSE_TITLE': '你的家園',
+'GUIDE_SECTION_EXTENDED_TITLE': '進階功能',
+
+'GUIDE_PLANKS_NAME': '木板',
+'GUIDE_NAILS_NAME': '釘子',
+'GUIDE_STRAPS_NAME': '綁帶',
+'GUIDE_BRICKS_NAME': '磚塊',
+
+'GUIDE_PLANKS_TEXT': '由 ${Beam16}${Beams} 製作，於 ${Fletching16}${Fletching} 加工；原木來自 ${Woodcutting16}${Woodcutting}。',
+'GUIDE_NAILS_TEXT': '由 ${Bar16}${Bars} 製作，於 ${Smithing16}${Smithing} 鍛造；礦石來自 ${Mining16}${Mining}。',
+'GUIDE_STRAPS_TEXT': '由 ${Slivers16}${Slivers} 製作，於 ${Crafting16}${Crafting} 加工；皮革可在 ${Shop16}${Shop} 取得。',
+'GUIDE_BRICKS_TEXT': '由 ${Rune16}${Runes} 製作，於 ${Runecrafting16}${Runecrafting} 加工；符文精華來自 ${Mining16}${Mining}。',
+
+'GUIDE_EFFICIENCY_TITLE': '效率',
+'GUIDE_EFFICIENCY_P1A': '僅在 ${constructionTitle} 可用：${Efficiency16}效率會將動作的成本與產出成倍計算。',
+'GUIDE_EFFICIENCY_P1B': '${BothStrong} 啟用時獲得材料的機率與數量都可以提高。',
+'GUIDE_EFFICIENCY_P2': '製作 ${MaterialsCat16}${materialsWord} 時，效率以乘法作用於結果。${BR}製作 ${FurnitureCat16}${furnitureWord} 時，小數加成會被忽略。',
+'GUIDE_EFFICIENCY_WARNING': '提高效率帶來的材料／進度加成不會增加動作成本。',
+
+'GUIDE_HOUSE_P1': '建造並升級 ${FurnitureCat16}${furnitureWord} 可提升你的 ${HouseIcon16}${houseWord} 等級，為 ${constructionTitle} 帶來顯著加成。',
+'GUIDE_HOUSE_P2': '當你家中的所有 ${FurnitureCat16}${furnitureWord} 達到指定等級時，你的 ${houseWord} 等級會提升。',
+'GUIDE_HOUSE_P3': '完成你的 ${houseWord} 將在之後的遊戲中提供重大獎勵，並代表 ${ConstructionIcon16}${constructionTitle} 的終極目標。',
+
+'GUIDE_EXTENDED_TITLE': '額外內容',
+'GUIDE_EXTENDED_P1': 'Construction 模組在整個遊戲中新增敵人、物品、配方與交易，使其更深入地融入世界。',
+'GUIDE_EXTENDED_P2': '所有新增內容的完整清單可在 ${ChangeListLink} 查看。（${ExternalLinkNote}）',
+
+'GUIDE_TERM_CONSTRUCTION': '建造',
+'GUIDE_TERM_FURNITURE': '家具',
+'GUIDE_TERM_MATERIALS': '材料',
+'GUIDE_TERM_BEAMS': '木樑',
+'GUIDE_TERM_BARS': '金屬錠',
+'GUIDE_TERM_SLIVERS': '碎片',
+'GUIDE_TERM_RUNES': '符文',
+'GUIDE_TERM_FLETCHING': '製箭',
+'GUIDE_TERM_WOODCUTTING': '伐木',
+'GUIDE_TERM_SMITHING': '鍛造',
+'GUIDE_TERM_MINING': '採礦',
+'GUIDE_TERM_CRAFTING': '工藝',
+'GUIDE_TERM_SHOP': '商店',
+'GUIDE_TERM_BOTH': '兩者',
+
+'GUIDE_LINK_HERE': '此處',
+'GUIDE_EXTERNAL_LINK_NOTE': '外部連結（英文）',
+'GUIDE_TOOLTIP_NEW': '第一次接觸建造？<br/> <span class="construction-victory">遊戲指南</span>是很好的起點！',
+'GUIDE_TOOLTIP_UPDATE': '建造剛剛收到一個<span class="text-warning">重大更新</span>！ <br/> 點此了解更多！',
+
     'MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY': '選擇施工類別',
     'MENU_TEXT_CONSTRUCT': '構造',
     'MENU_TEXT_BUILD': '建造',

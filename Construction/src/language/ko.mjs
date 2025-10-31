@@ -1,6 +1,59 @@
 export const language = {
     'SKILL_NAME_Construction': '구조',
 
+    'GUIDE_CONSTR_HERO': '${ConstructionIcon64}${constructionTitle}${ModioLink}',
+'GUIDE_CONSTR_SUB1': '여러 기술에서 모은 재료, 유물, 기념품을 사용해 ${HouseIcon24}${HouseWordStyled}를 발전시키세요.',
+'GUIDE_CONSTR_SUB2': '${ConstructionIcon24}${constructionTitle}은(는) 게임 진행에 따라 점점 더 큰 보너스를 제공합니다.',
+
+'GUIDE_SECTION_MATERIALS_TITLE': '필요한 재료',
+'GUIDE_SECTION_MECH_TITLE': '추가 메커니즘',
+'GUIDE_SECTION_HOUSE_TITLE': '내 집',
+'GUIDE_SECTION_EXTENDED_TITLE': '고급 기능',
+
+'GUIDE_PLANKS_NAME': '판재',
+'GUIDE_NAILS_NAME': '못',
+'GUIDE_STRAPS_NAME': '끈',
+'GUIDE_BRICKS_NAME': '벽돌',
+
+'GUIDE_PLANKS_TEXT': '${Beam16}${Beams}로 만들며, ${Fletching16}${Fletching}에서 가공합니다. 원목은 ${Woodcutting16}${Woodcutting}로 얻습니다.',
+'GUIDE_NAILS_TEXT': '${Bar16}${Bars}로 만들며, ${Smithing16}${Smithing}에서 제련합니다. 광석은 ${Mining16}${Mining}에서 채굴합니다.',
+'GUIDE_STRAPS_TEXT': '${Slivers16}${Slivers}로 만들며, ${Crafting16}${Crafting}에서 제작합니다. 가죽은 ${Shop16}${Shop}에서 구입합니다.',
+'GUIDE_BRICKS_TEXT': '${Rune16}${Runes}로 만들며, ${Runecrafting16}${Runecrafting}에서 제작합니다. 룬 정수는 ${Mining16}${Mining}에서 얻습니다.',
+
+'GUIDE_EFFICIENCY_TITLE': '효율',
+'GUIDE_EFFICIENCY_P1A': '${constructionTitle}에서만 사용 가능한 ${Efficiency16}효율은 행동의 비용과 산출량을 곱해 증가시킵니다.',
+'GUIDE_EFFICIENCY_P1B': '${BothStrong} 활성화 시 획득되는 재료의 확률과 수량을 모두 증가시킬 수 있습니다.',
+'GUIDE_EFFICIENCY_P2': '${MaterialsCat16}${materialsWord} 제작 시 효율은 결과에 곱연산으로 적용됩니다.${BR}${FurnitureCat16}${furnitureWord} 제작 시에는 소수점 보너스가 무시됩니다.',
+'GUIDE_EFFICIENCY_WARNING': '효율의 재료/진행 보너스를 증가시켜도 행동 비용은 증가하지 않습니다.',
+
+'GUIDE_HOUSE_P1': '${FurnitureCat16}${furnitureWord}를 건설하고 업그레이드하면 ${HouseIcon16}${houseWord}의 등급이 올라가며, ${constructionTitle}에 큰 보너스를 제공합니다.',
+'GUIDE_HOUSE_P2': '내 ${houseWord}의 모든 ${FurnitureCat16}${furnitureWord}가 특정 등급에 도달하면 ${houseWord}의 등급이 상승합니다.',
+'GUIDE_HOUSE_P3': '${houseWord}를 완성하면 게임 전반에 걸쳐 큰 보상을 제공하며, 이는 ${ConstructionIcon16}${constructionTitle}의 궁극적인 목표입니다.',
+
+'GUIDE_EXTENDED_TITLE': '추가 콘텐츠',
+'GUIDE_EXTENDED_P1': 'Construction 모드는 게임 전반에 새로운 적, 아이템, 레시피, 교환을 추가하여 세계와의 통합을 더욱 깊게 합니다.',
+'GUIDE_EXTENDED_P2': '모든 추가 사항의 전체 목록은 ${ChangeListLink}에서 확인할 수 있습니다. (${ExternalLinkNote})',
+
+'GUIDE_TERM_CONSTRUCTION': '건설',
+'GUIDE_TERM_FURNITURE': '가구',
+'GUIDE_TERM_MATERIALS': '재료',
+'GUIDE_TERM_BEAMS': '목재 보',
+'GUIDE_TERM_BARS': '주괴',
+'GUIDE_TERM_SLIVERS': '조각',
+'GUIDE_TERM_RUNES': '룬',
+'GUIDE_TERM_FLETCHING': '화살 제작',
+'GUIDE_TERM_WOODCUTTING': '벌목',
+'GUIDE_TERM_SMITHING': '대장기술',
+'GUIDE_TERM_MINING': '채굴',
+'GUIDE_TERM_CRAFTING': '제작',
+'GUIDE_TERM_SHOP': '상점',
+'GUIDE_TERM_BOTH': '둘 다',
+
+'GUIDE_LINK_HERE': '여기',
+'GUIDE_EXTERNAL_LINK_NOTE': '외부 링크(영어)',
+'GUIDE_TOOLTIP_NEW': '건설이 처음이신가요?<br/> <span class="construction-victory">게임 가이드</span>에서 시작해 보세요!',
+'GUIDE_TOOLTIP_UPDATE': '건설이 <span class="text-warning">대형 업데이트</span>를 받았습니다! <br/> 자세히 알아보려면 클릭!',
+
     'MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY': '건설 카테고리를 선택하세요',
     'MENU_TEXT_CONSTRUCT': '짓다',
     'MENU_TEXT_BUILD': '짓다',

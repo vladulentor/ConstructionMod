@@ -1,6 +1,59 @@
 export const language = {
     'SKILL_NAME_Construction': 'Строительство',
 
+    'GUIDE_CONSTR_HERO': '${ConstructionIcon64}${constructionTitle}${ModioLink}',
+'GUIDE_CONSTR_SUB1': 'Развивайте свой ${HouseIcon24}${HouseWordStyled}, используя материалы, артефакты и сувениры, полученные в разных навыках.',
+'GUIDE_CONSTR_SUB2': '${ConstructionIcon24}${constructionTitle} будет давать всё более значительные бонусы по мере продвижения в игре.',
+
+'GUIDE_SECTION_MATERIALS_TITLE': 'Необходимые материалы',
+'GUIDE_SECTION_MECH_TITLE': 'Дополнительные механики',
+'GUIDE_SECTION_HOUSE_TITLE': 'Ваш дом',
+'GUIDE_SECTION_EXTENDED_TITLE': 'Расширенные возможности',
+
+'GUIDE_PLANKS_NAME': 'Доски',
+'GUIDE_NAILS_NAME': 'Гвозди',
+'GUIDE_STRAPS_NAME': 'Ремни',
+'GUIDE_BRICKS_NAME': 'Кирпичи',
+
+'GUIDE_PLANKS_TEXT': 'Изготавливаются из ${Beam16}${Beams} в ${Fletching16}${Fletching} с использованием брёвен из ${Woodcutting16}${Woodcutting}.',
+'GUIDE_NAILS_TEXT': 'Делаются из ${Bar16}${Bars}, плавятся в ${Smithing16}${Smithing} из руд, добытых в ${Mining16}${Mining}.',
+'GUIDE_STRAPS_TEXT': 'Делаются из ${Slivers16}${Slivers}, изготавливаются в ${Crafting16}${Crafting} из кожи, приобретённой в ${Shop16}${Shop}.',
+'GUIDE_BRICKS_TEXT': 'Делаются из ${Rune16}${Runes}, изготавливаются в ${Runecrafting16}${Runecrafting} из эссенции рун из ${Mining16}${Mining}.',
+
+'GUIDE_EFFICIENCY_TITLE': 'Эффективность',
+'GUIDE_EFFICIENCY_P1A': 'Доступно только в ${constructionTitle}: ${Efficiency16}Эффективность умножает стоимость и результат действия.',
+'GUIDE_EFFICIENCY_P1B': '${BothStrong} при активации можно увеличить и шанс, и количество получаемых материалов.',
+'GUIDE_EFFICIENCY_P2': 'При создании ${MaterialsCat16}${materialsWord} Эффективность применяется к результату мультипликативно.${BR}При создании ${FurnitureCat16}${furnitureWord} дробные бонусы игнорируются.',
+'GUIDE_EFFICIENCY_WARNING': 'Увеличение бонусов «Материалы/Прогресс» от Эффективности не повышает стоимость действия.',
+
+'GUIDE_HOUSE_P1': 'Строительство и улучшение ${FurnitureCat16}${furnitureWord} повышает уровень вашего ${HouseIcon16}${houseWord}, предоставляя значимые бонусы для ${constructionTitle}.',
+'GUIDE_HOUSE_P2': 'Когда все ${FurnitureCat16}${furnitureWord} в вашем ${houseWord} достигают определённого уровня, уровень ${houseWord} повышается.',
+'GUIDE_HOUSE_P3': 'Завершение вашего ${houseWord} даёт крупные награды на оставшуюся игру и является конечной целью ${ConstructionIcon16}${constructionTitle}.',
+
+'GUIDE_EXTENDED_TITLE': 'Дополнительный контент',
+'GUIDE_EXTENDED_P1': 'Мод Construction добавляет новых врагов, предметы, рецепты и обмены по всему миру игры, углубляя интеграцию в него.',
+'GUIDE_EXTENDED_P2': 'Полный список добавлений можно найти ${ChangeListLink}. (${ExternalLinkNote})',
+
+'GUIDE_TERM_CONSTRUCTION': 'Строительство',
+'GUIDE_TERM_FURNITURE': 'Мебель',
+'GUIDE_TERM_MATERIALS': 'Материалы',
+'GUIDE_TERM_BEAMS': 'Балки',
+'GUIDE_TERM_BARS': 'Слитки',
+'GUIDE_TERM_SLIVERS': 'Обрезки',
+'GUIDE_TERM_RUNES': 'Руны',
+'GUIDE_TERM_FLETCHING': 'Изготовление стрел',
+'GUIDE_TERM_WOODCUTTING': 'Вырубка деревьев',
+'GUIDE_TERM_SMITHING': 'Кузнечное дело',
+'GUIDE_TERM_MINING': 'Горное дело',
+'GUIDE_TERM_CRAFTING': 'Ремесло',
+'GUIDE_TERM_SHOP': 'Магазин',
+'GUIDE_TERM_BOTH': 'Оба',
+
+'GUIDE_LINK_HERE': 'Здесь',
+'GUIDE_EXTERNAL_LINK_NOTE': 'Внешняя ссылка (на английском)',
+'GUIDE_TOOLTIP_NEW': 'Впервые в Строительстве?<br/> <span class="construction-victory">Игровое руководство</span> — отличная отправная точка!',
+'GUIDE_TOOLTIP_UPDATE': 'Строительство получило <span class="text-warning">крупное обновление</span>! <br/> Нажмите здесь, чтобы узнать больше!',
+
     'MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY': 'Выберите категорию строительства',
     'MENU_TEXT_CONSTRUCT': 'Построить',
     'MENU_TEXT_BUILD': 'Строить',

@@ -1,6 +1,60 @@
 export const language = {
     'SKILL_NAME_Construction': 'Construction',
 
+    'GUIDE_CONSTR_HERO': '${ConstructionIcon64}${constructionTitle}${ModioLink}',
+'GUIDE_CONSTR_SUB1': 'Développez votre ${HouseIcon24}${HouseWordStyled} grâce aux matériaux, artefacts et souvenirs obtenus dans différentes compétences.',
+'GUIDE_CONSTR_SUB2': '${ConstructionIcon24}${constructionTitle} vous accordera des bonus croissants à mesure que vous progressez dans le jeu.',
+
+'GUIDE_SECTION_MATERIALS_TITLE': 'Matériaux nécessaires',
+'GUIDE_SECTION_MECH_TITLE': 'Mécaniques supplémentaires',
+'GUIDE_SECTION_HOUSE_TITLE': 'Votre maison',
+'GUIDE_SECTION_EXTENDED_TITLE': 'Fonctionnalités avancées',
+
+'GUIDE_PLANKS_NAME': 'Planches',
+'GUIDE_NAILS_NAME': 'Clous',
+'GUIDE_STRAPS_NAME': 'Lanières',
+'GUIDE_BRICKS_NAME': 'Briques',
+
+'GUIDE_PLANKS_TEXT': 'Fabriquées à partir de ${Beam16}${Beams}, réalisées en ${Fletching16}${Fletching} avec des bûches issues de ${Woodcutting16}${Woodcutting}.',
+'GUIDE_NAILS_TEXT': 'Fabriqués à partir de ${Bar16}${Bars}, fondus en ${Smithing16}${Smithing} avec des minerais extraits via ${Mining16}${Mining}.',
+'GUIDE_STRAPS_TEXT': 'Fabriquées à partir de ${Slivers16}${Slivers}, réalisées en ${Crafting16}${Crafting} avec du cuir provenant de la ${Shop16}${Shop}.',
+'GUIDE_BRICKS_TEXT': 'Fabriquées à partir de ${Rune16}${Runes}, réalisées en ${Runecrafting16}${Runecrafting} avec de l’essence de rune de ${Mining16}${Mining}.',
+
+'GUIDE_EFFICIENCY_TITLE': 'Efficacité',
+'GUIDE_EFFICIENCY_P1A': 'Uniquement disponible pour ${constructionTitle} : ${Efficiency16}Efficacité multiplie le coût et le résultat d’une action.',
+'GUIDE_EFFICIENCY_P1B': '${BothStrong} la probabilité et la quantité de matériaux obtenus lors de l’activation peuvent être augmentées.',
+'GUIDE_EFFICIENCY_P2': 'Lors de la production de ${MaterialsCat16}${materialsWord}, l’Efficacité s’applique de façon multiplicative au résultat.${BR}Lors de la production de ${FurnitureCat16}${furnitureWord}, les bonus fractionnaires sont ignorés.',
+'GUIDE_EFFICIENCY_WARNING': 'Augmenter les bonus Matériaux/Progression de l’Efficacité n’augmente pas le coût de l’action.',
+
+'GUIDE_HOUSE_P1': 'Construire et améliorer des ${FurnitureCat16}${furnitureWord} augmente le niveau de votre ${HouseIcon16}${houseWord} et confère d’importants bonus à ${constructionTitle}.',
+'GUIDE_HOUSE_P2': 'Une fois que tous les ${FurnitureCat16}${furnitureWord} de votre ${houseWord} atteignent un certain palier, le niveau de votre ${houseWord} augmente.',
+'GUIDE_HOUSE_P3': 'Achever votre ${houseWord} procure des récompenses majeures pour le reste du jeu et représente l’objectif ultime de ${ConstructionIcon16}${constructionTitle}.',
+
+'GUIDE_EXTENDED_TITLE': 'Contenu additionnel',
+'GUIDE_EXTENDED_P1': 'Le mod Construction ajoute de nouveaux ennemis, objets, recettes et échanges à travers le jeu, pour une intégration plus profonde dans le monde.',
+'GUIDE_EXTENDED_P2': 'La liste complète de tous les ajouts est disponible ${ChangeListLink}. (${ExternalLinkNote})',
+
+'GUIDE_TERM_CONSTRUCTION': 'Construction',
+'GUIDE_TERM_FURNITURE': 'Mobilier',
+'GUIDE_TERM_MATERIALS': 'Matériaux',
+'GUIDE_TERM_BEAMS': 'Poutres',
+'GUIDE_TERM_BARS': 'Lingots',
+'GUIDE_TERM_SLIVERS': 'Chutes',
+'GUIDE_TERM_RUNES': 'Runes',
+'GUIDE_TERM_FLETCHING': 'Fabrication de flèches',
+'GUIDE_TERM_WOODCUTTING': 'Bûcheronnage',
+'GUIDE_TERM_SMITHING': 'Forge',
+'GUIDE_TERM_MINING': 'Minage',
+'GUIDE_TERM_CRAFTING': 'Artisanat',
+'GUIDE_TERM_SHOP': 'Boutique',
+'GUIDE_TERM_BOTH': 'Les deux',
+
+'GUIDE_LINK_HERE': 'Ici',
+'GUIDE_EXTERNAL_LINK_NOTE': 'Lien externe (en anglais)',
+'GUIDE_TOOLTIP_NEW': 'Nouveau sur Construction ?<br/> Le <span class="construction-victory">Guide du jeu</span> est un excellent point de départ !',
+'GUIDE_TOOLTIP_UPDATE': 'Construction vient de recevoir une <span class="text-warning">mise à jour majeure</span> ! <br/> Cliquez ici pour en savoir plus !',
+
+
     'MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY': 'Sélectionner la Catégorie de Construction',
     'MENU_TEXT_CONSTRUCT': 'Sonstruire',
     'MENU_TEXT_BUILD': 'Construire',

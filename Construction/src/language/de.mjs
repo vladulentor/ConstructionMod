@@ -1,5 +1,57 @@
 export const language = {
     'SKILL_NAME_Construction': 'Konstruktion',
+'GUIDE_CONSTR_HERO': '${ConstructionIcon64}${constructionTitle}${ModioLink}',
+'GUIDE_CONSTR_SUB1': 'Baue dein ${HouseIcon24}${HouseWordStyled} mit Materialien, Artefakten und Andenken aus verschiedenen Fertigkeiten aus.',
+'GUIDE_CONSTR_SUB2': '${ConstructionIcon24}${constructionTitle} gewährt dir mit fortschreitendem Spielverlauf zunehmend höhere Boni.',
+
+'GUIDE_SECTION_MATERIALS_TITLE': 'Benötigte Materialien',
+'GUIDE_SECTION_MECH_TITLE': 'Zusätzliche Mechaniken',
+'GUIDE_SECTION_HOUSE_TITLE': 'Dein Haus',
+'GUIDE_SECTION_EXTENDED_TITLE': 'Erweiterte Funktionen',
+
+'GUIDE_PLANKS_NAME': 'Bretter',
+'GUIDE_NAILS_NAME': 'Nägel',
+'GUIDE_STRAPS_NAME': 'Riemen',
+'GUIDE_BRICKS_NAME': 'Ziegel',
+
+'GUIDE_PLANKS_TEXT': 'Hergestellt aus ${Beam16}${Beams}, gefertigt in ${Fletching16}${Fletching} unter Verwendung von Stämmen aus ${Woodcutting16}${Woodcutting}.',
+'GUIDE_NAILS_TEXT': 'Hergestellt aus ${Bar16}${Bars}, in ${Smithing16}${Smithing} aus Erzen geschmolzen, die in ${Mining16}${Mining} abgebaut werden.',
+'GUIDE_STRAPS_TEXT': 'Hergestellt aus ${Slivers16}${Slivers}, gefertigt in ${Crafting16}${Crafting} mit Leder aus dem ${Shop16}${Shop}.',
+'GUIDE_BRICKS_TEXT': 'Hergestellt aus ${Rune16}${Runes}, gefertigt in ${Runecrafting16}${Runecrafting} mit Runenessenz aus ${Mining16}${Mining}.',
+
+'GUIDE_EFFICIENCY_TITLE': 'Effizienz',
+'GUIDE_EFFICIENCY_P1A': 'Nur in ${constructionTitle} verfügbar: ${Efficiency16}Effizienz vervielfacht die Kosten und den Ertrag einer Aktion.',
+'GUIDE_EFFICIENCY_P1B': '${BothStrong} die Chance und die Menge der bei der Aktivierung erhaltenen Materialien können erhöht werden.',
+'GUIDE_EFFICIENCY_P2': 'Bei der Herstellung von ${MaterialsCat16}${materialsWord} wirkt die Effizienz multiplikativ auf das Ergebnis.${BR}Bei der Herstellung von ${FurnitureCat16}${furnitureWord} werden Bruchteils-Boni ignoriert.',
+'GUIDE_EFFICIENCY_WARNING': 'Das Erhöhen der Bonus-Materialien/-Fortschritt durch Effizienz erhöht nicht die Aktionskosten.',
+
+'GUIDE_HOUSE_P1': 'Das Bauen und Aufrüsten von ${FurnitureCat16}${furnitureWord} verbessert die Stufe deines ${HouseIcon16}${houseWord} und gewährt erhebliche Boni für ${constructionTitle}.',
+'GUIDE_HOUSE_P2': 'Sobald alle ${FurnitureCat16}${furnitureWord} in deinem ${houseWord} eine bestimmte Stufe erreichen, steigt die Stufe deines ${houseWord}.',
+'GUIDE_HOUSE_P3': 'Das Vervollständigen deines ${houseWord} bringt große Belohnungen für den Rest des Spiels und stellt das ultimative Ziel von ${ConstructionIcon16}${constructionTitle} dar.',
+
+'GUIDE_EXTENDED_TITLE': 'Zusätzliche Inhalte',
+'GUIDE_EXTENDED_P1': 'Die Construction-Mod fügt neue Gegner, Gegenstände, Rezepte und Tauschmöglichkeiten im gesamten Spiel hinzu und integriert sich so tiefer in die Welt.',
+'GUIDE_EXTENDED_P2': 'Eine vollständige Liste aller Ergänzungen findest du ${ChangeListLink}. (${ExternalLinkNote})',
+
+'GUIDE_TERM_CONSTRUCTION': 'Baukunst',
+'GUIDE_TERM_FURNITURE': 'Möbel',
+'GUIDE_TERM_MATERIALS': 'Materialien',
+'GUIDE_TERM_BEAMS': 'Balken',
+'GUIDE_TERM_BARS': 'Barren',
+'GUIDE_TERM_SLIVERS': 'Schnipsel',
+'GUIDE_TERM_RUNES': 'Runen',
+'GUIDE_TERM_FLETCHING': 'Bogenbau',
+'GUIDE_TERM_WOODCUTTING': 'Holzfällerei',
+'GUIDE_TERM_SMITHING': 'Schmiedekunst',
+'GUIDE_TERM_MINING': 'Bergbau',
+'GUIDE_TERM_CRAFTING': 'Handwerk',
+'GUIDE_TERM_SHOP': 'Laden',
+'GUIDE_TERM_BOTH': 'Beides',
+
+'GUIDE_LINK_HERE': 'Hier',
+'GUIDE_EXTERNAL_LINK_NOTE': 'Externer Link (auf Englisch)',
+'GUIDE_TOOLTIP_NEW': 'Neu bei Baukunst?<br/> Der <span class="construction-victory">Spielleitfaden</span> ist ein guter Startpunkt!',
+'GUIDE_TOOLTIP_UPDATE': 'Baukunst hat gerade ein <span class="text-warning">großes Update</span> erhalten! <br/> Klicke hier, um mehr zu erfahren!',
 
     'MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY': 'Baukategorie Auswählen',
     'MENU_TEXT_CONSTRUCT': 'Konstruieren',

@@ -2541,7 +2541,7 @@
               "level": 35,
               "productID": "rielkConstruction:Red_Dhide_Leather_Straps",
               "baseQuantity": 1,
-              "baseExperience": 12,
+              "baseExperience": 20,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2557,7 +2557,7 @@
               "level": 55,
               "productID": "rielkConstruction:Black_Dhide_Leather_Straps",
               "baseQuantity": 1,
-              "baseExperience": 20,
+              "baseExperience": 25,
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {

@@ -1,6 +1,60 @@
 export const language = {
     'SKILL_NAME_Construction': '建設',
 
+    'GUIDE_CONSTR_HERO': '${ConstructionIcon64}${constructionTitle}${ModioLink}',
+'GUIDE_CONSTR_SUB1': 'さまざまなスキルで集めた素材・アーティファクト・記念品を使って、${HouseIcon24}${HouseWordStyled} を発展させましょう。',
+'GUIDE_CONSTR_SUB2': '${ConstructionIcon24}${constructionTitle} は、ゲームの進行に応じて増加するボーナスを与えます。',
+
+'GUIDE_SECTION_MATERIALS_TITLE': '必要な素材',
+'GUIDE_SECTION_MECH_TITLE': '追加の仕組み',
+'GUIDE_SECTION_HOUSE_TITLE': 'あなたの家',
+'GUIDE_SECTION_EXTENDED_TITLE': '拡張機能',
+
+'GUIDE_PLANKS_NAME': '板材',
+'GUIDE_NAILS_NAME': '釘',
+'GUIDE_STRAPS_NAME': 'ストラップ',
+'GUIDE_BRICKS_NAME': 'レンガ',
+
+'GUIDE_PLANKS_TEXT': '${Beam16}${Beams}から作られ、${Fletching16}${Fletching}で加工します。原木は${Woodcutting16}${Woodcutting}で入手します。',
+'GUIDE_NAILS_TEXT': '${Bar16}${Bars}から作られ、${Smithing16}${Smithing}で精錬します。鉱石は${Mining16}${Mining}で採掘します。',
+'GUIDE_STRAPS_TEXT': '${Slivers16}${Slivers}から作られ、${Crafting16}${Crafting}で加工します。革は${Shop16}${Shop}で入手します。',
+'GUIDE_BRICKS_TEXT': '${Rune16}${Runes}から作られ、${Runecrafting16}${Runecrafting}で加工します。ルーン原石は${Mining16}${Mining}で入手します。',
+
+'GUIDE_EFFICIENCY_TITLE': '効率',
+'GUIDE_EFFICIENCY_P1A': '${constructionTitle} 専用の ${Efficiency16}効率は、行動のコストと成果を乗算します。',
+'GUIDE_EFFICIENCY_P1B': '${BothStrong} 発動時に得られる素材の確率と量の両方を高められます。',
+'GUIDE_EFFICIENCY_P2': '${MaterialsCat16}${materialsWord}の作成時、効率は結果に乗算で適用されます。${BR}${FurnitureCat16}${furnitureWord}の作成時は、小数点以下のボーナスは無視されます。',
+'GUIDE_EFFICIENCY_WARNING': '効率の素材/進行ボーナスを上げても、行動コストは増えません。',
+
+'GUIDE_HOUSE_P1': '${FurnitureCat16}${furnitureWord} を建築・強化すると、${HouseIcon16}${houseWord} の段階が上がり、${constructionTitle} に大きなボーナスが得られます。',
+'GUIDE_HOUSE_P2': 'あなたの ${houseWord} 内のすべての ${FurnitureCat16}${furnitureWord} が所定の段階に達すると、${houseWord} の段階が上昇します。',
+'GUIDE_HOUSE_P3': '${houseWord} を完成させると、以後のゲームで大きな報酬を得られ、${ConstructionIcon16}${constructionTitle} の最終目標となります。',
+
+'GUIDE_EXTENDED_TITLE': '追加コンテンツ',
+'GUIDE_EXTENDED_P1': 'Construction のMODは、ゲーム全体に新たな敵・アイテム・レシピ・取引を追加し、世界への統合をさらに深めます。',
+'GUIDE_EXTENDED_P2': 'すべての追加要素の一覧は${ChangeListLink}で確認できます。（${ExternalLinkNote}）',
+
+'GUIDE_TERM_CONSTRUCTION': '建設',
+'GUIDE_TERM_FURNITURE': '家具',
+'GUIDE_TERM_MATERIALS': '素材',
+'GUIDE_TERM_BEAMS': '梁',
+'GUIDE_TERM_BARS': '延べ棒',
+'GUIDE_TERM_SLIVERS': '切れ端',
+'GUIDE_TERM_RUNES': 'ルーン',
+'GUIDE_TERM_FLETCHING': '弓製作',
+'GUIDE_TERM_WOODCUTTING': '伐採',
+'GUIDE_TERM_SMITHING': '鍛冶',
+'GUIDE_TERM_MINING': '採鉱',
+'GUIDE_TERM_CRAFTING': '製作',
+'GUIDE_TERM_SHOP': 'ショップ',
+'GUIDE_TERM_BOTH': '両方',
+
+'GUIDE_LINK_HERE': 'こちら',
+'GUIDE_EXTERNAL_LINK_NOTE': '外部リンク（英語）',
+'GUIDE_TOOLTIP_NEW': '建設は初めてですか？<br/> <span class="construction-victory">ゲームガイド</span>から始めましょう！',
+'GUIDE_TOOLTIP_UPDATE': '建設に<span class="text-warning">大型アップデート</span>が入りました！ <br/> クリックして詳しく！',
+
+    
     'MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY': '建設カテゴリを選択',
     'MENU_TEXT_CONSTRUCT': '構築する',
     'MENU_TEXT_BUILD': '建てる',

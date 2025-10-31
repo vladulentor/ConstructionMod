@@ -1,6 +1,59 @@
 export const language = {
     'SKILL_NAME_Construction': 'Costruzione',
 
+    'GUIDE_CONSTR_HERO': '${ConstructionIcon64}${constructionTitle}${ModioLink}',
+'GUIDE_CONSTR_SUB1': 'Sviluppa la tua ${HouseIcon24}${HouseWordStyled} usando materiali, manufatti e cimeli ottenuti attraverso diverse abilità.',
+'GUIDE_CONSTR_SUB2': '${ConstructionIcon24}${constructionTitle} ti fornirà bonus via via maggiori man mano che avanzi nel gioco.',
+
+'GUIDE_SECTION_MATERIALS_TITLE': 'Materiali necessari',
+'GUIDE_SECTION_MECH_TITLE': 'Meccaniche extra',
+'GUIDE_SECTION_HOUSE_TITLE': 'La tua casa',
+'GUIDE_SECTION_EXTENDED_TITLE': 'Funzionalità avanzate',
+
+'GUIDE_PLANKS_NAME': 'Assi',
+'GUIDE_NAILS_NAME': 'Chiodi',
+'GUIDE_STRAPS_NAME': 'Cinghie',
+'GUIDE_BRICKS_NAME': 'Mattoni',
+
+'GUIDE_PLANKS_TEXT': 'Prodotte da ${Beam16}${Beams}, lavorate in ${Fletching16}${Fletching} usando i tronchi ottenuti con ${Woodcutting16}${Woodcutting}.',
+'GUIDE_NAILS_TEXT': 'Fatti da ${Bar16}${Bars}, fusi in ${Smithing16}${Smithing} usando i minerali estratti con ${Mining16}${Mining}.',
+'GUIDE_STRAPS_TEXT': 'Prodotte da ${Slivers16}${Slivers}, realizzate in ${Crafting16}${Crafting} usando pelle acquistata nel ${Shop16}${Shop}.',
+'GUIDE_BRICKS_TEXT': 'Prodotti da ${Rune16}${Runes}, realizzati in ${Runecrafting16}${Runecrafting} usando essenza di rune da ${Mining16}${Mining}.',
+
+'GUIDE_EFFICIENCY_TITLE': 'Efficienza',
+'GUIDE_EFFICIENCY_P1A': 'Disponibile solo in ${constructionTitle}: ${Efficiency16}Efficienza moltiplica il costo e il risultato di un’azione.',
+'GUIDE_EFFICIENCY_P1B': '${BothStrong} la probabilità e la quantità di materiali ottenuti all’attivazione possono essere aumentate.',
+'GUIDE_EFFICIENCY_P2': 'Quando produci ${MaterialsCat16}${materialsWord}, l’Efficienza è moltiplicativa sul risultato.${BR}Quando produci ${FurnitureCat16}${furnitureWord}, i bonus frazionari vengono ignorati.',
+'GUIDE_EFFICIENCY_WARNING': 'Aumentare i bonus Materiali/Progresso dell’Efficienza non aumenta il costo dell’azione.',
+
+'GUIDE_HOUSE_P1': 'Costruire e potenziare i ${FurnitureCat16}${furnitureWord} aumenta il livello della tua ${HouseIcon16}${houseWord}, garantendo notevoli bonus a ${constructionTitle}.',
+'GUIDE_HOUSE_P2': 'Quando tutti i ${FurnitureCat16}${furnitureWord} nella tua ${houseWord} raggiungono una certa soglia, il livello della tua ${houseWord} aumenta.',
+'GUIDE_HOUSE_P3': 'Completare la tua ${houseWord} offre grandi ricompense per il resto del gioco e rappresenta l’obiettivo finale di ${ConstructionIcon16}${constructionTitle}.',
+
+'GUIDE_EXTENDED_TITLE': 'Contenuti aggiuntivi',
+'GUIDE_EXTENDED_P1': 'La mod Construction aggiunge nuovi nemici, oggetti, ricette e scambi in tutto il gioco, integrandosi più a fondo nel mondo.',
+'GUIDE_EXTENDED_P2': 'L’elenco completo di tutte le aggiunte è disponibile ${ChangeListLink}. (${ExternalLinkNote})',
+
+'GUIDE_TERM_CONSTRUCTION': 'Costruzione',
+'GUIDE_TERM_FURNITURE': 'Arredi',
+'GUIDE_TERM_MATERIALS': 'Materiali',
+'GUIDE_TERM_BEAMS': 'Travi',
+'GUIDE_TERM_BARS': 'Lingotti',
+'GUIDE_TERM_SLIVERS': 'Ritagli',
+'GUIDE_TERM_RUNES': 'Rune',
+'GUIDE_TERM_FLETCHING': 'Fabbricazione di frecce',
+'GUIDE_TERM_WOODCUTTING': 'Taglio della legna',
+'GUIDE_TERM_SMITHING': 'Forgia',
+'GUIDE_TERM_MINING': 'Estrazione',
+'GUIDE_TERM_CRAFTING': 'Creazione',
+'GUIDE_TERM_SHOP': 'Negozio',
+'GUIDE_TERM_BOTH': 'Entrambi',
+
+'GUIDE_LINK_HERE': 'Qui',
+'GUIDE_EXTERNAL_LINK_NOTE': 'Link esterno (in inglese)',
+'GUIDE_TOOLTIP_NEW': 'Nuovo in Costruzione?<br/> La <span class="construction-victory">Guida di gioco</span> è un ottimo punto di partenza!',
+'GUIDE_TOOLTIP_UPDATE': 'Costruzione ha appena ricevuto un <span class="text-warning">aggiornamento importante</span>! <br/> Clicca qui per saperne di più!',
+
     'MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY': 'Selezionare l\'impresa edile',
     'MENU_TEXT_CONSTRUCT': 'Costruire',
     'MENU_TEXT_BUILD': 'Costruire',

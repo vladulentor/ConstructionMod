@@ -1,6 +1,59 @@
 export const language = {
     'SKILL_NAME_Construction': 'Construction',
 
+    'GUIDE_CONSTR_HERO': '${ConstructionIcon64}${constructionTitle}${ModioLink}',
+    'GUIDE_CONSTR_SUB1': 'Build up your ${HouseIcon24}${HouseWordStyled} using materials, artefacts, and keepsakes gathered throughout different Skills.',
+    'GUIDE_CONSTR_SUB2': '${ConstructionIcon24}${constructionTitle} will give you increasing bonuses as you progress through the game.',
+
+    'GUIDE_SECTION_MATERIALS_TITLE': 'Materials Needed',
+    'GUIDE_SECTION_MECH_TITLE': 'Extra Mechanics',
+    'GUIDE_SECTION_HOUSE_TITLE': 'Your House',
+    'GUIDE_SECTION_EXTENDED_TITLE': 'Extended Features',
+
+    'GUIDE_PLANKS_NAME': 'Planks',
+    'GUIDE_NAILS_NAME': 'Nails',
+    'GUIDE_STRAPS_NAME': 'Straps',
+    'GUIDE_BRICKS_NAME': 'Bricks',
+
+    'GUIDE_PLANKS_TEXT': 'Made from ${Beam16}${Beams}, crafted in ${Fletching16}${Fletching} using Logs cut from ${Woodcutting16}${Woodcutting}.',
+    'GUIDE_NAILS_TEXT': 'Made from ${Bar16}${Bars}, smelted in ${Smithing16}${Smithing} using Ores mined from ${Mining16}${Mining}.',
+    'GUIDE_STRAPS_TEXT': 'Made from ${Slivers16}${Slivers}, crafted in ${Crafting16}${Crafting} using Leather from the ${Shop16}${Shop}.',
+    'GUIDE_BRICKS_TEXT': 'Made from ${Rune16}${Runes}, crafted in ${Runecrafting16}${Runecrafting} using Rune Essence from ${Mining16}${Mining}.',
+
+    'GUIDE_EFFICIENCY_TITLE': 'Efficiency',
+    'GUIDE_EFFICIENCY_P1A': 'Only available to ${constructionTitle}, ${Efficiency16} Efficiency multiplies the cost and output of an action.',
+    'GUIDE_EFFICIENCY_P1B': '${BothStrong} the chance and amount of materials gotten when activating it can be increased.',
+    'GUIDE_EFFICIENCY_P2': 'When making ${MaterialsCat16}${materialsWord}, Efficiency is multiplicative of the result.${BR}When making ${FurnitureCat16}${furnitureWord}, fractional bonuses are ignored.',
+    'GUIDE_EFFICIENCY_WARNING': 'Increasing the bonus Materials / Progress of Efficiency will not increase action cost.',
+
+    'GUIDE_HOUSE_P1': 'Building and upgrading ${FurnitureCat16}${furnitureWord} will improve your ${HouseIcon16}${houseWord}\'s Tier, granting significant bonuses to ${constructionTitle}.',
+    'GUIDE_HOUSE_P2': 'Once all the ${FurnitureCat16}${furnitureWord} in your ${houseWord} reaches a certain tier, your ${houseWord}\'s tier will increase.',
+    'GUIDE_HOUSE_P3': 'Completing your ${houseWord} provides major rewards for the rest of the game and represents the ultimate goal of ${ConstructionIcon16}${constructionTitle}.',
+
+    'GUIDE_EXTENDED_TITLE': 'Additional Content',
+    'GUIDE_EXTENDED_P1': 'The Construction mod adds new enemies, items, recipes, and trades throughout the game, helping it integrate more deeply into the world.',
+    'GUIDE_EXTENDED_P2': 'A comprehensive list of all additions can be found ${ChangeListLink}. (${ExternalLinkNote})',
+
+    'GUIDE_TERM_CONSTRUCTION': 'Construction',
+    'GUIDE_TERM_FURNITURE': 'Furniture',
+    'GUIDE_TERM_MATERIALS': 'Materials',
+    'GUIDE_TERM_BEAMS': 'Beams',
+    'GUIDE_TERM_BARS': 'Bars',
+    'GUIDE_TERM_SLIVERS': 'Slivers',
+    'GUIDE_TERM_RUNES': 'Runes',
+    'GUIDE_TERM_FLETCHING': 'Fletching',
+    'GUIDE_TERM_WOODCUTTING': 'Woodcutting',
+    'GUIDE_TERM_SMITHING': 'Smithing',
+    'GUIDE_TERM_MINING': 'Mining',
+    'GUIDE_TERM_CRAFTING': 'Crafting',
+    'GUIDE_TERM_SHOP': 'Shop',
+    'GUIDE_TERM_BOTH': 'Both',
+
+    'GUIDE_LINK_HERE': 'Here',
+    'GUIDE_EXTERNAL_LINK_NOTE': 'Opens External Link',
+    'GUIDE_TOOLTIP_NEW': 'New to Construction?<br/> The <span class="construction-victory">Game Guide</span> is a great place to start!',
+    'GUIDE_TOOLTIP_UPDATE': 'Construction just received a <span class="text-warning">Major Update</span>! <br/> Click here to learn more!',
+
     'MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY': 'Select Construction Category',
     'MENU_TEXT_CONSTRUCT': 'Construct',
     'MENU_TEXT_BUILD': 'Build',
@@ -11,7 +64,7 @@ export const language = {
     'MENU_TEXT_REMAINING': 'Costs Remaining',
     'MENU_TEXT_SHOW_ALL_ACTIVE_MODIFIERS': 'View All Active Modifiers',
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'All Active Construction Modifiers',
-    'MENU_HOUSE': "House",
+    'MENU_HOUSE': 'House',
     'MENU_VIEW_HOUSE_TIERS': 'View House Tier Bonuses',
     'MENU_UNLOCKED_MASTERY_FOR_TIER': 'Your House Tier has increased to <span class="construction-success">Tier ${tiername}</span>',
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'House Tier Bonus Unlocked!',
@@ -61,7 +114,7 @@ export const language = {
 
     'PET_NAME_ChuckTheForeman': 'Chuck the Foreman',
     'PET_NAME_Scoobs': 'Scoobs',
-    'PET_DESCRIPTION_Scoobs': "Reach House Tier 5",
+    'PET_DESCRIPTION_Scoobs': 'Reach House Tier 5',
 
     'ITEM_NAME_Construction_Skillcape': 'Construction Skillcape',
     'ITEM_NAME_Builders_Hat': 'Builders Hat',

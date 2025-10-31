@@ -1,8 +1,9 @@
 const { loadModule } = mod.getContext(import.meta);
 
 const { ConstructionHouseMenu } = await loadModule('src/interface/constructionHouseMenu.mjs');
-const { getRielkLangString } = await loadModule('src/language/translationManager.mjs');
+const { mountConstructionGuide } = await loadModule('src/interface/elements/constructionGameGuide.mjs');
 
+const { getRielkLangString, templateRielkLangStringWithNodes } = await loadModule('src/language/translationManager.mjs');
 const ctx = mod.getContext(import.meta);
 export class ConstructionInterface {
     constructor(construction) {
@@ -46,52 +47,18 @@ export class ConstructionInterface {
         modalFrag.append(getTemplateNode('tier-mastery-menu'));
         document.getElementById('main-container').appendChild(modalFrag);
 
-        const guideFrag = new DocumentFragment();
+        mountConstructionGuide({
+            construction,
+            masteryBarImageSrc: this.constructionMasteryBar._image.src,
+            formatter: (typeof window !== 'undefined' && typeof window.formatter === 'function')
+                ? window.formatter
+                : ({ text }) => text,
+        });
 
-        guideFrag.append(getTemplateNode('tutorial-template-Construction'));
-        this.constrGuide = getElementFromFragment(
-            guideFrag,
-            'tutorial-page-Construction', 'div', true);
-        const guideContainer = document.querySelector('#modal-game-guide .block-content.block-content-full');
-
-        const imgs = this.constrGuide.querySelectorAll('img');
-        //I'll be damned if I take them by id way too much code to write down
-        imgs[0].src = game.construction.media; // cover image (constr icon) 
-        imgs[2].src = this.constructionMasteryBar._image.src; //house icon row 2, 
-        imgs[3].src = game.construction.media; // Little icon on row 3 (contsruction icon)
-        imgs[4].src = game.items.getObjectByID('rielkConstruction:Teak_Planks').media; //plank icon, this is the row of materials
-        imgs[5].src = game.items.getObjectByID('rielkConstruction:Teak_Beams').media;
-        // imgs [6] is a little fletching icon
-        // imgs [7] is a little woodcutting icon
-        imgs[8].src = game.items.getObjectByID('rielkConstruction:Mithril_Nails').media; //nails icon
-        imgs[9].src = game.items.getObjectByID('melvorD:Mithril_Bar').media; //bars icon
-        //imgs [10] is a little smithing icon
-        //imgs [11] is a little mining icon
-        imgs[12].src = game.items.getObjectByID('rielkConstruction:Red_Dhide_Leather_Straps').media; //straps icon
-        imgs[13].src = game.items.getObjectByID('rielkConstruction:Red_Dhide_Leather_Slivers').media; //slivers icon
-        //imgs [14] is a little runecraftin icon
-        //imgs [15] is a little mining icon
-        imgs[16].src = game.items.getObjectByID('rielkConstruction:Limestone_Bricks').media; //bricks icon
-        imgs[17].src = game.items.getObjectByID('melvorD:Fire_Rune').media; //rune icon
-        //imgs [18] is a little crafting icon
-        //imgs [19] is a shop icon
-        imgs[20].src = ctx.getResourceUrl('assets/efficiency.png'); //efficiency icon next to efficiency explanation.
-        imgs[21].src = ctx.getResourceUrl('assets/efficiency.png');//small efficiency icon next to efficiency explanation.
-        imgs[22].src = construction.categories.getObjectByID('rielkConstruction:Materials').media; //materials icon in efficiecny explanation.
-        imgs[23].src = construction.categories.getObjectByID('rielkConstruction:House').media;//furniture icon in efficiecny explanation.
-        imgs[24].src = this.constructionMasteryBar._image.src; // house explanation icon
-        imgs[25].src = construction.categories.getObjectByID('rielkConstruction:House').media; // house furniture explanation
-        imgs[26].src = this.constructionMasteryBar._image.src; //little house icon in the house explanation
-        imgs[27].src = construction.categories.getObjectByID('rielkConstruction:House').media; //other furniture logo in the house explanation
-        imgs[28].src = game.construction.media; //construction icon at the very end
-        imgs[29].src = game.construction.media; //icon for expnded features page
-
-        guideContainer.append(this.constrGuide);
-
-        const link = document.querySelector('#game-guide-header-link a.pointer-enabled');
-        if (link) {
-            const oldClick = link.onclick;
-            link.onclick = function (event) {
+        const guideLink = document.querySelector('#game-guide-header-link a.pointer-enabled');
+        if (guideLink) {
+            const oldClick = guideLink.onclick;
+            guideLink.onclick = function (event) {
                 if (typeof oldClick === 'function') oldClick.call(this, event);
                 construction.disableToolTip();
             };

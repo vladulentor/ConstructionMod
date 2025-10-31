@@ -297,9 +297,11 @@ export class Construction extends ArtisanSkill {
         super.onPageChange();
         this.renderQueue.renderfixtureItemUpdates = true;
         if (this.showUpdateTooltip) {
+            if (this.annoyingText == null)
+                this.annoyingText = this.level == 1 ? getRielkLangString('GUIDE_TOOLTIP_NEW') : getRielkLangString('GUIDE_TOOLTIP_UPDATE');
             const link = document.querySelector('#game-guide-header-link');
             this.annoying = tippy(link, {
-                content: 'Construction got a sweet <strong class="text-warning">NEW UPDATE</strong> brah',
+                content: `<div class="text-center">${this.annoyingText}</div>`,
                 placement: 'bottom',
                 allowHTML: true,
                 trigger: 'manual',
@@ -328,13 +330,13 @@ export class Construction extends ArtisanSkill {
         }
     }
     disableToolTip() { //This function gets called on gameguide click
-        if (game.openPage.id == 'rielkConstruction:Construction')
-            {this.showUpdateTooltip = false;
-                if(!this.annoying.state.isDestroyed)
-                {this.annoying.destroy();
-                    //technically doesn't clearInterval, but that happens on page change so it's not too big a deal.
-                }
+        if (game.openPage.id == 'rielkConstruction:Construction') {
+            this.showUpdateTooltip = false;
+            if (this.annoying?.state?.isDestroyed === false) {
+                this.annoying.destroy();
+                //technically doesn't clearInterval, but that happens on page change so it's not too big a deal.
             }
+        }
     }
     updateMasteryDisplays() {
         //leave empty so it doesn't do anything

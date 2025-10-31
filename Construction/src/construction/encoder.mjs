@@ -27,10 +27,15 @@ export class Encoder {
     static decode(construction, reader) {
         const _constructionVersion = reader.getUint32();
       
-          if (_constructionVersion >= BIG_UPDATE_NUMBER) {
-            reader.getBoolean();
+          if (_constructionVersion >= BIG_UPDATE_NUMBER) { //If the player has loaded the big update before, remember their state to the tooltip, otherwise make it true.
+            construction.showUpdateTooltip = reader.getBoolean();
         }
-        
+        else if(_constructionVersion>=6){
+            reader.getBoolean();
+            construction.showUpdateTooltip = true;
+        }
+        else
+         {   construction.showUpdateTooltip = true;}
         construction.hiddenRooms = reader.getSet(readNamespacedReject(construction.rooms));
         construction.stats.decode(reader);
         const readFixture = readNamespacedReject(construction.fixtures);

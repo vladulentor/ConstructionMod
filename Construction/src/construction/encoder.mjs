@@ -34,7 +34,7 @@ export class Encoder {
             reader.getBoolean();
             construction.showUpdateTooltip = true;
         }
-        else
+        else // Also, if the player is 5 or lower don't read anything so the save doesn't get FUCKED
          {   construction.showUpdateTooltip = true;}
         construction.hiddenRooms = reader.getSet(readNamespacedReject(construction.rooms));
         construction.stats.decode(reader);

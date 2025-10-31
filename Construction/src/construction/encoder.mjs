@@ -1,9 +1,10 @@
 const { onCharacterLoaded } = mod.getContext(import.meta);
-
+const BIG_UPDATE_NUMBER = 6; //The resource Update
 export class Encoder {
     static encode(construction, writer) {
-        const _constructionVersion = 5;
+        const _constructionVersion = 6;
         writer.writeUint32(_constructionVersion);
+        writer.writeBoolean(construction.showUpdateTooltip)
         writer.writeSet(construction.hiddenRooms, writeNamespaced);
         construction.stats.encode(writer);
         writer.writeArray(construction.fixtures.allObjects, (fixture, writer) => {
@@ -25,7 +26,11 @@ export class Encoder {
 
     static decode(construction, reader) {
         const _constructionVersion = reader.getUint32();
-
+      
+          if (_constructionVersion >= BIG_UPDATE_NUMBER) {
+            reader.getBoolean();
+        }
+        
         construction.hiddenRooms = reader.getSet(readNamespacedReject(construction.rooms));
         construction.stats.decode(reader);
         const readFixture = readNamespacedReject(construction.fixtures);
@@ -66,6 +71,6 @@ export class Encoder {
 
         if (construction.shouldResetAction)
             construction.resetActionState();
-
+      
     }
 }

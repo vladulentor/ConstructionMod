@@ -54,7 +54,11 @@ export const language = {
 'GUIDE_TOOLTIP_NEW': '建設は初めてですか？<br/> <span class="construction-victory">ゲームガイド</span>から始めましょう！',
 'GUIDE_TOOLTIP_UPDATE': '建設に<span class="text-warning">大型アップデート</span>が入りました！ <br/> クリックして詳しく！',
 
-    
+    'THIEVING_NPC_BRICKLAYER': 'レンガ職人',
+'THIEVING_NPC_CONSTRUCT': 'コンストラクト',
+'ITEM_NAME_Steel_Toed_Boots': 'スチールトゥブーツ',
+'ITEM_NAME_Mystic_Rotating_Saw': '神秘の回転ノコギリ',
+
     'MENU_TEXT_SELECT_CONSTRUCTION_CATEGORY': '建設カテゴリを選択',
     'MENU_TEXT_CONSTRUCT': '構築する',
     'MENU_TEXT_BUILD': '建てる',

@@ -119,6 +119,10 @@ export const language = {
     'ITEM_NAME_Builders_Body': 'Corpo dei costruttori',
     'ITEM_NAME_Builders_Leggings': 'Ghette dei costruttori',
     'ITEM_NAME_Builders_Boots': 'Stivali da costruttori',
+    'THIEVING_NPC_BRICKLAYER': 'Muratore',
+'THIEVING_NPC_CONSTRUCT': 'Costrutto',
+'ITEM_NAME_Steel_Toed_Boots': 'Stivali con punta d’acciaio',
+'ITEM_NAME_Mystic_Rotating_Saw': 'Sega rotante mistica',
 
     'ITEM_NAME_Bronze_Nails': 'Chiodi di bronzo',
     'ITEM_NAME_Iron_Nails': 'Chiodi di ferro',

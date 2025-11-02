@@ -102,6 +102,10 @@ export const language = {
     'SHOP_NAME_Adamant_Saw': 'Scie en adamant',
     'SHOP_NAME_Rune_Saw': 'Scie runique',
     'SHOP_NAME_Dragon_Saw': 'Scie de dragon',
+    'THIEVING_NPC_BRICKLAYER': 'Maçon',
+'THIEVING_NPC_CONSTRUCT': 'Construit',
+'ITEM_NAME_Steel_Toed_Boots': 'Bottes à embout d’acier',
+'ITEM_NAME_Mystic_Rotating_Saw': 'Scie rotative mystique',
 
     'SHOP_DESCRIPTION_Iron_Saw': '-5 % d’intervalle de construction, pour un total de -5 % appliqué grâce à votre scie. +0,20 matériaux ou progression supplémentaires lors des actions supplémentaires, pour un total de +0,20 grâce à votre scie.',
     'SHOP_DESCRIPTION_Steel_Saw': '-5 % d’intervalle de construction, pour un total de -10 % appliqué grâce à votre scie. +0,20 matériaux ou progression supplémentaires lors des actions supplémentaires, pour un total de +0,40 grâce à votre scie.',

@@ -128,8 +128,6 @@ export const language = {
     'ITEM_NAME_Mithril_Nails': 'Mithril Nails',
     'ITEM_NAME_Adamantite_Nails': 'Adamantite Nails',
     'ITEM_NAME_Dragonite_Nails': 'Dragonite Nails',
-    'ITEM_NAME_Steel_Toed_Boots': 'Steel-Toed Boots',
-    'ITEM_NAME_Mystic_Rotating_Saw': 'Mystic Rotating Saw',
 
     'THIEVING_NPC_BRICKLAYER': 'Bricklayer',
     'THIEVING_NPC_CONSTRUCT': 'Construct',
@@ -216,6 +214,8 @@ export const language = {
 
     'THIEVING_NPC_BRICKLAYER': 'Bricklayer',
     'THIEVING_NPC_CONSTRUCT': 'Construct',
+        'ITEM_NAME_Steel_Toed_Boots': 'Steel-Toed Boots',
+    'ITEM_NAME_Mystic_Rotating_Saw': 'Mystic Rotating Saw',
 
 
     'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} extra Materials or Progress made when completing extra actions',

@@ -49,6 +49,11 @@ export const language = {
 'GUIDE_TERM_SHOP': '상점',
 'GUIDE_TERM_BOTH': '둘 다',
 
+'THIEVING_NPC_BRICKLAYER': '벽돌공',
+'THIEVING_NPC_CONSTRUCT': '콘스트럭트',
+'ITEM_NAME_Steel_Toed_Boots': '강철 앞코 부츠',
+'ITEM_NAME_Mystic_Rotating_Saw': '신비한 회전 톱',
+
 'GUIDE_LINK_HERE': '여기',
 'GUIDE_EXTERNAL_LINK_NOTE': '외부 링크(영어)',
 'GUIDE_TOOLTIP_NEW': '건설이 처음이신가요?<br/> <span class="construction-victory">게임 가이드</span>에서 시작해 보세요!',

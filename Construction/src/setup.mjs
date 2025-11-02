@@ -72,7 +72,7 @@ class Setup {
      patchFletchingOrder();
     patchArrowShaftRecipes(this.ctx);
      patchCraftingOrder();
-     patchThievingTargets();
+    // patchThievingTargets();
 
 
     }

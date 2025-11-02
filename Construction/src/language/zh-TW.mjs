@@ -49,6 +49,11 @@ export const language = {
 'GUIDE_TERM_SHOP': '商店',
 'GUIDE_TERM_BOTH': '兩者',
 
+'THIEVING_NPC_BRICKLAYER': '泥瓦匠',
+'THIEVING_NPC_CONSTRUCT': '構裝體',
+'ITEM_NAME_Steel_Toed_Boots': '鋼頭靴',
+'ITEM_NAME_Mystic_Rotating_Saw': '神秘旋轉鋸',
+
 'GUIDE_LINK_HERE': '此處',
 'GUIDE_EXTERNAL_LINK_NOTE': '外部連結（英文）',
 'GUIDE_TOOLTIP_NEW': '第一次接觸建造？<br/> <span class="construction-victory">遊戲指南</span>是很好的起點！',

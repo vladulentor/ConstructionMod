@@ -126,6 +126,11 @@ export const language = {
     'ITEM_NAME_Dragonite_Nails': 'гвозди из драконита',
     'ITEM_NAME_Redwood_Planks': 'Доски из секвойи',
 
+    'THIEVING_NPC_BRICKLAYER': 'Каменщик',
+'THIEVING_NPC_CONSTRUCT': 'Конструкт',
+'ITEM_NAME_Steel_Toed_Boots': 'Ботинки со стальным носком',
+'ITEM_NAME_Mystic_Rotating_Saw': 'Мистическая вращающаяся пила',
+
     'ITEM_NAME_Normal_Beams': 'Обычные балки',
     'ITEM_NAME_Oak_Beams': 'Дубовые балки',
     'ITEM_NAME_Teak_Beams': 'Тиковые балки',

@@ -34,6 +34,11 @@ export const language = {
 'GUIDE_EXTENDED_P1': '建造 模组在全游戏范围新增敌人、物品、配方与交易，使其更深入地融入世界。',
 'GUIDE_EXTENDED_P2': '所有新增内容的完整列表见 ${ChangeListLink}。（${ExternalLinkNote}）',
 
+'THIEVING_NPC_BRICKLAYER': '泥瓦匠',
+'THIEVING_NPC_CONSTRUCT': '构装体',
+'ITEM_NAME_Steel_Toed_Boots': '钢头靴',
+'ITEM_NAME_Mystic_Rotating_Saw': '神秘旋转锯',
+
 'GUIDE_TERM_CONSTRUCTION': '建造',
 'GUIDE_TERM_FURNITURE': '家具',
 'GUIDE_TERM_MATERIALS': '材料',

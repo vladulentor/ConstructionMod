@@ -670,10 +670,12 @@
           ],
           "rielkConstruction:skillEfficiencyChance": [
             {
+                "skillID": "rielkConstruction:Construction",
               "value": 4
             }
           ],
-          "rielkConstruction:skillEfficiencyPotency": 0.3
+          "rielkConstruction:skillEfficiencyPotency": [{              "skillID": "rielkConstruction:Construction",
+"value":0.3}]
         }
       },
       {
@@ -889,7 +891,8 @@
             }
           ],
           "rielkConstruction:skillEfficiencyChance": [
-            {
+            {              "skillID": "rielkConstruction:Construction",
+
               "value": 10
             }
           ],
@@ -1059,6 +1062,8 @@
             ],
             "rielkConstruction:skillEfficiencyPotency": [
               {
+                              "skillID": "rielkConstruction:Construction",
+
                 "value": 0.2
               }
             ]
@@ -1103,6 +1108,8 @@
             ],
             "rielkConstruction:skillEfficiencyPotency": [
               {
+                              "skillID": "rielkConstruction:Construction",
+
                 "value": 0.2
               }
             ]
@@ -1163,6 +1170,8 @@
             ],
             "rielkConstruction:skillEfficiencyPotency": [
               {
+                              "skillID": "rielkConstruction:Construction",
+
                 "value": 0.2
               }
             ]
@@ -1223,6 +1232,8 @@
             ],
             "rielkConstruction:skillEfficiencyPotency": [
               {
+                              "skillID": "rielkConstruction:Construction",
+
                 "value": 0.2
               }
             ]
@@ -1283,6 +1294,8 @@
             ],
             "rielkConstruction:skillEfficiencyPotency": [
               {
+                              "skillID": "rielkConstruction:Construction",
+
                 "value": 0.2
               }
             ]
@@ -1343,6 +1356,8 @@
             ],
             "rielkConstruction:skillEfficiencyPotency": [
               {
+                              "skillID": "rielkConstruction:Construction",
+
                 "value": 0.2
               }
             ]
@@ -1403,6 +1418,8 @@
             ],
             "rielkConstruction:skillEfficiencyPotency": [
               {
+                              "skillID": "rielkConstruction:Construction",
+
                 "value": 0.3
               }
             ]
@@ -1713,6 +1730,8 @@
         "modifiers": {
           "rielkConstruction:skillEfficiencyPotency": [
             {
+                            "skillID": "rielkConstruction:Construction",
+
               "value": 1
             }
           ]
@@ -2681,11 +2700,15 @@
                 ],
                 "rielkConstruction:skillEfficiencyChance": [
                   {
+                                  "skillID": "rielkConstruction:Construction",
+
                     "value": 10
                   }
                 ],
                 "rielkConstruction:skillEfficiencyPotency": [
                   {
+                                  "skillID": "rielkConstruction:Construction",
+
                     "value": 1
                   }
                 ]
@@ -4994,6 +5017,8 @@
                 ],
                 "rielkConstruction:skillEfficiencyChance": [
                   {
+                                  "skillID": "rielkConstruction:Construction",
+
                     "value": 8
                   }
                 ]
@@ -5072,7 +5097,8 @@
               "currencyCosts": [],
               "modifiers": {
                 "smithingCoalCost": -25,
-                "rielkConstruction:skillEfficiencyCost": -0.15
+                "rielkConstruction:skillEfficiencyCost": [{              "skillID": "rielkConstruction:Construction",
+"value":-0.15}]
               }
             },
             {
@@ -7232,7 +7258,8 @@
               "currencyCosts": [],
               "modifiers": {
                 "rielkConstruction:skillEfficiencyChance": [
-                  {
+                  {              "skillID": "rielkConstruction:Construction",
+
                     "value": 1
                   }
                 ],
@@ -7277,12 +7304,14 @@
               "currencyCosts": [],
               "modifiers": {
                 "rielkConstruction:skillEfficiencyChance": [
-                  {
+                  {              "skillID": "rielkConstruction:Construction",
+
                     "value": 3
                   }
                 ],
                 "rielkConstruction:skillEfficiencyPotency": [
-                  {
+                  {              "skillID": "rielkConstruction:Construction",
+
                     "value": 0.25
                   }
                 ]
@@ -7319,7 +7348,8 @@
               "currencyCosts": [],
               "modifiers": {
                 "rielkConstruction:skillEfficiencyChance": [
-                  {
+                  {              "skillID": "rielkConstruction:Construction",
+
                     "value": 5
                   }
                 ],
@@ -7368,7 +7398,8 @@
               "currencyCosts": [],
               "modifiers": {
                 "rielkConstruction:skillEfficiencyChance": [
-                  {
+                  {              "skillID": "rielkConstruction:Construction",
+
                     "value": 7
                   }
                 ],
@@ -7379,7 +7410,8 @@
                   }
                 ],
                 "rielkConstruction:skillEfficiencyPotency": [
-                  {
+                  {              "skillID": "rielkConstruction:Construction",
+
                     "value": 0.5
                   }
                 ]
@@ -7416,18 +7448,21 @@
               "currencyCosts": [],
               "modifiers": {
                 "rielkConstruction:skillEfficiencyChance": [
-                  {
+                  {              "skillID": "rielkConstruction:Construction",
+
                     "value": 9
                   }
                 ],
                 "rielkConstruction:skillEfficiencyPotency": [
-                  {
+                  {              "skillID": "rielkConstruction:Construction",
+
                     "value": 0.6
                   }
                 ],
                 "rielkConstruction:constructionActionsToUpgrade": -5,
                 "rielkConstruction:skillEfficiencyCost": [
-                  {
+                  {              "skillID": "rielkConstruction:Construction",
+
                     "value": -0.25
                   }
                 ]
@@ -8407,7 +8442,9 @@
             ]
           },
           {
-            "scopes": {},
+            "scopes": {
+              "skill": true
+            },
             "descriptions": [
               {
                 "text": "+${value}% Efficiency chance",
@@ -8450,7 +8487,9 @@
             ]
           },
           {
-            "scopes": {},
+            "scopes": {
+              "skill": true
+            },
             "descriptions": [
               {
                 "text": "+${value} Progress/Materials made when activating Efficiency",
@@ -8473,7 +8512,9 @@
         "inverted": true,
         "allowedScopes": [
           {
-            "scopes": {},
+           "scopes": {
+              "skill": true
+            },
             "descriptions": [
               {
                 "text": "-${value} Resource cost when activating Efficiency",
@@ -10008,7 +10049,8 @@
               }
             ],
             "rielkConstruction:skillEfficiencyChance": [
-              {
+              {              "skillID": "rielkConstruction:Construction",
+
                 "value": 10
               }
             ],
@@ -10036,7 +10078,8 @@
               }
             ],
             "rielkConstruction:skillEfficiencyChance": [
-              {
+              {              "skillID": "rielkConstruction:Construction",
+
                 "value": 10
               }
             ],

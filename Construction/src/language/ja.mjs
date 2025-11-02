@@ -191,16 +191,17 @@ export const language = {
 'ITEM_DESCRIPTION_Beam_Box_II': '일반 보가 들어 있습니다',
 
     'TOAST_FIXTURE_COMPLETE': '${fixtureName}の建造が完了しました！',
-    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '${categoryName}を建設中に追加行動を行う確率が-${value}%',
-    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '${categoryName}を建設中に追加行動を行う確率が+${value}%',
-    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '効率化で${categoryName}を作成する際の追加行動数-${value}',
-    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '効率化で${categoryName}を作成する際の追加行動数+${value}',
 
     'ITEM_NAME_Twice_Measured_Potion_I': '二度計るポーション I',
     'ITEM_NAME_Twice_Measured_Potion_II': '二度計るポーション II',
     'ITEM_NAME_Twice_Measured_Potion_III': '二度計るポーション III',
     'ITEM_NAME_Twice_Measured_Potion_IV': '二度計るポーション IV',
     'POTION_NAME_Twice_Measured_Potion': '二度計るポーション',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '${skillName}で${categoryName}を作成中に追加行動を行う確率が-${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '${skillName}で${categoryName}を作成中に追加行動を行う確率が+${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '効率化で${categoryName}を作成する際の追加行動数-${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '効率化で${categoryName}を作成する際の追加行動数+${value}',
 
     'MODIFIER_DATA_decrease_skillEfficiencyPotency': '効率化を発動したときに得られる追加素材または進捗-${value}',
     'MODIFIER_DATA_increase_skillEfficiencyPotency': '効率化を発動したときに得られる追加素材または進捗+${value}',

@@ -190,10 +190,6 @@ export const language = {
 
     'TOAST_FIXTURE_COMPLETE': '你已完成建造 ${fixtureName}!',
 
-    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '建造 ${categoryName} 时完成额外动作的概率 -${value}%',
-    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '建造 ${categoryName} 时完成额外动作的概率 +${value}%',
-    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '使用效率制作 ${categoryName} 时完成额外动作 -${value}',
-    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '使用效率制作 ${categoryName} 时完成额外动作 +${value}',
 
     'ITEM_NAME_Twice_Measured_Potion_I': '双重测量药水 I',
     'ITEM_NAME_Twice_Measured_Potion_II': '双重测量药水 II',
@@ -215,8 +211,14 @@ export const language = {
     'MODIFIER_DATA_unlockPlot_3': '解锁农业中的菜地',
     'MODIFIER_DATA_unlockPlot_4': '解锁农业中的草药地',
     'MODIFIER_DATA_unlockPlot_5': '解锁农业中的果树地',
-    'MODIFIER_DATA_decrease_skillEfficiencyChance': '在建造中一次完成额外动作的概率 -${value}%',
-    'MODIFIER_DATA_increase_skillEfficiencyChance': '在建造中一次完成额外动作的概率 +${value}%',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '在${skillName}中制作 ${categoryName} 时完成额外动作的概率 -${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '在${skillName}中制作 ${categoryName} 时完成额外动作的概率 +${value}%',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '使用效率制作 ${categoryName} 时完成额外动作 -${value}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '使用效率制作 ${categoryName} 时完成额外动作 +${value}',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '在${skillName}中一次完成额外动作的概率 -${value}%',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '在${skillName}中一次完成额外动作的概率 +${value}%',
     'MODIFIER_DATA_decrease_skillEfficiencyPotency': '激活效率时额外材料或进度 -${value}',
     'MODIFIER_DATA_increase_skillEfficiencyPotency': '激活效率时额外材料或进度 +${value}',
     'MODIFIER_DATA_decrease_skillEfficiencyCost': '激活效率时资源消耗 +${value}',

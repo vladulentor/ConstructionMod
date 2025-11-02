@@ -28,6 +28,7 @@ export class Construction extends ArtisanSkill {
         this.wasEfficient = false
         this.ui = undefined;
         this.categories = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionCategory');
+        this.subCategories = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionSubCategory');
         this.rooms = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionRoom');
         this.fixtures = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionFixture');
         this.tierMasteries = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionTierMastery');
@@ -146,28 +147,31 @@ export class Construction extends ArtisanSkill {
     }
 
     registerData(namespace, data) {
-        var _a, _b, _c, _d, _e, _f;
+        var _a, _b, _c, _d, _e, _f, _g;
         (_a = data.categories) === null || _a === void 0 ? void 0 : _a.forEach((categoryData) => {
             this.categories.registerObject(new ConstructionCategory(namespace, categoryData, this, this.game));
         }
         );
-        (_b = data.recipes) === null || _b === void 0 ? void 0 : _b.forEach((recipeData) => {
+        (_b = data.subcategories) === null || _b === void 0 ? void 0 : _b.forEach((subcategoryData) => {
+            this.subCategories.registerObject(new SkillSubcategory(namespace, subcategoryData));
+        });
+        (_c = data.recipes) === null || _c === void 0 ? void 0 : _c.forEach((recipeData) => {
             this.actions.registerObject(new ConstructionRecipe(namespace, recipeData, this.game, this));
         }
         );
-        (_c = data.fixtureRecipes) === null || _c === void 0 ? void 0 : _c.forEach((fixtureRecipeData) => {
+        (_d = data.fixtureRecipes) === null || _d === void 0 ? void 0 : _d.forEach((fixtureRecipeData) => {
             this.actions.registerObject(new ConstructionFixtureRecipes(namespace, fixtureRecipeData, this.game, this));
         }
         );
-        (_d = data.fixtures) === null || _d === void 0 ? void 0 : _d.forEach((fixtureData) => {
+        (_e = data.fixtures) === null || _e === void 0 ? void 0 : _e.forEach((fixtureData) => {
             this.fixtures.registerObject(new ConstructionFixture(namespace, fixtureData, this.game, this));
         }
         );
-        (_e = data.rooms) === null || _e === void 0 ? void 0 : _e.forEach((roomData) => {
+        (_f = data.rooms) === null || _f === void 0 ? void 0 : _f.forEach((roomData) => {
             this.rooms.registerObject(new ConstructionRoom(namespace, roomData, this.game, this));
         }
         );
-        (_f = data.tierMasteries)?.forEach(tmData => {
+        (_g = data.tierMasteries)?.forEach(tmData => {
             this.tierMasteries.registerObject(new ConstructionTierMastery(namespace, tmData, this.game, this));
         });
         super.registerData(namespace, data);
@@ -808,6 +812,9 @@ export class Construction extends ArtisanSkill {
         switch (type) {
             case ScopeSourceType.Category:
                 return this.categories;
+            case ScopeSourceType.Subcategory:
+                return this.subCategories;
+
             case ScopeSourceType.Action:
                 return this.actions;
         }

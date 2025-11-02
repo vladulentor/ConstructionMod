@@ -47,7 +47,7 @@ export function getRielkLangString(identifier) {
 export function templateRielkLangString(identifier, templateData) {
     return templateString(getRielkLangString(identifier), templateData);
 }
-export function templateRielkLangStringWithNodes(id, nodeData, textData, clone=true) {
+export function templateRielkLangStringWithNodes(id, nodeData, textData, clone = true) {
     return templateStringWithNodes(getRielkLangString(id), nodeData, textData, clone);
 }
 
@@ -59,7 +59,7 @@ export function patchTranslations(ctx) {
             if (tm && typeof tm.syncLang === "function") tm.syncLang();
         };
     }
-    else if (typeof saveAndLoadLanguage === "function") { 
+    else if (typeof saveAndLoadLanguage === "function") {
         const superSaveAndLoadLanguage = saveAndLoadLanguage;
         saveAndLoadLanguage = (...args) => {
             const result = superSaveAndLoadLanguage(...args);
@@ -82,12 +82,12 @@ export function patchTranslations(ctx) {
     }
 
     ctx.patch(Item, 'name').get(function (patch) {
-        if (this.namespace === 'rielkConstruction') 
+        if (this.namespace === 'rielkConstruction')
             return getRielkLangString(`ITEM_NAME_${this.localID}`);
         return patch();
     });
     ctx.patch(Item, 'description').get(function (patch) {
-        if (this.namespace === 'rielkConstruction' && this._customDescription !== undefined) 
+        if (this.namespace === 'rielkConstruction' && this._customDescription !== undefined)
             return getRielkLangString(`ITEM_DESCRIPTION_${this.localID}`);
         return patch();
     });
@@ -97,12 +97,12 @@ export function patchTranslations(ctx) {
         return patch();
     });
     ctx.patch(ShopPurchase, 'description').get(function (patch) {
-        if (this.namespace === 'rielkConstruction' && this._customDescription !== undefined) 
+        if (this.namespace === 'rielkConstruction' && this._customDescription !== undefined)
             return getRielkLangString(`SHOP_DESCRIPTION_${this.localID}`);
         return patch();
     });
     ctx.patch(HerbloreRecipe, 'name').get(function (patch) {
-        if (this.namespace === 'rielkConstruction') 
+        if (this.namespace === 'rielkConstruction')
             return getRielkLangString(`POTION_NAME_${this.localID}`);
         return patch();
     });
@@ -113,7 +113,7 @@ export function patchTranslations(ctx) {
     });
     ctx.patch(ModifierDescription, 'template').get(function (patch) {
         const ret = patch();
-        if (this._lang !== undefined && ret.startsWith('UNDEFINED TRANSLATION')){
+        if (this._lang !== undefined && ret.startsWith('UNDEFINED TRANSLATION')) {
             const ret2 = getRielkLangString(this._lang);
             if (ret2.startsWith('UNDEFINED TRANSLATION'))
                 return ret;
@@ -123,7 +123,7 @@ export function patchTranslations(ctx) {
     });
     ctx.patch(MasteryLevelUnlock, 'description').get(function (patch) {
         const ret = patch();
-        if (this._descriptionID !== undefined && ret.startsWith('UNDEFINED TRANSLATION')){
+        if (this._descriptionID !== undefined && ret.startsWith('UNDEFINED TRANSLATION')) {
             const ret2 = getRielkLangString(`MASTERY_BONUS_ ${this.skill.localID}_ ${this._descriptionID}`);
             if (ret2.startsWith('UNDEFINED TRANSLATION'))
                 return ret;
@@ -133,27 +133,37 @@ export function patchTranslations(ctx) {
     });
     ctx.patch(Monster, 'name').get(function (patch) {
         if (this.namespace === 'rielkConstruction')
-            return getRielkLangString(`ENEMY_NAME_${this.localID}`);
+           { return templateRielkLangStringWithNodes(
+                `ENEMY_NAME_${this.localID}`,
+                { Icon: `<img src="${ctx.getResourceUrl('assets/icon.png')}" style="height:1em;vertical-align:middle;margin-right:0.25em;">` },
+                {},
+                false
+            );} 
         return patch();
     });
     ctx.patch(ShopUpgradeChain, 'chainName').get(function (patch) {
-        if(this.namespace === 'rielkConstruction')
+        if (this.namespace === 'rielkConstruction')
             return getRielkLangString(`MENU_TEXT_${this.localID}`);
         return patch();
     });
-        ctx.patch(ShopUpgradeChain, 'defaultName').get(function (patch) {
-        if(this.namespace === 'rielkConstruction')
+    ctx.patch(ShopUpgradeChain, 'defaultName').get(function (patch) {
+        if (this.namespace === 'rielkConstruction')
             return getRielkLangString(`MISC_TEXT_${this.localID}`);
         return patch();
     });
     ctx.patch(Pet, 'acquiredBy').get(function (patch) {
-        if(this._langHint !== undefined && this.namespace === 'rielkConstruction')
+        if (this._langHint !== undefined && this.namespace === 'rielkConstruction')
             return getRielkLangString(`PET_DESCRIPTION_${this.localID}`);
         return patch();
     });
-     ctx.patch(SkillCategory, 'name').get(function (patch) {
-         if (this.namespace === 'rielkConstruction')
+    ctx.patch(SkillCategory, 'name').get(function (patch) {
+        if (this.namespace === 'rielkConstruction')
             return getRielkLangString(`SKILL_CATEGORY_${this.localID}`);
+        return patch();
+    });
+    ctx.patch(ThievingNPC, 'name').get(function (patch) {
+        if (this.namespace === 'rielkConstruction')
+            return getRielkLangString(`THIEVING_NPC_${this.localID}`);
         return patch();
     });
 }

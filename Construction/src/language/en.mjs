@@ -128,6 +128,11 @@ export const language = {
     'ITEM_NAME_Mithril_Nails': 'Mithril Nails',
     'ITEM_NAME_Adamantite_Nails': 'Adamantite Nails',
     'ITEM_NAME_Dragonite_Nails': 'Dragonite Nails',
+    'ITEM_NAME_Steel_Toed_Boots': 'Steel-Toed Boots',
+    'ITEM_NAME_Mystic_Rotating_Saw': 'Mystic Rotating Saw',
+
+    'THIEVING_NPC_BRICKLAYER': 'Bricklayer',
+    'THIEVING_NPC_CONSTRUCT': 'Construct',
 
     'ITEM_NAME_Normal_Beams': 'Normal Beams',
     'ITEM_NAME_Oak_Beams': 'Oak Beams',
@@ -209,6 +214,10 @@ export const language = {
     'ITEM_NAME_Twice_Measured_Potion_IV': 'Twice-Measured Potion IV',
     'POTION_NAME_Twice_Measured_Potion': 'Twice-Measured Potion',
 
+    'THIEVING_NPC_BRICKLAYER': 'Bricklayer',
+    'THIEVING_NPC_CONSTRUCT': 'Construct',
+
+
     'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} extra Materials or Progress made when completing extra actions',
     'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} extra Materials or Progress made when completing extra actions',
     'MODIFIER_DATA_decrease_skillEfficiencyCost': '-${value} Resource cost when completing extra actions',
@@ -238,7 +247,7 @@ export const language = {
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
     'TOASTS_EFFICIENCY': 'You managed to complete multiple actions at once',
 
-    'ENEMY_NAME_ConstructGiant': 'Iron Giant',
+    'ENEMY_NAME_ConstructGiant': 'Iron Giant${Icon}',
     'ENEMY_NAME_BarnRaiser': 'Barn Raiser',
 
     'SKILL_CATEGORY_Leather_Slivers': 'Leather Slivers',

@@ -4,7 +4,6 @@ const { ConstructionHouseMenu } = await loadModule('src/interface/constructionHo
 const { mountConstructionGuide } = await loadModule('src/interface/elements/constructionGameGuide.mjs');
 
 const { getRielkLangString, templateRielkLangStringWithNodes } = await loadModule('src/language/translationManager.mjs');
-const ctx = mod.getContext(import.meta);
 export class ConstructionInterface {
     constructor(construction) {
         this.renderQueue = new ConstructionRenderQueue();

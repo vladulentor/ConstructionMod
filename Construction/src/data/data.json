@@ -609,6 +609,130 @@
           }
         ]
       },
+       {
+        "itemType": "Item",
+        "id": "Magitech_Fragment",
+        "name": "Magitech Fragment",
+        "category": "Thieving",
+        "type": "Items",
+        "media": "assets/items/straps_red_d-hide_leather.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 100000
+      },
+      {
+        "itemType": "Equipment",
+        "id": "Steel_Toed_Boots",
+        "name": "Steel-Toed Boots",
+        "category": "Construction",
+        "type": "Equipment",
+        "media": "assets/items/steel-toed_boots.png",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 25000,
+        "tier": "none",
+        "validSlots": [
+          "Boots",
+          "Passive"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [],
+        "equipmentStats": [
+          {
+            "key": "rangedAttackBonus",
+            "value": -4
+          },
+          {
+            "key": "magicAttackBonus",
+            "value": -6
+          },
+          {
+            "key": "meleeDefenceBonus",
+            "value": 12
+          },
+          {
+            "key": "rangedDefenceBonus",
+            "value": 8
+          },
+          {
+            "key": "rangedDefenceBonus",
+            "value": 4
+          }
+        ],
+        "modifiers": {
+          "skillXP": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "value": 2
+            }
+          ],
+          "rielkConstruction:skillEfficiencyChance": [
+            {
+              "value": 4
+            }
+          ],
+          "rielkConstruction:skillEfficiencyPotency": 0.3
+        }
+      },
+      {
+        "itemType": "Weapon",
+        "id": "Mystic_Rotating_Saw",
+        "name": "Mystic Rotating Saw",
+        "category": "Construction",
+        "type": "Weapon",
+        "media": "assets/items/mystic_rotating_saw.png",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 65000,
+        "tier": "none",
+        "validSlots": [
+          "Weapon",
+          "Passive"
+        ],
+        "occupiesSlots": [
+          "Shield"
+        ],        
+        "equipRequirements": [],
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 1100
+          },
+          {
+            "key": "stabAttackBonus",
+            "value": 15
+          },
+          {
+            "key": "slashAttackBonus",
+            "value": 3
+          },
+
+          {
+            "key": "blockAttackBonus",
+            "value": 0
+          }
+        ],
+        "attackType": "melee",
+        "modifiers": {
+          "flatSkillInterval": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "subcategoryID": "rielkConstruction:Planks",
+              "value": -3000
+            }
+          ],
+          "flatBasePrimaryProductQuantity": [
+            {
+              "value": -2,
+              "skillID": "rielkConstruction:Construction",
+              "subcategoryID": "rielkConstruction:Planks"
+            }
+          ]
+        }
+      },
       {
         "id": "Beam_Box_I",
         "name": "Beam Box I",
@@ -648,7 +772,7 @@
         "category": "Openable",
         "type": "Chest",
         "media": "assets/items/beam_box_II.png",
-                "customDescription": "Contains Regular Beams",
+        "customDescription": "Contains Regular Beams",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -672,6 +796,51 @@
             "minQuantity": 1,
             "maxQuantity": 25,
             "weight": 10
+          }
+        ]
+      },
+      {
+        "id": "Pile_Of_Bricks",
+        "name": "Pile of Bricks",
+        "category": "Openable",
+        "type": "Chest",
+        "media": "assets/items/pile_of_bricks.png",
+        "customDescription": "Contains Regular Beams",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 1300,
+        "itemType": "Openable",
+        "dropTable": [
+          {
+            "itemID": "rielkConstruction:Clay_Bricks",
+            "minQuantity": 1,
+            "maxQuantity": 100,
+            "weight": 57
+          },
+          {
+            "itemID": "rielkConstruction:Limestone_Bricks",
+            "minQuantity": 1,
+            "maxQuantity": 100,
+            "weight": 27
+          },
+          {
+            "itemID": "rielkConstruction:Granite_Bricks",
+            "minQuantity": 1,
+            "maxQuantity": 100,
+            "weight": 16
+          },
+          {
+            "itemID": "rielkConstruction:Marble_Bricks",
+            "minQuantity": 1,
+            "maxQuantity": 100,
+            "weight": 7
+          },
+          {
+            "itemID": "rielkConstruction:Magic_Bricks",
+            "minQuantity": 1,
+            "maxQuantity": 100,
+            "weight": 5
           }
         ]
       },
@@ -852,6 +1021,26 @@
         "rootItemIDs": [
           "rielkConstruction:Magic_Planks"
         ]
+      }
+    ],
+    "attacks": [
+      {
+        "id": "Jam",
+        "defaultChance": 7,
+        "damage": [
+          {
+            "damageType": "Normal",
+            "amplitude": 100
+          }
+        ],
+        "prehitEffects": [],
+        "onhitEffects": [],
+        "cantMiss": false,
+        "attackCount": 2,
+        "attackInterval": 7000,
+        "lifesteal": 0,
+        "name": "Jam",
+        "description": "Briefly becomes stuck, then continues rotating as usual."
       }
     ],
     "shopPurchases": [
@@ -1595,9 +1784,9 @@
         "lootChance": 100,
         "lootTable": [
           {
-            "itemID": "rielkConstruction:Normal_Planks",
-            "minQuantity": 2,
-            "maxQuantity": 5,
+            "itemID": "rielkConstruction:Normal_Beams",
+            "minQuantity": 1,
+            "maxQuantity": 3,
             "weight": 30
           },
           {
@@ -1607,40 +1796,52 @@
             "weight": 25
           },
           {
-            "itemID": "rielkConstruction:Oak_Planks",
+            "itemID": "rielkConstruction:Clay_Bricks",
             "minQuantity": 2,
             "maxQuantity": 4,
+            "weight": 20
+          },
+          {
+            "itemID": "rielkConstruction:Green_Dhide_Leather_Straps",
+            "minQuantity": 1,
+            "maxQuantity": 3,
+            "weight": 12
+          },
+          {
+            "itemID": "rielkConstruction:Normal_Planks",
+            "minQuantity": 2,
+            "maxQuantity": 5,
+            "weight": 18
+          },
+          {
+            "itemID": "rielkConstruction:Oak_Beams",
+            "minQuantity": 1,
+            "maxQuantity": 2,
             "weight": 15
           },
           {
-            "itemID": "rielkConstruction:Steel_Nails",
-            "minQuantity": 3,
-            "maxQuantity": 6,
-            "weight": 12
+            "itemID": "rielkConstruction:Oak_Planks",
+            "minQuantity": 2,
+            "maxQuantity": 5,
+            "weight": 10
+          },
+          {
+            "itemID": "rielkConstruction:Limestone_Bricks",
+            "minQuantity": 1,
+            "maxQuantity": 2,
+            "weight": 5
           },
           {
             "itemID": "melvorD:Teak_Logs",
             "minQuantity": 1,
-            "maxQuantity": 1,
-            "weight": 8
-          },
-          {
-            "itemID": "rielkConstruction:Mahogany_Planks",
-            "minQuantity": 1,
             "maxQuantity": 2,
-            "weight": 3
+            "weight": 4
           },
           {
-            "itemID": "melvorD:Mahogany_Logs",
-            "minQuantity": 1,
-            "maxQuantity": 2,
-            "weight": 2
-          },
-          {
-            "itemID": "rielkConstruction:Mithril_Nails",
+            "itemID": "rielkConstruction:Steel_Nails",
             "minQuantity": 1,
             "maxQuantity": 3,
-            "weight": 2
+            "weight": 3
           },
           {
             "itemID": "melvorF:Apple",
@@ -1784,6 +1985,124 @@
       }
     ],
     "skillData": [
+      {
+        "skillID": "melvorD:Thieving",
+        "data": {
+          "npcs": [
+            {
+              "id": "BRICKLAYER",
+              "baseExperience": 79,
+              "level": 74,
+              "name": "Bricklayer",
+              "media": "assets/creatures/bricklayer.png",
+              "perception": 660,
+              "maxHit": 19.5,
+              "currencyDrops": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 625
+                }
+              ],
+              "lootTable": [
+                {
+                  "itemID": "rielkConstruction:Clay_Bricks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 10
+                },
+                {
+                  "itemID": "rielkConstruction:Limestone_Bricks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 6
+                },
+                {
+                  "itemID": "rielkConstruction:Granite_Bricks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 4
+                },
+                {
+                  "itemID": "rielkConstruction:Marble_Bricks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 2
+                },
+                {
+                  "itemID": "rielkConstruction:Magic_Bricks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 1
+                }
+              ],
+              "uniqueDrop": {
+                "id": "rielkConstruction:Steel_Toed_Boots",
+                "quantity": 1
+              },
+              "allowedDamageTypeIDs": [
+                "melvorD:Normal"
+              ]
+            },
+            {
+              "id": "CONSTRUCT",
+              "baseExperience": 56,
+              "level": 59,
+              "name": "Construct",
+              "media": "assets/creatures/construct.png",
+              "perception": 590,
+              "maxHit": 21.5,
+              "currencyDrops": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 530
+                }
+              ],
+              "lootTable": [
+                {
+                  "itemID": "rielkConstruction:Steel_Nails",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 10
+                },
+                {
+                  "itemID": "rielkConstruction:Teak_Planks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 6
+                },
+                {
+                  "itemID": "rielkConstruction:Mithril_Nails",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 4
+                },
+                {
+                  "itemID": "rielkConstruction:Mahogany_Planks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 2
+                },
+                {
+                  "itemID": "rielkConstruction:Adamantite_Nails",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 1
+                },
+                {
+                  "itemID": "rielkConstruction:Redwood_Planks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 1
+                }
+              ],
+            
+              "allowedDamageTypeIDs": [
+                "melvorD:Normal"
+              ]
+            }
+          ]
+        }
+      },
       {
         "skillID": "melvorD:Township",
         "data": {
@@ -2047,7 +2366,7 @@
               "id": "Normal_Beams",
               "level": 5,
               "productID": "rielkConstruction:Normal_Beams",
-              "baseQuantity": 1,
+              "baseQuantity": 2,
               "baseExperience": 10,
               "categoryID": "rielkConstruction:Wood_Beams",
               "itemCosts": [
@@ -2062,7 +2381,7 @@
               "id": "Oak_Beams",
               "level": 5,
               "productID": "rielkConstruction:Oak_Beams",
-              "baseQuantity": 1,
+              "baseQuantity": 2,
               "baseExperience": 10,
               "categoryID": "rielkConstruction:Wood_Beams",
               "itemCosts": [
@@ -2077,7 +2396,7 @@
               "id": "Teak_Beams",
               "level": 5,
               "productID": "rielkConstruction:Teak_Beams",
-              "baseQuantity": 1,
+              "baseQuantity": 2,
               "baseExperience": 10,
               "categoryID": "rielkConstruction:Wood_Beams",
               "itemCosts": [
@@ -2092,7 +2411,7 @@
               "id": "Mahogany_Beams",
               "level": 5,
               "productID": "rielkConstruction:Mahogany_Beams",
-              "baseQuantity": 1,
+              "baseQuantity": 2,
               "baseExperience": 10,
               "categoryID": "rielkConstruction:Wood_Beams",
               "itemCosts": [
@@ -2107,7 +2426,7 @@
               "id": "Redwood_Beams",
               "level": 5,
               "productID": "rielkConstruction:Redwood_Beams",
-              "baseQuantity": 1,
+              "baseQuantity": 2,
               "baseExperience": 10,
               "categoryID": "rielkConstruction:Wood_Beams",
               "itemCosts": [
@@ -2218,6 +2537,24 @@
               "name": "Furniture",
               "media": "assets/house.png",
               "type": "House"
+            }
+          ],
+            "subcategories": [
+            {
+              "id": "Planks",
+              "name": "Planks"
+            },
+            {
+              "id": "Straps",
+              "name": "Straps"
+            },
+            {
+              "id": "Nails",
+              "name": "Nails"
+            },
+            {
+              "id": "Bricks",
+              "name": "Bricks"
             }
           ],
           "tierMasteries": [
@@ -2430,6 +2767,7 @@
               "productID": "rielkConstruction:Normal_Planks",
               "baseQuantity": 3,
               "baseExperience": 4,
+              "subcategoryID": "rielkConstruction:Planks",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2446,6 +2784,7 @@
               "productID": "rielkConstruction:Oak_Planks",
               "baseQuantity": 3,
               "baseExperience": 8,
+              "subcategoryID": "rielkConstruction:Planks",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2462,6 +2801,7 @@
               "productID": "rielkConstruction:Teak_Planks",
               "baseQuantity": 3,
               "baseExperience": 20,
+              "subcategoryID": "rielkConstruction:Planks",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2478,6 +2818,7 @@
               "productID": "rielkConstruction:Mahogany_Planks",
               "baseQuantity": 3,
               "baseExperience": 25,
+              "subcategoryID": "rielkConstruction:Planks",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2494,6 +2835,7 @@
               "productID": "rielkConstruction:Redwood_Planks",
               "baseQuantity": 3,
               "baseExperience": 50,
+              "subcategoryID": "rielkConstruction:Planks",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2510,6 +2852,7 @@
               "productID": "rielkConstruction:Green_Dhide_Leather_Straps",
               "baseQuantity": 1,
               "baseExperience": 4,
+              "subcategoryID": "rielkConstruction:Straps",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2526,6 +2869,7 @@
               "productID": "rielkConstruction:Blue_Dhide_Leather_Straps",
               "baseQuantity": 1,
               "baseExperience": 8,
+              "subcategoryID": "rielkConstruction:Straps",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2542,6 +2886,7 @@
               "productID": "rielkConstruction:Red_Dhide_Leather_Straps",
               "baseQuantity": 1,
               "baseExperience": 20,
+              "subcategoryID": "rielkConstruction:Straps",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2558,6 +2903,7 @@
               "productID": "rielkConstruction:Black_Dhide_Leather_Straps",
               "baseQuantity": 1,
               "baseExperience": 25,
+              "subcategoryID": "rielkConstruction:Straps",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2574,6 +2920,7 @@
               "productID": "rielkConstruction:Elder_Dhide_Leather_Straps",
               "baseQuantity": 1,
               "baseExperience": 50,
+              "subcategoryID": "rielkConstruction:Straps",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2590,6 +2937,7 @@
               "productID": "rielkConstruction:Iron_Nails",
               "baseQuantity": 5,
               "baseExperience": 4,
+              "subcategoryID": "rielkConstruction:Nails",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2606,6 +2954,7 @@
               "productID": "rielkConstruction:Steel_Nails",
               "baseQuantity": 5,
               "baseExperience": 8,
+              "subcategoryID": "rielkConstruction:Nails",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2622,6 +2971,7 @@
               "productID": "rielkConstruction:Mithril_Nails",
               "baseQuantity": 5,
               "baseExperience": 20,
+              "subcategoryID": "rielkConstruction:Nails",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2638,6 +2988,7 @@
               "productID": "rielkConstruction:Adamantite_Nails",
               "baseQuantity": 5,
               "baseExperience": 25,
+              "subcategoryID": "rielkConstruction:Nails",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2654,6 +3005,7 @@
               "productID": "rielkConstruction:Dragonite_Nails",
               "baseQuantity": 5,
               "baseExperience": 50,
+              "subcategoryID": "rielkConstruction:Nails",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2670,6 +3022,7 @@
               "productID": "rielkConstruction:Clay_Bricks",
               "baseQuantity": 2,
               "baseExperience": 4,
+              "subcategoryID": "rielkConstruction:Bricks",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2690,6 +3043,7 @@
               "productID": "rielkConstruction:Limestone_Bricks",
               "baseQuantity": 2,
               "baseExperience": 8,
+              "subcategoryID": "rielkConstruction:Bricks",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2714,6 +3068,7 @@
               "productID": "rielkConstruction:Granite_Bricks",
               "baseQuantity": 2,
               "baseExperience": 20,
+              "subcategoryID": "rielkConstruction:Bricks",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2738,6 +3093,7 @@
               "productID": "rielkConstruction:Marble_Bricks",
               "baseQuantity": 2,
               "baseExperience": 25,
+              "subcategoryID": "rielkConstruction:Bricks",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {
@@ -2766,6 +3122,7 @@
               "productID": "rielkConstruction:Magic_Bricks",
               "baseQuantity": 2,
               "baseExperience": 50,
+              "subcategoryID": "rielkConstruction:Bricks",
               "categoryID": "rielkConstruction:Materials",
               "itemCosts": [
                 {

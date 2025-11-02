@@ -3,6 +3,8 @@ export class ConstructionRecipe extends SingleProductArtisanSkillRecipe {
         super(namespace, data, game, skill);
         this.hasMastery = false;
         this.spoofOrder = data.spoofOrder;
+        if (data.subcategoryID !== undefined)
+            this.subcategory = skill.subCategories.getObjectSafe(data.subcategoryID);
         try {
         } catch (e) {
             throw new DataConstructionError(ConstructionRecipe.name, e, this.id);

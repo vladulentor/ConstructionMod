@@ -41,7 +41,8 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
                 const tier = match ? match[0] : '';
                 displayName = `Twc.Msd.${tier}`;
             }
-           
+                       if (displayName.startsWith('Steel-Toed Boots'))
+                        displayName = "Steel Boots";
 
             this._chanceSpans.push(
                 createElement('span', { className: labelClass, text: `${displayName}:` }),
@@ -78,6 +79,8 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
              if (displayName == 'Chuck the Foreman') {
                 displayName = 'Chuck';
             }
+            if (displayName.startsWith('Steel-Toed Boots'))
+                 displayName = "Steel Boots";
             // Push spans
             this._potencySpans.push(
                 createElement('span', { className: labelClass, text: `${displayName}:` }),

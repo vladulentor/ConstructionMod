@@ -11,7 +11,7 @@ const { patchCraftingOrder } = await loadModule("src/skillPatches/patchCraftingO
 
 const { patchRenderEquipment } = await loadModule("src/skillPatches/patchrenderequipment.mjs");
 const { patchArrowShaftRecipes } = await loadModule("src/skillPatches/patchArrowShaftRecipes.mjs");
-const {patchGameGuide} = await loadModule("src/skillPatches/patchGameGuide.mjs")
+const {patchThievingTargets} = await loadModule("src/skillPatches/patchThievingTargets.mjs")
 
 export async function setup(ctx) {
     setup = new Setup(ctx);
@@ -70,8 +70,9 @@ class Setup {
     }
     async applyOtherPatches() {
      patchFletchingOrder();
+    patchArrowShaftRecipes(this.ctx);
      patchCraftingOrder();
-     patchArrowShaftRecipes(this.ctx);
+     patchThievingTargets();
 
 
     }

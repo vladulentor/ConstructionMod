@@ -142,7 +142,7 @@
         "category": "Construction",
         "type": "Planks",
         "media": "assets/items/beams_redwood.png",
-        "ignoreCompletion": true,
+        "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 280
@@ -616,7 +616,7 @@
         "category": "Thieving",
         "type": "Items",
         "media": "assets/items/straps_red_d-hide_leather.png",
-        "ignoreCompletion": false,
+        "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 100000
@@ -806,7 +806,7 @@
         "type": "Chest",
         "media": "assets/items/pile_of_bricks.png",
         "customDescription": "Contains Regular Beams",
-        "ignoreCompletion": false,
+        "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 1300,

@@ -11,7 +11,7 @@ const { patchCraftingOrder } = await loadModule("src/skillPatches/patchCraftingO
 
 const { patchRenderEquipment } = await loadModule("src/skillPatches/patchrenderequipment.mjs");
 const { patchArrowShaftRecipes } = await loadModule("src/skillPatches/patchArrowShaftRecipes.mjs");
-const {patchThievingTargets} = await loadModule("src/skillPatches/patchThievingTargets.mjs")
+const { patchThievingTargets } = await loadModule("src/skillPatches/patchThievingTargets.mjs")
 
 export async function setup(ctx) {
     setup = new Setup(ctx);
@@ -69,11 +69,11 @@ class Setup {
         });
     }
     async applyOtherPatches() {
-     patchFletchingOrder();
-    patchArrowShaftRecipes(this.ctx);
-     patchCraftingOrder();
-    // patchThievingTargets();
-
+        patchFletchingOrder();
+        patchArrowShaftRecipes(this.ctx);
+        patchCraftingOrder();
+        // patchThievingTargets();
+        // Remember when pushing the update to also disable ignorecompletion for the boots brick pile saw and magitech
 
     }
     async loadData() {
@@ -95,7 +95,7 @@ class Setup {
             }
 
         });
-        
+
     }
     async lastChanges(ctx) {
         ctx.onInterfaceReady(async (ctx) => {

@@ -199,12 +199,12 @@ export const language = {
 
     'TOAST_FIXTURE_COMPLETE': 'You\'ve finished building your ${fixtureName}!',
 
-    'MODIFIER_DATA_decrease_skillEfficiencyChance': '-${value}% chance to complete extra actions in Construction',
-    'MODIFIER_DATA_increase_skillEfficiencyChance': '+${value}% chance to complete extra actions in Construction',
-    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '-${value}% chance to complete extra actions when making ${categoryName} in Construction',
-    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '+${value}% chance to complete extra actions when making ${categoryName} in Construction',
-    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra Materials or Progress made when completing extra actions when making ${categoryName} in Construction',
-    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra Materials or Progress made when completing extra actions while crafting ${categoryName} in Construction',
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '-${value}% chance to complete extra actions in ${skillName}',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '+${value}% chance to complete extra actions in ${skillName}',
+    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '-${value}% chance to complete extra actions when making ${categoryName} in ${skillName}',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '+${value}% chance to complete extra actions when making ${categoryName} in ${skillName}',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra Materials or Progress made when completing extra actions when making ${categoryName} in ${skillName}',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra Materials or Progress made when completing extra actions while crafting ${categoryName} in ${skillName}',
 
     'ITEM_NAME_Twice_Measured_Potion_I': 'Twice-Measured Potion I',
     'ITEM_NAME_Twice_Measured_Potion_II': 'Twice-Measured Potion II',

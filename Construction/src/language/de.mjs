@@ -205,15 +205,15 @@ export const language = {
     'MODIFIER_DATA_unlockPlot_4': 'Schalte ein Kräuterbeet in der Landwirtschaft frei',
     'MODIFIER_DATA_unlockPlot_5': 'Schalte ein Baumbeet in der Landwirtschaft frei',
 
-    'MODIFIER_DATA_decrease_skillEfficiencyChance': '-${value}% Wahrscheinlichkeit, zusätzliche Aktionen auf einmal abzuschließen (Bau)',
-    'MODIFIER_DATA_increase_skillEfficiencyChance': '+${value}% Wahrscheinlichkeit, zusätzliche Aktionen auf einmal abzuschließen (Bau)',
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '-${value}% Wahrscheinlichkeit, zusätzliche Aktionen auf einmal abzuschließen (${skillName})',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '+${value}% Wahrscheinlichkeit, zusätzliche Aktionen auf einmal abzuschließen (${skillName})',
     'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} zusätzliche Materialien oder Fortschritt bei Aktivierung von Effizienz',
     'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} zusätzliche Materialien oder Fortschritt bei Aktivierung von Effizienz',
     'MODIFIER_DATA_decrease_skillEfficiencyCost': '+${value} Ressourcenverbrauch bei Aktivierung von Effizienz',
     'MODIFIER_DATA_increase_skillEfficiencyCost': '-${value} Ressourcenverbrauch bei Aktivierung von Effizienz',
 
-    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '-${value}% Chance, zusätzliche Aktionen beim Herstellen von ${categoryName} im Bau auszuführen',
-    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '+${value}% Chance, zusätzliche Aktionen beim Herstellen von ${categoryName} im Bau auszuführen',
+    'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '-${value}% Chance, zusätzliche Aktionen beim Herstellen von ${categoryName} in ${skillName} auszuführen',
+    'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '+${value}% Chance, zusätzliche Aktionen beim Herstellen von ${categoryName} in ${skillName} auszuführen',
     'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} zusätzliche Aktionen beim Herstellen von ${categoryName} mit Effizienz abgeschlossen',
     'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} zusätzliche Aktionen beim Herstellen von ${categoryName} mit Effizienz abgeschlossen',
 

@@ -77,6 +77,7 @@ class Setup {
     async lastChanges(ctx) {
         ctx.onInterfaceReady(async (ctx) => {
             game.construction.checkForScoobs();
+            game.construction.notifs = true;
         });
     }
 }

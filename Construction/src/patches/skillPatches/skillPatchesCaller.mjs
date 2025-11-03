@@ -4,10 +4,13 @@ const { patchTreeSeedReturn } = await loadModule('src/patches/skillPatches/farmi
 const { patchArrowShaftRecipes } = await loadModule ('src/patches/skillPatches/fletching/patchArrowShaftRecipes.mjs');
 const { patchFletchingOrder } = await loadModule('src/patches/skillPatches/fletching/patchFletchingOrder.mjs');
 const { patchThievingTargets } = await loadModule('src/patches/skillPatches/thieving/patchThievingTargets.mjs');
+const { patchAutoEatOver } = await loadModule('src/patches/skillPatches/combat/patchAutoEatOver.mjs');
+
 
 export function patchSkillsBeforeDataReg(ctx)
 {   
         patchTreeSeedReturn(ctx);
+        patchAutoEatOver(ctx);
 }
 export function patchSkillsAfterDataReg(ctx){
     patchCraftingOrder();

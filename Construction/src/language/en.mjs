@@ -230,7 +230,7 @@ export const language = {
 
     'MODIFIER_DATA_spoofUnlockPlot': 'Unlock a Farming plot in the ${categoryName} category',
 
-
+    'MODIFIER_DATA_spoofFoodSlot': 'Gain a new Food slot',
 
     'MASTERY_BONUS_ Construction_ 0': 'Unlock fixture\'s Tier 1 effects.',
     'MASTERY_BONUS_ Construction_ 1': 'Unlock fixture\'s Tier 2 effects.',

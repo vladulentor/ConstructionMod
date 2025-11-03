@@ -3,6 +3,11 @@ export function addFoodSlot(tier) {
     if (food.maxSlots == 3) {
         food.maxSlots = 4;
         food.addSlot();
-        food.render(game.combat.player);
+        if (game.construction.notifs) {
+            const foodMenu = document.getElementById("combat-food-select");
+            const thievingMenu = document.getElementById("thieving-food-select");
+                    foodMenu.render(game.combat.player);
+                    thievingMenu.render(game.combat.player);
+        }
     }
 }

@@ -5074,7 +5074,8 @@
               "currencyCosts": [],
               "modifiers": {
                 "foodHealingValue": 1,
-                "autoEatThreshold": 1
+                "autoEatThreshold": 1,
+                "rielkConstruction:spoofFoodSlot": 1
               }
             },
             {
@@ -5103,6 +5104,7 @@
               ],
               "currencyCosts": [],
               "modifiers": {
+                "rielkConstruction:maxAutoOverheal": 10,
                 "foodHealingValue": 2
               }
             },
@@ -8575,6 +8577,22 @@
             "descriptions": [
               {
                 "text": "Extra food slot",
+                "lang": "MODIFIER_DATA_spoofFoodSlot",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "maxAutoOverheal",
+        "inverted": true,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Allows overhealing up to ${value}%",
                 "includeSign": false
               }
             ]

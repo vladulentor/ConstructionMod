@@ -242,7 +242,7 @@ export const language = {
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
     'TOASTS_EFFICIENCY': 'You managed to complete multiple actions at once',
 
-    'ENEMY_NAME_ConstructGiant': 'Iron Giant${Icon}',
+    'ENEMY_NAME_ConstructGiant': 'Iron Giant',
     'ENEMY_NAME_BarnRaiser': 'Barn Raiser',
 
     'SKILL_CATEGORY_Leather_Slivers': 'Leather Slivers',

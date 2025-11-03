@@ -5074,7 +5074,7 @@
               "currencyCosts": [],
               "modifiers": {
                 "foodHealingValue": 1,
-                "autoEatThreshold": 1
+                "autoEatThreshold": 1,
               }
             },
             {
@@ -8560,6 +8560,21 @@
               {
                 "text": "Unlocks a plot, of {subcategoryName}",
                 "lang": "MODIFIER_DATA_spoofUnlockPlot",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoofFoodSlot",
+        "inverted": true,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Extra food slot",
                 "includeSign": false
               }
             ]

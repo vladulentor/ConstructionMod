@@ -12,6 +12,4 @@ icons.addModifier('rielkConstruction:constructionActionsToUpgrade', 'cabin');
 icons.addModifier('rielkConstruction:farmingTreeSeedReturn', 'preservation');
 icons.addModifier('rielkConstruction:spoofUnlockPlot', 'plot');
 
-
-
 }

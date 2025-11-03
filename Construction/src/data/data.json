@@ -5074,7 +5074,7 @@
               "currencyCosts": [],
               "modifiers": {
                 "foodHealingValue": 1,
-                "autoEatThreshold": 1,
+                "autoEatThreshold": 1
               }
             },
             {

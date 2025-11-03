@@ -782,12 +782,12 @@
               "value": 10
             }
           ],
-           "rielkConstruction:constructionActionsToUpgrade": [
-              {
-                "skillID": "rielkConstruction:Construction",
-                "value": -10
-              }
-            ]
+          "rielkConstruction:constructionActionsToUpgrade": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "value": -10
+            }
+          ]
         }
       },
       {
@@ -3616,7 +3616,9 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [1],
+              "shinyMods": [
+                1
+              ],
               "modifiers": {
                 "randomHerblorePotionChance": 5
               }
@@ -3850,8 +3852,9 @@
                 }
               ],
               "currencyCosts": [],
-                            "shinyMods": [1],
-
+              "shinyMods": [
+                1
+              ],
               "modifiers": {
                 "flatHiddenSkillLevelBasedOnLevels": [
                   {
@@ -4087,7 +4090,9 @@
                   "quantity": 1
                 }
               ],
-                            "shinyMods": [1],
+              "shinyMods": [
+                1
+              ],
               "currencyCosts": [
                 {
                   "id": "melvorD:GP",
@@ -4390,8 +4395,9 @@
                   }
                 ]
               },
-                            "shinyMods": [1],
-
+              "shinyMods": [
+                1
+              ],
               "enemyModifiers": {
                 "flatResistance": [
                   {
@@ -4427,8 +4433,9 @@
                   "quantity": 150000000
                 }
               ],
-                            "shinyMods": [1],
-
+              "shinyMods": [
+                1
+              ],
               "modifiers": {
                 "flatResistance": [
                   {
@@ -4670,13 +4677,14 @@
               ],
               "currencyCosts": [],
               "changeFunc": "unlockPlot",
-              "modifiers":{
+              "modifiers": {
                 "rielkConstruction:spoofUnlockPlot": [
                   {
                     "value": -2,
                     "skillID": "melvorD:Farming",
                     "categoryID": "melvorD:Allotment"
-                  }]
+                  }
+                ]
               }
             },
             {
@@ -4705,15 +4713,15 @@
               ],
               "currencyCosts": [],
               "changeFunc": "unlockPlot",
-                            "modifiers":{
+              "modifiers": {
                 "rielkConstruction:spoofUnlockPlot": [
                   {
                     "value": -2,
                     "skillID": "melvorD:Farming",
                     "categoryID": "melvorD:Herb"
-                  }]
+                  }
+                ]
               }
-
             },
             {
               "id": "Flower_Pots3",
@@ -4745,15 +4753,15 @@
               ],
               "currencyCosts": [],
               "changeFunc": "unlockPlot",
-                            "modifiers":{
+              "modifiers": {
                 "rielkConstruction:spoofUnlockPlot": [
                   {
                     "value": -2,
                     "skillID": "melvorD:Farming",
                     "categoryID": "melvorD:Allotment"
-                  }]
+                  }
+                ]
               }
-
             },
             {
               "id": "Flower_Pots4",
@@ -4785,15 +4793,15 @@
               ],
               "currencyCosts": [],
               "changeFunc": "unlockPlot",
-                            "modifiers":{
+              "modifiers": {
                 "rielkConstruction:spoofUnlockPlot": [
                   {
                     "value": -2,
                     "skillID": "melvorD:Farming",
                     "categoryID": "melvorD:Herb"
-                  }]
+                  }
+                ]
               }
-
             },
             {
               "id": "Flower_Pots5",
@@ -4832,18 +4840,19 @@
                 }
               ],
               "currencyCosts": [],
-                            "shinyMods": [1],
-
+              "shinyMods": [
+                1
+              ],
               "changeFunc": "unlockPlot",
-                            "modifiers":{
+              "modifiers": {
                 "rielkConstruction:spoofUnlockPlot": [
                   {
                     "value": -2,
                     "skillID": "melvorD:Farming",
                     "categoryID": "melvorD:Tree"
-                  }]
+                  }
+                ]
               }
-
             },
             {
               "id": "Forge1",
@@ -5028,8 +5037,10 @@
                 }
               ],
               "currencyCosts": [],
-                            "shinyMods": [1,2],
-
+              "shinyMods": [
+                1,
+                2
+              ],
               "modifiers": {
                 "smithingCoalCost": -25,
                 "rielkConstruction:skillEfficiencyCost": [
@@ -5787,8 +5798,9 @@
                 }
               ],
               "currencyCosts": [],
-                            "shinyMods": [1],
-
+              "shinyMods": [
+                1
+              ],
               "modifiers": {
                 "flatMiningNodeHP": 10,
                 "masteryXP": [
@@ -5844,8 +5856,9 @@
                 }
               ],
               "currencyCosts": [],
-                            "shinyMods": [1],
-
+              "shinyMods": [
+                1
+              ],
               "modifiers": {
                 "flatMiningNodeHP": 20,
                 "flatSkillInterval": [
@@ -6064,13 +6077,17 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [1],
+              "shinyMods": [
+                1
+              ],
               "modifiers": {
-                "rielkConstruction:farmingTreeSeedReturn": [{
-                  "skillID":"melvorD:Farming",
-                  "categoryID":"melvorD:Tree",
-                  "value":50
-                }]
+                "rielkConstruction:farmingTreeSeedReturn": [
+                  {
+                    "skillID": "melvorD:Farming",
+                    "categoryID": "melvorD:Tree",
+                    "value": 50
+                  }
+                ]
               }
             },
             {
@@ -6298,8 +6315,9 @@
                 }
               ],
               "currencyCosts": [],
-                            "shinyMods": [1],
-
+              "shinyMods": [
+                1
+              ],
               "modifiers": {
                 "flatHPRegen": 5
               }
@@ -6329,7 +6347,6 @@
                 }
               ],
               "currencyCosts": [],
-
               "modifiers": {
                 "prayerPointPreservationChancePerPoint": 5
               }
@@ -6412,8 +6429,9 @@
                 }
               ],
               "currencyCosts": [],
-                            "shinyMods": [1],
-
+              "shinyMods": [
+                1
+              ],
               "modifiers": {
                 "flatPrayerPointsFromBurying": 1
               }
@@ -6831,7 +6849,9 @@
                 }
               ],
               "currencyCosts": [],
-                            "shinyMods": [1],
+              "shinyMods": [
+                1
+              ],
               "modifiers": {
                 "flatHiddenSkillLevelBasedOnLevels": [
                   {
@@ -7097,7 +7117,10 @@
                   "quantity": 1500
                 }
               ],
-                            "shinyMods": [1,2],
+              "shinyMods": [
+                1,
+                2
+              ],
               "currencyCosts": [],
               "modifiers": {
                 "increasedChanceStardust": 2,
@@ -7256,8 +7279,10 @@
                   "quantity": 2500
                 }
               ],
-              "currencyCosts": [],              "shinyMods": [2],
-
+              "currencyCosts": [],
+              "shinyMods": [
+                2
+              ],
               "modifiers": {
                 "rielkConstruction:skillEfficiencyChance": [
                   {
@@ -7352,8 +7377,9 @@
                 }
               ],
               "currencyCosts": [],
-                            "shinyMods": [3],
-
+              "shinyMods": [
+                3
+              ],
               "modifiers": {
                 "rielkConstruction:skillEfficiencyChance": [
                   {
@@ -7404,8 +7430,11 @@
                 }
               ],
               "currencyCosts": [],
-                            "shinyMods": [2,3,4],
-
+              "shinyMods": [
+                2,
+                3,
+                4
+              ],
               "modifiers": {
                 "rielkConstruction:skillEfficiencyChance": [
                   {
@@ -7419,12 +7448,12 @@
                     "value": 0.6
                   }
                 ],
-                  "rielkConstruction:constructionActionsToUpgrade": [
-              {
-                "skillID": "rielkConstruction:Construction",
-                "value": -5
-              }
-            ],
+                "rielkConstruction:constructionActionsToUpgrade": [
+                  {
+                    "skillID": "rielkConstruction:Construction",
+                    "value": -5
+                  }
+                ],
                 "rielkConstruction:skillEfficiencyCost": [
                   {
                     "skillID": "rielkConstruction:Construction",
@@ -7698,8 +7727,10 @@
                 }
               ],
               "currencyCosts": [],
-                            "shinyMods": [1,2],
-
+              "shinyMods": [
+                1,
+                2
+              ],
               "modifiers": {
                 "flatHiddenSkillLevelBasedOnLevels": [
                   {
@@ -7850,8 +7881,9 @@
                 }
               ],
               "currencyCosts": [],
-                            "shinyMods": [2],
-
+              "shinyMods": [
+                2
+              ],
               "modifiers": {
                 "summoningChargePreservationChance": 5,
                 "flatBasePrimaryProductQuantity": [
@@ -7900,8 +7932,9 @@
                   "quantity": 50000
                 }
               ],
-                            "shinyMods": [2],
-
+              "shinyMods": [
+                2
+              ],
               "modifiers": {
                 "skillInterval": [
                   {
@@ -8104,8 +8137,9 @@
                 }
               ],
               "currencyCosts": [],
-                            "shinyMods": [1],
-
+              "shinyMods": [
+                1
+              ],
               "modifiers": {
                 "flatHiddenSkillLevelBasedOnLevels": [
                   {
@@ -8149,8 +8183,9 @@
                 }
               ],
               "currencyCosts": [],
-                                          "shinyMods": [1],
-
+              "shinyMods": [
+                1
+              ],
               "modifiers": {
                 "equipmentSets": 1
               }
@@ -8208,7 +8243,6 @@
                   "id": "rielkConstruction:Steel_Nails",
                   "quantity": 700
                 },
-
                 {
                   "id": "melvorF:Undead_Enhancement_3",
                   "quantity": 1
@@ -8360,9 +8394,9 @@
         "allowedScopes": [
           {
             "scopes": {
-              "skill":true,
-          "category": true
-        },
+              "skill": true,
+              "category": true
+            },
             "descriptions": [
               {
                 "text": "+${value}% chance to regain a Tree Seed in Farming when harvested",
@@ -8513,14 +8547,14 @@
           }
         ]
       },
-       {
+      {
         "id": "spoofUnlockPlot",
         "inverted": true,
         "allowedScopes": [
           {
             "scopes": {
               "skill": true,
-              "category":true
+              "category": true
             },
             "descriptions": [
               {
@@ -10088,7 +10122,7 @@
                 "value": 10
               }
             ],
-              "rielkConstruction:constructionActionsToUpgrade": [
+            "rielkConstruction:constructionActionsToUpgrade": [
               {
                 "skillID": "rielkConstruction:Construction",
                 "value": -10

@@ -73,7 +73,12 @@
                                     "index": 1,
                                     "modifiers": {
                                         "add": {
-                                            "rielkConstruction:constructionActionsToUpgrade": -1
+                                              "rielkConstruction:constructionActionsToUpgrade": [
+              {
+                "skillID": "rielkConstruction:Construction",
+                "value": -1
+              }
+            ]
                                         }
                                     }
                                 },

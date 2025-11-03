@@ -25,7 +25,7 @@
 </template>
 
 <template id="rielk-construction-room-panel-template">
-  <div class="block block-rounded border-top border-rielk-construction border-4x" >
+  <div class="block block-rounded border-top border-rielk-construction border-4x">
     <div class="row no-gutters">
       <div class="col-12 pointer-enabled" id="header">
         <div class="block-content text-center">
@@ -33,10 +33,10 @@
           <span class="h5 font-w600" id="room-name"></span>
         </div>
       </div>
-      <div class="col-12 col-md-6 row gutters-tiny" >
+      <div class="col-12 col-md-6 row gutters-tiny">
         <div class="block-content block-content-full text-center" id="target-container"></div>
       </div>
-      <div class="col-12 col-md-6" >
+      <div class="col-12 col-md-6">
         <div class="block-content block-content-full" id="info-container">
           <div class="row gutters-tiny">
             <div class="col-12">
@@ -191,16 +191,19 @@
 <template id="rielk-construction-modifier-display-template">
   <div class="media d-flex align-items-center push m-0 row gutters-tiny">
     <div class="m-1 font-w600">
-      <img class="skill-icon-sm mr-2" style="width: 45px; height: 45px;" id="fixture-image">
+      <span style="position:relative;display:inline-block;width:45px;height:45px;">
+        <img id="fixture-image" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;">
+        <img id="tier-overlay" aria-hidden="true" style="position:absolute;top:0;left:0;width:100%;height:100%;
+                object-fit:contain;pointer-events:none;z-index:2;">
+      </span>
     </div>
     <div class="media-body">
-      <div
-        class="block block-rounded-double bg-combat-inner-dark p-1 border-top border-rielk-construction border-3x text-left mb-2"
+      <div class="block block-rounded-double bg-combat-inner-dark p-1 border-top border-3x text-left mb-2"
         id="modifier-container">
         <h5 class="font-w700 font-size-sm m-1" id="modifier-text"></h5>
       </div>
       <div class="justify-vertical-center" id="unlock-container">
-        <span class="text-danger" id="level"></span>
+        <span  id="level"></span>
         <span class="text-danger" id="abyssal-level"></span>
       </div>
     </div>
@@ -484,7 +487,8 @@
           <h4 class="mb-2 text-warning">Change Log</h4>
           <div class="font-w400 font-size-sm mb-3">
             Lists all updates and patch notes for the construction mod, barring bug fixes. This Change Log is only
-            available in the English version of the game. For a more detailed change log with bug fixes you can check the mod.io page's "view other versions" tab.
+            available in the English version of the game. For a more detailed change log with bug fixes you can check
+            the mod.io page's "view other versions" tab.
           </div>
           <div style="max-height:350px; overflow-y:auto;">
             <div class="font-w600 mb-1 construction-victory">v4.0</div>

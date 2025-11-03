@@ -14,9 +14,9 @@ Entries marked with [TotH] indicate Throne of the Herald changes.
 
 ## Combat
 ### New Enemies
-- Added "Barn Raiser" enemy to Farmlands. Drops early-game planks and nails, offering a combat-way of building up construction.
+- Added "Barn Raiser" enemy to Farmlands. Drops tier 1 drops of planks, nails, bricks, and straps, offering a combat-way of building up construction. He also rarely drops T2 nails or beams.
 
-- Added "Iron Giant" enemy to Giant's Dungeon. You can get many nails from fighting him, among other things.
+- Added "Iron Giant" enemy to Giant's Dungeon. He is a good source of nails.
 ### Changed Enemies
 (Note: When changing existing enemies' loot tables, new items were added such that rare items' chances would not be decreased)
 

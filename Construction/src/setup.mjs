@@ -3,15 +3,10 @@ const { loadModule, loadTemplates, loadStylesheet } = mod.getContext(import.meta
 const { Construction } = await loadModule('src/construction/construction.mjs');
 const { patchTranslations } = await loadModule('src/language/translationManager.mjs');
 const { patchGameEventSystem } = await loadModule('src/construction/gameEvents.mjs');
-const { patchFarming } = await loadModule('src/skillPatches/farming/farming.mjs');
-const { patchMasteryElement } = await loadModule('src/skillPatches/patchmasteryelement.mjs');
-const { skillBoostsCompatibility } = await loadModule("src/modPatches/skillboosts.mjs");
-const { patchFletchingOrder } = await loadModule("src/skillPatches/patchFletchingOrder.mjs");
-const { patchCraftingOrder } = await loadModule("src/skillPatches/patchCraftingOrder.mjs")
 
-const { patchRenderEquipment } = await loadModule("src/skillPatches/patchrenderequipment.mjs");
-const { patchArrowShaftRecipes } = await loadModule("src/skillPatches/patchArrowShaftRecipes.mjs");
-const { patchThievingTargets } = await loadModule("src/skillPatches/patchThievingTargets.mjs")
+const { patchSkillsBeforeDataReg, patchSkillsAfterDataReg } = await loadModule('src/patches/skillPatches/skillPatchesCaller.mjs');
+const { patchMiscBeforeDataReg } = await loadModule('src/patches/miscPatches/miscPatchesCaller.mjs');
+const { patchModsBeforeDataReg } = await loadModule('src/patches/modPatches/modPatchesCaller.mjs');
 
 export async function setup(ctx) {
     setup = new Setup(ctx);
@@ -54,27 +49,15 @@ class Setup {
     async applyPatches() {
         patchGameEventSystem(this.ctx);
         patchTranslations(this.ctx);
-        patchFarming(this.ctx);
-        patchMasteryElement(this.ctx);
-        patchRenderEquipment(this.ctx);
+        patchMiscBeforeDataReg(this.ctx);
+        patchSkillsBeforeDataReg(this.ctx);
+
+
         game._events.on('offlineLoopEntered', () => game.construction.notifs = false);
         game._events.on('offlineLoopExited', () => game.construction.notifs = true);
-        this.ctx.patch(EventManager, 'loadEvents').before(() => {
-            if (game.construction.isUnlocked)
-                return;
-            if (game.currentGamemode.startingSkills != undefined && game.currentGamemode.startingSkills.has(game.construction)) {
-                game.construction.setUnlock(true);
-            }
-            game.construction.updateForExistingCapIncreases(game);
-        });
     }
     async applyOtherPatches() {
-        patchFletchingOrder();
-        patchArrowShaftRecipes(this.ctx);
-        patchCraftingOrder();
-        // patchThievingTargets();
-        // Remember when pushing the update to also disable ignorecompletion for the boots brick pile saw and magitech
-
+        patchSkillsAfterDataReg(this.ctx);
     }
     async loadData() {
         await this.ctx.gameData.addPackage('src/data/data.json');
@@ -87,13 +70,7 @@ class Setup {
     async modCompatibility(ctx) {
         this.ctx.onModsLoaded(() => {
             this.modList = mod.manager.getLoadedModList();
-
-            if (this.modList.includes('Skill Boosts')) {
-                console.log('Skill Boosts found!');
-                skillBoostsCompatibility(ctx);
-
-            }
-
+            patchModsBeforeDataReg(ctx, this.modList);
         });
 
     }

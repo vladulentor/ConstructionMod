@@ -2,7 +2,7 @@ const { loadModule } = mod.getContext(import.meta);
 
 const { ConstructionModifiers } = await loadModule('src/construction/constructionModifier.mjs');
 const { templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
-const { EffectRegistry } = await loadModule('src/skillPatches/patchRegistry.mjs');
+const { EffectRegistry } = await loadModule('src/patches/skillPatches/patchRegistry.mjs');
 
 export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
     constructor(namespace, data, game, skill) {
@@ -15,7 +15,8 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
                 this.grantItems = game.items.getQuantities(data.grantItem);
             if (data.changeFunc != undefined)
                 this.changeFunc = data.changeFunc;
-
+            if (data.shinyMods != undefined)
+                this.shinyMods = data.shinyMods
         } catch (e) {
             throw new DataConstructionError(ConstructionFixtureRecipes.name, e, this.id);
         }

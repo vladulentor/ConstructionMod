@@ -228,12 +228,7 @@ export const language = {
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% actions and materials required to build Furniture in Construction',
     'MODIFIER_DATA_tierArray': 'Unlocks a new map tier',
 
-    'DESCRIPTION_ADDS_ITEM': 'Gives ${itemQuantity} ${itemName} ${itemImage}',
-    'MODIFIER_DATA_unlockPlot_1': 'Unlock an Allotment Plot in Farming',
-    'MODIFIER_DATA_unlockPlot_2': 'Unlock a Herb Plot in Farming',
-    'MODIFIER_DATA_unlockPlot_3': 'Unlock an Allotment Plot in Farming',
-    'MODIFIER_DATA_unlockPlot_4': 'Unlock a Herb Plot in Farming',
-    'MODIFIER_DATA_unlockPlot_5': 'Unlock a Tree Plot in Farming',
+    'MODIFIER_DATA_spoofUnlockPlot': 'Unlock a Farming plot in the ${categoryName} category',
 
 
 

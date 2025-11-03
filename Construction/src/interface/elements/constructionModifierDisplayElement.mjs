@@ -2,12 +2,15 @@ const { loadModule, onInterfaceReady } = mod.getContext(import.meta);
 
 const { templateRielkLangStringWithNodes, templateRielkLangString, getRielkLangString } = await loadModule('src/language/translationManager.mjs');
 
+const ctx = mod.getContext(import.meta);
+
 class ConstructionModifierDisplayElement extends HTMLElement {
     constructor() {
         super();
         this._content = new DocumentFragment();
         this._content.append(getTemplateNode('rielk-construction-modifier-display-template'));
         this.fixtureImage = getElementFromFragment(this._content, 'fixture-image', 'img');
+        this.tierOverlay = getElementFromFragment(this._content, 'tier-overlay', 'img');
         this.modifierContainer = getElementFromFragment(this._content, 'modifier-container', 'div');
         this.modifierText = getElementFromFragment(this._content, 'modifier-text', 'h5');
         this.unlock = getElementFromFragment(this._content, 'unlock-container', 'div');
@@ -20,16 +23,32 @@ class ConstructionModifierDisplayElement extends HTMLElement {
     setFixtureRecipe(recipe, construction) {
         this.recipe = recipe;
         this.fixtureImage.src = recipe.media;
+
+        this.tierOverlay.src = this.recipe.shinyMods ? ctx.getResourceUrl(`assets/tiers/${this.recipe.tier}_s.png`) : ctx.getResourceUrl(`assets/tiers/${this.recipe.tier}_n.png`);
         this.updateModifierInfo();
         this.level.textContent = '';
+
+        const icon = createElement('img', { className: 'skill-icon-xs mr-1' })
+        if (this.recipe.shinyMods)
+            icon.setAttribute('src', ctx.getResourceUrl('assets/icon_shiny.png'));
+        else
+            icon.setAttribute('src', construction.media);
+
+        
         this.level.append(...templateLangStringWithNodes('MENU_TEXT_UNLOCKED_AT', {
-            skillImage: createElement('img', {
-                className: 'skill-icon-xs mr-1',
-                attributes: [['src', construction.media]]
-            }),
+            skillImage: icon,
         }, {
             level: `${recipe.level}`
         }, false));
+        if (this.recipe.shinyMods) {
+            this.level.classList.remove('text-danger');
+            this.level.classList.add('has-mods', 'fuck-you');
+        }
+        else {
+            this.level.classList.remove('has-mods', 'fuck-you');
+            this.level.classList.add('text-danger');
+        }
+
         this.abyssalLevel.textContent = '';
         if (recipe.abyssalLevel >= 1) {
             this.abyssalLevel.append(...templateLangStringWithNodes('UNLOCKED_AT_ABYSSAL_LEVEL', {
@@ -55,10 +74,51 @@ class ConstructionModifierDisplayElement extends HTMLElement {
             this.setLocked(this.recipe, construction);
         }
     }
+    setRecipeSpecial() {
+        this.modifierContainer.classList.remove('border-rielk-nonshiny');
+        this.modifierContainer.classList.add('border-rielk-shiny');
+        //return getElementDescriptionFormatter('div', this.recipe.isUnlocked ? 'mb-1 construction-victory' : 'mb-1 text-warning');
+    }
+    unsetRecipeSpecial() {
+        this.modifierContainer.classList.remove('border-rielk-shiny');
+        this.modifierContainer.classList.add('border-rielk-nonshiny');
+        //this.fixtureImage.classList.remove('special-tier-icon');
+
+    }
+    toggleRecipeSpecial() {
+        if (this.recipe.shinyMods)
+            this.setRecipeSpecial();
+        else
+            this.unsetRecipeSpecial();
+    }
     updateModifierInfo() {
         this.modifierText.textContent = '';
-        const formatter = getElementDescriptionFormatter('div', this.recipe.isUnlocked ? 'mb-1' : 'mb-1 text-warning');
-        this.modifierText.append(...StatObject.formatDescriptions(this.recipe.stats, formatter));
+        if (!this.recipe.isUnlocked)
+            this.fixtureImage.classList.add('img-gray');
+        else
+            this.fixtureImage.classList.remove('img-gray');
+
+
+        const formatter = getElementDescriptionFormatter('div', this.recipe.isUnlocked ? 'mb-1' : 'mb-1 text-combat-smoke modifier-box locked');
+        this.toggleRecipeSpecial();
+
+        const descs = StatObject.getDescriptions(this.recipe.stats);
+        descs.forEach((desc, i) => {
+            const isShiny = this.recipe.shinyMods?.includes(i + 1); //isshiny is an array of 1-indexed numbers, to make some recipes fancier
+            if (isShiny) {
+                desc.text = `<span class="m-1 font-size-sm ${this.recipe.isUnlocked ? 'construction-victory' : 'text-warning'}">${desc.text}</span>`;
+            } else {
+                desc.text = `<span class="font-size-sm ${this.recipe.isUnlocked ? 'text-success' : 'text-combat-smoke modifier-box locked'}">${desc.text}</span>`;
+            }
+        });
+        const elements = descs.map(d => {
+            const el = createElement('div', {
+                className: 'mb-1 font-w600',
+                innerHTML: d.text
+            });
+            return el;
+        });
+        this.modifierText.append(...elements);
         if (this.recipe.doesGrantItems) {  // This is currently never used, but might be useful to know about.
             this.recipe.grantItems.forEach(iq => {
                 var nodes = templateRielkLangStringWithNodes('DESCRIPTION_ADDS_ITEM', {
@@ -79,17 +139,19 @@ class ConstructionModifierDisplayElement extends HTMLElement {
             });
         }
 
-        if (this.recipe.changeFunc != undefined) {
-            let text = templateRielkLangString(`MODIFIER_DATA_${this.recipe.changeFunc}`, {tierNum: this.recipe.id.slice(-1) });
-            if(text.startsWith("UNDEFINED TRANSLATION")) //if we ever add a modifier that starts with UNDEFINED TRANSLATION, we'll need to make this more robust
-            text = templateRielkLangString(`MODIFIER_DATA_${this.recipe.changeFunc}_${this.recipe.id.slice(-1)}`, {tierNum: this.recipe.id.slice(-1) });
+        /*  if (this.recipe.changeFunc != undefined) {
+              let text = templateRielkLangString(`MODIFIER_DATA_${this.recipe.changeFunc}`, {tierNum: this.recipe.id.slice(-1) });
+              if(text.startsWith("UNDEFINED TRANSLATION")) //if we ever add a modifier that starts with UNDEFINED TRANSLATION, we'll need to make this more robust
+              text = templateRielkLangString(`MODIFIER_DATA_${this.recipe.changeFunc}_${this.recipe.id.slice(-1)}`, {tierNum: this.recipe.id.slice(-1) });
+  
+              this.modifierText.append(formatter({ text: text }));
+          }*/
 
-            this.modifierText.append(formatter({ text: text }));
-        }
     }
 
     setLocked(recipe, construction) {
         hideElement(this.fixtureImage);
+        hideElement(this.tierOverlay);
         hideElement(this.modifierContainer);
         this.modifierContainer.classList.remove('d-flex');
         toggleDangerSuccess(this.level, construction.level >= recipe.level);
@@ -98,6 +160,7 @@ class ConstructionModifierDisplayElement extends HTMLElement {
     }
     setUnlocked() {
         showElement(this.fixtureImage);
+        showElement(this.tierOverlay);
         showElement(this.modifierContainer);
         this.modifierContainer.classList.add('d-flex');
         hideElement(this.unlock);

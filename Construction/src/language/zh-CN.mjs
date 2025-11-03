@@ -211,12 +211,7 @@ export const language = {
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% 收获时有机会在农业中重新获得树种',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% 动作和材料用于在建造中制造家具',
     'MODIFIER_DATA_increaseConstructionActionsToUpgrade': '+${value}% 动作和材料用于在建造中制造家具',
-    'MODIFIER_DATA_unlockPlot_1': '解锁农业中的菜地',
-    'MODIFIER_DATA_unlockPlot_2': '解锁农业中的草药地',
-    'MODIFIER_DATA_unlockPlot_3': '解锁农业中的菜地',
-    'MODIFIER_DATA_unlockPlot_4': '解锁农业中的草药地',
-    'MODIFIER_DATA_unlockPlot_5': '解锁农业中的果树地',
-
+'MODIFIER_DATA_spoofUnlockPlot': '在 ${categoryName} 分类中解锁一个农业地块',
     'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '在${skillName}中制作 ${categoryName} 时完成额外动作的概率 -${value}%',
     'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '在${skillName}中制作 ${categoryName} 时完成额外动作的概率 +${value}%',
     'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '使用效率制作 ${categoryName} 时完成额外动作 -${value}',

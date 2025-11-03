@@ -72,7 +72,7 @@ export class ConstructionFixture extends RealmedObject {
         this.stepCost = construction.getRecipeCosts(this.currentRecipe);
         const actionItems = new Map();
         const actionCurrencies = new Map();
-        const reduction = construction.game.modifiers.getValue("rielkConstruction:constructionActionsToUpgrade", this.currentRecipe) / 100;
+        const reduction = construction.game.modifiers.getValue("rielkConstruction:constructionActionsToUpgrade", ModifierQuery.EMPTY) / 100;
         const remainingitems = [];
         this.stepCost._items.forEach((total, item) => {
             const reducedtotal = Math.ceil(total * (1 + reduction));

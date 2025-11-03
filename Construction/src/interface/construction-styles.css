@@ -9,13 +9,27 @@ body.darkMode .bg-rielk-construction,.bg-rielk-construction {
 .border-rielk-construction {
     border-color: #e7874f!important;
 }
+.border-rielk-nonshiny {
+    border-color: #c8c6c3!important;
+}
 
-
+.border-rielk-shiny {
+    border-color: #fca32f!important;
+}
+.img-gray {
+  filter: grayscale(1) brightness(0.9);
+}
 body.darkMode.superDark .bg-rielk-construction
 {
     background-color: #000!important
 }
+.modifier-box.locked {
+  opacity: 0.85;
+}
 
+body.darkMode .text-danger.fuck-you {
+  color: #fca32f !important;
+}
 .mastery.filled {
   background-color: #fca32f;
     height: 4px;               
@@ -28,7 +42,7 @@ body.darkMode.superDark .bg-rielk-construction
     font-weight: bold;   
 }
 .construction-victory {
-      color: #fca32f;       /* I like both names for it */
+      color: #fca32f!important;       /* I like both names for it */
     font-weight: bold;   
 }
 .image-wrapper {

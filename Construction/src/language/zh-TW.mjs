@@ -192,11 +192,7 @@ export const language = {
 'ITEM_DESCRIPTION_Beam_Box_I': '包含基礎木樑',
 'ITEM_DESCRIPTION_Beam_Box_II': '包含常規木樑',
 
-    'MODIFIER_DATA_unlockPlot_1': '解鎖農業中的菜園',
-    'MODIFIER_DATA_unlockPlot_2': '解鎖農業中的草藥園',
-    'MODIFIER_DATA_unlockPlot_3': '解鎖農業中的菜園',
-    'MODIFIER_DATA_unlockPlot_4': '解鎖農業中的草藥園',
-    'MODIFIER_DATA_unlockPlot_5': '解鎖農業中的果樹園',
+'MODIFIER_DATA_spoofUnlockPlot': '在 ${categoryName} 分類中解鎖一個農業地塊',
     'MODIFIER_DATA_decrease_skillEfficiencyChance': '在${skillName}中一次完成額外動作的機率 -${value}%',
     'MODIFIER_DATA_increase_skillEfficiencyChance': '在${skillName}中一次完成額外動作的機率 +${value}%',
     'MODIFIER_DATA_decrease_skillEfficiencyPotency': '啟動效率時額外材料或進度 -${value}',

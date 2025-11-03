@@ -30,12 +30,19 @@ body.darkMode.superDark .bg-rielk-construction
 body.darkMode .text-danger.fuck-you {
   color: #fca32f !important;
 }
-.mastery.filled {
+.mastery.filled1 {
   background-color: #fca32f;
     height: 4px;               
   transition: width 0.3s ease;
   border-radius: 2px;
 }
+.mastery.filled2 {
+  background-color: #ffca7b;
+    height: 4px;               
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
 
 .construction-success {
       color: #fca32f;       /* text color */

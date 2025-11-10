@@ -14,9 +14,15 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
             if (data.grantItem != undefined)
                 this.grantItems = game.items.getQuantities(data.grantItem);
             if (data.changeFunc != undefined)
-                this.changeFunc = data.changeFunc;
+                if (data.changeFunc !== undefined)
+                    this.changeFunc = Array.isArray(data.changeFunc)
+                        ? data.changeFunc
+                        : [data.changeFunc];
             if (data.shinyMods != undefined)
-                this.shinyMods = data.shinyMods
+                this.shinyMods = data.shinyMods;
+            if (data.order != undefined)
+                this.order = data.order;
+
         } catch (e) {
             throw new DataConstructionError(ConstructionFixtureRecipes.name, e, this.id);
         }
@@ -70,14 +76,15 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
 
 
     callChangeFunc() {
-        const effectFunc = EffectRegistry[this.changeFunc]; // look up function by name
-        if (typeof effectFunc === "function") {
-            effectFunc.call(this, this);
-        } else {
-            console.warn(`Effect not found in registry, going insane: ${this.changeFunc}`);
-        }
+        this.changeFunc.forEach(funcName => {
+            const effectFunc = EffectRegistry[funcName];
+            if (typeof effectFunc === "function") {
+                effectFunc.call(this, this);
+            } else {
+                console.warn(`Effect not found in registry, going insane: ${funcName}`);
+            }
+        });
     }
-
     makeProgress(prog) {
         for (let a = 0; a < Math.floor(prog); a++) // real high school coding hours
         {
@@ -94,8 +101,8 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
                 if (!document.querySelector('rielk-construction-upgrades-panel')?.classList.contains('d-none'))
                     this.skill.ui.showFixtureUnlocks(this.fixture.room, this.fixture, this.skill);
                 this.fixture.getCurrentBuildRecipeCosts(game.construction);
-                if(this.fixture.currentTier != this.fixture.maxTier)
-                this.skill.renderQueue.renderfixtureItemUpdates = true;
+                if (this.fixture.currentTier != this.fixture.maxTier)
+                    this.skill.renderQueue.renderfixtureItemUpdates = true;
                 this.skill.renderQueue.menu = true;
                 return false;
 

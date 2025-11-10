@@ -16,6 +16,9 @@ body.darkMode .bg-rielk-construction,.bg-rielk-construction {
 .border-rielk-shiny {
     border-color: #fca32f!important;
 }
+.orange-heart{
+filter: hue-rotate(40deg) brightness(1.45) saturate(3) contrast(3);
+}
 .img-gray {
   filter: grayscale(1) brightness(0.9);
 }
@@ -25,6 +28,28 @@ body.darkMode.superDark .bg-rielk-construction
 }
 .modifier-box.locked {
   opacity: 0.85;
+}
+.btn-construction {
+	color: #fff;
+	background-color: #fca32f;
+	border-color: #fca32f;
+}
+.btn-construction:hover {
+	color: #fff;
+	background-color: #d88b27;
+	border-color: #c07616;
+}
+.btn-construction:focus,
+.btn-construction.focus {
+	color: #fff;
+	background-color: #d88b27;
+	border-color: #c07616;
+	box-shadow: 0 0 0 0.2rem rgba(220, 167, 107, 0.5);
+}
+
+
+body.darkMode .text-success.fuck-you {
+  color: #fca32f !important;
 }
 
 body.darkMode .text-danger.fuck-you {
@@ -43,10 +68,13 @@ body.darkMode .text-danger.fuck-you {
   border-radius: 2px;
 }
 
+.construction-bar {
+      background-color: #fca32f!important;       /* text color */
+}
+
 
 .construction-success {
       color: #fca32f;       /* text color */
-    font-weight: bold;   
 }
 .construction-victory {
       color: #fca32f!important;       /* I like both names for it */

@@ -23,6 +23,14 @@ export function patchModsBeforeDataReg(ctx, modList) {
             color: '#64b5f6'
         });
     }
+        if (modList.includes('"The future is now..." Text remover')) {
+        compatMessages.push({
+            name: '"The future is..." Remover',
+            description: 'You won\'t see that annoying popup on Efficiency either..',
+            color: '#f5d522ff'
+        });
+    }
+
 
     if (compatMessages.length > 0 && (setLang == 'en' || setLang == 'carrot' || setLang == 'lemon')) {
         console.groupCollapsed(

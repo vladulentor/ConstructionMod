@@ -35,7 +35,7 @@ class TierMasteryBonusElement extends HTMLElement {
         // Style
             if (bonus.completed) {
                 this.tierCount.classList.remove('text-danger');
-                this.tierCount.classList.add('construction-success');
+                this.tierCount.classList.add('construction-victory');
             }
 
 

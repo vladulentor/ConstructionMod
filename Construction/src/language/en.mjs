@@ -234,7 +234,7 @@ export const language = {
     'BONFIRE_ROARING_MOD': 'Roaring Modifier:',
     'TOASTS_NO_LOGS_FOR_STOKE': 'You do not have enough logs to stoke your Bonfire!',
     'MODIFIER_DATA_flatAshGainedOnCookingFailure': '${value} Ash gained when failing to Cook Food',
-    'MODIFIER_DATA_spoofUpgradeCookingEquipment_1': '${value}% increased Cooking Bonuses from Non-Skillcape Cooking Equipmen',
+    'MODIFIER_DATA_spoofUpgradeCookingEquipment_1': '${value}% increased Cooking Bonuses from Non-Skillcape Cooking Equipment',
     'MODIFIER_DATA_spoofUpgradeCookingEquipment_2': '${value}% increased Cooking Bonuses from Skillcapes and Consumables',
     'MODIFIER_DATA_increasePerfectFoodHealing': '${value}% Food healing value from Perfectly Cooked Food',
     'TOOLTIP_NEW_EFFECTS': 'This room\'s furniture has recently had its <span class="construction-victory">effects</span> updated!',

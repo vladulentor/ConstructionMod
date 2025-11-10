@@ -41,7 +41,7 @@ class RielkConstructionMasteryElement extends HTMLElement {
 
       // color fill
       const bar = document.createElement("div");
-      bar.className =  i % 2 == 0 ? "mastery filled1" : "mastery filled2";
+      bar.className =   "mastery filled1";
       bar.setAttribute("role", "progressbar");
       bar.style.height = "100%";          // match container
       bar.style.width = "0%";             // start empty

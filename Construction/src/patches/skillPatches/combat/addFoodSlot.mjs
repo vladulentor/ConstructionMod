@@ -1,4 +1,4 @@
-export function addFoodSlot(tier) {
+export function addFoodSlot(tier) { // Should this be in cooking?
     const food = game.combat.player.food;
     if (food.maxSlots == 3) {
         food.maxSlots = 4;

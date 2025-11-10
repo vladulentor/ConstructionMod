@@ -66,7 +66,7 @@ export const language = {
     'MENU_TEXT_ALL_ACTIVE_CONSTRUCTION_MODIFIERS': 'All Active Construction Modifiers',
     'MENU_HOUSE': 'House',
     'MENU_VIEW_HOUSE_TIERS': 'View House Tier Bonuses',
-    'MENU_UNLOCKED_MASTERY_FOR_TIER': 'Your House Tier has increased to <span class="construction-success">Tier ${tiername}</span>',
+    'MENU_UNLOCKED_MASTERY_FOR_TIER': 'Your House Tier has increased to <span class="construction-victory">Tier ${tiername}</span>',
     'MENU_HOUSE_TIER_BONUS_UNLOCKED': 'House Tier Bonus Unlocked!',
     'MENU_HOUSE_COMPLETION': 'House Completion',
     'MENU_BUILT': 'Built',
@@ -115,7 +115,6 @@ export const language = {
     'PET_NAME_ChuckTheForeman': 'Chuck the Foreman',
     'PET_NAME_Scoobs': 'Scoobs',
     'PET_DESCRIPTION_Scoobs': 'Reach House Tier 5',
-
     'ITEM_NAME_Construction_Skillcape': 'Construction Skillcape',
     'ITEM_NAME_Builders_Hat': 'Builders Hat',
     'ITEM_NAME_Builders_Body': 'Builders Body',
@@ -206,6 +205,40 @@ export const language = {
     'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra Materials or Progress made when completing extra actions when making ${categoryName} in ${skillName}',
     'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra Materials or Progress made when completing extra actions while crafting ${categoryName} in ${skillName}',
 
+    'MODIFIER_DATA_spoofFoodSlot': '${value} Food Slot',
+    'MODIFIER_DATA_unlockOverHeal': 'Manually Eating can Overheal, exceeding Max Hitpoints',
+    'MODIFIER_DATA_spoofUpgradeRegenPot': 'Upgrade "Regeneration Potion" to include Overheal effects',
+    'MODIFIER_DATA_autoeatOverheal': 'Auto Eat can Overheal',
+    'MODIFIER_DATA_regenOverheal': 'Passive Regeneration can Overheal',
+    'MODIFIER_DATA_maxOverheal': '${value}% of Max Hitpoints added to Overheal Cap',
+    'MODIFIER_DATA_spoofUpgradeRoaring': 'Roaring Bonuses are ${value}% stronger.',
+    'MODIFIER_DATA_unlockRoaring': 'Can stoke Bonfires to receive Bonuses to other Skills based on the Logs burned',
+    'MODIFIER_DATA_roaringLogCostReduction': '${value} Logs required to Stoke Bonfires in Firemaking',
+    'MODIFIER_DATA_spoofUpgradeKindlingPotion': 'Upgrade "Controlled Heat Potions" to reduce Bonfire stoke costs',
+    'MODIFIER_DATA_spoofUnlockBranchSaplings': 'Rarely get Sapling Branches that contain Tree Seeds from Firemaking',
+    'MODIFIER_DATA_spoofUpgradeSaplingChance': 'Triple chance of getting Sapling Branches from Firemaking',
+    'SHOP_PURCHASE_Perpetual_Haste':'-15% Crafting, Construction & Fletching Interval',
+    'ITEM_DESCRIPTION_BEAR_DEVIL_SYNERGY':'While using the Controlled Heat Potions, +5% Firemaking Skill XP and Bonfire duration increased by 15%. Charges are used per Firemaking action and lit Bonfire.',
+    
+    'RIELK_CONMOD_FOCUSEDCOOKING_1': '+3% Perfect Cook chance, Success chance, and Cooking Mastery XP while not Passive Cooking',
+    'ITEM_NAME_Sapling_Branch': 'Sapling Branch',
+    'ITEM_DESCRIPTION_Sapling_Branch': 'An unburnt branch. Contains Tree Seeds.',
+
+
+    'RIELK_CONMOD_FOCUSEDCOOKING_2': '+5% Perfect Cook, Doubling, and Preservation Chance in Cooking while not Passive Cooking',
+    'RIELK_CONMOD_FOCUSEDCOOKING_3': '+7% Perfect Cook Chance, Additional Perfect Item Chance, and Preservation Cap in Cooking while not Passive Cooking',
+    'MENU_TEXT_STOKE_BONFIRE': 'Stoke Bonfire (Costs ${qty} ${logName})',
+    'MENU_BONFIRE_SOURCE': '${logName} Bonfire',
+
+    'BONFIRE_ROARING_NOTICE': 'Roaring Bonfires deplete while their corresponding Skill is Active',
+    'BONFIRE_ROARING_MOD': 'Roaring Modifier:',
+    'TOASTS_NO_LOGS_FOR_STOKE': 'You do not have enough logs to stoke your Bonfire!',
+    'MODIFIER_DATA_flatAshGainedOnCookingFailure': '${value} Ash gained when failing to Cook Food',
+    'MODIFIER_DATA_spoofUpgradeCookingEquipment_1': '${value}% increased Cooking Bonuses from Non-Skillcape Cooking Equipmen',
+    'MODIFIER_DATA_spoofUpgradeCookingEquipment_2': '${value}% increased Cooking Bonuses from Skillcapes and Consumables',
+    'MODIFIER_DATA_increasePerfectFoodHealing': '${value}% Food healing value from Perfectly Cooked Food',
+    'TOOLTIP_NEW_EFFECTS': 'This room\'s furniture has recently had its <span class="construction-victory">effects</span> updated!',
+
     'ITEM_NAME_Twice_Measured_Potion_I': 'Twice-Measured Potion I',
     'ITEM_NAME_Twice_Measured_Potion_II': 'Twice-Measured Potion II',
     'ITEM_NAME_Twice_Measured_Potion_III': 'Twice-Measured Potion III',
@@ -214,7 +247,7 @@ export const language = {
 
     'THIEVING_NPC_BRICKLAYER': 'Bricklayer',
     'THIEVING_NPC_CONSTRUCT': 'Construct',
-        'ITEM_NAME_Steel_Toed_Boots': 'Steel-Toed Boots',
+    'ITEM_NAME_Steel_Toed_Boots': 'Steel-Toed Boots',
     'ITEM_NAME_Mystic_Rotating_Saw': 'Mystic Rotating Saw',
 
 
@@ -242,7 +275,7 @@ export const language = {
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
     'TOASTS_EFFICIENCY': 'You managed to complete multiple actions at once',
 
-    'ENEMY_NAME_ConstructGiant': 'Iron Giant${Icon}',
+    'ENEMY_NAME_ConstructGiant': 'Iron Giant',
     'ENEMY_NAME_BarnRaiser': 'Barn Raiser',
 
     'SKILL_CATEGORY_Leather_Slivers': 'Leather Slivers',
@@ -269,7 +302,7 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': 'Fire Pit',
     'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': 'Composter',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': 'Forge',
-    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Larder',
+    'CONSTRUCTION_FIXTURE_NAME_ Fridge': 'Pantry',
     'CONSTRUCTION_FIXTURE_NAME_ Jungle_Gym': 'Jungle Gym',
     'CONSTRUCTION_FIXTURE_NAME_ Lake': 'Lake',
     'CONSTRUCTION_FIXTURE_NAME_ Mines': 'Mine',

@@ -13,7 +13,7 @@
                   "id": "melvorD:GP",
                   "quantity": 10000000
                 },
-                       {
+                {
                   "id": "melvorD:GP",
                   "quantity": 15000000
                 }
@@ -49,6 +49,39 @@
     ]
   },
   "modifications": {
+    "skillData": [
+      {
+        "skillID": "melvorD:Firemaking",
+        "data": {
+          "logs": [
+            {
+              "id": "melvorAoD:Unholy_Logs",
+              "roaringSkill": "melvorD:Prayer",
+              "modifiers": {
+                "unholyMarkOnHit": 2
+              }
+            },
+            {
+              "id": "melvorAoD:Cursed_Logs",
+              "roaringSkill": "melvorD:Hitpoints",
+              "modifiers": {
+                "flatBarrierDamage": 3
+              }
+            },
+            {
+              "id": "melvorD:Redwood_Logs",
+              "modifiers": {
+                "sieveToolLevel": 3,
+                "trowelToolLevel": 3,
+                "brushToolLevel": 3,
+                "shovelToolLevel": 3
+              },
+              "roaringSkill": "melvorAoD:Archaeology"
+            }
+          ]
+        }
+      }
+    ],
     "gamemodes": [
       {
         "id": "melvorAoD:AncientRelics",
@@ -90,7 +123,7 @@
         }
       }
     ],
-        "shopPurchases": [
+    "shopPurchases": [
       {
         "id": "melvorD:Iron_Axe",
         "cost": [
@@ -314,20 +347,21 @@
             "gamemodeID": "melvorAoD:AncientRelics",
             "newCosts": {
               "items": [
-              {
-              "id": "rielkConstruction:Normal_Planks",
-              "quantity": 20
-            },
-            {
-              "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
-              "quantity": 15
-            }
+                {
+                  "id": "rielkConstruction:Normal_Planks",
+                  "quantity": 20
+                },
+                {
+                  "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
+                  "quantity": 15
+                }
               ],
               "currencies": [
                 {
                   "currency": "melvorD:GP",
                   "type": "Fixed",
-                  "cost": 1000                }
+                  "cost": 1000
+                }
               ]
             }
           }
@@ -341,13 +375,13 @@
             "newCosts": {
               "items": [
                 {
-              "id": "rielkConstruction:Oak_Planks",
-              "quantity": 75
-            },
-            {
-              "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
-              "quantity": 50
-            }
+                  "id": "rielkConstruction:Oak_Planks",
+                  "quantity": 75
+                },
+                {
+                  "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
+                  "quantity": 50
+                }
               ],
               "currencies": [
                 {
@@ -367,14 +401,14 @@
             "gamemodeID": "melvorAoD:AncientRelics",
             "newCosts": {
               "items": [
-               {
-              "id": "rielkConstruction:Teak_Planks",
-              "quantity": 150
-            },
-            {
-              "id": "rielkConstruction:Red_Dhide_Leather_Straps",
-              "quantity": 100
-            }
+                {
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 150
+                },
+                {
+                  "id": "rielkConstruction:Red_Dhide_Leather_Straps",
+                  "quantity": 100
+                }
               ],
               "currencies": [
                 {
@@ -395,13 +429,13 @@
             "newCosts": {
               "items": [
                 {
-              "id": "rielkConstruction:Teak_Planks",
-              "quantity": 350
-            },
-            {
-              "id": "rielkConstruction:Black_Dhide_Leather_Straps",
-              "quantity": 300
-            }
+                  "id": "rielkConstruction:Teak_Planks",
+                  "quantity": 350
+                },
+                {
+                  "id": "rielkConstruction:Black_Dhide_Leather_Straps",
+                  "quantity": 300
+                }
               ],
               "currencies": [
                 {
@@ -421,14 +455,14 @@
             "gamemodeID": "melvorAoD:AncientRelics",
             "newCosts": {
               "items": [
-               {
-              "id": "rielkConstruction:Mahogany_Planks",
-              "quantity": 750
-            },
-            {
-              "id": "rielkConstruction:Black_Dhide_Leather_Straps",
-              "quantity": 500
-            }
+                {
+                  "id": "rielkConstruction:Mahogany_Planks",
+                  "quantity": 750
+                },
+                {
+                  "id": "rielkConstruction:Black_Dhide_Leather_Straps",
+                  "quantity": 500
+                }
               ],
               "currencies": [
                 {
@@ -448,14 +482,14 @@
             "gamemodeID": "melvorAoD:AncientRelics",
             "newCosts": {
               "items": [
-               {
-              "id": "rielkConstruction:Redwood_Planks",
-              "quantity": 1500
-            },
-            {
-              "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
-              "quantity": 750
-            }
+                {
+                  "id": "rielkConstruction:Redwood_Planks",
+                  "quantity": 1500
+                },
+                {
+                  "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
+                  "quantity": 750
+                }
               ],
               "currencies": [
                 {
@@ -630,7 +664,7 @@
           }
         ]
       },
-       {
+      {
         "id": "melvorD:Dragon_Pickaxe",
         "cost": [
           {
@@ -656,7 +690,7 @@
             }
           }
         ]
-       }
+      }
     ]
   }
 }

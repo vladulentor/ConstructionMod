@@ -1,0 +1,35 @@
+{
+  "$schema": "https://melvoridle.com/assets/schema/gameData.json",
+  "namespace": "rielkConstruction",
+  "data": {
+    "items":[
+        {
+            
+        "itemType": "Item",
+        "id": "Magic_Planks",
+        "name": "Magic Planks",
+        "category": "Construction",
+        "type": "Planks",
+        "media": "assets/items/planks_magic.png",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 500,
+        "customDescription": "Yes"  
+        }
+    ],
+        "itemUpgrades": [
+      {
+        "upgradedItemID": "rielkConstruction:Redwood_Planks",
+        "itemCosts": [
+          {
+            "id": "rielkConstruction:Magic_Planks",
+            "quantity": 1
+          }
+        ],
+        "rootItemIDs": [
+          "rielkConstruction:Magic_Planks"
+        ]
+      }
+    ]
+}}

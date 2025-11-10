@@ -18,7 +18,7 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
         this._chanceSpans.push(this._chanceTotalSpan);
 
         this._potencySpans.push(createElement('span', { className: 'text-white text-left col-8 font-w700 pl-2', text: potencyLabel }));
-        this._potencyTotalSpan = createElement('span', { className: 'construction-success col-4 pr-0 text-right font-w400' });
+        this._potencyTotalSpan = createElement('span', { className: 'construction-victory col-4 pr-0 text-right font-w400' });
         this._potencySpans.push(this._potencyTotalSpan);
     }
     addChanceSources(key, query = ModifierQuery.EMPTY, mult = 1) {
@@ -97,7 +97,7 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
 
     getSpans() {
         this._chanceTotalSpan.textContent = Modifier.formatTotalValue(true, this._chanceTotal, 2, true);
-        if (this._potencyTotal >= 3) { this._potencyTotalSpan.classList.remove('text-warning'); this._potencyTotalSpan.classList.add('construction-success'); }
+        if (this._potencyTotal >= 3) { this._potencyTotalSpan.classList.remove('text-warning'); this._potencyTotalSpan.classList.add('construction-victory'); }
         this._potencyTotalSpan.textContent = `x${Number.isInteger(this._potencyTotal) ? this._potencyTotal : this._potencyTotal.toFixed(2)}`;
 
         return {

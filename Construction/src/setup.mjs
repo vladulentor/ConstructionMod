@@ -65,6 +65,9 @@ class Setup {
             await this.ctx.gameData.addPackage('src/data/data_AoD.json');
         if (cloudManager.hasTotHEntitlementAndIsEnabled)
             await this.ctx.gameData.addPackage('src/data/data_TotH.json');
+
+        await this.ctx.gameData.addPackage('src/data/data_dummy.json');
+        // The data dummy file has an important reason for existing that would take like 5+ paragraphs to explain and has to do with the way the game adds data packages.
     }
 
     async modCompatibility(ctx) {

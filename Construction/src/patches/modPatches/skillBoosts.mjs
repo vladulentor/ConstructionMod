@@ -21,8 +21,6 @@ export function skillBoostsCompatibility(ctx) {
     });
     ctx.patch(skillBoosts.__proto__.constructor, 'createPetTooltip').after(function (_, container, item) {
         if (item.id === "rielkConstruction:Scoobs") {
-            
-
             let progress = game.construction.recipeCountByTier.reduce((a, b) => a + b, 0);
             let goal = game.construction.recipeNumber * game.construction.tierMasteries.size;
             const miscContainer = container.querySelector('.sb-font-sm');

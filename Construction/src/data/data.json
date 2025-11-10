@@ -197,19 +197,6 @@
       },
       {
         "itemType": "Item",
-        "id": "Magic_Planks",
-        "name": "Magic Planks",
-        "category": "Construction",
-        "type": "Planks",
-        "media": "assets/items/planks_magic.png",
-        "ignoreCompletion": true,
-        "obtainFromItemLog": false,
-        "golbinRaidExclusive": false,
-        "sellsFor": 500,
-        "customDescription": "Yes"
-      },
-      {
-        "itemType": "Item",
         "id": "Redwood_Planks",
         "name": "Redwood Planks",
         "category": "Construction",
@@ -609,18 +596,124 @@
           }
         ]
       },
-      {
-        "itemType": "Item",
-        "id": "Magitech_Fragment",
-        "name": "Magitech Fragment",
-        "category": "Thieving",
-        "type": "Items",
-        "media": "assets/items/straps_red_d-hide_leather.png",
+       {
+        "itemType": "Weapon",
+        "id": "Mystic_Rotating_Saw",
+        "name": "Mystic Rotating Saw",
+        "category": "Construction",
+        "type": "Weapon",
+        "media": "assets/items/mystic_rotating_saw.png",
         "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 100000
+        "sellsFor": 65000,
+        "tier": "none",
+        "validSlots": [
+          "Weapon",
+          "Passive"
+        ],
+        "occupiesSlots": [
+          "Shield"
+        ],
+        "equipRequirements": [],
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 1100
+          },
+          {
+            "key": "stabAttackBonus",
+            "value": 15
+          },
+          {
+            "key": "slashAttackBonus",
+            "value": 3
+          },
+          {
+            "key": "blockAttackBonus",
+            "value": 0
+          }
+        ],
+        "attackType": "melee",
+        "modifiers": {
+          "flatSkillInterval": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "subcategoryID": "rielkConstruction:Planks",
+              "value": -3000
+            }
+          ],
+          "flatBasePrimaryProductQuantity": [
+            {
+              "value": -2,
+              "skillID": "rielkConstruction:Construction",
+              "subcategoryID": "rielkConstruction:Planks"
+            }
+          ]
+        }
       },
+       {
+        "itemType": "Equipment",
+        "id": "Steel_Toed_Boots",
+        "name": "Steel-Toed Boots",
+        "category": "Construction",
+        "type": "Equipment",
+        "media": "assets/items/steel-toed_boots.png",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 25000,
+        "tier": "none",
+        "validSlots": [
+          "Boots",
+          "Passive"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [],
+        "equipmentStats": [
+          {
+            "key": "rangedAttackBonus",
+            "value": -4
+          },
+          {
+            "key": "magicAttackBonus",
+            "value": -6
+          },
+          {
+            "key": "meleeDefenceBonus",
+            "value": 12
+          },
+          {
+            "key": "rangedDefenceBonus",
+            "value": 8
+          },
+          {
+            "key": "rangedDefenceBonus",
+            "value": 4
+          }
+        ],
+        "modifiers": {
+          "skillXP": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "value": 2
+            }
+          ],
+          "rielkConstruction:skillEfficiencyChance": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "value": 4
+            }
+          ],
+          "rielkConstruction:skillEfficiencyPotency": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "value": 0.3
+            }
+          ]
+        }
+      },
+
       {
         "id": "Beam_Box_I",
         "name": "Beam Box I",
@@ -729,6 +822,57 @@
             "minQuantity": 1,
             "maxQuantity": 100,
             "weight": 5
+          }
+        ]
+      },
+      {
+        "id": "Sapling_Branch",
+        "name": "Sapling Branch",
+        "category": "Openable",
+        "type": "Chest",
+        "media": "assets/items/sapling_branch.png",
+        "customDescription": "An unburnt branch. Contains tree seeds.",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 600,
+        "itemType": "Openable",
+        "dropTable": [
+          {
+            "itemID": "melvorD:Oak_Tree_Seed",
+            "minQuantity": 1,
+            "maxQuantity": 2,
+            "weight": 57
+          },
+          {
+            "itemID": "melvorD:Willow_Tree_Seed",
+            "minQuantity": 1,
+            "maxQuantity": 2,
+            "weight": 45
+          },
+          {
+            "itemID": "melvorD:Maple_Tree_Seed",
+            "minQuantity": 1,
+            "maxQuantity": 2,
+            "weight": 38
+          },
+          {
+            "itemID": "melvorD:Yew_Tree_Seed",
+            "minQuantity": 1,
+            "maxQuantity": 2,
+            "weight": 25
+          },
+          {
+            "itemID": "melvorF:Apple_Tree_Seeds",
+            "minQuantity": 1,
+            "maxQuantity": 2,
+            "weight": 20
+          },
+            {
+            "itemID": "melvorD:Magic_Tree_Seed",
+            "minQuantity": 1,
+            "maxQuantity": 2,
+            "weight": 14
           }
         ]
       },
@@ -901,20 +1045,6 @@
             }
           ]
         }
-      }
-    ],
-    "itemUpgrades": [
-      {
-        "upgradedItemID": "rielkConstruction:Redwood_Planks",
-        "itemCosts": [
-          {
-            "id": "rielkConstruction:Magic_Planks",
-            "quantity": 1
-          }
-        ],
-        "rootItemIDs": [
-          "rielkConstruction:Magic_Planks"
-        ]
       }
     ],
     "attacks": [
@@ -3078,7 +3208,8 @@
                 "rielkConstruction:Fire_Pit",
                 "rielkConstruction:Fridge",
                 "rielkConstruction:Oven"
-              ]
+              ],
+              "newTooltip": true
             },
             {
               "id": "Laboratory",
@@ -4109,6 +4240,11 @@
               "baseExperience": 22,
               "baseActionCost": 15,
               "categoryID": "rielkConstruction:House",
+              "order": [
+                "m",
+                "c",
+                "m"
+              ],
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Clay_Bricks",
@@ -4460,25 +4596,20 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Green_Dhide_Leather_Straps",
-                  "quantity": 200
+                  "quantity": 800
                 },
                 {
                   "id": "melvorD:Normal_Logs",
-                  "quantity": 200
+                  "quantity": 800
                 }
               ],
+              "shinyMods": [
+                1
+              ],
               "currencyCosts": [],
+              "changeFunc": "addSaplingBranchDrop",
               "modifiers": {
-                "skillInterval": [
-                  {
-                    "value": -2,
-                    "skillID": "melvorD:Cooking"
-                  },
-                  {
-                    "value": -2,
-                    "skillID": "melvorD:Firemaking"
-                  }
-                ]
+                "rielkConstruction:unlockRoaring": 1
               }
             },
             {
@@ -4490,29 +4621,22 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
-                  "quantity": 750
+                  "quantity": 1500
                 },
                 {
                   "id": "melvorD:Willow_Logs",
-                  "quantity": 750
+                  "quantity": 1500
                 },
                 {
                   "id": "melvorF:Warm_Beanie",
                   "quantity": 1
                 }
               ],
+              "changeFunc": ["upgradeFirePotions","addSaplingBranchDrop"],
               "currencyCosts": [],
               "modifiers": {
-                "masteryXP": [
-                  {
-                    "value": 3,
-                    "skillID": "melvorD:Cooking"
-                  },
-                  {
-                    "value": 3,
-                    "skillID": "melvorD:Firemaking"
-                  }
-                ]
+                "rielkConstruction:spoofUpgradeKindlingPotion": 1,
+                "rielkConstruction:spoofUnlockBranchSaplings":1
               }
             },
             {
@@ -4537,14 +4661,11 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillInterval": [
+                "firemakingBonfireInterval": 10,
+                "skillPreservationChance": [
                   {
-                    "value": -2,
-                    "skillID": "melvorD:Cooking"
-                  },
-                  {
-                    "value": -2,
-                    "skillID": "melvorD:Firemaking"
+                    "skillID": "melvorD:Firemaking",
+                    "value": 5
                   }
                 ]
               }
@@ -4558,42 +4679,45 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Black_Dhide_Leather_Straps",
-                  "quantity": 5500
+                  "quantity": 7500
                 },
                 {
                   "id": "melvorD:Yew_Logs",
-                  "quantity": 5500
+                  "quantity": 7500
                 },
                 {
                   "id": "melvorF:Flaming_Axe_Scroll",
-                  "quantity": 2000
+                  "quantity": 5000
                 },
                 {
                   "id": "melvorD:Burning_Amulet_of_Ash",
-                  "quantity": 1
+                  "quantity": 5
                 },
                 {
                   "id": "melvorD:Burning_Amulet_of_Gold",
-                  "quantity": 1
+                  "quantity": 5
                 },
                 {
                   "id": "melvorD:Burning_Amulet_of_Stardust",
-                  "quantity": 1
+                  "quantity": 5
                 },
                 {
                   "id": "melvorD:Burning_Amulet_of_XP",
-                  "quantity": 1
+                  "quantity": 5
                 }
               ],
               "currencyCosts": [],
               "modifiers": {
+                "additionalRandomSkillItemChance": [
+                  {
+                    "skillID": "melvorD:Firemaking",
+                    "itemID": "melvorD:Diamond",
+                    "value": 10
+                  }
+                ],
                 "masteryXP": [
                   {
-                    "value": 3,
-                    "skillID": "melvorD:Cooking"
-                  },
-                  {
-                    "value": 3,
+                    "value": 10,
                     "skillID": "melvorD:Firemaking"
                   }
                 ]
@@ -4608,43 +4732,27 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
-                  "quantity": 7500
+                  "quantity": 12500
                 },
                 {
                   "id": "melvorD:Magic_Logs",
-                  "quantity": 7500
+                  "quantity": 12500
                 },
                 {
                   "id": "melvorF:Quick_Burner_II",
-                  "quantity": 7500
+                  "quantity": 12500
                 },
                 {
                   "id": "melvorD:Generous_Fire_Spirit",
-                  "quantity": 25
+                  "quantity": 100
                 }
               ],
               "currencyCosts": [],
+              "shinyMods":[1,2],
+              "changeFunc": ["multiplyRoaringEffects","addSaplingBranchDrop"],
               "modifiers": {
-                "skillInterval": [
-                  {
-                    "value": -2,
-                    "skillID": "melvorD:Cooking"
-                  },
-                  {
-                    "value": -2,
-                    "skillID": "melvorD:Firemaking"
-                  }
-                ],
-                "masteryXP": [
-                  {
-                    "value": 3,
-                    "skillID": "melvorD:Cooking"
-                  },
-                  {
-                    "value": 3,
-                    "skillID": "melvorD:Firemaking"
-                  }
-                ]
+                "rielkConstruction:spoofUpgradeRoaring": 50,
+                "rielkConstruction:spoofUpgradeSaplingChance": 2
               }
             },
             {
@@ -5074,8 +5182,7 @@
               "currencyCosts": [],
               "modifiers": {
                 "foodHealingValue": 1,
-                "autoEatThreshold": 1,
-                "rielkConstruction:spoofFoodSlot": 1
+                "autoEatThreshold": 2
               }
             },
             {
@@ -5103,9 +5210,16 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
+              "changeFunc":"addFoodSlot",
               "modifiers": {
-                "rielkConstruction:maxAutoOverheal": 10,
-                "foodHealingValue": 2
+                "rielkConstruction:spoofFoodSlot": 1,
+                "foodHealingValue": 2,
+                "autoEatHPLimit": 3
               }
             },
             {
@@ -5117,29 +5231,36 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 3000
+                  "quantity": 5000
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 3000
+                  "quantity": 5000
                 },
                 {
                   "id": "melvorD:Mist_Rune",
-                  "quantity": 3000
+                  "quantity": 5000
                 },
                 {
                   "id": "melvorD:Hearty_Soup",
-                  "quantity": 3000
+                  "quantity": 5000
                 },
                 {
                   "id": "melvorF:Food_Box_I",
-                  "quantity": 3000
+                  "quantity": 5000
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
+              "changeFunc": "upgradeRegenPotions",
               "modifiers": {
-                "foodHealingValue": 3,
-                "autoEatThreshold": 1
+                "rielkConstruction:unlockOverHeal": 1,
+                "rielkConstruction:spoofUpgradeRegenPot": 1,
+                "rielkConstruction:maxOverheal": 10
               }
             },
             {
@@ -5151,23 +5272,23 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 5000
+                  "quantity": 7000
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 5000
+                  "quantity": 7000
                 },
                 {
                   "id": "melvorD:Cream_Corn_Soup",
-                  "quantity": 5000
+                  "quantity": 7000
                 },
                 {
                   "id": "melvorF:Food_Box_I",
-                  "quantity": 5000
+                  "quantity": 7000
                 },
                 {
                   "id": "melvorD:Frozen_Chest",
-                  "quantity": 100
+                  "quantity": 250
                 },
                 {
                   "id": "melvorF:Mystic_Water_Staff",
@@ -5176,7 +5297,9 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "foodHealingValue": 4
+                "foodHealingValue": 2,
+                "autoEatThreshold": 3,
+                "rielkConstruction:maxOverheal": 5
               }
             },
             {
@@ -5188,25 +5311,31 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Redwood_Planks",
-                  "quantity": 7000
+                  "quantity": 15000
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 7000
+                  "quantity": 15000
                 },
                 {
                   "id": "melvorD:Chicken_Soup",
-                  "quantity": 7000
+                  "quantity": 15000
                 },
                 {
                   "id": "melvorF:Food_Box_II",
-                  "quantity": 7000
+                  "quantity": 5000
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
               "modifiers": {
-                "foodHealingValue": 5,
-                "autoEatThreshold": 1
+                "rielkConstruction:autoeatOverheal": 1,
+                "autoEatHPLimit": 7,
+                "rielkConstruction:maxOverheal": 10
               }
             },
             {
@@ -6072,10 +6201,6 @@
                 {
                   "id": "melvorD:Bird_Nest",
                   "quantity": 2500
-                },
-                {
-                  "id": "melvorD:Woodcutting_Skillcape",
-                  "quantity": 1
                 }
               ],
               "currencyCosts": [],
@@ -6113,9 +6238,35 @@
                 }
               ],
               "currencyCosts": [],
+              "order": [
+                "m",
+                "c"
+              ],
+              "conditionalModifiers": [
+                {
+                  "condition": {
+                    "type": "FocusedCook"
+                  },
+                  "modifiers": {
+                    "perfectCookChance": 3,
+                    "successfulCookChance": 3,
+                    "masteryXP": [
+                      {
+                        "value": 3,
+                        "skillID": "melvorD:Cooking"
+                      }
+                    ]
+                  },
+                  "descriptionLang": "RIELK_CONMOD_FOCUSEDCOOKING_1"
+                }
+              ],
               "modifiers": {
-                "perfectCookChance": 1,
-                "successfulCookChance": 1
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Cooking"
+                  }
+                ]
               }
             },
             {
@@ -6127,15 +6278,15 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Limestone_Bricks",
-                  "quantity": 1300
+                  "quantity": 1500
                 },
                 {
                   "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
-                  "quantity": 700
+                  "quantity": 750
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 1300
+                  "quantity": 1500
                 },
                 {
                   "id": "melvorF:Cooking_Apron",
@@ -6143,9 +6294,14 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "doubleEffectsOfStuff",
+              "shinyMods": [
+                1
+                
+              ],
               "modifiers": {
-                "perfectCookChance": 2,
-                "successfulCookChance": 1
+                "rielkConstruction:spoofUpgradeCookingEquipment_1": 1
+                
               }
             },
             {
@@ -6169,7 +6325,7 @@
                 },
                 {
                   "id": "melvorF:Additional_Cooker_Scroll",
-                  "quantity": 1000
+                  "quantity": 3500
                 },
                 {
                   "id": "melvorF:Chefs_Spoon",
@@ -6177,9 +6333,35 @@
                 }
               ],
               "currencyCosts": [],
+              "order": [
+                "m",
+                "c"
+              ],
+              "conditionalModifiers": [
+                {
+                  "condition": {
+                    "type": "FocusedCook"
+                  },
+                  "modifiers": {
+                    "perfectCookChance": 5,
+                    "skillItemDoublingChance": [
+                      {
+                        "skillID": "melvorD:Cooking",
+                        "value": 5
+                      }
+                    ],
+                    "skillPreservationChance": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Cooking"
+                      }
+                    ]
+                  },
+                  "descriptionLang": "RIELK_CONMOD_FOCUSEDCOOKING_2"
+                }
+              ],
               "modifiers": {
-                "perfectCookChance": 2,
-                "successfulCookChance": 1
+                "passiveCookingInterval": -20
               }
             },
             {
@@ -6216,8 +6398,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "perfectCookChance": 2,
-                "successfulCookChance": 1
+                "flatCoalGainedOnCookingFailure": 35,
+                "rielkConstruction:flatAshGainedOnCookingFailure": 15
               }
             },
             {
@@ -6229,7 +6411,7 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Magic_Bricks",
-                  "quantity": 8000
+                  "quantity": 10000
                 },
                 {
                   "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
@@ -6237,7 +6419,7 @@
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 8000
+                  "quantity": 10000
                 },
                 {
                   "id": "melvorD:Carrot_Cake_Perfect",
@@ -6254,12 +6436,45 @@
                 {
                   "id": "melvorF:Chefs_Hat",
                   "quantity": 1
+                },
+                {
+                  "id": "melvorD:Cooking_Skillcape",
+                  "quantity": 1
                 }
               ],
               "currencyCosts": [],
+              "order": [
+                "m",
+                "m",
+                "c"
+              ],
+              "conditionalModifiers": [
+                {
+                  "condition": {
+                    "type": "FocusedCook"
+                  },
+                  "modifiers": {
+                    "perfectCookChance": 7,
+                    "additionalPerfectItemChance": 7,
+                    "skillPreservationCap": [
+                      {
+                        "skillID": "melvorD:Cooking",
+                        "value": 7
+                      }
+                    ]
+                  },
+                  "descriptionLang": "RIELK_CONMOD_FOCUSEDCOOKING_3"
+                }
+              ],
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
+              "changeFunc": "doubleEffectsOfStuff",
               "modifiers": {
-                "perfectCookChance": 3,
-                "successfulCookChance": 2
+                "rielkConstruction:spoofUpgradeCookingEquipment_2": 0.5,
+                "rielkConstruction:increasePerfectFoodHealing": 15
               }
             },
             {
@@ -8569,15 +8784,15 @@
         ]
       },
       {
-        "id": "spoofFoodSlot",
+        "id": "unlockRoaring",
         "inverted": true,
         "allowedScopes": [
           {
             "scopes": {},
             "descriptions": [
               {
-                "text": "Extra food slot",
-                "lang": "MODIFIER_DATA_spoofFoodSlot",
+                "text": "Makes roaring unlockable, man that sounds cooler than it is",
+                "lang": "MODIFIER_DATA_unlockRoaring",
                 "includeSign": false
               }
             ]
@@ -8585,15 +8800,225 @@
         ]
       },
       {
-        "id": "maxAutoOverheal",
+        "id": "roaringLogCostReduction",
         "inverted": true,
         "allowedScopes": [
           {
             "scopes": {},
             "descriptions": [
               {
-                "text": "Allows overhealing up to ${value}%",
+                "text": "Reduces Log Cost of roaring",
+                "lang": "MODIFIER_DATA_roaringLogCostReduction"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoofUpgradeKindlingPotion",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "spoofs upgrading the potion effects",
+                "lang": "MODIFIER_DATA_spoofUpgradeKindlingPotion",
                 "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+            {
+        "id": "spoofUnlockBranchSaplings",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "spoofs unlocking branch saplings",
+                "lang": "MODIFIER_DATA_spoofUnlockBranchSaplings",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+            {
+        "id": "spoofUpgradeSaplingChance",
+        "inverted": true,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Spoof of upgrading sapling chance from 1 to 3%",
+                "lang": "MODIFIER_DATA_spoofUpgradeSaplingChance",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoofUpgradeRoaring",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "spoofs upgrading the roaring effects",
+                "lang": "MODIFIER_DATA_spoofUpgradeRoaring",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoofFoodSlot",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Extra food slot",
+                "lang": "MODIFIER_DATA_spoofFoodSlot"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unlockOverHeal",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Unlocks the ability for HP to go over max",
+                "lang": "MODIFIER_DATA_unlockOverHeal",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoofUpgradeCookingEquipment_1",
+        "modifyValue": "value*100",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Upgrdes cooking utensils, spoof",
+                "lang": "MODIFIER_DATA_spoofUpgradeCookingEquipment_1",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoofUpgradeCookingEquipment_2",
+                "modifyValue": "value*100",
+
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Upgrdes cooking utensils, consumables, skillcapes spoof",
+                "lang": "MODIFIER_DATA_spoofUpgradeCookingEquipment_2",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "increasePerfectFoodHealing",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "increases healing of perfectFoods",
+                "lang": "MODIFIER_DATA_increasePerfectFoodHealing"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoofUpgradeRegenPot",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Upgrades regen potions, spoof (doesn't do shit)",
+                "lang": "MODIFIER_DATA_spoofUpgradeRegenPot",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "autoeatOverheal",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Autoeat can overheal",
+                "lang": "MODIFIER_DATA_autoeatOverheal",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "flatAshGainedOnCookingFailure",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Value Ash added when failing to cook food",
+                "lang": "MODIFIER_DATA_flatAshGainedOnCookingFailure"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "regenOverheal",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Regen goes into overheal, instead of going out of it",
+                "lang": "MODIFIER_DATA_regenOverheal",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "maxOverheal",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "How up overheal can go",
+                "lang": "MODIFIER_DATA_maxOverheal"
               }
             ]
           }
@@ -8602,6 +9027,102 @@
     ]
   },
   "modifications": {
+    "skillData": [
+      {
+        "skillID": "melvorD:Firemaking",
+        "data": {
+          "logs": [
+            {
+              "id": "melvorD:Normal_Logs",
+              "roaringSkill": "melvorD:Woodcutting",
+              "modifiers": {
+                "skillInterval": [
+                  {
+                    "value": -10,
+                    "skillID": "melvorD:Woodcutting"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "melvorD:Oak_Logs",
+              "roaringSkill": "melvorD:Cooking",
+              "modifiers": {
+                "skillItemDoublingChance": [
+                  {
+                    "value": 10,
+                    "skillID": "melvorD:Cooking"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "melvorD:Willow_Logs",
+              "modifiers": {
+                "flatHiddenSkillLevel": [
+                  {
+                    "value": 10,
+                    "skillID": "melvorD:Attack"
+                  }
+                ]
+              },
+              "roaringSkill": "melvorD:Attack"
+            },
+            {
+              "id": "melvorD:Teak_Logs",
+              "modifiers": {
+                "flatMeleeStrengthBonus": 30
+              },
+              "roaringSkill": "melvorD:Strength"
+            },
+            {
+              "id": "melvorD:Maple_Logs",
+              "modifiers": {
+                "flatSkillInterval": [
+                  {
+                    "skillID": "melvorD:Fletching",
+                    "value": -800
+                  }
+                ]
+              },
+              "roaringSkill": "melvorD:Fletching"
+            },
+            {
+              "id": "melvorD:Mahogany_Logs",
+              "modifiers": {
+                "rielkConstruction:skillEfficiencyChance": [
+                  {
+                    "skillID": "rielkConstruction:Construction",
+                    "value": 10
+                  }
+                ]
+              },
+              "roaringSkill": "rielkConstruction:Construction"
+            },
+            {
+              "id": "melvorD:Yew_Logs",
+              "modifiers": {
+                "rangedAccuracyRating": 20
+              },
+              "roaringSkill": "melvorD:Ranged"
+            },
+            {
+              "id": "melvorD:Magic_Logs",
+              "modifiers": {
+                "randomProductChance": [
+                  {
+                    "skillID": "melvorD:Astrology",
+                    "itemID": "melvorF:Stardust",
+                    "value": 3
+                  }
+                ]
+              },
+              "roaringSkill": "melvorD:Astrology"
+            }
+          ]
+        }
+      }
+    ],
     "shopPurchases": [
       {
         "id": "melvorD:Iron_Axe",

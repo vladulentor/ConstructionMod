@@ -4,6 +4,9 @@ const { templateRielkLangStringWithNodes, templateRielkLangString, getRielkLangS
 
 const ctx = mod.getContext(import.meta);
 
+
+
+
 class ConstructionModifierDisplayElement extends HTMLElement {
     constructor() {
         super();
@@ -101,14 +104,13 @@ class ConstructionModifierDisplayElement extends HTMLElement {
 
         const formatter = getElementDescriptionFormatter('div', this.recipe.isUnlocked ? 'mb-1' : 'mb-1 text-combat-smoke modifier-box locked');
         this.toggleRecipeSpecial();
-
-        const descs = StatObject.getDescriptions(this.recipe.stats);
+        const descs = this.recipe.order?   getOrderedDescriptions(this.recipe.stats, this.recipe.order): StatObject.getDescriptions(this.recipe.stats);
         descs.forEach((desc, i) => {
             const isShiny = this.recipe.shinyMods?.includes(i + 1); //isshiny is an array of 1-indexed numbers, to make some recipes fancier
             if (isShiny) {
                 desc.text = `<span class="m-1 font-size-sm ${this.recipe.isUnlocked ? 'construction-victory' : 'text-warning'}">${desc.text}</span>`;
             } else {
-                desc.text = `<span class="font-size-sm ${this.recipe.isUnlocked ? 'text-success' : 'text-combat-smoke modifier-box locked'}">${desc.text}</span>`;
+                desc.text = `<span class="m-1 font-size-sm ${this.recipe.isUnlocked ? 'text-success' : 'text-combat-smoke modifier-box locked'}">${desc.text}</span>`;
             }
         });
         const elements = descs.map(d => {
@@ -167,3 +169,23 @@ class ConstructionModifierDisplayElement extends HTMLElement {
     }
 }
 window.customElements.define('rielk-construction-modifier-display', ConstructionModifierDisplayElement);
+
+function getOrderedDescriptions(statObject, order, negMult = 1, posMult = 1, includeZero = true) {
+  const mods = [];
+  let m = 0, c = 0;
+
+  order.forEach((type) => {
+    if (type === "m" && statObject.modifiers?.[m]) {
+      const mod = statObject.modifiers[m++];
+      if (StatObject.showDescription(mod.isNegative, negMult, posMult, includeZero))
+        mods.push(mod.print(negMult, posMult));
+    } else if (type === "c" && statObject.conditionalModifiers?.[c]) {
+      const cond = statObject.conditionalModifiers[c++];
+      const desc = cond.getDescription(negMult, posMult);
+      if (desc && StatObject.showDescription(cond.isNegative, negMult, posMult, includeZero))
+        mods.push(desc);
+    }
+  });
+
+  return mods;
+}

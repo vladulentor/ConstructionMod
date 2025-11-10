@@ -2,9 +2,11 @@ const { onCharacterLoaded } = mod.getContext(import.meta);
 const BIG_UPDATE_NUMBER = 6; //The resource Update
 export class Encoder {
     static encode(construction, writer) {
-        const _constructionVersion = 6;
+        const _constructionVersion = 7;
         writer.writeUint32(_constructionVersion);
-        writer.writeBoolean(construction.showUpdateTooltip)
+        writer.writeBoolean(construction.showUpdateTooltip);
+
+        writer.writeBoolean(game.firemaking.isRoaringBonfire);
         writer.writeSet(construction.hiddenRooms, writeNamespaced);
         construction.stats.encode(writer);
         writer.writeArray(construction.fixtures.allObjects, (fixture, writer) => {
@@ -37,6 +39,11 @@ export class Encoder {
         else // Also, if the player is 5 or lower don't read anything so the save doesn't get FUCKED
              // in the ASS
          {   construction.showUpdateTooltip = true;}
+
+         if(_constructionVersion>=7)
+            game.firemaking.isRoaringBonfire = reader.getBoolean();
+        else
+            game.firemaking.isRoaringFire = false;
         construction.hiddenRooms = reader.getSet(readNamespacedReject(construction.rooms));
         construction.stats.decode(reader);
         const readFixture = readNamespacedReject(construction.fixtures);

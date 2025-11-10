@@ -1,8 +1,96 @@
 {
     "$schema": "https://melvoridle.com/assets/schema/gameData.json",
-    "namespace": "mythMusic",
+    "namespace": "rielkConstruction",
     "modifications": {
         "skillData": [
+            {
+                "skillID": "melvorD:Firemaking",
+                "data": {
+                    "logs": [
+                        {
+                            "id": "melvorTotH:Spruce_Logs",
+                            "roaringSkill": "melvorD:Herblore",
+                            "modifiers": {
+                                "flatBasePrimaryProductQuantity": [
+                                    {
+                                        "value": 2,
+                                        "skillID": "melvorD:Herblore"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "melvorTotH:Hornbeam_Logs",
+                            "roaringSkill": "melvorD:Thieving",
+                            "modifiers": {
+                                "thievingStealth": 70
+                            }
+                        },
+                        {
+                            "id": "melvorTotH:Grove_Logs",
+                            "roaringSkill": "melvorD:Crafting",
+                            "modifiers": {
+                                "masteryXP": [{
+                                    "skillID": "melvorD:Crafting",
+                                    "value":20
+                                }]
+                            }
+                        },
+                        {
+                            "id": "melvorTotH:Linden_Logs",
+                            "roaringSkill": "melvorD:Agility",
+                            "modifiers": {
+                                "skillInterval": [
+                                    {
+                                        "value": -20,
+                                        "skillID": "melvorD:Agility"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "melvorTotH:Elderwood_Logs",
+                            "roaringSkill": "melvorD:Prayer",
+                            "modifiers": {
+                                "flatPrayerPointsWhenHit": 4
+                            }
+                        },
+                        {
+                            "id": "melvorTotH:Red_Oak_Logs",
+                            "roaringSkill": "melvorD:Defence",
+                            "modifiers": {
+                                "flatResistance": [
+                                    {
+                                        "value": 5,
+                                        "damageTypeID": "melvorD:Normal"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "melvorTotH:Revenant_Logs",
+                            "roaringSkill": "melvorD:Slayer",
+                            "modifiers": {
+                                "damageDealtToSlayerTasks": 15
+                            }
+                        },
+                        {
+                            "id": "melvorTotH:Mystic_Logs",
+                            "roaringSkill": "melvorD:Magic",
+                            "modifiers": {
+                                "bypassRunePreservationChance": 20
+                            }
+                        },
+                        {
+                            "id": "melvorTotH:Carrion_Logs",
+                            "roaringSkill": "melvorD:Hitpoints",
+                            "modifiers": {
+                                "lifesteal": 25
+                            }
+                        }
+                    ]
+                }
+            },
             {
                 "skillID": "melvorD:Astrology",
                 "data": {
@@ -47,7 +135,7 @@
                                         "add": {
                                             "rielkConstruction:skillEfficiencyChance": [
                                                 {
-                                                                                                        "skillID": "rielkConstruction:Construction",
+                                                    "skillID": "rielkConstruction:Construction",
                                                     "value": 1
                                                 }
                                             ]
@@ -73,12 +161,12 @@
                                     "index": 1,
                                     "modifiers": {
                                         "add": {
-                                              "rielkConstruction:constructionActionsToUpgrade": [
-              {
-                "skillID": "rielkConstruction:Construction",
-                "value": -1
-              }
-            ]
+                                            "rielkConstruction:constructionActionsToUpgrade": [
+                                                {
+                                                    "skillID": "rielkConstruction:Construction",
+                                                    "value": -1
+                                                }
+                                            ]
                                         }
                                     }
                                 },
@@ -88,7 +176,7 @@
                                         "add": {
                                             "rielkConstruction:skillEfficiencyPotency": [
                                                 {
-                                                                                                        "skillID": "rielkConstruction:Construction",
+                                                    "skillID": "rielkConstruction:Construction",
                                                     "value": 0.05
                                                 }
                                             ]

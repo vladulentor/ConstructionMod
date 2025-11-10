@@ -12,9 +12,12 @@ export class ConstructionRoom extends RealmedObject {
             this.fixtures = construction.fixtures.getArrayFromIds(data.fixtures);
             this.fixtures.forEach((fixture) => {
                 if (fixture.room !== undefined)
-                    throw new Error(`ConstructionFixture with id: ${fixture.id} is already assigned to a ConstructionRoom.`);
+                    throw new Error(`Constr
+                uctionFixture with id: ${fixture.id} is already assigned to a ConstructionRoom.`);
                 fixture.room = this;
             });
+            if(data.newTooltip)
+                this.newTooltip = data.newTooltip;
         } catch (e) {
             throw new DataConstructionError(ConstructionRoom.name, e, this.id);
         }

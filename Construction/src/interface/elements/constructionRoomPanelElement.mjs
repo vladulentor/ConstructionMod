@@ -41,6 +41,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.builtProgressBar = getElementFromFragment(this._content, 'built-progress-bar', 'progress-bar');
         this.requires = getElementFromFragment(this._content, 'remaining', 'remaining-box');
         this.haves = getElementFromFragment(this._content, 'remaining-haves', 'remaining-haves-box');
+        this.newTooltip = getElementFromFragment(this._content, 'exclamation-mark', 'img');
         this.grants = getElementFromFragment(this._content, 'grants', 'grants-box');
         this.progressBar = getElementFromFragment(this._content, 'progress-bar', 'progress-bar');
         this.buildContainer = getElementFromFragment(this._content, 'build-container', 'div');
@@ -115,8 +116,21 @@ class ConstructionRoomPanelElement extends HTMLElement {
         }
 
     }
+    setroomTooltip(){
+        showElement(this.newTooltip);
+        this.newTooltip.src = ctx.getResourceUrl('assets/exclamation.png');
+        const tooltext = getRielkLangString("TOOLTIP_NEW_EFFECTS");
+        tippy(this.newTooltip, {
+                content: `<div class="text-center">${tooltext}</div>`,
+                placement: 'top',
+                allowHTML: true,
+                duration: [50, 180]
+            });
+    }
     setRoom(room, construction) {
         this.roomName.textContent = room.name;
+        if(room.newTooltip)
+        this.setroomTooltip();
         this.header.onclick = () => construction.ui.onRoomHeaderClick(room, construction);
         room.fixtures.forEach((fixture) => {
             const fixtureNav = createElement('rielk-construction-fixture-nav', {

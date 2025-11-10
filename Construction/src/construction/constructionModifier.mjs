@@ -1,7 +1,7 @@
 export class ConstructionModifiers {
     constructor(data, game, recipeID) {
         try {
-            this._stats = new StatObject(data,game,`${ConstructionModifiers.name} for recipe "${recipeID}"`);
+            this._stats = new StatObject(data , game,`${ConstructionModifiers.name} for recipe "${recipeID}"`);
         } catch (e) {
             throw new DataConstructionError(ConstructionModifiers.name,e);
         }

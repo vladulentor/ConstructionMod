@@ -92,16 +92,12 @@ function Multiplystuff(Itemlist, multVal) {
     });
 }
 
-export function doubleEffectsOfStuff(tier) {
+export function doubleEffectsOfStuff(fixture) {
 
-    if (this.tier >= 2 && this.tier <= 5)
+    if (this.tier >= 2)
         Multiplystuff(CookingEquipList, 2);
     if (this.tier >= 5) {
         Multiplystuff(CookingSkillcapeList, 1.5);
         Multiplystuff(CookingConsumableList, 1.5);
     }
-
-
-
-
 }

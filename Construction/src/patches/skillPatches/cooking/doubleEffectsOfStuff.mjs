@@ -67,7 +67,7 @@ function Multiplystuff(Itemlist, multVal) {
         case 'melvorF:Bad_Cooker_Scroll':
             divisor /= 10;
             break;
-        case 'melvorD:Cooking_Skillcape':
+        case 'melvorD:Cooking_Skillcape':   
             divisor /= 2;
             break;
         default: console.log('Something has gone terribly wrong.');

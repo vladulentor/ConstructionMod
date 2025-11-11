@@ -1,6 +1,6 @@
 # Construction Mod: Changes & Additions
 
-This document lists all the changes and additions the Construction Mod makes to the base game. It serves both as a changelog, so players can see what’s been added or as a guide, meant to help you find opportunities to improve your efficiency in Construction. And not go insane from what mods added what changes.
+This document lists all the changes and additions the Construction Mod makes to the base game. It serves both as a changelog, so players can see what’s been added or as a guide, meant to help you find opportunities to improve your efficiency in Construction. This list does NOT list changes that furniture upgrade cause to items or mechanics, just changes that are always visible with the mod installed.
 
 Entries marked with [TotH] indicate Throne of the Herald changes.
 
@@ -10,6 +10,7 @@ Entries marked with [TotH] indicate Throne of the Herald changes.
 - Added the "Saw" items in the Skill Upgrades section. They work like the Axe, Fishing Rod, or Pickaxe tool chains, but for Construction. They also increase Efficiency effects along with decreasing interval.
 ### Changed Purchases
 - Axe, and Pickaxe now also cost Planks and Nails along their gold costs, Fishing Rod now costs Planks and Straps, to encourage the player to interact with the Construction skill, or to get its loot from enemies' loot tables.
+- The "Perpetual Haste" purchase (unlocked upon completing the Air God Dungeon) now also gives a -15% interval to Construction. This is reflected in its description and picture.
 ---
 
 ## Combat
@@ -55,6 +56,12 @@ Entries marked with [TotH] indicate Throne of the Herald changes.
 - Added "Twice-Measured" skill potion at level 35. This will give you a boost in multiple craft chance when making construction materials *or* potency when making furniture.
 
 ---
+## Summoning
+
+- Nerfed the Bear and Devil synergy to account for Roaring Bonfires. It now gives a 15% increased Bonfire Interval, as opposed to 100%. Additionally it now gets spent on lighting a bonfire, as well as on a bonfire action.
+
+---
+
 
 ## Astrology
 

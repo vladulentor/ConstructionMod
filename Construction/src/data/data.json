@@ -6134,13 +6134,13 @@
               "modifiers": {
                 "skillXP": [
                   {
-                    "value": 5,
+                    "value": 3,
                     "skillID": "melvorD:Woodcutting"
                   }
                 ],
                 "masteryXP": [
                   {
-                    "value": 5,
+                    "value": 3,
                     "skillID": "melvorD:Woodcutting"
                   }
                 ]

@@ -9,9 +9,20 @@ export function tinyIconsCompatibility(ctx) {
 
         ['cookSkillcape', game.items.getObjectByID('melvorD:Cooking_Skillcape').media],
         ['cookConsumables', game.items.getObjectByID('melvorF:Additional_Cooker_Scroll').media],
-
+        ['specialItems', game.items.getObjectByID('melvorD:Treasure_Chest').media],
     ]
     ));
+    const constrSubcategories = new Map([
+    ['rielkConstruction:Planks', { name: 'planks', media: game.items.getObjectByID('rielkConstruction:Oak_Planks').media }],
+        ['rielkConstruction:Nails', { name: 'nails', media:game.items.getObjectByID('rielkConstruction:Iron_Nails').media }],
+    ['rielkConstruction:Bricks', { name: 'bricks', media: game.items.getObjectByID('rielkConstruction:Limestone_Bricks').media }],
+    ['rielkConstruction:Straps', { name: 'straps', media: game.items.getObjectByID('rielkConstruction:Red_Dhide_Leather_Straps').media }],
+]);
+    icons.addSubcategoryScopeMedia("rielkConstruction:Construction", constrSubcategories);
+icons.addModifier('rielkConstruction:spoofAddWoodcuttingMasteryStuff1', 'woodcutting', 'xp');
+    icons.addModifier('rielkConstruction:spoofAddWoodcuttingMasteryStuff2', 'woodcutting', 'interval');
+
+
     icons.addModifier('rielkConstruction:skillEfficiencyChance', 'efficiency');
     icons.addModifier('rielkConstruction:skillEfficiencyPotency', 'efficiency');
     icons.addModifier('rielkConstruction:skillEfficiencyCost', 'efficiency');
@@ -19,6 +30,7 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:constructionActionsToUpgrade', 'cabin');
 
     icons.addModifier('rielkConstruction:farmingTreeSeedReturn', 'preservation');
+    icons.addModifier('rielkConstruction:getSeedsFromFood', 'farming');
     icons.addModifier('rielkConstruction:spoofUnlockPlot', 'plot');
 
     icons.addModifier('rielkConstruction:spoofFoodSlot', 'food');
@@ -27,6 +39,14 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:autoeatOverheal', 'autoeat', 'overheal');
     icons.addModifier('rielkConstruction:regenOverheal', 'overheal',);
     icons.addModifier('rielkConstruction:maxOverheal', 'overheal');
+
+    icons.addModifier('rielkConstruction:fishingTreasureNoReplace', 'fishing');
+        icons.addModifier('rielkConstruction:minFishInterval', 'fishing', 'interval');
+    icons.addModifier('rielkConstruction:maxFishInterval', 'fishing', 'interval');
+
+    icons.addModifier('rielkConstruction:loseGPOnFishingBasedOnFish', 'fishing');
+    icons.addModifier('rielkConstruction:fishPerfectCookedFish', 'fishing');
+    icons.addModifier('rielkConstruction:spoofAddFishingSpecialItems', 'specialItems');
 
 
     icons.addModifier('rielkConstruction:increasePerfectFoodHealing', 'hitpoints');

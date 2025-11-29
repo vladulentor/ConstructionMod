@@ -13,11 +13,12 @@ const { doubleEffectsOfStuff } = await loadModule("src/patches/skillPatches/cook
 const { upgradeRegenPotions } = await loadModule("src/patches/skillPatches/herblore/upgradeRegenPotions.mjs");
 const { upgradeFirePotions } = await loadModule("src/patches/skillPatches/herblore/upgradeFirePotions.mjs");
 
+const { addSpecialFishingItems } = await loadModule("src/patches/skillPatches/fishing/addSpecialFishingItems.mjs");
 
 const { multiplyRoaringEffects } = await loadModule("src/patches/skillPatches/firemaking/multiplyRoaringEffects.mjs");
 const { addSaplingBranchDrop } = await loadModule("src/patches/skillPatches/firemaking/addSaplingBranchDrop.mjs");
 
-
+const { addBonusesToTreeMastery } = await loadModule("src/patches/skillPatches/woodcutting/addBonusesToTreeMastery.mjs");
 
 
 export const EffectRegistry = {
@@ -29,5 +30,7 @@ export const EffectRegistry = {
   doubleEffectsOfStuff,
   upgradeFirePotions,
   multiplyRoaringEffects,
-  addSaplingBranchDrop
+  addSaplingBranchDrop,
+  addSpecialFishingItems,
+  addBonusesToTreeMastery
 };

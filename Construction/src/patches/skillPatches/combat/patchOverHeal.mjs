@@ -1,6 +1,15 @@
 export function patchOverHeal(ctx) {
 
     // A lot of this is game code i have to change only small parts of
+    // Also, due to this being a .replace function, this also contains the code for giving the player seeds when eating food
+
+    //Make food list
+    const foodList = new Set(); //make the list a set so afk calculations dont slwo down
+    game.farming.actions.registeredObjects.forEach((value, key) => {
+        if (value.category.id === "melvorD:Allotment")
+            foodList.add(key);
+    });
+    foodList.add("melvorF:Apple"); //Since it's a special case
     ctx.patch(Player, 'autoEat').before(function (shouldEat) {
         this._allowOverheal = !!this.game.modifiers.getValue("rielkConstruction:autoeatOverheal", ModifierQuery.EMPTY);
     })
@@ -84,6 +93,8 @@ export function patchOverHeal(ctx) {
         }
         if (interrupt)
             this.interruptAttack();
+        if (foodList.has(item.id) && rollPercentage(this.modifiers.getValue("rielkConstruction:getSeedsFromFood", ModifierQuery.EMPTY)))
+            game.bank.addItem(game.farming.actions.registeredObjects.get(item.id).seedCost.item, 1, false, true, false, true, "Seed Getback");
         const event = new FoodEatenEvent(item, quantity, healingAmount);
         this._events.emit('foodEaten', event);
     });
@@ -131,21 +142,22 @@ export function patchOverHeal(ctx) {
             else if (this.regenOverheal) {
                 regen = Math.min(regen, (this.stats.maxHitpoints + Math.floor((this.game.modifiers.getValue("rielkConstruction:maxOverheal", ModifierQuery.EMPTY) / 100) * this.stats.maxHitpoints)) - this.hitpoints)
                 regen = Math.floor(regen);
-                if (regen)
-                    {regen = this.heal(regen);
-                this.modifiers.forEachCurrency("melvorD:currencyGainOnRegenBasedOnHPGained" /* ModifierIDs.currencyGainOnRegenBasedOnHPGained */, (value, currency) => {
-                    const amountToAdd = regen * (value / numberMultiplier / 100);
-                    if (amountToAdd > 0)
-                        this.manager.addCurrency(currency, amountToAdd, 'HPRegen');
-                });
-                this.activePrayers.forEach((prayer) => {
-                    !prayer.isAbyssal
-                        ? this.consumePrayerPoints(prayer.pointsPerRegen, prayer.isUnholy)
-                        : this.consumeSoulPoints(prayer.pointsPerRegen);
-                });
-                const regenEvent = new HitpointRegenerationEvent(regen);
-                this._events.emit('hitpointRegen', regenEvent);
-            }}
+                if (regen) {
+                    regen = this.heal(regen);
+                    this.modifiers.forEachCurrency("melvorD:currencyGainOnRegenBasedOnHPGained" /* ModifierIDs.currencyGainOnRegenBasedOnHPGained */, (value, currency) => {
+                        const amountToAdd = regen * (value / numberMultiplier / 100);
+                        if (amountToAdd > 0)
+                            this.manager.addCurrency(currency, amountToAdd, 'HPRegen');
+                    });
+                    this.activePrayers.forEach((prayer) => {
+                        !prayer.isAbyssal
+                            ? this.consumePrayerPoints(prayer.pointsPerRegen, prayer.isUnholy)
+                            : this.consumeSoulPoints(prayer.pointsPerRegen);
+                    });
+                    const regenEvent = new HitpointRegenerationEvent(regen);
+                    this._events.emit('hitpointRegen', regenEvent);
+                }
+            }
         }
         else if (this.hitpoints < this.stats.maxHitpoints && this.allowRegen) {
             let regen = this.stats.maxHitpoints / 100;

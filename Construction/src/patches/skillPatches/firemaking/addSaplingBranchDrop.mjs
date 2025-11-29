@@ -11,15 +11,15 @@ function addIt(toAdd) {
     });
 }
 
-export function addSaplingBranchDrop(recipe) {
+export function addSaplingBranchDrop() {
 
     const product = new FiremakingProduct({
         itemID: 'rielkConstruction:Sapling_Branch',
-        chance: recipe.tier >= 5 ? 3.9 : 1.3,
+        chance: this.tier >= 5 ? 3.9 : 1.3,
         quantity: 1
     }, game);
     game.firemaking.secondaryProducts.set(product.item, product);
 
-    if (recipe.tier >= 2)
+    if (this.tier >= 2)
         addIt(product.item);
 }

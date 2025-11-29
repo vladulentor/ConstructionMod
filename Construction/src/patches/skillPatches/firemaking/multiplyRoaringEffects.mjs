@@ -11,7 +11,7 @@ function Multiplystuff(mult) {
     });
 }
 
-export function multiplyRoaringEffects(tier) {
+export function multiplyRoaringEffects() {
 
     if (this.tier >= 5)
         Multiplystuff(1.5);

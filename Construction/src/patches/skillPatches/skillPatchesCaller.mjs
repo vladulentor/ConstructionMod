@@ -8,6 +8,11 @@ const { addAshOnFail } = await loadModule('src/patches/skillPatches/cooking/addA
 
 const { addRoaringFire } = await loadModule('src/patches/skillPatches/firemaking/addRoaringFire.mjs');
 
+const { addFishonTreasureRollPlusExtra } = await loadModule('src/patches/skillPatches/fishing/addFishonTreasureRoll.mjs');
+const { reduceFishTimers } = await loadModule('src/patches/skillPatches/fishing/reduceFishTimers.mjs');
+
+const { loseGPOnFishing } = await loadModule('src/patches/skillPatches/fishing/loseGPOnFishing.mjs');
+
 
 const { patchCraftingOrder } = await loadModule('src/patches/skillPatches/crafting/patchCraftingOrder.mjs');
 
@@ -27,6 +32,8 @@ const { nerfBearDevil } = await loadModule('src/patches/skillPatches/summoning/n
 
 
 
+
+
 export function patchSkillsBeforeDataReg(ctx) {
         patchTreeSeedReturn(ctx);
         patchOverHeal(ctx);
@@ -34,6 +41,9 @@ export function patchSkillsBeforeDataReg(ctx) {
         addAshOnFail(ctx);
         addRoaringFire(ctx);
         perfectFoodHealing(ctx);
+        addFishonTreasureRollPlusExtra(ctx);
+        loseGPOnFishing(ctx);
+        reduceFishTimers(ctx);
         nerfBearDevil();
 }
 export function patchSkillsAfterDataReg(ctx) {

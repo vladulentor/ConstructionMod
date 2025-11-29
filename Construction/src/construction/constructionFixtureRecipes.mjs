@@ -79,7 +79,7 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
         this.changeFunc.forEach(funcName => {
             const effectFunc = EffectRegistry[funcName];
             if (typeof effectFunc === "function") {
-                effectFunc.call(this, this);
+                effectFunc.call(this);
             } else {
                 console.warn(`Effect not found in registry, going insane: ${funcName}`);
             }

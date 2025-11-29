@@ -1,0 +1,40 @@
+{
+  "$schema": "https://melvoridle.com/assets/schema/gameData.json",
+  "namespace": "rielkConstruction",
+  "modifications": {
+    "modifiers": [
+      {
+        "id": "melvorD:farmingSeedReturn",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true
+            },
+            "descriptions": [
+              {
+                "text": "Up to ${value} Allotment or Herb seeds returned when harvesting in Farming ",
+                "lang": "MODIFIER_DATA_farmingSeedReturnActionMine"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "melvorD:skillInterval",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true,
+              "subcategory": true
+            },
+            "descriptions": [
+              {
+                "text": "${value}% ${skillName} Interval for ${subcategoryName}",
+                "lang": "MODIFIER_DATA_skillIntervalSubcategory"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}}

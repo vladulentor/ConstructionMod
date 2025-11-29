@@ -60,6 +60,7 @@ class Setup {
         patchSkillsAfterDataReg(this.ctx);
     }
     async loadData() {
+                await this.ctx.gameData.addPackage('src/data/data_preentry.json');
         await this.ctx.gameData.addPackage('src/data/data.json');
         if (cloudManager.hasAoDEntitlementAndIsEnabled)
             await this.ctx.gameData.addPackage('src/data/data_AoD.json');

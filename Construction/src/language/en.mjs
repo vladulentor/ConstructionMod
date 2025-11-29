@@ -217,9 +217,29 @@ export const language = {
     'MODIFIER_DATA_spoofUpgradeKindlingPotion': 'Upgrade "Controlled Heat Potions" to reduce Bonfire stoke costs',
     'MODIFIER_DATA_spoofUnlockBranchSaplings': 'Rarely get Sapling Branches that contain Tree Seeds from Firemaking',
     'MODIFIER_DATA_spoofUpgradeSaplingChance': 'Triple chance of getting Sapling Branches from Firemaking',
-    'SHOP_PURCHASE_Perpetual_Haste':'-15% Crafting, Construction & Fletching Interval',
-    'ITEM_DESCRIPTION_BEAR_DEVIL_SYNERGY':'While using the Controlled Heat Potions, +5% Firemaking Skill XP and Bonfire duration increased by 15%. Charges are used per Firemaking action and lit Bonfire.',
-    
+    'MODIFIER_DATA_getSeedsFromFood': '${value}% Chance to get a seed back when eating uncooked Fruits or Vegetables',
+    'MODIFIER_DATA_farmingSeedReturnActionMine': 'Receive up to ${value} extra Allotment or Herb seed back from harvesting.',
+    'MODIFIER_DATA_loseGPOnFishingBasedOnFish': 'Spend up to ${value} GP when fishing, reduced by Fish value',
+    'MODIFIER_DATA_spoofAddFishingSpecialItems': 'Can find ${value} new Special Items in Fishing',
+    'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff1': 'Mastery Level 50 Trees grant +0.25% XP in all Skills',
+    'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2': 'Mastery Level 99 Trees grant -0.25% Interval in all non-Combat Skills',
+    'MODIFIER_DATA_skillIntervalSubcategory': '${value}% ${skillName} Interval for ${subcategoryName}',
+    'MODIFIER_DATA_minFishInterval':'${value}% Minimum Fishing Interval',
+        'MODIFIER_DATA_maxFishInterval':'${value}% Maximum Fishing Interval',
+
+
+    'MODIFIER_DATA_fishPerfectCookedFish': 'Cooked Fish caught in Fishing are Perfect Quality',
+
+    'SHOP_PURCHASE_Perpetual_Haste': '-15% Crafting, Construction & Fletching Interval',
+    'ITEM_DESCRIPTION_BEAR_DEVIL_SYNERGY': 'While using the Controlled Heat Potions, +5% Firemaking Skill XP and Bonfire duration increased by 15%. Charges are used per Firemaking action and lit Bonfire.',
+
+    'MODIFIER_DATA_fishingTreasureNoReplace': 'Also catch fish when finding Junk or Special items',
+    'ITEM_NAME_Cursed_Hook': 'Cursed Hook',
+    'ITEM_NAME_Tar_Jar': 'Jar of Tar',
+    'ITEM_NAME_Mariners_Blouse': 'Mariner\'s Top',
+    'ITEM_NAME_Mariners_Tie': 'Mariner\'s Tie',
+
+
     'RIELK_CONMOD_FOCUSEDCOOKING_1': '+3% Perfect Cook chance, Success chance, and Cooking Mastery XP while not Passive Cooking',
     'ITEM_NAME_Sapling_Branch': 'Sapling Branch',
     'ITEM_DESCRIPTION_Sapling_Branch': 'An unburnt branch. Contains Tree Seeds.',
@@ -270,6 +290,8 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 2': 'Unlock fixture\'s Tier 3 effects.',
     'MASTERY_BONUS_ Construction_ 3': 'Unlock fixture\'s Tier 4 effects.',
     'MASTERY_BONUS_ Construction_ 4': 'Unlock fixture\'s Tier 5 effects.',
+    'MASTERY_BONUS_Woodcutting_2': 'Grants +0.25% XP in all Skills',
+    'MASTERY_BONUS_Woodcutting_3': 'Grants -0.25% Interval in all non-Combat Skills',
 
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',

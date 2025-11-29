@@ -223,6 +223,25 @@ export const language = {
     'ITEM_NAME_Sapling_Branch': '幼樹枝',
     'ITEM_DESCRIPTION_Sapling_Branch': '未燃燒的樹枝。內含樹種。',
 
+    'MODIFIER_DATA_getSeedsFromFood': '吃生水果或蔬菜時有 ${value}% 的機率獲得種子',
+'MODIFIER_DATA_farmingSeedReturnActionMine': '收穫時最多獲得 ${value} 個額外的作物或草藥種子',
+'MODIFIER_DATA_loseGPOnFishingBasedOnFish': '釣魚時最多消耗 ${value} GP，按魚的價值減少',
+'MODIFIER_DATA_spoofAddFishingSpecialItems':'釣魚時向特殊池添加 ${value} 個新物品',
+'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff1':'50級熟練度樹木賦予所有技能 +0.25% 經驗',
+'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2':'99級熟練度樹木使所有非戰鬥技能間隔減少 -0.25%',
+'MODIFIER_DATA_skillIntervalSubcategory':'${subcategoryName} 的 ${skillName} 間隔 ${value}%',
+
+'MODIFIER_DATA_fishPerfectCookedFish':'釣到的熟魚為完美熟魚',
+'MODIFIER_DATA_fishingTreasureNoReplace': '即使找到垃圾或特殊物品也會釣到魚',
+'ITEM_NAME_Cursed_Hook': '詛咒鈎',
+'ITEM_NAME_Tar_Jar': '焦油罐',
+'ITEM_NAME_Mariners_Blouse': '水手上衣',
+'ITEM_NAME_Mariners_Tie': '水手領帶',
+'MASTERY_BONUS_Woodcutting_2':'賦予所有技能 +0.25% 經驗',
+'MASTERY_BONUS_Woodcutting_3':'使所有非戰鬥技能間隔減少 -0.25%',
+'MODIFIER_DATA_minFishInterval':'${value}% 最小釣魚間隔',
+'MODIFIER_DATA_maxFishInterval':'${value}% 最大釣魚間隔',
+
 
     'RIELK_CONMOD_FOCUSEDCOOKING_2': '未進行被動烹飪時：完美烹飪機率 +5%、翻倍機率 +5%、保留機率 +5%（烹飪）',
     'RIELK_CONMOD_FOCUSEDCOOKING_3': '未進行被動烹飪時：完美烹飪機率 +7%、額外完美物品機率 +7%、保留上限 +7%（烹飪）',

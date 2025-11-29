@@ -471,7 +471,7 @@
             {
               "skillID": "rielkConstruction:Construction",
               "categoryID": "rielkConstruction:Materials",
-              "value": 10
+              "value": 5
             }
           ],
           "rielkConstruction:skillEfficiencyPotency": [
@@ -507,7 +507,7 @@
             {
               "skillID": "rielkConstruction:Construction",
               "categoryID": "rielkConstruction:Materials",
-              "value": 15
+              "value": 10
             }
           ],
           "rielkConstruction:skillEfficiencyPotency": [
@@ -543,7 +543,7 @@
             {
               "skillID": "rielkConstruction:Construction",
               "categoryID": "rielkConstruction:Materials",
-              "value": 20
+              "value": 15
             }
           ],
           "rielkConstruction:skillEfficiencyPotency": [
@@ -579,7 +579,7 @@
             {
               "skillID": "rielkConstruction:Construction",
               "categoryID": "rielkConstruction:Materials",
-              "value": 30
+              "value": 25
             }
           ],
           "rielkConstruction:skillEfficiencyPotency": [
@@ -596,7 +596,7 @@
           }
         ]
       },
-       {
+      {
         "itemType": "Weapon",
         "id": "Mystic_Rotating_Saw",
         "name": "Mystic Rotating Saw",
@@ -636,11 +636,11 @@
         ],
         "attackType": "melee",
         "modifiers": {
-          "flatSkillInterval": [
+          "skillInterval": [
             {
               "skillID": "rielkConstruction:Construction",
               "subcategoryID": "rielkConstruction:Planks",
-              "value": -3000
+              "value": -90
             }
           ],
           "flatBasePrimaryProductQuantity": [
@@ -652,7 +652,7 @@
           ]
         }
       },
-       {
+      {
         "itemType": "Equipment",
         "id": "Steel_Toed_Boots",
         "name": "Steel-Toed Boots",
@@ -713,7 +713,6 @@
           ]
         }
       },
-
       {
         "id": "Beam_Box_I",
         "name": "Beam Box I",
@@ -826,6 +825,98 @@
         ]
       },
       {
+        "itemType": "Equipment",
+        "id": "Tar_Jar",
+        "name": "Jar of Tar",
+        "category": "Thieving",
+        "type": "Misc",
+        "media": "assets/items/tar_jar.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 10,
+        "tier": "none",
+        "validSlots": [
+          "Consumable"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [],
+        "equipmentStats": [],
+        "modifiers": {
+          "skillInterval": [
+            {
+              "skillID": "melvorD:Thieving",
+              "value": -5
+            }
+          ],
+          "thievingStealth": 25
+        },
+        "consumesOn": [
+          {
+            "type": "ThievingAction"
+          }
+        ]
+      },
+      {
+        "itemType": "Item",
+        "id": "Mariners_Tie",
+        "name": "Mariner's Tie",
+        "category": "Fishing",
+        "type": "Equipment",
+        "media": "assets/items/mariners_tie.png",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": true,
+        "golbinRaidExclusive": false,
+        "sellsFor": 25000
+      },
+      {
+        "itemType": "Equipment",
+        "id": "Mariners_Blouse",
+        "name": "Mariner's Blouse",
+        "category": "Fishing",
+        "type": "Equipment  ",
+        "media": "assets/items/mariners_blouse.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 50000,
+        "tier": "none",
+        "validSlots": [
+          "Platebody",
+          "Passive"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [],
+        "equipmentStats": [],
+        "modifiers": {
+          "rielkConstruction:fishingTreasureNoReplace": 1
+        }
+      },
+      {
+        "itemType": "Equipment",
+        "id": "Cursed_Hook",
+        "name": "Cursed Hook",
+        "category": "Fishing",
+        "type": "Shield",
+        "media": "assets/items/cursed_hook.png",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 10,
+        "tier": "none",
+        "validSlots": [
+          "Shield",
+          "Passive"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [],
+        "equipmentStats": [],
+        "modifiers": {
+          "rielkConstruction:loseGPOnFishingBasedOnFish": 5000,
+          "bonusFishingSpecialChance": 13
+        }
+      },
+      {
         "id": "Sapling_Branch",
         "name": "Sapling Branch",
         "category": "Openable",
@@ -868,7 +959,7 @@
             "maxQuantity": 2,
             "weight": 20
           },
-            {
+          {
             "itemID": "melvorD:Magic_Tree_Seed",
             "minQuantity": 1,
             "maxQuantity": 2,
@@ -1772,24 +1863,6 @@
         "skillID": "rielkConstruction:Construction"
       }
     ],
-    "itemSynergies": [
-      {
-        "itemIDs": [
-          "rielkConstruction:Builders_Hat",
-          "rielkConstruction:Builders_Body",
-          "rielkConstruction:Builders_Leggings",
-          "rielkConstruction:Builders_Boots"
-        ],
-        "playerModifiers": {
-          "masteryXP": [
-            {
-              "skillID": "rielkConstruction:Construction",
-              "value": 8
-            }
-          ]
-        }
-      }
-    ],
     "monsters": [
       {
         "id": "BarnRaiser",
@@ -2598,19 +2671,19 @@
               "itemAwards": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 300
+                  "quantity": 600
                 },
                 {
                   "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 300
+                  "quantity": 600
                 },
                 {
                   "id": "rielkConstruction:Limestone_Bricks",
-                  "quantity": 300
+                  "quantity": 600
                 },
                 {
                   "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
-                  "quantity": 300
+                  "quantity": 600
                 },
                 {
                   "id": "rielkConstruction:Twice_Measured_Potion_I",
@@ -2618,10 +2691,10 @@
                 }
               ],
               "modifiers": {
-                "flatSkillInterval": [
+                "skillInterval": [
                   {
                     "skillID": "rielkConstruction:Construction",
-                    "value": -150
+                    "value": -5
                   }
                 ],
                 "skillXP": [
@@ -2641,19 +2714,19 @@
               "itemAwards": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 900
+                  "quantity": 1500
                 },
                 {
                   "id": "rielkConstruction:Mithril_Nails",
-                  "quantity": 900
+                  "quantity": 1500
                 },
                 {
                   "id": "rielkConstruction:Granite_Bricks",
-                  "quantity": 900
+                  "quantity": 1500
                 },
                 {
                   "id": "rielkConstruction:Red_Dhide_Leather_Straps",
-                  "quantity": 900
+                  "quantity": 1500
                 },
                 {
                   "id": "rielkConstruction:Twice_Measured_Potion_II",
@@ -2670,6 +2743,7 @@
                 "skillPreservationChance": [
                   {
                     "value": 10,
+                    "categoryID":"rielkConstruction:Materials",
                     "skillID": "rielkConstruction:Construction"
                   }
                 ]
@@ -2684,23 +2758,23 @@
               "itemAwards": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 2500
+                  "quantity": 6000
                 },
                 {
                   "id": "rielkConstruction:Adamantite_Nails",
-                  "quantity": 2500
+                  "quantity": 6000
                 },
                 {
                   "id": "rielkConstruction:Marble_Bricks",
-                  "quantity": 2500
+                  "quantity": 6000
                 },
                 {
                   "id": "rielkConstruction:Black_Dhide_Leather_Straps",
-                  "quantity": 2500
+                  "quantity": 6000
                 },
                 {
                   "id": "rielkConstruction:Twice_Measured_Potion_III",
-                  "quantity": 1500
+                  "quantity": 6000
                 }
               ],
               "modifiers": {
@@ -2713,7 +2787,7 @@
                 "rielkConstruction:skillEfficiencyChance": [
                   {
                     "skillID": "rielkConstruction:Construction",
-                    "value": 10
+                    "value": 5
                   }
                 ],
                 "rielkConstruction:skillEfficiencyPotency": [
@@ -2733,19 +2807,19 @@
               "itemAwards": [
                 {
                   "id": "rielkConstruction:Redwood_Planks",
-                  "quantity": 5000
+                  "quantity": 15000
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 5000
+                  "quantity": 15000
                 },
                 {
                   "id": "rielkConstruction:Magic_Bricks",
-                  "quantity": 5000
+                  "quantity": 15000
                 },
                 {
                   "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
-                  "quantity": 5000
+                  "quantity": 15000
                 },
                 {
                   "id": "rielkConstruction:Twice_Measured_Potion_IV",
@@ -3199,7 +3273,8 @@
                 "rielkConstruction:Flower_Pots",
                 "rielkConstruction:Lake",
                 "rielkConstruction:Orchard"
-              ]
+              ],
+              "newTooltip": true
             },
             {
               "id": "Kitchen",
@@ -3208,8 +3283,7 @@
                 "rielkConstruction:Fire_Pit",
                 "rielkConstruction:Fridge",
                 "rielkConstruction:Oven"
-              ],
-              "newTooltip": true
+              ]
             },
             {
               "id": "Laboratory",
@@ -4632,11 +4706,14 @@
                   "quantity": 1
                 }
               ],
-              "changeFunc": ["upgradeFirePotions","addSaplingBranchDrop"],
+              "changeFunc": [
+                "upgradeFirePotions",
+                "addSaplingBranchDrop"
+              ],
               "currencyCosts": [],
               "modifiers": {
                 "rielkConstruction:spoofUpgradeKindlingPotion": 1,
-                "rielkConstruction:spoofUnlockBranchSaplings":1
+                "rielkConstruction:spoofUnlockBranchSaplings": 1
               }
             },
             {
@@ -4748,8 +4825,14 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods":[1,2],
-              "changeFunc": ["multiplyRoaringEffects","addSaplingBranchDrop"],
+              "shinyMods": [
+                1,
+                2
+              ],
+              "changeFunc": [
+                "multiplyRoaringEffects",
+                "addSaplingBranchDrop"
+              ],
               "modifiers": {
                 "rielkConstruction:spoofUpgradeRoaring": 50,
                 "rielkConstruction:spoofUpgradeSaplingChance": 2
@@ -4764,28 +4847,29 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 100
+                  "quantity": 250
                 },
                 {
                   "id": "rielkConstruction:Clay_Bricks",
-                  "quantity": 100
+                  "quantity": 250
                 },
                 {
                   "id": "melvorD:Compost",
-                  "quantity": 100
-                },
-                {
-                  "id": "melvorD:Potatoes",
                   "quantity": 300
                 },
                 {
-                  "id": "melvorD:Burnt_Cave_Fish",
-                  "quantity": 1
+                  "id": "melvorD:Potatoes",
+                  "quantity": 100
                 }
               ],
               "currencyCosts": [],
               "changeFunc": "unlockPlot",
+              "shinyMods": [
+                1,
+                2
+              ],
               "modifiers": {
+                "rielkConstruction:getSeedsFromFood": 15,
                 "rielkConstruction:spoofUnlockPlot": [
                   {
                     "value": -2,
@@ -4812,11 +4896,15 @@
                 },
                 {
                   "id": "melvorD:Tomatoes",
-                  "quantity": 300
+                  "quantity": 500
                 },
                 {
                   "id": "melvorD:Leaping_Trout",
                   "quantity": 300
+                },
+                {
+                  "id": "melvorD:Burnt_Cave_Fish",
+                  "quantity": 1
                 }
               ],
               "currencyCosts": [],
@@ -4848,11 +4936,11 @@
                 },
                 {
                   "id": "melvorD:Watermelon",
-                  "quantity": 750
+                  "quantity": 2500
                 },
                 {
                   "id": "melvorD:Leaping_Salmon",
-                  "quantity": 750
+                  "quantity": 1500
                 },
                 {
                   "id": "melvorD:Weird_Gloop",
@@ -4861,7 +4949,17 @@
               ],
               "currencyCosts": [],
               "changeFunc": "unlockPlot",
+              "shinyMods": [
+                1,
+                2
+              ],
               "modifiers": {
+                "melvorD:farmingSeedReturn": [
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Farming"
+                  }
+                ],
                 "rielkConstruction:spoofUnlockPlot": [
                   {
                     "value": -2,
@@ -4888,7 +4986,7 @@
                 },
                 {
                   "id": "melvorD:Carrot",
-                  "quantity": 5000
+                  "quantity": 7500
                 },
                 {
                   "id": "melvorD:Leaping_Broad_Fish",
@@ -4952,7 +5050,19 @@
                 1
               ],
               "changeFunc": "unlockPlot",
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
               "modifiers": {
+                "compostPreservationChance": 10,
+                "skillInterval": [
+                  {
+                    "value": -10,
+                    "skillID": "melvorD:Farming"
+                  }
+                ],
                 "rielkConstruction:spoofUnlockPlot": [
                   {
                     "value": -2,
@@ -5215,7 +5325,7 @@
                 2,
                 3
               ],
-              "changeFunc":"addFoodSlot",
+              "changeFunc": "addFoodSlot",
               "modifiers": {
                 "rielkConstruction:spoofFoodSlot": 1,
                 "foodHealingValue": 2,
@@ -5590,7 +5700,7 @@
               "modifiers": {
                 "skillItemDoublingChance": [
                   {
-                    "value": 1,
+                    "value": 2,
                     "skillID": "melvorD:Fishing"
                   }
                 ],
@@ -5618,16 +5728,16 @@
                   "quantity": 600
                 },
                 {
+                  "id": "melvorD:Raw_Salmon",
+                  "quantity": 750
+                },
+                {
                   "id": "melvorD:Shell",
                   "quantity": 10
                 },
                 {
                   "id": "melvorD:Seaweed",
                   "quantity": 10
-                },
-                {
-                  "id": "melvorD:Raw_Salmon",
-                  "quantity": 750
                 },
                 {
                   "id": "melvorD:Water_Battlestaff",
@@ -5640,15 +5750,15 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillItemDoublingChance": [
+                "additionalPrimaryProductChance": [
                   {
-                    "value": 2,
+                    "value": 4,
                     "skillID": "melvorD:Fishing"
                   }
                 ],
                 "masteryXP": [
                   {
-                    "value": 3,
+                    "value": 5,
                     "skillID": "melvorD:Fishing"
                   }
                 ]
@@ -5671,7 +5781,7 @@
                 },
                 {
                   "id": "melvorD:Raw_Swordfish",
-                  "quantity": 1500
+                  "quantity": 3500
                 },
                 {
                   "id": "melvorF:Mystic_Water_Staff",
@@ -5683,19 +5793,14 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2
+              ],
+              "changeFunc": "addSpecialFishingItems",
               "modifiers": {
-                "skillItemDoublingChance": [
-                  {
-                    "value": 2,
-                    "skillID": "melvorD:Fishing"
-                  }
-                ],
-                "skillInterval": [
-                  {
-                    "value": -2,
-                    "skillID": "melvorD:Fishing"
-                  }
-                ]
+                "rielkConstruction:spoofAddFishingSpecialItems": 3,
+                "rielkConstruction:maxFishInterval":-10
               }
             },
             {
@@ -5733,7 +5838,8 @@
                     "value": 5,
                     "skillID": "melvorD:Fishing"
                   }
-                ]
+                ],
+                "additionalSameAreaFishChance": 5
               }
             },
             {
@@ -5749,19 +5855,19 @@
                 },
                 {
                   "id": "melvorD:Raw_Manta_Ray",
-                  "quantity": 2000
+                  "quantity": 3000
                 },
                 {
                   "id": "melvorD:Raw_Fanfish",
-                  "quantity": 2000
+                  "quantity": 3000
                 },
                 {
                   "id": "melvorD:Raw_Magic_Fish",
-                  "quantity": 2000
+                  "quantity": 3000
                 },
                 {
                   "id": "melvorD:Raw_Anglerfish",
-                  "quantity": 2000
+                  "quantity": 3000
                 },
                 {
                   "id": "melvorF:Natures_Wrath_Staff",
@@ -5776,14 +5882,18 @@
                   "quantity": 1
                 }
               ],
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
               "currencyCosts": [],
               "modifiers": {
-                "flatSkillInterval": [
-                  {
-                    "value": -200,
-                    "skillID": "melvorD:Fishing"
-                  }
-                ]
+                "rielkConstruction:fishPerfectCookedFish": 1,
+                                "rielkConstruction:minFishInterval":-20
+,
+                "bonusFishingSpecialChance": 5
+
               }
             },
             {
@@ -6022,13 +6132,13 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillInterval": [
+                "skillXP": [
                   {
-                    "value": -3,
+                    "value": 5,
                     "skillID": "melvorD:Woodcutting"
                   }
                 ],
-                "skillXP": [
+                "masteryXP": [
                   {
                     "value": 5,
                     "skillID": "melvorD:Woodcutting"
@@ -6045,15 +6155,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 800
+                  "quantity": 1200
                 },
                 {
                   "id": "melvorD:Willow_Tree_Seed",
-                  "quantity": 400
-                },
-                {
-                  "id": "melvorD:Compost",
-                  "quantity": 500
+                  "quantity": 600
                 },
                 {
                   "id": "melvorD:Bird_Nest",
@@ -6061,18 +6167,18 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "addBonusesToTreeMastery",
+              "shinyMods": [
+                1,
+                2
+              ],
               "modifiers": {
-                "basePrimaryProductQuantity": [
+                "rielkConstruction:spoofAddWoodcuttingMasteryStuff1": 1,
+                "rielkConstruction:farmingTreeSeedReturn": [
                   {
-                    "value": 3,
                     "skillID": "melvorD:Farming",
-                    "categoryID": "melvorD:Tree"
-                  }
-                ],
-                "skillItemDoublingChance": [
-                  {
-                    "value": 8,
-                    "skillID": "melvorD:Woodcutting"
+                    "categoryID": "melvorD:Tree",
+                    "value": 15
                   }
                 ]
               }
@@ -6086,31 +6192,27 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 2500
+                  "quantity": 3200
                 },
                 {
                   "id": "melvorD:Maple_Tree_Seed",
-                  "quantity": 750
-                },
-                {
-                  "id": "melvorD:Weird_Gloop",
-                  "quantity": 3000
+                  "quantity": 800
                 },
                 {
                   "id": "melvorD:Bird_Nest",
-                  "quantity": 100
+                  "quantity": 125
                 },
                 {
                   "id": "melvorF:Seed_Pouch",
-                  "quantity": 1000
+                  "quantity": 1200
                 }
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillInterval": [
+                "masteryXP": [
                   {
-                    "value": -5,
-                    "skillID": "melvorD:Woodcutting"
+                    "skillID": "melvorD:Woodcutting",
+                    "value": 5
                   }
                 ],
                 "randomProductChance": [
@@ -6131,15 +6233,11 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 5000
+                  "quantity": 6400
                 },
                 {
                   "id": "melvorD:Yew_Tree_Seed",
                   "quantity": 1000
-                },
-                {
-                  "id": "melvorD:Weird_Gloop",
-                  "quantity": 7500
                 },
                 {
                   "id": "melvorD:Bird_Nest",
@@ -6147,22 +6245,26 @@
                 },
                 {
                   "id": "melvorF:Seed_Pouch_II",
-                  "quantity": 2500
+                  "quantity": 3500
                 }
               ],
               "currencyCosts": [],
               "modifiers": {
                 "basePrimaryProductQuantity": [
                   {
-                    "value": 5,
+                    "value": 10,
                     "skillID": "melvorD:Farming",
                     "categoryID": "melvorD:Tree"
                   }
                 ],
-                "masteryXP": [
+                "skillItemDoublingChance": [
                   {
-                    "value": 5,
-                    "skillID": "melvorD:Woodcutting"
+                    "skillID": "melvorD:Woodcutting",
+                    "value": 10
+                  },
+                  {
+                    "skillID": "melvorD:Firemaking",
+                    "value": 10
                   }
                 ]
               }
@@ -6179,24 +6281,24 @@
                   "quantity": 15000
                 },
                 {
-                  "id": "melvorD:Magic_Tree_Seed",
-                  "quantity": 1000
-                },
-                {
-                  "id": "melvorD:Yew_Tree_Seed",
-                  "quantity": 750
-                },
-                {
-                  "id": "melvorD:Maple_Tree_Seed",
-                  "quantity": 500
+                  "id": "melvorD:Oak_Tree_Seed",
+                  "quantity": 3000
                 },
                 {
                   "id": "melvorD:Willow_Tree_Seed",
-                  "quantity": 250
+                  "quantity": 2500
                 },
                 {
-                  "id": "melvorD:Oak_Tree_Seed",
-                  "quantity": 100
+                  "id": "melvorD:Maple_Tree_Seed",
+                  "quantity": 2000
+                },
+                {
+                  "id": "melvorD:Yew_Tree_Seed",
+                  "quantity": 1500
+                },
+                {
+                  "id": "melvorD:Magic_Tree_Seed",
+                  "quantity": 1000
                 },
                 {
                   "id": "melvorD:Bird_Nest",
@@ -6204,15 +6306,25 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "addBonusesToTreeMastery",
               "shinyMods": [
-                1
+                1,
+                2,
+                3
               ],
               "modifiers": {
                 "rielkConstruction:farmingTreeSeedReturn": [
                   {
                     "skillID": "melvorD:Farming",
                     "categoryID": "melvorD:Tree",
-                    "value": 50
+                    "value": 30
+                  }
+                ],
+                "rielkConstruction:spoofAddWoodcuttingMasteryStuff2": 1,
+                "skillInterval": [
+                  {
+                    "value": -10,
+                    "skillID": "melvorD:Woodcutting"
                   }
                 ]
               }
@@ -6297,11 +6409,9 @@
               "changeFunc": "doubleEffectsOfStuff",
               "shinyMods": [
                 1
-                
               ],
               "modifiers": {
                 "rielkConstruction:spoofUpgradeCookingEquipment_1": 1
-                
               }
             },
             {
@@ -8606,26 +8716,6 @@
     ],
     "modifiers": [
       {
-        "id": "farmingTreeSeedReturn",
-        "allowNegative": false,
-        "allowedScopes": [
-          {
-            "scopes": {
-              "skill": true,
-              "category": true
-            },
-            "descriptions": [
-              {
-                "text": "+${value}% chance to regain a Tree Seed in Farming when harvested",
-                "lang": "MODIFIER_DATA_farmingTreeSeedReturn",
-                "above": 0,
-                "includeSign": false
-              }
-            ]
-          }
-        ]
-      },
-      {
         "id": "constructionActionsToUpgrade",
         "inverted": true,
         "allowedScopes": [
@@ -8765,6 +8855,26 @@
         ]
       },
       {
+        "id": "farmingTreeSeedReturn",
+        "allowNegative": false,
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true,
+              "category": true
+            },
+            "descriptions": [
+              {
+                "text": "+${value}% chance to regain a Tree Seed in Farming when harvested",
+                "lang": "MODIFIER_DATA_farmingTreeSeedReturn",
+                "above": 0,
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "spoofUnlockPlot",
         "inverted": true,
         "allowedScopes": [
@@ -8777,6 +8887,21 @@
               {
                 "text": "Unlocks a plot, of {subcategoryName}",
                 "lang": "MODIFIER_DATA_spoofUnlockPlot",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "getSeedsFromFood",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Get back seeds from eating food",
+                "lang": "MODIFIER_DATA_getSeedsFromFood",
                 "includeSign": false
               }
             ]
@@ -8829,7 +8954,7 @@
           }
         ]
       },
-            {
+      {
         "id": "spoofUnlockBranchSaplings",
         "allowedScopes": [
           {
@@ -8844,7 +8969,7 @@
           }
         ]
       },
-            {
+      {
         "id": "spoofUpgradeSaplingChance",
         "inverted": true,
         "allowedScopes": [
@@ -8922,8 +9047,7 @@
       },
       {
         "id": "spoofUpgradeCookingEquipment_2",
-                "modifyValue": "value*100",
-
+        "modifyValue": "value*100",
         "allowedScopes": [
           {
             "scopes": {},
@@ -9019,6 +9143,123 @@
               {
                 "text": "How up overheal can go",
                 "lang": "MODIFIER_DATA_maxOverheal"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "loseGPOnFishingBasedOnFish",
+        "inverted": true,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Fishing takes an amount of GP.",
+                "lang": "MODIFIER_DATA_loseGPOnFishingBasedOnFish",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fishingTreasureNoReplace",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Getting fish/treasure in fishing now is additional to catch not replace it.",
+                "lang": "MODIFIER_DATA_fishingTreasureNoReplace"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "minFishInterval",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Change minimum Fishing Interval.",
+                "lang": "MODIFIER_DATA_minFishInterval"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "maxFishInterval",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Change Maximum Fishing Interval.",
+                "lang": "MODIFIER_DATA_maxFishInterval"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fishPerfectCookedFish",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Fishing a cooked fish will fish its perfectly cooked version instead.",
+                "lang": "MODIFIER_DATA_fishPerfectCookedFish"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoofAddFishingSpecialItems",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Spoofs adding 3 items to the fishing Special Pool.",
+                "lang": "MODIFIER_DATA_spoofAddFishingSpecialItems",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoofAddWoodcuttingMasteryStuff1",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Spoofs a woodcutting mastery effect at 50.",
+                "lang": "MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff1",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoofAddWoodcuttingMasteryStuff2",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Spoofs a woodcutting mastery effect at 99.",
+                "lang": "MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2",
+                "includeSign": false
               }
             ]
           }

@@ -65,11 +65,11 @@ export class ConstructionFixture extends RealmedObject {
     }
 
     getCurrentBuildRecipeCosts(construction, efficiency = 0) {
-        if (this.currentTier >= this.maxTier) {return;}
-        const prevRatio = this.progress / this.currentRecipe.actionCost;
+        if (this.currentTier >= this.maxTier) return;
         const costMult = efficiency ? construction.getEfficiencyCostMultiplier(this.currentRecipe) : 1;
+        const prevRatio = this.progress / this.currentRecipe.actionCost;
         const nextRatio = Math.min(1, (this.progress + costMult) / this.currentRecipe.actionCost);
-        this.stepCost = construction.getRecipeCosts(this.currentRecipe);
+        this.stepCost = construction.getRecipeCosts(this.currentRecipe); //items required in the recipe
         const actionItems = new Map();
         const actionCurrencies = new Map();
         const reduction = construction.game.modifiers.getValue("rielkConstruction:constructionActionsToUpgrade", ModifierQuery.EMPTY) / 100;
@@ -79,7 +79,7 @@ export class ConstructionFixture extends RealmedObject {
             const prev = Math.floor(reducedtotal * prevRatio);
             const next = Math.floor(reducedtotal * nextRatio);
             const delta = next - prev;
-            const remaining = Math.max(0 , (reducedtotal - prev));
+            const remaining = Math.max(0, (reducedtotal - prev));
             remainingitems.push(remaining);
             if (delta > 0) actionItems.set(item, delta);
         });
@@ -89,7 +89,7 @@ export class ConstructionFixture extends RealmedObject {
             const prev = Math.floor(reducedtotal * prevRatio);
             const next = Math.floor(reducedtotal * nextRatio);
             const delta = next - prev;
-            const remaining = Math.max(0 , (reducedtotal - prev));
+            const remaining = Math.max(0, (reducedtotal - prev));
             remainingcurrencies.push(remaining);
             if (delta > 0) actionCurrencies.set(currency, delta);
         });

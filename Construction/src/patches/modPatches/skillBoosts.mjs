@@ -1,10 +1,10 @@
 export function skillBoostsCompatibility(ctx) {
     skillBoosts.addNewSkill({
-        // Required //
+
         skill: game.construction,
-        // Optional //
-        realmIDs: ['melvorD:Melvor'], // My god Slash, you really made it easy for idiots like me, after trying to get ETA to somehow work for a day straight this is amazing
-        header: '#skill-boosts-append', // second thanks for this <-
+
+        realmIDs: ['melvorD:Melvor'], 
+        header: '#skill-boosts-append', 
         noPreservation: false,
         noMastery: true,
         noSummon: true,
@@ -17,8 +17,13 @@ export function skillBoostsCompatibility(ctx) {
     });
     skillBoosts.addNewModifiers({
         skills: [game.construction],
-        modifiers: new Map([['melvorD:Melvor',['rielkConstruction:skillEfficiencyChance', 'rielkConstruction:skillEfficiencyPotency', 'rielkConstruction:skillEfficiencyCost']]])
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:skillEfficiencyChance', 'rielkConstruction:skillEfficiencyPotency', 'rielkConstruction:skillEfficiencyCost']]])
     });
+        skillBoosts.addNewModifiers({
+        skills: [game.fishing],
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:loseGPOnFishingBasedOnFish', 'rielkConstruction:fishingTreasureNoReplace']]])
+    });
+
     ctx.patch(skillBoosts.__proto__.constructor, 'createPetTooltip').after(function (_, container, item) {
         if (item.id === "rielkConstruction:Scoobs") {
             let progress = game.construction.recipeCountByTier.reduce((a, b) => a + b, 0);
@@ -33,5 +38,4 @@ export function skillBoostsCompatibility(ctx) {
             miscContainer.appendChild(elem);
         }
     });
-
 }   

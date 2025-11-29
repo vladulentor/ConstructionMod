@@ -1,5 +1,5 @@
-export function unlockPlot(tier) {
-    const tierlvl = tier.tier; //just take the tier from ID since recipes don't hold their own tier
+export function unlockPlot() {
+    const tierlvl = this.tier; //just take the tier from ID since recipes don't hold their own tier
     const plotMap = {
         "1": "rielkConstruction:AllotmentPlotRielk1",
         "2": "rielkConstruction:HerbPlotRielk1",

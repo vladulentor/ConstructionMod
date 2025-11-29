@@ -229,7 +229,7 @@ export const language = {
 'MODIFIER_DATA_loseGPOnFishingBasedOnFish': 'Dépensez jusqu\'à ${value} GP en pêchant, réduit par la valeur du poisson',
 'MODIFIER_DATA_spoofAddFishingSpecialItems':'Ajoute ${value} nouveaux objets au pool spécial lors de la pêche',
 'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff1':'Les arbres de niveau de maîtrise 50 accordent +0,25% XP dans toutes les compétences',
-'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2':'Les arbres de niveau de maîtrise 99 accordent -0,25% d\'intervalle dans toutes les compétences non-combat',
+'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2':'Les arbres de niveau de maîtrise 99 accordent -0.1% d\'intervalle dans toutes les compétences non-combat',
 'MODIFIER_DATA_skillIntervalSubcategory':'${value}% d\'intervalle de ${skillName} pour ${subcategoryName}',
 
 'MODIFIER_DATA_fishPerfectCookedFish':'Les poissons cuits pêchés sont des poissons parfaitement cuits',

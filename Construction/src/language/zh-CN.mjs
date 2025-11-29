@@ -256,7 +256,7 @@ export const language = {
 'ITEM_NAME_Mariners_Blouse': '水手上衣',
 'ITEM_NAME_Mariners_Tie': '水手领带',
 'MASTERY_BONUS_Woodcutting_2':'赋予所有技能 +0.25% 经验',
-'MASTERY_BONUS_Woodcutting_3':'使所有非战斗技能间隔减少 -0.25%',
+'MASTERY_BONUS_Woodcutting_3':'使所有非战斗技能间隔减少 -0.1%',
 'MODIFIER_DATA_minFishInterval':'${value}% 最小钓鱼间隔',
 'MODIFIER_DATA_maxFishInterval':'${value}% 最大钓鱼间隔',
 

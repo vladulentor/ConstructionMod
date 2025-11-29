@@ -231,7 +231,7 @@ export const language = {
 'MODIFIER_DATA_loseGPOnFishingBasedOnFish': '釣りをすると最大${value}GPを消費、魚の価値で減少',
 'MODIFIER_DATA_spoofAddFishingSpecialItems':'釣りでスペシャルプールに${value}個の新しいアイテムを追加',
 'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff1':'熟練度50の木は全スキルに+0.25%の経験値を付与',
-'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2':'熟練度99の木は戦闘以外の全スキルの間隔を-0.25%減少',
+'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2':'熟練度99の木は戦闘以外の全スキルの間隔を-0.1%%減少',
 'MODIFIER_DATA_skillIntervalSubcategory':'${subcategoryName}の${skillName}間隔が${value}%',
 
 'MODIFIER_DATA_fishPerfectCookedFish':'釣った魚は完璧に調理された魚になる',
@@ -241,7 +241,7 @@ export const language = {
 'ITEM_NAME_Mariners_Blouse': '船乗りの上着',
 'ITEM_NAME_Mariners_Tie': '船乗りのネクタイ',
 'MASTERY_BONUS_Woodcutting_2':'全スキルに+0.25%の経験値を付与',
-'MASTERY_BONUS_Woodcutting_3':'戦闘以外の全スキルの間隔を-0.25%減少',
+'MASTERY_BONUS_Woodcutting_3':'戦闘以外の全スキルの間隔を-0.1%減少',
 'MODIFIER_DATA_minFishInterval':'${value}% 最小釣り間隔',
 'MODIFIER_DATA_maxFishInterval':'${value}% 最大釣り間隔',
 

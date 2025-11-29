@@ -250,7 +250,7 @@ export const language = {
 'MODIFIER_DATA_loseGPOnFishingBasedOnFish': 'Gib bis zu ${value} GP beim Angeln aus, reduziert um den Wert des Fisches',
 'MODIFIER_DATA_spoofAddFishingSpecialItems':'Füge ${value} neue Gegenstände zum Spezial-Pool beim Angeln hinzu',
 'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff1':'Meisterschaftsstufe 50 Bäume gewährt +0,25% XP in allen Fertigkeiten',
-'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2':'Meisterschaftsstufe 99 Bäume gewährt -0,25% Intervall in allen Nicht-Kampf-Fertigkeiten',
+'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2':'Meisterschaftsstufe 99 Bäume gewährt -0.1% Intervall in allen Nicht-Kampf-Fertigkeiten',
 'MODIFIER_DATA_skillIntervalSubcategory':'${value}% ${skillName}-Intervall für ${subcategoryName}',
 
 'MODIFIER_DATA_fishPerfectCookedFish':'Gekochte Fische, die beim Angeln gefangen werden, sind perfekt gegart',
@@ -259,8 +259,8 @@ export const language = {
 'ITEM_NAME_Tar_Jar': 'Tar-Gefäß',
 'ITEM_NAME_Mariners_Blouse': 'Matrosenoberteil',
 'ITEM_NAME_Mariners_Tie': 'Matrosenkrawatte',
-'MASTERY_BONUS_Woodcutting_2':'Gewährt +0,25% XP in allen Fertigkeiten',
-'MASTERY_BONUS_Woodcutting_3':'Gewährt -0,25% Intervall in allen Nicht-Kampf-Fertigkeiten',
+'MASTERY_BONUS_Woodcutting_2':'Gewährt +0.25% XP in allen Fertigkeiten',
+'MASTERY_BONUS_Woodcutting_3':'Gewährt -0.1% Intervall in allen Nicht-Kampf-Fertigkeiten',
 'MODIFIER_DATA_minFishInterval':'${value}% Minimales Angelintervall',
 'MODIFIER_DATA_maxFishInterval':'${value}% Maximales Angelintervall',
 

@@ -10,7 +10,7 @@ const xpBonusText = new MasteryLevelUnlock({ description: getRielkLangString('MA
 const intervBonusText = new MasteryLevelUnlock({ description: getRielkLangString('MASTERY_BONUS_Woodcutting_3'), level: 99 }, game.woodcutting);
 
 const xpData = { modifiers: {"melvorD:skillXP":0.25}, autoScopeToAction: false, level: 50 };
-const intervData = { modifiers:  {"melvorD:skillInterval":-0.25}, autoScopeToAction: false, level: 99 };
+const intervData = { modifiers:  {"melvorD:skillInterval":-0.1}, autoScopeToAction: false, level: 99 };
 
 const xpBonusEffect = new MasteryLevelBonus(xpData, game);
 const intervBonusEffect = new MasteryLevelBonus(intervData, game);

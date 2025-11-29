@@ -238,7 +238,7 @@ export const language = {
 'MODIFIER_DATA_loseGPOnFishingBasedOnFish': '낚시 시 최대 ${value} GP 소비, 물고기 가치에 따라 감소',
 'MODIFIER_DATA_spoofAddFishingSpecialItems':'낚시 시 스페셜 풀에 ${value}개의 새로운 아이템 추가',
 'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff1':'숙련도 50 나무는 모든 스킬에 +0.25% 경험치 부여',
-'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2':'숙련도 99 나무는 전투가 아닌 모든 스킬의 간격을 -0.25% 감소',
+'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2':'숙련도 99 나무는 전투가 아닌 모든 스킬의 간격을 -0.1% 감소',
 'MODIFIER_DATA_skillIntervalSubcategory':'${subcategoryName}의 ${skillName} 간격 ${value}%',
 
 'MODIFIER_DATA_fishPerfectCookedFish':'낚은 생선이 완벽하게 요리된 생선으로 조리됨',
@@ -248,7 +248,7 @@ export const language = {
 'ITEM_NAME_Mariners_Blouse': '선원 상의',
 'ITEM_NAME_Mariners_Tie': '선원 넥타이',
 'MASTERY_BONUS_Woodcutting_2':'모든 스킬에 +0.25% 경험치 부여',
-'MASTERY_BONUS_Woodcutting_3':'전투가 아닌 모든 스킬의 간격을 -0.25% 감소',
+'MASTERY_BONUS_Woodcutting_3':'전투가 아닌 모든 스킬의 간격을 -0.1% 감소',
 'MODIFIER_DATA_minFishInterval':'${value}% 최소 낚시 간격',
 'MODIFIER_DATA_maxFishInterval':'${value}% 최대 낚시 간격',
 

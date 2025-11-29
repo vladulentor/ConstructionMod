@@ -214,7 +214,7 @@ export const language = {
 'MODIFIER_DATA_loseGPOnFishingBasedOnFish': 'Тратьте до ${value} GP при рыбалке, уменьшается на стоимость рыбы',
 'MODIFIER_DATA_spoofAddFishingSpecialItems':'Добавьте ${value} новых предметов в специальный пул при рыбалке',
 'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff1':'Деревья уровня мастерства 50 дают +0,25% опыта во всех навыках',
-'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2':'Деревья уровня мастерства 99 уменьшают интервал всех нек боевых навыков на -0,25%',
+'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2':'Деревья уровня мастерства 99 уменьшают интервал всех нек боевых навыков на -0.1%',
 'MODIFIER_DATA_skillIntervalSubcategory':'${value}% интервала ${skillName} для ${subcategoryName}',
 
 'MODIFIER_DATA_fishPerfectCookedFish':'Приготовленные пойманные рыбы становятся идеально приготовленными',
@@ -224,7 +224,7 @@ export const language = {
 'ITEM_NAME_Mariners_Blouse': 'Блуза моряка',
 'ITEM_NAME_Mariners_Tie': 'Галстук моряка',
 'MASTERY_BONUS_Woodcutting_2':'Даёт +0,25% опыта во всех навыках',
-'MASTERY_BONUS_Woodcutting_3':'Уменьшает интервал всех нек боевых навыков на -0,25%',
+'MASTERY_BONUS_Woodcutting_3':'Уменьшает интервал всех нек боевых навыков на -0.1%',
 'MODIFIER_DATA_minFishInterval':'${value}% Минимальный интервал рыбалки',
 'MODIFIER_DATA_maxFishInterval':'${value}% Максимальный интервал рыбалки',
 

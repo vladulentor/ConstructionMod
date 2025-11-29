@@ -228,7 +228,7 @@ export const language = {
 'MODIFIER_DATA_loseGPOnFishingBasedOnFish': '釣魚時最多消耗 ${value} GP，按魚的價值減少',
 'MODIFIER_DATA_spoofAddFishingSpecialItems':'釣魚時向特殊池添加 ${value} 個新物品',
 'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff1':'50級熟練度樹木賦予所有技能 +0.25% 經驗',
-'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2':'99級熟練度樹木使所有非戰鬥技能間隔減少 -0.25%',
+'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2':'99級熟練度樹木使所有非戰鬥技能間隔減少 -0.1%',
 'MODIFIER_DATA_skillIntervalSubcategory':'${subcategoryName} 的 ${skillName} 間隔 ${value}%',
 
 'MODIFIER_DATA_fishPerfectCookedFish':'釣到的熟魚為完美熟魚',
@@ -238,7 +238,7 @@ export const language = {
 'ITEM_NAME_Mariners_Blouse': '水手上衣',
 'ITEM_NAME_Mariners_Tie': '水手領帶',
 'MASTERY_BONUS_Woodcutting_2':'賦予所有技能 +0.25% 經驗',
-'MASTERY_BONUS_Woodcutting_3':'使所有非戰鬥技能間隔減少 -0.25%',
+'MASTERY_BONUS_Woodcutting_3':'使所有非戰鬥技能間隔減少 -0.1%',
 'MODIFIER_DATA_minFishInterval':'${value}% 最小釣魚間隔',
 'MODIFIER_DATA_maxFishInterval':'${value}% 最大釣魚間隔',
 

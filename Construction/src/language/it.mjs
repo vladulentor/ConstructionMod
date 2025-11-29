@@ -231,7 +231,7 @@ export const language = {
 'MODIFIER_DATA_loseGPOnFishingBasedOnFish': 'Spendere fino a ${value} GP durante la pesca, ridotti dal valore del pesce',
 'MODIFIER_DATA_spoofAddFishingSpecialItems':'Aggiungi ${value} nuovi oggetti al pool speciale durante la pesca',
 'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff1':'Gli alberi di livello 50 di maestria concedono +0,25% XP in tutte le abilità',
-'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2':'Gli alberi di livello 99 di maestria concedono -0,25% intervallo in tutte le abilità non di combattimento',
+'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2':'Gli alberi di livello 99 di maestria concedono -0.1% intervallo in tutte le abilità non di combattimento',
 'MODIFIER_DATA_skillIntervalSubcategory':'${value}% intervallo di ${skillName} per ${subcategoryName}',
 
 'MODIFIER_DATA_fishPerfectCookedFish':'I pesci cotti pescati sono pesci cotti perfetti',
@@ -241,7 +241,7 @@ export const language = {
 'ITEM_NAME_Mariners_Blouse': 'Maglia del Marinaio',
 'ITEM_NAME_Mariners_Tie': 'Cravatta del Marinaio',
 'MASTERY_BONUS_Woodcutting_2':'Concede +0,25% XP in tutte le abilità',
-'MASTERY_BONUS_Woodcutting_3':'Concede -0,25% intervallo in tutte le abilità non di combattimento',
+'MASTERY_BONUS_Woodcutting_3':'Concede -0.1% intervallo in tutte le abilità non di combattimento',
 'MODIFIER_DATA_minFishInterval':'${value}% Intervallo minimo di pesca',
 'MODIFIER_DATA_maxFishInterval':'${value}% Intervallo massimo di pesca',
 

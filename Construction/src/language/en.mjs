@@ -222,7 +222,7 @@ export const language = {
     'MODIFIER_DATA_loseGPOnFishingBasedOnFish': 'Spend up to ${value} GP when fishing, reduced by Fish value',
     'MODIFIER_DATA_spoofAddFishingSpecialItems': 'Can find ${value} new Special Items in Fishing',
     'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff1': 'Mastery Level 50 Trees grant +0.25% XP in all Skills',
-    'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2': 'Mastery Level 99 Trees grant -0.25% Interval in all non-Combat Skills',
+    'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2': 'Mastery Level 99 Trees grant -0.1% Interval in all non-Combat Skills',
     'MODIFIER_DATA_skillIntervalSubcategory': '${value}% ${skillName} Interval for ${subcategoryName}',
     'MODIFIER_DATA_minFishInterval':'${value}% Minimum Fishing Interval',
         'MODIFIER_DATA_maxFishInterval':'${value}% Maximum Fishing Interval',
@@ -291,7 +291,7 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 3': 'Unlock fixture\'s Tier 4 effects.',
     'MASTERY_BONUS_ Construction_ 4': 'Unlock fixture\'s Tier 5 effects.',
     'MASTERY_BONUS_Woodcutting_2': 'Grants +0.25% XP in all Skills',
-    'MASTERY_BONUS_Woodcutting_3': 'Grants -0.25% Interval in all non-Combat Skills',
+    'MASTERY_BONUS_Woodcutting_3': 'Grants -0.1% Interval in all non-Combat Skills',
 
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',

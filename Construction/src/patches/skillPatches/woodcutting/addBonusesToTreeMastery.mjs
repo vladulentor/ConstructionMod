@@ -31,5 +31,6 @@ export function addBonusesToTreeMastery() {
         Guard5 = 1;
     }
     text.sort((a,b) => a.level - b.level);
-    game.woodcutting.computeProvidedStats(true);
+    game.woodcutting.computeProvidedStats(false); 
+    //recomputing stats at this point, when loading, is inefficient, but it's also basically needed to make this work
 }

@@ -2743,7 +2743,7 @@
                 "skillPreservationChance": [
                   {
                     "value": 10,
-                    "categoryID":"rielkConstruction:Materials",
+                    "categoryID": "rielkConstruction:Materials",
                     "skillID": "rielkConstruction:Construction"
                   }
                 ]
@@ -5800,7 +5800,7 @@
               "changeFunc": "addSpecialFishingItems",
               "modifiers": {
                 "rielkConstruction:spoofAddFishingSpecialItems": 3,
-                "rielkConstruction:maxFishInterval":-10
+                "rielkConstruction:maxFishInterval": -10
               }
             },
             {
@@ -5890,10 +5890,8 @@
               "currencyCosts": [],
               "modifiers": {
                 "rielkConstruction:fishPerfectCookedFish": 1,
-                                "rielkConstruction:minFishInterval":-20
-,
+                "rielkConstruction:minFishInterval": -20,
                 "bonusFishingSpecialChance": 5
-
               }
             },
             {

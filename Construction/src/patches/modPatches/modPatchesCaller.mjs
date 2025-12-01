@@ -32,14 +32,14 @@ export function patchMods(ctx, modList) {
             color: '#f5d522ff'
         });
     }
-    if (modList.includes('my skillFX')) {
+    /*if (modList.includes('my skillFX')) {
         skillsoundfxCompatibility(ctx);
         compatMessages.push({
             name: '[PSY] Skill Sound FX',
             description: 'Custom sounds added for construction.',
             color: '#76f522ff'
         });
-    }
+    }*/
 
 
     if (compatMessages.length > 0 && (setLang == 'en' || setLang == 'carrot' || setLang == 'lemon')) {
@@ -61,8 +61,8 @@ export function patchMods(ctx, modList) {
         if (!compatMessages.some(m => m.name === 'Tiny Icons')) {
             console.log(
                 '%c[Suggestion]%c Try installing Tiny Icons. It makes all modifiers look fantastic.',
-                'color:#1976d2; background:#e3f2fd; font-weight:bold;',
-                'background:#e3f2fd; font-weight:normal;'
+                'color:#1976d2; background:#1976d220; font-weight:bold;',
+                'background:#1976d220; font-weight:normal;'
             );
         }
 

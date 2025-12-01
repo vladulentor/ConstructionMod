@@ -62,7 +62,7 @@ class ConstructionFixtureNavElement extends HTMLElement {
         this.toggleSparkles(fixture);
     }
     toggleSparkles(fixture) {
-        (fixture.currentTier == fixture.maxTier) ? this.addSparkles() : this.removeSparkles();
+        fixture.isMaxTier ? this.addSparkles() : this.removeSparkles();
     }
     addSparkles() {
         this.constructionProgress.classList.add('text-warning');

@@ -9,6 +9,7 @@ export class ConstructionFixture extends RealmedObject {
         this.progress = 0;
         this.UIcost = null;
         this.stepCost = null;
+        this.skill = construction;
         try {
             this._media = data.media;
             if (data.recipes == undefined)
@@ -33,6 +34,20 @@ export class ConstructionFixture extends RealmedObject {
         } catch (e) {
             throw new DataModificationError(ConstructionFixture.name, e, this.id);
         }
+    }
+    //Bugtest functions
+    tierUp() {
+        this.progress = 100000;
+        this.currentRecipe.makeProgress(1);
+    }
+    tierMax() {
+        while (this.currentTier < this.maxTier) {
+            this.progress = 100000;
+            this.currentRecipe.makeProgress(1);
+        }
+    }
+    get isMaxTier() {
+        return this.currentTier >= this.recipes.length
     }
     get media() {
         return this.getMediaURL(this._media);
@@ -63,7 +78,18 @@ export class ConstructionFixture extends RealmedObject {
     get abyssalLevel() {
         return this.recipes[0].abyssalLevel;
     }
-
+    getTotalRemainingCost(){
+        if(this.UIcost == undefined)
+            this.getCurrentBuildRecipeCosts(this.skill);
+        const costs = new Costs(game);
+        this.UIcost.itemCosts.forEach(item => {
+            costs.addItem(item.item, item.quantity)
+        });
+        this.UIcost.currencyCosts.forEach(currency => {
+            costs.addCurrency(currency.currency, currency.quantity)
+        });
+        return costs;
+    }
     getCurrentBuildRecipeCosts(construction, efficiency = 0) {
         if (this.currentTier >= this.maxTier) return;
         const costMult = efficiency ? construction.getEfficiencyCostMultiplier(this.currentRecipe) : 1;

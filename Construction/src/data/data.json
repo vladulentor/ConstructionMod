@@ -849,11 +849,16 @@
               "value": -5
             }
           ],
-          "thievingStealth": 25
+          "thievingStealth": 25,
+          "skillXP":[{"skillID":"melvorD:Agility", "value":5}],
+          "masteryXP":[{"skillID":"melvorD:Agility", "value":5}]
         },
         "consumesOn": [
           {
             "type": "ThievingAction"
+          },
+          {
+            "type": "AgilityAction"
           }
         ]
       },
@@ -8465,7 +8470,8 @@
               ],
               "currencyCosts": [],
               "shinyMods": [
-                1
+                1,
+                2
               ],
               "modifiers": {
                 "flatHiddenSkillLevelBasedOnLevels": [
@@ -8912,7 +8918,6 @@
       },
       {
         "id": "unlockRoaring",
-        "inverted": true,
         "allowedScopes": [
           {
             "scopes": {},
@@ -8973,7 +8978,6 @@
       },
       {
         "id": "spoofUpgradeSaplingChance",
-        "inverted": true,
         "allowedScopes": [
           {
             "scopes": {},
@@ -9182,6 +9186,7 @@
       },
       {
         "id": "minFishInterval",
+        "inverted":true,
         "allowedScopes": [
           {
             "scopes": {},
@@ -9196,6 +9201,7 @@
       },
       {
         "id": "maxFishInterval",
+                "inverted":true,
         "allowedScopes": [
           {
             "scopes": {},

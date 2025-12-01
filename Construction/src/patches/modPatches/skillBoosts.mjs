@@ -1,3 +1,6 @@
+const { loadModule } = mod.getContext(import.meta);
+const { getRielkLangString, templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
+
 export function skillBoostsCompatibility({ patch }) {
     skillBoosts.addNewSkill({
 
@@ -51,7 +54,7 @@ export function skillBoostsCompatibility({ patch }) {
             this.SB = mod.api.Skill_Boosts.SkillBoosts;
             this.SBMenu = mod.api.Skill_Boosts.SkillBoostsMenu;
             this.Construction = game.construction.__proto__.constructor;
-
+            this.ConstructionFixture = game.construction.fixtures.getObjectByID('rielkConstruction:Apparatus').__proto__.constructor;
             this.init();
         }
         init() {
@@ -62,7 +65,6 @@ export function skillBoostsCompatibility({ patch }) {
             // Add to the renderQueue. This value must be the icon category in all lower-case.
             skillBoosts.renderQueue.fixture = {
                 bg: new Set(),
-                cost: new Set()
             }
 
             // Patch SB's functions
@@ -70,7 +72,6 @@ export function skillBoostsCompatibility({ patch }) {
                 if (icon?.category === 'Fixture') {
                     let queue = skillBoosts.renderQueue.fixture;
                     // queue.bg.add(icon.item); Adding to the bg render queue is always done inside updateIcon and therefor isn't needed.
-                    queue.cost.add(icon.item);
                 }
             });
             patch(this.SB, 'initSB').after(function (_) {
@@ -81,10 +82,9 @@ export function skillBoostsCompatibility({ patch }) {
                     icon.onclick = () => constructionIntegration.fixtureOnClick(icon);
                 }
             });*/
-            /*patch(this.SB, 'render').after(function (_) {
+            patch(this.SB, 'render').after(function (_) {
                 ConstructionIntegration.renderFixtureBg();
-                ConstructionIntegration.renderFixtureCost();
-            });*/
+            });
             patch(this.SB, 'createTooltip').after(function (content, item, icon) {
                 if (icon.category === 'Fixture') {
                     let container = content.children[0].children[1];
@@ -93,13 +93,16 @@ export function skillBoostsCompatibility({ patch }) {
             });
 
             // Add integration for the red background setting. Must be done during the onModsLoaded lifecycle hook. The `value` must be the icon category (case-sensitive)
-            mod.api.Skill_Boosts.redBGOptions.push({ value: 'Fixture', label: skillBoosts.getLang('INSTRUMENT') });
+            mod.api.Skill_Boosts.redBGOptions.push({ value: 'Fixture', label: getRielkLangString('SKILL_CATEGORY_ Construction_ House') });
         }
-        patchConstruction() {
-            patch(this.Construction, 'computeProvidedStats').after(function (_) {
-                skillBoosts.getCategoryIcons('Fixture', true).forEach(fixture => {
-                    ConstructionIntegration.updateFixtureBg(fixture);
-                });
+        patchConstruction() { 
+            patch(this.ConstructionFixture, 'upgrade').after(function (_, construction) {
+                if (this.isMaxTier)
+                    skillBoosts.removeIcon(this);
+                //If a fixture has no more useful bonuses for a skill, it will not be removed from the list, only when it is done
+                //This is because checking that would require either recreating the icon (which fails because I don't know how to set tooltips even if I rerun the filter)
+                //Or checking the current pushed modifiers from the icon into every skill, removing them, and removing the icon if there are none left, which I won't try
+                //me and my big chungus life
             });
         }
         renderFixtureBg() {
@@ -109,52 +112,36 @@ export function skillBoostsCompatibility({ patch }) {
             skillBoosts.setIconSearch(); // When updating backgrounds, this must be set to preserve/update the search query
             skillBoosts.renderQueue.fixture.bg.clear();
         }
-        renderFixtureCost() {
-            if (skillBoosts.renderQueue.fixture.cost.size === 0)
-                return;
-            skillBoosts.renderQueue.fixture.cost.forEach(fixture => this.updateFixtureCost(fixture));
-            skillBoosts.renderQueue.fixture.cost.clear();
-        }
         filterFixtures() {
-            game.construction.fixtures.forEach(fixture => {
-                let processedSkills = [],
-                    { statObject, modifiers } = this.getFixtureModifiers(fixture);
+            game.construction.fixtures.filter(fixture => !fixture.isMaxTier).forEach(fixture => {
+                ConstructionIntegration.filterFixture(fixture);
+            });
+        }
+        filterFixture(fixture) {
+            let { statObject, modifiers } = this.getFixtureModifiers(fixture);
+            skillBoosts.data.skills.forEach(skill => {
 
-                skillBoosts.data.skills.forEach(skill => {
-                    let { realms, modifiers } = skillBoosts.hasModifiers(skill, skillBoosts.getItemMods(statObject));
-                    if (realms.length > 0) {
-                        // Icon Category (fixture) must match the word used in the render queue. The category is case insensitive - The render queue should be all lower case.
-                        let icon = skillBoosts.createIcon(fixture, modifiers, realms, skill, 0, 'Fixture');
-                        icon.createText();
-                    }
-                });
+                let { realms, modifiers } = skillBoosts.hasModifiers(skill, skillBoosts.getItemMods(statObject));
+                if (realms.length > 0) {
+                    // Icon Category (fixture) must match the word used in the render queue. The category is case insensitive - The render queue should be all lower case.
+                    return skillBoosts.createIcon(fixture, modifiers, realms, skill, 4, 'Fixture');
+                }
             });
         }
         updateFixtureBg(fixture, icon = skillBoosts.getItemIcon(fixture)) {
-            if (icon === undefined)
+            if (icon === undefined || fixture.isMaxTier)
                 return;
 
-            if (game.construction.bards.isHired(fixture)) {
-                icon.setBg('sb-green-bg');
-            } else if (!game.construction.isBasicSkillRecipeUnlocked(fixture)) {
+            let recipe = fixture.currentRecipe;
+            if (!fixture.getTotalRemainingCost().checkIfOwned()) {
                 icon.setBg('sb-red-bg');
-            } else if (!game.gp.canAfford(this.getFixtureCost(fixture))) {
+            } else if (recipe.level > game.construction.level) {
                 icon.setBg('sb-yellow-bg');
             } else {
                 icon.setBg('sb-default-bg');
             }
 
             skillBoosts.hideUndiscoveredIcons(icon, 'Fixture');
-        }
-        updateFixtureCost(fixture, icon = skillBoosts.getItemIcon(fixture), hideIcons = true) {
-            if (icon === undefined)
-                return;
-
-            let gpCost = this.getFixtureCost(fixture);
-            if (gpCost === undefined)
-                return icon.setText(0);
-
-            icon.setText(gpCost);
         }
         /*fixtureOnClick(icon) {
             if (skillBoosts.isSpecialModeActive(icon)) {
@@ -170,9 +157,8 @@ export function skillBoostsCompatibility({ patch }) {
 
             return Math.floor(costs[unlocked - 1] * (1 + hireModifier / 100));
         }
-        getFixtureModifiers(fixture) {
-            let modifiers = fixture.recipes
-                .flatMap(recipe => recipe.modifiers._stats) ?? [],
+        getFixtureModifiers(fixture) { // we only care about the fixture tiers we don't yet have.
+            let modifiers = fixture.recipes.filter(r => r.tier > fixture.currentTier).flatMap(recipe => recipe.modifiers._stats ?? []),
                 statObject = {
                     modifiers: [],
                     enemyModifiers: [],
@@ -194,13 +180,60 @@ export function skillBoostsCompatibility({ patch }) {
                     statObject.conditionalModifiers.push(...modifier.conditionalModifiers);
                 }
             });
-            console.log("flatmap", modifiers);
-            console.log("statObject", statObject);
             return { statObject, modifiers };
         }
+        getRecipeModifiers(recipe) {
+            let modifiers = Object.entries(recipe.modifiers._stats).map(([key, value]) => ({ [key]: value })),
+                statObject = {
+                    modifiers: [],
+                    enemyModifiers: [],
+                    combatEffects: [],
+                    conditionalModifiers: []
+                };
+            modifiers.forEach(modifier => {
+                if (modifier.modifiers) {
+                    statObject.modifiers.push(...modifier.modifiers);
+                }
+                if (modifier.enemyModifiers) {
+                    statObject.enemyModifiers.push(...modifier.enemyModifiers);
+                }
+                if (modifier.combatEffects) {
+                    statObject.combatEffects.push(...modifier.combatEffects);
+                }
+                if (modifier.conditionalModifiers) {
+                    statObject.conditionalModifiers.push(...modifier.conditionalModifiers);
+                }
+            });
+            return { statObject, modifiers };
+
+        }
+        getRomanNumeral(num) { // I hope roman numerals are valid across languages, *shrug*
+            const romans = ['I', 'II', 'III ', 'IV', 'V', 'VI', 'VII', 'VIII'];
+            return romans[num - 1] || '';
+        }
+        RecipeModifierSpans(container, complete, isShiny, statObject) {
+            let nodes = skillBoosts.getModifierNodes(statObject, 1, 1, true);
+            nodes.forEach(node => {
+                if (complete) {
+                    if (isShiny)
+                        node.classList.add('fuck-you');
+                    else
+                        node.classList.replace('text-success', 'text-warning');
+                }
+                container.append(node);
+            });
+        }
         createFixtureTooltip(container, fixture, icon) {
-            let { statObject, modifiers } = this.getFixtureModifiers(fixture),
-                modifierContainer = skillBoosts.createModifierTooltip(container, fixture, statObject);
+            fixture.recipes.forEach((recipe, i) => {
+                let recipeContainer = i !== 0 ? skillBoosts.createDividerElem(container, ' sb-font-sm') : container,
+                    { statObject, modifiers } = ConstructionIntegration.getRecipeModifiers(recipe),
+                    tierText = createElement('span', { text: templateRielkLangString('MENU_TIER', { tiername: ConstructionIntegration.getRomanNumeral(i + 1) }) });
+                recipeContainer.style.fontSize = '1em';
+                tierText.style.fontSize = '1.2em';
+                tierText.style.fontWeight = 'bold';
+                recipeContainer.append(tierText);
+                ConstructionIntegration.RecipeModifierSpans(recipeContainer, fixture.currentTier >= i + 1, recipe.shinyMods, statObject);
+            })
 
         }
     }

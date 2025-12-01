@@ -177,7 +177,7 @@
                                             "rielkConstruction:skillEfficiencyPotency": [
                                                 {
                                                     "skillID": "rielkConstruction:Construction",
-                                                    "value": 0.05
+                                                    "value": 5
                                                 }
                                             ]
                                         }

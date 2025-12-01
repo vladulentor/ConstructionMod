@@ -1,10 +1,12 @@
 const { loadModule } = mod.getContext(import.meta);
 const { skillBoostsCompatibility } = await loadModule('src/patches/modPatches/skillBoosts.mjs');
 const { tinyIconsCompatibility } = await loadModule('src/patches/modPatches/tinyIcons.mjs');
+const { skillsoundfxCompatibility } = await loadModule('src/patches/modPatches/skillsoundfx.mjs');
 
-//const { patchRenderEquipment } = await loadModule('src/patches/modPatches/tinyIcons.mjs');
 
-export function patchModsBeforeDataReg(ctx, modList) {
+
+
+export function patchMods(ctx, modList) {
     const compatMessages = [];
     if (modList.includes('Skill Boosts')) {
         skillBoostsCompatibility(ctx);
@@ -23,11 +25,19 @@ export function patchModsBeforeDataReg(ctx, modList) {
             color: '#64b5f6'
         });
     }
-        if (modList.includes('"The future is now..." Text remover')) {
+    if (modList.includes('"The future is now..." Text remover')) {
         compatMessages.push({
             name: '"The future is..." Remover',
-            description: 'You won\'t see that annoying popup on Efficiency either..',
+            description: 'You won\'t see that annoying popup on Efficiency either.',
             color: '#f5d522ff'
+        });
+    }
+    if (modList.includes('my skillFX')) {
+        skillsoundfxCompatibility(ctx);
+        compatMessages.push({
+            name: '[PSY] Skill Sound FX',
+            description: 'Custom sounds added for construction.',
+            color: '#76f522ff'
         });
     }
 
@@ -59,7 +69,7 @@ export function patchModsBeforeDataReg(ctx, modList) {
         console.log(
             '%c[Construction Mod]%c That’s it from me. Did I mention you’re looking great today?',
             'color:#fca32f; background:#fca32f20; font-weight:bold;',
-             'font-weight:normal;'
+            'font-weight:normal;'
         );
 
         console.groupEnd();

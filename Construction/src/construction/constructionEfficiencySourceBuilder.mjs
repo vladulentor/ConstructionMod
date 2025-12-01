@@ -62,15 +62,15 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
 
             value = entry.modifier.modifyValue ? entry.modifier.modifyValue(value) : value;
 
-            // Update potency total
             this._potencyTotal += value;
-            // Classes for left-aligned potency column
             const labelClass = 'text-info text-left col-8 pl-2';
             const valueClass = `${entry.modifier.inverted === value < 0 ? 'text-success' : 'text-danger'} col-4 text-center `;
 
-            const valueString = `+${Number.isInteger(value) ? value : value.toFixed(2)}`;
+            const valueString = `+${Number.isInteger(value) ? value : (value).toFixed(2)}`;
             
             let displayName = entry.source.name;
+                        // I don't like it when an effect name is over 2 lines, it looks ugly. 
+
             if (displayName.startsWith('Twice-Measured Potion')) {
                 const match = displayName.match(/(I{1,3}|IV)$/);
                 const tier = match ? match[0] : '';
@@ -78,6 +78,10 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
             }
              if (displayName == 'Chuck the Foreman') {
                 displayName = 'Chuck';
+            }
+
+             if (displayName == 'Adamant Saw') {
+                displayName = 'Adm. Saw';
             }
             if (displayName.startsWith('Steel-Toed Boots'))
                  displayName = "Steel Boots";

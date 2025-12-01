@@ -165,7 +165,7 @@
         "name": "Oak Planks",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/planks_oaks.png",
+        "media": "assets/items/planks_oak.png",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -478,7 +478,7 @@
             {
               "skillID": "rielkConstruction:Construction",
               "categoryID": "rielkConstruction:House",
-              "value": 1
+              "value": 100
             }
           ]
         },
@@ -514,7 +514,7 @@
             {
               "skillID": "rielkConstruction:Construction",
               "categoryID": "rielkConstruction:House",
-              "value": 2
+              "value": 200
             }
           ]
         },
@@ -550,7 +550,7 @@
             {
               "skillID": "rielkConstruction:Construction",
               "categoryID": "rielkConstruction:House",
-              "value": 2
+              "value": 200
             }
           ]
         },
@@ -586,7 +586,7 @@
             {
               "skillID": "rielkConstruction:Construction",
               "categoryID": "rielkConstruction:House",
-              "value": 3
+              "value": 300
             }
           ]
         },
@@ -708,7 +708,7 @@
           "rielkConstruction:skillEfficiencyPotency": [
             {
               "skillID": "rielkConstruction:Construction",
-              "value": 0.3
+              "value": 30
             }
           ]
         }
@@ -1175,7 +1175,7 @@
             "rielkConstruction:skillEfficiencyPotency": [
               {
                 "skillID": "rielkConstruction:Construction",
-                "value": 0.2
+                "value": 20
               }
             ]
           }
@@ -1220,7 +1220,7 @@
             "rielkConstruction:skillEfficiencyPotency": [
               {
                 "skillID": "rielkConstruction:Construction",
-                "value": 0.2
+                "value": 20
               }
             ]
           }
@@ -1281,7 +1281,7 @@
             "rielkConstruction:skillEfficiencyPotency": [
               {
                 "skillID": "rielkConstruction:Construction",
-                "value": 0.2
+                "value": 20
               }
             ]
           }
@@ -1342,7 +1342,7 @@
             "rielkConstruction:skillEfficiencyPotency": [
               {
                 "skillID": "rielkConstruction:Construction",
-                "value": 0.2
+                "value": 20
               }
             ]
           }
@@ -1403,7 +1403,7 @@
             "rielkConstruction:skillEfficiencyPotency": [
               {
                 "skillID": "rielkConstruction:Construction",
-                "value": 0.2
+                "value": 20
               }
             ]
           }
@@ -1464,7 +1464,7 @@
             "rielkConstruction:skillEfficiencyPotency": [
               {
                 "skillID": "rielkConstruction:Construction",
-                "value": 0.2
+                "value": 20
               }
             ]
           }
@@ -1525,7 +1525,7 @@
             "rielkConstruction:skillEfficiencyPotency": [
               {
                 "skillID": "rielkConstruction:Construction",
-                "value": 0.3
+                "value": 30
               }
             ]
           }
@@ -1836,7 +1836,7 @@
           "rielkConstruction:skillEfficiencyPotency": [
             {
               "skillID": "rielkConstruction:Construction",
-              "value": 1
+              "value": 100
             }
           ]
         },
@@ -2633,7 +2633,7 @@
             {
               "id": "Materials",
               "name": "Materials",
-              "media": "assets/items/planks_normal.png",
+              "media": "assets/items/planks_oak.png",
               "type": "Artisan"
             },
             {
@@ -2793,7 +2793,7 @@
                 "rielkConstruction:skillEfficiencyPotency": [
                   {
                     "skillID": "rielkConstruction:Construction",
-                    "value": 1
+                    "value": 100
                   }
                 ]
               }
@@ -4057,9 +4057,7 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [
-                1
-              ],
+              "shinyMods":[1,2],
               "modifiers": {
                 "flatHiddenSkillLevelBasedOnLevels": [
                   {
@@ -4644,7 +4642,8 @@
                 }
               ],
               "shinyMods": [
-                1
+                1,2
+
               ],
               "modifiers": {
                 "flatResistance": [
@@ -5264,7 +5263,7 @@
                 "rielkConstruction:skillEfficiencyCost": [
                   {
                     "skillID": "rielkConstruction:Construction",
-                    "value": -0.15
+                    "value": -15
                   }
                 ]
               }
@@ -7175,7 +7174,8 @@
               ],
               "currencyCosts": [],
               "shinyMods": [
-                1
+                1,
+                2
               ],
               "modifiers": {
                 "flatHiddenSkillLevelBasedOnLevels": [
@@ -7605,7 +7605,7 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [
+              "shinyMods": [1,
                 2
               ],
               "modifiers": {
@@ -7618,7 +7618,7 @@
                 "rielkConstruction:skillEfficiencyPotency": [
                   {
                     "skillID": "rielkConstruction:Construction",
-                    "value": 0.25
+                    "value": 25
                   }
                 ]
               }
@@ -7702,7 +7702,7 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [
+              "shinyMods": [1,2,
                 3
               ],
               "modifiers": {
@@ -7721,7 +7721,7 @@
                 "rielkConstruction:skillEfficiencyPotency": [
                   {
                     "skillID": "rielkConstruction:Construction",
-                    "value": 0.5
+                    "value": 50
                   }
                 ]
               }
@@ -7755,7 +7755,7 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [
+              "shinyMods": [1,
                 2,
                 3,
                 4
@@ -7770,7 +7770,7 @@
                 "rielkConstruction:skillEfficiencyPotency": [
                   {
                     "skillID": "rielkConstruction:Construction",
-                    "value": 0.6
+                    "value": 60
                   }
                 ],
                 "rielkConstruction:constructionActionsToUpgrade": [
@@ -7782,7 +7782,7 @@
                 "rielkConstruction:skillEfficiencyCost": [
                   {
                     "skillID": "rielkConstruction:Construction",
-                    "value": -0.25
+                    "value": -25
                   }
                 ]
               }
@@ -8054,7 +8054,9 @@
               "currencyCosts": [],
               "shinyMods": [
                 1,
-                2
+                2,
+                3,
+                4
               ],
               "modifiers": {
                 "flatHiddenSkillLevelBasedOnLevels": [
@@ -8206,7 +8208,7 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [
+              "shinyMods": [1,
                 2
               ],
               "modifiers": {
@@ -8257,7 +8259,7 @@
                   "quantity": 50000
                 }
               ],
-              "shinyMods": [
+              "shinyMods": [1,
                 2
               ],
               "modifiers": {
@@ -8784,6 +8786,7 @@
       },
       {
         "id": "skillEfficiencyPotency",
+        "modifyValue": "value/100",
         "allowedScopes": [
           {
             "scopes": {
@@ -8829,6 +8832,7 @@
       },
       {
         "id": "skillEfficiencyCost",
+        "modifyValue": "value/100",
         "inverted": true,
         "allowedScopes": [
           {

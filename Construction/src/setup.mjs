@@ -6,7 +6,7 @@ const { patchGameEventSystem } = await loadModule('src/construction/gameEvents.m
 
 const { patchSkillsBeforeDataReg, patchSkillsAfterDataReg } = await loadModule('src/patches/skillPatches/skillPatchesCaller.mjs');
 const { patchMiscBeforeDataReg } = await loadModule('src/patches/miscPatches/miscPatchesCaller.mjs');
-const { patchModsBeforeDataReg } = await loadModule('src/patches/modPatches/modPatchesCaller.mjs');
+const { patchMods } = await loadModule('src/patches/modPatches/modPatchesCaller.mjs');
 
 export async function setup(ctx) {
     setup = new Setup(ctx);
@@ -74,7 +74,7 @@ class Setup {
     async modCompatibility(ctx) {
         this.ctx.onModsLoaded(() => {
             this.modList = mod.manager.getLoadedModList();
-            patchModsBeforeDataReg(ctx, this.modList);
+            patchMods(ctx, this.modList);
         });
 
     }

@@ -235,7 +235,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.infoBoxImage.src = fixture.media;
         this.toggleSparkles(fixture);
         const fixtureRecipe = fixture.currentRecipe;
-        if (fixtureRecipe == undefined || fixtureRecipe.level > construction.level || fixture.currentTier >= fixture.maxTier) {
+        if (fixtureRecipe == undefined || fixtureRecipe.level > construction.level || fixture.isMaxTier) {
             hideElement(this.builtProgressContainer);
             hideElement(this.ingredientsContainer);
             hideElement(this.grantsContainer);
@@ -290,11 +290,11 @@ drop-shadow(0 -1px 0 #f8ab46ff)
     }
 
     toggleSparkles(fixture) {
-        fixture.currentTier == fixture.maxTier ? this.addSparkles(fixture) : this.removeSparkles();
+        fixture.isMaxTier ? this.addSparkles(fixture) : this.removeSparkles();
     }
 
     updateFixtureInfo(construction, fixture) {
-        if (fixture.currentTier == fixture.maxTier) return;
+        if (fixture.isMaxTier) return;
 
         const fixtureRecipe = fixture.currentRecipe;
         this.progress = fixture.percentProgress;

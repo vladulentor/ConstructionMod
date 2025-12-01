@@ -47,7 +47,7 @@ body.darkMode.superDark .bg-rielk-construction
 	box-shadow: 0 0 0 0.2rem rgba(220, 167, 107, 0.5);
 }
 
-
+/* why is it all !important and so specific i hate it i hate it i hate it I HATE IT */
 body.darkMode .text-success.fuck-you {
   color: #fca32f !important;
 }
@@ -74,7 +74,7 @@ body.darkMode .text-danger.fuck-you {
 
 
 .construction-success {
-      color: #fca32f;       /* text color */
+      color: #fca32f !important;       /* text color */
 }
 .construction-victory {
       color: #fca32f!important;       /* I like both names for it */

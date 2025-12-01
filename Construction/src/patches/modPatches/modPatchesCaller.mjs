@@ -1,10 +1,12 @@
 const { loadModule } = mod.getContext(import.meta);
 const { skillBoostsCompatibility } = await loadModule('src/patches/modPatches/skillBoosts.mjs');
 const { tinyIconsCompatibility } = await loadModule('src/patches/modPatches/tinyIcons.mjs');
+const { skillsoundfxCompatibility } = await loadModule('src/patches/modPatches/skillsoundfx.mjs');
 
-//const { patchRenderEquipment } = await loadModule('src/patches/modPatches/tinyIcons.mjs');
 
-export function patchModsBeforeDataReg(ctx, modList) {
+
+
+export function patchMods(ctx, modList) {
     const compatMessages = [];
     if (modList.includes('Skill Boosts')) {
         skillBoostsCompatibility(ctx);
@@ -23,13 +25,21 @@ export function patchModsBeforeDataReg(ctx, modList) {
             color: '#64b5f6'
         });
     }
-        if (modList.includes('"The future is now..." Text remover')) {
+    if (modList.includes('"The future is now..." Text remover')) {
         compatMessages.push({
             name: '"The future is..." Remover',
-            description: 'You won\'t see that annoying popup on Efficiency either..',
+            description: 'You won\'t see that annoying popup on Efficiency either.',
             color: '#f5d522ff'
         });
     }
+    /*if (modList.includes('my skillFX')) {
+        skillsoundfxCompatibility(ctx);
+        compatMessages.push({
+            name: '[PSY] Skill Sound FX',
+            description: 'Custom sounds added for construction.',
+            color: '#76f522ff'
+        });
+    }*/
 
 
     if (compatMessages.length > 0 && (setLang == 'en' || setLang == 'carrot' || setLang == 'lemon')) {
@@ -51,15 +61,15 @@ export function patchModsBeforeDataReg(ctx, modList) {
         if (!compatMessages.some(m => m.name === 'Tiny Icons')) {
             console.log(
                 '%c[Suggestion]%c Try installing Tiny Icons. It makes all modifiers look fantastic.',
-                'color:#1976d2; background:#e3f2fd; font-weight:bold;',
-                'background:#e3f2fd; font-weight:normal;'
+                'color:#1976d2; background:#1976d220; font-weight:bold;',
+                'background:#1976d220; font-weight:normal;'
             );
         }
 
         console.log(
             '%c[Construction Mod]%c That’s it from me. Did I mention you’re looking great today?',
             'color:#fca32f; background:#fca32f20; font-weight:bold;',
-             'font-weight:normal;'
+            'font-weight:normal;'
         );
 
         console.groupEnd();

@@ -518,22 +518,22 @@ export class Construction extends ArtisanSkill {
 
     /** Gets the cost multiplier for efficiency (default 2) */
     getEfficiencyCostMultiplier(action) {
-        const defaultCostMult = 2;
+        const defaultCostMult = 200;
         const modifier = this.game.modifiers.getValue(
             "rielkConstruction:skillEfficiencyCost",
             this.getActionModifierQuery(action)
         ) || 0;
-        return defaultCostMult + modifier;
+        return (defaultCostMult + modifier)/100;
     }
 
     /** Gets the Potency/progress multiplier for efficiency (default 2) */
     getEfficiencyPotencyMultiplier(action) {
-        const defaultPotencyMult = 2;
+        const defaultPotencyMult = 200;
         const modifier = this.game.modifiers.getValue(
             "rielkConstruction:skillEfficiencyPotency",
             this.getActionModifierQuery(action)
         ) || 0;
-        return defaultPotencyMult + modifier;
+        return (defaultPotencyMult + modifier)/100;
     }
 
     _buildEfficiencyChancePotencySources(action) {

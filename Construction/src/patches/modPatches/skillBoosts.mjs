@@ -77,11 +77,11 @@ export function skillBoostsCompatibility({ patch }) {
             patch(this.SB, 'initSB').after(function (_) {
                 ConstructionIntegration.filterFixtures();
             });
-            /*patch(this.SB, 'setIconOnClick').after(function(_, icon, item, category) {
+            patch(this.SB, 'setIconOnClick').after(function(_, icon, item, category) {
                 if (category === 'Fixture') {
-                    icon.onclick = () => constructionIntegration.fixtureOnClick(icon);
+                    icon.onclick = () => ConstructionIntegration.fixtureOnClick(icon);
                 }
-            });*/
+            });
             patch(this.SB, 'render').after(function (_) {
                 ConstructionIntegration.renderFixtureBg();
             });
@@ -143,13 +143,11 @@ export function skillBoostsCompatibility({ patch }) {
 
             skillBoosts.hideUndiscoveredIcons(icon, 'Fixture');
         }
-        /*fixtureOnClick(icon) {
+        fixtureOnClick(icon) {
             if (skillBoosts.isSpecialModeActive(icon)) {
                 return;
-            } else if (game.music.isBasicSkillRecipeUnlocked(icon.item)) {
-                game.music.hire(icon.item);
-            }
-        }*/
+            } 
+        }
         //We may add special behaviour to this, but since Astrology stars don't, it'd maybe be fine to not.
         getFixtureCost(fixture) {
             let hireModifier = game.construction.manager.getHireCostModifier(fixture),

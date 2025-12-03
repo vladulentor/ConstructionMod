@@ -72,7 +72,7 @@ export function patchMods(ctx, modList) {
         endingMessages.push("Measuring twice is twice the fun!");
 
         console.log(
-            `%c[Enging Message]%c ${endingMessages[Math.floor(Math.random() * endingMessages.length)]}`,
+            `%c[Ending Message]%c ${endingMessages[Math.floor(Math.random() * endingMessages.length)]}`,
             'color:#fca32f; background:#fca32f20; font-weight:bold;',
             'font-weight:normal;'
         );

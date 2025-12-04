@@ -63,7 +63,7 @@ export function patchMods(ctx, modList) {
         }
         
         endingMessages.push('Did I mention you\'re looking great today?');
-                endingMessages.push('That\'s all from me, toodles.');
+        endingMessages.push('That\'s all from me, toodles.');
         endingMessages.push('Thank you again for downloading me.');
         endingMessages.push('Did you know mods feel pain when you delete them?');
         endingMessages.push('Don\'t forget to brush your teeth.');

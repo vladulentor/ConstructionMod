@@ -283,6 +283,18 @@ export class Construction extends ArtisanSkill {
         });
     }
 
+    //Test function
+    callConstructionCrew(x) {
+        if (x > 5) {
+            console.log("The construction crew tells you to wait for the TotH DLC before they can do that");
+            return;
+        }
+        this.fixtures.allObjects.forEach(f => {
+            while(f.currentTier < x)
+                f.tierUp();
+        })
+    }
+
     computeTotalMasteryActions() {
 
     }
@@ -428,8 +440,6 @@ export class Construction extends ArtisanSkill {
     get masteryLevelCap() {
         return 50;  //cloudManager.hasTotH later
     }
-
-
     renderRecipeInfo() {
         if (!this.renderQueue.recipeInfo)
             return;
@@ -523,7 +533,7 @@ export class Construction extends ArtisanSkill {
             "rielkConstruction:skillEfficiencyCost",
             this.getActionModifierQuery(action)
         ) || 0;
-        return (defaultCostMult + modifier)/100;
+        return (defaultCostMult + modifier) / 100;
     }
 
     /** Gets the Potency/progress multiplier for efficiency (default 2) */
@@ -533,7 +543,7 @@ export class Construction extends ArtisanSkill {
             "rielkConstruction:skillEfficiencyPotency",
             this.getActionModifierQuery(action)
         ) || 0;
-        return (defaultPotencyMult + modifier)/100;
+        return (defaultPotencyMult + modifier) / 100;
     }
 
     _buildEfficiencyChancePotencySources(action) {

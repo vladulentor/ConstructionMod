@@ -15,9 +15,9 @@ class ConstructionFixtureNavElement extends HTMLElement {
         this.fixtureWrapper = getElementFromFragment(this._content, 'fixture-wrapper', 'div');
 
         this.sparkleUnder = getElementFromFragment(this._content, 'sparkle-underlay', 'img');
-        this.sparkleUnder.src = ctx.getResourceUrl('assets/eclipse.png');
+        this.sparkleUnder.src = ctx.getResourceUrl('assets/eclipse.webp');
         this.sparkleOver = getElementFromFragment(this._content, 'sparkle-overlay', 'img');
-        this.sparkleOver.src = ctx.getResourceUrl('assets/stars.png');
+        this.sparkleOver.src = ctx.getResourceUrl('assets/stars.webp');
         this.fixtureName = getElementFromFragment(this._content, 'fixture-name', 'span');
         this.constructionProgress = getElementFromFragment(this._content, 'construction-progress', 'small');
         this.unlock = getElementFromFragment(this._content, 'unlock', 'div');

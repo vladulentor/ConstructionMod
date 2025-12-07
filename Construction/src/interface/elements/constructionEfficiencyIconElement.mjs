@@ -10,7 +10,7 @@ export class EfficiencyIconElement extends InfoIconElement {
         this._content.append(getTemplateNode('efficiency-icon-template'));
         this.container = getElementFromFragment(this._content, 'container', 'div');
         this.image = getElementFromFragment(this._content, 'image', 'img');
-        this.image.src = ctx.getResourceUrl('assets/efficiency.png');
+        this.image.src = ctx.getResourceUrl('assets/efficiency.webp');
         this.image.alt = "Efficiencty Icon" //getRielkLangString('MENU_TEXT_TOOLTIP_EFFICIENCY');
 
         this.chance = getElementFromFragment(this._content, 'chance', 'small');

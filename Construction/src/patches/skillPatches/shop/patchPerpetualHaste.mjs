@@ -17,7 +17,7 @@ haste._customDescription = ourDesc; //idk if this does anything, maybe it helps 
     haste.contains.stats.modifiers.push(new ModifierValue(game.modifierRegistry.getObjectByID('melvorD:skillInterval'), -15, {skill : game.construction}));
     Object.defineProperty(haste, 'media', {
         get() {
-            return ctx.getResourceUrl(`assets/replacements/perpetual_haste.png`);
+            return ctx.getResourceUrl(`assets/replacements/perpetual_haste.webp`);
         }
     });
 }

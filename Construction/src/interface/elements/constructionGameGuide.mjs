@@ -73,7 +73,7 @@ export function mountConstructionGuide({ construction, masteryBarImageSrc, forma
 
         MaterialsCat16: icon(construction.categories.getObjectByID('rielkConstruction:Materials').media, 16, 'm-1'),
         FurnitureCat16: icon(construction.categories.getObjectByID('rielkConstruction:House').media, 16, 'm-1'),
-        Efficiency16: icon(ctx.getResourceUrl('assets/efficiency.png'), 16, 'm-1'),
+        Efficiency16: icon(ctx.getResourceUrl('assets/efficiency.webp'), 16, 'm-1'),
 
         BR: BR(),
         BothStrong: strong(getRielkLangString('GUIDE_TERM_BOTH')),
@@ -208,7 +208,7 @@ export function mountConstructionGuide({ construction, masteryBarImageSrc, forma
         appendLangNodes(extParas[1], 'GUIDE_EXTENDED_P2');
     }
 
-    setFloatCardIcon(effCard, ctx.getResourceUrl('assets/efficiency.png'), '0 12px 0 0');
+    setFloatCardIcon(effCard, ctx.getResourceUrl('assets/efficiency.webp'), '0 12px 0 0');
     setFloatCardIcon(houseCard, masteryBarImageSrc, '0 12px 12px 0');
     if (extCard) setFloatCardIcon(extCard, game.items.getObjectByID('rielkConstruction:Beam_Box_II').media, '0 12px 0 0');
 

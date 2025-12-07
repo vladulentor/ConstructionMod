@@ -10,7 +10,7 @@
         "name": "Magic Planks",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/planks_magic.png",
+        "media": "assets/items/planks_magic.webp",
         "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,

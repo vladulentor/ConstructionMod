@@ -28,7 +28,7 @@
         "name": "Iron Nails",
         "category": "Construction",
         "type": "Nails",
-        "media": "assets/items/nails_iron.png",
+        "media": "assets/items/nails_iron.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -40,7 +40,7 @@
         "name": "Steel Nails",
         "category": "Construction",
         "type": "Nails",
-        "media": "assets/items/nails_steel.png",
+        "media": "assets/items/nails_steel.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -52,7 +52,7 @@
         "name": "Mithril Nails",
         "category": "Construction",
         "type": "Nails",
-        "media": "assets/items/nails_mithril.png",
+        "media": "assets/items/nails_mithril.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -64,7 +64,7 @@
         "name": "Adamantite Nails",
         "category": "Construction",
         "type": "Nails",
-        "media": "assets/items/nails_adamantite.png",
+        "media": "assets/items/nails_adamantite.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -76,7 +76,7 @@
         "name": "Dragonite Nails",
         "category": "Construction",
         "type": "Nails",
-        "media": "assets/items/nails_dragonite.png",
+        "media": "assets/items/nails_dragonite.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -88,7 +88,7 @@
         "name": "Normal Beams",
         "category": "Construction",
         "type": "Beams",
-        "media": "assets/items/beams_normal.png",
+        "media": "assets/items/beams_normal.webp",
         "customDescription": "yes",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
@@ -101,7 +101,7 @@
         "name": "Oak Beams",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/beams_oak.png",
+        "media": "assets/items/beams_oak.webp",
         "customDescription": "yes",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
@@ -115,7 +115,7 @@
         "category": "Construction",
         "customDescription": "yes",
         "type": "Planks",
-        "media": "assets/items/beams_teak.png",
+        "media": "assets/items/beams_teak.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -128,7 +128,7 @@
         "category": "Construction",
         "customDescription": "yes",
         "type": "Planks",
-        "media": "assets/items/beams_mahogany.png",
+        "media": "assets/items/beams_mahogany.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -141,7 +141,7 @@
         "customDescription": "yes",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/beams_redwood.png",
+        "media": "assets/items/beams_redwood.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -153,7 +153,7 @@
         "name": "Normal Planks",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/planks_normal.png",
+        "media": "assets/items/planks_normal.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -165,7 +165,7 @@
         "name": "Oak Planks",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/planks_oak.png",
+        "media": "assets/items/planks_oak.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -177,7 +177,7 @@
         "name": "Teak Planks",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/planks_teak.png",
+        "media": "assets/items/planks_teak.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -189,7 +189,7 @@
         "name": "Mahogany Planks",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/planks_mahogany.png",
+        "media": "assets/items/planks_mahogany.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -201,7 +201,7 @@
         "name": "Redwood Planks",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/planks_redwood.png",
+        "media": "assets/items/planks_redwood.webp",
         "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -213,7 +213,7 @@
         "name": "Clay Bricks",
         "category": "Construction",
         "type": "Bricks",
-        "media": "assets/items/bricks_clay.png",
+        "media": "assets/items/bricks_clay.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -225,7 +225,7 @@
         "name": "Limestone Bricks",
         "category": "Construction",
         "type": "Bricks",
-        "media": "assets/items/bricks_limestone.png",
+        "media": "assets/items/bricks_limestone.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -237,7 +237,7 @@
         "name": "Granite Bricks",
         "category": "Construction",
         "type": "Bricks",
-        "media": "assets/items/bricks_granite.png",
+        "media": "assets/items/bricks_granite.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -249,7 +249,7 @@
         "name": "Marble Bricks",
         "category": "Construction",
         "type": "Bricks",
-        "media": "assets/items/bricks_marble.png",
+        "media": "assets/items/bricks_marble.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -261,7 +261,7 @@
         "name": "Magic Bricks",
         "category": "Construction",
         "type": "Bricks",
-        "media": "assets/items/bricks_magic.png",
+        "media": "assets/items/bricks_magic.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -273,7 +273,7 @@
         "name": "Green D-Hide Leather Slivers",
         "category": "Construction",
         "type": "Slivers",
-        "media": "assets/items/slivers_green_d-hide_leather.png",
+        "media": "assets/items/slivers_green_d-hide_leather.webp",
         "customDescription": "yes",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
@@ -286,7 +286,7 @@
         "name": "Blue D-Hide Leather Slivers",
         "category": "Construction",
         "type": "Slivers",
-        "media": "assets/items/slivers_blue_d-hide_leather.png",
+        "media": "assets/items/slivers_blue_d-hide_leather.webp",
         "customDescription": "yes",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
@@ -299,7 +299,7 @@
         "name": "Red D-Hide Leather Slivers",
         "category": "Construction",
         "type": "Slivers",
-        "media": "assets/items/slivers_red_d-hide_leather.png",
+        "media": "assets/items/slivers_red_d-hide_leather.webp",
         "customDescription": "yes",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
@@ -312,7 +312,7 @@
         "name": "Black D-Hide Leather Slivers",
         "category": "Construction",
         "type": "Slivers",
-        "media": "assets/items/slivers_black_d-hide_leather.png",
+        "media": "assets/items/slivers_black_d-hide_leather.webp",
         "customDescription": "yes",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
@@ -325,7 +325,7 @@
         "name": "Elder D-Hide Leather Slivers",
         "category": "Construction",
         "type": "Slivers",
-        "media": "assets/items/slivers_ancient_d-hide_leather.png",
+        "media": "assets/items/slivers_ancient_d-hide_leather.webp",
         "customDescription": "yes",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
@@ -338,7 +338,7 @@
         "name": "Green D-hide Leather Straps",
         "category": "Construction",
         "type": "Straps",
-        "media": "assets/items/straps_green_d-hide_leather.png",
+        "media": "assets/items/straps_green_d-hide_leather.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -350,7 +350,7 @@
         "name": "Blue D-hide Leather Straps",
         "category": "Construction",
         "type": "Straps",
-        "media": "assets/items/straps_blue_d-hide_leather.png",
+        "media": "assets/items/straps_blue_d-hide_leather.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -362,7 +362,7 @@
         "name": "Red D-hide Leather Straps",
         "category": "Construction",
         "type": "Straps",
-        "media": "assets/items/straps_red_d-hide_leather.png",
+        "media": "assets/items/straps_red_d-hide_leather.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -374,7 +374,7 @@
         "name": "Black D-hide Leather Straps",
         "category": "Construction",
         "type": "Straps",
-        "media": "assets/items/straps_black_d-hide_leather.png",
+        "media": "assets/items/straps_black_d-hide_leather.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -386,7 +386,7 @@
         "name": "Elder D-hide Leather Straps",
         "category": "Construction",
         "type": "Straps",
-        "media": "assets/items/straps_ancient_d-hide_leather.png",
+        "media": "assets/items/straps_ancient_d-hide_leather.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -398,7 +398,7 @@
         "name": "Flower Pots Token 1",
         "category": "Construction",
         "type": "Token",
-        "media": "assets/fixtures/composter.png",
+        "media": "assets/fixtures/composter.webp",
         "ignoreCompletion": true,
         "obtainFromItemLog": true,
         "golbinRaidExclusive": false,
@@ -410,7 +410,7 @@
         "name": "Flower Pots Token 2",
         "category": "Construction",
         "type": "Token",
-        "media": "assets/fixtures/composter.png",
+        "media": "assets/fixtures/composter.webp",
         "ignoreCompletion": true,
         "obtainFromItemLog": true,
         "golbinRaidExclusive": false,
@@ -422,7 +422,7 @@
         "name": "Flower Pots Token 3",
         "category": "Construction",
         "type": "Token",
-        "media": "assets/fixtures/composter.png",
+        "media": "assets/fixtures/composter.webp",
         "ignoreCompletion": true,
         "obtainFromItemLog": true,
         "golbinRaidExclusive": false,
@@ -434,7 +434,7 @@
         "name": "Flower Pots Token 4",
         "category": "Construction",
         "type": "Token",
-        "media": "assets/fixtures/composter.png",
+        "media": "assets/fixtures/composter.webp",
         "ignoreCompletion": true,
         "obtainFromItemLog": true,
         "golbinRaidExclusive": false,
@@ -446,7 +446,7 @@
         "name": "Flower Pots Token 5",
         "category": "Construction",
         "type": "Token",
-        "media": "assets/fixtures/composter.png",
+        "media": "assets/fixtures/composter.webp",
         "ignoreCompletion": true,
         "obtainFromItemLog": true,
         "golbinRaidExclusive": false,
@@ -458,7 +458,7 @@
         "name": "Twice Measured Potion I",
         "category": "Herblore",
         "type": "Potion",
-        "media": "assets/items/twice_measured_1.png",
+        "media": "assets/items/twice_measured_1.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -494,7 +494,7 @@
         "name": "Twice Measured Potion II",
         "category": "Herblore",
         "type": "Potion",
-        "media": "assets/items/twice_measured_2.png",
+        "media": "assets/items/twice_measured_2.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -530,7 +530,7 @@
         "name": "Twice Measured Potion III",
         "category": "Herblore",
         "type": "Potion",
-        "media": "assets/items/twice_measured_3.png",
+        "media": "assets/items/twice_measured_3.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -566,7 +566,7 @@
         "name": "Twice Measured Potion IV",
         "category": "Herblore",
         "type": "Potion",
-        "media": "assets/items/twice_measured_4.png",
+        "media": "assets/items/twice_measured_4.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -602,7 +602,7 @@
         "name": "Mystic Rotating Saw",
         "category": "Construction",
         "type": "Weapon",
-        "media": "assets/items/mystic_rotating_saw.png",
+        "media": "assets/items/mystic_rotating_saw.webp",
         "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -658,7 +658,7 @@
         "name": "Steel-Toed Boots",
         "category": "Construction",
         "type": "Equipment",
-        "media": "assets/items/steel-toed_boots.png",
+        "media": "assets/items/steel-toed_boots.webp",
         "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -718,7 +718,7 @@
         "name": "Beam Box I",
         "category": "Openable",
         "type": "Chest",
-        "media": "assets/items/beam_box_I.png",
+        "media": "assets/items/beam_box_I.webp",
         "customDescription": "Contains Basic Beams",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
@@ -751,7 +751,7 @@
         "name": "Beam Box II",
         "category": "Openable",
         "type": "Chest",
-        "media": "assets/items/beam_box_II.png",
+        "media": "assets/items/beam_box_II.webp",
         "customDescription": "Contains Regular Beams",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
@@ -784,7 +784,7 @@
         "name": "Pile of Bricks",
         "category": "Openable",
         "type": "Chest",
-        "media": "assets/items/pile_of_bricks.png",
+        "media": "assets/items/pile_of_bricks.webp",
         "customDescription": "Contains Regular Beams",
         "ignoreCompletion": true,
         "obtainFromItemLog": false,
@@ -830,7 +830,7 @@
         "name": "Jar of Tar",
         "category": "Thieving",
         "type": "Misc",
-        "media": "assets/items/tar_jar.png",
+        "media": "assets/items/tar_jar.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -868,7 +868,7 @@
         "name": "Mariner's Tie",
         "category": "Fishing",
         "type": "Equipment",
-        "media": "assets/items/mariners_tie.png",
+        "media": "assets/items/mariners_tie.webp",
         "ignoreCompletion": true,
         "obtainFromItemLog": true,
         "golbinRaidExclusive": false,
@@ -880,7 +880,7 @@
         "name": "Mariner's Blouse",
         "category": "Fishing",
         "type": "Equipment  ",
-        "media": "assets/items/mariners_blouse.png",
+        "media": "assets/items/mariners_blouse.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -903,7 +903,7 @@
         "name": "Cursed Hook",
         "category": "Fishing",
         "type": "Shield",
-        "media": "assets/items/cursed_hook.png",
+        "media": "assets/items/cursed_hook.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -926,7 +926,7 @@
         "name": "Sapling Branch",
         "category": "Openable",
         "type": "Chest",
-        "media": "assets/items/sapling_branch.png",
+        "media": "assets/items/sapling_branch.webp",
         "customDescription": "An unburnt branch. Contains tree seeds.",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
@@ -978,7 +978,7 @@
         "name": "Construction Skillcape",
         "category": "Combat",
         "type": "Armour",
-        "media": "assets/items/skillcape_construction.png",
+        "media": "assets/items/skillcape_construction.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -1036,7 +1036,7 @@
         "name": "Builders Hat",
         "category": "Construction",
         "type": "Equipment",
-        "media": "assets/items/skilling_outfit_hat_construction.png",
+        "media": "assets/items/skilling_outfit_hat_construction.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -1064,7 +1064,7 @@
         "name": "Builders Body",
         "category": "Construction",
         "type": "Equipment",
-        "media": "assets/items/skilling_outfit_body_construction.png",
+        "media": "assets/items/skilling_outfit_body_construction.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -1092,7 +1092,7 @@
         "name": "Builders Leggings",
         "category": "Construction",
         "type": "Equipment",
-        "media": "assets/items/skilling_outfit_leggings_construction.png",
+        "media": "assets/items/skilling_outfit_leggings_construction.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -1120,7 +1120,7 @@
         "name": "Builders Boots",
         "category": "Construction",
         "type": "Equipment",
-        "media": "assets/items/skilling_outfit_boots_construction.png",
+        "media": "assets/items/skilling_outfit_boots_construction.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -1166,7 +1166,7 @@
     "shopPurchases": [
       {
         "id": "Iron_Saw",
-        "media": "assets/shoppurchases/iron_saw.png",
+        "media": "assets/shoppurchases/iron_saw.webp",
         "category": "melvorD:SkillUpgrades",
         "contains": {
           "items": [],
@@ -1211,7 +1211,7 @@
       },
       {
         "id": "Steel_Saw",
-        "media": "assets/shoppurchases/steel_saw.png",
+        "media": "assets/shoppurchases/steel_saw.webp",
         "category": "melvorD:SkillUpgrades",
         "contains": {
           "items": [],
@@ -1272,7 +1272,7 @@
       },
       {
         "id": "Black_Saw",
-        "media": "assets/shoppurchases/black_saw.png",
+        "media": "assets/shoppurchases/black_saw.webp",
         "category": "melvorD:SkillUpgrades",
         "contains": {
           "items": [],
@@ -1333,7 +1333,7 @@
       },
       {
         "id": "Mithril_Saw",
-        "media": "assets/shoppurchases/mithril_saw.png",
+        "media": "assets/shoppurchases/mithril_saw.webp",
         "category": "melvorD:SkillUpgrades",
         "contains": {
           "items": [],
@@ -1394,7 +1394,7 @@
       },
       {
         "id": "Adamant_Saw",
-        "media": "assets/shoppurchases/adamant_saw.png",
+        "media": "assets/shoppurchases/adamant_saw.webp",
         "category": "melvorD:SkillUpgrades",
         "contains": {
           "items": [],
@@ -1455,7 +1455,7 @@
       },
       {
         "id": "Rune_Saw",
-        "media": "assets/shoppurchases/rune_saw.png",
+        "media": "assets/shoppurchases/rune_saw.webp",
         "category": "melvorD:SkillUpgrades",
         "contains": {
           "items": [],
@@ -1516,7 +1516,7 @@
       },
       {
         "id": "Dragon_Saw",
-        "media": "assets/shoppurchases/dragon_saw.png",
+        "media": "assets/shoppurchases/dragon_saw.webp",
         "category": "melvorD:SkillUpgrades",
         "contains": {
           "items": [],
@@ -1578,7 +1578,7 @@
       {
         "id": "Construction_Skillcape",
         "customName": "Construction Skillcape",
-        "media": "assets/items/skillcape_construction.png",
+        "media": "assets/items/skillcape_construction.webp",
         "category": "melvorD:Skillcapes",
         "contains": {
           "items": [
@@ -1613,7 +1613,7 @@
       },
       {
         "id": "Builders_Hat",
-        "media": "assets/items/skilling_outfit_hat_construction.png",
+        "media": "assets/items/skilling_outfit_hat_construction.webp",
         "category": "melvorF:Township",
         "contains": {
           "items": [
@@ -1652,7 +1652,7 @@
       },
       {
         "id": "Builders_Body",
-        "media": "assets/items/skilling_outfit_body_construction.png",
+        "media": "assets/items/skilling_outfit_body_construction.webp",
         "category": "melvorF:Township",
         "contains": {
           "items": [
@@ -1691,7 +1691,7 @@
       },
       {
         "id": "Builders_Leggings",
-        "media": "assets/items/skilling_outfit_leggings_construction.png",
+        "media": "assets/items/skilling_outfit_leggings_construction.webp",
         "category": "melvorF:Township",
         "contains": {
           "items": [
@@ -1730,7 +1730,7 @@
       },
       {
         "id": "Builders_Boots",
-        "media": "assets/items/skilling_outfit_boots_construction.png",
+        "media": "assets/items/skilling_outfit_boots_construction.webp",
         "category": "melvorF:Township",
         "contains": {
           "items": [
@@ -1835,7 +1835,7 @@
       {
         "id": "ChuckTheForeman",
         "name": "Chuck The Foreman",
-        "media": "assets/chuck_the_foreman.png",
+        "media": "assets/chuck_the_foreman.webp",
         "ignoreCompletion": false,
         "modifiers": {
           "rielkConstruction:skillEfficiencyPotency": [
@@ -1852,7 +1852,7 @@
       {
         "id": "Scoobs",
         "name": "Scoobs",
-        "media": "assets/scoobs.png",
+        "media": "assets/scoobs.webp",
         "hint": "Reach House Tier 5",
         "langHint": "Reach House Tier 5",
         "ignoreCompletion": false,
@@ -1872,7 +1872,7 @@
       {
         "id": "BarnRaiser",
         "name": "Barn Raiser",
-        "media": "assets/creatures/barnraiser.png",
+        "media": "assets/creatures/barnraiser.webp",
         "levels": {
           "Hitpoints": 25,
           "Attack": 25,
@@ -1978,7 +1978,7 @@
       {
         "id": "ConstructGiant",
         "name": "Construct Giant",
-        "media": "assets/creatures/construct_giant.png",
+        "media": "assets/creatures/construct_giant.webp",
         "levels": {
           "Hitpoints": 90,
           "Attack": 60,
@@ -2104,7 +2104,7 @@
               "baseExperience": 79,
               "level": 74,
               "name": "Bricklayer",
-              "media": "assets/creatures/bricklayer.png",
+              "media": "assets/creatures/bricklayer.webp",
               "perception": 660,
               "maxHit": 19.5,
               "currencyDrops": [
@@ -2158,7 +2158,7 @@
               "baseExperience": 56,
               "level": 59,
               "name": "Construct",
-              "media": "assets/creatures/construct.png",
+              "media": "assets/creatures/construct.webp",
               "perception": 590,
               "maxHit": 21.5,
               "currencyDrops": [
@@ -2377,7 +2377,7 @@
           "categories": [
             {
               "id": "Leather_Slivers",
-              "media": "assets/items/slivers_category.png",
+              "media": "assets/items/slivers_category.webp",
               "name": "Leather Slivers"
             }
           ],
@@ -2466,7 +2466,7 @@
           "categories": [
             {
               "id": "Wood_Beams",
-              "media": "assets/items/beams_normal.png",
+              "media": "assets/items/beams_normal.webp",
               "name": "Wood Beams"
             }
           ],
@@ -2638,13 +2638,13 @@
             {
               "id": "Materials",
               "name": "Materials",
-              "media": "assets/items/planks_oak.png",
+              "media": "assets/items/planks_oak.webp",
               "type": "Artisan"
             },
             {
               "id": "House",
               "name": "Furniture",
-              "media": "assets/house.png",
+              "media": "assets/house.webp",
               "type": "House"
             }
           ],
@@ -3340,7 +3340,7 @@
             {
               "id": "Apparatus",
               "name": "Apparatus",
-              "media": "assets/fixtures/apparatus.png",
+              "media": "assets/fixtures/apparatus.webp",
               "recipes": [
                 "rielkConstruction:Apparatus1",
                 "rielkConstruction:Apparatus2",
@@ -3352,7 +3352,7 @@
             {
               "id": "Archery_Range",
               "name": "Archery Range",
-              "media": "assets/fixtures/archery_range.png",
+              "media": "assets/fixtures/archery_range.webp",
               "recipes": [
                 "rielkConstruction:Archery_Range1",
                 "rielkConstruction:Archery_Range2",
@@ -3364,7 +3364,7 @@
             {
               "id": "Black_Market",
               "name": "Black Market",
-              "media": "assets/fixtures/black_market.png",
+              "media": "assets/fixtures/black_market.webp",
               "recipes": [
                 "rielkConstruction:Black_Market1",
                 "rielkConstruction:Black_Market2",
@@ -3376,7 +3376,7 @@
             {
               "id": "Desk",
               "name": "Desk",
-              "media": "assets/fixtures/fireplace.png",
+              "media": "assets/fixtures/fireplace.webp",
               "recipes": [
                 "rielkConstruction:Desk1",
                 "rielkConstruction:Desk2",
@@ -3388,7 +3388,7 @@
             {
               "id": "Dragon_Statue",
               "name": "Dragon Statue",
-              "media": "assets/fixtures/dragon_statue.png",
+              "media": "assets/fixtures/dragon_statue.webp",
               "recipes": [
                 "rielkConstruction:Dragon_Statue1",
                 "rielkConstruction:Dragon_Statue2",
@@ -3400,7 +3400,7 @@
             {
               "id": "Fire_Pit",
               "name": "Fire Pit",
-              "media": "assets/fixtures/fire_pit.png",
+              "media": "assets/fixtures/fire_pit.webp",
               "recipes": [
                 "rielkConstruction:Fire_Pit1",
                 "rielkConstruction:Fire_Pit2",
@@ -3412,7 +3412,7 @@
             {
               "id": "Flower_Pots",
               "name": "Flower Pots",
-              "media": "assets/fixtures/composter.png",
+              "media": "assets/fixtures/composter.webp",
               "recipes": [
                 "rielkConstruction:Flower_Pots1",
                 "rielkConstruction:Flower_Pots2",
@@ -3424,7 +3424,7 @@
             {
               "id": "Forge",
               "name": "Forge",
-              "media": "assets/fixtures/forge.png",
+              "media": "assets/fixtures/forge.webp",
               "recipes": [
                 "rielkConstruction:Forge1",
                 "rielkConstruction:Forge2",
@@ -3436,7 +3436,7 @@
             {
               "id": "Fridge",
               "name": "Fridge",
-              "media": "assets/fixtures/larder.png",
+              "media": "assets/fixtures/larder.webp",
               "recipes": [
                 "rielkConstruction:Fridge1",
                 "rielkConstruction:Fridge2",
@@ -3448,7 +3448,7 @@
             {
               "id": "Jungle_Gym",
               "name": "Jungle Gym",
-              "media": "assets/fixtures/jungle_gym.png",
+              "media": "assets/fixtures/jungle_gym.webp",
               "recipes": [
                 "rielkConstruction:Jungle_Gym1",
                 "rielkConstruction:Jungle_Gym2",
@@ -3460,7 +3460,7 @@
             {
               "id": "Lake",
               "name": "Lake",
-              "media": "assets/fixtures/lake.png",
+              "media": "assets/fixtures/lake.webp",
               "recipes": [
                 "rielkConstruction:Lake1",
                 "rielkConstruction:Lake2",
@@ -3472,7 +3472,7 @@
             {
               "id": "Mines",
               "name": "Mines",
-              "media": "assets/fixtures/mines.png",
+              "media": "assets/fixtures/mines.webp",
               "recipes": [
                 "rielkConstruction:Mines1",
                 "rielkConstruction:Mines2",
@@ -3484,7 +3484,7 @@
             {
               "id": "Orchard",
               "name": "Orchard",
-              "media": "assets/fixtures/orchard.png",
+              "media": "assets/fixtures/orchard.webp",
               "recipes": [
                 "rielkConstruction:Orchard1",
                 "rielkConstruction:Orchard2",
@@ -3496,7 +3496,7 @@
             {
               "id": "Oven",
               "name": "Oven",
-              "media": "assets/fixtures/oven.png",
+              "media": "assets/fixtures/oven.webp",
               "recipes": [
                 "rielkConstruction:Oven1",
                 "rielkConstruction:Oven2",
@@ -3508,7 +3508,7 @@
             {
               "id": "Prayer_Altar",
               "name": "Prayer Altar",
-              "media": "assets/fixtures/prayer_altar.png",
+              "media": "assets/fixtures/prayer_altar.webp",
               "recipes": [
                 "rielkConstruction:Prayer_Altar1",
                 "rielkConstruction:Prayer_Altar2",
@@ -3520,7 +3520,7 @@
             {
               "id": "Rune_Altar",
               "name": "Rune Altar",
-              "media": "assets/fixtures/rune_altar.png",
+              "media": "assets/fixtures/rune_altar.webp",
               "recipes": [
                 "rielkConstruction:Rune_Altar1",
                 "rielkConstruction:Rune_Altar2",
@@ -3532,7 +3532,7 @@
             {
               "id": "Spell_Library",
               "name": "Spell Library",
-              "media": "assets/fixtures/spell_library.png",
+              "media": "assets/fixtures/spell_library.webp",
               "recipes": [
                 "rielkConstruction:Spell_Library1",
                 "rielkConstruction:Spell_Library2",
@@ -3544,7 +3544,7 @@
             {
               "id": "Storage_Chest",
               "name": "Storage Chest",
-              "media": "assets/fixtures/storage_chest.png",
+              "media": "assets/fixtures/storage_chest.webp",
               "recipes": [
                 "rielkConstruction:Storage_Chest1",
                 "rielkConstruction:Storage_Chest2",
@@ -3556,7 +3556,7 @@
             {
               "id": "Telescope",
               "name": "Telescope",
-              "media": "assets/fixtures/telescope.png",
+              "media": "assets/fixtures/telescope.webp",
               "recipes": [
                 "rielkConstruction:Telescope1",
                 "rielkConstruction:Telescope2",
@@ -3568,7 +3568,7 @@
             {
               "id": "Tool_Rack",
               "name": "Tool Rack",
-              "media": "assets/fixtures/tool_rack.png",
+              "media": "assets/fixtures/tool_rack.webp",
               "recipes": [
                 "rielkConstruction:Tool_Rack1",
                 "rielkConstruction:Tool_Rack2",
@@ -3580,7 +3580,7 @@
             {
               "id": "Training_Dummy",
               "name": "Training Dummy",
-              "media": "assets/fixtures/training_dummy.png",
+              "media": "assets/fixtures/training_dummy.webp",
               "recipes": [
                 "rielkConstruction:Training_Dummy1",
                 "rielkConstruction:Training_Dummy2",
@@ -3592,7 +3592,7 @@
             {
               "id": "Trapping_Hut",
               "name": "Trapping Hut",
-              "media": "assets/fixtures/trapping_hut.png",
+              "media": "assets/fixtures/trapping_hut.webp",
               "recipes": [
                 "rielkConstruction:Trapping_Hut1",
                 "rielkConstruction:Trapping_Hut2",
@@ -3604,7 +3604,7 @@
             {
               "id": "Wardrobe",
               "name": "Wardrobe",
-              "media": "assets/fixtures/wardrobe.png",
+              "media": "assets/fixtures/wardrobe.webp",
               "recipes": [
                 "rielkConstruction:Wardrobe1",
                 "rielkConstruction:Wardrobe2",
@@ -3616,7 +3616,7 @@
             {
               "id": "Worktable",
               "name": "Worktable",
-              "media": "assets/fixtures/worktable.png",
+              "media": "assets/fixtures/worktable.webp",
               "recipes": [
                 "rielkConstruction:Worktable1",
                 "rielkConstruction:Worktable2",

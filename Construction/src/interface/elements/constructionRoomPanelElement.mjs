@@ -32,9 +32,9 @@ class ConstructionRoomPanelElement extends HTMLElement {
         this.infoImageContainer = getElementFromFragment(this._content, 'product-wrapper', 'div');
         this.infoBoxImage = getElementFromFragment(this._content, 'product-image', 'img');
         this.sparkleUnder = getElementFromFragment(this._content, 'sparkle-underlay', 'img');
-        this.sparkleUnder.src = ctx.getResourceUrl('assets/eclipse.png');
+        this.sparkleUnder.src = ctx.getResourceUrl('assets/eclipse.webp');
         this.sparkleOver = getElementFromFragment(this._content, 'sparkle-overlay', 'img');
-        this.sparkleOver.src = ctx.getResourceUrl('assets/stars.png');
+        this.sparkleOver.src = ctx.getResourceUrl('assets/stars.webp');
         this.startButton = getElementFromFragment(this._content, 'start-button', 'button');
         this.upgradesButton = getElementFromFragment(this._content, 'upgrades-button', 'button');
         this.builtProgressText = getElementFromFragment(this._content, 'built-progress-text', 'small');
@@ -118,7 +118,7 @@ class ConstructionRoomPanelElement extends HTMLElement {
     }
     setroomTooltip(){
         showElement(this.newTooltip);
-        this.newTooltip.src = ctx.getResourceUrl('assets/exclamation.png');
+        this.newTooltip.src = ctx.getResourceUrl('assets/exclamation.webp');
         const tooltext = getRielkLangString("TOOLTIP_NEW_EFFECTS");
         tippy(this.newTooltip, {
                 content: `<div class="text-center">${tooltext}</div>`,

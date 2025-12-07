@@ -12,7 +12,7 @@ export function patchWorldMap(df) {
         type: "Other",
         name: "Construction Village",
         description: "TODO: Description",
-        media: "assets/items/nails_iron.png",
+        media: "assets/items/nails_iron.webp",
         activeStats: {
             modifiers: {
                 additionalPrimaryProductChance: [

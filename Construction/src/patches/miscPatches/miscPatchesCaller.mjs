@@ -3,6 +3,7 @@ const { patchMasteryElement } = await loadModule('src/patches/miscPatches/patchM
 const { patchRenderEquipment } = await loadModule('src/patches/miscPatches/patchRenderEquipment.mjs');
 const { patchEventManager } = await loadModule('src/patches/miscPatches/patchEventManager.mjs');
 const { patchConditionalMod } = await loadModule('src/patches/miscPatches/patchConditionalMod.mjs');
+const { patchBackground } = await loadModule('src/patches/miscPatches/patchBackground.mjs');
 
 
 export function patchMiscBeforeDataReg(ctx)
@@ -11,6 +12,7 @@ export function patchMiscBeforeDataReg(ctx)
         patchRenderEquipment(ctx);
         patchEventManager(ctx);
         patchConditionalMod(ctx);
+        patchBackground(ctx);
 }
 export function patchSkillsAfterDataReg(ctx){
 }

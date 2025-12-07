@@ -27,13 +27,13 @@ class ConstructionModifierDisplayElement extends HTMLElement {
         this.recipe = recipe;
         this.fixtureImage.src = recipe.media;
 
-        this.tierOverlay.src = this.recipe.shinyMods ? ctx.getResourceUrl(`assets/tiers/${this.recipe.tier}_s.png`) : ctx.getResourceUrl(`assets/tiers/${this.recipe.tier}_n.png`);
+        this.tierOverlay.src = this.recipe.shinyMods ? ctx.getResourceUrl(`assets/tiers/${this.recipe.tier}_s.webp`) : ctx.getResourceUrl(`assets/tiers/${this.recipe.tier}_n.webp`);
         this.updateModifierInfo();
         this.level.textContent = '';
 
         const icon = createElement('img', { className: 'skill-icon-xs mr-1' })
         if (this.recipe.shinyMods)
-            icon.setAttribute('src', ctx.getResourceUrl('assets/icon_shiny.png'));
+            icon.setAttribute('src', ctx.getResourceUrl('assets/icon_shiny.webp'));
         else
             icon.setAttribute('src', construction.media);
 

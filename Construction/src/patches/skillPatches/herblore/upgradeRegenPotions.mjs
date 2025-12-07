@@ -18,7 +18,7 @@ potion.stats.modifiers.push(
 // Make it gold and FANCY
 Object.defineProperty(potion, 'media', {
   get() {
-    return ctx.getResourceUrl(`assets/replacements/${potion._localID}.png`);
+    return ctx.getResourceUrl(`assets/replacements/${potion._localID}.webp`);
   }
 });}
 

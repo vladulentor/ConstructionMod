@@ -274,7 +274,7 @@ export class Construction extends ArtisanSkill {
         }
         addModalToQueue({
             titleText: getRielkLangString('MENU_HOUSE_TIER_BONUS_UNLOCKED'),
-            imageUrl: ctx.getResourceUrl('assets/cabin.png'),
+            imageUrl: ctx.getResourceUrl('assets/cabin.webp'),
             html: modalBody,
             allowOutsideClick: false,
             showConfirmButton: true,

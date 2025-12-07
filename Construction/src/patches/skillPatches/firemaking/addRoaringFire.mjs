@@ -76,7 +76,7 @@ export function addRoaringFire(ctx) {
     }
     this.roaringState.classList.add('construction-victory', 'fuck-you');
     this.bonfireImage.src = ctx.getResourceUrl(
-      'assets/replacements/bonfire_roaring.png'
+      'assets/replacements/bonfire_roaring.webp'
     );
     showElement(this.stopButton);
     hideElement(this.stokeButton);

@@ -1,8 +1,8 @@
 export function tinyIconsCompatibility(ctx) {
     const icons = mod.api.tinyIcons;
     icons.addTagSourceMap(new Map([
-        ['efficiency', ctx.getResourceUrl('assets/efficiency.png')],
-        ['cabin', ctx.getResourceUrl('assets/cabin.png')],
+        ['efficiency', ctx.getResourceUrl('assets/efficiency.webp')],
+        ['cabin', ctx.getResourceUrl('assets/cabin.webp')],
         ['plot', game.items.getObjectByID('melvorD:Bobs_Rake').media],
         ['overheal', ctx.getResourceUrl('assets/tinyicons/tinyheart.png')],
         ['cookEquipment', game.items.getObjectByID('melvorF:Chefs_Hat').media],

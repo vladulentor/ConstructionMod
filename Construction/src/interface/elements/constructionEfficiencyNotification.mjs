@@ -6,7 +6,7 @@ const { getRielkLangString } = await loadModule('src/language/translationManager
 export function createOrangeNotification({
     id = "Efficiency",
     text = "",
-    media = ctx.getResourceUrl("assets/efficiency.png"),
+    media = ctx.getResourceUrl("assets/efficiency.webp"),
     quantity = 0,
 } = {}) {
     game.notifications.createSuccessNotification(id, text, media, quantity);

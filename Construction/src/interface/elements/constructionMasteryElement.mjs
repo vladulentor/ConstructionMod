@@ -66,7 +66,7 @@ class RielkConstructionMasteryElement extends HTMLElement {
       });
       this.fixturesInTier = 24; // default for no mods or DLC
     }
-    this._image.src= ctx.getResourceUrl('assets/cabin.png');
+    this._image.src= ctx.getResourceUrl('assets/cabin.webp');
 
   }
   setFixtureCount(fixtureCount) {
@@ -98,7 +98,7 @@ class RielkConstructionMasteryElement extends HTMLElement {
     this.aggregateBuilt = this._bars.reduce((sum, bar) => sum + bar.currentBuilt, 0);
     this.aggregateTotal = this.fixturesInTier * this._bars.length;
     this._aggregateTiers.textContent = `${this.aggregateBuilt} / ${this.aggregateTotal} (${((this.aggregateBuilt / this.aggregateTotal) * 100).toFixed(2)}%) ${getRielkLangString('MENU_BUILT')}`;
-    if(this._bars.slice(0, 5).every(bar => bar.currentBuilt >= bar.totalBuilt))  this._image.src= ctx.getResourceUrl('assets/cabin_max.png');
+    if(this._bars.slice(0, 5).every(bar => bar.currentBuilt >= bar.totalBuilt))  this._image.src= ctx.getResourceUrl('assets/cabin_max.webp');
   }
 
   initMasteryBar(construction) {

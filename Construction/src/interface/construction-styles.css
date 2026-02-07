@@ -22,6 +22,21 @@ filter: hue-rotate(40deg) brightness(1.45) saturate(3) contrast(3);
 .img-gray {
   filter: grayscale(1) brightness(0.9);
 }
+.img-tint-blue {
+  filter: grayscale(0.4) brightness(1.05) sepia(0.4) hue-rotate(210deg) saturate(1.5);
+}
+
+.img-tint-gold {
+  filter: grayscale(0.3) brightness(1.05) sepia(0.6) hue-rotate(-10deg) saturate(1.6);
+}
+
+.convergence-group {
+  position:relative;
+  display: flex;
+  flex-wrap: nowrap;   
+  align-items: center;
+  flex-shrink: 0;     
+}
 body.darkMode.superDark .bg-rielk-construction
 {
     background-color: #000!important
@@ -61,6 +76,7 @@ body.darkMode .text-danger.fuck-you {
   transition: width 0.3s ease;
   border-radius: 2px;
 }
+
 .mastery.filled2 {
   background-color: #ffca7b;
     height: 4px;               
@@ -72,7 +88,9 @@ body.darkMode .text-danger.fuck-you {
       background-color: #fca32f!important;       /* text color */
 }
 
-
+.rune-shield {
+  color: #0057d1 !important
+}
 .construction-success {
       color: #fca32f !important;       /* text color */
 }

@@ -850,8 +850,18 @@
             }
           ],
           "thievingStealth": 25,
-          "skillXP":[{"skillID":"melvorD:Agility", "value":5}],
-          "masteryXP":[{"skillID":"melvorD:Agility", "value":5}]
+          "skillXP": [
+            {
+              "skillID": "melvorD:Agility",
+              "value": 5
+            }
+          ],
+          "masteryXP": [
+            {
+              "skillID": "melvorD:Agility",
+              "value": 5
+            }
+          ]
         },
         "consumesOn": [
           {
@@ -1144,6 +1154,75 @@
       }
     ],
     "attacks": [
+      {
+        "id": "Brute_Strength",
+        "defaultChance": 100,
+        "damage": [
+          {
+            "damageType": "Normal",
+            "amplitude": 250
+          }
+        ],
+        "prehitEffects": [],
+        "onhitEffects": [],
+        "cantMiss": false,
+        "attackCount": 1,
+        "attackInterval": 50,
+        "lifesteal": 0,
+        "name": "Brute Strength",
+        "description": "Attack with greatly increased potency."
+      },
+      {
+        "id": "Sharpshot",
+        "defaultChance": 100,
+        "damage": [
+          {
+            "damageType": "Normal",
+            "amplitude": 75
+          }
+        ],
+        "prehitEffects": [],
+        "onhitEffects": [],
+        "cantMiss": true,
+        "attackCount": 2,
+        "attackInterval": 200,
+        "lifesteal": 0,
+        "name": "Sharp Shot",
+        "description": "Attack twice in with reduced potency. This attack never misses."
+      },
+      {
+        "id": "Mana_Surge",
+        "defaultChance": 100,
+        "damage": [
+          {
+            "damageType": "Normal",
+            "amplitude": 66
+          }
+        ],
+        "prehitEffects": [],
+        "onhitEffects": [
+          {
+            "effectID": "melvorD:Frostburn",
+            "chance": 1
+          },
+          {
+            "effectID": "melvorD:Burn",
+            "chance": 1
+          },
+          {
+            "effectID": "melvorD:Poison",
+            "chance": 1
+          }
+        ],
+        "usesRunesPerProc": true,
+        "cantMiss": false,
+        "attackCount": 3,
+        "attackInterval": 350,
+        "lifesteal": 0,
+        "name": "Mana Surge",
+        "descriptionGenerator": "An <avoidable> attack that deals <damage> damage. On a hit, <hitEffect>.",
+        "description": "Attack thrice with reduced potency. Each attack has a low chance to inflict Burn, Frostburn, or poison."
+      },
       {
         "id": "Jam",
         "defaultChance": 7,
@@ -2092,126 +2171,221 @@
             "max": 80
           }
         ]
+      },
+      {
+        "id": "Basic_Golem",
+        "name": "Baisc Arcane Golem",
+        "media": "assets/creatures/clay_golem.webp",
+        "levels": {
+          "Hitpoints": 40,
+          "Attack": 15,
+          "Strength": 30,
+          "Defence": 15,
+          "Ranged": 15,
+          "Magic": 15
+        },
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 3500
+          },
+          {
+            "key": "stabAttackBonus",
+            "value": 20
+          }
+        ],
+        "ignoreCompletion": false,
+        "attackType": "melee",
+        "specialAttacks": [],
+        "passives": [],
+        "lootChance": 75,
+        "lootTable": [
+          {
+            "itemID": "rielkConstruction:Clay_Bricks",
+            "minQuantity": 3,
+            "maxQuantity": 7,
+            "weight": 250
+          },
+          {
+            "itemID": "melvorD:Mind_Rune",
+            "minQuantity": 1,
+            "maxQuantity": 10,
+            "weight": 100
+          },
+          {
+            "itemID": "melvorD:Light_Rune",
+            "minQuantity": 1,
+            "maxQuantity": 10,
+            "weight": 80
+          },
+          {
+            "itemID": "melvorD:Body_Rune",
+            "minQuantity": 1,
+            "maxQuantity": 10,
+            "weight": 60
+          }
+        ],
+        "canSlayer": true,
+        "isBoss": false,
+        "selectedSpell": "melvorD:WindStrike",
+        "bones": {
+          "itemID": "melvorD:Rune_Essence",
+          "quantity": 3
+        },
+        "currencyDrops": [
+          {
+            "currencyID": "melvorD:GP",
+            "min": 7,
+            "max": 42
+          }
+        ]
+      },
+      {
+        "id": "Advanced_Golem",
+        "name": "Advanced Arcane Golem",
+        "media": "assets/creatures/limestone_golem.webp",
+        "levels": {
+          "Hitpoints": 70,
+          "Attack": 15,
+          "Strength": 70,
+          "Defence": 15,
+          "Ranged": 15,
+          "Magic": 15
+        },
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 3500
+          },
+          {
+            "key": "stabAttackBonus",
+            "value": 50
+          }
+        ],
+        "ignoreCompletion": false,
+        "attackType": "melee",
+        "specialAttacks": [],
+        "passives": [],
+        "lootChance": 75,
+        "lootTable": [
+          {
+            "itemID": "rielkConstruction:Limestone_Bricks",
+            "minQuantity": 3,
+            "maxQuantity": 7,
+            "weight": 200
+          },
+          {
+            "itemID": "melvorD:Chaos_Rune",
+            "minQuantity": 1,
+            "maxQuantity": 10,
+            "weight": 100
+          },
+          {
+            "itemID": "melvorF:Nature_Rune",
+            "minQuantity": 1,
+            "maxQuantity": 4,
+            "weight": 60
+          },
+          {
+            "itemID": "melvorF:Havoc_Rune",
+            "minQuantity": 1,
+            "maxQuantity": 8,
+            "weight": 20
+          }
+        ],
+        "canSlayer": true,
+        "isBoss": false,
+        "selectedSpell": "melvorD:WindStrike",
+        "bones": {
+          "itemID": "melvorD:Rune_Essence",
+          "quantity": 5
+        },
+        "currencyDrops": [
+          {
+            "currencyID": "melvorD:GP",
+            "min": 80,
+            "max": 220
+          }
+        ]
+      },
+      {
+        "id": "Expert_Golem",
+        "name": "Expert Arcane Golem",
+        "media": "assets/creatures/marble_golem.webp",
+        "levels": {
+          "Hitpoints": 130,
+          "Attack": 90,
+          "Strength": 90,
+          "Defence": 75,
+          "Ranged": 70,
+          "Magic": 70
+        },
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 3500
+          },
+          {
+            "key": "stabAttackBonus",
+            "value": 50
+          },
+          {
+            "key": "meleeStrengthBonus",
+            "value": 50
+          },
+          {
+            "key": "meleeDefenceBonus",
+            "value": 80
+          }
+        ],
+        "ignoreCompletion": false,
+        "attackType": "melee",
+        "specialAttacks": [],
+        "passives": [],
+        "lootChance": 35,
+        "lootTable": [
+          {
+            "itemID": "rielkConstruction:Marble_Bricks",
+            "minQuantity": 3,
+            "maxQuantity": 7,
+            "weight": 1000
+          },
+          {
+            "itemID": "melvorF:Havoc_Rune",
+            "minQuantity": 1,
+            "maxQuantity": 10,
+            "weight": 500
+          },
+          {
+            "itemID": "melvorF:Spirit_Rune",
+            "minQuantity": 1,
+            "maxQuantity": 5,
+            "weight": 300
+          },
+          {
+            "itemID": "rielkConstruction:Mystic_Rotating_Saw",
+            "minQuantity": 1,
+            "maxQuantity": 1,
+            "weight": 15
+          }
+        ],
+        "canSlayer": true,
+        "isBoss": false,
+        "selectedSpell": "melvorD:WindStrike",
+        "bones": {
+          "itemID": "melvorD:Rune_Essence",
+          "quantity": 5
+        },
+        "currencyDrops": [
+          {
+            "currencyID": "melvorD:GP",
+            "min": 80,
+            "max": 220
+          }
+        ]
       }
     ],
     "skillData": [
-      {
-        "skillID": "melvorD:Thieving",
-        "data": {
-          "npcs": [
-            {
-              "id": "BRICKLAYER",
-              "baseExperience": 79,
-              "level": 74,
-              "name": "Bricklayer",
-              "media": "assets/creatures/bricklayer.webp",
-              "perception": 660,
-              "maxHit": 19.5,
-              "currencyDrops": [
-                {
-                  "id": "melvorD:GP",
-                  "quantity": 625
-                }
-              ],
-              "lootTable": [
-                {
-                  "itemID": "rielkConstruction:Clay_Bricks",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 10
-                },
-                {
-                  "itemID": "rielkConstruction:Limestone_Bricks",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 6
-                },
-                {
-                  "itemID": "rielkConstruction:Granite_Bricks",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 4
-                },
-                {
-                  "itemID": "rielkConstruction:Marble_Bricks",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 2
-                },
-                {
-                  "itemID": "rielkConstruction:Magic_Bricks",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 1
-                }
-              ],
-              "uniqueDrop": {
-                "id": "rielkConstruction:Normal_Planks",
-                "quantity": 1
-              },
-              "allowedDamageTypeIDs": [
-                "melvorD:Normal"
-              ]
-            },
-            {
-              "id": "CONSTRUCT",
-              "baseExperience": 56,
-              "level": 59,
-              "name": "Construct",
-              "media": "assets/creatures/construct.webp",
-              "perception": 590,
-              "maxHit": 21.5,
-              "currencyDrops": [
-                {
-                  "id": "melvorD:GP",
-                  "quantity": 530
-                }
-              ],
-              "lootTable": [
-                {
-                  "itemID": "rielkConstruction:Steel_Nails",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 10
-                },
-                {
-                  "itemID": "rielkConstruction:Teak_Planks",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 6
-                },
-                {
-                  "itemID": "rielkConstruction:Mithril_Nails",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 4
-                },
-                {
-                  "itemID": "rielkConstruction:Mahogany_Planks",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 2
-                },
-                {
-                  "itemID": "rielkConstruction:Adamantite_Nails",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 1
-                },
-                {
-                  "itemID": "rielkConstruction:Redwood_Planks",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 1
-                }
-              ],
-              "allowedDamageTypeIDs": [
-                "melvorD:Normal"
-              ]
-            }
-          ]
-        }
-      },
       {
         "skillID": "melvorD:Township",
         "data": {
@@ -2284,23 +2458,27 @@
             {
               "id": "Twice_Measured_Potion",
               "name": "Twice Measured Potion",
-              "level": 35,
+              "level": 78,
               "potionIDs": [
                 "rielkConstruction:Twice_Measured_Potion_I",
                 "rielkConstruction:Twice_Measured_Potion_II",
                 "rielkConstruction:Twice_Measured_Potion_III",
                 "rielkConstruction:Twice_Measured_Potion_IV"
               ],
-              "baseExperience": 34,
+              "baseExperience": 137,
               "categoryID": "melvorF:SkillPotions",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 3
+                  "id": "melvorF:Barrentoe_Herb",
+                  "quantity": 2
                 },
                 {
-                  "id": "melvorD:Mantalyme_Herb",
-                  "quantity": 2
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 8
+                },
+                {
+                  "id": "rielkConstruction:Black_Dhide_Leather_Straps",
+                  "quantity": 3
                 }
               ],
               "gpCost": 0,
@@ -2891,7 +3069,7 @@
             },
             {
               "id": "Oak_Planks",
-              "level": 15,
+              "level": 20,
               "spoofOrder": 3,
               "productID": "rielkConstruction:Oak_Planks",
               "baseQuantity": 3,
@@ -3278,8 +3456,7 @@
                 "rielkConstruction:Flower_Pots",
                 "rielkConstruction:Lake",
                 "rielkConstruction:Orchard"
-              ],
-              "newTooltip": true
+              ]
             },
             {
               "id": "Kitchen",
@@ -3649,15 +3826,15 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillInterval": [
-                  {
-                    "value": -2,
-                    "skillID": "melvorD:Herblore"
-                  }
-                ],
                 "skillXP": [
                   {
                     "value": 5,
+                    "skillID": "melvorD:Herblore"
+                  }
+                ],
+                "skillInterval": [
+                  {
+                    "value": -2,
                     "skillID": "melvorD:Herblore"
                   }
                 ]
@@ -3688,17 +3865,16 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2
+              ],
               "modifiers": {
-                "skillInterval": [
+                "rielkConstruction:ChangeAddiIntoHighTier": 1,
+                "additionalPrimaryProductChance": [
                   {
-                    "value": -2,
-                    "skillID": "melvorD:Herblore"
-                  }
-                ],
-                "masteryXP": [
-                  {
-                    "value": 5,
-                    "skillID": "melvorD:Herblore"
+                    "skillID": "melvorD:Herblore",
+                    "value": 7
                   }
                 ]
               }
@@ -3733,9 +3909,9 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillInterval": [
+                "masteryXP": [
                   {
-                    "value": -2,
+                    "value": 5,
                     "skillID": "melvorD:Herblore"
                   }
                 ],
@@ -3779,14 +3955,12 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "reduceUpgradeCost",
+              "shinyMods": [
+                1
+              ],
               "modifiers": {
-                "skillPreservationChance": [
-                  {
-                    "value": 5,
-                    "skillID": "melvorD:Herblore"
-                  }
-                ],
-                "potionCharges": 20
+                "rielkConstruction:spoofReduceUpAmount": -1
               }
             },
             {
@@ -3827,10 +4001,15 @@
               ],
               "currencyCosts": [],
               "shinyMods": [
-                1
+                1,
+                2,
+                3
               ],
+              "changeFunc": "addPotionMasteryTextThingFuckIt",
               "modifiers": {
-                "randomHerblorePotionChance": 5
+                "potionCharges": 25,
+                "rielkConstruction:ExtraTier1Potions": 100,
+                "rielkConstruction:reducePotionUpReq": -20
               }
             },
             {
@@ -4062,7 +4241,10 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods":[1,2],
+              "shinyMods": [
+                1,
+                2
+              ],
               "modifiers": {
                 "flatHiddenSkillLevelBasedOnLevels": [
                   {
@@ -4622,8 +4804,8 @@
             },
             {
               "id": "Dragon_Statue5",
-              "level": 99,
-              "baseExperience": 2000,
+              "level": 98,
+              "baseExperience": 1000,
               "baseActionCost": 750,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -4647,8 +4829,8 @@
                 }
               ],
               "shinyMods": [
-                1,2
-
+                1,
+                2
               ],
               "modifiers": {
                 "flatResistance": [
@@ -6719,8 +6901,8 @@
             },
             {
               "id": "Prayer_Altar5",
-              "level": 98,
-              "baseExperience": 1000,
+              "level": 97,
+              "baseExperience": 940,
               "baseActionCost": 750,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -6963,15 +7145,10 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 1,
-                    "skillID": "melvorD:Magic"
-                  }
-                ],
+                "magicAccuracyRating": 1,
                 "skillXP": [
                   {
-                    "value": 1,
+                    "value": 3,
                     "skillID": "melvorD:Magic"
                   }
                 ]
@@ -7010,19 +7187,14 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2
+              ],
+              "changeFunc": "increaseRuneReduction",
               "modifiers": {
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 1,
-                    "skillID": "melvorD:Magic"
-                  }
-                ],
-                "skillXP": [
-                  {
-                    "value": 2,
-                    "skillID": "melvorD:Magic"
-                  }
-                ]
+                "rielkConstruction:spoofIncreaseRuneReduction": 1,
+                "rielkConstruction:addRuneShield": 1
               }
             },
             {
@@ -7063,15 +7235,10 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 2,
-                    "skillID": "melvorD:Magic"
-                  }
-                ],
+                "magicAccuracyRating": 5,
                 "skillXP": [
                   {
-                    "value": 3,
+                    "value": 7,
                     "skillID": "melvorD:Magic"
                   }
                 ]
@@ -7114,19 +7281,14 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2
+              ],
+              "changeFunc": "addSpecialAttack",
               "modifiers": {
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 2,
-                    "skillID": "melvorD:Magic"
-                  }
-                ],
-                "skillXP": [
-                  {
-                    "value": 4,
-                    "skillID": "melvorD:Magic"
-                  }
-                ]
+                "rielkConstruction:fake_Book_of_Eli": 1,
+                "rielkConstruction:spoof_AddMagicSpecialAttack": 1
               }
             },
             {
@@ -7180,21 +7342,18 @@
               "currencyCosts": [],
               "shinyMods": [
                 1,
-                2
+                2,
+                3
               ],
               "modifiers": {
                 "flatHiddenSkillLevelBasedOnLevels": [
                   {
-                    "value": 5,
+                    "value": 10,
                     "skillID": "melvorD:Magic"
                   }
                 ],
-                "skillXP": [
-                  {
-                    "value": 5,
-                    "skillID": "melvorD:Magic"
-                  }
-                ]
+                "rielkConstruction:runeShieldMultiplier": 1,
+                "rielkConstruction:AllowAurorasAnytime": 1
               }
             },
             {
@@ -7364,19 +7523,17 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2
+              ],
+              "changeFunc": [
+                "addRuneEssence",
+                "addConstellationLevels"
+              ],
               "modifiers": {
-                "skillXP": [
-                  {
-                    "value": 4,
-                    "skillID": "melvorD:Astrology"
-                  }
-                ],
-                "masteryXP": [
-                  {
-                    "value": 4,
-                    "skillID": "melvorD:Astrology"
-                  }
-                ]
+                "rielkConstruction:spoof_AddRunesAstrology": 1,
+                "rielkConstruction:spoof_UpgradeScrollOfEssence": 1
               }
             },
             {
@@ -7405,16 +7562,17 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillInterval": [
-                  {
-                    "value": -2,
-                    "skillID": "melvorD:Astrology"
-                  }
-                ],
                 "masteryXP": [
                   {
                     "value": 4,
                     "skillID": "melvorD:Astrology"
+                  }
+                ],
+                "randomProductChance": [
+                  {
+                    "skillID": "melvorD:Astrology",
+                    "itemID": "melvorD:Rune_Essence",
+                    "value": 3
                   }
                 ]
               }
@@ -7449,12 +7607,20 @@
               ],
               "shinyMods": [
                 1,
-                2
+                2,
+                3
               ],
               "currencyCosts": [],
               "modifiers": {
                 "increasedChanceStardust": 2,
-                "increasedChanceGoldenStardust": 2.5
+                "increasedChanceGoldenStardust": 2.5,
+                "randomProductChance": [
+                  {
+                    "skillID": "melvorD:Astrology",
+                    "itemID": "melvorD:Rune_Essence",
+                    "value": 3
+                  }
+                ]
               }
             },
             {
@@ -7491,6 +7657,13 @@
                   {
                     "value": 6,
                     "skillID": "melvorD:Astrology"
+                  }
+                ],
+                "randomProductChance": [
+                  {
+                    "skillID": "melvorD:Astrology",
+                    "itemID": "melvorD:Rune_Essence",
+                    "value": 3
                   }
                 ]
               }
@@ -7532,13 +7705,14 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
               "modifiers": {
-                "skillItemDoublingChance": [
-                  {
-                    "value": 10,
-                    "skillID": "melvorD:Astrology"
-                  }
-                ],
+                "rielkConstruction:spoof_AddStarStandardLevel": 1,
+                "rielkConstruction:UnlockConvergence": 1,
                 "masteryXP": [
                   {
                     "value": 6,
@@ -7610,7 +7784,8 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [1,
+              "shinyMods": [
+                1,
                 2
               ],
               "modifiers": {
@@ -7707,7 +7882,9 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [1,2,
+              "shinyMods": [
+                1,
+                2,
                 3
               ],
               "modifiers": {
@@ -7760,7 +7937,8 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [1,
+              "shinyMods": [
+                1,
                 2,
                 3,
                 4
@@ -8213,7 +8391,8 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [1,
+              "shinyMods": [
+                1,
                 2
               ],
               "modifiers": {
@@ -8264,7 +8443,8 @@
                   "quantity": 50000
                 }
               ],
-              "shinyMods": [1,
+              "shinyMods": [
+                1,
                 2
               ],
               "modifiers": {
@@ -9186,7 +9366,7 @@
       },
       {
         "id": "minFishInterval",
-        "inverted":true,
+        "inverted": true,
         "allowedScopes": [
           {
             "scopes": {},
@@ -9201,7 +9381,7 @@
       },
       {
         "id": "maxFishInterval",
-                "inverted":true,
+        "inverted": true,
         "allowedScopes": [
           {
             "scopes": {},
@@ -9270,6 +9450,232 @@
                 "includeSign": false
               }
             ]
+          }
+        ]
+      },
+      {
+        "id": "ChangeAddiIntoHighTier",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Makes additional potions be higher tier.",
+                "lang": "MODIFIER_DATA_ChangeAddiIntoHighTier",
+                "includeSign": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ExtraTier1Potions",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Chance to get an extra tier1 potion.",
+                "lang": "MODIFIER_DATA_ExtraTier1Potions"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "reducePotionUpReq",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Reduced the requirement to upgrade a potion.",
+                "lang": "MODIFIER_DATA_reducePotionUpReq"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoofReduceUpAmount",
+        "inverted": true,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Spoof reducing potion Amount to Upgrade them.",
+                "lang": "MODIFIER_DATA_spoofReduceUpAmount"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoofIncreaseRuneReduction",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Spoof increasing how many runes you save.",
+                "lang": "MODIFIER_DATA_spoofIncreaseRuneReduction"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fake_Book_of_Eli",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Allow Auroras Anytime.",
+                "lang": "MODIFIER_DATA_fake_Book_of_Eli"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AllowAurorasAnytime",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Allow Auroras Anytime.",
+                "lang": "MODIFIER_DATA_AllowAurorasAnytime"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddMagicSpecialAttack",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Allow Auroras Anytime.",
+                "lang": "MODIFIER_DATA_spoof_AddMagicSpecialAttack"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "addRuneShield",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Adds a super cool ass fucking rune shield.",
+                "lang": "MODIFIER_DATA_addRuneShield"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "runeShieldMultiplier",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Doubles triples etc. rune shield multiplier.",
+                "lang": "MODIFIER_DATA_runeShieldMultiplier"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddRunesAstrology",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "adds runes in astrology, VERY cool bepis addition.",
+                "lang": "MODIFIER_DATA_spoof_AddRunesAstrology"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_UpgradeScrollOfEssence",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "adds runes in astrology, VERY cool bepis addition.",
+                "lang": "MODIFIER_DATA_spoof_UpgradeScrollOfEssence"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddStarStandardLevel",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "https://youtu.be/VCQ-KCMjT5s",
+                "lang": "MODIFIER_DATA_spoof_AddStarStandardLevel"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "UnlockConvergence",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Wow the mechanic that took 2 months it's finally here",
+                "lang": "MODIFIER_DATA_UnlockConvergence"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "combatEffects": [
+      {
+        "id": "Ward",
+        "templateID": "melvorD:StaticTargetCountingModifier",
+        "name": "Rune Ward",
+        "media": "assets/replacements/barrier.png",
+        "target": "Self",
+        "parameters": [
+          {
+            "name": "turns",
+            "initialValue": 0
+          }
+        ],
+        "statGroups": [
+          {
+            "name": "stacks",
+            "modifiers": {
+              "flatResistance": [
+                {
+                  "damageTypeID": "melvorD:Normal",
+                  "value": 0
+                }
+              ]
+            }
           }
         ]
       }
@@ -9367,6 +9773,290 @@
                 ]
               },
               "roaringSkill": "melvorD:Astrology"
+            }
+          ]
+        }
+      },
+      {
+        "skillID": "melvorD:Astrology",
+        "data": {
+          "recipes": [
+            {
+              "id": "melvorF:Deedree",
+              "convergenceRunes": [
+                {
+                  "melvorD:Air_Rune": 3
+                },
+                {
+                  "melvorD:Earth_Rune": 1
+                },
+                {
+                  "melvorD:Light_Rune": 5
+                }
+              ],
+              "goldvergenceRunes": [
+                {
+                  "melvorF:Farming_Potion_I": 3
+                },
+                {
+                  "melvorF:Summoning_Familiar_Ent": 1
+                },
+                {
+                  "melvorD:Bird_Nest": 5
+                }
+              ]
+            },
+            {
+              "id": "melvorF:Iridan",
+              "convergenceRunes": [
+                {
+                  "melvorD:Earth_Rune": 3
+                },
+                {
+                  "melvorD:Fire_Rune": 1
+                },
+                {
+                  "melvorF:Havoc_Rune": 5
+                }
+              ],
+              "goldvergenceRunes": [
+                {
+                  "melvorF:Melee_Evasion_Potion_I": 3
+                },
+                {
+                  "melvorF:Summoning_Familiar_Wolf": 1
+                },
+                {
+                  "melvorD:Dragonite_Bar": 5
+                }
+              ]
+            },
+            {
+              "id": "melvorF:Ameria",
+              "convergenceRunes": [
+                {
+                  "melvorD:Water_Rune": 1
+                },
+                {
+                  "melvorD:Light_Rune": 3
+                },
+                {
+                  "melvorF:Nature_Rune": 5
+                }
+              ],
+              "goldvergenceRunes": [
+                {
+                  "melvorF:Fishermans_Potion_I": 1
+                },
+                {
+                  "melvorF:Summoning_Familiar_Devil": 3
+                },
+                {
+                  "melvorD:Treasure_Chest": 5
+                }
+              ]
+            },
+            {
+              "id": "melvorF:Terra",
+              "convergenceRunes": [
+                {
+                  "melvorD:Earth_Rune": 1
+                },
+                {
+                  "melvorD:Body_Rune": 3
+                },
+                {
+                  "melvorD:Chaos_Rune": 5
+                }
+              ],
+              "goldvergenceRunes": [
+                {
+                  "melvorF:Hinder_Potion_I": 1
+                },
+                {
+                  "melvorF:Summoning_Familiar_Minotaur": 1
+                },
+                {
+                  "melvorD:Coal_Ore": 5
+                }
+              ]
+            },
+            {
+              "id": "melvorF:Vale",
+              "convergenceRunes": [
+                {
+                  "melvorD:Body_Rune": 1
+                },
+                {
+                  "melvorD:Death_Rune": 5
+                },
+                {
+                  "melvorD:Blood_Rune": 3
+                }
+              ],
+              "goldvergenceRunes": [
+                {
+                  "melvorF:Generous_Cook_Potion_I": 1
+                },
+                {
+                  "melvorF:Summoning_Familiar_Unicorn": 1
+                },
+                {
+                  "melvorD:Carrot_Cake_Perfect": 5
+                }
+              ]
+            },
+            {
+              "id": "melvorF:Syllia",
+              "convergenceRunes": [
+                {
+                  "melvorD:Air_Rune": 1
+                },
+                {
+                  "melvorD:Mind_Rune": 3
+                },
+                {
+                  "melvorF:Spirit_Rune": 5
+                }
+              ],
+              "goldvergenceRunes": [
+                {
+                  "melvorF:Lethal_Toxins_Potion_I": 1
+                },
+                {
+                  "melvorF:Summoning_Familiar_Centaur": 3
+                },
+                {
+                  "melvorF:Ancient_Arrow": 5
+                }
+              ]
+            },
+            {
+              "id": "melvorF:Arachi",
+              "convergenceRunes": [
+             
+                     {
+                  "melvorD:Chaos_Rune": 1
+                },
+                {
+                  "melvorD:Death_Rune": 3
+                },
+                {
+                  "melvorD:Ancient_Rune": 5
+                }
+              ],
+              "goldvergenceRunes": [
+          
+                   {
+                  "melvorF:Elemental_Potion_I": 1
+                },
+                {
+                  "melvorF:Summoning_Familiar_Crow": 3
+                },
+                {
+                  "melvorF:Runecrafting_Pouch": 5
+                }
+              ]
+            },
+            {
+              "id": "melvorF:Ko",
+              "convergenceRunes": [
+                {
+                  "melvorD:Air_Rune": 1
+                },
+                {
+                  "melvorD:Fire_Rune": 3
+                },
+                {
+                  "melvorF:Havoc_Rune": 5
+                }
+              ],
+              "goldvergenceRunes": [
+                {
+                  "melvorF:Gentle_Hands_Potion_I": 1
+                },
+                {
+                  "melvorF:Summoning_Familiar_Leprechaun": 3
+                },
+                {
+                  "rielkConstruction:Tar_Jar": 5
+                }
+              ]
+            },
+            {
+              "id": "melvorF:Tellus",
+              "convergenceRunes": [
+                {
+                  "melvorD:Mind_Rune": 1
+                },
+                {
+                  "melvorD:Fire_Rune": 3
+                },
+                {
+                  "melvorD:Blood_Rune": 5
+                }
+              ],
+              "goldvergenceRunes": [
+                {
+                  "melvorF:Diamond_Luck_Potion_I": 1
+                },
+                {
+                  "melvorF:Summoning_Familiar_Cyclops": 3
+                },
+                {
+                  "melvorF:Diamond_Bolts": 5
+                }
+              ]
+            },
+            {
+              "id": "melvorF:Hyden",
+              "convergenceRunes": [
+                {
+                  "melvorD:Water_Rune": 1
+                },
+                {
+                  "melvorD:Light_Rune": 3
+                },
+                {
+                  "melvorF:Nature_Rune": 5
+                }
+              ],
+              "goldvergenceRunes": [
+                {
+                  "melvorF:Diamond_Luck_Potion_I": 1
+                },
+                {
+                  "melvorF:Summoning_Familiar_Monkey": 3
+                },
+                {
+                  "melvorF:Medium_Urn_Enchanted": 5
+                }
+              ]
+            },
+            {
+              "id": "melvorF:Qimican",
+              "convergenceRunes": [
+                 {
+                  "melvorD:Mind_Rune": 1
+                },
+                {
+                  "melvorD:Body_Rune": 3
+                },
+                {
+                  "melvorF:Spirit_Rune": 5
+                }
+              ],
+              "goldvergenceRunes": [
+                {
+                  "melvorF:Necromancer_Potion_I": 1
+                },
+                {
+                  "melvorF:Summoning_Familiar_Bear": 3
+                },
+                {
+                  "melvorF:Alchemists_Bag_II": 5
+                }
+              ]
             }
           ]
         }
@@ -11293,6 +11983,25 @@
             {
               "insertAt": 5,
               "monsterID": "rielkConstruction:BarnRaiser"
+            }
+          ]
+        }
+      },
+      {
+        "id": "melvorD:Wizard_Tower",
+        "monsters": {
+          "add": [
+            {
+              "insertAt": 0,
+              "monsterID": "rielkConstruction:Basic_Golem"
+            },
+            {
+              "insertAt": 2,
+              "monsterID": "rielkConstruction:Advanced_Golem"
+            },
+            {
+              "insertAt": 4,
+              "monsterID": "rielkConstruction:Expert_Golem"
             }
           ]
         }

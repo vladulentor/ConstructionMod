@@ -1,6 +1,19 @@
 const { loadModule } = mod.getContext(import.meta);
 
+
+const { addRuneEssenceCtx } = await loadModule('src/patches/skillPatches/astrology/addRuneEssence.mjs');
+const { addConstellationLevels } = await loadModule('src/patches/skillPatches/astrology/addConstellationLevels.mjs');
+const { addStarConvergence } = await loadModule('src/patches/skillPatches/astrology/addStarConvergence.mjs');
+
+
+
+
 const { patchOverHeal } = await loadModule('src/patches/skillPatches/combat/patchOverHeal.mjs');
+const { patchMagicUsageCheck } = await loadModule('src/patches/skillPatches/combat/patchMagicUsageCheck.mjs');
+const { addMagicShield } = await loadModule('src/patches/skillPatches/combat/addMagicShield.mjs');
+const { patchAuroraAnyStyle } = await loadModule('src/patches/skillPatches/combat/patchAuroraAnyStyle.mjs');
+
+
 
 const { emitPassiveCook } = await loadModule('src/patches/skillPatches/cooking/emitPassiveCook.mjs');
 const { perfectFoodHealing } = await loadModule('src/patches/skillPatches/cooking/perfectFoodHealing.mjs');
@@ -12,6 +25,9 @@ const { addFishonTreasureRollPlusExtra } = await loadModule('src/patches/skillPa
 const { reduceFishTimers } = await loadModule('src/patches/skillPatches/fishing/reduceFishTimers.mjs');
 
 const { loseGPOnFishing } = await loadModule('src/patches/skillPatches/fishing/loseGPOnFishing.mjs');
+
+const { reduceUpgradeLevelReq } = await loadModule('src/patches/skillPatches/herblore/reduceUpgradeLevelReq.mjs');
+const { additionalPotionsHighTier } = await loadModule('src/patches/skillPatches/herblore/additionalPotionsHighTier.mjs');
 
 
 const { patchCraftingOrder } = await loadModule('src/patches/skillPatches/crafting/patchCraftingOrder.mjs');
@@ -44,6 +60,13 @@ export function patchSkillsBeforeDataReg(ctx) {
         addFishonTreasureRollPlusExtra(ctx);
         loseGPOnFishing(ctx);
         reduceFishTimers(ctx);
+        reduceUpgradeLevelReq(ctx);
+        additionalPotionsHighTier(ctx);
+        patchMagicUsageCheck(ctx);
+        addMagicShield(ctx);
+        patchAuroraAnyStyle(ctx);
+        addRuneEssenceCtx(ctx);
+        addStarConvergence(ctx);
         nerfBearDevil();
 }
 export function patchSkillsAfterDataReg(ctx) {

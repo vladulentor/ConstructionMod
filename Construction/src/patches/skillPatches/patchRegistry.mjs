@@ -2,6 +2,13 @@ const { loadModule } = mod.getContext(import.meta);
 
 const { tierArray } = await loadModule('src/patches/skillPatches/atlasofdiscovery/archaeology/tierarray.mjs');
 
+const { addRuneEssence } = await loadModule("src/patches/skillPatches/astrology/addRuneEssence.mjs");
+const { addConstellationLevels } = await loadModule("src/patches/skillPatches/astrology/addConstellationLevels.mjs");
+
+
+const { addSpecialAttack } = await loadModule('src/patches/skillPatches/combat/addSpecialAttack.mjs');
+
+
 const { unlockPlot } = await loadModule('src/patches/skillPatches/farming/unlockPlot.mjs');
 
 const { patchWorldMap } = await loadModule("src/patches/skillPatches/atlasofdiscovery/patchWorldMap.mjs");
@@ -12,6 +19,11 @@ const { doubleEffectsOfStuff } = await loadModule("src/patches/skillPatches/cook
 
 const { upgradeRegenPotions } = await loadModule("src/patches/skillPatches/herblore/upgradeRegenPotions.mjs");
 const { upgradeFirePotions } = await loadModule("src/patches/skillPatches/herblore/upgradeFirePotions.mjs");
+const { reduceUpgradeCost } = await loadModule("src/patches/skillPatches/herblore/reduceUpgradeCost.mjs");
+const { addPotionMasteryTextThingFuckIt } = await loadModule("src/patches/skillPatches/herblore/addPotionMasteryTextThingFuckIt.mjs");
+
+const { increaseRuneReduction } = await loadModule("src/patches/skillPatches/combat/increaseRuneReduction.mjs");
+
 
 const { addSpecialFishingItems } = await loadModule("src/patches/skillPatches/fishing/addSpecialFishingItems.mjs");
 
@@ -32,5 +44,11 @@ export const EffectRegistry = {
   multiplyRoaringEffects,
   addSaplingBranchDrop,
   addSpecialFishingItems,
-  addBonusesToTreeMastery
+  addBonusesToTreeMastery,
+  reduceUpgradeCost,
+  addPotionMasteryTextThingFuckIt,
+  increaseRuneReduction,
+  addSpecialAttack,
+  addRuneEssence,
+  addConstellationLevels
 };

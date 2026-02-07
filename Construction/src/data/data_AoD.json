@@ -51,6 +51,38 @@
   "modifications": {
     "skillData": [
       {
+        "skillID": "melvorD:Astrology",
+        "data": {
+          "recipes": [
+            {
+              "id": "melvorAoD:Nysa",
+              "convergenceRunes": [
+                {
+                  "melvorD:Earth_Rune": 3
+                },
+                {
+                  "melvorD:Death_Rune": 1
+                },
+                {
+                  "melvorF:Spirit_Rune": 5
+                }
+              ],
+              "goldvergenceRunes": [
+                {
+                  "melvorAoD:Paper": 3
+                },
+                {
+                  "melvorAoD:Archaeologists_Consumable": 1
+                },
+                {
+                  "melvorAoD:Old_Scripture": 1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "skillID": "melvorD:Firemaking",
         "data": {
           "logs": [

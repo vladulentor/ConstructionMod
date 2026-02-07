@@ -165,6 +165,7 @@ export class ConstructionFixture extends RealmedObject {
         };
         const fixtureNotification = game.notifications.newAddSuccessNotification(`FixtureComplete-${this.id}`);
         game.notifications.addNotification(fixtureNotification, finishNotification);
+        construction.game.completion.updateSkillMastery(construction)
     }
     get providedStats() {
         return this.recipes.filter(r => r.tier <= this.currentTier).map(r => r.stats);

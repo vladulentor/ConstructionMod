@@ -32,6 +32,7 @@ export class Construction extends ArtisanSkill {
         this.rooms = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionRoom');
         this.fixtures = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionFixture');
         this.tierMasteries = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionTierMastery');
+        this.totalMasteryActions = new CompletionMap();
         this.hiddenRooms = new Set();
         this.recipeNumber = 0;
         this.recipeCountByTier = [];
@@ -296,8 +297,15 @@ export class Construction extends ArtisanSkill {
     }
 
     computeTotalMasteryActions() {
+    this.totalMasteryActions.clear();
 
-    }
+    const namespace = 'rielkConstruction'; 
+    let total = 0;
+    this.fixtures.forEach(fixture => {
+        total++;
+    });
+    this.totalMasteryActions.set(namespace, total);
+}
 
     get buildActionXP() {
         return this.activeBuildRecipe.baseExperience;
@@ -399,16 +407,20 @@ export class Construction extends ArtisanSkill {
             this.categories.allObjects
         );
         this.rooms.forEach(room => room.sortFixtures());
+        this.actions.forEach((action) => {
+            this.milestones.push(action);
+        })
+        this.sortMilestones();
     }
-    /* addTotalCurrentMasteryToCompletion(completion) {
- 
+     addTotalCurrentMasteryToCompletion(completion) {
+        console.log("Before loop:", completion);
          this.fixtures.forEach(fixture => {
-             let totalTierLevel = fixture.currentTier * 5;
+             let totalTierLevel = fixture.currentTier;
              // Each fixture counts as one pseudo-action
              const namespace = 'rielkConstruction';
              completion.add(namespace, totalTierLevel);
          });
-     }*/
+     }
     onRealmChange() {
         super.onRealmChange();
         this.renderQueue.roomRealmVisibility = true;
@@ -438,7 +450,7 @@ export class Construction extends ArtisanSkill {
         //handled by ui.render();
     }
     get masteryLevelCap() {
-        return 50;  //cloudManager.hasTotH later
+        return 5;  //cloudManager.hasTotH later
     }
     renderRecipeInfo() {
         if (!this.renderQueue.recipeInfo)
@@ -810,12 +822,6 @@ export class Construction extends ArtisanSkill {
         }
         this._actionMode = 1;
         this.start();
-
-    }
-    checkForScoobs() {
-        const pet = [...game.petManager.unlocked].find(p => p._localID === 'Scoobs');
-        if (this.tierMasteries.getObjectSafe('rielkConstruction:5').completed && !pet)  // note, this will eventually be removed in like, a month.
-            game.petManager.unlockPetByID('rielkConstruction:Scoobs');
 
     }
     getRegistry(type) {

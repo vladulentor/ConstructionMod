@@ -494,7 +494,8 @@
           <div style="max-height:350px; overflow-y:auto;">
             <div class="font-w600 mb-1 ">v4.4</div>
             <div class="font-w400 font-size-sm mb-2">
-              - Made Furniture show up in Skill Boosts properly. Refractored efficiency under the hood, buffed Tar Jar. Fixed Cost Reduction not reducing item cost in Furniture.
+              - Made Furniture show up in Skill Boosts properly. Refractored efficiency under the hood, buffed Tar Jar.
+              Fixed Cost Reduction not reducing item cost in Furniture.
             </div>
 
             <div class="font-w600 mb-1 ">v4.3</div>
@@ -790,7 +791,7 @@
   <h5 class="font-w600 mb-1 text-center">
     <rielk-lang-string id="remaining-text" lang-id="MENU_TEXT_REMAINING"></rielk-lang-string>
   </h5>
-  <my-quantity-icons id="icons"></quantity-icons>
+  <my-quantity-icons id="icons"></my-quantity-icons>
 </template>
 
 <template id="remaining-haves-box-template" data-image-init="true">
@@ -798,4 +799,97 @@
     <lang-string lang-id="MENU_TEXT_YOU_HAVE"></lang-string>
   </h5>
   <my-current-quantity-icons id="icons"></my-current-quantity-icons>
+</template>
+
+<template id="locked-icon-template">
+  <div id="container"
+    class="block block-rounded-double bg-combat-inner-dark m-2 border-top border-3x pointer-enabled info-icon icon-size-64"
+    style="position: relative; display: inline-block;">
+
+    <!-- Base item image -->
+    <img id="icon-image" class="p-2" style="display: block; width:64px; height:64px;">
+
+    <!-- Lock overlay -->
+    <img id="lock-overlay" alt="Locked" class="d-none"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
+
+    <!-- Quantity badge wrapper -->
+    <div class="font-size-sm text-white text-center"
+      style="position: absolute; bottom: -0.5rem; left: 50%; transform: translateX(-50%); line-height: 1.15; white-space: nowrap; width: 100%;">
+      <small id="quantity" class="badge-pill">
+        0
+      </small>
+    </div>
+
+    <!-- Tooltip placeholder -->
+    <div class="tooltip-placeholder" style="display: none;"></div>
+
+  </div>
+
+</template>
+
+<template id="locked-icon-template-sm">
+  <div id="container"
+    class="block block-rounded-double bg-combat-inner-dark m-2 border-top border-3x pointer-enabled info-icon icon-size-48"
+    style="position: relative; display: inline-block;">
+
+    <!-- Base item image -->
+    <img id="icon-image" class="p-2" style="display: block; width:48px; height:48px;">
+
+    <!-- Lock overlay -->
+    <img id="lock-overlay" alt="Locked" class="d-none"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
+
+    <!-- Quantity badge wrapper -->
+    <div class="font-size-sm text-white text-center"
+      style="position: absolute; bottom: -0.5rem; left: 50%; transform: translateX(-50%); line-height: 1.15; white-space: nowrap; width: 100%;">
+      <small id="quantity" class="badge-pill">
+        0
+      </small>
+    </div>
+
+    <!-- Tooltip placeholder -->
+    <div class="tooltip-placeholder" style="display: none;"></div>
+
+  </div>
+
+</template>
+
+
+<template id="convergence-template" data-image-init="true">
+  <div class="d-flex flex-wrap align-items-start w-100 p-2 row-gap-2">    
+    <div class="flex-grow-1"></div>
+    
+    <div class="convergence-group d-flex align-items-center flex-nowrap" id="group-left">
+        <img class="outer-icon skill-icon-md mr-2" id="outer-icon-left">
+        <locked-icons class="flex-nowrap" id="icons-left"></locked-icons>
+    </div>
+    
+    <div class="flex-grow-1"></div>
+
+    <div class="convergence-group d-flex align-items-center flex-nowrap" id="group-right">
+        <locked-icons class="flex-nowrap ml-1" id="icons-right"></locked-icons>
+        <img class="outer-icon skill-icon-md mr-2" id="outer-icon-right">
+    </div>
+    
+    <div class="flex-grow-1"></div>
+</div>
+</template>
+
+<template id="convergence-template-phone" data-image-init="true">
+  <div class="d-flex flex-wrap align-items-start w-100 p-2 row-gap-2">    
+    
+    <div class="convergence-group d-flex align-items-center flex-nowrap" id="group-left">
+        <img class="outer-icon skill-icon-sm mr-2" id="outer-icon-left">
+        <locked-icons class="flex-nowrap" id="icons-left"></locked-icons>
+    </div>
+    
+    <div class="flex-grow-1"></div>
+
+    <div class="convergence-group d-flex align-items-center flex-nowrap" id="group-right">
+        <locked-icons class="flex-nowrap ml-1" id="icons-right"></locked-icons>
+        <img class="outer-icon skill-icon-sm mr-2" id="outer-icon-right">
+    </div>
+    
+</div>
 </template>

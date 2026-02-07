@@ -5,6 +5,10 @@ This document lists all the changes and additions the Construction Mod makes to 
 Entries marked with [TotH] indicate Throne of the Herald changes.
 
 ---
+## Misc
+- Added a new Autumn-themed background in the settings.
+
+---
 ## Shop
 ### New Purchases
 - Added the "Saw" items in the Skill Upgrades section. They work like the Axe, Fishing Rod, or Pickaxe tool chains, but for Construction. They also increase Efficiency effects along with decreasing interval.

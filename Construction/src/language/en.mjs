@@ -1,4 +1,5 @@
 export const language = {
+    'COMBAT_MISC_SHIELD_BROKEN': 'Ward',
     'SKILL_NAME_Construction': 'Construction',
 
     'GUIDE_CONSTR_HERO': '${ConstructionIcon64}${constructionTitle}${ModioLink}',
@@ -92,6 +93,11 @@ export const language = {
     'MENU_TOOLTIP_EFFICIENCY_COST': 'Will spend ${cost} times the resources.',
     'MENU_EFFICIENCY_BASE': 'Base',
     'SHOP_NAME_Construction_Skillcape': 'Construction Skillcape',
+    'MENU_TOOLTIP_CONVERGENCE':'Convergence',
+        'MENU_TOOLTIP_GOLDVERGENCE':'Golden Convergence',
+        'MENU_TOOLTIP_CONVERGENCE_EXPL':'When ${rune} and ${dust} are drawn together while Studying Stars, a ${conv} occurs.',
+        'MENU_TOOLTIP_CONVERGENCE_CHANCE':'Chance of ${conv}:',
+    'MENU_TOOLTIP_CONVERGENCE_LOCKED':'Further explore this Constellation to align this Star',
 
     'MISC_TEXT_Saw': 'Bronze Saw',
     'MENU_TEXT_Saw': 'Current Saw',
@@ -205,29 +211,38 @@ export const language = {
     'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra Materials or Progress made when completing extra actions when making ${categoryName} in ${skillName}',
     'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra Materials or Progress made when completing extra actions while crafting ${categoryName} in ${skillName}',
 
+    'MODIFIER_DATA_runeShieldMultiplier': 'Halve Spent Runes Required to create a Ward',
+    'MODIFIER_DATA_addRuneShield': 'Spending 300 Runes creates a Ward that negates the next enemy\'s turn',
+    'MODIFIER_DATA_fake_Book_of_Eli': 'Unlocks Tier IV Auroras',
+    'MODIFIER_DATA_spoof_AddMagicSpecialAttack': 'Adds a \'Mana Surge\' special attack to all magic weapons',
+    'MODIFIER_DATA_AllowAurorasAnytime': 'Auroras can be used without a Magic weapon, at triple rune cost',
+    'MODIFIER_DATA_spoof_AddRunesAstrology':'Rarely draw large amounts of Rune Essence from Constellations while studying Astrology',
     'MODIFIER_DATA_spoofFoodSlot': '${value} Food Slot',
     'MODIFIER_DATA_unlockOverHeal': 'Manually Eating can Overheal, exceeding Max Hitpoints',
     'MODIFIER_DATA_spoofUpgradeRegenPot': 'Upgrade "Regeneration Potion" to include Overheal effects',
     'MODIFIER_DATA_autoeatOverheal': 'Auto Eat can Overheal',
     'MODIFIER_DATA_regenOverheal': 'Passive Regeneration can Overheal',
     'MODIFIER_DATA_maxOverheal': '${value}% of Max Hitpoints added to Overheal Cap',
-    'MODIFIER_DATA_spoofUpgradeRoaring': 'Roaring Bonuses are ${value}% stronger.',
+    'MODIFIER_DATA_spoofUpgradeRoaring': 'Roaring Bonuses are ${value}% stronger',
     'MODIFIER_DATA_unlockRoaring': 'Can stoke Bonfires to receive Bonuses to other Skills based on the Logs burned',
     'MODIFIER_DATA_roaringLogCostReduction': '${value} Logs required to Stoke Bonfires in Firemaking',
     'MODIFIER_DATA_spoofUpgradeKindlingPotion': 'Upgrade "Controlled Heat Potions" to reduce Bonfire stoke costs',
     'MODIFIER_DATA_spoofUnlockBranchSaplings': 'Rarely get Sapling Branches that contain Tree Seeds from Firemaking',
     'MODIFIER_DATA_spoofUpgradeSaplingChance': 'Triple chance of getting Sapling Branches from Firemaking',
-    'MODIFIER_DATA_getSeedsFromFood': '${value}% Chance to get a seed back when eating uncooked Fruits or Vegetables',
+    'MODIFIER_DATA_getSeedsFromFood': '${value}% Chance to get a seed when eating uncooked Fruits or Vegetables',
     'MODIFIER_DATA_farmingSeedReturnActionMine': 'Receive up to ${value} extra Allotment or Herb seed back from harvesting.',
     'MODIFIER_DATA_loseGPOnFishingBasedOnFish': 'Spend up to ${value} GP when fishing, reduced by Fish value',
     'MODIFIER_DATA_spoofAddFishingSpecialItems': 'Can find ${value} new Special Items in Fishing',
     'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff1': 'Mastery Level 50 Trees grant +0.25% XP in all Skills',
     'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2': 'Mastery Level 99 Trees grant -0.1% Interval in all non-Combat Skills',
     'MODIFIER_DATA_skillIntervalSubcategory': '${value}% ${skillName} Interval for ${subcategoryName}',
-    'MODIFIER_DATA_minFishInterval':'${value}% Minimum Fishing Interval',
-        'MODIFIER_DATA_maxFishInterval':'${value}% Maximum Fishing Interval',
-
-
+    'MODIFIER_DATA_minFishInterval': '${value}% Minimum Fishing Interval',
+    'MODIFIER_DATA_ExtraTier1Potions': 'Gain +3 additional Tier I Potions when making a Potion with Level 99 Mastery',
+    'MODIFIER_DATA_reducePotionUpReq': '${value} Mastery Level requirementes to upgrade Potions from the Bank',
+    'MODIFIER_DATA_maxFishInterval': '${value}% Maximum Fishing Interval',
+    'MODIFIER_DATA_ChangeAddiIntoHighTier': 'Additional Primary Products gained in Herblore can be higher tier than your potion',
+    'MODIFIER_DATA_spoofReduceUpAmount': '${value} Potions used to upgrade Potions from the Bank',
+    'MODIFIER_DATA_spoofIncreaseRuneReduction': '${value} Rune cost Reduction of Magic Weapons',
     'MODIFIER_DATA_fishPerfectCookedFish': 'Cooked Fish caught in Fishing are Perfect Quality',
 
     'SHOP_PURCHASE_Perpetual_Haste': '-15% Crafting, Construction & Fletching Interval',
@@ -292,6 +307,7 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 4': 'Unlock fixture\'s Tier 5 effects.',
     'MASTERY_BONUS_Woodcutting_2': 'Grants +0.25% XP in all Skills',
     'MASTERY_BONUS_Woodcutting_3': 'Grants -0.1% Interval in all non-Combat Skills',
+    'MASTERY_BONUS_Herblore_6': 'Gain +3 additional Tier I Potions for this Potion only.',
 
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',
@@ -299,6 +315,10 @@ export const language = {
 
     'ENEMY_NAME_ConstructGiant': 'Iron Giant',
     'ENEMY_NAME_BarnRaiser': 'Barn Raiser',
+    'ENEMY_NAME_Basic_Golem': 'Arcane Golem',
+    'ENEMY_NAME_Advanced_Golem': 'Advanced Arcane Golem',
+    'ENEMY_NAME_Expert_Golem': 'Expert Arcane Golem',
+
 
     'SKILL_CATEGORY_Leather_Slivers': 'Leather Slivers',
     'SKILL_CATEGORY_Wood_Beams': 'Wood Beams',

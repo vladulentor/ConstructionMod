@@ -5,7 +5,7 @@ export function upgradeFirePotions() {
     potID[2] = game.items.getObjectByID('melvorF:Controlled_Heat_Potion_III');
     potID[3] = game.items.getObjectByID('melvorF:Controlled_Heat_Potion_IV');
 
-    const logReduction = [-10, -20, -30, -50];
+    const logReduction = [-5, -10, -15, -25];
     potID.forEach((potion, i) => {
         if (potion) {
             // Apply modifiers directly to the potion’s stats

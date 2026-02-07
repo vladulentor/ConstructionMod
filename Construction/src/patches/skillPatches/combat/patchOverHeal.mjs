@@ -13,6 +13,9 @@ export function patchOverHeal(ctx) {
     ctx.patch(Player, 'autoEat').before(function (shouldEat) {
         this._allowOverheal = !!this.game.modifiers.getValue("rielkConstruction:autoeatOverheal", ModifierQuery.EMPTY);
     })
+    ctx.patch(Player, 'lifesteal').before(function (attack, damage, flatBonus) {
+        this._allowOverheal = 0;
+    })
     ctx.patch(Player, 'autoEat').after(function (_, shouldEat) {
         this._allowOverheal = true;
     }) // don't allow overheal when autoeating unless you get the upgrade
@@ -232,7 +235,7 @@ export function patchOverHeal(ctx) {
         else {
             if (this.displayOverheal) {
                 this.statElements.hitpointsBar.forEach(elem => {
-                    const color = getComputedStyle(elem).backgroundColor; // The only reason this isn't hardcoded is damage indicators can change the HP bar color
+                    const color = getComputedStyle(elem).backgroundColor; // The only reason this isn't hardcoded is damage indicators (the mod) can change the HP bar color
                     elem.style.background = `${color}`;
                 });
                 this.statElements.hitpoints.forEach((elem) => (elem.classList.remove('construction-success')));

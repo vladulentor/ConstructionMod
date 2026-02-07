@@ -30,10 +30,12 @@
                             "id": "melvorTotH:Grove_Logs",
                             "roaringSkill": "melvorD:Crafting",
                             "modifiers": {
-                                "masteryXP": [{
-                                    "skillID": "melvorD:Crafting",
-                                    "value":20
-                                }]
+                                "masteryXP": [
+                                    {
+                                        "skillID": "melvorD:Crafting",
+                                        "value": 20
+                                    }
+                                ]
                             }
                         },
                         {
@@ -96,12 +98,109 @@
                 "data": {
                     "recipes": [
                         {
+                            "id": "melvorTotH:Variel",
+                            "convergenceRunes": [
+                                {
+                                    "melvorTotH:Soul_Rune": 3
+                                },
+                                {
+                                    "melvorTotH:Lightning_Rune": 1
+                                },
+                                {
+                                    "melvorTotH:Archaic_Rune": 5
+                                }
+                            ],
+                            "goldvergenceRunes": [
+                                {
+                                    "melvorTotH:Star_Seeker_Potion_I": 3
+                                },
+                                {
+                                    "melvorTotH:Summoning_Familiar_Owl": 1
+                                },
+                                {
+                                    "melvorF:Stardust": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": "melvorTotH:Rosaniya",
+                            "convergenceRunes": [
+                                {
+                                    "melvorTotH:Infernal_Rune": 3
+                                },
+                                {
+                                    "melvorTotH:Despair_Rune": 1
+                                },
+                                {
+                                    "melvorTotH:Soul_Rune": 5
+                                }
+                            ],
+                            "goldvergenceRunes": [
+                                {
+                                    "melvorF:Mastery_Magnet": 3
+                                },
+                                {
+                                    "melvorF:Basic_Bag": 1
+                                },
+                                {
+                                    "melvorF:Bank_Slot_Token": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": "melvorTotH:Ashtar",
+                            "convergenceRunes": [
+                                {
+                                    "melvorTotH:Poison_Rune": 3
+                                },
+                                {
+                                    "melvorTotH:Infernal_Rune": 1
+                                },
+                                {
+                                    "melvorTotH:Calamity_Rune": 5
+                                }
+                            ],
+                            "goldvergenceRunes": [
+                                {
+                                    "melvorTotH:Adaptive_Accuracy_Potion_I": 3
+                                },
+                                {
+                                    "melvorTotH:Summoning_Familiar_Spider": 1
+                                },
+                                {
+                                    "melvorTotH:Mystic_Lantern": 100
+                                }
+                            ]
+                        },
+                        {
                             "id": "melvorTotH:Haemir",
                             "skillIDs": {
                                 "add": [
                                     "rielkConstruction:Construction"
                                 ]
                             },
+                            "convergenceRunes": [
+                                {
+                                    "melvorTotH:Decay_Rune": 1
+                                },
+                                {
+                                    "melvorTotH:Despair_Rune": 3
+                                },
+                                {
+                                    "melvorTotH:Archaic_Rune": 5
+                                }
+                            ],
+                            "goldvergenceRunes": [
+                                {
+                                    "rielkConstruction:Twice_Measured_Potion_I": 1
+                                },
+                                {
+                                    "rielkConstruction:Mahogany_Beams": 3
+                                },
+                                {
+                                    "rielkConstruction:Elder_Dhide_Leather_Slivers": 5
+                                }
+                            ],
                             "standardModifiers": [
                                 {
                                     "index": 0,

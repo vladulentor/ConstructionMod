@@ -35,7 +35,7 @@ export function addRoaringFire(ctx) {
         qty: numberWithCommas(stokeCost),
         logName: recipe.log.name,
       });
-      this.roaringState.innerHTML = recipe.roaringStats ? recipe.roaringStats.describeAsSpanHTML() : "--";
+      this.roaringState.innerHTML = " " + (recipe.roaringStats ? recipe.roaringStats.describeAsSpanHTML() : "--");
       for (const child of this.roaringState.children) {
         child.classList.replace('text-success', `${firemaking.isRoaringBonfire ? 'construction-victory' : 'text-danger'}`);
       }

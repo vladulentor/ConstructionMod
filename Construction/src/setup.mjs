@@ -44,6 +44,8 @@ class Setup {
         await loadModule('src/interface/elements/constructionRoomPanelElement.mjs');
         await loadModule('src/interface/elements/constructionUpgradesPanelElement.mjs');
         await loadModule('src/interface/elements/rielkLangStringElement.mjs');
+        await loadModule('src/patches/skillPatches/astrology/starConvergenceIcons.mjs');
+                          
     }
 
     async applyPatches() {
@@ -60,7 +62,7 @@ class Setup {
         patchSkillsAfterDataReg(this.ctx);
     }
     async loadData() {
-                await this.ctx.gameData.addPackage('src/data/data_preentry.json');
+        await this.ctx.gameData.addPackage('src/data/data_preentry.json');
         await this.ctx.gameData.addPackage('src/data/data.json');
         if (cloudManager.hasAoDEntitlementAndIsEnabled)
             await this.ctx.gameData.addPackage('src/data/data_AoD.json');
@@ -80,8 +82,6 @@ class Setup {
     }
     async lastChanges(ctx) {
         ctx.onInterfaceReady(async (ctx) => {
-            game.construction.checkForScoobs();
-            game.construction.notifs = true;
         });
     }
 }

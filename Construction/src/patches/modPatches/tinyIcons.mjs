@@ -10,16 +10,23 @@ export function tinyIconsCompatibility(ctx) {
         ['cookSkillcape', game.items.getObjectByID('melvorD:Cooking_Skillcape').media],
         ['cookConsumables', game.items.getObjectByID('melvorF:Additional_Cooker_Scroll').media],
         ['specialItems', game.items.getObjectByID('melvorD:Treasure_Chest').media],
+        ['ward', ctx.getResourceUrl('assets/replacements/barrier.webp')],
+        ['specialattack', 'assets/media/main/special_attack.png'],
+        ['aurora', 'assets/media/skills/combat/auroras.png'],
+        ['rune_essence', game.items.getObjectByID('melvorD:Rune_Essence').media],
+        ['convergence', ctx.getResourceUrl('assets/others/convergence.webp')]
+
+
     ]
     ));
     const constrSubcategories = new Map([
-    ['rielkConstruction:Planks', { name: 'planks', media: game.items.getObjectByID('rielkConstruction:Oak_Planks').media }],
-        ['rielkConstruction:Nails', { name: 'nails', media:game.items.getObjectByID('rielkConstruction:Iron_Nails').media }],
-    ['rielkConstruction:Bricks', { name: 'bricks', media: game.items.getObjectByID('rielkConstruction:Limestone_Bricks').media }],
-    ['rielkConstruction:Straps', { name: 'straps', media: game.items.getObjectByID('rielkConstruction:Red_Dhide_Leather_Straps').media }],
-]);
+        ['rielkConstruction:Planks', { name: 'planks', media: game.items.getObjectByID('rielkConstruction:Oak_Planks').media }],
+        ['rielkConstruction:Nails', { name: 'nails', media: game.items.getObjectByID('rielkConstruction:Iron_Nails').media }],
+        ['rielkConstruction:Bricks', { name: 'bricks', media: game.items.getObjectByID('rielkConstruction:Limestone_Bricks').media }],
+        ['rielkConstruction:Straps', { name: 'straps', media: game.items.getObjectByID('rielkConstruction:Red_Dhide_Leather_Straps').media }],
+    ]);
     icons.addSubcategoryScopeMedia("rielkConstruction:Construction", constrSubcategories);
-icons.addModifier('rielkConstruction:spoofAddWoodcuttingMasteryStuff1', 'woodcutting', 'xp');
+    icons.addModifier('rielkConstruction:spoofAddWoodcuttingMasteryStuff1', 'woodcutting', 'xp');
     icons.addModifier('rielkConstruction:spoofAddWoodcuttingMasteryStuff2', 'woodcutting', 'interval');
 
 
@@ -41,7 +48,7 @@ icons.addModifier('rielkConstruction:spoofAddWoodcuttingMasteryStuff1', 'woodcut
     icons.addModifier('rielkConstruction:maxOverheal', 'overheal');
 
     icons.addModifier('rielkConstruction:fishingTreasureNoReplace', 'fishing');
-        icons.addModifier('rielkConstruction:minFishInterval', 'fishing', 'interval');
+    icons.addModifier('rielkConstruction:minFishInterval', 'fishing', 'interval');
     icons.addModifier('rielkConstruction:maxFishInterval', 'fishing', 'interval');
 
     icons.addModifier('rielkConstruction:loseGPOnFishingBasedOnFish', 'fishing');
@@ -61,6 +68,25 @@ icons.addModifier('rielkConstruction:spoofAddWoodcuttingMasteryStuff1', 'woodcut
     icons.addModifier('rielkConstruction:spoofUpgradeSaplingChance', 'seed');
     icons.addModifier('rielkConstruction:spoofUpgradeRoaring', 'firemaking');
 
+
+    icons.addModifier('rielkConstruction:spoofIncreaseRuneReduction', 'magic', 'preservation');
+    icons.addModifier('rielkConstruction:addRuneShield', 'ward');
+    icons.addModifier('rielkConstruction:fake_Book_of_Eli', 'aurora');
+    icons.addModifier('rielkConstruction:spoof_AddMagicSpecialAttack', 'specialattack', 'magic');
+    icons.addModifier('rielkConstruction:runeShieldMultiplier', 'ward');
+    icons.addModifier('rielkConstruction:AllowAurorasAnytime', 'aurora', 'combat');
+
+
+
+    icons.addModifier('rielkConstruction:ExtraTier1Potions', 'potion');
+    icons.addModifier('rielkConstruction:ChangeAddiIntoHighTier', 'herblore');
+    icons.addModifier('rielkConstruction:spoofReduceUpAmount', 'potion');
+    icons.addModifier('rielkConstruction:reducePotionUpReq', 'potion');
+
+    icons.addModifier('rielkConstruction:spoof_AddRunesAstrology', 'rune_essence');
+    icons.addModifier('rielkConstruction:spoof_UpgradeScrollOfEssence', 'rune_essence');
+    icons.addModifier('rielkConstruction:spoof_AddStarStandardLevel', 'astrology');
+    icons.addModifier('rielkConstruction:UnlockConvergence', 'convergence');
 
 
 

@@ -200,7 +200,7 @@ export const language = {
 
     'ITEM_DESCRIPTION_Beam_Box_I': 'Contains basic Beams',
     'ITEM_DESCRIPTION_Beam_Box_II': 'Contains regular Beams',
-
+    'SPECIAL_ATTACK_DESC_MAGIC_WEAPON':'Attack thrice with reduced potency. Each attack has a low chance to inflict Burn, Frostburn, or Poison',
 
     'TOAST_FIXTURE_COMPLETE': 'You\'ve finished building your ${fixtureName}!',
 
@@ -211,11 +211,11 @@ export const language = {
     'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra Materials or Progress made when completing extra actions when making ${categoryName} in ${skillName}',
     'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra Materials or Progress made when completing extra actions while crafting ${categoryName} in ${skillName}',
 
-    'MODIFIER_DATA_runeShieldMultiplier': 'Halve Spent Runes Required to create a Ward',
-    'MODIFIER_DATA_addRuneShield': 'Spending 300 Runes creates a Ward that negates the next enemy\'s turn',
-    'MODIFIER_DATA_fake_Book_of_Eli': 'Unlocks Tier IV Auroras',
-    'MODIFIER_DATA_spoof_AddMagicSpecialAttack': 'Adds a \'Mana Surge\' special attack to all magic weapons',
-    'MODIFIER_DATA_AllowAurorasAnytime': 'Auroras can be used without a Magic weapon, at triple rune cost',
+    'MODIFIER_DATA_runeShieldMultiplier': 'Halve Spent Runes required to create a Ward',
+    'MODIFIER_DATA_addRuneShield': 'Spending 300 Runes in Combat creates a Ward that negates Enemies\' next turn',
+    'MODIFIER_DATA_fake_Book_of_Eli': 'Tier III Auroras can be used regardless of equipped Book',
+    'MODIFIER_DATA_spoof_AddMagicSpecialAttack': 'Adds a \'Mana Surge\' special attack to all Magic Weapons',
+    'MODIFIER_DATA_AllowAurorasAnytime': 'Auroras can be used without a Magic weapon, at triple Rune cost',
     'MODIFIER_DATA_spoof_AddRunesAstrology': 'Rarely draw large amounts of Rune Essence from Constellations while studying Astrology',
     'MODIFIER_DATA_spoofFoodSlot': '${value} Food Slot',
     'MODIFIER_DATA_unlockOverHeal': 'Manually Eating can Overheal, exceeding Max Hitpoints',
@@ -237,16 +237,19 @@ export const language = {
     'MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2': 'Mastery Level 99 Trees grant -0.1% Interval in all non-Combat Skills',
     'MODIFIER_DATA_skillIntervalSubcategory': '${value}% ${skillName} Interval for ${subcategoryName}',
     'MODIFIER_DATA_minFishInterval': '${value}% Minimum Fishing Interval',
-    'MODIFIER_DATA_ExtraTier1Potions': 'Gain +3 additional Tier I Potions when making a Potion with Level 99 Mastery',
+    'MODIFIER_DATA_ExtraTier1Potions': 'Gain ${value} additional Tier I Potions when making a Potion with Level 99 Mastery',
     'MODIFIER_DATA_reducePotionUpReq': '${value} Mastery Level requirementes to upgrade Potions from the Bank',
     'MODIFIER_DATA_maxFishInterval': '${value}% Maximum Fishing Interval',
-    'MODIFIER_DATA_ChangeAddiIntoHighTier': 'Additional Primary Products gained in Herblore can be higher tier than your potion',
-    'MODIFIER_DATA_spoofReduceUpAmount': '${value} Potions used to upgrade Potions from the Bank',
+    'MODIFIER_DATA_ChangeAddiIntoHighTier': 'Random Tier Potions gained in Herblore can\'t be lower Tier than your Potion Tier',
+    'MODIFIER_DATA_spoofReduceUpAmount': '${value} Potion required to upgrade Potions from the Bank',
     'MODIFIER_DATA_spoofIncreaseRuneReduction': '${value} Rune cost Reduction of Magic Weapons',
     'MODIFIER_DATA_fishPerfectCookedFish': 'Cooked Fish caught in Fishing are Perfect Quality',
     'MODIFIER_DATA_runecraftingRuneCostReduction': '${value}% Rune Costs for Equipment or Weapons in ${skillName} (cannot be reduced below 1)',
     'MODIFIER_DATA_ComboRunesonElemRunes': '${value} related Combination Runes received from ${skillName} when making Elemental Runes',
     'MODIFIER_DATA_runePreservationCap': '${value}% Rune Preservation cap',
+    'MODIFIER_DATA_spoof_UpgradeScrollOfEssence': 'Upgrade "Scroll of Essence" to increase chance to find Rune Essence in ${skillName}',
+        'MODIFIER_DATA_spoof_AddStarStandardLevel': 'Increase Standard Star Max Level by ${value}',
+        'MODIFIER_DATA_UnlockConvergence': 'Unlock Convergence',
 
     'SHOP_PURCHASE_Perpetual_Haste': '-15% Crafting, Construction & Fletching Interval',
     'ITEM_DESCRIPTION_BEAR_DEVIL_SYNERGY': 'While using the Controlled Heat Potions, +5% Firemaking Skill XP and Bonfire duration increased by 15%. Charges are used per Firemaking action and lit Bonfire.',
@@ -310,7 +313,7 @@ export const language = {
     'MASTERY_BONUS_ Construction_ 4': 'Unlock fixture\'s Tier 5 effects.',
     'MASTERY_BONUS_Woodcutting_2': 'Grants +0.25% XP in all Skills',
     'MASTERY_BONUS_Woodcutting_3': 'Grants -0.1% Interval in all non-Combat Skills',
-    'MASTERY_BONUS_Herblore_6': 'Gain +3 additional Tier I Potions for this Potion only.',
+    'MASTERY_BONUS_Herblore_6': 'Gain +${value} Extra Tier I Potions for this Potion only.',
 
 
     'TOASTS_MATERIALS_REQUIRED_TO_BUILD': 'You don\'t have the required materials to Build that.',

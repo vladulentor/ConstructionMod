@@ -24,8 +24,9 @@ export function additionalPotionsHighTier({ patch }) {
             let randomPotionTier = rollInteger(ourTier, 3);
             rewards.addItem(recipe.potions[randomPotionTier], 1)
         }
-        if(rollPercentage(this.game.modifiers.getValue("rielkConstruction:ExtraTier1Potions", ModifierQuery.EMPTY)) && ourTier == 3)
-        {rewards.addItem(recipe.potions[0], 3)}
+        const extranices= this.game.modifiers.getValue("rielkConstruction:ExtraTier1Potions", ModifierQuery.EMPTY)
+        if(extranices && this.getMasteryLevel(recipe) >= 99)
+        {rewards.addItem(recipe.potions[0], extranices)}
         return rewards;
     });
 }

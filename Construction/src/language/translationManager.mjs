@@ -121,6 +121,14 @@ export function patchTranslations(ctx) {
         }
         return ret;
     });
+        ctx.patch(SpecialAttack, 'description').get(function (patch) {
+        const ret = patch();
+            if (this.namespace === 'rielkConstruction')
+            return getRielkLangString(`SPECIAL_ATTACK_DESC_${ret}`);
+        
+        return ret;
+    });
+
     ctx.patch(MasteryLevelUnlock, 'description').get(function (patch) {
         const ret = patch();
         if (this._descriptionID !== undefined && ret.startsWith('UNDEFINED TRANSLATION')) {

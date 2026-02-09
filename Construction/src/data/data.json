@@ -1220,8 +1220,7 @@
         "attackInterval": 350,
         "lifesteal": 0,
         "name": "Mana Surge",
-        "descriptionGenerator": "An <avoidable> attack that deals <damage> damage. On a hit, <hitEffect>.",
-        "description": "Attack thrice with reduced potency. Each attack has a low chance to inflict Burn, Frostburn, or poison."
+        "description": "MAGIC_WEAPON"
       },
       {
         "id": "Jam",
@@ -3868,15 +3867,13 @@
               "shinyMods": [
                 1,
                 2
+                
               ],
+                            "changeFunc": "addPotionMasteryTextThingFuckIt",
               "modifiers": {
-                "rielkConstruction:ChangeAddiIntoHighTier": 1,
-                "additionalPrimaryProductChance": [
-                  {
-                    "skillID": "melvorD:Herblore",
-                    "value": 7
-                  }
-                ]
+             
+                "rielkConstruction:ExtraTier1Potions": 1,
+                "rielkConstruction:ChangeAddiIntoHighTier": 1
               }
             },
             {
@@ -3917,7 +3914,7 @@
                 ],
                 "potionChargePreservationChance": [
                   {
-                    "value": 5
+                    "value": 10
                   }
                 ]
               }
@@ -4008,7 +4005,7 @@
               "changeFunc": "addPotionMasteryTextThingFuckIt",
               "modifiers": {
                 "potionCharges": 25,
-                "rielkConstruction:ExtraTier1Potions": 100,
+                "rielkConstruction:ExtraTier1Potions": 2,
                 "rielkConstruction:reducePotionUpReq": -20
               }
             },
@@ -6947,7 +6944,7 @@
                 "flatPrayerPointsFromBurying": 1
               }
             },
-              {
+            {
               "id": "Rune_Altar1",
               "level": 17,
               "baseExperience": 17,
@@ -7533,7 +7530,12 @@
               ],
               "modifiers": {
                 "rielkConstruction:spoof_AddRunesAstrology": 1,
-                "rielkConstruction:spoof_UpgradeScrollOfEssence": 1
+                "rielkConstruction:spoof_UpgradeScrollOfEssence": [
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Astrology"
+                  }
+                ]
               }
             },
             {
@@ -7572,7 +7574,7 @@
                   {
                     "skillID": "melvorD:Astrology",
                     "itemID": "melvorD:Rune_Essence",
-                    "value": 3
+                    "value": 2
                   }
                 ]
               }
@@ -7612,8 +7614,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "increasedChanceStardust": 2,
-                "increasedChanceGoldenStardust": 2.5,
+                "increasedChanceGoldenStardust": 2,
+                "increasedChanceStardust": 2.5,
                 "randomProductChance": [
                   {
                     "skillID": "melvorD:Astrology",
@@ -7712,13 +7714,7 @@
               ],
               "modifiers": {
                 "rielkConstruction:spoof_AddStarStandardLevel": 1,
-                "rielkConstruction:UnlockConvergence": 1,
-                "masteryXP": [
-                  {
-                    "value": 6,
-                    "skillID": "melvorD:Astrology"
-                  }
-                ]
+                "rielkConstruction:UnlockConvergence": 1
               }
             },
             {
@@ -9613,7 +9609,9 @@
         "id": "spoof_UpgradeScrollOfEssence",
         "allowedScopes": [
           {
-            "scopes": {},
+            "scopes": {
+              "skill": true
+            },
             "descriptions": [
               {
                 "text": "adds runes in astrology, VERY cool bepis addition.",
@@ -9687,7 +9685,7 @@
         "id": "Ward",
         "templateID": "melvorD:StaticTargetCountingModifier",
         "name": "Rune Ward",
-        "media": "assets/replacements/barrier.png",
+        "media": "assets/replacements/barrier.webp",
         "target": "Self",
         "parameters": [
           {

@@ -3473,7 +3473,8 @@
                 "rielkConstruction:Apparatus",
                 "rielkConstruction:Spell_Library",
                 "rielkConstruction:Telescope"
-              ]
+              ],
+              "newTooltip":true
             },
             {
               "id": "Outpost",

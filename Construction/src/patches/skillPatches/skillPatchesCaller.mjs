@@ -12,6 +12,7 @@ const { patchOverHeal } = await loadModule('src/patches/skillPatches/combat/patc
 const { patchMagicUsageCheck } = await loadModule('src/patches/skillPatches/combat/patchMagicUsageCheck.mjs');
 const { addMagicShield } = await loadModule('src/patches/skillPatches/combat/addMagicShield.mjs');
 const { patchAuroraAnyStyle } = await loadModule('src/patches/skillPatches/combat/patchAuroraAnyStyle.mjs');
+const { patchRunePreservationCap } = await loadModule('src/patches/skillPatches/combat/patchRunePreservationCap.mjs');
 
 
 
@@ -39,6 +40,7 @@ const { patchFletchingOrder } = await loadModule('src/patches/skillPatches/fletc
 
 const { patchPerpetualHaste } = await loadModule('src/patches/skillPatches/shop/patchPerpetualHaste.mjs');
 
+const {addComboRunesonElemRunes} = await loadModule('src/patches/skillPatches/runecrafting/addComboRunesonElemRunes.mjs')
 
 const { patchThievingTargets } = await loadModule('src/patches/skillPatches/thieving/patchThievingTargets.mjs');
 
@@ -67,6 +69,8 @@ export function patchSkillsBeforeDataReg(ctx) {
         patchAuroraAnyStyle(ctx);
         addRuneEssenceCtx(ctx);
         addStarConvergence(ctx);
+        addComboRunesonElemRunes(ctx);
+        patchRunePreservationCap(ctx);
         nerfBearDevil();
 }
 export function patchSkillsAfterDataReg(ctx) {

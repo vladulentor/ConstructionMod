@@ -49,6 +49,120 @@
     ]
   },
   "modifications": {
+    "monsters": [
+      {
+        "id": "melvorAoD:GraniteGolem",
+        "lootTable": {
+          "add": [
+            {
+              "itemID": "rielkConstruction:Granite_Bricks",
+              "minQuantity": 2,
+              "maxQuantity": 16,
+              "weight": 75
+            },
+            {
+              "itemID": "melvorD:Iron_Bar",
+              "minQuantity": 1,
+              "maxQuantity": 10,
+              "weight": 125
+            }
+          ],
+          "remove": [
+            "melvorD:Iron_Bar"
+          ]
+        }
+      },
+       {
+        "id": "melvorAoD:RangedGolem",
+        "lootTable": {
+          "add": [
+            {
+              "itemID": "rielkConstruction:Clay_Bricks",
+              "minQuantity": 2,
+              "maxQuantity": 16,
+              "weight": 125
+            },
+              {
+              "itemID": "rielkConstruction:Limestone_Bricks",
+              "minQuantity": 2,
+              "maxQuantity": 16,
+              "weight": 75
+            },
+            {
+              "itemID": "melvorD:Steel_Bar",
+              "minQuantity": 1,
+              "maxQuantity": 10,
+              "weight": 125
+            },
+             {
+              "itemID": "melvorD:Silver_Ore",
+              "minQuantity": 1,
+              "maxQuantity": 5,
+              "weight": 75
+            },
+              {
+              "itemID": "melvorAoD:Imbued_Steel_Bar",
+              "minQuantity": 1,
+              "maxQuantity": 1,
+              "weight": 50
+            }
+          ],
+          "remove": [
+            "melvorD:Steel_Bar", "melvorD:Silver_Ore", "melvorAoD:Imbued_Steel_Bar"
+          ]
+        }
+      },
+       {
+        "id": "melvorAoD:EarthGolem",
+        "lootTable": {
+          "add": [
+            {
+              "itemID": "rielkConstruction:Marble_Bricks",
+              "minQuantity": 2,
+              "maxQuantity": 16,
+              "weight": 75
+            },
+            {
+              "itemID": "melvorD:Mithril_Bar",
+              "minQuantity": 1,
+              "maxQuantity": 10,
+              "weight": 125
+            }
+          ],
+          "remove": [
+            "melvorD:Mithril_Bar"
+          ]
+        }
+      },
+       {
+        "id": "melvorAoD:MagicGolem",
+        "lootTable": {
+          "add": [
+            {
+              "itemID": "rielkConstruction:Magic_Bricks",
+              "minQuantity": 2,
+              "maxQuantity": 16,
+              "weight": 50
+            },
+            {
+              "itemID": "melvorD:Adamantite_Bar",
+              "minQuantity": 1,
+              "maxQuantity": 10,
+              "weight": 75
+            },
+            {
+              "itemID": "melvorD:Emerald",
+              "minQuantity": 1,
+              "maxQuantity": 1,
+              "weight": 25
+            }
+          ],
+          "remove": [
+            "melvorD:Adamantite_Bar", "melvorD:Emerald"
+          ]
+        }
+      }
+    ],
     "skillData": [
       {
         "skillID": "melvorD:Astrology",
@@ -58,24 +172,24 @@
               "id": "melvorAoD:Nysa",
               "convergenceRunes": [
                 {
-                  "melvorD:Earth_Rune": 3
+                  "melvorD:Earth_Rune": 300
                 },
                 {
-                  "melvorD:Death_Rune": 1
+                  "melvorD:Death_Rune": 700
                 },
                 {
-                  "melvorF:Spirit_Rune": 5
+                  "melvorF:Spirit_Rune": 500
                 }
               ],
               "goldvergenceRunes": [
                 {
-                  "melvorAoD:Paper": 3
+                  "melvorAoD:Paper": 1000
                 },
                 {
-                  "melvorAoD:Archaeologists_Consumable": 1
+                  "melvorAoD:Archaeologists_Consumable": 300
                 },
                 {
-                  "melvorAoD:Old_Scripture": 1
+                  "melvorAoD:Old_Scripture": 8
                 }
               ]
             }

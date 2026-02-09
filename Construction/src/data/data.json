@@ -2913,7 +2913,7 @@
                 },
                 {
                   "id": "rielkConstruction:Twice_Measured_Potion_II",
-                  "quantity": 600
+                  "quantity": 300
                 }
               ],
               "modifiers": {
@@ -2957,7 +2957,7 @@
                 },
                 {
                   "id": "rielkConstruction:Twice_Measured_Potion_III",
-                  "quantity": 6000
+                  "quantity": 300
                 }
               ],
               "modifiers": {
@@ -3006,7 +3006,7 @@
                 },
                 {
                   "id": "rielkConstruction:Twice_Measured_Potion_IV",
-                  "quantity": 3000
+                  "quantity": 300
                 }
               ],
               "modifiers": {
@@ -6980,6 +6980,12 @@
                     "value": 5,
                     "skillID": "melvorD:Runecrafting"
                   }
+                ],
+                "runecraftingRuneCostReduction": [
+                  {
+                    "value": -5,
+                    "skillID": "melvorD:Runecrafting"
+                  }
                 ]
               }
             },
@@ -7008,9 +7014,18 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2
+              ],
               "modifiers": {
-                "elementalRuneChance": 2,
-                "elementalRuneQuantity": 2
+                "runePreservationChance": 5,
+                "rielkConstruction:ComboRunesonElemRunes": [
+                  {
+                    "skillID": "melvorD:Runecrafting",
+                    "value": 1
+                  }
+                ]
               }
             },
             {
@@ -7042,9 +7057,24 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2
+              ],
               "modifiers": {
-                "elementalRuneChance": 3,
-                "elementalRuneQuantity": 2
+                "runecraftingRuneCostReduction": [
+                  {
+                    "value": -10,
+                    "skillID": "melvorD:Runecrafting"
+                  }
+                ],
+                "flatAdditionalPrimaryProductQuantity": [
+                  {
+                    "skillID": "melvorD:Runecrafting",
+                    "subcategoryID": "melvorF:Runes",
+                    "value": 1
+                  }
+                ]
               }
             },
             {
@@ -7077,8 +7107,24 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "elementalRuneChance": 5,
-                "elementalRuneQuantity": 2
+                "masteryXP": [
+                  {
+                    "value": 10,
+                    "skillID": "melvorD:Runecrafting"
+                  }
+                ],
+                "skillPreservationChance": [
+                  {
+                    "value": 10,
+                    "skillID": "melvorD:Runecrafting"
+                  }
+                ],
+                "skillInterval": [
+                  {
+                    "value": -10,
+                    "skillID": "melvorD:Runecrafting"
+                  }
+                ]
               }
             },
             {
@@ -7114,9 +7160,26 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
               "modifiers": {
-                "elementalRuneChance": 10,
-                "elementalRuneQuantity": 2
+                "rielkConstruction:runePreservationCap": 5,
+                "flatAdditionalPrimaryProductQuantity": [
+                  {
+                    "skillID": "melvorD:Runecrafting",
+                    "subcategoryID": "melvorF:Runes",
+                    "value": 5
+                  }
+                ],
+                "rielkConstruction:ComboRunesonElemRunes": [
+                  {
+                    "skillID": "melvorD:Runecrafting",
+                    "value": 5
+                  }
+                ]
               }
             },
             {
@@ -9650,6 +9713,36 @@
             ]
           }
         ]
+      },
+      {
+        "id": "ComboRunesonElemRunes",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true
+            },
+            "descriptions": [
+              {
+                "text": "Make combo runes get when you add normal runes",
+                "lang": "MODIFIER_DATA_ComboRunesonElemRunes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "runePreservationCap",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Raises or lowers Rune Preservation Cap",
+                "lang": "MODIFIER_DATA_runePreservationCap"
+              }
+            ]
+          }
+        ]
       }
     ],
     "combatEffects": [
@@ -9785,24 +9878,24 @@
               "id": "melvorF:Deedree",
               "convergenceRunes": [
                 {
-                  "melvorD:Air_Rune": 3
+                  "melvorD:Air_Rune": 550
                 },
                 {
-                  "melvorD:Earth_Rune": 1
+                  "melvorD:Earth_Rune": 450
                 },
                 {
-                  "melvorD:Light_Rune": 5
+                  "melvorD:Light_Rune": 400
                 }
               ],
               "goldvergenceRunes": [
                 {
-                  "melvorF:Farming_Potion_I": 3
+                  "melvorF:Farming_Potion_I": 300
                 },
                 {
-                  "melvorF:Summoning_Familiar_Ent": 1
+                  "melvorF:Summoning_Familiar_Ent": 500
                 },
                 {
-                  "melvorD:Bird_Nest": 5
+                  "melvorD:Bird_Nest": 25
                 }
               ]
             },
@@ -9810,24 +9903,24 @@
               "id": "melvorF:Iridan",
               "convergenceRunes": [
                 {
-                  "melvorD:Earth_Rune": 3
+                  "melvorD:Earth_Rune": 600
                 },
                 {
-                  "melvorD:Fire_Rune": 1
+                  "melvorD:Fire_Rune": 600
                 },
                 {
-                  "melvorF:Havoc_Rune": 5
+                  "melvorF:Havoc_Rune": 300
                 }
               ],
               "goldvergenceRunes": [
                 {
-                  "melvorF:Melee_Evasion_Potion_I": 3
+                  "melvorF:Melee_Evasion_Potion_I": 200
                 },
                 {
-                  "melvorF:Summoning_Familiar_Wolf": 1
+                  "melvorF:Summoning_Familiar_Wolf": 350
                 },
                 {
-                  "melvorD:Dragonite_Bar": 5
+                  "melvorD:Gold_Bar": 40
                 }
               ]
             },
@@ -9835,24 +9928,24 @@
               "id": "melvorF:Ameria",
               "convergenceRunes": [
                 {
-                  "melvorD:Water_Rune": 1
+                  "melvorD:Water_Rune": 600
                 },
                 {
-                  "melvorD:Light_Rune": 3
+                  "melvorD:Light_Rune": 600
                 },
                 {
-                  "melvorF:Nature_Rune": 5
+                  "melvorF:Nature_Rune": 100
                 }
               ],
               "goldvergenceRunes": [
                 {
-                  "melvorF:Fishermans_Potion_I": 1
+                  "melvorF:Fishermans_Potion_I": 250
                 },
                 {
-                  "melvorF:Summoning_Familiar_Devil": 3
+                  "melvorF:Summoning_Familiar_Devil": 200
                 },
                 {
-                  "melvorD:Treasure_Chest": 5
+                  "melvorD:Treasure_Chest": 25
                 }
               ]
             },
@@ -9860,24 +9953,24 @@
               "id": "melvorF:Terra",
               "convergenceRunes": [
                 {
-                  "melvorD:Earth_Rune": 1
+                  "melvorD:Earth_Rune": 800
                 },
                 {
-                  "melvorD:Body_Rune": 3
+                  "melvorD:Body_Rune": 400
                 },
                 {
-                  "melvorD:Chaos_Rune": 5
+                  "melvorD:Chaos_Rune": 300
                 }
               ],
               "goldvergenceRunes": [
                 {
-                  "melvorF:Hinder_Potion_I": 1
+                  "melvorF:Hinder_Potion_I": 500
                 },
                 {
-                  "melvorF:Summoning_Familiar_Minotaur": 1
+                  "melvorF:Summoning_Familiar_Minotaur": 400
                 },
                 {
-                  "melvorD:Coal_Ore": 5
+                  "melvorD:Coal_Ore": 150
                 }
               ]
             },
@@ -9885,24 +9978,24 @@
               "id": "melvorF:Vale",
               "convergenceRunes": [
                 {
-                  "melvorD:Body_Rune": 1
+                  "melvorD:Body_Rune": 500
                 },
                 {
-                  "melvorD:Death_Rune": 5
+                  "melvorD:Death_Rune": 500
                 },
                 {
-                  "melvorD:Blood_Rune": 3
+                  "melvorD:Blood_Rune": 500
                 }
               ],
               "goldvergenceRunes": [
                 {
-                  "melvorF:Generous_Cook_Potion_I": 1
+                  "melvorF:Generous_Cook_Potion_I": 150
                 },
                 {
-                  "melvorF:Summoning_Familiar_Unicorn": 1
+                  "melvorF:Summoning_Familiar_Unicorn": 400
                 },
                 {
-                  "melvorD:Carrot_Cake_Perfect": 5
+                  "melvorD:Carrot_Cake_Perfect": 35
                 }
               ]
             },
@@ -9910,21 +10003,21 @@
               "id": "melvorF:Syllia",
               "convergenceRunes": [
                 {
-                  "melvorD:Air_Rune": 1
+                  "melvorD:Air_Rune": 600
                 },
                 {
-                  "melvorD:Mind_Rune": 3
+                  "melvorD:Mind_Rune": 500
                 },
                 {
-                  "melvorF:Spirit_Rune": 5
+                  "melvorF:Spirit_Rune": 400
                 }
               ],
               "goldvergenceRunes": [
                 {
-                  "melvorF:Lethal_Toxins_Potion_I": 1
+                  "melvorF:Lethal_Toxins_Potion_I": 150
                 },
                 {
-                  "melvorF:Summoning_Familiar_Centaur": 3
+                  "melvorF:Summoning_Familiar_Centaur": 400
                 },
                 {
                   "melvorF:Ancient_Arrow": 5
@@ -9934,27 +10027,25 @@
             {
               "id": "melvorF:Arachi",
               "convergenceRunes": [
-             
-                     {
-                  "melvorD:Chaos_Rune": 1
+                {
+                  "melvorD:Chaos_Rune": 600
                 },
                 {
-                  "melvorD:Death_Rune": 3
+                  "melvorD:Death_Rune": 600
                 },
                 {
-                  "melvorD:Ancient_Rune": 5
+                  "melvorD:Ancient_Rune": 600
                 }
               ],
               "goldvergenceRunes": [
-          
-                   {
-                  "melvorF:Elemental_Potion_I": 1
+                {
+                  "melvorF:Elemental_Potion_I": 300
                 },
                 {
-                  "melvorF:Summoning_Familiar_Crow": 3
+                  "melvorF:Summoning_Familiar_Crow": 400
                 },
                 {
-                  "melvorF:Runecrafting_Pouch": 5
+                  "melvorF:Runecrafting_Pouch": 250
                 }
               ]
             },
@@ -9962,24 +10053,24 @@
               "id": "melvorF:Ko",
               "convergenceRunes": [
                 {
-                  "melvorD:Air_Rune": 1
+                  "melvorD:Air_Rune": 850
                 },
                 {
-                  "melvorD:Fire_Rune": 3
+                  "melvorD:Fire_Rune": 650
                 },
                 {
-                  "melvorF:Havoc_Rune": 5
+                  "melvorF:Havoc_Rune": 450
                 }
               ],
               "goldvergenceRunes": [
                 {
-                  "melvorF:Gentle_Hands_Potion_I": 1
+                  "melvorF:Gentle_Hands_Potion_I": 75
                 },
                 {
-                  "melvorF:Summoning_Familiar_Leprechaun": 3
+                  "melvorF:Summoning_Familiar_Leprechaun": 1000
                 },
                 {
-                  "rielkConstruction:Tar_Jar": 5
+                  "rielkConstruction:Tar_Jar": 150
                 }
               ]
             },
@@ -9987,24 +10078,24 @@
               "id": "melvorF:Tellus",
               "convergenceRunes": [
                 {
-                  "melvorD:Mind_Rune": 1
+                  "melvorD:Mind_Rune": 700
                 },
                 {
-                  "melvorD:Fire_Rune": 3
+                  "melvorD:Fire_Rune": 300
                 },
                 {
-                  "melvorD:Blood_Rune": 5
+                  "melvorD:Blood_Rune": 600
                 }
               ],
               "goldvergenceRunes": [
                 {
-                  "melvorF:Diamond_Luck_Potion_I": 1
+                  "melvorF:Diamond_Luck_Potion_I": 100
                 },
                 {
-                  "melvorF:Summoning_Familiar_Cyclops": 3
+                  "melvorF:Summoning_Familiar_Cyclops": 250
                 },
                 {
-                  "melvorF:Diamond_Bolts": 5
+                  "melvorF:Diamond_Bolts": 7
                 }
               ]
             },
@@ -10012,49 +10103,49 @@
               "id": "melvorF:Hyden",
               "convergenceRunes": [
                 {
-                  "melvorD:Water_Rune": 1
+                  "melvorD:Water_Rune": 600
                 },
                 {
-                  "melvorD:Light_Rune": 3
+                  "melvorD:Light_Rune": 600
                 },
                 {
-                  "melvorF:Nature_Rune": 5
+                  "melvorF:Nature_Rune": 600
                 }
               ],
               "goldvergenceRunes": [
                 {
-                  "melvorF:Diamond_Luck_Potion_I": 1
+                  "melvorF:Divine_Potion_I": 250
                 },
                 {
-                  "melvorF:Summoning_Familiar_Monkey": 3
+                  "melvorF:Summoning_Familiar_Monkey": 175
                 },
                 {
-                  "melvorF:Medium_Urn_Enchanted": 5
+                  "melvorF:Small_Urn_Enchanted": 20
                 }
               ]
             },
             {
               "id": "melvorF:Qimican",
               "convergenceRunes": [
-                 {
-                  "melvorD:Mind_Rune": 1
+                {
+                  "melvorD:Mind_Rune": 400
                 },
                 {
-                  "melvorD:Body_Rune": 3
+                  "melvorD:Body_Rune": 500
                 },
                 {
-                  "melvorF:Spirit_Rune": 5
+                  "melvorF:Spirit_Rune": 600
                 }
               ],
               "goldvergenceRunes": [
                 {
-                  "melvorF:Necromancer_Potion_I": 1
+                  "melvorF:Necromancer_Potion_I": 350
                 },
                 {
-                  "melvorF:Summoning_Familiar_Bear": 3
+                  "melvorF:Summoning_Familiar_Bear": 609
                 },
                 {
-                  "melvorF:Alchemists_Bag_II": 5
+                  "melvorF:Alchemists_Bag_II": 35
                 }
               ]
             }

@@ -101,24 +101,24 @@
                             "id": "melvorTotH:Variel",
                             "convergenceRunes": [
                                 {
-                                    "melvorTotH:Soul_Rune": 3
+                                    "melvorTotH:Soul_Rune": 300
                                 },
                                 {
-                                    "melvorTotH:Lightning_Rune": 1
+                                    "melvorTotH:Lightning_Rune": 250
                                 },
                                 {
-                                    "melvorTotH:Archaic_Rune": 5
+                                    "melvorTotH:Archaic_Rune": 150
                                 }
                             ],
                             "goldvergenceRunes": [
                                 {
-                                    "melvorTotH:Star_Seeker_Potion_I": 3
+                                    "melvorTotH:Star_Seeker_Potion_I": 75
                                 },
                                 {
-                                    "melvorTotH:Summoning_Familiar_Owl": 1
+                                    "melvorTotH:Summoning_Familiar_Owl": 250
                                 },
                                 {
-                                    "melvorF:Stardust": 1
+                                    "melvorF:Stardust": 64
                                 }
                             ]
                         },
@@ -126,24 +126,24 @@
                             "id": "melvorTotH:Rosaniya",
                             "convergenceRunes": [
                                 {
-                                    "melvorTotH:Infernal_Rune": 3
+                                    "melvorTotH:Infernal_Rune": 333
                                 },
                                 {
-                                    "melvorTotH:Despair_Rune": 1
+                                    "melvorTotH:Despair_Rune": 333
                                 },
                                 {
-                                    "melvorTotH:Soul_Rune": 5
+                                    "melvorTotH:Soul_Rune": 333
                                 }
                             ],
                             "goldvergenceRunes": [
                                 {
-                                    "melvorF:Mastery_Magnet": 3
+                                    "melvorF:Mastery_Magnet": 500
                                 },
                                 {
-                                    "melvorF:Basic_Bag": 1
+                                    "melvorF:Basic_Bag": 15
                                 },
                                 {
-                                    "melvorF:Bank_Slot_Token": 1
+                                    "melvorD:Mysterious_Stone": 3
                                 }
                             ]
                         },
@@ -151,24 +151,24 @@
                             "id": "melvorTotH:Ashtar",
                             "convergenceRunes": [
                                 {
-                                    "melvorTotH:Poison_Rune": 3
+                                    "melvorTotH:Poison_Rune": 300
                                 },
                                 {
-                                    "melvorTotH:Infernal_Rune": 1
+                                    "melvorTotH:Infernal_Rune": 300
                                 },
                                 {
-                                    "melvorTotH:Calamity_Rune": 5
+                                    "melvorTotH:Calamity_Rune": 200
                                 }
                             ],
                             "goldvergenceRunes": [
                                 {
-                                    "melvorTotH:Adaptive_Accuracy_Potion_I": 3
+                                    "melvorTotH:Adaptive_Accuracy_Potion_I": 75
                                 },
                                 {
-                                    "melvorTotH:Summoning_Familiar_Spider": 1
+                                    "melvorTotH:Slayer_Torch": 150
                                 },
                                 {
-                                    "melvorTotH:Mystic_Lantern": 100
+                                    "melvorTotH:Mystic_Lantern": 15
                                 }
                             ]
                         },
@@ -181,24 +181,24 @@
                             },
                             "convergenceRunes": [
                                 {
-                                    "melvorTotH:Decay_Rune": 1
+                                    "melvorTotH:Decay_Rune": 350
                                 },
                                 {
-                                    "melvorTotH:Despair_Rune": 3
+                                    "melvorTotH:Despair_Rune": 300
                                 },
                                 {
-                                    "melvorTotH:Archaic_Rune": 5
+                                    "melvorTotH:Archaic_Rune": 200
                                 }
                             ],
                             "goldvergenceRunes": [
                                 {
-                                    "rielkConstruction:Twice_Measured_Potion_I": 1
+                                    "rielkConstruction:Twice_Measured_Potion_I": 150
                                 },
                                 {
-                                    "rielkConstruction:Mahogany_Beams": 3
+                                    "rielkConstruction:Mahogany_Beams": 150
                                 },
                                 {
-                                    "rielkConstruction:Elder_Dhide_Leather_Slivers": 5
+                                    "rielkConstruction:Elder_Dhide_Leather_Slivers": 25
                                 }
                             ],
                             "standardModifiers": [

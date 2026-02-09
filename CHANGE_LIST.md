@@ -2,7 +2,7 @@
 
 This document lists all the changes and additions the Construction Mod makes to the base game. It serves both as a changelog, so players can see what’s been added or as a guide, meant to help you find opportunities to improve your efficiency in Construction. This list does NOT list changes that furniture upgrade cause to items or mechanics, just changes that are always visible with the mod installed.
 
-Entries marked with [TotH] indicate Throne of the Herald changes.
+Entries marked with [TotH] or [AoD] indicate Throne of the Herald or Atlas of Discovery changes.
 
 ---
 ## Misc
@@ -22,17 +22,22 @@ Entries marked with [TotH] indicate Throne of the Herald changes.
 - Added "Barn Raiser" enemy to Farmlands. Drops tier 1 drops of planks, nails, bricks, and straps, offering a combat-way of building up construction. He also rarely drops T2 nails or beams.
 
 - Added "Iron Giant" enemy to Giant's Dungeon. He is a good source of nails.
-### Changed Enemies
-(Note: When changing existing enemies' loot tables, new items were added such that rare items' chances would not be decreased)
 
-- Golbins now can now drop Planks, and Ranged golbins Nails.
+- Added "Basic Arcane Golem", "Advanced Arcane Golem", and "Expert Arcane Golem" to the Wizard Tower. All of them drop Runes the wizards don't drop, and always drop Rune Essence. They drop Clay, Limestone, and Marble Bricks respectively. The Expert Arcane Golem additionally has a chance to drop a special item.
+
+### Changed Enemies
+(Note: When changing existing enemies' loot tables, new items were added such that rare items' chances were not decreased)
+
+- Golbins now can now drop Planks, Ranged golbins can now drop Nails.
 
 - Confused Pirate from the Sandy Shores will now drop the remains of the ship he'd floated in on, being a good source of Planks.
 
-- Green, Blue, Red, and Black dragons have a 35% chance to drop [Leather Slivers](#fletching) instead of Leather. The amount of Leather Slivers dropped is about 3-4 times more their regular Leather amount.
+- Green, Blue, Red, and Black dragons have a 35% chance to drop [Leather Slivers](#fletching) instead of Leather. The amount of Leather Slivers dropped is about 3-4 times their regular Leather amount.
+
+- [AoD] Dark Quarry's golems now have a chance of dropping Bricks corresponding to the materials they were made out of.
 
 ### Changed Chests
-(Note: When changing existing chests' loot tables, new items were added such that rare items' chances would not be decreased)
+(Note: When changing existing chests' loot tables, new items were added such that rare items' chances were not decreased)
 
 - Elder Chest can now contain [Elder Dragonhide Slivers](#fletching) instead of normal Elder Dragonhide.
 

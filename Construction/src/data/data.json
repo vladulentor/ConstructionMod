@@ -6947,7 +6947,7 @@
                 "flatPrayerPointsFromBurying": 1
               }
             },
-            {
+              {
               "id": "Rune_Altar1",
               "level": 17,
               "baseExperience": 17,
@@ -6980,12 +6980,6 @@
                     "value": 5,
                     "skillID": "melvorD:Runecrafting"
                   }
-                ],
-                "runecraftingRuneCostReduction": [
-                  {
-                    "value": -5,
-                    "skillID": "melvorD:Runecrafting"
-                  }
                 ]
               }
             },
@@ -7014,18 +7008,9 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [
-                1,
-                2
-              ],
               "modifiers": {
-                "runePreservationChance": 5,
-                "rielkConstruction:ComboRunesonElemRunes": [
-                  {
-                    "skillID": "melvorD:Runecrafting",
-                    "value": 1
-                  }
-                ]
+                "elementalRuneChance": 2,
+                "elementalRuneQuantity": 2
               }
             },
             {
@@ -7057,24 +7042,9 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [
-                1,
-                2
-              ],
               "modifiers": {
-                "runecraftingRuneCostReduction": [
-                  {
-                    "value": -10,
-                    "skillID": "melvorD:Runecrafting"
-                  }
-                ],
-                "flatAdditionalPrimaryProductQuantity": [
-                  {
-                    "skillID": "melvorD:Runecrafting",
-                    "subcategoryID": "melvorF:Runes",
-                    "value": 1
-                  }
-                ]
+                "elementalRuneChance": 3,
+                "elementalRuneQuantity": 2
               }
             },
             {
@@ -7107,24 +7077,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "masteryXP": [
-                  {
-                    "value": 10,
-                    "skillID": "melvorD:Runecrafting"
-                  }
-                ],
-                "skillPreservationChance": [
-                  {
-                    "value": 10,
-                    "skillID": "melvorD:Runecrafting"
-                  }
-                ],
-                "skillInterval": [
-                  {
-                    "value": -10,
-                    "skillID": "melvorD:Runecrafting"
-                  }
-                ]
+                "elementalRuneChance": 5,
+                "elementalRuneQuantity": 2
               }
             },
             {
@@ -7160,26 +7114,9 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [
-                1,
-                2,
-                3
-              ],
               "modifiers": {
-                "rielkConstruction:runePreservationCap": 5,
-                "flatAdditionalPrimaryProductQuantity": [
-                  {
-                    "skillID": "melvorD:Runecrafting",
-                    "subcategoryID": "melvorF:Runes",
-                    "value": 5
-                  }
-                ],
-                "rielkConstruction:ComboRunesonElemRunes": [
-                  {
-                    "skillID": "melvorD:Runecrafting",
-                    "value": 5
-                  }
-                ]
+                "elementalRuneChance": 10,
+                "elementalRuneQuantity": 2
               }
             },
             {

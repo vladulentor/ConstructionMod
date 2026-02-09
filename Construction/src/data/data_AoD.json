@@ -2,6 +2,42 @@
   "$schema": "https://melvoridle.com/assets/schema/gameData.json",
   "namespace": "rielkConstruction",
   "data": {
+    "items": [
+      {
+        "itemType": "Equipment",
+        "id": "Construction_Lesser_Relic",
+        "name": "Construction Lesser Relic",
+        "category": "Combat",
+        "type": "Consumable",
+        "media": "assets/items/construction_lesser_relic.webp",
+        "tier": "none",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 1,
+        "validSlots": [
+          "Consumable"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [],
+        "equipmentStats": [],
+        "modifiers": {
+          "skillInterval": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "value": -5
+            }
+          ],
+          "rangedMaxHit": 10,
+          "additionalPrimaryProductChance": [
+            {
+              "skillID": "melvorD:Fletching",
+              "value": 10
+            }
+          ]
+        }
+      }
+    ],
     "skillData": [
       {
         "skillID": "melvorAoD:Cartography",
@@ -72,7 +108,7 @@
           ]
         }
       },
-       {
+      {
         "id": "melvorAoD:RangedGolem",
         "lootTable": {
           "add": [
@@ -82,7 +118,7 @@
               "maxQuantity": 16,
               "weight": 125
             },
-              {
+            {
               "itemID": "rielkConstruction:Limestone_Bricks",
               "minQuantity": 2,
               "maxQuantity": 16,
@@ -94,13 +130,13 @@
               "maxQuantity": 10,
               "weight": 125
             },
-             {
+            {
               "itemID": "melvorD:Silver_Ore",
               "minQuantity": 1,
               "maxQuantity": 5,
               "weight": 75
             },
-              {
+            {
               "itemID": "melvorAoD:Imbued_Steel_Bar",
               "minQuantity": 1,
               "maxQuantity": 1,
@@ -108,11 +144,13 @@
             }
           ],
           "remove": [
-            "melvorD:Steel_Bar", "melvorD:Silver_Ore", "melvorAoD:Imbued_Steel_Bar"
+            "melvorD:Steel_Bar",
+            "melvorD:Silver_Ore",
+            "melvorAoD:Imbued_Steel_Bar"
           ]
         }
       },
-       {
+      {
         "id": "melvorAoD:EarthGolem",
         "lootTable": {
           "add": [
@@ -134,7 +172,7 @@
           ]
         }
       },
-       {
+      {
         "id": "melvorAoD:MagicGolem",
         "lootTable": {
           "add": [
@@ -158,7 +196,8 @@
             }
           ],
           "remove": [
-            "melvorD:Adamantite_Bar", "melvorD:Emerald"
+            "melvorD:Adamantite_Bar",
+            "melvorD:Emerald"
           ]
         }
       }

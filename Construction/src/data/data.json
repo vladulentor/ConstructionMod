@@ -9679,6 +9679,34 @@
             ]
           }
         ]
+      },
+      {
+        "id": "allCombatSkillsHiddenLevel",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Adds hidden skill levels to all combat skills",
+                "lang": "MODIFIER_DATA_allCombatSkillsHiddenLevel"
+              }
+            ]
+          }
+        ]
+      },
+       {
+        "id": "allNonCombatSkillsHiddenLevel",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Adds hidden skill levels to all non-combat skills",
+                "lang": "MODIFIER_DATA_runePreservationCap"
+              }
+            ]
+          }
+        ]
       }
     ],
     "combatEffects": [

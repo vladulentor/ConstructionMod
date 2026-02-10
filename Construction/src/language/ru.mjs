@@ -1,4 +1,7 @@
 export const language = {
+    'SKILL_RELIC': 'Реликвия ${skill} ${number}',
+'SKILL_MASTER_RELIC':'Мастер-реликвия ${skill}',
+
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'${value} скрытого уровня для всех боевых навыков',
 'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'${value} скрытого уровня для всех небоевых навыков',
 'MODIFIER_DATA_bypassEfficiencyChance':'${value}% шанс завершить дополнительные действия в ${skillName} (игнорирует ограничения режима игры)',

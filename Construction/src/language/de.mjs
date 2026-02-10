@@ -1,4 +1,7 @@
 export const language = {
+    'SKILL_RELIC': '${skill}-Relikt ${number}',
+'SKILL_MASTER_RELIC':'${skill}-Meisterrelikt',
+
     'COMBAT_MISC_SHIELD_BROKEN': 'Schutzschild',
 'MENU_TOOLTIP_CONVERGENCE': 'Konvergenz',
 'MENU_TOOLTIP_GOLDVERGENCE': 'Goldene Konvergenz',

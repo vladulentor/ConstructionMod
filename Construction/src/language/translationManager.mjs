@@ -121,14 +121,21 @@ export function patchTranslations(ctx) {
         }
         return ret;
     });
-        ctx.patch(SpecialAttack, 'description').get(function (patch) {
+    ctx.patch(SpecialAttack, 'description').get(function (patch) {
         const ret = patch();
-            if (this.namespace === 'rielkConstruction')
+        if (this.namespace === 'rielkConstruction')
             return getRielkLangString(`SPECIAL_ATTACK_DESC_${ret}`);
-        
+
         return ret;
     });
-
+    ctx.patch(AncientRelic, 'name').get(function (orig) {
+        let ret = orig();
+        if (this.namespace == 'rielkConstruction')
+            ret = this.number <= 5 ?
+                templateRielkLangString('SKILL_RELIC', { skill: this.skill.name, number: `${this.number}` }) :
+                templateRielkLangString('SKILL_MASTER_RELIC', { skill: this.skill.name });
+        return ret
+    })
     ctx.patch(MasteryLevelUnlock, 'description').get(function (patch) {
         const ret = patch();
         if (this._descriptionID !== undefined && ret.startsWith('UNDEFINED TRANSLATION')) {
@@ -140,13 +147,14 @@ export function patchTranslations(ctx) {
         return ret;
     });
     ctx.patch(Monster, 'name').get(function (patch) {
-        if (this.namespace === 'rielkConstruction')
-           { return templateRielkLangStringWithNodes(
+        if (this.namespace === 'rielkConstruction') {
+            return templateRielkLangStringWithNodes(
                 `ENEMY_NAME_${this.localID}`,
                 { Icon: `<img src="${ctx.getResourceUrl('assets/icon.png')}" style="height:1em;vertical-align:middle;margin-right:0.25em;">` },
                 {},
                 false
-            );} 
+            );
+        }
         return patch();
     });
     ctx.patch(ShopUpgradeChain, 'chainName').get(function (patch) {

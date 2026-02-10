@@ -1,4 +1,7 @@
 export const language = {
+    'SKILL_RELIC': '${skill}のレリック ${number}',
+'SKILL_MASTER_RELIC':'${skill}のマスター・レリック',
+
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'すべての戦闘スキルに ${value} の隠しレベル',
 'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'すべての非戦闘スキルに ${value} の隠しレベル',
 'MODIFIER_DATA_bypassEfficiencyChance':'${skillName} で追加アクションを完了する確率が ${value}% 増加（ゲームモードの制限を無視）',

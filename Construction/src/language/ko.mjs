@@ -1,4 +1,7 @@
 export const language = {
+    'SKILL_RELIC': '${skill} 유물 ${number}',
+'SKILL_MASTER_RELIC':'${skill} 마스터 유물',
+
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'모든 전투 스킬에 ${value} 숨겨진 레벨',
 'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'모든 비전투 스킬에 ${value} 숨겨진 레벨',
 'MODIFIER_DATA_bypassEfficiencyChance':'${skillName}에서 추가 행동을 완료할 확률 ${value}% (게임 모드 제한 무시)',

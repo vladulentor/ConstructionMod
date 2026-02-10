@@ -1,4 +1,7 @@
 export const language = {
+    'SKILL_RELIC': 'Relique ${skill} ${number}',
+'SKILL_MASTER_RELIC':'Relique de Maîtrise ${skill}',
+
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'${value} niveau caché dans toutes les compétences de combat',
 'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'${value} niveau caché dans toutes les compétences hors combat',
 'MODIFIER_DATA_bypassEfficiencyChance':'${value}% de chance d\'effectuer des actions supplémentaires en ${skillName} (Contourne les limitations du mode de jeu)',

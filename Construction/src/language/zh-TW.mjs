@@ -1,4 +1,7 @@
 export const language = {
+    'SKILL_RELIC': '${skill} 遺物 ${number}',
+'SKILL_MASTER_RELIC':'${skill} 精通遺物',
+
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'所有戰鬥技能獲得 ${value} 隱藏等級',
 'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'所有非戰鬥技能獲得 ${value} 隱藏等級',
 'MODIFIER_DATA_bypassEfficiencyChance':'在 ${skillName} 中有 ${value}% 機率完成額外行動（無視遊戲模式限制）',

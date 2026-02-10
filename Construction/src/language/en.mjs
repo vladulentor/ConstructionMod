@@ -334,7 +334,8 @@ export const language = {
     'SKILL_CATEGORY_Wood_Beams': 'Wood Beams',
     'SKILL_CATEGORY_ Construction_ Materials': 'Materials',
     'SKILL_CATEGORY_ Construction_ House': 'Furniture',
-
+    'SKILL_RELIC': '${skill} Relic ${number}',
+    'SKILL_MASTER_RELIC':'${skill} Master Relic',
     'CONSTRUCTION_ROOM_NAME_ Bedroom': 'Bedroom',
     'CONSTRUCTION_ROOM_NAME_ Garden': 'Garden',
     'CONSTRUCTION_ROOM_NAME_ Kitchen': 'Kitchen',

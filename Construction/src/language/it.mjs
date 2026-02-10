@@ -1,4 +1,7 @@
 export const language = {
+    'SKILL_RELIC': 'Reliquia ${skill} ${number}',
+'SKILL_MASTER_RELIC':'Reliquia Maestra di ${skill}',
+
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'${value} livello nascosto in tutte le abilità di combattimento',
 'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'${value} livello nascosto in tutte le abilità non di combattimento',
 'MODIFIER_DATA_bypassEfficiencyChance':'${value}% di probabilità di completare azioni extra in ${skillName} (Ignora le limitazioni della modalità di gioco)',

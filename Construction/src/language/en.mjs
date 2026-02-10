@@ -250,7 +250,11 @@ export const language = {
     'MODIFIER_DATA_spoof_UpgradeScrollOfEssence': 'Upgrade "Scroll of Essence" to increase chance to find Rune Essence in ${skillName}',
         'MODIFIER_DATA_spoof_AddStarStandardLevel': 'Increase Standard Star Max Level by ${value}',
         'MODIFIER_DATA_UnlockConvergence': 'Unlock Convergence',
-
+    'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'${value} Hidden Level in all Combat Skills',
+        'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'${value} Hidden Level in all Non-Combat Skills',
+        'MODIFIER_DATA_bypassEfficiencyChance':'${value}% chance to complete extra actions in ${skillName} (Bypasses Gamemode Limitations)',
+        'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR':'Increase all Non-Combat Skills\' Level Cap by ${value}',
+    'MODIFIER_DATA_bypassGlobalDoubling':'${value}% Chance to Double Items Globally (Bypasses Gamemode Limitations)',
     'SHOP_PURCHASE_Perpetual_Haste': '-15% Crafting, Construction & Fletching Interval',
     'ITEM_DESCRIPTION_BEAR_DEVIL_SYNERGY': 'While using the Controlled Heat Potions, +5% Firemaking Skill XP and Bonfire duration increased by 15%. Charges are used per Firemaking action and lit Bonfire.',
 
@@ -259,7 +263,7 @@ export const language = {
     'ITEM_NAME_Tar_Jar': 'Jar of Tar',
     'ITEM_NAME_Mariners_Blouse': 'Mariner\'s Top',
     'ITEM_NAME_Mariners_Tie': 'Mariner\'s Tie',
-
+    'ITEM_NAME_Construction_Lesser_Relic':'Construction Lesser Relic',
 
     'RIELK_CONMOD_FOCUSEDCOOKING_1': '+3% Perfect Cook chance, Success chance, and Cooking Mastery XP while not Passive Cooking',
     'ITEM_NAME_Sapling_Branch': 'Sapling Branch',

@@ -1,4 +1,11 @@
 export const language = {
+    'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'すべての戦闘スキルに ${value} の隠しレベル',
+'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'すべての非戦闘スキルに ${value} の隠しレベル',
+'MODIFIER_DATA_bypassEfficiencyChance':'${skillName} で追加アクションを完了する確率が ${value}% 増加（ゲームモードの制限を無視）',
+'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR':'すべての非戦闘スキルのレベル上限を ${value} 増加',
+'MODIFIER_DATA_bypassGlobalDoubling':'アイテムをグローバルに ${value}% の確率で倍増（ゲームモードの制限を無視）',
+'ITEM_NAME_Construction_Lesser_Relic':'建築の下位レリック',
+
     'COMBAT_MISC_SHIELD_BROKEN': 'ワード',
 'MENU_TOOLTIP_CONVERGENCE': 'コンバージェンス',
 'MENU_TOOLTIP_GOLDVERGENCE': 'ゴールデンコンバージェンス',

@@ -357,5 +357,11 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Trapping_Hut': 'Jagdhütte',
     'CONSTRUCTION_FIXTURE_NAME_ Wardrobe': 'Kleiderschrank',
     'CONSTRUCTION_FIXTURE_NAME_ Worktable': 'Werkbank',
-    
+    'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'${value} Verstecktes Level in allen Kampffertigkeiten',
+'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'${value} Verstecktes Level in allen Nicht-Kampffertigkeiten',
+'MODIFIER_DATA_bypassEfficiencyChance':'${value}% Chance, zusätzliche Aktionen in ${skillName} abzuschließen (Umgeht Spielmodus-Beschränkungen)',
+'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR':'Erhöht die Levelobergrenze aller Nicht-Kampffertigkeiten um ${value}',
+'MODIFIER_DATA_bypassGlobalDoubling':'${value}% Chance, Gegenstände global zu verdoppeln (Umgeht Spielmodus-Beschränkungen)',
+'ITEM_NAME_Construction_Lesser_Relic':'Geringes Konstruktionsrelikt'
+
 }    

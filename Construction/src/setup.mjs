@@ -7,6 +7,9 @@ const { patchGameEventSystem } = await loadModule('src/construction/gameEvents.m
 const { patchSkillsBeforeDataReg, patchSkillsAfterDataReg } = await loadModule('src/patches/skillPatches/skillPatchesCaller.mjs');
 const { patchMiscBeforeDataReg } = await loadModule('src/patches/miscPatches/miscPatchesCaller.mjs');
 const { patchMods } = await loadModule('src/patches/modPatches/modPatchesCaller.mjs');
+const { patchAoDbeforedatareg } = await loadModule('src/patches/skillPatches/atlasofdiscovery/patchaod.mjs');
+
+
 
 export async function setup(ctx) {
     setup = new Setup(ctx);
@@ -26,6 +29,8 @@ class Setup {
     constructor(ctx) {
         this.ctx = ctx;
         this.modList = [];
+        this.aod = cloudManager.hasAoDEntitlementAndIsEnabled;
+        this.toth = cloudManager.hasTotHEntitlementAndIsEnabled;
     }
 
     async loadInterfaceElements() {
@@ -53,7 +58,7 @@ class Setup {
         patchTranslations(this.ctx);
         patchMiscBeforeDataReg(this.ctx);
         patchSkillsBeforeDataReg(this.ctx);
-
+        patchAoDbeforedatareg(this.ctx);
 
         game._events.on('offlineLoopEntered', () => game.construction.notifs = false);
         game._events.on('offlineLoopExited', () => game.construction.notifs = true);
@@ -64,9 +69,9 @@ class Setup {
     async loadData() {
         await this.ctx.gameData.addPackage('src/data/data_preentry.json');
         await this.ctx.gameData.addPackage('src/data/data.json');
-        if (cloudManager.hasAoDEntitlementAndIsEnabled)
+        if (this.aod)
             await this.ctx.gameData.addPackage('src/data/data_AoD.json');
-        if (cloudManager.hasTotHEntitlementAndIsEnabled)
+        if (this.toth)
             await this.ctx.gameData.addPackage('src/data/data_TotH.json');
 
         await this.ctx.gameData.addPackage('src/data/data_dummy.json');

@@ -1,5 +1,7 @@
 const { loadModule } = mod.getContext(import.meta);
 
+
+
 const { tierArray } = await loadModule('src/patches/skillPatches/atlasofdiscovery/archaeology/tierarray.mjs');
 
 const { addRuneEssence } = await loadModule("src/patches/skillPatches/astrology/addRuneEssence.mjs");
@@ -31,6 +33,8 @@ const { multiplyRoaringEffects } = await loadModule("src/patches/skillPatches/fi
 const { addSaplingBranchDrop } = await loadModule("src/patches/skillPatches/firemaking/addSaplingBranchDrop.mjs");
 
 const { addBonusesToTreeMastery } = await loadModule("src/patches/skillPatches/woodcutting/addBonusesToTreeMastery.mjs");
+
+
 
 
 export const EffectRegistry = {

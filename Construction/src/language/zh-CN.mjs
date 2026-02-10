@@ -1,4 +1,11 @@
 export const language = {
+    'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'所有战斗技能获得 ${value} 隐藏等级',
+'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'所有非战斗技能获得 ${value} 隐藏等级',
+'MODIFIER_DATA_bypassEfficiencyChance':'在 ${skillName} 中有 ${value}% 概率完成额外行动（无视游戏模式限制）',
+'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR':'所有非战斗技能的等级上限提高 ${value}',
+'MODIFIER_DATA_bypassGlobalDoubling':'全局 ${value}% 概率使物品翻倍（无视游戏模式限制）',
+'ITEM_NAME_Construction_Lesser_Relic':'建造次级遗物',
+
     'COMBAT_MISC_SHIELD_BROKEN': '护盾',
 'MENU_TOOLTIP_CONVERGENCE': '汇聚',
 'MENU_TOOLTIP_GOLDVERGENCE': '黄金汇聚',

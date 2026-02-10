@@ -863,7 +863,7 @@
             }
           ]
         },
-        "consumesOn": [
+        "ConstructionAction": [
           {
             "type": "ThievingAction"
           },
@@ -2650,10 +2650,10 @@
           "recipes": [
             {
               "id": "Normal_Beams",
-              "level": 5,
+              "level": 1,
               "productID": "rielkConstruction:Normal_Beams",
               "baseQuantity": 2,
-              "baseExperience": 10,
+              "baseExperience": 3,
               "categoryID": "rielkConstruction:Wood_Beams",
               "itemCosts": [
                 {
@@ -2665,10 +2665,10 @@
             },
             {
               "id": "Oak_Beams",
-              "level": 5,
+              "level": 15,
               "productID": "rielkConstruction:Oak_Beams",
               "baseQuantity": 2,
-              "baseExperience": 10,
+              "baseExperience": 5,
               "categoryID": "rielkConstruction:Wood_Beams",
               "itemCosts": [
                 {
@@ -2680,10 +2680,10 @@
             },
             {
               "id": "Teak_Beams",
-              "level": 5,
+              "level": 30,
               "productID": "rielkConstruction:Teak_Beams",
               "baseQuantity": 2,
-              "baseExperience": 10,
+              "baseExperience": 15,
               "categoryID": "rielkConstruction:Wood_Beams",
               "itemCosts": [
                 {
@@ -2695,10 +2695,10 @@
             },
             {
               "id": "Mahogany_Beams",
-              "level": 5,
+              "level": 50,
               "productID": "rielkConstruction:Mahogany_Beams",
               "baseQuantity": 2,
-              "baseExperience": 10,
+              "baseExperience": 25,
               "categoryID": "rielkConstruction:Wood_Beams",
               "itemCosts": [
                 {
@@ -2710,10 +2710,10 @@
             },
             {
               "id": "Redwood_Beams",
-              "level": 5,
+              "level": 70,
               "productID": "rielkConstruction:Redwood_Beams",
               "baseQuantity": 2,
-              "baseExperience": 10,
+              "baseExperience": 35,
               "categoryID": "rielkConstruction:Wood_Beams",
               "itemCosts": [
                 {
@@ -7373,7 +7373,8 @@
               "currencyCosts": [],
               "modifiers": {
                 "skillPreservationChance": 0.5,
-                "bankSpace": 4
+                "bankSpace": 4,
+                "rielkConstruction:bypassGlobalDoubling":10
               }
             },
             {
@@ -7941,7 +7942,7 @@
                 4
               ],
               "modifiers": {
-                "rielkConstruction:skillEfficiencyChance": [
+                "rielkConstruction:bypassEfficiencyChance": [
                   {
                     "skillID": "rielkConstruction:Construction",
                     "value": 9
@@ -9681,28 +9682,56 @@
         ]
       },
       {
-        "id": "allCombatSkillsHiddenLevel",
+        "id": "allCombatSkillsFlatHiddenLevel",
         "allowedScopes": [
           {
             "scopes": {},
             "descriptions": [
               {
                 "text": "Adds hidden skill levels to all combat skills",
-                "lang": "MODIFIER_DATA_allCombatSkillsHiddenLevel"
+                "lang": "MODIFIER_DATA_allCombatSkillsFlatHiddenLevel"
               }
             ]
           }
         ]
       },
        {
-        "id": "allNonCombatSkillsHiddenLevel",
+        "id": "bypassNonCombatSkillLevelCapAR",
         "allowedScopes": [
           {
             "scopes": {},
             "descriptions": [
               {
-                "text": "Adds hidden skill levels to all non-combat skills",
-                "lang": "MODIFIER_DATA_runePreservationCap"
+                "text": "Increase non-combat Skill Level Cap in Ancient Relics",
+                "lang": "MODIFIER_DATA_bypassNonCombatSkillLevelCapAR"
+              }
+            ]
+          }
+        ]
+      },
+        {
+        "id": "bypassGlobalDoubling",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Increases Doubling Globally (bypasses gamemode)",
+                "lang": "MODIFIER_DATA_bypassGlobalDoubling"
+              }
+            ]
+          }
+        ]
+      },
+       {
+        "id": "bypassEfficiencyChance",
+        "allowedScopes": [
+          {
+            "scopes": {"skill":true},
+            "descriptions": [
+              {
+                "text": "Bypasses eff chance",
+                "lang": "MODIFIER_DATA_bypassEfficiencyChance"
               }
             ]
           }

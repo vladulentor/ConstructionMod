@@ -1,5 +1,6 @@
 const { loadModule } = mod.getContext(import.meta);
 
+const { addHiddenLevelsToAllsSills } = await loadModule('src/patches/skillPatches/combat/addHiddenLevelsToAllsSills.mjs');
 
 const { addRuneEssenceCtx } = await loadModule('src/patches/skillPatches/astrology/addRuneEssence.mjs');
 const { addConstellationLevels } = await loadModule('src/patches/skillPatches/astrology/addConstellationLevels.mjs');
@@ -37,6 +38,7 @@ const { patchTreeSeedReturn } = await loadModule('src/patches/skillPatches/farmi
 
 const { patchArrowShaftRecipes } = await loadModule('src/patches/skillPatches/fletching/patchArrowShaftRecipes.mjs');
 const { patchFletchingOrder } = await loadModule('src/patches/skillPatches/fletching/patchFletchingOrder.mjs');
+const { addBeamsMasteryPoolBonus } = await loadModule('src/patches/skillPatches/fletching/addBeamsMasteryPoolBonus.mjs');
 
 const { patchPerpetualHaste } = await loadModule('src/patches/skillPatches/shop/patchPerpetualHaste.mjs');
 
@@ -71,11 +73,13 @@ export function patchSkillsBeforeDataReg(ctx) {
         addStarConvergence(ctx);
         addComboRunesonElemRunes(ctx);
         patchRunePreservationCap(ctx);
+        addHiddenLevelsToAllsSills(ctx);
         nerfBearDevil();
 }
 export function patchSkillsAfterDataReg(ctx) {
         patchCraftingOrder();
         patchFletchingOrder();
+        addBeamsMasteryPoolBonus();
         patchArrowShaftRecipes(ctx);
         patchPerpetualHaste(ctx);
 

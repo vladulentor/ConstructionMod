@@ -2,6 +2,15 @@
   "$schema": "https://melvoridle.com/assets/schema/gameData.json",
   "namespace": "rielkConstruction",
   "data": {
+        "ancientRelicsDisplayOrder": [
+      {
+        "insertAt": "After",
+        "afterID": "melvorD:Crafting",
+        "ids": [
+          "rielkConstruction:Construction"
+        ]
+      }
+    ],
     "items": [
       {
         "itemType": "Equipment",
@@ -28,17 +37,167 @@
               "value": -5
             }
           ],
-          "rangedMaxHit": 10,
-          "additionalPrimaryProductChance": [
+          "flatBasePrimaryProductQuantity": [
             {
-              "skillID": "melvorD:Fletching",
-              "value": 10
+              "value": 1,
+              "skillID": "rielkConstruction:Construction"
+            }
+          ],
+          "rielkConstruction:allCombatSkillsFlatHiddenLevel": 5
+        },
+        "consumesOn": [
+          {
+            "type": "PlayerAttack"
+          },
+          {
+            "type": "ConstructionAction"
+          }
+        ]
+      }
+    ],
+    "ancientRelics": [
+      {
+        "id": "ConstructionRelic1",
+        "name": "Construction Relic 1",
+        "skillID": "rielkConstruction:Construction",
+        "number": 1,
+        "modifiers": {
+          "rielkConstruction:bypassEfficiencyChance":[{"skillID":"rielkConstruction:Construction", "value":35}] 
+        }
+      },
+      {
+        "id": "ConstructionRelic2",
+        "name": "Construction Relic 2",
+        "skillID": "rielkConstruction:Construction",
+        "number": 2,
+        "modifiers": {
+          "flatBasePrimaryProductQuantity": [
+            {
+              "value": 3,
+              "skillID": "rielkConstruction:Construction"
             }
           ]
+        }
+      },
+      {
+        "id": "ConstructionRelic3",
+        "name": "Construction Relic 3",
+        "skillID": "rielkConstruction:Construction",
+        "number": 3,
+        "modifiers": {
+          "rielkConstruction:constructionActionsToUpgrade": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "value": -35
+            }
+          ]
+        }
+      },
+      {
+        "id": "ConstructionRelic4",
+        "name": "Construction Relic 4",
+        "skillID": "rielkConstruction:Construction",
+        "number": 4,
+        "modifiers": {
+          "rielkConstruction:bypassNonCombatSkillLevelCapAR": 5
+        }
+      },
+      {
+        "id": "ConstructionRelic5",
+        "name": "Construction Relic 5",
+        "skillID": "rielkConstruction:Construction",
+        "number": 5,
+        "modifiers": {
+                "rielkConstruction:skillEfficiencyCost": [
+                  {
+                    "skillID": "rielkConstruction:Construction",
+                    "value": -150
+                  }
+                ]
+        }
+      },
+      {
+        "id": "ConstructionRelic6",
+        "name": "Construction Relic 6",
+        "skillID": "rielkConstruction:Construction",
+        "number": 6,
+        "modifiers": {
+          "rielkConstruction:bypassGlobalDoubling": 10
         }
       }
     ],
     "skillData": [
+      {
+        "skillID": "rielkConstruction:Construction",
+        "data": {
+          "rareDrops": [
+            {
+              "itemID": "rielkConstruction:Construction_Lesser_Relic",
+              "quantity": 300,
+              "requirements": [],
+              "chance": {
+                "type": "Fixed",
+                "chance": 0.1
+              },
+              "gamemodes": [
+                "melvorAoD:AncientRelics"
+              ]
+            }
+          ],
+          "ancientRelicSets": [
+            {
+              "realmID": "melvorD:Melvor",
+              "relicDrops": [
+                {
+                  "relicID": "rielkConstruction:ConstructionRelic1",
+                  "requirements": [],
+                  "chance": {
+                    "type": "Fixed",
+                    "chance": 0.0005
+                  }
+                },
+                {
+                  "relicID": "rielkConstruction:ConstructionRelic2",
+                  "requirements": [],
+                  "chance": {
+                    "type": "Fixed",
+                    "chance":  0.0005
+                  }
+                },
+                {
+                  "relicID": "rielkConstruction:ConstructionRelic3",
+                  "requirements": [],
+                  "chance": {
+                    "type": "Fixed",
+                    "chance":  0.0005
+                  }
+                },
+                {
+                  "relicID": "rielkConstruction:ConstructionRelic4",
+                  "requirements": [],
+                  "chance": {
+                    "type": "Fixed",
+                    "chance": 50
+                  }
+                },
+                {
+                  "relicID": "rielkConstruction:ConstructionRelic5",
+                  "requirements": [],
+                  "chance": {
+                    "type": "Fixed",
+                    "chance": 0.5
+                  }
+                }
+              ],
+              "completedRelicID": "rielkConstruction:ConstructionRelic6",
+              "levelUpUnlocks": [
+                20,
+                99
+              ]
+            }
+          ]
+        }
+      },
       {
         "skillID": "melvorAoD:Cartography",
         "data": {

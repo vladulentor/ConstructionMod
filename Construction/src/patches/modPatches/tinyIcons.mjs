@@ -87,6 +87,10 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:spoof_UpgradeScrollOfEssence', 'rune_essence');
     icons.addModifier('rielkConstruction:spoof_AddStarStandardLevel', 'astrology');
     icons.addModifier('rielkConstruction:UnlockConvergence', 'convergence');
+    
+    
+    icons.addModifier('rielkConstruction:bypassGlobalDoubling', 'doubling');
+    icons.addModifier('rielkConstruction:allCombatSkillsFlatHiddenLevel', 'combat');
 
 
 

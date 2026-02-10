@@ -20,12 +20,16 @@ export function skillBoostsCompatibility({ patch }) {
     });
     skillBoosts.addNewModifiers({
         skills: [game.construction],
-        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:skillEfficiencyChance', 'rielkConstruction:skillEfficiencyPotency', 'rielkConstruction:skillEfficiencyCost']]])
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:skillEfficiencyChance', 'rielkConstruction:skillEfficiencyPotency', 'rielkConstruction:skillEfficiencyCost', 'rielkConstruction:bypassEfficiencyChance']]])
     });
     skillBoosts.addNewModifiers({
         skills: [game.fishing],
         modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:loseGPOnFishingBasedOnFish', 'rielkConstruction:fishingTreasureNoReplace']]])
     });
+    skillBoosts.addNewModifiers({
+        skills: game.skills.allObjects.filter(skill => !['melvorD:Township', 'melvorD:Agility'].includes(skill.id)),
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:bypassGlobalDoubling']]])
+    })
     //scoobs compatibility
     patch(skillBoosts.__proto__.constructor, 'createPetTooltip').after(function (_, container, item) {
         if (item.id === "rielkConstruction:Scoobs") {
@@ -77,7 +81,7 @@ export function skillBoostsCompatibility({ patch }) {
             patch(this.SB, 'initSB').after(function (_) {
                 ConstructionIntegration.filterFixtures();
             });
-            patch(this.SB, 'setIconOnClick').after(function(_, icon, item, category) {
+            patch(this.SB, 'setIconOnClick').after(function (_, icon, item, category) {
                 if (category === 'Fixture') {
                     icon.onclick = () => ConstructionIntegration.fixtureOnClick(icon);
                 }
@@ -95,7 +99,7 @@ export function skillBoostsCompatibility({ patch }) {
             // Add integration for the red background setting. Must be done during the onModsLoaded lifecycle hook. The `value` must be the icon category (case-sensitive)
             mod.api.Skill_Boosts.redBGOptions.push({ value: 'Fixture', label: getRielkLangString('SKILL_CATEGORY_ Construction_ House') });
         }
-        patchConstruction() { 
+        patchConstruction() {
             patch(this.ConstructionFixture, 'upgrade').after(function (_, construction) {
                 if (this.isMaxTier)
                     skillBoosts.removeIcon(this);
@@ -146,7 +150,7 @@ export function skillBoostsCompatibility({ patch }) {
         fixtureOnClick(icon) {
             if (skillBoosts.isSpecialModeActive(icon)) {
                 return;
-            } 
+            }
         }
         //We may add special behaviour to this, but since Astrology stars don't, it'd maybe be fine to not.
         getFixtureCost(fixture) {

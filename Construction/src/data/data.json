@@ -3474,7 +3474,7 @@
                 "rielkConstruction:Spell_Library",
                 "rielkConstruction:Telescope"
               ],
-              "newTooltip":true
+              "newTooltip": true
             },
             {
               "id": "Outpost",
@@ -3868,11 +3868,9 @@
               "shinyMods": [
                 1,
                 2
-                
               ],
-                            "changeFunc": "addPotionMasteryTextThingFuckIt",
+              "changeFunc": "addPotionMasteryTextThingFuckIt",
               "modifiers": {
-             
                 "rielkConstruction:ExtraTier1Potions": 1,
                 "rielkConstruction:ChangeAddiIntoHighTier": 1
               }
@@ -7374,7 +7372,7 @@
               "modifiers": {
                 "skillPreservationChance": 0.5,
                 "bankSpace": 4,
-                "rielkConstruction:bypassGlobalDoubling":10
+                "rielkConstruction:bypassGlobalDoubling": 10
               }
             },
             {
@@ -9695,7 +9693,7 @@
           }
         ]
       },
-       {
+      {
         "id": "bypassNonCombatSkillLevelCapAR",
         "allowedScopes": [
           {
@@ -9709,7 +9707,7 @@
           }
         ]
       },
-        {
+      {
         "id": "bypassGlobalDoubling",
         "allowedScopes": [
           {
@@ -9723,11 +9721,13 @@
           }
         ]
       },
-       {
+      {
         "id": "bypassEfficiencyChance",
         "allowedScopes": [
           {
-            "scopes": {"skill":true},
+            "scopes": {
+              "skill": true
+            },
             "descriptions": [
               {
                 "text": "Bypasses eff chance",

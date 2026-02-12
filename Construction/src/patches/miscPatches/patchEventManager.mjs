@@ -5,6 +5,6 @@
             if (game.currentGamemode.startingSkills != undefined && game.currentGamemode.startingSkills.has(game.construction)) {
                 game.construction.setUnlock(true);
             }
-            game.construction.updateForExistingCapIncreases(game);
+            game.construction.updateForExistingCapIncreases();
         });
     }

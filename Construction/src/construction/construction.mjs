@@ -245,7 +245,7 @@ export class Construction extends ArtisanSkill {
             levelType: 'Standard',
             fixedIncreases: Object.values(game.skills.allObjects)
                 .filter(skill => !skill.isCombat)
-                .map(skill => ({ skill, increase: Math.min(5, skill.maxLevelCap-skill.level), maximum: skill.maxLevelCap })),
+                .map(skill => ({ skill, increase: Math.min(5, skill.maxLevelCap - skill.level), maximum: skill.maxLevelCap })),
             setIncreases: [],
             randomIncreases: [],
             randomCount: 0,
@@ -562,7 +562,7 @@ export class Construction extends ArtisanSkill {
     /** Gets the efficiency chance for a given action */
     // We can't disable efficiency from .jsons because malvs is a fuckEr
     getEfficiencyChance(action) {
-        if(!this.isRelics)
+        if (!this.isRelics)
             this.isRelics = game.currentGamemode._localID == 'AncientRelics';
 
         return (this.isRelics ? 0 : this.getBaseEfficiencyChance(action)) + this.game.modifiers.getValue("rielkConstruction:bypassEfficiencyChance", this.getActionModifierQuery(action))
@@ -938,24 +938,22 @@ export class Construction extends ArtisanSkill {
                             if (skillIncrease.skill == this)
                                 this.applyLevelCapIncrease(skillIncrease);
                         });
-                        capIncrease.setIncreases.forEach(({ value }) => {
-                            if (skillIncrease.skill == this)
+                        capIncrease.setIncreases.forEach(({ skill, value }) => {
+                            if (skill == this)
                                 this.applySetLevelCap(value);
-                        }
-                        );
+                        });
                         break;
-                    case 'Abyssal':
+                   /* case 'Abyssal':
                         capIncrease.fixedIncreases.forEach((skillIncrease) => {
                             if (skillIncrease.skill == this)
                                 this.skill.applyAbyssalLevelCapIncrease(skillIncrease);
                         }
                         );
-                        capIncrease.setIncreases.forEach(({ value }) => {
-                            if (skillIncrease.skill == this)
-                                this.setAbyssalLevelCap(value);
-                        }
-                        );
-                        break;
+                        capIncrease.setIncreases.forEach(({ skill, value }) => {
+                            if (skill == this)
+                                this.applySetLevelCap(value);
+                        });
+                        break;*/
                 }
                 this.game.validateRandomLevelCapIncreases();
             })

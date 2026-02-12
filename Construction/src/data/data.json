@@ -7000,7 +7000,7 @@
                 },
                 {
                   "id": "melvorF:Runecrafting_Scroll_Of_XP",
-                  "quantity": 5000
+                  "quantity": 250
                 }
               ],
               "currencyCosts": [],
@@ -7210,7 +7210,7 @@
                 },
                 {
                   "id": "melvorF:Wizards_Scroll",
-                  "quantity": 5000
+                  "quantity": 2500
                 },
                 {
                   "id": "melvorD:Red_Wizard_Hat",
@@ -8309,7 +8309,7 @@
                 },
                 {
                   "id": "melvorF:Slayer_Binding_Scroll",
-                  "quantity": 1300
+                  "quantity": 500
                 },
                 {
                   "id": "melvorF:Slayer_Platebody_Basic",
@@ -8349,7 +8349,7 @@
                 },
                 {
                   "id": "melvorF:Slayer_Deterer",
-                  "quantity": 3600
+                  "quantity": 1500
                 },
                 {
                   "id": "melvorF:Slayer_Helmet_Strong",

@@ -106,7 +106,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 5
+        "sellsFor": 10
       },
       {
         "itemType": "Item",
@@ -119,7 +119,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 14
+        "sellsFor": 40
       },
       {
         "itemType": "Item",
@@ -157,7 +157,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 2
+        "sellsFor": 4
       },
       {
         "itemType": "Item",
@@ -169,7 +169,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 8
+        "sellsFor": 30
       },
       {
         "itemType": "Item",
@@ -181,7 +181,7 @@
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 22
+        "sellsFor": 80
       },
       {
         "itemType": "Item",
@@ -205,7 +205,7 @@
         "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 35
+        "sellsFor": 600
       },
       {
         "itemType": "Item",
@@ -587,6 +587,39 @@
               "skillID": "rielkConstruction:Construction",
               "categoryID": "rielkConstruction:House",
               "value": 300
+            }
+          ]
+        },
+        "consumesOn": [
+          {
+            "type": "ConstructionAction"
+          }
+        ]
+      },
+            {
+        "itemType": "Equipment",
+        "id": "Summoning_Familiar_Bee",
+        "name": "Bee",
+        "category": "Summoning",
+        "type": "Familiar",
+        "media": "assets/items/bee_familiar.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 0,
+        "tier": "Tier 3 Summon",
+        "validSlots": [
+          "Summon1",
+          "Summon2"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [],
+        "equipmentStats": [],
+        "modifiers": {
+          "rielkConstruction:skillEfficiencyChance": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "value": 5
             }
           ]
         },
@@ -2484,6 +2517,58 @@
               "gpCost": 0,
               "scCost": 0
             }
+          ]
+        }
+      },
+      {
+        "skillID": "melvorD:Summoning",
+        "data": {
+          "recipes": [
+            
+            {
+              "id": "Bee",
+              "level": 80,
+              "productID": "rielkConstruction:Summoning_Familiar_Bee",
+              "baseQuantity": 25,
+              "baseExperience": 39,
+              "categoryID": "melvorD:TabletsFamiliars",
+              "itemCosts": [
+                {
+                  "id": "melvorF:Summoning_Shard_Green",
+                  "quantity": 10
+                },
+                {
+                  "id": "melvorF:Summoning_Shard_Silver",
+                  "quantity": 8
+                },
+                {
+                  "id": "melvorF:Summoning_Shard_Black",
+                  "quantity": 6
+                }
+              ],
+              "markMedia": "assets/others/mark.webp",
+              "nonShardItemCosts": [
+                                                "rielkConstruction:Normal_Beams",
+
+                "rielkConstruction:Normal_Planks",
+                                "rielkConstruction:Oak_Beams",
+
+                "rielkConstruction:Oak_Planks",
+                                "rielkConstruction:Teak_Beams",
+
+                "rielkConstruction:Teak_Planks",
+                                                "rielkConstruction:Mahogany_Beams",
+
+                "rielkConstruction:Mahogany_Planks",
+                                "rielkConstruction:Redwood_Beams",
+                "rielkConstruction:Redwood_Planks"
+              ],
+              "tier": 3,
+              "skillIDs": [
+                "rielkConstruction:Construction"
+              ],
+              "currencyCosts": []
+            }            
           ]
         }
       },

@@ -179,6 +179,7 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_3': 'Build Composter Tier 3 in Construction to unlock.',
     'ITEM_NAME_Flower_Pots_Token_4': 'Build Composter Tier 4 in Construction to unlock.',
     'ITEM_NAME_Flower_Pots_Token_5': 'Build Composter Tier 5 in Construction to unlock.',
+    'ITEM_NAME_Summoning_Familiar_Bee':'Bee',
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2% Construction Skill XP',
     'ITEM_DESCRIPTION_Builders_Body': '+2% Construction Skill XP',

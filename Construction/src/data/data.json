@@ -863,7 +863,7 @@
             }
           ]
         },
-        "ConstructionAction": [
+        "consumesOn": [
           {
             "type": "ThievingAction"
           },

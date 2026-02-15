@@ -847,15 +847,14 @@
             {
               "skillID": "melvorD:Thieving",
               "value": -5
+            },
+             {
+              "skillID": "melvorD:Agility",
+              "value": -5
             }
           ],
           "thievingStealth": 25,
-          "skillXP": [
-            {
-              "skillID": "melvorD:Agility",
-              "value": 5
-            }
-          ],
+         
           "masteryXP": [
             {
               "skillID": "melvorD:Agility",

@@ -1,6 +1,57 @@
 {
     "$schema": "https://melvoridle.com/assets/schema/gameData.json",
     "namespace": "rielkConstruction",
+    "data": {
+        "skillData": [
+            {
+                "skillID": "melvorD:Summoning",
+                "data": {
+                    "synergies": [
+                        {
+                            "summonIDs": [
+                                "rielkConstruction:Bee",
+                                "melvorTotH:Beaver"
+                            ],
+                            "modifiers": {
+                                "flatBasePrimaryProductQuantity": [
+                                    {
+                                        "value": 2,
+                                        "subcategoryID": "rielkConstruction:Planks",
+                                        "skillID": "rielkConstruction:Construction"
+                                    },
+                                    {
+                                        "value": 2,
+                                        "categoryID": "rielkConstruction:Wood_Beams",
+                                        "skillID": "melvorD:Fletching"
+                                    }
+                                ]
+                            },
+                            "consumesOn": [
+                                {
+                                    "type": "FletchingAction",
+                                    "categoryIDs": [
+                                        "rielkConstruction:Wood_Beams"
+                                    ],
+                                    "realms": [
+                                        "melvorD:Melvor"
+                                    ]
+                                },
+                                {
+                                    "type": "ConstructionAction",
+                                    "subcategoryIDs": [
+                                        "rielkConstruction:Planks"
+                                    ],
+                                    "realms": [
+                                        "melvorD:Melvor"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
     "modifications": {
         "skillData": [
             {

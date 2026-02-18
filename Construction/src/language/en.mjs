@@ -248,7 +248,7 @@ export const language = {
     'MODIFIER_DATA_runecraftingRuneCostReduction': '${value}% Rune Costs for Equipment or Weapons in ${skillName} (cannot be reduced below 1)',
     'MODIFIER_DATA_ComboRunesonElemRunes': '${value} related Combination Runes received from ${skillName} when making Elemental Runes',
     'MODIFIER_DATA_runePreservationCap': '${value}% Rune Preservation cap',
-
+    'MODIFIER_DATA_skillItemDoublingChanceSubcategory':'${value}% Chance to Double Items in ${skillName} when making ${subcategoryName}',
     'SHOP_PURCHASE_Perpetual_Haste': '-15% Crafting, Construction & Fletching Interval',
     'ITEM_DESCRIPTION_BEAR_DEVIL_SYNERGY': 'While using the Controlled Heat Potions, +5% Firemaking Skill XP and Bonfire duration increased by 15%. Charges are used per Firemaking action and lit Bonfire.',
 
@@ -258,7 +258,7 @@ export const language = {
     'ITEM_NAME_Mariners_Blouse': 'Mariner\'s Top',
     'ITEM_NAME_Mariners_Tie': 'Mariner\'s Tie',
 
-
+    'RIELK_SYNERGY_Bear_Bee':'While the Twice-Measured Potion is active in Construction, Resource cost when completing extra actions is reduced by 0.2',
     'RIELK_CONMOD_FOCUSEDCOOKING_1': '+3% Perfect Cook chance, Success chance, and Cooking Mastery XP while not Passive Cooking',
     'ITEM_NAME_Sapling_Branch': 'Sapling Branch',
     'ITEM_DESCRIPTION_Sapling_Branch': 'An unburnt branch. Contains Tree Seeds.',

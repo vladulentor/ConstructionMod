@@ -1,6 +1,22 @@
 {
   "$schema": "https://melvoridle.com/assets/schema/gameData.json",
   "namespace": "rielkConstruction",
+  "data": {
+    "skillData": [
+      {
+        "skillID": "melvorD:Crafting",
+        "data": {
+          "categories": [
+            {
+              "id": "Leather_Slivers",
+              "media": "assets/items/slivers_category.webp",
+              "name": "Leather Slivers"
+            }
+          ]
+        }
+      }
+    ]
+  },
   "modifications": {
     "modifiers": [
       {
@@ -19,9 +35,9 @@
           }
         ]
       },
-       {
+      {
         "id": "melvorD:runecraftingRuneCostReduction",
-        "inverted":true,
+        "inverted": true,
         "allowedScopes": [
           {
             "scopes": {
@@ -52,6 +68,24 @@
             ]
           }
         ]
+      },
+            {
+        "id": "melvorD:skillItemDoublingChance",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true,
+              "subcategory": true
+            },
+            "descriptions": [
+              {
+                "text": "${value}% ${skillName} Interval for ${subcategoryName}",
+                "lang": "MODIFIER_DATA_skillItemDoublingChanceSubcategory"
+              }
+            ]
+          }
+        ]
       }
     ]
-}}
+  }
+}

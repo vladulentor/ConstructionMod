@@ -596,7 +596,7 @@
           }
         ]
       },
-            {
+      {
         "itemType": "Equipment",
         "id": "Summoning_Familiar_Bee",
         "name": "Bee",
@@ -616,10 +616,10 @@
         "equipRequirements": [],
         "equipmentStats": [],
         "modifiers": {
-          "rielkConstruction:skillEfficiencyChance": [
+          "rielkConstruction:skillEfficiencyPotency": [
             {
               "skillID": "rielkConstruction:Construction",
-              "value": 5
+              "value": 10
             }
           ]
         },
@@ -2524,7 +2524,6 @@
         "skillID": "melvorD:Summoning",
         "data": {
           "recipes": [
-            
             {
               "id": "Bee",
               "level": 80,
@@ -2548,19 +2547,15 @@
               ],
               "markMedia": "assets/others/mark.webp",
               "nonShardItemCosts": [
-                                                "rielkConstruction:Normal_Beams",
-
+                "rielkConstruction:Normal_Beams",
                 "rielkConstruction:Normal_Planks",
-                                "rielkConstruction:Oak_Beams",
-
+                "rielkConstruction:Oak_Beams",
                 "rielkConstruction:Oak_Planks",
-                                "rielkConstruction:Teak_Beams",
-
+                "rielkConstruction:Teak_Beams",
                 "rielkConstruction:Teak_Planks",
-                                                "rielkConstruction:Mahogany_Beams",
-
+                "rielkConstruction:Mahogany_Beams",
                 "rielkConstruction:Mahogany_Planks",
-                                "rielkConstruction:Redwood_Beams",
+                "rielkConstruction:Redwood_Beams",
                 "rielkConstruction:Redwood_Planks"
               ],
               "tier": 3,
@@ -2568,7 +2563,180 @@
                 "rielkConstruction:Construction"
               ],
               "currencyCosts": []
-            }            
+            }
+          ],
+          "synergies": [
+            {
+              "summonIDs": [
+                "melvorF:Monkey",
+                "rielkConstruction:Bee"
+              ],
+              "modifiers": {
+                "skillItemDoublingChance": [
+                  {
+                    "value": 35,
+                    "subcategoryID": "rielkConstruction:Straps",
+                    "skillID": "rielkConstruction:Construction"
+                  },
+                  {
+                    "value": 35,
+                    "categoryID": "rielkConstruction:Leather_Slivers",
+                    "skillID": "melvorD:Crafting"
+                  }
+                ]
+              },
+              "consumesOn": [
+                {
+                  "type": "CraftingAction",
+                  "categoryIDs": [
+                    "rielkConstruction:Leather_Slivers"
+                  ],
+                  "realms": [
+                    "melvorD:Melvor"
+                  ]
+                },
+                {
+                  "type": "ConstructionAction",
+                  "subcategoryIDs": [
+                    "rielkConstruction:Straps"
+                  ],
+                  "realms": [
+                    "melvorD:Melvor"
+                  ]
+                }
+              ]
+            },
+            {
+              "summonIDs": [
+                "rielkConstruction:Bee",
+                "melvorF:Devil"
+              ],
+              "modifiers": {
+                "firemakingBonfireInterval": 25
+              },
+              "consumesOn": [
+                {
+                  "type": "BonfireLit",
+                  "realms": [
+                    "melvorD:Melvor"
+                  ]
+                }
+              ]
+            },
+            {
+              "summonIDs": [
+                "melvorF:Pig",
+                "rielkConstruction:Bee"
+              ],
+              "customDescription": "While not Passive cooking, gain stuff",
+              "conditionalModifiers": [
+                {
+                  "condition": {
+                    "type": "FocusedCook"
+                  },
+                  "modifiers": {
+                    "perfectCookChance": 3,
+                    "successfulCookChance": 3,
+                    "masteryXP": [
+                      {
+                        "value": 3,
+                        "skillID": "melvorD:Cooking"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "modifiers": {},
+              "consumesOn": [
+                {
+                  "type": "CookingAction",
+                  "realms": [
+                    "melvorD:Melvor"
+                  ]
+                },
+                {
+                  "type": "ConstructionAction",
+                  "realms": [
+                    "melvorD:Melvor"
+                  ]
+                }
+              ]
+            },
+          
+            {
+              "summonIDs": [
+                "melvorF:Salamander",
+                "rielkConstruction:Bee"
+              ],
+              "modifiers": {
+                "skillPreservationChance": [
+                  {
+                    "value": 20,
+                    "subcategoryID":"rielkConstruction:Nails",
+                    "skillID": "rielkConstruction:Construction"
+                  },
+                     {
+                    "value": 20,
+                    "categoryID":"melvorD:Bars",
+                    "skillID": "melvorD:Smithing"
+                  }
+                ]
+              },
+              "consumesOn": [
+                {
+                  "type": "ConstructionAction",
+                  "realms": [
+                    "melvorD:Melvor"
+                  ]
+                },
+                                {
+                  "type": "SmithingAction",
+                  "realms": [
+                    "melvorD:Melvor"
+                  ]
+                }
+
+              ]
+            },
+           
+            {
+              "summonIDs": [
+                "melvorF:Bear",
+                "rielkConstruction:Bee"
+              ],
+              "modifiers": {},
+              "conditionalModifiers": [
+                {
+                  "condition": {
+                    "type": "PotionUsed",
+                    "recipeID": "rielkConstruction:Twice_Measured_Potion"
+                  },
+                  "modifiers": {
+                    "rielkConstruction:skillEfficiencyCost": [
+                      {
+                        "skillID": "rielkConstruction:Construction",
+                        "value": -20
+                      }
+                    ]
+                  }
+                }
+              ],
+              "consumesOn": [
+                {
+                  "type": "ConstructionAction",
+                  "realms": [
+                    "melvorD:Melvor"
+                  ],
+                  "activePotionIDs": [
+                    "rielkConstruction:Twice_Measured_Potion_I",
+                    "rielkConstruction:Twice_Measured_Potion_II",
+                    "rielkConstruction:Twice_Measured_Potion_III",
+                    "rielkConstruction:Twice_Measured_Potion_IV"
+                  ]
+                }
+              ],
+              "customDescription": "RIELK_SYNERGY_Bear_Bee"
+            }
           ]
         }
       },
@@ -2637,13 +2805,6 @@
       {
         "skillID": "melvorD:Crafting",
         "data": {
-          "categories": [
-            {
-              "id": "Leather_Slivers",
-              "media": "assets/items/slivers_category.webp",
-              "name": "Leather Slivers"
-            }
-          ],
           "recipes": [
             {
               "id": "Green_Dhide_Leather_Slivers",

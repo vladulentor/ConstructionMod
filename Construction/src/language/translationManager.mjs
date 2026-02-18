@@ -141,6 +141,11 @@ export function patchTranslations(ctx) {
             );} 
         return patch();
     });
+    ctx.patch(SummoningSynergy, 'description').get(function(patch){
+        if(this._customDescription?.startsWith('RIELK_SYNERGY'))
+            return getRielkLangString(this._customDescription)
+        return patch();
+    })
     ctx.patch(ShopUpgradeChain, 'chainName').get(function (patch) {
         if (this.namespace === 'rielkConstruction')
             return getRielkLangString(`MENU_TEXT_${this.localID}`);

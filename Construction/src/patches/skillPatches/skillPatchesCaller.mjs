@@ -14,6 +14,7 @@ const { patchMagicUsageCheck } = await loadModule('src/patches/skillPatches/comb
 const { addMagicShield } = await loadModule('src/patches/skillPatches/combat/addMagicShield.mjs');
 const { patchAuroraAnyStyle } = await loadModule('src/patches/skillPatches/combat/patchAuroraAnyStyle.mjs');
 const { patchRunePreservationCap } = await loadModule('src/patches/skillPatches/combat/patchRunePreservationCap.mjs');
+const { patchPrayerPointsSpending } = await loadModule('src/patches/skillPatches/combat/patchPrayerPointsSpending.mjs');
 
 
 
@@ -74,6 +75,7 @@ export function patchSkillsBeforeDataReg(ctx) {
         addComboRunesonElemRunes(ctx);
         patchRunePreservationCap(ctx);
         addHiddenLevelsToAllsSills(ctx);
+        patchPrayerPointsSpending(ctx);
         nerfBearDevil();
 }
 export function patchSkillsAfterDataReg(ctx) {

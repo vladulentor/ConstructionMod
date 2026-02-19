@@ -881,13 +881,12 @@
               "skillID": "melvorD:Thieving",
               "value": -5
             },
-             {
+            {
               "skillID": "melvorD:Agility",
               "value": -5
             }
           ],
           "thievingStealth": 25,
-         
           "masteryXP": [
             {
               "skillID": "melvorD:Agility",
@@ -2573,13 +2572,15 @@
                 "skillItemDoublingChance": [
                   {
                     "value": 35,
-                    "subcategoryID": "rielkConstruction:Straps",
-                    "skillID": "rielkConstruction:Construction"
-                  },
-                  {
-                    "value": 35,
                     "categoryID": "rielkConstruction:Leather_Slivers",
                     "skillID": "melvorD:Crafting"
+                  }
+                ],
+                "rielkConstruction:skillEfficiencyChance": [
+                  {
+                    "value": 35,
+                    "subcategoryID": "rielkConstruction:Straps",
+                    "skillID": "rielkConstruction:Construction"
                   }
                 ]
               },
@@ -2626,18 +2627,22 @@
                 "melvorF:Pig",
                 "rielkConstruction:Bee"
               ],
-              "customDescription": "While not Passive cooking, gain stuff",
+              "customDescription": "RIELK_SYNERGY_Pig_Bee",
               "conditionalModifiers": [
                 {
                   "condition": {
                     "type": "FocusedCook"
                   },
                   "modifiers": {
-                    "perfectCookChance": 3,
-                    "successfulCookChance": 3,
+                    "skillXP": [
+                      {
+                        "value": 10,
+                        "skillID": "rielkConstruction:Construction"
+                      }
+                    ],
                     "masteryXP": [
                       {
-                        "value": 3,
+                        "value": 10,
                         "skillID": "melvorD:Cooking"
                       }
                     ]
@@ -2660,7 +2665,6 @@
                 }
               ]
             },
-          
             {
               "summonIDs": [
                 "melvorF:Salamander",
@@ -2670,12 +2674,12 @@
                 "skillPreservationChance": [
                   {
                     "value": 20,
-                    "subcategoryID":"rielkConstruction:Nails",
+                    "subcategoryID": "rielkConstruction:Nails",
                     "skillID": "rielkConstruction:Construction"
                   },
-                     {
+                  {
                     "value": 20,
-                    "categoryID":"melvorD:Bars",
+                    "categoryID": "melvorD:Bars",
                     "skillID": "melvorD:Smithing"
                   }
                 ]
@@ -2687,16 +2691,14 @@
                     "melvorD:Melvor"
                   ]
                 },
-                                {
+                {
                   "type": "SmithingAction",
                   "realms": [
                     "melvorD:Melvor"
                   ]
                 }
-
               ]
             },
-           
             {
               "summonIDs": [
                 "melvorF:Bear",
@@ -2745,7 +2747,7 @@
             {
               "id": "AllotmentPlotRielk1",
               "categoryID": "melvorD:Allotment",
-              "level": 5,
+              "level": 10,
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Flower_Pots_Token_1",
@@ -2756,7 +2758,7 @@
             {
               "id": "AllotmentPlotRielk2",
               "categoryID": "melvorD:Allotment",
-              "level": 15,
+              "level": 50,
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Flower_Pots_Token_3",
@@ -2767,7 +2769,7 @@
             {
               "id": "HerbPlotRielk1",
               "categoryID": "melvorD:Herb",
-              "level": 5,
+              "level": 25,
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Flower_Pots_Token_2",
@@ -2778,7 +2780,7 @@
             {
               "id": "HerbPlotRielk2",
               "categoryID": "melvorD:Herb",
-              "level": 15,
+              "level": 65,
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Flower_Pots_Token_4",
@@ -2789,7 +2791,7 @@
             {
               "id": "TreePlotRielk1",
               "categoryID": "melvorD:Tree",
-              "level": 15,
+              "level": 95,
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Flower_Pots_Token_5",
@@ -7033,11 +7035,15 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2
+              ],
               "modifiers": {
-                "skillXP": [
+                "rielkConstruction:nullifyPrayerPointsUnder": [
                   {
-                    "value": 5,
-                    "skillID": "melvorD:Prayer"
+                    "skillID": "melvorD:Prayer",
+                    "value": 1
                   }
                 ]
               }
@@ -7067,11 +7073,14 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [
-                1
-              ],
               "modifiers": {
-                "flatHPRegen": 5
+                "skillXP": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Prayer"
+                  }
+                ],
+                "flatPrayerPointsFromBurying": 3
               }
             },
             {
@@ -7098,9 +7107,19 @@
                   "quantity": 2000
                 }
               ],
+              "shinyMods": [
+                1,
+                2
+              ],
               "currencyCosts": [],
               "modifiers": {
-                "prayerPointPreservationChancePerPoint": 5
+                "rielkConstruction:nullifyPrayerPointsUnder": [
+                  {
+                    "skillID": "melvorD:Prayer",
+                    "value": 3
+                  }
+                ],
+                "maxHitBasedOnPrayerCost": 0.2
               }
             },
             {
@@ -7137,7 +7156,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "flatPrayerPointCost": -1
+                "flatPrayerPointCost": -2,
+                "flatHPRegen": 5
               }
             },
             {
@@ -7149,27 +7169,27 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 7500
+                  "quantity": 9500
                 },
                 {
                   "id": "rielkConstruction:Elder_Dhide_Leather_Slivers",
-                  "quantity": 7500
+                  "quantity": 9500
                 },
                 {
-                  "id": "melvorD:Dragon_Bones",
-                  "quantity": 7500
+                  "id": "melvorD:Magic_Bones",
+                  "quantity": 10000
                 },
                 {
                   "id": "melvorD:Gold_Bar",
-                  "quantity": 7500
+                  "quantity": 10000
                 },
                 {
                   "id": "melvorF:Divine_Potion_IV",
-                  "quantity": 5000
+                  "quantity": 10000
                 },
                 {
                   "id": "melvorF:Prayer_Scroll",
-                  "quantity": 7500
+                  "quantity": 10000
                 },
                 {
                   "id": "melvorF:Priest_Hat",
@@ -7182,10 +7202,24 @@
               ],
               "currencyCosts": [],
               "shinyMods": [
-                1
+                1,
+                2,
+                3
               ],
               "modifiers": {
-                "flatPrayerPointsFromBurying": 1
+                "rielkConstruction:nullifyPrayerPointsUnder": [
+                  {
+                    "skillID": "melvorD:Prayer",
+                    "value": 5
+                  }
+                ],
+                "damageTakenAddedAsPrayerPoints": 10,
+                "flatResistanceWithActivePrayer": [
+                  {
+                    "damageTypeID": "melvorD:Normal",
+                    "value": 1
+                  }
+                ]
               }
             },
             {
@@ -7250,8 +7284,19 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "elementalRuneChance": 2,
-                "elementalRuneQuantity": 2
+                "flatAdditionalPrimaryProductQuantity": [
+                  {
+                    "skillID": "melvorD:Runecrafting",
+                    "subcategoryID": "melvorF:Runes",
+                    "value": 2
+                  }
+                ],
+                "runecraftingRuneCostReduction": [
+                  {
+                    "skillID": "melvorD:Runecrafting",
+                    "value": -5
+                  }
+                ]
               }
             },
             {
@@ -7282,10 +7327,19 @@
                   "quantity": 15000
                 }
               ],
+              "shinyMods": [
+                1,
+                2
+              ],
               "currencyCosts": [],
               "modifiers": {
-                "elementalRuneChance": 3,
-                "elementalRuneQuantity": 2
+                "rielkConstruction:ComboRunesonElemRunes": [
+                  {
+                    "skillID": "melvorD:Runecrafting",
+                    "value": 1
+                  }
+                ],
+                "runePreservationChance": 5
               }
             },
             {
@@ -7318,8 +7372,18 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "elementalRuneChance": 5,
-                "elementalRuneQuantity": 2
+                "runecraftingRuneCostReduction": [
+                  {
+                    "skillID": "melvorD:Runecrafting",
+                    "value": -10
+                  }
+                ],
+                "skillItemDoublingChance": [
+                  {
+                    "value": 10,
+                    "skillID": "melvorD:Magic"
+                  }
+                ]
               }
             },
             {
@@ -7355,9 +7419,26 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
               "modifiers": {
-                "elementalRuneChance": 10,
-                "elementalRuneQuantity": 2
+                "flatAdditionalPrimaryProductQuantity": [
+                  {
+                    "skillID": "melvorD:Runecrafting",
+                    "subcategoryID": "melvorF:Runes",
+                    "value": 3
+                  }
+                ],
+                "rielkConstruction:ComboRunesonElemRunes": [
+                  {
+                    "skillID": "melvorD:Runecrafting",
+                    "value": 3
+                  }
+                ],
+                "rielkConstruction:runePreservationCap": 5
               }
             },
             {
@@ -9208,6 +9289,18 @@
                 "includeSign": false
               }
             ]
+          },
+          {
+            "scopes": {
+              "skill": true,
+              "subcategory": true
+            },
+            "descriptions": [
+              {
+                "text": "+${value}% Efficiency chance",
+                "lang": "MODIFIER_DATA_skillEfficiencyChanceforSubcategory"
+              }
+            ]
           }
         ]
       },
@@ -9977,6 +10070,23 @@
               {
                 "text": "Bypasses eff chance",
                 "lang": "MODIFIER_DATA_bypassEfficiencyChance"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "nullifyPrayerPointsUnder",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true
+            },
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "makes prayer points go bye bye",
+                "lang": "MODIFIER_DATA_nullifyPrayerPointsUnder"
               }
             ]
           }

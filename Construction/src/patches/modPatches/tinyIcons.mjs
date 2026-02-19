@@ -93,7 +93,9 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:allCombatSkillsFlatHiddenLevel', 'combat');
 
 
+ icons.addModifier('rielkConstruction:ComboRunesonElemRunes', 'rune_essence');
+ icons.addModifier(' rielkConstruction:runePreservationCap', 'preservation');
 
-
+ icons.addModifier('rielkConstruction:nullifyPrayerPointsUnder', 'nulled');
 
 }

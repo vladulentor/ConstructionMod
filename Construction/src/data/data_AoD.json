@@ -2,7 +2,202 @@
   "$schema": "https://melvoridle.com/assets/schema/gameData.json",
   "namespace": "rielkConstruction",
   "data": {
+        "ancientRelicsDisplayOrder": [
+      {
+        "insertAt": "After",
+        "afterID": "melvorD:Crafting",
+        "ids": [
+          "rielkConstruction:Construction"
+        ]
+      }
+    ],
+    "items": [
+      {
+        "itemType": "Equipment",
+        "id": "Construction_Lesser_Relic",
+        "name": "Construction Lesser Relic",
+        "category": "Combat",
+        "type": "Consumable",
+        "media": "assets/items/construction_lesser_relic.webp",
+        "tier": "none",
+        "ignoreCompletion": true,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 1,
+        "validSlots": [
+          "Consumable"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [],
+        "equipmentStats": [],
+        "modifiers": {
+          "skillInterval": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "value": -5
+            }
+          ],
+          "flatBasePrimaryProductQuantity": [
+            {
+              "value": 1,
+              "skillID": "rielkConstruction:Construction"
+            }
+          ],
+          "rielkConstruction:allCombatSkillsFlatHiddenLevel": 5
+        },
+        "consumesOn": [
+          {
+            "type": "PlayerAttack"
+          },
+          {
+            "type": "ConstructionAction"
+          }
+        ]
+      }
+    ],
+    "ancientRelics": [
+      {
+        "id": "ConstructionRelic1",
+        "name": "Construction Relic 1",
+        "skillID": "rielkConstruction:Construction",
+        "number": 1,
+        "modifiers": {
+          "rielkConstruction:bypassEfficiencyChance":[{"skillID":"rielkConstruction:Construction", "value":35}] 
+        }
+      },
+      {
+        "id": "ConstructionRelic2",
+        "name": "Construction Relic 2",
+        "skillID": "rielkConstruction:Construction",
+        "number": 2,
+        "modifiers": {
+          "flatBasePrimaryProductQuantity": [
+            {
+              "value": 3,
+              "skillID": "rielkConstruction:Construction"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ConstructionRelic3",
+        "name": "Construction Relic 3",
+        "skillID": "rielkConstruction:Construction",
+        "number": 3,
+        "modifiers": {
+          "rielkConstruction:constructionActionsToUpgrade": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "value": -35
+            }
+          ]
+        }
+      },
+      {
+        "id": "ConstructionRelic4",
+        "name": "Construction Relic 4",
+        "skillID": "rielkConstruction:Construction",
+        "number": 4,
+        "modifiers": {
+          "rielkConstruction:bypassNonCombatSkillLevelCapAR": 5
+        }
+      },
+      {
+        "id": "ConstructionRelic5",
+        "name": "Construction Relic 5",
+        "skillID": "rielkConstruction:Construction",
+        "number": 5,
+        "modifiers": {
+                "rielkConstruction:skillEfficiencyCost": [
+                  {
+                    "skillID": "rielkConstruction:Construction",
+                    "value": -150
+                  }
+                ]
+        }
+      },
+      {
+        "id": "ConstructionRelic6",
+        "name": "Construction Relic 6",
+        "skillID": "rielkConstruction:Construction",
+        "number": 6,
+        "modifiers": {
+          "rielkConstruction:bypassGlobalDoubling": 10
+        }
+      }
+    ],
     "skillData": [
+      {
+        "skillID": "rielkConstruction:Construction",
+        "data": {
+          "rareDrops": [
+            {
+              "itemID": "rielkConstruction:Construction_Lesser_Relic",
+              "quantity": 300,
+              "requirements": [],
+              "chance": {
+                "type": "Fixed",
+                "chance": 0.1
+              },
+              "gamemodes": [
+                "melvorAoD:AncientRelics"
+              ]
+            }
+          ],
+          "ancientRelicSets": [
+            {
+              "realmID": "melvorD:Melvor",
+              "relicDrops": [
+                {
+                  "relicID": "rielkConstruction:ConstructionRelic1",
+                  "requirements": [],
+                  "chance": {
+                    "type": "Fixed",
+                    "chance": 0.0005
+                  }
+                },
+                {
+                  "relicID": "rielkConstruction:ConstructionRelic2",
+                  "requirements": [],
+                  "chance": {
+                    "type": "Fixed",
+                    "chance":  0.0005
+                  }
+                },
+                {
+                  "relicID": "rielkConstruction:ConstructionRelic3",
+                  "requirements": [],
+                  "chance": {
+                    "type": "Fixed",
+                    "chance":  0.0005
+                  }
+                },
+                {
+                  "relicID": "rielkConstruction:ConstructionRelic4",
+                  "requirements": [],
+                  "chance": {
+                    "type": "Fixed",
+                    "chance": 0.0005
+                  }
+                },
+                {
+                  "relicID": "rielkConstruction:ConstructionRelic5",
+                  "requirements": [],
+                  "chance": {
+                    "type": "Fixed",
+                    "chance": 0.0005
+                  }
+                }
+              ],
+              "completedRelicID": "rielkConstruction:ConstructionRelic6",
+              "levelUpUnlocks": [
+                20,
+                99
+              ]
+            }
+          ]
+        }
+      },
       {
         "skillID": "melvorAoD:Cartography",
         "data": {
@@ -72,7 +267,7 @@
           ]
         }
       },
-       {
+      {
         "id": "melvorAoD:RangedGolem",
         "lootTable": {
           "add": [
@@ -82,7 +277,7 @@
               "maxQuantity": 16,
               "weight": 125
             },
-              {
+            {
               "itemID": "rielkConstruction:Limestone_Bricks",
               "minQuantity": 2,
               "maxQuantity": 16,
@@ -94,13 +289,13 @@
               "maxQuantity": 10,
               "weight": 125
             },
-             {
+            {
               "itemID": "melvorD:Silver_Ore",
               "minQuantity": 1,
               "maxQuantity": 5,
               "weight": 75
             },
-              {
+            {
               "itemID": "melvorAoD:Imbued_Steel_Bar",
               "minQuantity": 1,
               "maxQuantity": 1,
@@ -108,11 +303,13 @@
             }
           ],
           "remove": [
-            "melvorD:Steel_Bar", "melvorD:Silver_Ore", "melvorAoD:Imbued_Steel_Bar"
+            "melvorD:Steel_Bar",
+            "melvorD:Silver_Ore",
+            "melvorAoD:Imbued_Steel_Bar"
           ]
         }
       },
-       {
+      {
         "id": "melvorAoD:EarthGolem",
         "lootTable": {
           "add": [
@@ -134,7 +331,7 @@
           ]
         }
       },
-       {
+      {
         "id": "melvorAoD:MagicGolem",
         "lootTable": {
           "add": [
@@ -158,7 +355,8 @@
             }
           ],
           "remove": [
-            "melvorD:Adamantite_Bar", "melvorD:Emerald"
+            "melvorD:Adamantite_Bar",
+            "melvorD:Emerald"
           ]
         }
       }

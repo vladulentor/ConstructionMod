@@ -34,6 +34,7 @@ export class Construction extends ArtisanSkill {
         this.tierMasteries = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionTierMastery');
         this.totalMasteryActions = new CompletionMap();
         this.hiddenRooms = new Set();
+        this.gamemode = undefined;
         this.recipeNumber = 0;
         this.recipeCountByTier = [];
         this._actionMode = undefined;
@@ -227,6 +228,7 @@ export class Construction extends ArtisanSkill {
         });
         return nodes;
     }
+
     getRareDropChance(level, chance) {
         switch (chance.type) {
             case 'Fixed':
@@ -236,6 +238,33 @@ export class Construction extends ArtisanSkill {
             case 'TotalMasteryScaling':
                 return cappedLinearFunction(chance.scalingFactor, chance.baseChance, chance.maxChance, this.game.completion.masteryProgress.currentCount.getSum());
         }
+    };
+
+    get capIncrease() {
+        return {
+            levelType: 'Standard',
+            fixedIncreases: Object.values(game.skills.allObjects)
+                .filter(skill => !skill.isCombat)
+                .map(skill => ({ skill, increase: Math.min(5, skill.maxLevelCap - skill.level), maximum: skill.maxLevelCap })),
+            setIncreases: [],
+            randomIncreases: [],
+            randomCount: 0,
+            randomSelection: new Set(),
+            randomIncreasesLeft: 0,
+        };
+    }
+    locateAncientRelic(relicSet, relic) {
+        this.queueAncientRelicFoundModal(relicSet, relic);
+        relicSet.addRelic(relic);
+        if (relic.id == "rielkConstruction:ConstructionRelic4")
+            game.increaseSkillLevelCaps(this.capIncrease, {
+                requirements: [],
+                given: false,
+                unlisteners: []
+            });
+        if (relicSet.isComplete)
+            this.queueAncientRelicFoundModal(relicSet, relicSet.completedRelic);
+        this.onAncientRelicUnlock();
     }
 
     queueMasteryBonusModal(bonus) {
@@ -291,21 +320,21 @@ export class Construction extends ArtisanSkill {
             return;
         }
         this.fixtures.allObjects.forEach(f => {
-            while(f.currentTier < x)
+            while (f.currentTier < x)
                 f.tierUp();
         })
     }
 
     computeTotalMasteryActions() {
-    this.totalMasteryActions.clear();
+        this.totalMasteryActions.clear();
 
-    const namespace = 'rielkConstruction'; 
-    let total = 0;
-    this.fixtures.forEach(fixture => {
-        total++;
-    });
-    this.totalMasteryActions.set(namespace, total);
-}
+        const namespace = 'rielkConstruction';
+        let total = 0;
+        this.fixtures.forEach(fixture => {
+            total++;
+        });
+        this.totalMasteryActions.set(namespace, total);
+    }
 
     get buildActionXP() {
         return this.activeBuildRecipe.baseExperience;
@@ -529,13 +558,20 @@ export class Construction extends ArtisanSkill {
     }
     // Efficiency-related functions
     /** Gets the efficiency chance for a given action */
+    // We can't disable efficiency from .jsons because malvs is a fuckEr
     getEfficiencyChance(action) {
-        return this.game.modifiers.getValue(
+        if (!this.isRelics)
+            this.isRelics = game.currentGamemode._localID == 'AncientRelics';
+
+        return (this.isRelics ? 0 : this.getBaseEfficiencyChance(action)) + this.game.modifiers.getValue("rielkConstruction:bypassEfficiencyChance", this.getActionModifierQuery(action))
+    }
+    getBaseEfficiencyChance(action) {
+        return Math.max(this.game.modifiers.getValue(
             "rielkConstruction:skillEfficiencyChance",
             this.getActionModifierQuery(action)
-        );
-    }
+        ), 0);
 
+    }
     /** Gets the cost multiplier for efficiency (default 2) */
     getEfficiencyCostMultiplier(action) {
         const defaultCostMult = 200;
@@ -559,8 +595,9 @@ export class Construction extends ArtisanSkill {
     _buildEfficiencyChancePotencySources(action) {
         const builder = new EfficiencySourceBuilder(this.game.modifiers, true);
         const query = this.getActionModifierQuery(action);
-        builder.addPotencySources("rielkConstruction:skillEfficiencyPotency", query);
-        builder.addChanceSources('rielkConstruction:skillEfficiencyChance', query);
+        builder.addPotencySources('rielkConstruction:skillEfficiencyPotency', query);
+        if (!this.isRelics) builder.addChanceSources('rielkConstruction:skillEfficiencyChance', query);
+        builder.addChanceSources('rielkConstruction:bypassEfficiencyChance', query)
         return builder;
     }
 
@@ -899,24 +936,22 @@ export class Construction extends ArtisanSkill {
                             if (skillIncrease.skill == this)
                                 this.applyLevelCapIncrease(skillIncrease);
                         });
-                        capIncrease.setIncreases.forEach(({ value }) => {
-                            if (skillIncrease.skill == this)
+                        capIncrease.setIncreases.forEach(({ skill, value }) => {
+                            if (skill == this)
                                 this.applySetLevelCap(value);
-                        }
-                        );
+                        });
                         break;
-                    case 'Abyssal':
+                   /* case 'Abyssal':
                         capIncrease.fixedIncreases.forEach((skillIncrease) => {
                             if (skillIncrease.skill == this)
                                 this.skill.applyAbyssalLevelCapIncrease(skillIncrease);
                         }
                         );
-                        capIncrease.setIncreases.forEach(({ value }) => {
-                            if (skillIncrease.skill == this)
-                                this.setAbyssalLevelCap(value);
-                        }
-                        );
-                        break;
+                        capIncrease.setIncreases.forEach(({ skill, value }) => {
+                            if (skill == this)
+                                this.applySetLevelCap(value);
+                        });
+                        break;*/
                 }
                 this.game.validateRandomLevelCapIncreases();
             })

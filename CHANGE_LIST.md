@@ -9,6 +9,10 @@ Entries marked with [TotH] or [AoD] indicate Throne of the Herald or Atlas of Di
 - Added a new Autumn-themed background in the settings.
 
 ---
+## Gamemodes
+- [AoD] Added Relics, a lesser Relic, and a Master Relic to Construction for Ancient Relics-enabled gamemodes.
+
+---
 ## Shop
 ### New Purchases
 - Added the "Saw" items in the Skill Upgrades section. They work like the Axe, Fishing Rod, or Pickaxe tool chains, but for Construction. They also increase Efficiency effects along with decreasing interval.
@@ -52,6 +56,7 @@ Entries marked with [TotH] or [AoD] indicate Throne of the Herald or Atlas of Di
 
 - These Beams are used to make Planks, and replace regular logs when crafting Arrow Shafts. And making arrow shafts out of Willow, Maple, Yew, and Magic Logs has been been removed. This is to bring more balance to Tree Types, as Teak and Mahogany previously had no exclusive purpose, and less general uses than other Tree Types.
 
+- Added a bonus of 1 additional Wood Beams quantity made to Fletching 50% Mastery Pool Bonus
 ---
 
 ## Crafting

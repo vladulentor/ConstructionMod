@@ -880,15 +880,14 @@
             {
               "skillID": "melvorD:Thieving",
               "value": -5
+            },
+             {
+              "skillID": "melvorD:Agility",
+              "value": -5
             }
           ],
           "thievingStealth": 25,
-          "skillXP": [
-            {
-              "skillID": "melvorD:Agility",
-              "value": 5
-            }
-          ],
+         
           "masteryXP": [
             {
               "skillID": "melvorD:Agility",
@@ -1253,8 +1252,7 @@
         "attackInterval": 350,
         "lifesteal": 0,
         "name": "Mana Surge",
-        "descriptionGenerator": "An <avoidable> attack that deals <damage> damage. On a hit, <hitEffect>.",
-        "description": "Attack thrice with reduced potency. Each attack has a low chance to inflict Burn, Frostburn, or poison."
+        "description": "MAGIC_WEAPON"
       },
       {
         "id": "Jam",
@@ -2897,10 +2895,10 @@
           "recipes": [
             {
               "id": "Normal_Beams",
-              "level": 5,
+              "level": 1,
               "productID": "rielkConstruction:Normal_Beams",
               "baseQuantity": 2,
-              "baseExperience": 10,
+              "baseExperience": 3,
               "categoryID": "rielkConstruction:Wood_Beams",
               "itemCosts": [
                 {
@@ -2912,10 +2910,10 @@
             },
             {
               "id": "Oak_Beams",
-              "level": 5,
+              "level": 15,
               "productID": "rielkConstruction:Oak_Beams",
               "baseQuantity": 2,
-              "baseExperience": 10,
+              "baseExperience": 5,
               "categoryID": "rielkConstruction:Wood_Beams",
               "itemCosts": [
                 {
@@ -2927,10 +2925,10 @@
             },
             {
               "id": "Teak_Beams",
-              "level": 5,
+              "level": 30,
               "productID": "rielkConstruction:Teak_Beams",
               "baseQuantity": 2,
-              "baseExperience": 10,
+              "baseExperience": 15,
               "categoryID": "rielkConstruction:Wood_Beams",
               "itemCosts": [
                 {
@@ -2942,10 +2940,10 @@
             },
             {
               "id": "Mahogany_Beams",
-              "level": 5,
+              "level": 50,
               "productID": "rielkConstruction:Mahogany_Beams",
               "baseQuantity": 2,
-              "baseExperience": 10,
+              "baseExperience": 25,
               "categoryID": "rielkConstruction:Wood_Beams",
               "itemCosts": [
                 {
@@ -2957,10 +2955,10 @@
             },
             {
               "id": "Redwood_Beams",
-              "level": 5,
+              "level": 70,
               "productID": "rielkConstruction:Redwood_Beams",
               "baseQuantity": 2,
-              "baseExperience": 10,
+              "baseExperience": 35,
               "categoryID": "rielkConstruction:Wood_Beams",
               "itemCosts": [
                 {
@@ -3720,7 +3718,8 @@
                 "rielkConstruction:Apparatus",
                 "rielkConstruction:Spell_Library",
                 "rielkConstruction:Telescope"
-              ]
+              ],
+              "newTooltip": true
             },
             {
               "id": "Outpost",
@@ -4115,14 +4114,10 @@
                 1,
                 2
               ],
+              "changeFunc": "addPotionMasteryTextThingFuckIt",
               "modifiers": {
-                "rielkConstruction:ChangeAddiIntoHighTier": 1,
-                "additionalPrimaryProductChance": [
-                  {
-                    "skillID": "melvorD:Herblore",
-                    "value": 7
-                  }
-                ]
+                "rielkConstruction:ExtraTier1Potions": 1,
+                "rielkConstruction:ChangeAddiIntoHighTier": 1
               }
             },
             {
@@ -4163,7 +4158,7 @@
                 ],
                 "potionChargePreservationChance": [
                   {
-                    "value": 5
+                    "value": 10
                   }
                 ]
               }
@@ -4254,7 +4249,7 @@
               "changeFunc": "addPotionMasteryTextThingFuckIt",
               "modifiers": {
                 "potionCharges": 25,
-                "rielkConstruction:ExtraTier1Potions": 100,
+                "rielkConstruction:ExtraTier1Potions": 2,
                 "rielkConstruction:reducePotionUpReq": -20
               }
             },
@@ -7250,7 +7245,7 @@
                 },
                 {
                   "id": "melvorF:Runecrafting_Scroll_Of_XP",
-                  "quantity": 5000
+                  "quantity": 250
                 }
               ],
               "currencyCosts": [],
@@ -7460,7 +7455,7 @@
                 },
                 {
                   "id": "melvorF:Wizards_Scroll",
-                  "quantity": 5000
+                  "quantity": 2500
                 },
                 {
                   "id": "melvorD:Red_Wizard_Hat",
@@ -7621,7 +7616,8 @@
               "currencyCosts": [],
               "modifiers": {
                 "skillPreservationChance": 0.5,
-                "bankSpace": 4
+                "bankSpace": 4,
+                "rielkConstruction:bypassGlobalDoubling": 10
               }
             },
             {
@@ -7779,7 +7775,12 @@
               ],
               "modifiers": {
                 "rielkConstruction:spoof_AddRunesAstrology": 1,
-                "rielkConstruction:spoof_UpgradeScrollOfEssence": 1
+                "rielkConstruction:spoof_UpgradeScrollOfEssence": [
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Astrology"
+                  }
+                ]
               }
             },
             {
@@ -7818,7 +7819,7 @@
                   {
                     "skillID": "melvorD:Astrology",
                     "itemID": "melvorD:Rune_Essence",
-                    "value": 3
+                    "value": 2
                   }
                 ]
               }
@@ -7858,8 +7859,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "increasedChanceStardust": 2,
-                "increasedChanceGoldenStardust": 2.5,
+                "increasedChanceGoldenStardust": 2,
+                "increasedChanceStardust": 2.5,
                 "randomProductChance": [
                   {
                     "skillID": "melvorD:Astrology",
@@ -7958,13 +7959,7 @@
               ],
               "modifiers": {
                 "rielkConstruction:spoof_AddStarStandardLevel": 1,
-                "rielkConstruction:UnlockConvergence": 1,
-                "masteryXP": [
-                  {
-                    "value": 6,
-                    "skillID": "melvorD:Astrology"
-                  }
-                ]
+                "rielkConstruction:UnlockConvergence": 1
               }
             },
             {
@@ -8190,7 +8185,7 @@
                 4
               ],
               "modifiers": {
-                "rielkConstruction:skillEfficiencyChance": [
+                "rielkConstruction:bypassEfficiencyChance": [
                   {
                     "skillID": "rielkConstruction:Construction",
                     "value": 9
@@ -8559,7 +8554,7 @@
                 },
                 {
                   "id": "melvorF:Slayer_Binding_Scroll",
-                  "quantity": 1300
+                  "quantity": 500
                 },
                 {
                   "id": "melvorF:Slayer_Platebody_Basic",
@@ -8599,7 +8594,7 @@
                 },
                 {
                   "id": "melvorF:Slayer_Deterer",
-                  "quantity": 3600
+                  "quantity": 1500
                 },
                 {
                   "id": "melvorF:Slayer_Helmet_Strong",
@@ -9859,7 +9854,9 @@
         "id": "spoof_UpgradeScrollOfEssence",
         "allowedScopes": [
           {
-            "scopes": {},
+            "scopes": {
+              "skill": true
+            },
             "descriptions": [
               {
                 "text": "adds runes in astrology, VERY cool bepis addition.",
@@ -9926,6 +9923,64 @@
             ]
           }
         ]
+      },
+      {
+        "id": "allCombatSkillsFlatHiddenLevel",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Adds hidden skill levels to all combat skills",
+                "lang": "MODIFIER_DATA_allCombatSkillsFlatHiddenLevel"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bypassNonCombatSkillLevelCapAR",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Increase non-combat Skill Level Cap in Ancient Relics",
+                "lang": "MODIFIER_DATA_bypassNonCombatSkillLevelCapAR"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bypassGlobalDoubling",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Increases Doubling Globally (bypasses gamemode)",
+                "lang": "MODIFIER_DATA_bypassGlobalDoubling"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bypassEfficiencyChance",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true
+            },
+            "descriptions": [
+              {
+                "text": "Bypasses eff chance",
+                "lang": "MODIFIER_DATA_bypassEfficiencyChance"
+              }
+            ]
+          }
+        ]
       }
     ],
     "combatEffects": [
@@ -9933,7 +9988,7 @@
         "id": "Ward",
         "templateID": "melvorD:StaticTargetCountingModifier",
         "name": "Rune Ward",
-        "media": "assets/replacements/barrier.png",
+        "media": "assets/replacements/barrier.webp",
         "target": "Self",
         "parameters": [
           {

@@ -413,10 +413,8 @@ export class Construction extends ArtisanSkill {
         this.sortMilestones();
     }
      addTotalCurrentMasteryToCompletion(completion) {
-        console.log("Before loop:", completion);
          this.fixtures.forEach(fixture => {
              let totalTierLevel = fixture.currentTier;
-             // Each fixture counts as one pseudo-action
              const namespace = 'rielkConstruction';
              completion.add(namespace, totalTierLevel);
          });

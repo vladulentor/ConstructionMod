@@ -30,9 +30,5 @@ export function addSpecialAttack() {
         functionList.push({ name: "magic", attack:game.specialAttacks.getObjectSafe('rielkConstruction:Mana_Surge')})
         guardMagic = 1;
     }
-    /* if (constr.fixtures.getObjectSafe('rielkConstruction:Spell_Library').currentTier == 4 && guardMagic == 0) {
-        functionListMap.set("magic", game.specialAttacks.getObjectSafe('rielkConstruction:Mana_Surge'))
-        guardMagic = 1;
-    }*/
    addEffecttoWeapons(functionList);
 }

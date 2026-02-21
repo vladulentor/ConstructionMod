@@ -48,6 +48,7 @@ const {addComboRunesonElemRunes} = await loadModule('src/patches/skillPatches/ru
 const { patchThievingTargets } = await loadModule('src/patches/skillPatches/thieving/patchThievingTargets.mjs');
 
 const { nerfBearDevil } = await loadModule('src/patches/skillPatches/summoning/nerfBearDevil.mjs');
+const { addMarkSuperLevels } = await loadModule('src/patches/skillPatches/summoning/addMarkSuperLevels.mjs');
 
 
 
@@ -76,6 +77,7 @@ export function patchSkillsBeforeDataReg(ctx) {
         patchRunePreservationCap(ctx);
         addHiddenLevelsToAllsSills(ctx);
         patchPrayerPointsSpending(ctx);
+        addMarkSuperLevels(ctx);
         nerfBearDevil();
 }
 export function patchSkillsAfterDataReg(ctx) {

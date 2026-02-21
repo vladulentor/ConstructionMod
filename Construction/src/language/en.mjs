@@ -77,6 +77,7 @@ export const language = {
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Your House\'s Tier starts at 0. As you build Furniture and fill each room, your House\'s tier will improve.',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'When all rooms contain Furniture of a required tier or higher, your House Tier will increase. You will unlock permanent Construction bonuses and recieve supplies.',
     'MENU_TEXT_REWARDS': 'Rewards',
+    'MENU_TEXT_MARKS_UPGRADED':'Training the respective Skill while that Familiar is equipped will <strong class="construction-success fuck-you">QUADRUPLE</strong> the drop rate of its Marks.',
 
     'MENU_MAX_TIER': 'Max Tier',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN': 'Chance to complete ${potency} actions at once.',
@@ -98,6 +99,7 @@ export const language = {
     'MENU_TOOLTIP_CONVERGENCE_EXPL': 'When ${rune} and ${dust} are drawn together while Studying Stars, a ${conv} occurs.',
     'MENU_TOOLTIP_CONVERGENCE_CHANCE': 'Chance of ${conv}:',
     'MENU_TOOLTIP_CONVERGENCE_LOCKED': 'Further explore this Constellation to align this Star',
+    'MENU_TEXT_SUMMONING_MARK_POPUP': 'You have <span class="font-w700 construction-success">deepend your bond</span> with this Familiar! Depending on your ${spiritimg}<span class="font-w700 construction-success">${spiritname}</span>\'s Tier.',
 
     'MISC_TEXT_Saw': 'Bronze Saw',
     'MENU_TEXT_Saw': 'Current Saw',
@@ -209,7 +211,7 @@ export const language = {
     'MODIFIER_DATA_increase_skillEfficiencyChance': '+${value}% chance to complete extra actions in ${skillName}',
     'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '-${value}% chance to complete extra actions when making ${categoryName} in ${skillName}',
     'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '+${value}% chance to complete extra actions when making ${categoryName} in ${skillName}',
-            'MODIFIER_DATA_skillEfficiencyChanceforSubcategory':'${value}% chance to complete extra actions when making ${subcategoryName} in ${skillName}',
+    'MODIFIER_DATA_skillEfficiencyChanceforSubcategory': '${value}% chance to complete extra actions when making ${subcategoryName} in ${skillName}',
 
     'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra Materials or Progress made when completing extra actions when making ${categoryName} in ${skillName}',
     'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra Materials or Progress made when completing extra actions while crafting ${categoryName} in ${skillName}',
@@ -249,7 +251,7 @@ export const language = {
     'MODIFIER_DATA_fishPerfectCookedFish': 'Cooked Fish caught in Fishing are Perfect Quality',
     'MODIFIER_DATA_runecraftingRuneCostReduction': '${value}% Rune Costs for Equipment or Weapons in ${skillName} (cannot be reduced below 1)',
     'MODIFIER_DATA_ComboRunesonElemRunes': '${value} related Combination Runes received from ${skillName} when making Elemental Runes',
-    'MODIFIER_DATA_nullifyPrayerPointsUnder':'Active Prayers totaling up to ${value} Prayer Points (before Reductions) are free but give no ${skillName} Skill XP',
+    'MODIFIER_DATA_nullifyPrayerPointsUnder': 'Active Prayers totaling up to ${value} Prayer Points (before Reductions) are free but give no ${skillName} Skill XP',
     'MODIFIER_DATA_runePreservationCap': '${value}% Rune Preservation cap',
     'MODIFIER_DATA_skillItemDoublingChanceSubcategory': '${value}% Chance to Double Items in ${skillName} when making ${subcategoryName}', 'MODIFIER_DATA_spoof_UpgradeScrollOfEssence': 'Upgrade "Scroll of Essence" to increase chance to find Rune Essence in ${skillName}',
     'MODIFIER_DATA_spoof_AddStarStandardLevel': 'Increase Standard Star Max Level by ${value}',
@@ -263,6 +265,13 @@ export const language = {
     'ITEM_DESCRIPTION_BEAR_DEVIL_SYNERGY': 'While using the Controlled Heat Potions, +5% Firemaking Skill XP and Bonfire duration increased by 15%. Charges are used per Firemaking action and lit Bonfire.',
     'RIELK_SYNERGY_Pig_Bee': '+10% Cooking Skill XP and Mastery XP while not Passive Cooking',
     'MODIFIER_DATA_fishingTreasureNoReplace': 'Also catch fish when finding Junk or Special items',
+    'MODIFIER_DATA_TabletFightBuffBasedOnMarkLevel': '${value}% increased Max Hit from Familiars per Mark Level above 5',
+    'MODIFIER_DATA_TabletAmountBuffBasedOnMarkLevel': '${value} base quantity of tablets gained in ${skillName} per Mark Level above 5',
+    'MODIFIER_DATA_TabletEffectBuffBasedOnMarkLevel': '${value}% increased Bonuses from Familiars per Mark Level above 5',
+    'MODIFIER_DATA_IncreaseMarkChance': 'Double the Drop Rate of Marks when training their respective Skills while they are Equipped',
+    'MODIFIER_DATA_Spoof_UnlockMarkSuperLevels': 'Max levels for Marks in ${skillName} are increased by ${value}',
+
+
     'ITEM_NAME_Cursed_Hook': 'Cursed Hook',
     'ITEM_NAME_Tar_Jar': 'Jar of Tar',
     'ITEM_NAME_Mariners_Blouse': 'Mariner\'s Top',
@@ -277,6 +286,7 @@ export const language = {
     'RIELK_CONMOD_FOCUSEDCOOKING_2': '+5% Perfect Cook, Doubling, and Preservation Chance in Cooking while not Passive Cooking',
     'RIELK_CONMOD_FOCUSEDCOOKING_3': '+7% Perfect Cook Chance, Additional Perfect Item Chance, and Preservation Cap in Cooking while not Passive Cooking',
     'MENU_TEXT_STOKE_BONFIRE': 'Stoke Bonfire (Costs ${qty} ${logName})',
+
     'MENU_BONFIRE_SOURCE': '${logName} Bonfire',
 
     'BONFIRE_ROARING_NOTICE': 'Roaring Bonfires deplete while their corresponding Skill is Active',
@@ -356,6 +366,8 @@ export const language = {
     'CONSTRUCTION_FIXTURE_NAME_ Black_Market': 'Black Market',
     'CONSTRUCTION_FIXTURE_NAME_ Desk': 'Fireplace',
     'CONSTRUCTION_FIXTURE_NAME_ Dragon_Statue': 'Dragon Statue',
+    'CONSTRUCTION_FIXTURE_NAME_ Spirit_Catcher': 'Spirit Catcher',
+
     'CONSTRUCTION_FIXTURE_NAME_ Fire_Pit': 'Fire Pit',
     'CONSTRUCTION_FIXTURE_NAME_ Flower_Pots': 'Composter',
     'CONSTRUCTION_FIXTURE_NAME_ Forge': 'Forge',

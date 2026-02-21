@@ -1,7 +1,20 @@
-export const language = {
+export const language = {'MODIFIER_DATA_Spoof_UnlockMarkSuperLevels': 'Die maximale Stufe für Marken in ${skillName} wird um ${value} erhöht',
+    
+    'MODIFIER_DATA_TabletFightBuffBasedOnMarkLevel': '${value}% erhöhter Maximalschaden von Vertrauten pro Markstufe über 5',
+'MODIFIER_DATA_TabletAmountBuffBasedOnMarkLevel': '${value} Basisanzahl an Tablets in ${skillName} pro Markstufe über 5',
+'MODIFIER_DATA_TabletEffectBuffBasedOnMarkLevel': '${value}% erhöhte Boni von Vertrauten pro Markstufe über 5',
+'MODIFIER_DATA_IncreaseMarkChance': 'Verdoppelt die Droprate von Marken beim Trainieren ihrer jeweiligen Fertigkeiten, während sie ausgerüstet sind',
     'SKILL_RELIC': '${skill}-Relikt ${number}',
 'SKILL_MASTER_RELIC':'${skill}-Meisterrelikt',
-
+'MENU_TEXT_MARKS_UPGRADED':'Das Trainieren der jeweiligen Fertigkeit, während dieser Vertraute ausgerüstet ist, <strong class="construction-success fuck-you">VERVIERFACHT</strong> die Droprate seiner Male.',
+'MENU_TEXT_SUMMONING_MARK_POPUP': 'Du hast <span class="font-w700 construction-success">deine Bindung vertieft</span> mit diesem Vertrauten! Abhängig vom Tier deines <br> ${spiritimg}<span class="font-w700 construction-success">${spiritname}</span>.',
+'ITEM_NAME_Summoning_Familiar_Bee': 'Biene',
+'MODIFIER_DATA_skillEfficiencyChanceforSubcategory': '${value}% Chance, zusätzliche Aktionen beim Herstellen von ${subcategoryName} in ${skillName} abzuschließen',
+'MODIFIER_DATA_nullifyPrayerPointsUnder': 'Aktive Gebete mit insgesamt bis zu ${value} Gebetspunkten (vor Reduktionen) sind kostenlos, gewähren jedoch keine ${skillName}-Fertigkeits-EP',
+'MODIFIER_DATA_skillItemDoublingChanceSubcategory': '${value}% Chance, Gegenstände in ${skillName} beim Herstellen von ${subcategoryName} zu verdoppeln',
+'RIELK_SYNERGY_Pig_Bee': '+10% Koch-Fertigkeits-EP und Meisterschafts-EP, solange nicht passiv gekocht wird',
+'RIELK_SYNERGY_Bear_Bee': 'Solange der Trank „Zweifach Gemessen“ in Konstruktion aktiv ist, werden die Ressourcenkosten beim Abschließen zusätzlicher Aktionen um 0,2 reduziert',
+'CONSTRUCTION_FIXTURE_NAME_ Spirit_Catcher': 'Geisterfänger',
     'COMBAT_MISC_SHIELD_BROKEN': 'Schutzschild',
 'MENU_TOOLTIP_CONVERGENCE': 'Konvergenz',
 'MENU_TOOLTIP_GOLDVERGENCE': 'Goldene Konvergenz',

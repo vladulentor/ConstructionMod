@@ -619,7 +619,7 @@
           "rielkConstruction:skillEfficiencyPotency": [
             {
               "skillID": "rielkConstruction:Construction",
-              "value": 10
+              "value": 25
             }
           ]
         },
@@ -2565,8 +2565,8 @@
           "synergies": [
             {
               "summonIDs": [
-                "melvorF:Monkey",
-                "rielkConstruction:Bee"
+                "rielkConstruction:Bee",
+                "melvorF:Monkey"
               ],
               "modifiers": {
                 "skillItemDoublingChance": [
@@ -2653,12 +2653,6 @@
               "consumesOn": [
                 {
                   "type": "CookingAction",
-                  "realms": [
-                    "melvorD:Melvor"
-                  ]
-                },
-                {
-                  "type": "ConstructionAction",
                   "realms": [
                     "melvorD:Melvor"
                   ]
@@ -3720,8 +3714,7 @@
                 "rielkConstruction:Apparatus",
                 "rielkConstruction:Spell_Library",
                 "rielkConstruction:Telescope"
-              ],
-              "newTooltip": true
+              ]
             },
             {
               "id": "Outpost",
@@ -3736,10 +3729,11 @@
               "id": "Refectory",
               "name": "Refectory",
               "fixtures": [
-                "rielkConstruction:Dragon_Statue",
+                "rielkConstruction:Spirit_Catcher",
                 "rielkConstruction:Prayer_Altar",
                 "rielkConstruction:Rune_Altar"
-              ]
+              ],
+              "newTooltip": true
             },
             {
               "id": "Training_Room",
@@ -3810,15 +3804,15 @@
               ]
             },
             {
-              "id": "Dragon_Statue",
-              "name": "Dragon Statue",
-              "media": "assets/fixtures/dragon_statue.webp",
+              "id": "Spirit_Catcher",
+              "name": "Spirit Catcher",
+              "media": "assets/fixtures/spirit_catcher.webp",
               "recipes": [
-                "rielkConstruction:Dragon_Statue1",
-                "rielkConstruction:Dragon_Statue2",
-                "rielkConstruction:Dragon_Statue3",
-                "rielkConstruction:Dragon_Statue4",
-                "rielkConstruction:Dragon_Statue5"
+                "rielkConstruction:Spirit_Catcher1",
+                "rielkConstruction:Spirit_Catcher2",
+                "rielkConstruction:Spirit_Catcher3",
+                "rielkConstruction:Spirit_Catcher4",
+                "rielkConstruction:Spirit_Catcher5"
               ]
             },
             {
@@ -4892,202 +4886,281 @@
               }
             },
             {
-              "id": "Dragon_Statue1",
+              "id": "Spirit_Catcher1",
               "level": 25,
               "baseExperience": 15,
-              "baseActionCost": 100,
+              "baseActionCost": 50,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Clay_Bricks",
+                  "id": "rielkConstruction:Iron_Nails",
                   "quantity": 250
                 },
                 {
-                  "id": "rielkConstruction:Normal_Planks",
-                  "quantity": 150
+                  "id": "melvorD:Steel_Bar",
+                  "quantity": 200
                 },
                 {
-                  "id": "melvorD:Steel_Bar",
-                  "quantity": 600
-                }
-              ],
-              "currencyCosts": [
-                {
-                  "id": "melvorD:GP",
-                  "quantity": 30000
+                  "id": "melvorD:Bowstring",
+                  "quantity": 10
                 }
               ],
               "modifiers": {
-                "flatMaxHitpoints": 2,
-                "currencyGain": [
+                "skillXP": [
                   {
-                    "currencyID": "melvorD:GP",
-                    "value": 2.5
+                    "value": 4,
+                    "skillID": "melvorD:Summoning"
+                  }
+                ],
+                "flatBasePrimaryProductQuantity": [
+                  {
+                    "skillID": "melvorD:Summoning",
+                    "value": 1
                   }
                 ]
               }
             },
             {
-              "id": "Dragon_Statue2",
+              "id": "Spirit_Catcher2",
               "level": 45,
               "baseExperience": 50,
-              "baseActionCost": 250,
+              "baseActionCost": 150,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Limestone_Bricks",
+                  "id": "rielkConstruction:Steel_Nails",
                   "quantity": 500
                 },
                 {
-                  "id": "rielkConstruction:Oak_Planks",
-                  "quantity": 150
+                  "id": "melvorD:Mithril_Bar",
+                  "quantity": 500
                 },
                 {
-                  "id": "melvorD:Mithril_Bar",
-                  "quantity": 2000
-                }
-              ],
-              "currencyCosts": [
+                  "id": "melvorF:Summoning_Shard_Red",
+                  "quantity": 750
+                },
                 {
-                  "id": "melvorD:GP",
-                  "quantity": 125000
+                  "id": "melvorF:Summoning_Shard_Green",
+                  "quantity": 750
                 }
               ],
               "modifiers": {
-                "lifesteal": 5,
-                "currencyGain": [
+                "masteryXP": [
                   {
-                    "currencyID": "melvorD:GP",
-                    "value": 5
+                    "value": 6,
+                    "skillID": "melvorD:Summoning"
                   }
-                ]
+                ],
+                "flatTier1SummoningShardCost": -1
               }
             },
             {
-              "id": "Dragon_Statue3",
+              "id": "Spirit_Catcher3",
               "level": 60,
               "baseExperience": 120,
-              "baseActionCost": 400,
+              "baseActionCost": 350,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Granite_Bricks",
+                  "id": "rielkConstruction:Mithril_Nails",
                   "quantity": 1000
                 },
                 {
-                  "id": "rielkConstruction:Teak_Planks",
-                  "quantity": 150
+                  "id": "melvorD:Adamantite_Bar",
+                  "quantity": 2500
                 },
                 {
-                  "id": "melvorD:Adamantite_Bar",
-                  "quantity": 4000
-                }
-              ],
-              "currencyCosts": [
+                  "id": "melvorF:Summoning_Shard_Blue",
+                  "quantity": 3000
+                },
                 {
-                  "id": "melvorD:GP",
-                  "quantity": 3000000
+                  "id": "melvorF:Summoning_Shard_Silver",
+                  "quantity": 3000
                 }
               ],
+              "changeFunc": "addMarkExtraLevels",
               "modifiers": {
-                "combatLootDoublingChance": 8,
-                "currencyGain": [
+                "rielkConstruction:TabletEffectBuffBasedOnMarkLevel": [
                   {
-                    "currencyID": "melvorD:GP",
-                    "value": 15
+                    "skillID": "melvorD:Summoning",
+                    "value": 10
                   }
-                ]
+                ],
+                "nonShardSummoningCostReduction": [
+                  {
+                    "realmID": "melvorD:Melvor",
+                    "value": -15
+                  }
+                ],
+                "flatTier2SummoningShardCost": -1
               }
             },
             {
-              "id": "Dragon_Statue4",
+              "id": "Spirit_Catcher4",
               "level": 79,
               "baseExperience": 650,
               "baseActionCost": 500,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Marble_Bricks",
+                  "id": "rielkConstruction:Adamantite_Nails",
                   "quantity": 2500
                 },
                 {
-                  "id": "rielkConstruction:Mahogany_Planks",
-                  "quantity": 150
+                  "id": "melvorD:Runite_Bar",
+                  "quantity": 5000
                 },
                 {
-                  "id": "melvorD:Runite_Bar",
-                  "quantity": 8000
+                  "id": "melvorF:Summoning_Shard_Gold",
+                  "quantity": 6500
+                },
+                {
+                  "id": "melvorF:Summoning_Shard_Black",
+                  "quantity": 6500
                 }
               ],
-              "currencyCosts": [
-                {
-                  "id": "melvorD:GP",
-                  "quantity": 10000000
-                }
+              "changeFunc": "addMarkExtraLevels",
+              "shinyMods": [
+                1,
+                2,
+                3
               ],
               "modifiers": {
-                "currencyGain": [
+                "rielkConstruction:Spoof_UnlockMarkSuperLevels": [
                   {
-                    "currencyID": "melvorD:GP",
-                    "value": 30
+                    "skillID": "melvorD:Summoning",
+                    "value": 2
                   }
-                ]
-              },
-              "shinyMods": [
-                1
-              ],
-              "enemyModifiers": {
-                "flatResistance": [
+                ],
+                "rielkConstruction:TabletAmountBuffBasedOnMarkLevel": [
                   {
-                    "damageTypeID": "melvorD:Normal",
-                    "value": -5
+                    "skillID": "melvorD:Summoning",
+                    "value": 2
                   }
-                ]
+                ],
+                "flatTier3SummoningShardCost": -1
               }
             },
             {
-              "id": "Dragon_Statue5",
+              "id": "Spirit_Catcher5",
               "level": 98,
               "baseExperience": 1000,
               "baseActionCost": 750,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
-                  "id": "rielkConstruction:Magic_Bricks",
-                  "quantity": 5000
-                },
-                {
-                  "id": "rielkConstruction:Redwood_Planks",
-                  "quantity": 300
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 10000
                 },
                 {
                   "id": "melvorD:Dragonite_Bar",
                   "quantity": 10000
-                }
-              ],
-              "currencyCosts": [
+                },
                 {
-                  "id": "melvorD:GP",
-                  "quantity": 150000000
+                  "id": "melvorF:Summoning_Familiar_Golbin_Thief",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Ent",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Occultist",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Mole",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Wolf",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Octopus",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Minotaur",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Pig",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Centaur",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Crow",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Witch",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Leprechaun",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Cyclops",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Monkey",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Yak",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Salamander",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Unicorn",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Bear",
+                  "quantity": 100
+                },
+                {
+                  "id": "rielkConstruction:Summoning_Familiar_Bee",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Dragon",
+                  "quantity": 100
+                },
+                {
+                  "id": "melvorF:Summoning_Familiar_Devil",
+                  "quantity": 100
                 }
               ],
+              "changeFunc": "addMarkExtraLevels",
               "shinyMods": [
                 1,
-                2
+                2,
+                3
               ],
               "modifiers": {
-                "flatResistance": [
+                "rielkConstruction:Spoof_UnlockMarkSuperLevels": [
                   {
-                    "damageTypeID": "melvorD:Normal",
-                    "value": 5
+                    "skillID": "melvorD:Summoning",
+                    "value": 2
                   }
                 ],
-                "currencyGain": [
+                "rielkConstruction:TabletFightBuffBasedOnMarkLevel": [
                   {
-                    "currencyID": "melvorD:GP",
-                    "value": 40
+                    "skillID": "melvorD:Summoning",
+                    "value": 10
                   }
-                ]
+                ],
+                "rielkConstruction:IncreaseMarkChance": 100
               }
             },
             {
@@ -7016,8 +7089,8 @@
             },
             {
               "id": "Prayer_Altar1",
-              "level": 8,
-              "baseExperience": 10,
+              "level": 17,
+              "baseExperience": 17,
               "baseActionCost": 20,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -7224,8 +7297,8 @@
             },
             {
               "id": "Rune_Altar1",
-              "level": 17,
-              "baseExperience": 17,
+              "level": 8,
+              "baseExperience": 10,
               "baseActionCost": 25,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -8644,18 +8717,7 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillInterval": [
-                  {
-                    "value": -4,
-                    "skillID": "melvorD:Summoning"
-                  }
-                ],
-                "skillXP": [
-                  {
-                    "value": 4,
-                    "skillID": "melvorD:Summoning"
-                  }
-                ]
+                "increasedSlayerCoins": 5,
               }
             },
             {
@@ -8683,6 +8745,10 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2
+              ],
               "modifiers": {
                 "damageDealtToSlayerAreaMonsters": 5,
                 "flatSlayerAreaEffectNegation": 5
@@ -8713,18 +8779,14 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [
-                1,
-                2
-              ],
               "modifiers": {
-                "summoningChargePreservationChance": 5,
-                "flatBasePrimaryProductQuantity": [
+                "skillXP": [
                   {
-                    "skillID": "melvorD:Summoning",
-                    "value": 5
+                    "value": 10,
+                    "skillID": "melvorD:Slayer"
                   }
-                ]
+                ],
+                "increasedSlayerCoins": 10
               }
             },
             {
@@ -8766,17 +8828,10 @@
                 }
               ],
               "shinyMods": [
-                1,
-                2
+                1
               ],
               "modifiers": {
-                "skillInterval": [
-                  {
-                    "value": -6,
-                    "skillID": "melvorD:Summoning"
-                  }
-                ],
-                "flatSummoningShardCost": -1
+                "damageDealtToSlayerAreaMonsters": 7
               }
             },
             {
@@ -10087,6 +10142,88 @@
                 "includeSign": false,
                 "text": "makes prayer points go bye bye",
                 "lang": "MODIFIER_DATA_nullifyPrayerPointsUnder"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Spoof_UnlockMarkSuperLevels",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true
+            },
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "increases mark max level by x",
+                "lang": "MODIFIER_DATA_Spoof_UnlockMarkSuperLevels"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "TabletEffectBuffBasedOnMarkLevel",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true
+            },
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "makes prayer points go bye bye",
+                "lang": "MODIFIER_DATA_TabletEffectBuffBasedOnMarkLevel"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "TabletAmountBuffBasedOnMarkLevel",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true
+            },
+            "descriptions": [
+              {
+                "text": "makes prayer points go bye bye",
+                "lang": "MODIFIER_DATA_TabletAmountBuffBasedOnMarkLevel"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "TabletFightBuffBasedOnMarkLevel",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true
+            },
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "makes prayer points go bye bye",
+                "lang": "MODIFIER_DATA_TabletFightBuffBasedOnMarkLevel"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IncreaseMarkChance",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "makes prayer points go bye bye",
+                "lang": "MODIFIER_DATA_IncreaseMarkChance"
               }
             ]
           }

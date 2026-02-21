@@ -23,7 +23,7 @@ export function patchPrayerPointsSpending({ patch }) {
     Player.prototype.DeterminetoNullifyPrayerPoints = function () {
         let totalcost = 0;
         this.activePrayers.forEach(prayer => totalcost += prayer.totalPoints); // Note, we don't use prayer cost changes to determine if to nullify this or not, since that's better in my opinion
-        let threshold = game.modifiers.getValue("rielkConstruction:nullifyPrayerPointsUnder", ModifierQuery.EMPTY);
+        let threshold = game.modifiers.getValue("rielkConstruction:nullifyPrayerPointsUnder", ModifierQuery.ANY_SKILL);
         if (threshold > 1)
             threshold -=1
         if (threshold > 3 ) // Jank to a degree unseen before, but the UX and wording is too hard to be made into an additive multiplier so it reads as superlative and we make it that using this code
@@ -33,7 +33,7 @@ export function patchPrayerPointsSpending({ patch }) {
     };
     patch(Prayer, "addXP").before(function(amount){ // Overwrite so no xp is added when prayer points are nullified
         //Note this may cause unintended side effects
-        if (game.combat.player.DeterminetoNullifyPrayerPoints() && !checkifcangainprayerxp(this.level, game.modifiers.getValue("rielkConstruction:nullifyPrayerPointsUnder", ModifierQuery.EMPTY) ))
+        if (game.combat.player.DeterminetoNullifyPrayerPoints() && !checkifcangainprayerxp(this.level, game.modifiers.getValue("rielkConstruction:nullifyPrayerPointsUnder", ModifierQuery.ANY_SKILL) ))
             return 0
         return amount
     })

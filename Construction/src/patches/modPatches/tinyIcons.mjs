@@ -14,7 +14,8 @@ export function tinyIconsCompatibility(ctx) {
         ['specialattack', 'assets/media/main/special_attack.png'],
         ['aurora', 'assets/media/skills/combat/auroras.png'],
         ['rune_essence', game.items.getObjectByID('melvorD:Rune_Essence').media],
-        ['convergence', ctx.getResourceUrl('assets/others/convergence.webp')]
+        ['convergence', ctx.getResourceUrl('assets/others/convergence.webp')],
+        ['mark', 'assets/media/skills/summoning/mark_4_256.png' ]
 
 
     ]
@@ -94,8 +95,13 @@ export function tinyIconsCompatibility(ctx) {
 
 
  icons.addModifier('rielkConstruction:ComboRunesonElemRunes', 'rune_essence');
- icons.addModifier(' rielkConstruction:runePreservationCap', 'preservation');
+ icons.addModifier('rielkConstruction:runePreservationCap', 'preservation');
 
  icons.addModifier('rielkConstruction:nullifyPrayerPointsUnder', 'nulled');
 
+  icons.addModifier('rielkConstruction:TabletEffectBuffBasedOnMarkLevel', 'mark');
+ icons.addModifier('rielkConstruction:Spoof_UnlockMarkSuperLevels', 'mark');
+ icons.addModifier('rielkConstruction:TabletFightBuffBasedOnMarkLevel', 'mark');
+ icons.addModifier('rielkConstruction:IncreaseMarkChance', 'loot');
+ 
 }

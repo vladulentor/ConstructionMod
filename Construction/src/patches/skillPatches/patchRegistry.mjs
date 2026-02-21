@@ -34,6 +34,7 @@ const { addSaplingBranchDrop } = await loadModule("src/patches/skillPatches/fire
 
 const { addBonusesToTreeMastery } = await loadModule("src/patches/skillPatches/woodcutting/addBonusesToTreeMastery.mjs");
 
+const { addMarkExtraLevels } = await loadModule('src/patches/skillPatches/summoning/addMarkSuperLevels.mjs');
 
 
 
@@ -54,5 +55,6 @@ export const EffectRegistry = {
   increaseRuneReduction,
   addSpecialAttack,
   addRuneEssence,
-  addConstellationLevels
+  addConstellationLevels,
+  addMarkExtraLevels
 };

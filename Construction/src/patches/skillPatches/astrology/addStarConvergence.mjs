@@ -141,7 +141,6 @@ export function addStarConvergence({ patch }) {
       }
       else
         this.convergenceBox?.classList.add('d-none')
-      console.log(constellation);
     }
   });
 

@@ -41,6 +41,20 @@ body.darkMode.superDark .bg-rielk-construction
 {
     background-color: #000!important
 }
+
+.gold-marks {
+  position: relative;
+    filter: hue-rotate(212deg) saturate(1.5);
+}
+
+.gold-marks::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: orange;
+  mix-blend-mode: color;
+  pointer-events: none; /* keeps clicks through it */
+}
 .modifier-box.locked {
   opacity: 0.85;
 }
@@ -66,6 +80,15 @@ body.darkMode.superDark .bg-rielk-construction
 body.darkMode .text-success.fuck-you {
   color: #fca32f !important;
 }
+.bg-construction-success{
+    background-color: #fca32f !important;
+
+}
+body.darkMode .bg-success.fuck-you {
+  background-color: #fca32f !important;
+}
+
+
 
 body.darkMode .text-danger.fuck-you {
   color: #fca32f !important;

@@ -560,10 +560,10 @@ export class Construction extends ArtisanSkill {
     /** Gets the efficiency chance for a given action */
     // We can't disable efficiency from .jsons because malvs is a fuckEr
     getEfficiencyChance(action) {
-        if (!this.isRelics)
-            this.isRelics = game.currentGamemode._localID == 'AncientRelics';
+        if (this.shouldDisableEfficiency === undefined)
+            this.shouldDisableEfficiency = game.currentGamemode.disableItemDoubling;
 
-        return (this.isRelics ? 0 : this.getBaseEfficiencyChance(action)) + this.game.modifiers.getValue("rielkConstruction:bypassEfficiencyChance", this.getActionModifierQuery(action))
+        return (this.shouldDisableEfficiency ? 0 : this.getBaseEfficiencyChance(action)) + this.game.modifiers.getValue("rielkConstruction:bypassEfficiencyChance", this.getActionModifierQuery(action))
     }
     getBaseEfficiencyChance(action) {
         return Math.max(this.game.modifiers.getValue(
@@ -596,7 +596,8 @@ export class Construction extends ArtisanSkill {
         const builder = new EfficiencySourceBuilder(this.game.modifiers, true);
         const query = this.getActionModifierQuery(action);
         builder.addPotencySources('rielkConstruction:skillEfficiencyPotency', query);
-        if (!this.isRelics) builder.addChanceSources('rielkConstruction:skillEfficiencyChance', query);
+        if (!this.shouldDisableEfficiency) 
+            builder.addChanceSources('rielkConstruction:skillEfficiencyChance', query);
         builder.addChanceSources('rielkConstruction:bypassEfficiencyChance', query)
         return builder;
     }

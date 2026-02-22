@@ -40,7 +40,13 @@ export function patchMods(ctx, modList) {
             color: '#76f522'
         });
     }
-
+    if (modList.includes('Ancient Relics Doubling and Preservation Enabled')) {
+        compatMessages.push({
+            name: 'Ancient Relics Doubling and Preservation Enabled',
+            description: 'Efficiency will also work in Ancient Relics',
+            color: '#f58822'
+        });
+    }
 
     if (compatMessages.length > 0 && (setLang == 'en' || setLang == 'carrot' || setLang == 'lemon')) {
         console.groupCollapsed(
@@ -64,6 +70,7 @@ export function patchMods(ctx, modList) {
         
         endingMessages.push('Did I mention you\'re looking great today?');
         endingMessages.push('That\'s all from me, toodles.');
+        endingMessages.push('If you knew how much effort it is to add the smalles bits of polish you\'d be amazed at the things this mod gets pushed back for.');
         endingMessages.push('Thank you again for downloading me.');
         endingMessages.push('Did you know mods feel pain when you delete them?');
         endingMessages.push('Don\'t forget to brush your teeth.');

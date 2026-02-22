@@ -15,7 +15,7 @@ export function tinyIconsCompatibility(ctx) {
         ['aurora', 'assets/media/skills/combat/auroras.png'],
         ['rune_essence', game.items.getObjectByID('melvorD:Rune_Essence').media],
         ['convergence', ctx.getResourceUrl('assets/others/convergence.webp')],
-        ['mark', 'assets/media/skills/summoning/mark_4_256.png' ]
+        ['mark', 'assets/media/skills/summoning/mark_4_256.png']
 
 
     ]
@@ -34,7 +34,8 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:skillEfficiencyChance', 'efficiency');
     icons.addModifier('rielkConstruction:skillEfficiencyPotency', 'efficiency');
     icons.addModifier('rielkConstruction:skillEfficiencyCost', 'efficiency');
-
+    icons.addModifier('rielkConstruction:bypassEfficiencyChance', 'efficiency');
+    
     icons.addModifier('rielkConstruction:constructionActionsToUpgrade', 'cabin');
 
     icons.addModifier('rielkConstruction:farmingTreeSeedReturn', 'preservation');
@@ -88,20 +89,20 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:spoof_UpgradeScrollOfEssence', 'rune_essence');
     icons.addModifier('rielkConstruction:spoof_AddStarStandardLevel', 'astrology');
     icons.addModifier('rielkConstruction:UnlockConvergence', 'convergence');
-    
-    
+
+
     icons.addModifier('rielkConstruction:bypassGlobalDoubling', 'doubling');
     icons.addModifier('rielkConstruction:allCombatSkillsFlatHiddenLevel', 'combat');
+    
 
+    icons.addModifier('rielkConstruction:ComboRunesonElemRunes', 'rune_essence');
+    icons.addModifier('rielkConstruction:runePreservationCap', 'preservation');
 
- icons.addModifier('rielkConstruction:ComboRunesonElemRunes', 'rune_essence');
- icons.addModifier('rielkConstruction:runePreservationCap', 'preservation');
+    icons.addModifier('rielkConstruction:nullifyPrayerPointsUnder', 'nulled');
 
- icons.addModifier('rielkConstruction:nullifyPrayerPointsUnder', 'nulled');
+    icons.addModifier('rielkConstruction:TabletEffectBuffBasedOnMarkLevel', 'mark');
+    icons.addModifier('rielkConstruction:Spoof_UnlockMarkSuperLevels', 'mark');
+    icons.addModifier('rielkConstruction:TabletFightBuffBasedOnMarkLevel', 'mark');
+    icons.addModifier('rielkConstruction:IncreaseMarkChance', 'loot');
 
-  icons.addModifier('rielkConstruction:TabletEffectBuffBasedOnMarkLevel', 'mark');
- icons.addModifier('rielkConstruction:Spoof_UnlockMarkSuperLevels', 'mark');
- icons.addModifier('rielkConstruction:TabletFightBuffBasedOnMarkLevel', 'mark');
- icons.addModifier('rielkConstruction:IncreaseMarkChance', 'loot');
- 
 }

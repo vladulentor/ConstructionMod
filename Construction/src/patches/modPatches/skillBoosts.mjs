@@ -20,7 +20,9 @@ export function skillBoostsCompatibility({ patch }) {
     });
     skillBoosts.addNewModifiers({
         skills: [game.construction],
-        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:skillEfficiencyChance', 'rielkConstruction:skillEfficiencyPotency', 'rielkConstruction:skillEfficiencyCost', 'rielkConstruction:bypassEfficiencyChance']]])
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:skillEfficiencyChance', 'rielkConstruction:skillEfficiencyPotency', 'rielkConstruction:skillEfficiencyCost', 'rielkConstruction:bypassEfficiencyChance'
+            , 'rielkConstruction:skillEfficiencyChancePerHamrielStar'
+        ]]])
     });
     skillBoosts.addNewModifiers({
         skills: [game.fishing],
@@ -30,6 +32,9 @@ export function skillBoostsCompatibility({ patch }) {
         skills: game.skills.allObjects.filter(skill => !['melvorD:Township', 'melvorD:Agility'].includes(skill.id)),
         modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:bypassGlobalDoubling']]])
     })
+
+
+
     //scoobs compatibility
     patch(skillBoosts.__proto__.constructor, 'createPetTooltip').after(function (_, container, item) {
         if (item.id === "rielkConstruction:Scoobs") {

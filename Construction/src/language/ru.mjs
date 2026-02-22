@@ -1,4 +1,5 @@
 export const language = {
+    'MODIFIER_DATA_skillEfficiencyChancePerHamrielStar':'${value}% шанс выполнить дополнительные действия в ${skillName} за каждую максимальную звезду в созвездии Хэмир в Астрологии',
     'MODIFIER_DATA_Spoof_UnlockMarkSuperLevels': 'Максимальный уровень Меток в ${skillName} увеличивается на ${value}',
     'MODIFIER_DATA_TabletFightBuffBasedOnMarkLevel': '${value}% к максимальному урону фамильяров за каждый уровень Метки выше 5',
 'MODIFIER_DATA_TabletAmountBuffBasedOnMarkLevel': '${value} к базовому количеству табличек, получаемых в ${skillName}, за каждый уровень Метки выше 5',
@@ -12,8 +13,7 @@ export const language = {
 'MODIFIER_DATA_skillEfficiencyChanceforSubcategory': '${value}% шанс выполнить дополнительные действия при создании ${subcategoryName} в ${skillName}',
 'MODIFIER_DATA_nullifyPrayerPointsUnder': 'Активные молитвы с общей стоимостью до ${value} очков молитвы (до уменьшений) бесплатны, но не дают опыта навыка ${skillName}',
 'MODIFIER_DATA_skillItemDoublingChanceSubcategory': '${value}% шанс удвоить предметы в ${skillName} при создании ${subcategoryName}',
-'RIELK_SYNERGY_Pig_Bee': '+10% опыта навыка Кулинария и опыта Мастерства, пока пассивная Кулинария не активна',
-'RIELK_SYNERGY_Bear_Bee': 'Пока зелье «Дважды Отмерь» активно в Строительстве, стоимость ресурсов при выполнении дополнительных действий уменьшается на 0,2',
+'RIELK_SYNERGY_Pig_Bee': '+10% к шансам удвоения и сохранения, пока пассивная Кулинария не активна','RIELK_SYNERGY_Bear_Bee': 'Пока зелье «Дважды Отмерь» активно в Строительстве, стоимость ресурсов при выполнении дополнительных действий уменьшается на 0,2',
 'CONSTRUCTION_FIXTURE_NAME_ Spirit_Catcher': 'Ловец духов',
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'${value} скрытого уровня для всех боевых навыков',
 'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'${value} скрытого уровня для всех небоевых навыков',

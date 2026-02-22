@@ -1,4 +1,5 @@
 export const language = {
+    'MODIFIER_DATA_skillEfficiencyChancePerHamrielStar':'점성술에서 Haemir 별자리의 최대 별 1개당 ${skillName}에서 추가 행동을 완료할 확률 ${value}%',
 'MODIFIER_DATA_Spoof_UnlockMarkSuperLevels': '${skillName}에서 마크의 최대 레벨이 ${value}만큼 증가합니다',
     'MODIFIER_DATA_Spoof_UnlockMarkSuperLevels': '${skillName}에서 마크의 최대 레벨이 ${value}만큼 증가합니다',
     'MODIFIER_DATA_TabletFightBuffBasedOnMarkLevel': '마크 레벨 5 초과 1레벨당 소환수 최대 피해량 ${value}% 증가',
@@ -13,8 +14,7 @@ export const language = {
 'MODIFIER_DATA_skillEfficiencyChanceforSubcategory': '${skillName}에서 ${subcategoryName}을 제작할 때 ${value}% 확률로 추가 행동을 완료합니다',
 'MODIFIER_DATA_nullifyPrayerPointsUnder': '총합이 ${value} 이하인 활성화된 기도 포인트(감소 전)는 무료가 되지만, ${skillName} 스킬 XP는 획득하지 않습니다',
 'MODIFIER_DATA_skillItemDoublingChanceSubcategory': '${skillName}에서 ${subcategoryName}을 제작할 때 ${value}% 확률로 아이템을 두 배로 획득합니다',
-'RIELK_SYNERGY_Pig_Bee': '패시브 요리가 활성화되지 않은 동안 요리 스킬 XP 및 숙련도 XP +10%',
-'RIELK_SYNERGY_Bear_Bee': '건설에서 “두 번 측정” 물약이 활성화된 동안, 추가 행동 완료 시 자원 비용이 0.2 감소',
+'RIELK_SYNERGY_Pig_Bee': '패시브 요리가 활성화되지 않은 동안, 두 배 획득 및 보존 확률 +10%','RIELK_SYNERGY_Bear_Bee': '건설에서 “두 번 측정” 물약이 활성화된 동안, 추가 행동 완료 시 자원 비용이 0.2 감소',
 'CONSTRUCTION_FIXTURE_NAME_ Spirit_Catcher': '영혼 포획기',
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'모든 전투 스킬에 ${value} 숨겨진 레벨',
 'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'모든 비전투 스킬에 ${value} 숨겨진 레벨',

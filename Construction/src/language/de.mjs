@@ -1,4 +1,6 @@
-export const language = {'MODIFIER_DATA_Spoof_UnlockMarkSuperLevels': 'Die maximale Stufe für Marken in ${skillName} wird um ${value} erhöht',
+export const language = {
+    'MODIFIER_DATA_skillEfficiencyChancePerHamrielStar':'${value}% Chance, zusätzliche Aktionen in ${skillName} pro maximalem Stern im Haemir-Sternbild in Astrologie abzuschließen',
+    'MODIFIER_DATA_Spoof_UnlockMarkSuperLevels': 'Die maximale Stufe für Marken in ${skillName} wird um ${value} erhöht',
     
     'MODIFIER_DATA_TabletFightBuffBasedOnMarkLevel': '${value}% erhöhter Maximalschaden von Vertrauten pro Markstufe über 5',
 'MODIFIER_DATA_TabletAmountBuffBasedOnMarkLevel': '${value} Basisanzahl an Tablets in ${skillName} pro Markstufe über 5',
@@ -12,8 +14,7 @@ export const language = {'MODIFIER_DATA_Spoof_UnlockMarkSuperLevels': 'Die maxim
 'MODIFIER_DATA_skillEfficiencyChanceforSubcategory': '${value}% Chance, zusätzliche Aktionen beim Herstellen von ${subcategoryName} in ${skillName} abzuschließen',
 'MODIFIER_DATA_nullifyPrayerPointsUnder': 'Aktive Gebete mit insgesamt bis zu ${value} Gebetspunkten (vor Reduktionen) sind kostenlos, gewähren jedoch keine ${skillName}-Fertigkeits-EP',
 'MODIFIER_DATA_skillItemDoublingChanceSubcategory': '${value}% Chance, Gegenstände in ${skillName} beim Herstellen von ${subcategoryName} zu verdoppeln',
-'RIELK_SYNERGY_Pig_Bee': '+10% Koch-Fertigkeits-EP und Meisterschafts-EP, solange nicht passiv gekocht wird',
-'RIELK_SYNERGY_Bear_Bee': 'Solange der Trank „Zweifach Gemessen“ in Konstruktion aktiv ist, werden die Ressourcenkosten beim Abschließen zusätzlicher Aktionen um 0,2 reduziert',
+'RIELK_SYNERGY_Pig_Bee': '+10% Chance auf Verdopplung und Erhaltung, solange Passive Küche nicht aktiv ist','RIELK_SYNERGY_Bear_Bee': 'Solange der Trank „Zweifach Gemessen“ in Konstruktion aktiv ist, werden die Ressourcenkosten beim Abschließen zusätzlicher Aktionen um 0,2 reduziert',
 'CONSTRUCTION_FIXTURE_NAME_ Spirit_Catcher': 'Geisterfänger',
     'COMBAT_MISC_SHIELD_BROKEN': 'Schutzschild',
 'MENU_TOOLTIP_CONVERGENCE': 'Konvergenz',

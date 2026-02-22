@@ -74,9 +74,9 @@ Entries marked with [TotH] or [AoD] indicate Throne of the Herald or Atlas of Di
 
 - Added a new "Bee" Tier 3 Summoning Familiar, whose marks are unlocked while training Construction. It can be made using [Wood Beams](#crafting) or Planks. It provides a 0.25 extra material/progress done when activating Efficiency in Construction. It currently has synergies with the Monkey, Pig, Salamander, Bear, and Devil.
 
-- [TotH] The bee also has a syngery with the Beaver.
+- [TotH] The bee also gains syngeries with the Owl and Beaver.
 
-- Nerfed the Bear and Devil synergy to account for Roaring Bonfires. It now gives a 15% increased Bonfire Interval, as opposed to 100%. Additionally it now gets spent on lighting a bonfire, as well as on a bonfire action.
+- Nerfed the Bear and Devil synergy to account for Roaring Bonfires. It now gives a 15% increased Bonfire Interval, as opposed to 100%. Additionally it now gets spent on lighting a bonfire, as well as on a firemaking action.
 
 ---
 

@@ -1,4 +1,5 @@
 export const language = {
+    'MODIFIER_DATA_skillEfficiencyChancePerHamrielStar':'占星术中Haemir星座的每颗满级星星，${skillName}完成额外行动的概率增加${value}%',
     'MODIFIER_DATA_Spoof_UnlockMarkSuperLevels': '${skillName}中的印记最大等级提高${value}',
     'MODIFIER_DATA_TabletFightBuffBasedOnMarkLevel': '每高于5级1级印记，使魔宠最大伤害提高${value}%',
 'MODIFIER_DATA_TabletAmountBuffBasedOnMarkLevel': '每高于5级1级印记，在${skillName}中获得的石板基础数量增加${value}',
@@ -12,8 +13,7 @@ export const language = {
 'MODIFIER_DATA_skillEfficiencyChanceforSubcategory': '在${skillName}中制作${subcategoryName}时，有${value}%概率完成额外行动',
 'MODIFIER_DATA_nullifyPrayerPointsUnder': '总计不超过${value}点的已激活祈祷点数（减免前）变为免费，但不会获得${skillName}技能经验',
 'MODIFIER_DATA_skillItemDoublingChanceSubcategory': '在${skillName}中制作${subcategoryName}时，有${value}%概率使物品数量翻倍',
-'RIELK_SYNERGY_Pig_Bee': '当被动烹饪未激活时，烹饪技能经验和精通经验+10%',
-'RIELK_SYNERGY_Bear_Bee': '当“二次测量”药水在建造中生效时，完成额外行动所需资源成本减少0.2',
+'RIELK_SYNERGY_Pig_Bee': '在被动烹饪未激活时，双倍和保留概率+10%','RIELK_SYNERGY_Bear_Bee': '当“二次测量”药水在建造中生效时，完成额外行动所需资源成本减少0.2',
 'CONSTRUCTION_FIXTURE_NAME_ Spirit_Catcher': '灵魂捕捉器',
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'所有战斗技能获得 ${value} 隐藏等级',
 'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'所有非战斗技能获得 ${value} 隐藏等级',

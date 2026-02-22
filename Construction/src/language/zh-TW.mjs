@@ -1,4 +1,5 @@
 export const language = {
+    'MODIFIER_DATA_skillEfficiencyChancePerHamrielStar':'占星術中Haemir星座的每顆滿級星星，${skillName}完成額外行動的機率增加${value}%',
     'MODIFIER_DATA_Spoof_UnlockMarkSuperLevels': '${skillName}中的印記最大等級提高${value}',
     'MODIFIER_DATA_TabletFightBuffBasedOnMarkLevel': '每高於5級1級印記，使魔寵最大傷害提高${value}%',
 'MODIFIER_DATA_TabletAmountBuffBasedOnMarkLevel': '每高於5級1級印記，在${skillName}中獲得的石板基礎數量增加${value}',
@@ -12,8 +13,7 @@ export const language = {
 'MODIFIER_DATA_skillEfficiencyChanceforSubcategory': '在${skillName}中製作${subcategoryName}時，有${value}%機率完成額外行動',
 'MODIFIER_DATA_nullifyPrayerPointsUnder': '總計不超過${value}點的已啟用祈禱點數（減免前）變為免費，但不會獲得${skillName}技能經驗',
 'MODIFIER_DATA_skillItemDoublingChanceSubcategory': '在${skillName}中製作${subcategoryName}時，有${value}%機率使物品數量加倍',
-'RIELK_SYNERGY_Pig_Bee': '當被動烹飪未啟用時，烹飪技能經驗與精通經驗+10%',
-'RIELK_SYNERGY_Bear_Bee': '當「二次測量」藥水在建造中生效時，完成額外行動所需資源成本減少0.2',
+'RIELK_SYNERGY_Pig_Bee': '在被動烹飪未啟用時，雙倍和保留機率+10%','RIELK_SYNERGY_Bear_Bee': '當「二次測量」藥水在建造中生效時，完成額外行動所需資源成本減少0.2',
 'CONSTRUCTION_FIXTURE_NAME_ Spirit_Catcher': '靈魂捕捉器',
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'所有戰鬥技能獲得 ${value} 隱藏等級',
 'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'所有非戰鬥技能獲得 ${value} 隱藏等級',

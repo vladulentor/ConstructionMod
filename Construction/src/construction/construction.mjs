@@ -37,6 +37,7 @@ export class Construction extends ArtisanSkill {
         this.gamemode = undefined;
         this.recipeNumber = 0;
         this.recipeCountByTier = [];
+        this.tothmode = cloudManager.hasTotHEntitlementAndIsEnabled;
         this._actionMode = undefined;
         this.showUpdateTooltip = true;
         this.cachedpreservationchance = 0;
@@ -398,7 +399,7 @@ export class Construction extends ArtisanSkill {
         return super.shouldShowSkillInSidebar() || this.game.currentRealm === this.game.defaultRealm; // only show in default realm
     }
     updateRecipeCounts() {
-        const tierNum = cloudManager?.hasTotHEntitlementAndIsEnabled ? 8 : 5;
+        const tierNum = 5 //this.tothmode ? 8 : 5;
         this.recipeCountByTier = Array(tierNum).fill(0);
         const allFixtures = this.fixtures.allObjects;
         //This is assuming all recipes have equal number tiers, which is technically not true with the AoD DLC, 
@@ -566,10 +567,11 @@ export class Construction extends ArtisanSkill {
         return (this.shouldDisableEfficiency ? 0 : this.getBaseEfficiencyChance(action)) + this.game.modifiers.getValue("rielkConstruction:bypassEfficiencyChance", this.getActionModifierQuery(action))
     }
     getBaseEfficiencyChance(action) {
+        const quer = this.getActionModifierQuery(action)
         return Math.max(this.game.modifiers.getValue(
             "rielkConstruction:skillEfficiencyChance",
-            this.getActionModifierQuery(action)
-        ), 0);
+            quer
+        ) + this.tothmode? this.game.modifiers.getValue('rielkConstruction:skillEfficiencyChancePerHamrielStar', quer) * game.astrology.actions.getObjectSafe("melvorTotH:Haemir").maxValueModifiers: 0, 0);
 
     }
     /** Gets the cost multiplier for efficiency (default 2) */
@@ -597,7 +599,10 @@ export class Construction extends ArtisanSkill {
         const query = this.getActionModifierQuery(action);
         builder.addPotencySources('rielkConstruction:skillEfficiencyPotency', query);
         if (!this.shouldDisableEfficiency) 
-            builder.addChanceSources('rielkConstruction:skillEfficiencyChance', query);
+           { builder.addChanceSources('rielkConstruction:skillEfficiencyChance', query);
+            if(this.tothmode)
+            builder.addChanceSources('rielkConstruction:skillEfficiencyChancePerHamrielStar', query, game.astrology.actions.getObjectSafe("melvorTotH:Haemir").maxValueModifiers);
+           }
         builder.addChanceSources('rielkConstruction:bypassEfficiencyChance', query)
         return builder;
     }

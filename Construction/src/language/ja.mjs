@@ -1,4 +1,5 @@
 export const language = {
+    'MODIFIER_DATA_skillEfficiencyChancePerHamrielStar':'占星術のHaemir星座で最大の星1つごとに、${skillName}で追加アクションを完了する確率が${value}%増加',
     'MODIFIER_DATA_Spoof_UnlockMarkSuperLevels': '${skillName}におけるマークの最大レベルが${value}増加する',
     'MODIFIER_DATA_TabletFightBuffBasedOnMarkLevel': 'マークレベル5を超える1レベルごとに、使い魔の最大ヒットが${value}%増加',
 'MODIFIER_DATA_TabletAmountBuffBasedOnMarkLevel': 'マークレベル5を超える1レベルごとに、${skillName}で獲得するタブレットの基本数量が${value}増加',
@@ -12,8 +13,7 @@ export const language = {
 'MODIFIER_DATA_skillEfficiencyChanceforSubcategory': '${skillName}で${subcategoryName}を作成する際、${value}%の確率で追加アクションを完了する',
 'MODIFIER_DATA_nullifyPrayerPointsUnder': '合計が${value}以下の祈りポイント（軽減前）の有効な祈りは無料になりますが、${skillName}のスキルXPは獲得できません',
 'MODIFIER_DATA_skillItemDoublingChanceSubcategory': '${skillName}で${subcategoryName}を作成する際、${value}%の確率でアイテムを2倍にする',
-'RIELK_SYNERGY_Pig_Bee': 'パッシブ料理が有効でない間、料理スキルXPとマスタリーXPが+10%',
-'RIELK_SYNERGY_Bear_Bee': '建設で「二度計測」ポーションが有効な間、追加アクション実行時の資源コストが0.2減少',
+'RIELK_SYNERGY_Pig_Bee': 'パッシブ料理が有効でない間、2倍獲得と保持の確率+10%','RIELK_SYNERGY_Bear_Bee': '建設で「二度計測」ポーションが有効な間、追加アクション実行時の資源コストが0.2減少',
 'CONSTRUCTION_FIXTURE_NAME_ Spirit_Catcher': 'スピリットキャッチャー',
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'すべての戦闘スキルに ${value} の隠しレベル',
 'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'すべての非戦闘スキルに ${value} の隠しレベル',

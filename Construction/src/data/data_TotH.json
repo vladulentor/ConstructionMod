@@ -46,6 +46,28 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "summonIDs": [
+                                "rielkConstruction:Bee",
+                                "melvorTotH:Owl"
+                            ],
+                            "modifiers": {
+                                "rielkConstruction:skillEfficiencyChancePerHamrielStar": [
+                                    {
+                                        "value": 1.5,
+                                        "skillID": "rielkConstruction:Construction"
+                                    }
+                                ]
+                            },
+                            "consumesOn": [
+                                {
+                                    "type": "ConstructionAction",
+                                    "realms": [
+                                        "melvorD:Melvor"
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }

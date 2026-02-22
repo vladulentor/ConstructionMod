@@ -212,6 +212,7 @@ export const language = {
     'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '-${value}% chance to complete extra actions when making ${categoryName} in ${skillName}',
     'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '+${value}% chance to complete extra actions when making ${categoryName} in ${skillName}',
     'MODIFIER_DATA_skillEfficiencyChanceforSubcategory': '${value}% chance to complete extra actions when making ${subcategoryName} in ${skillName}',
+        'MODIFIER_DATA_skillEfficiencyChancePerHamrielStar':'${value}% chance to complete extra actions in ${skillName} per maxed Star in Haemir constellation in Astrology',
 
     'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra Materials or Progress made when completing extra actions when making ${categoryName} in ${skillName}',
     'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra Materials or Progress made when completing extra actions while crafting ${categoryName} in ${skillName}',
@@ -263,7 +264,7 @@ export const language = {
     'MODIFIER_DATA_bypassGlobalDoubling': '${value}% Chance to Double Items Globally (Bypasses Gamemode Limitations)',
     'SHOP_PURCHASE_Perpetual_Haste': '-15% Crafting, Construction & Fletching Interval',
     'ITEM_DESCRIPTION_BEAR_DEVIL_SYNERGY': 'While using the Controlled Heat Potions, +5% Firemaking Skill XP and Bonfire duration increased by 15%. Charges are used per Firemaking action and lit Bonfire.',
-    'RIELK_SYNERGY_Pig_Bee': '+10% Cooking Skill XP and Mastery XP while not Passive Cooking',
+    'RIELK_SYNERGY_Pig_Bee': '+10% Doubling and Preservation chance while not Passive Cooking',
     'MODIFIER_DATA_fishingTreasureNoReplace': 'Also catch fish when finding Junk or Special items',
     'MODIFIER_DATA_TabletFightBuffBasedOnMarkLevel': '${value}% increased Max Hit from Familiars per Mark Level above 5',
     'MODIFIER_DATA_TabletAmountBuffBasedOnMarkLevel': '${value} base quantity of tablets gained in ${skillName} per Mark Level above 5',

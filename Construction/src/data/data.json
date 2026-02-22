@@ -2634,13 +2634,13 @@
                     "type": "FocusedCook"
                   },
                   "modifiers": {
-                    "skillXP": [
+                    "skillItemDoublingChance": [
                       {
                         "value": 10,
-                        "skillID": "rielkConstruction:Construction"
+                        "skillID": "melvorD:Cooking"
                       }
                     ],
-                    "masteryXP": [
+                    "skillPreservationChance": [
                       {
                         "value": 10,
                         "skillID": "melvorD:Cooking"
@@ -10174,7 +10174,7 @@
             "descriptions": [
               {
                 "includeSign": false,
-                "text": "makes prayer points go bye bye",
+                "text": "makes prayer FYOG",
                 "lang": "MODIFIER_DATA_TabletEffectBuffBasedOnMarkLevel"
               }
             ]
@@ -10190,7 +10190,7 @@
             },
             "descriptions": [
               {
-                "text": "makes prayer points go bye bye",
+                "text": "gag agag",
                 "lang": "MODIFIER_DATA_TabletAmountBuffBasedOnMarkLevel"
               }
             ]
@@ -10207,7 +10207,7 @@
             "descriptions": [
               {
                 "includeSign": false,
-                "text": "makes prayer points go bye bye",
+                "text": "fgu",
                 "lang": "MODIFIER_DATA_TabletFightBuffBasedOnMarkLevel"
               }
             ]
@@ -10222,13 +10222,29 @@
             "descriptions": [
               {
                 "includeSign": false,
-                "text": "makes prayer points go bye bye",
+                "text": "wooooooooooooow marks",
                 "lang": "MODIFIER_DATA_IncreaseMarkChance"
               }
             ]
           }
         ]
+      },
+{
+        "id": "skillEfficiencyChancePerHamrielStar",
+        "allowedScopes": [
+          {
+            "scopes": {"skill":true},
+            "descriptions": [
+              {
+                "text": "Hamriel star wow",
+                "lang": "MODIFIER_DATA_skillEfficiencyChancePerHamrielStar"
+              }
+            ]
+          }
+        ]
       }
+
+      
     ],
     "combatEffects": [
       {

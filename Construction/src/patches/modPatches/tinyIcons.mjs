@@ -35,6 +35,8 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:skillEfficiencyPotency', 'efficiency');
     icons.addModifier('rielkConstruction:skillEfficiencyCost', 'efficiency');
     icons.addModifier('rielkConstruction:bypassEfficiencyChance', 'efficiency');
+    icons.addModifier('rielkConstruction:skillEfficiencyChancePerHamrielStar', 'efficiency');
+
     
     icons.addModifier('rielkConstruction:constructionActionsToUpgrade', 'cabin');
 
@@ -93,7 +95,7 @@ export function tinyIconsCompatibility(ctx) {
 
     icons.addModifier('rielkConstruction:bypassGlobalDoubling', 'doubling');
     icons.addModifier('rielkConstruction:allCombatSkillsFlatHiddenLevel', 'combat');
-    
+
 
     icons.addModifier('rielkConstruction:ComboRunesonElemRunes', 'rune_essence');
     icons.addModifier('rielkConstruction:runePreservationCap', 'preservation');
@@ -101,6 +103,7 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:nullifyPrayerPointsUnder', 'nulled');
 
     icons.addModifier('rielkConstruction:TabletEffectBuffBasedOnMarkLevel', 'mark');
+    icons.addModifier('rielkConstruction:TabletAmountBuffBasedOnMarkLevel', 'mark');
     icons.addModifier('rielkConstruction:Spoof_UnlockMarkSuperLevels', 'mark');
     icons.addModifier('rielkConstruction:TabletFightBuffBasedOnMarkLevel', 'mark');
     icons.addModifier('rielkConstruction:IncreaseMarkChance', 'loot');

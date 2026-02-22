@@ -1,4 +1,5 @@
 export const language = {
+    'MODIFIER_DATA_skillEfficiencyChancePerHamrielStar':'${value}% de chance d\'effectuer des actions supplémentaires en ${skillName} par Étoile max dans la constellation Haemir en Astrologie',
     'MODIFIER_DATA_Spoof_UnlockMarkSuperLevels': 'Les niveaux maximum des Marques en ${skillName} sont augmentés de ${value}',
     'MODIFIER_DATA_TabletFightBuffBasedOnMarkLevel': '${value}% de Dégâts max supplémentaires des Familiers par niveau de Marque au-dessus de 5',
 'MODIFIER_DATA_TabletAmountBuffBasedOnMarkLevel': '${value} quantité de base de tablettes obtenues en ${skillName} par niveau de Marque au-dessus de 5',
@@ -12,8 +13,7 @@ export const language = {
 'MODIFIER_DATA_skillEfficiencyChanceforSubcategory': '${value}% de chance d\'effectuer des actions supplémentaires lors de la fabrication de ${subcategoryName} en ${skillName}',
 'MODIFIER_DATA_nullifyPrayerPointsUnder': 'Les Prières actives totalisant jusqu\'à ${value} points de Prière (avant réductions) sont gratuites mais ne donnent aucune XP de compétence ${skillName}',
 'MODIFIER_DATA_skillItemDoublingChanceSubcategory': '${value}% de chance de doubler les objets en ${skillName} lors de la fabrication de ${subcategoryName}',
-'RIELK_SYNERGY_Pig_Bee': '+10% d\'XP de compétence en Cuisine et d\'XP de Maîtrise tant que la Cuisine passive n\'est pas active',
-'RIELK_SYNERGY_Bear_Bee': 'Tant que la Potion « Deux Fois Mesurée » est active en Construction, le coût en ressources lors des actions supplémentaires est réduit de 0,2',
+'RIELK_SYNERGY_Pig_Bee': '+10% de chance de Doublement et de Conservation tant que la Cuisine Passive n\'est pas active','RIELK_SYNERGY_Bear_Bee': 'Tant que la Potion « Deux Fois Mesurée » est active en Construction, le coût en ressources lors des actions supplémentaires est réduit de 0,2',
 'CONSTRUCTION_FIXTURE_NAME_ Spirit_Catcher': 'Capteur d\'Esprits',
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'${value} niveau caché dans toutes les compétences de combat',
 'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'${value} niveau caché dans toutes les compétences hors combat',

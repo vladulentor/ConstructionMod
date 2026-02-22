@@ -1,4 +1,5 @@
 export const language = {
+    'MODIFIER_DATA_skillEfficiencyChancePerHamrielStar':'${value}% di probabilità di completare azioni extra in ${skillName} per Stella massimizzata nella costellazione Haemir in Astrologia',
     'MODIFIER_DATA_Spoof_UnlockMarkSuperLevels': 'I livelli massimi dei Marchi in ${skillName} sono aumentati di ${value}',
     'MODIFIER_DATA_TabletFightBuffBasedOnMarkLevel': '${value}% Danno Massimo aumentato dai Famigli per Livello di Marchio superiore a 5',
 'MODIFIER_DATA_TabletAmountBuffBasedOnMarkLevel': '${value} quantità base di tavolette ottenute in ${skillName} per Livello di Marchio superiore a 5',
@@ -12,8 +13,7 @@ export const language = {
 'MODIFIER_DATA_skillEfficiencyChanceforSubcategory': '${value}% di probabilità di completare azioni extra quando crei ${subcategoryName} in ${skillName}',
 'MODIFIER_DATA_nullifyPrayerPointsUnder': 'Le Preghiere attive che totalizzano fino a ${value} Punti Preghiera (prima delle riduzioni) sono gratuite ma non forniscono XP di Abilità ${skillName}',
 'MODIFIER_DATA_skillItemDoublingChanceSubcategory': '${value}% di probabilità di raddoppiare gli oggetti in ${skillName} quando crei ${subcategoryName}',
-'RIELK_SYNERGY_Pig_Bee': '+10% XP Abilità di Cucina e XP Maestria mentre la Cucina Passiva non è attiva',
-'RIELK_SYNERGY_Bear_Bee': 'Finché la Pozione «Misurato Due Volte» è attiva in Costruzione, il costo delle risorse quando si completano azioni extra è ridotto di 0,2',
+'RIELK_SYNERGY_Pig_Bee': '+10% di probabilità di Raddoppio e Conservazione mentre la Cucina Passiva non è attiva','RIELK_SYNERGY_Bear_Bee': 'Finché la Pozione «Misurato Due Volte» è attiva in Costruzione, il costo delle risorse quando si completano azioni extra è ridotto di 0,2',
 'CONSTRUCTION_FIXTURE_NAME_ Spirit_Catcher': 'Acchiappa Spiriti',
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel':'${value} livello nascosto in tutte le abilità di combattimento',
 'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel':'${value} livello nascosto in tutte le abilità non di combattimento',

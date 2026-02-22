@@ -7,3 +7,121 @@ Possible problems:
 That fucking Cyclops (and related)
 The scoping problems with ModifierQuery.EMPTY
 Anything else that might arise from mark changes/house tier changes
+
+{
+        "skillID": "melvorD:Thieving",
+        "data": {
+          "npcs": [
+            {
+              "id": "BRICKLAYER",
+              "baseExperience": 79,
+              "level": 74,
+              "name": "Bricklayer",
+              "media": "assets/creatures/bricklayer.webp",
+              "perception": 660,
+              "maxHit": 19.5,
+              "currencyDrops": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 625
+                }
+              ],
+              "lootTable": [
+                {
+                  "itemID": "rielkConstruction:Clay_Bricks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 10
+                },
+                {
+                  "itemID": "rielkConstruction:Limestone_Bricks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 6
+                },
+                {
+                  "itemID": "rielkConstruction:Granite_Bricks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 4
+                },
+                {
+                  "itemID": "rielkConstruction:Marble_Bricks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 2
+                },
+                {
+                  "itemID": "rielkConstruction:Magic_Bricks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 1
+                }
+              ],
+              "uniqueDrop": {
+                "id": "rielkConstruction:Normal_Planks",
+                "quantity": 1
+              },
+              "allowedDamageTypeIDs": [
+                "melvorD:Normal"
+              ]
+            },
+{
+              "id": "CONSTRUCT",
+              "baseExperience": 56,
+              "level": 59,
+              "name": "Construct",
+              "media": "assets/creatures/construct.webp",
+              "perception": 590,
+              "maxHit": 21.5,
+              "currencyDrops": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 530
+                }
+              ],
+              "lootTable": [
+                {
+                  "itemID": "rielkConstruction:Steel_Nails",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 10
+                },
+                {
+                  "itemID": "rielkConstruction:Teak_Planks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 6
+                },
+                {
+                  "itemID": "rielkConstruction:Mithril_Nails",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 4
+                },
+                {
+                  "itemID": "rielkConstruction:Mahogany_Planks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 2
+                },
+                {
+                  "itemID": "rielkConstruction:Adamantite_Nails",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 1
+                },
+                {
+                  "itemID": "rielkConstruction:Redwood_Planks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 1
+                }
+              ],
+              "allowedDamageTypeIDs": [
+                "melvorD:Normal"
+              ]
+            }
+          ]
+        }
+      },

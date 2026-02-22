@@ -571,7 +571,7 @@ export class Construction extends ArtisanSkill {
         return Math.max(this.game.modifiers.getValue(
             "rielkConstruction:skillEfficiencyChance",
             quer
-        ) + this.tothmode? this.game.modifiers.getValue('rielkConstruction:skillEfficiencyChancePerHamrielStar', quer) * game.astrology.actions.getObjectSafe("melvorTotH:Haemir").maxValueModifiers: 0, 0);
+        ) + (this.tothmode? this.game.modifiers.getValue('rielkConstruction:skillEfficiencyChancePerHamrielStar', quer) * game.astrology.actions.getObjectSafe("melvorTotH:Haemir").maxValueModifiers: 0), 0);
 
     }
     /** Gets the cost multiplier for efficiency (default 2) */

@@ -104,10 +104,21 @@ function buffMarkEffects(mark, amountper) {
     const toadd = amountper / 100 * (Math.max(0, game.summoning.getMarkLevel(mark) - 5))
     let rounddown = false
     if (Marksthatneedtoberounded.has(mark._localID)) rounddown = true
-    if (item?.modifiers?.length > 0) buffModList(item.modifiers, toadd, rounddown)
+    if (item.modifiers?.length > 0) buffModList(item.modifiers, toadd, rounddown)
     if (item.enemyModifiers?.length > 0) buffModList(item.enemyModifiers, toadd, rounddown)
-    if (item?.conditionalModifiers?.length > 0) buffModList(item.conditionalModifiers, toadd, rounddown)
-
+    if (item.conditionalModifiers?.length > 0) buffModList(item.conditionalModifiers, toadd, rounddown)
+    if (item._customDescription) {
+        ctx.patch(item.__proto__.constructor, "description").get(function (orig) {
+            if (!this.origdesc)
+                this.origdesc = orig.call()
+            return this.origdesc.replace(/\d+(\.\d+)?/g, match => {
+                let value = Number(match);
+                value += value * toadd;
+                if (rounddown) value = Math.floor(value);
+                return value;
+            })
+        })
+    }
 }
 function buffModList(list, toadd, rounddown) {
     list.forEach(effect => {

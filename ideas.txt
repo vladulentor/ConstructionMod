@@ -3,10 +3,10 @@ A carpenter thieving target that gives the jacket
 
 haunted coffin which gives planks (after barn raiser starts giving beams) and jewelry
 
-Possible problems:
-That fucking Cyclops (and related)
-The scoping problems with ModifierQuery.EMPTY
-Anything else that might arise from mark changes/house tier changes
+Ideas on the backburner:
+Logs to Skillboosts
+Prayer nullify UI rework
+ArchMark
 
 {
         "skillID": "melvorD:Thieving",

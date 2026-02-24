@@ -102,8 +102,7 @@ const Marksthatneedtoberounded = new Set(["Crow", "GolbinThief", "Wolf", "Leprec
 function buffMarkEffects(mark, amountper) {
     const item = mark.product
     const toadd = amountper / 100 * (Math.max(0, game.summoning.getMarkLevel(mark) - 5))
-    let rounddown = false
-    if (Marksthatneedtoberounded.has(mark._localID)) rounddown = true
+    let rounddown = Marksthatneedtoberounded.has(mark._localID)
     if (item.modifiers?.length > 0) buffModList(item.modifiers, toadd, rounddown)
     if (item.enemyModifiers?.length > 0) buffModList(item.enemyModifiers, toadd, rounddown)
     if (item.conditionalModifiers?.length > 0) buffModList(item.conditionalModifiers, toadd, rounddown)

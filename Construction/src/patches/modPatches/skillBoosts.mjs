@@ -10,7 +10,7 @@ export function skillBoostsCompatibility({ patch }) {
         header: '#skill-boosts-append',
         noPreservation: false,
         noMastery: true,
-        noSummon: true,
+        noSummon: false,
         noPotion: false,
         noDoubling: true,
         noInterval: false,

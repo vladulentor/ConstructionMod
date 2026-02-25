@@ -58,6 +58,7 @@ Entries marked with [TotH] or [AoD] indicate Throne of the Herald or Atlas of Di
 -The Cursed Hook (23/6722 ≈ 0.33% to get), greatly increases the chance to find treasure but costs money per catch. 
 -The Mariner's Tie (2/6722 ≈ 0.03% to get) can be used with the Sailor's Top to upgrade it into the Mariner's Blouse, giving both Fish and Special items on a Special roll.
 Note: The fishing pool's Special Table was changed such that rare items' chances were not decreased </details>
+
 ---
 ## Fletching
 

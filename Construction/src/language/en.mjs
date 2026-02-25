@@ -110,6 +110,7 @@ export const language = {
     'SHOP_NAME_Adamant_Saw': 'Adamant Saw',
     'SHOP_NAME_Rune_Saw': 'Rune Saw',
     'SHOP_NAME_Dragon_Saw': 'Dragon Saw',
+    'SHOP_NAME_Hidden_Routes':"Secret Routes",
 
     'SHOP_DESCRIPTION_Iron_Saw': '-5% Construction Interval for a total of -5% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +0.20 from your Saw.',
     'SHOP_DESCRIPTION_Steel_Saw': '-5% Construction Interval for a total of -10% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +0.40 from your Saw.',
@@ -186,7 +187,7 @@ export const language = {
     'ITEM_DESCRIPTION_Builders_Hat': '+2% Construction Skill XP',
     'ITEM_DESCRIPTION_Builders_Body': '+2% Construction Skill XP',
     'ITEM_DESCRIPTION_Builders_Leggings': '+2% Construction Skill XP',
-    'ITEM_DESCRIPTION_fBuilders_Boots': '+2% Construction Skill XP',
+    'ITEM_DESCRIPTION_Builders_Boots': '+2% Construction Skill XP',
 
     'ITEM_DESCRIPTION_Normal_Beams': 'Can be cut into Arrow Shafts or Planks.',
     'ITEM_DESCRIPTION_Oak_Beams': 'Can be cut into Arrow Shafts or Planks.',
@@ -271,7 +272,10 @@ export const language = {
     'MODIFIER_DATA_TabletEffectBuffBasedOnMarkLevel': '${value}% increased Bonuses from Familiars per Mark Level above 5',
     'MODIFIER_DATA_IncreaseMarkChance': 'Double the Drop Rate of Marks when training their respective Skills while they are Equipped',
     'MODIFIER_DATA_Spoof_UnlockMarkSuperLevels': 'Max levels for Marks in ${skillName} are increased by ${value}',
-
+    'MODIFIER_DATA_ReduceThievingTargetMaxHitBasedOnDefLevel':'Each Defence Level reduces Thieving NPCs\' Maximum Hit (down to half)',
+    'MODIFIER_DATA_Spoof_LowerTraderRequirements':'Reduce all Level and Task Requirements for the Trader in Township by ${value}',
+    'MODIFIER_DATA_UnlockTrader':'Unlock the Trader in Township',
+    'MODIFIER_DATA_Spoof_AddItemsToShop':'Supply new Items to the Shop',
 
     'ITEM_NAME_Cursed_Hook': 'Cursed Hook',
     'ITEM_NAME_Tar_Jar': 'Jar of Tar',
@@ -282,8 +286,10 @@ export const language = {
     'RIELK_CONMOD_FOCUSEDCOOKING_1': '+3% Perfect Cook chance, Success chance, and Cooking Mastery XP while not Passive Cooking',
     'ITEM_NAME_Sapling_Branch': 'Sapling Branch',
     'ITEM_DESCRIPTION_Sapling_Branch': 'An unburnt branch. Contains Tree Seeds.',
-
-
+    
+    'TOASTS_FIXTURE_TIER_REQUIRED':'You need a Tier ${tier} ${fixtureName} to do that!',
+    'MENU_TEXT_REQUIRES_FIXTURE_TIER':'Construct the${fixtureImage}${fixtureName} to Tier ${tier}',
+    
     'RIELK_CONMOD_FOCUSEDCOOKING_2': '+5% Perfect Cook, Doubling, and Preservation Chance in Cooking while not Passive Cooking',
     'RIELK_CONMOD_FOCUSEDCOOKING_3': '+7% Perfect Cook Chance, Additional Perfect Item Chance, and Preservation Cap in Cooking while not Passive Cooking',
     'MENU_TEXT_STOKE_BONFIRE': 'Stoke Bonfire (Costs ${qty} ${logName})',

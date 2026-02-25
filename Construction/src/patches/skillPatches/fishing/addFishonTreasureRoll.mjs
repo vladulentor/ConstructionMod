@@ -24,7 +24,7 @@ export function addFishonTreasureRollPlusExtra(ctx) {
         const tarJar = game.items.getObjectByID('rielkConstruction:Tar_Jar');        //Also since the reward is hardcoded to only give one, or 2 per, we just multiply it by 300 if we get the tar jar
         const existing = rewards._items.get(tarJar);
         if (existing !== undefined) {
-            rewards._items.set(tarJar, existing * 300);
+            rewards._items.set(tarJar, existing * 600);
         } 
         return rewards;
 

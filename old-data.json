@@ -636,7 +636,7 @@
         "category": "Construction",
         "type": "Weapon",
         "media": "assets/items/mystic_rotating_saw.webp",
-        "ignoreCompletion": false,
+        "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 65000,
@@ -720,7 +720,7 @@
         "category": "Construction",
         "type": "Equipment",
         "media": "assets/items/steel-toed_boots.webp",
-        "ignoreCompletion": false,
+        "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 25000,
@@ -1301,155 +1301,6 @@
       }
     ],
     "shopPurchases": [
-      {
-        "id": "Black_Dragonhide",
-        "media": "assets/shoppurchases/black_dragonhide.webp",
-        "category": "melvorD:Materials",
-        "contains": {
-          "items": [
-            {
-              "id": "melvorD:Black_Dragonhide",
-              "quantity": 1
-            }
-          ]
-        },
-        "cost": {
-          "items": [
-            {
-              "id": "melvorD:Leather",
-              "quantity": 5
-            }
-          ],
-          "currencies": [
-            {
-              "currency": "melvorD:GP",
-              "type": "Fixed",
-              "cost": 5000
-            }
-          ]
-        },
-        "allowQuantityPurchase": true,
-        "unlockRequirements": [],
-        "purchaseRequirements": [
-          {
-            "type": "FixtureCompletion",
-            "fixtureID": "rielkConstruction:Black_Market",
-            "tier": 5
-          }
-        ],
-        "defaultBuyLimit": 0,
-        "buyLimitOverrides": [],
-        "showBuyLimit": false
-      },
-      {
-        "id": "Basic_Bag",
-        "media": "assets/shoppurchases/black_dragonhide.webp",
-        "category": "melvorD:Materials",
-        "contains": {
-          "items": [
-            {
-              "id": "melvorF:Basic_Bag",
-              "quantity": 1
-            }
-          ]
-        },
-        "cost": {
-          "items": [],
-          "currencies": [
-            {
-              "currency": "melvorD:GP",
-              "type": "Fixed",
-              "cost": 1000
-            }
-          ]
-        },
-        "allowQuantityPurchase": true,
-        "unlockRequirements": [],
-        "purchaseRequirements": [
-          {
-            "type": "FixtureCompletion",
-            "fixtureID": "rielkConstruction:Black_Market",
-            "tier": 5
-          }
-        ],
-        "defaultBuyLimit": 0,
-        "buyLimitOverrides": [],
-        "showBuyLimit": false
-      },
-      {
-        "id": "Arrow_Shafts",
-        "media": "assets/shoppurchases/black_dragonhide.webp",
-        "category": "melvorD:Materials",
-        "contains": {
-          "items": [
-            {
-              "id": "melvorF:Arrow_Shafts",
-              "quantity": 100
-            }
-          ]
-        },
-        "cost": {
-          "items": [],
-          "currencies": [
-            {
-              "currency": "melvorD:GP",
-              "type": "Fixed",
-              "cost": 8000
-            }
-          ]
-        },
-        "allowQuantityPurchase": true,
-        "unlockRequirements": [],
-        "purchaseRequirements": [
-          {
-            "type": "FixtureCompletion",
-            "fixtureID": "rielkConstruction:Black_Market",
-            "tier": 5
-          }
-        ],
-        "defaultBuyLimit": 0,
-        "buyLimitOverrides": [],
-        "showBuyLimit": false
-      },
-      {
-        "id": "Hidden_Routes",
-        "media": "assets/shoppurchases/treasure.webp",
-        "category": "melvorD:SkillUpgrades",
-        "contains": {
-          "items": [],
-          "modifiers": {
-            "townshipTraderCost": -5
-          }
-        },
-        "cost": {
-          "items": [],
-          "currencies": [
-            {
-              "currency": "melvorD:GP",
-              "type": "Fixed",
-              "cost": 100000000
-            }
-          ]
-        },
-        "allowQuantityPurchase": false,
-        "unlockRequirements": [],
-        "purchaseRequirements": [
-          {
-            "type": "FixtureCompletion",
-            "fixtureID": "rielkConstruction:Black_Market",
-            "tier": 5
-          },
-          {
-            "type": "SkillLevel",
-            "skillID": "melvorD:Thieving",
-            "level": 99
-          }
-        ],
-        "defaultBuyLimit": 1,
-        "buyLimitOverrides": [],
-        "showBuyLimit": false,
-        "customName": "Routes"
-      },
       {
         "id": "Iron_Saw",
         "media": "assets/shoppurchases/iron_saw.webp",
@@ -2082,28 +1933,6 @@
       },
       {
         "insertAt": "After",
-        "afterID": "melvorD:Magic_Pot",
-        "ids": [
-          "rielkConstruction:Hidden_Routes"
-        ]
-      },
-      {
-        "insertAt": "After",
-        "afterID": "melvorD:Bowstring",
-        "ids": [
-          "rielkConstruction:Arrow_Shafts",
-          "rielkConstruction:Basic_Bag"
-        ]
-      },
-      {
-        "insertAt": "After",
-        "afterID": "melvorF:Red_Dragonhide",
-        "ids": [
-          "rielkConstruction:Black_Dragonhide"
-        ]
-      },
-      {
-        "insertAt": "After",
         "afterID": "melvorF:Astrology_Skillcape",
         "ids": [
           "rielkConstruction:Construction_Skillcape"
@@ -2615,123 +2444,6 @@
       }
     ],
     "skillData": [
-      {
-        "skillID": "melvorD:Thieving",
-        "data": {
-          "npcs": [
-            {
-              "id": "BRICKLAYER",
-              "baseExperience": 79,
-              "level": 74,
-              "name": "Bricklayer",
-              "media": "assets/creatures/bricklayer.webp",
-              "perception": 660,
-              "maxHit": 19.5,
-              "currencyDrops": [
-                {
-                  "id": "melvorD:GP",
-                  "quantity": 625
-                }
-              ],
-              "lootTable": [
-                {
-                  "itemID": "rielkConstruction:Clay_Bricks",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 10
-                },
-                {
-                  "itemID": "rielkConstruction:Limestone_Bricks",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 6
-                },
-                {
-                  "itemID": "rielkConstruction:Granite_Bricks",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 4
-                },
-                {
-                  "itemID": "rielkConstruction:Marble_Bricks",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 2
-                },
-                {
-                  "itemID": "rielkConstruction:Magic_Bricks",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 1
-                }
-              ],
-              "uniqueDrop": {
-                "id": "rielkConstruction:Normal_Planks",
-                "quantity": 1
-              },
-              "allowedDamageTypeIDs": [
-                "melvorD:Normal"
-              ]
-            },
-            {
-              "id": "CONSTRUCT",
-              "baseExperience": 56,
-              "level": 59,
-              "name": "Construct",
-              "media": "assets/creatures/construct.webp",
-              "perception": 590,
-              "maxHit": 21.5,
-              "currencyDrops": [
-                {
-                  "id": "melvorD:GP",
-                  "quantity": 530
-                }
-              ],
-              "lootTable": [
-                {
-                  "itemID": "rielkConstruction:Steel_Nails",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 10
-                },
-                {
-                  "itemID": "rielkConstruction:Teak_Planks",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 6
-                },
-                {
-                  "itemID": "rielkConstruction:Mithril_Nails",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 4
-                },
-                {
-                  "itemID": "rielkConstruction:Mahogany_Planks",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 2
-                },
-                {
-                  "itemID": "rielkConstruction:Adamantite_Nails",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 1
-                },
-                {
-                  "itemID": "rielkConstruction:Redwood_Planks",
-                  "minQuantity": 1,
-                  "maxQuantity": 1,
-                  "weight": 1
-                }
-              ],
-              "allowedDamageTypeIDs": [
-                "melvorD:Normal"
-              ]
-            }
-          ]
-        }
-      },
       {
         "skillID": "melvorD:Township",
         "data": {
@@ -4840,15 +4552,15 @@
                 }
               ],
               "modifiers": {
-                "skillXP": [
+                "skillInterval": [
                   {
-                    "value": 5,
+                    "value": -1,
                     "skillID": "melvorD:Thieving"
                   }
                 ],
-                "skillItemDoublingChance": [
+                "skillXP": [
                   {
-                    "value": 3,
+                    "value": 5,
                     "skillID": "melvorD:Thieving"
                   }
                 ]
@@ -4884,15 +4596,19 @@
                   "quantity": 625000
                 }
               ],
-              "shinyMods": [
-                1,
-                2,
-                3
-              ],
               "modifiers": {
-                "rielkConstruction:UnlockTrader": 1,
-                "townshipTraderCost": -5,
-                "thievingStealth": 15
+                "skillInterval": [
+                  {
+                    "value": -1,
+                    "skillID": "melvorD:Thieving"
+                  }
+                ],
+                "skillItemDoublingChance": [
+                  {
+                    "value": 4,
+                    "skillID": "melvorD:Thieving"
+                  }
+                ]
               }
             },
             {
@@ -4930,10 +4646,10 @@
                 }
               ],
               "modifiers": {
-                "thievingStunAvoidanceChance": [
+                "skillInterval": [
                   {
-                    "realmID": "melvorD:Melvor",
-                    "value": 5
+                    "value": -2,
+                    "skillID": "melvorD:Thieving"
                   }
                 ],
                 "masteryXP": [
@@ -4982,21 +4698,19 @@
                   "quantity": 15000000
                 }
               ],
-              "shinyMods": [
-                1,
-                2,
-                3
-              ],
               "modifiers": {
-                "rielkConstruction:Spoof_LowerTraderRequirements": -5,
-                "currencyGain": [
+                "skillInterval": [
                   {
-                    "currencyID": "melvorD:GP",
-                    "skillID": "melvorD:Thieving",
-                    "value": 25
+                    "value": -2,
+                    "skillID": "melvorD:Thieving"
                   }
                 ],
-                "thievingStealth": 35
+                "skillItemDoublingChance": [
+                  {
+                    "value": 4,
+                    "skillID": "melvorD:Thieving"
+                  }
+                ]
               }
             },
             {
@@ -5032,9 +4746,7 @@
                 }
               ],
               "shinyMods": [
-                1,
-                2,
-                3
+                1
               ],
               "currencyCosts": [
                 {
@@ -5042,11 +4754,8 @@
                   "quantity": 75000000
                 }
               ],
-              "changeFunc": "lowerLevelRequirements",
               "modifiers": {
-                "rielkConstruction:Spoof_AddItemsToShop": 1,
-                "thievingAreaUniqueChance": 0.2,
-                "rielkConstruction:ReduceThievingTargetMaxHitBasedOnDefLevel": -1
+                "thievingStealth": 50
               }
             },
             {
@@ -10544,13 +10253,11 @@
           }
         ]
       },
-      {
+{
         "id": "skillEfficiencyChancePerHamrielStar",
         "allowedScopes": [
           {
-            "scopes": {
-              "skill": true
-            },
+            "scopes": {"skill":true},
             "descriptions": [
               {
                 "text": "Hamriel star wow",
@@ -10559,65 +10266,9 @@
             ]
           }
         ]
-      },
-      {
-        "id": "ReduceThievingTargetMaxHitBasedOnDefLevel",
-        "inverted": true,
-        "allowedScopes": [
-          {
-            "scopes": {},
-            "descriptions": [
-              {
-                "text": "Gyat DAMN!!!!!!!!",
-                "lang": "MODIFIER_DATA_ReduceThievingTargetMaxHitBasedOnDefLevel"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "UnlockTrader",
-        "inverted": true,
-        "allowedScopes": [
-          {
-            "scopes": {},
-            "descriptions": [
-              {
-                "text": "Gyat DAMN!!!!!!!!",
-                "lang": "MODIFIER_DATA_UnlockTrader"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Spoof_LowerTraderRequirements",
-        "allowedScopes": [
-          {
-            "scopes": {},
-            "descriptions": [
-              {
-                "text": "hamster dance",
-                "lang": "MODIFIER_DATA_Spoof_LowerTraderRequirements"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Spoof_AddItemsToShop",
-        "allowedScopes": [
-          {
-            "scopes": {},
-            "descriptions": [
-              {
-                "text": "hamster dance",
-                "lang": "MODIFIER_DATA_Spoof_AddItemsToShop"
-              }
-            ]
-          }
-        ]
       }
+
+      
     ],
     "combatEffects": [
       {

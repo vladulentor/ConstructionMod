@@ -1,6 +1,6 @@
 # Construction Mod: Changes & Additions
 
-This document lists all the changes and additions the Construction Mod makes to the base game. It serves both as a changelog, so players can see what’s been added or as a guide, meant to help you find opportunities to improve your efficiency in Construction. This list does NOT list changes that furniture upgrade cause to items or mechanics, just changes that are always visible with the mod installed.
+This document lists all the changes and additions the Construction Mod makes to the base game. It serves both as a changelog, so players can see what’s been added or as a guide, meant to help you find opportunities to improve your efficiency in Construction. This list does NOT list changes that furniture upgrade cause to items or mechanics, unless they require further clarification.
 
 Entries marked with [TotH] or [AoD] indicate Throne of the Herald or Atlas of Discovery changes.
 
@@ -23,11 +23,11 @@ Entries marked with [TotH] or [AoD] indicate Throne of the Herald or Atlas of Di
 
 ## Combat
 ### New Enemies
-- Added "Barn Raiser" enemy to Farmlands. Drops tier 1 drops of planks, nails, bricks, and straps, offering a combat-way of building up construction. He also rarely drops T2 nails or beams.
+- Added "Barn Raiser" enemy to Farmlands. Drops Normal Planks, Iron Nails, Clay Bricks, and Green D-hide Straps, offering a combat-way of building up construction. He also rarely drops Oak Planks, Steel Nails, or Limestone Bricks.
 
 - Added "Iron Giant" enemy to Giant's Dungeon. He is a good source of nails.
 
-- Added "Basic Arcane Golem", "Advanced Arcane Golem", and "Expert Arcane Golem" to the Wizard Tower. All of them drop Runes the wizards don't drop, and always drop Rune Essence. They drop Clay, Limestone, and Marble Bricks respectively. The Expert Arcane Golem additionally has a chance to drop a special item.
+- Added "Basic Arcane Golem", "Advanced Arcane Golem", and "Expert Arcane Golem" to the Wizard Tower. All of them drop Rune Essence and various Runes. They also drop Clay, Limestone, and Marble Bricks respectively. The Expert Arcane Golem additionally has a chance to drop a special item.
 
 ### Changed Enemies
 (Note: When changing existing enemies' loot tables, new items were added such that rare items' chances were not decreased)
@@ -50,6 +50,11 @@ Entries marked with [TotH] or [AoD] indicate Throne of the Herald or Atlas of Di
 - Added new Trades at The Trader, you are able to now Trade for Beam Boxes if your Fletching, Woodcutting, and Township level is sufficiently high. These will give you [Wood Beams](#crafting), Normal, Oak and Teak from the basic box; and Teak, Mahogany and Redwood from the regular box respectively.
 
 ---
+## Fishing
+
+- The Lake's third Tier upgrade adds <details>3 new items to the Fishing Special pool. The Tar Jar (175/6722 ≈ 2.6% to get) gives bonuses to both Thieving and Agility, 600 per catch. The Cursed Hook (23/6722 ≈ 0.33% to get), greatly increases the chance to find treasure but costs money per catch. The Mariner's Tie (2/6722 ≈ 0.03% to get) can be used with the Sailor's Top to upgrade it into the Mariner's Blouse, giving both Fish and Special items on a Special roll.
+The fishing pool's Special Table was changed such that rare items' chances were not decreased </details>
+---
 ## Fletching
 
 - Added a new "Wood Beams" category, including 5 types of Wood Beams, being Normal, Oak, Teak, Mahogany, and Redwood. 
@@ -67,12 +72,12 @@ Entries marked with [TotH] or [AoD] indicate Throne of the Herald or Atlas of Di
 ---
 ## Herblore
 
-- Added "Twice-Measured" skill potion at level 35. This will give you a boost in multiple craft chance when making construction materials *or* potency when making furniture.
+- Added "Twice-Measured" skill potion at level 70 Herblore. This potion provides a boost in Efficiency chance when making construction materials *or* Efficiency potency when making furniture.
 
 ---
 ## Summoning
 
-- Added a new "Bee" Tier 3 Summoning Familiar, whose marks are unlocked while training Construction. It can be made using [Wood Beams](#crafting) or Planks. It provides a 0.25 extra material/progress done when activating Efficiency in Construction. It currently has synergies with the Monkey, Pig, Salamander, Bear, and Devil.
+- Added a new "Bee" Tier 3 Summoning Familiar unlocked at 80 Summoning, whose marks are unlocked while training Construction. It can be made using [Wood Beams](#crafting) or Planks. It provides a 0.25 extra material/progress done when activating Efficiency in Construction. It currently has synergies with the Monkey, Pig, Salamander, Bear, and Devil.
 
 - [TotH] The bee also gains syngeries with the Owl and Beaver.
 

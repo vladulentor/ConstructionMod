@@ -7,8 +7,8 @@ table[0].weight -= 200; // this is topaz, unless anyone messes with it. We do th
 
 const MarinersItem = game.items.getObjectByID("rielkConstruction:Mariners_Tie"); // so we dont repeat ourselves
 const TarJar = {item: game.items.getObjectByID("rielkConstruction:Tar_Jar"), minQuantity:300, maxQuantity:300, weight:175}; //P.S. the min and maxquantity dont actually get used in this droptable
-const MarinersTie = {item: MarinersItem, minQuantity:1, maxQuantity:1, weight:2};
 const Cursed_Hook = {item: game.items.getObjectByID("rielkConstruction:Cursed_Hook"), minQuantity:1, maxQuantity:1, weight:23};
+const MarinersTie = {item: MarinersItem, minQuantity:1, maxQuantity:1, weight:2};
 
 table.push(TarJar, MarinersTie, Cursed_Hook);
 

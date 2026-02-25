@@ -686,6 +686,34 @@
         }
       },
       {
+        "itemType": "Item",
+        "id": "Engraved_Diagram_Fragment",
+        "name": "Engraved Diagram Fragment",
+        "category": "Thieving",
+        "type": "Fragment",
+        "media": "assets/items/tablet_fragment.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 2000
+      },
+         {
+        "itemType": "Item",
+        "id": "Engraved_Diagram",
+        "name": "Engraved Diagram",
+        "category": "Thieving",
+        "type": "Misc",
+        "media": "assets/items/tablet.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 15000,
+        "swalData": {
+          "title": "Item_NAME_Engraved_Diagram",
+          "htmlTemplateID": "Engraved_Diagram_Swal_Content"
+        }
+      },
+      {
         "itemType": "Equipment",
         "id": "Steel_Toed_Boots",
         "name": "Steel-Toed Boots",
@@ -6422,12 +6450,7 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillItemDoublingChance": [
-                  {
-                    "value": 3,
-                    "skillID": "melvorD:Mining"
-                  }
-                ],
+                "miningGemChance": 5,
                 "skillXP": [
                   {
                     "value": 3,

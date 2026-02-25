@@ -52,8 +52,12 @@ Entries marked with [TotH] or [AoD] indicate Throne of the Herald or Atlas of Di
 ---
 ## Fishing
 
-- The Lake's third Tier upgrade adds <details>3 new items to the Fishing Special pool. The Tar Jar (175/6722 ≈ 2.6% to get) gives bonuses to both Thieving and Agility, 600 per catch. The Cursed Hook (23/6722 ≈ 0.33% to get), greatly increases the chance to find treasure but costs money per catch. The Mariner's Tie (2/6722 ≈ 0.03% to get) can be used with the Sailor's Top to upgrade it into the Mariner's Blouse, giving both Fish and Special items on a Special roll.
-The fishing pool's Special Table was changed such that rare items' chances were not decreased </details>
+- The Lake's third Tier upgrade, spoilers below: 
+<details>Adds 3 new items to the Fishing Special pool: 
+-The Tar Jar (175/6722 ≈ 2.6% to get) gives bonuses to both Thieving and Agility, 600 per catch. 
+-The Cursed Hook (23/6722 ≈ 0.33% to get), greatly increases the chance to find treasure but costs money per catch. 
+-The Mariner's Tie (2/6722 ≈ 0.03% to get) can be used with the Sailor's Top to upgrade it into the Mariner's Blouse, giving both Fish and Special items on a Special roll.
+Note: The fishing pool's Special Table was changed such that rare items' chances were not decreased </details>
 ---
 ## Fletching
 

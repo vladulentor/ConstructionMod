@@ -7924,8 +7924,7 @@
                 2
               ],
               "changeFunc": [
-                "addRuneEssence",
-                "addConstellationLevels"
+                "addRuneEssence"
               ],
               "modifiers": {
                 "rielkConstruction:spoof_AddRunesAstrology": 1,
@@ -8110,6 +8109,9 @@
                 1,
                 2,
                 3
+              ],
+              "changeFunc": [
+                "addConstellationLevels"
               ],
               "modifiers": {
                 "rielkConstruction:spoof_AddStarStandardLevel": 1,
@@ -10230,11 +10232,13 @@
           }
         ]
       },
-{
+      {
         "id": "skillEfficiencyChancePerHamrielStar",
         "allowedScopes": [
           {
-            "scopes": {"skill":true},
+            "scopes": {
+              "skill": true
+            },
             "descriptions": [
               {
                 "text": "Hamriel star wow",
@@ -10244,8 +10248,6 @@
           }
         ]
       }
-
-      
     ],
     "combatEffects": [
       {

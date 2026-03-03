@@ -246,7 +246,7 @@ export class Construction extends ArtisanSkill {
             levelType: 'Standard',
             fixedIncreases: Object.values(game.skills.allObjects)
                 .filter(skill => !skill.isCombat)
-                .map(skill => ({ skill, increase: Math.min(5, skill.maxLevelCap - skill.level), maximum: skill.maxLevelCap })),
+                .map(skill => ({ skill, increase: Math.min(5, skill.maxLevelCap - skill._currentLevelCap), maximum: skill.maxLevelCap })),
             setIncreases: [],
             randomIncreases: [],
             randomCount: 0,

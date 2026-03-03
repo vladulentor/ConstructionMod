@@ -3,6 +3,7 @@ const { loadModule } = mod.getContext(import.meta);
 const { addHiddenLevelsToAllsSills } = await loadModule('src/patches/skillPatches/combat/addHiddenLevelsToAllsSills.mjs');
 
 const { addRuneEssenceCtx } = await loadModule('src/patches/skillPatches/astrology/addRuneEssence.mjs');
+const { addConstellationLevels } = await loadModule('src/patches/skillPatches/astrology/addConstellationLevels.mjs');
 const { addStarConvergence } = await loadModule('src/patches/skillPatches/astrology/addStarConvergence.mjs');
 
 
@@ -42,11 +43,9 @@ const { addBeamsMasteryPoolBonus } = await loadModule('src/patches/skillPatches/
 
 const { patchPerpetualHaste } = await loadModule('src/patches/skillPatches/shop/patchPerpetualHaste.mjs');
 
-const { addComboRunesonElemRunes } = await loadModule('src/patches/skillPatches/runecrafting/addComboRunesonElemRunes.mjs')
+const {addComboRunesonElemRunes} = await loadModule('src/patches/skillPatches/runecrafting/addComboRunesonElemRunes.mjs')
 
 const { patchThievingTargets } = await loadModule('src/patches/skillPatches/thieving/patchThievingTargets.mjs');
-const { reduceMaxHitByDefenseLevel } = await loadModule('src/patches/skillPatches/thieving/reduceMaxHitByDefenseLevel.mjs');
-
 
 const { nerfBearDevil } = await loadModule('src/patches/skillPatches/summoning/nerfBearDevil.mjs');
 const { addMarkSuperLevels } = await loadModule('src/patches/skillPatches/summoning/addMarkSuperLevels.mjs');
@@ -84,10 +83,11 @@ export function patchSkillsBeforeDataReg(ctx) {
 export function patchSkillsAfterDataReg(ctx) {
         patchCraftingOrder();
         patchFletchingOrder();
-        patchThievingTargets();
         addBeamsMasteryPoolBonus();
         patchArrowShaftRecipes(ctx);
         patchPerpetualHaste(ctx);
-        reduceMaxHitByDefenseLevel(ctx);
+
+        // patchThievingTargets();
+        // Remember when pushing the update to also disable ignorecompletion for the boots brick pile saw and magitech, and add the boots back
 
 }

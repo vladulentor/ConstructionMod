@@ -108,11 +108,4 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:TabletFightBuffBasedOnMarkLevel', 'mark');
     icons.addModifier('rielkConstruction:IncreaseMarkChance', 'loot');
 
-    icons.addModifier('rielkConstruction:UnlockTrader', 'ts_trader');
-    
-    icons.addModifier('rielkConstruction:Spoof_LowerTraderRequirements', 'ts_trader');
-    icons.addModifier('rielkConstruction:Spoof_AddItemsToShop', 'currency');
-    icons.addModifier('rielkConstruction:ReduceThievingTargetMaxHitBasedOnDefLevel', 'defence');
-
-
 }

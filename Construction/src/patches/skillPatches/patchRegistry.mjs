@@ -11,10 +11,6 @@ const { addConstellationLevels } = await loadModule("src/patches/skillPatches/as
 const { addSpecialAttack } = await loadModule('src/patches/skillPatches/combat/addSpecialAttack.mjs');
 
 
-const { lowerLevelRequirements } = await loadModule('src/patches/skillPatches/shop/lowerLevelRequirements.mjs');
-
-
-
 const { unlockPlot } = await loadModule('src/patches/skillPatches/farming/unlockPlot.mjs');
 
 const { patchWorldMap } = await loadModule("src/patches/skillPatches/atlasofdiscovery/patchWorldMap.mjs");
@@ -45,7 +41,6 @@ const { addMarkExtraLevels } = await loadModule('src/patches/skillPatches/summon
 export const EffectRegistry = {
   tierArray,
   unlockPlot,
-  lowerLevelRequirements,
   patchWorldMap,
   addFoodSlot,
   upgradeRegenPotions,

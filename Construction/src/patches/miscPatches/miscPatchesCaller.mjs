@@ -5,6 +5,7 @@ const { patchEventManager } = await loadModule('src/patches/miscPatches/patchEve
 const { patchConditionalMod } = await loadModule('src/patches/miscPatches/patchConditionalMod.mjs');
 const { patchBackground } = await loadModule('src/patches/miscPatches/patchBackground.mjs');
 const { addFixtureRequirement } = await loadModule('src/patches/miscPatches/addFixtureRequirement.mjs');
+const { addReadables } = await loadModule('src/patches/miscPatches/addReadables.mjs');
 
 
 export function patchMiscBeforeDataReg(ctx)
@@ -14,6 +15,7 @@ export function patchMiscBeforeDataReg(ctx)
         patchEventManager(ctx);
         patchConditionalMod(ctx);
         patchBackground(ctx);
+        addReadables(ctx);
         addFixtureRequirement();
 }
 export function patchSkillsAfterDataReg(ctx){

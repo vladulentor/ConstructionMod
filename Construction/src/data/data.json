@@ -691,16 +691,16 @@
         "name": "Engraved Diagram Fragment",
         "category": "Thieving",
         "type": "Fragment",
-        "media": "assets/items/tablet_fragment.webp",
+        "media": "assets/items/tablet_fragments.webp",
         "ignoreCompletion": false,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 2000
       },
          {
-        "itemType": "Item",
-        "id": "Engraved_Diagram",
-        "name": "Engraved Diagram",
+        "itemType": "Readable",
+        "id": "Engraved_Construct_Diagram",
+        "name": "Engraved Construct Diagram",
         "category": "Thieving",
         "type": "Misc",
         "media": "assets/items/tablet.webp",
@@ -710,7 +710,7 @@
         "sellsFor": 15000,
         "swalData": {
           "title": "Item_NAME_Engraved_Diagram",
-          "htmlTemplateID": "Engraved_Diagram_Swal_Content"
+          "htmlTemplateID": "Engraved_Construct_Diagram_Swal_Content"
         }
       },
       {
@@ -757,19 +757,13 @@
           "skillXP": [
             {
               "skillID": "rielkConstruction:Construction",
-              "value": 2
+              "value": 3
             }
           ],
           "rielkConstruction:skillEfficiencyChance": [
             {
               "skillID": "rielkConstruction:Construction",
               "value": 4
-            }
-          ],
-          "rielkConstruction:skillEfficiencyPotency": [
-            {
-              "skillID": "rielkConstruction:Construction",
-              "value": 30
             }
           ]
         }
@@ -1210,6 +1204,23 @@
             }
           ]
         }
+      }
+    ],
+    "itemUpgrades": [
+            {
+        "upgradedItemID": "rielkConstruction:Engraved_Construct_Diagram",
+        "itemCosts": [
+          
+          {
+            "id": "rielkConstruction:Engraved_Diagram_Fragment",
+            "quantity": 5
+          }
+        ],
+        "rootItemIDs": [
+          "rielkConstruction:Engraved_Diagram_Fragment"
+        ],
+        "isDowngrade": false,
+        "currencyCosts": []
       }
     ],
     "attacks": [
@@ -2666,7 +2677,7 @@
                 }
               ],
               "uniqueDrop": {
-                "id": "rielkConstruction:Normal_Planks",
+                "id": "rielkConstruction:Steel_Toed_Boots",
                 "quantity": 1
               },
               "allowedDamageTypeIDs": [
@@ -2724,7 +2735,10 @@
                   "maxQuantity": 1,
                   "weight": 1
                 }
-              ],
+              ],"uniqueDrop": {
+                "id": "rielkConstruction:Engraved_Diagram_Fragment",
+                "quantity": 1
+              },
               "allowedDamageTypeIDs": [
                 "melvorD:Normal"
               ]
@@ -4984,8 +4998,8 @@
               ],
               "shinyMods": [
                 1,
-                2,
-                3
+                2
+                
               ],
               "modifiers": {
                 "rielkConstruction:Spoof_LowerTraderRequirements": -5,
@@ -4995,8 +5009,7 @@
                     "skillID": "melvorD:Thieving",
                     "value": 25
                   }
-                ],
-                "thievingStealth": 35
+                ]
               }
             },
             {
@@ -5034,7 +5047,8 @@
               "shinyMods": [
                 1,
                 2,
-                3
+                3,4
+
               ],
               "currencyCosts": [
                 {
@@ -5046,6 +5060,7 @@
               "modifiers": {
                 "rielkConstruction:Spoof_AddItemsToShop": 1,
                 "thievingAreaUniqueChance": 0.2,
+                                "thievingStealth": 35,
                 "rielkConstruction:ReduceThievingTargetMaxHitBasedOnDefLevel": -1
               }
             },
@@ -8238,8 +8253,7 @@
                 2
               ],
               "changeFunc": [
-                "addRuneEssence",
-                "addConstellationLevels"
+                "addRuneEssence"
               ],
               "modifiers": {
                 "rielkConstruction:spoof_AddRunesAstrology": 1,
@@ -8424,6 +8438,9 @@
                 1,
                 2,
                 3
+              ],
+                  "changeFunc": [
+                "addConstellationLevels"
               ],
               "modifiers": {
                 "rielkConstruction:spoof_AddStarStandardLevel": 1,
@@ -12665,6 +12682,8 @@
       }
     ],
     "itemUpgrades": [
+      
+
       {
         "id": "melvorD:Green_Dhide_Body_U",
         "itemCosts": {

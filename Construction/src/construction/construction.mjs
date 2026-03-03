@@ -442,13 +442,13 @@ export class Construction extends ArtisanSkill {
         })
         this.sortMilestones();
     }
-     addTotalCurrentMasteryToCompletion(completion) {
-         this.fixtures.forEach(fixture => {
-             let totalTierLevel = fixture.currentTier;
-             const namespace = 'rielkConstruction';
-             completion.add(namespace, totalTierLevel);
-         });
-     }
+    addTotalCurrentMasteryToCompletion(completion) {
+        this.fixtures.forEach(fixture => {
+            let totalTierLevel = fixture.currentTier;
+            const namespace = 'rielkConstruction';
+            completion.add(namespace, totalTierLevel);
+        });
+    }
     onRealmChange() {
         super.onRealmChange();
         this.renderQueue.roomRealmVisibility = true;
@@ -571,7 +571,7 @@ export class Construction extends ArtisanSkill {
         return Math.max(this.game.modifiers.getValue(
             "rielkConstruction:skillEfficiencyChance",
             quer
-        ) + (this.tothmode? this.game.modifiers.getValue('rielkConstruction:skillEfficiencyChancePerHamrielStar', quer) * game.astrology.actions.getObjectSafe("melvorTotH:Haemir").maxValueModifiers: 0), 0);
+        ) + (this.tothmode ? this.game.modifiers.getValue('rielkConstruction:skillEfficiencyChancePerHamrielStar', quer) * game.astrology.actions.getObjectSafe("melvorTotH:Haemir").maxValueModifiers : 0), 0);
 
     }
     /** Gets the cost multiplier for efficiency (default 2) */
@@ -598,11 +598,11 @@ export class Construction extends ArtisanSkill {
         const builder = new EfficiencySourceBuilder(this.game.modifiers, true);
         const query = this.getActionModifierQuery(action);
         builder.addPotencySources('rielkConstruction:skillEfficiencyPotency', query);
-        if (!this.shouldDisableEfficiency) 
-           { builder.addChanceSources('rielkConstruction:skillEfficiencyChance', query);
-            if(this.tothmode)
-            builder.addChanceSources('rielkConstruction:skillEfficiencyChancePerHamrielStar', query, game.astrology.actions.getObjectSafe("melvorTotH:Haemir").maxValueModifiers);
-           }
+        if (!this.shouldDisableEfficiency) {
+            builder.addChanceSources('rielkConstruction:skillEfficiencyChance', query);
+            if (this.tothmode)
+                builder.addChanceSources('rielkConstruction:skillEfficiencyChancePerHamrielStar', query, game.astrology.actions.getObjectSafe("melvorTotH:Haemir").maxValueModifiers);
+        }
         builder.addChanceSources('rielkConstruction:bypassEfficiencyChance', query)
         return builder;
     }
@@ -724,7 +724,24 @@ export class Construction extends ArtisanSkill {
         }
     }
 
-
+studyTheDiagram(init = false) {
+    if (!init && this.hasStudiedDiagram == true) {
+        return;
+    }
+    const twothingstoadd = [];
+    const hitting = new ModifierValue(
+        game.modifierRegistry.getObjectByID('melvorD:minHitBasedOnMaxHit'),
+        2,
+        {}
+    );
+    const reflect = new ModifierValue(
+        game.modifierRegistry.getObjectByID('melvorD:damageTaken'),
+        -2,
+        {}
+    );
+    twothingstoadd.push(hitting, reflect);
+    game.modifiers.addModifiers('Construct Knowledge', twothingstoadd, 1, 1);
+}
     addMasteryProgress(tier) {
         let tierData = this.tierMasteries.getObjectSafe(`rielkConstruction:${tier}`);
 
@@ -907,6 +924,7 @@ export class Construction extends ArtisanSkill {
             this.ui.selectFixture(recipe.fixture, recipe.fixture.room, this);
         }
         this.fixtures.forEach(fixture => fixture.onLoad());
+        if (this.hasStudiedDiagram) this.studyTheDiagram(true);
         this.updateRecipeCounts();
         this.popTierMasteries();
 
@@ -947,17 +965,17 @@ export class Construction extends ArtisanSkill {
                                 this.applySetLevelCap(value);
                         });
                         break;
-                   /* case 'Abyssal':
-                        capIncrease.fixedIncreases.forEach((skillIncrease) => {
-                            if (skillIncrease.skill == this)
-                                this.skill.applyAbyssalLevelCapIncrease(skillIncrease);
-                        }
-                        );
-                        capIncrease.setIncreases.forEach(({ skill, value }) => {
-                            if (skill == this)
-                                this.applySetLevelCap(value);
-                        });
-                        break;*/
+                    /* case 'Abyssal':
+                         capIncrease.fixedIncreases.forEach((skillIncrease) => {
+                             if (skillIncrease.skill == this)
+                                 this.skill.applyAbyssalLevelCapIncrease(skillIncrease);
+                         }
+                         );
+                         capIncrease.setIncreases.forEach(({ skill, value }) => {
+                             if (skill == this)
+                                 this.applySetLevelCap(value);
+                         });
+                         break;*/
                 }
                 this.game.validateRandomLevelCapIncreases();
             })

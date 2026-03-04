@@ -27,6 +27,7 @@ export function tinyIconsCompatibility(ctx) {
         ['rielkConstruction:Straps', { name: 'straps', media: game.items.getObjectByID('rielkConstruction:Red_Dhide_Leather_Straps').media }],
     ]);
     icons.addSubcategoryScopeMedia("rielkConstruction:Construction", constrSubcategories);
+
     icons.addModifier('rielkConstruction:spoofAddWoodcuttingMasteryStuff1', 'woodcutting', 'xp');
     icons.addModifier('rielkConstruction:spoofAddWoodcuttingMasteryStuff2', 'woodcutting', 'interval');
 
@@ -54,7 +55,6 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:fishingTreasureNoReplace', 'fishing');
     icons.addModifier('rielkConstruction:minFishInterval', 'fishing', 'interval');
     icons.addModifier('rielkConstruction:maxFishInterval', 'fishing', 'interval');
-
     icons.addModifier('rielkConstruction:loseGPOnFishingBasedOnFish', 'fishing');
     icons.addModifier('rielkConstruction:fishPerfectCookedFish', 'fishing');
     icons.addModifier('rielkConstruction:spoofAddFishingSpecialItems', 'specialItems');
@@ -79,7 +79,6 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:spoof_AddMagicSpecialAttack', 'specialattack', 'magic');
     icons.addModifier('rielkConstruction:runeShieldMultiplier', 'ward');
     icons.addModifier('rielkConstruction:AllowAurorasAnytime', 'aurora', 'combat');
-
 
 
     icons.addModifier('rielkConstruction:ExtraTier1Potions', 'potion');

@@ -1,6 +1,6 @@
 const { loadModule } = mod.getContext(import.meta);
 const { getRielkLangString, templateRielkLangString } = await loadModule('src/language/translationManager.mjs');
-
+// --- Basic Compat ----
 export function skillBoostsCompatibility({ patch }) {
     skillBoosts.addNewSkill({
 
@@ -18,16 +18,122 @@ export function skillBoostsCompatibility({ patch }) {
         noPrimaryResource: false,
         isArtisan: true,
     });
+
+
     skillBoosts.addNewModifiers({
         skills: [game.construction],
         modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:skillEfficiencyChance', 'rielkConstruction:skillEfficiencyPotency', 'rielkConstruction:skillEfficiencyCost', 'rielkConstruction:bypassEfficiencyChance'
             , 'rielkConstruction:skillEfficiencyChancePerHamrielStar'
         ]]])
     });
+
+
+
+    // ---- All The custom effects (for other skills) ----
+
+    skillBoosts.addNewModifiers({
+        skills: [game.attack], //technically all combat skills but they're all the same,
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:allCombatSkillsFlatHiddenLevel', 'rielkConstruction:doublepetsmillion']]])
+    });
+
+
+    skillBoosts.addNewModifiers({
+        skills: [game.magic],
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:spoofIncreaseRuneReduction', 'rielkConstruction:addRuneShield',
+            'rielkConstruction:fake_Book_of_Eli', 'rielkConstruction:spoof_AddMagicSpecialAttack',
+            'rielkConstruction:runeShieldMultiplier', 'rielkConstruction:AllowAurorasAnytime']]])
+    });
+
+    skillBoosts.addNewModifiers({
+        skills: [game.hitpoints],
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:spoofFoodSlot', 'rielkConstruction:unlockOverHeal', 'rielkConstruction:spoofUpgradeRegenPot',
+            'rielkConstruction:autoeatOverheal', 'rielkConstruction:maxOverheal'
+        ]]])
+    });
+
+    skillBoosts.addNewModifiers({
+        skills: [game.prayer],
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:nullifyPrayerPointsUnder'
+        ]]])
+    });
+
+    skillBoosts.addNewModifiers({
+        skills: [game.slayer],
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:spoof_AddSlayerEnemies1', 'rielkConstruction:spoof_AddSlayerEnemies2', 'rielkConstruction:spoof_AddSlayerEnemies3',
+            'rielkConstruction:spoof_AddSlayerEnemies4', 'rielkConstruction:spoof_AddSlayerEnemies5', 'rielkConstruction:spoof_upgradeSlayerShtuff', 'rielkConstruction:slayerCostReduction',
+        ]]])
+    });
+
+
+    skillBoosts.addNewModifiers({
+        skills: [game.farming],
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:farmingTreeSeedReturn', 'rielkConstruction:spoofUnlockPlot', 'rielkConstruction:getSeedsFromFood']]])
+    });
+
+    skillBoosts.addNewModifiers({
+        skills: [game.township],
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:UnlockTrader', 'rielkConstruction:spoof_LowerTraderRequirements'
+        ]]])
+    });
+
+
+    skillBoosts.addNewModifiers({
+        skills: [game.woodcutting],
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:spoofAddWoodcuttingMasteryStuff1', 'rielkConstruction:spoofAddWoodcuttingMasteryStuff2']]])
+    });
+
+
+    skillBoosts.addNewModifiers({
+        skills: [game.mining],
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:spoof_AddBonusToMiningMasteryPool1', 'rielkConstruction:spoof_AddBonusToMiningMasteryPool2']]])
+    });
+
     skillBoosts.addNewModifiers({
         skills: [game.fishing],
-        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:loseGPOnFishingBasedOnFish', 'rielkConstruction:fishingTreasureNoReplace']]])
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:fishingTreasureNoReplace', 'rielkConstruction:minFishInterval',
+            'rielkConstruction:maxFishInterval', 'rielkConstruction:loseGPOnFishingBasedOnFish',
+            'rielkConstruction:fishPerfectCookedFish', 'rielkConstruction:spoofAddFishingSpecialItems']]])
     });
+
+    skillBoosts.addNewModifiers({
+        skills: [game.cooking],
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:spoofUpgradeCookingEquipment_1', 'rielkConstruction:spoofUpgradeCookingEquipment_2',
+            'rielkConstruction:flatAshGainedOnCookingFailure']]])
+    });
+    skillBoosts.addNewModifiers({
+        skills: [game.firemaking],
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:unlockRoaring', 'rielkConstruction:roaringLogCostReduction',
+            'rielkConstruction:spoofUpgradeKindlingPotion', 'rielkConstruction:spoofUnlockBranchSaplings',
+            'rielkConstruction:spoofUpgradeSaplingChance', 'rielkConstruction:spoofUpgradeRoaring']]])
+    });
+
+    skillBoosts.addNewModifiers({
+        skills: [game.herblore],
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:ExtraTier1Potions', 'rielkConstruction:ChangeAddiIntoHighTier',
+            'rielkConstruction:spoofReduceUpAmount', 'rielkConstruction:reducePotionUpReq']]])
+    });
+    skillBoosts.addNewModifiers({
+        skills: [game.astrology],
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:spoof_AddRunesAstrology', 'rielkConstruction:spoof_UpgradeScrollOfEssence',
+            'rielkConstruction:spoof_AddStarStandardLevel', 'rielkConstruction:UnlockConvergence']]])
+    });
+    skillBoosts.addNewModifiers({
+        skills: [game.runecrafting],
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:ComboRunesonElemRunes', 'rielkConstruction:runePreservationCap']]])
+    });
+
+    skillBoosts.addNewModifiers({
+        skills: [game.summoning],
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:TabletEffectBuffBasedOnMarkLevel', 'rielkConstruction:TabletAmountBuffBasedOnMarkLevel',
+            'rielkConstruction:Spoof_UnlockMarkSuperLevels', 'rielkConstruction:TabletFightBuffBasedOnMarkLevel', 'rielkConstruction:IncreaseMarkChance',
+        ]]])
+    });
+    skillBoosts.addNewModifiers({
+        skills: [game.thieving],
+        modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:increasePerfectFoodHealing', 'rielkConstruction:ReduceThievingTargetMaxHitBasedOnDefLevel']]])
+    });
+
+
     skillBoosts.addNewModifiers({
         skills: game.skills.allObjects.filter(skill => !['melvorD:Township', 'melvorD:Agility'].includes(skill.id)),
         modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:bypassGlobalDoubling']]])
@@ -35,7 +141,8 @@ export function skillBoostsCompatibility({ patch }) {
 
 
 
-    //scoobs compatibility
+
+    // ----  scoobs compatibility
     patch(skillBoosts.__proto__.constructor, 'createPetTooltip').after(function (_, container, item) {
         if (item.id === "rielkConstruction:Scoobs") {
             let progress = game.construction.recipeCountByTier.reduce((a, b) => a + b, 0);

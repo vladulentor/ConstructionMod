@@ -5253,6 +5253,7 @@
                   "quantity": 625000
                 }
               ],
+              "shinyMods":[1,2,3],
               "modifiers": {
                 "rielkConstruction:UnlockTrader": 1,
                 "townshipTraderCost": -5,
@@ -11186,6 +11187,7 @@
       },
       {
         "id": "slayerCostReduction",
+        "inverted": true,
         "allowedScopes": [
           {
             "scopes": {},

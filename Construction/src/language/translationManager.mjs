@@ -4,6 +4,7 @@ const languages = {
     'en': 'src/language/en.mjs',
     'de': 'src/language/de.mjs',
     'ru': 'src/language/ru.mjs',
+    'es': 'src/language/esp.mjs',
     'zh-CN': 'src/language/zh-CN.mjs',
     'zh-TW': 'src/language/zh-TW.mjs',
     'it': 'src/language/it.mjs',

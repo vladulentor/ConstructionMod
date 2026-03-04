@@ -257,7 +257,7 @@ export class Construction extends ArtisanSkill {
     locateAncientRelic(relicSet, relic) {
         this.queueAncientRelicFoundModal(relicSet, relic);
         relicSet.addRelic(relic);
-        if (relic.id == "rielkConstruction:ConstructionRelic4")
+        if (relic.id == "rielkConstruction:ConstructionRelic4" && game.currentGamemode.levelCapIncreases?.length >0  )
             game.increaseSkillLevelCaps(this.capIncrease, {
                 requirements: [],
                 given: false,

@@ -177,7 +177,7 @@
                   "requirements": [],
                   "chance": {
                     "type": "Fixed",
-                    "chance": 0.0005
+                    "chance": 50.0005
                   }
                 },
                 {

@@ -246,7 +246,7 @@ export class Construction extends ArtisanSkill {
             levelType: 'Standard',
             fixedIncreases: Object.values(game.skills.allObjects)
                 .filter(skill => !skill.isCombat)
-                .map(skill => ({ skill, increase: Math.min(5, skill.maxLevelCap - skill.level), maximum: skill.maxLevelCap })),
+                .map(skill => ({ skill, increase: Math.min(5, skill.maxLevelCap - skill._currentLevelCap), maximum: skill.maxLevelCap })),
             setIncreases: [],
             randomIncreases: [],
             randomCount: 0,
@@ -725,30 +725,30 @@ export class Construction extends ArtisanSkill {
         }
     }
 
-studyTheDiagram(init = false) {
-    if (!init && this.hasStudiedDiagram == true) return;
-    
-    if(init)ctx.onCharacterLoaded(async (ctx) => {this._studyTheDiagram()});
-    else this._studyTheDiagram();
-    
-    this.hasStudiedDiagram = true;
-}
-_studyTheDiagram(){
-    let twothingstoadd = [];
-    const hitting = new ModifierValue(
-        game.modifierRegistry.getObjectByID('melvorD:minHitBasedOnMaxHit'),
-        2,
-        {}
-    );
-    const reflect = new ModifierValue(
-        game.modifierRegistry.getObjectByID('melvorD:damageTaken'),
-        -2,
-        {}
-    );
-    twothingstoadd.push(hitting, reflect);
-    game.modifiers.addModifiers('Construct Knowledge', twothingstoadd, 1, 1);
+    studyTheDiagram(init = false) {
+        if (!init && this.hasStudiedDiagram == true) return;
 
-}
+        if (init) ctx.onCharacterLoaded(async (ctx) => { this._studyTheDiagram() });
+        else this._studyTheDiagram();
+
+        this.hasStudiedDiagram = true;
+    }
+    _studyTheDiagram() {
+        let twothingstoadd = [];
+        const hitting = new ModifierValue(
+            game.modifierRegistry.getObjectByID('melvorD:minHitBasedOnMaxHit'),
+            2,
+            {}
+        );
+        const reflect = new ModifierValue(
+            game.modifierRegistry.getObjectByID('melvorD:damageTaken'),
+            -2,
+            {}
+        );
+        twothingstoadd.push(hitting, reflect);
+        game.modifiers.addModifiers('Construct Knowledge', twothingstoadd, 1, 1);
+
+    }
     addMasteryProgress(tier) {
         let tierData = this.tierMasteries.getObjectSafe(`rielkConstruction:${tier}`);
 

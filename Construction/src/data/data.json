@@ -9394,8 +9394,7 @@
                 }
               ],
               "order": [
-                                "c"
-,
+                "c",
                 "m"
               ],
               "conditionalModifiers": [
@@ -9455,8 +9454,10 @@
                   "descriptionLang": "RIELK_CONMOD_SLAYER2"
                 }
               ],
-              "order":[
-                "m","c","m"
+              "order": [
+                "m",
+                "c",
+                "m"
               ],
               "modifiers": {
                 "flatSlayerAreaEffectNegation": 7,

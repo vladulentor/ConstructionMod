@@ -1,9 +1,25 @@
 export function reduceFishTimers(ctx) {
-    ctx.patch(Fishing, 'getMinFishInterval').after(function (ret, fish) {
-        return ret * (1 + this.game.modifiers.getValue("rielkConstruction:minFishInterval", ModifierQuery.EMPTY) / 100);
+    ctx.patch(Fishing, 'getMinFishInterval').replace(function (_, fish) {
+        let interval = fish.baseMinInterval;
+        const flatModifier = this.getFlatIntervalModifier(fish);
+        const percentModifier = this.getPercentageIntervalModifier(fish) + this.game.modifiers.getValue("rielkConstruction:minFishInterval", ModifierQuery.EMPTY);
+        interval *= 1 + percentModifier / 100;
+        interval += flatModifier;
+        if (this.game.modifiers.halveSkillInterval > 0)
+            interval /= 2;
+        interval = roundToTickInterval(interval);
+        return Math.max(interval, 250);
     });
-    ctx.patch(Fishing, 'getMaxFishInterval').after(function (ret, fish) {
-        return ret * (1 + this.game.modifiers.getValue("rielkConstruction:maxFishInterval", ModifierQuery.EMPTY) / 100);
+    ctx.patch(Fishing, 'getMaxFishInterval').replace(function (_, fish) {
+        let interval = fish.baseMaxInterval;
+        const flatModifier = this.getFlatIntervalModifier(fish);
+        const percentModifier = this.getPercentageIntervalModifier(fish) + this.game.modifiers.getValue("rielkConstruction:maxFishInterval", ModifierQuery.EMPTY);
+        interval *= 1 + percentModifier / 100;
+        interval += flatModifier;
+        if (this.game.modifiers.halveSkillInterval > 0)
+            interval /= 2;
+        interval = roundToTickInterval(interval);
+        return Math.max(interval, 250);
     });
 
     ctx.patch(FishingAreaMenuElement, 'updateSelectedFishRates').replace(function (_, fish) {
@@ -14,10 +30,10 @@ export function reduceFishTimers(ctx) {
             minTime: formatFixed(game.fishing.getMinFishInterval(fish) / 1000, 2),
             maxTime: formatFixed(game.fishing.getMaxFishInterval(fish) / 1000, 2),
         });
-        if (this.clock == undefined)
-            {const clockList = this.querySelectorAll('.fa-clock');
+        if (this.clock == undefined) {
+            const clockList = this.querySelectorAll('.fa-clock');
             this.clock = clockList[clockList.length - 1]; // the clock for current fish is always last in line.
-            }
+        }
         let html = this.fishInterval.innerHTML;
 
         if (minRed && maxRed) { //Just make all 4 cases.
@@ -48,5 +64,4 @@ export function reduceFishTimers(ctx) {
         this.updateAbyssalGrants(game.fishing.modifyAbyssalXP(fish.baseAbyssalExperience), fish.baseAbyssalExperience);
     });
 }
-
 

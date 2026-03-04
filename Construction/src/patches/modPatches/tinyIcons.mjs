@@ -111,7 +111,7 @@ export function tinyIconsCompatibility(ctx) {
 
     icons.addModifier('rielkConstruction:UnlockTrader', 'ts_trader');
     icons.addModifier('rielkConstruction:spoof_LowerTraderRequirements', 'ts_trader');
-    icons.addModifier('rielkConstruction:spoof_AddItemsToShop', 'currency_generic');
+    icons.addModifier('rielkConstruction:spoof_AddItemsToShop', 'ts_trader');
     icons.addModifier('rielkConstruction:ReduceThievingTargetMaxHitBasedOnDefLevel', 'defence');
 
 

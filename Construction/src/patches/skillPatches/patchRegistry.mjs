@@ -14,6 +14,12 @@ const { addSpecialAttack } = await loadModule('src/patches/skillPatches/combat/a
 const { lowerLevelRequirements } = await loadModule('src/patches/skillPatches/shop/lowerLevelRequirements.mjs');
 
 
+const { addBonusToPool } = await loadModule('src/patches/skillPatches/mining/addBonusToPool.mjs');
+
+const { buffSlayerItems } = await loadModule('src/patches/skillPatches/slayer/buffSlayerItems.mjs');
+const { checkForInitialMill } = await loadModule('src/patches/skillPatches/slayer/trackSlayerCoins.mjs');
+const { addEnemies } = await loadModule('src/patches/skillPatches/slayer/addEnemies.mjs');
+
 
 const { unlockPlot } = await loadModule('src/patches/skillPatches/farming/unlockPlot.mjs');
 
@@ -61,5 +67,9 @@ export const EffectRegistry = {
   addSpecialAttack,
   addRuneEssence,
   addConstellationLevels,
+  addBonusToPool,
+  buffSlayerItems,
+  checkForInitialMill,
+  addEnemies,
   addMarkExtraLevels
 };

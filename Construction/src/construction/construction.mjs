@@ -536,6 +536,7 @@ export class Construction extends ArtisanSkill {
 
     addProvidedStats() {
         super.addProvidedStats();
+        if (this.hasStudiedDiagram) this.studyTheDiagram(true);
         this.fixtures.forEach((fixture) => {
             fixture.addProvidedStatsTo(this.providedStats)
         });
@@ -725,10 +726,15 @@ export class Construction extends ArtisanSkill {
     }
 
 studyTheDiagram(init = false) {
-    if (!init && this.hasStudiedDiagram == true) {
-        return;
-    }
-    const twothingstoadd = [];
+    if (!init && this.hasStudiedDiagram == true) return;
+    
+    if(init)ctx.onCharacterLoaded(async (ctx) => {this._studyTheDiagram()});
+    else this._studyTheDiagram();
+    
+    this.hasStudiedDiagram = true;
+}
+_studyTheDiagram(){
+    let twothingstoadd = [];
     const hitting = new ModifierValue(
         game.modifierRegistry.getObjectByID('melvorD:minHitBasedOnMaxHit'),
         2,
@@ -741,6 +747,7 @@ studyTheDiagram(init = false) {
     );
     twothingstoadd.push(hitting, reflect);
     game.modifiers.addModifiers('Construct Knowledge', twothingstoadd, 1, 1);
+
 }
     addMasteryProgress(tier) {
         let tierData = this.tierMasteries.getObjectSafe(`rielkConstruction:${tier}`);
@@ -924,7 +931,6 @@ studyTheDiagram(init = false) {
             this.ui.selectFixture(recipe.fixture, recipe.fixture.room, this);
         }
         this.fixtures.forEach(fixture => fixture.onLoad());
-        if (this.hasStudiedDiagram) this.studyTheDiagram(true);
         this.updateRecipeCounts();
         this.popTierMasteries();
 

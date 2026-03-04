@@ -9,15 +9,13 @@ Prayer nullify UI rework
 ArchMark
 
 Outpost update:
--Black Market
--Construct everything
--Check the boots
--Remember the Construct's unique item
--Mines
--Effect when rocks reset? Idk
--Hunters Lodge
--Empower hunting Items
--New monsters (dragon, maybe coffin? Idk)
+
+-Tasks left
+Actually add effects to hunters lodge lol
+Test
+Translation
+Update log and change list
+Post
 
 After update:
 Township tasks (2/1 per tier)

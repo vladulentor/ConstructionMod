@@ -16,7 +16,6 @@ export function additionalPotionsHighTier({ patch }) {
     };
     patch(Herblore, 'actionRewards').get(function (orig) {
         const rewards = orig();
-        console.log(rewards);
         const recipe = this.activeRecipe
         const ourTier = this.getPotionTier(recipe);
         if (this.game.modifiers.getValue("rielkConstruction:ChangeAddiIntoHighTier", ModifierQuery.EMPTY) &&

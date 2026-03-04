@@ -15,8 +15,8 @@ export function tinyIconsCompatibility(ctx) {
         ['aurora', 'assets/media/skills/combat/auroras.png'],
         ['rune_essence', game.items.getObjectByID('melvorD:Rune_Essence').media],
         ['convergence', ctx.getResourceUrl('assets/others/convergence.webp')],
-        ['mark', 'assets/media/skills/summoning/mark_4_256.png']
-
+        ['mark', 'assets/media/skills/summoning/mark_4_256.png'],
+        ['deserthat', game.items.getObjectByID('melvorF:Desert_Hat').media]
 
     ]
     ));
@@ -37,7 +37,7 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:bypassEfficiencyChance', 'efficiency');
     icons.addModifier('rielkConstruction:skillEfficiencyChancePerHamrielStar', 'efficiency');
 
-    
+
     icons.addModifier('rielkConstruction:constructionActionsToUpgrade', 'cabin');
 
     icons.addModifier('rielkConstruction:farmingTreeSeedReturn', 'preservation');
@@ -107,5 +107,30 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:Spoof_UnlockMarkSuperLevels', 'mark');
     icons.addModifier('rielkConstruction:TabletFightBuffBasedOnMarkLevel', 'mark');
     icons.addModifier('rielkConstruction:IncreaseMarkChance', 'loot');
+
+
+    icons.addModifier('rielkConstruction:UnlockTrader', 'ts_trader');
+    icons.addModifier('rielkConstruction:spoof_LowerTraderRequirements', 'ts_trader');
+    icons.addModifier('rielkConstruction:spoof_AddItemsToShop', 'currency_generic');
+    icons.addModifier('rielkConstruction:ReduceThievingTargetMaxHitBasedOnDefLevel', 'defence');
+
+
+    icons.addModifier('rielkConstruction:spoof_AddBonusToMiningMasteryPool1', 'mastery');
+    icons.addModifier('rielkConstruction:spoof_AddBonusToMiningMasteryPool2', 'mastery');
+
+    icons.addModifier('rielkConstruction:spoof_AddSlayerEnemies1', 'slayer');
+    icons.addModifier('rielkConstruction:spoof_AddSlayerEnemies2', 'slayer');
+    icons.addModifier('rielkConstruction:spoof_AddSlayerEnemies3', 'slayer');
+    icons.addModifier('rielkConstruction:spoof_AddSlayerEnemies4', 'slayer');
+    icons.addModifier('rielkConstruction:spoof_AddSlayerEnemies5', 'slayer');
+    icons.addModifier('rielkConstruction:spoof_upgradeSlayerShtuff', 'deserthat');
+    icons.addModifier('rielkConstruction:slayerCostReduction', 'slayer_coins');
+
+    
+    icons.addModifier('rielkConstruction:doublepetsmillion', 'loot');
+
+
+
+
 
 }

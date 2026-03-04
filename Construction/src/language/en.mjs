@@ -77,7 +77,7 @@ export const language = {
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_1': 'Your House\'s Tier starts at 0. As you build Furniture and fill each room, your House\'s tier will improve.',
     'MENU_TEXT_HOUSE_TIER_EXPLANATION_2': 'When all rooms contain Furniture of a required tier or higher, your House Tier will increase. You will unlock permanent Construction bonuses and recieve supplies.',
     'MENU_TEXT_REWARDS': 'Rewards',
-    'MENU_TEXT_MARKS_UPGRADED':'Training the respective Skill while that Familiar is equipped will <strong class="construction-success fuck-you">QUADRUPLE</strong> the drop rate of its Marks.',
+    'MENU_TEXT_MARKS_UPGRADED': 'Training the respective Skill while that Familiar is equipped will <strong class="construction-success fuck-you">QUADRUPLE</strong> the drop rate of its Marks.',
 
     'MENU_MAX_TIER': 'Max Tier',
     'MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN': 'Chance to complete ${potency} actions at once.',
@@ -110,6 +110,7 @@ export const language = {
     'SHOP_NAME_Adamant_Saw': 'Adamant Saw',
     'SHOP_NAME_Rune_Saw': 'Rune Saw',
     'SHOP_NAME_Dragon_Saw': 'Dragon Saw',
+    'SHOP_NAME_Hidden_Routes': "Secret Routes",
 
     'SHOP_DESCRIPTION_Iron_Saw': '-5% Construction Interval for a total of -5% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +0.20 from your Saw.',
     'SHOP_DESCRIPTION_Steel_Saw': '-5% Construction Interval for a total of -10% applied from your Saw. +0.20 extra materials or progress when completing extra actions for a total of +0.40 from your Saw.',
@@ -182,11 +183,15 @@ export const language = {
     'ITEM_NAME_Flower_Pots_Token_4': 'Build Composter Tier 4 in Construction to unlock.',
     'ITEM_NAME_Flower_Pots_Token_5': 'Build Composter Tier 5 in Construction to unlock.',
     'ITEM_NAME_Summoning_Familiar_Bee': 'Bee',
+    'ITEM_NAME_Star_Necklace': 'Star Necklace',
+    'ITEM_NAME_Ice_Gloves': 'Ice Gloves',
+
+
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2% Construction Skill XP',
     'ITEM_DESCRIPTION_Builders_Body': '+2% Construction Skill XP',
     'ITEM_DESCRIPTION_Builders_Leggings': '+2% Construction Skill XP',
-    'ITEM_DESCRIPTION_fBuilders_Boots': '+2% Construction Skill XP',
+    'ITEM_DESCRIPTION_Builders_Boots': '+2% Construction Skill XP',
 
     'ITEM_DESCRIPTION_Normal_Beams': 'Can be cut into Arrow Shafts or Planks.',
     'ITEM_DESCRIPTION_Oak_Beams': 'Can be cut into Arrow Shafts or Planks.',
@@ -212,7 +217,7 @@ export const language = {
     'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '-${value}% chance to complete extra actions when making ${categoryName} in ${skillName}',
     'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '+${value}% chance to complete extra actions when making ${categoryName} in ${skillName}',
     'MODIFIER_DATA_skillEfficiencyChanceforSubcategory': '${value}% chance to complete extra actions when making ${subcategoryName} in ${skillName}',
-        'MODIFIER_DATA_skillEfficiencyChancePerHamrielStar':'${value}% chance to complete extra actions in ${skillName} per maxed Star in Haemir constellation in Astrology',
+    'MODIFIER_DATA_skillEfficiencyChancePerHamrielStar': '${value}% chance to complete extra actions in ${skillName} per maxed Star in Haemir constellation in Astrology',
 
     'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra Materials or Progress made when completing extra actions when making ${categoryName} in ${skillName}',
     'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra Materials or Progress made when completing extra actions while crafting ${categoryName} in ${skillName}',
@@ -265,29 +270,58 @@ export const language = {
     'SHOP_PURCHASE_Perpetual_Haste': '-15% Crafting, Construction & Fletching Interval',
     'ITEM_DESCRIPTION_BEAR_DEVIL_SYNERGY': 'While using the Controlled Heat Potions, +5% Firemaking Skill XP and Bonfire duration increased by 15%. Charges are used per Firemaking action and lit Bonfire.',
     'RIELK_SYNERGY_Pig_Bee': '+10% Doubling and Preservation chance while not Passive Cooking',
+    'RIELK_SYNERGY_Bear_Bee': 'While the Twice-Measured Potion is active in Construction, Resource cost when completing extra actions is reduced by 0.2',
     'MODIFIER_DATA_fishingTreasureNoReplace': 'Also catch fish when finding Junk or Special items',
     'MODIFIER_DATA_TabletFightBuffBasedOnMarkLevel': '${value}% increased Max Hit from Familiars per Mark Level above 5',
     'MODIFIER_DATA_TabletAmountBuffBasedOnMarkLevel': '${value} base quantity of tablets gained in ${skillName} per Mark Level above 5',
     'MODIFIER_DATA_TabletEffectBuffBasedOnMarkLevel': '${value}% increased Bonuses from Familiars per Mark Level above 5',
     'MODIFIER_DATA_IncreaseMarkChance': 'Double the Drop Rate of Marks when training their respective Skills while they are Equipped',
-    'MODIFIER_DATA_Spoof_UnlockMarkSuperLevels': 'Max levels for Marks in ${skillName} are increased by ${value}',
-
+    'MODIFIER_DATA_spoof_UnlockMarkSuperLevels': 'Max levels for Marks in ${skillName} are increased by ${value}',
+    'MODIFIER_DATA_ReduceThievingTargetMaxHitBasedOnDefLevel': 'Each Defence Level reduces Thieving NPCs\' Maximum Hit (down to half)',
+    'MODIFIER_DATA_spoof_LowerTraderRequirements': 'Reduce all Level and Task Requirements for the Trader in Township by ${value}',
+    'MODIFIER_DATA_UnlockTrader': 'Unlock the Trader in Township',
+    'MODIFIER_DATA_spoof_AddItemsToShop': 'Supply new Items to the Shop',
+    'MODIFIER_DATA_spoof_AddBonusToMiningMasteryPool1': 'Add Smithing Bonuses to Mining\'s 10% and 25% Mastery Pool bonuses',
+    'MODIFIER_DATA_spoof_AddBonusToMiningMasteryPool2': 'Add Smithing Bonuses to Mining\'s 50% and 95% Mastery Pool bonuses',
+    'MODIFIER_DATA_spoof_upgradeSlayerShtuff': 'Empower Items that grant access to Slayer Areas',
+    'MODIFIER_DATA_doublepetsmillion': 'Double the chance of finding pets from Combat Areas up to level 100 while you have over a million Slayer Coins',
+    'MODIFIER_DATA_spoof_AddSlayerEnemies1': 'Discover a hidden enemy in the Graveyard',
+    'MODIFIER_DATA_spoof_AddSlayerEnemies2': 'Discover a hidden enemy in the Bandit\'s Hideout',
+    'MODIFIER_DATA_spoof_AddSlayerEnemies3': 'Discover a hidden enemy in the Icy Hills',
+    'MODIFIER_DATA_spoof_AddSlayerEnemies4': 'Discover a hidden enemy in the Wizard Tower',
+    'MODIFIER_DATA_spoof_AddSlayerEnemies5': 'Discover a hidden enemy in the Dragon Valley',
+    'MODIFIER_DATA_slayerCostReduction': '${value}% Slayer Task cost',
 
     'ITEM_NAME_Cursed_Hook': 'Cursed Hook',
     'ITEM_NAME_Tar_Jar': 'Jar of Tar',
     'ITEM_NAME_Mariners_Blouse': 'Mariner\'s Top',
     'ITEM_NAME_Mariners_Tie': 'Mariner\'s Tie',
     'ITEM_NAME_Construction_Lesser_Relic': 'Construction Lesser Relic',
-    'RIELK_SYNERGY_Bear_Bee': 'While the Twice-Measured Potion is active in Construction, Resource cost when completing extra actions is reduced by 0.2',
-    'RIELK_CONMOD_FOCUSEDCOOKING_1': '+3% Perfect Cook chance, Success chance, and Cooking Mastery XP while not Passive Cooking',
+    'ITEM_NAME_Engraved_Diagram_Fragment': 'Engraved Diagram Fragment',
+    'ITEM_NAME_Engraved_Diagram': 'Engraved Construct Diagram',
+    'ITEM_NAME_Half_Burnt_Ledger': 'Half-Burnt Ledger',
+
+    'ITEM_NAME_Engraved_Construct_Diagram': 'Engraved Construct Diagram',
     'ITEM_NAME_Sapling_Branch': 'Sapling Branch',
     'ITEM_DESCRIPTION_Sapling_Branch': 'An unburnt branch. Contains Tree Seeds.',
 
+    'TOASTS_FIXTURE_TIER_REQUIRED': 'You need a Tier ${tier} ${fixtureName} to do that!',
+    'MENU_TEXT_REQUIRES_FIXTURE_TIER': 'Construct the${fixtureImage}${fixtureName} to Tier ${tier}',
 
+    'RIELK_CONMOD_FOCUSEDCOOKING_1': '+3% Perfect Cook chance, Success chance, and Cooking Mastery XP while not Passive Cooking',
     'RIELK_CONMOD_FOCUSEDCOOKING_2': '+5% Perfect Cook, Doubling, and Preservation Chance in Cooking while not Passive Cooking',
     'RIELK_CONMOD_FOCUSEDCOOKING_3': '+7% Perfect Cook Chance, Additional Perfect Item Chance, and Preservation Cap in Cooking while not Passive Cooking',
-    'MENU_TEXT_STOKE_BONFIRE': 'Stoke Bonfire (Costs ${qty} ${logName})',
+    'RIELK_CONMOD_SLAYER2': '+7% damage dealt by all attacks when fighting a Slayer Task monster',
+    'RIELK_CONMOD_SLAYER5': '+15% chance to preserve Consumable Slot Charges when fighting a Slayer Task monster',
 
+
+    'MENU_TEXT_STOKE_BONFIRE': 'Stoke Bonfire (Costs ${qty} ${logName})',
+    'MENU_TEXT_ENGRAVED_DIAGRAM_TEXT_0': 'How to build a Construct:',
+    'MENU_TEXT_ENGRAVED_DIAGRAM_TEXT_1': '1. Be hard as steel',
+    'MENU_TEXT_ENGRAVED_DIAGRAM_TEXT_2': '2. Always Believe in yourself',
+    'MENU_TEXT_ENGRAVED_DIAGRAM_TEXT_3': 'You can\'t make out the other steps, but it\'s probably something like that',
+    'MENU_TEXT_ENGRAVED_DIAGRAM_UNLOCK_0': 'Permanent 2% less Damage Taken',
+    'MENU_TEXT_ENGRAVED_DIAGRAM_UNLOCK_1': 'Permanent 2% of Maximum Hit added to Minimum Hit',
     'MENU_BONFIRE_SOURCE': '${logName} Bonfire',
 
     'BONFIRE_ROARING_NOTICE': 'Roaring Bonfires deplete while their corresponding Skill is Active',
@@ -343,7 +377,12 @@ export const language = {
     'ENEMY_NAME_Basic_Golem': 'Arcane Golem',
     'ENEMY_NAME_Advanced_Golem': 'Advanced Arcane Golem',
     'ENEMY_NAME_Expert_Golem': 'Expert Arcane Golem',
+    'ENEMY_NAME_HauntedCoffin': 'Haunted Coffin',
+    'ENEMY_NAME_SmugglerCarriage': 'Smuggler\'s Carriage',
+    'ENEMY_NAME_IceSculpture': 'Ice Sculpture',
 
+
+    'stop looking in my code': '',
 
     'SKILL_CATEGORY_Leather_Slivers': 'Leather Slivers',
     'SKILL_CATEGORY_Wood_Beams': 'Wood Beams',

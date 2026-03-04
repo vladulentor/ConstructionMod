@@ -45,6 +45,12 @@ const { patchPerpetualHaste } = await loadModule('src/patches/skillPatches/shop/
 
 const {addComboRunesonElemRunes} = await loadModule('src/patches/skillPatches/runecrafting/addComboRunesonElemRunes.mjs')
 
+const { trackSlayerCoins } = await loadModule('src/patches/skillPatches/slayer/trackSlayerCoins.mjs');
+
+const { slayerCostReduction } = await loadModule('src/patches/skillPatches/slayer/slayerCostReduction.mjs');
+
+
+
 const { patchThievingTargets } = await loadModule('src/patches/skillPatches/thieving/patchThievingTargets.mjs');
 
 const { nerfBearDevil } = await loadModule('src/patches/skillPatches/summoning/nerfBearDevil.mjs');
@@ -78,6 +84,8 @@ export function patchSkillsBeforeDataReg(ctx) {
         addHiddenLevelsToAllsSills(ctx);
         patchPrayerPointsSpending(ctx);
         addMarkSuperLevels(ctx);
+        trackSlayerCoins(ctx);
+        slayerCostReduction(ctx);
         nerfBearDevil();
 }
 export function patchSkillsAfterDataReg(ctx) {

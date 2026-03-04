@@ -34,12 +34,61 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 - **Iron Giant** (Giant's Dungeon): Good source of Nails.  
 - **Basic Arcane Golem**, **Advanced Arcane Golem**, **Expert Arcane Golem** (Wizard Tower): Drop Rune Essence and various Runes. Drop Clay, Limestone, and Marble Bricks respectively. Expert Arcane Golem also has a chance to drop a special item.
 
+## Hunter's Lodge
+## Hunter's Lodge
+- The **Hunter's Lodge** furniture now uncovers hidden Slayer enemies as it is upgraded.  
+- Each upgrade reveals one additional enemy in a specific area.  
+- The enemies unlocked, in order, are listed below.
+
+<details>
+<summary>Level 1</summary>
+
+- **Haunted Coffin**  
+  - Area: Graveyard  
+  - Drops: An assortment of different types of bones, low-Tier planks, and the Star Necklace, which provides boosts to training and using Prayer.
+
+</details>
+
+<details>
+<summary>Level 2</summary>
+
+- **Smuggler's Carriage**  
+  - Area: Bandit's Hideout  
+  - Stats: A ranged enemy that can use the rapid fire attack. 
+</details>
+
+<details>
+<summary>Level 3</summary>
+
+- **Icy Sculpture**  
+  - Area: Icy Hills  
+
+</details>
+
+<details>
+<summary>Level 4</summary>
+
+- **Expert Arcane Golem**  
+  - Area: Wizard Tower  
+
+</details>
+
+<details>
+<summary>Level 5</summary>
+  - Area: Dragon Valley  
+
+- **Elder Dragon**  
+
+</details>
+
 ### Changed Enemies
 *(Note: new items were added such that rare item's chances were not decreased)*
 
 - Goblins can now drop Planks; Ranged Goblins can drop Nails.  
 - Confused Pirate (Sandy Shores) drops remains of the ship he floated in on, good source of Planks.  
 - Green, Blue, Red, and Black Dragons have a `35%` chance to drop [Leather Slivers](#fletching) instead of Leather. Amount dropped ≈ 3–4× their regular Leather drop amount.  
+- Bandit Trainee now drops Green Dragonhide Straps.
+- Bandit now drops Green and Blue Dragonhide Straps.
 - `[AoD]` Dark Quarry's golems can drop Bricks corresponding to their material.
 
 ### Changed Chests
@@ -67,6 +116,20 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
   - **The Mariner's Tie** (`2/6722 ≈ 0.03%`) can be used with the Sailor's Top to upgrade it into the Mariner's Blouse, giving both Fish and Special items on a Special roll.
 
 *Note: The Fishing pool's Special Table was changed so rare items’ chances were not decreased.*
+
+</details>
+---
+
+## Thieving
+- Added the **"Construct"**, a Thieving Target in the Cave of Giants. He can be pickpocketed for Mid-Tier Planks and Nails. He has an NPC Unique Drop.
+- Added the **"Bricklayer"**, a Thieving Target in the Outskirts. He can be pickpocketed for all tiers of Bricks. He has an NPC Unique Drop.
+- Added an Area Unique Drop to the Outskirts.
+<details>
+<summary>Unique Items added in Thieving</summary>
+
+- Construct's NPC Unique Drop: Engraved Diagram Fragment. Gathering and upgrading 5 of them will reconstruct the Engraved Construct Diagram. Reading the Engraved Construct Diagram will give permanent combat bonuses.
+- Bricklayer's NPC Unique Drop: Steel-Toed Boots. Boots with 3% Skill XP and 4% Efficiency Chance in Construction.
+- Outskirts Unique Area Drop: Pile of Bricks. An openable item that will give bricks of all tiers.
 
 </details>
 

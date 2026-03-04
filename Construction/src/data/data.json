@@ -686,6 +686,34 @@
         }
       },
       {
+        "itemType": "Item",
+        "id": "Engraved_Diagram_Fragment",
+        "name": "Engraved Diagram Fragment",
+        "category": "Thieving",
+        "type": "Fragment",
+        "media": "assets/items/tablet_fragments.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 2000
+      },
+      {
+        "itemType": "Readable",
+        "id": "Engraved_Construct_Diagram",
+        "name": "Engraved Construct Diagram",
+        "category": "Thieving",
+        "type": "Misc",
+        "media": "assets/items/tablet.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 15000,
+        "swalData": {
+          "title": "Item_NAME_Engraved_Diagram",
+          "htmlTemplateID": "Engraved_Construct_Diagram_Swal_Content"
+        }
+      },
+      {
         "itemType": "Equipment",
         "id": "Steel_Toed_Boots",
         "name": "Steel-Toed Boots",
@@ -695,7 +723,7 @@
         "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "sellsFor": 25000,
+        "sellsFor": 2500,
         "tier": "none",
         "validSlots": [
           "Boots",
@@ -729,7 +757,7 @@
           "skillXP": [
             {
               "skillID": "rielkConstruction:Construction",
-              "value": 2
+              "value": 3
             }
           ],
           "rielkConstruction:skillEfficiencyChance": [
@@ -737,14 +765,133 @@
               "skillID": "rielkConstruction:Construction",
               "value": 4
             }
-          ],
-          "rielkConstruction:skillEfficiencyPotency": [
+          ]
+        }
+      },
+      {
+        "itemType": "Equipment",
+        "id": "Star_Necklace",
+        "name": "Star Necklace",
+        "category": "Equipment",
+        "type": "Equipment",
+        "media": "assets/items/necklace.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 1000,
+        "tier": "none",
+        "validSlots": [
+          "Amulet",
+          "Passive"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [],
+        "equipmentStats": [],
+        "modifiers": {
+          "prayerPointPreservationChance": 5,
+          "skillXP": [
             {
-              "skillID": "rielkConstruction:Construction",
-              "value": 30
+              "skillID": "melvorD:Prayer",
+              "value": 5
             }
           ]
         }
+      },
+      {
+        "itemType": "Equipment",
+        "id": "Half_Burnt_Ledger",
+        "name": "Half-Burnt Ledger",
+        "category": "Equipment",
+        "type": "Equipment",
+        "media": "assets/items/ledger.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 25,
+        "tier": "none",
+        "validSlots": [
+          "Shield",
+          "Passive"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [],
+        "equipmentStats": [],
+        "modifiers": {
+          "skillInterval": [
+            {
+              "skillID": "melvorD:Firemaking",
+              "value": -3
+            }
+          ],
+          "currencyGain": [
+            {
+              "currencyID": "melvorD:GP",
+              "skillID": "melvorD:Firemaking",
+              "value": 35
+            }
+          ],
+          "firemakingBonfireInterval": 10
+        }
+      },
+      {
+        "itemType": "Equipment",
+        "id": "Ice_Gloves",
+        "name": "Ice Gloves",
+        "category": "Equipment",
+        "type": "Equipment",
+        "media": "assets/items/ice_gloves.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 350,
+        "tier": "none",
+        "validSlots": [
+          "Gloves"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Defence",
+            "level": 50
+          },
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Ranged",
+            "level": 50
+          }
+        ],
+        "equipmentStats": [
+          {
+            "key": "rangedAttackBonus",
+            "value": 15
+          },
+          {
+            "key": "magicAttackBonus",
+            "value": -3
+          },
+          {
+            "key": "meleeDefenceBonus",
+            "value": 10
+          },
+          {
+            "key": "rangedDefenceBonus",
+            "value": 10
+          },
+          {
+            "key": "magicDefenceBonus",
+            "value": -3
+          },
+          {
+            "key": "damageReduction",
+            "value": 1
+          },
+          {
+            "key": "rangedStrengthBonus",
+            "value": 5
+          }
+        ],
+        "modifiers": {}
       },
       {
         "id": "Beam_Box_I",
@@ -1184,6 +1331,22 @@
         }
       }
     ],
+    "itemUpgrades": [
+      {
+        "upgradedItemID": "rielkConstruction:Engraved_Construct_Diagram",
+        "itemCosts": [
+          {
+            "id": "rielkConstruction:Engraved_Diagram_Fragment",
+            "quantity": 5
+          }
+        ],
+        "rootItemIDs": [
+          "rielkConstruction:Engraved_Diagram_Fragment"
+        ],
+        "isDowngrade": false,
+        "currencyCosts": []
+      }
+    ],
     "attacks": [
       {
         "id": "Brute_Strength",
@@ -1273,6 +1436,155 @@
       }
     ],
     "shopPurchases": [
+      {
+        "id": "Black_Dragonhide",
+        "media": "assets/shoppurchases/black_dragonhide.webp",
+        "category": "melvorD:Materials",
+        "contains": {
+          "items": [
+            {
+              "id": "melvorD:Black_Dragonhide",
+              "quantity": 1
+            }
+          ]
+        },
+        "cost": {
+          "items": [
+            {
+              "id": "melvorD:Leather",
+              "quantity": 5
+            }
+          ],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 5000
+            }
+          ]
+        },
+        "allowQuantityPurchase": true,
+        "unlockRequirements": [],
+        "purchaseRequirements": [
+          {
+            "type": "FixtureCompletion",
+            "fixtureID": "rielkConstruction:Black_Market",
+            "tier": 5
+          }
+        ],
+        "defaultBuyLimit": 0,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false
+      },
+      {
+        "id": "Basic_Bag",
+        "media": "assets/shoppurchases/basic_bag.webp",
+        "category": "melvorD:Materials",
+        "contains": {
+          "items": [
+            {
+              "id": "melvorF:Basic_Bag",
+              "quantity": 1
+            }
+          ]
+        },
+        "cost": {
+          "items": [],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 1000
+            }
+          ]
+        },
+        "allowQuantityPurchase": true,
+        "unlockRequirements": [],
+        "purchaseRequirements": [
+          {
+            "type": "FixtureCompletion",
+            "fixtureID": "rielkConstruction:Black_Market",
+            "tier": 5
+          }
+        ],
+        "defaultBuyLimit": 0,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false
+      },
+      {
+        "id": "Arrow_Shafts",
+        "media": "assets/shoppurchases/arrow_shafts.webp",
+        "category": "melvorD:Materials",
+        "contains": {
+          "items": [
+            {
+              "id": "melvorF:Arrow_Shafts",
+              "quantity": 100
+            }
+          ]
+        },
+        "cost": {
+          "items": [],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 8000
+            }
+          ]
+        },
+        "allowQuantityPurchase": true,
+        "unlockRequirements": [],
+        "purchaseRequirements": [
+          {
+            "type": "FixtureCompletion",
+            "fixtureID": "rielkConstruction:Black_Market",
+            "tier": 5
+          }
+        ],
+        "defaultBuyLimit": 0,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false
+      },
+      {
+        "id": "Hidden_Routes",
+        "media": "assets/shoppurchases/treasure.webp",
+        "category": "melvorD:SkillUpgrades",
+        "contains": {
+          "items": [],
+          "modifiers": {
+            "townshipTraderCost": -5
+          }
+        },
+        "cost": {
+          "items": [],
+          "currencies": [
+            {
+              "currency": "melvorD:GP",
+              "type": "Fixed",
+              "cost": 100000000
+            }
+          ]
+        },
+        "allowQuantityPurchase": false,
+        "unlockRequirements": [],
+        "purchaseRequirements": [
+          {
+            "type": "FixtureCompletion",
+            "fixtureID": "rielkConstruction:Black_Market",
+            "tier": 5
+          },
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Thieving",
+            "level": 99
+          }
+        ],
+        "defaultBuyLimit": 1,
+        "buyLimitOverrides": [],
+        "showBuyLimit": false,
+        "customName": "Routes"
+      },
       {
         "id": "Iron_Saw",
         "media": "assets/shoppurchases/iron_saw.webp",
@@ -2208,11 +2520,11 @@
         "media": "assets/creatures/clay_golem.webp",
         "levels": {
           "Hitpoints": 40,
-          "Attack": 15,
-          "Strength": 30,
-          "Defence": 15,
-          "Ranged": 15,
-          "Magic": 15
+          "Attack": 20,
+          "Strength": 45,
+          "Defence": 20,
+          "Ranged": 20,
+          "Magic": 20
         },
         "equipmentStats": [
           {
@@ -2221,7 +2533,7 @@
           },
           {
             "key": "stabAttackBonus",
-            "value": 20
+            "value": 28
           }
         ],
         "ignoreCompletion": false,
@@ -2265,8 +2577,8 @@
         "currencyDrops": [
           {
             "currencyID": "melvorD:GP",
-            "min": 7,
-            "max": 42
+            "min": 16,
+            "max": 64
           }
         ]
       },
@@ -2275,12 +2587,12 @@
         "name": "Advanced Arcane Golem",
         "media": "assets/creatures/limestone_golem.webp",
         "levels": {
-          "Hitpoints": 70,
-          "Attack": 15,
-          "Strength": 70,
-          "Defence": 15,
-          "Ranged": 15,
-          "Magic": 15
+          "Hitpoints": 75,
+          "Attack": 25,
+          "Strength": 90,
+          "Defence": 25,
+          "Ranged": 25,
+          "Magic": 25
         },
         "equipmentStats": [
           {
@@ -2289,7 +2601,7 @@
           },
           {
             "key": "stabAttackBonus",
-            "value": 50
+            "value": 60
           }
         ],
         "ignoreCompletion": false,
@@ -2333,8 +2645,8 @@
         "currencyDrops": [
           {
             "currencyID": "melvorD:GP",
-            "min": 80,
-            "max": 220
+            "min": 128,
+            "max": 256
           }
         ]
       },
@@ -2343,12 +2655,12 @@
         "name": "Expert Arcane Golem",
         "media": "assets/creatures/marble_golem.webp",
         "levels": {
-          "Hitpoints": 130,
-          "Attack": 90,
-          "Strength": 90,
-          "Defence": 75,
-          "Ranged": 70,
-          "Magic": 70
+          "Hitpoints": 200,
+          "Attack": 250,
+          "Strength": 150,
+          "Defence": 150,
+          "Ranged": 150,
+          "Magic": 150
         },
         "equipmentStats": [
           {
@@ -2357,15 +2669,15 @@
           },
           {
             "key": "stabAttackBonus",
-            "value": 50
+            "value": 70
           },
           {
             "key": "meleeStrengthBonus",
-            "value": 50
+            "value": 70
           },
           {
             "key": "meleeDefenceBonus",
-            "value": 80
+            "value": 110
           }
         ],
         "ignoreCompletion": false,
@@ -2377,7 +2689,7 @@
           {
             "itemID": "rielkConstruction:Marble_Bricks",
             "minQuantity": 3,
-            "maxQuantity": 7,
+            "maxQuantity": 10,
             "weight": 1000
           },
           {
@@ -2389,7 +2701,7 @@
           {
             "itemID": "melvorF:Spirit_Rune",
             "minQuantity": 1,
-            "maxQuantity": 5,
+            "maxQuantity": 10,
             "weight": 300
           },
           {
@@ -2409,13 +2721,386 @@
         "currencyDrops": [
           {
             "currencyID": "melvorD:GP",
+            "min": 128,
+            "max": 512
+          }
+        ]
+      },
+      {
+        "id": "HauntedCoffin",
+        "name": "Haunted Coffin",
+        "media": "assets/creatures/coffin.webp",
+        "levels": {
+          "Hitpoints": 60,
+          "Attack": 1,
+          "Strength": 1,
+          "Defence": 60,
+          "Ranged": 1,
+          "Magic": 70
+        },
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 1800
+          },
+          {
+            "key": "damageReduction",
+            "value": 7
+          },
+          {
+            "key": "magicDamageBonus",
+            "value": 12
+          }
+        ],
+        "ignoreCompletion": false,
+        "attackType": "magic",
+        "specialAttacks": [],
+        "passives": [],
+        "lootChance": 100,
+        "lootTable": [
+          {
+            "itemID": "melvorD:Bones",
+            "minQuantity": 1,
+            "maxQuantity": 10,
+            "weight": 80
+          },
+          {
+            "itemID": "rielkConstruction:Oak_Planks",
+            "minQuantity": 1,
+            "maxQuantity": 15,
+            "weight": 50
+          },
+          {
+            "itemID": "melvorF:Ash",
+            "minQuantity": 1,
+            "maxQuantity": 8,
+            "weight": 50
+          },
+          {
+            "itemID": "rielkConstruction:Mahogany_Planks",
+            "minQuantity": 1,
+            "maxQuantity": 15,
+            "weight": 35
+          },
+          {
+            "itemID": "melvorD:Big_Bones",
+            "minQuantity": 1,
+            "maxQuantity": 6,
+            "weight": 30
+          },
+          {
+            "itemID": "melvorD:Dragon_Bones",
+            "minQuantity": 1,
+            "maxQuantity": 4,
+            "weight": 10
+          },
+          {
+            "itemID": "melvorD:Magic_Bones",
+            "minQuantity": 1,
+            "maxQuantity": 2,
+            "weight": 5
+          },
+          {
+            "itemID": "rielkConstruction:Star_Necklace",
+            "minQuantity": 1,
+            "maxQuantity": 1,
+            "weight": 2
+          }
+        ],
+        "canSlayer": true,
+        "isBoss": false,
+        "selectedSpell": "melvorD:WindBolt",
+        "bones": {
+          "itemID": "rielkConstruction:Normal_Planks",
+          "quantity": 1
+        },
+        "currencyDrops": [
+          {
+            "currencyID": "melvorD:GP",
+            "min": 20,
+            "max": 80
+          }
+        ]
+      },
+      {
+        "id": "SmugglerCarriage",
+        "name": "Smuggler Carriage",
+        "media": "assets/creatures/carriage.webp",
+        "levels": {
+          "Hitpoints": 130,
+          "Attack": 90,
+          "Strength": 90,
+          "Defence": 75,
+          "Ranged": 70,
+          "Magic": 70
+        },
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 1500
+          },
+          {
+            "key": "rangedAttackBonus",
+            "value": 50
+          },
+          {
+            "key": "rangedStrengthBonus",
+            "value": 50
+          },
+          {
+            "key": "meleeDefenceBonus",
+            "value": 80
+          }
+        ],
+        "ignoreCompletion": false,
+        "attackType": "ranged",
+        "specialAttacks": [
+          "melvorD:RapidFire"
+        ],
+        "passives": [],
+        "lootChance": 85,
+        "lootTable": [
+          {
+            "itemID": "rielkConstruction:Blue_Dhide_Leather_Straps",
+            "minQuantity": 3,
+            "maxQuantity": 15,
+            "weight": 400
+          },
+          {
+            "itemID": "rielkConstruction:Red_Dhide_Leather_Straps",
+            "minQuantity": 1,
+            "maxQuantity": 15,
+            "weight": 300
+          },
+          {
+            "itemID": "rielkConstruction:Black_Dhide_Leather_Straps",
+            "minQuantity": 1,
+            "maxQuantity": 15,
+            "weight": 100
+          },
+          {
+            "itemID": "melvorF:Wood_Box_I",
+            "minQuantity": 1,
+            "maxQuantity": 3,
+            "weight": 40
+          },
+          {
+            "itemID": "melvorF:Bar_Box_I",
+            "minQuantity": 1,
+            "maxQuantity": 3,
+            "weight": 15
+          },
+          {
+            "itemID": "melvorF:Potion_Box_I",
+            "minQuantity": 1,
+            "maxQuantity": 3,
+            "weight": 10
+          },
+          {
+            "itemID": "rielkConstruction:Half_Burnt_Ledger",
+            "minQuantity": 1,
+            "maxQuantity": 1,
+            "weight": 1
+          }
+        ],
+        "canSlayer": true,
+        "isBoss": false,
+        "selectedSpell": "melvorD:WindStrike",
+        "bones": {
+          "itemID": "rielkConstruction:Mahogany_Planks",
+          "quantity": 1
+        },
+        "currencyDrops": [
+          {
+            "currencyID": "melvorD:GP",
             "min": 80,
             "max": 220
+          }
+        ]
+      },
+      {
+        "id": "IceSculpture",
+        "name": "Ice Sculpture",
+        "media": "assets/creatures/sculpture.webp",
+        "levels": {
+          "Hitpoints": 160,
+          "Attack": 110,
+          "Strength": 110,
+          "Defence": 110,
+          "Ranged": 110,
+          "Magic": 130
+        },
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 1500
+          },
+          {
+            "key": "rangedAttackBonus",
+            "value": 50
+          },
+          {
+            "key": "rangedStrengthBonus",
+            "value": 50
+          },
+          {
+            "key": "meleeDefenceBonus",
+            "value": 80
+          }
+        ],
+        "ignoreCompletion": false,
+        "attackType": "magic",
+        "specialAttacks": [
+          "melvorD:Frostburn"
+        ],
+        "bones": {
+          "itemID": "melvorD:Magic_Bones",
+          "quantity": 1
+        },
+        "passives": [],
+        "lootChance": 1,
+        "lootTable": [
+          {
+            "itemID": "rielkConstruction:Ice_Gloves",
+            "minQuantity": 1,
+            "maxQuantity": 1,
+            "weight": 400
+          }
+        ],
+        "canSlayer": true,
+        "isBoss": false,
+        "selectedSpell": "melvorD:WaterWave",
+        "currencyDrops": [
+          {
+            "currencyID": "melvorD:GP",
+            "min": 200,
+            "max": 500
           }
         ]
       }
     ],
     "skillData": [
+      {
+        "skillID": "melvorD:Thieving",
+        "data": {
+          "npcs": [
+            {
+              "id": "BRICKLAYER",
+              "baseExperience": 79,
+              "level": 74,
+              "name": "Bricklayer",
+              "media": "assets/creatures/bricklayer.webp",
+              "perception": 660,
+              "maxHit": 19.5,
+              "currencyDrops": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 625
+                }
+              ],
+              "lootTable": [
+                {
+                  "itemID": "rielkConstruction:Clay_Bricks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 10
+                },
+                {
+                  "itemID": "rielkConstruction:Limestone_Bricks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 6
+                },
+                {
+                  "itemID": "rielkConstruction:Granite_Bricks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 4
+                },
+                {
+                  "itemID": "rielkConstruction:Marble_Bricks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 2
+                },
+                {
+                  "itemID": "rielkConstruction:Magic_Bricks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 1
+                }
+              ],
+              "uniqueDrop": {
+                "id": "rielkConstruction:Steel_Toed_Boots",
+                "quantity": 1
+              },
+              "allowedDamageTypeIDs": [
+                "melvorD:Normal"
+              ]
+            },
+            {
+              "id": "CONSTRUCT",
+              "baseExperience": 56,
+              "level": 59,
+              "name": "Construct",
+              "media": "assets/creatures/construct.webp",
+              "perception": 590,
+              "maxHit": 21.5,
+              "currencyDrops": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 530
+                }
+              ],
+              "lootTable": [
+                {
+                  "itemID": "rielkConstruction:Steel_Nails",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 10
+                },
+                {
+                  "itemID": "rielkConstruction:Teak_Planks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 6
+                },
+                {
+                  "itemID": "rielkConstruction:Mithril_Nails",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 4
+                },
+                {
+                  "itemID": "rielkConstruction:Mahogany_Planks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 2
+                },
+                {
+                  "itemID": "rielkConstruction:Adamantite_Nails",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 1
+                },
+                {
+                  "itemID": "rielkConstruction:Redwood_Planks",
+                  "minQuantity": 1,
+                  "maxQuantity": 1,
+                  "weight": 1
+                }
+              ],
+              "uniqueDrop": {
+                "id": "rielkConstruction:Engraved_Diagram_Fragment",
+                "quantity": 1
+              },
+              "allowedDamageTypeIDs": [
+                "melvorD:Normal"
+              ]
+            }
+          ]
+        }
+      },
       {
         "skillID": "melvorD:Township",
         "data": {
@@ -3723,7 +4408,8 @@
                 "rielkConstruction:Black_Market",
                 "rielkConstruction:Mines",
                 "rielkConstruction:Trapping_Hut"
-              ]
+              ],
+              "newTooltip": true
             },
             {
               "id": "Refectory",
@@ -3732,8 +4418,7 @@
                 "rielkConstruction:Spirit_Catcher",
                 "rielkConstruction:Prayer_Altar",
                 "rielkConstruction:Rune_Altar"
-              ],
-              "newTooltip": true
+              ]
             },
             {
               "id": "Training_Room",
@@ -4569,18 +5254,9 @@
                 }
               ],
               "modifiers": {
-                "skillInterval": [
-                  {
-                    "value": -1,
-                    "skillID": "melvorD:Thieving"
-                  }
-                ],
-                "skillItemDoublingChance": [
-                  {
-                    "value": 4,
-                    "skillID": "melvorD:Thieving"
-                  }
-                ]
+                "rielkConstruction:UnlockTrader": 1,
+                "townshipTraderCost": -5,
+                "thievingStealth": 15
               }
             },
             {
@@ -4618,10 +5294,10 @@
                 }
               ],
               "modifiers": {
-                "skillInterval": [
+                "thievingStunAvoidanceChance": [
                   {
-                    "value": -2,
-                    "skillID": "melvorD:Thieving"
+                    "realmID": "melvorD:Melvor",
+                    "value": 5
                   }
                 ],
                 "masteryXP": [
@@ -4670,17 +5346,18 @@
                   "quantity": 15000000
                 }
               ],
+              "shinyMods": [
+                1,
+                2
+              ],
+              "changeFunc": "lowerLevelRequirements",
               "modifiers": {
-                "skillInterval": [
+                "rielkConstruction:spoof_LowerTraderRequirements": -5,
+                "currencyGain": [
                   {
-                    "value": -2,
-                    "skillID": "melvorD:Thieving"
-                  }
-                ],
-                "skillItemDoublingChance": [
-                  {
-                    "value": 4,
-                    "skillID": "melvorD:Thieving"
+                    "currencyID": "melvorD:GP",
+                    "skillID": "melvorD:Thieving",
+                    "value": 25
                   }
                 ]
               }
@@ -4718,7 +5395,10 @@
                 }
               ],
               "shinyMods": [
-                1
+                1,
+                2,
+                3,
+                4
               ],
               "currencyCosts": [
                 {
@@ -4727,7 +5407,10 @@
                 }
               ],
               "modifiers": {
-                "thievingStealth": 50
+                "rielkConstruction:spoof_AddItemsToShop": 1,
+                "thievingAreaUniqueChance": 0.2,
+                "thievingStealth": 35,
+                "rielkConstruction:ReduceThievingTargetMaxHitBasedOnDefLevel": -1
               }
             },
             {
@@ -4989,7 +5672,7 @@
                 "nonShardSummoningCostReduction": [
                   {
                     "realmID": "melvorD:Melvor",
-                    "value": -15
+                    "value": 15
                   }
                 ],
                 "flatTier2SummoningShardCost": -1
@@ -5026,7 +5709,7 @@
                 3
               ],
               "modifiers": {
-                "rielkConstruction:Spoof_UnlockMarkSuperLevels": [
+                "rielkConstruction:spoof_UnlockMarkSuperLevels": [
                   {
                     "skillID": "melvorD:Summoning",
                     "value": 2
@@ -5148,7 +5831,7 @@
                 3
               ],
               "modifiers": {
-                "rielkConstruction:Spoof_UnlockMarkSuperLevels": [
+                "rielkConstruction:spoof_UnlockMarkSuperLevels": [
                   {
                     "skillID": "melvorD:Summoning",
                     "value": 2
@@ -5183,7 +5866,6 @@
                 1
               ],
               "currencyCosts": [],
-              "changeFunc": "addSaplingBranchDrop",
               "modifiers": {
                 "rielkConstruction:unlockRoaring": 1
               }
@@ -6422,18 +7104,13 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillItemDoublingChance": [
-                  {
-                    "value": 3,
-                    "skillID": "melvorD:Mining"
-                  }
-                ],
                 "skillXP": [
                   {
                     "value": 3,
                     "skillID": "melvorD:Mining"
                   }
-                ]
+                ],
+                "miningGemChance": 5
               }
             },
             {
@@ -6461,16 +7138,16 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "addBonusToPool",
+              "shinyMods": [
+                1,
+                2
+              ],
               "modifiers": {
+                "rielkConstruction:spoof_AddBonusToMiningMasteryPool1": 1,
                 "skillItemDoublingChance": [
                   {
                     "value": 5,
-                    "skillID": "melvorD:Mining"
-                  }
-                ],
-                "skillInterval": [
-                  {
-                    "value": -5,
                     "skillID": "melvorD:Mining"
                   }
                 ]
@@ -6502,14 +7179,16 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "noMiningNodeDamageChance": [
+                "masteryXP": [
                   {
-                    "categoryID": "melvorD:Essence",
-                    "value": 5
-                  },
+                    "value": 5,
+                    "skillID": "melvorD:Mining"
+                  }
+                ],
+                "miningNodeRespawnInterval": [
                   {
-                    "categoryID": "melvorD:Ore",
-                    "value": 5
+                    "realmID": "melvorD:Melvor",
+                    "value": -10
                   }
                 ]
               }
@@ -6539,15 +7218,15 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [
-                1
-              ],
               "modifiers": {
-                "flatMiningNodeHP": 10,
-                "masteryXP": [
+                "noMiningNodeDamageChance": [
                   {
-                    "value": 5,
-                    "skillID": "melvorD:Mining"
+                    "categoryID": "melvorD:Essence",
+                    "value": 5
+                  },
+                  {
+                    "categoryID": "melvorD:Ore",
+                    "value": 5
                   }
                 ]
               }
@@ -6598,9 +7277,13 @@
               ],
               "currencyCosts": [],
               "shinyMods": [
-                1
+                1,
+                2,
+                3
               ],
+              "changeFunc": "addBonusToPool",
               "modifiers": {
+                "rielkConstruction:spoof_AddBonusToMiningMasteryPool2": 1,
                 "flatMiningNodeHP": 20,
                 "flatSkillInterval": [
                   {
@@ -7109,8 +7792,7 @@
               ],
               "currencyCosts": [],
               "shinyMods": [
-                1,
-                2
+                1
               ],
               "modifiers": {
                 "rielkConstruction:nullifyPrayerPointsUnder": [
@@ -7367,7 +8049,7 @@
                 "runecraftingRuneCostReduction": [
                   {
                     "skillID": "melvorD:Runecrafting",
-                    "value": -5
+                    "value": 5
                   }
                 ]
               }
@@ -7448,7 +8130,7 @@
                 "runecraftingRuneCostReduction": [
                   {
                     "skillID": "melvorD:Runecrafting",
-                    "value": -10
+                    "value": 10
                   }
                 ],
                 "skillItemDoublingChance": [
@@ -8677,20 +9359,30 @@
                   "quantity": 450
                 }
               ],
+              "changeFunc": "addEnemies",
               "currencyCosts": [
                 {
                   "id": "melvorD:SlayerCoins",
                   "quantity": 5000
                 }
               ],
+              "order": [
+                "c",
+                "m"
+              ],
+              "conditionalModifiers": [
+                {
+                  "condition": {
+                    "type": "FightingSlayerTask"
+                  },
+                  "enemyModifiers": {
+                    "accuracyRating": -7
+                  },
+                  "descriptionLang": "MODIFIER_DATA_decreasedSlayerTaskMonsterAccuracy"
+                }
+              ],
               "modifiers": {
-                "skillXP": [
-                  {
-                    "value": 5,
-                    "skillID": "melvorD:Slayer"
-                  }
-                ],
-                "increasedSlayerCoins": 5
+                "rielkConstruction:spoof_AddSlayerEnemies1": 1
               }
             },
             {
@@ -8717,9 +9409,32 @@
                   "quantity": 1
                 }
               ],
-              "currencyCosts": [],
+              "currencyCosts": [
+                {
+                  "id": "melvorD:SlayerCoins",
+                  "quantity": 50000
+                }
+              ],
+              "changeFunc": "addEnemies",
+              "conditionalModifiers": [
+                {
+                  "condition": {
+                    "type": "FightingSlayerTask"
+                  },
+                  "modifiers": {
+                    "damageDealt": 7
+                  },
+                  "descriptionLang": "RIELK_CONMOD_SLAYER2"
+                }
+              ],
+              "order": [
+                "m",
+                "c",
+                "m"
+              ],
               "modifiers": {
-                "increasedSlayerCoins": 5
+                "flatSlayerAreaEffectNegation": 7,
+                "rielkConstruction:spoof_AddSlayerEnemies2": 1
               }
             },
             {
@@ -8746,14 +9461,17 @@
                   "quantity": 1
                 }
               ],
-              "currencyCosts": [],
-              "shinyMods": [
-                1,
-                2
+              "currencyCosts": [
+                {
+                  "id": "melvorD:SlayerCoins",
+                  "quantity": 150000
+                }
               ],
+              "changeFunc": "addEnemies",
               "modifiers": {
-                "damageDealtToSlayerAreaMonsters": 5,
-                "flatSlayerAreaEffectNegation": 5
+                "rielkConstruction:slayerCostReduction": -35,
+                "damageDealtToSlayerAreaMonsters": 7,
+                "rielkConstruction:spoof_AddSlayerEnemies3": 1
               }
             },
             {
@@ -8780,15 +9498,25 @@
                   "quantity": 1
                 }
               ],
-              "currencyCosts": [],
+              "currencyCosts": [
+                {
+                  "id": "melvorD:SlayerCoins",
+                  "quantity": 500000
+                }
+              ],
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
+              "changeFunc": [
+                "buffSlayerItems",
+                "addEnemies"
+              ],
               "modifiers": {
-                "skillXP": [
-                  {
-                    "value": 10,
-                    "skillID": "melvorD:Slayer"
-                  }
-                ],
-                "increasedSlayerCoins": 10
+                "rielkConstruction:spoof_upgradeSlayerShtuff": 1,
+                "increasedSlayerCoins": 7,
+                "rielkConstruction:spoof_AddSlayerEnemies4": 1
               }
             },
             {
@@ -8826,14 +9554,37 @@
               "currencyCosts": [
                 {
                   "id": "melvorD:SlayerCoins",
-                  "quantity": 50000
+                  "quantity": 1000000
                 }
               ],
               "shinyMods": [
-                1
+                1,
+                2,
+                3
+              ],
+              "order": [
+                "m",
+                "c",
+                "m"
+              ],
+              "changeFunc": [
+                "checkForInitialMill",
+                "addEnemies"
+              ],
+              "conditionalModifiers": [
+                {
+                  "condition": {
+                    "type": "FightingSlayerTask"
+                  },
+                  "modifiers": {
+                    "consumablePreservationChance": 15
+                  },
+                  "descriptionLang": "RIELK_CONMOD_SLAYER5"
+                }
               ],
               "modifiers": {
-                "damageDealtToSlayerAreaMonsters": 7
+                "rielkConstruction:doublepetsmillion": 1,
+                "rielkConstruction:spoof_AddSlayerEnemies5": 1
               }
             },
             {
@@ -9554,7 +10305,7 @@
             "scopes": {},
             "descriptions": [
               {
-                "text": "Spoof of upgrading sapling chance from 1 to 3%",
+                "text": "spoof of upgrading sapling chance from 1 to 3%",
                 "lang": "MODIFIER_DATA_spoofUpgradeSaplingChance",
                 "includeSign": false
               }
@@ -9806,7 +10557,7 @@
             "scopes": {},
             "descriptions": [
               {
-                "text": "Spoofs adding 3 items to the fishing Special Pool.",
+                "text": "spoofs adding 3 items to the fishing Special Pool.",
                 "lang": "MODIFIER_DATA_spoofAddFishingSpecialItems",
                 "includeSign": false
               }
@@ -9821,7 +10572,7 @@
             "scopes": {},
             "descriptions": [
               {
-                "text": "Spoofs a woodcutting mastery effect at 50.",
+                "text": "spoofs a woodcutting mastery effect at 50.",
                 "lang": "MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff1",
                 "includeSign": false
               }
@@ -9836,7 +10587,7 @@
             "scopes": {},
             "descriptions": [
               {
-                "text": "Spoofs a woodcutting mastery effect at 99.",
+                "text": "spoofs a woodcutting mastery effect at 99.",
                 "lang": "MODIFIER_DATA_spoofAddWoodcuttingMasteryStuff2",
                 "includeSign": false
               }
@@ -9896,7 +10647,7 @@
             "scopes": {},
             "descriptions": [
               {
-                "text": "Spoof reducing potion Amount to Upgrade them.",
+                "text": "spoof reducing potion Amount to Upgrade them.",
                 "lang": "MODIFIER_DATA_spoofReduceUpAmount"
               }
             ]
@@ -9910,7 +10661,7 @@
             "scopes": {},
             "descriptions": [
               {
-                "text": "Spoof increasing how many runes you save.",
+                "text": "spoof increasing how many runes you save.",
                 "lang": "MODIFIER_DATA_spoofIncreaseRuneReduction"
               }
             ]
@@ -10151,7 +10902,7 @@
         ]
       },
       {
-        "id": "Spoof_UnlockMarkSuperLevels",
+        "id": "spoof_UnlockMarkSuperLevels",
         "allowedScopes": [
           {
             "scopes": {
@@ -10161,7 +10912,7 @@
               {
                 "includeSign": false,
                 "text": "increases mark max level by x",
-                "lang": "MODIFIER_DATA_Spoof_UnlockMarkSuperLevels"
+                "lang": "MODIFIER_DATA_spoof_UnlockMarkSuperLevels"
               }
             ]
           }
@@ -10243,6 +10994,205 @@
               {
                 "text": "Hamriel star wow",
                 "lang": "MODIFIER_DATA_skillEfficiencyChancePerHamrielStar"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ReduceThievingTargetMaxHitBasedOnDefLevel",
+        "inverted": true,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Gyat DAMN!!!!!!!!",
+                "lang": "MODIFIER_DATA_ReduceThievingTargetMaxHitBasedOnDefLevel"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "UnlockTrader",
+        "inverted": true,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Gyat DAMN!!!!!!!!",
+                "lang": "MODIFIER_DATA_UnlockTrader"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_LowerTraderRequirements",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "hamster dance",
+                "lang": "MODIFIER_DATA_spoof_LowerTraderRequirements"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddItemsToShop",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "hamster dance",
+                "lang": "MODIFIER_DATA_spoof_AddItemsToShop"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddBonusToMiningMasteryPool1",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "hamster dance",
+                "lang": "MODIFIER_DATA_spoof_AddBonusToMiningMasteryPool1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddBonusToMiningMasteryPool2",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "hamster dance",
+                "lang": "MODIFIER_DATA_spoof_AddBonusToMiningMasteryPool2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_upgradeSlayerShtuff",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "whatdoyouthing it does",
+                "lang": "MODIFIER_DATA_spoof_upgradeSlayerShtuff"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "doublepetsmillion",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "fuckassmodifier",
+                "lang": "MODIFIER_DATA_doublepetsmillion"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddSlayerEnemies1",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "adds a guy (you will never know)",
+                "lang": "MODIFIER_DATA_spoof_AddSlayerEnemies1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddSlayerEnemies2",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "adds a guy (you will never know)",
+                "lang": "MODIFIER_DATA_spoof_AddSlayerEnemies2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddSlayerEnemies3",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "adds a guy (you will never know)",
+                "lang": "MODIFIER_DATA_spoof_AddSlayerEnemies3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddSlayerEnemies4",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "adds a guy (you will never know)",
+                "lang": "MODIFIER_DATA_spoof_AddSlayerEnemies4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddSlayerEnemies5",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "adds a guy (you will never know)",
+                "lang": "MODIFIER_DATA_spoof_AddSlayerEnemies5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "slayerCostReduction",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "The one in the basegame is WRITTEN WRONG HOW THE FUCK IS THIS POSSIBLE GOD FUCKING DAMN IT",
+                "lang": "MODIFIER_DATA_slayerCostReduction"
               }
             ]
           }
@@ -12587,16 +13537,12 @@
         "monsters": {
           "add": [
             {
-              "insertAt": 0,
+              "insertAt": 1,
               "monsterID": "rielkConstruction:Basic_Golem"
             },
             {
-              "insertAt": 2,
+              "insertAt": 3,
               "monsterID": "rielkConstruction:Advanced_Golem"
-            },
-            {
-              "insertAt": 4,
-              "monsterID": "rielkConstruction:Expert_Golem"
             }
           ]
         }
@@ -12645,6 +13591,70 @@
               "minQuantity": 1,
               "maxQuantity": 3,
               "weight": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "melvorD:BanditTrainee",
+        "lootTable": {
+          "remove": [
+            "melvorD:Bronze_Arrows",
+            "melvorD:Iron_Arrows",
+            "melvorD:Steel_Arrows"
+          ],
+          "add": [
+            {
+              "itemID": "melvorD:Bronze_Arrows",
+              "minQuantity": 1,
+              "maxQuantity": 10,
+              "weight": 4
+            },
+            {
+              "itemID": "melvorD:Iron_Arrows",
+              "minQuantity": 1,
+              "maxQuantity": 10,
+              "weight": 3
+            },
+            {
+              "itemID": "melvorD:Steel_Arrows",
+              "minQuantity": 1,
+              "maxQuantity": 10,
+              "weight": 1
+            },
+            {
+              "itemID": "rielkConstruction:Green_Dhide_Leather_Straps",
+              "minQuantity": 1,
+              "maxQuantity": 10,
+              "weight": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "melvorD:Bandit",
+        "lootTable": {
+          "remove": [
+            "melvorD:Steel_Arrows"
+          ],
+          "add": [
+            {
+              "itemID": "melvorD:Steel_Arrows",
+              "minQuantity": 1,
+              "maxQuantity": 15,
+              "weight": 26
+            },
+            {
+              "itemID": "rielkConstruction:Green_Dhide_Leather_Straps",
+              "minQuantity": 1,
+              "maxQuantity": 15,
+              "weight": 16
+            },
+            {
+              "itemID": "rielkConstruction:Blue_Dhide_Leather_Straps",
+              "minQuantity": 1,
+              "maxQuantity": 15,
+              "weight": 8
             }
           ]
         }

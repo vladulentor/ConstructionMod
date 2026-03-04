@@ -75,7 +75,7 @@ export const language = {
     'MODIFIER_DATA_ChangeAddiIntoHighTier': 'Les potions aléatoires obtenues en Herblore ne peuvent pas être de niveau inférieur à votre niveau de potion actuel',
     'MODIFIER_DATA_spoofReduceUpAmount': '${value} potion(s) requise(s) pour améliorer les potions depuis la banque',
     'MODIFIER_DATA_spoofIncreaseRuneReduction': 'Réduction des coûts en runes de ${value} pour les armes magiques',
-    'MODIFIER_DATA_runecraftingRuneCostReduction': '${value}% des coûts en runes pour l\'équipement ou les armes en ${skillName} (ne peut pas être réduit en dessous de 1)',
+    'MODIFIER_DATA_runecraftingRuneCostReduction': '-${value}% des coûts en runes pour l\'équipement ou les armes en ${skillName} (ne peut pas être réduit en dessous de 1)',
     'MODIFIER_DATA_ComboRunesonElemRunes': '${value} runes de combinaison associées obtenues depuis ${skillName} lors de la fabrication de runes élémentaires',
     'MODIFIER_DATA_runePreservationCap': 'Plafond de préservation des runes à ${value}%',
     'MODIFIER_DATA_spoof_UpgradeScrollOfEssence': 'Améliorez le "Parchemin d\'Essence" pour augmenter la chance de trouver de l\'Essence runique en ${skillName}',

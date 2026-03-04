@@ -76,7 +76,7 @@ export const language = {
     'MODIFIER_DATA_ChangeAddiIntoHighTier': 'Herblore에서 얻는 무작위 포션은 현재 포션 등급보다 낮을 수 없습니다',
     'MODIFIER_DATA_spoofReduceUpAmount': '은행에서 포션을 강화하려면 ${value}개의 포션 필요',
     'MODIFIER_DATA_spoofIncreaseRuneReduction': '마법 무기의 룬 비용 ${value} 감소',
-    'MODIFIER_DATA_runecraftingRuneCostReduction': '${skillName}에서 장비 또는 무기의 룬 비용 ${value}% 감소 (1 이하로는 감소 불가)',
+    'MODIFIER_DATA_runecraftingRuneCostReduction': '-${skillName}에서 장비 또는 무기의 룬 비용 ${value}% 감소 (1 이하로는 감소 불가)',
     'MODIFIER_DATA_ComboRunesonElemRunes': '원소 룬 제작 시 ${skillName}에서 ${value} 관련 조합 룬 획득',
     'MODIFIER_DATA_runePreservationCap': '룬 보존 한도: ${value}%',
     'MODIFIER_DATA_spoof_UpgradeScrollOfEssence': '${skillName}에서 룬 에센스를 찾을 확률을 높이기 위해 "에센스 두루마리" 강화',

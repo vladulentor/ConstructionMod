@@ -75,7 +75,7 @@ export const language = {
     'MODIFIER_DATA_ChangeAddiIntoHighTier': '在草药学中获得的随机药水不能低于你的药水等级',
     'MODIFIER_DATA_spoofReduceUpAmount': '从银行升级药水需要 ${value} 个药水',
     'MODIFIER_DATA_spoofIncreaseRuneReduction': '魔法武器的符文消耗减少 ${value}',
-    'MODIFIER_DATA_runecraftingRuneCostReduction': '${skillName} 中装备或武器的符文消耗降低 ${value}%（不能低于 1）',
+    'MODIFIER_DATA_runecraftingRuneCostReduction': '-${skillName} 中装备或武器的符文消耗降低 ${value}%（不能低于 1）',
     'MODIFIER_DATA_ComboRunesonElemRunes': '在制作元素符文时，从 ${skillName} 获得 ${value} 个相关组合符文',
     'MODIFIER_DATA_runePreservationCap': '符文保留上限：${value}%',
     'MODIFIER_DATA_spoof_UpgradeScrollOfEssence': '升级“精华卷轴”，提高在 ${skillName} 中找到符文精华的几率',

@@ -75,7 +75,7 @@ export const language = {
     'MODIFIER_DATA_ChangeAddiIntoHighTier': 'ハーブロアで得られるランダムなポーションは、ポーションのTierより低くなることはありません',
     'MODIFIER_DATA_spoofReduceUpAmount': '銀行からポーションをアップグレードするには、${value} 個のポーションが必要です',
     'MODIFIER_DATA_spoofIncreaseRuneReduction': '魔法武器のルーン消費を ${value} 減少',
-    'MODIFIER_DATA_runecraftingRuneCostReduction': '${skillName} での装備または武器のルーンコストを ${value}% 減少（1未満にはできません）',
+    'MODIFIER_DATA_runecraftingRuneCostReduction': '-${skillName} での装備または武器のルーンコストを ${value}% 減少（1未満にはできません）',
     'MODIFIER_DATA_ComboRunesonElemRunes': '元素ルーンを作成する際、${skillName} から ${value} の関連コンビネーションルーンを獲得',
     'MODIFIER_DATA_runePreservationCap': 'ルーン保存上限：${value}%',
     'MODIFIER_DATA_spoof_UpgradeScrollOfEssence': '${skillName} でルーンエッセンスを見つける確率を上げるために「エッセンスのスクロール」を強化',

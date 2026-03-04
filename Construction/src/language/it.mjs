@@ -75,7 +75,7 @@ export const language = {
     'MODIFIER_DATA_ChangeAddiIntoHighTier': 'Le Pozioni casuali ottenute in Erboristeria non possono essere di livello inferiore al tuo attuale Tier di Pozione',
     'MODIFIER_DATA_spoofReduceUpAmount': '${value} Pozione/e necessaria/e per potenziare le Pozioni dalla Banca',
     'MODIFIER_DATA_spoofIncreaseRuneReduction': 'Riduzione del costo in Rune di ${value} per le Armi Magiche',
-    'MODIFIER_DATA_runecraftingRuneCostReduction': '${value}% di costo in Rune per Equipaggiamento o Armi in ${skillName} (non può essere ridotto sotto 1)',
+    'MODIFIER_DATA_runecraftingRuneCostReduction': '-${value}% di costo in Rune per Equipaggiamento o Armi in ${skillName} (non può essere ridotto sotto 1)',
     'MODIFIER_DATA_ComboRunesonElemRunes': '${value} Rune di combinazione correlate ricevute da ${skillName} quando si creano Rune Elementali',
     'MODIFIER_DATA_runePreservationCap': 'Massimo preservazione Rune: ${value}%',
     'MODIFIER_DATA_spoof_UpgradeScrollOfEssence': 'Migliora il "Rotolo dell\'Essenza" per aumentare la probabilità di trovare Essenza Runica in ${skillName}',

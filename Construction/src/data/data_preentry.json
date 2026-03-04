@@ -45,7 +45,8 @@
             },
             "descriptions": [
               {
-                "text": "${value}% Rune Costs for this item if it's Equipment or a Weapon (cannot be reduced below 1).",
+                "includeSign": false,
+                "text": "-${value}% Rune Costs for this item if it's Equipment or a Weapon (cannot be reduced below 1).",
                 "lang": "MODIFIER_DATA_runecraftingRuneCostReduction"
               }
             ]

@@ -69,7 +69,7 @@ export const language = {
     'MODIFIER_DATA_ChangeAddiIntoHighTier': 'Zufällige Tränke, die in Herblore gewonnen werden, können nicht niedriger sein als dein aktuelles Trank-Tier',
     'MODIFIER_DATA_spoofReduceUpAmount': '${value} Trank(e) erforderlich, um Tränke aus der Bank aufzuwerten',
     'MODIFIER_DATA_spoofIncreaseRuneReduction': '${value} Runenkostenreduktion für magische Waffen',
-    'MODIFIER_DATA_runecraftingRuneCostReduction': '${value}% Runenkosten für Ausrüstung oder Waffen in ${skillName} (kann nicht unter 1 reduziert werden)',
+    'MODIFIER_DATA_runecraftingRuneCostReduction': '-${value}% Runenkosten für Ausrüstung oder Waffen in ${skillName} (kann nicht unter 1 reduziert werden)',
     'MODIFIER_DATA_ComboRunesonElemRunes': '${value} verwandte Kombinations-Runen aus ${skillName} beim Herstellen von Elementar-Runen erhalten',
     'MODIFIER_DATA_runePreservationCap': '${value}% Runenerhaltungsgrenze',
     'MODIFIER_DATA_spoof_UpgradeScrollOfEssence': 'Verbessere "Essenzrolle", um die Chance zu erhöhen, Runenessenz in ${skillName} zu finden',

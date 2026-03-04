@@ -75,7 +75,7 @@ export const language = {
     'MODIFIER_DATA_ChangeAddiIntoHighTier': 'Случайные зелья, полученные в Травничестве, не могут быть ниже вашего уровня зелья',
     'MODIFIER_DATA_spoofReduceUpAmount': 'Для улучшения зелий из Банка требуется ${value} зелье/зелья',
     'MODIFIER_DATA_spoofIncreaseRuneReduction': 'Снижение стоимости рун магических оружий на ${value}',
-    'MODIFIER_DATA_runecraftingRuneCostReduction': 'Стоимость рун для экипировки или оружия в ${skillName} снижена на ${value}% (не может быть меньше 1)',
+    'MODIFIER_DATA_runecraftingRuneCostReduction': 'Стоимость рун для экипировки или оружия в ${skillName} снижена на -${value}% (не может быть меньше 1)',
     'MODIFIER_DATA_ComboRunesonElemRunes': 'При создании Элементальных Рун в ${skillName} получено ${value} связанных Комбинированных Рун',
     'MODIFIER_DATA_runePreservationCap': 'Максимальное сохранение рун: ${value}%',
     'MODIFIER_DATA_spoof_UpgradeScrollOfEssence': 'Улучшает "Свиток Эссенции", чтобы увеличить шанс найти Рунную Эссенцию в ${skillName}',

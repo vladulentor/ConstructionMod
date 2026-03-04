@@ -255,7 +255,7 @@ export const language = {
     'MODIFIER_DATA_spoofReduceUpAmount': '${value} Potion required to upgrade Potions from the Bank',
     'MODIFIER_DATA_spoofIncreaseRuneReduction': '${value} Rune cost Reduction of Magic Weapons',
     'MODIFIER_DATA_fishPerfectCookedFish': 'Cooked Fish caught in Fishing are Perfect Quality',
-    'MODIFIER_DATA_runecraftingRuneCostReduction': '${value}% Rune Costs for Equipment or Weapons in ${skillName} (cannot be reduced below 1)',
+    'MODIFIER_DATA_runecraftingRuneCostReduction': '-${value}% Rune Costs for Equipment or Weapons in ${skillName} (cannot be reduced below 1)',
     'MODIFIER_DATA_ComboRunesonElemRunes': '${value} related Combination Runes received from ${skillName} when making Elemental Runes',
     'MODIFIER_DATA_nullifyPrayerPointsUnder': 'Active Prayers totaling up to ${value} Prayer Points (before Reductions) are free but give no ${skillName} Skill XP',
     'MODIFIER_DATA_runePreservationCap': '${value}% Rune Preservation cap',

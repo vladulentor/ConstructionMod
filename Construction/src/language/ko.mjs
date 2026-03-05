@@ -54,7 +54,7 @@ export const language = {
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel': '모든 전투 스킬에 ${value} 숨겨진 레벨',
     'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel': '모든 비전투 스킬에 ${value} 숨겨진 레벨',
     'MODIFIER_DATA_bypassEfficiencyChance': '${skillName}에서 추가 행동을 완료할 확률 ${value}% (게임 모드 제한 무시)',
-    'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR': '모든 비전투 스킬의 레벨 상한을 ${value} 증가',
+    'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR': '모든 비전투 기술의 현재 최대 레벨을 ${value}만큼 증가시킵니다 (최대 한도까지)',
     'MODIFIER_DATA_bypassGlobalDoubling': '전역적으로 아이템을 ${value}% 확률로 두 배 획득 (게임 모드 제한 무시)',
     'ITEM_NAME_Construction_Lesser_Relic': '건설 하급 유물',
 

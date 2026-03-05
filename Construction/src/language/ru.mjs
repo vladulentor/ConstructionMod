@@ -53,7 +53,7 @@ export const language = {
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel': '${value} скрытого уровня для всех боевых навыков',
     'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel': '${value} скрытого уровня для всех небоевых навыков',
     'MODIFIER_DATA_bypassEfficiencyChance': '${value}% шанс завершить дополнительные действия в ${skillName} (игнорирует ограничения режима игры)',
-    'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR': 'Увеличивает максимальный уровень всех небоевых навыков на ${value}',
+    'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR': 'Увеличивает текущий уровень максимума всех несражающихся навыков на ${value} (до их максимального лимита)',
     'MODIFIER_DATA_bypassGlobalDoubling': '${value}% шанс глобально удваивать предметы (игнорирует ограничения режима игры)',
     'ITEM_NAME_Construction_Lesser_Relic': 'Малая реликвия Строительства',
 

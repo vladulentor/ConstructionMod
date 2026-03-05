@@ -53,7 +53,7 @@ export const language = {
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel': '${value} livello nascosto in tutte le abilità di combattimento',
     'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel': '${value} livello nascosto in tutte le abilità non di combattimento',
     'MODIFIER_DATA_bypassEfficiencyChance': '${value}% di probabilità di completare azioni extra in ${skillName} (Ignora le limitazioni della modalità di gioco)',
-    'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR': 'Aumenta il livello massimo di tutte le abilità non di combattimento di ${value}',
+    'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR': 'Aumenta il livello massimo corrente di tutte le abilità non di combattimento di ${value} (fino al loro limite massimo)',
     'MODIFIER_DATA_bypassGlobalDoubling': '${value}% di probabilità di raddoppiare gli oggetti globalmente (Ignora le limitazioni della modalità di gioco)',
     'ITEM_NAME_Construction_Lesser_Relic': 'Reliquia Minore di Costruzione',
 

@@ -269,7 +269,7 @@ export const language = {
 'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel': '${value} Nivel Oculto en todas las Habilidades de Combate',
 'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel': '${value} Nivel Oculto en todas las Habilidades no relacionadas con Combate',
 'MODIFIER_DATA_bypassEfficiencyChance': '${value}% de probabilidad de completar acciones extra en ${skillName} (Ignora las limitaciones del modo de juego)',
-'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR': 'Aumenta el límite de nivel de todas las Habilidades no relacionadas con Combate en ${value}',
+'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR': 'Incrementa el nivel máximo actual de todas las habilidades no combativas en ${value} (hasta su límite máximo)',
 'MODIFIER_DATA_bypassGlobalDoubling': '${value}% de probabilidad global de duplicar objetos (Ignora las limitaciones del modo de juego)',
 'SHOP_PURCHASE_Perpetual_Haste': '-15% de Intervalo en Artesanía, Construcción y Arquería',
 'ITEM_DESCRIPTION_BEAR_DEVIL_SYNERGY': 'Mientras uses las Pociones de Calor Controlado, +5% de EXP de Encendido y la duración de la Hoguera aumenta un 15%. Se consumen cargas por cada acción de Encendido y cada Hoguera encendida.',

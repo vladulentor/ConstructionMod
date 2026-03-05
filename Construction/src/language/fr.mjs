@@ -53,7 +53,7 @@ export const language = {
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel': '${value} niveau caché dans toutes les compétences de combat',
     'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel': '${value} niveau caché dans toutes les compétences hors combat',
     'MODIFIER_DATA_bypassEfficiencyChance': '${value}% de chance d\'effectuer des actions supplémentaires en ${skillName} (Contourne les limitations du mode de jeu)',
-    'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR': 'Augmente le niveau maximum de toutes les compétences hors combat de ${value}',
+    'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR': 'Augmente le niveau maximum actuel de toutes les compétences non-combattantes de ${value} (jusqu\'à leur limite maximale)',
     'MODIFIER_DATA_bypassGlobalDoubling': '${value}% de chance de doubler les objets globalement (Contourne les limitations du mode de jeu)',
     'ITEM_NAME_Construction_Lesser_Relic': 'Relique mineure de Construction',
 

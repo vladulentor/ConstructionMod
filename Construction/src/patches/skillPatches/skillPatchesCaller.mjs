@@ -94,8 +94,6 @@ export function patchSkillsAfterDataReg(ctx) {
         addBeamsMasteryPoolBonus();
         patchArrowShaftRecipes(ctx);
         patchPerpetualHaste(ctx);
-
-        // patchThievingTargets();
-        // Remember when pushing the update to also disable ignorecompletion for the boots brick pile saw and magitech, and add the boots back
+        patchThievingTargets();
 
 }

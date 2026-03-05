@@ -32,7 +32,6 @@ const { loseGPOnFishing } = await loadModule('src/patches/skillPatches/fishing/l
 const { reduceUpgradeLevelReq } = await loadModule('src/patches/skillPatches/herblore/reduceUpgradeLevelReq.mjs');
 const { additionalPotionsHighTier } = await loadModule('src/patches/skillPatches/herblore/additionalPotionsHighTier.mjs');
 
-
 const { patchCraftingOrder } = await loadModule('src/patches/skillPatches/crafting/patchCraftingOrder.mjs');
 
 const { patchTreeSeedReturn } = await loadModule('src/patches/skillPatches/farming/patchTreeSeedReturn.mjs');
@@ -42,6 +41,8 @@ const { patchFletchingOrder } = await loadModule('src/patches/skillPatches/fletc
 const { addBeamsMasteryPoolBonus } = await loadModule('src/patches/skillPatches/fletching/addBeamsMasteryPoolBonus.mjs');
 
 const { patchPerpetualHaste } = await loadModule('src/patches/skillPatches/shop/patchPerpetualHaste.mjs');
+const { unlockTrader } = await loadModule('src/patches/skillPatches/shop/unlockTrader.mjs');
+
 
 const {addComboRunesonElemRunes} = await loadModule('src/patches/skillPatches/runecrafting/addComboRunesonElemRunes.mjs')
 
@@ -52,6 +53,9 @@ const { slayerCostReduction } = await loadModule('src/patches/skillPatches/slaye
 
 
 const { patchThievingTargets } = await loadModule('src/patches/skillPatches/thieving/patchThievingTargets.mjs');
+const { reduceMaxHitByDefenseLevel } = await loadModule('src/patches/skillPatches/thieving/reduceMaxHitByDefenseLevel.mjs');
+
+
 
 const { nerfBearDevil } = await loadModule('src/patches/skillPatches/summoning/nerfBearDevil.mjs');
 const { addMarkSuperLevels } = await loadModule('src/patches/skillPatches/summoning/addMarkSuperLevels.mjs');
@@ -86,6 +90,8 @@ export function patchSkillsBeforeDataReg(ctx) {
         addMarkSuperLevels(ctx);
         trackSlayerCoins(ctx);
         slayerCostReduction(ctx);
+        reduceMaxHitByDefenseLevel(ctx);
+        unlockTrader(ctx);
         nerfBearDevil();
 }
 export function patchSkillsAfterDataReg(ctx) {

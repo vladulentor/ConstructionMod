@@ -12,6 +12,7 @@ const { addSpecialAttack } = await loadModule('src/patches/skillPatches/combat/a
 
 
 const { lowerLevelRequirements } = await loadModule('src/patches/skillPatches/shop/lowerLevelRequirements.mjs');
+const { refreshTrader } = await loadModule('src/patches/skillPatches/shop/unlockTrader.mjs');
 
 
 const { addBonusToPool } = await loadModule('src/patches/skillPatches/mining/addBonusToPool.mjs');
@@ -70,5 +71,7 @@ export const EffectRegistry = {
   buffSlayerItems,
   checkForInitialMill,
   addEnemies,
+  refreshTrader,
+  lowerLevelRequirements,
   addMarkExtraLevels
 };

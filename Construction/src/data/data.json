@@ -2215,6 +2215,28 @@
           "rielkConstruction:Dragon_Saw"
         ]
       },
+       {
+        "insertAt": "After",
+        "afterID": "melvorD:Magic_Pot",
+        "ids": [
+          "rielkConstruction:Hidden_Routes"
+        ]
+      },
+      {
+        "insertAt": "After",
+        "afterID": "melvorD:Bowstring",
+        "ids": [
+          "rielkConstruction:Arrow_Shafts",
+          "rielkConstruction:Basic_Bag"
+        ]
+      },
+      {
+        "insertAt": "After",
+        "afterID": "melvorF:Red_Dragonhide",
+        "ids": [
+          "rielkConstruction:Black_Dragonhide"
+        ]
+      },
       {
         "insertAt": "After",
         "afterID": "melvorF:Astrology_Skillcape",
@@ -5254,6 +5276,7 @@
                 }
               ],
               "shinyMods":[1,2,3],
+              "changeFunc":"refreshTrader",
               "modifiers": {
                 "rielkConstruction:UnlockTrader": 1,
                 "townshipTraderCost": -5,

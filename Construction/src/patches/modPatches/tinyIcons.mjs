@@ -93,6 +93,9 @@ export function tinyIconsCompatibility(ctx) {
 
 
     icons.addModifier('rielkConstruction:bypassGlobalDoubling', 'doubling');
+    icons.addModifier('rielkConstruction:bypassNonCombatSkillLevelCapAR', 'xp');
+
+    
     icons.addModifier('rielkConstruction:allCombatSkillsFlatHiddenLevel', 'combat');
 
 

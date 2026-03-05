@@ -1,4 +1,6 @@
 export const language = {
+    'MODIFIER_DATA_bypassNonCombatSkillLevelAR': 'Augmente le niveau de toutes les compétences non-combattantes de ${value}',
+'TOWNSHIP_TASKS_REQ': 'Construisez ${qty1} / ${qty2} ${fixImg}${fixName}',
     'SHOP_NAME_Hidden_Routes': "Routes secrètes",
     'ITEM_NAME_Star_Necklace': 'Collier Étoile',
     'ITEM_NAME_Ice_Gloves': 'Gants de Glace',

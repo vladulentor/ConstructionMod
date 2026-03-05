@@ -1489,7 +1489,10 @@
           ]
         },
         "cost": {
-          "items": [],
+          "items": [{
+            "id":"rielkConstruction:Elder_Dhide_Leather_Slivers",
+            "quantity":1
+          }],
           "currencies": [
             {
               "currency": "melvorD:GP",
@@ -2215,7 +2218,7 @@
           "rielkConstruction:Dragon_Saw"
         ]
       },
-       {
+      {
         "insertAt": "After",
         "afterID": "melvorD:Magic_Pot",
         "ids": [
@@ -3121,71 +3124,6 @@
               ]
             }
           ]
-        }
-      },
-      {
-        "skillID": "melvorD:Township",
-        "data": {
-          "itemConversions": {
-            "fromTownship": [
-              {
-                "resourceID": "melvorF:Planks",
-                "items": [
-                  {
-                    "itemID": "rielkConstruction:Beam_Box_I",
-                    "unlockRequirements": [
-                      {
-                        "type": "SkillLevel",
-                        "skillID": "melvorD:Woodcutting",
-                        "level": 40
-                      },
-                      {
-                        "type": "SkillLevel",
-                        "skillID": "melvorD:Fletching",
-                        "level": 40
-                      },
-                      {
-                        "type": "SkillLevel",
-                        "skillID": "melvorD:Township",
-                        "level": 50
-                      },
-                      {
-                        "type": "TownshipTask",
-                        "count": 40
-                      }
-                    ],
-                    "baseCost": 500
-                  },
-                  {
-                    "itemID": "rielkConstruction:Beam_Box_II",
-                    "unlockRequirements": [
-                      {
-                        "type": "SkillLevel",
-                        "skillID": "melvorD:Woodcutting",
-                        "level": 99
-                      },
-                      {
-                        "type": "SkillLevel",
-                        "skillID": "melvorD:Fletching",
-                        "level": 99
-                      },
-                      {
-                        "type": "SkillLevel",
-                        "skillID": "melvorD:Township",
-                        "level": 99
-                      },
-                      {
-                        "type": "TownshipTask",
-                        "count": 85
-                      }
-                    ],
-                    "baseCost": 1000
-                  }
-                ]
-              }
-            ],
-            "toTownship": []
-          }
         }
       },
       {
@@ -5275,8 +5213,12 @@
                   "quantity": 625000
                 }
               ],
-              "shinyMods":[1,2,3],
-              "changeFunc":"refreshTrader",
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
+              "changeFunc": "refreshTrader",
               "modifiers": {
                 "rielkConstruction:UnlockTrader": 1,
                 "townshipTraderCost": -5,
@@ -10052,6 +9994,1071 @@
             "rielkConstruction:Saw"
           ]
         }
+      },
+      {
+        "skillID": "melvorD:Township",
+        "data": {
+          "casualTasks": [
+            {
+              "id": "ConsCasualTask0",
+              "goals": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Normal_Planks",
+                    "quantity": 200
+                  }
+                ]
+              },
+              "rewards": {
+                "items": [],
+                "skillXP": [
+                  {
+                    "id": "melvorD:Township",
+                    "quantity": 400
+                  }
+                ],
+                "townshipResources": [
+                  {
+                    "id": "melvorF:Planks",
+                    "quantity": 2500
+                  }
+                ],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "requirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 5
+                }
+              ]
+            },
+            {
+              "id": "ConsCasualTask1",
+              "goals": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Iron_Nails",
+                    "quantity": 300
+                  }
+                ]
+              },
+              "rewards": {
+                "items": [],
+                "skillXP": [
+                  {
+                    "id": "melvorD:Township",
+                    "quantity": 1000
+                  }
+                ],
+                "townshipResources": [
+                  {
+                    "id": "melvorF:Bar",
+                    "quantity": 5000
+                  }
+                ],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "requirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 10
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Township",
+                  "level": 5
+                }
+              ]
+            },
+            {
+              "id": "ConsCasualTask2",
+              "goals": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
+                    "quantity": 500
+                  }
+                ]
+              },
+              "rewards": {
+                "items": [],
+                "skillXP": [
+                  {
+                    "id": "melvorD:Township",
+                    "quantity": 1500
+                  }
+                ],
+                "townshipResources": [
+                  {
+                    "id": "melvorF:Clothing",
+                    "quantity": 4500
+                  }
+                ],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "requirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 20
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Township",
+                  "level": 10
+                }
+              ]
+            },
+            {
+              "id": "ConsCasualTask3",
+              "goals": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Limestone_Bricks",
+                    "quantity": 850
+                  }
+                ]
+              },
+              "rewards": {
+                "items": [],
+                "skillXP": [
+                  {
+                    "id": "melvorD:Township",
+                    "quantity": 2500
+                  }
+                ],
+                "townshipResources": [
+                  {
+                    "id": "melvorF:Stone",
+                    "quantity": 7500
+                  },
+                  {
+                    "id": "melvorF:Rune_Essence",
+                    "quantity": 7500
+                  }
+                ],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "requirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 30
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Township",
+                  "level": 15
+                }
+              ]
+            },
+            {
+              "id": "ConsCasualTask4",
+              "goals": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Teak_Planks",
+                    "quantity": 1000
+                  }
+                ]
+              },
+              "rewards": {
+                "items": [],
+                "skillXP": [
+                  {
+                    "id": "melvorD:Township",
+                    "quantity": 4000
+                  }
+                ],
+                "townshipResources": [
+                  {
+                    "id": "melvorF:Planks",
+                    "quantity": 15000
+                  }
+                ],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "requirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 40
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Township",
+                  "level": 20
+                }
+              ]
+            },
+            {
+              "id": "ConsCasualTask5",
+              "goals": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Mithril_Nails",
+                    "quantity": 1250
+                  }
+                ]
+              },
+              "rewards": {
+                "items": [],
+                "skillXP": [
+                  {
+                    "id": "melvorD:Township",
+                    "quantity": 10000
+                  }
+                ],
+                "townshipResources": [
+                  {
+                    "id": "melvorF:Bar",
+                    "quantity": 15000
+                  }
+                ],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "requirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 50
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Township",
+                  "level": 30
+                }
+              ]
+            },
+            {
+              "id": "ConsCasualTask6",
+              "goals": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Black_Dhide_Leather_Straps",
+                    "quantity": 2000
+                  }
+                ]
+              },
+              "rewards": {
+                "items": [],
+                "skillXP": [
+                  {
+                    "id": "melvorD:Township",
+                    "quantity": 25000
+                  }
+                ],
+                "townshipResources": [
+                  {
+                    "id": "melvorF:Clothing",
+                    "quantity": 20000
+                  }
+                ],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "requirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 60
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Township",
+                  "level": 40
+                }
+              ]
+            },
+            {
+              "id": "ConsCasualTask7",
+              "goals": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Magic_Bricks",
+                    "quantity": 2250
+                  }
+                ]
+              },
+              "rewards": {
+                "items": [],
+                "skillXP": [
+                  {
+                    "id": "melvorD:Township",
+                    "quantity": 50000
+                  }
+                ],
+                "townshipResources": [
+                  {
+                    "id": "melvorF:Stone",
+                    "quantity": 20000
+                  },
+                  {
+                    "id": "melvorF:Rune_Essence",
+                    "quantity": 20000
+                  }
+                ],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "requirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 70
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Township",
+                  "level": 50
+                }
+              ]
+            },
+            {
+              "id": "ConsCasualTask8",
+              "goals": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Redwood_Planks",
+                    "quantity": 2750
+                  }
+                ]
+              },
+              "rewards": {
+                "items": [],
+                "skillXP": [
+                  {
+                    "id": "melvorD:Township",
+                    "quantity": 100000
+                  }
+                ],
+                "townshipResources": [
+                  {
+                    "id": "melvorF:Planks",
+                    "quantity": 40000
+                  }
+                ],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "requirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 80
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Township",
+                  "level": 60
+                }
+              ]
+            },
+            {
+              "id": "ConsCasualTask9",
+              "goals": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Dragonite_Nails",
+                    "quantity": 3000
+                  }
+                ]
+              },
+              "rewards": {
+                "items": [],
+                "skillXP": [
+                  {
+                    "id": "melvorD:Township",
+                    "quantity": 250000
+                  }
+                ],
+                "townshipResources": [
+                  {
+                    "id": "melvorF:Bar",
+                    "quantity": 50000
+                  }
+                ],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "requirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 90
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Township",
+                  "level": 70
+                }
+              ]
+            },
+            {
+              "id": "ConsCasualTask10",
+              "goals": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
+                    "quantity": 3000
+                  }
+                ]
+              },
+              "rewards": {
+                "items": [],
+                "skillXP": [
+                  {
+                    "id": "melvorD:Township",
+                    "quantity": 500000
+                  }
+                ],
+                "townshipResources": [
+                  {
+                    "id": "melvorF:Clothing",
+                    "quantity": 60000
+                  }
+                ],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "requirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 99
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Township",
+                  "level": 80
+                }
+              ]
+            }
+          ],
+          "tasks": [
+            {
+              "id": "ConstrEasy1",
+              "category": "Easy",
+              "goals": {
+                "skillXP": [
+                  {
+                    "id": "melvorD:Fletching",
+                    "quantity": 3000
+                  },
+                  {
+                    "id": "melvorD:Crafting",
+                    "quantity": 3000
+                  },
+                  {
+                    "id": "rielkConstruction:Construction",
+                    "quantity": 3000
+                  }
+                ]
+                
+              },
+              "rewards": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Normal_Beams",
+                    "quantity": 500
+                  },
+                  {
+                    "id": "rielkConstruction:Green_Dhide_Leather_Slivers",
+                    "quantity": 500
+                  }
+                ],
+                "skillXP": [],
+                "townshipResources": [],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 5000
+                  }
+                ]
+              }
+            },
+            {
+              "id": "ConstrEasy2",
+              "category": "Easy",
+              "goals": {
+                "fixture": [
+                  {
+                    "fixtureID": "rielkConstruction:Storage_Chest",
+                    "tier": 1
+                  }
+                ],
+                "items": []
+              },
+              "rewards": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Normal_Planks",
+                    "quantity": 100
+                  },
+                  {
+                    "id": "rielkConstruction:Iron_Nails",
+                    "quantity": 100
+                  },
+                  {
+                    "id": "rielkConstruction:Green_Dhide_Leather_Straps",
+                    "quantity": 100
+                  },
+                  {
+                    "id": "rielkConstruction:Clay_Bricks",
+                    "quantity": 100
+                  }
+                ],
+                "skillXP": [],
+                "townshipResources": [],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 5000
+                  }
+                ]
+              }
+            },
+            {
+              "id": "ConstrNorm1",
+              "category": "Normal",
+              "goals": {
+              
+                "items": [
+                  {
+                    "id": "rielkConstruction:Teak_Planks",
+                    "quantity": 400
+                  },
+                  {
+                    "id": "rielkConstruction:Mithril_Nails",
+                    "quantity": 400
+                  },
+                  {
+                    "id": "rielkConstruction:Red_Dhide_Leather_Straps",
+                    "quantity": 400
+                  },
+                  {
+                    "id": "rielkConstruction:Granite_Bricks",
+                    "quantity": 400
+                  }
+                ]
+              },
+              "rewards": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Twice_Measured_Potion_II",
+                    "quantity": 1000
+                  }
+                ],
+                "skillXP": [],
+                "townshipResources": [],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 25000
+                  }
+                ]
+              }
+            },
+            {
+              "id": "ConstrNorm2",
+              "category": "Normal",
+              "goals": {
+                "fixture": [
+                  {
+                    "fixtureID": "rielkConstruction:Fire_Pit",
+                    "tier": 2
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Fridge",
+                    "tier": 2
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Oven",
+                    "tier": 2
+                  }
+                ],
+                "items": []
+              },
+              "rewards": {
+                "items": [
+                  {
+                    "id": "melvorF:Apple_Pie_Perfect",
+                    "quantity": 300
+                  }
+                ],
+                "skillXP": [],
+                "townshipResources": [],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 25000
+                  }
+                ]
+              }
+            },
+            {
+              "id": "ConstrHard1",
+              "category": "Hard",
+              "goals": {
+                "fixture": [
+                  {
+                    "fixtureID": "rielkConstruction:Apparatus",
+                    "tier": 4
+                  }
+                ],
+                "items": [
+                  {
+                    "id": "rielkConstruction:Twice_Measured_Potion_IV",
+                    "quantity": 2000
+                  }
+                ]
+              },
+              "rewards": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Twice_Measured_Potion_IV",
+                    "quantity": 5000
+                  }
+                ],
+                "skillXP": [],
+                "townshipResources": [],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 500000
+                  }
+                ]
+              }
+            },
+            {
+              "id": "ConstrHard2",
+              "category": "Hard",
+              "goals": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Redwood_Beams",
+                    "quantity": 2500
+                  },
+                  {
+                    "id": "rielkConstruction:Elder_Dhide_Leather_Slivers",
+                    "quantity": 2500
+                  }
+                ]
+              },
+              "rewards": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Redwood_Planks",
+                    "quantity": 5000
+                  },
+                  {
+                    "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
+                    "quantity": 5000
+                  }
+                ],
+                "skillXP": [],
+                "townshipResources": [],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 500000
+                  }
+                ]
+              }
+            },
+            {
+              "id": "ConstrVHard1",
+              "category": "VeryHard",
+              "goals": {
+                "fixture": [],
+                "items": [
+                  {
+                    "id": "rielkConstruction:Redwood_Planks",
+                    "quantity": 5000
+                  },
+                  {
+                    "id": "rielkConstruction:Dragonite_Nails",
+                    "quantity": 5000
+                  },
+                  {
+                    "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
+                    "quantity": 5000
+                  },
+                  {
+                    "id": "rielkConstruction:Magic_Bricks",
+                    "quantity": 5000
+                  }
+                ]
+              },
+              "rewards": {
+                "items": [
+                  {
+                    "id": "melvorD:Redwood_Logs",
+                    "quantity": 10000
+                  },
+                  {
+                    "id": "melvorD:Dragonite_Bar",
+                    "quantity": 10000
+                  },
+                  {
+                    "id": "melvorF:Elder_Dragonhide",
+                    "quantity": 10000
+                  },
+                  {
+                    "id": "melvorD:Ancient_Rune",
+                    "quantity": 10000
+                  }
+                ],
+                "skillXP": [],
+                "townshipResources": [],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 5000000
+                  }
+                ]
+              }
+            },
+            {
+              "id": "ConstrVHard2",
+              "category": "VeryHard",
+              "goals": {
+                "fixture": [
+                  {
+                    "fixtureID": "rielkConstruction:Wardrobe",
+                    "tier": 4
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Fridge",
+                    "tier": 4
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Training_Dummy",
+                    "tier": 4
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Archery_Range",
+                    "tier": 4
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Trapping_Hut",
+                    "tier": 4
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Spell_Library",
+                    "tier": 4
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Prayer_Altar",
+                    "tier": 4
+                  }
+                ],
+                "items": []
+              },
+              "rewards": {
+                "items": [
+                  {
+                    "id": "melvorF:Summoning_Familiar_Yak",
+                    "quantity": 10000
+                  },
+                  {
+                    "id": "melvorF:Summoning_Familiar_Dragon",
+                    "quantity": 10000
+                  },
+                  {
+                    "id": "melvorF:Summoning_Familiar_Golbin_Thief",
+                    "quantity": 10000
+                  },
+                  {
+                    "id": "melvorF:Summoning_Familiar_Centaur",
+                    "quantity": 10000
+                  },
+                  {
+                    "id": "melvorF:Summoning_Familiar_Cyclops",
+                    "quantity": 10000
+                  },
+                  {
+                    "id": "melvorF:Summoning_Familiar_Occultist",
+                    "quantity": 10000
+                  },
+                  {
+                    "id": "melvorF:Summoning_Familiar_Unicorn",
+                    "quantity": 10000
+                  }
+                ],
+                "skillXP": [],
+                "townshipResources": [],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 5000000
+                  }
+                ]
+              }
+            },
+            {
+              "id": "ConstrElite1",
+              "category": "Elite",
+              "goals": {
+                "items": [
+                  {
+                    "id": "rielkConstruction:Magic_Bricks",
+                    "quantity": 300000
+                  }
+                 
+                ]
+              },
+              "rewards": {
+                "items": [
+                  {
+                    "id": "melvorD:Rune_Essence",
+                    "quantity": 4206969
+                  }
+                
+                ],
+                "skillXP": [],
+                "townshipResources": [],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 10000000
+                  }
+                ]
+              }
+            },
+            {
+              "id": "ConstrElite2",
+              "category": "Elite",
+              "goals": {
+                "fixture": [
+                  {
+                    "fixtureID": "rielkConstruction:Storage_Chest",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Wardrobe",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Desk",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Fire_Pit",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Fridge",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Oven",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Training_Dummy",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Archery_Range",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Jungle_Gym",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Worktable",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Tool_Rack",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Forge",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Mines",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Trapping_Hut",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Black_Market",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Spell_Library",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Telescope",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Apparatus",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Orchard",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Lake",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Flower_Pots",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Rune_Altar",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Prayer_Altar",
+                    "tier": 5
+                  },
+                  {
+                    "fixtureID": "rielkConstruction:Spirit_Catcher",
+                    "tier": 5
+                  }
+                ]
+              },
+              "rewards": {
+                "items": [{
+                  "id":"melvorF:Mastery_Magnet",
+                  "quantity":100000
+                }
+                ],
+                "skillXP": [],
+                "townshipResources": [],
+                "currencies": [
+                  {
+                    "id": "melvorD:GP",
+                    "quantity": 10000000
+                  }
+                ]
+              }
+            }
+          ],
+          "itemConversions": {
+            "fromTownship": [
+              {
+                "resourceID": "melvorF:Planks",
+                "items": [
+                  {
+                    "itemID": "rielkConstruction:Beam_Box_I",
+                    "unlockRequirements": [
+                      {
+                        "type": "SkillLevel",
+                        "skillID": "melvorD:Woodcutting",
+                        "level": 40
+                      },
+                      {
+                        "type": "SkillLevel",
+                        "skillID": "melvorD:Fletching",
+                        "level": 40
+                      },
+                      {
+                        "type": "SkillLevel",
+                        "skillID": "melvorD:Township",
+                        "level": 50
+                      },
+                      {
+                        "type": "TownshipTask",
+                        "count": 40
+                      }
+                    ],
+                    "baseCost": 500
+                  },
+                  {
+                    "itemID": "rielkConstruction:Beam_Box_II",
+                    "unlockRequirements": [
+                      {
+                        "type": "SkillLevel",
+                        "skillID": "melvorD:Woodcutting",
+                        "level": 99
+                      },
+                      {
+                        "type": "SkillLevel",
+                        "skillID": "melvorD:Fletching",
+                        "level": 99
+                      },
+                      {
+                        "type": "SkillLevel",
+                        "skillID": "melvorD:Township",
+                        "level": 99
+                      },
+                      {
+                        "type": "TownshipTask",
+                        "count": 85
+                      }
+                    ],
+                    "baseCost": 1000
+                  }
+                ]
+              }
+            ],
+            "toTownship": []
+          }
+        }
       }
     ],
     "modifiers": [
@@ -10873,6 +11880,20 @@
               {
                 "text": "Increase non-combat Skill Level Cap in Ancient Relics",
                 "lang": "MODIFIER_DATA_bypassNonCombatSkillLevelCapAR"
+              }
+            ]
+          }
+        ]
+      },
+       {
+        "id": "bypassNonCombatSkillLevelAR",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Increase non-combat Skill Level Cap in Ancient Relics",
+                "lang": "MODIFIER_DATA_bypassNonCombatSkillLevelAR"
               }
             ]
           }

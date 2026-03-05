@@ -1,4 +1,6 @@
 export const language = {
+    'MODIFIER_DATA_bypassNonCombatSkillLevelAR': 'Повысить уровень всех небоевых навыков на ${value}',
+'TOWNSHIP_TASKS_REQ': 'Постройте ${qty1} / ${qty2} ${fixImg}${fixName}',
     'SHOP_NAME_Hidden_Routes': "Секретные маршруты",
     'ITEM_NAME_Star_Necklace': 'Ожерелье Звезды',
     'ITEM_NAME_Ice_Gloves': 'Ледяные перчатки',

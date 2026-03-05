@@ -266,6 +266,7 @@ export const language = {
     'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel': '${value} Hidden Level in all Non-Combat Skills',
     'MODIFIER_DATA_bypassEfficiencyChance': '${value}% chance to complete extra actions in ${skillName} (Bypasses Gamemode Limitations)',
     'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR': 'Increase all Non-Combat Skills\' current cap Level Cap by ${value} (up to their maximum cap)',
+    'MODIFIER_DATA_bypassNonCombatSkillLevelAR':'Increase all Non-Combat Skills\' Level by ${value}',
     'MODIFIER_DATA_bypassGlobalDoubling': '${value}% Chance to Double Items Globally (Bypasses Gamemode Limitations)',
     'SHOP_PURCHASE_Perpetual_Haste': '-15% Crafting, Construction & Fletching Interval',
     'ITEM_DESCRIPTION_BEAR_DEVIL_SYNERGY': 'While using the Controlled Heat Potions, +5% Firemaking Skill XP and Bonfire duration increased by 15%. Charges are used per Firemaking action and lit Bonfire.',
@@ -323,7 +324,6 @@ export const language = {
     'MENU_TEXT_ENGRAVED_DIAGRAM_UNLOCK_0': 'Permanent 2% less Damage Taken',
     'MENU_TEXT_ENGRAVED_DIAGRAM_UNLOCK_1': 'Permanent 2% of Maximum Hit added to Minimum Hit',
     'MENU_BONFIRE_SOURCE': '${logName} Bonfire',
-
     'BONFIRE_ROARING_NOTICE': 'Roaring Bonfires deplete while their corresponding Skill is Active',
     'BONFIRE_ROARING_MOD': 'Roaring Modifier:',
     'TOASTS_NO_LOGS_FOR_STOKE': 'You do not have enough logs to stoke your Bonfire!',
@@ -332,7 +332,7 @@ export const language = {
     'MODIFIER_DATA_spoofUpgradeCookingEquipment_2': '${value}% increased Cooking Bonuses from Skillcapes and Consumables',
     'MODIFIER_DATA_increasePerfectFoodHealing': '${value}% Food healing value from Perfectly Cooked Food',
     'TOOLTIP_NEW_EFFECTS': 'This room\'s furniture has recently had its <span class="construction-victory">effects</span> updated!',
-
+    'TOWNSHIP_TASKS_REQ':'Construct ${qty1} / ${qty2} ${fixImg}${fixName}',
     'ITEM_NAME_Twice_Measured_Potion_I': 'Twice-Measured Potion I',
     'ITEM_NAME_Twice_Measured_Potion_II': 'Twice-Measured Potion II',
     'ITEM_NAME_Twice_Measured_Potion_III': 'Twice-Measured Potion III',

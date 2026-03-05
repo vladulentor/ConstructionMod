@@ -1,4 +1,6 @@
 export const language = {
+    'MODIFIER_DATA_bypassNonCombatSkillLevelAR': '將所有非戰鬥技能等級提高 ${value}',
+'TOWNSHIP_TASKS_REQ': '建造 ${qty1} / ${qty2} ${fixImg}${fixName}',
     'SHOP_NAME_Hidden_Routes': "秘密路線",
     'ITEM_NAME_Star_Necklace': '星之項鍊',
     'ITEM_NAME_Ice_Gloves': '冰之手套',

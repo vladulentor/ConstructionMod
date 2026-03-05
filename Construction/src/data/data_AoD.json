@@ -99,7 +99,8 @@
         "skillID": "rielkConstruction:Construction",
         "number": 4,
         "modifiers": {
-          "rielkConstruction:bypassNonCombatSkillLevelCapAR": 5
+          "rielkConstruction:bypassNonCombatSkillLevelCapAR": 5,
+          "rielkConstruction:bypassNonCombatSkillLevelAR": 5
         }
       },
       {

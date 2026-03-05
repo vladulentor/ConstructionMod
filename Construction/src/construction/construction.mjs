@@ -257,12 +257,18 @@ export class Construction extends ArtisanSkill {
     locateAncientRelic(relicSet, relic) {
         this.queueAncientRelicFoundModal(relicSet, relic);
         relicSet.addRelic(relic);
-        if (relic.id == "rielkConstruction:ConstructionRelic4" && game.currentGamemode.levelCapIncreases?.length >0  )
-            game.increaseSkillLevelCaps(this.capIncrease, {
-                requirements: [],
-                given: false,
-                unlisteners: []
-            });
+        if (relic.id == "rielkConstruction:ConstructionRelic4")
+           { if (game.currentGamemode.levelCapIncreases?.length > 0) {
+                game.increaseSkillLevelCaps(this.capIncrease, {
+                    requirements: [],
+                    given: false,
+                    unlisteners: []
+                });
+            }
+         game.skills.allObjects.forEach(skill =>{
+            if(!skill.isCombat && skill.level < 99) skill.addXP(exp.levelToXP(Math.min(99, this.level + 5)) - skill._xp + 1) // Apparently to level up you need more xp than your levels, not equal
+         })   
+        }
         if (relicSet.isComplete)
             this.queueAncientRelicFoundModal(relicSet, relicSet.completedRelic);
         this.onAncientRelicUnlock();

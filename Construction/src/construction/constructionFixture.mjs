@@ -10,6 +10,8 @@ export class ConstructionFixture extends RealmedObject {
         this.UIcost = null;
         this.stepCost = null;
         this.skill = construction;
+        this._events = new Map();
+
         try {
             this._media = data.media;
             if (data.recipes == undefined)
@@ -34,6 +36,19 @@ export class ConstructionFixture extends RealmedObject {
         } catch (e) {
             throw new DataModificationError(ConstructionFixture.name, e, this.id);
         }
+    }
+
+    on(event, handler) {
+        if (!this._events.has(event)) this._events.set(event, new Set());
+        this._events.get(event).add(handler);
+    }
+
+    off(event, handler) {
+        this._events.get(event)?.delete(handler);
+    }
+
+    emit(event, ...args) {
+        this._events.get(event)?.forEach(handler => handler(...args));
     }
     //Bugtest functions
     tierUp() {
@@ -78,8 +93,8 @@ export class ConstructionFixture extends RealmedObject {
     get abyssalLevel() {
         return this.recipes[0].abyssalLevel;
     }
-    getTotalRemainingCost(){
-        if(this.UIcost == undefined)
+    getTotalRemainingCost() {
+        if (this.UIcost == undefined)
             this.getCurrentBuildRecipeCosts(this.skill);
         const costs = new Costs(game);
         this.UIcost.itemCosts.forEach(item => {
@@ -165,6 +180,7 @@ export class ConstructionFixture extends RealmedObject {
         };
         const fixtureNotification = game.notifications.newAddSuccessNotification(`FixtureComplete-${this.id}`);
         game.notifications.addNotification(fixtureNotification, finishNotification);
+        this.emit('tierChanged', this.currentTier);
         construction.game.completion.updateSkillMastery(construction)
     }
     get providedStats() {

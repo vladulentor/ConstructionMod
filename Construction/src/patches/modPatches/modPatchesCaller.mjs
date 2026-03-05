@@ -2,7 +2,7 @@ const { loadModule } = mod.getContext(import.meta);
 const { skillBoostsCompatibility } = await loadModule('src/patches/modPatches/skillBoosts.mjs');
 const { tinyIconsCompatibility } = await loadModule('src/patches/modPatches/tinyIcons.mjs');
 const { skillsoundfxCompatibility } = await loadModule('src/patches/modPatches/skillsoundfx.mjs');
-
+const { showItemSourcesAndUsesCompatibility } = await loadModule('src/patches/modPatches/showItemSourcesAndUses.mjs');
 
 
 
@@ -32,6 +32,16 @@ export function patchMods(ctx, modList) {
             color: '#f5d522'
         });
     }
+
+    // After trying it for a bit, I've discovered that this man's mod is insane, the only way to add compat is to make a pull request :(
+   /* if (modList.includes('Show Item Sources And Uses')) {
+        showItemSourcesAndUsesCompatibility(ctx);
+        compatMessages.push({
+            name: 'Show Item Sources And Uses',
+            description: 'All of our new custom bonuses will have nice new Icons.',
+            color: '#5a0253'
+        });
+    }*/ 
     if (modList.includes('[PSY] Skill Sound FX')) {
         skillsoundfxCompatibility(ctx);
         compatMessages.push({
@@ -45,6 +55,14 @@ export function patchMods(ctx, modList) {
             name: 'Ancient Relics Doubling and Preservation Enabled',
             description: 'Efficiency will also work in Ancient Relics',
             color: '#f58822'
+        });
+    }
+
+        if (modList.includes('Ancient Relic Mode 1.3')) {
+        compatMessages.push({
+            name: 'The mod won\'t destroy your save with Ancient Relics even on gamemodes that don\'t have rolling caps',
+            description: 'Efficiency will also work in Ancient Relics',
+            color: '#949684'
         });
     }
 

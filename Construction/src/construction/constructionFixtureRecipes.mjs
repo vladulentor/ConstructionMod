@@ -86,7 +86,7 @@ export class ConstructionFixtureRecipes extends CategorizedArtisanRecipe {
         });
     }
     makeProgress(prog) {
-        for (let a = 0; a < Math.floor(prog); a++) // real high school coding hours
+        for (let a = 0; a < Math.floor(prog); a++)
         {
             this.fixture.progress++;
             if (this.fixture.progress >= this.actionCost) {

@@ -54,7 +54,7 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 
 - **Smuggler's Carriage**  
   - Area: Bandit's Hideout  
-  - Stats: A ranged enemy that can use the rapid fire attack. 
+  - Drops: Planks, Dragonhide Straps, and the Half-Burnt Ledger, which provides boosts to Firemaking
 </details>
 
 <details>
@@ -62,7 +62,7 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 
 - **Icy Sculpture**  
   - Area: Icy Hills  
-
+  - Drops: Magic Bones, and the Ice Globes, which are a powerful piece of the Ice Armor set
 </details>
 
 <details>
@@ -70,14 +70,17 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 
 - **Expert Arcane Golem**  
   - Area: Wizard Tower  
+  - Drops: Rune Essence, high level Runes and Bricks, and the Mystical Rotating Saw, which is an item that can greatly shorten the interval of making planks at worse efficiency
 
 </details>
 
 <details>
 <summary>Level 5</summary>
-  - Area: Dragon Valley  
 
 - **Elder Dragon**  
+  - Area: Dragon Valley  
+  - Drops: Elder Dragonhide, including Slivers.
+
 
 </details>
 
@@ -102,6 +105,9 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 - Added new trades at The Trader. You can now trade for **Beam Boxes** if your Fletching, Woodcutting, and Township levels are sufficiently high. They provide [Wood Beams](#crafting).
   - Basic Box → Normal, Oak, Teak  
   - Regular Box → Teak, Mahogany, Redwood
+
+- Added new Tasks in the Tasks section, 12 new Casual Tasks, 2 Easy Tasks, 2 Normal Tasks, 2 Hard Tasks, 2 Very Hard Tasks, and 2 Extreme Tasks
+
 
 ---
 

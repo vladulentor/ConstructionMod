@@ -94,6 +94,7 @@ export function tinyIconsCompatibility(ctx) {
 
     icons.addModifier('rielkConstruction:bypassGlobalDoubling', 'doubling');
     icons.addModifier('rielkConstruction:bypassNonCombatSkillLevelCapAR', 'xp');
+    icons.addModifier('rielkConstruction:bypassNonCombatSkillLevelAR', 'xp');
 
     
     icons.addModifier('rielkConstruction:allCombatSkillsFlatHiddenLevel', 'combat');
@@ -106,7 +107,7 @@ export function tinyIconsCompatibility(ctx) {
 
     icons.addModifier('rielkConstruction:TabletEffectBuffBasedOnMarkLevel', 'mark');
     icons.addModifier('rielkConstruction:TabletAmountBuffBasedOnMarkLevel', 'mark');
-    icons.addModifier('rielkConstruction:Spoof_UnlockMarkSuperLevels', 'mark');
+    icons.addModifier('rielkConstruction:spoof_UnlockMarkSuperLevels', 'mark');
     icons.addModifier('rielkConstruction:TabletFightBuffBasedOnMarkLevel', 'mark');
     icons.addModifier('rielkConstruction:IncreaseMarkChance', 'loot');
 

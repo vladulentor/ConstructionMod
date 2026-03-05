@@ -11,3 +11,4 @@ export function patchThievingTargets() {
     cave.npcs.push(construct);
     }
 // I thought it would be harder than this to be honest
+// edit, it was, i messed it up

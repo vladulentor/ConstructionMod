@@ -8836,7 +8836,7 @@
                 "rielkConstruction:skillEfficiencyChance": [
                   {
                     "skillID": "rielkConstruction:Construction",
-                    "value": 3
+                    "value": 2
                   }
                 ],
                 "rielkConstruction:skillEfficiencyPotency": [
@@ -8880,7 +8880,7 @@
                 "rielkConstruction:skillEfficiencyChance": [
                   {
                     "skillID": "rielkConstruction:Construction",
-                    "value": 5
+                    "value": 3
                   }
                 ],
                 "flatSkillInterval": [
@@ -8935,7 +8935,7 @@
                 "rielkConstruction:skillEfficiencyChance": [
                   {
                     "skillID": "rielkConstruction:Construction",
-                    "value": 7
+                    "value": 4
                   }
                 ],
                 "flatSkillInterval": [
@@ -8991,7 +8991,7 @@
                 "rielkConstruction:bypassEfficiencyChance": [
                   {
                     "skillID": "rielkConstruction:Construction",
-                    "value": 9
+                    "value": 5
                   }
                 ],
                 "rielkConstruction:skillEfficiencyPotency": [

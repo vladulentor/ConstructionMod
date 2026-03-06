@@ -9,12 +9,11 @@ export function patchWorldMap() {
         media: 'assets/others/warehouse.webp',
         activeStats: {
             modifiers: {
-                skillPreservationChance: [
+                "rielkConstruction:skillEfficiencyChance": [
                     {
-                        value: 5,
                         categoryID: "rielkConstruction:House",
-
-                        skillID: "rielkConstruction:Construction"
+                        skillID: "rielkConstruction:Construction",
+                        value: 5
                     }
                 ],
                 "rielkConstruction:constructionActionsToUpgrade": [

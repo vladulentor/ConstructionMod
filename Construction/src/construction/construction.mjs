@@ -246,7 +246,7 @@ export class Construction extends ArtisanSkill {
             levelType: 'Standard',
             fixedIncreases: Object.values(game.skills.allObjects)
                 .filter(skill => !skill.isCombat)
-                .map(skill => ({ skill, increase: Math.min(5, skill.maxLevelCap - skill._currentLevelCap), maximum: skill.maxLevelCap })),
+                .map(skill => ({ skill, increase: Math.max(0, Math.min(5, 99 - skill._currentLevelCap)), maximum: skill.maxLevelCap })),
             setIncreases: [],
             randomIncreases: [],
             randomCount: 0,
@@ -266,7 +266,7 @@ export class Construction extends ArtisanSkill {
                 });
             }
          game.skills.allObjects.forEach(skill =>{
-            if(!skill.isCombat && skill.level < 99) skill.addXP(exp.levelToXP(Math.min(99, this.level + 5)) - skill._xp + 1) // Apparently to level up you need more xp than your levels, not equal
+            if(!skill.isCombat && skill.level < 99) skill.addXP(exp.levelToXP(Math.min(99, this.level + 5)) - skill._xp + 1) // To level up you need more xp than your levels, not equal, so we add 1
          })   
         }
         if (relicSet.isComplete)

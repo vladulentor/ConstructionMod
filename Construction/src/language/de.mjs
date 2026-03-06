@@ -1,4 +1,8 @@
 export const language = {
+    'MAP_POI_House':"Atelier am Hafen",
+'MAP_POI_House_Desc':'Als sich der faulige Nebel des Sumpfes lichtet, nimmst du das Hämmern von Nägeln und das Sägen von Holz wahr. Zwischen zwei geschäftigen Docks erstreckt sich ein mehrstöckiges Gebäude, in dem Dutzende Arbeiter an Projekten jeder Größe arbeiten. Von kleinen Regalen über Kirchenfenster bis hin zu metallenen Thronen, die bereit sind, in die Gemächer des Königs verschifft zu werden. Für jedes Schiff, das mit Möbeln ausläuft, legen zwei weitere an, beladen mit Bestellungen und Materialien.',
+'MAP_POI_Yard':"Hof der Goblins",
+'MAP_POI_Yard_Desc':'Auf einer Klippe, durchzogen von Rissen und Abgründen, entdeckst du einen geschäftigen Hof. Goblins aller Formen und Farben bedienen ohrenbetäubende Maschinen, die gewaltige Mengen Holz, Stein, Metall und Leder in bearbeitbare Formen schneiden. Die Maschinen gehen oft kaputt, und die Goblins benutzen eine andere, größere Maschine, um sie zu reparieren. Die größere Maschine ist immer kaputt.',
     'ITEM_NAME_Pile_Of_Bricks': 'Ziegelhaufen',
     'MODIFIER_DATA_bypassNonCombatSkillLevelAR': 'Alle Nicht-Kampf-Fertigkeiten um ${value} Level erhöhen',
 'TOWNSHIP_TASKS_REQ': 'Baue ${qty1} / ${qty2} ${fixImg}${fixName}',

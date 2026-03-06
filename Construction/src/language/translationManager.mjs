@@ -158,8 +158,8 @@ export function patchTranslations(ctx) {
         }
         return patch();
     });
-    ctx.patch(SummoningSynergy, 'description').get(function(patch){
-        if(this._customDescription?.startsWith('RIELK_SYNERGY'))
+    ctx.patch(SummoningSynergy, 'description').get(function (patch) {
+        if (this._customDescription?.startsWith('RIELK_SYNERGY'))
             return getRielkLangString(this._customDescription)
         return patch();
     })
@@ -188,4 +188,16 @@ export function patchTranslations(ctx) {
             return getRielkLangString(`THIEVING_NPC_${this.localID}`);
         return patch();
     });
+    ctx.patch(PointOfInterest, "name").get(function (patch) {
+        if (this._namespace.name == "rielkConstruction")
+            return getRielkLangString(this._name)
+        return patch()
+
+    })
+     ctx.patch(PointOfInterest, "description").get(function (patch) {
+        if (this._namespace.name == "rielkConstruction")
+            return getRielkLangString(this._description)
+        return patch()
+
+    })
 }

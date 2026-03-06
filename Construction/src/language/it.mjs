@@ -1,5 +1,8 @@
 export const language = {
-
+'MAP_POI_House':"Atelier del Porto",
+'MAP_POI_House_Desc':'Mentre la putrida nebbia della palude si dirada, le tue orecchie colgono il martellare dei chiodi e il segare del legname. Tra due moli affollati si estende un edificio a più piani gestito da decine di lavoratori impegnati in progetti di ogni dimensione. Da piccole mensole a finestre di chiesa, fino a troni di metallo pronti per essere spediti alle camere del re. Per ogni nave che parte con mobili, altre due attraccano cariche di ordini e materiali.',
+'MAP_POI_Yard':"Cortile dei Goblin",
+'MAP_POI_Yard_Desc':'Sopra una scogliera piena di crepacci e dirupi, scorgi un cortile brulicante di attività. Goblin di ogni forma e colore lavorano con macchine assordanti che tagliano enormi quantità di legno, pietra, metallo e cuoio in forme lavorabili. Le macchine si rompono spesso, e i goblin usano un\'altra macchina più grande per ripararle. La macchina più grande è sempre rotta.',
     'ITEM_NAME_Pile_Of_Bricks': 'Pila di Mattoni',
     'MODIFIER_DATA_bypassNonCombatSkillLevelAR': 'Aumenta di ${value} il livello di tutte le abilità non di combattimento',
 'TOWNSHIP_TASKS_REQ': 'Costruisci ${qty1} / ${qty2} ${fixImg}${fixName}',

@@ -7,7 +7,7 @@ const { patchTiers } = await loadModule('src/skillPatches/atlasofdiscovery/archa
 const { patchMaxTier } = await loadModule('src/skillPatches/atlasofdiscovery/archaeology/patchmaxtier.mjs');
 const { patchGenericArtefact } = await loadModule('src/skillPatches/atlasofdiscovery/archaeology/patchgenericartefact.mjs');
 const {patchUpgradeArtefactValue} = await loadModule('src/skillPatches/atlasofdiscovery/archaeology/patchupgradeartefactvalue.mjs')*/
-
+const {patchWorldMap} = await loadModule('src/patches/skillPatches/atlasofdiscovery/cartography/patchWorldMap.mjs')
 const {bypassGlobalDoubling} = await loadModule('src/patches/skillPatches/atlasofdiscovery/ancientrelics/bypassGlobalDoubling.mjs')
 
 
@@ -25,6 +25,12 @@ export function patchAoDbeforedatareg(ctx)
 
         patchMaxTier(ctx);
         patchGenericArtefact(ctx);*/
-        bypassGlobalDoubling(ctx)
+        bypassGlobalDoubling(ctx);
     
+}
+
+export function patchAoDafterdatareg(ctx)
+{
+        patchWorldMap();
+
 }

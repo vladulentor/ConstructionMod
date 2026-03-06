@@ -1,5 +1,8 @@
 export const language = {
-
+'MAP_POI_House':"Atelier du Port",
+'MAP_POI_House_Desc':'Alors que l\'épais brouillard fétide du marais se dissipe, tes oreilles captent le martèlement des clous et le grincement des scies dans le bois. Entre deux quais animés s\'étend un bâtiment à plusieurs étages occupé par des dizaines d\'ouvriers travaillant sur des projets de toutes tailles. Des petites étagères aux vitraux d\'église, jusqu\'à des trônes de métal prêts à être expédiés dans les chambres du roi. Pour chaque navire qui part chargé de meubles, deux autres accostent, remplis de commandes et de matériaux.',
+'MAP_POI_Yard':"Cour des Gobelins",
+'MAP_POI_Yard_Desc':'Au sommet d\'une falaise traversée de crevasses et de précipices, tu aperçois une cour animée. Des gobelins de toutes formes et couleurs utilisent des machines assourdissantes qui découpent d\'énormes quantités de bois, de pierre, de métal et de cuir en formes exploitables. Les machines tombent souvent en panne, et les gobelins utilisent une autre machine, plus grande, pour les réparer. La plus grande machine est toujours en panne.',
     'ITEM_NAME_Pile_Of_Bricks': 'Pile de Briques',
     'MODIFIER_DATA_bypassNonCombatSkillLevelAR': 'Augmente le niveau de toutes les compétences non-combattantes de ${value}',
 'TOWNSHIP_TASKS_REQ': 'Construisez ${qty1} / ${qty2} ${fixImg}${fixName}',

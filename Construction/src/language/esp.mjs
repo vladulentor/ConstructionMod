@@ -1,5 +1,8 @@
 export const language = {
-
+'MAP_POI_House':"Taller del Puerto",
+'MAP_POI_House_Desc':'A medida que la asquerosa niebla del pantano se disipa, tus oídos perciben el martilleo de clavos y el serrar de la madera. Entre dos muelles concurridos se extiende un edificio de varios pisos atendido por decenas de trabajadores, todos ocupados en proyectos de todos los tamaños. Desde pequeñas estanterías hasta vitrales de iglesia, e incluso tronos de metal listos para ser enviados a las cámaras del rey. Por cada barco que parte con muebles, llegan dos más al otro muelle cargados con pedidos y materiales.',
+'MAP_POI_Yard':"Patio del Goblin",
+'MAP_POI_Yard_Desc':'En lo alto de un acantilado lleno de grietas y caídas, divisas un patio bullicioso. Goblins de todas las formas y colores manejan máquinas ensordecedoras que cortan enormes cantidades de madera, piedra, metal y cuero en formas utilizables. Las máquinas suelen romperse, y los goblins usan otra máquina más grande para repararlas. La máquina más grande siempre está rota.',
     'ITEM_NAME_Pile_Of_Bricks': 'Montón de Ladrillos',
     'MODIFIER_DATA_bypassNonCombatSkillLevelAR': 'Aumenta el nivel de todas las habilidades no combativas en ${value}',
 'TOWNSHIP_TASKS_REQ': 'Construye ${qty1} / ${qty2} ${fixImg}${fixName}',

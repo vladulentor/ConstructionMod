@@ -1,4 +1,8 @@
 export const language = {
+    'MAP_POI_House':"港口工坊",
+'MAP_POI_House_Desc':'隨著沼澤中惡臭的濃霧散去，你的耳朵捕捉到敲釘子與鋸木頭的聲音。在兩個繁忙的碼頭之間，一座多層建築鋪展開來，數十名工人正忙於各種規模的工程。從小架子到教堂彩窗，再到準備運往國王寢宮的金屬王座。每當一艘滿載家具的船離港，就有另外兩艘滿載訂單與材料的船靠岸。',
+'MAP_POI_Yard':"哥布林工場",
+'MAP_POI_Yard_Desc':'在一座佈滿裂縫與落差的懸崖之上，你發現一個熱鬧的工場。各種形狀與顏色的哥布林操作著震耳欲聾的機器，把大量木材、石頭、金屬與皮革切割成可加工的形狀。機器經常壞掉，而哥布林會使用另一台更大的機器來修理它們。那台更大的機器總是壞的。',
     'ITEM_NAME_Pile_Of_Bricks': '一堆磚塊',
     'MODIFIER_DATA_bypassNonCombatSkillLevelAR': '將所有非戰鬥技能等級提高 ${value}',
     'TOWNSHIP_TASKS_REQ': '建造 ${qty1} / ${qty2} ${fixImg}${fixName}',

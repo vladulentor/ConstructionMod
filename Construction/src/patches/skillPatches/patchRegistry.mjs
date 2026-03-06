@@ -24,7 +24,6 @@ const { addEnemies } = await loadModule('src/patches/skillPatches/slayer/addEnem
 
 const { unlockPlot } = await loadModule('src/patches/skillPatches/farming/unlockPlot.mjs');
 
-const { patchWorldMap } = await loadModule("src/patches/skillPatches/atlasofdiscovery/patchWorldMap.mjs");
 
 const { addFoodSlot } = await loadModule("src/patches/skillPatches/combat/addFoodSlot.mjs");
 
@@ -52,7 +51,6 @@ const { addMarkExtraLevels } = await loadModule('src/patches/skillPatches/summon
 export const EffectRegistry = {
   tierArray,
   unlockPlot,
-  patchWorldMap,
   addFoodSlot,
   upgradeRegenPotions,
   doubleEffectsOfStuff,

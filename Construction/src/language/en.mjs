@@ -345,6 +345,11 @@ export const language = {
     'ITEM_NAME_Steel_Toed_Boots': 'Steel-Toed Boots',
     'ITEM_NAME_Mystic_Rotating_Saw': 'Mystic Rotating Saw',
 
+    'MAP_POI_House':"Portside Atelier",
+    'MAP_POI_House_Desc':'As the swamp\'s foul fog clears, your ears pick up the hammering of nails and sawing of timber. Between two busy docks sprawls a multi-story building manned by dozens of workers all working projects of every size. From little shelves to church windows, to metal thrones ready to be shipped to the king\'s chambers. For every ship leaving with furniture, there are two more docking in the other filled with orders and materials.',
+    'MAP_POI_Yard':"Golbin's Yard",
+    'MAP_POI_Yard_Desc':'Atop a cliff crisscrossed with crags and drops, you spot a bustling yard. Golbins of all shapes and colors are working ear-piercing machines that cut giant amounts of lumber, stone, metal, and leather into workable shapes. The machines often break, and the Golbins use another, bigger machine to fix them. The bigger machine is always broken.',
+
 
     'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} extra Materials or Progress made when completing extra actions',
     'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} extra Materials or Progress made when completing extra actions',

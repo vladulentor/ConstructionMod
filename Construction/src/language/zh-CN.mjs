@@ -1,4 +1,8 @@
 export const language = {
+    'MAP_POI_House':"港口工坊",
+'MAP_POI_House_Desc':'随着沼泽中令人作呕的浓雾散去，你的耳朵捕捉到敲钉子和锯木头的声音。在两个繁忙的码头之间，一座多层建筑铺展开来，几十名工人正忙于各种规模的项目。从小架子到教堂彩窗，再到准备运往国王寝宫的金属王座。每当一艘装满家具的船离港，就有另外两艘满载订单和材料的船靠岸。',
+'MAP_POI_Yard':"地精工场",
+'MAP_POI_Yard_Desc':'在一处布满裂缝与落差的悬崖之上，你发现一个热闹的工场。各种形状与颜色的地精操作着震耳欲聋的机器，把大量木材、石头、金属和皮革切割成可用的形状。机器经常损坏，而地精们会用另一台更大的机器来修理它们。那台更大的机器总是坏的。',
     'ITEM_NAME_Pile_Of_Bricks': '一堆砖块',
     'MODIFIER_DATA_bypassNonCombatSkillLevelAR': '将所有非战斗技能等级提高 ${value}',
 'TOWNSHIP_TASKS_REQ': '建造 ${qty1} / ${qty2} ${fixImg}${fixName}',

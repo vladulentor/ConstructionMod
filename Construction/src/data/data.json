@@ -965,7 +965,6 @@
         "category": "Openable",
         "type": "Chest",
         "media": "assets/items/pile_of_bricks.webp",
-        "customDescription": "Contains Regular Beams",
         "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,

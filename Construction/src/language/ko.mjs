@@ -1,6 +1,6 @@
 export const language = {
-    
-    'ITEM_NAME_Pile_of_Bricks': '벽돌 더미',
+
+    'ITEM_NAME_Pile_Of_Bricks': '벽돌 더미',
     'MODIFIER_DATA_bypassNonCombatSkillLevelAR': '모든 비전투 기술 레벨을 ${value}만큼 증가',
     'TOWNSHIP_TASKS_REQ': '${qty1} / ${qty2} ${fixImg}${fixName} 제작',
     'SHOP_NAME_Hidden_Routes': "비밀 경로",

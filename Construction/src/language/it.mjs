@@ -1,6 +1,6 @@
 export const language = {
-    
-    'ITEM_NAME_Pile_of_Bricks': 'Pila di Mattoni',
+
+    'ITEM_NAME_Pile_Of_Bricks': 'Pila di Mattoni',
     'MODIFIER_DATA_bypassNonCombatSkillLevelAR': 'Aumenta di ${value} il livello di tutte le abilità non di combattimento',
 'TOWNSHIP_TASKS_REQ': 'Costruisci ${qty1} / ${qty2} ${fixImg}${fixName}',
     'SHOP_NAME_Hidden_Routes': "Percorsi Segreti",

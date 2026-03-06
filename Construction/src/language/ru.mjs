@@ -1,5 +1,5 @@
 export const language = {
-    'ITEM_NAME_Pile_of_Bricks': 'Куча кирпичей',
+    'ITEM_NAME_Pile_Of_Bricks': 'Куча кирпичей',
     'MODIFIER_DATA_bypassNonCombatSkillLevelAR': 'Повысить уровень всех небоевых навыков на ${value}',
     'TOWNSHIP_TASKS_REQ': 'Постройте ${qty1} / ${qty2} ${fixImg}${fixName}',
     'SHOP_NAME_Hidden_Routes': "Секретные маршруты",

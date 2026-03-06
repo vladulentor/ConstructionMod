@@ -1,5 +1,5 @@
 export const language = {
-    'ITEM_NAME_Pile_of_Bricks': 'Ziegelhaufen',
+    'ITEM_NAME_Pile_Of_Bricks': 'Ziegelhaufen',
     'MODIFIER_DATA_bypassNonCombatSkillLevelAR': 'Alle Nicht-Kampf-Fertigkeiten um ${value} Level erhöhen',
 'TOWNSHIP_TASKS_REQ': 'Baue ${qty1} / ${qty2} ${fixImg}${fixName}',
     'SHOP_NAME_Hidden_Routes': "Geheime Routen",

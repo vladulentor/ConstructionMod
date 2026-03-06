@@ -1,6 +1,6 @@
 export const language = {
 
-    'ITEM_NAME_Pile_of_Bricks': 'Pile de Briques',
+    'ITEM_NAME_Pile_Of_Bricks': 'Pile de Briques',
     'MODIFIER_DATA_bypassNonCombatSkillLevelAR': 'Augmente le niveau de toutes les compétences non-combattantes de ${value}',
 'TOWNSHIP_TASKS_REQ': 'Construisez ${qty1} / ${qty2} ${fixImg}${fixName}',
     'SHOP_NAME_Hidden_Routes': "Routes secrètes",

@@ -1,5 +1,5 @@
 export const language = {
-    'ITEM_NAME_Pile_of_Bricks': '一堆砖块',
+    'ITEM_NAME_Pile_Of_Bricks': '一堆砖块',
     'MODIFIER_DATA_bypassNonCombatSkillLevelAR': '将所有非战斗技能等级提高 ${value}',
 'TOWNSHIP_TASKS_REQ': '建造 ${qty1} / ${qty2} ${fixImg}${fixName}',
     'SHOP_NAME_Hidden_Routes': "秘密路线",

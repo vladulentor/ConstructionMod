@@ -1,4 +1,6 @@
 export const language = {
+
+    'ITEM_NAME_Pile_of_Bricks': 'Montón de Ladrillos',
     'MODIFIER_DATA_bypassNonCombatSkillLevelAR': 'Aumenta el nivel de todas las habilidades no combativas en ${value}',
 'TOWNSHIP_TASKS_REQ': 'Construye ${qty1} / ${qty2} ${fixImg}${fixName}',
 'COMBAT_MISC_SHIELD_BROKEN': 'Barrera',

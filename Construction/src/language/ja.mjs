@@ -1,4 +1,6 @@
 export const language = {
+    
+    'ITEM_NAME_Pile_of_Bricks': 'レンガの山',
     'MODIFIER_DATA_bypassNonCombatSkillLevelAR': 'すべての非戦闘スキルのレベルを${value}増加',
 'TOWNSHIP_TASKS_REQ': '${qty1} / ${qty2} ${fixImg}${fixName} を建造',
     'SHOP_NAME_Hidden_Routes': "秘密のルート",

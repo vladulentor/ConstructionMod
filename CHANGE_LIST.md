@@ -124,6 +124,8 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 *Note: The Fishing pool's Special Table was changed so rare items’ chances were not decreased.*
 
 </details>
+
+
 ---
 
 ## Thieving
@@ -150,12 +152,12 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 
 ## Crafting
 - Added **"Leather Slivers"** category: Green, Red, Blue, Black, and Ancient Dragonhide.  
-- Slivers are used to make Straps, replacing normal Dragonhide when upgrading Dragonhide Armor. Higher-tier Dragonhide outputs fewer Slivers. Encourages combat/crafting rather than buying upgrades.
+- Slivers replace normal Dragonhide when upgrading Dragonhide armor, as well as being used to make Straps. Higher-tier Dragonhide outputs fewer Slivers. Encourages combat/crafting rather than buying upgrades.
 
 ---
 
 ## Herblore
-- Added **"Twice-Measured"** skill potion at (70 Herblore). It is made with Nails and Leather Straps. It provides a boost in Efficiency chance when making construction materials *or* a boost in Efficiency potency when making furniture.
+- Added **"Twice-Measured"** skill potion (78 Herblore). It is made with Nails and Leather Straps. It provides a boost in Efficiency chance when making construction materials *or* a boost in Efficiency potency when making furniture.
 
 ---
 

@@ -26,7 +26,7 @@ let guardMelee = 0;
 export function addSpecialAttack() {
     let functionList = [];
     const constr = this.skill;
-    if (constr.fixtures.getObjectSafe('rielkConstruction:Spell_Library').currentTier >= 4 && guardMagic == 0) {
+    if (this._localID == "Spell_Library"&& this.currentTier >= 4 && guardMagic == 0) {
         functionList.push({ name: "magic", attack:game.specialAttacks.getObjectSafe('rielkConstruction:Mana_Surge')})
         guardMagic = 1;
     }

@@ -298,6 +298,7 @@ export const language = {
     'ITEM_NAME_Mariners_Blouse': 'Mariner\'s Top',
     'ITEM_NAME_Mariners_Tie': 'Mariner\'s Tie',
     'ITEM_NAME_Construction_Lesser_Relic': 'Construction Lesser Relic',
+    'ITEM_NAME_Pile_of_Bricks':'Pile of Bricks',
     'ITEM_NAME_Engraved_Diagram_Fragment': 'Engraved Diagram Fragment',
     'ITEM_NAME_Engraved_Diagram': 'Engraved Construct Diagram',
     'ITEM_NAME_Half_Burnt_Ledger': 'Half-Burnt Ledger',

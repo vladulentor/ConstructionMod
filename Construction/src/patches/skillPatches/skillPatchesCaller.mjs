@@ -33,6 +33,9 @@ const { reduceUpgradeLevelReq } = await loadModule('src/patches/skillPatches/her
 const { additionalPotionsHighTier } = await loadModule('src/patches/skillPatches/herblore/additionalPotionsHighTier.mjs');
 
 const { patchCraftingOrder } = await loadModule('src/patches/skillPatches/crafting/patchCraftingOrder.mjs');
+const { patchShieldRecipes } = await loadModule('src/patches/skillPatches/crafting/patchShieldRecipes.mjs');
+
+
 
 const { patchTreeSeedReturn } = await loadModule('src/patches/skillPatches/farming/patchTreeSeedReturn.mjs');
 
@@ -97,6 +100,7 @@ export function patchSkillsBeforeDataReg(ctx) {
 export function patchSkillsAfterDataReg(ctx) {
         patchCraftingOrder();
         patchFletchingOrder();
+        patchShieldRecipes()
         addBeamsMasteryPoolBonus();
         patchArrowShaftRecipes(ctx);
         patchPerpetualHaste(ctx);

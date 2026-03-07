@@ -47,7 +47,7 @@ export function addEnemies() {
     if (this.tier >= 5 && !guard5) {
         const dragon = game.monsters.getObjectByID("melvorF:ElderDragon")
         dragon.lootTable.drops = [{ item: game.items.getObjectSafe("melvorF:Elder_Dragonhide"), maxQuantity: 20, minQuantity: 1, weight: 2 }, { item: game.items.getObjectSafe("rielkConstruction:Elder_Dhide_Leather_Slivers"), maxQuantity: 35, minQuantity: 3, weight: 1 }];
-        dragon.lootTable.totalWeight = 2;
+        dragon.lootTable.totalWeight = 3;
         const val = game.combatAreas.getObjectByID("melvorD:Dragon_Valley");
         addMonster(dragon, val)
         guard5 = true;

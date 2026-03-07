@@ -153,6 +153,7 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 ## Crafting
 - Added **"Leather Slivers"** category: Green, Red, Blue, Black, and Ancient Dragonhide.  
 - Slivers replace normal Dragonhide when upgrading Dragonhide armor, as well as being used to make Straps. Higher-tier Dragonhide outputs fewer Slivers. Encourages combat/crafting rather than buying upgrades.
+- Changed the **"Leathed D-Hide Shield"** recipes, instead of normal dragonhide, they now require 10 Dragonhide slivers and 2 planks of their respective Tier
 
 ---
 
@@ -170,3 +171,16 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 
 ## Astrology
 - `[TotH]` Added Construction Skill and buffs to the Hamriel star (the one that gave Township bonuses)
+
+---
+
+## Cartography
+- Added two new Points of Interest in Cartography.
+<details>
+<summary>Location and Effects</summary>
+
+- The Points of Interest are at Hex Coordinates `19, 7` and `18,7` respectively.
+- The rightmost one provides a `5%` Efficiency chance when making Furniture in Construction and `-5%` less actions and materials require to build furniture in Construction as Active Modifiers
+- The leftmost one provides a `15%` chance to gain `+3` additional resource in Construction for Materials and a `-0.15s` Construction interval for Materials, but it also provides a `-50%` Construction skill XP effect.
+
+</details>

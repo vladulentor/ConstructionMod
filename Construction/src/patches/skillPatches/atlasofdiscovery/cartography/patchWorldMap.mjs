@@ -34,11 +34,11 @@ export function patchWorldMap() {
         media: 'assets/others/warehouse2.webp',
         activeStats: {
             modifiers: {
-                additionalPrimaryProductChance: [
+                additional3PrimaryProductChance: [
                     {
                         skillID: "rielkConstruction:Construction",
                         categoryID: "rielkConstruction:Materials",
-                        value: 25
+                        value: 15
                     }
                 ],
                 flatSkillInterval: [

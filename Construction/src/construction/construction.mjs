@@ -281,9 +281,9 @@ export class Construction extends ArtisanSkill {
                     unlisteners: []
                 });
             }
-            game.skills.allObjects.forEach(skill => {
-                if (!skill.isCombat && skill.level < 99) skill.addXP(exp.levelToXP(Math.min(99, skill.level + 5)) - skill._xp + 1) // To level up you need more xp than your levels, not equal, so we add 1
-            })
+        /* game.skills.allObjects.forEach(skill =>{
+            if(!skill.isCombat && skill.level < 99) skill.addXP(exp.levelToXP(Math.min(99, skill.level + 5)) - skill._xp + 1) // To level up you need more xp than your levels, not equal, so we add 1
+         })*/   
         }
         if (relicSet.isComplete)
             this.queueAncientRelicFoundModal(relicSet, relicSet.completedRelic);

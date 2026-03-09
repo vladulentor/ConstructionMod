@@ -105,7 +105,7 @@
         "number": 4,
         "modifiers": {
           "rielkConstruction:bypassNonCombatSkillLevelCapAR": 5,
-          "rielkConstruction:bypassNonCombatSkillLevelAR": 5
+          "nonCombatSkillXP": 15
         }
       },
       {
@@ -183,7 +183,7 @@
                   "requirements": [],
                   "chance": {
                     "type": "Fixed",
-                    "chance": 50.0005
+                    "chance": 0.0005
                   }
                 },
                 {

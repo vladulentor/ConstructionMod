@@ -1488,10 +1488,12 @@
           ]
         },
         "cost": {
-          "items": [{
-            "id":"rielkConstruction:Elder_Dhide_Leather_Slivers",
-            "quantity":1
-          }],
+          "items": [
+            {
+              "id": "rielkConstruction:Elder_Dhide_Leather_Slivers",
+              "quantity": 1
+            }
+          ],
           "currencies": [
             {
               "currency": "melvorD:GP",
@@ -3004,6 +3006,256 @@
       }
     ],
     "skillData": [
+      {
+        "skillID": "melvorD:Agility",
+        "data": {
+          "obstacles": [
+            {
+              "id": "WarmUpStretches",
+              "name": "Warm-Up Stretches",
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 10000
+                }
+              ],
+              "itemCosts": [],
+              "skillRequirements": [],
+              "currencyRewards": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 2
+                }
+              ],
+              "itemRewards": [],
+              "modifiers": {
+                "skillXP": [
+                  {
+                    "skillID": "melvorD:Agility",
+                    "value": 50
+                  }
+                ]
+              },
+              "media": "assets/others/bluelock.webp",
+              "category": 0,
+              "baseInterval": 60000,
+              "baseExperience": 1
+            },
+            {
+              "id": "AltarHop",
+              "name": "Altar Hop",
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 150000
+                }
+              ],
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Limestone_Bricks",
+                  "quantity": 300
+                },
+                {
+                  "id": "melvorD:Rune_Essence",
+                  "quantity": 300
+                }
+              ],
+              "skillRequirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Runecrafting",
+                  "level": 25
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 25
+                }
+              ],
+              "currencyRewards": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 75
+                }
+              ],
+              "itemRewards": [],
+              "modifiers": {
+                "flatAdditionalPrimaryProductQuantity": [
+                  {
+                    "skillID": "melvorD:Runecrafting",
+                    "subcategoryID": "melvorF:Runes",
+                    "value": 1
+                  }
+                ]
+              },
+              "media": "assets/others/bluelock.webp",
+              "category": 2,
+              "baseInterval": 5500,
+              "baseExperience": 38
+            },
+            {
+              "id": "WatchtowerClimb",
+              "name": "Watchtower Climb",
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 500000
+                }
+              ],
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Granite_Bricks",
+                  "quantity": 1000
+                },
+                {
+                  "id": "rielkConstruction:Mahogany_Beams",
+                  "quantity": 1000
+                },
+                {
+                  "id": "rielkConstruction:Black_Dhide_Leather_Slivers",
+                  "quantity": 1000
+                }
+              ],
+              "skillRequirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Smithing",
+                  "level": 40
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Fletching",
+                  "level": 40
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Crafting",
+                  "level": 40
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 40
+                }
+              ],
+              "currencyRewards": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 145
+                }
+              ],
+              "itemRewards": [],
+              "modifiers": {
+                "skillPreservationChance": [
+                  {
+                    "skillID": "melvorD:Smithing",
+                    "value": 5
+                  },
+                  {
+                    "skillID": "melvorD:Fletching",
+                    "value": 5
+                  },
+                  {
+                    "skillID": "melvorD:Crafting",
+                    "value": 5
+                  },
+                  {
+                    "skillID": "rielkConstruction:Construction",
+                    "value": 5
+                  }
+                ],
+                "skillItemDoublingChance": -10,
+                "thievingStealth": -35
+              },
+              "media": "assets/others/bluelock.webp",
+              "category": 4,
+              "baseInterval": 10500,
+              "baseExperience": 60
+            },
+            {
+              "id": "MidasTrap",
+              "name": "Midas Trap",
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 2500000
+                }
+              ],
+              "itemCosts": [],
+              "skillRequirements": [],
+              "itemRewards": [],
+              "modifiers": {
+                "currencyGain": [
+                  {
+                    "currencyID": "melvorD:GP",
+                    "value": -100
+                  }
+                ]
+              },
+              "media": "assets/others/bluelock.webp",
+              "category": 6,
+              "baseInterval": 9000,
+              "baseExperience": 83
+            },
+            {
+              "id": "VictoryHouseLap",
+              "name": "Victory House Lap",
+              "skillRequirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 90
+                }
+              ],
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 10000000
+                }
+              ],
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Redwood_Planks",
+                  "quantity": 1000
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 1000
+                },
+                {
+                  "id": "rielkConstruction:Elder_Dhide_Leather_Slivers",
+                  "quantity": 1000
+                },
+                {
+                  "id": "rielkConstruction:Magic_Bricks",
+                  "quantity": 1000
+                }
+              ],
+              "itemRewards": [],
+              "currencyRewards": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 7500
+                }
+              ],
+              "modifiers": {
+                "masteryPoolCap": 10,
+                "rielkConstruction:xpPer5Fixture": 1,
+                "rielkConstruction:skillEfficiencyChance": [
+                  {
+                    "value": 5,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ]
+              },
+              "media": "assets/others/bluelock.webp",
+              "category": 8,
+              "baseInterval": 15000,
+              "baseExperience": 263
+            }
+          ]
+        }
+      },
       {
         "skillID": "melvorD:Thieving",
         "data": {
@@ -6626,7 +6878,14 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "addObstacle",
               "modifiers": {
+                "rielkConstruction:spoof_AddAgiObstacle": [
+                  {
+                    "skillID": "melvorD:Agility",
+                    "value": 1
+                  }
+                ],
                 "skillXP": [
                   {
                     "value": 2,
@@ -6670,6 +6929,7 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "addObstacle",
               "modifiers": {
                 "agilityObstacleCost": [
                   {
@@ -6714,6 +6974,7 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "addObstacle",
               "modifiers": {
                 "skillInterval": [
                   {
@@ -6758,6 +7019,7 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "addObstacle",
               "modifiers": {
                 "agilityObstacleCost": [
                   {
@@ -6802,6 +7064,7 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "addObstacle",
               "modifiers": {
                 "flatSkillInterval": [
                   {
@@ -10505,7 +10768,6 @@
                     "quantity": 3000
                   }
                 ]
-                
               },
               "rewards": {
                 "items": [
@@ -10573,7 +10835,6 @@
               "id": "ConstrNorm1",
               "category": "Normal",
               "goals": {
-              
                 "items": [
                   {
                     "id": "rielkConstruction:Teak_Planks",
@@ -10856,7 +11117,6 @@
                     "id": "rielkConstruction:Magic_Bricks",
                     "quantity": 300000
                   }
-                 
                 ]
               },
               "rewards": {
@@ -10865,7 +11125,6 @@
                     "id": "melvorD:Rune_Essence",
                     "quantity": 4206969
                   }
-                
                 ],
                 "skillXP": [],
                 "townshipResources": [],
@@ -10981,10 +11240,11 @@
                 ]
               },
               "rewards": {
-                "items": [{
-                  "id":"melvorF:Mastery_Magnet",
-                  "quantity":100000
-                }
+                "items": [
+                  {
+                    "id": "melvorF:Mastery_Magnet",
+                    "quantity": 100000
+                  }
                 ],
                 "skillXP": [],
                 "townshipResources": [],
@@ -11884,7 +12144,7 @@
           }
         ]
       },
-       {
+      {
         "id": "bypassNonCombatSkillLevelAR",
         "allowedScopes": [
           {
@@ -12242,6 +12502,37 @@
             ]
           }
         ]
+      },
+      {
+        "id": "spoof_AddAgiObstacle",
+        "inverted": true,
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true
+            },
+            "descriptions": [
+              {
+                "text": "you wont guess what this one does",
+                "lang": "MODIFIER_DATA_spoof_AddAgiObstacle"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xpPer5Fixture",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "xp Per 5 fixture",
+                "lang": "MODIFIER_DATA_xpPer5Fixture"
+              }
+            ]
+          }
+        ]
       }
     ],
     "combatEffects": [
@@ -12275,6 +12566,353 @@
   },
   "modifications": {
     "skillData": [
+      {
+        "skillID": "melvorD:Agility",
+        "data": {
+          "obstacles": [
+            {
+              "id": "melvorF:PipeClimb",
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Iron_Bar"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Iron_Nails",
+                    "quantity": 1000
+                  }
+                ]
+              },
+              "modifiers": {}
+            },
+            {
+              "id": "melvorF:SteppingStones",
+              "skillRequirements": {
+                "add": [
+                  {
+                    "type": "SkillLevel",
+                    "skillID": "rielkConstruction:Construction",
+                    "level": 30
+                  }
+                ]
+              },
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Teak_Logs"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Teak_Beams",
+                    "quantity": 300
+                  }
+                ]
+              },
+              "modifiers": {
+                "add": {
+                  "rielkConstruction:skillEfficiencyChance": [
+                    {
+                      "skillID": "rielkConstruction:Construction",
+                      "value": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "melvorF:BurningCoals",
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Oak_Logs"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Normal_Planks",
+                    "quantity": 200
+                  }
+                ]
+              },
+              "modifiers": {
+                "add": {
+                  "rielkConstruction:constructionActionsToUpgrade": [
+                    {
+                      "skillID": "rielkConstruction:Construction",
+                      "value": 5
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "melvorF:RockClimb",
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Teak_Logs"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Teak_Beams",
+                    "quantity": 500
+                  }
+                ]
+              },
+              "modifiers": {
+                "add": {
+                  "rielkConstruction:skillEfficiencyChance": [
+                    {
+                      "skillID": "rielkConstruction:Construction",
+                      "value": -10
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "melvorF:CliffClimb",
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Mithril_Bar"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Mithril_Nails",
+                    "quantity": 2500
+                  },
+                  {
+                    "id": "rielkConstruction:Red_Dhide_Leather_Straps",
+                    "quantity": 500
+                  }
+                ]
+              },
+              "modifiers": {}
+            },
+            {
+              "id": "melvorF:RaftDrifting",
+              "skillRequirements": {
+                "add": [
+                  {
+                    "type": "SkillLevel",
+                    "skillID": "rielkConstruction:Construction",
+                    "level": 60
+                  }
+                ]
+              },
+              "itemCosts": {
+                "add": [
+                  {
+                    "id": "rielkConstruction:Teak_Planks",
+                    "quantity": 1000
+                  },
+                  {
+                    "id": "rielkConstruction:Mithril_Nails",
+                    "quantity": 1000
+                  }
+                ]
+              },
+              "modifiers": {
+                "add": {
+                  "rielkConstruction:skillEfficiencyPotency": [
+                    {
+                      "skillID": "rielkConstruction:Construction",
+                      "value": 25
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "melvorF:ForestTrail",
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Maple_Logs"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Limestone_Bricks",
+                    "quantity": 1500
+                  }
+                ]
+              },
+              "modifiers": {
+                "add": {
+                  "rielkConstruction:skillEfficiencyPotency": [
+                    {
+                      "skillID": "rielkConstruction:Construction",
+                      "value": -15
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "melvorF:PipeCrawl",
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Adamantite_Bar"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Adamantite_Nails",
+                    "quantity": 4000
+                  }
+                ]
+              },
+              "modifiers": {}
+            },
+            {
+              "id": "melvorF:PipeCrawl",
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Adamantite_Bar"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Adamantite_Nails",
+                    "quantity": 4000
+                  }
+                ]
+              },
+              "modifiers": {}
+            },
+            {
+              "id": "melvorF:TreeHang",
+              "skillRequirements": {
+                "add": [
+                  {
+                    "type": "SkillLevel",
+                    "skillID": "rielkConstruction:Construction",
+                    "level": 80
+                  }
+                ]
+              }
+            },
+            {
+              "id": "melvorF:SwelteringPools",
+              "skillRequirements": {
+                "add": [
+                  {
+                    "type": "SkillLevel",
+                    "skillID": "rielkConstruction:Construction",
+                    "level": 75
+                  }
+                ]
+              },
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Adamantite_Bar"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Adamantite_Nails",
+                    "quantity": 2000
+                  }
+                ]
+              },
+              "modifiers": {
+                "add": {
+                  "rielkConstruction:constructionActionsToUpgrade": [
+                    {
+                      "skillID": "rielkConstruction:Construction",
+                      "value": 10
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "melvorF:LavaJump",
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Redwood_Logs"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Redwood_Planks",
+                    "quantity": 5000
+                  }
+                ]
+              },
+              "modifiers": {}
+            },
+            {
+              "id": "melvorF:IceJump",
+              "skillRequirements": {
+                "add": [
+                  {
+                    "type": "SkillLevel",
+                    "skillID": "rielkConstruction:Construction",
+                    "level": 60
+                  }
+                ]
+              },
+              "itemCosts": {
+                "add": [
+                  {
+                    "id": "rielkConstruction:Red_Dhide_Leather_Straps",
+                    "quantity": 2500
+                  }
+                ]
+              },
+              "modifiers": {}
+            },
+            {
+              "id": "melvorF:BoulderMove",
+              "skillRequirements": {
+                "add": [
+                  {
+                    "type": "SkillLevel",
+                    "skillID": "rielkConstruction:Construction",
+                    "level": 99
+                  }
+                ]
+              },
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Redwood_Logs",
+                  "melvorD:Dragonite_Bar"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Redwood_Planks",
+                    "quantity": 10000
+                  },
+                  {
+                    "id": "rielkConstruction:Dragonite_Nails",
+                    "quantity": 10000
+                  }
+                ]
+              },
+              "modifiers": {}
+            },
+            {
+              "id": "melvorF:Waterfall",
+              "itemCosts": {
+                "add": [
+                  {
+                    "id": "rielkConstruction:Magic_Bricks",
+                    "quantity": 3000
+                  }
+                ]
+              },
+              "modifiers": {}
+            }
+          ],
+          "pillars": [
+            {
+              "id": "melvorF:PillarofSkilling",
+              "modifiers": {
+                "add": {
+                  "rielkConstruction:skillEfficiencyChance": [
+                    {
+                      "skillID": "rielkConstruction:Construction",
+                      "value": 3
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
       {
         "skillID": "melvorD:Firemaking",
         "data": {

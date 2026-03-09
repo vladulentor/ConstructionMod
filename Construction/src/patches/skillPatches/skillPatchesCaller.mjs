@@ -2,10 +2,15 @@ const { loadModule } = mod.getContext(import.meta);
 
 const { addHiddenLevelsToAllsSills } = await loadModule('src/patches/skillPatches/combat/addHiddenLevelsToAllsSills.mjs');
 
-const { addRuneEssenceCtx } = await loadModule('src/patches/skillPatches/astrology/addRuneEssence.mjs');
-const { addConstellationLevels } = await loadModule('src/patches/skillPatches/astrology/addConstellationLevels.mjs');
-const { addStarConvergence } = await loadModule('src/patches/skillPatches/astrology/addStarConvergence.mjs');
 
+
+const { addXpPerFixture } = await loadModule('src/patches/skillPatches/general/addXpPerFixture.mjs');
+const { clampMasteryPool } = await loadModule('src/patches/skillPatches/general/clampMasteryPool.mjs');
+
+
+const { removeObstacles } = await loadModule('src/patches/skillPatches/agility/removeAndAddObstacles.mjs');
+const { keepTrackOfObstacles } = await loadModule('src/patches/skillPatches/agility/keepTrackOfObstacles.mjs');
+const { reorderAgiMods } = await loadModule('src/patches/skillPatches/agility/reorderAgiMods.mjs');
 
 
 
@@ -47,7 +52,7 @@ const { patchPerpetualHaste } = await loadModule('src/patches/skillPatches/shop/
 const { unlockTrader } = await loadModule('src/patches/skillPatches/shop/unlockTrader.mjs');
 
 
-const {addComboRunesonElemRunes} = await loadModule('src/patches/skillPatches/runecrafting/addComboRunesonElemRunes.mjs')
+const { addComboRunesonElemRunes } = await loadModule('src/patches/skillPatches/runecrafting/addComboRunesonElemRunes.mjs')
 
 const { trackSlayerCoins } = await loadModule('src/patches/skillPatches/slayer/trackSlayerCoins.mjs');
 
@@ -57,6 +62,11 @@ const { slayerCostReduction } = await loadModule('src/patches/skillPatches/slaye
 
 const { patchThievingTargets } = await loadModule('src/patches/skillPatches/thieving/patchThievingTargets.mjs');
 const { reduceMaxHitByDefenseLevel } = await loadModule('src/patches/skillPatches/thieving/reduceMaxHitByDefenseLevel.mjs');
+
+
+
+const { addRuneEssenceCtx } = await loadModule('src/patches/skillPatches/astrology/addRuneEssence.mjs');
+const { addStarConvergence } = await loadModule('src/patches/skillPatches/astrology/addStarConvergence.mjs');
 
 
 
@@ -72,6 +82,7 @@ const { addMarkSuperLevels } = await loadModule('src/patches/skillPatches/summon
 export function patchSkillsBeforeDataReg(ctx) {
         patchTreeSeedReturn(ctx);
         patchOverHeal(ctx);
+        addXpPerFixture(ctx);
         emitPassiveCook(ctx);
         addAshOnFail(ctx);
         addRoaringFire(ctx);
@@ -82,6 +93,7 @@ export function patchSkillsBeforeDataReg(ctx) {
         reduceUpgradeLevelReq(ctx);
         additionalPotionsHighTier(ctx);
         patchMagicUsageCheck(ctx);
+        clampMasteryPool(ctx);
         addMagicShield(ctx);
         patchAuroraAnyStyle(ctx);
         addRuneEssenceCtx(ctx);
@@ -100,8 +112,11 @@ export function patchSkillsBeforeDataReg(ctx) {
 export function patchSkillsAfterDataReg(ctx) {
         patchCraftingOrder();
         patchFletchingOrder();
-        patchShieldRecipes()
+        patchShieldRecipes();
         addBeamsMasteryPoolBonus();
+        removeObstacles(ctx);
+        reorderAgiMods()
+        keepTrackOfObstacles(ctx);
         patchArrowShaftRecipes(ctx);
         patchPerpetualHaste(ctx);
         patchThievingTargets();

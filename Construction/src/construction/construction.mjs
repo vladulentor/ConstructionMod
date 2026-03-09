@@ -39,7 +39,9 @@ export class Construction extends ArtisanSkill {
         this.recipeCountByTier = [];
         this.tothmode = cloudManager.hasTotHEntitlementAndIsEnabled;
         this._actionMode = undefined;
-        this.showUpdateTooltip = true;
+        this.extSaveData = {};
+        this.extSaveData.showUpdateTooltip = true;
+        this.extSaveData.hasStudiedDiagram = false;
         this.cachedpreservationchance = 0;
         this.stats = new StatTracker();
         game.stats.Construction = this.stats;
@@ -63,6 +65,20 @@ export class Construction extends ArtisanSkill {
 
             // Using jQuery + Bootstrap
             $('#rielk-tier-mastery-modal').modal('show');
+        }
+    }
+    get totaltier5fixtures() {
+        return this.fixtures.reduce((acc, fix) => acc + (fix.currentTier >= 5 ? 1 : 0), 0);
+    }
+    updateTier5Effects() {
+        this.fixtures.forEach(fix => total += fix.currentTier >= 5)
+        const xp5 = this.game.modifiers.getValue("rielkConstruction:xpPer5Fixture", ModifierQuery.EMPTY)
+        if (xp5) {
+            removeModifiers
+            const mod = new ModifierValue(
+                game.modifierRegistry.getObjectByID('melvorD:skillXP'),
+                2,
+                {})
         }
     }
     get name() {
@@ -257,17 +273,17 @@ export class Construction extends ArtisanSkill {
     locateAncientRelic(relicSet, relic) {
         this.queueAncientRelicFoundModal(relicSet, relic);
         relicSet.addRelic(relic);
-        if (relic.id == "rielkConstruction:ConstructionRelic4")
-           { if (game.currentGamemode.levelCapIncreases?.length > 0) {
+        if (relic.id == "rielkConstruction:ConstructionRelic4") {
+            if (game.currentGamemode.levelCapIncreases?.length > 0) {
                 game.increaseSkillLevelCaps(this.capIncrease, {
                     requirements: [],
                     given: false,
                     unlisteners: []
                 });
             }
-         game.skills.allObjects.forEach(skill =>{
-            if(!skill.isCombat && skill.level < 99) skill.addXP(exp.levelToXP(Math.min(99, this.level + 5)) - skill._xp + 1) // To level up you need more xp than your levels, not equal, so we add 1
-         })   
+            game.skills.allObjects.forEach(skill => {
+                if (!skill.isCombat && skill.level < 99) skill.addXP(exp.levelToXP(Math.min(99, skill.level + 5)) - skill._xp + 1) // To level up you need more xp than your levels, not equal, so we add 1
+            })
         }
         if (relicSet.isComplete)
             this.queueAncientRelicFoundModal(relicSet, relicSet.completedRelic);
@@ -356,7 +372,7 @@ export class Construction extends ArtisanSkill {
     onPageChange() {
         super.onPageChange();
         this.renderQueue.renderfixtureItemUpdates = true;
-        if (this.showUpdateTooltip) {
+        if (this.extSaveData.showUpdateTooltip) {
             if (this.annoyingText == null)
                 this.annoyingText = this.level == 1 ? getRielkLangString('GUIDE_TOOLTIP_NEW') : getRielkLangString('GUIDE_TOOLTIP_UPDATE');
             const link = document.querySelector('#game-guide-header-link');
@@ -391,7 +407,7 @@ export class Construction extends ArtisanSkill {
     }
     disableToolTip() { //This function gets called on gameguide click
         if (game.openPage.id == 'rielkConstruction:Construction') {
-            this.showUpdateTooltip = false;
+            this.extSaveData.showUpdateTooltipF = false;
             if (this.annoying?.state?.isDestroyed === false) {
                 this.annoying.destroy();
                 //technically doesn't clearInterval, but that happens on page change so it's not too big a deal.
@@ -542,7 +558,7 @@ export class Construction extends ArtisanSkill {
 
     addProvidedStats() {
         super.addProvidedStats();
-        if (this.hasStudiedDiagram) this.studyTheDiagram(true);
+        if (this.extSaveData.hasStudiedDiagram) this.studyTheDiagram(true);
         this.fixtures.forEach((fixture) => {
             fixture.addProvidedStatsTo(this.providedStats)
         });
@@ -732,12 +748,12 @@ export class Construction extends ArtisanSkill {
     }
 
     studyTheDiagram(init = false) {
-        if (!init && this.hasStudiedDiagram == true) return;
+        if (!init && this.extSaveData.hasStudiedDiagram == true) return;
 
         if (init) ctx.onCharacterLoaded(async (ctx) => { this._studyTheDiagram() });
         else this._studyTheDiagram();
 
-        this.hasStudiedDiagram = true;
+        this.extSaveData.hasStudiedDiagram = true;
     }
     _studyTheDiagram() {
         let twothingstoadd = [];

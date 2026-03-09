@@ -37,6 +37,8 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:skillEfficiencyCost', 'efficiency');
     icons.addModifier('rielkConstruction:bypassEfficiencyChance', 'efficiency');
     icons.addModifier('rielkConstruction:skillEfficiencyChancePerHamrielStar', 'efficiency');
+    icons.addModifier('rielkConstruction:xpPer5Fixture', 'xp');
+
 
 
     icons.addModifier('rielkConstruction:constructionActionsToUpgrade', 'cabin');
@@ -96,7 +98,7 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:bypassNonCombatSkillLevelCapAR', 'xp');
     icons.addModifier('rielkConstruction:bypassNonCombatSkillLevelAR', 'xp');
 
-    
+
     icons.addModifier('rielkConstruction:allCombatSkillsFlatHiddenLevel', 'combat');
 
 
@@ -129,7 +131,7 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:spoof_upgradeSlayerShtuff', 'deserthat');
     icons.addModifier('rielkConstruction:slayerCostReduction', 'slayer_coins');
 
-    
+
     icons.addModifier('rielkConstruction:doublepetsmillion', 'loot');
 
 

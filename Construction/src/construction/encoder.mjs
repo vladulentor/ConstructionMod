@@ -4,12 +4,11 @@ export class Encoder {
     static encode(construction, writer) {
         const _constructionVersion = 9;
         writer.writeUint32(_constructionVersion);
-        writer.writeBoolean(construction.showUpdateTooltip);
+        writer.writeBoolean(construction.extSaveData.showUpdateTooltip);
 
         writer.writeBoolean(game.firemaking.isRoaringBonfire);
         writer.writeSet(construction.hiddenRooms, writeNamespaced);
-        writer.writeBoolean(game.construction.hasStudiedDiagram)
-
+        writer.writeBoolean(construction.extSaveData.hasStudiedDiagram)
         construction.stats.encode(writer);
         writer.writeArray(construction.fixtures.allObjects, (fixture, writer) => {
             writer.writeNamespacedObject(fixture);
@@ -32,26 +31,19 @@ export class Encoder {
         const _constructionVersion = reader.getUint32();
 
         if (_constructionVersion >= BIG_UPDATE_NUMBER) { //If the player has loaded the big update before, remember their state to the tooltip, otherwise make it true.
-            construction.showUpdateTooltip = reader.getBoolean();
+            construction.extSaveData.showUpdateTooltip = reader.getBoolean();
         }
         else if (_constructionVersion >= 6) {
             reader.getBoolean();
-            construction.showUpdateTooltip = true;
+            construction.extSaveData.showUpdateTooltip = true;
         }
-        else // Also, if the player is 5 or lower don't read anything so the save doesn't get FUCKED
-        // in the ASS
-        { construction.showUpdateTooltip = true; }
-
         if (_constructionVersion >= 7)
             game.firemaking.isRoaringBonfire = reader.getBoolean();
         else
             game.firemaking.isRoaringFire = false;
         construction.hiddenRooms = reader.getSet(readNamespacedReject(construction.rooms));
-        if(_constructionVersion >= 9)
-        construction.hasStudiedDiagram = reader.getBoolean();
-    else
-        construction.hasStudiedDiagram = false;
-
+        if (_constructionVersion >= 9)
+            construction.extSaveData.hasStudiedDiagram = reader.getBoolean();
         construction.stats.decode(reader);
         const readFixture = readNamespacedReject(construction.fixtures);
         reader.getArray((reader) => {

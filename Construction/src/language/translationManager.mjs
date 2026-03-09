@@ -200,4 +200,9 @@ export function patchTranslations(ctx) {
         return patch()
 
     })
+        ctx.patch(AgilityObstacle, "name").get(function (patch) {
+        if (this._namespace.name == "rielkConstruction")
+            return getRielkLangString(`AGI_OBSTACLE_${this._localID}`)
+        return patch()
+    })
 }

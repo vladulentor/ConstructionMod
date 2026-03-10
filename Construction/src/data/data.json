@@ -3036,7 +3036,7 @@
                   }
                 ]
               },
-              "media": "assets/others/bluelock.webp",
+              "media": "assets/others/1WS.webp",
               "category": 0,
               "baseInterval": 60000,
               "baseExperience": 1
@@ -3088,7 +3088,7 @@
                   }
                 ]
               },
-              "media": "assets/others/bluelock.webp",
+              "media": "assets/others/3AH.webp",
               "category": 2,
               "baseInterval": 5500,
               "baseExperience": 38
@@ -3167,7 +3167,7 @@
                 "skillItemDoublingChance": -10,
                 "thievingStealth": -35
               },
-              "media": "assets/others/bluelock.webp",
+              "media": "assets/others/5WC.webp",
               "category": 4,
               "baseInterval": 10500,
               "baseExperience": 60
@@ -3192,7 +3192,7 @@
                   }
                 ]
               },
-              "media": "assets/others/bluelock.webp",
+              "media": "assets/others/7MT.webp",
               "category": 6,
               "baseInterval": 9000,
               "baseExperience": 83
@@ -3248,7 +3248,7 @@
                   }
                 ]
               },
-              "media": "assets/others/bluelock.webp",
+              "media": "assets/others/9VHL.webp",
               "category": 8,
               "baseInterval": 15000,
               "baseExperience": 263

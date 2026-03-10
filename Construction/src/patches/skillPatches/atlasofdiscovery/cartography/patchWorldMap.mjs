@@ -83,7 +83,7 @@ export function patchWorldMap() {
             console.error("[PATCH] Error pushing to undiscoveredPOIs:", e);
             return;
         }
-        if (pair.hex.surveyLevel < 5) { map.undiscoveredPOIs.push(regpoi) }
-        else { map.discoveredPOIs.push(regpoi) }
+        if (pair.hex.surveyLevel >= 5)
+        { map.discoveredPOIs.push(regpoi) }
     })
 };

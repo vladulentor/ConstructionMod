@@ -17,7 +17,8 @@ export function tinyIconsCompatibility(ctx) {
         ['convergence', ctx.getResourceUrl('assets/others/convergence.webp')],
         ['mark', 'assets/media/skills/summoning/mark_4_256.png'],
         ['deserthat', game.items.getObjectByID('melvorF:Desert_Hat').media]
-
+        ,['jgym', ctx.getResourceUrl('assets/fixtures/jungle_gym.webp')]
+        ,['stamina', 'assets/media/main/stamina.png']
     ]
     ));
     const constrSubcategories = new Map([
@@ -105,7 +106,9 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:ComboRunesonElemRunes', 'rune_essence');
     icons.addModifier('rielkConstruction:runePreservationCap', 'preservation');
 
+
     icons.addModifier('rielkConstruction:nullifyPrayerPointsUnder', 'nulled');
+
 
     icons.addModifier('rielkConstruction:TabletEffectBuffBasedOnMarkLevel', 'mark');
     icons.addModifier('rielkConstruction:TabletAmountBuffBasedOnMarkLevel', 'mark');
@@ -123,6 +126,7 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:spoof_AddBonusToMiningMasteryPool1', 'mastery');
     icons.addModifier('rielkConstruction:spoof_AddBonusToMiningMasteryPool2', 'mastery');
 
+
     icons.addModifier('rielkConstruction:spoof_AddSlayerEnemies1', 'slayer');
     icons.addModifier('rielkConstruction:spoof_AddSlayerEnemies2', 'slayer');
     icons.addModifier('rielkConstruction:spoof_AddSlayerEnemies3', 'slayer');
@@ -134,8 +138,11 @@ export function tinyIconsCompatibility(ctx) {
 
     icons.addModifier('rielkConstruction:doublepetsmillion', 'loot');
 
-
-
+    
+    icons.addModifier('rielkConstruction:spoof_AddAgiObstacle', 'jgym');
+    icons.addModifier('rielkConstruction:hpPerAgiLevels', 'stamina', 'hitpoints');
+    icons.addModifier('rielkConstruction:IntPerAgiLevels', 'stamina', 'interval');
+    icons.addModifier('rielkConstruction:CombIntPerAgiLevels', 'stamina', 'interval');
 
 
 }

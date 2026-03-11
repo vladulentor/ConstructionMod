@@ -1,10 +1,10 @@
 function addEffecttoWeapons(AttackMap) {
     for (const [key, value] of game.items.registeredObjects) {
         if (value instanceof WeaponItem) {
-         AttackMap.forEach(Attack =>{
-            if(Attack.name == value.attackType)
-                addAttacktoWeapons(value, Attack.attack);
-         })
+            AttackMap.forEach(Attack => {
+                if (Attack.name == value.attackType)
+                    addAttacktoWeapons(value, Attack.attack);
+            })
 
         }
     }
@@ -14,21 +14,39 @@ function addAttacktoWeapons(weapon, attack) {
     let normalChance = 100;
     weapon.specialAttacks.forEach(a => normalChance -= a.defaultChance);
     const chanceToChange = Math.min(15, normalChance);
-    if(chanceToChange <= 0) return;
+    if (chanceToChange <= 0) return;
     attack.defaultChance = chanceToChange;
     weapon.specialAttacks.push(attack);
 }
 
-let guardMagic = 0;
-let guardRanged = 0;
-let guardMelee = 0;
 
+let guardMelee = 0;
+let guardRanged = 0;
+let guardMagic = 0;
+// Technically we don't "need" the guards here yet, but keep 'em.
 export function addSpecialAttack() {
     let functionList = [];
-    const constr = this.skill;
-    if (this._localID == "Spell_Library"&& this.currentTier >= 4 && guardMagic == 0) {
-        functionList.push({ name: "magic", attack:game.specialAttacks.getObjectSafe('rielkConstruction:Mana_Surge')})
+    if (this._localID == "Training_Dummy4" && this.tier >= 4 && guardMelee == 0) {
+        const attack = game.specialAttacks.getObjectSafe('rielkConstruction:Brutal_Strike');
+        console.log("Attempting melee attack:", attack);
+        functionList.push({ name: "melee", attack });
+        guardMelee = 1;
+    }
+
+    if (this._localID == "Archery_Range4" && guardRanged == 0) {
+        const attack = game.specialAttacks.getObjectSafe('rielkConstruction:Twin_Strike');
+        console.log("Attempting ranged attack:", attack);
+        functionList.push({ name: "ranged", attack });
+        guardRanged = 1;
+    }
+
+    if (this._localID == "Spell_Library4" && guardMagic == 0) {
+        const attack = game.specialAttacks.getObjectSafe('rielkConstruction:Mana_Surge');
+        console.log("Attempting magic attack:", attack);
+        functionList.push({ name: "magic", attack });
         guardMagic = 1;
     }
-   addEffecttoWeapons(functionList);
+
+    console.log("Final functionList:", functionList);
+    addEffecttoWeapons(functionList);
 }

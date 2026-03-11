@@ -215,6 +215,8 @@ export const language = {
     'ITEM_DESCRIPTION_Beam_Box_I': 'Contains basic Beams',
     'ITEM_DESCRIPTION_Beam_Box_II': 'Contains regular Beams',
     'SPECIAL_ATTACK_DESC_MAGIC_WEAPON': 'Innate. Attack thrice with reduced potency. Each attack has a low Chance to inflict Burn, Frostburn, or Poison',
+    'SPECIAL_ATTACK_DESC_MELEE_WEAPON': 'Innate. Attack with greatly increased potency.',
+    'SPECIAL_ATTACK_DESC_RANGED_WEAPON': 'Innate. Attack twice with slightly reduced potency. This attack cannot miss.',
 
     'TOAST_FIXTURE_COMPLETE': 'You\'ve finished building your ${fixtureName}!',
 
@@ -232,6 +234,8 @@ export const language = {
     'MODIFIER_DATA_addRuneShield': 'Spending 300 Runes in Combat creates a Ward that negates Enemies\' next turn',
     'MODIFIER_DATA_fake_Book_of_Eli': 'Tier III Auroras can be used regardless of equipped Book',
     'MODIFIER_DATA_spoof_AddMagicSpecialAttack': 'Adds a \'Mana Surge\' special attack to all Magic Weapons',
+    'MODIFIER_DATA_spoof_AddMeleeSpecialAttack':'Adds a \'Brutal Strike\' special attack to all Melee Weapons',
+    'MODIFIER_DATA_spoof_AddRangedSpecialAttack':'Adds a \'Twin Strike\' special attack to all Ranged Weapons',
     'MODIFIER_DATA_AllowAurorasAnytime': 'Auroras can be used without a Magic weapon, at triple Rune cost',
     'MODIFIER_DATA_spoof_AddRunesAstrology': 'Rarely draw large amounts of Rune Essence from Constellations while studying Astrology',
     'MODIFIER_DATA_spoofFoodSlot': '${value} Food Slot',
@@ -300,8 +304,14 @@ export const language = {
     'MODIFIER_DATA_spoof_AddSlayerEnemies4': 'Discover a hidden enemy in the Wizard Tower',
     'MODIFIER_DATA_spoof_AddSlayerEnemies5': 'Discover a hidden enemy in the Dragon Valley',
     'MODIFIER_DATA_slayerCostReduction': '${value}% Slayer Task cost',
-    'MODIFIER_DATA_spoof_AddAgiObstacle':'Add a Tier ${value} obstacle in ${skillName}',
+    'MODIFIER_DATA_spoof_AddAgiObstacle':'New Tier ${value} Obstacle available in ${skillName}',
     'MODIFIER_DATA_xpPer5Fixture':'${value}% Skill XP for all Skills per built Tier 5+ Furniture',
+    'MODIFIER_DATA_hpPerAgiLevels':'${value} Hidden Defence and Hitpoints Levels for every 20 Agility Levels',
+    'MODIFIER_DATA_IntPerAgiLevels':'${value}% Thieving and Agility Interval for every 20 Agility Levels',
+    'MODIFIER_DATA_CombIntPerAgiLevels':'${value}s Attack and Monster Respawn Interval for every 20 Agility Levels',
+
+
+
     'ITEM_NAME_Cursed_Hook': 'Cursed Hook',
     'ITEM_NAME_Tar_Jar': 'Jar of Tar',
     'ITEM_NAME_Mariners_Blouse': 'Mariner\'s Top',

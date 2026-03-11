@@ -11,6 +11,7 @@ const { clampMasteryPool } = await loadModule('src/patches/skillPatches/general/
 const { removeObstacles } = await loadModule('src/patches/skillPatches/agility/removeAndAddObstacles.mjs');
 const { keepTrackOfObstacles } = await loadModule('src/patches/skillPatches/agility/keepTrackOfObstacles.mjs');
 const { reorderAgiMods } = await loadModule('src/patches/skillPatches/agility/reorderAgiMods.mjs');
+const { provideBonusesPerAgiLevels } = await loadModule('src/patches/skillPatches/agility/provideBonusesPerAgiLevels.mjs');
 
 
 
@@ -103,6 +104,7 @@ export function patchSkillsBeforeDataReg(ctx) {
         addHiddenLevelsToAllsSills(ctx);
         patchPrayerPointsSpending(ctx);
         addMarkSuperLevels(ctx);
+        provideBonusesPerAgiLevels(ctx);
         trackSlayerCoins(ctx);
         slayerCostReduction(ctx);
         reduceMaxHitByDefenseLevel(ctx);

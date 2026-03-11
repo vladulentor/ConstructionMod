@@ -1348,12 +1348,12 @@
     ],
     "attacks": [
       {
-        "id": "Brute_Strength",
+        "id": "Brutal_Strike",
         "defaultChance": 100,
         "damage": [
           {
             "damageType": "Normal",
-            "amplitude": 250
+            "amplitude": 200
           }
         ],
         "prehitEffects": [],
@@ -1366,7 +1366,7 @@
         "description": "Attack with greatly increased potency."
       },
       {
-        "id": "Sharpshot",
+        "id": "Twin_Strike",
         "defaultChance": 100,
         "damage": [
           {
@@ -3072,13 +3072,13 @@
                   "level": 25
                 }
               ],
-              "currencyRewards": [
+              "currencyRewards": [],
+              "itemRewards": [
                 {
-                  "id": "melvorD:GP",
-                  "quantity": 75
+                  "id": "melvorD:Rune_Essence",
+                  "quantity": 10
                 }
               ],
-              "itemRewards": [],
               "modifiers": {
                 "flatAdditionalPrimaryProductQuantity": [
                   {
@@ -3188,7 +3188,13 @@
                 "currencyGain": [
                   {
                     "currencyID": "melvorD:GP",
-                    "value": -100
+                    "value": -1000
+                  }
+                ],
+                "itemSaleCurrencyGain": [
+                  {
+                    "currencyID": "melvorD:GP",
+                    "value": -1000
                   }
                 ]
               },
@@ -3216,19 +3222,19 @@
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Redwood_Planks",
-                  "quantity": 1000
+                  "quantity": 2500
                 },
                 {
                   "id": "rielkConstruction:Dragonite_Nails",
-                  "quantity": 1000
+                  "quantity": 2500
                 },
                 {
                   "id": "rielkConstruction:Elder_Dhide_Leather_Slivers",
-                  "quantity": 1000
+                  "quantity": 2500
                 },
                 {
                   "id": "rielkConstruction:Magic_Bricks",
-                  "quantity": 1000
+                  "quantity": 2500
                 }
               ],
               "itemRewards": [],
@@ -5318,7 +5324,9 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "addSpecialAttack",
               "modifiers": {
+                "rielkConstruction:spoof_AddRangedSpecialAttack": 1,
                 "flatHiddenSkillLevel": [
                   {
                     "value": 2,
@@ -6878,24 +6886,21 @@
                 }
               ],
               "currencyCosts": [],
-              "changeFunc": "addObstacle",
+              "changeFunc": [
+                "addObstacle",
+                "refreshAgi"
+              ],
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
               "modifiers": {
+                "rielkConstruction:hpPerAgiLevels": 3,
                 "rielkConstruction:spoof_AddAgiObstacle": [
                   {
                     "skillID": "melvorD:Agility",
                     "value": 1
-                  }
-                ],
-                "skillXP": [
-                  {
-                    "value": 2,
-                    "skillID": "melvorD:Agility"
-                  }
-                ],
-                "masteryXP": [
-                  {
-                    "value": 1,
-                    "skillID": "melvorD:Agility"
                   }
                 ]
               }
@@ -6931,16 +6936,22 @@
               "currencyCosts": [],
               "changeFunc": "addObstacle",
               "modifiers": {
-                "agilityObstacleCost": [
+                "skillXP": [
                   {
-                    "realmID": "melvorD:Melvor",
-                    "value": -4
+                    "value": 3,
+                    "skillID": "melvorD:Agility"
                   }
                 ],
                 "masteryXP": [
                   {
                     "value": 1,
                     "skillID": "melvorD:Agility"
+                  }
+                ],
+                "rielkConstruction:spoof_AddAgiObstacle": [
+                  {
+                    "skillID": "melvorD:Agility",
+                    "value": 3
                   }
                 ]
               }
@@ -6974,18 +6985,27 @@
                 }
               ],
               "currencyCosts": [],
-              "changeFunc": "addObstacle",
+              "changeFunc": [
+                "addObstacle",
+                "refreshAgi"
+              ],
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
               "modifiers": {
+                "rielkConstruction:IntPerAgiLevels": -2,
                 "skillInterval": [
                   {
                     "value": -5,
                     "skillID": "melvorD:Agility"
                   }
                 ],
-                "masteryXP": [
+                "rielkConstruction:spoof_AddAgiObstacle": [
                   {
-                    "value": 2,
-                    "skillID": "melvorD:Agility"
+                    "skillID": "melvorD:Agility",
+                    "value": 5
                   }
                 ]
               }
@@ -7024,13 +7044,19 @@
                 "agilityObstacleCost": [
                   {
                     "realmID": "melvorD:Melvor",
-                    "value": -6
+                    "value": -5
                   }
                 ],
-                "masteryXP": [
+                "agilityPillarCost": [
                   {
-                    "value": 2,
-                    "skillID": "melvorD:Agility"
+                    "realmID": "melvorD:Melvor",
+                    "value": -5
+                  }
+                ],
+                "rielkConstruction:spoof_AddAgiObstacle": [
+                  {
+                    "skillID": "melvorD:Agility",
+                    "value": 7
                   }
                 ]
               }
@@ -7064,18 +7090,27 @@
                 }
               ],
               "currencyCosts": [],
-              "changeFunc": "addObstacle",
+              "changeFunc": [
+                "addObstacle",
+                "refreshAgi"
+              ],
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
               "modifiers": {
-                "flatSkillInterval": [
+                "rielkConstruction:CombIntPerAgiLevels": -50,
+                "skillInterval": [
                   {
-                    "value": -500,
+                    "value": -10,
                     "skillID": "melvorD:Agility"
                   }
                 ],
-                "masteryXP": [
+                "rielkConstruction:spoof_AddAgiObstacle": [
                   {
-                    "value": 2,
-                    "skillID": "melvorD:Agility"
+                    "skillID": "melvorD:Agility",
+                    "value": 9
                   }
                 ]
               }
@@ -9473,8 +9508,10 @@
                   "quantity": 1
                 }
               ],
+              "changeFunc": "addSpecialAttack",
               "currencyCosts": [],
               "modifiers": {
+                "rielkConstruction:spoof_AddMeleeSpecialAttack": 1,
                 "flatHiddenSkillLevel": [
                   {
                     "value": 2,
@@ -12001,6 +12038,34 @@
         ]
       },
       {
+        "id": "spoof_AddMeleeSpecialAttack",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Allow Auroras Anytime.",
+                "lang": "MODIFIER_DATA_spoof_AddMeleeSpecialAttack"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddRangedSpecialAttack",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Allow Auroras Anytime.",
+                "lang": "MODIFIER_DATA_spoof_AddRangedSpecialAttack"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "addRuneShield",
         "allowedScopes": [
           {
@@ -12505,7 +12570,6 @@
       },
       {
         "id": "spoof_AddAgiObstacle",
-        "inverted": true,
         "allowedScopes": [
           {
             "scopes": {
@@ -12513,6 +12577,7 @@
             },
             "descriptions": [
               {
+                "includeSign": false,
                 "text": "you wont guess what this one does",
                 "lang": "MODIFIER_DATA_spoof_AddAgiObstacle"
               }
@@ -12529,6 +12594,53 @@
               {
                 "text": "xp Per 5 fixture",
                 "lang": "MODIFIER_DATA_xpPer5Fixture"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hpPerAgiLevels",
+        "isCombat": true,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "hp Per Agi Levels",
+                "lang": "MODIFIER_DATA_hpPerAgiLevels"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IntPerAgiLevels",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "inverted": true,
+                "text": "int Per Agi Levels",
+                "lang": "MODIFIER_DATA_IntPerAgiLevels"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CombIntPerAgiLevels",
+        "modifyValue": "value/1000",
+        "inverted": true,
+        "isCombat": true,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "comb interv Per Agi Levels",
+                "lang": "MODIFIER_DATA_CombIntPerAgiLevels"
               }
             ]
           }

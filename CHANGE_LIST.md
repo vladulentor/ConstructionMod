@@ -45,7 +45,7 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 
 - **Haunted Coffin**  
   - Area: Graveyard  
-  - Drops: An assortment of different types of bones, low-Tier planks, and the Star Necklace, which provides boosts to training and using Prayer.
+  - Drops: An assortment of bones, low-Tier planks, and the Star Necklace, which provides boosts to training and using Prayer.
 
 </details>
 
@@ -54,7 +54,7 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 
 - **Smuggler's Carriage**  
   - Area: Bandit's Hideout  
-  - Drops: Planks, Dragonhide Straps, and the Half-Burnt Ledger, which provides boosts to Firemaking
+  - Drops: Planks, [Dragonhide Straps](#Crafting), and the Half-Burnt Ledger, which provides boosts to Firemaking
 </details>
 
 <details>
@@ -79,7 +79,7 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 
 - **Elder Dragon**  
   - Area: Dragon Valley  
-  - Drops: Elder Dragonhide, including Slivers.
+  - Drops: Elder Dragonhide, including [Elder Dragonhide Slivers](#Crafting).
 
 
 </details>
@@ -89,7 +89,7 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 
 - Goblins can now drop Planks; Ranged Goblins can drop Nails.  
 - Confused Pirate (Sandy Shores) drops remains of the ship he floated in on, good source of Planks.  
-- Green, Blue, Red, and Black Dragons have a `35%` chance to drop [Leather Slivers](#fletching) instead of Leather. Amount dropped ≈ 3–4× their regular Leather drop amount.  
+- Green, Blue, Red, and Black Dragons have a `35%` chance to drop [Dragonhide Slivers](#Crafting) instead of Leather. Amount dropped ≈ 3–4× their regular Leather drop amount.  
 - Bandit Trainee now drops Green Dragonhide Straps.
 - Bandit now drops Green and Blue Dragonhide Straps.
 - `[AoD]` Dark Quarry's golems can drop Bricks corresponding to their material.
@@ -97,12 +97,12 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 ### Changed Chests
 *(Note: new items were added such that rare item's chances were not decreased)*
 
-- **Elder Chest** can now contain [Elder Dragonhide Slivers](#fletching) instead of normal Elder Dragonhide.
+- **Elder Chest** can now contain [Elder Dragonhide Slivers](#Crafting) instead of normal Elder Dragonhide.
 
 ---
 
 ## Township
-- Added new trades at The Trader. You can now trade for **Beam Boxes** if your Fletching, Woodcutting, and Township levels are sufficiently high. They provide [Wood Beams](#crafting).
+- Added new trades at The Trader. You can now trade for **Beam Boxes** if your Fletching, Woodcutting, and Township levels are sufficiently high. They provide [Wood Beams](#Fletching).
   - Basic Box → Normal, Oak, Teak  
   - Regular Box → Teak, Mahogany, Redwood
 
@@ -167,38 +167,38 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 ### Obstacles
 #### Tier 3
 - **'Pipe Climb'** has had its Iron Bar cost replaced with Nails.  
-- **'Stepping Stones'** now requires Construction level 30 and has had its Teak Logs cost replaced with Teak Beams. It now also provides an efficiency chance bonus.  
-- **'Burning Coals'** has had its Oak Logs cost replaced with Normal Planks and grants +5 Construction actions when upgrading furniture.  
+- **'Stepping Stones'** now requires Construction level 30 and has had its Teak Logs cost replaced with [Teak Beams](#Fletching). It now also provides a `2%` efficiency chance bonus.  
+- **'Burning Coals'** has had its Oak Logs cost replaced with Normal Planks and grants `+5%` Construction actions and item cost when upgrading furniture.  
 
 #### Tier 5
-- **'Rock Climb'** has had its Teak Logs cost replaced with Teak Beams and now reduces Construction efficiency chance by 10%.  
+- **'Rock Climb'** has had its Teak Logs cost replaced with [Teak Beams](#Fletching) and now reduces Construction efficiency chance by `10%`.  
 - **'Cliff Climb'** has had its Mithril Bar cost replaced with Mithril Nails and Red Dhide Leather Straps.  
-
+- **'Rooftop Run'** now costs [Red Dragonhide Slivers](#Crafting).
 #### Tier 6
-- **'Raft Drifting'** now requires Construction level 60, costs Teak Planks and Mithril Nails, and increases Construction efficiency potency by 25%.  
-- **'Forest Trail'** has had its Maple Logs cost replaced with Limestone Bricks and reduces Construction efficiency by 0.15 actions.  
+- **'Raft Drifting'** now requires Construction level 60, costs Teak Planks and Mithril Nails, and increases Construction efficiency potency by `0.25`.  
+- **'Forest Trail'** has had its Maple Logs cost replaced with Limestone Bricks and reduces Construction efficiency by `-0.15` actions.  
 
 #### Tier 8
 - **'Pipe Crawl'** has had its Adamantite Bar cost replaced with Adamantite Nails.  
 - **'Tree Hang'** now requires Construction level 80.  
-- **'Sweltering Pools'** now requires Construction level 75, has had its Adamantite Bar cost replaced with Adamantite Nails, and grants +10 Construction actions when upgrading furniture.  
+- **'Sweltering Pools'** now requires Construction level 75, has had its Adamantite Bar cost replaced with Adamantite Nails, and grants `+10%` Construction actions and item cost when upgrading furniture.  
 
 #### Tier 9
 - **'Lava Jump'** has had its Redwood Logs cost replaced with Redwood Planks.  
 - **'Ice Jump'** now requires Construction level 60 and costs Red Dhide Leather Straps.  
-- `[AoD]` **'Ocean Drifting'** has had its Magic Logs cost replaced with Mahogany Planks and Redwood Beams.  
+- `[AoD]` **'Ocean Drifting'** has had its Magic Logs cost replaced with Mahogany Planks and [Redwood Beams](#Fletching).  
 
 #### Tier 10
 - **'Boulder Move'** now requires Construction level 99 and has had its Redwood Logs and Dragonite Bar costs replaced with Redwood Planks and Dragonite Nails.  
 - **'Waterfall'** now costs Magic Bricks.  
 
 ### Pillars
-- **'Pillar of Skilling'** now provides a Efficiency Chance bonus.
+- **'Pillar of Skilling'** now provides a `+3%` Efficiency Chance bonus.
 
 ---
 
 ## Summoning
-- Added **Bee** Tier 3 Summoning Familiar (80 Summoning), marks unlocked while training Construction. Crafted using [Wood Beams](#crafting) or Planks. Provides `+0.25` extra material/progress when activating Efficiency. Synergies with Monkey, Pig, Salamander, Bear, and Devil.  
+- Added **Bee** Tier 3 Summoning Familiar (80 Summoning), marks unlocked while training Construction. Crafted using [Wood Beams](#Fletching) or Planks. Provides `+0.25` extra material/progress when activating Efficiency. Synergies with Monkey, Pig, Salamander, Bear, and Devil.  
 - `[TotH]` Bee also gains synergies with Owl and Beaver.  
 - Nerfed Bear and Devil synergy: now gives `+15%` Bonfire Interval (down from `+100%`) and is also spent on lighting a bonfire and firemaking action.
 

@@ -12797,6 +12797,19 @@
               },
               "modifiers": {}
             },
+                 {
+              "id": "melvorF:RooftopRun",
+              "itemCosts": {
+                "add": [
+                 
+                  {
+                    "id": "rielkConstruction:Red_Dhide_Leather_Slivers",
+                    "quantity": 500
+                  }
+                ]
+              },
+              "modifiers": {}
+            },
             {
               "id": "melvorF:RaftDrifting",
               "skillRequirements": {

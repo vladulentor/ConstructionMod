@@ -10,7 +10,7 @@ ArchMark
 
 Outpost update:
 
-
+fix midas trap name
 
 After update:
 Township tasks (2/1 per tier)

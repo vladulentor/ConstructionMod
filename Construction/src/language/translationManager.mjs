@@ -129,6 +129,12 @@ export function patchTranslations(ctx) {
 
         return ret;
     });
+      ctx.patch(SpecialAttack, 'name').get(function (patch) {
+        if (this.namespace === 'rielkConstruction')
+            return getRielkLangString(`SPECIAL_ATTACK_NAME_${this.localID}`);
+
+        return patch();
+    });
     ctx.patch(AncientRelic, 'name').get(function (orig) {
         let ret = orig();
         if (this.namespace == 'rielkConstruction')
@@ -149,12 +155,7 @@ export function patchTranslations(ctx) {
     });
     ctx.patch(Monster, 'name').get(function (patch) {
         if (this.namespace === 'rielkConstruction') {
-            return templateRielkLangStringWithNodes(
-                `ENEMY_NAME_${this.localID}`,
-                { Icon: `<img src="${ctx.getResourceUrl('assets/icon.png')}" style="height:1em;vertical-align:middle;margin-right:0.25em;">` },
-                {},
-                false
-            );
+            return getRielkLangString(`ENEMY_NAME_${this.localID}`);
         }
         return patch();
     });
@@ -194,13 +195,13 @@ export function patchTranslations(ctx) {
         return patch()
 
     })
-     ctx.patch(PointOfInterest, "description").get(function (patch) {
+    ctx.patch(PointOfInterest, "description").get(function (patch) {
         if (this._namespace.name == "rielkConstruction")
             return getRielkLangString(this._description)
         return patch()
 
     })
-        ctx.patch(AgilityObstacle, "name").get(function (patch) {
+    ctx.patch(AgilityObstacle, "name").get(function (patch) {
         if (this._namespace.name == "rielkConstruction")
             return getRielkLangString(`AGI_OBSTACLE_${this._localID}`)
         return patch()

@@ -28,25 +28,21 @@ export function addSpecialAttack() {
     let functionList = [];
     if (this._localID == "Training_Dummy4" && this.tier >= 4 && guardMelee == 0) {
         const attack = game.specialAttacks.getObjectSafe('rielkConstruction:Brutal_Strike');
-        console.log("Attempting melee attack:", attack);
         functionList.push({ name: "melee", attack });
         guardMelee = 1;
     }
 
     if (this._localID == "Archery_Range4" && guardRanged == 0) {
-        const attack = game.specialAttacks.getObjectSafe('rielkConstruction:Twin_Strike');
-        console.log("Attempting ranged attack:", attack);
+        const attack = game.specialAttacks.getObjectSafe('rielkConstruction:Twin_Shot');
         functionList.push({ name: "ranged", attack });
         guardRanged = 1;
     }
 
     if (this._localID == "Spell_Library4" && guardMagic == 0) {
         const attack = game.specialAttacks.getObjectSafe('rielkConstruction:Mana_Surge');
-        console.log("Attempting magic attack:", attack);
         functionList.push({ name: "magic", attack });
         guardMagic = 1;
     }
 
-    console.log("Final functionList:", functionList);
     addEffecttoWeapons(functionList);
 }

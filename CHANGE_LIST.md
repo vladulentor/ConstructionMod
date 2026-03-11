@@ -160,6 +160,41 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 ## Herblore
 - Added **"Twice-Measured"** skill potion (78 Herblore). It is made with Nails and Leather Straps. It provides a boost in Efficiency chance when making construction materials *or* a boost in Efficiency potency when making furniture.
 
+
+---
+
+## Agility
+### Obstacles
+#### Tier 3
+- **'Pipe Climb'** has had its Iron Bar cost replaced with Nails.  
+- **'Stepping Stones'** now requires Construction level 30 and has had its Teak Logs cost replaced with Teak Beams. It now also provides an efficiency chance bonus.  
+- **'Burning Coals'** has had its Oak Logs cost replaced with Normal Planks and grants +5 Construction actions when upgrading furniture.  
+
+#### Tier 5
+- **'Rock Climb'** has had its Teak Logs cost replaced with Teak Beams and now reduces Construction efficiency chance by 10%.  
+- **'Cliff Climb'** has had its Mithril Bar cost replaced with Mithril Nails and Red Dhide Leather Straps.  
+
+#### Tier 6
+- **'Raft Drifting'** now requires Construction level 60, costs Teak Planks and Mithril Nails, and increases Construction efficiency potency by 25%.  
+- **'Forest Trail'** has had its Maple Logs cost replaced with Limestone Bricks and reduces Construction efficiency by 0.15 actions.  
+
+#### Tier 8
+- **'Pipe Crawl'** has had its Adamantite Bar cost replaced with Adamantite Nails.  
+- **'Tree Hang'** now requires Construction level 80.  
+- **'Sweltering Pools'** now requires Construction level 75, has had its Adamantite Bar cost replaced with Adamantite Nails, and grants +10 Construction actions when upgrading furniture.  
+
+#### Tier 9
+- **'Lava Jump'** has had its Redwood Logs cost replaced with Redwood Planks.  
+- **'Ice Jump'** now requires Construction level 60 and costs Red Dhide Leather Straps.  
+- `[AoD]` **'Ocean Drifting'** has had its Magic Logs cost replaced with Mahogany Planks and Redwood Beams.  
+
+#### Tier 10
+- **'Boulder Move'** now requires Construction level 99 and has had its Redwood Logs and Dragonite Bar costs replaced with Redwood Planks and Dragonite Nails.  
+- **'Waterfall'** now costs Magic Bricks.  
+
+### Pillars
+- **'Pillar of Skilling'** now provides a Efficiency Chance bonus.
+
 ---
 
 ## Summoning

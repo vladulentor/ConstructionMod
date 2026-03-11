@@ -1362,11 +1362,11 @@
         "attackCount": 1,
         "attackInterval": 50,
         "lifesteal": 0,
-        "name": "Brute Strength",
-        "description": "Attack with greatly increased potency."
+        "name": "Brutal Strike",
+        "description": "MELEE_WEAPON"
       },
       {
-        "id": "Twin_Strike",
+        "id": "Twin_Shot",
         "defaultChance": 100,
         "damage": [
           {
@@ -1380,8 +1380,8 @@
         "attackCount": 2,
         "attackInterval": 200,
         "lifesteal": 0,
-        "name": "Sharp Shot",
-        "description": "Attack twice in with reduced potency. This attack never misses."
+        "name": "Twin Shot",
+        "description": "RANGED_WEAPON"
       },
       {
         "id": "Mana_Surge",
@@ -3056,7 +3056,7 @@
                   "quantity": 300
                 },
                 {
-                  "id": "melvorD:Rune_Essence",
+                  "id": "melvorD:Air_Rune",
                   "quantity": 300
                 }
               ],
@@ -3188,20 +3188,20 @@
                 "currencyGain": [
                   {
                     "currencyID": "melvorD:GP",
-                    "value": -1000
+                    "value": -777
                   }
                 ],
                 "itemSaleCurrencyGain": [
                   {
                     "currencyID": "melvorD:GP",
-                    "value": -1000
+                    "value": -777
                   }
                 ]
               },
               "media": "assets/others/7MT.webp",
               "category": 6,
-              "baseInterval": 9000,
-              "baseExperience": 83
+              "baseInterval": 7777,
+              "baseExperience": 77
             },
             {
               "id": "VictoryHouseLap",
@@ -3467,8 +3467,8 @@
           "synergies": [
             {
               "summonIDs": [
-                "rielkConstruction:Bee",
-                "melvorF:Monkey"
+                "melvorF:Monkey",
+                "rielkConstruction:Bee"
               ],
               "modifiers": {
                 "skillItemDoublingChance": [
@@ -12854,21 +12854,6 @@
                   ]
                 }
               }
-            },
-            {
-              "id": "melvorF:PipeCrawl",
-              "itemCosts": {
-                "remove": [
-                  "melvorD:Adamantite_Bar"
-                ],
-                "add": [
-                  {
-                    "id": "rielkConstruction:Adamantite_Nails",
-                    "quantity": 4000
-                  }
-                ]
-              },
-              "modifiers": {}
             },
             {
               "id": "melvorF:PipeCrawl",

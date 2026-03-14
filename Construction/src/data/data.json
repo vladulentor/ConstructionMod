@@ -8417,8 +8417,7 @@
               "currencyCosts": [],
               "modifiers": {
                 "skillPreservationChance": 0.5,
-                "bankSpace": 4,
-                "rielkConstruction:bypassGlobalDoubling": 10
+                "bankSpace": 4
               }
             },
             {

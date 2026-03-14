@@ -199,6 +199,7 @@ export class Construction extends ArtisanSkill {
         (_h = data.weaponMasteries)?.forEach(weaponMastery => {
             game.weaponMasteries.registerObject(new WeaponMastery(namespace, weaponMastery, this.game))
         })
+        game.weaponMasteryXP = new Map();
         super.registerData(namespace, data);
     }
     modifyData(data) {

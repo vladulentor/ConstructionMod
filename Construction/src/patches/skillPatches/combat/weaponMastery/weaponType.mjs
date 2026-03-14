@@ -18,12 +18,12 @@ class WeaponMasteryLevel extends RealmedObject {
 const xpthresholds = [100, 250, 500, 1000, 2000];
 export class WeaponMastery extends RealmedObject {
     constructor(namespace, data, game) {
-        
+
         super(namespace, data, game);
         this.name = data.name;//getRielkLangString(`WEAPON_MASTERIES_${this._localID}`);
-        this._xp = 0;
         this._media = data.media;
         this.fixture = game.construction.fixtures.getObjectByID("rielkConstruction:Training_Dummy");
+        this.allWeapons = [];
         this.levels = data.levels.map(
             (lvl, i) => new WeaponMasteryLevel(namespace, lvl, game, this._localID, i + 1)
         );
@@ -31,6 +31,10 @@ export class WeaponMastery extends RealmedObject {
     get media() {
         return this.getMediaURL(this._media);
     }
+    get xp() {
+    return   this.allWeapons.reduce((acc, weapon) => acc + (weapon._weaponXP || 0), 0);
+    }
+
     xpToLvl(xp) {
         for (let i = xpthresholds.length - 1; i >= 0; i--) {
             if (xp >= xpthresholds[i]) return i;
@@ -42,7 +46,7 @@ export class WeaponMastery extends RealmedObject {
         for (let i = xpthresholds.length - 1; i >= 0; i--) {
             if (this._xp >= xpthresholds[i]) return i;
         }
-        return -1;
+        return 0;
     }
     levelUp() {
         //no idea yet

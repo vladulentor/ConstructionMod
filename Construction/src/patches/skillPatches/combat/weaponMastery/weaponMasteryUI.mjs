@@ -19,7 +19,7 @@ export function addWeaponMasteryUI(ctx) {
             originalSetItem(bankItem, bank);
 
             if (bankItem.item instanceof WeaponItem && bankItem.item.weaponType) {
-                menu.weaponMasteryUI.setWeapon(bankItem.item.weaponType);
+                menu.weaponMasteryUI.setWeapon(bankItem.item);
                 menu.weaponMasteryUI.show();
             } else {
                 menu.weaponMasteryUI.hide();

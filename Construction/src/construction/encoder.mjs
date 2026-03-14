@@ -1,14 +1,17 @@
 const { onCharacterLoaded } = mod.getContext(import.meta);
-const BIG_UPDATE_NUMBER = 8; //The resource Update
+const BIG_UPDATE_NUMBER = 8; 
 export class Encoder {
     static encode(construction, writer) {
-        const _constructionVersion = 9;
+        const _constructionVersion = 10;
         writer.writeUint32(_constructionVersion);
         writer.writeBoolean(construction.extSaveData.showUpdateTooltip);
 
         writer.writeBoolean(game.firemaking.isRoaringBonfire);
         writer.writeSet(construction.hiddenRooms, writeNamespaced);
         writer.writeBoolean(construction.extSaveData.hasStudiedDiagram)
+            for (let i = 0; i < 5; i++) {
+            writer.writeUint32(game.weaponMasteries.allObjects[i]._xp);
+        }
         construction.stats.encode(writer);
         writer.writeArray(construction.fixtures.allObjects, (fixture, writer) => {
             writer.writeNamespacedObject(fixture);
@@ -44,6 +47,10 @@ export class Encoder {
         construction.hiddenRooms = reader.getSet(readNamespacedReject(construction.rooms));
         if (_constructionVersion >= 9)
             construction.extSaveData.hasStudiedDiagram = reader.getBoolean();
+        if (_constructionVersion >= 10)
+            for (let i = 0; i < 5; i++) {
+                game.weaponMasteries.allObjects[i]._xp = reader.getUint32();
+            }
         construction.stats.decode(reader);
         const readFixture = readNamespacedReject(construction.fixtures);
         reader.getArray((reader) => {

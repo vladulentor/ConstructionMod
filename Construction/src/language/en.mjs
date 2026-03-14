@@ -312,8 +312,8 @@ export const language = {
     'MODIFIER_DATA_hpPerAgiLevels': '${value} Hidden Defence and Hitpoints Levels for every 20 Agility Levels',
     'MODIFIER_DATA_IntPerAgiLevels': '${value}% Thieving and Agility Interval for every 20 Agility Levels',
     'MODIFIER_DATA_CombIntPerAgiLevels': '${value}s Attack and Monster Respawn Interval for every 20 Agility Levels',
-
-
+    'MODIFIER_DATA_fuckYourGold': 'When you gain ${currencyName}, instead lose ${value}% the amount you would gain',
+    'MODIFIER_DATA_spoof_Damocles':'If you cannot afford this cost, you die',
 
     'ITEM_NAME_Cursed_Hook': 'Cursed Hook',
     'ITEM_NAME_Tar_Jar': 'Jar of Tar',
@@ -337,7 +337,7 @@ export const language = {
     'RIELK_CONMOD_FOCUSEDCOOKING_3': '+7% Perfect Cook Chance, Additional Perfect Item Chance, and Preservation Cap in Cooking while not Passive Cooking',
     'RIELK_CONMOD_SLAYER2': '+7% damage dealt by all attacks when fighting a Slayer Task monster',
     'RIELK_CONMOD_SLAYER5': '+15% Chance to preserve Consumable Slot Charges when fighting a Slayer Task monster',
-
+    'RIELK_CONMOD_SLASHING1':'SUPER fast cons while having a slashing weapon',
 
     'MENU_TEXT_STOKE_BONFIRE': 'Stoke Bonfire (Costs ${qty} ${logName})',
     'MENU_TEXT_ENGRAVED_DIAGRAM_TEXT_0': 'How to build a Construct:',

@@ -3184,19 +3184,20 @@
               "itemCosts": [],
               "skillRequirements": [],
               "itemRewards": [],
+              "currencyRewards": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 7777
+                }
+              ],
               "modifiers": {
-                "currencyGain": [
+                "rielkConstruction:fuckYourGold": [
                   {
                     "currencyID": "melvorD:GP",
-                    "value": -777
+                    "value": 100
                   }
                 ],
-                "itemSaleCurrencyGain": [
-                  {
-                    "currencyID": "melvorD:GP",
-                    "value": -777
-                  }
-                ]
+                "rielkConstruction:spoof_Damocles": 1
               },
               "media": "assets/others/7MT.webp",
               "category": 6,
@@ -3984,6 +3985,205 @@
             {
               "id": "Bricks",
               "name": "Bricks"
+            }
+          ],
+          "weaponMasteries": [
+            {
+              "id": "Finesse",
+              "name": "Finesse",
+              "media": "assets/others/finesse.webp",
+              "levels": [
+                {
+                  "name": "Finesse1",
+                  "id": "Finesse1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Slashing",
+              "name": "Slashing",
+              "media": "assets/others/slashing.webp",
+              "levels": [
+                {
+                  "name": "Slashing1",
+                  "id": "Slashing1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Slashing2",
+                  "id": "Slashing2",
+                  "level": 2,
+                  "modifiers": {
+                    "skillInterval": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Slashing3",
+                  "id": "Slashing3",
+                  "level": 3,
+                  "modifiers": {
+                    "skillXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Slashing4",
+                  "id": "Slashing4",
+                  "level": 4,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Slashing5",
+                  "id": "Slashing5",
+                  "level": 5,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Great",
+              "name": "Great",
+              "media": "assets/others/great.webp",
+              "levels": [
+                {
+                  "name": "Finesse1",
+                  "id": "Finesse1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Cleave",
+              "name": "Cleave",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Finesse1",
+                  "id": "Finesse1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Exotic",
+              "name": "Exotic",
+              "media": "assets/others/exotic.webp",
+              "levels": [
+                {
+                  "name": "Finesse1",
+                  "id": "Finesse1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
             }
           ],
           "tierMasteries": [
@@ -8575,7 +8775,7 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "magicAccuracyRating": 5,
+                "flatMagicAttackBonus": 5,
                 "skillXP": [
                   {
                     "value": 7,
@@ -8715,8 +8915,7 @@
               "currencyCosts": [],
               "modifiers": {
                 "skillPreservationChance": 0.5,
-                "bankSpace": 4,
-                "rielkConstruction:bypassGlobalDoubling": 10
+                "bankSpace": 4
               }
             },
             {
@@ -9079,6 +9278,23 @@
                   "quantity": 1000
                 }
               ],
+              "conditionalModifiers": [
+                {
+                  "condition": {
+                    "type": "WeaponType",
+                    "weaponType": "Slashing"
+                  },
+                  "modifiers": {
+                    "flatSkillInterval": [
+                      {
+                        "value": -2500,
+                        "skillID": "rielkConstruction:Construction"
+                      }
+                    ]
+                  },
+                  "descriptionLang": "RIELK_CONMOD_SLASHING1"
+                }
+              ],
               "currencyCosts": [],
               "modifiers": {
                 "rielkConstruction:skillEfficiencyChance": [
@@ -9338,23 +9554,14 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 1,
-                    "skillID": "melvorD:Attack"
-                  },
-                  {
-                    "value": 1,
-                    "skillID": "melvorD:Strength"
-                  }
-                ],
+                "meleeStrengthBonus": 1,
                 "skillXP": [
                   {
-                    "value": 1,
+                    "value": 2,
                     "skillID": "melvorD:Attack"
                   },
                   {
-                    "value": 1,
+                    "value": 2,
                     "skillID": "melvorD:Strength"
                   }
                 ]
@@ -9509,6 +9716,15 @@
                 }
               ],
               "changeFunc": "addSpecialAttack",
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
               "currencyCosts": [],
               "modifiers": {
                 "rielkConstruction:spoof_AddMeleeSpecialAttack": 1,
@@ -12645,6 +12861,40 @@
             ]
           }
         ]
+      },
+      {
+        "id": "fuckYourGold",
+        "inverted": true,
+        "allowedScopes": [
+          {
+            "scopes": {
+              "currency": true
+            },
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "Lose all gold you'd gain",
+                "lang": "MODIFIER_DATA_fuckYourGold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_Damocles",
+        "inverted": true,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "Over your HEAD",
+                "lang": "MODIFIER_DATA_spoof_Damocles"
+              }
+            ]
+          }
+        ]
       }
     ],
     "combatEffects": [
@@ -12797,11 +13047,10 @@
               },
               "modifiers": {}
             },
-                 {
+            {
               "id": "melvorF:RooftopRun",
               "itemCosts": {
                 "add": [
-                 
                   {
                     "id": "rielkConstruction:Red_Dhide_Leather_Slivers",
                     "quantity": 500

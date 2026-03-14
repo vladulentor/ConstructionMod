@@ -6,12 +6,19 @@ const { addHiddenLevelsToAllsSills } = await loadModule('src/patches/skillPatche
 
 const { addXpPerFixture } = await loadModule('src/patches/skillPatches/general/addXpPerFixture.mjs');
 const { clampMasteryPool } = await loadModule('src/patches/skillPatches/general/clampMasteryPool.mjs');
+const { addCurrencyCancel } = await loadModule('src/patches/skillPatches/general/addCurrencyCancel.mjs');
 
 
 const { removeObstacles } = await loadModule('src/patches/skillPatches/agility/removeAndAddObstacles.mjs');
 const { keepTrackOfObstacles } = await loadModule('src/patches/skillPatches/agility/keepTrackOfObstacles.mjs');
 const { reorderAgiMods } = await loadModule('src/patches/skillPatches/agility/reorderAgiMods.mjs');
 const { provideBonusesPerAgiLevels } = await loadModule('src/patches/skillPatches/agility/provideBonusesPerAgiLevels.mjs');
+
+
+
+const { addWeaponType } = await loadModule('src/patches/skillPatches/combat/weaponMastery/addWeaponType.mjs');
+const { addWeaponMasteryUI } = await loadModule('src/patches/skillPatches/combat/weaponMastery/weaponMasteryUI.mjs');
+
 
 
 
@@ -102,6 +109,7 @@ export function patchSkillsBeforeDataReg(ctx) {
         addComboRunesonElemRunes(ctx);
         patchRunePreservationCap(ctx);
         addHiddenLevelsToAllsSills(ctx);
+        addCurrencyCancel(ctx);
         patchPrayerPointsSpending(ctx);
         addMarkSuperLevels(ctx);
         provideBonusesPerAgiLevels(ctx);
@@ -118,6 +126,8 @@ export function patchSkillsAfterDataReg(ctx) {
         addBeamsMasteryPoolBonus();
         removeObstacles(ctx);
         reorderAgiMods()
+        addWeaponType();
+        addWeaponMasteryUI(ctx);
         keepTrackOfObstacles(ctx);
         patchArrowShaftRecipes(ctx);
         patchPerpetualHaste(ctx);

@@ -16,9 +16,9 @@ export function tinyIconsCompatibility(ctx) {
         ['rune_essence', game.items.getObjectByID('melvorD:Rune_Essence').media],
         ['convergence', ctx.getResourceUrl('assets/others/convergence.webp')],
         ['mark', 'assets/media/skills/summoning/mark_4_256.png'],
-        ['deserthat', game.items.getObjectByID('melvorF:Desert_Hat').media]
-        ,['jgym', ctx.getResourceUrl('assets/fixtures/jungle_gym.webp')]
-        ,['stamina', 'assets/media/main/stamina.png']
+        ['deserthat', game.items.getObjectByID('melvorF:Desert_Hat').media],
+        ['jgym', ctx.getResourceUrl('assets/fixtures/jungle_gym.webp')],
+        ['stamina', 'assets/media/main/stamina.png']
     ]
     ));
     const constrSubcategories = new Map([
@@ -138,11 +138,14 @@ export function tinyIconsCompatibility(ctx) {
 
     icons.addModifier('rielkConstruction:doublepetsmillion', 'loot');
 
-    
+
     icons.addModifier('rielkConstruction:spoof_AddAgiObstacle', 'jgym');
     icons.addModifier('rielkConstruction:hpPerAgiLevels', 'stamina', 'hitpoints');
     icons.addModifier('rielkConstruction:IntPerAgiLevels', 'stamina', 'interval');
-    icons.addModifier('rielkConstruction:CombIntPerAgiLevels', 'stamina', 'interval');
+    icons.addModifier('rielkConstruction:CombIntPerAgiLevels', 'stamina', 'ti_attack_interval');
+    icons.addModifier('rielkConstruction:fuckYourGold', 'currency');
+    icons.addModifier('rielkConstruction:spoof_Damocles', 'mark_of_death');
+
 
 
 }

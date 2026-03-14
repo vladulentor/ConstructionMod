@@ -13,6 +13,8 @@ const { ConstructionRecipe } = await loadModule('src/construction/constructionRe
 const { ConstructionRoom } = await loadModule('src/construction/constructionRoom.mjs');
 const { ConstructionTierMastery } = await loadModule('src/construction/constructionTierMastery.mjs');
 const { createOrangeNotification } = await loadModule('src/interface/elements/constructionEfficiencyNotification.mjs');
+const { WeaponMastery } = await loadModule('src/patches/skillPatches/combat/weaponMastery/weaponType.mjs');
+
 
 const { EfficiencySourceBuilder } = await loadModule('src/construction/constructionEfficiencySourceBuilder.mjs');
 
@@ -32,6 +34,7 @@ export class Construction extends ArtisanSkill {
         this.rooms = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionRoom');
         this.fixtures = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionFixture');
         this.tierMasteries = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionTierMastery');
+        game.weaponMasteries = new NamespaceRegistry(game.registeredNamespaces, 'WeaponMastery');
         this.totalMasteryActions = new CompletionMap();
         this.hiddenRooms = new Set();
         this.gamemode = undefined;
@@ -166,7 +169,7 @@ export class Construction extends ArtisanSkill {
     }
 
     registerData(namespace, data) {
-        var _a, _b, _c, _d, _e, _f, _g;
+        var _a, _b, _c, _d, _e, _f, _g, _h;
         (_a = data.categories) === null || _a === void 0 ? void 0 : _a.forEach((categoryData) => {
             this.categories.registerObject(new ConstructionCategory(namespace, categoryData, this, this.game));
         }
@@ -193,6 +196,9 @@ export class Construction extends ArtisanSkill {
         (_g = data.tierMasteries)?.forEach(tmData => {
             this.tierMasteries.registerObject(new ConstructionTierMastery(namespace, tmData, this.game, this));
         });
+        (_h = data.weaponMasteries)?.forEach(weaponMastery => {
+            game.weaponMasteries.registerObject(new WeaponMastery(namespace, weaponMastery, this.game))
+        })
         super.registerData(namespace, data);
     }
     modifyData(data) {
@@ -281,9 +287,9 @@ export class Construction extends ArtisanSkill {
                     unlisteners: []
                 });
             }
-        /* game.skills.allObjects.forEach(skill =>{
-            if(!skill.isCombat && skill.level < 99) skill.addXP(exp.levelToXP(Math.min(99, skill.level + 5)) - skill._xp + 1) // To level up you need more xp than your levels, not equal, so we add 1
-         })*/   
+            /* game.skills.allObjects.forEach(skill =>{
+                if(!skill.isCombat && skill.level < 99) skill.addXP(exp.levelToXP(Math.min(99, skill.level + 5)) - skill._xp + 1) // To level up you need more xp than your levels, not equal, so we add 1
+             })*/
         }
         if (relicSet.isComplete)
             this.queueAncientRelicFoundModal(relicSet, relicSet.completedRelic);

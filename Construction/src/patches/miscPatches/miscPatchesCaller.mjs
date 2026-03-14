@@ -9,16 +9,17 @@ const { addReadables } = await loadModule('src/patches/miscPatches/addReadables.
 const { addFixtureGoalType } = await loadModule('src/patches/miscPatches/addFixtureGoalType.mjs');
 
 
-export function patchMiscBeforeDataReg(ctx)
-{   
+export function patchMiscBeforeDataReg(ctx) {
         patchMasteryElement(ctx);
         patchRenderEquipment(ctx);
         patchEventManager(ctx);
-        patchConditionalMod(ctx);
         patchBackground(ctx);
         addReadables(ctx);
+        patchConditionalMod(ctx);
         addFixtureGoalType();
         addFixtureRequirement();
 }
-export function patchSkillsAfterDataReg(ctx){
+export function patchMiscAfterDataReg(ctx) {
+
+
 }

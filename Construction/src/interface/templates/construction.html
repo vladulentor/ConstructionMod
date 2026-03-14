@@ -512,9 +512,12 @@
           <div style="max-height:350px; overflow-y:auto;">
             <div class="font-w600 mb-1 ">v4.8</div>
             <div class="font-w400 font-size-sm mb-2">
-              - Updated the Outpost with custom effects. The Black Market now improves Thieving and Commersce, the Mines improve Smithing as well as Mining, and the Hunter's Lodge unlock new enemies as well as buffing slayer abilities.<br>
+              - Updated the Outpost with custom effects. The Black Market now improves Thieving and Commersce, the Mines
+              improve Smithing as well as Mining, and the Hunter's Lodge unlock new enemies as well as buffing slayer
+              abilities.<br>
               - Added 2 new thieving targets with custom rewards, added a new are unique item to Thieving.
-              - As part of the Hunter's Lodge update, 5 new enemies have been added, they only become visible once unlocked.
+              - As part of the Hunter's Lodge update, 5 new enemies have been added, they only become visible once
+              unlocked.
             </div>
 
             <div class="font-w600 mb-1 ">v4.7</div>
@@ -946,5 +949,83 @@
       <img class="outer-icon skill-icon-sm mr-2" id="outer-icon-right">
     </div>
 
+  </div>
+</template>
+
+
+
+<template id="weaponMastery-template">
+  <div class="col-12 d-none" id="outercont">
+    <div class="block block-rounded-double bg-combat-inner-dark weaponMasteryContainer" id="weaponMasteryContainer">
+      <div class="block-header block-header-default bg-dark-bank-block-header px-3 py-1">
+        <h5 class="font-size-sm font-w600 mb-0">
+          Weapon Mastery
+        </h5>
+        <div class="block-options">
+          <h5 class="font-w600 font-size-sm text-right text-combat-smoke mb-0">
+            <img class="skill-icon-xxs mr-2" id="weaponMasteryIcon"
+              src="chrome-extension://melvor/assets/media/bank/weapon_sword.png">
+          </h5>
+        </div>
+      </div>
+
+      <div class="weaponMasteryMenu ">
+        <img class="weaponMasteryBgIcon" id="weaponMasteryBgIcon">
+        <div class="row no-gutters p-2">
+          <div class="col-12">
+            <h5 id="weaponMasteryText" class="font-w600 font-size-sm text-combat-smoke m-1 py-2 text-center">Slashing</h5>
+            <h5 class="font-w400 font-size-xs text-combat-smoke m-1 py-3 text-center">
+              Current Weapon Class Mastery:
+            </h5>
+            <div class="weapon-xp-containe  pt-10r">
+              <div class="weapon-xp-bar" id="weaponMasteryBar">
+                <div class="weapon-xp-fill" id="weaponMasteryProgress" style="width: 0%;"></div>
+
+                <div class="xp-marker" style="left: 5%;">
+                  <span class="xp-label">1</span>
+                </div>
+                <div class="xp-marker" style="left: 10%;">
+                  <span class="xp-label">2</span>
+                </div>
+                <div class="xp-marker" style="left: 25%;">
+                  <span class="xp-label">3</span>
+                </div>
+                <div class="xp-marker" style="left: 50%;">
+                  <span class="xp-label">4</span>
+                </div>
+                <div class="xp-end-label" style="left: 98%;">
+                  <span class="xp-label">5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row no-gutters block-header bg-dark-bank-block-header d-flex justify-content-center"
+        id="weaponMasteryStepsContainer">
+        <div class="col d-flex justify-content-center align-items-center fas weaponMasteryStepsButton"
+          id="weaponMasteryStepsButton"><span class="arrow"></span></div>
+        <div class="weaponMasteryModifiers" id="weaponMasteryModifiers" class="collapsed font-w600 font-size-sm">
+          <div class="col-12 mb-1 d-flex justify-content-center flex-wrap" id="modifierStep1">
+          </div>
+          <div class="col-12 mb-1 dropdown-divider"></div>
+          <div class="col-12 mb-1 d-flex justify-content-center flex-wrap" id="modifierStep2">
+          </div>
+          <div class="col-12 mb-1 dropdown-divider"></div>
+
+          <div class="col-12 mb-1 d-flex justify-content-center flex-wrap" id="modifierStep3">
+          </div>
+          <div class="col-12 mb-1 dropdown-divider"></div>
+
+          <div class="col-12 mb-1 d-flex justify-content-center flex-wrap" id="modifierStep4">
+          </div>
+          <div class="col-12 mb-1 dropdown-divider"></div>
+
+          <div class="col-12 mb-1 d-flex justify-content-center flex-wrap" id="modifierStep5">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>

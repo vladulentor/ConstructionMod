@@ -10,7 +10,5 @@ ArchMark
 
 Outpost update:
 
-fix midas trap name
+Finesse, Slashing, Great, Cleave, and Exortic sound good.
 
-After update:
-Township tasks (2/1 per tier)

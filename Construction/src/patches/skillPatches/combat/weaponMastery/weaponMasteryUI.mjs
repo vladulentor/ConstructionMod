@@ -17,7 +17,7 @@ export function addWeaponMasteryUI(ctx) {
         menu.setItem = (bankItem, bank) => {
             originalSetItem(bankItem, bank);
 
-            if (false /*bankItem.item instanceof WeaponItem && bankItem.item.weaponType*/) {
+            if (bankItem.item instanceof WeaponItem && bankItem.item.weaponType) {
                 menu.weaponMasteryUI.setWeapon(bankItem.item);
                 menu.weaponMasteryUI.show();
             } else {

@@ -5734,6 +5734,7 @@
               "level": 66,
               "baseExperience": 200,
               "baseActionCost": 400,
+              "changeFunc": "addSpecialAttack",
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
@@ -5763,6 +5764,7 @@
               ],
               "currencyCosts": [],
               "modifiers": {
+                "rielkConstruction:spoof_AddRangedSpecialAttack": 1,
                 "flatHiddenSkillLevel": [
                   {
                     "value": 2,
@@ -9895,6 +9897,7 @@
               "level": 63,
               "baseExperience": 100,
               "baseActionCost": 400,
+              "changeFunc": "addSpecialAttack",
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
@@ -9945,6 +9948,7 @@
               ],
               "currencyCosts": [],
               "modifiers": {
+                "rielkConstruction:spoof_AddMeleeSpecialAttack": 1,
                 "flatHiddenSkillLevel": [
                   {
                     "value": 2,

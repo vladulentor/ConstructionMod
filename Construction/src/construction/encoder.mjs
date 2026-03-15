@@ -2,21 +2,19 @@ const { onCharacterLoaded } = mod.getContext(import.meta);
 const BIG_UPDATE_NUMBER = 8;
 export class Encoder {
     static encode(construction, writer) {
-        const _constructionVersion = 10;
+        const _constructionVersion = 9;
         writer.writeUint32(_constructionVersion);
         writer.writeBoolean(construction.extSaveData.showUpdateTooltip);
 
         writer.writeBoolean(game.firemaking.isRoaringBonfire);
         writer.writeSet(construction.hiddenRooms, writeNamespaced);
         writer.writeBoolean(construction.extSaveData.hasStudiedDiagram)
-        for (let i = 0; i < 5; i++) {
-            writer.writeUint32(game.weaponMasteries.allObjects[i]._xp);
-        }
-        writer.writeUint8(game.weaponMasteryXP.size);
-        for (const [uid, xp] of game.weaponMasteryXP) {
-
-            const packed = (xp << 13) | uid; // XP in upper 19 bits, UID in lower 13, this shit so cash
-            writer.writeUint32(packed);
+        if (_constructionVersion >= 10) {
+            writer.writeUint8(game.weaponMasteryXP.size);
+            for (const [uid, xp] of game.weaponMasteryXP) {
+                const packed = (xp << 13) | uid; // XP in upper 19 bits, UID in lower 13, this shit so cash
+                writer.writeUint32(packed);
+            }
         }
         construction.stats.encode(writer);
         writer.writeArray(construction.fixtures.allObjects, (fixture, writer) => {
@@ -54,9 +52,6 @@ export class Encoder {
         if (_constructionVersion >= 9)
             construction.extSaveData.hasStudiedDiagram = reader.getBoolean();
         if (_constructionVersion >= 10) {
-            for (let i = 0; i < 5; i++) {
-                game.weaponMasteries.allObjects[i]._xp = reader.getUint32();
-            }
             let length = reader.getUint8();
             for (let i = 0; i < length; i++) {
                 const packed = reader.getUint32();
@@ -64,7 +59,7 @@ export class Encoder {
                 const xp = packed >> 13;
                 game.weaponMasteryXP.set(uid, xp);
                 const weapon = game.meleeWeaponsByUID.get(uid);
-                if (weapon) 
+                if (weapon)
                     weapon._weaponXP = xp;
             }
         }

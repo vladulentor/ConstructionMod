@@ -4016,6 +4016,7 @@
             {
               "id": "Slashing",
               "name": "Slashing",
+              "fixture": "rielkConstruction:Training_Dummy",
               "media": "assets/others/slashing.webp",
               "levels": [
                 {
@@ -4113,6 +4114,7 @@
             {
               "id": "Great",
               "name": "Great",
+              "fixture": "rielkConstruction:Training_Dummy",
               "media": "assets/others/great.webp",
               "levels": [
                 {
@@ -4138,6 +4140,7 @@
             {
               "id": "Cleave",
               "name": "Cleave",
+              "fixture": "rielkConstruction:Training_Dummy",
               "media": "assets/others/cleave.webp",
               "levels": [
                 {
@@ -4161,8 +4164,243 @@
               ]
             },
             {
+              "id": "Thrown",
+              "name": "Thrown",
+              "fixture": "rielkConstruction:Archery_Range",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Thrown1",
+                  "id": "Thrown1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Swift",
+              "name": "Swift",
+              "fixture": "rielkConstruction:Archery_Range",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Swift1",
+                  "id": "Swift1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Precise",
+              "name": "Precise",
+              "fixture": "rielkConstruction:Archery_Range",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Precise1",
+                  "id": "Precise1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Steady",
+              "name": "Steady",
+              "fixture": "rielkConstruction:Archery_Range",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Steady1",
+                  "id": "Steady1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Earth",
+              "name": "Earth",
+              "fixture": "rielkConstruction:Spell_Library",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Earth1",
+                  "id": "Earth1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Wind",
+              "name": "Wind",
+              "fixture": "rielkConstruction:Spell_Library",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Wind1",
+                  "id": "Wind1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Water",
+              "name": "Water",
+              "fixture": "rielkConstruction:Spell_Library",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Water1",
+                  "id": "Water1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Fire",
+              "name": "Fire",
+              "fixture": "rielkConstruction:Spell_Library",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Fire1",
+                  "id": "Fire1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Arcane",
+              "name": "Arcane",
+              "fixture": "rielkConstruction:Spell_Library",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Arcane1",
+                  "id": "Arcane1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
               "id": "Exotic",
               "name": "Exotic",
+              "fixture": "rielkConstruction:Training_Dummy",
               "media": "assets/others/exotic.webp",
               "levels": [
                 {
@@ -5524,9 +5762,7 @@
                 }
               ],
               "currencyCosts": [],
-              "changeFunc": "addSpecialAttack",
               "modifiers": {
-                "rielkConstruction:spoof_AddRangedSpecialAttack": 1,
                 "flatHiddenSkillLevel": [
                   {
                     "value": 2,
@@ -9715,7 +9951,6 @@
                   "quantity": 1
                 }
               ],
-              "changeFunc": "addSpecialAttack",
               "shinyMods": [
                 1,
                 2,
@@ -9727,7 +9962,6 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "rielkConstruction:spoof_AddMeleeSpecialAttack": 1,
                 "flatHiddenSkillLevel": [
                   {
                     "value": 2,

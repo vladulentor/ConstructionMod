@@ -13,12 +13,11 @@ export function addWeaponMasteryUI(ctx) {
             menu.equipItemContainer.after(menu.weaponMasteryUI.container);
         }
 
-        // patch the setItem for this instance
         const originalSetItem = menu.setItem.bind(menu);
         menu.setItem = (bankItem, bank) => {
             originalSetItem(bankItem, bank);
 
-            if (bankItem.item instanceof WeaponItem && bankItem.item.weaponType) {
+            if (false /*bankItem.item instanceof WeaponItem && bankItem.item.weaponType*/) {
                 menu.weaponMasteryUI.setWeapon(bankItem.item);
                 menu.weaponMasteryUI.show();
             } else {

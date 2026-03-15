@@ -283,7 +283,7 @@ export const language = {
     'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR': 'Increase all Non-Combat Skills\' current cap Level Cap by ${value} (up to their maximum cap)',
     'MODIFIER_DATA_bypassNonCombatSkillLevelAR': 'Increase all Non-Combat Skills\' Level by ${value}',
     'MODIFIER_DATA_bypassGlobalDoubling': '${value}% Chance to Double Items Globally (Bypasses Gamemode Limitations)',
-    'SHOP_PURCHASE_Perpetual_Haste': '-15% Crafting, Construction & Fletching Interval',
+    'SHOP_PURCHASE_Perpetual_Haste': '-15% Base Crafting, Construction & Fletching Interval',
     'ITEM_DESCRIPTION_BEAR_DEVIL_SYNERGY': 'While using the Controlled Heat Potions, +5% Firemaking Skill XP and Bonfire duration increased by 15%. Charges are used per Firemaking action and lit Bonfire.',
     'RIELK_SYNERGY_Pig_Bee': '+10% Doubling and Preservation Chance while not Passive Cooking',
     'RIELK_SYNERGY_Bear_Bee': 'While the Twice-Measured Potion is active in Construction, Resource cost when completing extra actions is reduced by 0.2',
@@ -412,7 +412,7 @@ export const language = {
 
     'stop looking in my code': '',
 
-    'SKILL_CATEGORY_Leather_Slivers': 'Hide Slivers',
+    'SKILL_CATEGORY_Leather_Slivers': 'Dragonhide Slivers',
     'SKILL_CATEGORY_Wood_Beams': 'Wood Beams',
     'SKILL_CATEGORY_ Construction_ Materials': 'Materials',
     'SKILL_CATEGORY_ Construction_ House': 'Furniture',

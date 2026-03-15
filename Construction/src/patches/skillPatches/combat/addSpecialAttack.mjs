@@ -31,7 +31,7 @@ export function addSpecialAttack() {
         functionList.push({ name: "melee", attack });
         guardMelee = 1;
     }
-
+/* Shouldn't run, but what do you know
     if (this._localID == "Archery_Range4" && guardRanged == 0) {
         const attack = game.specialAttacks.getObjectSafe('rielkConstruction:Twin_Shot');
         functionList.push({ name: "ranged", attack });
@@ -43,6 +43,6 @@ export function addSpecialAttack() {
         functionList.push({ name: "magic", attack });
         guardMagic = 1;
     }
-
+*/ 
     addEffecttoWeapons(functionList);
 }

@@ -10,5 +10,5 @@ ArchMark
 
 Outpost update:
 
-Finesse, Slashing, Great, Cleave, and Exortic sound good.
-
+Reminder for update:
+Add back the changeFunc and effect 4 for special attacks to dummy and target, also uncomment them in the function

@@ -5063,8 +5063,7 @@
                 "rielkConstruction:Black_Market",
                 "rielkConstruction:Mines",
                 "rielkConstruction:Trapping_Hut"
-              ],
-              "newTooltip": true
+              ]
             },
             {
               "id": "Refectory",
@@ -5082,7 +5081,8 @@
                 "rielkConstruction:Archery_Range",
                 "rielkConstruction:Jungle_Gym",
                 "rielkConstruction:Training_Dummy"
-              ]
+              ],
+              "newTooltip": true
             },
             {
               "id": "Workshop",
@@ -9512,23 +9512,6 @@
                 {
                   "id": "melvorD:Iron_Bar",
                   "quantity": 1000
-                }
-              ],
-              "conditionalModifiers": [
-                {
-                  "condition": {
-                    "type": "WeaponType",
-                    "weaponType": "Slashing"
-                  },
-                  "modifiers": {
-                    "flatSkillInterval": [
-                      {
-                        "value": -2500,
-                        "skillID": "rielkConstruction:Construction"
-                      }
-                    ]
-                  },
-                  "descriptionLang": "RIELK_CONMOD_SLASHING1"
                 }
               ],
               "currencyCosts": [],

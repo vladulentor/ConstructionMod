@@ -9,13 +9,6 @@ export class Encoder {
         writer.writeBoolean(game.firemaking.isRoaringBonfire);
         writer.writeSet(construction.hiddenRooms, writeNamespaced);
         writer.writeBoolean(construction.extSaveData.hasStudiedDiagram)
-        if (_constructionVersion >= 10) {
-            writer.writeUint8(game.weaponMasteryXP.size);
-            for (const [uid, xp] of game.weaponMasteryXP) {
-                const packed = (xp << 13) | uid; // XP in upper 19 bits, UID in lower 13, this shit so cash
-                writer.writeUint32(packed);
-            }
-        }
         construction.stats.encode(writer);
         writer.writeArray(construction.fixtures.allObjects, (fixture, writer) => {
             writer.writeNamespacedObject(fixture);
@@ -51,20 +44,6 @@ export class Encoder {
         construction.hiddenRooms = reader.getSet(readNamespacedReject(construction.rooms));
         if (_constructionVersion >= 9)
             construction.extSaveData.hasStudiedDiagram = reader.getBoolean();
-        if (_constructionVersion >= 10) {
-            let length = reader.getUint8();
-            for (let i = 0; i < length; i++) {
-                const packed = reader.getUint32();
-                const uid = packed & 0x1FFF;
-                const xp = packed >> 13;
-                game.weaponMasteryXP.set(uid, xp);
-                const weapon = game.meleeWeaponsByUID.get(uid);
-                if (weapon)
-                    weapon._weaponXP = xp;
-            }
-        }
-
-
         construction.stats.decode(reader);
         const readFixture = readNamespacedReject(construction.fixtures);
         reader.getArray((reader) => {

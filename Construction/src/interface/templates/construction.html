@@ -510,12 +510,13 @@
             the mod.io page's "view other versions" tab.
           </div>
           <div style="max-height:350px; overflow-y:auto;">
-                        <div class="font-w600 mb-1 ">v4.9</div>
+            <div class="font-w600 mb-1 ">v4.9</div>
             <div class="font-w400 font-size-sm mb-2">
               - Updated the Training Room's Jungle Gym's picture and effects.<br>
               - Changed Relic 4's effect from giving 5 levels to non-combat skills to giving 15% xp boost<br>
               - Updated Agility obstacles and pillars with Construction material costs and modifiers<br>
-              - The rest of the Training Room fixtures will be updated in 4.10, it includes a lot of new systems, so they've been pushed back.<br>
+              - The rest of the Training Room fixtures will be updated in 4.10, it includes a lot of new systems, so
+              they've been pushed back.<br>
             </div>
 
             <div class="font-w600 mb-1 ">v4.8</div>
@@ -981,43 +982,48 @@
         <div class="weaponMasteryMenu ">
           <div class="row no-gutters p-2">
             <div class="col-12">
-              <h5 id="weaponMasteryText" class="font-w900 font-size-md text-combat-smoke pt-2 text-center" style="margin-bottom:1rem;">Slashing</h5>
-              <div id="weaponMasteryItem" class="weapon-mastery-item d-flex justify-content-center align-items-center mb-2">
-                <div class="bg-dark-bank-block-header d-flex info-icon align-items-center border-item" style="margin-top: -6px; width:64px; height:64px; border-radius: 15px">
+              <h5 id="weaponMasteryText" class="font-w900 font-size-md text-combat-smoke pt-2 text-center"
+                style="margin-bottom:1rem;"></h5>
+              <div id="weaponMasteryItem"
+                class="weapon-mastery-item d-flex justify-content-center align-items-center mb-3">
+                <div class="bg-dark-bank-block-header d-flex info-icon align-items-center border-item"
+                  style="margin-top: -6px; width:64px; height:64px; border-radius: 15px">
                   <img id="weaponPic" class="weapon-pic p-2 icon-size-48" style="width:64px; height:64px;">
                 </div>
                 <div id="weaponInfo" class="weapon-info d-flex flex-column ml-2">
-                  <span id="weaponName" class="weapon-name font-w600 font-size-sm text-combat-smoke">Steel Sword</span>
+                  <span id="weaponName" class="weapon-name font-w600 font-size-sm text-combat-smoke"></span>
                   <span id="weaponRank" class="weapon-rank font-w600 font-size-sm"></span>
                 </div>
               </div>
 
               <!-- XP Bars -->
-              <div id="weaponXPBar" class="singular-weapon-xp-bar progress mb-1" style="height:6px">
+              <div id="weaponXPBar" class="singular-weapon-xp-bar progress mb-4" style="height:6px">
                 <div id="weaponXpFill" class="singular-weapon-xp-fill" style="width: 40%;"></div>
               </div>
 
-              <h5 class="font-w400 font-size-xs text-combat-smoke pt-1 pb-3 text-center">
-                Current Weapon Class Mastery:
+              <h5 class="font-w600 font-size-sm text-combat-smoke pt-1 pb-4 text-center">
+                Type Proficiency:
               </h5>
               <div class="mastery-weapon-xp-container  pb-3 pt-10r">
-                <div class="mastery-weapon-xp-bar" id="weaponMasteryBar">
-                  <div class="mastery-weapon-xp-fill" id="weaponMasteryProgress" style="width: 0%;"></div>
+                <div class="mastery-weapon-xp-bar progress" id="weaponMasteryBar">
+                                    <div class="mastery-weapon-xp-fill" id="weaponMasteryProgress" style="width: 0%;"></div>
+
+                  <div class="mastery-weapon-xp-overfill" id="weaponMasteryOverfill" style="width: 0%;"></div>
 
                   <div class="xp-marker" style="left: 10%;">
-                    <span class="xp-label">1</span>
+                    <span class="xp-label font-w600 font-size-sm text-combat-smoke">1</span>
                   </div>
                   <div class="xp-marker" style="left: 20%;">
-                    <span class="xp-label">2</span>
+                    <span class="xp-label font-w600 font-size-sm text-combat-smoke">2</span>
                   </div>
                   <div class="xp-marker" style="left: 40%;">
-                    <span class="xp-label">3</span>
+                    <span class="xp-label font-w600 font-size-sm text-combat-smoke">3</span>
                   </div>
                   <div class="xp-marker" style="left: 60%;">
-                    <span class="xp-label">4</span>
+                    <span class="xp-label font-w600 font-size-sm text-combat-smoke">4</span>
                   </div>
                   <div class="xp-marker" style="left: 90%;">
-                    <span class="xp-label">5</span>
+                    <span class="xp-label font-w600 font-size-sm text-combat-smoke">5</span>
                   </div>
                 </div>
               </div>

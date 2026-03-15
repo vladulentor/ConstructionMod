@@ -30,7 +30,7 @@ export class ConstructionInterface {
                 return;
             const recipes = construction.actions.filter((r) => r.category === category);
             if (window.innerWidth <= 968)
-                recipes.sort(BasicSkillRecipe.sortByLevels); // our spoof ordering only works when there are 2 rows to work with, otherwise leave it on default (though that's not MUCH better.)
+                recipes.sort((a,b) => a.spoofOrderPh - b.spoofOrderPh);// Phone spoof order and windows spoof order
             else
                 recipes.sort((a, b) => a.spoofOrder - b.spoofOrder);
             const tab = createElement('recipe-selection-tab', {

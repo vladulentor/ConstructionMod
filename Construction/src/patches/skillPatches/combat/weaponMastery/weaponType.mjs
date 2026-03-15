@@ -15,14 +15,18 @@ class WeaponMasteryLevel extends RealmedObject {
 
 }
 
-const xpthresholds = [100, 250, 500, 1000, 2000];
+const xpthresholds = [0, 10, 20, 40, 60, 100];
 export class WeaponMastery extends RealmedObject {
     constructor(namespace, data, game) {
 
         super(namespace, data, game);
         this.name = data.name;//getRielkLangString(`WEAPON_MASTERIES_${this._localID}`);
         this._media = data.media;
-        this.fixture = game.construction.fixtures.getObjectByID("rielkConstruction:Training_Dummy");
+        this.fixture = Array.isArray(data.fixture)
+            ? data.fixture
+            : [data.fixture];
+        for(let i=0; i< this.fixture.length; i++)
+            this.fixture[i] = game.construction.fixtures.getObjectByID(this.fixture[i]);
         this.allWeapons = [];
         this.levels = data.levels.map(
             (lvl, i) => new WeaponMasteryLevel(namespace, lvl, game, this._localID, i + 1)
@@ -32,7 +36,7 @@ export class WeaponMastery extends RealmedObject {
         return this.getMediaURL(this._media);
     }
     get xp() {
-    return   this.allWeapons.reduce((acc, weapon) => acc + (weapon._weaponXP || 0), 0);
+        return this.allWeapons.reduce((acc, weapon) => acc + (weapon._weaponXP || 0), 0);
     }
 
     xpToLvl(xp) {
@@ -47,6 +51,24 @@ export class WeaponMastery extends RealmedObject {
             if (this._xp >= xpthresholds[i]) return i;
         }
         return 0;
+    }
+    get levelCap() {
+        return Math.min(...this.fixture.map(f => f.currentTier));
+    }
+    get xpPercentCap() {
+        return xpthresholds[this.levelCap];
+    }
+    get currentXP() {
+        return this.allWeapons.reduce((tot, n) => tot + n.weaponXPCapped, 0);
+    }
+    get maxXP() {
+        return this.allWeapons.reduce((tot, n) => tot + n.weaponXPCap, 0);
+    }
+    get xpPercent() {
+        return Math.min(100, this.currentXP / this.maxXP * 100);
+    }
+    get cappedxpPercent() {
+        return Math.min(this.xpPercent, this.xpPercentCap);
     }
     levelUp() {
         //no idea yet

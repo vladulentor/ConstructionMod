@@ -193,7 +193,7 @@ haves-box.icon-box-small>h5 {
   align-items: center;
   cursor: pointer;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   perspective: 400px;
 }
 
@@ -245,7 +245,7 @@ haves-box.icon-box-small>h5 {
   left: 0;
   right: 0;
   transition: top 0.5s ease-out, transform 0.5s ease-out;
-  z-index: 0;
+  z-index: 2;
 }
 
 .weaponMasteryContainer {
@@ -282,9 +282,15 @@ body.darkMode .border-item {
   height: auto;
   opacity: 0.08;
   pointer-events: none;
+      filter: invert(100%);
   z-index: 0;
 }
-
+body.darkMode .weaponMasteryBgIcon {
+      filter: invert(0%);
+}
+body.darkMode.superDark .weaponMasteryBgIcon {
+  opacity: 0.2;
+}
 .weaponMasteryTop {
     position: relative;
   z-index: 3;
@@ -336,54 +342,55 @@ body.darkMode .border-item {
 
 .mastery-weapon-xp-bar {
   position: relative;
-  background-color: #333;
   height: 8px;
   border-radius: 4px;
   overflow: visible;
 }
+.mastery-weapon-xp-fill,
+.mastery-weapon-xp-overfill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+}
+
+.mastery-weapon-xp-overfill {
+  background-color: #ffc881;
+  z-index: 1; 
+}
 
 .mastery-weapon-xp-fill {
-  height: 100%;
-  background-color: #28a745;
-  border-radius: 4px 0 0 4px;
-  width: 0%;
+  background-color: #fca32f;
+  z-index: 2; 
 }
 
 .xp-marker {
-  position: absolute;
-  top: -4px;
-  height: 16px;
-  width: 3px;
-  background-color: #fff;
-  transform: translateX(-50%);
+    position: absolute;
+    top: -6px;
+    height: 20px;
+    width: 3px;
+    background-color: #9b9b9b; 
+    transform: translateX(-50%);
 }
 
 .xp-label {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 10px;
-  color: #fff;
-  white-space: nowrap;
-  margin-bottom: 2px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #9b9b9b; 
+    white-space: nowrap;
+    margin-bottom: 8px;
 }
 
-.xp-end-label {
-  position: absolute;
-  top: -4px;
-  right: 0;
-  height: 16px;
+/* Dark mode */
+body.darkMode .xp-marker {
+    background-color: #fff; /* white in dark mode */
 }
 
-.xp-end-label .xp-label {
-  position: absolute;
-  bottom: 100%;
-  right: 0;
-  font-size: 10px;
-  color: #fff;
-  white-space: nowrap;
-  margin-bottom: 2px;
+body.darkMode .xp-label {
+    color: #fff; /* white in dark mode */
 }
 
 @keyframes shake {

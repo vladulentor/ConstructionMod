@@ -2,10 +2,14 @@ const { loadModule } = mod.getContext(import.meta);
 
 
 
+
 const { tierArray } = await loadModule('src/patches/skillPatches/atlasofdiscovery/archaeology/tierarray.mjs');
 
 const { addRuneEssence } = await loadModule("src/patches/skillPatches/astrology/addRuneEssence.mjs");
 const { addConstellationLevels } = await loadModule("src/patches/skillPatches/astrology/addConstellationLevels.mjs");
+
+const { addObstacle } = await loadModule('src/patches/skillPatches/agility/removeAndAddObstacles.mjs');
+const { refreshAgi } = await loadModule('src/patches/skillPatches/agility/refreshAgi.mjs');
 
 
 const { addSpecialAttack } = await loadModule('src/patches/skillPatches/combat/addSpecialAttack.mjs');
@@ -66,7 +70,9 @@ export const EffectRegistry = {
   addRuneEssence,
   addConstellationLevels,
   addBonusToPool,
+  refreshAgi,
   buffSlayerItems,
+  addObstacle,
   checkForInitialMill,
   addEnemies,
   refreshTrader,

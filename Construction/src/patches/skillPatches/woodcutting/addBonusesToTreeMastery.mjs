@@ -32,9 +32,8 @@ export function addBonusesToTreeMastery() {
         Guard5 = 1;
     }
     text.sort((a, b) => a.level - b.level);
-    if (game.construction.notifs) // Quick way to tell we're out of loading.
-        game.woodcutting.computeProvidedStats(true); // I don't know why, but the interval upgrade needs recomputing of combat stats... if we're NOT in the loading stage, so we do it.
-    else
-        game.woodcutting.computeProvidedStats(false);    //recomputing stats at this point, when loading, is inefficient, but it's also basically needed to make this work
+     // Quick way to tell we're out of loading.
+        game.woodcutting.computeProvidedStats(game.construction.notifs); // I don't know why, but the interval upgrade needs recomputing of combat stats... if we're NOT in the loading stage, so we do it.
+        //recomputing stats at this point, when loading, is inefficient, but it's also basically needed to make this work
 
 }

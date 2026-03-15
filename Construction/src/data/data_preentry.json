@@ -70,7 +70,7 @@
           }
         ]
       },
-            {
+      {
         "id": "melvorD:skillItemDoublingChance",
         "allowedScopes": [
           {
@@ -84,10 +84,19 @@
                 "lang": "MODIFIER_DATA_skillItemDoublingChanceSubcategory"
               }
             ]
+          },
+           {
+            "scopes": {
+            },
+            "descriptions": [
+              {
+                "text": "${value}% ${skillName} Interval for ${subcategoryName}",
+                "lang": "MODIFIER_DATA_skillItemDoublingChanceGlobal"
+              }
+            ]
           }
         ]
       }
-    
     ]
   }
 }

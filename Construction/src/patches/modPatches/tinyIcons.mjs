@@ -16,8 +16,9 @@ export function tinyIconsCompatibility(ctx) {
         ['rune_essence', game.items.getObjectByID('melvorD:Rune_Essence').media],
         ['convergence', ctx.getResourceUrl('assets/others/convergence.webp')],
         ['mark', 'assets/media/skills/summoning/mark_4_256.png'],
-        ['deserthat', game.items.getObjectByID('melvorF:Desert_Hat').media]
-
+        ['deserthat', game.items.getObjectByID('melvorF:Desert_Hat').media],
+        ['jgym', ctx.getResourceUrl('assets/fixtures/jungle_gym.webp')],
+        ['stamina', 'assets/media/main/stamina.png']
     ]
     ));
     const constrSubcategories = new Map([
@@ -37,6 +38,8 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:skillEfficiencyCost', 'efficiency');
     icons.addModifier('rielkConstruction:bypassEfficiencyChance', 'efficiency');
     icons.addModifier('rielkConstruction:skillEfficiencyChancePerHamrielStar', 'efficiency');
+    icons.addModifier('rielkConstruction:xpPer5Fixture', 'xp');
+
 
 
     icons.addModifier('rielkConstruction:constructionActionsToUpgrade', 'cabin');
@@ -96,14 +99,16 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:bypassNonCombatSkillLevelCapAR', 'xp');
     icons.addModifier('rielkConstruction:bypassNonCombatSkillLevelAR', 'xp');
 
-    
+
     icons.addModifier('rielkConstruction:allCombatSkillsFlatHiddenLevel', 'combat');
 
 
     icons.addModifier('rielkConstruction:ComboRunesonElemRunes', 'rune_essence');
     icons.addModifier('rielkConstruction:runePreservationCap', 'preservation');
 
+
     icons.addModifier('rielkConstruction:nullifyPrayerPointsUnder', 'nulled');
+
 
     icons.addModifier('rielkConstruction:TabletEffectBuffBasedOnMarkLevel', 'mark');
     icons.addModifier('rielkConstruction:TabletAmountBuffBasedOnMarkLevel', 'mark');
@@ -121,6 +126,7 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:spoof_AddBonusToMiningMasteryPool1', 'mastery');
     icons.addModifier('rielkConstruction:spoof_AddBonusToMiningMasteryPool2', 'mastery');
 
+
     icons.addModifier('rielkConstruction:spoof_AddSlayerEnemies1', 'slayer');
     icons.addModifier('rielkConstruction:spoof_AddSlayerEnemies2', 'slayer');
     icons.addModifier('rielkConstruction:spoof_AddSlayerEnemies3', 'slayer');
@@ -129,10 +135,16 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:spoof_upgradeSlayerShtuff', 'deserthat');
     icons.addModifier('rielkConstruction:slayerCostReduction', 'slayer_coins');
 
-    
+
     icons.addModifier('rielkConstruction:doublepetsmillion', 'loot');
 
 
+    icons.addModifier('rielkConstruction:spoof_AddAgiObstacle', 'jgym');
+    icons.addModifier('rielkConstruction:hpPerAgiLevels', 'stamina', 'hitpoints');
+    icons.addModifier('rielkConstruction:IntPerAgiLevels', 'stamina', 'interval');
+    icons.addModifier('rielkConstruction:CombIntPerAgiLevels', 'stamina', 'ti_attack_interval');
+    icons.addModifier('rielkConstruction:fuckYourGold', 'currency');
+    icons.addModifier('rielkConstruction:spoof_Damocles', 'mark_of_death');
 
 
 

@@ -1,27 +1,32 @@
-body.darkMode .bg-rielk-construction,.bg-rielk-construction {
-    background-color: #e7874f!important
+body.darkMode .bg-rielk-construction,
+.bg-rielk-construction {
+  background-color: #e7874f !important
 }
 
 .bg-construction-50 {
-    background-color: #e7874f3d!important
+  background-color: #e7874f3d !important
 }
 
 .border-rielk-construction {
-    border-color: #e7874f!important;
+  border-color: #e7874f !important;
 }
+
 .border-rielk-nonshiny {
-    border-color: #c8c6c3!important;
+  border-color: #c8c6c3 !important;
 }
 
 .border-rielk-shiny {
-    border-color: #fca32f!important;
+  border-color: #fca32f !important;
 }
-.orange-heart{
-filter: hue-rotate(40deg) brightness(1.45) saturate(3) contrast(3);
+
+.orange-heart {
+  filter: hue-rotate(40deg) brightness(1.45) saturate(3) contrast(3);
 }
+
 .img-gray {
   filter: grayscale(1) brightness(0.9);
 }
+
 .img-tint-blue {
   filter: grayscale(0.4) brightness(1.05) sepia(0.4) hue-rotate(210deg) saturate(1.5);
 }
@@ -31,20 +36,20 @@ filter: hue-rotate(40deg) brightness(1.45) saturate(3) contrast(3);
 }
 
 .convergence-group {
-  position:relative;
+  position: relative;
   display: flex;
-  flex-wrap: nowrap;   
+  flex-wrap: nowrap;
   align-items: center;
-  flex-shrink: 0;     
+  flex-shrink: 0;
 }
-body.darkMode.superDark .bg-rielk-construction
-{
-    background-color: #000!important
+
+body.darkMode.superDark .bg-rielk-construction {
+  background-color: #000 !important
 }
 
 .gold-marks {
   position: relative;
-    filter: hue-rotate(212deg) saturate(1.5);
+  filter: hue-rotate(212deg) saturate(1.5);
 }
 
 .gold-marks::after {
@@ -53,37 +58,44 @@ body.darkMode.superDark .bg-rielk-construction
   inset: 0;
   background: orange;
   mix-blend-mode: color;
-  pointer-events: none; /* keeps clicks through it */
+  pointer-events: none;
+  /* keeps clicks through it */
 }
+
 .modifier-box.locked {
   opacity: 0.85;
 }
+
 .btn-construction {
-	color: #fff;
-	background-color: #fca32f;
-	border-color: #fca32f;
+  color: #fff;
+  background-color: #fca32f;
+  border-color: #fca32f;
 }
+
 .btn-construction:hover {
-	color: #fff;
-	background-color: #d88b27;
-	border-color: #c07616;
+  color: #fff;
+  background-color: #d88b27;
+  border-color: #c07616;
 }
+
 .btn-construction:focus,
 .btn-construction.focus {
-	color: #fff;
-	background-color: #d88b27;
-	border-color: #c07616;
-	box-shadow: 0 0 0 0.2rem rgba(220, 167, 107, 0.5);
+  color: #fff;
+  background-color: #d88b27;
+  border-color: #c07616;
+  box-shadow: 0 0 0 0.2rem rgba(220, 167, 107, 0.5);
 }
 
 /* why is it all !important and so specific i hate it i hate it i hate it I HATE IT */
 body.darkMode .text-success.fuck-you {
   color: #fca32f !important;
 }
-.bg-construction-success{
-    background-color: #fca32f !important;
+
+.bg-construction-success {
+  background-color: #fca32f !important;
 
 }
+
 body.darkMode .bg-success.fuck-you {
   background-color: #fca32f !important;
 }
@@ -93,75 +105,305 @@ body.darkMode .bg-success.fuck-you {
 body.darkMode .text-danger.fuck-you {
   color: #fca32f !important;
 }
+
 .mastery.filled1 {
   background-color: #fca32f;
-    height: 4px;               
+  height: 4px;
   transition: width 0.3s ease;
   border-radius: 2px;
 }
 
 .mastery.filled2 {
   background-color: #ffca7b;
-    height: 4px;               
+  height: 4px;
   transition: width 0.3s ease;
   border-radius: 2px;
 }
 
 .construction-bar {
-      background-color: #fca32f!important;       /* text color */
+  background-color: #fca32f !important;
+  /* text color */
 }
 
 .rune-shield {
   color: #0057d1 !important
 }
+
 .construction-success {
-      color: #fca32f !important;       /* text color */
+  color: #fca32f !important;
+  /* text color */
 }
+
 .construction-victory {
-      color: #fca32f!important;       /* I like both names for it */
-    font-weight: bold;   
+  color: #fca32f !important;
+  font-weight: bold;
 }
+
 .image-wrapper {
-    position: relative;
-    display: inline-block;
-    overflow: visible; 
+  position: relative;
+  display: inline-block;
+  overflow: visible;
 }
+
 .border-item-danger {
   border: 1px solid #c09a49;
 }
-.border-item-green{
-    border: 1px solid #49c063;
+
+.border-item-green {
+  border: 1px solid #49c063;
 }
 
 .mastery.empty {
-  background-color: #3e4856; 
-  height: 4px;              
+  background-color: #3e4856;
+  height: 4px;
   border-radius: 2px;
-      flex: none;      
-    width: 100%; 
-} /* */
+  flex: none;
+  width: 100%;
+}
+
 
 my-quantity-icons,
 my-current-quantity-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+
 remaining-box>h5,
 remaining-haves-box>h5 {
-    font-size: 0.875rem;
+  font-size: 0.875rem;
 }
 
 requires-box.icon-box-small>h5,
 haves-box.icon-box-small>h5 {
-    font-size: 0.7rem;
+  font-size: 0.7rem;
 }
 
 .progress-bar.efficiency-flash {
   background-color: #fca32f !important;
 }
 
-@keyframes shake { 0%,100%{transform:translateX(0);} 20%,60%{transform:translateX(-5px);} 40%,80%{transform:translateX(5px);} }
-.shake { animation: shake 0.6s; }
+.weaponMasteryStepsButton {
+  min-height: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  perspective: 400px;
+}
+
+.weaponMasteryStepsButton::before {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  font-size: 24px;
+  color: white;
+  transition: transform 0.35s ease;
+  margin-left: 0.5rem;
+}
+
+.weaponMasteryStepsButton.open::before {
+  transform: rotateX(180deg);
+}
+
+/* Modifiers panel */
+.weaponMasteryModifiers {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out 0.02s;
+  z-index: 1;
+}
+
+.weaponMasteryModifiers.open {
+  max-height: 600px;
+  opacity: 1;
+  padding-bottom: 32px;
+  box-sizing: border-box;
+}
+
+
+.weaponMasteryStepsContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.weaponMasteryCap {
+  height: 32px;
+  position: absolute;
+  top: 92%;
+  transform: translateY(-50%);
+
+  left: 0;
+  right: 0;
+  transition: top 0.5s ease-out, transform 0.5s ease-out;
+  z-index: 0;
+}
+
+.weaponMasteryContainer {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+body.darkMode .border-item {
+  border-color: #6e6e6e !important;
+  border-width: 3px !important;
+  border-style: solid !important;
+}
+
+#outercont {
+  position: relative;
+}
+
+#bank-item-box {
+  min-height: 100vh;
+  height: auto !important;
+}
+
+#page-container {
+  min-height: 100vh;
+  height: auto !important;
+}
+
+.weaponMasteryBgIcon {
+  position: absolute;
+  top: 20px;
+  left: 5%;
+  width: 110%;
+  height: auto;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.weaponMasteryTop {
+    position: relative;
+  z-index: 3;
+}
+
+.stock-item{
+  color: #2dd432 !important;
+    background-color: #2dd432 !important;
+
+}
+
+.unusual-item{
+  color: #2196F3 !important;
+    background-color: #2196F3 !important;
+
+}
+
+.distinct-item{
+  color: #E91E63 !important;
+  background-color: #E91E63 !important;
+}
+
+
+.singular-weapon-xp-container {
+  position: relative;
+  height: 12px;
+  margin: 10px 0;
+}
+
+.singular-weapon-xp-bar {
+  position: relative;
+
+  border-radius: 4px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.singular-weapon-xp-fill {
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+  width: 0%;
+}
+
+.mastery-weapon-xp-container {
+  position: relative;
+  height: 12px;
+  margin: 10px 0;
+}
+
+.mastery-weapon-xp-bar {
+  position: relative;
+  background-color: #333;
+  height: 8px;
+  border-radius: 4px;
+  overflow: visible;
+}
+
+.mastery-weapon-xp-fill {
+  height: 100%;
+  background-color: #28a745;
+  border-radius: 4px 0 0 4px;
+  width: 0%;
+}
+
+.xp-marker {
+  position: absolute;
+  top: -4px;
+  height: 16px;
+  width: 3px;
+  background-color: #fff;
+  transform: translateX(-50%);
+}
+
+.xp-label {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  color: #fff;
+  white-space: nowrap;
+  margin-bottom: 2px;
+}
+
+.xp-end-label {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  height: 16px;
+}
+
+.xp-end-label .xp-label {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  font-size: 10px;
+  color: #fff;
+  white-space: nowrap;
+  margin-bottom: 2px;
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  20%,
+  60% {
+    transform: translateX(-5px);
+  }
+
+  40%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+.shake {
+  animation: shake 0.6s;
+}

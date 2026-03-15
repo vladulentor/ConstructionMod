@@ -5,7 +5,7 @@ const { patchTranslations } = await loadModule('src/language/translationManager.
 const { patchGameEventSystem } = await loadModule('src/construction/gameEvents.mjs');
 
 const { patchSkillsBeforeDataReg, patchSkillsAfterDataReg } = await loadModule('src/patches/skillPatches/skillPatchesCaller.mjs');
-const { patchMiscBeforeDataReg } = await loadModule('src/patches/miscPatches/miscPatchesCaller.mjs');
+const { patchMiscBeforeDataReg, patchMiscAfterDataReg } = await loadModule('src/patches/miscPatches/miscPatchesCaller.mjs');
 const { patchMods } = await loadModule('src/patches/modPatches/modPatchesCaller.mjs');
 const { patchAoDbeforedatareg, patchAoDafterdatareg } = await loadModule('src/patches/skillPatches/atlasofdiscovery/patchaod.mjs');
 
@@ -49,6 +49,7 @@ class Setup {
         await loadModule('src/interface/elements/constructionRoomPanelElement.mjs');
         await loadModule('src/interface/elements/constructionUpgradesPanelElement.mjs');
         await loadModule('src/interface/elements/rielkLangStringElement.mjs');
+        await loadModule('src/interface/elements/constructionWeaponMastery.mjs');
         await loadModule('src/patches/skillPatches/astrology/starConvergenceIcons.mjs');
 
     }
@@ -66,6 +67,7 @@ class Setup {
     async applyOtherPatches() {
         patchSkillsAfterDataReg(this.ctx);
         if (this.aod) patchAoDafterdatareg(this.ctx);
+        patchMiscAfterDataReg(this.ctx);
     }
     async loadData() {
         await this.ctx.gameData.addPackage('src/data/data_preentry.json');

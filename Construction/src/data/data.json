@@ -1348,12 +1348,12 @@
     ],
     "attacks": [
       {
-        "id": "Brute_Strength",
+        "id": "Brutal_Strike",
         "defaultChance": 100,
         "damage": [
           {
             "damageType": "Normal",
-            "amplitude": 250
+            "amplitude": 200
           }
         ],
         "prehitEffects": [],
@@ -1362,11 +1362,11 @@
         "attackCount": 1,
         "attackInterval": 50,
         "lifesteal": 0,
-        "name": "Brute Strength",
-        "description": "Attack with greatly increased potency."
+        "name": "Brutal Strike",
+        "description": "MELEE_WEAPON"
       },
       {
-        "id": "Sharpshot",
+        "id": "Twin_Shot",
         "defaultChance": 100,
         "damage": [
           {
@@ -1380,8 +1380,8 @@
         "attackCount": 2,
         "attackInterval": 200,
         "lifesteal": 0,
-        "name": "Sharp Shot",
-        "description": "Attack twice in with reduced potency. This attack never misses."
+        "name": "Twin Shot",
+        "description": "RANGED_WEAPON"
       },
       {
         "id": "Mana_Surge",
@@ -1488,10 +1488,12 @@
           ]
         },
         "cost": {
-          "items": [{
-            "id":"rielkConstruction:Elder_Dhide_Leather_Slivers",
-            "quantity":1
-          }],
+          "items": [
+            {
+              "id": "rielkConstruction:Elder_Dhide_Leather_Slivers",
+              "quantity": 1
+            }
+          ],
           "currencies": [
             {
               "currency": "melvorD:GP",
@@ -3005,6 +3007,263 @@
     ],
     "skillData": [
       {
+        "skillID": "melvorD:Agility",
+        "data": {
+          "obstacles": [
+            {
+              "id": "WarmUpStretches",
+              "name": "Warm-Up Stretches",
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 10000
+                }
+              ],
+              "itemCosts": [],
+              "skillRequirements": [],
+              "currencyRewards": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 2
+                }
+              ],
+              "itemRewards": [],
+              "modifiers": {
+                "skillXP": [
+                  {
+                    "skillID": "melvorD:Agility",
+                    "value": 50
+                  }
+                ]
+              },
+              "media": "assets/others/1WS.webp",
+              "category": 0,
+              "baseInterval": 60000,
+              "baseExperience": 1
+            },
+            {
+              "id": "AltarHop",
+              "name": "Altar Hop",
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 150000
+                }
+              ],
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Limestone_Bricks",
+                  "quantity": 300
+                },
+                {
+                  "id": "melvorD:Air_Rune",
+                  "quantity": 300
+                }
+              ],
+              "skillRequirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Runecrafting",
+                  "level": 25
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 25
+                }
+              ],
+              "currencyRewards": [],
+              "itemRewards": [
+                {
+                  "id": "melvorD:Rune_Essence",
+                  "quantity": 10
+                }
+              ],
+              "modifiers": {
+                "flatAdditionalPrimaryProductQuantity": [
+                  {
+                    "skillID": "melvorD:Runecrafting",
+                    "subcategoryID": "melvorF:Runes",
+                    "value": 1
+                  }
+                ]
+              },
+              "media": "assets/others/3AH.webp",
+              "category": 2,
+              "baseInterval": 5500,
+              "baseExperience": 38
+            },
+            {
+              "id": "WatchtowerClimb",
+              "name": "Watchtower Climb",
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 500000
+                }
+              ],
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Granite_Bricks",
+                  "quantity": 1000
+                },
+                {
+                  "id": "rielkConstruction:Mahogany_Beams",
+                  "quantity": 1000
+                },
+                {
+                  "id": "rielkConstruction:Black_Dhide_Leather_Slivers",
+                  "quantity": 1000
+                }
+              ],
+              "skillRequirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Smithing",
+                  "level": 40
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Fletching",
+                  "level": 40
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "melvorD:Crafting",
+                  "level": 40
+                },
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 40
+                }
+              ],
+              "currencyRewards": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 145
+                }
+              ],
+              "itemRewards": [],
+              "modifiers": {
+                "skillPreservationChance": [
+                  {
+                    "skillID": "melvorD:Smithing",
+                    "value": 5
+                  },
+                  {
+                    "skillID": "melvorD:Fletching",
+                    "value": 5
+                  },
+                  {
+                    "skillID": "melvorD:Crafting",
+                    "value": 5
+                  },
+                  {
+                    "skillID": "rielkConstruction:Construction",
+                    "value": 5
+                  }
+                ],
+                "skillItemDoublingChance": -10,
+                "thievingStealth": -35
+              },
+              "media": "assets/others/5WC.webp",
+              "category": 4,
+              "baseInterval": 10500,
+              "baseExperience": 60
+            },
+            {
+              "id": "MidasTrap",
+              "name": "Midas Trap",
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 2500000
+                }
+              ],
+              "itemCosts": [],
+              "skillRequirements": [],
+              "itemRewards": [],
+              "currencyRewards": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 7777
+                }
+              ],
+              "modifiers": {
+                "rielkConstruction:fuckYourGold": [
+                  {
+                    "currencyID": "melvorD:GP",
+                    "value": 100
+                  }
+                ],
+                "rielkConstruction:spoof_Damocles": 1
+              },
+              "media": "assets/others/7MT.webp",
+              "category": 6,
+              "baseInterval": 7777,
+              "baseExperience": 77
+            },
+            {
+              "id": "VictoryHouseLap",
+              "name": "Victory House Lap",
+              "skillRequirements": [
+                {
+                  "type": "SkillLevel",
+                  "skillID": "rielkConstruction:Construction",
+                  "level": 90
+                }
+              ],
+              "currencyCosts": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 10000000
+                }
+              ],
+              "itemCosts": [
+                {
+                  "id": "rielkConstruction:Redwood_Planks",
+                  "quantity": 2500
+                },
+                {
+                  "id": "rielkConstruction:Dragonite_Nails",
+                  "quantity": 2500
+                },
+                {
+                  "id": "rielkConstruction:Elder_Dhide_Leather_Slivers",
+                  "quantity": 2500
+                },
+                {
+                  "id": "rielkConstruction:Magic_Bricks",
+                  "quantity": 2500
+                }
+              ],
+              "itemRewards": [],
+              "currencyRewards": [
+                {
+                  "id": "melvorD:GP",
+                  "quantity": 7500
+                }
+              ],
+              "modifiers": {
+                "masteryPoolCap": 10,
+                "rielkConstruction:xpPer5Fixture": 1,
+                "rielkConstruction:skillEfficiencyChance": [
+                  {
+                    "value": 5,
+                    "skillID": "rielkConstruction:Construction"
+                  }
+                ]
+              },
+              "media": "assets/others/9VHL.webp",
+              "category": 8,
+              "baseInterval": 15000,
+              "baseExperience": 263
+            }
+          ]
+        }
+      },
+      {
         "skillID": "melvorD:Thieving",
         "data": {
           "npcs": [
@@ -3209,8 +3468,8 @@
           "synergies": [
             {
               "summonIDs": [
-                "rielkConstruction:Bee",
-                "melvorF:Monkey"
+                "melvorF:Monkey",
+                "rielkConstruction:Bee"
               ],
               "modifiers": {
                 "skillItemDoublingChance": [
@@ -3726,6 +3985,443 @@
             {
               "id": "Bricks",
               "name": "Bricks"
+            }
+          ],
+          "weaponMasteries": [
+            {
+              "id": "Finesse",
+              "name": "Finesse",
+              "media": "assets/others/finesse.webp",
+              "levels": [
+                {
+                  "name": "Finesse1",
+                  "id": "Finesse1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Slashing",
+              "name": "Slashing",
+              "fixture": "rielkConstruction:Training_Dummy",
+              "media": "assets/others/slashing.webp",
+              "levels": [
+                {
+                  "name": "Slashing1",
+                  "id": "Slashing1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Slashing2",
+                  "id": "Slashing2",
+                  "level": 2,
+                  "modifiers": {
+                    "skillInterval": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Slashing3",
+                  "id": "Slashing3",
+                  "level": 3,
+                  "modifiers": {
+                    "skillXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Slashing4",
+                  "id": "Slashing4",
+                  "level": 4,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "Slashing5",
+                  "id": "Slashing5",
+                  "level": 5,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Great",
+              "name": "Great",
+              "fixture": "rielkConstruction:Training_Dummy",
+              "media": "assets/others/great.webp",
+              "levels": [
+                {
+                  "name": "Finesse1",
+                  "id": "Finesse1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Cleave",
+              "name": "Cleave",
+              "fixture": "rielkConstruction:Training_Dummy",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Finesse1",
+                  "id": "Finesse1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Thrown",
+              "name": "Thrown",
+              "fixture": "rielkConstruction:Archery_Range",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Thrown1",
+                  "id": "Thrown1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Swift",
+              "name": "Swift",
+              "fixture": "rielkConstruction:Archery_Range",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Swift1",
+                  "id": "Swift1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Precise",
+              "name": "Precise",
+              "fixture": "rielkConstruction:Archery_Range",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Precise1",
+                  "id": "Precise1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Steady",
+              "name": "Steady",
+              "fixture": "rielkConstruction:Archery_Range",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Steady1",
+                  "id": "Steady1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Earth",
+              "name": "Earth",
+              "fixture": "rielkConstruction:Spell_Library",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Earth1",
+                  "id": "Earth1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Wind",
+              "name": "Wind",
+              "fixture": "rielkConstruction:Spell_Library",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Wind1",
+                  "id": "Wind1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Water",
+              "name": "Water",
+              "fixture": "rielkConstruction:Spell_Library",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Water1",
+                  "id": "Water1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Fire",
+              "name": "Fire",
+              "fixture": "rielkConstruction:Spell_Library",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Fire1",
+                  "id": "Fire1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Arcane",
+              "name": "Arcane",
+              "fixture": "rielkConstruction:Spell_Library",
+              "media": "assets/others/cleave.webp",
+              "levels": [
+                {
+                  "name": "Arcane1",
+                  "id": "Arcane1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Exotic",
+              "name": "Exotic",
+              "fixture": "rielkConstruction:Training_Dummy",
+              "media": "assets/others/exotic.webp",
+              "levels": [
+                {
+                  "name": "Finesse1",
+                  "id": "Finesse1",
+                  "level": 1,
+                  "modifiers": {
+                    "masteryXP": [
+                      {
+                        "value": 5,
+                        "skillID": "melvorD:Herblore"
+                      }
+                    ],
+                    "potionChargePreservationChance": [
+                      {
+                        "value": 10
+                      }
+                    ]
+                  }
+                }
+              ]
             }
           ],
           "tierMasteries": [
@@ -6626,17 +7322,21 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": [
+                "addObstacle",
+                "refreshAgi"
+              ],
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
               "modifiers": {
-                "skillXP": [
+                "rielkConstruction:hpPerAgiLevels": 3,
+                "rielkConstruction:spoof_AddAgiObstacle": [
                   {
-                    "value": 2,
-                    "skillID": "melvorD:Agility"
-                  }
-                ],
-                "masteryXP": [
-                  {
-                    "value": 1,
-                    "skillID": "melvorD:Agility"
+                    "skillID": "melvorD:Agility",
+                    "value": 1
                   }
                 ]
               }
@@ -6670,17 +7370,24 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "addObstacle",
               "modifiers": {
-                "agilityObstacleCost": [
+                "skillXP": [
                   {
-                    "realmID": "melvorD:Melvor",
-                    "value": -4
+                    "value": 3,
+                    "skillID": "melvorD:Agility"
                   }
                 ],
                 "masteryXP": [
                   {
                     "value": 1,
                     "skillID": "melvorD:Agility"
+                  }
+                ],
+                "rielkConstruction:spoof_AddAgiObstacle": [
+                  {
+                    "skillID": "melvorD:Agility",
+                    "value": 3
                   }
                 ]
               }
@@ -6714,17 +7421,27 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": [
+                "addObstacle",
+                "refreshAgi"
+              ],
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
               "modifiers": {
+                "rielkConstruction:IntPerAgiLevels": -2,
                 "skillInterval": [
                   {
                     "value": -5,
                     "skillID": "melvorD:Agility"
                   }
                 ],
-                "masteryXP": [
+                "rielkConstruction:spoof_AddAgiObstacle": [
                   {
-                    "value": 2,
-                    "skillID": "melvorD:Agility"
+                    "skillID": "melvorD:Agility",
+                    "value": 5
                   }
                 ]
               }
@@ -6758,17 +7475,24 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "addObstacle",
               "modifiers": {
                 "agilityObstacleCost": [
                   {
                     "realmID": "melvorD:Melvor",
-                    "value": -6
+                    "value": -5
                   }
                 ],
-                "masteryXP": [
+                "agilityPillarCost": [
                   {
-                    "value": 2,
-                    "skillID": "melvorD:Agility"
+                    "realmID": "melvorD:Melvor",
+                    "value": -5
+                  }
+                ],
+                "rielkConstruction:spoof_AddAgiObstacle": [
+                  {
+                    "skillID": "melvorD:Agility",
+                    "value": 7
                   }
                 ]
               }
@@ -6802,17 +7526,27 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": [
+                "addObstacle",
+                "refreshAgi"
+              ],
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
               "modifiers": {
-                "flatSkillInterval": [
+                "rielkConstruction:CombIntPerAgiLevels": -50,
+                "skillInterval": [
                   {
-                    "value": -500,
+                    "value": -10,
                     "skillID": "melvorD:Agility"
                   }
                 ],
-                "masteryXP": [
+                "rielkConstruction:spoof_AddAgiObstacle": [
                   {
-                    "value": 2,
-                    "skillID": "melvorD:Agility"
+                    "skillID": "melvorD:Agility",
+                    "value": 9
                   }
                 ]
               }
@@ -8277,7 +9011,7 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "magicAccuracyRating": 5,
+                "flatMagicAttackBonus": 5,
                 "skillXP": [
                   {
                     "value": 7,
@@ -8780,6 +9514,23 @@
                   "quantity": 1000
                 }
               ],
+              "conditionalModifiers": [
+                {
+                  "condition": {
+                    "type": "WeaponType",
+                    "weaponType": "Slashing"
+                  },
+                  "modifiers": {
+                    "flatSkillInterval": [
+                      {
+                        "value": -2500,
+                        "skillID": "rielkConstruction:Construction"
+                      }
+                    ]
+                  },
+                  "descriptionLang": "RIELK_CONMOD_SLASHING1"
+                }
+              ],
               "currencyCosts": [],
               "modifiers": {
                 "rielkConstruction:skillEfficiencyChance": [
@@ -9039,23 +9790,14 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 1,
-                    "skillID": "melvorD:Attack"
-                  },
-                  {
-                    "value": 1,
-                    "skillID": "melvorD:Strength"
-                  }
-                ],
+                "meleeStrengthBonus": 1,
                 "skillXP": [
                   {
-                    "value": 1,
+                    "value": 2,
                     "skillID": "melvorD:Attack"
                   },
                   {
-                    "value": 1,
+                    "value": 2,
                     "skillID": "melvorD:Strength"
                   }
                 ]
@@ -9208,6 +9950,15 @@
                   "id": "melvorD:Elite_Amulet_of_Strength",
                   "quantity": 1
                 }
+              ],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
               ],
               "currencyCosts": [],
               "modifiers": {
@@ -10504,7 +11255,6 @@
                     "quantity": 3000
                   }
                 ]
-                
               },
               "rewards": {
                 "items": [
@@ -10572,7 +11322,6 @@
               "id": "ConstrNorm1",
               "category": "Normal",
               "goals": {
-              
                 "items": [
                   {
                     "id": "rielkConstruction:Teak_Planks",
@@ -10855,7 +11604,6 @@
                     "id": "rielkConstruction:Magic_Bricks",
                     "quantity": 300000
                   }
-                 
                 ]
               },
               "rewards": {
@@ -10864,7 +11612,6 @@
                     "id": "melvorD:Rune_Essence",
                     "quantity": 4206969
                   }
-                
                 ],
                 "skillXP": [],
                 "townshipResources": [],
@@ -10980,10 +11727,11 @@
                 ]
               },
               "rewards": {
-                "items": [{
-                  "id":"melvorF:Mastery_Magnet",
-                  "quantity":100000
-                }
+                "items": [
+                  {
+                    "id": "melvorF:Mastery_Magnet",
+                    "quantity": 100000
+                  }
                 ],
                 "skillXP": [],
                 "townshipResources": [],
@@ -11740,6 +12488,34 @@
         ]
       },
       {
+        "id": "spoof_AddMeleeSpecialAttack",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Allow Auroras Anytime.",
+                "lang": "MODIFIER_DATA_spoof_AddMeleeSpecialAttack"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddRangedSpecialAttack",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Allow Auroras Anytime.",
+                "lang": "MODIFIER_DATA_spoof_AddRangedSpecialAttack"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "addRuneShield",
         "allowedScopes": [
           {
@@ -11883,7 +12659,7 @@
           }
         ]
       },
-       {
+      {
         "id": "bypassNonCombatSkillLevelAR",
         "allowedScopes": [
           {
@@ -12241,6 +13017,118 @@
             ]
           }
         ]
+      },
+      {
+        "id": "spoof_AddAgiObstacle",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true
+            },
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "you wont guess what this one does",
+                "lang": "MODIFIER_DATA_spoof_AddAgiObstacle"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xpPer5Fixture",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "xp Per 5 fixture",
+                "lang": "MODIFIER_DATA_xpPer5Fixture"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hpPerAgiLevels",
+        "isCombat": true,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "hp Per Agi Levels",
+                "lang": "MODIFIER_DATA_hpPerAgiLevels"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IntPerAgiLevels",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "inverted": true,
+                "text": "int Per Agi Levels",
+                "lang": "MODIFIER_DATA_IntPerAgiLevels"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CombIntPerAgiLevels",
+        "modifyValue": "value/1000",
+        "inverted": true,
+        "isCombat": true,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "comb interv Per Agi Levels",
+                "lang": "MODIFIER_DATA_CombIntPerAgiLevels"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fuckYourGold",
+        "inverted": true,
+        "allowedScopes": [
+          {
+            "scopes": {
+              "currency": true
+            },
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "Lose all gold you'd gain",
+                "lang": "MODIFIER_DATA_fuckYourGold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_Damocles",
+        "inverted": true,
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "Over your HEAD",
+                "lang": "MODIFIER_DATA_spoof_Damocles"
+              }
+            ]
+          }
+        ]
       }
     ],
     "combatEffects": [
@@ -12274,6 +13162,350 @@
   },
   "modifications": {
     "skillData": [
+      {
+        "skillID": "melvorD:Agility",
+        "data": {
+          "obstacles": [
+            {
+              "id": "melvorF:PipeClimb",
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Iron_Bar"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Iron_Nails",
+                    "quantity": 1000
+                  }
+                ]
+              },
+              "modifiers": {}
+            },
+            {
+              "id": "melvorF:SteppingStones",
+              "skillRequirements": {
+                "add": [
+                  {
+                    "type": "SkillLevel",
+                    "skillID": "rielkConstruction:Construction",
+                    "level": 30
+                  }
+                ]
+              },
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Teak_Logs"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Teak_Beams",
+                    "quantity": 300
+                  }
+                ]
+              },
+              "modifiers": {
+                "add": {
+                  "rielkConstruction:skillEfficiencyChance": [
+                    {
+                      "skillID": "rielkConstruction:Construction",
+                      "value": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "melvorF:BurningCoals",
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Oak_Logs"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Normal_Planks",
+                    "quantity": 200
+                  }
+                ]
+              },
+              "modifiers": {
+                "add": {
+                  "rielkConstruction:constructionActionsToUpgrade": [
+                    {
+                      "skillID": "rielkConstruction:Construction",
+                      "value": 5
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "melvorF:RockClimb",
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Teak_Logs"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Teak_Beams",
+                    "quantity": 500
+                  }
+                ]
+              },
+              "modifiers": {
+                "add": {
+                  "rielkConstruction:skillEfficiencyChance": [
+                    {
+                      "skillID": "rielkConstruction:Construction",
+                      "value": -10
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "melvorF:CliffClimb",
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Mithril_Bar"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Mithril_Nails",
+                    "quantity": 2500
+                  },
+                  {
+                    "id": "rielkConstruction:Red_Dhide_Leather_Straps",
+                    "quantity": 500
+                  }
+                ]
+              },
+              "modifiers": {}
+            },
+            {
+              "id": "melvorF:RooftopRun",
+              "itemCosts": {
+                "add": [
+                  {
+                    "id": "rielkConstruction:Red_Dhide_Leather_Slivers",
+                    "quantity": 500
+                  }
+                ]
+              },
+              "modifiers": {}
+            },
+            {
+              "id": "melvorF:RaftDrifting",
+              "skillRequirements": {
+                "add": [
+                  {
+                    "type": "SkillLevel",
+                    "skillID": "rielkConstruction:Construction",
+                    "level": 60
+                  }
+                ]
+              },
+              "itemCosts": {
+                "add": [
+                  {
+                    "id": "rielkConstruction:Teak_Planks",
+                    "quantity": 1000
+                  },
+                  {
+                    "id": "rielkConstruction:Mithril_Nails",
+                    "quantity": 1000
+                  }
+                ]
+              },
+              "modifiers": {
+                "add": {
+                  "rielkConstruction:skillEfficiencyPotency": [
+                    {
+                      "skillID": "rielkConstruction:Construction",
+                      "value": 25
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "melvorF:ForestTrail",
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Maple_Logs"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Limestone_Bricks",
+                    "quantity": 1500
+                  }
+                ]
+              },
+              "modifiers": {
+                "add": {
+                  "rielkConstruction:skillEfficiencyPotency": [
+                    {
+                      "skillID": "rielkConstruction:Construction",
+                      "value": -15
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "melvorF:PipeCrawl",
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Adamantite_Bar"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Adamantite_Nails",
+                    "quantity": 4000
+                  }
+                ]
+              },
+              "modifiers": {}
+            },
+            {
+              "id": "melvorF:TreeHang",
+              "skillRequirements": {
+                "add": [
+                  {
+                    "type": "SkillLevel",
+                    "skillID": "rielkConstruction:Construction",
+                    "level": 80
+                  }
+                ]
+              }
+            },
+            {
+              "id": "melvorF:SwelteringPools",
+              "skillRequirements": {
+                "add": [
+                  {
+                    "type": "SkillLevel",
+                    "skillID": "rielkConstruction:Construction",
+                    "level": 75
+                  }
+                ]
+              },
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Adamantite_Bar"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Adamantite_Nails",
+                    "quantity": 2000
+                  }
+                ]
+              },
+              "modifiers": {
+                "add": {
+                  "rielkConstruction:constructionActionsToUpgrade": [
+                    {
+                      "skillID": "rielkConstruction:Construction",
+                      "value": 10
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "melvorF:LavaJump",
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Redwood_Logs"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Redwood_Planks",
+                    "quantity": 5000
+                  }
+                ]
+              },
+              "modifiers": {}
+            },
+            {
+              "id": "melvorF:IceJump",
+              "skillRequirements": {
+                "add": [
+                  {
+                    "type": "SkillLevel",
+                    "skillID": "rielkConstruction:Construction",
+                    "level": 60
+                  }
+                ]
+              },
+              "itemCosts": {
+                "add": [
+                  {
+                    "id": "rielkConstruction:Red_Dhide_Leather_Straps",
+                    "quantity": 2500
+                  }
+                ]
+              },
+              "modifiers": {}
+            },
+            {
+              "id": "melvorF:BoulderMove",
+              "skillRequirements": {
+                "add": [
+                  {
+                    "type": "SkillLevel",
+                    "skillID": "rielkConstruction:Construction",
+                    "level": 99
+                  }
+                ]
+              },
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Redwood_Logs",
+                  "melvorD:Dragonite_Bar"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Redwood_Planks",
+                    "quantity": 10000
+                  },
+                  {
+                    "id": "rielkConstruction:Dragonite_Nails",
+                    "quantity": 10000
+                  }
+                ]
+              },
+              "modifiers": {}
+            },
+            {
+              "id": "melvorF:Waterfall",
+              "itemCosts": {
+                "add": [
+                  {
+                    "id": "rielkConstruction:Magic_Bricks",
+                    "quantity": 3000
+                  }
+                ]
+              },
+              "modifiers": {}
+            }
+          ],
+          "pillars": [
+            {
+              "id": "melvorF:PillarofSkilling",
+              "modifiers": {
+                "add": {
+                  "rielkConstruction:skillEfficiencyChance": [
+                    {
+                      "skillID": "rielkConstruction:Construction",
+                      "value": 3
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
       {
         "skillID": "melvorD:Firemaking",
         "data": {

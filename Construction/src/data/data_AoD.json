@@ -2,7 +2,7 @@
   "$schema": "https://melvoridle.com/assets/schema/gameData.json",
   "namespace": "rielkConstruction",
   "data": {
-        "ancientRelicsDisplayOrder": [
+    "ancientRelicsDisplayOrder": [
       {
         "insertAt": "After",
         "afterID": "melvorD:Crafting",
@@ -62,7 +62,12 @@
         "skillID": "rielkConstruction:Construction",
         "number": 1,
         "modifiers": {
-          "rielkConstruction:bypassEfficiencyChance":[{"skillID":"rielkConstruction:Construction", "value":35}] 
+          "rielkConstruction:bypassEfficiencyChance": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "value": 35
+            }
+          ]
         }
       },
       {
@@ -100,7 +105,7 @@
         "number": 4,
         "modifiers": {
           "rielkConstruction:bypassNonCombatSkillLevelCapAR": 5,
-          "rielkConstruction:bypassNonCombatSkillLevelAR": 5
+          "nonCombatSkillXP": 15
         }
       },
       {
@@ -109,12 +114,12 @@
         "skillID": "rielkConstruction:Construction",
         "number": 5,
         "modifiers": {
-                "rielkConstruction:skillEfficiencyCost": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "value": -150
-                  }
-                ]
+          "rielkConstruction:skillEfficiencyCost": [
+            {
+              "skillID": "rielkConstruction:Construction",
+              "value": -150
+            }
+          ]
         }
       },
       {
@@ -162,7 +167,7 @@
                   "requirements": [],
                   "chance": {
                     "type": "Fixed",
-                    "chance":  0.0005
+                    "chance": 0.0005
                   }
                 },
                 {
@@ -170,7 +175,7 @@
                   "requirements": [],
                   "chance": {
                     "type": "Fixed",
-                    "chance":  0.0005
+                    "chance": 0.0005
                   }
                 },
                 {
@@ -363,6 +368,32 @@
       }
     ],
     "skillData": [
+      {
+        "skillID": "melvorD:Agility",
+        "data": {
+          "obstacles": [
+            {
+              "id": "melvorAoD:OceanDrifting",
+              "itemCosts": {
+                "remove": [
+                  "melvorD:Magic_Logs"
+                ],
+                "add": [
+                  {
+                    "id": "rielkConstruction:Mahogany_Planks",
+                    "quantity": 2500
+                  },
+                  {
+                    "id": "rielkConstruction:Redwood_Beams",
+                    "quantity": 2500
+                  }
+                ]
+              },
+              "modifiers": {}
+            }
+          ]
+        }
+      },
       {
         "skillID": "melvorD:Astrology",
         "data": {

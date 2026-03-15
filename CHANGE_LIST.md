@@ -165,6 +165,7 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 
 ## Agility
 ### Obstacles
+
 #### Tier 3
 - **'Pipe Climb'** has had its Iron Bar cost replaced with Nails.  
 - **'Stepping Stones'** now requires Construction level 30 and has had its Teak Logs cost replaced with [Teak Beams](#Fletching). It now also provides a `2%` efficiency chance bonus.  
@@ -174,6 +175,7 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 - **'Rock Climb'** has had its Teak Logs cost replaced with [Teak Beams](#Fletching) and now reduces Construction efficiency chance by `10%`.  
 - **'Cliff Climb'** has had its Mithril Bar cost replaced with Mithril Nails and Red Dhide Leather Straps.  
 - **'Rooftop Run'** now costs [Red Dragonhide Slivers](#Crafting).
+
 #### Tier 6
 - **'Raft Drifting'** now requires Construction level 60, costs Teak Planks and Mithril Nails, and increases Construction efficiency potency by `0.25`.  
 - **'Forest Trail'** has had its Maple Logs cost replaced with Limestone Bricks and reduces Construction efficiency by `-0.15` actions.  

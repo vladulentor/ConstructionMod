@@ -38,11 +38,7 @@ class ConstructionModifierDisplayElement extends HTMLElement {
             icon.setAttribute('src', construction.media);
 
         
-        this.level.append(...templateLangStringWithNodes('MENU_TEXT_UNLOCKED_AT', {
-            skillImage: icon,
-        }, {
-            level: `${recipe.level}`
-        }, false));
+        this.level.append(...templateLangStringWithNodes('MENU_TEXT_UNLOCKED_AT', {skillImage: icon}, {level: `${recipe.level}`}, false));
         if (this.recipe.shinyMods) {
             this.level.classList.remove('text-danger');
             this.level.classList.add('has-mods', 'fuck-you');
@@ -100,8 +96,7 @@ class ConstructionModifierDisplayElement extends HTMLElement {
             this.fixtureImage.classList.add('img-gray');
         else
             this.fixtureImage.classList.remove('img-gray');
-
-
+        
         const formatter = getElementDescriptionFormatter('div', this.recipe.isUnlocked ? 'mb-1' : 'mb-1 text-combat-smoke modifier-box locked');
         this.toggleRecipeSpecial();
         const descs = this.recipe.order?   getOrderedDescriptions(this.recipe.stats, this.recipe.order): StatObject.getDescriptions(this.recipe.stats);

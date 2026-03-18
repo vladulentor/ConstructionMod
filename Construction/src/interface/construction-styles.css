@@ -216,12 +216,13 @@ haves-box.icon-box-small>h5 {
 .weaponMasteryModifiers {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-out 0.02s;
+  width: 95%;  
+  align-items: stretch;
+  transition: max-height 0.3s ease-out 0s;
   z-index: 1;
 }
 
 .weaponMasteryModifiers.open {
-  max-height: 600px;
   opacity: 1;
   padding-bottom: 32px;
   box-sizing: border-box;
@@ -235,19 +236,31 @@ haves-box.icon-box-small>h5 {
   align-items: center;
 }
 
+.modifierHolder .fuck-you{
+color: #30c78d!important
+}
+.modifierHolder.locked .fuck-you{
+color: #e56767!important
+}
+ .modifierHolder .fuck-you.special{
+color: #fca32f!important
+}
+.modifierHolder.locked .fuck-you.special{
+color: #e5ae67!important
+}
+
 
 .weaponMasteryCap {
   height: 32px;
   position: absolute;
-  top: 92%;
-  transform: translateY(-50%);
-
   left: 0;
   right: 0;
-  transition: top 0.5s ease-out, transform 0.5s ease-out;
+  transition: top 0.3s ease-out, transform 0.3s ease-out;
   z-index: 2;
 }
-
+.weaponMasteryCap.no-transition {
+  transition: none !important;
+}
 .weaponMasteryContainer {
   position: relative;
   overflow: hidden;
@@ -381,7 +394,7 @@ body.darkMode.superDark .weaponMasteryBgIcon {
     transform: translateX(-50%);
     color: #9b9b9b; 
     white-space: nowrap;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 /* Dark mode */

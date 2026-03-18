@@ -28,18 +28,33 @@ export class WeaponMasteryUI {
         this.weaponRank = getElementFromFragment(this._content, 'weaponRank', 'span');
         this.weaponXPBar = getElementFromFragment(this._content, 'weaponXPBar', 'div');
         this.weaponXPFill = getElementFromFragment(this._content, 'weaponXpFill', 'div');
-
+        this.weaponModDisc = getElementFromFragment(this._content, 'unlockedWeaponMod', 'div');
+        this.weaponModText = getElementFromFragment(this._content, 'weaponModifierValue', 'div');
 
         this.typeProfBar = getElementFromFragment(this._content, 'weaponMasteryBar', 'div');
         this.typeProfFill = getElementFromFragment(this._content, 'weaponMasteryProgress', 'div');
         this.typeProfOvFill = getElementFromFragment(this._content, 'weaponMasteryOverfill', 'div');
-
+        this.typeLabels = [
+            getElementFromFragment(this._content, 'label-1', 'span'),
+            getElementFromFragment(this._content, 'label-2', 'span'),
+            getElementFromFragment(this._content, 'label-3', 'span'),
+            getElementFromFragment(this._content, 'label-4', 'span'),
+            getElementFromFragment(this._content, 'label-5', 'span'),
+        ];
+        this.typeMarkers = [
+            getElementFromFragment(this._content, 'marker-1', 'div'),
+            getElementFromFragment(this._content, 'marker-2', 'div'),
+            getElementFromFragment(this._content, 'marker-3', 'div'),
+            getElementFromFragment(this._content, 'marker-4', 'div'),
+            getElementFromFragment(this._content, 'marker-5', 'div'),
+        ];
 
         this.stepContainer = getElementFromFragment(this._content, 'weaponMasteryStepsContainer', 'div');
         this.cap = getElementFromFragment(this._content, 'weaponMasteryCap', 'div');
         this.spacer = getElementFromFragment(this._content, 'modifierSpacer', 'div');
         this.stepContainer.style.paddingTop = '0';
         this.stepsButton = getElementFromFragment(this._content, 'weaponMasteryStepsButton', 'div');
+
         this.modifierListContainer = getElementFromFragment(this._content, 'weaponMasteryModifiers', 'div');
         this.steps = [
             getElementFromFragment(this._content, 'modifierStep1', 'div'),
@@ -48,31 +63,35 @@ export class WeaponMasteryUI {
             getElementFromFragment(this._content, 'modifierStep4', 'div'),
             getElementFromFragment(this._content, 'modifierStep5', 'div'),
         ];
+
         this.stepsButton.onclick = () => this.toggleModifierList();
     }
 
     openModifierList() {
         this.modifierListContainer.classList.remove('collapsed');
         this.modifierListContainer.classList.add('open');
+        const contentHeight = this.modifierListContainer.scrollHeight;
+        this.modifierListContainer.style.maxHeight = contentHeight + "px";
         this.stepContainer.classList.add('expanded');
         this.stepsButton.classList.add('open');
         const rect = this.spacer.getBoundingClientRect();
         const parentRect = this.stepContainer.getBoundingClientRect();
-        this.cap.style.top = this.spacer.offsetTop + "px";
-        this.cap.style.transform = "none";
+        requestAnimationFrame(() => {
+            this.cap.style.top = this.spacer.offsetTop + "px";
+        });
     }
 
-    // Closes the modifier list
     closeModifierList() {
+        this.modifierListContainer.style.maxHeight = "0px";
         this.modifierListContainer.classList.remove('open');
         this.modifierListContainer.classList.add('collapsed');
-        this.stepContainer.classList.remove('expanded'); // <- new line for cap
-        this.stepsButton.classList.remove('open'); // reset arrow
-        this.cap.style.top = "92%";
-        this.cap.style.transform = "translateY(-50%)";
+        this.stepContainer.classList.remove('expanded');
+        this.stepsButton.classList.remove('open');
+        requestAnimationFrame(() => {
+            this.cap.style.top = this.stepsButton.offsetTop + "px";
+        });
     }
 
-    // Toggles it (bind this to click)
     toggleModifierList() {
         if (this.modifierListContainer.classList.contains('collapsed')) {
             this.openModifierList();
@@ -82,10 +101,10 @@ export class WeaponMasteryUI {
     }
     setWeapon(weapon) {
 
-        if (this.weapon === weapon) return;
-        this.weapon = weapon;
-        this.setWeaponSegment(weapon, this.type);
-
+        if (this.weapon !== weapon) {
+            this.weapon = weapon;
+            this.setWeaponSegment(weapon, this.type);
+        }
 
         let changedType = 0;
         if (this.type !== weapon.weaponType) {
@@ -94,14 +113,13 @@ export class WeaponMasteryUI {
             this.setType();
         }
 
-        this.show();
+        this.setXP();
     }
     setType() {
         this.text.innerHTML = this.type.name;
         this.bgIcon.src = this.type.media;
-
-        this.typeProfOvFill.style.width = this.type.xpPercent + "%";
-        this.typeProfFill.style.width = this.type.cappedxpPercent + "%";
+        this.weaponModText.innerHTML = '';
+        this.weaponModText.append(...this.type._uiWepMod.describeAsSpans())
 
         if (this.modifierListContainer.classList.contains('open'))
             this.closeModifierList()
@@ -109,7 +127,20 @@ export class WeaponMasteryUI {
 
     }
     render() {
-
+        this.setXP();
+    }
+    setXP() {
+        this.weaponXPFill.style.width = this.weapon.weaponXPPercentCapped + "%"
+        this.typeProfOvFill.style.width = this.type.uncappedxpPercent + "%";
+        const percentCapped = this.type.xpPercent;
+        this.typeProfFill.style.width = percentCapped + "%";
+        for (let i = 0; i < 5; i++) {
+            const fancy = this.type.level > i;
+            this.typeLabels[i].classList.toggle("text-combat-smoke", !fancy);
+            this.typeMarkers[i].classList.toggle("construction-bar", fancy);
+            this.typeLabels[i].classList.toggle("construction-victory", fancy);
+            this.steps[i].classList.toggle("locked", !fancy);
+        }
     }
     setWeaponSegment(weapon, type) {
         this.weaponPic.src = weapon.media;
@@ -119,17 +150,45 @@ export class WeaponMasteryUI {
         this.weaponRank.style.color = this.uniqclass.color;
         this.weaponXPBar.style.width = this.uniqclass.width;
         this.weaponXPFill.style.backgroundColor = this.uniqclass.color;
-        this.weaponXPFill.style.width = weapon.weaponXPPercentCapped + "%"
+    }
+
+    toggleWeaponMod(maxed) {
+        if (maxed) { showElement(this.weaponModDisc); this.capbonus = 100.1 }
+        else { hideElement(this.weaponModDisc); this.capbonus = 91.7; }
+        if (this.modifierListContainer.classList.contains('collapsed')) {
+            this.cap.classList.add('no-transition');
+            this.cap.style.top = this.stepsButton.offsetTop + "px";
+            requestAnimationFrame(() => {
+                this.cap.classList.remove('no-transition');
+            });
+        }
+    }
+    generateModifierElements(level) {
+        const descs = StatObject.getDescriptions(level.wepModifiers);
+
+        const isShiny = !!level.shiny; 
+
+        return descs.map((desc) => {
+            const cls = 'modifierHolder fuck-you text-center ' + (isShiny ? 'special' : '');
+            const span = createElement('span', {
+                className: `m-1 font-size-sm ${cls}`,
+                innerHTML: desc.text
+            });
+            span.style.display = 'block';
+            return span;
+        });
     }
     setMods() {
         for (let i = 0; i < this.steps.length; i++) {
-            const spans = this.type.levels[i].wepModifiers.describeAsSpans();
+            const spans = this.generateModifierElements(this.type.levels[i]);
             this.steps[i].innerHTML = '';
             this.steps[i].append(...spans);
         }
     }
     show() {
         showElement(this.container);
+        this.toggleWeaponMod(this.weapon.masteryMaxed);
+
     }
     hide() {
         hideElement(this.container);

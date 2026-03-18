@@ -1349,7 +1349,7 @@
     "attacks": [
       {
         "id": "Brutal_Strike",
-        "defaultChance": 100,
+        "defaultChance": 15,
         "damage": [
           {
             "damageType": "Normal",
@@ -3991,17 +3991,24 @@
             {
               "id": "Finesse",
               "name": "Finesse",
+              "fixture": "rielkConstruction:Training_Dummy",
               "media": "assets/others/weaponTypes/finesse.webp",
+              "isPerWepMod": true,
+              "wepModifiers": {
+                "modifiers": {
+                  "lifesteal": 50
+                }
+              },
               "levels": [
                 {
                   "name": "Finesse1",
                   "id": "Finesse1",
                   "level": 1,
                   "modifiers": {
-                    "masteryXP": [
+                    "skillInterval": [
                       {
-                        "value": 5,
-                        "skillID": "melvorD:Herblore"
+                        "value": -95,
+                        "skillID": "rielkConstruction:Construction"
                       }
                     ],
                     "potionChargePreservationChance": [
@@ -4090,95 +4097,94 @@
               "name": "Slashing",
               "fixture": "rielkConstruction:Training_Dummy",
               "media": "assets/others/weaponTypes/slashing.webp",
+              "isPerWepMod": true,
+              "wepModifiers": {
+                "modifiers": {
+                  "meleeMinHitBasedOnMaxHit": 50
+                }
+              },
               "levels": [
                 {
                   "name": "Slashing1",
                   "id": "Slashing1",
                   "level": 1,
-                  "modifiers": {
-                    "masteryXP": [
-                      {
-                        "value": 5,
-                        "skillID": "melvorD:Herblore"
-                      }
-                    ],
-                    "potionChargePreservationChance": [
-                      {
-                        "value": 10
-                      }
-                    ]
-                  }
+                  "conditionalModifiers": [
+                    {
+                      "condition": {
+                        "type": "WeaponType",
+                        "weaponType": "Slashing"
+                      },
+                      "modifiers": {
+                        "meleeAccuracyRating": 10
+                      },
+                      "descriptionLang": "RIELK_CONMOD_SLASHING_1"
+                    }
+                  ]
                 },
                 {
                   "name": "Slashing2",
                   "id": "Slashing2",
                   "level": 2,
-                  "modifiers": {
-                    "skillInterval": [
-                      {
-                        "value": 5,
-                        "skillID": "melvorD:Herblore"
-                      }
-                    ],
-                    "potionChargePreservationChance": [
-                      {
-                        "value": 10
-                      }
-                    ]
-                  }
+                  "conditionalModifiers": [
+                    {
+                      "condition": {
+                        "type": "WeaponType",
+                        "weaponType": "Slashing"
+                      },
+                      "modifiers": {
+                        "meleeStrengthBonus": 5
+                      },
+                      "descriptionLang": "RIELK_CONMOD_SLASHING_2"
+                    }
+                  ]
                 },
                 {
                   "name": "Slashing3",
                   "id": "Slashing3",
                   "level": 3,
-                  "modifiers": {
-                    "skillXP": [
-                      {
-                        "value": 5,
-                        "skillID": "melvorD:Herblore"
-                      }
-                    ],
-                    "potionChargePreservationChance": [
-                      {
-                        "value": 10
-                      }
-                    ]
-                  }
+                  "shiny": true,
+                  "changeFunc":"addSpecialAttack",
+                  "conditionalModifiers": [
+                    {
+                      "condition": {
+                        "type": "WeaponType",
+                        "weaponType": "Slashing"
+                      },
+                      "modifiers": {
+                        "meleeAccuracyRating": 5
+                      },
+                      "descriptionLang": "RIELK_CONMOD_SLASHING_3"
+                    }
+                  ]
                 },
                 {
                   "name": "Slashing4",
                   "id": "Slashing4",
                   "level": 4,
-                  "modifiers": {
-                    "masteryXP": [
-                      {
-                        "value": 5,
-                        "skillID": "melvorD:Herblore"
-                      }
-                    ],
-                    "potionChargePreservationChance": [
-                      {
-                        "value": 10
-                      }
-                    ]
-                  }
+                  "conditionalModifiers": [
+                    {
+                      "condition": {
+                        "type": "WeaponType",
+                        "weaponType": "Slashing"
+                      },
+                      "modifiers": {
+                        "flatResistanceAgainstRanged": [{
+                          "damageTypeID": "melvorD:Normal",
+                          "value": 10
+                        }]
+                      },
+                      "descriptionLang": "RIELK_CONMOD_SLASHING_4"
+                    }
+                  ]
                 },
                 {
                   "name": "Slashing5",
                   "id": "Slashing5",
                   "level": 5,
+                  "shiny": true,
                   "modifiers": {
-                    "masteryXP": [
-                      {
-                        "value": 5,
-                        "skillID": "melvorD:Herblore"
-                      }
-                    ],
-                    "potionChargePreservationChance": [
-                      {
-                        "value": 10
-                      }
-                    ]
+                    "meleeAccuracyRating": 10,
+                    "rangedAccuracyRating": 5
                   }
                 }
               ]
@@ -4188,6 +4194,11 @@
               "name": "Great",
               "fixture": "rielkConstruction:Training_Dummy",
               "media": "assets/others/weaponTypes/great.webp",
+              "wepModifiers": {
+                "modifiers": {
+                  "meleeMinHitBasedOnMaxHit": 50
+                }
+              },
               "levels": [
                 {
                   "name": "Great1",
@@ -4286,6 +4297,11 @@
               "name": "Cleave",
               "fixture": "rielkConstruction:Training_Dummy",
               "media": "assets/others/weaponTypes/cleave.webp",
+              "wepModifiers": {
+                "modifiers": {
+                  "meleeMinHitBasedOnMaxHit": 50
+                }
+              },
               "levels": [
                 {
                   "name": "Cleave1",
@@ -4384,6 +4400,11 @@
               "name": "Thrown",
               "fixture": "rielkConstruction:Archery_Range",
               "media": "assets/others/weaponTypes/thrown.webp",
+              "wepModifiers": {
+                "modifiers": {
+                  "meleeMinHitBasedOnMaxHit": 50
+                }
+              },
               "levels": [
                 {
                   "name": "Thrown1",
@@ -4482,6 +4503,11 @@
               "name": "Swift",
               "fixture": "rielkConstruction:Archery_Range",
               "media": "assets/others/weaponTypes/swift.webp",
+              "wepModifiers": {
+                "modifiers": {
+                  "meleeMinHitBasedOnMaxHit": 50
+                }
+              },
               "levels": [
                 {
                   "name": "Swift1",
@@ -4580,6 +4606,11 @@
               "name": "Precise",
               "fixture": "rielkConstruction:Archery_Range",
               "media": "assets/others/weaponTypes/precise.webp",
+              "wepModifiers": {
+                "modifiers": {
+                  "meleeMinHitBasedOnMaxHit": 50
+                }
+              },
               "levels": [
                 {
                   "name": "Precise1",
@@ -4678,6 +4709,11 @@
               "name": "Steady",
               "fixture": "rielkConstruction:Archery_Range",
               "media": "assets/others/weaponTypes/steady.webp",
+              "wepModifiers": {
+                "modifiers": {
+                  "meleeMinHitBasedOnMaxHit": 50
+                }
+              },
               "levels": [
                 {
                   "name": "Steady1",
@@ -4776,6 +4812,11 @@
               "name": "Earth",
               "fixture": "rielkConstruction:Spell_Library",
               "media": "assets/others/weaponTypes/earth.webp",
+              "wepModifiers": {
+                "modifiers": {
+                  "meleeMinHitBasedOnMaxHit": 50
+                }
+              },
               "levels": [
                 {
                   "name": "Earth1",
@@ -4874,6 +4915,11 @@
               "name": "Air",
               "fixture": "rielkConstruction:Spell_Library",
               "media": "assets/others/weaponTypes/air.webp",
+              "wepModifiers": {
+                "modifiers": {
+                  "meleeMinHitBasedOnMaxHit": 50
+                }
+              },
               "levels": [
                 {
                   "name": "Air1",
@@ -4972,6 +5018,11 @@
               "name": "Water",
               "fixture": "rielkConstruction:Spell_Library",
               "media": "assets/others/weaponTypes/water.webp",
+              "wepModifiers": {
+                "modifiers": {
+                  "meleeMinHitBasedOnMaxHit": 50
+                }
+              },
               "levels": [
                 {
                   "name": "Water1",
@@ -5070,6 +5121,11 @@
               "name": "Fire",
               "fixture": "rielkConstruction:Spell_Library",
               "media": "assets/others/weaponTypes/fire.webp",
+              "wepModifiers": {
+                "modifiers": {
+                  "meleeMinHitBasedOnMaxHit": 50
+                }
+              },
               "levels": [
                 {
                   "name": "Fire1",
@@ -5168,6 +5224,11 @@
               "name": "Arcane",
               "fixture": "rielkConstruction:Spell_Library",
               "media": "assets/others/weaponTypes/arcane.webp",
+              "wepModifiers": {
+                "modifiers": {
+                  "meleeMinHitBasedOnMaxHit": 50
+                }
+              },
               "levels": [
                 {
                   "name": "Arcane1",
@@ -5264,8 +5325,17 @@
             {
               "id": "Exotic",
               "name": "Exotic",
-              "fixture": ["rielkConstruction:Training_Dummy", "rielkConstruction:Archery_Range", "rielkConstruction:Spell_Library"],
+              "fixture": [
+                "rielkConstruction:Training_Dummy",
+                "rielkConstruction:Archery_Range",
+                "rielkConstruction:Spell_Library"
+              ],
               "media": "assets/others/weaponTypes/exotic.webp",
+              "wepModifiers": {
+                "modifiers": {
+                  "meleeMinHitBasedOnMaxHit": 50
+                }
+              },
               "levels": [
                 {
                   "name": "Exotic1",
@@ -6618,6 +6688,7 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "flatHiddenSkillLevel": [
                   {
@@ -6670,6 +6741,7 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "flatHiddenSkillLevel": [
                   {
@@ -6690,7 +6762,10 @@
               "level": 66,
               "baseExperience": 200,
               "baseActionCost": 400,
-              "changeFunc": "addSpecialAttack",
+              "changeFunc": [
+                "addSpecialAttack",
+                "raiseMasteryLevel"
+              ],
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
@@ -6776,6 +6851,7 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "raiseMasteryLevel",
               "shinyMods": [
                 1,
                 2
@@ -9925,7 +10001,10 @@
                 1,
                 2
               ],
-              "changeFunc": "increaseRuneReduction",
+              "changeFunc": [
+                "increaseRuneReduction",
+                "raiseMasteryLevel"
+              ],
               "modifiers": {
                 "rielkConstruction:spoofIncreaseRuneReduction": 1,
                 "rielkConstruction:addRuneShield": 1
@@ -9968,6 +10047,7 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "flatMagicAttackBonus": 5,
                 "skillXP": [
@@ -10019,7 +10099,10 @@
                 1,
                 2
               ],
-              "changeFunc": "addSpecialAttack",
+              "changeFunc": [
+                "addSpecialAttack",
+                "raiseMasteryLevel"
+              ],
               "modifiers": {
                 "rielkConstruction:fake_Book_of_Eli": 1,
                 "rielkConstruction:spoof_AddMagicSpecialAttack": 1
@@ -10079,6 +10162,7 @@
                 2,
                 3
               ],
+              "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "flatHiddenSkillLevelBasedOnLevels": [
                   {
@@ -10769,6 +10853,7 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "flatHiddenSkillLevel": [
                   {
@@ -10825,6 +10910,7 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "flatHiddenSkillLevel": [
                   {
@@ -10853,7 +10939,10 @@
               "level": 63,
               "baseExperience": 100,
               "baseActionCost": 400,
-              "changeFunc": "addSpecialAttack",
+              "changeFunc": [
+                "raiseMasteryLevel",
+                "addSpecialAttack"
+              ],
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
                 {
@@ -10978,6 +11067,7 @@
                 3,
                 4
               ],
+              "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "flatHiddenSkillLevelBasedOnLevels": [
                   {

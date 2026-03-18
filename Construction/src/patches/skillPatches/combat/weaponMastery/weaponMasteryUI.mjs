@@ -17,7 +17,7 @@ export function addWeaponMasteryUI(ctx) {
         menu.setItem = (bankItem, bank) => {
             originalSetItem(bankItem, bank);
 
-            if (bankItem.item instanceof WeaponItem && bankItem.item.weaponType) {
+            if (bankItem.item instanceof WeaponItem && bankItem.item.weaponType && bankItem.item.weaponType.active) {
                 menu.weaponMasteryUI.setWeapon(bankItem.item);
                 menu.weaponMasteryUI.show();
             } else {
@@ -25,4 +25,12 @@ export function addWeaponMasteryUI(ctx) {
             }
         };
     });
+    ctx.patch(Bank, 'render').after(function (_) {
+        if (this.renderQueue.mastery) {
+            const masteryMenu = bankSideBarMenu.selectedMenu.weaponMasteryUI;
+            if (!masteryMenu?.container.classList.contains("d-none") && masteryMenu.type === game.combat.player.equippedWeaponType)
+                bankSideBarMenu.selectedMenu.weaponMasteryUI.render();
+            this.renderQueue.mastery = false;
+        }
+    })
 }

@@ -2,6 +2,9 @@ const { loadModule } = mod.getContext(import.meta);
 
 
 
+const { raiseMasteryLevel } = await loadModule('src/patches/skillPatches/combat/weaponMastery/raiseMasteryLevel.mjs');
+
+
 
 const { tierArray } = await loadModule('src/patches/skillPatches/atlasofdiscovery/archaeology/tierarray.mjs');
 
@@ -68,6 +71,7 @@ export const EffectRegistry = {
   increaseRuneReduction,
   addSpecialAttack,
   addRuneEssence,
+  raiseMasteryLevel,
   addConstellationLevels,
   addBonusToPool,
   refreshAgi,

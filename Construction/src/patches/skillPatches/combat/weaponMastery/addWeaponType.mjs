@@ -1,6 +1,7 @@
 const MeleeMaterial = ["Bronze", "Iron", "Steel", "Mithril", "Adamant", "Rune", "Dragon", "Corundum", "Augite", "Meteorite", "Divine"];
 const RangedMaterial = ["Normal", "Oak", "Willow", "Maple", "Yew", "Magic", "Redwood", "Elderwood", "Revenant", "Carrion"];
 
+// Yes I'm writing this out by hand and NOT using a .json fuck .json files!
 const Finesse = { clas: "Finesse", kind: MeleeMaterial, mat: ["Dagger"], uniq: [] };
 const Slashing = { clas: "Slashing", kind: MeleeMaterial, mat: ["Sword", "Scimitar"], uniq: [] };
 const Great = { clas: "Great", kind: MeleeMaterial, mat: ["2H_Sword"], uniq: ["Basic_2H_Sword1"] }
@@ -42,11 +43,50 @@ export function addWeaponType() { // and make your funny map
             }
         }
     }
-    game.meleeWeaponsByUID = new Map();
-    for (const weapon of game.items.weapons.allObjects) {
-        if (weapon.weaponType)
-            game.meleeWeaponsByUID.set(weapon.uid, weapon);
-    }
+    // Set properties to weapoin objects.
+    Object.defineProperty(WeaponItem.prototype, 'timesAttacked', {
+        get() {
+            return game.stats.Items.get(this, ItemStats.TotalAttacks)
+        }
+    });
+    Object.defineProperty(WeaponItem.prototype, 'weaponXPCap', {
+        get() {
+            return this.uniqueness * 5000;
+        }
+    });
+    Object.defineProperty(WeaponItem.prototype, '_weaponXP', {
+        get() {
+            if (!this.attackSpeed)
+                this.attackSpeed = this.equipmentStats[0].key === 'attackSpeed' ? this.equipmentStats[0].value / 1000 : 4;
+            return Math.floor(this.timesAttacked * this.attackSpeed * 0.3472); // Magic number, balanced so you will get 1250 xp per hour, so 4 hours for stock, 8 for unusual and 12 for distinct weapons.
+        }
+    });
+    Object.defineProperty(WeaponItem.prototype, 'weaponXPCapped', {
+        get() {
+
+            return Math.min(this._weaponXP, this.weaponXPCap);
+        }
+    });
+
+    Object.defineProperty(WeaponItem.prototype, 'weaponXPPercentCapped', {
+        get() {
+
+            return Math.min(100, this._weaponXP / this.weaponXPCap * 100)
+        }
+    });
+
+    Object.defineProperty(WeaponItem.prototype, 'masteryMaxed', {
+        value: 0,
+        writable: true,
+        configurable: true,
+    });
+
+     Object.defineProperty(WeaponItem.prototype, 'isMaxMastery', {
+        get() {
+
+            return (this.uniqueness > 0 && this._weaponXP >= this.weaponXPCap);
+        }
+    });
 
 }
 
@@ -60,37 +100,8 @@ function addClass(name, type, bonuniq = 1) {
     if (item) {
         item.weaponType = type;
         item.uniqueness = namespacef === "melvorTotH" || namespacef === "melvorItA" ? 0 : bonuniq;
-        Object.defineProperty(item, 'timesAttacked', {
-            get() {
-                return game.stats.Items.get(this, ItemStats.TotalAttacks)
-            }
-        });
-        Object.defineProperty(item, 'weaponXPCap', {
-            get() {
-                return this.uniqueness * 5000;
-            }
-        });
-        Object.defineProperty(item, '_weaponXP', {
-            get() {
-                if (!this.attackSpeed)
-                    this.attackSpeed = this.equipmentStats[0].key === 'attackSpeed' ? this.equipmentStats[0].value / 1000 : 4;
-                return Math.floor(this.timesAttacked * this.attackSpeed * 0.3472); // Magic number, balanced so you will get 1250 xp per hour, so 4 hours for stock, 8 for unusual and 12 for distinct weapons.
-            }
-        });
-        Object.defineProperty(item, 'weaponXPCapped', {
-            get() {
-
-                return Math.min(this._weaponXP, this.weaponXPCap);
-            }
-        });
-
-        Object.defineProperty(item, 'weaponXPPercentCapped', {
-            get() {
-
-                return Math.min(100, this._weaponXP / this.weaponXPCap * 100)
-            }
-        });
-
         type.allWeapons.push(item);
+        if(type.isPerWepMod)
+            type.makeWeaponConditional(item);
     }
 }

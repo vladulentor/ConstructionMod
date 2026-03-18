@@ -2,6 +2,8 @@ const { loadModule } = mod.getContext(import.meta);
 
 const { FocusedCookingCondition } = await loadModule ('src/patches/skillPatches/cooking/focusedCookingCondition.mjs');
 const { WeaponTypeCondition } = await loadModule ('src/patches/skillPatches/combat/weaponMastery/weaponTypeCondition.mjs');
+const { WeaponCondition } = await loadModule ('src/patches/skillPatches/combat/weaponMastery/weaponCondition.mjs');
+
 
 const { getRielkLangString } = await loadModule ('src/language/translationManager.mjs');
 
@@ -13,7 +15,9 @@ export function patchConditionalMod(ctx) {
     if (data.type === "FocusedCook")
       return new FocusedCookingCondition(data, game);
     if(data.type === 'WeaponType')
-      return new WeaponTypeCondition(data, game)
+      return new WeaponTypeCondition(data, game);
+    if(data.type === 'Weapon')
+      return new WeaponCondition(data,game);
     return original.call(this, data, game);
   };
 

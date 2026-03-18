@@ -1,15 +1,14 @@
 
-export class WeaponTypeCondition extends BooleanCondition {
+export class WeaponCondition extends BooleanCondition {
   constructor(data) {
     super(data);
-    this.type = 'WeaponType';
-    this.weaponType = data.weaponType;
+    this.type = 'Weapon';
+    this.weapon = data.weapon;
   }
 
   _checkIfMet(manager) {
- 
     const weapon = game.combat.player.equipment.getItemInSlot("melvorD:Weapon");
-    return weapon.weaponType?._localID === this.weaponType;
+    return weapon._localID === this.weapon;
   }
 
   _assignWrappedHandler(manager, handler) {

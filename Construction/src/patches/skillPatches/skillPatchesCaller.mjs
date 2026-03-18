@@ -19,6 +19,7 @@ const { provideBonusesPerAgiLevels } = await loadModule('src/patches/skillPatche
 const { addWeaponType } = await loadModule('src/patches/skillPatches/combat/weaponMastery/addWeaponType.mjs');
 const { addWeaponMasteryUI } = await loadModule('src/patches/skillPatches/combat/weaponMastery/weaponMasteryUI.mjs');
 
+const { patchWeaponTypeLogic } = await loadModule('src/patches/skillPatches/combat/weaponMastery/patchWeaponTypeLogic.mjs');
 
 
 
@@ -117,6 +118,7 @@ export function patchSkillsBeforeDataReg(ctx) {
         slayerCostReduction(ctx);
         reduceMaxHitByDefenseLevel(ctx);
         unlockTrader(ctx);
+        patchWeaponTypeLogic(ctx);
         nerfBearDevil();
 }
 export function patchSkillsAfterDataReg(ctx) {

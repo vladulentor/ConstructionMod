@@ -33,6 +33,13 @@ export function patchMods(ctx, modList) {
         });
     }
 
+       if (modList.includes('Mastery Pool Can Overflow')) {
+        compatMessages.push({
+            name: 'Mastery Pool Can Overflow',
+            description: 'Made so that Mastery Pool overflowing still works with our Mastery Pool increases and decreases.',
+            color: '#e5ae67'
+        });
+    }
     // After trying it for a bit, I've discovered that this man's mod is insane, the only way to add compat is to make a pull request :(
     /* if (modList.includes('Show Item Sources And Uses')) {
          showItemSourcesAndUsesCompatibility(ctx);
@@ -60,8 +67,8 @@ export function patchMods(ctx, modList) {
 
     if (modList.includes('Ancient Relic Mode 1.3')) {
         compatMessages.push({
-            name: 'The mod won\'t destroy your save with Ancient Relics even on gamemodes that don\'t have rolling caps',
-            description: 'Efficiency will also work in Ancient Relics',
+            name: 'Ancient Relic Mode 1.3',
+            description: 'The mod won\'t destroy your save with Ancient Relics even on gamemodes that don\'t have rolling caps',
             color: '#949684'
         });
     }
@@ -88,13 +95,13 @@ export function patchMods(ctx, modList) {
 
         endingMessages.push('Did I mention you\'re looking great today?');
         endingMessages.push('That\'s all from me, toodles.');
-        endingMessages.push('If you knew how much effort it is to add the smalles bits of polish you\'d be amazed at the things this mod gets pushed back for.');
+        endingMessages.push('You\'d be amazed at the things this mod gets pushed back for.');
         endingMessages.push('Thank you again for downloading me.');
         endingMessages.push('Did you know mods feel pain when you delete them?');
         endingMessages.push('Don\'t forget to brush your teeth.');
         endingMessages.push('Did you know the orange color we use is called "Construction-Victory"?');
         endingMessages.push("Sawdust is actually perfectly safe to inhanle. OSHA is lying to you.");
-        endingMessages.push("The potion this mod adds is actually chocolate milk!");
+        endingMessages.push("The potion this mod adds is choccy milk.");
         endingMessages.push("People that only exist in my head keep asking me why the 'Jar of Tar' helps in Thieving and Agility, and why you get it from Fishing. First of all, Tar was used in Shipwrighting to keep rope still. Second of all, tar is sticky, you use it to grip better.");
         endingMessages.push("Measuring twice is twice the fun!");
 

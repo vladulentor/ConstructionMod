@@ -28,7 +28,7 @@ export function addWeaponMasteryUI(ctx) {
     ctx.patch(Bank, 'render').after(function (_) {
         if (this.renderQueue.mastery) {
             const masteryMenu = bankSideBarMenu.selectedMenu.weaponMasteryUI;
-            if (!masteryMenu?.container.classList.contains("d-none") && masteryMenu.type === game.combat.player.equippedWeaponType)
+            if (masteryMenu && !masteryMenu.container.classList.contains("d-none") && masteryMenu.type === game.combat.player.equippedWeaponType)
                 bankSideBarMenu.selectedMenu.weaponMasteryUI.render();
             this.renderQueue.mastery = false;
         }

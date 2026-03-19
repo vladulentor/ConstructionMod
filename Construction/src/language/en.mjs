@@ -221,7 +221,7 @@ export const language = {
     'SPECIAL_ATTACK_NAME_Twin_Shot': 'Twin Shot',
     'SPECIAL_ATTACK_NAME_Brutal_Strike': 'Brutal Strike',
 
-    'WEAPON_TYPE_LEVEL':'${weaponType} Proficiency Level ${level}',
+    'WEAPON_TYPE_LEVEL': '${weaponType} Proficiency Level ${level}',
     'TOAST_FIXTURE_COMPLETE': 'You\'ve finished building your ${fixtureName}!',
 
     'MODIFIER_DATA_decrease_skillEfficiencyChance': '-${value}% Chance to complete extra actions in ${skillName}',
@@ -314,7 +314,24 @@ export const language = {
     'MODIFIER_DATA_IntPerAgiLevels': '${value}% Thieving and Agility Interval for every 20 Agility Levels',
     'MODIFIER_DATA_CombIntPerAgiLevels': '${value}s Attack and Monster Respawn Interval for every 20 Agility Levels',
     'MODIFIER_DATA_fuckYourGold': 'When you gain ${currencyName}, instead lose ${value}% the amount you would gain',
-    'MODIFIER_DATA_spoof_Damocles':'If you cannot afford this cost, you die',
+    'MODIFIER_DATA_spoof_Damocles': 'If you cannot afford this cost, you die',
+
+    'MODIFIER_DATA_spoof_AddWeaponMasteryMelee': "Unlock Melee Weapon Types",
+    'MODIFIER_DATA_spoof_AddWeaponMasteryRanged': "Unlock Ranged Weapon Types",
+    'MODIFIER_DATA_spoof_AddWeaponMasteryMagic': "Unlock Magic Weapon Types",
+    'MODIFIER_DATA_spoof_IncreaseMasteryLevelMelee': "${value} Melee Weapon Type Max Level",
+    'MODIFIER_DATA_spoof_IncreaseMasteryLevelRanged': "${value} Ranged Weapon Type Max Level",
+    'MODIFIER_DATA_spoof_IncreaseMasteryLevelMagic': "${value} Magic Weapon Type Max Level",
+    'MODIFIER_DATA_spoof_AddIndBonusMelee': 'Unlock Bonuses for Mastered Melee Weapons',
+    'MODIFIER_DATA_spoof_AddIndBonusRanged': 'Unlock Bonuses for Mastered Ranged Weapons',
+    'MODIFIER_DATA_spoof_AddIndBonusMagic': 'Unlock Bonuses for Mastered Magic Weapons',
+    'MODIFIER_DATA_increaseWeaponXPMelee': "${value}% Melee Weapon Mastery XP",
+    'MODIFIER_DATA_increaseWeaponXPRanged': "${value}% Ranged Weapon Mastery XP",
+    'MODIFIER_DATA_increaseWeaponXPMagic': "${value}% Magic Weapon Mastery XP",
+    'MODIFIER_DATA_spoof_DoubleIndBonusMelee':"Double Bonuses for Mastered Melee Weapons",
+    'MODIFIER_DATA_spoof_DoubleIndBonusRanged':"Double Bonuses for Mastered Ranged Weapons",
+    'MODIFIER_DATA_spoof_DoubleIndBonusMagic':"Double Bonuses for Mastered Magic Weapons",
+    'MENU_TEXT_TYPE':"Type",
 
     'ITEM_NAME_Cursed_Hook': 'Cursed Hook',
     'ITEM_NAME_Tar_Jar': 'Jar of Tar',
@@ -333,16 +350,19 @@ export const language = {
     'TOASTS_FIXTURE_TIER_REQUIRED': 'You need a Tier ${tier} ${fixtureName} to do that!',
     'MENU_TEXT_REQUIRES_FIXTURE_TIER': 'Construct the${fixtureImage}${fixtureName} to Tier ${tier}',
 
+
+    'MENU_UPGRADE_TYPE': 'Further Construct your ${fixImg}${fixName} to Unlock',
+    'MENU_UPGRADE_TYPE3': 'Further Construct your ${fixImg0}${fixImg1}${fixImg2} ${fixName0}, ${fixName1}, and ${fixName2} to Unlock',
     'RIELK_CONMOD_FOCUSEDCOOKING_1': '+3% Perfect Cook Chance, Success Chance, and Cooking Mastery XP while not Passive Cooking',
     'RIELK_CONMOD_FOCUSEDCOOKING_2': '+5% Perfect Cook, Doubling, and Preservation Chance in Cooking while not Passive Cooking',
     'RIELK_CONMOD_FOCUSEDCOOKING_3': '+7% Perfect Cook Chance, Additional Perfect Item Chance, and Preservation Cap in Cooking while not Passive Cooking',
     'RIELK_CONMOD_SLAYER2': '+7% damage dealt by all attacks when fighting a Slayer Task monster',
     'RIELK_CONMOD_SLAYER5': '+15% Chance to preserve Consumable Slot Charges when fighting a Slayer Task monster',
-    'RIELK_CONMOD_SLASHING_1':'+5% Accuracy Rating when wielding Slashing Weapons',
-    'RIELK_CONMOD_SLASHING_2':'+5% Melee Strength Bonus when wielding Slashing Weapons',
-        'RIELK_CONMOD_SLASHING_3':'notdoneyet',
+    'RIELK_CONMOD_SLASHING_1': '+5% Accuracy Rating when wielding Slashing Weapons',
+    'RIELK_CONMOD_SLASHING_2': '+5% Melee Strength Bonus when wielding Slashing Weapons',
+    'RIELK_CONMOD_SLASHING_3': 'notdoneyet',
 
-    'RIELK_CONMOD_SLASHING_4':'+10% Damage Reduction against Ranged Enemies when wielding Slashing Weapons',
+    'RIELK_CONMOD_SLASHING_4': '+10% Damage Reduction against Ranged Enemies when wielding Slashing Weapons',
 
 
     'MENU_TEXT_STOKE_BONFIRE': 'Stoke Bonfire (Costs ${qty} ${logName})',

@@ -10,20 +10,20 @@ game.combat.registerStatProvider(game.weaponTypeStats);
 class WeaponMasteryLevel extends RealmedObject {
     constructor(namespace, data, game, parentType, levelIndex) {
         super(namespace, data, game);
-        if(data.changeFunc){
+        if (data.changeFunc) {
             this.changeFunc = Array.isArray(data.changeFunc)
-                        ? data.changeFunc
-                        : [data.changeFunc];
+                ? data.changeFunc
+                : [data.changeFunc];
             this.canCallChangeFunc = true;
         }
         this.type = parentType
         this.name = templateRielkLangString("WEAPON_TYPE_LEVEL", { weaponType: parentType._localID, level: levelIndex });
         if (data.shiny) this.shiny = data.shiny;
         this.wepModifiers = new StatObject(data, game, this._localID)
-           
+
     }
 
-  
+
     callChangeFunc() {
         this.changeFunc.forEach(funcName => {
             const effectFunc = EffectRegistry[funcName];
@@ -125,7 +125,12 @@ export class WeaponMastery extends RealmedObject {
     get levelCap() {
         return Math.min(...this.fixture.map(f => f.currentTier));
     }
-
+    get IndMods() {
+        return this.levelCap >= 2;
+    }
+    get doubledIndBonuses(){
+        return this.levelCap >=5 ? 2 : 1;
+    }
     makeWeaponConditional(weapon) {
         const cond = new StatObject({ conditionalModifiers: [{ condition: { type: "Weapon", weapon: `${weapon._localID}` }, ...this.wepModifiers, descripiton: "Wow, it works!" }] }, this.game, null);
         weapon.uniqMasteryMod = cond;
@@ -139,8 +144,10 @@ export class WeaponMastery extends RealmedObject {
         }
     }
     addweaponmastery(weapon) {
-        let weapMod = this.isPerWepMod ? weapon.uniqMasteryMod : this.wepModifiers;
-        this.providedStats.addStatObject("Mastered Weapon", weapMod, 1, 1);
+        if (this.IndMods) {
+            let weapMod = this.isPerWepMod ? weapon.uniqMasteryMod : this.wepModifiers;
+            this.providedStats.addStatObject("Mastered Weapon", weapMod, this.doubledIndBonusesZ, 1);
+        }
         weapon.masteryMaxed = 1;
         this.masteredWeapons.set(weapon.id, weapon);
     }
@@ -156,11 +163,11 @@ export class WeaponMastery extends RealmedObject {
 
     computeProvidedStats(updatePlayer = true) {
         this.providedStats.reset();
-        for (let lvl = 1; lvl <= this._curLvl; lvl++)
-           { this.providedStats.addStatObject(this.levels[lvl - 1], this.levels[lvl - 1].wepModifiers, 1, 1);
-            if(this.levels[lvl-1].canCallChangeFunc)
-                this.levels[lvl-1].callChangeFunc();
-           }
+        for (let lvl = 1; lvl <= this._curLvl; lvl++) {
+            this.providedStats.addStatObject(this.levels[lvl - 1], this.levels[lvl - 1].wepModifiers, 1, 1);
+            if (this.levels[lvl - 1].canCallChangeFunc)
+                this.levels[lvl - 1].callChangeFunc();
+        }
         this.masteredWeapons.clear();
         this.makeMasteredWeaponsMap();
         if (updatePlayer)
@@ -178,3 +185,4 @@ export class WeaponMastery extends RealmedObject {
                 console.log("Weapon:", weapon.name, " XP:", weapon._weaponXP, "\n");
     }
 }
+

@@ -128,7 +128,7 @@ export function patchSkillsAfterDataReg(ctx) {
         addBeamsMasteryPoolBonus();
         removeObstacles(ctx);
         reorderAgiMods()
-        addWeaponType();
+        addWeaponType(ctx);
         addWeaponMasteryUI(ctx);
         keepTrackOfObstacles(ctx);
         patchArrowShaftRecipes(ctx);

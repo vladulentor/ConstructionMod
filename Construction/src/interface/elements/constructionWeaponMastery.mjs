@@ -1,10 +1,17 @@
-const noXP = { name: "No XP", color: "#ff0000", width: '0%' };
+const noXP = { name: "No XP", color: "#af0000", width: '0%' };
 const stock = { name: "Stock", color: "#2dd432", width: '40%' };
-const unusual = { name: "Unusual", color: "#2196F3", width: '60%' };
-const distinct = { name: "Distinct", color: "#E91E63", width: '80%' };
+const unusual = { name: "Unusual", color: "#3a9adf", width: '60%' };
+const distinct = { name: "Distinct", color: "#d33290", width: '80%' };
 const exotic = { name: "Exotic", color: "#ffaf02", width: '90%' };
 
-const uniqtoclass = [noXP, stock, unusual, distinct, exotic];
+const { loadModule } = mod.getContext(import.meta);
+
+const { templateRielkLangStringWithNodes, templateRielkLangString, getRielkLangString } = await loadModule('src/language/translationManager.mjs');
+
+const uniqtoclass = [noXP, stock, unusual, distinct, exotic, exotic, exotic, exotic, exotic];
+
+
+const ctx = mod.getContext(import.meta);
 
 export class WeaponMasteryUI {
     constructor() {
@@ -12,7 +19,8 @@ export class WeaponMasteryUI {
         this._content.append(getTemplateNode('weaponMastery-template'));
         this.type = null;
         this.weapon = null;
-
+        this.goldsrc = ctx.getResourceUrl('assets/others/goldlock_big.webp'); // heh gold source
+        this.redsrc = ctx.getResourceUrl('assets/others/redlock_big.webp');
         // Grab the outer wrapper as the main container
         this.container = getElementFromFragment(this._content, 'outercont', 'div');
         this.block = getElementFromFragment(this._content, 'weaponMasteryContainer', 'div');
@@ -62,6 +70,13 @@ export class WeaponMasteryUI {
             getElementFromFragment(this._content, 'modifierStep3', 'div'),
             getElementFromFragment(this._content, 'modifierStep4', 'div'),
             getElementFromFragment(this._content, 'modifierStep5', 'div'),
+        ];
+        this.locks = [
+            getElementFromFragment(this._content, 'lock1', 'div'),
+            getElementFromFragment(this._content, 'lock2', 'div'),
+            getElementFromFragment(this._content, 'lock3', 'div'),
+            getElementFromFragment(this._content, 'lock4', 'div'),
+            getElementFromFragment(this._content, 'lock5', 'div'),
         ];
 
         this.stepsButton.onclick = () => this.toggleModifierList();
@@ -116,10 +131,11 @@ export class WeaponMasteryUI {
         this.setXP();
     }
     setType() {
+        this.icon.src = this.type.media
         this.text.innerHTML = this.type.name;
         this.bgIcon.src = this.type.media;
         this.weaponModText.innerHTML = '';
-        this.weaponModText.append(...this.type._uiWepMod.describeAsSpans())
+        this.weaponModText.append(...this.type._uiWepMod.describeAsSpans(1, this.type.doubledIndBonuses))
 
         if (this.modifierListContainer.classList.contains('open'))
             this.closeModifierList()
@@ -153,8 +169,8 @@ export class WeaponMasteryUI {
     }
 
     toggleWeaponMod(maxed) {
-        if (maxed) { showElement(this.weaponModDisc); this.capbonus = 100.1 }
-        else { hideElement(this.weaponModDisc); this.capbonus = 91.7; }
+        if (maxed && this.type.IndMods) { showElement(this.weaponModDisc); }
+        else { hideElement(this.weaponModDisc); }
         if (this.modifierListContainer.classList.contains('collapsed')) {
             this.cap.classList.add('no-transition');
             this.cap.style.top = this.stepsButton.offsetTop + "px";
@@ -166,7 +182,7 @@ export class WeaponMasteryUI {
     generateModifierElements(level) {
         const descs = StatObject.getDescriptions(level.wepModifiers);
 
-        const isShiny = !!level.shiny; 
+        const isShiny = !!level.shiny;
 
         return descs.map((desc) => {
             const cls = 'modifierHolder fuck-you text-center ' + (isShiny ? 'special' : '');
@@ -179,10 +195,43 @@ export class WeaponMasteryUI {
         });
     }
     setMods() {
+
         for (let i = 0; i < this.steps.length; i++) {
-            const spans = this.generateModifierElements(this.type.levels[i]);
-            this.steps[i].innerHTML = '';
-            this.steps[i].append(...spans);
+        let lockText = this.type.fixture.length > 1 ? templateRielkLangStringWithNodes(
+            "MENU_UPGRADE_TYPE3",
+            {
+                fixImg0: createElement('img', { className: 'skill-icon-xs', attributes: [['src', this.type.fixture[0].media]] }),
+                fixImg1: createElement('img', { className: 'skill-icon-xs', attributes: [['src', this.type.fixture[1].media]] }),
+                fixImg2: createElement('img', { className: 'skill-icon-xs', attributes: [['src', this.type.fixture[2].media]] })
+            },
+            {
+                fixName0: this.type.fixture[0].name,
+                fixName1: this.type.fixture[1].name,
+                fixName2: this.type.fixture[2].name
+            }
+        )
+            : templateRielkLangStringWithNodes("MENU_UPGRADE_TYPE",
+                { fixImg: createElement('img', { className: 'skill-icon-xs', attributes: [['src', this.type.fixture[0].media]] }) }, { fixName: this.type.fixture[0].name });
+
+            const shiny = !!this.type.levels[i].shiny;
+            if (this.type.levelCap <= i) {
+                this.locks[i].innerHTML = '';
+                this.locks[i].append(...lockText)
+                this.locks[i].classList.toggle('text-danger', !shiny);
+                this.locks[i].classList.toggle('text-warning', shiny);
+
+                showElement(this.locks[i]);
+                this.steps[i].classList.add("hidden");
+            }
+            else {
+                const spans = this.generateModifierElements(this.type.levels[i]);
+                this.steps[i].innerHTML = '';
+                this.steps[i].append(...spans);
+
+                hideElement(this.locks[i]);
+                this.steps[i].classList.remove("hidden");
+
+            }
         }
     }
     show() {

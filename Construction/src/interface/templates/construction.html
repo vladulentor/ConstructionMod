@@ -971,11 +971,10 @@
         <h5 class="font-size-sm font-w600 mb-0">
           Weapon Mastery
         </h5>
-        <div class="block-options">
-          <h5 class="font-w600 font-size-sm text-right text-combat-smoke mb-0">
-            <img class="skill-icon-xxs mr-2" id="weaponMasteryIcon"
-              src="chrome-extension://melvor/assets/media/bank/weapon_sword.png">
-          </h5>
+        <div class="block-options font-w600 font-size-sm text-right text-combat-smoke mb-0">
+          <img class="skill-icon-xxs mr-1 weapontypeicon" id="weaponMasteryIcon">
+          <rielk-lang-string lang-id="MENU_TEXT_TYPE"></rielk-lang-string>
+
         </div>
       </div>
       <div class="weaponMasteryBgContainer" id="weaponMasteryBgContainer">
@@ -1018,17 +1017,17 @@
                   <div id="marker-1" class="xp-marker" style="left: 7%;">
                     <span id="label-1" class="xp-label font-w600 font-size-sm text-combat-smoke">1</span>
                   </div>
-                  <div  id="marker-2" class="xp-marker" style="left: 20%;">
-                    <span id="label-2"class="xp-label font-w600 font-size-sm text-combat-smoke">2</span>
+                  <div id="marker-2" class="xp-marker" style="left: 20%;">
+                    <span id="label-2" class="xp-label font-w600 font-size-sm text-combat-smoke">2</span>
                   </div>
-                  <div  id="marker-3" class="xp-marker" style="left: 40%;">
-                    <span id="label-3"class="xp-label font-w600 font-size-sm text-combat-smoke">3</span>
+                  <div id="marker-3" class="xp-marker" style="left: 40%;">
+                    <span id="label-3" class="xp-label font-w600 font-size-sm text-combat-smoke">3</span>
                   </div>
-                  <div  id="marker-4" class="xp-marker" style="left: 65%;">
-                    <span id="label-4"class="xp-label font-w600 font-size-sm text-combat-smoke">4</span>
+                  <div id="marker-4" class="xp-marker" style="left: 65%;">
+                    <span id="label-4" class="xp-label font-w600 font-size-sm text-combat-smoke">4</span>
                   </div>
-                  <div  id="marker-5" class="xp-marker" style="left: 95%;">
-                    <span id="label-5"class="xp-label font-w600 font-size-sm text-combat-smoke">5</span>
+                  <div id="marker-5" class="xp-marker" style="left: 95%;">
+                    <span id="label-5" class="xp-label font-w600 font-size-sm text-combat-smoke">5</span>
                   </div>
                 </div>
               </div>
@@ -1041,28 +1040,31 @@
             id="weaponMasteryStepsButton"><span class="arrow"></span></div>
           <div class="weaponMasteryModifiers collapsed font-w700 font-size-sm" id="weaponMasteryModifiers">
             <div class="col-12 mb-1 dropdown-divider"></div>
-            <div class="col-12 mb-1 d-flex flex-column align-items-center modifierHolder" id="modifierStep1">
-            </div>
-            <div class="col-12 mb-1 dropdown-divider"></div>
-            <div class="col-12 mb-1 d-flex flex-column align-items-center modifierHolder" id="modifierStep2">
-            </div>
-            <div class="col-12 mb-1 dropdown-divider"></div>
+            <div id="lock1" class="mx-auto align-items-center lockIcon"></div>
+            <div class="col-12 mb-1 d-flex flex-column align-items-center modifierHolder" id="modifierStep1"></div>
 
-            <div class="col-12 mb-1 d-flex flex-column align-items-center modifierHolder" id="modifierStep3">
-            </div>
             <div class="col-12 mb-1 dropdown-divider"></div>
+            <div id="lock2" class=" mx-auto align-items-center lockIcon"></div>
+            <div class="col-12 mb-1 d-flex flex-column align-items-center modifierHolder" id="modifierStep2"></div>
 
-            <div class="col-12 mb-1 d-flex flex-column align-items-center modifierHolder" id="modifierStep4">
-            </div>
             <div class="col-12 mb-1 dropdown-divider"></div>
+            <div id="lock3" class=" mx-auto align-items-center lockIcon"></div>
+            <div class="col-12 mb-1 d-flex flex-column align-items-center modifierHolder" id="modifierStep3"></div>
 
-            <div class="col-12 mb-1 d-flex flex-column align-items-center modifierHolder" id="modifierStep5">
-            </div>
+            <div class="col-12 mb-1 dropdown-divider"></div>
+            <div id="lock4" class=" mx-auto align-items-center lockIcon"></div>
+            <div class="col-12 mb-1 d-flex flex-column align-items-center modifierHolder" id="modifierStep4"></div>
+
+            <div class="col-12 mb-1 dropdown-divider"></div>
+            <div id="lock5" class=" mx-auto align-items-center lockIcon"></div>
+            <div class="col-12 mb-1 d-flex flex-column align-items-center modifierHolder" id="modifierStep5"></div>
             <div id="modifierSpacer" style="height:0;"></div>
+
           </div>
-          <div class="weaponMasteryCap block-header bg-dark-bank-block-header fuck-you" id="weaponMasteryCap"></div>
         </div>
+        <div class="weaponMasteryCap block-header bg-dark-bank-block-header fuck-you" id="weaponMasteryCap"></div>
       </div>
     </div>
+  </div>
   </div>
 </template>

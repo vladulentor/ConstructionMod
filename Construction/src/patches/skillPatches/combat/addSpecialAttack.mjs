@@ -14,9 +14,9 @@ function addEffecttoWeaponList(AttackMap) {
         addAttacktoWeapons(weapon, AttackMap.attack)
     }
 }
-
-function addAttacktoWeapons(weapon, attack) { // Because copying the attack and changing things sucks because of java copying and reference stuff.
-    if (weapon.specialAttacks.reduce((acc, a) => acc - a.defaultChance, 100) <= 15) return;
+// Because copying the attack and changing things sucks because of java copying and reference stuff.
+function addAttacktoWeapons(weapon, attack) { 
+    if (weapon.specialAttacks.reduce((acc, a) => acc - a.defaultChance, 100) < attack.defaultChance) return;
     weapon.specialAttacks.push(attack);
 }
 
@@ -25,6 +25,8 @@ let guardRanged = 0;
 let guardMagic = 0;
 // Technically we don't "need" the guards here yet, but keep 'em.
 export function addSpecialAttack() {
+
+    
     if (this._localID == "Slashing3") {
         const attack = game.specialAttacks.getObjectSafe('rielkConstruction:Brutal_Strike'); //testing purposes
         const weapMap = { weapons: this.type.allWeapons, attack: attack };

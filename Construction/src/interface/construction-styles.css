@@ -248,7 +248,9 @@ color: #fca32f!important
 .modifierHolder.locked .fuck-you.special{
 color: #e5ae67!important
 }
-
+.modifierHolder.hidden{
+  display:none!important;
+}
 
 .weaponMasteryCap {
   height: 32px;
@@ -291,12 +293,16 @@ body.darkMode .border-item {
   position: absolute;
   top: 20px;
   left: 5%;
-  width: 110%;
+  width: 120%;
   height: auto;
   opacity: 0.08;
   pointer-events: none;
       filter: invert(100%);
   z-index: 0;
+}
+.weapontypeicon{
+        filter: invert(100%);
+
 }
 body.darkMode .weaponMasteryBgIcon {
       filter: invert(0%);
@@ -396,14 +402,26 @@ body.darkMode.superDark .weaponMasteryBgIcon {
     white-space: nowrap;
     margin-bottom: 12px;
 }
-
+.lockIcon {
+    display: flex;               
+    justify-content: center;   
+    align-items: center;       
+    text-align: center;         
+      margin-top: 0.35rem;
+    margin-bottom: 0.35rem; /* because m2 is 0.5rem and m3 is 1 rem, because FUCK YOU - bootstrap */
+}
+.lock-item {
+    display: inline-flex;
+    align-items: center; 
+    gap: 0.25rem;        
+}
 /* Dark mode */
 body.darkMode .xp-marker {
-    background-color: #fff; /* white in dark mode */
+    background-color: #fff;
 }
 
 body.darkMode .xp-label {
-    color: #fff; /* white in dark mode */
+    color: #fff; 
 }
 
 @keyframes shake {

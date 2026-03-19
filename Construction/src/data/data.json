@@ -4143,7 +4143,7 @@
                   "id": "Slashing3",
                   "level": 3,
                   "shiny": true,
-                  "changeFunc":"addSpecialAttack",
+                  "changeFunc": "addSpecialAttack",
                   "conditionalModifiers": [
                     {
                       "condition": {
@@ -4168,10 +4168,12 @@
                         "weaponType": "Slashing"
                       },
                       "modifiers": {
-                        "flatResistanceAgainstRanged": [{
-                          "damageTypeID": "melvorD:Normal",
-                          "value": 10
-                        }]
+                        "flatResistanceAgainstRanged": [
+                          {
+                            "damageTypeID": "melvorD:Normal",
+                            "value": 10
+                          }
+                        ]
                       },
                       "descriptionLang": "RIELK_CONMOD_SLASHING_4"
                     }
@@ -4293,10 +4295,10 @@
               ]
             },
             {
-              "id": "Cleave",
-              "name": "Cleave",
+              "id": "Heavy",
+              "name": "Heavy",
               "fixture": "rielkConstruction:Training_Dummy",
-              "media": "assets/others/weaponTypes/cleave.webp",
+              "media": "assets/others/weaponTypes/heavy.webp",
               "wepModifiers": {
                 "modifiers": {
                   "meleeMinHitBasedOnMaxHit": 50
@@ -4304,8 +4306,8 @@
               },
               "levels": [
                 {
-                  "name": "Cleave1",
-                  "id": "Cleave1",
+                  "name": "Heavy1",
+                  "id": "Heavy1",
                   "level": 1,
                   "modifiers": {
                     "masteryXP": [
@@ -4322,8 +4324,8 @@
                   }
                 },
                 {
-                  "name": "Cleave2",
-                  "id": "Cleave2",
+                  "name": "Heavy2",
+                  "id": "Heavy2",
                   "level": 2,
                   "modifiers": {
                     "masteryXP": [
@@ -4340,8 +4342,8 @@
                   }
                 },
                 {
-                  "name": "Cleave3",
-                  "id": "Cleave3",
+                  "name": "Heavy3",
+                  "id": "Heavy3",
                   "level": 3,
                   "modifiers": {
                     "masteryXP": [
@@ -4358,8 +4360,8 @@
                   }
                 },
                 {
-                  "name": "Cleave4",
-                  "id": "Cleave4",
+                  "name": "Heavy4",
+                  "id": "Heavy4",
                   "level": 4,
                   "modifiers": {
                     "masteryXP": [
@@ -4376,8 +4378,8 @@
                   }
                 },
                 {
-                  "name": "Cleave5",
-                  "id": "Cleave5",
+                  "name": "Heavy5",
+                  "id": "Heavy5",
                   "level": 5,
                   "modifiers": {
                     "masteryXP": [
@@ -6641,6 +6643,7 @@
               ],
               "currencyCosts": [],
               "modifiers": {
+                "rielkConstruction:spoof_AddWeaponMasteryRanged": 1,
                 "flatHiddenSkillLevel": [
                   {
                     "value": 1,
@@ -6688,8 +6691,19 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
+                "rielkConstruction:spoof_AddIndBonusRanged": 1,
+                "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
                 "flatHiddenSkillLevel": [
                   {
                     "value": 1,
@@ -6743,6 +6757,8 @@
               "currencyCosts": [],
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
+                "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
+                "rielkConstruction:increaseWeaponXPranged": 15,
                 "flatHiddenSkillLevel": [
                   {
                     "value": 2,
@@ -6763,7 +6779,6 @@
               "baseExperience": 200,
               "baseActionCost": 400,
               "changeFunc": [
-                "addSpecialAttack",
                 "raiseMasteryLevel"
               ],
               "categoryID": "rielkConstruction:House",
@@ -6795,7 +6810,7 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "rielkConstruction:spoof_AddRangedSpecialAttack": 1,
+                "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
                 "flatHiddenSkillLevel": [
                   {
                     "value": 2,
@@ -6857,6 +6872,9 @@
                 2
               ],
               "modifiers": {
+                "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
+                "rielkConstruction:increaseWeaponXPranged": 35,
+                "rielkConstruction:spoof_DoubleIndBonusRanged": 1,
                 "flatHiddenSkillLevelBasedOnLevels": [
                   {
                     "value": 5,
@@ -9955,6 +9973,7 @@
               ],
               "currencyCosts": [],
               "modifiers": {
+                "rielkConstruction:spoof_AddWeaponMasteryRanged": 1,
                 "magicAccuracyRating": 1,
                 "skillXP": [
                   {
@@ -9999,13 +10018,17 @@
               "currencyCosts": [],
               "shinyMods": [
                 1,
-                2
+                2,
+                3,
+                4
               ],
               "changeFunc": [
                 "increaseRuneReduction",
                 "raiseMasteryLevel"
               ],
               "modifiers": {
+                "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
+                "rielkConstruction:spoof_AddIndBonusMagic": 1,
                 "rielkConstruction:spoofIncreaseRuneReduction": 1,
                 "rielkConstruction:addRuneShield": 1
               }
@@ -10049,6 +10072,8 @@
               "currencyCosts": [],
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
+                "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
+                "rielkConstruction:increaseWeaponXPmagic": 15,
                 "flatMagicAttackBonus": 5,
                 "skillXP": [
                   {
@@ -10100,12 +10125,11 @@
                 2
               ],
               "changeFunc": [
-                "addSpecialAttack",
                 "raiseMasteryLevel"
               ],
               "modifiers": {
-                "rielkConstruction:fake_Book_of_Eli": 1,
-                "rielkConstruction:spoof_AddMagicSpecialAttack": 1
+                "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
+                "rielkConstruction:fake_Book_of_Eli": 1
               }
             },
             {
@@ -10164,14 +10188,15 @@
               ],
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
+                "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
+                "rielkConstruction:increaseWeaponXPmagic": 35,
+                "rielkConstruction:spoof_DoubleIndBonusRanged": 1,
                 "flatHiddenSkillLevelBasedOnLevels": [
                   {
                     "value": 10,
                     "skillID": "melvorD:Magic"
                   }
-                ],
-                "rielkConstruction:runeShieldMultiplier": 1,
-                "rielkConstruction:AllowAurorasAnytime": 1
+                ]
               }
             },
             {
@@ -10813,19 +10838,12 @@
                   "quantity": 1
                 }
               ],
+              "shinyMods": [
+                1
+              ],
               "currencyCosts": [],
               "modifiers": {
-                "meleeStrengthBonus": 1,
-                "skillXP": [
-                  {
-                    "value": 2,
-                    "skillID": "melvorD:Attack"
-                  },
-                  {
-                    "value": 2,
-                    "skillID": "melvorD:Strength"
-                  }
-                ]
+                "rielkConstruction:spoof_AddWeaponMasteryMelee": 1
               }
             },
             {
@@ -10853,25 +10871,24 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 1,
-                    "skillID": "melvorD:Attack"
-                  },
-                  {
-                    "value": 1,
-                    "skillID": "melvorD:Strength"
-                  }
-                ],
+                "rielkConstruction:spoof_AddIndBonusMelee": 1,
+                "rielkConstruction:spoof_IncreaseMasteryLevelMelee": 1,
                 "skillXP": [
                   {
-                    "value": 2,
+                    "value": 3,
                     "skillID": "melvorD:Attack"
                   },
                   {
-                    "value": 2,
+                    "value": 3,
                     "skillID": "melvorD:Strength"
                   }
                 ]
@@ -10912,6 +10929,8 @@
               "currencyCosts": [],
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
+                "rielkConstruction:spoof_IncreaseMasteryLevelMelee": 1,
+                "rielkConstruction:increaseWeaponXPmelee": 15,
                 "flatHiddenSkillLevel": [
                   {
                     "value": 2,
@@ -10940,8 +10959,7 @@
               "baseExperience": 100,
               "baseActionCost": 400,
               "changeFunc": [
-                "raiseMasteryLevel",
-                "addSpecialAttack"
+                "raiseMasteryLevel"
               ],
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -10993,7 +11011,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "rielkConstruction:spoof_AddMeleeSpecialAttack": 1,
+                "rielkConstruction:spoof_IncreaseMasteryLevelMelee": 1,
+                "rielkConstruction:increaseWeaponXPmelee": 35,
                 "flatHiddenSkillLevel": [
                   {
                     "value": 2,
@@ -11069,6 +11088,8 @@
               ],
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
+                "rielkConstruction:spoof_IncreaseMasteryLevelMelee": 1,
+                "rielkConstruction:spoof_DoubleIndBonusMelee": 1,
                 "flatHiddenSkillLevelBasedOnLevels": [
                   {
                     "value": 5,
@@ -14158,6 +14179,228 @@
                 "includeSign": false,
                 "text": "Over your HEAD",
                 "lang": "MODIFIER_DATA_spoof_Damocles"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddWeaponMasteryMelee",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "Over your HEAD",
+                "lang": "MODIFIER_DATA_spoof_AddWeaponMasteryMelee"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_IncreaseMasteryLevelMelee",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "Over your HEAD",
+                "lang": "MODIFIER_DATA_spoof_IncreaseMasteryLevelMelee"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddWeaponMasteryRanged",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "Over your HEAD",
+                "lang": "MODIFIER_DATA_spoof_AddWeaponMasteryRanged"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_IncreaseMasteryLevelRanged",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "Over your HEAD",
+                "lang": "MODIFIER_DATA_spoof_IncreaseMasteryLevelRanged"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddWeaponMasteryMagic",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "",
+                "lang": "MODIFIER_DATA_spoof_AddWeaponMasteryMagic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_IncreaseMasteryLevelMagic",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "",
+                "lang": "MODIFIER_DATA_spoof_IncreaseMasteryLevelMagic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddIndBonusMelee",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "",
+                "lang": "MODIFIER_DATA_spoof_AddIndBonusMelee"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddIndBonusRanged",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "",
+                "lang": "MODIFIER_DATA_spoof_AddIndBonusRanged"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_AddIndBonusMagic",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "",
+                "lang": "MODIFIER_DATA_spoof_AddIndBonusMagic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "increaseWeaponXPmelee",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "",
+                "lang": "MODIFIER_DATA_increaseWeaponXPMelee"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "increaseWeaponXPranged",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "",
+                "lang": "MODIFIER_DATA_increaseWeaponXPRanged"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "increaseWeaponXPmagic",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "",
+                "lang": "MODIFIER_DATA_increaseWeaponXPMagic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_DoubleIndBonusMelee",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "",
+                "lang": "MODIFIER_DATA_spoof_DoubleIndBonusMelee"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_DoubleIndBonusRanged",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "",
+                "lang": "MODIFIER_DATA_spoof_DoubleIndBonusRanged"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_DoubleIndBonusMagic",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "",
+                "lang": "MODIFIER_DATA_spoof_DoubleIndBonusMagic"
               }
             ]
           }

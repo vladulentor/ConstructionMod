@@ -221,7 +221,6 @@ export const language = {
     'SPECIAL_ATTACK_NAME_Twin_Shot': 'Twin Shot',
     'SPECIAL_ATTACK_NAME_Brutal_Strike': 'Brutal Strike',
 
-    'WEAPON_TYPE_LEVEL': '${weaponType} Proficiency Level ${level}',
     'TOAST_FIXTURE_COMPLETE': 'You\'ve finished building your ${fixtureName}!',
 
     'MODIFIER_DATA_decrease_skillEfficiencyChance': '-${value}% Chance to complete extra actions in ${skillName}',

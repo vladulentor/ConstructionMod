@@ -2,7 +2,7 @@ const { loadModule } = mod.getContext(import.meta);
 
 
 
-const { raiseMasteryLevel } = await loadModule('src/patches/skillPatches/combat/weaponMastery/raiseMasteryLevel.mjs');
+const { raiseMasteryLevel } = await loadModule('src/patches/skillPatches/combat/raiseMasteryLevel.mjs');
 
 
 

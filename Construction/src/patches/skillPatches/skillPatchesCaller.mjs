@@ -1,6 +1,7 @@
 const { loadModule } = mod.getContext(import.meta);
 
 const { addHiddenLevelsToAllsSills } = await loadModule('src/patches/skillPatches/combat/addHiddenLevelsToAllsSills.mjs');
+const { hookIntoWeaponType } = await loadModule('src/patches/skillPatches/combat/hookIntoWeaponType.mjs');
 
 
 
@@ -13,14 +14,6 @@ const { removeObstacles } = await loadModule('src/patches/skillPatches/agility/r
 const { keepTrackOfObstacles } = await loadModule('src/patches/skillPatches/agility/keepTrackOfObstacles.mjs');
 const { reorderAgiMods } = await loadModule('src/patches/skillPatches/agility/reorderAgiMods.mjs');
 const { provideBonusesPerAgiLevels } = await loadModule('src/patches/skillPatches/agility/provideBonusesPerAgiLevels.mjs');
-
-
-
-const { addWeaponType } = await loadModule('src/patches/skillPatches/combat/weaponMastery/addWeaponType.mjs');
-const { addWeaponMasteryUI } = await loadModule('src/patches/skillPatches/combat/weaponMastery/weaponMasteryUI.mjs');
-
-const { patchWeaponTypeLogic } = await loadModule('src/patches/skillPatches/combat/weaponMastery/patchWeaponTypeLogic.mjs');
-
 
 
 const { patchOverHeal } = await loadModule('src/patches/skillPatches/combat/patchOverHeal.mjs');
@@ -118,18 +111,16 @@ export function patchSkillsBeforeDataReg(ctx) {
         slayerCostReduction(ctx);
         reduceMaxHitByDefenseLevel(ctx);
         unlockTrader(ctx);
-        patchWeaponTypeLogic(ctx);
         nerfBearDevil();
 }
 export function patchSkillsAfterDataReg(ctx) {
         patchCraftingOrder();
         patchFletchingOrder();
+        hookIntoWeaponType(ctx);
         patchShieldRecipes();
         addBeamsMasteryPoolBonus();
         removeObstacles(ctx);
         reorderAgiMods()
-        addWeaponType(ctx);
-        addWeaponMasteryUI(ctx);
         keepTrackOfObstacles(ctx);
         patchArrowShaftRecipes(ctx);
         patchPerpetualHaste(ctx);

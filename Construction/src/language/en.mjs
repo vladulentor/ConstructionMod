@@ -286,6 +286,9 @@ export const language = {
     'SHOP_PURCHASE_Perpetual_Haste': '-15% Base Crafting, Construction & Fletching Interval',
     'ITEM_DESCRIPTION_BEAR_DEVIL_SYNERGY': 'While using the Controlled Heat Potions, +5% Firemaking Skill XP and Bonfire duration increased by 15%. Charges are used per Firemaking action and lit Bonfire.',
     'RIELK_SYNERGY_Pig_Bee': '+10% Doubling and Preservation Chance while not Passive Cooking',
+
+
+    
     'RIELK_SYNERGY_Bear_Bee': 'While the Twice-Measured Potion is active in Construction, Resource cost when completing extra actions is reduced by 0.2',
     'MODIFIER_DATA_fishingTreasureNoReplace': 'Also catch fish when finding Junk or Special items',
     'MODIFIER_DATA_TabletFightBuffBasedOnMarkLevel': '${value}% increased Max Hit from Familiars per Mark Level above 5',
@@ -304,7 +307,7 @@ export const language = {
     'MODIFIER_DATA_spoof_AddSlayerEnemies1': 'Discover a hidden enemy in the Graveyard',
     'MODIFIER_DATA_spoof_AddSlayerEnemies2': 'Discover a hidden enemy in the Bandit\'s Hideout',
     'MODIFIER_DATA_spoof_AddSlayerEnemies3': 'Discover a hidden enemy in the Icy Hills',
-    'MODIFIER_DATA_spoof_AddSlayerEnemies4': 'Discover a hidden enemy in the Wizard Tower',
+    'MODIFIER_DATA_spoof_AddSlayerEnemies4': 'Discover a hidden enemy in the Wizard Tower',    
     'MODIFIER_DATA_spoof_AddSlayerEnemies5': 'Discover a hidden enemy in the Dragon Valley',
     'MODIFIER_DATA_slayerCostReduction': '${value}% Slayer Task cost',
     'MODIFIER_DATA_spoof_AddAgiObstacle': 'New Tier ${value} Obstacle available in ${skillName}',

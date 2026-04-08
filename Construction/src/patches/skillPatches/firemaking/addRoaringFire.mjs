@@ -124,7 +124,7 @@ export function addRoaringFire(ctx) {
 
 
   ctx.patch(Firemaking, 'addProvidedStats').after(function (_) {// I don't know what the fuck a statObject wants, fuck stat objects
-    if (this.isRoaringBonfire)
+    if (this.isRoaringBonfire && this.litBonfireRecipe)
       this.providedStats.addStatObject({ name: `${templateRielkLangString('MENU_BONFIRE_SOURCE', { logName: this.litBonfireRecipe.name })}` }, this.litBonfireRecipe.roaringStats);
   });
 

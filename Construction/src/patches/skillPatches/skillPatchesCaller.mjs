@@ -16,10 +16,6 @@ const { provideBonusesPerAgiLevels } = await loadModule('src/patches/skillPatche
 
 
 
-const { addWeaponType } = await loadModule('src/patches/skillPatches/combat/weaponMastery/addWeaponType.mjs');
-const { addWeaponMasteryUI } = await loadModule('src/patches/skillPatches/combat/weaponMastery/weaponMasteryUI.mjs');
-
-
 
 
 const { patchOverHeal } = await loadModule('src/patches/skillPatches/combat/patchOverHeal.mjs');
@@ -34,6 +30,7 @@ const { patchPrayerPointsSpending } = await loadModule('src/patches/skillPatches
 const { emitPassiveCook } = await loadModule('src/patches/skillPatches/cooking/emitPassiveCook.mjs');
 const { perfectFoodHealing } = await loadModule('src/patches/skillPatches/cooking/perfectFoodHealing.mjs');
 const { addAshOnFail } = await loadModule('src/patches/skillPatches/cooking/addAshOnFail.mjs');
+const { patchAutoEat } = await loadModule('src/patches/skillPatches/cooking/patchAutoEat.mjs');
 
 const { addRoaringFire } = await loadModule('src/patches/skillPatches/firemaking/addRoaringFire.mjs');
 
@@ -115,6 +112,7 @@ export function patchSkillsBeforeDataReg(ctx) {
         provideBonusesPerAgiLevels(ctx);
         trackSlayerCoins(ctx);
         slayerCostReduction(ctx);
+        patchAutoEat(ctx);
         reduceMaxHitByDefenseLevel(ctx);
         unlockTrader(ctx);
         nerfBearDevil();

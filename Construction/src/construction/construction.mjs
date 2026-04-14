@@ -414,7 +414,7 @@ export class Construction extends ArtisanSkill {
     }
     disableToolTip() { //This function gets called on gameguide click
         if (game.openPage.id == 'rielkConstruction:Construction') {
-            this.extSaveData.showUpdateTooltipF = false;
+            this.extSaveData.showUpdateTooltip = false;
             if (this.annoying?.state?.isDestroyed === false) {
                 this.annoying.destroy();
                 //technically doesn't clearInterval, but that happens on page change so it's not too big a deal.

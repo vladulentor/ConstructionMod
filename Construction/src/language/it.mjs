@@ -1,4 +1,5 @@
 export const language = {
+    'MODIFIER_DATA_skillItemDoublingChanceGlobal': '${value}% di probabilità di raddoppiare gli oggetti nelle abilità',
     'AGI_OBSTACLE_WarmUpStretches': "Stretching di Riscaldamento",
     'AGI_OBSTACLE_AltarHop': "Salto dell'Altare",
     'AGI_OBSTACLE_WatchtowerClimb': "Arrampicata sulla Torre di Guardia",

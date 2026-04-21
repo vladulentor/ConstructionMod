@@ -1,4 +1,5 @@
 export const language = {
+    'MODIFIER_DATA_skillItemDoublingChanceGlobal': 'スキルでアイテムを2倍にする確率 ${value}%',
     'AGI_OBSTACLE_WarmUpStretches': "ウォームアップストレッチ",
     'AGI_OBSTACLE_AltarHop': "祭壇ジャンプ",
     'AGI_OBSTACLE_WatchtowerClimb': "見張り塔の登攀",

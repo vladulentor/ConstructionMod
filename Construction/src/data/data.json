@@ -4433,12 +4433,12 @@
                   "quantity": 1
                 },
                 {
-                  "id": "melvorD:Steel_Bar",
+                  "id": "melvorD:Silver_Bar",
                   "quantity": 1
                 },
                 {
-                  "id": "rielkConstruction:Steel_Nails",
-                  "quantity": 1
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 5
                 }
               ],
               "currencyCosts": []

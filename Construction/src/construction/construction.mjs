@@ -13,7 +13,6 @@ const { ConstructionRecipe } = await loadModule('src/construction/constructionRe
 const { ConstructionRoom } = await loadModule('src/construction/constructionRoom.mjs');
 const { ConstructionTierMastery } = await loadModule('src/construction/constructionTierMastery.mjs');
 const { createOrangeNotification } = await loadModule('src/interface/elements/constructionEfficiencyNotification.mjs');
-const { WeaponMastery } = await loadModule('src/patches/skillPatches/combat/weaponMastery/weaponType.mjs');
 
 
 const { EfficiencySourceBuilder } = await loadModule('src/construction/constructionEfficiencySourceBuilder.mjs');
@@ -34,7 +33,6 @@ export class Construction extends ArtisanSkill {
         this.rooms = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionRoom');
         this.fixtures = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionFixture');
         this.tierMasteries = new NamespaceRegistry(game.registeredNamespaces, 'ConstructionTierMastery');
-        game.weaponMasteries = new NamespaceRegistry(game.registeredNamespaces, 'WeaponMastery');
         this.totalMasteryActions = new CompletionMap();
         this.hiddenRooms = new Set();
         this.gamemode = undefined;
@@ -47,6 +45,8 @@ export class Construction extends ArtisanSkill {
         this.extSaveData.hasStudiedDiagram = false;
         this.cachedpreservationchance = 0;
         this.stats = new StatTracker();
+        this.shouldDisableEfficiency = game.currentGamemode.disableItemDoubling;
+
         game.stats.Construction = this.stats;
     }
 
@@ -196,10 +196,6 @@ export class Construction extends ArtisanSkill {
         (_g = data.tierMasteries)?.forEach(tmData => {
             this.tierMasteries.registerObject(new ConstructionTierMastery(namespace, tmData, this.game, this));
         });
-        (_h = data.weaponMasteries)?.forEach(weaponMastery => {
-            game.weaponMasteries.registerObject(new WeaponMastery(namespace, weaponMastery, this.game))
-        })
-        game.weaponMasteryXP = new Map();
         super.registerData(namespace, data);
     }
     modifyData(data) {
@@ -591,14 +587,17 @@ export class Construction extends ArtisanSkill {
     /** Gets the efficiency chance for a given action */
     // We can't disable efficiency from .jsons because malvs is a fuckEr
     getEfficiencyChance(action) {
-        if (this.shouldDisableEfficiency === undefined)
-            this.shouldDisableEfficiency = game.currentGamemode.disableItemDoubling;
-
         return (this.shouldDisableEfficiency ? 0 : this.getBaseEfficiencyChance(action)) + this.game.modifiers.getValue("rielkConstruction:bypassEfficiencyChance", this.getActionModifierQuery(action))
     }
+
     getBaseEfficiencyChance(action) {
-        const quer = this.getActionModifierQuery(action)
-        return Math.max(this.game.modifiers.getValue(
+        const quer = this.getActionModifierQuery(action);
+        let furnbon = 0
+        if (action.fixture?.assocSkills) // if it's furniture;
+        {
+            furnbon = action.fixture.assocSkills.every(skill => skill.level >= 99) ? this.game.modifiers.getValue('rielkConstruction:maxlevelAssocbonusEff', ModifierQuery.EMPTY) : 0;
+        }
+        return Math.max(furnbon + this.game.modifiers.getValue(
             "rielkConstruction:skillEfficiencyChance",
             quer
         ) + (this.tothmode ? this.game.modifiers.getValue('rielkConstruction:skillEfficiencyChancePerHamrielStar', quer) * game.astrology.actions.getObjectSafe("melvorTotH:Haemir").maxValueModifiers : 0), 0);
@@ -624,21 +623,25 @@ export class Construction extends ArtisanSkill {
         return (defaultPotencyMult + modifier) / 100;
     }
 
-    _buildEfficiencyChancePotencySources(action) {
+    _buildEfficiencyChancePotencySources(action, half) {
         const builder = new EfficiencySourceBuilder(this.game.modifiers, true);
         const query = this.getActionModifierQuery(action);
-        builder.addPotencySources('rielkConstruction:skillEfficiencyPotency', query);
+        builder.addPotencySources('rielkConstruction:skillEfficiencyPotency', query, 1);
         if (!this.shouldDisableEfficiency) {
-            builder.addChanceSources('rielkConstruction:skillEfficiencyChance', query);
+            builder.addChanceSources('rielkConstruction:skillEfficiencyChance', query, half);
             if (this.tothmode)
-                builder.addChanceSources('rielkConstruction:skillEfficiencyChancePerHamrielStar', query, game.astrology.actions.getObjectSafe("melvorTotH:Haemir").maxValueModifiers);
+                builder.addChanceSources('rielkConstruction:skillEfficiencyChancePerHamrielStar', query, game.astrology.actions.getObjectSafe("melvorTotH:Haemir").maxValueModifiers * half);
         }
-        builder.addChanceSources('rielkConstruction:bypassEfficiencyChance', query)
+        if (action.fixture?.assocSkills?.every(skill => skill.level >= 99)) // if it's furniture;
+        {
+            builder.addChanceSources('rielkConstruction:maxlevelAssocbonusEff', query, half);
+        }
+        builder.addChanceSources('rielkConstruction:bypassEfficiencyChance', query, half);
         return builder;
     }
 
-    getEfficiencyChancePotencySources(action) {
-        const builder = this._buildEfficiencyChancePotencySources(action);
+    getEfficiencyChancePotencySources(action, half = 1) {
+        const builder = this._buildEfficiencyChancePotencySources(action, half);
         const spans = builder.getSpans();
 
         return spans;

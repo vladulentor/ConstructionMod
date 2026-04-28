@@ -18,6 +18,12 @@ const { addSpecialAttack } = await loadModule('src/patches/skillPatches/combat/a
 const { lowerLevelRequirements } = await loadModule('src/patches/skillPatches/shop/lowerLevelRequirements.mjs');
 const { refreshTrader } = await loadModule('src/patches/skillPatches/shop/unlockTrader.mjs');
 
+const { addEfftoSkillBoosts } = await loadModule('src/patches/skillPatches/crafting/addEfficiencyToOffSkills.mjs');
+const { unlockShieldsCrossbows } = await loadModule('src/patches/skillPatches/crafting/unlockShieldsCrossbows.mjs');
+
+
+const { addNewMasteryPoolBonuses } = await loadModule('src/patches/skillPatches/smithing/addNewMasteryPoolBonuses.mjs');
+
 
 const { addBonusToPool } = await loadModule('src/patches/skillPatches/mining/addBonusToPool.mjs');
 
@@ -71,7 +77,10 @@ export const EffectRegistry = {
   addConstellationLevels,
   addBonusToPool,
   refreshAgi,
+  addEfftoSkillBoosts,
   buffSlayerItems,
+  addNewMasteryPoolBonuses,
+  unlockShieldsCrossbows,
   addObstacle,
   checkForInitialMill,
   addEnemies,

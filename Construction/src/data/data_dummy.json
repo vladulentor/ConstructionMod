@@ -10,7 +10,7 @@
         "name": "Magic Planks",
         "category": "Construction",
         "type": "Planks",
-        "media": "assets/items/planks_magic.webp",
+        "media": "assets/icon.png",
         "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
@@ -21,6 +21,18 @@
         "itemUpgrades": [
       {
         "upgradedItemID": "rielkConstruction:Redwood_Planks",
+        "itemCosts": [
+          {
+            "id": "rielkConstruction:Magic_Planks",
+            "quantity": 1
+          }
+        ],
+        "rootItemIDs": [
+          "rielkConstruction:Magic_Planks"
+        ]
+      },
+       {
+        "upgradedItemID": "rielkConstruction:Iron_Nails",
         "itemCosts": [
           {
             "id": "rielkConstruction:Magic_Planks",

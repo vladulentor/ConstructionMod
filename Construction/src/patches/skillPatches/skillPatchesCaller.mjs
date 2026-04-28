@@ -7,6 +7,8 @@ const { addHiddenLevelsToAllsSills } = await loadModule('src/patches/skillPatche
 const { addXpPerFixture } = await loadModule('src/patches/skillPatches/general/addXpPerFixture.mjs');
 const { clampMasteryPool } = await loadModule('src/patches/skillPatches/general/clampMasteryPool.mjs');
 const { addCurrencyCancel } = await loadModule('src/patches/skillPatches/general/addCurrencyCancel.mjs');
+const { patchMasteryPoolProgress } = await loadModule('src/patches/skillPatches/general/patchMasteryPoolProgress.mjs');
+
 
 
 const { removeObstacles } = await loadModule('src/patches/skillPatches/agility/removeAndAddObstacles.mjs');
@@ -24,6 +26,8 @@ const { addMagicShield } = await loadModule('src/patches/skillPatches/combat/add
 const { patchAuroraAnyStyle } = await loadModule('src/patches/skillPatches/combat/patchAuroraAnyStyle.mjs');
 const { patchRunePreservationCap } = await loadModule('src/patches/skillPatches/combat/patchRunePreservationCap.mjs');
 const { patchPrayerPointsSpending } = await loadModule('src/patches/skillPatches/combat/patchPrayerPointsSpending.mjs');
+const { addStunOnCrit } = await loadModule('src/patches/skillPatches/combat/addStunOnCrit.mjs');
+
 
 
 
@@ -44,6 +48,9 @@ const { additionalPotionsHighTier } = await loadModule('src/patches/skillPatches
 
 const { patchCraftingOrder } = await loadModule('src/patches/skillPatches/crafting/patchCraftingOrder.mjs');
 const { patchShieldRecipes } = await loadModule('src/patches/skillPatches/crafting/patchShieldRecipes.mjs');
+const { addEfficiencyToOffSkills } = await loadModule('src/patches/skillPatches/crafting/addEfficiencyToOffSkills.mjs');
+
+
 
 
 
@@ -91,6 +98,7 @@ export function patchSkillsBeforeDataReg(ctx) {
         emitPassiveCook(ctx);
         addAshOnFail(ctx);
         addRoaringFire(ctx);
+
         perfectFoodHealing(ctx);
         addFishonTreasureRollPlusExtra(ctx);
         loseGPOnFishing(ctx);
@@ -99,11 +107,13 @@ export function patchSkillsBeforeDataReg(ctx) {
         additionalPotionsHighTier(ctx);
         patchMagicUsageCheck(ctx);
         clampMasteryPool(ctx);
+        addStunOnCrit(ctx);
         addMagicShield(ctx);
         patchAuroraAnyStyle(ctx);
         addRuneEssenceCtx(ctx);
         addStarConvergence(ctx);
         addComboRunesonElemRunes(ctx);
+        addEfficiencyToOffSkills(ctx);
         patchRunePreservationCap(ctx);
         addHiddenLevelsToAllsSills(ctx);
         addCurrencyCancel(ctx);
@@ -114,6 +124,7 @@ export function patchSkillsBeforeDataReg(ctx) {
         slayerCostReduction(ctx);
         patchAutoEat(ctx);
         reduceMaxHitByDefenseLevel(ctx);
+        patchMasteryPoolProgress(ctx);
         unlockTrader(ctx);
         nerfBearDevil();
 }

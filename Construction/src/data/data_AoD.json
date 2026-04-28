@@ -64,7 +64,6 @@
         "modifiers": {
           "rielkConstruction:bypassEfficiencyChance": [
             {
-              "skillID": "rielkConstruction:Construction",
               "value": 35
             }
           ]
@@ -116,7 +115,6 @@
         "modifiers": {
           "rielkConstruction:skillEfficiencyCost": [
             {
-              "skillID": "rielkConstruction:Construction",
               "value": -150
             }
           ]

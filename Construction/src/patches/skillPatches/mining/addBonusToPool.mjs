@@ -1,10 +1,10 @@
 let guard2 = false;
 let guard5 = false;
 export function addBonusToPool() {
-  const miningbon = game.mining.masteryPoolBonuses
+  const miningbon = game.mining.masteryPoolBonuses.get(game.realms.getObjectByID("melvorD:Melvor"));
   if (this.tier >= 2 && !guard2) {
-    const miningbon1 = miningbon.get(game.realms.getObjectByID("melvorD:Melvor")).find(mas => mas.percent === 10);
-    const miningbon2 = miningbon.get(game.realms.getObjectByID("melvorD:Melvor")).find(mas => mas.percent === 25);
+    const miningbon1 = miningbon.find(mas => mas.percent === 10);
+    const miningbon2 = miningbon.find(mas => mas.percent === 25);
     const ourmod1 = new ModifierValue(game.modifierRegistry.getObjectByID('melvorD:skillXP'), 5, { skill: game.smithing })
     const ourmod2 = new ModifierValue(game.modifierRegistry.getObjectByID('melvorD:skillPreservationChance'), 5, { skill: game.smithing })
 
@@ -13,8 +13,8 @@ export function addBonusToPool() {
     guard2 = true
   }
   if (this.tier >= 5 && !guard5) {
-    const miningbon3 = miningbon.get(game.realms.getObjectByID("melvorD:Melvor")).find(mas => mas.percent === 50);
-    const miningbon4 = miningbon.get(game.realms.getObjectByID("melvorD:Melvor")).find(mas => mas.percent === 95);
+    const miningbon3 = miningbon.find(mas => mas.percent === 50);
+    const miningbon4 = miningbon.find(mas => mas.percent === 95);
     const ourmod3 = new ModifierValue(game.modifierRegistry.getObjectByID('melvorD:flatSkillInterval'), -200, { skill: game.smithing })
     const ourmod4 = new ModifierValue(game.modifierRegistry.getObjectByID('melvorD:masteryXP'), 5, { skill: game.smithing })
 

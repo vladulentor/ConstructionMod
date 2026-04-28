@@ -6,6 +6,13 @@ export class ConstructionFixture extends RealmedObject {
     constructor(namespace, data, game, construction) {
         super(namespace, data, game);
         this.currentTier = 0;
+        if (data.assocSkill) {
+            this.assocSkills = [data.assocSkill].flat(); // neat trick
+            for (let i = 0; i < this.assocSkills.length; i++) {
+                this.assocSkills[i] = game.skills.getObjectSafe(this.assocSkills[i]);
+            }
+        }
+
         this.progress = 0;
         this.UIcost = null;
         this.stepCost = null;
@@ -180,6 +187,9 @@ export class ConstructionFixture extends RealmedObject {
         };
         const fixtureNotification = game.notifications.newAddSuccessNotification(`FixtureComplete-${this.id}`);
         game.notifications.addNotification(fixtureNotification, finishNotification);
+        if (rollPercentage(game.modifiers.getValue("rielkConstruction:findChuckOnFixtureComp", ModifierQuery.EMPTY) * this.currentTier)) {
+            game.petManager.unlockPet(game.pets.getObjectByID("rielkConstruction:ChuckTheForeman")) // Godspeed Chuck
+        }
         this.emit('tierChanged', this.currentTier);
         construction.game.completion.updateSkillMastery(construction)
     }

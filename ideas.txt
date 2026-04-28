@@ -12,3 +12,26 @@ Outpost update:
 
 Reminder for update:
 Add back the changeFunc and effect 4 for special attacks to dummy and target, also uncomment them in the function
+
+Current forge:
+                "skillXP": [
+                  {
+                    "value": 8,
+                    "skillID": "rielkConstruction:Construction"
+                  },
+
+                "skillPreservationChance": [
+                  {
+                    "value": 8,
+                    "skillID": "rielkConstruction:Construction"
+                  },
+                "rielkConstruction:skillEfficiencyChance": [
+                  {
+                    "value": 8
+                  }
+                ]
+                "rielkConstruction:skillEfficiencyCost": [
+                  {
+                    "value": -15
+                  }
+                ]

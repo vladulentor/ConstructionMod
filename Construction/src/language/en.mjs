@@ -192,7 +192,22 @@ export const language = {
     'ITEM_NAME_Star_Necklace': 'Star Necklace',
     'ITEM_NAME_Ice_Gloves': 'Ice Gloves',
 
+    'ITEM_NAME_Builder_Pouch': 'Builder Pouch',
+    'ITEM_NAME_Builder_Pouch_II': 'Builder Pouch II',
 
+    'ITEM_NAME_Bronze_Crossbow_T_R': '(R) Bronze Crossbow',
+    'ITEM_NAME_Iron_Crossbow_T_R': '(R) Iron Crossbow',
+    'ITEM_NAME_Steel_Crossbow_T_R': '(R) Steel Crossbow',
+    'ITEM_NAME_Mithril_Crossbow_T_R': '(R) Mithril Crossbow',
+    'ITEM_NAME_Adamant_Crossbow_T_R': '(R) Adamant Crossbow',
+    'ITEM_NAME_Rune_Crossbow_T_R': '(R) Rune Crossbow',
+    'ITEM_NAME_Dragon_Crossbow_T_R': '(R) Dragon Crossbow',
+
+    'ITEM_NAME_Green_Dhide_Shield_R': '(R) Green D-hide Shield',
+    'ITEM_NAME_Blue_Dhide_Shield_R': '(R) Blue D-hide Shield',
+    'ITEM_NAME_Red_Dhide_Shield_R': '(R) Red D-hide Shield',
+    'ITEM_NAME_Black_Dhide_Shield_R': '(R) Black D-hide Shield',
+    'ITEM_NAME_Ancient_Dhide_Shield_R': '(R) Ancient D-hide Shield',
 
     'ITEM_DESCRIPTION_Builders_Hat': '+2% Construction Skill XP',
     'ITEM_DESCRIPTION_Builders_Body': '+2% Construction Skill XP',
@@ -223,15 +238,24 @@ export const language = {
 
     'TOAST_FIXTURE_COMPLETE': 'You\'ve finished building your ${fixtureName}!',
 
-    'MODIFIER_DATA_decrease_skillEfficiencyChance': '-${value}% Chance to complete extra actions in ${skillName}',
-    'MODIFIER_DATA_increase_skillEfficiencyChance': '+${value}% Chance to complete extra actions in ${skillName}',
+    'MODIFIER_DATA_decrease_skillEfficiencyChance': '-${value}% Chance to complete extra actions',
+    'MODIFIER_DATA_increase_skillEfficiencyChance': '+${value}% Chance to complete extra actions',
     'MODIFIER_DATA_decrease_skillEfficiencyChanceForCategory': '-${value}% Chance to complete extra actions when making ${categoryName} in ${skillName}',
     'MODIFIER_DATA_increase_skillEfficiencyChanceForCategory': '+${value}% Chance to complete extra actions when making ${categoryName} in ${skillName}',
     'MODIFIER_DATA_skillEfficiencyChanceforSubcategory': '${value}% Chance to complete extra actions when making ${subcategoryName} in ${skillName}',
-    'MODIFIER_DATA_skillEfficiencyChancePerHamrielStar': '${value}% Chance to complete extra actions in ${skillName} per maxed Star in Haemir constellation in Astrology',
+    'MODIFIER_DATA_skillEfficiencyChancePerHamrielStar': '${value}% Chance to complete extra actions per maxed Star in Haemir constellation in Astrology',
 
-    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra Materials or Progress made when completing extra actions when making ${categoryName} in ${skillName}',
-    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra Materials or Progress made when completing extra actions while crafting ${categoryName} in ${skillName}',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotencyForCategory': '-${value} extra Materials or Progress made when completing extra actions when making ${categoryName} ',
+    'MODIFIER_DATA_increase_skillEfficiencyPotencyForCategory': '+${value} extra Materials or Progress made when completing extra actions when making ${categoryName}',
+    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} extra Materials or Progress made when completing extra actions',
+    'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} extra Materials or Progress made when completing extra actions',
+
+    'MODIFIER_DATA_decrease_skillEfficiencyCost': '-${value} Resource cost when completing extra actions',
+    'MODIFIER_DATA_increase_skillEfficiencyCost': '+${value} Resource cost when completing extra actions',
+
+    'MODIFIER_DATA_bypassEfficiencyChance': '${value}% Chance to complete extra actions (Bypasses Gamemode Limitations)',
+
+
 
     'MODIFIER_DATA_runeShieldMultiplier': 'Halve Spent Runes required to create a Ward',
     'MODIFIER_DATA_addRuneShield': 'Spending 300 Runes in Combat creates a Ward that negates Enemies\' next turn',
@@ -279,17 +303,9 @@ export const language = {
     'MODIFIER_DATA_UnlockConvergence': 'Unlock Convergence',
     'MODIFIER_DATA_allCombatSkillsFlatHiddenLevel': '${value} Hidden Level in all Combat Skills',
     'MODIFIER_DATA_allNonCombatSkillsFlatHiddenLevel': '${value} Hidden Level in all Non-Combat Skills',
-    'MODIFIER_DATA_bypassEfficiencyChance': '${value}% Chance to complete extra actions in ${skillName} (Bypasses Gamemode Limitations)',
     'MODIFIER_DATA_bypassNonCombatSkillLevelCapAR': 'Increase all Non-Combat Skills\' current cap Level Cap by ${value} (up to their maximum cap)',
     'MODIFIER_DATA_bypassNonCombatSkillLevelAR': 'Increase all Non-Combat Skills\' Level by ${value}',
     'MODIFIER_DATA_bypassGlobalDoubling': '${value}% Chance to Double Items Globally (Bypasses Gamemode Limitations)',
-    'SHOP_PURCHASE_Perpetual_Haste': '-15% Base Crafting, Construction & Fletching Interval',
-    'ITEM_DESCRIPTION_BEAR_DEVIL_SYNERGY': 'While using the Controlled Heat Potions, +5% Firemaking Skill XP and Bonfire duration increased by 15%. Charges are used per Firemaking action and lit Bonfire.',
-    'RIELK_SYNERGY_Pig_Bee': '+10% Doubling and Preservation Chance while not Passive Cooking',
-
-
-    
-    'RIELK_SYNERGY_Bear_Bee': 'While the Twice-Measured Potion is active in Construction, Resource cost when completing extra actions is reduced by 0.2',
     'MODIFIER_DATA_fishingTreasureNoReplace': 'Also catch fish when finding Junk or Special items',
     'MODIFIER_DATA_TabletFightBuffBasedOnMarkLevel': '${value}% increased Max Hit from Familiars per Mark Level above 5',
     'MODIFIER_DATA_TabletAmountBuffBasedOnMarkLevel': '${value} base quantity of tablets gained in ${skillName} per Mark Level above 5',
@@ -300,14 +316,14 @@ export const language = {
     'MODIFIER_DATA_spoof_LowerTraderRequirements': 'Reduce all Level and Task Requirements for the Trader in Township by ${value}',
     'MODIFIER_DATA_UnlockTrader': 'Unlock the Trader in Township',
     'MODIFIER_DATA_spoof_AddItemsToShop': 'Supply new Items to the Shop',
-    'MODIFIER_DATA_spoof_AddBonusToMiningMasteryPool1': 'Add Smithing Bonuses to Mining\'s 10% and 25% Mastery Pool bonuses',
-    'MODIFIER_DATA_spoof_AddBonusToMiningMasteryPool2': 'Add Smithing Bonuses to Mining\'s 50% and 95% Mastery Pool bonuses',
+    'MODIFIER_DATA_spoof_AddBonusToMiningMasteryPool1': 'Add Smithing modifiers to Mining\'s 10% and 25% Mastery Pool Checkpoints',
+    'MODIFIER_DATA_spoof_AddBonusToMiningMasteryPool2': 'Add Smithing modifiers to Mining\'s 50% and 95% Mastery Pool Checkpoints',
     'MODIFIER_DATA_spoof_upgradeSlayerShtuff': 'Empower Items that grant access to Slayer Areas',
     'MODIFIER_DATA_doublepetsmillion': 'Double the Chance of finding pets from Combat Areas up to level 100 while you have over a million Slayer Coins',
     'MODIFIER_DATA_spoof_AddSlayerEnemies1': 'Discover a hidden enemy in the Graveyard',
     'MODIFIER_DATA_spoof_AddSlayerEnemies2': 'Discover a hidden enemy in the Bandit\'s Hideout',
     'MODIFIER_DATA_spoof_AddSlayerEnemies3': 'Discover a hidden enemy in the Icy Hills',
-    'MODIFIER_DATA_spoof_AddSlayerEnemies4': 'Discover a hidden enemy in the Wizard Tower',    
+    'MODIFIER_DATA_spoof_AddSlayerEnemies4': 'Discover a hidden enemy in the Wizard Tower',
     'MODIFIER_DATA_spoof_AddSlayerEnemies5': 'Discover a hidden enemy in the Dragon Valley',
     'MODIFIER_DATA_slayerCostReduction': '${value}% Slayer Task cost',
     'MODIFIER_DATA_spoof_AddAgiObstacle': 'New Tier ${value} Obstacle available in ${skillName}',
@@ -316,8 +332,24 @@ export const language = {
     'MODIFIER_DATA_IntPerAgiLevels': '${value}% Thieving and Agility Interval for every 20 Agility Levels',
     'MODIFIER_DATA_CombIntPerAgiLevels': '${value}s Attack and Monster Respawn Interval for every 20 Agility Levels',
     'MODIFIER_DATA_fuckYourGold': 'When you gain ${currencyName}, instead lose ${value}% the amount you would gain',
-    'MODIFIER_DATA_spoof_Damocles':'If you cannot afford this cost, you die',
+    'MODIFIER_DATA_spoof_Damocles': 'If you cannot afford this cost, you die',
+    'MODIFIER_DATA_unlockEfficiencySkill': 'Unlock ability to complete extra actions in ${skillName}',
+    'MODIFIER_DATA_spoofUpgradeCross':'Unlock ability to reinforce Crossbows made in Fletching',
+    'MODIFIER_DATA_spoofUpgradeShields':"Unlock ability to reinforce Shields made in Crafting",
+    'MODIFIER_DATA_2turnstunoncritchance':"${value}% chance to Stun the enemy for 2 turns on a critical hit",
+    'MODIFIER_DATA_skillScopedPoolCap':'+${value}% Mastery Pool XP cap in ${skillName}',
+    'MODIFIER_DATA_spoofAddNewMPBonus':'${value} Mastery Pool Checkpoints in ${skillName}',
+    'MODIFIER_DATA_spoofAddConsToSmithingPool':'Add Construction modifiers to Smithing\'s Mastery Pool Checkpoints',
+    'MODIFIER_DATA_findChuckOnFixtureComp':'Small chance to find Chuck when finishing Furniture',
+    'MODIFIER_DATA_maxlevelAssocbonusEff':'${value}% chance to complete extra actions when building Furniture if its associated Skills are level ≥ 99',
 
+    'SHOP_PURCHASE_Perpetual_Haste': '-15% Base Crafting, Construction & Fletching Interval',
+    'ITEM_DESCRIPTION_BEAR_DEVIL_SYNERGY': 'While using the Controlled Heat Potions, +5% Firemaking Skill XP and Bonfire duration increased by 15%. Charges are used per Firemaking action and lit Bonfire.',
+    'RIELK_SYNERGY_Pig_Bee': '+10% Doubling and Preservation Chance while not Passive Cooking',
+
+
+
+    'RIELK_SYNERGY_Bear_Bee': 'While the Twice-Measured Potion is active in Construction, Resource cost when completing extra actions is reduced by 0.2',
     'ITEM_NAME_Cursed_Hook': 'Cursed Hook',
     'ITEM_NAME_Tar_Jar': 'Jar of Tar',
     'ITEM_NAME_Mariners_Blouse': 'Mariner\'s Top',
@@ -334,13 +366,13 @@ export const language = {
 
     'TOASTS_FIXTURE_TIER_REQUIRED': 'You need a Tier ${tier} ${fixtureName} to do that!',
     'MENU_TEXT_REQUIRES_FIXTURE_TIER': 'Construct the${fixtureImage}${fixtureName} to Tier ${tier}',
-
+    'MENU_TEXT_TOOLTIP_OFFSKILL_EFF': ' Efficiency is half as likely outside of Construction',
     'RIELK_CONMOD_FOCUSEDCOOKING_1': '+3% Perfect Cook Chance, Success Chance, and Cooking Mastery XP while not Passive Cooking',
     'RIELK_CONMOD_FOCUSEDCOOKING_2': '+5% Perfect Cook, Doubling, and Preservation Chance in Cooking while not Passive Cooking',
     'RIELK_CONMOD_FOCUSEDCOOKING_3': '+7% Perfect Cook Chance, Additional Perfect Item Chance, and Preservation Cap in Cooking while not Passive Cooking',
     'RIELK_CONMOD_SLAYER2': '+7% damage dealt by all attacks when fighting a Slayer Task monster',
     'RIELK_CONMOD_SLAYER5': '+15% Chance to preserve Consumable Slot Charges when fighting a Slayer Task monster',
-    'RIELK_CONMOD_SLASHING1':'SUPER fast cons while having a slashing weapon',
+    'RIELK_CONMOD_SLASHING1': 'SUPER fast cons while having a slashing weapon',
 
     'MENU_TEXT_STOKE_BONFIRE': 'Stoke Bonfire (Costs ${qty} ${logName})',
     'MENU_TEXT_ENGRAVED_DIAGRAM_TEXT_0': 'How to build a Construct:',
@@ -375,11 +407,6 @@ export const language = {
     'MAP_POI_Yard': "Golbin's Yard",
     'MAP_POI_Yard_Desc': 'Atop a cliff crisscrossed with crags and drops, you spot a bustling yard. Golbins of all shapes and colors are working ear-piercing machines that cut giant amounts of lumber, stone, metal, and leather into workable shapes. The machines often break, and the Golbins use another, bigger machine to fix them. The bigger machine is always broken.',
 
-
-    'MODIFIER_DATA_decrease_skillEfficiencyPotency': '-${value} extra Materials or Progress made when completing extra actions',
-    'MODIFIER_DATA_increase_skillEfficiencyPotency': '+${value} extra Materials or Progress made when completing extra actions',
-    'MODIFIER_DATA_decrease_skillEfficiencyCost': '-${value} Resource cost when completing extra actions',
-    'MODIFIER_DATA_increase_skillEfficiencyCost': '+${value} Resource cost when completing extra actions',
 
     'MODIFIER_DATA_farmingTreeSeedReturn': '+${value}% Chance to regain a Tree Seed in Farming when harvested',
     'MODIFIER_DATA_decreaseConstructionActionsToUpgrade': '-${value}% actions and materials required to build Furniture in Construction',

@@ -1,6 +1,5 @@
 const ctx = mod.getContext(import.meta);
 const { loadModule } = mod.getContext(import.meta);
-const { getRielkLangString } = await loadModule('src/language/translationManager.mjs');
 await loadModule('src/interface/elements/constructionEfficiencyIconTooltipElement.mjs');
 
 export class EfficiencyIconElement extends InfoIconElement {
@@ -53,10 +52,11 @@ export class EfficiencyIconElement extends InfoIconElement {
         });
             
     }
-    setChance(chance, potency, cost, chancePotencySourceSpans, mode) {
+    setChance(chance, potency, cost, chancePotencySourceSpans, mode, isConstruction = 1) {
         this.chance.textContent = formatPercent(Math.round(chance));
-        this.tooltipElem.setCostNPotency(cost, potency, mode);
+        this.tooltipElem.setCostNPotency(cost, potency, mode, isConstruction);
         this.tooltipElem.updateSources(chancePotencySourceSpans);
+        
     }
 }
 window.customElements.define('efficiency-icon', EfficiencyIconElement);

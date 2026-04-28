@@ -14,7 +14,7 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
 
         // Add total labels upfront
         this._chanceSpans.push(createElement('span', { className: 'text-white text-left col-8 font-w700 pr-2', text: chanceLabel }));
-        this._chanceTotalSpan = createElement('span', { className: 'text-warning col-4 text-right pr-2 font-w400' });
+        this._chanceTotalSpan = createElement('span', { className: 'col-4 text-right pr-2 font-w400' });
         this._chanceSpans.push(this._chanceTotalSpan);
 
         this._potencySpans.push(createElement('span', { className: 'text-white text-left col-8 font-w700 pl-2', text: potencyLabel }));
@@ -31,7 +31,7 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
             this._chanceTotal += value;
             // chance is to the right
             const labelClass = 'text-info text-left col-8 pr-2';
-            const valueClass = `${entry.modifier.inverted === value < 0 ? 'text-success' : 'text-danger'} col-4 text-center pr-2`;
+            const valueClass = `${entry.modifier.inverted === value < 0 ? (mult >= 1 ? 'text-success': 'text-warning') : 'text-danger'} col-4 text-center pr-2`;
 
             // Format as percentage
             const valueString = entry.modifier.formatValue(true, value, 2, true);
@@ -66,7 +66,7 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
             const labelClass = 'text-info text-left col-8 pl-2';
             const valueClass = `${entry.modifier.inverted === value < 0 ? 'text-success' : 'text-danger'} col-4 text-center `;
 
-            const valueString = `+${Number.isInteger(value) ? value : (value).toFixed(2)}`;
+            const valueString = `${value>=0? "+" : ""}${Number.isInteger(value) ? value : (value).toFixed(2)}`;
             
             let displayName = entry.source.name;
                         // I don't like it when an effect name is over 2 lines, it looks ugly. 
@@ -85,6 +85,11 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
             }
             if (displayName.startsWith('Steel-Toed Boots'))
                  displayName = "Steel Boots";
+
+            if (displayName== '95% Smithing Mastery Pool Bonus')
+                 displayName = "95% S.M.P.B.";
+
+            
             // Push spans
             this._potencySpans.push(
                 createElement('span', { className: labelClass, text: `${displayName}:` }),
@@ -101,6 +106,7 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
 
     getSpans() {
         this._chanceTotalSpan.textContent = Modifier.formatTotalValue(true, this._chanceTotal, 2, true);
+        this._chanceTotalSpan.classList.add('construction-victory');
         if (this._potencyTotal >= 3) { this._potencyTotalSpan.classList.remove('text-warning'); this._potencyTotalSpan.classList.add('construction-victory'); }
         this._potencyTotalSpan.textContent = `x${Number.isInteger(this._potencyTotal) ? this._potencyTotal : this._potencyTotal.toFixed(2)}`;
 

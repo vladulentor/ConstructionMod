@@ -49,7 +49,6 @@ class Setup {
         await loadModule('src/interface/elements/constructionRoomPanelElement.mjs');
         await loadModule('src/interface/elements/constructionUpgradesPanelElement.mjs');
         await loadModule('src/interface/elements/rielkLangStringElement.mjs');
-        await loadModule('src/interface/elements/constructionWeaponMastery.mjs');
         await loadModule('src/patches/skillPatches/astrology/starConvergenceIcons.mjs');
 
     }

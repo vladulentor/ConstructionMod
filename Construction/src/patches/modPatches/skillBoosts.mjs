@@ -328,12 +328,15 @@ export function skillBoostsCompatibility({ patch }) {
         RecipeModifierSpans(container, complete, isShiny, statObject) {
             let nodes = skillBoosts.getModifierNodes(statObject, 1, 1, true);
             nodes.forEach(node => {
-                if (complete) {
-                    if (isShiny)
+                if (isShiny)
+                    if (complete)
                         node.classList.add('fuck-you');
                     else
                         node.classList.replace('text-success', 'text-warning');
-                }
+                else
+                    if (!complete)
+                        node.classList.remove("text-success");
+
                 container.append(node);
             });
         }

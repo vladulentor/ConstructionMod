@@ -7240,7 +7240,11 @@
               ],
               "changeFunc": "addNewMasteryPoolBonuses",
               "modifiers": {
-                "rielkConstruction:spoofAddConsToSmithingPool": 1,
+                "rielkConstruction:spoofAddConsToSmithingPool":
+                [
+                  {"value":1,
+                "skillID":"melvorD:Smithing"}
+                ],
                 "flatSkillInterval": [
                   {
                     "skillID": "melvorD:Smithing",
@@ -13471,7 +13475,7 @@
         "id": "spoofAddConsToSmithingPool",
         "allowedScopes": [
           {
-            "scopes": {},
+            "scopes": {"skill":true},
             "descriptions": [
               {
                 "text": "I could have just made a new scope for the mastery pool cap skill already but like, I don't want to test that for side effects",

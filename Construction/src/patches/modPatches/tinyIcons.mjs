@@ -6,7 +6,8 @@ export function tinyIconsCompatibility(ctx) {
         ['plot', game.items.getObjectByID('melvorD:Bobs_Rake').media],
         ['overheal', ctx.getResourceUrl('assets/tinyicons/tinyheart.png')],
         ['cookEquipment', game.items.getObjectByID('melvorF:Chefs_Hat').media],
-
+        ['chuck', game.pets.getObjectByID('rielkConstruction:ChuckTheForeman').media],
+        ['construction', game.skills.getObjectByID("rielkConstruction:Construction").media]
         ['cookSkillcape', game.items.getObjectByID('melvorD:Cooking_Skillcape').media],
         ['cookConsumables', game.items.getObjectByID('melvorF:Additional_Cooker_Scroll').media],
         ['specialItems', game.items.getObjectByID('melvorD:Treasure_Chest').media],
@@ -146,6 +147,16 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:fuckYourGold', 'currency');
     icons.addModifier('rielkConstruction:spoof_Damocles', 'mark_of_death');
 
+    icons.addModifier('rielkConstruction:spoofUpgradeShields', 'crafting');
+    icons.addModifier('rielkConstruction:spoofUpgradeCross', 'fletching');
+    icons.addModifier('rielkConstruction:unlockEfficiencySkill', 'efficiency');
+
+    icons.addModifier('rielkConstruction:findChuckOnFixtureComp', 'chuck');
+    icons.addModifier('rielkConstruction:maxlevelAssocbonusEff', 'efficiency');
+
+        icons.addModifier('rielkConstruction:spoofAddConsToSmithingPool', 'construction');
+    icons.addModifier('rielkConstruction:skillScopedPoolCap', 'mastery');
+    icons.addModifier('rielkConstruction:spoofAddNewMPBonus', 'mastery');
 
 
 }

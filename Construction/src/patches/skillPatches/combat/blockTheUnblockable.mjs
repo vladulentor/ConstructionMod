@@ -1,12 +1,31 @@
+const { loadModule } = mod.getContext(import.meta);
+
+const { getRielkLangString } = await loadModule('src/language/translationManager.mjs');
+const negText = getRielkLangString('SPLASH_NEGATED');
+
 export function blockTheUnblockable({ patch }) {
-    patch(Character, "rollToHit").after(function (hit, target, attack) {
+
+    patch(Enemy, "rollToHit").after(function (hit, target, attack) {
 
         if (hit && attack.cantMiss) {
             const ex = target.modifiers.getValue("rielkConstruction:blockTheUnblockable", ModifierQuery.EMPTY);
-            if (rollPercentage((ex / 100) * (100 - this.stats.hitChance))) {
-                this.gotHyperBlocked = true;
-                return false; }
+            if(ex)
+            {
+                if(!this.rolledHyperBlocked)
+                {
+                    this.gotHyperBlocked = rollPercentage((ex / 100) * (100 - this.stats.hitChance));
+                    this.rolledHyperBlocked = true;
+                }
+                if(this.gotHyperBlocked)
+                    return false;
+                // else, return the normal return value (which is a miss)
+            }
         }
+    });
+    patch(Enemy, "queueNextAction").before(function(){
+        if(this.nextAttack.attackCount === this.attackCount || this.attackInterrupted) //aka "end of turn", weird fucking place to put it
+    {this.rolledHyperBlocked = false;
+        this.gotHyperBlocked = false;}
     })
     SplashManager.splashClasses.blocked = 'blockedSplash';
     const _orig_fireMissSplash = Player.prototype.fireMissSplash;
@@ -19,11 +38,10 @@ export function blockTheUnblockable({ patch }) {
             this.splashManager.add({
                 source: "blocked",
                 amount: 0,
-                text: "Blocked",
+                text: negText,
                 xOffset: this.hitpointsPercent,
             });
             this.renderQueue.damageSplash = true;
-            this.target.gotHyperBlocked = false;
             return;
         }
         return _orig_fireMissSplash.apply(this, arguments);

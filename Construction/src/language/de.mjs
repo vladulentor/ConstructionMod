@@ -1,4 +1,6 @@
 export const language = {
+    'MODIFIER_DATA_GlobalEffectIgnoreChance': '${value}% Chance, alle Kampfeffekte zu ignorieren',
+    'MODIFIER_DATA_itemProtectionChance': '${value}% Chance, Gegenstände bei Tod nicht zu verlieren',
     'MENU_TOOLTIP_TRIPLING': '${chance} Chance auf Verdreifachung statt Verdoppelung von Gegenständen',
     'MODIFIER_DATA_xpperbankslots': '${value}% EP für Nicht-Kampfskills pro 100 belegte Plätze in deiner Bank',
     'MODIFIER_DATA_preservationbankslots': '${value}% globale Chance auf Gegenstandsverdoppelung pro 50 belegte Bankplätze',
@@ -8,7 +10,8 @@ export const language = {
     'MODIFIER_DATA_expandBankSlotCap2': 'Boni für belegte Bankplätze sind nun unbegrenzt',
     'MODIFIER_DATA_unlockTripling': 'Entdeckelt Verdoppelungschance; jede Chance über 100% wird in eine Chance auf Verdreifachung umgewandelt',
     'MODIFIER_DATA_spoof_addBankTabs': '${value} Bank-Tabs',
-
+'MODIFIER_DATA_blockTheUnblockable': '${value}% der gegnerischen Fehlschlagchance als Chance, unausweichliche Angriffe zu negieren',
+    'SPLASH_NEGATED': 'Negiert!',
     'MODIFIER_DATA_spoof_bankslotexpl': 'Erhalte skalierende Modifikatoren für alle 50 belegten Bankplätze, bis zu einem Maximum von 250',
 
     'MODIFIER_DATA_spoof_expTime': 'Erhalte skalierende Modifikatoren für jede aufeinanderfolgende Stunde, die mit demselben Skill verbracht wird, bis zu einem Maximum von 2',

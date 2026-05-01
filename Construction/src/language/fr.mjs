@@ -1,4 +1,6 @@
 export const language = {
+    'MODIFIER_DATA_GlobalEffectIgnoreChance': '${value}% Chance, alle Kampfeffekte zu ignorieren',
+    'MODIFIER_DATA_itemProtectionChance': '${value}% Chance, Gegenstände bei Tod nicht zu verlieren',
     'MENU_TOOLTIP_TRIPLING': '${chance} de chance de Tripler les objets au lieu de Doubler',
     'MODIFIER_DATA_xpperbankslots': '${value}% d\'XP de compétence non-Combat par tranche de 100 emplacements occupés dans votre banque',
     'MODIFIER_DATA_preservationbankslots': '${value}% de chance globale de Doubler les objets par tranche de 50 emplacements de banque occupés',
@@ -8,7 +10,8 @@ export const language = {
     'MODIFIER_DATA_expandBankSlotCap2': 'Les bonus d\'emplacements de banque occupés sont désormais illimités',
     'MODIFIER_DATA_unlockTripling': 'Déplafonne la chance de Doublage ; toute chance supérieure à 100% est convertie en chance de Tripler les objets',
     'MODIFIER_DATA_spoof_addBankTabs': '${value} Onglets de banque',
-
+'MODIFIER_DATA_blockTheUnblockable': '${value}% de la chance de rater de l\'ennemi comme chance d\'annuler les attaques inévitables',
+    'SPLASH_NEGATED': 'Annihilé !',
     'MODIFIER_DATA_spoof_bankslotexpl': 'Gagnez des modificateurs évolutifs tous les 50 emplacements de banque occupés, jusqu\'à un maximum de 250',
 
     'MODIFIER_DATA_spoof_expTime': 'Gagnez des modificateurs évolutifs pour chaque heure consécutive passée sur la même compétence, jusqu\'à un maximum de 2',

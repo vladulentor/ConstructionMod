@@ -5,9 +5,11 @@ export function tinyIconsCompatibility(ctx) {
         ['cabin', ctx.getResourceUrl('assets/cabin.webp')],
         ['plot', game.items.getObjectByID('melvorD:Bobs_Rake').media],
         ['overheal', ctx.getResourceUrl('assets/tinyicons/tinyheart.png')],
+                ['negate', ctx.getResourceUrl('assets/tinyicons/negated.png')],
+
         ['cookEquipment', game.items.getObjectByID('melvorF:Chefs_Hat').media],
         ['chuck', game.pets.getObjectByID('rielkConstruction:ChuckTheForeman').media],
-        ['construction', game.skills.getObjectByID("rielkConstruction:Construction").media]
+        ['construction', game.skills.getObjectByID("rielkConstruction:Construction").media],
         ['cookSkillcape', game.items.getObjectByID('melvorD:Cooking_Skillcape').media],
         ['cookConsumables', game.items.getObjectByID('melvorF:Additional_Cooker_Scroll').media],
         ['specialItems', game.items.getObjectByID('melvorD:Treasure_Chest').media],
@@ -161,11 +163,12 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:spoof_bankslotexpl', 'bank');
     icons.addModifier('rielkConstruction:doublingankslots', 'bank');
     icons.addModifier('rielkConstruction:expandBankSlotCap1', 'bank');
+    icons.addModifier('rielkConstruction:globalCurrencyBanksSlots', 'bank');
     icons.addModifier('rielkConstruction:unlockTripling', 'doubling');
     icons.addModifier('rielkConstruction:spoof_addBankTabs', 'bank');
     icons.addModifier('rielkConstruction:skillPetChanceBankSlots', 'bank');
 
-    icons.addModifier('rielkConstruction:blockTheUnblockable', 'defence');
+    icons.addModifier('rielkConstruction:blockTheUnblockable', 'negate');
     icons.addModifier('rielkConstruction:itemProtectionChance', 'protect_item');
 
     icons.addModifier('rielkConstruction:spoof_expTime', 'interval');

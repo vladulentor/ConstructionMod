@@ -1,4 +1,6 @@
 export const language = {
+    'MODIFIER_DATA_GlobalEffectIgnoreChance': '${value}% di probabilità di ignorare tutti gli effetti di combattimento',
+    'MODIFIER_DATA_itemProtectionChance': '${value}% di probabilità di non perdere oggetti alla morte',
     'MENU_TOOLTIP_TRIPLING': '${chance} di probabilità di Triplicare gli oggetti invece di Raddoppiarli',
     'MODIFIER_DATA_xpperbankslots': '${value}% PE abilità non da combattimento per ogni 100 spazi occupati nella tua banca',
     'MODIFIER_DATA_preservationbankslots': '${value}% probabilità globale di Raddoppiare gli oggetti ogni 50 spazi occupati nella banca',
@@ -8,7 +10,8 @@ export const language = {
     'MODIFIER_DATA_expandBankSlotCap2': 'I bonus per gli spazi occupati nella banca sono ora illimitati',
     'MODIFIER_DATA_unlockTripling': 'Rimuove il limite alla probabilità di Raddoppio; ogni probabilità superiore al 100% viene convertita in probabilità di Triplicare gli oggetti',
     'MODIFIER_DATA_spoof_addBankTabs': '${value} schede della banca',
-
+'MODIFIER_DATA_blockTheUnblockable': '${value}% della probabilità di mancato del nemico come probabilità di negare attacchi inevitabili',
+    'SPLASH_NEGATED': 'Negato!',
     'MODIFIER_DATA_spoof_bankslotexpl': 'Ottieni modificatori scalabili ogni 50 spazi occupati nella banca, fino a un massimo di 250',
 
     'MODIFIER_DATA_spoof_expTime': 'Ottieni modificatori scalabili per ogni ora consecutiva trascorsa sulla stessa abilità, fino a un massimo di 2',

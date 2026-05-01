@@ -1,4 +1,6 @@
 export const language = {
+    'MODIFIER_DATA_GlobalEffectIgnoreChance': '${value}% de probabilidad de ignorar todos los efectos de combate',
+    'MODIFIER_DATA_itemProtectionChance': '${value}% de probabilidad de no perder objetos al morir',
     'MENU_TOOLTIP_TRIPLING': '${chance} de probabilidad de Triplicar objetos en lugar de Doblarlos',
     'MODIFIER_DATA_xpperbankslots': '${value}% de PE de habilidad de no-combate por cada 100 espacios llenos en tu banco',
     'MODIFIER_DATA_preservationbankslots': '${value}% de probabilidad global de Doblar objetos por cada 50 espacios de banco llenos',
@@ -8,7 +10,8 @@ export const language = {
     'MODIFIER_DATA_expandBankSlotCap2': 'Las bonificaciones por espacios de banco llenos ahora son ilimitadas',
     'MODIFIER_DATA_unlockTripling': 'Elimina el límite de probabilidad de Doblar; cualquier probabilidad superior al 100% se convierte en probabilidad de Triplicar objetos',
     'MODIFIER_DATA_spoof_addBankTabs': '${value} pestañas del banco',
-
+'MODIFIER_DATA_blockTheUnblockable': '${value}% de la probabilidad de fallo del enemigo como probabilidad de anular ataques inevitables',
+    'SPLASH_NEGATED': '¡Anulado!',
     'MODIFIER_DATA_spoof_bankslotexpl': 'Obtén modificadores escalables por cada 50 espacios de banco llenos, hasta un máximo de 250',
 
     'MODIFIER_DATA_spoof_expTime': 'Obtén modificadores escalables por cada hora consecutiva dedicada a la misma habilidad, hasta un máximo de 2',

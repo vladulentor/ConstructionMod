@@ -1,14 +1,17 @@
 export const language = {
+    'MODIFIER_DATA_GlobalEffectIgnoreChance': 'Шанс ${value}% игнорировать все боевые эффекты',
+    'MODIFIER_DATA_itemProtectionChance': 'Шанс ${value}% не потерять предметы при смерти',
     'MENU_TOOLTIP_TRIPLING': 'Шанс ${chance} на утроение предметов вместо удвоения',
-    'MODIFIER_DATA_xpperbankslots': '+${value}% к опыту небоевых навыков за каждые 100 заполненных ячеек в банке',
-    'MODIFIER_DATA_preservationbankslots': '+${value}% к глобальному шансу на удвоение предметов за каждые 50 заполненных ячеек банка',
-    'MODIFIER_DATA_globalGPBanksSlots': '+${value}% к получению ${currencyName} (кроме продажи предметов) за каждые 50 заполненных ячеек банка',
-    'MODIFIER_DATA_skillPetChanceBankSlots': '+${value}% к шансу найти питомца навыка за каждые 50 заполненных ячеек банка',
+    'MODIFIER_DATA_xpperbankslots': '${value}% к опыту небоевых навыков за каждые 100 заполненных ячеек в банке',
+    'MODIFIER_DATA_preservationbankslots': '${value}% к глобальному шансу на удвоение предметов за каждые 50 заполненных ячеек банка',
+    'MODIFIER_DATA_globalGPBanksSlots': '${value}% к получению ${currencyName} (кроме продажи предметов) за каждые 50 заполненных ячеек банка',
+    'MODIFIER_DATA_skillPetChanceBankSlots': '${value}% к шансу найти питомца навыка за каждые 50 заполненных ячеек банка',
     'MODIFIER_DATA_expandBankSlotCap1': 'Бонусы за заполненные ячейки банка теперь масштабируются максимум до 1000',
     'MODIFIER_DATA_expandBankSlotCap2': 'Бонусы за заполненные ячейки банка теперь не ограничены',
     'MODIFIER_DATA_unlockTripling': 'Снимает ограничение на шанс удвоения; любой шанс выше 100% превращается в шанс на утроение предметов',
-    'MODIFIER_DATA_spoof_addBankTabs': 'Вкладки банка: +${value}',
-
+    'MODIFIER_DATA_spoof_addBankTabs': 'Вкладки банка: ${value}',
+'MODIFIER_DATA_blockTheUnblockable': '${value}% от шанса промаха противника преобразуется в шанс аннулировать неизбежные атаки',
+    'SPLASH_NEGATED': 'Аннулировано!',
     'MODIFIER_DATA_spoof_bankslotexpl': 'Получайте масштабируемые бонусы за каждые 50 заполненных ячеек банка (макс. 250)',
 
     'MODIFIER_DATA_spoof_expTime': 'Получайте масштабируемые бонусы за каждый час непрерывного занятия одним и тем же навыком (макс. 2)',

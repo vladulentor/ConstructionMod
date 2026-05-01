@@ -1,4 +1,22 @@
 export const language = {
+    'MENU_TOOLTIP_TRIPLING': 'Шанс ${chance} на утроение предметов вместо удвоения',
+    'MODIFIER_DATA_xpperbankslots': '+${value}% к опыту небоевых навыков за каждые 100 заполненных ячеек в банке',
+    'MODIFIER_DATA_preservationbankslots': '+${value}% к глобальному шансу на удвоение предметов за каждые 50 заполненных ячеек банка',
+    'MODIFIER_DATA_globalGPBanksSlots': '+${value}% к получению ${currencyName} (кроме продажи предметов) за каждые 50 заполненных ячеек банка',
+    'MODIFIER_DATA_skillPetChanceBankSlots': '+${value}% к шансу найти питомца навыка за каждые 50 заполненных ячеек банка',
+    'MODIFIER_DATA_expandBankSlotCap1': 'Бонусы за заполненные ячейки банка теперь масштабируются максимум до 1000',
+    'MODIFIER_DATA_expandBankSlotCap2': 'Бонусы за заполненные ячейки банка теперь не ограничены',
+    'MODIFIER_DATA_unlockTripling': 'Снимает ограничение на шанс удвоения; любой шанс выше 100% превращается в шанс на утроение предметов',
+    'MODIFIER_DATA_spoof_addBankTabs': 'Вкладки банка: +${value}',
+
+    'MODIFIER_DATA_spoof_bankslotexpl': 'Получайте масштабируемые бонусы за каждые 50 заполненных ячеек банка (макс. 250)',
+
+    'MODIFIER_DATA_spoof_expTime': 'Получайте масштабируемые бонусы за каждый час непрерывного занятия одним и тем же навыком (макс. 2)',
+    'MODIFIER_DATA_xpPerTime': '+${value}% к опыту небоевых навыков за каждый час непрерывного занятия одним и тем же навыком',
+    'MODIFIER_DATA_preservePerTime': '+${value}% к шансу на сохранение ресурсов за каждый час непрерывного занятия одним и тем же навыком',
+    'MODIFIER_DATA_preserveConsPerTime': '+${value}% к шансу сохранить заряды призыва, зелий и расходных материалов',
+    'MODIFIER_DATA_preserveCapPerTime': '+${value}% к лимиту сохранения ресурсов за каждый час непрерывного занятия одним и тем же навыком',
+    'MODIFIER_DATA_extendLongBuffs': '+${value} к макс. бонусу за часы непрерывного занятия одним и тем же навыком',
     "ITEM_NAME_Builder_Pouch": "Сумка строителя",
     "ITEM_NAME_Builder_Pouch_II": "Сумка строителя II",
     "ITEM_NAME_Bronze_Crossbow_T_R": "(R) Бронзовый арбалет",

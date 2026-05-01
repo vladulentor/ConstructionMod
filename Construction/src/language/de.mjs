@@ -1,4 +1,22 @@
 export const language = {
+    'MENU_TOOLTIP_TRIPLING': '${chance} Chance auf Verdreifachung statt Verdoppelung von Gegenständen',
+    'MODIFIER_DATA_xpperbankslots': '${value}% EP für Nicht-Kampfskills pro 100 belegte Plätze in deiner Bank',
+    'MODIFIER_DATA_preservationbankslots': '${value}% globale Chance auf Gegenstandsverdoppelung pro 50 belegte Bankplätze',
+    'MODIFIER_DATA_globalGPBanksSlots': '${value}% ${currencyName} (außer durch Verkauf) pro 50 belegte Bankplätze',
+    'MODIFIER_DATA_skillPetChanceBankSlots': '${value}% erhöhte Chance, ein Skill-Haustier zu finden, pro 50 belegte Bankplätze',
+    'MODIFIER_DATA_expandBankSlotCap1': 'Boni für belegte Bankplätze skaliert nun bis zu einem Maximum von 1000',
+    'MODIFIER_DATA_expandBankSlotCap2': 'Boni für belegte Bankplätze sind nun unbegrenzt',
+    'MODIFIER_DATA_unlockTripling': 'Entdeckelt Verdoppelungschance; jede Chance über 100% wird in eine Chance auf Verdreifachung umgewandelt',
+    'MODIFIER_DATA_spoof_addBankTabs': '${value} Bank-Tabs',
+
+    'MODIFIER_DATA_spoof_bankslotexpl': 'Erhalte skalierende Modifikatoren für alle 50 belegten Bankplätze, bis zu einem Maximum von 250',
+
+    'MODIFIER_DATA_spoof_expTime': 'Erhalte skalierende Modifikatoren für jede aufeinanderfolgende Stunde, die mit demselben Skill verbracht wird, bis zu einem Maximum von 2',
+    'MODIFIER_DATA_xpPerTime': '${value}% EP für Nicht-Kampfskills pro aufeinanderfolgende Stunde, die mit demselben Skill verbracht wird',
+    'MODIFIER_DATA_preservePerTime': '${value}% Chance auf Ressourcenbewahrung pro aufeinanderfolgende Stunde, die mit demselben Skill verbracht wird',
+    'MODIFIER_DATA_preserveConsPerTime': '${value}% Chance auf Bewahrung von Beschwörungs-, Trank- und Verbrauchsgegenstand-Ladungen',
+    'MODIFIER_DATA_preserveCapPerTime': '${value}% Ressourcenbewahrungs-Maximum pro aufeinanderfolgende Stunde, die mit demselben Skill verbracht wird',
+    'MODIFIER_DATA_extendLongBuffs': '${value} maximale Bonuskapazität für aufeinanderfolgende Stunden, die mit demselben Skill verbracht werden',
     "ITEM_NAME_Builder_Pouch": "Baukünstler-Beutel",
     "ITEM_NAME_Builder_Pouch_II": "Baukünstler-Beutel II",
     "ITEM_NAME_Bronze_Crossbow_T_R": "(V) Bronze-Armbrust",

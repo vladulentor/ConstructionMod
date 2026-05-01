@@ -1,4 +1,22 @@
 export const language = {
+    'MENU_TOOLTIP_TRIPLING': '${chance} de probabilidad de Triplicar objetos en lugar de Doblarlos',
+    'MODIFIER_DATA_xpperbankslots': '${value}% de PE de habilidad de no-combate por cada 100 espacios llenos en tu banco',
+    'MODIFIER_DATA_preservationbankslots': '${value}% de probabilidad global de Doblar objetos por cada 50 espacios de banco llenos',
+    'MODIFIER_DATA_globalGPBanksSlots': '${value}% de ${currencyName} (excepto ventas de objetos) por cada 50 espacios de banco llenos',
+    'MODIFIER_DATA_skillPetChanceBankSlots': '${value}% de probabilidad aumentada de encontrar una Mascota de habilidad por cada 50 espacios de banco llenos',
+    'MODIFIER_DATA_expandBankSlotCap1': 'Las bonificaciones por espacios de banco llenos ahora pueden escalar hasta un máximo de 1000',
+    'MODIFIER_DATA_expandBankSlotCap2': 'Las bonificaciones por espacios de banco llenos ahora son ilimitadas',
+    'MODIFIER_DATA_unlockTripling': 'Elimina el límite de probabilidad de Doblar; cualquier probabilidad superior al 100% se convierte en probabilidad de Triplicar objetos',
+    'MODIFIER_DATA_spoof_addBankTabs': '${value} pestañas del banco',
+
+    'MODIFIER_DATA_spoof_bankslotexpl': 'Obtén modificadores escalables por cada 50 espacios de banco llenos, hasta un máximo de 250',
+
+    'MODIFIER_DATA_spoof_expTime': 'Obtén modificadores escalables por cada hora consecutiva dedicada a la misma habilidad, hasta un máximo de 2',
+    'MODIFIER_DATA_xpPerTime': '${value}% de PE de habilidad de no-combate por cada hora consecutiva dedicada a la misma habilidad',
+    'MODIFIER_DATA_preservePerTime': '${value}% de probabilidad de preservar recursos por cada hora consecutiva dedicada a la misma habilidad',
+    'MODIFIER_DATA_preserveConsPerTime': '${value}% de probabilidad de preservar cargas de Invocación, Pociones y Consumibles',
+    'MODIFIER_DATA_preserveCapPerTime': '${value}% de límite de preservación de recursos por cada hora consecutiva dedicada a la misma habilidad',
+    'MODIFIER_DATA_extendLongBuffs': '${value} de capacidad máxima de bonificación por horas consecutivas dedicadas a la misma habilidad',
     "ITEM_NAME_Builder_Pouch": "Bolsa de constructor",
     "ITEM_NAME_Builder_Pouch_II": "Bolsa de constructor II",
     "ITEM_NAME_Bronze_Crossbow_T_R": "(R) Ballesta de bronce",

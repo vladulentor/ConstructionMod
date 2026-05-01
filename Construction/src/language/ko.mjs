@@ -1,4 +1,22 @@
 export const language = {
+    'MENU_TOOLTIP_TRIPLING': '아이템이 배증되는 대신 ${chance}의 확률로 3배 증가',
+    'MODIFIER_DATA_xpperbankslots': '사용 중인 은행 슬롯 100칸당 비전투 스킬 경험치 +${value}%',
+    'MODIFIER_DATA_preservationbankslots': '사용 중인 은행 슬롯 50칸당 글로벌 아이템 배증 확률 +${value}%',
+    'MODIFIER_DATA_globalGPBanksSlots': '사용 중인 은행 슬롯 50칸당 ${currencyName} 획득량 +${value}% (아이템 판매 제외)',
+    'MODIFIER_DATA_skillPetChanceBankSlots': '사용 중인 은행 슬롯 50칸당 스킬 펫 발견 확률 +${value}%',
+    'MODIFIER_DATA_expandBankSlotCap1': '사용 중인 은행 슬롯 보너스 적용 범위가 최대 1000칸으로 확장',
+    'MODIFIER_DATA_expandBankSlotCap2': '사용 중인 은행 슬롯 보너스 적용 범위 제한 제거',
+    'MODIFIER_DATA_unlockTripling': '아이템 배증 확률 제한 해제 및 100%를 초과하는 배증 확률을 3배 증가 확률로 전환',
+    'MODIFIER_DATA_spoof_addBankTabs': '은행 탭 +${value}',
+
+    'MODIFIER_DATA_spoof_bankslotexpl': '사용 중인 은행 슬롯 50칸마다 능력치가 상승하는 모디파이어 획득 (최대 250칸)',
+
+    'MODIFIER_DATA_spoof_expTime': '같은 스킬을 연속으로 수행한 시간당 능력치가 상승하는 모디파이어 획득 (최대 2시간)',
+    'MODIFIER_DATA_xpPerTime': '같은 스킬을 연속으로 수행한 시간당 비전투 스킬 경험치 +${value}%',
+    'MODIFIER_DATA_preservePerTime': '같은 스킬을 연속으로 수행한 시간당 자원 보존 확률 +${value}%',
+    'MODIFIER_DATA_preserveConsPerTime': '소환, 포션 및 소모품 사용 횟수 보존 확률 +${value}%',
+    'MODIFIER_DATA_preserveCapPerTime': '같은 스킬을 연속으로 수행한 시간당 자원 보존 확률 상한 +${value}%',
+    'MODIFIER_DATA_extendLongBuffs': '같은 스킬을 연속으로 수행할 때 적용되는 보너스 최대 누적 시간 +${value}',
     "ITEM_NAME_Builder_Pouch": "건축가의 주머니",
     "ITEM_NAME_Builder_Pouch_II": "건축가의 주머니 II",
     "ITEM_NAME_Bronze_Crossbow_T_R": "(R) 청동 크로스보우",

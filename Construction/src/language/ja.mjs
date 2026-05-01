@@ -1,4 +1,22 @@
 export const language = {
+    'MENU_TOOLTIP_TRIPLING': 'アイテムを倍増させる代わりに、${chance}の確率で3倍にする',
+    'MODIFIER_DATA_xpperbankslots': '埋まっている銀行スロット100枠ごとに、非戦闘スキルの獲得スキル経験値 +${value}%',
+    'MODIFIER_DATA_preservationbankslots': '埋まっている銀行スロット50枠ごとに、全スキルのアイテム倍増確率 +${value}%',
+    'MODIFIER_DATA_globalGPBanksSlots': '埋まっている銀行スロット50枠ごとに、${currencyName}獲得量 +${value}%（アイテム売却を除く）',
+    'MODIFIER_DATA_skillPetChanceBankSlots': '埋まっている銀行スロット50枠ごとに、スキルペットの発見確率 +${value}%',
+    'MODIFIER_DATA_expandBankSlotCap1': '埋まっている銀行スロットによるボーナスの上限が1000枠まで拡大',
+    'MODIFIER_DATA_expandBankSlotCap2': '埋まっている銀行スロットによるボーナスの条件が無制限になる',
+    'MODIFIER_DATA_unlockTripling': '倍増確率の上限を撤廃し、100%を超えた倍増確率をアイテム3倍の確率に変換する',
+    'MODIFIER_DATA_spoof_addBankTabs': '銀行タブ +${value}',
+
+    'MODIFIER_DATA_spoof_bankslotexpl': '埋まっている銀行スロット50枠ごとにスケーリングボーナスを獲得（最大250枠まで）',
+
+    'MODIFIER_DATA_spoof_expTime': '同じスキルを継続して行っている時間1時間ごとにスケーリングボーナスを獲得（最大2時間まで）',
+    'MODIFIER_DATA_xpPerTime': '同じスキルを継続して行っている時間1時間ごとに、非戦闘スキルの獲得スキル経験値 +${value}%',
+    'MODIFIER_DATA_preservePerTime': '同じスキルを継続して行っている時間1時間ごとに、資源保存確率 +${value}%',
+    'MODIFIER_DATA_preserveConsPerTime': '召喚、ポーション、消耗品のチャージを保存する確率 +${value}%',
+    'MODIFIER_DATA_preserveCapPerTime': '同じスキルを継続して行っている時間1時間ごとに、資源保存確率の上限 +${value}%',
+    'MODIFIER_DATA_extendLongBuffs': '同じスキルを継続して行うことによるボーナス蓄積時間の上限 +${value}時間',
     "ITEM_NAME_Builder_Pouch": "ビルダーのポーチ",
     "ITEM_NAME_Builder_Pouch_II": "ビルダーのポーチ II",
     "ITEM_NAME_Bronze_Crossbow_T_R": "(R) ブロンズのクロスボウ",

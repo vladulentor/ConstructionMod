@@ -8,6 +8,11 @@ const { addXpPerFixture } = await loadModule('src/patches/skillPatches/general/a
 const { clampMasteryPool } = await loadModule('src/patches/skillPatches/general/clampMasteryPool.mjs');
 const { addCurrencyCancel } = await loadModule('src/patches/skillPatches/general/addCurrencyCancel.mjs');
 const { patchMasteryPoolProgress } = await loadModule('src/patches/skillPatches/general/patchMasteryPoolProgress.mjs');
+const { addPerBankSlotsBoosts } = await loadModule('src/patches/skillPatches/general/addPerBankSlotsBoosts.mjs');
+const { addTripling } = await loadModule('src/patches/skillPatches/general/addTripling.mjs');
+const { addLongBuffs } = await loadModule('src/patches/skillPatches/general/addLongBuffs.mjs');
+const { addChanceToNotLoseOnDeath } = await loadModule('src/patches/skillPatches/general/addChanceToNotLoseOnDeath.mjs');
+
 
 
 
@@ -27,6 +32,14 @@ const { patchAuroraAnyStyle } = await loadModule('src/patches/skillPatches/comba
 const { patchRunePreservationCap } = await loadModule('src/patches/skillPatches/combat/patchRunePreservationCap.mjs');
 const { patchPrayerPointsSpending } = await loadModule('src/patches/skillPatches/combat/patchPrayerPointsSpending.mjs');
 const { addStunOnCrit } = await loadModule('src/patches/skillPatches/combat/addStunOnCrit.mjs');
+const { addGlobalEffectIgnore } = await loadModule('src/patches/skillPatches/combat/addGlobalEffectIgnore.mjs');
+const { blockTheUnblockable } = await loadModule('src/patches/skillPatches/combat/blockTheUnblockable.mjs');
+
+
+
+
+//const { addDeflect } = await loadModule('src/patches/skillPatches/combat/addDeflect.mjs');
+
 
 
 
@@ -98,7 +111,7 @@ export function patchSkillsBeforeDataReg(ctx) {
         emitPassiveCook(ctx);
         addAshOnFail(ctx);
         addRoaringFire(ctx);
-
+        addGlobalEffectIgnore(ctx);
         perfectFoodHealing(ctx);
         addFishonTreasureRollPlusExtra(ctx);
         loseGPOnFishing(ctx);
@@ -107,21 +120,26 @@ export function patchSkillsBeforeDataReg(ctx) {
         additionalPotionsHighTier(ctx);
         patchMagicUsageCheck(ctx);
         clampMasteryPool(ctx);
+        addTripling(ctx);
         addStunOnCrit(ctx);
         addMagicShield(ctx);
         patchAuroraAnyStyle(ctx);
         addRuneEssenceCtx(ctx);
         addStarConvergence(ctx);
         addComboRunesonElemRunes(ctx);
+        blockTheUnblockable(ctx);
         addEfficiencyToOffSkills(ctx);
         patchRunePreservationCap(ctx);
         addHiddenLevelsToAllsSills(ctx);
+        addPerBankSlotsBoosts(ctx);
         addCurrencyCancel(ctx);
         patchPrayerPointsSpending(ctx);
         addMarkSuperLevels(ctx);
         provideBonusesPerAgiLevels(ctx);
         trackSlayerCoins(ctx);
         slayerCostReduction(ctx);
+        addLongBuffs(ctx);
+        addChanceToNotLoseOnDeath(ctx);
         patchAutoEat(ctx);
         reduceMaxHitByDefenseLevel(ctx);
         patchMasteryPoolProgress(ctx);

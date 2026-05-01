@@ -100,7 +100,13 @@ body.darkMode .bg-success.fuck-you {
   background-color: #fca32f !important;
 }
 
+.deflectSplash{
+  color: #91A3B0 !important
+}
+.blockedSplash{
+    color: #f1bd0f !important
 
+}
 
 body.darkMode .text-danger.fuck-you {
   color: #fca32f !important;

@@ -85,7 +85,6 @@ export class EfficiencySourceBuilder { // This whole class exists so the tooltip
             }
             if (displayName.startsWith('Steel-Toed Boots'))
                  displayName = "Steel Boots";
-
             if (displayName== '95% Smithing Mastery Pool Bonus')
                  displayName = "95% S.M.P.B.";
 

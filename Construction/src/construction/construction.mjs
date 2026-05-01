@@ -43,10 +43,14 @@ export class Construction extends ArtisanSkill {
         this.extSaveData = {};
         this.extSaveData.showUpdateTooltip = true;
         this.extSaveData.hasStudiedDiagram = false;
+        this.extSaveData.boughtBankTabs = false;
+        this.extSaveData.longSkillBuffs = 0;
+        this.extSaveData.longSkill = "";
         this.cachedpreservationchance = 0;
+        this.firePlaceTimer = new Timer("Skill", this.updateLongandsetLongSkillBuffs.bind(this));
         this.stats = new StatTracker();
         this.shouldDisableEfficiency = game.currentGamemode.disableItemDoubling;
-
+        this._fireplaceWarmth = { name: getRielkLangString("MENU_TEXT_FIREPLACE_WARMTH") }
         game.stats.Construction = this.stats;
     }
 
@@ -568,6 +572,93 @@ export class Construction extends ArtisanSkill {
         this.tierMasteries.forEach((tier) => {
             tier.addProvidedStatsTo(this.providedStats)
         });
+        this.setLongSkillBuffs();
+    };
+    startFTimer() {
+        this.firePlaceTimer.start(3600 * 1000);
+    }
+    updateLongandsetLongSkillBuffs() {
+        const oldbuff = this.extSaveData.longSkillBuffs;
+        let newbuff;
+        if (game.activeAction && game.activeAction._localID !== "Combat") {
+            newbuff = Math.min(2 + game.modifiers.getValue("rielkConstruction:extendLongBuffs", ModifierQuery.EMPTY), this.extSaveData.longSkillBuffs + 1);
+        }
+        else {
+            this.extSaveData.longSkill = "";
+            newbuff = 0;
+        }
+        if (oldbuff !== newbuff) {
+            this.extSaveData.longSkillBuffs = newbuff;
+            this.setLongSkillBuffs();
+
+        }
+        this.startFTimer();
+
+    }
+    setLongSkillBuffs() {
+        const skillToBuff = game.skills.getObjectByID(this.extSaveData.longSkill);
+
+        game.modifiers.removeModifiers(this._fireplaceWarmth)
+        const modstoadd = []; // too lazy to go and push the conversion somewhere else, so while this isn't related to time it's always going to apply, well fuck you.
+        const pres2 = game.modifiers.getValue("rielkConstruction:preserveConsPerTime", ModifierQuery.EMPTY);
+        if (pres2) {
+            const hitting1 = new ModifierValue(
+                game.modifierRegistry.getObjectByID('melvorD:summoningChargePreservationChance'),
+                pres2,
+                {}
+            );
+            const hitting2 = new ModifierValue(
+                game.modifierRegistry.getObjectByID('melvorD:potionChargePreservationChance'),
+                pres2,
+                {}
+            );
+            const hitting3 = new ModifierValue(
+                game.modifierRegistry.getObjectByID('melvorD:consumablePreservationChance'),
+                pres2,
+                {}
+            );
+
+            modstoadd.push(hitting1, hitting2, hitting3);
+        }
+
+        if (this.extSaveData.longSkill && this.extSaveData.longSkillBuffs) {
+
+            const xp = game.modifiers.getValue("rielkConstruction:xpPerTime", ModifierQuery.EMPTY);
+
+            if (xp) {
+                const hitting = new ModifierValue(
+                    game.modifierRegistry.getObjectByID('melvorD:skillXP'),
+                    xp * this.extSaveData.longSkillBuffs,
+                    { skill: skillToBuff }
+                );
+                modstoadd.push(hitting);
+            }
+            const pres = game.modifiers.getValue("rielkConstruction:preservePerTime", ModifierQuery.EMPTY);
+
+            if (pres) {
+                const hitting = new ModifierValue(
+                    game.modifierRegistry.getObjectByID('melvorD:skillPreservationChance'),
+                    pres * this.extSaveData.longSkillBuffs,
+                    { skill: skillToBuff }
+                );
+                modstoadd.push(hitting);
+            }
+            const cap = game.modifiers.getValue("rielkConstruction:preservePerTime", ModifierQuery.EMPTY);
+
+            if (cap) {
+                const hitting = new ModifierValue(
+                    game.modifierRegistry.getObjectByID('melvorD:skillPreservationCap'),
+                    pres * this.extSaveData.longSkillBuffs,
+                    { skill: skillToBuff }
+                );
+                modstoadd.push(hitting);
+            }
+
+        }
+
+        if (modstoadd.length > 0)
+            game.modifiers.addModifiers(this._fireplaceWarmth, modstoadd, 1, 1);
+
     }
     viewAllModifiersOnClick() {
         const summary = new StatObjectSummary();
@@ -718,6 +809,9 @@ export class Construction extends ArtisanSkill {
     }
     addMasteryXPReward() {
         // no more mastery XP reward
+    }
+    passiveTick() {
+        this.firePlaceTimer.tick();
     }
     postAction() {
         this.stats.inc(ConstructionStats.Actions);
@@ -965,7 +1059,7 @@ export class Construction extends ArtisanSkill {
         this.fixtures.forEach(fixture => fixture.onLoad());
         this.updateRecipeCounts();
         this.popTierMasteries();
-
+        if (!this.firePlaceTimer.isActive) this.startFTimer();
         this.render();
     }
     resetActionState() {

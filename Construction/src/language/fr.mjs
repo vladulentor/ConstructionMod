@@ -1,5 +1,22 @@
 export const language = {
-    
+    'MENU_TOOLTIP_TRIPLING': '${chance} de chance de Tripler les objets au lieu de Doubler',
+    'MODIFIER_DATA_xpperbankslots': '${value}% d\'XP de compétence non-Combat par tranche de 100 emplacements occupés dans votre banque',
+    'MODIFIER_DATA_preservationbankslots': '${value}% de chance globale de Doubler les objets par tranche de 50 emplacements de banque occupés',
+    'MODIFIER_DATA_globalGPBanksSlots': '${value}% de ${currencyName} (sauf ventes d\'objets) par tranche de 50 emplacements de banque occupés',
+    'MODIFIER_DATA_skillPetChanceBankSlots': '${value}% de chance accrue de trouver un Familier de compétence par tranche de 50 emplacements de banque occupés',
+    'MODIFIER_DATA_expandBankSlotCap1': 'Les bonus d\'emplacements de banque occupés peuvent désormais monter jusqu\'à un max de 1000',
+    'MODIFIER_DATA_expandBankSlotCap2': 'Les bonus d\'emplacements de banque occupés sont désormais illimités',
+    'MODIFIER_DATA_unlockTripling': 'Déplafonne la chance de Doublage ; toute chance supérieure à 100% est convertie en chance de Tripler les objets',
+    'MODIFIER_DATA_spoof_addBankTabs': '${value} Onglets de banque',
+
+    'MODIFIER_DATA_spoof_bankslotexpl': 'Gagnez des modificateurs évolutifs tous les 50 emplacements de banque occupés, jusqu\'à un maximum de 250',
+
+    'MODIFIER_DATA_spoof_expTime': 'Gagnez des modificateurs évolutifs pour chaque heure consécutive passée sur la même compétence, jusqu\'à un maximum de 2',
+    'MODIFIER_DATA_xpPerTime': '${value}% d\'XP de compétence non-Combat par heure consécutive passée sur la même compétence',
+    'MODIFIER_DATA_preservePerTime': '${value}% de chance de préserver les ressources par heure consécutive passée sur la même compétence',
+    'MODIFIER_DATA_preserveConsPerTime': '${value}% de chance de préserver les charges d\'Invocation, de Potion et de Consommables',
+    'MODIFIER_DATA_preserveCapPerTime': '${value}% de limite de Préservation des ressources par heure consécutive passée sur la même compétence',
+    'MODIFIER_DATA_extendLongBuffs': '${value} de capacité bonus maximale pour les heures consécutives passées sur la même compétence',
     "ITEM_NAME_Builder_Pouch": "Sacoche de bâtisseur",
     "ITEM_NAME_Builder_Pouch_II": "Sacoche de bâtisseur II",
     "ITEM_NAME_Bronze_Crossbow_T_R": "(R) Arbalète en bronze",

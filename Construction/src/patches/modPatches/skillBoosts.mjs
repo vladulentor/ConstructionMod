@@ -19,7 +19,7 @@ export function skillBoostsCompatibility({ patch }) {
         isArtisan: true,
     });
 
-
+    //TODO: Add the rest of the workshop and bedroom mods here
     skillBoosts.addNewModifiers({
         skills: [game.construction],
         modifiers: new Map([['melvorD:Melvor', ['rielkConstruction:skillEfficiencyChance', 'rielkConstruction:skillEfficiencyPotency', 'rielkConstruction:skillEfficiencyCost', 'rielkConstruction:bypassEfficiencyChance'

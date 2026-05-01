@@ -1,4 +1,22 @@
 export const language = {
+    'MENU_TOOLTIP_TRIPLING': '${chance} di probabilità di Triplicare gli oggetti invece di Raddoppiarli',
+    'MODIFIER_DATA_xpperbankslots': '${value}% PE abilità non da combattimento per ogni 100 spazi occupati nella tua banca',
+    'MODIFIER_DATA_preservationbankslots': '${value}% probabilità globale di Raddoppiare gli oggetti ogni 50 spazi occupati nella banca',
+    'MODIFIER_DATA_globalGPBanksSlots': '${value}% ${currencyName} (eccetto vendita oggetti) ogni 50 spazi occupati nella banca',
+    'MODIFIER_DATA_skillPetChanceBankSlots': '${value}% probabilità aumentata di trovare un Animale da abilità ogni 50 spazi occupati nella banca',
+    'MODIFIER_DATA_expandBankSlotCap1': 'I bonus per gli spazi occupati nella banca possono ora scalare fino a un massimo di 1000',
+    'MODIFIER_DATA_expandBankSlotCap2': 'I bonus per gli spazi occupati nella banca sono ora illimitati',
+    'MODIFIER_DATA_unlockTripling': 'Rimuove il limite alla probabilità di Raddoppio; ogni probabilità superiore al 100% viene convertita in probabilità di Triplicare gli oggetti',
+    'MODIFIER_DATA_spoof_addBankTabs': '${value} schede della banca',
+
+    'MODIFIER_DATA_spoof_bankslotexpl': 'Ottieni modificatori scalabili ogni 50 spazi occupati nella banca, fino a un massimo di 250',
+
+    'MODIFIER_DATA_spoof_expTime': 'Ottieni modificatori scalabili per ogni ora consecutiva trascorsa sulla stessa abilità, fino a un massimo di 2',
+    'MODIFIER_DATA_xpPerTime': '${value}% PE abilità non da combattimento per ogni ora consecutiva trascorsa sulla stessa abilità',
+    'MODIFIER_DATA_preservePerTime': '${value}% probabilità di conservare le risorse per ogni ora consecutiva trascorsa sulla stessa abilità',
+    'MODIFIER_DATA_preserveConsPerTime': '${value}% probabilità di conservare cariche di Evocazione, Pozioni e Consumabili',
+    'MODIFIER_DATA_preserveCapPerTime': '${value}% limite massimo di conservazione risorse per ogni ora consecutiva trascorsa sulla stessa abilità',
+    'MODIFIER_DATA_extendLongBuffs': '${value} capacità bonus massima per ore consecutive trascorse sulla stessa abilità',
     "ITEM_NAME_Builder_Pouch": "Sacca del costruttore",
     "ITEM_NAME_Builder_Pouch_II": "Sacca del costruttore II",
     "ITEM_NAME_Bronze_Crossbow_T_R": "(R) Balestra di bronzo",

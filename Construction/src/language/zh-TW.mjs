@@ -1,4 +1,22 @@
 export const language = {
+    'MENU_TOOLTIP_TRIPLING': '有 ${chance} 的機率獲得三倍物品，而非雙倍',
+    'MODIFIER_DATA_xpperbankslots': '每有 100 個已佔用的銀行位，非戰鬥技能經驗 +${value}%',
+    'MODIFIER_DATA_preservationbankslots': '每有 50 個已佔用的銀行位，全域物品加倍機率 +${value}%',
+    'MODIFIER_DATA_globalGPBanksSlots': '每有 50 個已佔用的銀行位，${currencyName} 獲得量 +${value}%（不包括出售物品）',
+    'MODIFIER_DATA_skillPetChanceBankSlots': '每有 50 個已佔用的銀行位，發現技能寵物的機率 +${value}%',
+    'MODIFIER_DATA_expandBankSlotCap1': '已佔用銀行位提供的加成上限現在提升至 1000',
+    'MODIFIER_DATA_expandBankSlotCap2': '已佔用銀行位提供的加成現在無上限',
+    'MODIFIER_DATA_unlockTripling': '移除加倍機率上限；超過 100% 的加倍機率將轉化為物品三倍獲得機率',
+    'MODIFIER_DATA_spoof_addBankTabs': '銀行標籤頁 +${value}',
+
+    'MODIFIER_DATA_spoof_bankslotexpl': '每有 50 個已佔用的銀行位，獲得可成長的強化效果，最高計算至 250 個',
+
+    'MODIFIER_DATA_spoof_expTime': '每連續進行同一技能一小時，獲得可成長的強化效果，最高疊加 2 層',
+    'MODIFIER_DATA_xpPerTime': '每連續進行同一技能一小時，非戰鬥技能經驗 +${value}%',
+    'MODIFIER_DATA_preservePerTime': '每連續進行同一技能一小時，資源保存機率 +${value}%',
+    'MODIFIER_DATA_preserveConsPerTime': '有 ${value}% 的機率保存召喚、藥劑和消耗品的使用次數',
+    'MODIFIER_DATA_preserveCapPerTime': '每連續進行同一技能一小時，資源保存機率上限 +${value}%',
+    'MODIFIER_DATA_extendLongBuffs': '連續進行同一技能的加成累積上限 +${value} 小時',
     "ITEM_NAME_Builder_Pouch": "建築師的小袋",
     "ITEM_NAME_Builder_Pouch_II": "建築師的小袋 II",
     "ITEM_NAME_Bronze_Crossbow_T_R": "(R) 青銅弩",

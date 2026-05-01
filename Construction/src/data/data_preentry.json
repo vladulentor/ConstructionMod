@@ -54,6 +54,21 @@
         ]
       },
       {
+        "id": "melvorD:effectIgnoreChance",
+        "allowedScopes": [
+          {
+            "scopes": {
+            },
+            "descriptions": [
+              {
+                "text": "${value}% chance to ignore all Combat Effects",
+                "lang": "MODIFIER_DATA_GlobalEffectIgnoreChance"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "melvorD:skillInterval",
         "allowedScopes": [
           {

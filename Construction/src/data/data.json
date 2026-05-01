@@ -5249,7 +5249,8 @@
                 "rielkConstruction:Desk",
                 "rielkConstruction:Storage_Chest",
                 "rielkConstruction:Wardrobe"
-              ]
+              ],
+              "newTooltip": true
             },
             {
               "id": "Garden",
@@ -6338,11 +6339,6 @@
               "baseExperience": 22,
               "baseActionCost": 15,
               "categoryID": "rielkConstruction:House",
-              "order": [
-                "m",
-                "c",
-                "m"
-              ],
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Clay_Bricks",
@@ -6354,9 +6350,17 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "changeFunc": "activateLongBuffs",
               "modifiers": {
-                "nonCombatSkillXP": 1,
-                "globalItemDoublingChance": 1
+                "rielkConstruction:spoof_expTime": 1,
+                "rielkConstruction:xpPerTime": 1
               }
             },
             {
@@ -6381,8 +6385,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "nonCombatSkillXP": 1,
-                "globalItemDoublingChance": 1
+                "nonCombatSkillXP": 2,
+                "rielkConstruction:extendLongBuffs": 1
               }
             },
             {
@@ -6410,9 +6414,17 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "changeFunc": "activateLongBuffs",
               "modifiers": {
-                "nonCombatSkillXP": 2,
-                "globalItemDoublingChance": 2
+                "rielkConstruction:preservePerTime": 1,
+                "rielkConstruction:extendLongBuffs": 1
               }
             },
             {
@@ -6445,8 +6457,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "nonCombatSkillXP": 3,
-                "globalItemDoublingChance": 2
+                "skillPreservationChance": 4,
+                "rielkConstruction:extendLongBuffs": 2
               }
             },
             {
@@ -6482,9 +6494,18 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "changeFunc": "activateLongBuffs",
               "modifiers": {
-                "nonCombatSkillXP": 5,
-                "globalItemDoublingChance": 4
+                "rielkConstruction:preserveCapPerTime": 0.5,
+                "rielkConstruction:preserveConsPerTime": 6,
+                "rielkConstruction:extendLongBuffs": 2
               }
             },
             {
@@ -7240,10 +7261,11 @@
               ],
               "changeFunc": "addNewMasteryPoolBonuses",
               "modifiers": {
-                "rielkConstruction:spoofAddConsToSmithingPool":
-                [
-                  {"value":1,
-                "skillID":"melvorD:Smithing"}
+                "rielkConstruction:spoofAddConsToSmithingPool": [
+                  {
+                    "value": 1,
+                    "skillID": "melvorD:Smithing"
+                  }
                 ],
                 "flatSkillInterval": [
                   {
@@ -9437,7 +9459,7 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillPreservationChance": 0.5,
+                "skillItemDoublingChance": 1,
                 "bankSpace": 4
               }
             },
@@ -9461,9 +9483,16 @@
                   "quantity": 450
                 }
               ],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4
+              ],
               "currencyCosts": [],
               "modifiers": {
-                "skillPreservationChance": 1,
+                "rielkConstruction:spoof_bankslotexpl": 1,
+                "rielkConstruction:doublingankslots": 0.35,
                 "bankSpace": 8
               }
             },
@@ -9492,8 +9521,20 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4
+              ],
               "modifiers": {
-                "skillPreservationChance": 1.5,
+                "rielkConstruction:expandBankSlotCap1": 1,
+                "rielkConstruction:globalCurrencyBanksSlots": [
+                  {
+                    "value": 1,
+                    "currencyID": "melvorD:GP"
+                  }
+                ],
                 "bankSpace": 12
               }
             },
@@ -9526,9 +9567,10 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "buyBankTabs",
               "modifiers": {
-                "skillPreservationChance": 2,
-                "bankSpace": 16
+                "rielkConstruction:spoof_addBankTabs": 2,
+                "bankSpace": 20
               }
             },
             {
@@ -9560,9 +9602,16 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4
+              ],
               "modifiers": {
-                "skillPreservationChance": 2.5,
-                "bankSpace": 20
+                "rielkConstruction:unlockTripling": 1,
+                "rielkConstruction:skillPetChanceBankSlots": 0.25,
+                "bankSpace": 30
               }
             },
             {
@@ -9817,7 +9866,7 @@
                     "skillID": "rielkConstruction:Construction"
                   }
                 ],
-                                "rielkConstruction:skillEfficiencyChance": [
+                "rielkConstruction:skillEfficiencyChance": [
                   {
                     "value": 1
                   }
@@ -9850,9 +9899,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-             
                 "rielkConstruction:skillEfficiencyPotency": 50,
-                   "rielkConstruction:skillEfficiencyChance": [
+                "rielkConstruction:skillEfficiencyChance": [
                   {
                     "value": 2
                   }
@@ -9938,9 +9986,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                
                 "rielkConstruction:skillEfficiencyPotency": 75,
-              "rielkConstruction:skillEfficiencyChance": [
+                "rielkConstruction:skillEfficiencyChance": [
                   {
                     "value": 4
                   }
@@ -9983,7 +10030,7 @@
                 4
               ],
               "modifiers": {
-                 "rielkConstruction:constructionActionsToUpgrade": [
+                "rielkConstruction:constructionActionsToUpgrade": [
                   {
                     "skillID": "rielkConstruction:Construction",
                     "value": -5
@@ -9994,7 +10041,6 @@
                     "value": -25
                   }
                 ],
-               
                 "rielkConstruction:bypassEfficiencyChance": [
                   {
                     "value": 5
@@ -10570,16 +10616,14 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 1,
-                    "skillID": "melvorD:Defence"
-                  }
-                ],
                 "skillXP": [
                   {
-                    "value": 3,
+                    "value": 2,
                     "skillID": "melvorD:Defence"
+                  },
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Hitpoints"
                   }
                 ]
               }
@@ -10621,19 +10665,15 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4
+              ],
               "modifiers": {
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 2,
-                    "skillID": "melvorD:Defence"
-                  }
-                ],
-                "skillXP": [
-                  {
-                    "value": 3,
-                    "skillID": "melvorD:Defence"
-                  }
-                ]
+                "rielkConstruction:blockTheUnblockable": 5,
+                "reflectDamage": 2
               }
             },
             {
@@ -10678,13 +10718,13 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "flatHiddenSkillLevel": [
+                "rielkConstruction:itemProtectionChance": 25,
+                "flatResistancePer30Defence": [
                   {
-                    "value": 3,
-                    "skillID": "melvorD:Defence"
+                    "value": 1,
+                    "damageTypeID": "melvorD:Normal"
                   }
-                ],
-                "reflectDamage": 2
+                ]
               }
             },
             {
@@ -10734,16 +10774,12 @@
               "currencyCosts": [],
               "shinyMods": [
                 1,
-                2
+                2,
+                3
               ],
               "modifiers": {
-                "flatHiddenSkillLevelBasedOnLevels": [
-                  {
-                    "value": 5,
-                    "skillID": "melvorD:Defence"
-                  }
-                ],
-                "reflectDamage": 4
+                "effectIgnoreChance": 5,
+                "reflectDamage": 3
               }
             },
             {
@@ -10780,9 +10816,19 @@
               ],
               "currencyCosts": [],
               "shinyMods": [
-                1
+                1,
+                2,
+                3,
+                4
               ],
               "modifiers": {
+                "rielkConstruction:blockTheUnblockable": 15,
+                "flatHiddenSkillLevelBasedOnLevels": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Defence"
+                  }
+                ],
                 "equipmentSets": 1
               }
             },
@@ -13475,7 +13521,9 @@
         "id": "spoofAddConsToSmithingPool",
         "allowedScopes": [
           {
-            "scopes": {"skill":true},
+            "scopes": {
+              "skill": true
+            },
             "descriptions": [
               {
                 "text": "I could have just made a new scope for the mastery pool cap skill already but like, I don't want to test that for side effects",
@@ -13494,6 +13542,264 @@
               {
                 "text": "Icts you know it",
                 "lang": "MODIFIER_DATA_maxlevelAssocbonusEff"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_bankslotexpl",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Icts you know it",
+                "lang": "MODIFIER_DATA_spoof_bankslotexpl"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "doublingankslots",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Icts you know it",
+                "lang": "MODIFIER_DATA_preservationbankslots"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "globalCurrencyBanksSlots",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "currency": true
+            },
+            "descriptions": [
+              {
+                "text": "Icts you know it",
+                "lang": "MODIFIER_DATA_globalGPBanksSlots"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "skillPetChanceBankSlots",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Icts you know it",
+                "lang": "MODIFIER_DATA_skillPetChanceBankSlots"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "expandBankSlotCap1",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Icts you know it",
+                "lang": "MODIFIER_DATA_expandBankSlotCap1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "expandBankSlotCap2",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Icts you know it",
+                "lang": "MODIFIER_DATA_expandBankSlotCap2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unlockTripling",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "TRI",
+                "lang": "MODIFIER_DATA_unlockTripling"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_addBankTabs",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "bank tabs",
+                "lang": "MODIFIER_DATA_spoof_addBankTabs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_expTime",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "there we are",
+                "lang": "MODIFIER_DATA_spoof_expTime"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xpPerTime",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "there we are",
+                "lang": "MODIFIER_DATA_xpPerTime"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "preservePerTime",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "there we are",
+                "lang": "MODIFIER_DATA_preservePerTime"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "preserveConsPerTime",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "there we are",
+                "lang": "MODIFIER_DATA_preserveConsPerTime"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "preserveCapPerTime",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "there we are",
+                "lang": "MODIFIER_DATA_preserveCapPerTime"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extendLongBuffs",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "there we are",
+                "lang": "MODIFIER_DATA_extendLongBuffs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "blockTheUnblockable",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Row, row, fight the power! Break the unbreakable, touch the untouchable, see the invisible... pierce the heavens!",
+                "lang": "MODIFIER_DATA_blockTheUnblockable"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "itemProtectionChance",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "df",
+                "lang": "MODIFIER_DATA_itemProtectionChance"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unlockParry",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "damageType": true
+            },
+            "descriptions": [
+              {
+                "text": "there we are",
+                "lang": "MODIFIER_DATA_unlockParry"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "damagethreshold",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "damageType": true
+            },
+            "descriptions": [
+              {
+                "text": "there we are",
+                "lang": "MODIFIER_DATA_damagethreshold"
               }
             ]
           }

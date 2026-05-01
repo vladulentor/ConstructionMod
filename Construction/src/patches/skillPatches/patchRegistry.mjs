@@ -24,6 +24,10 @@ const { unlockShieldsCrossbows } = await loadModule('src/patches/skillPatches/cr
 
 const { addNewMasteryPoolBonuses } = await loadModule('src/patches/skillPatches/smithing/addNewMasteryPoolBonuses.mjs');
 
+const { buyBankTabs } = await loadModule('src/patches/skillPatches/general/buyBankTabs.mjs');
+const { activateLongBuffs } = await loadModule('src/patches/skillPatches/general/addLongBuffs.mjs');
+
+
 
 const { addBonusToPool } = await loadModule('src/patches/skillPatches/mining/addBonusToPool.mjs');
 
@@ -75,11 +79,13 @@ export const EffectRegistry = {
   addSpecialAttack,
   addRuneEssence,
   addConstellationLevels,
+  activateLongBuffs,
   addBonusToPool,
   refreshAgi,
   addEfftoSkillBoosts,
   buffSlayerItems,
   addNewMasteryPoolBonuses,
+  buyBankTabs,
   unlockShieldsCrossbows,
   addObstacle,
   checkForInitialMill,

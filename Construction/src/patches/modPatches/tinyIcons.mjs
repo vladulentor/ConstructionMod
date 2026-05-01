@@ -154,9 +154,28 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:findChuckOnFixtureComp', 'chuck');
     icons.addModifier('rielkConstruction:maxlevelAssocbonusEff', 'efficiency');
 
-        icons.addModifier('rielkConstruction:spoofAddConsToSmithingPool', 'construction');
+    icons.addModifier('rielkConstruction:spoofAddConsToSmithingPool', 'construction');
     icons.addModifier('rielkConstruction:skillScopedPoolCap', 'mastery');
     icons.addModifier('rielkConstruction:spoofAddNewMPBonus', 'mastery');
+
+    icons.addModifier('rielkConstruction:spoof_bankslotexpl', 'bank');
+    icons.addModifier('rielkConstruction:doublingankslots', 'bank');
+    icons.addModifier('rielkConstruction:expandBankSlotCap1', 'bank');
+    icons.addModifier('rielkConstruction:unlockTripling', 'doubling');
+    icons.addModifier('rielkConstruction:spoof_addBankTabs', 'bank');
+    icons.addModifier('rielkConstruction:skillPetChanceBankSlots', 'bank');
+
+    icons.addModifier('rielkConstruction:blockTheUnblockable', 'defence');
+    icons.addModifier('rielkConstruction:itemProtectionChance', 'protect_item');
+
+    icons.addModifier('rielkConstruction:spoof_expTime', 'interval');
+    icons.addModifier('rielkConstruction:xpPerTime', 'interval', 'xp');
+    icons.addModifier('rielkConstruction:extendLongBuffs', 'interval');
+    icons.addModifier('rielkConstruction:preservePerTime', 'interval', 'preservation');
+    icons.addModifier('rielkConstruction:preserveCapPerTime', 'interval', 'preservation');
+    icons.addModifier('rielkConstruction:preserveConsPerTime', 'preservation');
+
+
 
 
 }

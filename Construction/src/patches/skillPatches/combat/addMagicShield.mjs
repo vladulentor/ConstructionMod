@@ -8,10 +8,11 @@ export function addMagicShield({ patch }) {
         if (this.game.modifiers.getValue("rielkConstruction:addRuneShield", ModifierQuery.EMPTY)) {
             let chargeMultiplier = this.game.modifiers.getValue("rielkConstruction:runeShieldMultiplier", ModifierQuery.EMPTY) + 1;
             this.shieldCharge ??= 0;
-            if (this.attackType == "magic" || attack.usesRunesPerProc) {
+            if (!this.chargedForSpell && (this.attackType == "magic" || attack.usesRunesPerProc)) {
                 this.spellSelection.attack.runesRequired.forEach(a => this.shieldCharge += a.quantity * chargeMultiplier);
                 if (attack.extraRuneConsumption !== undefined)
                     attack.extraRuneConsumption.forEach(a => this.shieldCharge += chargeMultiplier * a.quantity);
+                this.chargedForSpell = 1;
             }
             if (this.canAurora && this.spellSelection.aurora !== undefined) {
                 let offtypeCost = 1;
@@ -37,12 +38,18 @@ export function addMagicShield({ patch }) {
     })
 
     patch(Character, "act").before(function () {
-        this.turnsMem = this.turnsTaken
+        if (this.turnsMem < this.turnsTaken) {
+            this.chargedForSpell = 0;
+            this.turnsMem = this.turnsTaken;
+            this.newTurn = 1
+        }
     })
     patch(Character, "act").after(function (_) {
-        if (this.target.shielded && this.turnsMem<this.turnsTaken) {
+        if (this.target.shielded && this.newTurn) {
             this.target.shielded -= 1;
             this.target.renderHitpoints(); // We don't add it to the renderqueue since it doesn't work.
+                    this.newTurn = 0;
+
         }
     })
     SplashManager.splashClasses.RuneShield = 'rune-shield';
@@ -68,7 +75,10 @@ export function addMagicShield({ patch }) {
 
         this.renderQueue.damageSplash = true;
     })
-
+    patch(Character, "initializeForCombat").after(function (_) {
+        this.chargedForSpell = 0;
+        this.turnsMem = 0;
+    })
     patch(Character, 'renderHitpoints').after(function (_) {
         this.statElements.hitpointsBar.forEach(elem => {
             this.shielded ? elem.style.boxShadow = 'inset 0 0 4px 3px #0073d1ff' : elem.style.boxShadow = '';
@@ -80,19 +90,5 @@ export function addMagicShield({ patch }) {
         this.shielded = 0;
         this.renderHitpoints();
     })
-    class RunesSpentTrigger {
-        constructor(data, transpiler, game) {
-            this.data = data;
-            this.game = game;
-        }
-
-        check(character) {
-            if (character.shieldCharge > 300) {
-                character.shieldCharge -= 300;
-                return true;
-            }
-            else return false;
-        }
-    }
 
 }

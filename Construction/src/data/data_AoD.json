@@ -475,11 +475,11 @@
     "skillLevelCapIncreases": [
       {
         "id": "melvorAoD:Pre99Dungeons",
-        "fixedIncreases": {
+        "randomIncreases": {
           "add": [
             {
               "skillID": "rielkConstruction:Construction",
-              "increase": 5,
+              "increase": 15,
               "maximum": 99
             }
           ]

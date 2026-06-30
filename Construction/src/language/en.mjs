@@ -404,7 +404,7 @@ export const language = {
     'MENU_TEXT_ENGRAVED_DIAGRAM_TEXT_0': 'How to build a Construct:',
     'MENU_TEXT_ENGRAVED_DIAGRAM_TEXT_1': '1. Be hard as steel',
     'MENU_TEXT_ENGRAVED_DIAGRAM_TEXT_2': '2. Always Believe in yourself',
-    'MENU_TEXT_ENGRAVED_DIAGRAM_TEXT_3': 'You can\'t make out the other steps, but it\'s probably something like that',
+    'MENU_TEXT_ENGRAVED_DIAGRAM_TEXT_3': 'The other steps are similarly useless',
     'MENU_TEXT_ENGRAVED_DIAGRAM_UNLOCK_0': 'Permanent 2% less Damage Taken',
     'MENU_TEXT_ENGRAVED_DIAGRAM_UNLOCK_1': 'Permanent 2% of Maximum Hit added to Minimum Hit',
     'MENU_BONFIRE_SOURCE': '${logName} Bonfire',

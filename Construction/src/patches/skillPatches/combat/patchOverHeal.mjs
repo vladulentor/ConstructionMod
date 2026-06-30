@@ -13,12 +13,17 @@ export function patchOverHeal(ctx) {
     ctx.patch(Player, 'autoEat').before(function (shouldEat) {
         this._allowOverheal = !!this.game.modifiers.getValue("rielkConstruction:autoeatOverheal", ModifierQuery.EMPTY);
     })
-    ctx.patch(Player, 'lifesteal').before(function (attack, damage, flatBonus) {
-        this._allowOverheal = 0;
-    })
     ctx.patch(Player, 'autoEat').after(function (_, shouldEat) {
         this._allowOverheal = true;
     }) // don't allow overheal when autoeating unless you get the upgrade
+
+    ctx.patch(Player, 'lifesteal').before(function (attack, damage, flatBonus) {
+        this._allowOverheal = false;
+    })
+    ctx.patch(Player, 'lifesteal').after(function (attack, damage, flatBonus) {
+        this._allowOverheal = true;
+    })
+
 
     ctx.patch(Player, 'heal').replace(function (_, amount) {
         amount = (this.game.modifiers.getValue("rielkConstruction:unlockOverHeal", ModifierQuery.EMPTY) && (this._allowOverheal ?? 1))
@@ -27,7 +32,7 @@ export function patchOverHeal(ctx) {
                     (this.game.modifiers.getValue("rielkConstruction:maxOverheal", ModifierQuery.EMPTY) / 100))) -
                 this.hitpoints
             )
-            : Math.min(amount, this.stats.maxHitpoints - this.hitpoints);
+            : Math.min(amount, Math.max(0, this.stats.maxHitpoints - this.hitpoints));
         this.addHitpoints(amount);
         const isOver = this.hitpoints > this.stats.maxHitpoints;
         this.splashManager.add({
@@ -88,6 +93,8 @@ export function patchOverHeal(ctx) {
         this.manager.addCombatStat(CombatStats.FoodConsumed, quantity);
         this.addItemStat(item, ItemStats.HealedFor, healingAmount);
         this.manager.addCombatStat(CombatStats.HPFromFood, healingAmount);
+        if(this.hitpoints > this.stats.maxHitpoints) // aka if we have overhealed keep the streak going
+        this.timers.regen._ticksLeft= Math.max(50, this.timers.regen._ticksLeft);
         if (!rollPercentage(this.modifiers.getFoodPreservationChance())) {
             const oldFood = this.food.currentSlot.item;
             this.food.consume(quantity);

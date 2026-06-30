@@ -704,7 +704,7 @@
         "golbinRaidExclusive": false,
         "sellsFor": 15000,
         "swalData": {
-          "title": "Item_NAME_Engraved_Diagram",
+          "title": "ITEM_NAME_Engraved_Diagram",
           "htmlTemplateID": "Engraved_Construct_Diagram_Swal_Content"
         }
       },

@@ -288,7 +288,7 @@ export const language = {
     'MODIFIER_DATA_skillIntervalSubcategory': '${value}% ${skillName} Interval for ${subcategoryName}',
     'MODIFIER_DATA_minFishInterval': '${value}% Minimum Fishing Interval',
     'MODIFIER_DATA_ExtraTier1Potions': 'Gain ${value} additional Tier I Potions when making a Potion with Level 99 Mastery',
-    'MODIFIER_DATA_reducePotionUpReq': '${value} Mastery Level requirementes to upgrade Potions from the Bank',
+    'MODIFIER_DATA_reducePotionUpReq': '${value} Mastery Level requirements to upgrade Potions from the Bank',
     'MODIFIER_DATA_maxFishInterval': '${value}% Maximum Fishing Interval',
     'MODIFIER_DATA_ChangeAddiIntoHighTier': 'Random Tier Potions gained in Herblore can\'t be lower Tier than your Potion Tier',
     'MODIFIER_DATA_spoofReduceUpAmount': '${value} Potion required to upgrade Potions from the Bank',

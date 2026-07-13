@@ -55,8 +55,7 @@
                             "modifiers": {
                                 "rielkConstruction:skillEfficiencyChancePerHamrielStar": [
                                     {
-                                        "value": 1.5,
-                                        "skillID": "rielkConstruction:Construction"
+                                        "value": 1.5
                                     }
                                 ]
                             },
@@ -307,7 +306,6 @@
                                         "add": {
                                             "rielkConstruction:skillEfficiencyChance": [
                                                 {
-                                                    "skillID": "rielkConstruction:Construction",
                                                     "value": 1
                                                 }
                                             ]
@@ -348,7 +346,6 @@
                                         "add": {
                                             "rielkConstruction:skillEfficiencyPotency": [
                                                 {
-                                                    "skillID": "rielkConstruction:Construction",
                                                     "value": 5
                                                 }
                                             ]

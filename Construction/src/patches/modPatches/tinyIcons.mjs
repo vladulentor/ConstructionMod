@@ -5,8 +5,11 @@ export function tinyIconsCompatibility(ctx) {
         ['cabin', ctx.getResourceUrl('assets/cabin.webp')],
         ['plot', game.items.getObjectByID('melvorD:Bobs_Rake').media],
         ['overheal', ctx.getResourceUrl('assets/tinyicons/tinyheart.png')],
-        ['cookEquipment', game.items.getObjectByID('melvorF:Chefs_Hat').media],
+                ['negate', ctx.getResourceUrl('assets/tinyicons/negated.png')],
 
+        ['cookEquipment', game.items.getObjectByID('melvorF:Chefs_Hat').media],
+        ['chuck', game.pets.getObjectByID('rielkConstruction:ChuckTheForeman').media],
+        ['construction', game.skills.getObjectByID("rielkConstruction:Construction").media],
         ['cookSkillcape', game.items.getObjectByID('melvorD:Cooking_Skillcape').media],
         ['cookConsumables', game.items.getObjectByID('melvorF:Additional_Cooker_Scroll').media],
         ['specialItems', game.items.getObjectByID('melvorD:Treasure_Chest').media],
@@ -145,6 +148,36 @@ export function tinyIconsCompatibility(ctx) {
     icons.addModifier('rielkConstruction:CombIntPerAgiLevels', 'stamina', 'ti_attack_interval');
     icons.addModifier('rielkConstruction:fuckYourGold', 'currency');
     icons.addModifier('rielkConstruction:spoof_Damocles', 'mark_of_death');
+
+    icons.addModifier('rielkConstruction:spoofUpgradeShields', 'crafting');
+    icons.addModifier('rielkConstruction:spoofUpgradeCross', 'fletching');
+    icons.addModifier('rielkConstruction:unlockEfficiencySkill', 'efficiency');
+
+    icons.addModifier('rielkConstruction:findChuckOnFixtureComp', 'chuck');
+    icons.addModifier('rielkConstruction:maxlevelAssocbonusEff', 'efficiency');
+
+    icons.addModifier('rielkConstruction:spoofAddConsToSmithingPool', 'construction');
+    icons.addModifier('rielkConstruction:skillScopedPoolCap', 'mastery');
+    icons.addModifier('rielkConstruction:spoofAddNewMPBonus', 'mastery');
+
+    icons.addModifier('rielkConstruction:spoof_bankslotexpl', 'bank');
+    icons.addModifier('rielkConstruction:doublingankslots', 'bank');
+    icons.addModifier('rielkConstruction:expandBankSlotCap1', 'bank');
+    icons.addModifier('rielkConstruction:globalCurrencyBanksSlots', 'bank');
+    icons.addModifier('rielkConstruction:unlockTripling', 'doubling');
+    icons.addModifier('rielkConstruction:spoof_addBankTabs', 'bank');
+    icons.addModifier('rielkConstruction:skillPetChanceBankSlots', 'bank');
+
+    icons.addModifier('rielkConstruction:blockTheUnblockable', 'negate');
+    icons.addModifier('rielkConstruction:itemProtectionChance', 'protect_item');
+
+    icons.addModifier('rielkConstruction:spoof_expTime', 'interval');
+    icons.addModifier('rielkConstruction:xpPerTime', 'interval', 'xp');
+    icons.addModifier('rielkConstruction:extendLongBuffs', 'interval');
+    icons.addModifier('rielkConstruction:preservePerTime', 'interval', 'preservation');
+    icons.addModifier('rielkConstruction:preserveCapPerTime', 'interval', 'preservation');
+    icons.addModifier('rielkConstruction:preserveConsPerTime', 'preservation');
+
 
 
 

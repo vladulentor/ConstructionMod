@@ -64,7 +64,7 @@ class RielkConstructionMasteryElement extends HTMLElement {
         tierText,
         currentBuilt: 0,
       });
-      this.fixturesInTier = 24; // default for no mods or DLC
+      this.fixturesInTier = game.construction.fixtures.allObjects.length;
     }
     this._image.src= ctx.getResourceUrl('assets/cabin.webp');
 
@@ -98,7 +98,7 @@ class RielkConstructionMasteryElement extends HTMLElement {
     this.aggregateBuilt = this._bars.reduce((sum, bar) => sum + bar.currentBuilt, 0);
     this.aggregateTotal = this.fixturesInTier * this._bars.length;
     this._aggregateTiers.textContent = `${this.aggregateBuilt} / ${this.aggregateTotal} (${((this.aggregateBuilt / this.aggregateTotal) * 100).toFixed(2)}%) ${getRielkLangString('MENU_BUILT')}`;
-    if(this._bars.slice(0, 5).every(bar => bar.currentBuilt >= bar.totalBuilt))  this._image.src= ctx.getResourceUrl('assets/cabin_max.webp');
+    if(this._bars.slice(0, 5).every(bar => bar.currentBuilt >= this.fixturesInTier))  this._image.src= ctx.getResourceUrl('assets/cabin_max.webp');
   }
 
   initMasteryBar(construction) {

@@ -63,6 +63,7 @@ export function addStarConvergence({ patch }) {
 
   function makeRewardArray(runes, modifs) {
     let rewards = { items: [] }
+    if(runes == undefined) return rewards;
     runes.forEach((rune, i) => {
       if (modifs[i].isMaxed)
         rewards.items.push({ item: rune.item, quantity: rune.quantity })

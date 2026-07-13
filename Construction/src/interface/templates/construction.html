@@ -358,9 +358,12 @@
   <h5 id="top-tooltip" class="font-w400 font-size-sm mb-1 text-warning text-center"></h5>
   <h5 class="font-w400 font-size-sm mb-1 text-danger text-center" id="cap"></h5>
   <h5 class="font-w400 font-size-sm mb-1 text-center">
-    <small>
+    <small id="under0warn">
       <lang-string lang-id="MENU_TEXT_TOOLTIP_CHANCE_BELOW"></lang-string>
     </small>
+    <h5 id="nonConstwarn" class="d-none font-w400 font-size-sm mb-1 text-center">
+      <rielk-lang-string lang-id="MENU_TEXT_TOOLTIP_OFFSKILL_EFF" class="text-danger"></rielk-lang-string>
+    </h5>
   </h5>
   <h5 class="font-w400 font-size-sm mb-1 text-center text-info">
     <small id="future-1">
@@ -510,12 +513,27 @@
             the mod.io page's "view other versions" tab.
           </div>
           <div style="max-height:350px; overflow-y:auto;">
+                             <div class="font-w600 mb-1 ">v4.11</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Updated the Bedroom.<br>
+              - The Storage Chest now provides bonuses based on how much of the bank has been filled, and can change how Doubling works.<br>
+              - The Wardrobe's bonuses were updated, it now provides some new defensive bonuses like effect resistance, avoiding unavoidable attacks, or not losing items on death.<br>
+              - The Fireplace now gives effects based on how long the same skill (not action) has been done.<br>
+            </div>
+                        <div class="font-w600 mb-1 ">v4.10</div>
+            <div class="font-w400 font-size-sm mb-2">
+              - Updated the Workshop. This isn't the big training room update yet.<br>
+              - The worktable now provides new items from Crafting and Fletching which can help in combat.<br>
+              - The Toolbox's bonuses were standardised, added some new special construction bonuses to it.<br>
+              - The forge's construction bonuses have been put into its mastery pool checkpoint bonuses, which have become its main gimmick.<br>
+            </div>
+
             <div class="font-w600 mb-1 ">v4.9</div>
             <div class="font-w400 font-size-sm mb-2">
               - Updated the Training Room's Jungle Gym's picture and effects.<br>
               - Changed Relic 4's effect from giving 5 levels to non-combat skills to giving 15% xp boost<br>
               - Updated Agility obstacles and pillars with Construction material costs and modifiers<br>
-              - The rest of the Training Room fixtures will be updated in 4.10, it includes a lot of new systems, so
+              - The rest of the Training Room fixtures will be updated later, it includes a lot of new systems, so
               they've been pushed back.<br>
             </div>
 
@@ -962,3 +980,100 @@
 </template>
 
 
+
+<template id="weaponMastery-template">
+  <div class="col-12 d-none" id="outercont">
+    <div class="block block-rounded-double bg-combat-inner-dark weaponMasteryContainer" id="weaponMasteryContainer">
+      <img class="weaponMasteryBgIcon " id="weaponMasteryBgIcon">
+      <div class="weaponMasteryTop block-header block-header-default bg-dark-bank-block-header px-3 py-1">
+        <h5 class="font-size-sm font-w600 mb-0">
+          Weapon Mastery
+        </h5>
+        <div class="block-options">
+          <h5 class="font-w600 font-size-sm text-right text-combat-smoke mb-0">
+            <img class="skill-icon-xxs mr-2" id="weaponMasteryIcon"
+              src="chrome-extension://melvor/assets/media/bank/weapon_sword.png">
+          </h5>
+        </div>
+      </div>
+      <div class="weaponMasteryBgContainer" id="weaponMasteryBgContainer">
+        <div class="weaponMasteryMenu ">
+          <div class="row no-gutters p-2">
+            <div class="col-12">
+              <h5 id="weaponMasteryText" class="font-w900 font-size-md text-combat-smoke pt-2 text-center"
+                style="margin-bottom:1rem;">Slashing</h5>
+              <div id="weaponMasteryItem"
+                class="weapon-mastery-item d-flex justify-content-center align-items-center mb-2">
+                <div class="bg-dark-bank-block-header d-flex info-icon align-items-center border-item"
+                  style="margin-top: -6px; width:64px; height:64px; border-radius: 15px">
+                  <img id="weaponPic" class="weapon-pic p-2 icon-size-48" style="width:64px; height:64px;">
+                </div>
+                <div id="weaponInfo" class="weapon-info d-flex flex-column ml-2">
+                  <span id="weaponName" class="weapon-name font-w600 font-size-sm text-combat-smoke">Steel Sword</span>
+                  <span id="weaponRank" class="weapon-rank font-w600 font-size-sm"></span>
+                </div>
+              </div>
+
+              <!-- XP Bars -->
+              <div id="weaponXPBar" class="singular-weapon-xp-bar progress mb-1" style="height:6px">
+                <div id="weaponXpFill" class="singular-weapon-xp-fill" style="width: 40%;"></div>
+              </div>
+
+              <h5 class="font-w400 font-size-xs text-combat-smoke pt-1 pb-3 text-center">
+                Current Weapon Class Mastery:
+              </h5>
+              <div class="mastery-weapon-xp-container  pb-3 pt-10r">
+                <div class="mastery-weapon-xp-bar" id="weaponMasteryBar">
+                  <div class="mastery-weapon-xp-fill" id="weaponMasteryProgress" style="width: 0%;"></div>
+
+                  <div class="xp-marker" style="left: 10%;">
+                    <span class="xp-label">1</span>
+                  </div>
+                  <div class="xp-marker" style="left: 20%;">
+                    <span class="xp-label">2</span>
+                  </div>
+                  <div class="xp-marker" style="left: 40%;">
+                    <span class="xp-label">3</span>
+                  </div>
+                  <div class="xp-marker" style="left: 60%;">
+                    <span class="xp-label">4</span>
+                  </div>
+                  <div class="xp-marker" style="left: 90%;">
+                    <span class="xp-label">5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters d-flex justify-content-center" id="weaponMasteryStepsContainer">
+          <div class="d-flex justify-content-center align-items-center fas weaponMasteryStepsButton"
+            id="weaponMasteryStepsButton"><span class="arrow"></span></div>
+          <div class="weaponMasteryModifiers collapsed font-w600 font-size-sm" id="weaponMasteryModifiers">
+            <div class="col-12 mb-1 dropdown-divider"></div>
+            <div class="col-12 mb-1 d-flex justify-content-center flex-wrap" id="modifierStep1">
+            </div>
+            <div class="col-12 mb-1 dropdown-divider"></div>
+            <div class="col-12 mb-1 d-flex justify-content-center flex-wrap" id="modifierStep2">
+            </div>
+            <div class="col-12 mb-1 dropdown-divider"></div>
+
+            <div class="col-12 mb-1 d-flex justify-content-center flex-wrap" id="modifierStep3">
+            </div>
+            <div class="col-12 mb-1 dropdown-divider"></div>
+
+            <div class="col-12 mb-1 d-flex justify-content-center flex-wrap" id="modifierStep4">
+            </div>
+            <div class="col-12 mb-1 dropdown-divider"></div>
+
+            <div class="col-12 mb-1 d-flex justify-content-center flex-wrap" id="modifierStep5">
+            </div>
+            <div id="modifierSpacer" style="height:0;"></div>
+          </div>
+          <div class="weaponMasteryCap block-header bg-dark-bank-block-header" id="weaponMasteryCap"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

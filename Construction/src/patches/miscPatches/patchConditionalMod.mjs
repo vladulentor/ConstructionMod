@@ -2,7 +2,6 @@ const { loadModule } = mod.getContext(import.meta);
 
 const { FocusedCookingCondition } = await loadModule ('src/patches/skillPatches/cooking/focusedCookingCondition.mjs');
 
-
 const { getRielkLangString } = await loadModule ('src/language/translationManager.mjs');
 
 

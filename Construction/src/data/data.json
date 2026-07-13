@@ -616,12 +616,7 @@
         "equipRequirements": [],
         "equipmentStats": [],
         "modifiers": {
-          "rielkConstruction:skillEfficiencyPotency": [
-            {
-              "skillID": "rielkConstruction:Construction",
-              "value": 25
-            }
-          ]
+          "rielkConstruction:skillEfficiencyPotency": 25
         },
         "consumesOn": [
           {
@@ -711,7 +706,7 @@
         "golbinRaidExclusive": false,
         "sellsFor": 15000,
         "swalData": {
-          "title": "Item_NAME_Engraved_Diagram",
+          "title": "ITEM_NAME_Engraved_Diagram",
           "htmlTemplateID": "Engraved_Construct_Diagram_Swal_Content"
         }
       },
@@ -764,7 +759,6 @@
           ],
           "rielkConstruction:skillEfficiencyChance": [
             {
-              "skillID": "rielkConstruction:Construction",
               "value": 4
             }
           ]
@@ -894,6 +888,627 @@
           }
         ],
         "modifiers": {}
+      },
+      {
+        "id": "Bronze_Crossbow_T_R",
+        "name": "(R) Bronze Crossbow",
+        "category": "Combat",
+        "type": "Ranged Weapon",
+        "media": "assets/items/crossbow_bronze.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 60,
+        "tier": "bronze",
+        "validSlots": [
+          "Weapon"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Ranged",
+            "level": 1
+          },
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Strength",
+            "level": 1
+          }
+        ],
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 3600
+          },
+          {
+            "key": "rangedAttackBonus",
+            "value": 18
+          },
+          {
+            "key": "rangedStrengthBonus",
+            "value": 27
+          }
+        ],
+        "modifiers": {
+          "rangedCritChance": 5
+        },
+        "itemType": "Weapon",
+        "attackType": "ranged",
+        "ammoTypeRequired": "Bolts"
+      },
+      {
+        "id": "Iron_Crossbow_T_R",
+        "name": "(R) Iron Crossbow",
+        "category": "Combat",
+        "type": "Ranged Weapon",
+        "media": "assets/items/crossbow_iron.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 120,
+        "tier": "iron",
+        "validSlots": [
+          "Weapon"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Ranged",
+            "level": 5
+          },
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Strength",
+            "level": 1
+          }
+        ],
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 3600
+          },
+          {
+            "key": "rangedAttackBonus",
+            "value": 24
+          },
+          {
+            "key": "rangedStrengthBonus",
+            "value": 30
+          }
+        ],
+        "modifiers": {
+          "rangedCritChance": 10
+        },
+        "itemType": "Weapon",
+        "attackType": "ranged",
+        "ammoTypeRequired": "Bolts"
+      },
+      {
+        "id": "Steel_Crossbow_T_R",
+        "name": "(R) Steel Crossbow",
+        "category": "Combat",
+        "type": "Ranged Weapon",
+        "media": "assets/items/crossbow_steel.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 280,
+        "tier": "steel",
+        "validSlots": [
+          "Weapon"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Ranged",
+            "level": 10
+          },
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Strength",
+            "level": 1
+          }
+        ],
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 3600
+          },
+          {
+            "key": "rangedAttackBonus",
+            "value": 31
+          },
+          {
+            "key": "rangedStrengthBonus",
+            "value": 38
+          }
+        ],
+        "modifiers": {
+          "rangedCritChance": 15
+        },
+        "itemType": "Weapon",
+        "attackType": "ranged",
+        "ammoTypeRequired": "Bolts"
+      },
+      {
+        "id": "Mithril_Crossbow_T_R",
+        "name": "(R) Mithril Crossbow",
+        "category": "Combat",
+        "type": "Ranged Weapon",
+        "media": "assets/items/crossbow_mithril.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 1020,
+        "tier": "mithril",
+        "validSlots": [
+          "Weapon"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Ranged",
+            "level": 30
+          },
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Strength",
+            "level": 5
+          }
+        ],
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 3600
+          },
+          {
+            "key": "rangedAttackBonus",
+            "value": 37
+          },
+          {
+            "key": "rangedStrengthBonus",
+            "value": 48
+          }
+        ],
+        "modifiers": {
+          "rangedCritChance": 20
+        },
+        "itemType": "Weapon",
+        "attackType": "ranged",
+        "ammoTypeRequired": "Bolts"
+      },
+      {
+        "id": "Adamant_Crossbow_T_R",
+        "name": "(R) Adamant Crossbow",
+        "category": "Combat",
+        "type": "Ranged Weapon",
+        "media": "assets/items/crossbow_adamant.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 1500,
+        "tier": "mithril",
+        "validSlots": [
+          "Weapon"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Ranged",
+            "level": 40
+          },
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Strength",
+            "level": 10
+          }
+        ],
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 3600
+          },
+          {
+            "key": "rangedAttackBonus",
+            "value": 44
+          },
+          {
+            "key": "rangedStrengthBonus",
+            "value": 59
+          }
+        ],
+        "modifiers": {
+          "rangedCritChance": 23
+        },
+        "itemType": "Weapon",
+        "attackType": "ranged",
+        "ammoTypeRequired": "Bolts"
+      },
+      {
+        "id": "Rune_Crossbow_T_R",
+        "name": "(R) Rune Crossbow",
+        "category": "Combat",
+        "type": "Ranged Weapon",
+        "media": "assets/items/crossbow_rune.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 2000,
+        "tier": "rune",
+        "validSlots": [
+          "Weapon"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Ranged",
+            "level": 50
+          },
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Strength",
+            "level": 15
+          }
+        ],
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 3600
+          },
+          {
+            "key": "rangedAttackBonus",
+            "value": 61
+          },
+          {
+            "key": "rangedStrengthBonus",
+            "value": 60
+          }
+        ],
+        "modifiers": {
+          "rangedCritChance": 27
+        },
+        "itemType": "Weapon",
+        "attackType": "ranged",
+        "ammoTypeRequired": "Bolts"
+      },
+      {
+        "id": "Dragon_Crossbow_T_R",
+        "name": "(R) Dragon Crossbow",
+        "category": "Combat",
+        "type": "Ranged Weapon",
+        "media": "assets/items/crossbow_dragon.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 4300,
+        "tier": "dragon",
+        "validSlots": [
+          "Weapon"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Ranged",
+            "level": 70
+          },
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Strength",
+            "level": 30
+          }
+        ],
+        "equipmentStats": [
+          {
+            "key": "attackSpeed",
+            "value": 3600
+          },
+          {
+            "key": "rangedAttackBonus",
+            "value": 71
+          },
+          {
+            "key": "rangedStrengthBonus",
+            "value": 112
+          }
+        ],
+        "modifiers": {
+          "rangedCritChance": 30
+        },
+        "itemType": "Weapon",
+        "attackType": "ranged",
+        "ammoTypeRequired": "Bolts"
+      },
+      {
+        "itemType": "Equipment",
+        "id": "Green_Dhide_Shield_R",
+        "name": "(R) Green D-hide Shield",
+        "category": "Combat",
+        "type": "Ranged Armour",
+        "media": "assets/items/shield_green.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 600,
+        "tier": "Dragonhide",
+        "validSlots": [
+          "Shield"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Ranged",
+            "level": 50
+          }
+        ],
+        "equipmentStats": [
+          {
+            "key": "rangedAttackBonus",
+            "value": 5
+          },
+          {
+            "key": "magicAttackBonus",
+            "value": -10
+          },
+          {
+            "key": "rangedStrengthBonus",
+            "value": 3
+          },
+          {
+            "key": "meleeDefenceBonus",
+            "value": 25
+          },
+          {
+            "key": "rangedDefenceBonus",
+            "value": 25
+          },
+          {
+            "key": "magicDefenceBonus",
+            "value": 12
+          },
+          {
+            "key": "damageReduction",
+            "value": 3
+          }
+        ],
+        "modifiers": {
+          "rielkConstruction:2turnstunoncritchance": 5
+        }
+      },
+      {
+        "itemType": "Equipment",
+        "id": "Blue_Dhide_Shield_R",
+        "name": "(R) Blue D-hide Shield",
+        "category": "Combat",
+        "type": "Ranged Armour",
+        "media": "assets/items/shield_blue.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 900,
+        "tier": "Dragonhide",
+        "validSlots": [
+          "Shield"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Ranged",
+            "level": 60
+          }
+        ],
+        "equipmentStats": [
+          {
+            "key": "rangedAttackBonus",
+            "value": 8
+          },
+          {
+            "key": "magicAttackBonus",
+            "value": -10
+          },
+          {
+            "key": "rangedStrengthBonus",
+            "value": 6
+          },
+          {
+            "key": "meleeDefenceBonus",
+            "value": 35
+          },
+          {
+            "key": "rangedDefenceBonus",
+            "value": 35
+          },
+          {
+            "key": "magicDefenceBonus",
+            "value": 16
+          },
+          {
+            "key": "damageReduction",
+            "value": 4
+          }
+        ],
+        "modifiers": {
+          "rielkConstruction:2turnstunoncritchance": 10
+        }
+      },
+      {
+        "itemType": "Equipment",
+        "id": "Red_Dhide_Shield_R",
+        "name": "(R) Red D-hide Shield",
+        "category": "Combat",
+        "type": "Ranged Armour",
+        "media": "assets/items/shield_red.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 1200,
+        "tier": "Dragonhide",
+        "validSlots": [
+          "Shield"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Ranged",
+            "level": 70
+          }
+        ],
+        "equipmentStats": [
+          {
+            "key": "rangedAttackBonus",
+            "value": 13
+          },
+          {
+            "key": "magicAttackBonus",
+            "value": -10
+          },
+          {
+            "key": "rangedStrengthBonus",
+            "value": 10
+          },
+          {
+            "key": "meleeDefenceBonus",
+            "value": 42
+          },
+          {
+            "key": "rangedDefenceBonus",
+            "value": 42
+          },
+          {
+            "key": "magicDefenceBonus",
+            "value": 24
+          },
+          {
+            "key": "damageReduction",
+            "value": 5
+          }
+        ],
+        "modifiers": {
+          "rielkConstruction:2turnstunoncritchance": 15
+        }
+      },
+      {
+        "itemType": "Equipment",
+        "id": "Black_Dhide_Shield_R",
+        "name": "(R) Black D-hide Shield",
+        "category": "Combat",
+        "type": "Ranged Armour",
+        "media": "assets/items/shield_black.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 1500,
+        "tier": "Dragonhide",
+        "validSlots": [
+          "Shield"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Ranged",
+            "level": 70
+          }
+        ],
+        "equipmentStats": [
+          {
+            "key": "rangedAttackBonus",
+            "value": 19
+          },
+          {
+            "key": "magicAttackBonus",
+            "value": -10
+          },
+          {
+            "key": "rangedStrengthBonus",
+            "value": 15
+          },
+          {
+            "key": "meleeDefenceBonus",
+            "value": 46
+          },
+          {
+            "key": "rangedDefenceBonus",
+            "value": 46
+          },
+          {
+            "key": "magicDefenceBonus",
+            "value": 30
+          },
+          {
+            "key": "damageReduction",
+            "value": 6
+          }
+        ],
+        "modifiers": {
+          "rielkConstruction:2turnstunoncritchance": 20
+        }
+      },
+      {
+        "itemType": "Equipment",
+        "id": "Ancient_Dhide_Shield_R",
+        "name": "(R) Ancient D-hide Shield",
+        "category": "Combat",
+        "type": "Ranged Armour",
+        "media": "assets/items/shield_ancient.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 45000,
+        "tier": "Dragonhide",
+        "validSlots": [
+          "Shield"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [
+          {
+            "type": "SkillLevel",
+            "skillID": "melvorD:Ranged",
+            "level": 90
+          }
+        ],
+        "equipmentStats": [
+          {
+            "key": "rangedAttackBonus",
+            "value": 25
+          },
+          {
+            "key": "magicAttackBonus",
+            "value": -10
+          },
+          {
+            "key": "rangedStrengthBonus",
+            "value": 20
+          },
+          {
+            "key": "meleeDefenceBonus",
+            "value": 55
+          },
+          {
+            "key": "rangedDefenceBonus",
+            "value": 55
+          },
+          {
+            "key": "magicDefenceBonus",
+            "value": 45
+          },
+          {
+            "key": "damageReduction",
+            "value": 8
+          }
+        ],
+        "modifiers": {
+          "rielkConstruction:2turnstunoncritchance": 25
+        }
       },
       {
         "id": "Beam_Box_I",
@@ -1207,7 +1822,6 @@
           ],
           "rielkConstruction:skillEfficiencyChance": [
             {
-              "skillID": "rielkConstruction:Construction",
               "value": 10
             }
           ],
@@ -1230,7 +1844,7 @@
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 2000,
-        "customDescription": "+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>",
+        "customDescription": "+2% Construction Skill XP",
         "tier": "none",
         "validSlots": [
           "Helmet"
@@ -1258,7 +1872,7 @@
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 2000,
-        "customDescription": "+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>",
+        "customDescription": "+2% Construction Skill XP",
         "tier": "none",
         "validSlots": [
           "Platebody"
@@ -1286,7 +1900,7 @@
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 2000,
-        "customDescription": "+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>",
+        "customDescription": "+2% Construction Skill XP",
         "tier": "none",
         "validSlots": [
           "Platelegs"
@@ -1314,7 +1928,7 @@
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
         "sellsFor": 2000,
-        "customDescription": "+2% Construction Skill XP<br><span class=\"text-warning\">With all four Builders Outfit equipped: +8% Construction Mastery XP</span>",
+        "customDescription": "+2% Construction Skill XP",
         "tier": "none",
         "validSlots": [
           "Boots"
@@ -1327,6 +1941,60 @@
             {
               "skillID": "rielkConstruction:Construction",
               "value": 2
+            }
+          ]
+        }
+      },
+      {
+        "itemType": "Equipment",
+        "id": "Builder_Pouch",
+        "name": "Builder Pouch",
+        "category": "Construction",
+        "type": "Bag",
+        "media": "assets/items/constructionbag.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 0,
+        "tier": "none",
+        "validSlots": [
+          "Consumable"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [],
+        "equipmentStats": [],
+        "modifiers": {
+          "rielkConstruction:skillEfficiencyPotency": 20,
+          "rielkConstruction:skillEfficiencyCost": [
+            {
+              "value": -20
+            }
+          ]
+        }
+      },
+      {
+        "itemType": "Equipment",
+        "id": "Builder_Pouch_II",
+        "name": "Builder Pouch II",
+        "category": "Construction",
+        "type": "Bag",
+        "media": "assets/items/constructionbag2.webp",
+        "ignoreCompletion": false,
+        "obtainFromItemLog": false,
+        "golbinRaidExclusive": false,
+        "sellsFor": 0,
+        "tier": "none",
+        "validSlots": [
+          "Consumable"
+        ],
+        "occupiesSlots": [],
+        "equipRequirements": [],
+        "equipmentStats": [],
+        "modifiers": {
+          "rielkConstruction:skillEfficiencyPotency": 40,
+          "rielkConstruction:skillEfficiencyCost": [
+            {
+              "value": -40
             }
           ]
         }
@@ -1346,6 +2014,22 @@
         ],
         "isDowngrade": false,
         "currencyCosts": []
+      },
+      {
+        "upgradedItemID": "rielkConstruction:Builder_Pouch_II",
+        "itemCosts": [
+          {
+            "id": "rielkConstruction:Builder_Pouch",
+            "quantity": 1
+          },
+          {
+            "id": "melvorF:Consumable_Enhancer",
+            "quantity": 1
+          }
+        ],
+        "rootItemIDs": [
+          "rielkConstruction:Builder_Pouch"
+        ]
       }
     ],
     "attacks": [
@@ -1604,12 +2288,7 @@
                 "value": -5
               }
             ],
-            "rielkConstruction:skillEfficiencyPotency": [
-              {
-                "skillID": "rielkConstruction:Construction",
-                "value": 20
-              }
-            ]
+            "rielkConstruction:skillEfficiencyPotency": 20
           }
         },
         "cost": {
@@ -1649,12 +2328,7 @@
                 "value": -5
               }
             ],
-            "rielkConstruction:skillEfficiencyPotency": [
-              {
-                "skillID": "rielkConstruction:Construction",
-                "value": 20
-              }
-            ]
+            "rielkConstruction:skillEfficiencyPotency": 20
           }
         },
         "cost": {
@@ -1710,12 +2384,7 @@
                 "value": -5
               }
             ],
-            "rielkConstruction:skillEfficiencyPotency": [
-              {
-                "skillID": "rielkConstruction:Construction",
-                "value": 20
-              }
-            ]
+            "rielkConstruction:skillEfficiencyPotency": 20
           }
         },
         "cost": {
@@ -1771,12 +2440,7 @@
                 "value": -5
               }
             ],
-            "rielkConstruction:skillEfficiencyPotency": [
-              {
-                "skillID": "rielkConstruction:Construction",
-                "value": 20
-              }
-            ]
+            "rielkConstruction:skillEfficiencyPotency": 20
           }
         },
         "cost": {
@@ -1832,12 +2496,7 @@
                 "value": -5
               }
             ],
-            "rielkConstruction:skillEfficiencyPotency": [
-              {
-                "skillID": "rielkConstruction:Construction",
-                "value": 20
-              }
-            ]
+            "rielkConstruction:skillEfficiencyPotency": 20
           }
         },
         "cost": {
@@ -1893,12 +2552,7 @@
                 "value": -5
               }
             ],
-            "rielkConstruction:skillEfficiencyPotency": [
-              {
-                "skillID": "rielkConstruction:Construction",
-                "value": 20
-              }
-            ]
+            "rielkConstruction:skillEfficiencyPotency": 20
           }
         },
         "cost": {
@@ -1954,12 +2608,7 @@
                 "value": -10
               }
             ],
-            "rielkConstruction:skillEfficiencyPotency": [
-              {
-                "skillID": "rielkConstruction:Construction",
-                "value": 30
-              }
-            ]
+            "rielkConstruction:skillEfficiencyPotency": 30
           }
         },
         "cost": {
@@ -2287,12 +2936,7 @@
         "media": "assets/chuck_the_foreman.webp",
         "ignoreCompletion": false,
         "modifiers": {
-          "rielkConstruction:skillEfficiencyPotency": [
-            {
-              "skillID": "rielkConstruction:Construction",
-              "value": 100
-            }
-          ]
+          "rielkConstruction:skillEfficiencyPotency": 100
         },
         "activeInRaid": false,
         "scaleChanceWithMasteryPool": false,
@@ -3252,8 +3896,7 @@
                 "rielkConstruction:xpPer5Fixture": 1,
                 "rielkConstruction:skillEfficiencyChance": [
                   {
-                    "value": 5,
-                    "skillID": "rielkConstruction:Construction"
+                    "value": 5
                   }
                 ]
               },
@@ -3408,7 +4051,7 @@
                   "quantity": 2
                 },
                 {
-                  "id": "rielkConstruction:Adamantite_Nails",
+                  "id": "rielkConstruction:Granite_Bricks",
                   "quantity": 8
                 },
                 {
@@ -3613,7 +4256,6 @@
                   "modifiers": {
                     "rielkConstruction:skillEfficiencyCost": [
                       {
-                        "skillID": "rielkConstruction:Construction",
                         "value": -20
                       }
                     ]
@@ -3776,6 +4418,29 @@
                 {
                   "id": "melvorF:Elder_Dragonhide",
                   "quantity": 1
+                }
+              ],
+              "currencyCosts": []
+            },
+            {
+              "id": "Builder_Pouch",
+              "level": 86,
+              "productID": "rielkConstruction:Builder_Pouch",
+              "baseQuantity": 25,
+              "baseExperience": 173,
+              "categoryID": "melvorF:Bags",
+              "itemCosts": [
+                {
+                  "id": "melvorF:Basic_Bag",
+                  "quantity": 1
+                },
+                {
+                  "id": "melvorD:Silver_Bar",
+                  "quantity": 1
+                },
+                {
+                  "id": "rielkConstruction:Adamantite_Nails",
+                  "quantity": 5
                 }
               ],
               "currencyCosts": []
@@ -4115,16 +4780,10 @@
                 ],
                 "rielkConstruction:skillEfficiencyChance": [
                   {
-                    "skillID": "rielkConstruction:Construction",
                     "value": 5
                   }
                 ],
-                "rielkConstruction:skillEfficiencyPotency": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "value": 100
-                  }
-                ]
+                "rielkConstruction:skillEfficiencyPotency": 100
               }
             },
             {
@@ -4613,7 +5272,8 @@
                 "rielkConstruction:Desk",
                 "rielkConstruction:Storage_Chest",
                 "rielkConstruction:Wardrobe"
-              ]
+              ],
+              "newTooltip": true
             },
             {
               "id": "Garden",
@@ -4667,8 +5327,7 @@
                 "rielkConstruction:Archery_Range",
                 "rielkConstruction:Jungle_Gym",
                 "rielkConstruction:Training_Dummy"
-              ],
-              "newTooltip": true
+              ]
             },
             {
               "id": "Workshop",
@@ -4677,7 +5336,8 @@
                 "rielkConstruction:Forge",
                 "rielkConstruction:Tool_Rack",
                 "rielkConstruction:Worktable"
-              ]
+              ],
+              "newTooltip": true
             }
           ],
           "fixtures": [
@@ -4691,7 +5351,8 @@
                 "rielkConstruction:Apparatus3",
                 "rielkConstruction:Apparatus4",
                 "rielkConstruction:Apparatus5"
-              ]
+              ],
+              "assocSkill": "melvorD:Herblore"
             },
             {
               "id": "Archery_Range",
@@ -4703,7 +5364,8 @@
                 "rielkConstruction:Archery_Range3",
                 "rielkConstruction:Archery_Range4",
                 "rielkConstruction:Archery_Range5"
-              ]
+              ],
+              "assocSkill": "melvorD:Ranged"
             },
             {
               "id": "Black_Market",
@@ -4715,7 +5377,8 @@
                 "rielkConstruction:Black_Market3",
                 "rielkConstruction:Black_Market4",
                 "rielkConstruction:Black_Market5"
-              ]
+              ],
+              "assocSkill": "melvorD:Thieving"
             },
             {
               "id": "Desk",
@@ -4739,7 +5402,8 @@
                 "rielkConstruction:Spirit_Catcher3",
                 "rielkConstruction:Spirit_Catcher4",
                 "rielkConstruction:Spirit_Catcher5"
-              ]
+              ],
+              "assocSkill": "melvorD:Summoning"
             },
             {
               "id": "Fire_Pit",
@@ -4751,7 +5415,8 @@
                 "rielkConstruction:Fire_Pit3",
                 "rielkConstruction:Fire_Pit4",
                 "rielkConstruction:Fire_Pit5"
-              ]
+              ],
+              "assocSkill": "melvorD:Firemaking"
             },
             {
               "id": "Flower_Pots",
@@ -4763,7 +5428,8 @@
                 "rielkConstruction:Flower_Pots3",
                 "rielkConstruction:Flower_Pots4",
                 "rielkConstruction:Flower_Pots5"
-              ]
+              ],
+              "assocSkill": "melvorD:Farming"
             },
             {
               "id": "Forge",
@@ -4775,7 +5441,8 @@
                 "rielkConstruction:Forge3",
                 "rielkConstruction:Forge4",
                 "rielkConstruction:Forge5"
-              ]
+              ],
+              "assocSkill": "melvorD:Smithing"
             },
             {
               "id": "Fridge",
@@ -4787,7 +5454,8 @@
                 "rielkConstruction:Fridge3",
                 "rielkConstruction:Fridge4",
                 "rielkConstruction:Fridge5"
-              ]
+              ],
+              "assocSkill": "melvorD:Hitpoints"
             },
             {
               "id": "Jungle_Gym",
@@ -4799,7 +5467,8 @@
                 "rielkConstruction:Jungle_Gym3",
                 "rielkConstruction:Jungle_Gym4",
                 "rielkConstruction:Jungle_Gym5"
-              ]
+              ],
+              "assocSkill": "melvorD:Agility"
             },
             {
               "id": "Lake",
@@ -4811,7 +5480,8 @@
                 "rielkConstruction:Lake3",
                 "rielkConstruction:Lake4",
                 "rielkConstruction:Lake5"
-              ]
+              ],
+              "assocSkill": "melvorD:Fishing"
             },
             {
               "id": "Mines",
@@ -4823,7 +5493,8 @@
                 "rielkConstruction:Mines3",
                 "rielkConstruction:Mines4",
                 "rielkConstruction:Mines5"
-              ]
+              ],
+              "assocSkill": "melvorD:Mining"
             },
             {
               "id": "Orchard",
@@ -4835,7 +5506,8 @@
                 "rielkConstruction:Orchard3",
                 "rielkConstruction:Orchard4",
                 "rielkConstruction:Orchard5"
-              ]
+              ],
+              "assocSkill": "melvorD:Woodcutting"
             },
             {
               "id": "Oven",
@@ -4847,7 +5519,8 @@
                 "rielkConstruction:Oven3",
                 "rielkConstruction:Oven4",
                 "rielkConstruction:Oven5"
-              ]
+              ],
+              "assocSkill": "melvorD:Cooking"
             },
             {
               "id": "Prayer_Altar",
@@ -4859,7 +5532,8 @@
                 "rielkConstruction:Prayer_Altar3",
                 "rielkConstruction:Prayer_Altar4",
                 "rielkConstruction:Prayer_Altar5"
-              ]
+              ],
+              "assocSkill": "melvorD:Prayer"
             },
             {
               "id": "Rune_Altar",
@@ -4871,6 +5545,9 @@
                 "rielkConstruction:Rune_Altar3",
                 "rielkConstruction:Rune_Altar4",
                 "rielkConstruction:Rune_Altar5"
+              ],
+              "assocSkill": [
+                "melvorD:Runecrafting"
               ]
             },
             {
@@ -4883,6 +5560,9 @@
                 "rielkConstruction:Spell_Library3",
                 "rielkConstruction:Spell_Library4",
                 "rielkConstruction:Spell_Library5"
+              ],
+              "assocSkill": [
+                "melvorD:Magic"
               ]
             },
             {
@@ -4907,6 +5587,9 @@
                 "rielkConstruction:Telescope3",
                 "rielkConstruction:Telescope4",
                 "rielkConstruction:Telescope5"
+              ],
+              "assocSkill": [
+                "melvorD:Astrology"
               ]
             },
             {
@@ -4919,6 +5602,9 @@
                 "rielkConstruction:Tool_Rack3",
                 "rielkConstruction:Tool_Rack4",
                 "rielkConstruction:Tool_Rack5"
+              ],
+              "assocSkill": [
+                "rielkConstruction:Construction"
               ]
             },
             {
@@ -4931,6 +5617,10 @@
                 "rielkConstruction:Training_Dummy3",
                 "rielkConstruction:Training_Dummy4",
                 "rielkConstruction:Training_Dummy5"
+              ],
+              "assocSkill": [
+                "melvorD:Attack",
+                "melvorD:Strength"
               ]
             },
             {
@@ -4943,7 +5633,8 @@
                 "rielkConstruction:Trapping_Hut3",
                 "rielkConstruction:Trapping_Hut4",
                 "rielkConstruction:Trapping_Hut5"
-              ]
+              ],
+              "assocSkill": "melvorD:Slayer"
             },
             {
               "id": "Wardrobe",
@@ -4955,7 +5646,8 @@
                 "rielkConstruction:Wardrobe3",
                 "rielkConstruction:Wardrobe4",
                 "rielkConstruction:Wardrobe5"
-              ]
+              ],
+              "assocSkill": "melvorD:Defence"
             },
             {
               "id": "Worktable",
@@ -4967,6 +5659,10 @@
                 "rielkConstruction:Worktable3",
                 "rielkConstruction:Worktable4",
                 "rielkConstruction:Worktable5"
+              ],
+              "assocSkill": [
+                "melvorD:Crafting",
+                "melvorD:Fletching"
               ]
             }
           ],
@@ -5690,11 +6386,6 @@
               "baseExperience": 22,
               "baseActionCost": 15,
               "categoryID": "rielkConstruction:House",
-              "order": [
-                "m",
-                "c",
-                "m"
-              ],
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Clay_Bricks",
@@ -5706,9 +6397,17 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "changeFunc": "activateLongBuffs",
               "modifiers": {
-                "nonCombatSkillXP": 1,
-                "globalItemDoublingChance": 1
+                "rielkConstruction:spoof_expTime": 1,
+                "rielkConstruction:xpPerTime": 1
               }
             },
             {
@@ -5733,8 +6432,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "nonCombatSkillXP": 1,
-                "globalItemDoublingChance": 1
+                "nonCombatSkillXP": 2,
+                "rielkConstruction:extendLongBuffs": 1
               }
             },
             {
@@ -5762,9 +6461,17 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "changeFunc": "activateLongBuffs",
               "modifiers": {
-                "nonCombatSkillXP": 2,
-                "globalItemDoublingChance": 2
+                "rielkConstruction:preservePerTime": 1,
+                "rielkConstruction:extendLongBuffs": 1
               }
             },
             {
@@ -5797,8 +6504,8 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "nonCombatSkillXP": 3,
-                "globalItemDoublingChance": 2
+                "skillPreservationChance": 4,
+                "rielkConstruction:extendLongBuffs": 2
               }
             },
             {
@@ -5834,9 +6541,18 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "changeFunc": "activateLongBuffs",
               "modifiers": {
-                "nonCombatSkillXP": 5,
-                "globalItemDoublingChance": 4
+                "rielkConstruction:preserveCapPerTime": 0.5,
+                "rielkConstruction:preserveConsPerTime": 6,
+                "rielkConstruction:extendLongBuffs": 2
               }
             },
             {
@@ -6551,11 +7267,13 @@
               "modifiers": {
                 "skillXP": [
                   {
-                    "value": 8,
-                    "skillID": "rielkConstruction:Construction"
-                  },
+                    "value": 2,
+                    "skillID": "melvorD:Smithing"
+                  }
+                ],
+                "masteryXP": [
                   {
-                    "value": 5,
+                    "value": 2,
                     "skillID": "melvorD:Smithing"
                   }
                 ]
@@ -6582,15 +7300,24 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "changeFunc": "addNewMasteryPoolBonuses",
               "modifiers": {
-                "skillPreservationChance": [
+                "rielkConstruction:spoofAddConsToSmithingPool": [
                   {
-                    "value": 8,
-                    "skillID": "rielkConstruction:Construction"
-                  },
-                  {
-                    "value": 5,
+                    "value": 1,
                     "skillID": "melvorD:Smithing"
+                  }
+                ],
+                "flatSkillInterval": [
+                  {
+                    "skillID": "melvorD:Smithing",
+                    "value": -100
                   }
                 ]
               }
@@ -6624,17 +7351,22 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2
+              ],
+              "changeFunc": "addNewMasteryPoolBonuses",
               "modifiers": {
-                "skillItemDoublingChance": [
+                "rielkConstruction:skillScopedPoolCap": [
                   {
-                    "value": 8,
+                    "value": 25,
                     "skillID": "melvorD:Smithing"
                   }
                 ],
-                "rielkConstruction:skillEfficiencyChance": [
+                "rielkConstruction:spoofAddNewMPBonus": [
                   {
-                    "skillID": "rielkConstruction:Construction",
-                    "value": 8
+                    "value": 1,
+                    "skillID": "melvorD:Smithing"
                   }
                 ]
               }
@@ -6673,9 +7405,15 @@
               ],
               "currencyCosts": [],
               "modifiers": {
+                "skillXP": [
+                  {
+                    "value": 8,
+                    "skillID": "melvorD:Smithing"
+                  }
+                ],
                 "masteryXP": [
                   {
-                    "value": 5,
+                    "value": 8,
                     "skillID": "melvorD:Smithing"
                   }
                 ]
@@ -6712,16 +7450,24 @@
               "currencyCosts": [],
               "shinyMods": [
                 1,
-                2
+                2,
+                3
               ],
+              "changeFunc": "addNewMasteryPoolBonuses",
               "modifiers": {
-                "smithingCoalCost": -25,
-                "rielkConstruction:skillEfficiencyCost": [
+                "rielkConstruction:skillScopedPoolCap": [
                   {
-                    "skillID": "rielkConstruction:Construction",
-                    "value": -15
+                    "value": 75,
+                    "skillID": "melvorD:Smithing"
                   }
-                ]
+                ],
+                "rielkConstruction:spoofAddNewMPBonus": [
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Smithing"
+                  }
+                ],
+                "smithingCoalCost": -25
               }
             },
             {
@@ -7408,7 +8154,7 @@
                 },
                 {
                   "id": "melvorF:Perfect_Swing_Potion_I",
-                  "quantity": 100
+                  "quantity": 50
                 }
               ],
               "currencyCosts": [],
@@ -8775,7 +9521,7 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillPreservationChance": 0.5,
+                "skillItemDoublingChance": 1,
                 "bankSpace": 4
               }
             },
@@ -8799,9 +9545,16 @@
                   "quantity": 450
                 }
               ],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4
+              ],
               "currencyCosts": [],
               "modifiers": {
-                "skillPreservationChance": 1,
+                "rielkConstruction:spoof_bankslotexpl": 1,
+                "rielkConstruction:doublingankslots": 0.35,
                 "bankSpace": 8
               }
             },
@@ -8830,8 +9583,20 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4
+              ],
               "modifiers": {
-                "skillPreservationChance": 1.5,
+                "rielkConstruction:expandBankSlotCap1": 1,
+                "rielkConstruction:globalCurrencyBanksSlots": [
+                  {
+                    "value": 1,
+                    "currencyID": "melvorD:GP"
+                  }
+                ],
                 "bankSpace": 12
               }
             },
@@ -8864,9 +9629,10 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "buyBankTabs",
               "modifiers": {
-                "skillPreservationChance": 2,
-                "bankSpace": 16
+                "rielkConstruction:spoof_addBankTabs": 2,
+                "bankSpace": 20
               }
             },
             {
@@ -8898,9 +9664,16 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4
+              ],
               "modifiers": {
-                "skillPreservationChance": 2.5,
-                "bankSpace": 20
+                "rielkConstruction:unlockTripling": 1,
+                "rielkConstruction:skillPetChanceBankSlots": 0.25,
+                "bankSpace": 30
               }
             },
             {
@@ -9139,24 +9912,25 @@
                   "quantity": 1000
                 }
               ],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
               "currencyCosts": [],
               "modifiers": {
-                "rielkConstruction:skillEfficiencyChance": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "value": 1
-                  }
-                ],
+                "rielkConstruction:findChuckOnFixtureComp": 0.6,
                 "skillXP": [
                   {
-                    "value": 3,
+                    "value": 5,
                     "skillID": "rielkConstruction:Construction"
                   }
                 ],
-                "skillPreservationChance": [
+                "rielkConstruction:skillEfficiencyChance": [
                   {
-                    "value": 3,
-                    "skillID": "rielkConstruction:Construction"
+                    "value": 1
                   }
                 ]
               }
@@ -9186,21 +9960,11 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [
-                1,
-                2
-              ],
               "modifiers": {
+                "rielkConstruction:skillEfficiencyPotency": 50,
                 "rielkConstruction:skillEfficiencyChance": [
                   {
-                    "skillID": "rielkConstruction:Construction",
                     "value": 2
-                  }
-                ],
-                "rielkConstruction:skillEfficiencyPotency": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "value": 25
                   }
                 ]
               }
@@ -9233,24 +9997,23 @@
                   "quantity": 1
                 }
               ],
+              "shinyMods": [
+                1,
+                2,
+                3
+              ],
               "currencyCosts": [],
               "modifiers": {
-                "rielkConstruction:skillEfficiencyChance": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "value": 3
-                  }
-                ],
-                "flatSkillInterval": [
-                  {
-                    "value": -250,
-                    "skillID": "rielkConstruction:Construction"
-                  }
-                ],
-                "skillXP": [
+                "rielkConstruction:maxlevelAssocbonusEff": 7.5,
+                "skillPreservationChance": [
                   {
                     "value": 5,
                     "skillID": "rielkConstruction:Construction"
+                  }
+                ],
+                "rielkConstruction:skillEfficiencyChance": [
+                  {
+                    "value": 3
                   }
                 ]
               }
@@ -9284,28 +10047,11 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [
-                1,
-                2,
-                3
-              ],
               "modifiers": {
+                "rielkConstruction:skillEfficiencyPotency": 75,
                 "rielkConstruction:skillEfficiencyChance": [
                   {
-                    "skillID": "rielkConstruction:Construction",
                     "value": 4
-                  }
-                ],
-                "flatSkillInterval": [
-                  {
-                    "value": -500,
-                    "skillID": "rielkConstruction:Construction"
-                  }
-                ],
-                "rielkConstruction:skillEfficiencyPotency": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "value": 50
                   }
                 ]
               }
@@ -9346,18 +10092,6 @@
                 4
               ],
               "modifiers": {
-                "rielkConstruction:bypassEfficiencyChance": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "value": 5
-                  }
-                ],
-                "rielkConstruction:skillEfficiencyPotency": [
-                  {
-                    "skillID": "rielkConstruction:Construction",
-                    "value": 60
-                  }
-                ],
                 "rielkConstruction:constructionActionsToUpgrade": [
                   {
                     "skillID": "rielkConstruction:Construction",
@@ -9366,8 +10100,12 @@
                 ],
                 "rielkConstruction:skillEfficiencyCost": [
                   {
-                    "skillID": "rielkConstruction:Construction",
                     "value": -25
+                  }
+                ],
+                "rielkConstruction:bypassEfficiencyChance": [
+                  {
+                    "value": 5
                   }
                 ]
               }
@@ -9944,16 +10682,14 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 1,
-                    "skillID": "melvorD:Defence"
-                  }
-                ],
                 "skillXP": [
                   {
-                    "value": 3,
+                    "value": 2,
                     "skillID": "melvorD:Defence"
+                  },
+                  {
+                    "value": 2,
+                    "skillID": "melvorD:Hitpoints"
                   }
                 ]
               }
@@ -9995,19 +10731,15 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4
+              ],
               "modifiers": {
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 2,
-                    "skillID": "melvorD:Defence"
-                  }
-                ],
-                "skillXP": [
-                  {
-                    "value": 3,
-                    "skillID": "melvorD:Defence"
-                  }
-                ]
+                "rielkConstruction:blockTheUnblockable": 5,
+                "reflectDamage": 2
               }
             },
             {
@@ -10052,13 +10784,13 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "flatHiddenSkillLevel": [
+                "rielkConstruction:itemProtectionChance": 25,
+                "flatResistancePer30Defence": [
                   {
-                    "value": 3,
-                    "skillID": "melvorD:Defence"
+                    "value": 1,
+                    "damageTypeID": "melvorD:Normal"
                   }
-                ],
-                "reflectDamage": 2
+                ]
               }
             },
             {
@@ -10108,16 +10840,12 @@
               "currencyCosts": [],
               "shinyMods": [
                 1,
-                2
+                2,
+                3
               ],
               "modifiers": {
-                "flatHiddenSkillLevelBasedOnLevels": [
-                  {
-                    "value": 5,
-                    "skillID": "melvorD:Defence"
-                  }
-                ],
-                "reflectDamage": 4
+                "effectIgnoreChance": 5,
+                "reflectDamage": 3
               }
             },
             {
@@ -10154,9 +10882,19 @@
               ],
               "currencyCosts": [],
               "shinyMods": [
-                1
+                1,
+                2,
+                3,
+                4
               ],
               "modifiers": {
+                "rielkConstruction:blockTheUnblockable": 15,
+                "flatHiddenSkillLevelBasedOnLevels": [
+                  {
+                    "value": 5,
+                    "skillID": "melvorD:Defence"
+                  }
+                ],
                 "equipmentSets": 1
               }
             },
@@ -10220,13 +10958,13 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillInterval": [
+                "skillPreservationChance": [
                   {
-                    "value": -7,
+                    "value": 5,
                     "skillID": "melvorD:Crafting"
                   },
                   {
-                    "value": -7,
+                    "value": 5,
                     "skillID": "melvorD:Fletching"
                   }
                 ]
@@ -10253,17 +10991,14 @@
                 }
               ],
               "currencyCosts": [],
+              "shinyMods": [
+                1,
+                2
+              ],
+              "changeFunc": "unlockShieldsCrossbows",
               "modifiers": {
-                "skillPreservationChance": [
-                  {
-                    "value": 5,
-                    "skillID": "melvorD:Crafting"
-                  },
-                  {
-                    "value": 5,
-                    "skillID": "melvorD:Fletching"
-                  }
-                ]
+                "rielkConstruction:spoofUpgradeShields": 1,
+                "rielkConstruction:spoofUpgradeCross": 1
               }
             },
             {
@@ -10296,13 +11031,13 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "skillItemDoublingChance": [
+                "flatSkillInterval": [
                   {
-                    "value": 5,
+                    "value": -350,
                     "skillID": "melvorD:Crafting"
                   },
                   {
-                    "value": 5,
+                    "value": -350,
                     "skillID": "melvorD:Fletching"
                   }
                 ]
@@ -10337,15 +11072,22 @@
                 }
               ],
               "currencyCosts": [],
+              "changeFunc": "addEfftoSkillBoosts",
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4
+              ],
               "modifiers": {
-                "masteryXP": [
+                "rielkConstruction:unlockEfficiencySkill": [
                   {
-                    "value": 15,
-                    "skillID": "melvorD:Crafting"
+                    "skillID": "melvorD:Crafting",
+                    "value": 1
                   },
                   {
-                    "value": 15,
-                    "skillID": "melvorD:Fletching"
+                    "skillID": "melvorD:Fletching",
+                    "value": 1
                   }
                 ]
               }
@@ -11469,9 +12211,7 @@
             ]
           },
           {
-            "scopes": {
-              "skill": true
-            },
+            "scopes": {},
             "descriptions": [
               {
                 "text": "+${value}% Efficiency chance",
@@ -11527,9 +12267,7 @@
             ]
           },
           {
-            "scopes": {
-              "skill": true
-            },
+            "scopes": {},
             "descriptions": [
               {
                 "text": "+${value} Progress/Materials made when activating Efficiency",
@@ -11553,9 +12291,7 @@
         "inverted": true,
         "allowedScopes": [
           {
-            "scopes": {
-              "skill": true
-            },
+            "scopes": {},
             "descriptions": [
               {
                 "text": "-${value} Resource cost when activating Efficiency",
@@ -12303,9 +13039,7 @@
         "id": "bypassEfficiencyChance",
         "allowedScopes": [
           {
-            "scopes": {
-              "skill": true
-            },
+            "scopes": {},
             "descriptions": [
               {
                 "text": "Bypasses eff chance",
@@ -12418,9 +13152,7 @@
         "id": "skillEfficiencyChancePerHamrielStar",
         "allowedScopes": [
           {
-            "scopes": {
-              "skill": true
-            },
+            "scopes": {},
             "descriptions": [
               {
                 "text": "Hamriel star wow",
@@ -12743,6 +13475,403 @@
         ]
       },
       {
+        "id": "unlockEfficiencySkill",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true
+            },
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "Over your HEAD",
+                "lang": "MODIFIER_DATA_unlockEfficiencySkill"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2turnstunoncritchance",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Over your HEAD",
+                "lang": "MODIFIER_DATA_2turnstunoncritchance"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "findChuckOnFixtureComp",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "Over your HEAD",
+                "lang": "MODIFIER_DATA_findChuckOnFixtureComp"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoofUpgradeCross",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "Over your HEAD",
+                "lang": "MODIFIER_DATA_spoofUpgradeCross"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoofUpgradeShields",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "Over your HEAD",
+                "lang": "MODIFIER_DATA_spoofUpgradeShields"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "skillScopedPoolCap",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true
+            },
+            "descriptions": [
+              {
+                "includeSign": false,
+                "text": "I could have just made a new scope for the mastery pool cap skill already but like, I don't want to test that for side effects",
+                "lang": "MODIFIER_DATA_skillScopedPoolCap"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoofAddNewMPBonus",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true
+            },
+            "descriptions": [
+              {
+                "text": "I could have just made a new scope for the mastery pool cap skill already but like, I don't want to test that for side effects",
+                "lang": "MODIFIER_DATA_spoofAddNewMPBonus"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoofAddConsToSmithingPool",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "skill": true
+            },
+            "descriptions": [
+              {
+                "text": "I could have just made a new scope for the mastery pool cap skill already but like, I don't want to test that for side effects",
+                "lang": "MODIFIER_DATA_spoofAddConsToSmithingPool"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "maxlevelAssocbonusEff",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Icts you know it",
+                "lang": "MODIFIER_DATA_maxlevelAssocbonusEff"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_bankslotexpl",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Icts you know it",
+                "lang": "MODIFIER_DATA_spoof_bankslotexpl"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "doublingankslots",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Icts you know it",
+                "lang": "MODIFIER_DATA_preservationbankslots"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "globalCurrencyBanksSlots",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "currency": true
+            },
+            "descriptions": [
+              {
+                "text": "Icts you know it",
+                "lang": "MODIFIER_DATA_globalGPBanksSlots"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "skillPetChanceBankSlots",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Icts you know it",
+                "lang": "MODIFIER_DATA_skillPetChanceBankSlots"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "expandBankSlotCap1",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Icts you know it",
+                "lang": "MODIFIER_DATA_expandBankSlotCap1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "expandBankSlotCap2",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Icts you know it",
+                "lang": "MODIFIER_DATA_expandBankSlotCap2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unlockTripling",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "TRI",
+                "lang": "MODIFIER_DATA_unlockTripling"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_addBankTabs",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "bank tabs",
+                "lang": "MODIFIER_DATA_spoof_addBankTabs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spoof_expTime",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "there we are",
+                "lang": "MODIFIER_DATA_spoof_expTime"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xpPerTime",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "there we are",
+                "lang": "MODIFIER_DATA_xpPerTime"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "preservePerTime",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "there we are",
+                "lang": "MODIFIER_DATA_preservePerTime"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "preserveConsPerTime",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "there we are",
+                "lang": "MODIFIER_DATA_preserveConsPerTime"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "preserveCapPerTime",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "there we are",
+                "lang": "MODIFIER_DATA_preserveCapPerTime"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extendLongBuffs",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "there we are",
+                "lang": "MODIFIER_DATA_extendLongBuffs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "blockTheUnblockable",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "Row, row, fight the power! Break the unbreakable, touch the untouchable, see the invisible... pierce the heavens!",
+                "lang": "MODIFIER_DATA_blockTheUnblockable"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "itemProtectionChance",
+        "allowedScopes": [
+          {
+            "scopes": {},
+            "descriptions": [
+              {
+                "text": "df",
+                "lang": "MODIFIER_DATA_itemProtectionChance"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "unlockParry",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "damageType": true
+            },
+            "descriptions": [
+              {
+                "text": "there we are",
+                "lang": "MODIFIER_DATA_unlockParry"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "damagethreshold",
+        "allowedScopes": [
+          {
+            "scopes": {
+              "damageType": true
+            },
+            "descriptions": [
+              {
+                "text": "there we are",
+                "lang": "MODIFIER_DATA_damagethreshold"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "spoof_AddWeaponMasteryMelee",
         "allowedScopes": [
           {
@@ -13000,7 +14129,6 @@
                 "add": {
                   "rielkConstruction:skillEfficiencyChance": [
                     {
-                      "skillID": "rielkConstruction:Construction",
                       "value": 2
                     }
                   ]
@@ -13048,7 +14176,6 @@
                 "add": {
                   "rielkConstruction:skillEfficiencyChance": [
                     {
-                      "skillID": "rielkConstruction:Construction",
                       "value": -10
                     }
                   ]
@@ -13111,12 +14238,7 @@
               },
               "modifiers": {
                 "add": {
-                  "rielkConstruction:skillEfficiencyPotency": [
-                    {
-                      "skillID": "rielkConstruction:Construction",
-                      "value": 25
-                    }
-                  ]
+                  "rielkConstruction:skillEfficiencyPotency": 25
                 }
               }
             },
@@ -13135,12 +14257,7 @@
               },
               "modifiers": {
                 "add": {
-                  "rielkConstruction:skillEfficiencyPotency": [
-                    {
-                      "skillID": "rielkConstruction:Construction",
-                      "value": -15
-                    }
-                  ]
+                  "rielkConstruction:skillEfficiencyPotency": -15
                 }
               }
             },
@@ -13289,7 +14406,6 @@
                 "add": {
                   "rielkConstruction:skillEfficiencyChance": [
                     {
-                      "skillID": "rielkConstruction:Construction",
                       "value": 3
                     }
                   ]
@@ -13363,7 +14479,6 @@
               "modifiers": {
                 "rielkConstruction:skillEfficiencyChance": [
                   {
-                    "skillID": "rielkConstruction:Construction",
                     "value": 10
                   }
                 ]
@@ -15191,7 +16306,6 @@
             ],
             "rielkConstruction:skillEfficiencyChance": [
               {
-                "skillID": "rielkConstruction:Construction",
                 "value": 10
               }
             ],
@@ -15225,7 +16339,6 @@
             ],
             "rielkConstruction:skillEfficiencyChance": [
               {
-                "skillID": "rielkConstruction:Construction",
                 "value": 10
               }
             ],
@@ -15357,6 +16470,20 @@
         }
       },
       {
+        "id": "melvorF:Green_Dhide_Shield_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Green_Dhide_Leather_Straps",
+              "quantity": 100
+            }
+          ],
+          "remove": [
+            "melvorD:Green_Dragonhide"
+          ]
+        }
+      },
+      {
         "id": "melvorD:Blue_Dhide_Body_U",
         "itemCosts": {
           "add": [
@@ -15391,6 +16518,20 @@
             {
               "id": "rielkConstruction:Blue_Dhide_Leather_Slivers",
               "quantity": 300
+            }
+          ],
+          "remove": [
+            "melvorD:Blue_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorF:Blue_Dhide_Shield_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Blue_Dhide_Leather_Straps",
+              "quantity": 150
             }
           ],
           "remove": [
@@ -15436,7 +16577,21 @@
             }
           ],
           "remove": [
-            "melvorD:Black_Dragonhide"
+            "melvorD:Red_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorF:Red_Dhide_Shield_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Red_Dhide_Leather_Straps",
+              "quantity": 400
+            }
+          ],
+          "remove": [
+            "melvorD:Red_Dragonhide"
           ]
         }
       },
@@ -15483,6 +16638,20 @@
         }
       },
       {
+        "id": "melvorF:Black_Dhide_Shield_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Black_Dhide_Leather_Straps",
+              "quantity": 500
+            }
+          ],
+          "remove": [
+            "melvorD:Black_Dragonhide"
+          ]
+        }
+      },
+      {
         "id": "melvorF:Ancient_Dhide_Body_U",
         "itemCosts": {
           "add": [
@@ -15517,6 +16686,20 @@
             {
               "id": "rielkConstruction:Elder_Dhide_Leather_Slivers",
               "quantity": 500
+            }
+          ],
+          "remove": [
+            "melvorF:Elder_Dragonhide"
+          ]
+        }
+      },
+      {
+        "id": "melvorF:Ancient_Dhide_Shield_U",
+        "itemCosts": {
+          "add": [
+            {
+              "id": "rielkConstruction:Elder_Dhide_Leather_Straps",
+              "quantity": 750
             }
           ],
           "remove": [

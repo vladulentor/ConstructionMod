@@ -2,13 +2,18 @@ const { onCharacterLoaded } = mod.getContext(import.meta);
 const BIG_UPDATE_NUMBER = 8;
 export class Encoder {
     static encode(construction, writer) {
-        const _constructionVersion = 9;
+        const _constructionVersion = 10;
         writer.writeUint32(_constructionVersion);
         writer.writeBoolean(construction.extSaveData.showUpdateTooltip);
 
         writer.writeBoolean(game.firemaking.isRoaringBonfire);
         writer.writeSet(construction.hiddenRooms, writeNamespaced);
-        writer.writeBoolean(construction.extSaveData.hasStudiedDiagram)
+        writer.writeBoolean(construction.extSaveData.hasStudiedDiagram);
+        writer.writeBoolean(construction.extSaveData.boughtBankTabs);
+        writer.writeUint8(construction.extSaveData.longSkillBuffs);
+        writer.writeString(construction.extSaveData.longSkill);
+        construction.firePlaceTimer.encode(writer);
+
         construction.stats.encode(writer);
         writer.writeArray(construction.fixtures.allObjects, (fixture, writer) => {
             writer.writeNamespacedObject(fixture);
@@ -44,6 +49,14 @@ export class Encoder {
         construction.hiddenRooms = reader.getSet(readNamespacedReject(construction.rooms));
         if (_constructionVersion >= 9)
             construction.extSaveData.hasStudiedDiagram = reader.getBoolean();
+        if (_constructionVersion >= 10) {
+            construction.extSaveData.boughtBankTabs = reader.getBoolean();
+            construction.extSaveData.longSkillBuffs = reader.getUint8();
+            construction.extSaveData.longSkill = reader.getString();
+            construction.firePlaceTimer.decode(reader, _constructionVersion);
+
+        }
+
         construction.stats.decode(reader);
         const readFixture = readNamespacedReject(construction.fixtures);
         reader.getArray((reader) => {

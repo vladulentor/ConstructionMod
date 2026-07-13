@@ -11,15 +11,25 @@ class EfficiencyIconTooltipElement extends HTMLElement {
         this.cost = getElementFromFragment(this._content, 'cap', 'h5');
         this.chanceContainer = getElementFromFragment(this._content, 'chance-source-container', 'div');
         this.potencyContainer = getElementFromFragment(this._content, 'potency-source-container', 'div');
+        this.under0warn = getElementFromFragment(this._content, 'under0warn', 'small');
+        this.offskillwarn = getElementFromFragment(this._content, 'nonConstwarn', 'h5');
     }
     connectedCallback() {
         this.appendChild(this._content);
     }
-    setCostNPotency(cost, potency, mode) {
+    setCostNPotency(cost, potency, mode, isConstruction) {
         this.cost.textContent = templateRielkLangString('MENU_TOOLTIP_EFFICIENCY_COST', {cost: cost});
         if (mode === "artisan") this.toptip.textContent = templateRielkLangString('MENU_TEXT_TOOLTIP_EFFICIENCY_ARTISAN', { potency: potency}); 
         else {
             this.toptip.textContent = getRielkLangString(`MENU_TEXT_TOOLTIP_EFFICIENCY_BUILD_${Math.floor(potency)}`);
+        }//todo, make these init state changes
+        if(!isConstruction)
+        { hideElement(this.under0warn);
+            showElement(this.offskillwarn);
+        }
+        else{
+            showElement(this.under0warn);
+            hideElement(this.offskillwarn);
         }
 
     }

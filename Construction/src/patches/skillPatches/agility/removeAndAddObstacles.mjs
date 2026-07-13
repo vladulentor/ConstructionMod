@@ -12,7 +12,7 @@ export function removeObstacles(ctx) {
             (obstacle._namespace.name !== "rielkConstruction" || obstacle === obsMap.get(obstacle.category)))
     });
 }
-
+// yes I could build a helper functio nhere to not repeat myself butl ike... fuck it.
 const agi = game.agility;
 export function addObstacle() {
     let obsToAdd = []

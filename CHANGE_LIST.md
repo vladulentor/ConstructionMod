@@ -153,7 +153,9 @@ Entries marked with `[TotH]` or `[AoD]` indicate Throne of the Herald or Atlas o
 ## Crafting
 - Added **"Leather Slivers"** category: Green, Red, Blue, Black, and Ancient Dragonhide.  
 - Slivers replace normal Dragonhide when upgrading Dragonhide armor, as well as being used to make Straps. Higher-tier Dragonhide outputs fewer Slivers. Encourages combat/crafting rather than buying upgrades.
-- Changed the **"Leathed D-Hide Shield"** recipes, instead of normal dragonhide, they now require 10 Dragonhide slivers and 2 planks of their respective Tier
+- Changed the **"Leathed D-Hide Shield"** recipes, instead of normal dragonhide, they now require 10 Dragonhide slivers and 2 planks of their respective Tier.
+- Strips replace normal Dragonhide when upgrading Dragonhide shields.
+- Added a new "Builder's Pouch" recipe that requires a bag, 5 adamantite nails and 1 silver bar. It provides a bonus to efficiency potency and efficiency reduction to efficiency cost, as well as being able to be upgraded.
 
 ---
 

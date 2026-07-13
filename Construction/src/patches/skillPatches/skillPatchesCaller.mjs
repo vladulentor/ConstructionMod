@@ -8,6 +8,13 @@ const { hookIntoWeaponType } = await loadModule('src/patches/skillPatches/combat
 const { addXpPerFixture } = await loadModule('src/patches/skillPatches/general/addXpPerFixture.mjs');
 const { clampMasteryPool } = await loadModule('src/patches/skillPatches/general/clampMasteryPool.mjs');
 const { addCurrencyCancel } = await loadModule('src/patches/skillPatches/general/addCurrencyCancel.mjs');
+const { patchMasteryPoolProgress } = await loadModule('src/patches/skillPatches/general/patchMasteryPoolProgress.mjs');
+const { addPerBankSlotsBoosts } = await loadModule('src/patches/skillPatches/general/addPerBankSlotsBoosts.mjs');
+const { addTripling } = await loadModule('src/patches/skillPatches/general/addTripling.mjs');
+const { addLongBuffs } = await loadModule('src/patches/skillPatches/general/addLongBuffs.mjs');
+const { addChanceToNotLoseOnDeath } = await loadModule('src/patches/skillPatches/general/addChanceToNotLoseOnDeath.mjs');
+
+
 
 
 const { removeObstacles } = await loadModule('src/patches/skillPatches/agility/removeAndAddObstacles.mjs');
@@ -16,18 +23,32 @@ const { reorderAgiMods } = await loadModule('src/patches/skillPatches/agility/re
 const { provideBonusesPerAgiLevels } = await loadModule('src/patches/skillPatches/agility/provideBonusesPerAgiLevels.mjs');
 
 
+
+
+
 const { patchOverHeal } = await loadModule('src/patches/skillPatches/combat/patchOverHeal.mjs');
 const { patchMagicUsageCheck } = await loadModule('src/patches/skillPatches/combat/patchMagicUsageCheck.mjs');
 const { addMagicShield } = await loadModule('src/patches/skillPatches/combat/addMagicShield.mjs');
 const { patchAuroraAnyStyle } = await loadModule('src/patches/skillPatches/combat/patchAuroraAnyStyle.mjs');
 const { patchRunePreservationCap } = await loadModule('src/patches/skillPatches/combat/patchRunePreservationCap.mjs');
 const { patchPrayerPointsSpending } = await loadModule('src/patches/skillPatches/combat/patchPrayerPointsSpending.mjs');
+const { addStunOnCrit } = await loadModule('src/patches/skillPatches/combat/addStunOnCrit.mjs');
+const { addGlobalEffectIgnore } = await loadModule('src/patches/skillPatches/combat/addGlobalEffectIgnore.mjs');
+const { blockTheUnblockable } = await loadModule('src/patches/skillPatches/combat/blockTheUnblockable.mjs');
+
+
+
+
+//const { addDeflect } = await loadModule('src/patches/skillPatches/combat/addDeflect.mjs');
+
+
 
 
 
 const { emitPassiveCook } = await loadModule('src/patches/skillPatches/cooking/emitPassiveCook.mjs');
 const { perfectFoodHealing } = await loadModule('src/patches/skillPatches/cooking/perfectFoodHealing.mjs');
 const { addAshOnFail } = await loadModule('src/patches/skillPatches/cooking/addAshOnFail.mjs');
+const { patchAutoEat } = await loadModule('src/patches/skillPatches/cooking/patchAutoEat.mjs');
 
 const { addRoaringFire } = await loadModule('src/patches/skillPatches/firemaking/addRoaringFire.mjs');
 
@@ -41,6 +62,9 @@ const { additionalPotionsHighTier } = await loadModule('src/patches/skillPatches
 
 const { patchCraftingOrder } = await loadModule('src/patches/skillPatches/crafting/patchCraftingOrder.mjs');
 const { patchShieldRecipes } = await loadModule('src/patches/skillPatches/crafting/patchShieldRecipes.mjs');
+const { addEfficiencyToOffSkills } = await loadModule('src/patches/skillPatches/crafting/addEfficiencyToOffSkills.mjs');
+
+
 
 
 
@@ -88,6 +112,7 @@ export function patchSkillsBeforeDataReg(ctx) {
         emitPassiveCook(ctx);
         addAshOnFail(ctx);
         addRoaringFire(ctx);
+        addGlobalEffectIgnore(ctx);
         perfectFoodHealing(ctx);
         addFishonTreasureRollPlusExtra(ctx);
         loseGPOnFishing(ctx);
@@ -96,20 +121,29 @@ export function patchSkillsBeforeDataReg(ctx) {
         additionalPotionsHighTier(ctx);
         patchMagicUsageCheck(ctx);
         clampMasteryPool(ctx);
+        addTripling(ctx);
+        addStunOnCrit(ctx);
         addMagicShield(ctx);
         patchAuroraAnyStyle(ctx);
         addRuneEssenceCtx(ctx);
         addStarConvergence(ctx);
         addComboRunesonElemRunes(ctx);
+        blockTheUnblockable(ctx);
+        addEfficiencyToOffSkills(ctx);
         patchRunePreservationCap(ctx);
         addHiddenLevelsToAllsSills(ctx);
+        addPerBankSlotsBoosts(ctx);
         addCurrencyCancel(ctx);
         patchPrayerPointsSpending(ctx);
         addMarkSuperLevels(ctx);
         provideBonusesPerAgiLevels(ctx);
         trackSlayerCoins(ctx);
         slayerCostReduction(ctx);
+        addLongBuffs(ctx);
+        addChanceToNotLoseOnDeath(ctx);
+        patchAutoEat(ctx);
         reduceMaxHitByDefenseLevel(ctx);
+        patchMasteryPoolProgress(ctx);
         unlockTrader(ctx);
         nerfBearDevil();
 }

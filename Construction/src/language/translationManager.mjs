@@ -206,4 +206,10 @@ export function patchTranslations(ctx) {
             return getRielkLangString(`AGI_OBSTACLE_${this._localID}`)
         return patch()
     })
+        ctx.patch(ConditionalModifier, "getDescriptionTemplate").replace(function (patch) {
+        if (this._descriptionLang?.startsWith("RIELK")) {
+            return getRielkLangString(this._descriptionLang);
+        }
+        return patch();
+    })
 }

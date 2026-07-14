@@ -66,6 +66,7 @@ const { addMarkExtraLevels } = await loadModule('src/patches/skillPatches/summon
 
 
 export const EffectRegistry = {
+    //addSpecialAttack,
   tierArray,
   unlockPlot,
   addFoodSlot,
@@ -79,7 +80,6 @@ export const EffectRegistry = {
   reduceUpgradeCost,
   addPotionMasteryTextThingFuckIt,
   increaseRuneReduction,
-  addSpecialAttack,
   addRuneEssence,
   raiseMasteryLevel,
   addConstellationLevels,
@@ -97,4 +97,5 @@ export const EffectRegistry = {
   refreshTrader,
   lowerLevelRequirements,
   addMarkExtraLevels
+
 };

@@ -634,8 +634,8 @@
         "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "weaponType":"WTM:Exotic",
-        "uniqueness":4,
+        "weaponType": "WTM:Exotic",
+        "uniqueness": 4,
         "sellsFor": 65000,
         "tier": "none",
         "validSlots": [
@@ -4654,7 +4654,6 @@
               "name": "Bricks"
             }
           ],
-          
           "tierMasteries": [
             {
               "id": "1",
@@ -5895,21 +5894,10 @@
                   "quantity": 1
                 }
               ],
+              "changeFunc": "raiseMasteryLevel",
               "currencyCosts": [],
               "modifiers": {
-                "rielkConstruction:spoof_AddWeaponMasteryRanged": 1,
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 1,
-                    "skillID": "melvorD:Ranged"
-                  }
-                ],
-                "skillXP": [
-                  {
-                    "value": 1,
-                    "skillID": "melvorD:Ranged"
-                  }
-                ]
+                "rielkConstruction:spoof_AddWeaponMasteryRanged": 1
               }
             },
             {
@@ -5957,19 +5945,7 @@
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "rielkConstruction:spoof_AddIndBonusRanged": 1,
-                "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 1,
-                    "skillID": "melvorD:Ranged"
-                  }
-                ],
-                "skillXP": [
-                  {
-                    "value": 2,
-                    "skillID": "melvorD:Ranged"
-                  }
-                ]
+                "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1
               }
             },
             {
@@ -6012,19 +5988,7 @@
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
-                "WTM:increaseWeaponXPranged": 15,
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 2,
-                    "skillID": "melvorD:Ranged"
-                  }
-                ],
-                "skillXP": [
-                  {
-                    "value": 3,
-                    "skillID": "melvorD:Ranged"
-                  }
-                ]
+                "WTM:increaseWeaponXPranged": 15
               }
             },
             {
@@ -6130,12 +6094,6 @@
                 "WTM:increaseWeaponXPranged": 35,
                 "rielkConstruction:spoof_DoubleIndBonusRanged": 1,
                 "flatHiddenSkillLevelBasedOnLevels": [
-                  {
-                    "value": 5,
-                    "skillID": "melvorD:Ranged"
-                  }
-                ],
-                "skillXP": [
                   {
                     "value": 5,
                     "skillID": "melvorD:Ranged"
@@ -9257,6 +9215,7 @@
               "baseExperience": 6,
               "baseActionCost": 30,
               "categoryID": "rielkConstruction:House",
+              "changeFunc": "raiseMasteryLevel",
               "itemCosts": [
                 {
                   "id": "rielkConstruction:Normal_Planks",
@@ -9277,14 +9236,7 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "rielkConstruction:spoof_AddWeaponMasteryRanged": 1,
-                "magicAccuracyRating": 1,
-                "skillXP": [
-                  {
-                    "value": 3,
-                    "skillID": "melvorD:Magic"
-                  }
-                ]
+                "rielkConstruction:spoof_AddWeaponMasteryMagic": 1
               }
             },
             {
@@ -9331,10 +9283,8 @@
                 "raiseMasteryLevel"
               ],
               "modifiers": {
-                "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
-                "rielkConstruction:spoof_AddIndBonusMagic": 1,
-                "rielkConstruction:spoofIncreaseRuneReduction": 1,
-                "rielkConstruction:addRuneShield": 1
+                "rielkConstruction:spoof_IncreaseMasteryLevelMagic": 1,
+                "rielkConstruction:spoof_AddIndBonusMagic": 1
               }
             },
             {
@@ -9376,15 +9326,8 @@
               "currencyCosts": [],
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
-                "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
-                "WTM:increaseWeaponXPmagic": 15,
-                "flatMagicAttackBonus": 5,
-                "skillXP": [
-                  {
-                    "value": 7,
-                    "skillID": "melvorD:Magic"
-                  }
-                ]
+                "rielkConstruction:spoof_IncreaseMasteryLevelMagic": 1,
+                "WTM:increaseWeaponXPmagic": 25
               }
             },
             {
@@ -9432,7 +9375,7 @@
                 "raiseMasteryLevel"
               ],
               "modifiers": {
-                "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
+                "rielkConstruction:spoof_IncreaseMasteryLevelMagic": 1,
                 "rielkConstruction:fake_Book_of_Eli": 1
               }
             },
@@ -9492,15 +9435,8 @@
               ],
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
-                "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
-                "WTM:increaseWeaponXPmagic": 35,
-                "rielkConstruction:spoof_DoubleIndBonusRanged": 1,
-                "flatHiddenSkillLevelBasedOnLevels": [
-                  {
-                    "value": 10,
-                    "skillID": "melvorD:Magic"
-                  }
-                ]
+                "rielkConstruction:spoof_IncreaseMasteryLevelMagic": 1,
+                "rielkConstruction:spoof_DoubleIndBonusMagic": 1
               }
             },
             {
@@ -10134,6 +10070,7 @@
                   "quantity": 1
                 }
               ],
+              "changeFunc": "raiseMasteryLevel",
               "shinyMods": [
                 1
               ],
@@ -10177,17 +10114,7 @@
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "rielkConstruction:spoof_AddIndBonusMelee": 1,
-                "rielkConstruction:spoof_IncreaseMasteryLevelMelee": 1,
-                "skillXP": [
-                  {
-                    "value": 3,
-                    "skillID": "melvorD:Attack"
-                  },
-                  {
-                    "value": 3,
-                    "skillID": "melvorD:Strength"
-                  }
-                ]
+                "rielkConstruction:spoof_IncreaseMasteryLevelMelee": 1
               }
             },
             {
@@ -10226,27 +10153,7 @@
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "rielkConstruction:spoof_IncreaseMasteryLevelMelee": 1,
-                "WTM:increaseWeaponXPmelee": 15,
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 2,
-                    "skillID": "melvorD:Attack"
-                  },
-                  {
-                    "value": 2,
-                    "skillID": "melvorD:Strength"
-                  }
-                ],
-                "skillXP": [
-                  {
-                    "value": 3,
-                    "skillID": "melvorD:Attack"
-                  },
-                  {
-                    "value": 3,
-                    "skillID": "melvorD:Strength"
-                  }
-                ]
+                "WTM:increaseWeaponXPmelee": 125
               }
             },
             {
@@ -10307,28 +10214,7 @@
               ],
               "currencyCosts": [],
               "modifiers": {
-                "rielkConstruction:spoof_IncreaseMasteryLevelMelee": 1,
-                "WTM:increaseWeaponXPmelee": 35,
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 2,
-                    "skillID": "melvorD:Attack"
-                  },
-                  {
-                    "value": 2,
-                    "skillID": "melvorD:Strength"
-                  }
-                ],
-                "skillXP": [
-                  {
-                    "value": 4,
-                    "skillID": "melvorD:Attack"
-                  },
-                  {
-                    "value": 4,
-                    "skillID": "melvorD:Strength"
-                  }
-                ]
+                "rielkConstruction:spoof_IncreaseMasteryLevelMelee": 1
               }
             },
             {
@@ -10385,27 +10271,7 @@
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "rielkConstruction:spoof_IncreaseMasteryLevelMelee": 1,
-                "rielkConstruction:spoof_DoubleIndBonusMelee": 1,
-                "flatHiddenSkillLevelBasedOnLevels": [
-                  {
-                    "value": 5,
-                    "skillID": "melvorD:Attack"
-                  },
-                  {
-                    "value": 5,
-                    "skillID": "melvorD:Strength"
-                  }
-                ],
-                "skillXP": [
-                  {
-                    "value": 5,
-                    "skillID": "melvorD:Attack"
-                  },
-                  {
-                    "value": 5,
-                    "skillID": "melvorD:Strength"
-                  }
-                ]
+                "rielkConstruction:spoof_DoubleIndBonusMelee": 1
               }
             },
             {
@@ -12822,48 +12688,6 @@
         ]
       },
       {
-        "id": "spoof_AddMagicSpecialAttack",
-        "allowedScopes": [
-          {
-            "scopes": {},
-            "descriptions": [
-              {
-                "text": "Allow Auroras Anytime.",
-                "lang": "MODIFIER_DATA_spoof_AddMagicSpecialAttack"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "spoof_AddMeleeSpecialAttack",
-        "allowedScopes": [
-          {
-            "scopes": {},
-            "descriptions": [
-              {
-                "text": "Allow Auroras Anytime.",
-                "lang": "MODIFIER_DATA_spoof_AddMeleeSpecialAttack"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "spoof_AddRangedSpecialAttack",
-        "allowedScopes": [
-          {
-            "scopes": {},
-            "descriptions": [
-              {
-                "text": "Allow Auroras Anytime.",
-                "lang": "MODIFIER_DATA_spoof_AddRangedSpecialAttack"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "id": "addRuneShield",
         "allowedScopes": [
           {
@@ -14006,7 +13830,6 @@
           }
         ]
       },
-      
       {
         "id": "spoof_DoubleIndBonusMelee",
         "allowedScopes": [

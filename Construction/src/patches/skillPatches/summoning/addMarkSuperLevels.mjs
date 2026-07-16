@@ -108,21 +108,20 @@ function buffMarkEffects(mark, amountper) {
     if (item.conditionalModifiers?.length > 0) buffModList(item.conditionalModifiers, toadd, rounddown)
     if (item._lastToAdd === undefined || item._lastToAdd < toadd) {
         item.__proto__._lastToAdd = toadd;
-        if (item._customDescription) {
-            ctx.patch(item.__proto__.constructor, "description").get(function (orig) {
-                if (Marksthatneedtoberounded.has(this._localID) || this._customDescription) {
-                    if (!this.origdesc)
-                        this.origdesc = orig;
-                    return this.origdesc.call().replace(/\d+(\.\d+)?/g, match => {
-                        let value = Number(match);
-                        value += value * toadd;
-                        if (rounddown) value = Math.floor(value);
-                        return value;
-                    })
-                }
-                else return orig.call()
-            })
-        }
+        ctx.patch(item.__proto__.constructor, "description").get(function (orig) {
+            if (Marksthatneedtoberounded.has(mark._localID) || this._customDescription) {
+                if (!item.__proto__.origdesc)
+                    item.__proto__.origdesc = orig;
+                return item.__proto__.origdesc.call(this).replace(/\d+(\.\d+)?/g, match => {
+                    let value = Number(match);
+                    value += value * toadd;
+                    if (rounddown) value = Math.floor(value);
+                    return value;
+                })
+            }
+            else return orig.call()
+        })
+
     }
 }
 function buffModList(list, toadd, rounddown) {

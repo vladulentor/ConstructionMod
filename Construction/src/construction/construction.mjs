@@ -567,7 +567,7 @@ export class Construction extends ArtisanSkill {
 
     addProvidedStats() {
         super.addProvidedStats();
-        if (this.extSaveData.hasStudiedDiagram) this.studyTheDiagram(true);
+        if (this.extSaveData.hasStudiedDiagram) this.studyTheDiagram(false);
         this.fixtures.forEach((fixture) => {
             fixture.addProvidedStatsTo(this.providedStats)
         });
@@ -868,12 +868,18 @@ export class Construction extends ArtisanSkill {
             2,
             {}
         );
+                const lifest = new ModifierValue(
+            game.modifierRegistry.getObjectByID('melvorD:lifesteal'),
+            50,
+            {}
+        );
+
         const reflect = new ModifierValue(
             game.modifierRegistry.getObjectByID('melvorD:damageTaken'),
             -2,
             {}
         );
-        twothingstoadd.push(hitting, reflect);
+        twothingstoadd.push(hitting, reflect, lifest);
         game.modifiers.addModifiers('Construct Knowledge', twothingstoadd, 1, 1);
 
     }

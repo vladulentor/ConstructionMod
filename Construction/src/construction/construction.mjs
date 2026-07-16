@@ -200,8 +200,6 @@ export class Construction extends ArtisanSkill {
         (_g = data.tierMasteries)?.forEach(tmData => {
             this.tierMasteries.registerObject(new ConstructionTierMastery(namespace, tmData, this.game, this));
         });
-
-        game.weaponMasteryXP = new Map();
         super.registerData(namespace, data);
     }
     modifyData(data) {
@@ -854,7 +852,7 @@ export class Construction extends ArtisanSkill {
     }
 
     studyTheDiagram(init = false) {
-        if (!init && this.extSaveData.hasStudiedDiagram == true) return;
+       // if (!init && this.extSaveData.hasStudiedDiagram == true) return;
 
         if (init) ctx.onCharacterLoaded(async (ctx) => { this._studyTheDiagram() });
         else this._studyTheDiagram();
@@ -862,25 +860,19 @@ export class Construction extends ArtisanSkill {
         this.extSaveData.hasStudiedDiagram = true;
     }
     _studyTheDiagram() {
-        let twothingstoadd = [];
+        let twothingstoadd = {modifiers:[]};
         const hitting = new ModifierValue(
             game.modifierRegistry.getObjectByID('melvorD:minHitBasedOnMaxHit'),
             2,
             {}
         );
-                const lifest = new ModifierValue(
-            game.modifierRegistry.getObjectByID('melvorD:lifesteal'),
-            50,
-            {}
-        );
-
         const reflect = new ModifierValue(
             game.modifierRegistry.getObjectByID('melvorD:damageTaken'),
             -2,
             {}
         );
-        twothingstoadd.push(hitting, reflect, lifest);
-        game.modifiers.addModifiers('Construct Knowledge', twothingstoadd, 1, 1);
+        twothingstoadd.modifiers.push(hitting, reflect);
+        this.providedStats.addStatObject({name:'Construct Knowledge'}, twothingstoadd,1,1);
 
     }
     addMasteryProgress(tier) {

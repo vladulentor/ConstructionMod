@@ -106,17 +106,23 @@ function buffMarkEffects(mark, amountper) {
     if (item.modifiers?.length > 0) buffModList(item.modifiers, toadd, rounddown)
     if (item.enemyModifiers?.length > 0) buffModList(item.enemyModifiers, toadd, rounddown)
     if (item.conditionalModifiers?.length > 0) buffModList(item.conditionalModifiers, toadd, rounddown)
-    if (item._customDescription) {
-        ctx.patch(item.__proto__.constructor, "description").get(function (orig) {
-            if (!this.origdesc)
-                this.origdesc = orig.call()
-            return this.origdesc.replace(/\d+(\.\d+)?/g, match => {
-                let value = Number(match);
-                value += value * toadd;
-                if (rounddown) value = Math.floor(value);
-                return value;
+    if (item._lastToAdd === undefined || item._lastToAdd < toadd) {
+        item.__proto__._lastToAdd = toadd;
+        if (item._customDescription) {
+            ctx.patch(item.__proto__.constructor, "description").get(function (orig) {
+                if (Marksthatneedtoberounded.has(this._localID) || this._customDescription) {
+                    if (!this.origdesc)
+                        this.origdesc = orig;
+                    return this.origdesc.call().replace(/\d+(\.\d+)?/g, match => {
+                        let value = Number(match);
+                        value += value * toadd;
+                        if (rounddown) value = Math.floor(value);
+                        return value;
+                    })
+                }
+                else return orig.call()
             })
-        })
+        }
     }
 }
 function buffModList(list, toadd, rounddown) {

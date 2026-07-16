@@ -565,7 +565,7 @@ export class Construction extends ArtisanSkill {
 
     addProvidedStats() {
         super.addProvidedStats();
-        if (this.extSaveData.hasStudiedDiagram) this.studyTheDiagram(true);
+        if (this.extSaveData.hasStudiedDiagram) this.studyTheDiagram(false);
         this.fixtures.forEach((fixture) => {
             fixture.addProvidedStatsTo(this.providedStats)
         });
@@ -852,7 +852,7 @@ export class Construction extends ArtisanSkill {
     }
 
     studyTheDiagram(init = false) {
-        if (!init && this.extSaveData.hasStudiedDiagram == true) return;
+       // if (!init && this.extSaveData.hasStudiedDiagram == true) return;
 
         if (init) ctx.onCharacterLoaded(async (ctx) => { this._studyTheDiagram() });
         else this._studyTheDiagram();
@@ -860,7 +860,7 @@ export class Construction extends ArtisanSkill {
         this.extSaveData.hasStudiedDiagram = true;
     }
     _studyTheDiagram() {
-        let twothingstoadd = [];
+        let twothingstoadd = {modifiers:[]};
         const hitting = new ModifierValue(
             game.modifierRegistry.getObjectByID('melvorD:minHitBasedOnMaxHit'),
             2,
@@ -871,8 +871,8 @@ export class Construction extends ArtisanSkill {
             -2,
             {}
         );
-        twothingstoadd.push(hitting, reflect);
-        game.modifiers.addModifiers('Construct Knowledge', twothingstoadd, 1, 1);
+        twothingstoadd.modifiers.push(hitting, reflect);
+        this.providedStats.addStatObject({name:'Construct Knowledge'}, twothingstoadd,1,1);
 
     }
     addMasteryProgress(tier) {

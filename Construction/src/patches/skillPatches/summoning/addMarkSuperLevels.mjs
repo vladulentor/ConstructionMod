@@ -106,24 +106,46 @@ function buffMarkEffects(mark, amountper) {
     if (item.modifiers?.length > 0) buffModList(item.modifiers, toadd, rounddown)
     if (item.enemyModifiers?.length > 0) buffModList(item.enemyModifiers, toadd, rounddown)
     if (item.conditionalModifiers?.length > 0) buffModList(item.conditionalModifiers, toadd, rounddown)
-    if (item._lastToAdd === undefined || item._lastToAdd < toadd) {
-        item.__proto__._lastToAdd = toadd;
-        ctx.patch(item.__proto__.constructor, "description").get(function (orig) {
-            if (Marksthatneedtoberounded.has(mark._localID) || this._customDescription) {
-                if (!item.__proto__.origdesc)
-                    item.__proto__.origdesc = orig;
-                return item.__proto__.origdesc.call(this).replace(/\d+(\.\d+)?/g, match => {
-                    let value = Number(match);
-                    value += value * toadd;
-                    if (rounddown) value = Math.floor(value);
-                    return value;
-                })
+    if (item._customDescription) {
+        {
+            if (!item.origNumb) {
+
+                item.origNumb = Number(item.description.match(/\d+(\.\d+)?/)[0]); //assuming it will exist
+                item.newNumb = item.origNumb + item.origNumb * toadd;
+                item.origDesc = item.description;
+                Object.defineProperty(item, 'description', {
+                    get: function () {
+                        return this.origDesc.replace(/\d+(\.\d+)?/g, this.newNumb);
+                    },
+                    configurable: true,
+                    enumerable: true
+                });
             }
-            else return orig.call()
-        })
+            else {
+                item.newNumb = item.origNumb + item.origNumb * toadd;
+
+            }
+
+        }
 
     }
+
+    ctx.patch(item.__proto__.constructor, "description").get(function (orig) {
+        if (Marksthatneedtoberounded.has(mark._localID) || this._customDescription) {
+            if (!item.__proto__.origdesc)
+                item.__proto__.origdesc = orig;
+            return item.__proto__.origdesc.call(this).replace(/\d+(\.\d+)?/g, match => {
+                let value = Number(match);
+                value += value * toadd;
+                if (rounddown) value = Math.floor(value);
+                return value;
+            })
+        }
+        else return orig.call()
+    })
+
 }
+
 function buffModList(list, toadd, rounddown) {
     list.forEach(effect => {
         if (effect.orig == undefined)

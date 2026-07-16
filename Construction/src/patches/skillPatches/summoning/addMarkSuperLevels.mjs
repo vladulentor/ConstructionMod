@@ -98,25 +98,30 @@ export function addMarkSuperLevels({ patch }) {
     })
 
 }
-const Marksthatneedtoberounded = new Set(["Crow", "GolbinThief", "Wolf", "Leprechaun", "Spectre", "Cyclops"]) //Note, not all have been checked, I'm just being safe
+const Marksthatneedtoberounded = new Set(["Crow", "olbinThief", "Wolf", "Leprechaun", "Spectre", "Cyclops"]) //Note, not all have been checked, I'm just being safe
 function buffMarkEffects(mark, amountper) {
     const item = mark.product
     const toadd = amountper / 100 * (Math.max(0, game.summoning.getMarkLevel(mark) - 5))
-    let rounddown = Marksthatneedtoberounded.has(mark._localID)
+    let rounddown = Marksthatneedtoberounded.has(`Summoning_Familiar_${mark._localID}`)
     if (item.modifiers?.length > 0) buffModList(item.modifiers, toadd, rounddown)
     if (item.enemyModifiers?.length > 0) buffModList(item.enemyModifiers, toadd, rounddown)
     if (item.conditionalModifiers?.length > 0) buffModList(item.conditionalModifiers, toadd, rounddown)
-    if (item._customDescription) {
+    if (item._lastToAdd === undefined || item._lastToAdd < toadd) {
+        item.__proto__._lastToAdd = toadd;
         ctx.patch(item.__proto__.constructor, "description").get(function (orig) {
-            if (!this.origdesc)
-                this.origdesc = orig.call()
-            return this.origdesc.replace(/\d+(\.\d+)?/g, match => {
-                let value = Number(match);
-                value += value * toadd;
-                if (rounddown) value = Math.floor(value);
-                return value;
-            })
+            if (Marksthatneedtoberounded.has(`Summoning_Familiar_${mark._localID}`) || this._customDescription) {
+                if (!item.__proto__.origdesc)
+                    item.__proto__.origdesc = orig;
+                return item.__proto__.origdesc.call(this).replace(/\d+(\.\d+)?/g, match => {
+                    let value = Number(match);
+                    value += value * toadd;
+                    if (rounddown) value = Math.floor(value);
+                    return value;
+                })
+            }
+            else return orig.call()
         })
+
     }
 }
 function buffModList(list, toadd, rounddown) {

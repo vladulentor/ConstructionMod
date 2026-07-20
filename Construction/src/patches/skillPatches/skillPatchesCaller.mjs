@@ -143,6 +143,7 @@ export function patchSkillsBeforeDataReg(ctx) {
         reduceMaxHitByDefenseLevel(ctx);
         patchMasteryPoolProgress(ctx);
         unlockTrader(ctx);
+        
         nerfBearDevil();
 }
 export function patchSkillsAfterDataReg(ctx) {

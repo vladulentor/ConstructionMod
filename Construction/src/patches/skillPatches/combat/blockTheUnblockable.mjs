@@ -33,6 +33,7 @@ export function blockTheUnblockable({ patch }) {
     // somewhere else, and with this both can just call the original if its not their special case, with melvor's default tools, yo ucan only have 1 replace
     // and replace is the only way you can make a function patch that DOESN'T call the original.
     // so we do this
+    // Update: none of what I just said is true
     Player.prototype.fireMissSplash = function (targetImmune) {
         if (this.target && this.target.gotHyperBlocked) {
             this.splashManager.add({

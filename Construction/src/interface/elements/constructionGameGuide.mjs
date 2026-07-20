@@ -96,7 +96,7 @@ export function mountConstructionGuide({ construction, masteryBarImageSrc, forma
             { ...nodeData, ...extraNodeData },
             {
                 constructionTitle: getRielkLangString('SKILL_NAME_Construction'),
-                houseWord: getRielkLangString('SKILL_CATEGORY_ Construction_ House'),
+                houseWord: getRielkLangString('MENU_HOUSE'),
                 materialsWord: getRielkLangString('GUIDE_TERM_MATERIALS'),
                 furnitureWord: getRielkLangString('GUIDE_TERM_FURNITURE'),
                 Beams: getRielkLangString('GUIDE_TERM_BEAMS'),

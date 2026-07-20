@@ -2,6 +2,9 @@ const { loadModule } = mod.getContext(import.meta);
 
 
 
+const { raiseMasteryLevel } = await loadModule('src/patches/skillPatches/combat/raiseMasteryLevel.mjs');
+
+
 
 const { tierArray } = await loadModule('src/patches/skillPatches/atlasofdiscovery/archaeology/tierarray.mjs');
 
@@ -63,6 +66,7 @@ const { addMarkExtraLevels } = await loadModule('src/patches/skillPatches/summon
 
 
 export const EffectRegistry = {
+    //addSpecialAttack,
   tierArray,
   unlockPlot,
   addFoodSlot,
@@ -76,8 +80,8 @@ export const EffectRegistry = {
   reduceUpgradeCost,
   addPotionMasteryTextThingFuckIt,
   increaseRuneReduction,
-  addSpecialAttack,
   addRuneEssence,
+  raiseMasteryLevel,
   addConstellationLevels,
   activateLongBuffs,
   addBonusToPool,
@@ -93,4 +97,5 @@ export const EffectRegistry = {
   refreshTrader,
   lowerLevelRequirements,
   addMarkExtraLevels
+
 };

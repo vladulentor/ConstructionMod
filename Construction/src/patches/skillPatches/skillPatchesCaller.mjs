@@ -1,6 +1,7 @@
 const { loadModule } = mod.getContext(import.meta);
 
 const { addHiddenLevelsToAllsSills } = await loadModule('src/patches/skillPatches/combat/addHiddenLevelsToAllsSills.mjs');
+const { hookIntoWeaponType } = await loadModule('src/patches/skillPatches/combat/hookIntoWeaponType.mjs');
 
 
 
@@ -29,7 +30,6 @@ const { patchOverHeal } = await loadModule('src/patches/skillPatches/combat/patc
 const { patchMagicUsageCheck } = await loadModule('src/patches/skillPatches/combat/patchMagicUsageCheck.mjs');
 const { addMagicShield } = await loadModule('src/patches/skillPatches/combat/addMagicShield.mjs');
 const { patchAuroraAnyStyle } = await loadModule('src/patches/skillPatches/combat/patchAuroraAnyStyle.mjs');
-const { patchRunePreservationCap } = await loadModule('src/patches/skillPatches/combat/patchRunePreservationCap.mjs');
 const { patchPrayerPointsSpending } = await loadModule('src/patches/skillPatches/combat/patchPrayerPointsSpending.mjs');
 const { addStunOnCrit } = await loadModule('src/patches/skillPatches/combat/addStunOnCrit.mjs');
 const { addGlobalEffectIgnore } = await loadModule('src/patches/skillPatches/combat/addGlobalEffectIgnore.mjs');
@@ -129,7 +129,6 @@ export function patchSkillsBeforeDataReg(ctx) {
         addComboRunesonElemRunes(ctx);
         blockTheUnblockable(ctx);
         addEfficiencyToOffSkills(ctx);
-        patchRunePreservationCap(ctx);
         addHiddenLevelsToAllsSills(ctx);
         addPerBankSlotsBoosts(ctx);
         addCurrencyCancel(ctx);
@@ -149,6 +148,7 @@ export function patchSkillsBeforeDataReg(ctx) {
 export function patchSkillsAfterDataReg(ctx) {
         patchCraftingOrder();
         patchFletchingOrder();
+        hookIntoWeaponType(ctx);
         patchShieldRecipes();
         addBeamsMasteryPoolBonus();
         removeObstacles(ctx);

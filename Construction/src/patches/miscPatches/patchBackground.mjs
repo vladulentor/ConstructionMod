@@ -1,6 +1,6 @@
 export function patchBackground(ctx) {
     window.setBackground = function (id) { // Save data stores the background option as an Int8, which means we have a max of 128 possible choices here.
-                                            // So in average it will take until 2200 to fill these options up.
+                                            // it will take until 2200 to fill these options up, by which point we'd need to rewrite the save data
     
         const els = document.querySelectorAll('bg-selection');
 

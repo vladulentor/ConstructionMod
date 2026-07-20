@@ -28,7 +28,7 @@ export function reduceMaxHitByDefenseLevel({ patch }) {
             if (npc.realm === game.defaultRealm) {
                 maxHit = Math.floor(maxHit * (1 - game.combat.player.stats.getResistance(game.normalDamage) / 100));
             }
-            let reduc = Math.min(maxHit, Math.floor(numberMultiplier * (npc._maxHit - npc.maxHit)))
+            const reduc = Math.min(maxHit, Math.floor(numberMultiplier * (npc._maxHit - npc.maxHit)))
             const reducedToHalf = maxHit === reduc; // There's probably more "correct" ways to do this
             this.maxHit.innerHTML = templateLangString('MENU_TEXT_MAX_HIT', { value: `${maxHit}` }) + `<span class="construction-${((game.defence.maxLevelCap == game.defence.level) || reducedToHalf) ? 'victory' : 'success'}">  (-${reduc})</span>`
 

@@ -634,7 +634,6 @@
         "ignoreCompletion": true,
         "obtainFromItemLog": false,
         "golbinRaidExclusive": false,
-        "weaponType": "WTM:Exotic",
         "uniqueness": 4,
         "sellsFor": 65000,
         "tier": "none",
@@ -5271,8 +5270,7 @@
                 "rielkConstruction:Desk",
                 "rielkConstruction:Storage_Chest",
                 "rielkConstruction:Wardrobe"
-              ],
-              "newTooltip": true
+              ]
             },
             {
               "id": "Garden",
@@ -5299,7 +5297,8 @@
                 "rielkConstruction:Apparatus",
                 "rielkConstruction:Spell_Library",
                 "rielkConstruction:Telescope"
-              ]
+              ],
+              "newTooltip": true
             },
             {
               "id": "Outpost",
@@ -5326,7 +5325,8 @@
                 "rielkConstruction:Archery_Range",
                 "rielkConstruction:Jungle_Gym",
                 "rielkConstruction:Training_Dummy"
-              ]
+              ],
+              "newTooltip": true
             },
             {
               "id": "Workshop",
@@ -5335,8 +5335,7 @@
                 "rielkConstruction:Forge",
                 "rielkConstruction:Tool_Rack",
                 "rielkConstruction:Worktable"
-              ],
-              "newTooltip": true
+              ]
             }
           ],
           "fixtures": [
@@ -5874,6 +5873,15 @@
               "id": "Archery_Range1",
               "level": 3,
               "baseExperience": 11,
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
               "baseActionCost": 15,
               "categoryID": "rielkConstruction:House",
               "itemCosts": [
@@ -5988,7 +5996,7 @@
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
-                "WTM:increaseWeaponXPranged": 15
+                "WTM:increaseWeaponXPranged": 5
               }
             },
             {
@@ -6029,18 +6037,7 @@
               "currencyCosts": [],
               "modifiers": {
                 "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
-                "flatHiddenSkillLevel": [
-                  {
-                    "value": 2,
-                    "skillID": "melvorD:Ranged"
-                  }
-                ],
-                "skillXP": [
-                  {
-                    "value": 4,
-                    "skillID": "melvorD:Ranged"
-                  }
-                ]
+                "rangedCritChance": 10
               }
             },
             {
@@ -6087,18 +6084,17 @@
               "changeFunc": "raiseMasteryLevel",
               "shinyMods": [
                 1,
-                2
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
               ],
               "modifiers": {
                 "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
-                "WTM:increaseWeaponXPranged": 35,
                 "rielkConstruction:spoof_DoubleIndBonusRanged": 1,
-                "flatHiddenSkillLevelBasedOnLevels": [
-                  {
-                    "value": 5,
-                    "skillID": "melvorD:Ranged"
-                  }
-                ]
+                "WTM:increaseWeaponXPranged": 10
               }
             },
             {
@@ -9212,6 +9208,15 @@
             {
               "id": "Spell_Library1",
               "level": 6,
+              "shinyMods": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
               "baseExperience": 6,
               "baseActionCost": 30,
               "categoryID": "rielkConstruction:House",
@@ -9272,12 +9277,6 @@
                 }
               ],
               "currencyCosts": [],
-              "shinyMods": [
-                1,
-                2,
-                3,
-                4
-              ],
               "changeFunc": [
                 "increaseRuneReduction",
                 "raiseMasteryLevel"
@@ -9327,7 +9326,7 @@
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "rielkConstruction:spoof_IncreaseMasteryLevelMagic": 1,
-                "WTM:increaseWeaponXPmagic": 25
+                "WTM:increaseWeaponXPmagic": 5
               }
             },
             {
@@ -9436,7 +9435,8 @@
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "rielkConstruction:spoof_IncreaseMasteryLevelMagic": 1,
-                "rielkConstruction:spoof_DoubleIndBonusMagic": 1
+                "rielkConstruction:spoof_DoubleIndBonusMagic": 1,
+                "WTM:increaseWeaponXPmagic": 10
               }
             },
             {
@@ -10153,7 +10153,7 @@
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "rielkConstruction:spoof_IncreaseMasteryLevelMelee": 1,
-                "WTM:increaseWeaponXPmelee": 125
+                "WTM:increaseWeaponXPmelee": 5
               }
             },
             {
@@ -10203,18 +10203,10 @@
                   "quantity": 1
                 }
               ],
-              "shinyMods": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7
-              ],
               "currencyCosts": [],
               "modifiers": {
-                "rielkConstruction:spoof_IncreaseMasteryLevelMelee": 1
+                "rielkConstruction:spoof_IncreaseMasteryLevelMelee": 1,
+                "meleeMaxHit": 10
               }
             },
             {
@@ -10271,7 +10263,8 @@
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "rielkConstruction:spoof_IncreaseMasteryLevelMelee": 1,
-                "rielkConstruction:spoof_DoubleIndBonusMelee": 1
+                "rielkConstruction:spoof_DoubleIndBonusMelee": 1,
+                "WTM:increaseWeaponXPmelee": 10
               }
             },
             {
@@ -13910,6 +13903,26 @@
       {
         "skillID": "melvorD:Agility",
         "data": {
+          "weaponMasteries": [
+            {
+              "id": "WTM:Special",
+              "uniq": [
+                "Mystic_Rotating_Saw4"
+              ]
+            },
+            {
+              "id": "WTM:Crossbows",
+              "uniq": [
+                "Bronze_Crossbow_T_R2",
+                "Iron_Crossbow_T_R2",
+                "Steel_Crossbow_T_R2",
+                "Mithril_Crossbow_T_R2",
+                "Adamant_Crossbow_T_R2",
+                "Rune_Crossbow_T_R2",
+                "Dragon_Crossbow_T_R2"
+              ]
+            }
+          ],
           "obstacles": [
             {
               "id": "melvorF:PipeClimb",

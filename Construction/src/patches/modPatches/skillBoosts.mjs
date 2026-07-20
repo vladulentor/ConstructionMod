@@ -322,7 +322,7 @@ export function skillBoostsCompatibility({ patch }) {
 
         }
         getRomanNumeral(num) { // I hope roman numerals are valid across languages, *shrug*
-            const romans = ['I', 'II', 'III ', 'IV', 'V', 'VI', 'VII', 'VIII'];
+            const romans = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
             return romans[num - 1] || '';
         }
         RecipeModifierSpans(container, complete, isShiny, statObject) {

@@ -38,7 +38,7 @@ export function reduceFishTimers(ctx) {
 
         if (minRed && maxRed) { //Just make all 4 cases.
             html = `<span class="construction-victory">${html}</span>`;
-            this.clock.classList.add('construction-success'); //adding victory (bold) will make the clock filled in, thanks Font Awesesome. More like Font stink
+            this.clock.classList.add('construction-success'); //adding victory (bold) will make the clock filled in, thanks Font Awesesome. More like Font stinky
         } else {
             this.clock.classList.remove('construction-success');
             if (minRed && !maxRed) { //Never technically happens

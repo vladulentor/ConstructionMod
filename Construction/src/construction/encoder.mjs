@@ -1,8 +1,8 @@
 const { onCharacterLoaded } = mod.getContext(import.meta);
-const BIG_UPDATE_NUMBER = 8;
+const BIG_UPDATE_NUMBER = 11;
 export class Encoder {
     static encode(construction, writer) {
-        const _constructionVersion = 10;
+        const _constructionVersion = 11;
         writer.writeUint32(_constructionVersion);
         writer.writeBoolean(construction.extSaveData.showUpdateTooltip);
 

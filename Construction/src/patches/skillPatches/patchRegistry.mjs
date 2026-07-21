@@ -51,7 +51,6 @@ const { upgradeFirePotions } = await loadModule("src/patches/skillPatches/herblo
 const { reduceUpgradeCost } = await loadModule("src/patches/skillPatches/herblore/reduceUpgradeCost.mjs");
 const { addPotionMasteryTextThingFuckIt } = await loadModule("src/patches/skillPatches/herblore/addPotionMasteryTextThingFuckIt.mjs");
 
-const { increaseRuneReduction } = await loadModule("src/patches/skillPatches/combat/increaseRuneReduction.mjs");
 
 
 const { addSpecialFishingItems } = await loadModule("src/patches/skillPatches/fishing/addSpecialFishingItems.mjs");
@@ -79,7 +78,6 @@ export const EffectRegistry = {
   addBonusesToTreeMastery,
   reduceUpgradeCost,
   addPotionMasteryTextThingFuckIt,
-  increaseRuneReduction,
   addRuneEssence,
   raiseMasteryLevel,
   addConstellationLevels,

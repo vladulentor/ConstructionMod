@@ -129,21 +129,7 @@ function buffMarkEffects(mark, amountper) {
         }
 
     }
-
-    ctx.patch(item.__proto__.constructor, "description").get(function (orig) {
-        if (Marksthatneedtoberounded.has(mark._localID) || this._customDescription) {
-            if (!item.__proto__.origdesc)
-                item.__proto__.origdesc = orig;
-            return item.__proto__.origdesc.call(this).replace(/\d+(\.\d+)?/g, match => {
-                let value = Number(match);
-                value += value * toadd;
-                if (rounddown) value = Math.floor(value);
-                return value;
-            })
-        }
-        else return orig.call()
-    })
-
+    
 }
 
 function buffModList(list, toadd, rounddown) {

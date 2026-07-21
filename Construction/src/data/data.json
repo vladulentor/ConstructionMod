@@ -9278,7 +9278,6 @@
               ],
               "currencyCosts": [],
               "changeFunc": [
-                "increaseRuneReduction",
                 "raiseMasteryLevel"
               ],
               "modifiers": {

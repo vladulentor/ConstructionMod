@@ -8,6 +8,16 @@ const { showItemSourcesAndUsesCompatibility } = await loadModule('src/patches/mo
 
 export function patchMods(ctx, modList) {
     const compatMessages = [];
+   if (modList.includes('Weapon Types × Mastery')) {
+        compatMessages.push({
+            name: 'Weapon Types × Mastery',
+            description: "Maybe this one doesn't count since it's construction's own baby, but all the types are now construction locked, and all construction weapons are tied to types",
+            color: '#a87b00'
+        });
+    }
+
+   
+   
     if (modList.includes('Skill Boosts')) {
         skillBoostsCompatibility(ctx);
         compatMessages.push({

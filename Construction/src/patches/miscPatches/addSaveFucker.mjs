@@ -2,7 +2,6 @@ export function addSaveFucker() {
 
         //Hyper mega grimy emergency save file fix
     const originalTrigger = mod.trigger.interfaceAvailable;
-
     mod.trigger.interfaceAvailable = async function () {
         const isMasterLoaded = mod.manager ? mod.manager.getLoadedModList().includes("Weapon Types × Mastery") : false;
         if (!isMasterLoaded) {

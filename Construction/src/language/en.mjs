@@ -351,7 +351,7 @@ export const language = {
     'MODIFIER_DATA_spoof_DoubleIndBonusMelee':"+50% Per-Weapon Bonus Potency for Melee Weapons",
     'MODIFIER_DATA_spoof_DoubleIndBonusRanged':"+50% Per-Weapon Bonus Potency for Ranged Weapons",
     'MODIFIER_DATA_spoof_DoubleIndBonusMagic':"+50% Per-Weapon Bonus Potency for Magic Weapons",
-    'MENU_TEXT_TYPE':"Type",
+
     'MODIFIER_DATA_unlockEfficiencySkill': 'Unlock ability to complete extra actions in ${skillName}',
     'MODIFIER_DATA_spoofUpgradeCross': 'Unlock ability to reinforce Crossbows made in Fletching',
     'MODIFIER_DATA_spoofUpgradeShields': "Unlock ability to reinforce Shields made in Crafting",
@@ -416,11 +416,6 @@ export const language = {
     'RIELK_CONMOD_FOCUSEDCOOKING_3': '+7% Perfect Cook Chance, Additional Perfect Item Chance, and Preservation Cap in Cooking while not Passive Cooking',
     'RIELK_CONMOD_SLAYER2': '+7% damage dealt by all attacks when fighting a Slayer Task monster',
     'RIELK_CONMOD_SLAYER5': '+15% Chance to preserve Consumable Slot Charges when fighting a Slayer Task monster',
-    'RIELK_CONMOD_SLASHING_1':  '+5% Accuracy Rating when wielding Slashing Weapons',
-    'RIELK_CONMOD_SLASHING_2': '+5% Melee Strength Bonus when wielding Slashing Weapons',
-    'RIELK_CONMOD_SLASHING_3': 'notdoneyet',
-
-    'RIELK_CONMOD_SLASHING_4': '+10% Damage Reduction against Ranged Enemies when wielding Slashing Weapons',
 
 
     'MENU_TEXT_STOKE_BONFIRE': 'Stoke Bonfire (Costs ${qty} ${logName})',

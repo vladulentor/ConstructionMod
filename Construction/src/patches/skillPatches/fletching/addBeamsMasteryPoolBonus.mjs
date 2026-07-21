@@ -5,5 +5,6 @@ export function addBeamsMasteryPoolBonus() {
     const ourmod = new ModifierValue(game.modifierRegistry.getObjectByID('melvorD:flatBasePrimaryProductQuantity'), 1, { skill: game.fletching, category: ourcat })
     fletchbon.modifiers.push(ourmod)
     game.fletching.computeProvidedStats(game.construction.notifs);
+    
 
 }

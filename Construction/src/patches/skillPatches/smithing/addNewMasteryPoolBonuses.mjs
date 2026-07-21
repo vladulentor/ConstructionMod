@@ -24,10 +24,10 @@ export function addNewMasteryPoolBonuses() {
 
 
     if (this.tier >= 3 && !guard3) {
-        const newBonus = new MasteryPoolBonus({ realm: "melvorD:Melvor", percent: 125 }, game);
-        const ourmod11 = new ModifierValue(game.modifierRegistry.getObjectByID('melvorD:flatSmithingCoalCost'), -1, { });
+        const ourmod11 = new ModifierValue(game.modifierRegistry.getObjectByID('melvorD:flatSmithingCoalCost'), -1, {});
         const ourmod12 = new ModifierValue(game.modifierRegistry.getObjectByID('rielkConstruction:skillEfficiencyCost'), -10, {});
-
+        const newBonus = new MasteryPoolBonus({ realm: "melvorD:Melvor", percent: 125 }, game);
+        newBonus.scrubMe = 1;
         newBonus.modifiers = [ourmod11, ourmod12];
         smithingbon.push(newBonus);
         guard3 = true;
@@ -35,6 +35,8 @@ export function addNewMasteryPoolBonuses() {
     if (this.tier >= 5 && !guard5) {
         const newBonus2 = new MasteryPoolBonus({ realm: "melvorD:Melvor", percent: 155 }, game);
         const newBonus3 = new MasteryPoolBonus({ realm: "melvorD:Melvor", percent: 185 }, game); // at this point you think i would use a helper, but no.
+        newBonus2.scrubMe = 1;
+        newBonus3.scrubMe = 1;
 
         const ourmod31 = new ModifierValue(game.modifierRegistry.getObjectByID('melvorD:flatSkillInterval'), -200, { skill: game.smithing });
         const ourmod32 = new ModifierValue(game.modifierRegistry.getObjectByID('melvorD:flatSkillInterval'), -100, { skill: game.construction });
@@ -54,4 +56,10 @@ export function addNewMasteryPoolBonuses() {
     }
 
     game.smithing.computeProvidedStats(game.construction.notifs);
+    for (let i = game.softDataRegQueue.length - 1; i >= 0; i--) {
+        if (game.softDataRegQueue[i].object.scrubMe) {
+            game.softDataRegQueue.splice(i, 1);
+        }
+    }
+    
 }

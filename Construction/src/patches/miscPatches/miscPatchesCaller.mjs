@@ -7,7 +7,6 @@ const { patchBackground } = await loadModule('src/patches/miscPatches/patchBackg
 const { addFixtureRequirement } = await loadModule('src/patches/miscPatches/addFixtureRequirement.mjs');
 const { addReadables } = await loadModule('src/patches/miscPatches/addReadables.mjs');
 const { addFixtureGoalType } = await loadModule('src/patches/miscPatches/addFixtureGoalType.mjs');
-const { addSaveFucker } = await loadModule('src/patches/miscPatches/addSaveFucker.mjs');
 
 
 export function patchMiscBeforeDataReg(ctx) {
@@ -16,7 +15,6 @@ export function patchMiscBeforeDataReg(ctx) {
         patchEventManager(ctx);
         patchBackground(ctx);
         addReadables(ctx);
-        addSaveFucker(ctx);
         patchConditionalMod(ctx);
         addFixtureGoalType();
         addFixtureRequirement();

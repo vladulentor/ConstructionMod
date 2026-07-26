@@ -5996,7 +5996,7 @@
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
-                "WTM:increaseWeaponXPranged": 5
+                "WTM:increaseWeaponXPranged": 15
               }
             },
             {
@@ -6094,7 +6094,7 @@
               "modifiers": {
                 "rielkConstruction:spoof_IncreaseMasteryLevelRanged": 1,
                 "rielkConstruction:spoof_DoubleIndBonusRanged": 1,
-                "WTM:increaseWeaponXPranged": 10
+                "WTM:increaseWeaponXPranged": 25
               }
             },
             {
@@ -9325,7 +9325,7 @@
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "rielkConstruction:spoof_IncreaseMasteryLevelMagic": 1,
-                "WTM:increaseWeaponXPmagic": 5
+                "WTM:increaseWeaponXPmagic": 15
               }
             },
             {
@@ -9435,7 +9435,7 @@
               "modifiers": {
                 "rielkConstruction:spoof_IncreaseMasteryLevelMagic": 1,
                 "rielkConstruction:spoof_DoubleIndBonusMagic": 1,
-                "WTM:increaseWeaponXPmagic": 10
+                "WTM:increaseWeaponXPmagic": 25
               }
             },
             {
@@ -10152,7 +10152,7 @@
               "changeFunc": "raiseMasteryLevel",
               "modifiers": {
                 "rielkConstruction:spoof_IncreaseMasteryLevelMelee": 1,
-                "WTM:increaseWeaponXPmelee": 5
+                "WTM:increaseWeaponXPmelee": 15
               }
             },
             {
@@ -10263,7 +10263,7 @@
               "modifiers": {
                 "rielkConstruction:spoof_IncreaseMasteryLevelMelee": 1,
                 "rielkConstruction:spoof_DoubleIndBonusMelee": 1,
-                "WTM:increaseWeaponXPmelee": 10
+                "WTM:increaseWeaponXPmelee": 25
               }
             },
             {

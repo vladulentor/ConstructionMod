@@ -218,7 +218,7 @@ export function patchOverHeal(ctx) {
     // make it look professional
     SplashManager.splashClasses.Overheal = 'construction-success';
     ctx.patch(Character, 'renderHitpoints').after(function (_) {
-        const isOverheal = this.hitpoints > this.stats.maxHitpoints;
+        const isOverheal = this instanceof Player && this.hitpoints > this.stats.maxHitpoints;
 
         if (isOverheal) {
             const overPercent = (Math.min((this.hitpoints / this.stats.maxHitpoints) - 1, 1) * 100).toFixed(1);
